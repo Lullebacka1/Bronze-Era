@@ -26,11 +26,11 @@ ACRE = {
 	color = rgb { 198 188 47 }
 	color2 = rgb { 110 27 27 }
 }
-ALASIYA = {
+ALASI = {
 	color = rgb { 62 208 147 }
 	color2 = rgb { 110 27 27 }
 }
-AMURRU = {
+AMURU = {
 	color = rgb { 29 70 114 }
 	color2 = rgb { 110 27 27 }
 }
@@ -38,7 +38,7 @@ ARWAD = {
 	color = rgb { 178 191 59 }
 	color2 = rgb { 110 27 27 }
 }
-ASSYRIA = {
+ASYRI = {
 	color = rgb { 212 96 33 }
 	color2 = rgb { 110 27 27 }
 }
@@ -46,7 +46,7 @@ AZZI = {
 	color = rgb { 173 212 33 }
 	color2 = rgb { 110 27 27 }
 }
-BALEARES = {
+BALES = {
 	color = rgb { 97 41 209 }
 	color2 = rgb { 110 27 27 }
 }
@@ -54,15 +54,15 @@ BALSA = {
 	color = rgb { 213 132 77 }
 	color2 = rgb { 110 27 27 }
 }
-BERITOS = {
+BERIT = {
 	color = rgb { 198 59 47 }
 	color2 = rgb { 110 27 27 }
 }
-BYBLOS = {
+BYBLO = {
 	color = rgb { 220 56 176 }
 	color2 = rgb { 110 27 27 }
 }
-CARTEI = {
+CARTI = {
 	color = rgb { 54 122 206 }
 	color2 = rgb { 110 27 27 }
 }
@@ -70,7 +70,7 @@ DIMUN = {
 	color = rgb { 81 63 217 }
 	color2 = rgb { 110 27 27 }
 }
-EL_ARGAR = {
+ARGAR = {
 	color = rgb { 148 60 195 }
 	color2 = rgb { 110 27 27 }
 }
@@ -82,31 +82,31 @@ ELIMI = {
 	color = rgb { 83 213 124 }
 	color2 = rgb { 110 27 27 }
 }
-ELYMIAN = {
+ELYMI = {
 	color = rgb { 138 68 193 }
 	color2 = rgb { 110 27 27 }
 }
-HABIRU = {
+HABIR = {
 	color = rgb { 135 222 69 }
 	color2 = rgb { 110 27 27 }
 }
-HAJASA = {
+HAJAS = {
 	color = rgb { 71 220 123 }
 	color2 = rgb { 110 27 27 }
 }
-HAPALLA = {
+HAPAL = {
 	color = rgb { 84 74 222 }
 	color2 = rgb { 110 27 27 }
 }
-IAPYGIA = {
+IAPYG = {
 	color = rgb { 148 61 209 }
 	color2 = rgb { 110 27 27 }
 }
-KASSITES = {
+KASSI = {
 	color = rgb { 120 30 230 }
 	color2 = rgb { 110 27 27 }
 }
-KUWALBASSA = {
+KUWAL = {
 	color = rgb { 60 125 215 }
 	color2 = rgb { 110 27 27 }
 }
@@ -122,7 +122,7 @@ MAGAN = {
 	color = rgb { 79 216 86 }
 	color2 = rgb { 110 27 27 }
 }
-MALAKA = {
+MALAK = {
 	color = rgb { 41 199 115 }
 	color2 = rgb { 110 27 27 }
 }
@@ -130,15 +130,11 @@ MASA = {
 	color = rgb { 218 176 52 }
 	color2 = rgb { 110 27 27 }
 }
-MITANNI = {
+MITAN = {
 	color = rgb { 79 222 143 }
 	color2 = rgb { 110 27 27 }
 }
-MITTANI = {
-	color = rgb { 58 212 189 }
-	color2 = rgb { 110 27 27 }
-}
-NURAGIC = {
+NURAG = {
 	color = rgb { 75 211 60 }
 	color2 = rgb { 110 27 27 }
 }
@@ -146,7 +142,7 @@ PALA = {
 	color = rgb { 80 207 63 }
 	color2 = rgb { 110 27 27 }
 }
-PARTHA = {
+PARTH = {
 	color = rgb { 145 215 71 }
 	color2 = rgb { 110 27 27 }
 }
@@ -154,11 +150,11 @@ SASU = {
 	color = rgb { 207 140 68 }
 	color2 = rgb { 110 27 27 }
 }
-SICANI = {
+SICAN = {
 	color = rgb { 202 78 161 }
 	color2 = rgb { 110 27 27 }
 }
-SICELS = {
+SICEL = {
 	color = rgb { 60 52 183 }
 	color2 = rgb { 110 27 27 }
 }
@@ -166,19 +162,19 @@ SUTU = {
 	color = rgb { 45 82 66 }
 	color2 = rgb { 110 27 27 }
 }
-TARDESSOS = {
+TARTS = {
 	color = rgb { 198 43 212 }
 	color2 = rgb { 110 27 27 }
 }
-TRIPOLI = {
+TRPOL = {
 	color = rgb { 224 72 92 }
 	color2 = rgb { 110 27 27 }
 }
-UGARIT = {
+UGART = {
 	color = rgb { 50 69 210 }
 	color2 = rgb { 110 27 27 }
 }
-WILUSA = {
+WILUS = {
 	color = rgb { 196 201 49 }
 	color2 = rgb { 110 27 27 }
 }

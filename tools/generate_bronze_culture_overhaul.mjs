@@ -312,13 +312,13 @@ function configureLocationOverrides() {
   setLocation("hurrian", ["afrin", "al_bab", "aleppo", "ayntab", "birecik", "manbij", "suruc", "urfa"]);
 
   setTag("ACRE", "tjekker");
-  setTag("ALASIYA", "canaanite");
-  setTag("AMURRU", "amorite");
+  setTag("ALASI", "canaanite");
+  setTag("AMURU", "amorite");
   setTag("ARWAD", "phoenician");
-  setTag("BERITOS", "phoenician");
-  setTag("BYBLOS", "phoenician");
-  setTag("UGARIT", "ugaritic");
-  setTag("HABIRU", "aramaean");
+  setTag("BERIT", "phoenician");
+  setTag("BYBLO", "phoenician");
+  setTag("UGART", "ugaritic");
+  setTag("HABIR", "aramaean");
   setLocation("moabite", ["karak", "madaba", "suwayda"]);
   setLocation("edomite", ["al_quwayrah", "aqaba", "maan", "shoubak", "sughar"]);
   setLocation("midianite", ["haql", "aqaba"]);
@@ -326,24 +326,24 @@ function configureLocationOverrides() {
   setTag("SUTU", "aramaean");
   setLocation("ammonite", ["amman", "madaba"]);
 
-  setTag("ASSYRIA", "assyrian");
+  setTag("ASYRI", "assyrian");
   setLocation("hurrian", ["akre", "amadiya", "bahcesaray", "duhok", "erbil", "hakkari", "rawanduz", "zakho"]);
-  setTag("MITANNI", "hurrian");
-  setTag("KASSITES", "kassite");
+  setTag("MITAN", "hurrian");
+  setTag("KASSI", "kassite");
   setLocation("babylonian", ["baghdad", "balad_ruz", "basra", "dayr_aqul", "hillah", "karbala", "khalis", "nasiriyah", "numaniyyah", "rusafa", "samawa", "wasit"]);
   setLocation("sumerian", ["abadan", "basra", "nasiriyah", "samawa", "suq_al_shuyukh", "zuwayr"]);
   setTag("ELAM", "elamite");
   setLocation("gutian", ["dehdasht", "dehdez", "dishmok", "izeh", "lordegan", "masjed_soleyman"]);
 
   setTag("AZZI", "urartian");
-  setTag("HAJASA", "colchian");
+  setTag("HAJAS", "colchian");
   setTag("PALA", "palaic");
-  setTag("HAPALLA", "luwian");
-  setTag("KUWALBASSA", "luwian");
+  setTag("HAPAL", "luwian");
+  setTag("KUWAL", "luwian");
   setTag("MASA", "phrygian");
-  setTag("WILUSA", "luwian");
+  setTag("WILUS", "luwian");
   setTag("LUKKA", "lukka");
-  setTag("PARTHA", "lycian");
+  setTag("PARTH", "lycian");
   setLocation("carian", ["marmaris", "milas", "mugla", "tavas"]);
 
   setTag("DIMUN", "dilmunite");
@@ -351,21 +351,21 @@ function configureLocationOverrides() {
   setLocation("sabaean", ["nizwa", "bahla", "ibri", "suhar", "sur"]);
 
   setTag("LIBYA", "libu");
-  setTag("TRIPOLI", "libu");
+  setTag("TRPOL", "libu");
   setLocation("garamantian", ["siwa", "awjila"]);
 
-  setTag("NURAGIC", "nuragic");
+  setTag("NURAG", "nuragic");
   setLocation("sherden", ["cagliari", "oristano"]);
-  setTag("IAPYGIA", "samnite");
-  setTag("SICANI", "sicel");
-  setTag("SICELS", "sicel");
-  setTag("ELYMIAN", "sicel");
-  setTag("BALEARES", "iberian");
-  setTag("EL_ARGAR", "iberian");
-  setTag("TARDESSOS", "tartessian");
+  setTag("IAPYG", "samnite");
+  setTag("SICAN", "sicel");
+  setTag("SICEL", "sicel");
+  setTag("ELYMI", "sicel");
+  setTag("BALES", "iberian");
+  setTag("ARGAR", "iberian");
+  setTag("TARTS", "tartessian");
   setTag("BALSA", "lusitanian");
-  setTag("CARTEI", "tartessian");
-  setTag("MALAKA", "tartessian");
+  setTag("CARTI", "tartessian");
+  setTag("MALAK", "tartessian");
 
   setLocation("akkadian", ["samarra", "tikrit", "ukbara"]);
   setLocation("margian", ["dehistan", "merv", "nisa"]);

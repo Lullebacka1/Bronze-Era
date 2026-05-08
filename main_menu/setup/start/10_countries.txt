@@ -112,11 +112,11 @@ countries = {
 			sidon
 		}
 		accepted_cultures = { tjekker }
-		tolerated_cultures = { }
+		tolerated_cultures = { tjekker }
 	}
 
 	##CYPRUS
-	ALASIYA = {
+	ALASI = {
 		capital = nicosia_cyp
 
 		country_rank = rank_kingdom
@@ -127,11 +127,11 @@ countries = {
 			famagusta kyrenia larnaca limassol morphou nicosia_cyp paphos
 		}
 		accepted_cultures = { canaanite }
-		tolerated_cultures = { }
+		tolerated_cultures = { canaanite }
 	}
 
-	##AMURRU
-	AMURRU = {
+	##AMURU
+	AMURU = {
 		capital = homs
 
 		country_rank = rank_kingdom
@@ -142,7 +142,7 @@ countries = {
 			baalbek hama homs idlib kafartab khanaser marrat masyaf nabek qusayr
 		}
 		accepted_cultures = { amorite }
-		tolerated_cultures = { }
+		tolerated_cultures = { amorite }
 	}
 
 	##ARWAD
@@ -157,11 +157,11 @@ countries = {
 			jableh
 		}
 		accepted_cultures = { phoenician }
-		tolerated_cultures = { }
+		tolerated_cultures = { phoenician }
 	}
 
-	##ASSYRIAN EMPIRE
-	ASSYRIA = {
+	##ASHURITE EMPIRE
+	ASYRI = {
 		capital = mosul
 
 		country_rank = rank_kingdom
@@ -196,11 +196,11 @@ countries = {
 			parkhali tekman tercan tortum varto
 		}
 		accepted_cultures = { urartian }
-		tolerated_cultures = { }
+		tolerated_cultures = { urartian }
 	}
 
 	##BALEARIC ISLANDS
-	BALEARES = {
+	BALES = {
 		capital = palma
 
 		country_rank = rank_kingdom
@@ -211,7 +211,7 @@ countries = {
 			ciudadela_de_menorca ibiza manacor palma pollensa
 		}
 		accepted_cultures = { iberian }
-		tolerated_cultures = { }
+		tolerated_cultures = { iberian }
 	}
 
 	##BALSA
@@ -226,11 +226,11 @@ countries = {
 			tavira
 		}
 		accepted_cultures = { lusitanian }
-		tolerated_cultures = { }
+		tolerated_cultures = { lusitanian }
 	}
 
-	##BERITOS
-	BERITOS = {
+	##BERIT
+	BERIT = {
 		capital = deir_qamar
 
 		country_rank = rank_kingdom
@@ -241,11 +241,11 @@ countries = {
 			deir_qamar
 		}
 		accepted_cultures = { phoenician }
-		tolerated_cultures = { }
+		tolerated_cultures = { phoenician }
 	}
 
-	##BYBLOS
-	BYBLOS = {
+	##BYBLO
+	BYBLO = {
 		capital = beirut
 
 		country_rank = rank_kingdom
@@ -256,11 +256,11 @@ countries = {
 			beirut
 		}
 		accepted_cultures = { phoenician }
-		tolerated_cultures = { }
+		tolerated_cultures = { phoenician }
 	}
 
-	##CARTEIA
-	CARTEI = {
+	##CARTI
+	CARTI = {
 		capital = gibraltar
 
 		country_rank = rank_kingdom
@@ -271,7 +271,7 @@ countries = {
 			algeciras gibraltar
 		}
 		accepted_cultures = { tartessian }
-		tolerated_cultures = { }
+		tolerated_cultures = { tartessian }
 	}
 
 	##DILMUN
@@ -286,11 +286,11 @@ countries = {
 			al_mashqar al_uqayr eglat_faisal manama sayhat zubarah
 		}
 		accepted_cultures = { dilmunite }
-		tolerated_cultures = { }
+		tolerated_cultures = { dilmunite }
 	}
 
 	##EL ARGAR
-	EL_ARGAR = {
+	ARGAR = {
 		capital = murcia
 
 		country_rank = rank_kingdom
@@ -302,7 +302,7 @@ countries = {
 			lorca mojacar mula murcia orgiva velez_rubio
 		}
 		accepted_cultures = { iberian }
-		tolerated_cultures = { }
+		tolerated_cultures = { iberian }
 	}
 
 	##ELAM
@@ -334,11 +334,11 @@ countries = {
 		own_control_core = {
 		}
 		accepted_cultures = { sicel }
-		tolerated_cultures = { }
+		tolerated_cultures = { sicel }
 	}
 
-	##ELYMIAN
-	ELYMIAN = {
+	##ELYMI
+	ELYMI = {
 		capital = palermo
 
 		country_rank = rank_kingdom
@@ -349,11 +349,11 @@ countries = {
 			mazara palermo salemi trapani
 		}
 		accepted_cultures = { sicel }
-		tolerated_cultures = { }
+		tolerated_cultures = { sicel }
 	}
 
-	##HABIRU
-	HABIRU = {
+	##HABIR
+	HABIR = {
 		capital = damascus
 
 		country_rank = rank_kingdom
@@ -367,8 +367,8 @@ countries = {
 		tolerated_cultures = { moabite }
 	}
 
-	##HAJASA
-	HAJASA = {
+	##HAJAS
+	HAJAS = {
 		capital = trebizond
 
 		country_rank = rank_kingdom
@@ -379,11 +379,11 @@ countries = {
 			artanuji batumi gorele khikhani khupati rize savsat surmene trebizond
 		}
 		accepted_cultures = { colchian }
-		tolerated_cultures = { }
+		tolerated_cultures = { colchian }
 	}
 
-	##HAPALLA
-	HAPALLA = {
+	##HAPAL
+	HAPAL = {
 		capital = usak
 
 		country_rank = rank_kingdom
@@ -395,11 +395,11 @@ countries = {
 			tavsanli usak
 		}
 		accepted_cultures = { luwian }
-		tolerated_cultures = { }
+		tolerated_cultures = { luwian }
 	}
 
-	##IAPYGIA
-	IAPYGIA = {
+	##IAPYG
+	IAPYG = {
 		capital = bari
 
 		country_rank = rank_kingdom
@@ -411,11 +411,11 @@ countries = {
 			rotondo sansevero
 		}
 		accepted_cultures = { samnite }
-		tolerated_cultures = { }
+		tolerated_cultures = { samnite }
 	}
 
-	##KASSITES
-	KASSITES = {
+	##KASSI
+	KASSI = {
 		capital = baghdad
 
 		country_rank = rank_kingdom
@@ -437,8 +437,8 @@ countries = {
 		tolerated_cultures = { babylonian sumerian }
 	}
 
-	##KUWALBASSA
-	KUWALBASSA = {
+	##KUWAL
+	KUWAL = {
 		capital = isparta
 
 		country_rank = rank_kingdom
@@ -449,7 +449,7 @@ countries = {
 			burdur egirdir isparta sarkikaraagac uluborlu yalvac
 		}
 		accepted_cultures = { luwian }
-		tolerated_cultures = { }
+		tolerated_cultures = { luwian }
 	}
 
 	##LIBYA
@@ -501,7 +501,7 @@ countries = {
 	}
 
 	##MALAGA
-	MALAKA = {
+	MALAK = {
 		capital = malaga
 
 		country_rank = rank_kingdom
@@ -512,7 +512,7 @@ countries = {
 			malaga
 		}
 		accepted_cultures = { tartessian }
-		tolerated_cultures = { }
+		tolerated_cultures = { tartessian }
 	}
 
 	##MASA
@@ -528,11 +528,11 @@ countries = {
 			kutahya simav sultanonu
 		}
 		accepted_cultures = { phrygian }
-		tolerated_cultures = { }
+		tolerated_cultures = { phrygian }
 	}
 
-	##MITANNI
-	MITANNI = {
+	##MITAN
+	MITAN = {
 		capital = urfa
 
 		country_rank = rank_kingdom
@@ -544,25 +544,11 @@ countries = {
 			mayyafariqin palu sason savur siverek sivrice urfa viransehir
 		}
 		accepted_cultures = { hurrian }
-		tolerated_cultures = { }
+		tolerated_cultures = { hurrian }
 	}
 
-	##MITTANI
-	MITTANI = {
-		capital = ankara
-
-		country_rank = rank_kingdom
-
-		include = "catholic_monarchy_not_present"
-
-		own_control_core = {
-		}
-		accepted_cultures = { hittite }
-		tolerated_cultures = { }
-	}
-
-	##NURAGIC
-	NURAGIC = {
+	##NURAG
+	NURAG = {
 		capital = cagliari
 
 		country_rank = rank_kingdom
@@ -591,11 +577,11 @@ countries = {
 			kastamonu kure_i_mamure mengen safranbolu sinop taskopru ulus yenicepazari
 		}
 		accepted_cultures = { palaic }
-		tolerated_cultures = { }
+		tolerated_cultures = { palaic }
 	}
 
-	##PARTHA
-	PARTHA = {
+	##PARTH
+	PARTH = {
 		capital = antalya
 
 		country_rank = rank_kingdom
@@ -607,7 +593,7 @@ countries = {
 			selinti seydisehir
 		}
 		accepted_cultures = { lycian }
-		tolerated_cultures = { }
+		tolerated_cultures = { lycian }
 	}
 
 	##SASU
@@ -625,8 +611,8 @@ countries = {
 		tolerated_cultures = { ammonite }
 	}
 
-	##SICANI
-	SICANI = {
+	##SICAN
+	SICAN = {
 		capital = palermo
 
 		country_rank = rank_kingdom
@@ -637,11 +623,11 @@ countries = {
 			bivona caltanisetta cefalu corleone girgenti sciacca termini
 		}
 		accepted_cultures = { sicel }
-		tolerated_cultures = { }
+		tolerated_cultures = { sicel }
 	}
 
-	##SICELS
-	SICELS = {
+	##SICEL
+	SICEL = {
 		capital = syracuse
 
 		country_rank = rank_kingdom
@@ -653,7 +639,7 @@ countries = {
 			syracuse terranovasic
 		}
 		accepted_cultures = { sicel }
-		tolerated_cultures = { }
+		tolerated_cultures = { sicel }
 	}
 
 	##SUTU
@@ -668,11 +654,11 @@ countries = {
 			arak huwwarin ithriya qaryatayn qastal salamiyya sukhnah tadmur taybah
 		}
 		accepted_cultures = { aramaean }
-		tolerated_cultures = { }
+		tolerated_cultures = { aramaean }
 	}
 
-	##TARDESSOS
-	TARDESSOS = {
+	##TARTS
+	TARTS = {
 		capital = sevilla
 
 		country_rank = rank_kingdom
@@ -685,11 +671,11 @@ countries = {
 			sevilla tarifa
 		}
 		accepted_cultures = { tartessian }
-		tolerated_cultures = { }
+		tolerated_cultures = { tartessian }
 	}
 
-	##TRIPOLI
-	TRIPOLI = {
+	##TRPOL
+	TRPOL = {
 		capital = tripoli_syria
 
 		country_rank = rank_kingdom
@@ -700,11 +686,11 @@ countries = {
 			baniyas tartus tripoli_syria
 		}
 		accepted_cultures = { libu }
-		tolerated_cultures = { }
+		tolerated_cultures = { libu }
 	}
 
-	##UGARIT
-	UGARIT = {
+	##UGART
+	UGART = {
 		capital = antioch
 
 		country_rank = rank_kingdom
@@ -715,11 +701,11 @@ countries = {
 			antioch latakia
 		}
 		accepted_cultures = { ugaritic }
-		tolerated_cultures = { }
+		tolerated_cultures = { ugaritic }
 	}
 
-	##WILUSA
-	WILUSA = {
+	##WILUS
+	WILUS = {
 		capital = canakkale
 
 		country_rank = rank_kingdom
@@ -731,7 +717,7 @@ countries = {
 			lapseki lemnos manyas mihalic
 		}
 		accepted_cultures = { luwian }
-		tolerated_cultures = { }
+		tolerated_cultures = { luwian }
 	}
 }
 }

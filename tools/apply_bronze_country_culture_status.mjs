@@ -171,9 +171,15 @@ function calculateCountryCultures(entry, locationCultures, cultureGroups) {
 }
 
 function formatCultureStatus(accepted, tolerated) {
-  const acceptedText = accepted.length ? ` ${accepted.join(" ")} ` : " ";
-  const toleratedText = tolerated.length ? ` ${tolerated.join(" ")} ` : " ";
+  const safeAccepted = accepted.length ? accepted : ["mycenaean"];
+  const safeTolerated = tolerated.length ? tolerated : safeAccepted;
+  const acceptedText = ` ${safeAccepted.join(" ")} `;
+  const toleratedText = ` ${safeTolerated.join(" ")} `;
   return `\n\t\taccepted_cultures = {${acceptedText}}\n\t\ttolerated_cultures = {${toleratedText}}`;
+}
+
+function effectiveTolerated(accepted, tolerated) {
+  return tolerated.length ? tolerated : accepted;
 }
 
 function applyCountryCultures() {
@@ -198,7 +204,7 @@ function applyCountryCultures() {
     output += input.slice(cursor, entry.start);
     output += nextBlock;
     cursor = entry.close + 1;
-    reports.push({ tag: entry.tag, accepted, tolerated });
+    reports.push({ tag: entry.tag, accepted, tolerated: effectiveTolerated(accepted, tolerated) });
 
     if (originalBlock === nextBlock) {
       // Still count it in the report; stable output is useful when rerunning.

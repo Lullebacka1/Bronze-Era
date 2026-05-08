@@ -1,7 +1,7 @@
 Bronze Era country culture status report
 ========================================
 
-Countries processed: 43
+Countries processed: 42
 
 0001G
 - accepted_cultures: mycenaean
@@ -14,70 +14,70 @@ Countries processed: 43
 - tolerated_cultures: luwian hattian palaic hurrian phrygian lukka
 ACRE
 - accepted_cultures: tjekker
-- tolerated_cultures: none
-ALASIYA
+- tolerated_cultures: tjekker
+ALASI
 - accepted_cultures: canaanite
-- tolerated_cultures: none
-AMURRU
+- tolerated_cultures: canaanite
+AMURU
 - accepted_cultures: amorite
-- tolerated_cultures: none
+- tolerated_cultures: amorite
 ARWAD
 - accepted_cultures: phoenician
-- tolerated_cultures: none
-ASSYRIA
+- tolerated_cultures: phoenician
+ASYRI
 - accepted_cultures: assyrian
 - tolerated_cultures: hurrian akkadian babylonian
 AZZI
 - accepted_cultures: urartian
-- tolerated_cultures: none
-BALEARES
+- tolerated_cultures: urartian
+BALES
 - accepted_cultures: iberian
-- tolerated_cultures: none
+- tolerated_cultures: iberian
 BALSA
 - accepted_cultures: lusitanian
-- tolerated_cultures: none
-BERITOS
+- tolerated_cultures: lusitanian
+BERIT
 - accepted_cultures: phoenician
-- tolerated_cultures: none
-BYBLOS
+- tolerated_cultures: phoenician
+BYBLO
 - accepted_cultures: phoenician
-- tolerated_cultures: none
-CARTEI
+- tolerated_cultures: phoenician
+CARTI
 - accepted_cultures: tartessian
-- tolerated_cultures: none
+- tolerated_cultures: tartessian
 DIMUN
 - accepted_cultures: dilmunite
-- tolerated_cultures: none
-EL_ARGAR
+- tolerated_cultures: dilmunite
+ARGAR
 - accepted_cultures: iberian
-- tolerated_cultures: none
+- tolerated_cultures: iberian
 ELAM
 - accepted_cultures: elamite
 - tolerated_cultures: gutian
 ELIMI
 - accepted_cultures: sicel
-- tolerated_cultures: none
-ELYMIAN
+- tolerated_cultures: sicel
+ELYMI
 - accepted_cultures: sicel
-- tolerated_cultures: none
-HABIRU
+- tolerated_cultures: sicel
+HABIR
 - accepted_cultures: aramaean
 - tolerated_cultures: moabite
-HAJASA
+HAJAS
 - accepted_cultures: colchian
-- tolerated_cultures: none
-HAPALLA
+- tolerated_cultures: colchian
+HAPAL
 - accepted_cultures: luwian
-- tolerated_cultures: none
-IAPYGIA
+- tolerated_cultures: luwian
+IAPYG
 - accepted_cultures: samnite
-- tolerated_cultures: none
-KASSITES
+- tolerated_cultures: samnite
+KASSI
 - accepted_cultures: kassite
 - tolerated_cultures: babylonian sumerian
-KUWALBASSA
+KUWAL
 - accepted_cultures: luwian
-- tolerated_cultures: none
+- tolerated_cultures: luwian
 LIBYA
 - accepted_cultures: libu
 - tolerated_cultures: garamantian
@@ -87,48 +87,45 @@ LUKKA
 MAGAN
 - accepted_cultures: arabian
 - tolerated_cultures: sabaean
-MALAKA
+MALAK
 - accepted_cultures: tartessian
-- tolerated_cultures: none
+- tolerated_cultures: tartessian
 MASA
 - accepted_cultures: phrygian
-- tolerated_cultures: none
-MITANNI
+- tolerated_cultures: phrygian
+MITAN
 - accepted_cultures: hurrian
-- tolerated_cultures: none
-MITTANI
-- accepted_cultures: hittite
-- tolerated_cultures: none
-NURAGIC
+- tolerated_cultures: hurrian
+NURAG
 - accepted_cultures: nuragic
 - tolerated_cultures: sherden
 PALA
 - accepted_cultures: palaic
-- tolerated_cultures: none
-PARTHA
+- tolerated_cultures: palaic
+PARTH
 - accepted_cultures: lycian
-- tolerated_cultures: none
+- tolerated_cultures: lycian
 SASU
 - accepted_cultures: edomite
 - tolerated_cultures: ammonite
-SICANI
+SICAN
 - accepted_cultures: sicel
-- tolerated_cultures: none
-SICELS
+- tolerated_cultures: sicel
+SICEL
 - accepted_cultures: sicel
-- tolerated_cultures: none
+- tolerated_cultures: sicel
 SUTU
 - accepted_cultures: aramaean
-- tolerated_cultures: none
-TARDESSOS
+- tolerated_cultures: aramaean
+TARTS
 - accepted_cultures: tartessian
-- tolerated_cultures: none
-TRIPOLI
+- tolerated_cultures: tartessian
+TRPOL
 - accepted_cultures: libu
-- tolerated_cultures: none
-UGARIT
+- tolerated_cultures: libu
+UGART
 - accepted_cultures: ugaritic
-- tolerated_cultures: none
-WILUSA
+- tolerated_cultures: ugaritic
+WILUS
 - accepted_cultures: luwian
-- tolerated_cultures: none
+- tolerated_cultures: luwian
