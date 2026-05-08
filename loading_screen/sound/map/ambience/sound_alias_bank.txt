@@ -1,0 +1,56 @@
+##### Bronze Era audio compatibility #####
+
+map_height = {
+	parameter = "MapHeight"
+	event = "silence"
+}
+
+river = {
+	parameter = "River"
+	event = "silence"
+}
+
+river_node = {
+	parameter = "River"
+	event = "silence"
+}
+
+masDataVegetationDensity = {
+	parameter = "masDataVegetationDensity"
+	event = "silence"
+}
+
+masDataTopologyElevation = {
+	parameter = "masDataTopologyElevation"
+	event = "silence"
+}
+
+masDataTopologyOcean = {
+	parameter = "masDataTopologyOcean"
+	event = "silence"
+}
+
+masDataTopologyOceanDeep = {
+	parameter = "masDataTopologyOceanDeep"
+	event = "silence"
+}
+
+masDataTopologyCoast = {
+	parameter = "masDataTopologyCoast"
+	event = "silence"
+}
+
+masDataTopologyLake = {
+	parameter = "masDataTopologyLake"
+	event = "silence"
+}
+
+masDataClimateZone = {
+	parameter = "masDataClimateZone"
+	event = "silence"
+}
+
+masDataCityDensity = {
+	parameter = "masDataCityDensity"
+	event = "silence"
+}
