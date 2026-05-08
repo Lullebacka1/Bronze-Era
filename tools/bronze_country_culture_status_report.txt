@@ -1,0 +1,134 @@
+Bronze Era country culture status report
+========================================
+
+Countries processed: 43
+
+0001G
+- accepted_cultures: mycenaean
+- tolerated_cultures: minoan ionian aeolian dorian arcadian cycladic
+0002G
+- accepted_cultures: upper_egyptian lower_egyptian
+- tolerated_cultures: nubian medjay libyan canaanite phoenician peleset
+0003G
+- accepted_cultures: hittite
+- tolerated_cultures: luwian hattian palaic hurrian phrygian lukka
+ACRE
+- accepted_cultures: tjekker
+- tolerated_cultures: none
+ALASIYA
+- accepted_cultures: canaanite
+- tolerated_cultures: none
+AMURRU
+- accepted_cultures: amorite
+- tolerated_cultures: none
+ARWAD
+- accepted_cultures: phoenician
+- tolerated_cultures: none
+ASSYRIA
+- accepted_cultures: assyrian
+- tolerated_cultures: hurrian akkadian babylonian
+AZZI
+- accepted_cultures: urartian
+- tolerated_cultures: none
+BALEARES
+- accepted_cultures: iberian
+- tolerated_cultures: none
+BALSA
+- accepted_cultures: lusitanian
+- tolerated_cultures: none
+BERITOS
+- accepted_cultures: phoenician
+- tolerated_cultures: none
+BYBLOS
+- accepted_cultures: phoenician
+- tolerated_cultures: none
+CARTEI
+- accepted_cultures: tartessian
+- tolerated_cultures: none
+DIMUN
+- accepted_cultures: dilmunite
+- tolerated_cultures: none
+EL_ARGAR
+- accepted_cultures: iberian
+- tolerated_cultures: none
+ELAM
+- accepted_cultures: elamite
+- tolerated_cultures: gutian
+ELIMI
+- accepted_cultures: sicel
+- tolerated_cultures: none
+ELYMIAN
+- accepted_cultures: sicel
+- tolerated_cultures: none
+HABIRU
+- accepted_cultures: aramaean
+- tolerated_cultures: moabite
+HAJASA
+- accepted_cultures: colchian
+- tolerated_cultures: none
+HAPALLA
+- accepted_cultures: luwian
+- tolerated_cultures: none
+IAPYGIA
+- accepted_cultures: samnite
+- tolerated_cultures: none
+KASSITES
+- accepted_cultures: kassite
+- tolerated_cultures: babylonian sumerian
+KUWALBASSA
+- accepted_cultures: luwian
+- tolerated_cultures: none
+LIBYA
+- accepted_cultures: libu
+- tolerated_cultures: garamantian
+LUKKA
+- accepted_cultures: lukka
+- tolerated_cultures: carian
+MAGAN
+- accepted_cultures: arabian
+- tolerated_cultures: sabaean
+MALAKA
+- accepted_cultures: tartessian
+- tolerated_cultures: none
+MASA
+- accepted_cultures: phrygian
+- tolerated_cultures: none
+MITANNI
+- accepted_cultures: hurrian
+- tolerated_cultures: none
+MITTANI
+- accepted_cultures: hittite
+- tolerated_cultures: none
+NURAGIC
+- accepted_cultures: nuragic
+- tolerated_cultures: sherden
+PALA
+- accepted_cultures: palaic
+- tolerated_cultures: none
+PARTHA
+- accepted_cultures: lycian
+- tolerated_cultures: none
+SASU
+- accepted_cultures: edomite
+- tolerated_cultures: ammonite
+SICANI
+- accepted_cultures: sicel
+- tolerated_cultures: none
+SICELS
+- accepted_cultures: sicel
+- tolerated_cultures: none
+SUTU
+- accepted_cultures: aramaean
+- tolerated_cultures: none
+TARDESSOS
+- accepted_cultures: tartessian
+- tolerated_cultures: none
+TRIPOLI
+- accepted_cultures: libu
+- tolerated_cultures: none
+UGARIT
+- accepted_cultures: ugaritic
+- tolerated_cultures: none
+WILUSA
+- accepted_cultures: luwian
+- tolerated_cultures: none
