@@ -14,70 +14,70 @@ Countries processed: 42
 - tolerated_cultures: luwian hattian palaic hurrian phrygian lukka
 ACRE
 - accepted_cultures: tjekker
-- tolerated_cultures: tjekker
+- tolerated_cultures: none
 ALASI
 - accepted_cultures: canaanite
-- tolerated_cultures: canaanite
+- tolerated_cultures: none
 AMURU
 - accepted_cultures: amorite
-- tolerated_cultures: amorite
+- tolerated_cultures: none
 ARWAD
 - accepted_cultures: phoenician
-- tolerated_cultures: phoenician
+- tolerated_cultures: none
 ASYRI
 - accepted_cultures: assyrian
 - tolerated_cultures: hurrian akkadian babylonian
 AZZI
 - accepted_cultures: urartian
-- tolerated_cultures: urartian
+- tolerated_cultures: none
 BALES
 - accepted_cultures: iberian
-- tolerated_cultures: iberian
+- tolerated_cultures: none
 BALSA
 - accepted_cultures: lusitanian
-- tolerated_cultures: lusitanian
+- tolerated_cultures: none
 BERIT
 - accepted_cultures: phoenician
-- tolerated_cultures: phoenician
+- tolerated_cultures: none
 BYBLO
 - accepted_cultures: phoenician
-- tolerated_cultures: phoenician
+- tolerated_cultures: none
 CARTI
 - accepted_cultures: tartessian
-- tolerated_cultures: tartessian
+- tolerated_cultures: none
 DIMUN
 - accepted_cultures: dilmunite
-- tolerated_cultures: dilmunite
+- tolerated_cultures: none
 ARGAR
 - accepted_cultures: iberian
-- tolerated_cultures: iberian
+- tolerated_cultures: none
 ELAM
 - accepted_cultures: elamite
 - tolerated_cultures: gutian
 ELIMI
 - accepted_cultures: sicel
-- tolerated_cultures: sicel
+- tolerated_cultures: none
 ELYMI
 - accepted_cultures: sicel
-- tolerated_cultures: sicel
+- tolerated_cultures: none
 HABIR
 - accepted_cultures: aramaean
 - tolerated_cultures: moabite
 HAJAS
 - accepted_cultures: colchian
-- tolerated_cultures: colchian
+- tolerated_cultures: none
 HAPAL
 - accepted_cultures: luwian
-- tolerated_cultures: luwian
+- tolerated_cultures: none
 IAPYG
 - accepted_cultures: samnite
-- tolerated_cultures: samnite
+- tolerated_cultures: none
 KASSI
 - accepted_cultures: kassite
 - tolerated_cultures: babylonian sumerian
 KUWAL
 - accepted_cultures: luwian
-- tolerated_cultures: luwian
+- tolerated_cultures: none
 LIBYA
 - accepted_cultures: libu
 - tolerated_cultures: garamantian
@@ -89,43 +89,43 @@ MAGAN
 - tolerated_cultures: sabaean
 MALAK
 - accepted_cultures: tartessian
-- tolerated_cultures: tartessian
+- tolerated_cultures: none
 MASA
 - accepted_cultures: phrygian
-- tolerated_cultures: phrygian
+- tolerated_cultures: none
 MITAN
 - accepted_cultures: hurrian
-- tolerated_cultures: hurrian
+- tolerated_cultures: none
 NURAG
 - accepted_cultures: nuragic
 - tolerated_cultures: sherden
 PALA
 - accepted_cultures: palaic
-- tolerated_cultures: palaic
+- tolerated_cultures: none
 PARTH
 - accepted_cultures: lycian
-- tolerated_cultures: lycian
+- tolerated_cultures: none
 SASU
 - accepted_cultures: edomite
 - tolerated_cultures: ammonite
 SICAN
 - accepted_cultures: sicel
-- tolerated_cultures: sicel
+- tolerated_cultures: none
 SICEL
 - accepted_cultures: sicel
-- tolerated_cultures: sicel
+- tolerated_cultures: none
 SUTU
 - accepted_cultures: aramaean
-- tolerated_cultures: aramaean
+- tolerated_cultures: none
 TARTS
 - accepted_cultures: tartessian
-- tolerated_cultures: tartessian
+- tolerated_cultures: none
 TRPOL
 - accepted_cultures: libu
-- tolerated_cultures: libu
+- tolerated_cultures: none
 UGART
 - accepted_cultures: ugaritic
-- tolerated_cultures: ugaritic
+- tolerated_cultures: none
 WILUS
 - accepted_cultures: luwian
-- tolerated_cultures: luwian
+- tolerated_cultures: none

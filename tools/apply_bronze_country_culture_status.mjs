@@ -172,14 +172,14 @@ function calculateCountryCultures(entry, locationCultures, cultureGroups) {
 
 function formatCultureStatus(accepted, tolerated) {
   const safeAccepted = accepted.length ? accepted : ["mycenaean"];
-  const safeTolerated = tolerated.length ? tolerated : safeAccepted;
+  const safeTolerated = tolerated.filter((culture) => !safeAccepted.includes(culture));
   const acceptedText = ` ${safeAccepted.join(" ")} `;
-  const toleratedText = ` ${safeTolerated.join(" ")} `;
+  const toleratedText = safeTolerated.length ? ` ${safeTolerated.join(" ")} ` : " ";
   return `\n\t\taccepted_cultures = {${acceptedText}}\n\t\ttolerated_cultures = {${toleratedText}}`;
 }
 
 function effectiveTolerated(accepted, tolerated) {
-  return tolerated.length ? tolerated : accepted;
+  return tolerated.filter((culture) => !accepted.includes(culture));
 }
 
 function applyCountryCultures() {

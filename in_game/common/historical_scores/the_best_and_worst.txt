@@ -1,0 +1,49 @@
+hs_egypt = {
+	tag = 0002G
+	score = 40000
+}
+
+hs_hatti = {
+	tag = 0003G
+	score = 38000
+}
+
+hs_mykenai = {
+	tag = 0001G
+	score = 36000
+}
+
+hs_assur = {
+	tag = ASYRI
+	score = 34000
+}
+
+hs_elam = {
+	tag = ELAM
+	score = 32000
+}
+
+hs_babylon = {
+	tag = KASSI
+	score = 30000
+}
+
+hs_ugarit = {
+	tag = UGART
+	score = 28000
+}
+
+hs_alasiya = {
+	tag = ALASI
+	score = 26000
+}
+
+hs_tartessos = {
+	tag = TARTS
+	score = 24000
+}
+
+hs_nuraghe = {
+	tag = NURAG
+	score = 22000
+}

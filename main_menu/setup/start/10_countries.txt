@@ -112,7 +112,7 @@ countries = {
 			sidon
 		}
 		accepted_cultures = { tjekker }
-		tolerated_cultures = { tjekker }
+		tolerated_cultures = { }
 	}
 
 	##CYPRUS
@@ -127,7 +127,7 @@ countries = {
 			famagusta kyrenia larnaca limassol morphou nicosia_cyp paphos
 		}
 		accepted_cultures = { canaanite }
-		tolerated_cultures = { canaanite }
+		tolerated_cultures = { }
 	}
 
 	##AMURU
@@ -142,7 +142,7 @@ countries = {
 			baalbek hama homs idlib kafartab khanaser marrat masyaf nabek qusayr
 		}
 		accepted_cultures = { amorite }
-		tolerated_cultures = { amorite }
+		tolerated_cultures = { }
 	}
 
 	##ARWAD
@@ -157,7 +157,7 @@ countries = {
 			jableh
 		}
 		accepted_cultures = { phoenician }
-		tolerated_cultures = { phoenician }
+		tolerated_cultures = { }
 	}
 
 	##ASHURITE EMPIRE
@@ -196,7 +196,7 @@ countries = {
 			parkhali tekman tercan tortum varto
 		}
 		accepted_cultures = { urartian }
-		tolerated_cultures = { urartian }
+		tolerated_cultures = { }
 	}
 
 	##BALEARIC ISLANDS
@@ -211,7 +211,7 @@ countries = {
 			ciudadela_de_menorca ibiza manacor palma pollensa
 		}
 		accepted_cultures = { iberian }
-		tolerated_cultures = { iberian }
+		tolerated_cultures = { }
 	}
 
 	##BALSA
@@ -226,7 +226,7 @@ countries = {
 			tavira
 		}
 		accepted_cultures = { lusitanian }
-		tolerated_cultures = { lusitanian }
+		tolerated_cultures = { }
 	}
 
 	##BERIT
@@ -241,7 +241,7 @@ countries = {
 			deir_qamar
 		}
 		accepted_cultures = { phoenician }
-		tolerated_cultures = { phoenician }
+		tolerated_cultures = { }
 	}
 
 	##BYBLO
@@ -256,7 +256,7 @@ countries = {
 			beirut
 		}
 		accepted_cultures = { phoenician }
-		tolerated_cultures = { phoenician }
+		tolerated_cultures = { }
 	}
 
 	##CARTI
@@ -271,7 +271,7 @@ countries = {
 			algeciras gibraltar
 		}
 		accepted_cultures = { tartessian }
-		tolerated_cultures = { tartessian }
+		tolerated_cultures = { }
 	}
 
 	##DILMUN
@@ -286,7 +286,7 @@ countries = {
 			al_mashqar al_uqayr eglat_faisal manama sayhat zubarah
 		}
 		accepted_cultures = { dilmunite }
-		tolerated_cultures = { dilmunite }
+		tolerated_cultures = { }
 	}
 
 	##EL ARGAR
@@ -302,7 +302,7 @@ countries = {
 			lorca mojacar mula murcia orgiva velez_rubio
 		}
 		accepted_cultures = { iberian }
-		tolerated_cultures = { iberian }
+		tolerated_cultures = { }
 	}
 
 	##ELAM
@@ -334,7 +334,7 @@ countries = {
 		own_control_core = {
 		}
 		accepted_cultures = { sicel }
-		tolerated_cultures = { sicel }
+		tolerated_cultures = { }
 	}
 
 	##ELYMI
@@ -349,7 +349,7 @@ countries = {
 			mazara palermo salemi trapani
 		}
 		accepted_cultures = { sicel }
-		tolerated_cultures = { sicel }
+		tolerated_cultures = { }
 	}
 
 	##HABIR
@@ -379,7 +379,7 @@ countries = {
 			artanuji batumi gorele khikhani khupati rize savsat surmene trebizond
 		}
 		accepted_cultures = { colchian }
-		tolerated_cultures = { colchian }
+		tolerated_cultures = { }
 	}
 
 	##HAPAL
@@ -395,7 +395,7 @@ countries = {
 			tavsanli usak
 		}
 		accepted_cultures = { luwian }
-		tolerated_cultures = { luwian }
+		tolerated_cultures = { }
 	}
 
 	##IAPYG
@@ -411,7 +411,7 @@ countries = {
 			rotondo sansevero
 		}
 		accepted_cultures = { samnite }
-		tolerated_cultures = { samnite }
+		tolerated_cultures = { }
 	}
 
 	##KASSI
@@ -449,7 +449,7 @@ countries = {
 			burdur egirdir isparta sarkikaraagac uluborlu yalvac
 		}
 		accepted_cultures = { luwian }
-		tolerated_cultures = { luwian }
+		tolerated_cultures = { }
 	}
 
 	##LIBYA
@@ -512,7 +512,7 @@ countries = {
 			malaga
 		}
 		accepted_cultures = { tartessian }
-		tolerated_cultures = { tartessian }
+		tolerated_cultures = { }
 	}
 
 	##MASA
@@ -528,7 +528,7 @@ countries = {
 			kutahya simav sultanonu
 		}
 		accepted_cultures = { phrygian }
-		tolerated_cultures = { phrygian }
+		tolerated_cultures = { }
 	}
 
 	##MITAN
@@ -544,7 +544,7 @@ countries = {
 			mayyafariqin palu sason savur siverek sivrice urfa viransehir
 		}
 		accepted_cultures = { hurrian }
-		tolerated_cultures = { hurrian }
+		tolerated_cultures = { }
 	}
 
 	##NURAG
@@ -577,7 +577,7 @@ countries = {
 			kastamonu kure_i_mamure mengen safranbolu sinop taskopru ulus yenicepazari
 		}
 		accepted_cultures = { palaic }
-		tolerated_cultures = { palaic }
+		tolerated_cultures = { }
 	}
 
 	##PARTH
@@ -593,7 +593,7 @@ countries = {
 			selinti seydisehir
 		}
 		accepted_cultures = { lycian }
-		tolerated_cultures = { lycian }
+		tolerated_cultures = { }
 	}
 
 	##SASU
@@ -623,7 +623,7 @@ countries = {
 			bivona caltanisetta cefalu corleone girgenti sciacca termini
 		}
 		accepted_cultures = { sicel }
-		tolerated_cultures = { sicel }
+		tolerated_cultures = { }
 	}
 
 	##SICEL
@@ -639,7 +639,7 @@ countries = {
 			syracuse terranovasic
 		}
 		accepted_cultures = { sicel }
-		tolerated_cultures = { sicel }
+		tolerated_cultures = { }
 	}
 
 	##SUTU
@@ -654,7 +654,7 @@ countries = {
 			arak huwwarin ithriya qaryatayn qastal salamiyya sukhnah tadmur taybah
 		}
 		accepted_cultures = { aramaean }
-		tolerated_cultures = { aramaean }
+		tolerated_cultures = { }
 	}
 
 	##TARTS
@@ -671,7 +671,7 @@ countries = {
 			sevilla tarifa
 		}
 		accepted_cultures = { tartessian }
-		tolerated_cultures = { tartessian }
+		tolerated_cultures = { }
 	}
 
 	##TRPOL
@@ -686,7 +686,7 @@ countries = {
 			baniyas tartus tripoli_syria
 		}
 		accepted_cultures = { libu }
-		tolerated_cultures = { libu }
+		tolerated_cultures = { }
 	}
 
 	##UGART
@@ -701,7 +701,7 @@ countries = {
 			antioch latakia
 		}
 		accepted_cultures = { ugaritic }
-		tolerated_cultures = { ugaritic }
+		tolerated_cultures = { }
 	}
 
 	##WILUS
@@ -717,7 +717,7 @@ countries = {
 			lapseki lemnos manyas mihalic
 		}
 		accepted_cultures = { luwian }
-		tolerated_cultures = { luwian }
+		tolerated_cultures = { }
 	}
 }
 }
