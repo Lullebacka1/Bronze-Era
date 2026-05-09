@@ -1,14 +1,14 @@
 Bronze Era automated country integration pass
 ============================================
 
-Modified source tags: 106
+Modified source tags: 116
 Original comparison tags: 72
-Final countries: 106
-New countries from modified Bronze source: 34
-New countries inserted into setup this run: 28
-Existing countries updated in setup: 78
-Obsolete current countries removed: 28
-Unique owned locations: 1358
+Final countries: 116
+New countries from modified Bronze source: 44
+New countries inserted into setup this run: 10
+Existing countries updated in setup: 106
+Obsolete current countries removed: 0
+Unique owned locations: 1490
 Invalid locations skipped: 0
 Duplicate conflicts resolved: 0
 Duplicate same-tag locations removed: 0

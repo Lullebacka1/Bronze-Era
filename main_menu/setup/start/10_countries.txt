@@ -2295,5 +2295,205 @@ countries = {
 	
 	}
 
+	##ARAXES
+	ARAX = {
+		capital = hadishahr
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			hadishahr julfa khoy marand nakhchivan nazok_olya qarahziaoddin tatev
+		}
+		accepted_cultures = { saka gutian }
+		tolerated_cultures = { urartian }
+	}
+
+	##GETAE
+	GETAE = {
+		capital = bucharest
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			bucharest cegani cernavoda comana giurgiu harsova lichiresti orasul_de_floci
+			slobozia
+		}
+		accepted_cultures = { tei }
+		tolerated_cultures = {  }
+	}
+
+	##IONIA
+	IONIA = {
+		capital = babadag
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			babadag constanta enisala pangalia
+		}
+		accepted_cultures = { tei ezero }
+		tolerated_cultures = {  }
+	}
+
+	##MANNAEA
+	MANNA = {
+		capital = aghkand
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			aghkand barza bukan hashtrud khameneh mahabad malekan maragheh
+			miandoab miyaneh osnavieh sain salmas santeh sarab tabriz
+			takht_e_soleyman tufarqan ujan urmia
+		}
+		accepted_cultures = { mede gutian }
+		tolerated_cultures = {  }
+	}
+
+	##MOESIA
+	MOESI = {
+		capital = cherven
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			cherven drastar razgrad ruse tutrakan
+		}
+		accepted_cultures = { ezero }
+		tolerated_cultures = {  }
+	}
+
+	##POTULATENSIS
+	POTUL = {
+		capital = bozhenitsa
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			bozhenitsa dobrolak hotalich lovech pleven
+		}
+		accepted_cultures = { ezero }
+		tolerated_cultures = {  }
+	}
+
+	##SCYTHIANS
+	SCYTH = {
+		capital = achit_nuur
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			achit_nuur arkat ashchyozek ayagoz bakanas bortala boyauli burqin
+			dagandely dahra_sasykkol dungene espe hoboksar ilanbalyk jeminay kandysu
+			kara_irtysh karamergen kashkanteniz kayalyk kaynar_atbai khurgan kokpekty koksala
+			koktuma kurchum kusak kyzylsay lepsy manas moiynty mukur
+			onguday oskemen sagabuyen sarybulak sayak shar shemonayevskoye takhir
+			tansyk targabatay tekeli tokrau toli tsagaan_usun ulungur urghtbulaq
+			ust_koksa utbulaq zhamankul zhamshy zhanaarka zhekdeliq zmeinogorsk zyryan
+		}
+		accepted_cultures = { saka ferghana }
+		tolerated_cultures = { andronovo }
+	}
+
+	##ULIBA
+	ULIBA = {
+		capital = bitlis
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			bitlis hizan mus
+		}
+		accepted_cultures = { gutian urartian }
+		tolerated_cultures = {  }
+	}
+
+	##URARTU
+	URATU = {
+		capital = amberd
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			amberd bayazit bjni gladzor igdir kagizman karakilise khor_virap
+			maku malazgirt siah_cheshmeh sotk surmali tutak yerevan
+		}
+		accepted_cultures = { urartian gutian }
+		tolerated_cultures = {  }
+	}
+
+	##WALAN
+	WALAN = {
+		capital = ahar
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			ahar goris heris kaleybar kapan_armenia mardanaqom qahqaheh
+		}
+		accepted_cultures = { mede urartian }
+		tolerated_cultures = {  }
+	}
+
 	}
 }

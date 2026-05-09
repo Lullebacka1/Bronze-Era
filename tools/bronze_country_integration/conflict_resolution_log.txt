@@ -1,13 +1,13 @@
 Bronze Era country integration conflict log
 ===========================================
 
-Modified assignment tags read: 106
+Modified assignment tags read: 116
 Original assignment tags read: 72
-Final assignment tags written: 106
-Unique owned locations written: 1358
+Final assignment tags written: 116
+Unique owned locations written: 1490
 
 Comparison summary:
-- new tags in modified source: 34
+- new tags in modified source: 44
 - modified existing tags: 1
 - unchanged existing tags: 71
 - removed tags from original source: 0
@@ -44,6 +44,11 @@ Normalized tags:
 - VENETIAN -> VENET
 - VESTINIAN -> VESTI
 - VOLSCIAN -> VOLSC
+- ARAXES -> ARAX
+- MANNAEA -> MANNA
+- MOESIA -> MOESI
+- POTULATENSIS -> POTUL
+- SCYTHIANS -> SCYTH
 
 Original-only fallback tags kept:
 none

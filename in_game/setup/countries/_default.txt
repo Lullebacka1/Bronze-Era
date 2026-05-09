@@ -438,3 +438,43 @@ VOLSC = {
 	color = rgb { 91 106 205 }
 	color2 = rgb { 110 27 27 }
 }
+ARAX = {
+	color = rgb { 157 144 150 }
+	color2 = rgb { 110 27 27 }
+}
+GETAE = {
+	color = rgb { 47 218 55 }
+	color2 = rgb { 110 27 27 }
+}
+IONIA = {
+	color = rgb { 205 196 96 }
+	color2 = rgb { 110 27 27 }
+}
+MANNA = {
+	color = rgb { 207 38 106 }
+	color2 = rgb { 110 27 27 }
+}
+MOESI = {
+	color = rgb { 216 151 59 }
+	color2 = rgb { 110 27 27 }
+}
+POTUL = {
+	color = rgb { 203 87 87 }
+	color2 = rgb { 110 27 27 }
+}
+SCYTH = {
+	color = rgb { 204 199 56 }
+	color2 = rgb { 110 27 27 }
+}
+ULIBA = {
+	color = rgb { 79 203 42 }
+	color2 = rgb { 110 27 27 }
+}
+URATU = {
+	color = rgb { 196 83 79 }
+	color2 = rgb { 110 27 27 }
+}
+WALAN = {
+	color = rgb { 155 210 45 }
+	color2 = rgb { 110 27 27 }
+}

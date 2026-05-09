@@ -2100,3 +2100,205 @@ WILUS = {
         rodoscuk
     }
 }
+
+ARAX = {
+    color = { 157 144 150 }
+
+    own_control_core = {
+        hadishahr
+        julfa
+        khoy
+        marand
+        nakhchivan
+        nazok_olya
+        qarahziaoddin
+        tatev
+    }
+}
+
+GETAE = {
+    color = { 47 218 55 }
+
+    own_control_core = {
+        bucharest
+        cegani
+        cernavoda
+        comana
+        giurgiu
+        harsova
+        lichiresti
+        orasul_de_floci
+        slobozia
+    }
+}
+
+IONIA = {
+    color = { 205 196 96 }
+
+    own_control_core = {
+        babadag
+        constanta
+        enisala
+        pangalia
+    }
+}
+
+MANNA = {
+    color = { 207 38 106 }
+
+    own_control_core = {
+        aghkand
+        barza
+        bukan
+        hashtrud
+        khameneh
+        mahabad
+        malekan
+        maragheh
+        miandoab
+        miyaneh
+        osnavieh
+        sain
+        salmas
+        santeh
+        sarab
+        tabriz
+        takht_e_soleyman
+        tufarqan
+        ujan
+        urmia
+    }
+}
+
+MOESI = {
+    color = { 216 151 59 }
+
+    own_control_core = {
+        cherven
+        drastar
+        razgrad
+        ruse
+        tutrakan
+    }
+}
+
+POTUL = {
+    color = { 203 87 87 }
+
+    own_control_core = {
+        bozhenitsa
+        dobrolak
+        hotalich
+        lovech
+        pleven
+    }
+}
+
+SCYTH = {
+    color = { 204 199 56 }
+
+    own_control_core = {
+        achit_nuur
+        arkat
+        ashchyozek
+        ayagoz
+        bakanas
+        bortala
+        boyauli
+        burqin
+        dagandely
+        dahra_sasykkol
+        dungene
+        espe
+        hoboksar
+        ilanbalyk
+        jeminay
+        kandysu
+        kara_irtysh
+        karamergen
+        kashkanteniz
+        kayalyk
+        kaynar_atbai
+        khurgan
+        kokpekty
+        koksala
+        koktuma
+        kurchum
+        kusak
+        kyzylsay
+        lepsy
+        manas
+        moiynty
+        mukur
+        onguday
+        oskemen
+        sagabuyen
+        sarybulak
+        sayak
+        shar
+        shemonayevskoye
+        takhir
+        tansyk
+        targabatay
+        tekeli
+        tokrau
+        toli
+        tsagaan_usun
+        ulungur
+        urghtbulaq
+        ust_koksa
+        utbulaq
+        zhamankul
+        zhamshy
+        zhanaarka
+        zhekdeliq
+        zmeinogorsk
+        zyryan
+    }
+}
+
+ULIBA = {
+    color = { 79 203 42 }
+
+    own_control_core = {
+        bitlis
+        hizan
+        mus
+    }
+}
+
+URATU = {
+    color = { 196 83 79 }
+
+    own_control_core = {
+        amberd
+        bayazit
+        bjni
+        gladzor
+        igdir
+        kagizman
+        karakilise
+        khor_virap
+        maku
+        malazgirt
+        siah_cheshmeh
+        sotk
+        surmali
+        tutak
+        yerevan
+    }
+}
+
+WALAN = {
+    color = { 155 210 45 }
+
+    own_control_core = {
+        ahar
+        goris
+        heris
+        kaleybar
+        kapan_armenia
+        mardanaqom
+        qahqaheh
+    }
+}

@@ -5,6 +5,7 @@ const root = path.resolve(".");
 
 const paths = {
   modifiedPainter: "tools/location_painter_inputs/modified_00_location_painter.txt",
+  manualPainter: "tools/location_painter_inputs/manual_new_bronze_countries.txt",
   originalPainter: "tools/location_painter_inputs/original_bronze_era_control_core_location_painter_assignments.txt",
   countries: "main_menu/setup/start/10_countries.txt",
   defaultCountries: "in_game/setup/countries/_default.txt",
@@ -91,6 +92,7 @@ function normalizeTag(rawTag) {
   const clean = rawTag.trim().replace(/\s+/g, "_").replace(/[^A-Za-z0-9_]/g, "_").toUpperCase();
   const tagOverrides = new Map([
     ["AEQUIAN", "AEQUI"],
+    ["ARAXES", "ARAX"],
     ["CAMUNIC", "CAMUN"],
     ["CARNIAN", "CARNI"],
     ["DAESITIAN", "DAESI"],
@@ -102,12 +104,16 @@ function normalizeTag(rawTag) {
     ["LEPONTIC", "LEPON"],
     ["LIBURNIA", "LIBUR"],
     ["LIGURIA", "LIGUR"],
+    ["MANNAEA", "MANNA"],
     ["MARSIAN", "MARSI"],
+    ["MOESIA", "MOESI"],
     ["NORD_PICENE", "NPICE"],
     ["OENOTRIAN", "OENOT"],
     ["PAGONIA", "PAGON"],
+    ["POTULATENSIS", "POTUL"],
     ["RAETIC", "RAETI"],
     ["SCORDISCIAN", "SCORD"],
+    ["SCYTHIANS", "SCYTH"],
     ["SENOMES", "SENOM"],
     ["SENONIAN", "SENON"],
     ["SOUTH_PICENE", "SPICE"],
@@ -224,19 +230,19 @@ function mergeAssignments(modified, original, validLocations) {
   }
 
   const orderedAssignments = [...byTag.values()].sort((a, b) => {
-    const sourceRank = (source) => (source === "modified" ? 0 : 1);
+    const sourceRank = (source) => (source === "modified" ? 0 : source === "manual" ? 1 : 2);
     return sourceRank(a.source) - sourceRank(b.source) || a.order - b.order || a.tag.localeCompare(b.tag);
   });
 
   const finalOwner = new Map();
   const finalPriority = new Map();
   for (const assignment of orderedAssignments) {
-    const priority = assignment.source === "modified" ? 2 : 1;
+    const priority = assignment.source === "manual" ? 3 : assignment.source === "modified" ? 2 : 1;
     for (const location of assignment.locations) {
       if (finalOwner.has(location)) {
         const previous = finalOwner.get(location);
         const previousPriority = finalPriority.get(location);
-        const keepNew = priority > previousPriority || (priority === previousPriority && assignment.source === "modified");
+        const keepNew = priority > previousPriority;
         if (keepNew) {
           duplicateConflicts.push(`${location}: ${previous} -> ${assignment.tag}`);
           finalOwner.set(location, assignment.tag);
@@ -335,6 +341,7 @@ function titleFromTag(tag) {
     ["0002G", "Egypt"],
     ["0003G", "Hatti"],
     ["AEQUI", "Aequi"],
+    ["ARAX", "Araxes"],
     ["CAMUN", "Camunic"],
     ["CARNI", "Carnian"],
     ["DAESI", "Daesitian"],
@@ -346,12 +353,16 @@ function titleFromTag(tag) {
     ["LEPON", "Lepontic"],
     ["LIBUR", "Liburnian"],
     ["LIGUR", "Ligurian"],
+    ["MANNA", "Mannaea"],
     ["MARSI", "Marsian"],
+    ["MOESI", "Moesia"],
     ["NPICE", "North Picene"],
     ["OENOT", "Oenotrian"],
     ["PAGON", "Pagonia"],
+    ["POTUL", "Potulatensis"],
     ["RAETI", "Raetic"],
     ["SCORD", "Scordiscian"],
+    ["SCYTH", "Scythians"],
     ["SENOM", "Senomes"],
     ["SENON", "Senonian"],
     ["SPICE", "South Picene"],
@@ -359,6 +370,7 @@ function titleFromTag(tag) {
     ["TARAN", "Tarantine"],
     ["TAURI", "Tauriscian"],
     ["UMBRI", "Umbrian"],
+    ["URATU", "Urartu"],
     ["VENET", "Venetic"],
     ["VESTI", "Vestinian"],
     ["VOLSC", "Volscian"],
@@ -675,17 +687,21 @@ function validateFinal(finalAssignments) {
 
 function main() {
   const modifiedAssignments = parsePainterFile(paths.modifiedPainter, "modified");
+  const manualAssignments = fs.existsSync(abs(paths.manualPainter))
+    ? parsePainterFile(paths.manualPainter, "manual")
+    : [];
+  const sourceAssignments = [...modifiedAssignments, ...manualAssignments];
   const originalAssignments = parsePainterFile(paths.originalPainter, "original");
   const validLocations = parseValidOwnableLocations();
   const popCultureWeights = parsePopCultureWeights();
-  const merge = mergeAssignments(modifiedAssignments, originalAssignments, validLocations);
+  const merge = mergeAssignments(sourceAssignments, originalAssignments, validLocations);
   validateFinal(merge.finalAssignments);
   const countryStats = writeCountries(merge.finalAssignments, popCultureWeights);
   upsertDefaultCountryBlocks(merge.finalAssignments, countryStats.obsoleteTags);
   upsertLocalization(merge.finalAssignments, countryStats.obsoleteTags);
   writeNormalizedPainter(merge.finalAssignments);
   writeFinalSetupReviewFile(merge.finalAssignments);
-  writeReports(merge, countryStats, merge.finalAssignments, originalAssignments, modifiedAssignments);
+  writeReports(merge, countryStats, merge.finalAssignments, originalAssignments, sourceAssignments);
   console.log(readText(reportPaths.summary));
 }
 

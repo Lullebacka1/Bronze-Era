@@ -1,0 +1,195 @@
+# Manual Bronze Era country additions requested after the main Location Painter merge.
+
+location_painter_assignments = {
+    ARAXES = {
+        color = { 157 144 150 }
+        locations = {
+            hadishahr
+            julfa
+            khoy
+            marand
+            nakhchivan
+            nazok_olya
+            qarahziaoddin
+            tatev
+        }
+    }
+
+    GETAE = {
+        color = { 47 218 55 }
+        locations = {
+            bucharest
+            cegani
+            cernavoda
+            comana
+            giurgiu
+            harsova
+            lichiresti
+            orasul_de_floci
+            slobozia
+        }
+    }
+
+    IONIA = {
+        color = { 205 196 96 }
+        locations = {
+            babadag
+            constanta
+            enisala
+            pangalia
+        }
+    }
+
+    MANNAEA = {
+        color = { 207 38 106 }
+        locations = {
+            aghkand
+            barza
+            bukan
+            hashtrud
+            khameneh
+            mahabad
+            malekan
+            maragheh
+            miandoab
+            miyaneh
+            osnavieh
+            sain
+            salmas
+            santeh
+            sarab
+            tabriz
+            takht_e_soleyman
+            tufarqan
+            ujan
+            urmia
+        }
+    }
+
+    MOESIA = {
+        color = { 216 151 59 }
+        locations = {
+            cherven
+            drastar
+            razgrad
+            ruse
+            tutrakan
+        }
+    }
+
+    POTULATENSIS = {
+        color = { 203 87 87 }
+        locations = {
+            bozhenitsa
+            dobrolak
+            hotalich
+            lovech
+            pleven
+        }
+    }
+
+    SCYTHIANS = {
+        color = { 204 199 56 }
+        locations = {
+            achit_nuur
+            arkat
+            ashchyozek
+            ayagoz
+            bakanas
+            bortala
+            boyauli
+            burqin
+            dagandely
+            dahra_sasykkol
+            dungene
+            espe
+            hoboksar
+            ilanbalyk
+            jeminay
+            kandysu
+            kara_irtysh
+            karamergen
+            kashkanteniz
+            kayalyk
+            kaynar_atbai
+            khurgan
+            kokpekty
+            koksala
+            koktuma
+            kurchum
+            kusak
+            kyzylsay
+            lepsy
+            manas
+            moiynty
+            mukur
+            onguday
+            oskemen
+            sagabuyen
+            sarybulak
+            sayak
+            shar
+            shemonayevskoye
+            takhir
+            tansyk
+            targabatay
+            tekeli
+            tokrau
+            toli
+            tsagaan_usun
+            ulungur
+            urghtbulaq
+            ust_koksa
+            utbulaq
+            zhamankul
+            zhamshy
+            zhanaarka
+            zhekdeliq
+            zmeinogorsk
+            zyryan
+        }
+    }
+
+    ULIBA = {
+        color = { 79 203 42 }
+        locations = {
+            bitlis
+            hizan
+            mus
+        }
+    }
+
+    URATU = {
+        color = { 196 83 79 }
+        locations = {
+            amberd
+            bayazit
+            bjni
+            gladzor
+            igdir
+            kagizman
+            karakilise
+            khor_virap
+            maku
+            malazgirt
+            siah_cheshmeh
+            sotk
+            surmali
+            tutak
+            yerevan
+        }
+    }
+
+    WALAN = {
+        color = { 155 210 45 }
+        locations = {
+            ahar
+            goris
+            heris
+            kaleybar
+            kapan_armenia
+            mardanaqom
+            qahqaheh
+        }
+    }
+}
