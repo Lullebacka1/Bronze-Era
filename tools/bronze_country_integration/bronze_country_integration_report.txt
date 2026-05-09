@@ -5,8 +5,8 @@ Modified source tags: 116
 Original comparison tags: 72
 Final countries: 116
 New countries from modified Bronze source: 44
-New countries inserted into setup this run: 10
-Existing countries updated in setup: 106
+New countries inserted into setup this run: 0
+Existing countries updated in setup: 116
 Obsolete current countries removed: 0
 Unique owned locations: 1490
 Invalid locations skipped: 0

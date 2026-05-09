@@ -1,0 +1,30 @@
+Bronze Era French localization sync
+===================================
+
+localization\french\Bronze_country_names_l_french.yml, main_menu\localization\french\Bronze_country_names_l_french.yml
+- keys: 234
+- manual French values: 234
+- preserved existing French values: 0
+- English fallback values: 0
+- English header valid: yes
+
+localization\french\Bronze_cultures_l_french.yml, main_menu\localization\french\Bronze_cultures_l_french.yml
+- keys: 455
+- manual French values: 0
+- preserved existing French values: 455
+- English fallback values: 0
+- English header valid: yes
+
+localization\french\Bronze_languages_l_french.yml, main_menu\localization\french\Bronze_languages_l_french.yml
+- keys: 33
+- manual French values: 0
+- preserved existing French values: 33
+- English fallback values: 0
+- English header valid: yes
+
+localization\french\Bronze_religions_l_french.yml, main_menu\localization\french\Bronze_religions_l_french.yml
+- keys: 326
+- manual French values: 0
+- preserved existing French values: 326
+- English fallback values: 0
+- English header valid: yes

@@ -171,7 +171,7 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##AGRIA
+	##AGRIANES
 	AGRIA = {
 		capital = dupnitsa
 
@@ -192,7 +192,7 @@ countries = {
 	
 	}
 
-	##ALASI
+	##ALASHIYA
 	ALASI = {
 		capital = famagusta
 
@@ -213,7 +213,7 @@ countries = {
 	
 	}
 
-	##ALMOP
+	##ALMOPIANS
 	ALMOP = {
 		capital = debar
 
@@ -234,7 +234,7 @@ countries = {
 	
 	}
 
-	##ALZIY
+	##ALZIYA
 	ALZIY = {
 		capital = ahlat
 
@@ -255,7 +255,7 @@ countries = {
 	
 	}
 
-	##AMURU
+	##AMURRU
 	AMURU = {
 		capital = baalbek
 
@@ -277,7 +277,7 @@ countries = {
 	
 	}
 
-	##ARDIA
+	##ARDIAIOI
 	ARDIA = {
 		capital = borac
 
@@ -301,7 +301,7 @@ countries = {
 	
 	}
 
-	##ARGAR
+	##EL ARGAR
 	ARGAR = {
 		capital = adra
 
@@ -344,7 +344,7 @@ countries = {
 	
 	}
 
-	##ASYRI
+	##ASSYRIA
 	ASYRI = {
 		capital = abu_kemal
 
@@ -393,7 +393,7 @@ countries = {
 	
 	}
 
-	##BALES
+	##BALEARIC ISLES
 	BALES = {
 		capital = ciudadela_de_menorca
 
@@ -456,7 +456,7 @@ countries = {
 	
 	}
 
-	##BOLI
+	##BOII
 	BOLI = {
 		capital = bobbio
 
@@ -476,7 +476,7 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##BOSPH
+	##THRACIAN BOSPORUS
 	BOSPH = {
 		capital = ahtopol
 
@@ -498,7 +498,7 @@ countries = {
 	
 	}
 
-	##BOTTI
+	##BOTTIAEA
 	BOTTI = {
 		capital = edessa
 
@@ -520,7 +520,7 @@ countries = {
 	
 	}
 
-	##BOULI
+	##BOULINOI
 	BOULI = {
 		capital = glamoc
 
@@ -541,7 +541,7 @@ countries = {
 	
 	}
 
-	##BYBLO
+	##BYBLOS
 	BYBLO = {
 		capital = beirut
 
@@ -581,7 +581,7 @@ countries = {
 		tolerated_cultures = { camunni }
 	}
 
-	##CAONI
+	##CHAONIA
 	CAONI = {
 		capital = avlonya
 
@@ -621,7 +621,7 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##CARTI
+	##CARTEIA
 	CARTI = {
 		capital = algeciras
 
@@ -662,7 +662,7 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##DARDN
+	##DARDANIANS
 	DARDN = {
 		capital = arilje
 
@@ -688,7 +688,7 @@ countries = {
 	
 	}
 
-	##DERRN
+	##DERRONES
 	DERRN = {
 		capital = glubocica
 
@@ -709,7 +709,7 @@ countries = {
 	
 	}
 
-	##DIMUN
+	##DILMUN
 	DIMUN = {
 		capital = al_mashqar
 
@@ -730,7 +730,7 @@ countries = {
 	
 	}
 
-	##DOBER
+	##DOBERES
 	DOBER = {
 		capital = bansko
 
@@ -751,7 +751,7 @@ countries = {
 	
 	}
 
-	##DOLOP
+	##DOLOPIA
 	DOLOP = {
 		capital = arta
 
@@ -796,7 +796,7 @@ countries = {
 	
 	}
 
-	##ELMIT
+	##ELIMIOTIS
 	ELMIT = {
 		capital = grevena
 
@@ -817,7 +817,7 @@ countries = {
 	
 	}
 
-	##ELYMI
+	##ELYMIANS
 	ELYMI = {
 		capital = mazara
 
@@ -838,7 +838,7 @@ countries = {
 	
 	}
 
-	##ETRUSCAN
+	##ETRURIA
 	ETRUS = {
 		capital = arezzo
 
@@ -882,7 +882,7 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##HABIR
+	##HABIRU
 	HABIR = {
 		capital = azraq
 
@@ -904,7 +904,7 @@ countries = {
 	
 	}
 
-	##HAJAS
+	##HAYASA
 	HAJAS = {
 		capital = artanuji
 
@@ -926,7 +926,7 @@ countries = {
 	
 	}
 
-	##HAPAL
+	##HAPALLA
 	HAPAL = {
 		capital = alasehir
 
@@ -969,7 +969,7 @@ countries = {
 		tolerated_cultures = { germanic lepontic polada }
 	}
 
-	##HIERA
+	##HIERASTAMNOI
 	HIERA = {
 		capital = kaseg
 
@@ -1009,7 +1009,7 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##HYLLO
+	##HYLLOI
 	HYLLO = {
 		capital = brac
 
@@ -1030,7 +1030,7 @@ countries = {
 	
 	}
 
-	##IAPYG
+	##IAPYGIA
 	IAPYG = {
 		capital = altamura
 
@@ -1072,7 +1072,7 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##KARKA
+	##KARKAMISSA
 	KARKA = {
 		capital = jabar
 
@@ -1115,7 +1115,7 @@ countries = {
 	
 	}
 
-	##KASSI
+	##KASSITES
 	KASSI = {
 		capital = abadan
 
@@ -1163,7 +1163,7 @@ countries = {
 	
 	}
 
-	##LAEAE
+	##LAEAEANS
 	LAEAE = {
 		capital = kostenets
 
@@ -1184,7 +1184,7 @@ countries = {
 	
 	}
 
-	##LATIN
+	##LATINS
 	LATIN = {
 		capital = anagni
 
@@ -1353,7 +1353,7 @@ countries = {
 	
 	}
 
-	##MALAK
+	##MALAKA
 	MALAK = {
 		capital = malaga
 
@@ -1374,7 +1374,7 @@ countries = {
 	
 	}
 
-	##MANIO
+	##MANIOI
 	MANIO = {
 		capital = metkovic
 
@@ -1458,7 +1458,7 @@ countries = {
 	
 	}
 
-	##MITAN
+	##MITANNI
 	MITAN = {
 		capital = adakli
 
@@ -1481,7 +1481,7 @@ countries = {
 	
 	}
 
-	##MOLOS
+	##MOLOSSIA
 	MOLOS = {
 		capital = argyrokastro
 
@@ -1502,7 +1502,7 @@ countries = {
 	
 	}
 
-	##NESTI
+	##NESTIOI
 	NESTI = {
 		capital = drijeva
 
@@ -1542,7 +1542,7 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##NORIC
+	##NORICI
 	NORIC = {
 		capital = celje
 
@@ -1563,7 +1563,7 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##NURAG
+	##NURAGIC SARDINIA
 	NURAG = {
 		capital = ales
 
@@ -1606,7 +1606,7 @@ countries = {
 		tolerated_cultures = { ausonian gaulish }
 	}
 
-	##OSCAN
+	##OSCI
 	OSCAN = {
 		capital = acerenza
 
@@ -1627,7 +1627,7 @@ countries = {
 		tolerated_cultures = { oenotrian }
 	}
 
-	##PAEON
+	##PAEONIA
 	PAEON = {
 		capital = bitola
 
@@ -1649,7 +1649,7 @@ countries = {
 	
 	}
 
-	##PAEOP
+	##PAEOPLAE
 	PAEOP = {
 		capital = beden
 
@@ -1714,7 +1714,7 @@ countries = {
 	
 	}
 
-	##PARTH
+	##PARTHA
 	PARTH = {
 		capital = alaiye
 
@@ -1758,7 +1758,7 @@ countries = {
 		tolerated_cultures = { raeti camunni }
 	}
 
-	##SAHIR
+	##SAHIRIYA
 	SAHIR = {
 		capital = akcasehir
 
@@ -1821,7 +1821,7 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##SEHA
+	##SEHA RIVER LAND
 	SEHA = {
 		capital = akhisar
 
@@ -1881,7 +1881,7 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##SICAN
+	##SICANIA
 	SICAN = {
 		capital = bivona
 
@@ -1902,7 +1902,7 @@ countries = {
 	
 	}
 
-	##SICEL
+	##SICELS
 	SICEL = {
 		capital = caltagirone
 
@@ -1924,7 +1924,7 @@ countries = {
 	
 	}
 
-	##SIROP
+	##SIROPAINES
 	SIROP = {
 		capital = drama
 
@@ -2025,7 +2025,7 @@ countries = {
 		tolerated_cultures = { oenotrian }
 	}
 
-	##TARTS
+	##TARTESSOS
 	TARTS = {
 		capital = arcos_de_la_frontera
 
@@ -2047,7 +2047,7 @@ countries = {
 	
 	}
 
-	##TAULA
+	##TAULANTIOI
 	TAULA = {
 		capital = bar_cg
 
@@ -2089,7 +2089,7 @@ countries = {
 		tolerated_cultures = { urnfield }
 	}
 
-	##TESPR
+	##THESPROTIA
 	TESPR = {
 		capital = ioannina
 
@@ -2110,7 +2110,7 @@ countries = {
 	
 	}
 
-	##THRAC
+	##THRACE
 	THRAC = {
 		capital = bukelon
 
@@ -2132,7 +2132,7 @@ countries = {
 	
 	}
 
-	##TORRI
+	##TORREAN CORSICA
 	TORRI = {
 		capital = ajaccio
 
@@ -2151,7 +2151,7 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##TRPOL
+	##TRIPOLI
 	TRPOL = {
 		capital = baniyas
 
@@ -2172,7 +2172,7 @@ countries = {
 	
 	}
 
-	##UGART
+	##UGARIT
 	UGART = {
 		capital = antioch
 
@@ -2272,7 +2272,7 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##WILUS
+	##WILUSA
 	WILUS = {
 		capital = ayvacik
 

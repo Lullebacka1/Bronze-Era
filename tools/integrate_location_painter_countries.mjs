@@ -9,7 +9,10 @@ const paths = {
   originalPainter: "tools/location_painter_inputs/original_bronze_era_control_core_location_painter_assignments.txt",
   countries: "main_menu/setup/start/10_countries.txt",
   defaultCountries: "in_game/setup/countries/_default.txt",
-  localization: "main_menu/localization/english/Bronze_country_names_l_english.yml",
+  localizationFiles: [
+    "localization/english/Bronze_country_names_l_english.yml",
+    "main_menu/localization/english/Bronze_country_names_l_english.yml",
+  ],
   pops: "main_menu/setup/start/06_pops.txt",
   locationTemplates: "in_game/map_data/location_templates.txt",
   normalizedPainter: "in_game/setup/location_painter/00_location_painter.txt",
@@ -33,9 +36,18 @@ function readText(rel) {
   return fs.readFileSync(abs(rel), "utf8").replace(/\r\n/g, "\n").replace(/\r/g, "\n");
 }
 
+function readFirstExisting(rels, fallback = "") {
+  for (const rel of rels) {
+    if (fs.existsSync(abs(rel))) return readText(rel);
+  }
+  return fallback;
+}
+
 function writeText(rel, text) {
   fs.mkdirSync(path.dirname(abs(rel)), { recursive: true });
-  fs.writeFileSync(abs(rel), text.replace(/\n/g, "\r\n"), "utf8");
+  const normalized = text.replace(/^\uFEFF/, "").replace(/\n/g, "\r\n");
+  const content = rel.includes("localization/") && rel.endsWith(".yml") ? `\uFEFF${normalized}` : normalized;
+  fs.writeFileSync(abs(rel), content, "utf8");
 }
 
 function findBlockEnd(text, openIndex) {
@@ -340,40 +352,120 @@ function titleFromTag(tag) {
     ["0001G", "Mycenae"],
     ["0002G", "Egypt"],
     ["0003G", "Hatti"],
+    ["ACRE", "Acre"],
+    ["AEDUI", "Aedui"],
     ["AEQUI", "Aequi"],
+    ["AGRIA", "Agrianes"],
+    ["ALASI", "Alashiya"],
+    ["ALMOP", "Almopians"],
+    ["ALZIY", "Alziya"],
+    ["AMURU", "Amurru"],
     ["ARAX", "Araxes"],
+    ["ARDIA", "Ardiaioi"],
+    ["ARGAR", "El Argar"],
+    ["ARWAD", "Arwad"],
+    ["ASYRI", "Assyria"],
+    ["AZZI", "Azzi"],
+    ["BALES", "Balearic Isles"],
+    ["BALSA", "Balsa"],
+    ["BERIT", "Berit"],
+    ["BOLI", "Boii"],
+    ["BOSPH", "Thracian Bosporus"],
+    ["BOTTI", "Bottiaea"],
+    ["BOULI", "Boulinoi"],
+    ["BYBLO", "Byblos"],
     ["CAMUN", "Camunic"],
+    ["CAONI", "Chaonia"],
     ["CARNI", "Carnian"],
+    ["CARTI", "Carteia"],
     ["DAESI", "Daesitian"],
-    ["ETRUS", "Etruscan"],
+    ["DARDN", "Dardanians"],
+    ["DERRN", "Derrones"],
+    ["DIMUN", "Dilmun"],
+    ["DOBER", "Doberes"],
+    ["DOLOP", "Dolopia"],
+    ["ELAM", "Elam"],
+    ["ELIMI", "Elimi"],
+    ["ELMIT", "Elimiotis"],
+    ["ELYMI", "Elymians"],
+    ["ETRUS", "Etruria"],
     ["FALIS", "Faliscan"],
+    ["GETAE", "Getae"],
+    ["HABIR", "Habiru"],
+    ["HAJAS", "Hayasa"],
+    ["HAPAL", "Hapalla"],
     ["HELVE", "Helvetii"],
+    ["HIERA", "Hierastamnoi"],
     ["HISTI", "Histrian"],
+    ["HYLLO", "Hylloi"],
+    ["IAPYG", "Iapygia"],
+    ["IONIA", "Ionia"],
     ["INSUB", "Insubres"],
+    ["KARKA", "Karkamissa"],
+    ["KASKA", "Kaska"],
+    ["KASSI", "Kassites"],
+    ["KUWAL", "Kuwal"],
+    ["LAEAE", "Laeaeans"],
+    ["LATIN", "Latins"],
+    ["LAZPA", "Lazpa"],
     ["LEPON", "Lepontic"],
     ["LIBUR", "Liburnian"],
+    ["LIBYA", "Libya"],
     ["LIGUR", "Ligurian"],
+    ["LUKKA", "Lukka"],
+    ["MAGAN", "Magan"],
+    ["MALAK", "Malaka"],
+    ["MANIO", "Manioi"],
     ["MANNA", "Mannaea"],
     ["MARSI", "Marsian"],
+    ["MASA", "Masa"],
+    ["MIRA", "Mira"],
+    ["MITAN", "Mitanni"],
     ["MOESI", "Moesia"],
+    ["MOLOS", "Molossia"],
+    ["NESTI", "Nestioi"],
     ["NPICE", "North Picene"],
+    ["NORIC", "Norici"],
+    ["NURAG", "Nuragic Sardinia"],
     ["OENOT", "Oenotrian"],
+    ["OSCAN", "Osci"],
+    ["PAEON", "Paeonia"],
+    ["PAEOP", "Paeoplae"],
     ["PAGON", "Pagonia"],
+    ["PALA", "Pala"],
+    ["PARTH", "Partha"],
     ["POTUL", "Potulatensis"],
     ["RAETI", "Raetic"],
+    ["SAHIR", "Sahiriya"],
+    ["SASU", "Sasu"],
     ["SCORD", "Scordiscian"],
     ["SCYTH", "Scythians"],
     ["SENOM", "Senomes"],
     ["SENON", "Senonian"],
+    ["SEHA", "Seha River Land"],
+    ["SICAN", "Sicania"],
+    ["SICEL", "Sicels"],
+    ["SIROP", "Siropaines"],
     ["SPICE", "South Picene"],
     ["SURRT", "Surrtenia"],
+    ["SUTU", "Sutu"],
     ["TARAN", "Tarantine"],
+    ["TARTS", "Tartessos"],
+    ["TAULA", "Taulantioi"],
     ["TAURI", "Tauriscian"],
+    ["TESPR", "Thesprotia"],
+    ["THRAC", "Thrace"],
+    ["TORRI", "Torrean Corsica"],
+    ["TRPOL", "Tripoli"],
+    ["UGART", "Ugarit"],
+    ["ULIBA", "Uliba"],
     ["UMBRI", "Umbrian"],
     ["URATU", "Urartu"],
     ["VENET", "Venetic"],
     ["VESTI", "Vestinian"],
     ["VOLSC", "Volscian"],
+    ["WALAN", "Walan"],
+    ["WILUS", "Wilusa"],
   ]);
   if (overrides.has(tag)) return overrides.get(tag);
   return tag
@@ -386,6 +478,51 @@ function titleFromTag(tag) {
 function adjectiveFromName(name) {
   if (/(ian|ean|ic|ite|i|n)$/i.test(name)) return name;
   return `${name}ian`;
+}
+
+function adjectiveFromTag(tag, fallbackName) {
+  const overrides = new Map([
+    ["0001G", "Mycenaean"], ["0002G", "Egyptian"], ["0003G", "Hittite"],
+    ["ACRE", "Acrean"], ["AEDUI", "Aeduan"], ["AEQUI", "Aequian"],
+    ["AGRIA", "Agrianian"], ["ALASI", "Alashiyan"], ["ALMOP", "Almopian"],
+    ["ALZIY", "Alziyan"], ["AMURU", "Amurrite"], ["ARAX", "Araxian"],
+    ["ARDIA", "Ardiaean"], ["ARGAR", "Argaric"], ["ARWAD", "Arwadian"],
+    ["ASYRI", "Assyrian"], ["AZZI", "Azzian"], ["BALES", "Balearic"],
+    ["BALSA", "Balsan"], ["BERIT", "Beritian"], ["BOLI", "Boian"],
+    ["BOSPH", "Bosphoran"], ["BOTTI", "Bottiaean"], ["BOULI", "Boulinian"],
+    ["BYBLO", "Byblian"], ["CAMUN", "Camunnian"], ["CAONI", "Chaonian"],
+    ["CARNI", "Carnian"], ["CARTI", "Carteian"], ["DAESI", "Daesitiate"],
+    ["DARDN", "Dardanian"], ["DERRN", "Derronian"], ["DIMUN", "Dilmunite"],
+    ["DOBER", "Doberian"], ["DOLOP", "Dolopian"], ["ELAM", "Elamite"],
+    ["ELIMI", "Elimian"], ["ELMIT", "Elimiote"], ["ELYMI", "Elymian"],
+    ["ETRUS", "Etruscan"], ["FALIS", "Faliscan"], ["GETAE", "Getic"],
+    ["HABIR", "Habiru"], ["HAJAS", "Hayasan"], ["HAPAL", "Hapallan"],
+    ["HELVE", "Helvetian"], ["HIERA", "Hierastamnian"], ["HISTI", "Histrian"],
+    ["HYLLO", "Hyllian"], ["IAPYG", "Iapygian"], ["IONIA", "Ionian"],
+    ["INSUB", "Insubrian"], ["KARKA", "Karkamissan"], ["KASKA", "Kaskan"],
+    ["KASSI", "Kassite"], ["KUWAL", "Kuwalian"], ["LAEAE", "Laeaean"],
+    ["LATIN", "Latin"], ["LAZPA", "Lazpan"], ["LEPON", "Lepontic"],
+    ["LIBUR", "Liburnian"], ["LIBYA", "Libyan"], ["LIGUR", "Ligurian"],
+    ["LUKKA", "Lukkan"], ["MAGAN", "Maganite"], ["MALAK", "Malakan"],
+    ["MANIO", "Manian"], ["MANNA", "Mannaean"], ["MARSI", "Marsian"],
+    ["MASA", "Masan"], ["MIRA", "Miran"], ["MITAN", "Mitannian"],
+    ["MOESI", "Moesian"], ["MOLOS", "Molossian"], ["NESTI", "Nestian"],
+    ["NPICE", "North Picene"], ["NORIC", "Noric"], ["NURAG", "Nuragic"],
+    ["OENOT", "Oenotrian"], ["OSCAN", "Oscan"], ["PAEON", "Paeonian"],
+    ["PAEOP", "Paeoplaean"], ["PAGON", "Pagonian"], ["PALA", "Palaic"],
+    ["PARTH", "Parthan"], ["POTUL", "Potulatensian"], ["RAETI", "Raetian"],
+    ["SAHIR", "Sahiriyan"], ["SASU", "Sasuan"], ["SCORD", "Scordiscian"],
+    ["SCYTH", "Scythian"], ["SEHA", "Sehan"], ["SENOM", "Senomanian"],
+    ["SENON", "Senonian"], ["SICAN", "Sicanian"], ["SICEL", "Sicel"],
+    ["SIROP", "Siropainian"], ["SPICE", "South Picene"], ["SURRT", "Surrtenian"],
+    ["SUTU", "Sutuan"], ["TARAN", "Tarantine"], ["TARTS", "Tartessian"],
+    ["TAULA", "Taulantian"], ["TAURI", "Tauriscian"], ["TESPR", "Thesprotian"],
+    ["THRAC", "Thracian"], ["TORRI", "Torrean"], ["TRPOL", "Tripolitan"],
+    ["UGART", "Ugaritic"], ["ULIBA", "Uliban"], ["UMBRI", "Umbrian"],
+    ["URATU", "Urartian"], ["VENET", "Venetic"], ["VESTI", "Vestinian"],
+    ["VOLSC", "Volscian"], ["WALAN", "Walan"], ["WILUS", "Wilusan"],
+  ]);
+  return overrides.get(tag) || adjectiveFromName(fallbackName);
 }
 
 function buildCountryBody(assignment, existingBody, popCultureWeights) {
@@ -497,22 +634,22 @@ function normalizeLocalizationHeader(text) {
 }
 
 function upsertLocalization(finalAssignments, obsoleteTags) {
-  let text = normalizeLocalizationHeader(readText(paths.localization));
+  let text = normalizeLocalizationHeader(readFirstExisting(paths.localizationFiles, "l_english:\n"));
   for (const tag of obsoleteTags) {
     text = text.replace(new RegExp(`^ ${tag}: .*\\n?`, "m"), "");
     text = text.replace(new RegExp(`^ ${tag}_ADJ: .*\\n?`, "m"), "");
   }
   for (const assignment of finalAssignments) {
     const name = titleFromTag(assignment.tag);
-    const adjective = adjectiveFromName(name);
+    const adjective = adjectiveFromTag(assignment.tag, name);
     const nameLine = ` ${assignment.tag}: "${name}"`;
     const adjLine = ` ${assignment.tag}_ADJ: "${adjective}"`;
     const nameRe = new RegExp(`^ ${assignment.tag}: .*$`, "m");
     const adjRe = new RegExp(`^ ${assignment.tag}_ADJ: .*$`, "m");
-    text = nameRe.test(text) ? text : `${text.replace(/\s*$/, "\n")}${nameLine}\n`;
-    text = adjRe.test(text) ? text : `${text.replace(/\s*$/, "\n")}${adjLine}\n`;
+    text = nameRe.test(text) ? text.replace(nameRe, nameLine) : `${text.replace(/\s*$/, "\n")}${nameLine}\n`;
+    text = adjRe.test(text) ? text.replace(adjRe, adjLine) : `${text.replace(/\s*$/, "\n")}${adjLine}\n`;
   }
-  writeText(paths.localization, text);
+  for (const rel of paths.localizationFiles) writeText(rel, text);
 }
 
 function writeNormalizedPainter(finalAssignments) {
