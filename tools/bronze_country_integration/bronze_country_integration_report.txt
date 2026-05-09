@@ -1,18 +1,23 @@
 Bronze Era automated country integration pass
 ============================================
 
-Modified source tags: 116
+Modified source tags: 149
 Original comparison tags: 72
-Final countries: 116
-New countries from modified Bronze source: 44
+Final countries: 149
+New countries from modified Bronze source: 77
 New countries inserted into setup this run: 0
-Existing countries updated in setup: 116
+Existing countries updated in setup: 149
 Obsolete current countries removed: 0
-Unique owned locations: 1490
+Unique owned locations: 1675
 Invalid locations skipped: 0
 Duplicate conflicts resolved: 0
 Duplicate same-tag locations removed: 0
+Countries missing identity: 0
+Invalid identity references: 0
+Low accepted-culture coverage warnings: 0
+Low religion-stability coverage warnings: 0
 
 Final setup review file: tools/bronze_country_integration/final_merged_country_setup.txt
+Country identity report: tools/bronze_country_integration/country_stability_identity_report.txt
 Normalized painter file: in_game/setup/location_painter/00_location_painter.txt
 EU5 country setup updated: main_menu/setup/start/10_countries.txt

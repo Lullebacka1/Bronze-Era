@@ -1,13 +1,13 @@
 Bronze Era country integration conflict log
 ===========================================
 
-Modified assignment tags read: 116
+Modified assignment tags read: 149
 Original assignment tags read: 72
-Final assignment tags written: 116
-Unique owned locations written: 1490
+Final assignment tags written: 149
+Unique owned locations written: 1675
 
 Comparison summary:
-- new tags in modified source: 44
+- new tags in modified source: 77
 - modified existing tags: 1
 - unchanged existing tags: 71
 - removed tags from original source: 0
@@ -49,6 +49,38 @@ Normalized tags:
 - MOESIA -> MOESI
 - POTULATENSIS -> POTUL
 - SCYTHIANS -> SCYTH
+- ABRINCATES -> ABRIN
+- ALLOBROGES -> ALLOB
+- AMBARRES -> AMBAR
+- ARVERNES -> ARVER
+- BAIOCASSES -> BAIOC
+- BITURIGES -> BITUR
+- CALETES -> CALET
+- CORIOSOLITES -> CORIO
+- ESUVIEN -> ESUVI
+- GABALES -> GABAL
+- LEXOVIENS -> LEXOV
+- NAMNETES -> NAMNE
+- OSISMES -> OSISM
+- PICTON -> PICTO
+- REDONES -> REDON
+- RUTENES -> RUTEN
+- SALLUVIENS -> SALLU
+- SANTANS -> SANTN
+- SEGUSIAVES -> SEGUS
+- SEQUANCES -> SEQUA
+- SIBUZATES -> SIBUZ
+- SOTIATES -> SOTIA
+- TARDELLE -> TARDL
+- UNELLES -> UNELL
+- VASATES -> VASAT
+- VELIOCASSES -> VELIO
+- VELLAVES -> VELLA
+- VENETES -> VENES
+- VIDUCASSES -> VIDUC
+- VOCANCES -> VOCAN
+- VOLQUES_ARECOMIQUES -> VOLAR
+- VOLQUES_TECTOSAGES -> VOLTE
 
 Original-only fallback tags kept:
 none

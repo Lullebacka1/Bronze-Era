@@ -478,3 +478,135 @@ WALAN = {
 	color = rgb { 155 210 45 }
 	color2 = rgb { 110 27 27 }
 }
+ABRIN = {
+	color = rgb { 74 219 222 }
+	color2 = rgb { 110 27 27 }
+}
+ALLOB = {
+	color = rgb { 101 47 188 }
+	color2 = rgb { 110 27 27 }
+}
+AMBAR = {
+	color = rgb { 153 178 138 }
+	color2 = rgb { 110 27 27 }
+}
+ANDES = {
+	color = rgb { 178 191 59 }
+	color2 = rgb { 110 27 27 }
+}
+ARVER = {
+	color = rgb { 206 197 95 }
+	color2 = rgb { 110 27 27 }
+}
+BAIOC = {
+	color = rgb { 109 209 51 }
+	color2 = rgb { 110 27 27 }
+}
+BITUR = {
+	color = rgb { 59 159 181 }
+	color2 = rgb { 110 27 27 }
+}
+CALET = {
+	color = rgb { 223 78 86 }
+	color2 = rgb { 110 27 27 }
+}
+CORIO = {
+	color = rgb { 217 187 38 }
+	color2 = rgb { 110 27 27 }
+}
+ESUVI = {
+	color = rgb { 205 96 172 }
+	color2 = rgb { 110 27 27 }
+}
+GABAL = {
+	color = rgb { 106 58 203 }
+	color2 = rgb { 110 27 27 }
+}
+LEXOV = {
+	color = rgb { 77 209 213 }
+	color2 = rgb { 110 27 27 }
+}
+NAMNE = {
+	color = rgb { 199 56 130 }
+	color2 = rgb { 110 27 27 }
+}
+OSISM = {
+	color = rgb { 210 99 25 }
+	color2 = rgb { 110 27 27 }
+}
+PICTO = {
+	color = rgb { 70 221 90 }
+	color2 = rgb { 110 27 27 }
+}
+REDON = {
+	color = rgb { 65 130 220 }
+	color2 = rgb { 110 27 27 }
+}
+RUTEN = {
+	color = rgb { 208 200 47 }
+	color2 = rgb { 110 27 27 }
+}
+SALLU = {
+	color = rgb { 213 89 83 }
+	color2 = rgb { 110 27 27 }
+}
+SANTN = {
+	color = rgb { 85 216 135 }
+	color2 = rgb { 110 27 27 }
+}
+SEGUS = {
+	color = rgb { 88 62 218 }
+	color2 = rgb { 110 27 27 }
+}
+SEQUA = {
+	color = rgb { 191 49 70 }
+	color2 = rgb { 110 27 27 }
+}
+SIBUZ = {
+	color = rgb { 81 204 210 }
+	color2 = rgb { 110 27 27 }
+}
+SOTIA = {
+	color = rgb { 218 78 155 }
+	color2 = rgb { 110 27 27 }
+}
+TARDL = {
+	color = rgb { 205 100 55 }
+	color2 = rgb { 110 27 27 }
+}
+UNELL = {
+	color = rgb { 122 48 213 }
+	color2 = rgb { 110 27 27 }
+}
+VASAT = {
+	color = rgb { 204 172 40 }
+	color2 = rgb { 110 27 27 }
+}
+VELIO = {
+	color = rgb { 135 52 183 }
+	color2 = rgb { 110 27 27 }
+}
+VELLA = {
+	color = rgb { 43 106 222 }
+	color2 = rgb { 110 27 27 }
+}
+VENES = {
+	color = rgb { 86 179 184 }
+	color2 = rgb { 110 27 27 }
+}
+VIDUC = {
+	color = rgb { 204 178 224 }
+	color2 = rgb { 110 27 27 }
+}
+VOCAN = {
+	color = rgb { 157 75 216 }
+	color2 = rgb { 110 27 27 }
+}
+VOLAR = {
+	color = rgb { 118 57 192 }
+	color2 = rgb { 110 27 27 }
+}
+VOLTE = {
+	color = rgb { 173 221 70 }
+	color2 = rgb { 110 27 27 }
+}

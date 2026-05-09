@@ -3,6 +3,9 @@
 
 0001G = {
     color = { 63 18 186 }
+    primary_culture = mycenaean
+    state_religion = mycenaean
+    tolerated_religions = { hellenic minoan }
 
     own_control_core = {
         amorgos
@@ -86,6 +89,9 @@
 
 0002G = {
     color = { 54 201 103 }
+    primary_culture = upper_egyptian
+    state_religion = kemetic
+    tolerated_religions = { canaanite berber_pagan phoenician nubian sea_peoples_cult }
 
     own_control_core = {
         acre
@@ -157,6 +163,9 @@
 
 0003G = {
     color = { 18 131 217 }
+    primary_culture = hittite
+    state_religion = hittite
+    tolerated_religions = { luwian caucasian_pagan sea_peoples_cult hattian }
 
     own_control_core = {
         adana
@@ -303,6 +312,9 @@
 
 ACRE = {
     color = { 198 188 47 }
+    primary_culture = tjekker
+    state_religion = sea_peoples_cult
+    tolerated_religions = {  }
 
     own_control_core = {
         sidon
@@ -311,6 +323,9 @@ ACRE = {
 
 AEDUI = {
     color = { 224 56 93 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = { nordic_pagan }
 
     own_control_core = {
         baume
@@ -328,6 +343,9 @@ AEDUI = {
 
 AEQUI = {
     color = { 168 44 195 }
+    primary_culture = apennine
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         celano
@@ -336,6 +354,9 @@ AEQUI = {
 
 AGRIA = {
     color = { 48 83 187 }
+    primary_culture = ezero
+    state_religion = thracian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         dupnitsa
@@ -350,6 +371,9 @@ AGRIA = {
 
 ALASI = {
     color = { 62 208 147 }
+    primary_culture = canaanite
+    state_religion = canaanite
+    tolerated_religions = {  }
 
     own_control_core = {
         famagusta
@@ -364,6 +388,9 @@ ALASI = {
 
 ALMOP = {
     color = { 75 203 52 }
+    primary_culture = paeonian
+    state_religion = thracian_pagan
+    tolerated_religions = { illyrian_pagan }
 
     own_control_core = {
         debar
@@ -377,6 +404,9 @@ ALMOP = {
 
 ALZIY = {
     color = { 200 45 187 }
+    primary_culture = urartian
+    state_religion = urartian
+    tolerated_religions = { caucasian_pagan }
 
     own_control_core = {
         ahlat
@@ -392,6 +422,9 @@ ALZIY = {
 
 AMURU = {
     color = { 29 70 114 }
+    primary_culture = amorite
+    state_religion = mesopotamian
+    tolerated_religions = {  }
 
     own_control_core = {
         baalbek
@@ -409,6 +442,9 @@ AMURU = {
 
 ARDIA = {
     color = { 218 68 70 }
+    primary_culture = glasinac_mati
+    state_religion = illyrian_pagan
+    tolerated_religions = { thracian_pagan }
 
     own_control_core = {
         borac
@@ -441,6 +477,9 @@ ARDIA = {
 
 ARGAR = {
     color = { 148 60 195 }
+    primary_culture = iberian
+    state_religion = iberian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         adra
@@ -464,6 +503,9 @@ ARGAR = {
 
 ARWAD = {
     color = { 178 191 59 }
+    primary_culture = phoenician
+    state_religion = phoenician
+    tolerated_religions = {  }
 
     own_control_core = {
         jableh
@@ -472,6 +514,9 @@ ARWAD = {
 
 ASYRI = {
     color = { 212 96 33 }
+    primary_culture = assyrian
+    state_religion = assyrian
+    tolerated_religions = { caucasian_pagan mesopotamian babylonian }
 
     own_control_core = {
         abu_kemal
@@ -535,6 +580,9 @@ ASYRI = {
 
 AZZI = {
     color = { 173 212 33 }
+    primary_culture = urartian
+    state_religion = urartian
+    tolerated_religions = {  }
 
     own_control_core = {
         bayburt
@@ -556,6 +604,9 @@ AZZI = {
 
 BALES = {
     color = { 97 41 209 }
+    primary_culture = iberian
+    state_religion = iberian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         ciudadela_de_menorca
@@ -568,6 +619,9 @@ BALES = {
 
 BALSA = {
     color = { 213 132 77 }
+    primary_culture = lusitanian
+    state_religion = lusitanian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         tavira
@@ -576,6 +630,9 @@ BALSA = {
 
 BERIT = {
     color = { 198 59 47 }
+    primary_culture = phoenician
+    state_religion = phoenician
+    tolerated_religions = {  }
 
     own_control_core = {
         deir_qamar
@@ -584,6 +641,9 @@ BERIT = {
 
 BOLI = {
     color = { 62 208 89 }
+    primary_culture = terramare
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         bobbio
@@ -600,6 +660,9 @@ BOLI = {
 
 BOSPH = {
     color = { 66 212 215 }
+    primary_culture = thracian
+    state_religion = mycenaean
+    tolerated_religions = {  }
 
     own_control_core = {
         ahtopol
@@ -621,6 +684,9 @@ BOSPH = {
 
 BOTTI = {
     color = { 54 63 201 }
+    primary_culture = mycenaean
+    state_religion = mycenaean
+    tolerated_religions = { thracian_pagan dacian_pagan }
 
     own_control_core = {
         edessa
@@ -644,6 +710,9 @@ BOTTI = {
 
 BOULI = {
     color = { 220 65 127 }
+    primary_culture = glasinac_mati
+    state_religion = illyrian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         glamoc
@@ -654,6 +723,9 @@ BOULI = {
 
 BYBLO = {
     color = { 220 56 176 }
+    primary_culture = phoenician
+    state_religion = phoenician
+    tolerated_religions = {  }
 
     own_control_core = {
         beirut
@@ -662,6 +734,9 @@ BYBLO = {
 
 CAMUN = {
     color = { 44 117 195 }
+    primary_culture = polada
+    state_religion = italic_pagan
+    tolerated_religions = { nordic_pagan }
 
     own_control_core = {
         asola
@@ -674,6 +749,9 @@ CAMUN = {
 
 CAONI = {
     color = { 53 109 182 }
+    primary_culture = mycenaean
+    state_religion = mycenaean
+    tolerated_religions = { illyrian_pagan }
 
     own_control_core = {
         avlonya
@@ -687,6 +765,9 @@ CAONI = {
 
 CARNI = {
     color = { 220 182 65 }
+    primary_culture = castellieri
+    state_religion = italic_pagan
+    tolerated_religions = { illyrian_pagan }
 
     own_control_core = {
         buzet
@@ -699,6 +780,9 @@ CARNI = {
 
 CARTI = {
     color = { 54 122 206 }
+    primary_culture = tartessian
+    state_religion = tartessian
+    tolerated_religions = {  }
 
     own_control_core = {
         algeciras
@@ -708,6 +792,9 @@ CARTI = {
 
 DAESI = {
     color = { 202 162 18 }
+    primary_culture = central_bosnian
+    state_religion = illyrian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         bihac
@@ -727,6 +814,9 @@ DAESI = {
 
 DARDN = {
     color = { 177 57 141 }
+    primary_culture = vatin
+    state_religion = thracian_pagan
+    tolerated_religions = { dacian_pagan illyrian_pagan }
 
     own_control_core = {
         arilje
@@ -778,6 +868,9 @@ DARDN = {
 
 DERRN = {
     color = { 127 218 62 }
+    primary_culture = vatin
+    state_religion = thracian_pagan
+    tolerated_religions = { illyrian_pagan }
 
     own_control_core = {
         glubocica
@@ -790,6 +883,9 @@ DERRN = {
 
 DIMUN = {
     color = { 81 63 217 }
+    primary_culture = dilmunite
+    state_religion = dilmunite
+    tolerated_religions = {  }
 
     own_control_core = {
         al_mashqar
@@ -803,6 +899,9 @@ DIMUN = {
 
 DOBER = {
     color = { 210 143 70 }
+    primary_culture = ezero
+    state_religion = thracian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         bansko
@@ -813,6 +912,9 @@ DOBER = {
 
 DOLOP = {
     color = { 182 58 60 }
+    primary_culture = mycenaean
+    state_religion = mycenaean
+    tolerated_religions = {  }
 
     own_control_core = {
         arta
@@ -824,6 +926,9 @@ DOLOP = {
 
 ELAM = {
     color = { 208 74 47 }
+    primary_culture = elamite
+    state_religion = elamite
+    tolerated_religions = { caucasian_pagan }
 
     own_control_core = {
         bagh_malek
@@ -858,6 +963,9 @@ ELAM = {
 
 ELMIT = {
     color = { 192 187 48 }
+    primary_culture = mycenaean
+    state_religion = mycenaean
+    tolerated_religions = {  }
 
     own_control_core = {
         grevena
@@ -867,6 +975,9 @@ ELMIT = {
 
 ELYMI = {
     color = { 138 68 193 }
+    primary_culture = elymian
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         mazara
@@ -878,6 +989,9 @@ ELYMI = {
 
 ETRUS = {
     color = { 212 177 37 }
+    primary_culture = proto_villanovan
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         arezzo
@@ -938,6 +1052,9 @@ ETRUS = {
 
 FALIS = {
     color = { 62 34 206 }
+    primary_culture = apennine
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         narni
@@ -947,6 +1064,9 @@ FALIS = {
 
 HABIR = {
     color = { 135 222 69 }
+    primary_culture = aramaean
+    state_religion = canaanite
+    tolerated_religions = {  }
 
     own_control_core = {
         azraq
@@ -963,6 +1083,9 @@ HABIR = {
 
 HAJAS = {
     color = { 71 220 123 }
+    primary_culture = colchian
+    state_religion = kartvelian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         artanuji
@@ -979,6 +1102,9 @@ HAJAS = {
 
 HAPAL = {
     color = { 84 74 222 }
+    primary_culture = luwian
+    state_religion = luwian
+    tolerated_religions = {  }
 
     own_control_core = {
         alasehir
@@ -998,6 +1124,9 @@ HAPAL = {
 
 HELVE = {
     color = { 139 242 13 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = { nordic_pagan italic_pagan }
 
     own_control_core = {
         altdorf
@@ -1029,6 +1158,9 @@ HELVE = {
 
 HIERA = {
     color = { 62 55 200 }
+    primary_culture = cetina
+    state_religion = illyrian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         kaseg
@@ -1042,6 +1174,9 @@ HIERA = {
 
 HISTI = {
     color = { 129 91 210 }
+    primary_culture = castellieri
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         pazin
@@ -1052,6 +1187,9 @@ HISTI = {
 
 HYLLO = {
     color = { 208 86 62 }
+    primary_culture = cetina
+    state_religion = illyrian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         brac
@@ -1061,6 +1199,9 @@ HYLLO = {
 
 IAPYG = {
     color = { 148 61 209 }
+    primary_culture = iapygian
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         altamura
@@ -1079,6 +1220,9 @@ IAPYG = {
 
 INSUB = {
     color = { 218 68 163 }
+    primary_culture = canegrate
+    state_religion = italic_pagan
+    tolerated_religions = { gaulish_pagan }
 
     own_control_core = {
         alessandria
@@ -1096,6 +1240,9 @@ INSUB = {
 
 KARKA = {
     color = { 55 121 179 }
+    primary_culture = aramaean
+    state_religion = canaanite
+    tolerated_religions = { babylonian }
 
     own_control_core = {
         jabar
@@ -1108,6 +1255,9 @@ KARKA = {
 
 KASKA = {
     color = { 197 99 43 }
+    primary_culture = colchian
+    state_religion = kartvelian_pagan
+    tolerated_religions = { hittite }
 
     own_control_core = {
         akkus
@@ -1127,6 +1277,9 @@ KASKA = {
 
 KASSI = {
     color = { 120 30 230 }
+    primary_culture = kassite
+    state_religion = babylonian
+    tolerated_religions = { elamite sumerian }
 
     own_control_core = {
         abadan
@@ -1183,6 +1336,9 @@ KASSI = {
 
 KUWAL = {
     color = { 60 125 215 }
+    primary_culture = luwian
+    state_religion = luwian
+    tolerated_religions = {  }
 
     own_control_core = {
         burdur
@@ -1196,6 +1352,9 @@ KUWAL = {
 
 LAEAE = {
     color = { 42 174 198 }
+    primary_culture = ezero
+    state_religion = thracian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         kostenets
@@ -1207,6 +1366,9 @@ LAEAE = {
 
 LATIN = {
     color = { 203 145 37 }
+    primary_culture = latial
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         anagni
@@ -1221,6 +1383,9 @@ LATIN = {
 
 LAZPA = {
     color = { 85 87 206 }
+    primary_culture = mycenaean
+    state_religion = mycenaean
+    tolerated_religions = {  }
 
     own_control_core = {
         mitilene
@@ -1230,6 +1395,9 @@ LAZPA = {
 
 LEPON = {
     color = { 92 209 156 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = { italic_pagan nordic_pagan }
 
     own_control_core = {
         aosta
@@ -1250,6 +1418,9 @@ LEPON = {
 
 LIBUR = {
     color = { 77 209 180 }
+    primary_culture = cetina
+    state_religion = illyrian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         crikvenica
@@ -1263,6 +1434,9 @@ LIBUR = {
 
 LIBYA = {
     color = { 114 81 219 }
+    primary_culture = libu
+    state_religion = berber_pagan
+    tolerated_religions = { garamantian }
 
     own_control_core = {
         ajdabiya
@@ -1284,6 +1458,9 @@ LIBYA = {
 
 LIGUR = {
     color = { 97 204 165 }
+    primary_culture = canegrate
+    state_religion = italic_pagan
+    tolerated_religions = { gaulish_pagan }
 
     own_control_core = {
         acqui
@@ -1317,6 +1494,9 @@ LIGUR = {
 
 LUKKA = {
     color = { 154 91 200 }
+    primary_culture = lukka
+    state_religion = sea_peoples_cult
+    tolerated_religions = { luwian }
 
     own_control_core = {
         cine
@@ -1334,6 +1514,9 @@ LUKKA = {
 
 MAGAN = {
     color = { 79 216 86 }
+    primary_culture = arabian
+    state_religion = arabian_pagan
+    tolerated_religions = { sabaean }
 
     own_control_core = {
         abu_dhabi
@@ -1368,6 +1551,9 @@ MAGAN = {
 
 MALAK = {
     color = { 41 199 115 }
+    primary_culture = tartessian
+    state_religion = tartessian
+    tolerated_religions = {  }
 
     own_control_core = {
         malaga
@@ -1376,6 +1562,9 @@ MALAK = {
 
 MANIO = {
     color = { 222 63 132 }
+    primary_culture = cetina
+    state_religion = illyrian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         metkovic
@@ -1385,6 +1574,9 @@ MANIO = {
 
 MARSI = {
     color = { 206 65 44 }
+    primary_culture = apennine
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         aquila
@@ -1394,6 +1586,9 @@ MARSI = {
 
 MASA = {
     color = { 218 176 52 }
+    primary_culture = phrygian
+    state_religion = hittite
+    tolerated_religions = {  }
 
     own_control_core = {
         adranos
@@ -1414,6 +1609,9 @@ MASA = {
 
 MIRA = {
     color = { 69 217 202 }
+    primary_culture = hittite
+    state_religion = hittite
+    tolerated_religions = { mycenaean }
 
     own_control_core = {
         ayasuluk
@@ -1430,6 +1628,9 @@ MIRA = {
 
 MITAN = {
     color = { 79 222 143 }
+    primary_culture = hurrian
+    state_religion = caucasian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         adakli
@@ -1456,6 +1657,9 @@ MITAN = {
 
 MOLOS = {
     color = { 141 75 195 }
+    primary_culture = mycenaean
+    state_religion = mycenaean
+    tolerated_religions = { thracian_pagan }
 
     own_control_core = {
         argyrokastro
@@ -1470,6 +1674,9 @@ MOLOS = {
 
 NESTI = {
     color = { 146 45 205 }
+    primary_culture = glasinac_mati
+    state_religion = illyrian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         drijeva
@@ -1479,6 +1686,9 @@ NESTI = {
 
 NPICE = {
     color = { 114 206 75 }
+    primary_culture = apennine
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         ancona
@@ -1489,6 +1699,9 @@ NPICE = {
 
 NORIC = {
     color = { 57 109 192 }
+    primary_culture = urnfield
+    state_religion = nordic_pagan
+    tolerated_religions = { illyrian_pagan }
 
     own_control_core = {
         celje
@@ -1518,6 +1731,9 @@ NORIC = {
 
 NURAG = {
     color = { 75 211 60 }
+    primary_culture = nuragic
+    state_religion = nuragic
+    tolerated_religions = {  }
 
     own_control_core = {
         ales
@@ -1548,6 +1764,9 @@ NURAG = {
 
 OENOT = {
     color = { 105 82 199 }
+    primary_culture = mycenaean
+    state_religion = italic_pagan
+    tolerated_religions = { mycenaean gaulish_pagan }
 
     own_control_core = {
         castrovillari
@@ -1568,6 +1787,9 @@ OENOT = {
 
 OSCAN = {
     color = { 221 75 179 }
+    primary_culture = ausonian
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         acerenza
@@ -1593,6 +1815,9 @@ OSCAN = {
 
 PAEON = {
     color = { 204 97 36 }
+    primary_culture = ezero
+    state_religion = thracian_pagan
+    tolerated_religions = { dacian_pagan }
 
     own_control_core = {
         bitola
@@ -1609,6 +1834,9 @@ PAEON = {
 
 PAEOP = {
     color = { 57 97 177 }
+    primary_culture = thracian
+    state_religion = thracian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         beden
@@ -1619,6 +1847,9 @@ PAEOP = {
 
 PAGON = {
     color = { 100 53 187 }
+    primary_culture = encrusted_pottery
+    state_religion = dacian_pagan
+    tolerated_religions = { illyrian_pagan }
 
     own_control_core = {
         adony
@@ -1644,6 +1875,9 @@ PAGON = {
 
 PALA = {
     color = { 80 207 63 }
+    primary_culture = palaic
+    state_religion = hattian
+    tolerated_religions = {  }
 
     own_control_core = {
         amasra
@@ -1669,6 +1903,9 @@ PALA = {
 
 PARTH = {
     color = { 145 215 71 }
+    primary_culture = lycian
+    state_religion = luwian
+    tolerated_religions = {  }
 
     own_control_core = {
         alaiye
@@ -1686,6 +1923,9 @@ PARTH = {
 
 RAETI = {
     color = { 57 192 141 }
+    primary_culture = urnfield
+    state_religion = nordic_pagan
+    tolerated_religions = { italic_pagan }
 
     own_control_core = {
         bolzano
@@ -1719,6 +1959,9 @@ RAETI = {
 
 SAHIR = {
     color = { 197 48 90 }
+    primary_culture = mycenaean
+    state_religion = mycenaean
+    tolerated_religions = { hittite }
 
     own_control_core = {
         akcasehir
@@ -1735,6 +1978,9 @@ SAHIR = {
 
 SASU = {
     color = { 207 140 68 }
+    primary_culture = edomite
+    state_religion = canaanite
+    tolerated_religions = {  }
 
     own_control_core = {
         al_quwayrah
@@ -1751,6 +1997,9 @@ SASU = {
 
 SCORD = {
     color = { 98 180 60 }
+    primary_culture = vuchedol
+    state_religion = illyrian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         osijek
@@ -1762,6 +2011,9 @@ SCORD = {
 
 SEHA = {
     color = { 55 212 37 }
+    primary_culture = hittite
+    state_religion = hittite
+    tolerated_religions = { mycenaean }
 
     own_control_core = {
         akhisar
@@ -1779,6 +2031,9 @@ SEHA = {
 
 SENOM = {
     color = { 133 206 44 }
+    primary_culture = terramare
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         argenta
@@ -1790,6 +2045,9 @@ SENOM = {
 
 SENON = {
     color = { 196 59 86 }
+    primary_culture = proto_villanovan
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         montefeltro
@@ -1801,6 +2059,9 @@ SENON = {
 
 SICAN = {
     color = { 202 78 161 }
+    primary_culture = sicanian
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         bivona
@@ -1815,6 +2076,9 @@ SICAN = {
 
 SICEL = {
     color = { 60 52 183 }
+    primary_culture = sicel
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         caltagirone
@@ -1833,6 +2097,9 @@ SICEL = {
 
 SIROP = {
     color = { 35 215 53 }
+    primary_culture = paeonian
+    state_religion = thracian_pagan
+    tolerated_religions = { mycenaean }
 
     own_control_core = {
         drama
@@ -1842,6 +2109,9 @@ SIROP = {
 
 SPICE = {
     color = { 162 192 42 }
+    primary_culture = apennine
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         ascolipiceno
@@ -1854,6 +2124,9 @@ SPICE = {
 
 SURRT = {
     color = { 65 184 61 }
+    primary_culture = ausonian
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         naples
@@ -1863,6 +2136,9 @@ SURRT = {
 
 SUTU = {
     color = { 45 82 66 }
+    primary_culture = aramaean
+    state_religion = canaanite
+    tolerated_religions = {  }
 
     own_control_core = {
         arak
@@ -1879,6 +2155,9 @@ SUTU = {
 
 TARAN = {
     color = { 111 56 199 }
+    primary_culture = iapygian
+    state_religion = italic_pagan
+    tolerated_religions = { mycenaean }
 
     own_control_core = {
         brindisi
@@ -1895,6 +2174,9 @@ TARAN = {
 
 TARTS = {
     color = { 198 43 212 }
+    primary_culture = tartessian
+    state_religion = tartessian
+    tolerated_religions = {  }
 
     own_control_core = {
         arcos_de_la_frontera
@@ -1915,6 +2197,9 @@ TARTS = {
 
 TAULA = {
     color = { 216 49 202 }
+    primary_culture = illyrian
+    state_religion = illyrian_pagan
+    tolerated_religions = { thracian_pagan }
 
     own_control_core = {
         bar_cg
@@ -1934,6 +2219,9 @@ TAULA = {
 
 TAURI = {
     color = { 93 205 71 }
+    primary_culture = vuchedol
+    state_religion = illyrian_pagan
+    tolerated_religions = { italic_pagan nordic_pagan }
 
     own_control_core = {
         bled
@@ -1950,6 +2238,9 @@ TAURI = {
 
 TESPR = {
     color = { 82 201 64 }
+    primary_culture = mycenaean
+    state_religion = mycenaean
+    tolerated_religions = {  }
 
     own_control_core = {
         ioannina
@@ -1960,6 +2251,9 @@ TESPR = {
 
 THRAC = {
     color = { 194 194 56 }
+    primary_culture = thracian
+    state_religion = thracian_pagan
+    tolerated_religions = { mycenaean }
 
     own_control_core = {
         bukelon
@@ -1983,6 +2277,9 @@ THRAC = {
 
 TORRI = {
     color = { 208 94 62 }
+    primary_culture = torrean
+    state_religion = nuragic
+    tolerated_religions = {  }
 
     own_control_core = {
         ajaccio
@@ -1998,6 +2295,9 @@ TORRI = {
 
 TRPOL = {
     color = { 224 72 92 }
+    primary_culture = libu
+    state_religion = berber_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         baniyas
@@ -2008,6 +2308,9 @@ TRPOL = {
 
 UGART = {
     color = { 50 69 210 }
+    primary_culture = ugaritic
+    state_religion = ugaritic
+    tolerated_religions = {  }
 
     own_control_core = {
         antioch
@@ -2017,6 +2320,9 @@ UGART = {
 
 UMBRI = {
     color = { 105 213 48 }
+    primary_culture = apennine
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         assisi
@@ -2033,6 +2339,9 @@ UMBRI = {
 
 VENET = {
     color = { 91 54 221 }
+    primary_culture = castellieri
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         aquileia
@@ -2060,6 +2369,9 @@ VENET = {
 
 VESTI = {
     color = { 82 63 207 }
+    primary_culture = apennine
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         lanciano
@@ -2069,6 +2381,9 @@ VESTI = {
 
 VOLSC = {
     color = { 91 106 205 }
+    primary_culture = ausonian
+    state_religion = italic_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         sora
@@ -2078,6 +2393,9 @@ VOLSC = {
 
 WILUS = {
     color = { 196 201 49 }
+    primary_culture = luwian
+    state_religion = luwian
+    tolerated_religions = { mycenaean }
 
     own_control_core = {
         ayvacik
@@ -2103,6 +2421,9 @@ WILUS = {
 
 ARAX = {
     color = { 157 144 150 }
+    primary_culture = saka
+    state_religion = saka_pagan
+    tolerated_religions = { caucasian_pagan urartian }
 
     own_control_core = {
         hadishahr
@@ -2118,6 +2439,9 @@ ARAX = {
 
 GETAE = {
     color = { 47 218 55 }
+    primary_culture = tei
+    state_religion = dacian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         bucharest
@@ -2134,6 +2458,9 @@ GETAE = {
 
 IONIA = {
     color = { 205 196 96 }
+    primary_culture = tei
+    state_religion = dacian_pagan
+    tolerated_religions = { mycenaean }
 
     own_control_core = {
         babadag
@@ -2145,6 +2472,9 @@ IONIA = {
 
 MANNA = {
     color = { 207 38 106 }
+    primary_culture = mede
+    state_religion = iranic
+    tolerated_religions = { caucasian_pagan }
 
     own_control_core = {
         aghkand
@@ -2172,6 +2502,9 @@ MANNA = {
 
 MOESI = {
     color = { 216 151 59 }
+    primary_culture = ezero
+    state_religion = thracian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         cherven
@@ -2184,6 +2517,9 @@ MOESI = {
 
 POTUL = {
     color = { 203 87 87 }
+    primary_culture = ezero
+    state_religion = thracian_pagan
+    tolerated_religions = {  }
 
     own_control_core = {
         bozhenitsa
@@ -2196,6 +2532,9 @@ POTUL = {
 
 SCYTH = {
     color = { 204 199 56 }
+    primary_culture = saka
+    state_religion = saka_pagan
+    tolerated_religions = { steppe_pagan }
 
     own_control_core = {
         achit_nuur
@@ -2259,6 +2598,9 @@ SCYTH = {
 
 ULIBA = {
     color = { 79 203 42 }
+    primary_culture = gutian
+    state_religion = caucasian_pagan
+    tolerated_religions = { urartian }
 
     own_control_core = {
         bitlis
@@ -2269,6 +2611,9 @@ ULIBA = {
 
 URATU = {
     color = { 196 83 79 }
+    primary_culture = urartian
+    state_religion = urartian
+    tolerated_religions = { caucasian_pagan }
 
     own_control_core = {
         amberd
@@ -2291,6 +2636,9 @@ URATU = {
 
 WALAN = {
     color = { 155 210 45 }
+    primary_culture = mede
+    state_religion = iranic
+    tolerated_religions = { urartian }
 
     own_control_core = {
         ahar
@@ -2300,5 +2648,520 @@ WALAN = {
         kapan_armenia
         mardanaqom
         qahqaheh
+    }
+}
+
+ABRIN = {
+    color = { 74 219 222 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        avranches
+        coutances
+    }
+}
+
+ALLOB = {
+    color = { 101 47 188 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        die
+        grenoble
+        la_tour_du_pin
+        romans
+        saint_jean_de_maurienne
+        saint_marceilin
+        vienne
+    }
+}
+
+AMBAR = {
+    color = { 153 178 138 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        trevoux
+        villars
+    }
+}
+
+ANDES = {
+    color = { 178 191 59 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        beaupreau
+        passavant
+    }
+}
+
+ARVER = {
+    color = { 206 197 95 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        aubusson
+        chambon
+        clermont
+        herment
+        montaigut
+        montlucon
+        riom
+        st_gerand
+        thiers
+        tour_auvergne
+        ussel
+        vic_le_comte
+        vichy
+        vodable
+    }
+}
+
+BAIOC = {
+    color = { 109 209 51 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        caen
+        vire
+    }
+}
+
+BITUR = {
+    color = { 59 159 181 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        benauges
+        bordeaux
+        castelnau_de_medoc
+        lesparre_medoc
+        libourne
+    }
+}
+
+CALET = {
+    color = { 223 78 86 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        arques
+        fecamp
+        longueville
+        rouen
+        tancarville
+    }
+}
+
+CORIO = {
+    color = { 217 187 38 }
+    primary_culture = armorican
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        chatelaudren
+        josselin
+        monfort_sur_meu
+        ploermel
+        saint_brieuc
+        saint_malo
+    }
+}
+
+ESUVI = {
+    color = { 205 96 172 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        domfront
+        mortain
+        pont_douilly
+    }
+}
+
+GABAL = {
+    color = { 106 58 203 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        chateauneuf_de_randon
+        florac
+        mende
+        peyre
+        st_ambroix
+    }
+}
+
+LEXOV = {
+    color = { 77 209 213 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        falaise
+    }
+}
+
+NAMNE = {
+    color = { 199 56 130 }
+    primary_culture = armorican
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        blain
+        chateaubriant
+        guerande
+        machecoul
+        nantes
+        redon
+    }
+}
+
+OSISM = {
+    color = { 210 99 25 }
+    primary_culture = armorican
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        brest
+        carhaix
+        chateaulin
+        le_faou
+        quimper
+        st_pol_de_leon
+        treguier
+    }
+}
+
+PICTO = {
+    color = { 70 221 90 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        beauvoir
+        fontenay
+        la_roche_sur_yon
+        mauleon_poitou
+        montaigu
+        niort
+        parthenay
+        talmont
+        thouars
+    }
+}
+
+REDON = {
+    color = { 65 130 220 }
+    primary_culture = armorican
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        dol
+        fougeres
+        rennes
+        vitre
+    }
+}
+
+RUTEN = {
+    color = { 208 200 47 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        entraigues
+        millau
+        peyrusse
+        rodez
+        st_affrique
+        villefranche
+    }
+}
+
+SALLU = {
+    color = { 213 89 83 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        aix_en_provence
+        apt
+        arles
+        avignon
+        digne
+        forcalquier
+        marseille
+        tarascon
+    }
+}
+
+SANTN = {
+    color = { 85 216 135 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        jonzac
+        la_rochelle
+        oleron
+        rochefort
+        royan
+        saintes
+        st_jean_dangely
+    }
+}
+
+SEGUS = {
+    color = { 88 62 218 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        beaujeu
+        feurs
+        lyon
+        montbrison
+        perreux
+        riverie
+        roanne
+        saint_etienne
+        semur_en_brionnais
+    }
+}
+
+SEQUA = {
+    color = { 191 49 70 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        auxonne
+        bage
+        besancon
+        bourg_en_bresse
+        dole
+        gex
+        louhans
+        orgelet
+        poligny
+        saint_claude
+        thoire
+    }
+}
+
+SIBUZ = {
+    color = { 81 204 210 }
+    primary_culture = aquitanian
+    state_religion = iberian_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        bayonne
+        elizondo
+        mauleon
+        orthez
+        saint_jean_pied_de_port
+    }
+}
+
+SOTIA = {
+    color = { 218 78 155 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        labrit
+    }
+}
+
+TARDL = {
+    color = { 205 100 55 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        dax
+        mimizan
+        tartas
+        tosse
+    }
+}
+
+UNELL = {
+    color = { 122 48 213 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        cherbourg
+        jersey
+        st_sauveur
+    }
+}
+
+VASAT = {
+    color = { 204 172 40 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        belin
+        la_teste_de_buch
+    }
+}
+
+VELIO = {
+    color = { 135 52 183 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        lisieux
+        louviers
+        pont_audemer
+    }
+}
+
+VELLA = {
+    color = { 43 106 222 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        allegre
+        chalancon
+        le_puy
+    }
+}
+
+VENES = {
+    color = { 86 179 184 }
+    primary_culture = armorican
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        hennebont
+        quimperle
+        rohan
+        vannes
+    }
+}
+
+VIDUC = {
+    color = { 204 178 224 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        bayeux
+    }
+}
+
+VOCAN = {
+    color = { 157 75 216 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        briancon
+        condorcet
+        gap
+        la_mure
+        mevouillon
+        pragelato
+        sisteron
+    }
+}
+
+VOLAR = {
+    color = { 118 57 192 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = {  }
+
+    own_control_core = {
+        french_ales
+        lodeve
+        melgueil
+        montpellier
+        nimes
+        orange
+        uzes
+    }
+}
+
+VOLTE = {
+    color = { 173 221 70 }
+    primary_culture = gaulish
+    state_religion = gaulish_pagan
+    tolerated_religions = { iberian_pagan }
+
+    own_control_core = {
+        agde
+        albi
+        aspet
+        beziers
+        carcassonne
+        castellon_ampurias
+        castelnaudary
+        castres
+        fenouillet
+        foix
+        lautrec
+        lavaur
+        limoux
+        mirepoix
+        narbonne
+        pamiers
+        perpignan
+        prades
+        saint_lizier
+        saint_pons
+        toulouse
+        verdun_sur_garonne
+        vielha
+        villemur
     }
 }
