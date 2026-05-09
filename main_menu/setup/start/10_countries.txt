@@ -109,6 +109,10 @@ countries = {
 		accepted_cultures = { hittite luwian }
 		tolerated_cultures = { hurrian denyen hattian }
 		tolerated_religions = { luwian caucasian_pagan sea_peoples_cult hattian }
+
+
+
+
 	}
 
 	##ACRE

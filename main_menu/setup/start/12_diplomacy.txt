@@ -3,6 +3,10 @@ diplomacy_manager = {
 	#Balliol Backing
 	#scripted_oneway = { first = ENG second = SBL type = guarantee }
 	
-   
+   #Hitties
+   dependency = { first = 0003G second = MIRA subject_type = vassal }
+   dependency = { first = 0003G second = SEHA subject_type = tributary }
+   dependency = { first = 0003G second = HAPAL subject_type = vassal }
+   dependency = { first = 0003G second = WilUS subject_type = vassal }
 
 }
