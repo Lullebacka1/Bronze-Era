@@ -1,0 +1,19 @@
+sea_peoples_crisis_yearly_pulse = {
+	random_events = {
+		chance_to_happen = 25
+		100 = 0
+		8 = sea_peoples_crisis.1
+		5 = sea_peoples_crisis.5
+		10 = sea_peoples_crisis.10
+		9 = sea_peoples_crisis.20
+		8 = sea_peoples_crisis.30
+		7 = sea_peoples_crisis.40
+		7 = sea_peoples_crisis.50
+		6 = sea_peoples_crisis.60
+		5 = sea_peoples_crisis.70
+		4 = sea_peoples_crisis.80
+		4 = sea_peoples_crisis.90
+		4 = sea_peoples_crisis.100
+		3 = sea_peoples_crisis.110
+	}
+}

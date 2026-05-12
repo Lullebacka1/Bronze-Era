@@ -1,0 +1,322 @@
+namespace = sea_peoples_crisis
+
+sea_peoples_crisis.1 = {
+	type = country_event
+	title = sea_peoples_crisis.1.title
+	desc = sea_peoples_crisis.1.desc
+	category = disaster_event
+	outcome = negative
+	major = yes
+	orphan = yes
+
+	trigger = {
+		sea_peoples_crisis_eastern_mediterranean_country = yes
+		NOT = { has_variable = sea_peoples_crisis_active }
+	}
+
+	option = {
+		name = sea_peoples_crisis.1.a
+		sea_peoples_begin_crisis = yes
+		add_prestige = prestige_weak_penalty
+	}
+	option = {
+		name = sea_peoples_crisis.1.b
+		sea_peoples_begin_crisis = yes
+		sea_peoples_prepare_port_defense = yes
+	}
+}
+
+sea_peoples_crisis.5 = {
+	type = country_event
+	title = sea_peoples_crisis.5.title
+	desc = sea_peoples_crisis.5.desc
+	category = disaster_event
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		sea_peoples_crisis_active_country = yes
+		NOT = { sea_peoples_crisis_phase_at_least = { value = 5 } }
+	}
+
+	option = {
+		name = sea_peoples_crisis.5.a
+		sea_peoples_advance_phase = yes
+	}
+	option = {
+		name = sea_peoples_crisis.5.b
+		sea_peoples_add_pressure = { value = 8 }
+	}
+}
+
+sea_peoples_crisis.10 = {
+	type = country_event
+	title = sea_peoples_crisis.10.title
+	desc = sea_peoples_crisis.10.desc
+	category = disaster_event
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		sea_peoples_crisis_active_country = yes
+		sea_peoples_crisis_phase_at_least = { value = 1 }
+	}
+
+	option = {
+		name = sea_peoples_crisis.10.a
+		sea_peoples_add_famine_pressure = { value = 7 }
+		sea_peoples_add_pressure = { value = 4 }
+	}
+	option = {
+		name = sea_peoples_crisis.10.b
+		sea_peoples_add_famine_pressure = { value = 3 }
+		add_prestige = prestige_weak_penalty
+	}
+}
+
+sea_peoples_crisis.20 = {
+	type = country_event
+	title = sea_peoples_crisis.20.title
+	desc = sea_peoples_crisis.20.desc
+	category = disaster_event
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		sea_peoples_crisis_active_country = yes
+		sea_peoples_crisis_phase_at_least = { value = 2 }
+		sea_peoples_crisis_maritime_target = yes
+	}
+
+	option = {
+		name = sea_peoples_crisis.20.a
+		sea_peoples_mark_raided_coast = yes
+	}
+	option = {
+		name = sea_peoples_crisis.20.b
+		sea_peoples_prepare_port_defense = yes
+		sea_peoples_add_pressure = { value = 3 }
+	}
+}
+
+sea_peoples_crisis.30 = {
+	type = country_event
+	title = sea_peoples_crisis.30.title
+	desc = sea_peoples_crisis.30.desc
+	category = disaster_event
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		sea_peoples_crisis_active_country = yes
+		sea_peoples_crisis_phase_at_least = { value = 2 }
+	}
+
+	option = {
+		name = sea_peoples_crisis.30.a
+		sea_peoples_mark_refugee_wave = yes
+	}
+	option = {
+		name = sea_peoples_crisis.30.b
+		sea_peoples_mark_refugee_wave = yes
+		sea_peoples_add_pressure = { value = -2 }
+	}
+}
+
+sea_peoples_crisis.40 = {
+	type = country_event
+	title = sea_peoples_crisis.40.title
+	desc = sea_peoples_crisis.40.desc
+	category = disaster_event
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		sea_peoples_crisis_active_country = yes
+		sea_peoples_crisis_phase_at_least = { value = 3 }
+	}
+
+	option = {
+		name = sea_peoples_crisis.40.a
+		sea_peoples_mark_trade_collapse = yes
+	}
+	option = {
+		name = sea_peoples_crisis.40.b
+		sea_peoples_mark_trade_collapse = yes
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+sea_peoples_crisis.50 = {
+	type = country_event
+	title = sea_peoples_crisis.50.title
+	desc = sea_peoples_crisis.50.desc
+	category = disaster_event
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		sea_peoples_crisis_active_country = yes
+		sea_peoples_crisis_phase_at_least = { value = 3 }
+	}
+
+	option = {
+		name = sea_peoples_crisis.50.a
+		sea_peoples_mark_internal_breakdown = yes
+	}
+	option = {
+		name = sea_peoples_crisis.50.b
+		sea_peoples_add_pressure = { value = 6 }
+		add_prestige = prestige_weak_penalty
+	}
+}
+
+sea_peoples_crisis.60 = {
+	type = country_event
+	title = sea_peoples_crisis.60.title
+	desc = sea_peoples_crisis.60.desc
+	category = disaster_event
+	outcome = neutral
+	orphan = yes
+
+	trigger = {
+		sea_peoples_crisis_active_country = yes
+		sea_peoples_crisis_phase_at_least = { value = 4 }
+		sea_peoples_crisis_maritime_target = yes
+	}
+
+	option = {
+		name = sea_peoples_crisis.60.a
+		sea_peoples_mark_settlement_pressure = yes
+	}
+	option = {
+		name = sea_peoples_crisis.60.b
+		sea_peoples_prepare_port_defense = yes
+		sea_peoples_add_pressure = { value = 2 }
+	}
+}
+
+sea_peoples_crisis.70 = {
+	type = country_event
+	title = sea_peoples_crisis.70.title
+	desc = sea_peoples_crisis.70.desc
+	category = disaster_event
+	outcome = positive
+	orphan = yes
+
+	trigger = {
+		sea_peoples_crisis_active_country = yes
+		sea_peoples_crisis_phase_at_least = { value = 4 }
+		sea_peoples_crisis_high_assimilation_zone = yes
+		has_variable = sea_peoples_settlement_pressure
+	}
+
+	option = {
+		name = sea_peoples_crisis.70.a
+		sea_peoples_mark_assimilation = yes
+	}
+	option = {
+		name = sea_peoples_crisis.70.b
+		sea_peoples_mark_assimilation = yes
+		add_prestige = prestige_weak_bonus
+	}
+}
+
+sea_peoples_crisis.80 = {
+	type = country_event
+	title = sea_peoples_crisis.80.title
+	desc = sea_peoples_crisis.80.desc
+	category = disaster_event
+	outcome = positive
+	orphan = yes
+
+	trigger = {
+		sea_peoples_crisis_active_country = yes
+		sea_peoples_crisis_phase_at_least = { value = 4 }
+		OR = {
+			culture = culture:phoenician
+			culture = culture:ugaritic
+			culture = culture:canaanite
+		}
+	}
+
+	option = {
+		name = sea_peoples_crisis.80.a
+		sea_peoples_phoenician_opening = yes
+		add_prestige = prestige_weak_bonus
+	}
+}
+
+sea_peoples_crisis.90 = {
+	type = country_event
+	title = sea_peoples_crisis.90.title
+	desc = sea_peoples_crisis.90.desc
+	category = disaster_event
+	outcome = negative
+	major = yes
+	orphan = yes
+
+	trigger = {
+		sea_peoples_crisis_active_country = yes
+		sea_peoples_crisis_phase_at_least = { value = 3 }
+		sea_peoples_crisis_egyptian_target = yes
+	}
+
+	option = {
+		name = sea_peoples_crisis.90.a
+		sea_peoples_egypt_mobilization = yes
+		add_prestige = prestige_mild_penalty
+	}
+	option = {
+		name = sea_peoples_crisis.90.b
+		sea_peoples_egypt_mobilization = yes
+		sea_peoples_add_pressure = { value = -4 }
+	}
+}
+
+sea_peoples_crisis.100 = {
+	type = country_event
+	title = sea_peoples_crisis.100.title
+	desc = sea_peoples_crisis.100.desc
+	category = disaster_event
+	outcome = negative
+	major = yes
+	orphan = yes
+
+	trigger = {
+		sea_peoples_crisis_active_country = yes
+		sea_peoples_crisis_phase_at_least = { value = 3 }
+		sea_peoples_crisis_mycenaean_target = yes
+	}
+
+	option = {
+		name = sea_peoples_crisis.100.a
+		sea_peoples_mark_internal_breakdown = yes
+		subtract_mycenaean_league_authority = { value = 8 }
+	}
+	option = {
+		name = sea_peoples_crisis.100.b
+		sea_peoples_mark_trade_collapse = yes
+		subtract_mycenaean_league_authority = { value = 4 }
+	}
+}
+
+sea_peoples_crisis.110 = {
+	type = country_event
+	title = sea_peoples_crisis.110.title
+	desc = sea_peoples_crisis.110.desc
+	category = disaster_event
+	outcome = positive
+	orphan = yes
+
+	trigger = {
+		sea_peoples_crisis_active_country = yes
+		sea_peoples_crisis_phase_at_least = { value = 5 }
+	}
+
+	option = {
+		name = sea_peoples_crisis.110.a
+		sea_peoples_clear_acute_damage = yes
+		add_prestige = prestige_weak_bonus
+	}
+}

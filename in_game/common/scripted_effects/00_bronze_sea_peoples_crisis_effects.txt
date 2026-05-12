@@ -1,0 +1,172 @@
+sea_peoples_begin_crisis = {
+	custom_description = {
+		text = sea_peoples_begin_crisis_text
+		set_variable = { name = sea_peoples_crisis_active value = 1 }
+		set_variable = { name = sea_peoples_crisis_phase value = 1 }
+		set_variable = { name = sea_peoples_crisis_pressure value = 10 }
+		set_variable = { name = sea_peoples_famine_pressure value = 10 }
+	}
+}
+
+sea_peoples_set_phase = {
+	custom_description = {
+		text = sea_peoples_set_phase_text
+		value = $value$
+		set_variable = { name = sea_peoples_crisis_active value = 1 }
+		set_variable = { name = sea_peoples_crisis_phase value = $value$ }
+		if = {
+			limit = { var:sea_peoples_crisis_phase > 5 }
+			set_variable = { name = sea_peoples_crisis_phase value = 5 }
+		}
+		if = {
+			limit = { var:sea_peoples_crisis_phase < 1 }
+			set_variable = { name = sea_peoples_crisis_phase value = 1 }
+		}
+	}
+}
+
+sea_peoples_advance_phase = {
+	custom_description = {
+		text = sea_peoples_advance_phase_text
+		if = {
+			limit = { NOT = { has_variable = sea_peoples_crisis_phase } }
+			set_variable = { name = sea_peoples_crisis_phase value = 1 }
+		}
+		set_variable = { name = sea_peoples_crisis_active value = 1 }
+		change_variable = { name = sea_peoples_crisis_phase add = 1 }
+		if = {
+			limit = { var:sea_peoples_crisis_phase > 5 }
+			set_variable = { name = sea_peoples_crisis_phase value = 5 }
+		}
+	}
+}
+
+sea_peoples_add_pressure = {
+	custom_description = {
+		text = sea_peoples_add_pressure_text
+		value = $value$
+		if = {
+			limit = { NOT = { has_variable = sea_peoples_crisis_pressure } }
+			set_variable = { name = sea_peoples_crisis_pressure value = 0 }
+		}
+		change_variable = { name = sea_peoples_crisis_pressure add = $value$ }
+		if = {
+			limit = { var:sea_peoples_crisis_pressure > 100 }
+			set_variable = { name = sea_peoples_crisis_pressure value = 100 }
+		}
+		if = {
+			limit = { var:sea_peoples_crisis_pressure < 0 }
+			set_variable = { name = sea_peoples_crisis_pressure value = 0 }
+		}
+	}
+}
+
+sea_peoples_add_famine_pressure = {
+	custom_description = {
+		text = sea_peoples_add_famine_pressure_text
+		value = $value$
+		if = {
+			limit = { NOT = { has_variable = sea_peoples_famine_pressure } }
+			set_variable = { name = sea_peoples_famine_pressure value = 0 }
+		}
+		change_variable = { name = sea_peoples_famine_pressure add = $value$ }
+		if = {
+			limit = { var:sea_peoples_famine_pressure > 100 }
+			set_variable = { name = sea_peoples_famine_pressure value = 100 }
+		}
+		if = {
+			limit = { var:sea_peoples_famine_pressure < 0 }
+			set_variable = { name = sea_peoples_famine_pressure value = 0 }
+		}
+	}
+}
+
+sea_peoples_mark_raided_coast = {
+	custom_description = {
+		text = sea_peoples_mark_raided_coast_text
+		set_variable = { name = sea_peoples_raided_coast value = 1 }
+		sea_peoples_add_pressure = { value = 8 }
+	}
+}
+
+sea_peoples_mark_refugee_wave = {
+	custom_description = {
+		text = sea_peoples_mark_refugee_wave_text
+		set_variable = { name = sea_peoples_refugee_pressure value = 1 }
+		sea_peoples_add_pressure = { value = 5 }
+		sea_peoples_add_famine_pressure = { value = 4 }
+	}
+}
+
+sea_peoples_mark_trade_collapse = {
+	custom_description = {
+		text = sea_peoples_mark_trade_collapse_text
+		set_variable = { name = sea_peoples_trade_collapse value = 1 }
+		set_variable = { name = sea_peoples_palace_economy_collapse value = 1 }
+		sea_peoples_add_pressure = { value = 10 }
+	}
+}
+
+sea_peoples_mark_internal_breakdown = {
+	custom_description = {
+		text = sea_peoples_mark_internal_breakdown_text
+		set_variable = { name = sea_peoples_internal_breakdown value = 1 }
+		sea_peoples_add_pressure = { value = 12 }
+	}
+}
+
+sea_peoples_mark_settlement_pressure = {
+	custom_description = {
+		text = sea_peoples_mark_settlement_pressure_text
+		set_variable = { name = sea_peoples_settlement_pressure value = 1 }
+		sea_peoples_add_pressure = { value = 6 }
+	}
+}
+
+sea_peoples_mark_assimilation = {
+	custom_description = {
+		text = sea_peoples_mark_assimilation_text
+		set_variable = { name = sea_peoples_assimilation_pressure value = 1 }
+		sea_peoples_add_pressure = { value = -4 }
+	}
+}
+
+sea_peoples_prepare_port_defense = {
+	custom_description = {
+		text = sea_peoples_prepare_port_defense_text
+		set_variable = { name = sea_peoples_port_defense_preparations value = 1 }
+		sea_peoples_add_pressure = { value = -3 }
+	}
+}
+
+sea_peoples_egypt_mobilization = {
+	custom_description = {
+		text = sea_peoples_egypt_mobilization_text
+		set_variable = { name = sea_peoples_egypt_mobilized value = 1 }
+		sea_peoples_add_pressure = { value = -5 }
+	}
+}
+
+sea_peoples_phoenician_opening = {
+	custom_description = {
+		text = sea_peoples_phoenician_opening_text
+		set_variable = { name = sea_peoples_phoenician_opening value = 1 }
+		sea_peoples_add_pressure = { value = -4 }
+	}
+}
+
+sea_peoples_clear_acute_damage = {
+	custom_description = {
+		text = sea_peoples_clear_acute_damage_text
+		if = {
+			limit = { has_variable = sea_peoples_raided_coast }
+			set_variable = { name = sea_peoples_raided_coast value = 0 }
+		}
+		if = {
+			limit = { has_variable = sea_peoples_refugee_pressure }
+			set_variable = { name = sea_peoples_refugee_pressure value = 0 }
+		}
+		sea_peoples_add_pressure = { value = -8 }
+		sea_peoples_add_famine_pressure = { value = -6 }
+	}
+}

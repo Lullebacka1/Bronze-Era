@@ -1,0 +1,122 @@
+sea_peoples_crisis_phase_at_least = {
+	custom_description = {
+		text = sea_peoples_crisis_phase_at_least_text
+		value = $value$
+		has_variable = sea_peoples_crisis_phase
+		var:sea_peoples_crisis_phase >= $value$
+	}
+}
+
+sea_peoples_crisis_active_country = {
+	custom_description = {
+		text = sea_peoples_crisis_active_country_text
+		has_variable = sea_peoples_crisis_active
+	}
+}
+
+sea_peoples_crisis_eastern_mediterranean_country = {
+	custom_description = {
+		text = sea_peoples_crisis_eastern_mediterranean_country_text
+		OR = {
+			capital ?= { region = region:anatolia_region }
+			capital ?= { region = region:balkan_region }
+			capital ?= { region = region:crescent_region }
+			capital ?= { region = region:egypt_region }
+			capital ?= { region = region:italy_region }
+			culture = culture:mycenaean
+			culture = culture:minoan
+			culture = culture:cycladic
+			culture = culture:hittite
+			culture = culture:luwian
+			culture = culture:lycian
+			culture = culture:carian
+			culture = culture:canaanite
+			culture = culture:phoenician
+			culture = culture:ugaritic
+			culture = culture:egyptian
+			culture = culture:lower_egyptian
+			culture = culture:upper_egyptian
+			culture = culture:libyan
+			culture = culture:libu
+			culture = culture:sherden
+			culture = culture:peleset
+			culture = culture:tjekker
+			culture = culture:denyen
+			culture = culture:lukka
+			culture = culture:nuragic
+			culture = culture:torrean
+			culture = culture:sicel
+			culture = culture:sicanian
+			culture = culture:elymian
+		}
+	}
+}
+
+sea_peoples_crisis_maritime_target = {
+	custom_description = {
+		text = sea_peoples_crisis_maritime_target_text
+		OR = {
+			culture = culture:phoenician
+			culture = culture:ugaritic
+			culture = culture:canaanite
+			culture = culture:mycenaean
+			culture = culture:minoan
+			culture = culture:cycladic
+			culture = culture:luwian
+			culture = culture:lycian
+			culture = culture:carian
+			culture = culture:lower_egyptian
+			culture = culture:nuragic
+			culture = culture:sicel
+			culture = culture:sicanian
+			culture = culture:elymian
+			capital ?= { region = region:crescent_region }
+			capital ?= { region = region:anatolia_region }
+			capital ?= { region = region:balkan_region }
+			capital ?= { region = region:egypt_region }
+		}
+	}
+}
+
+sea_peoples_crisis_high_assimilation_zone = {
+	custom_description = {
+		text = sea_peoples_crisis_high_assimilation_zone_text
+		OR = {
+			culture = culture:phoenician
+			culture = culture:ugaritic
+			culture = culture:canaanite
+			culture = culture:luwian
+			culture = culture:lycian
+			culture = culture:carian
+			culture = culture:mycenaean
+			culture = culture:minoan
+			capital ?= { region = region:crescent_region }
+			capital ?= { region = region:anatolia_region }
+			capital ?= { region = region:balkan_region }
+		}
+	}
+}
+
+sea_peoples_crisis_egyptian_target = {
+	custom_description = {
+		text = sea_peoples_crisis_egyptian_target_text
+		OR = {
+			capital ?= { region = region:egypt_region }
+			culture = culture:egyptian
+			culture = culture:lower_egyptian
+			culture = culture:upper_egyptian
+		}
+	}
+}
+
+sea_peoples_crisis_mycenaean_target = {
+	custom_description = {
+		text = sea_peoples_crisis_mycenaean_target_text
+		OR = {
+			is_member_of_international_organization = international_organization:mycenaean_league
+			culture = culture:mycenaean
+			culture = culture:minoan
+			culture = culture:cycladic
+		}
+	}
+}
