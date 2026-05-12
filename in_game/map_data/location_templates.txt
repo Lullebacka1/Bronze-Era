@@ -1991,10 +1991,10 @@ beaumont_au_maine = { topography = flatland vegetation = grasslands climate = oc
 chateau_du_loir = { topography = flatland vegetation = grasslands climate = oceanic religion = gaulish_pagan culture = carnutes raw_material = fiber_crops}
 sable = { topography = flatland vegetation = grasslands climate = oceanic religion = gaulish_pagan culture = aulerci_cenomani raw_material = marble}
 st_calais = { topography = flatland vegetation = grasslands climate = oceanic religion = gaulish_pagan culture = carnutes raw_material = fiber_crops}
-mortagne = { topography = flatland vegetation = woods climate = oceanic religion = gaulish_pagan culture = parisi raw_material = livestock}
+mortagne = { topography = flatland vegetation = woods climate = oceanic religion = gaulish_pagan culture = aulerci raw_material = livestock}
 alluyes = { topography = flatland vegetation = grasslands climate = oceanic religion = gaulish_pagan culture = carnutes raw_material = fiber_crops}
 belleme = { topography = flatland vegetation = grasslands climate = oceanic religion = gaulish_pagan culture = carnutes raw_material = beeswax}
-senonches = { topography = flatland vegetation = grasslands climate = oceanic religion = gaulish_pagan culture = parisi raw_material = millet}
+senonches = { topography = flatland vegetation = grasslands climate = oceanic religion = gaulish_pagan culture = aulerci raw_material = millet}
 clermont = { topography = plateau vegetation = woods climate = oceanic religion = gaulish_pagan culture = gaulish raw_material = wheat}
 allegre = { topography = plateau vegetation = woods climate = continental religion = gaulish_pagan culture = gaulish raw_material = wool}
 brioude = { topography = hills vegetation = woods climate = oceanic religion = gaulish_pagan culture = uelauii raw_material = stone}
@@ -2176,9 +2176,9 @@ senlis = { topography = flatland vegetation = farmland climate = oceanic religio
 nemours = { topography = flatland vegetation = grasslands climate = oceanic religion = gaulish_pagan culture = lingones raw_material = wheat}
 brie_comte_robert = { topography = flatland vegetation = farmland climate = oceanic religion = gaulish_pagan culture = meldi raw_material = wine}
 melun = { topography = flatland vegetation = woods climate = oceanic religion = gaulish_pagan culture = tricasses raw_material = wild_game}
-paris = { topography = flatland vegetation = farmland climate = oceanic religion = gaulish_pagan culture = silvanectes raw_material = wine}
-corbeil = { topography = flatland vegetation = farmland climate = oceanic religion = gaulish_pagan culture = silvanectes raw_material = silk}
-mantes = { topography = flatland vegetation = farmland climate = oceanic religion = gaulish_pagan culture = silvanectes raw_material = wine}
+paris = { topography = flatland vegetation = farmland climate = oceanic religion = gaulish_pagan culture = parisi raw_material = wine}
+corbeil = { topography = flatland vegetation = farmland climate = oceanic religion = gaulish_pagan culture = parisi raw_material = silk}
+mantes = { topography = flatland vegetation = farmland climate = oceanic religion = gaulish_pagan culture = parisi raw_material = wine}
 monfort_lamaury = { topography = flatland vegetation = woods climate = oceanic religion = gaulish_pagan culture = parisi raw_material = wheat}
 montmorency = { topography = flatland vegetation = farmland climate = oceanic religion = gaulish_pagan culture = silvanectes raw_material = dyes}
 soissons = { topography = flatland vegetation = woods climate = oceanic religion = gaulish_pagan culture = suessiones raw_material = millet}
@@ -2307,7 +2307,7 @@ alencon = { topography = flatland vegetation = woods climate = oceanic religion 
 argentan = { topography = flatland vegetation = grasslands climate = oceanic religion = gaulish_pagan culture = aulerci raw_material = horses}
 bernay = { topography = flatland vegetation = farmland climate = oceanic religion = gaulish_pagan culture = gaulish raw_material = wheat}
 harcourt = { topography = flatland vegetation = farmland climate = oceanic religion = gaulish_pagan culture = gaulish raw_material = sand}
-laigle = { topography = flatland vegetation = woods climate = oceanic religion = gaulish_pagan culture = parisi raw_material = wool}
+laigle = { topography = flatland vegetation = woods climate = oceanic religion = gaulish_pagan culture = aulerci raw_material = wool}
 rouen = { topography = flatland vegetation = farmland climate = oceanic religion = gaulish_pagan culture = gaulish raw_material = legumes}
 gisors = { topography = flatland vegetation = grasslands climate = oceanic religion = gaulish_pagan culture = bellouaci raw_material = wheat}
 lisieux = { topography = flatland vegetation = farmland climate = oceanic religion = gaulish_pagan culture = gaulish raw_material = fiber_crops natural_harbor_suitability = 0.00}

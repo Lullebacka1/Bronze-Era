@@ -465,6 +465,34 @@ ALBIO = {
     }
 }
 
+ALCEN = {
+    color = { 35 97 205 }
+    culture = aulerci_cenomani
+    religion = gaulish_pagan
+    discovered_regions = { france_region }
+
+    own_control_core = {
+        bauge
+        le_lude
+        sable
+        sainte_suzanne
+    }
+}
+
+ALDIA = {
+    color = { 192 42 50 }
+    culture = aulerci_diablintes
+    religion = gaulish_pagan
+    discovered_regions = { france_region }
+
+    own_control_core = {
+        angers
+        chateau_gontier
+        laval
+        mayenne
+    }
+}
+
 ALLOB = {
     color = { 101 47 188 }
     culture = gaulish
@@ -911,36 +939,11 @@ AULER = {
         alencon
         argentan
         beaumont_au_maine
+        laigle
         le_mans
+        mortagne
+        senonches
         villaines
-    }
-}
-
-ALCEN = {
-    color = { 35 97 205 }
-    culture = aulerci_cenomani
-    religion = gaulish_pagan
-    discovered_regions = { france_region }
-
-    own_control_core = {
-        bauge
-        le_lude
-        sable
-        sainte_suzanne
-    }
-}
-
-ALDIA = {
-    color = { 192 42 50 }
-    culture = aulerci_diablintes
-    religion = gaulish_pagan
-    discovered_regions = { france_region }
-
-    own_control_core = {
-        angers
-        chateau_gontier
-        laval
-        mayenne
     }
 }
 
@@ -1122,21 +1125,6 @@ BIBRO = {
     }
 }
 
-BITUR = {
-    color = { 59 159 181 }
-    culture = gaulish
-    religion = gaulish_pagan
-    discovered_regions = { france_region }
-
-    own_control_core = {
-        benauges
-        bordeaux
-        castelnau_de_medoc
-        lesparre_medoc
-        libourne
-    }
-}
-
 BITCU = {
     color = { 173 54 217 }
     culture = bituriges_cubi
@@ -1160,6 +1148,21 @@ BITCU = {
         romorantin
         st_aignan
         vierzon
+    }
+}
+
+BITUR = {
+    color = { 59 159 181 }
+    culture = gaulish
+    religion = gaulish_pagan
+    discovered_regions = { france_region }
+
+    own_control_core = {
+        benauges
+        bordeaux
+        castelnau_de_medoc
+        lesparre_medoc
+        libourne
     }
 }
 
@@ -1444,25 +1447,6 @@ CAMUN = {
     }
 }
 
-CMNNI = {
-    color = { 208 212 73 }
-    culture = camunni
-    religion = gaulish_pagan
-    discovered_regions = { italy_region south_german_region }
-
-    own_control_core = {
-        chiavenna
-        chur
-        como
-        davos
-        disentis
-        ilanz
-        lugano
-        mesocco
-        monza
-    }
-}
-
 CANTI = {
     color = { 207 85 63 }
     culture = cantiaci
@@ -1660,6 +1644,25 @@ CIBAR = {
 
     own_control_core = {
         mondonedo
+    }
+}
+
+CMNNI = {
+    color = { 208 212 73 }
+    culture = camunni
+    religion = gaulish_pagan
+    discovered_regions = { italy_region south_german_region }
+
+    own_control_core = {
+        chiavenna
+        chur
+        como
+        davos
+        disentis
+        ilanz
+        lugano
+        mesocco
+        monza
     }
 }
 
@@ -3637,12 +3640,12 @@ PARIS = {
     own_control_core = {
         auneau
         chartres
+        corbeil
         dreux
         evreux
-        laigle
+        mantes
         monfort_lamaury
-        mortagne
-        senonches
+        paris
     }
 }
 
@@ -4117,6 +4120,20 @@ SEHA = {
     }
 }
 
+SENES = {
+    color = { 205 71 215 }
+    culture = senones
+    religion = gaulish_pagan
+    discovered_regions = { france_region }
+
+    own_control_core = {
+        beaugency
+        orleans
+        sully
+        vitry_aux_loges
+    }
+}
+
 SENOM = {
     color = { 133 206 44 }
     culture = terramare
@@ -4142,20 +4159,6 @@ SENON = {
         pesaro
         rimini
         urbino
-    }
-}
-
-SENES = {
-    color = { 205 71 215 }
-    culture = senones
-    religion = gaulish_pagan
-    discovered_regions = { france_region }
-
-    own_control_core = {
-        beaugency
-        orleans
-        sully
-        vitry_aux_loges
     }
 }
 
@@ -4274,11 +4277,8 @@ SILVA = {
     discovered_regions = { france_region }
 
     own_control_core = {
-        corbeil
-        mantes
         meaux
         montmorency
-        paris
     }
 }
 
@@ -4379,6 +4379,19 @@ SUELT = {
     }
 }
 
+SUESO = {
+    color = { 106 193 62 }
+    culture = suessiones
+    religion = gaulish_pagan
+    discovered_regions = { france_region }
+
+    own_control_core = {
+        braine
+        crepy
+        soissons
+    }
+}
+
 SUESS = {
     color = { 107 47 202 }
     culture = suessetani
@@ -4391,19 +4404,6 @@ SUESS = {
         roncesvalles
         sanguesa
         viana
-    }
-}
-
-SUESO = {
-    color = { 106 193 62 }
-    culture = suessiones
-    religion = gaulish_pagan
-    discovered_regions = { france_region }
-
-    own_control_core = {
-        braine
-        crepy
-        soissons
     }
 }
 
@@ -4742,18 +4742,6 @@ TRPOL = {
     }
 }
 
-TURDI = {
-    color = { 38 207 106 }
-    culture = turdili
-    religion = lusitanian_pagan
-    discovered_regions = { iberia_region }
-
-    own_control_core = {
-        chao_de_couce
-        leiria
-    }
-}
-
 TUART = {
     color = { 72 191 64 }
     culture = turduli_artigi
@@ -4793,31 +4781,15 @@ TUDIP = {
     }
 }
 
-TUSOS = {
-    color = { 77 203 132 }
-    culture = turduli_sosiponi
-    religion = iberian_pagan
-    discovered_regions = { iberia_region }
-
-    own_control_core = {
-        alcazar_de_san_juan
-        consuegra
-        malagon
-    }
-}
-
-TUVET = {
-    color = { 121 53 222 }
-    culture = turduli_veteres
+TURDI = {
+    color = { 38 207 106 }
+    culture = turdili
     religion = lusitanian_pagan
     discovered_regions = { iberia_region }
 
     own_control_core = {
-        besteiros
-        coimbra
-        esgueira
-        feira
-        figueira
+        chao_de_couce
+        leiria
     }
 }
 
@@ -4850,6 +4822,34 @@ TURON = {
         chinon
         loudun
         saumur
+    }
+}
+
+TUSOS = {
+    color = { 77 203 132 }
+    culture = turduli_sosiponi
+    religion = iberian_pagan
+    discovered_regions = { iberia_region }
+
+    own_control_core = {
+        alcazar_de_san_juan
+        consuegra
+        malagon
+    }
+}
+
+TUVET = {
+    color = { 121 53 222 }
+    culture = turduli_veteres
+    religion = lusitanian_pagan
+    discovered_regions = { iberia_region }
+
+    own_control_core = {
+        besteiros
+        coimbra
+        esgueira
+        feira
+        figueira
     }
 }
 

@@ -1,23 +1,23 @@
 typhus = {
-	# Bronze Era safety override: disabled as a vanilla recurring disease while preserving the UI key.
-	potential = { always = no }
-	monthly_spawn_chance = { value = 0 }
-	monthly_resistance_reduction = 0
+	# Bronze Era active override: famine, war, and crowded settlements can still produce outbreaks.
+	potential = { always = yes }
+	monthly_spawn_chance = { value = 0.001 }
+	monthly_resistance_reduction = 0.015
 
 	spawn = {
 	}
 
-	r0 = { value = 0 }
-	location_spread_threshold = { value = 1 }
+	r0 = { value = 1.2 }
+	location_spread_threshold = { value = 0.05 }
 	calc_interval_days = 30
-	location_stagnation_chance = { value = 1 }
-	percentage_to_meet_their_fate_on_calc = { value = 0 }
+	location_stagnation_chance = { value = 0.35 }
+	percentage_to_meet_their_fate_on_calc = { value = 0.006 }
 
 	location_modifier = {
 	}
 
-	mortality_rate = { value = 0 }
-	character_mortality_chance = { value = 0 }
+	mortality_rate = { value = 0.018 }
+	character_mortality_chance = { value = 0.0005 }
 
 	map_color = {
 		lerp = {

@@ -391,6 +391,24 @@ location_painter_assignments = {
             castropol
         }
     }
+    ALCEN = {
+        color = { 35 97 205 }
+        locations = {
+            bauge
+            le_lude
+            sable
+            sainte_suzanne
+        }
+    }
+    ALDIA = {
+        color = { 192 42 50 }
+        locations = {
+            angers
+            chateau_gontier
+            laval
+            mayenne
+        }
+    }
     ALLOB = {
         color = { 101 47 188 }
         locations = {
@@ -718,26 +736,11 @@ location_painter_assignments = {
             alencon
             argentan
             beaumont_au_maine
+            laigle
             le_mans
+            mortagne
+            senonches
             villaines
-        }
-    }
-    ALCEN = {
-        color = { 35 97 205 }
-        locations = {
-            bauge
-            le_lude
-            sable
-            sainte_suzanne
-        }
-    }
-    ALDIA = {
-        color = { 192 42 50 }
-        locations = {
-            angers
-            chateau_gontier
-            laval
-            mayenne
         }
     }
     AUTRI = {
@@ -858,16 +861,6 @@ location_painter_assignments = {
             london
         }
     }
-    BITUR = {
-        color = { 59 159 181 }
-        locations = {
-            benauges
-            bordeaux
-            castelnau_de_medoc
-            lesparre_medoc
-            libourne
-        }
-    }
     BITCU = {
         color = { 173 54 217 }
         locations = {
@@ -887,6 +880,16 @@ location_painter_assignments = {
             romorantin
             st_aignan
             vierzon
+        }
+    }
+    BITUR = {
+        color = { 59 159 181 }
+        locations = {
+            benauges
+            bordeaux
+            castelnau_de_medoc
+            lesparre_medoc
+            libourne
         }
     }
     BLETO = {
@@ -1080,20 +1083,6 @@ location_painter_assignments = {
             salo_ita
         }
     }
-    CMNNI = {
-        color = { 208 212 73 }
-        locations = {
-            chiavenna
-            chur
-            como
-            davos
-            disentis
-            ilanz
-            lugano
-            mesocco
-            monza
-        }
-    }
     CANTI = {
         color = { 207 85 63 }
         locations = {
@@ -1232,6 +1221,20 @@ location_painter_assignments = {
         color = { 155 48 217 }
         locations = {
             mondonedo
+        }
+    }
+    CMNNI = {
+        color = { 208 212 73 }
+        locations = {
+            chiavenna
+            chur
+            como
+            davos
+            disentis
+            ilanz
+            lugano
+            mesocco
+            monza
         }
     }
     COERE = {
@@ -2654,12 +2657,12 @@ location_painter_assignments = {
         locations = {
             auneau
             chartres
+            corbeil
             dreux
             evreux
-            laigle
+            mantes
             monfort_lamaury
-            mortagne
-            senonches
+            paris
         }
     }
     PARTH = {
@@ -3003,6 +3006,15 @@ location_painter_assignments = {
             susurluk
         }
     }
+    SENES = {
+        color = { 205 71 215 }
+        locations = {
+            beaugency
+            orleans
+            sully
+            vitry_aux_loges
+        }
+    }
     SENOM = {
         color = { 133 206 44 }
         locations = {
@@ -3019,15 +3031,6 @@ location_painter_assignments = {
             pesaro
             rimini
             urbino
-        }
-    }
-    SENES = {
-        color = { 205 71 215 }
-        locations = {
-            beaugency
-            orleans
-            sully
-            vitry_aux_loges
         }
     }
     SEQUA = {
@@ -3106,11 +3109,8 @@ location_painter_assignments = {
     SILVA = {
         color = { 198 220 56 }
         locations = {
-            corbeil
-            mantes
             meaux
             montmorency
-            paris
         }
     }
     SIROP = {
@@ -3175,6 +3175,14 @@ location_painter_assignments = {
             toulon
         }
     }
+    SUESO = {
+        color = { 106 193 62 }
+        locations = {
+            braine
+            crepy
+            soissons
+        }
+    }
     SUESS = {
         color = { 107 47 202 }
         locations = {
@@ -3183,14 +3191,6 @@ location_painter_assignments = {
             roncesvalles
             sanguesa
             viana
-        }
-    }
-    SUESO = {
-        color = { 106 193 62 }
-        locations = {
-            braine
-            crepy
-            soissons
         }
     }
     SURRT = {
@@ -3428,13 +3428,6 @@ location_painter_assignments = {
             tripoli_syria
         }
     }
-    TURDI = {
-        color = { 38 207 106 }
-        locations = {
-            chao_de_couce
-            leiria
-        }
-    }
     TUART = {
         color = { 72 191 64 }
         locations = {
@@ -3459,22 +3452,11 @@ location_painter_assignments = {
             zalamea
         }
     }
-    TUSOS = {
-        color = { 77 203 132 }
+    TURDI = {
+        color = { 38 207 106 }
         locations = {
-            alcazar_de_san_juan
-            consuegra
-            malagon
-        }
-    }
-    TUVET = {
-        color = { 121 53 222 }
-        locations = {
-            besteiros
-            coimbra
-            esgueira
-            feira
-            figueira
+            chao_de_couce
+            leiria
         }
     }
     TURMO = {
@@ -3497,6 +3479,24 @@ location_painter_assignments = {
             chinon
             loudun
             saumur
+        }
+    }
+    TUSOS = {
+        color = { 77 203 132 }
+        locations = {
+            alcazar_de_san_juan
+            consuegra
+            malagon
+        }
+    }
+    TUVET = {
+        color = { 121 53 222 }
+        locations = {
+            besteiros
+            coimbra
+            esgueira
+            feira
+            figueira
         }
     }
     TYLE = {

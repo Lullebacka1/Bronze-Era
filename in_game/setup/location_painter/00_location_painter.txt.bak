@@ -281,14 +281,14 @@ location_painter_assignments = {
             coutances
         }
     }
-    ACCIOCI = {
+    ACCIO = {
         color = { 209 162 51 }
         locations = {
             adrada
             talavera_de_la_reina
         }
     }
-    ACHAEA = {
+    ACHAE = {
         color = { 89 207 160 }
         locations = {
             chalandritsa
@@ -297,7 +297,7 @@ location_painter_assignments = {
             vostitsa
         }
     }
-    ACINIPPO = {
+    ACINI = {
         color = { 221 34 90 }
         locations = {
             olvera
@@ -309,7 +309,7 @@ location_painter_assignments = {
             sidon
         }
     }
-    ADUATUCI = {
+    ADUAT = {
         color = { 214 96 67 }
         locations = {
             borgloon
@@ -354,7 +354,7 @@ location_painter_assignments = {
             zemlungrad
         }
     }
-    AICUBIDUOI = {
+    AICUB = {
         color = { 71 202 209 }
         locations = {
             aignay
@@ -385,7 +385,7 @@ location_painter_assignments = {
             paphos
         }
     }
-    ALBIONES = {
+    ALBIO = {
         color = { 206 74 227 }
         locations = {
             castropol
@@ -434,7 +434,7 @@ location_painter_assignments = {
             villars
         }
     }
-    AMBIANI = {
+    AMBIA = {
         color = { 103 209 87 }
         locations = {
             abbeville
@@ -462,7 +462,7 @@ location_painter_assignments = {
             qusayr
         }
     }
-    ANDECAMULENSES = {
+    ANDEC = {
         color = { 221 148 70 }
         locations = {
             aulnay
@@ -480,13 +480,13 @@ location_painter_assignments = {
             passavant
         }
     }
-    ANTICARIA = {
+    ANTIC = {
         color = { 115 197 48 }
         locations = {
             antequera
         }
     }
-    ARAOCELENSES = {
+    ARAOC = {
         color = { 217 84 195 }
         locations = {
             seia
@@ -535,7 +535,7 @@ location_painter_assignments = {
             zenica
         }
     }
-    ARESACES = {
+    ARESA = {
         color = { 74 114 207 }
         locations = {
             backnang
@@ -548,7 +548,7 @@ location_painter_assignments = {
             vaihingen
         }
     }
-    AREVACI = {
+    AREVA = {
         color = { 54 77 221 }
         locations = {
             avila
@@ -587,13 +587,13 @@ location_painter_assignments = {
             velez_rubio
         }
     }
-    ARROTREBAE = {
+    ARROT = {
         color = { 213 77 145 }
         locations = {
             villalba
         }
     }
-    ARUNDA = {
+    ARUND = {
         color = { 45 71 200 }
         locations = {
             marbella
@@ -686,7 +686,7 @@ location_painter_assignments = {
             zakho
         }
     }
-    ATACINI = {
+    ATACI = {
         color = { 178 82 218 }
         locations = {
             carcassonne
@@ -694,13 +694,13 @@ location_painter_assignments = {
             saint_pons
         }
     }
-    ATHENS = {
+    ATHEN = {
         color = { 76 195 225 }
         locations = {
             athens
         }
     }
-    ATREBATES = {
+    ATREB = {
         color = { 76 200 175 }
         locations = {
             arras
@@ -712,7 +712,7 @@ location_painter_assignments = {
             saint_pol
         }
     }
-    AULERCI = {
+    AULER = {
         color = { 207 132 32 }
         locations = {
             alencon
@@ -722,7 +722,7 @@ location_painter_assignments = {
             villaines
         }
     }
-    AULERCI CENOMANI = {
+    ALCEN = {
         color = { 35 97 205 }
         locations = {
             bauge
@@ -731,7 +731,7 @@ location_painter_assignments = {
             sainte_suzanne
         }
     }
-    AULERCI DIABLINTES = {
+    ALDIA = {
         color = { 192 42 50 }
         locations = {
             angers
@@ -740,7 +740,7 @@ location_painter_assignments = {
             mayenne
         }
     }
-    AUTRIGONES = {
+    AUTRI = {
         color = { 147 48 197 }
         locations = {
             anana
@@ -769,7 +769,7 @@ location_painter_assignments = {
             varto
         }
     }
-    BAEDUI = {
+    BAEDU = {
         color = { 78 71 205 }
         locations = {
             betanzos
@@ -799,7 +799,7 @@ location_painter_assignments = {
             tavira
         }
     }
-    BARDILI = {
+    BARDI = {
         color = { 202 151 83 }
         locations = {
             montemor
@@ -808,7 +808,7 @@ location_painter_assignments = {
             setubal
         }
     }
-    BEBRYKES = {
+    BEBRY = {
         color = { 221 64 148 }
         locations = {
             besalu
@@ -835,7 +835,7 @@ location_painter_assignments = {
             siguenza
         }
     }
-    BELLOUACI = {
+    BELLO = {
         color = { 144 203 72 }
         locations = {
             beauvais
@@ -850,7 +850,7 @@ location_painter_assignments = {
             deir_qamar
         }
     }
-    BIBROCI = {
+    BIBRO = {
         color = { 195 222 79 }
         locations = {
             barking
@@ -868,7 +868,7 @@ location_painter_assignments = {
             libourne
         }
     }
-    BITURIGES CUBI = {
+    BITCU = {
         color = { 173 54 217 }
         locations = {
             bourges
@@ -889,7 +889,7 @@ location_painter_assignments = {
             vierzon
         }
     }
-    BLETONESSI = {
+    BLETO = {
         color = { 35 209 114 }
         locations = {
             miranda_de_i_douro
@@ -959,7 +959,7 @@ location_painter_assignments = {
             sinj
         }
     }
-    BRACARI = {
+    BRACA = {
         color = { 207 103 89 }
         locations = {
             aguiar
@@ -969,7 +969,7 @@ location_painter_assignments = {
             vila_real
         }
     }
-    BRENAI = {
+    BRENA = {
         color = { 70 108 210 }
         locations = {
             illereichen
@@ -987,20 +987,32 @@ location_painter_assignments = {
             beirut
         }
     }
-    CABRIANGINI = {
+    CABRI = {
         color = { 58 41 209 }
         locations = {
             oviedo
             villaviciosa
         }
     }
-    CADABRI = {
+    CADAB = {
         color = { 105 83 202 }
         locations = {
             cangas
         }
     }
-    CAEROSI = {
+    CAEMA = {
+        color = { 86 49 221 }
+        locations = {
+            bastogne
+            bouillon
+            chateau_porcien
+            orchimont
+            prum
+            st_vith
+            vianden
+        }
+    }
+    CAERO = {
         color = { 202 177 63 }
         locations = {
             arlon
@@ -1019,7 +1031,7 @@ location_painter_assignments = {
             wittlich
         }
     }
-    CALADONI = {
+    CALAD = {
         color = { 91 220 65 }
         locations = {
             monterrey
@@ -1037,20 +1049,20 @@ location_painter_assignments = {
             tancarville
         }
     }
-    CALLAECI = {
+    CALLA = {
         color = { 216 119 59 }
         locations = {
             porto
         }
     }
-    CALONTIENES = {
+    CALON = {
         color = { 64 218 47 }
         locations = {
             arroyo
             trujillo
         }
     }
-    CAMAOLENSES = {
+    CAMAO = {
         color = { 219 185 51 }
         locations = {
             albuquerque
@@ -1068,7 +1080,7 @@ location_painter_assignments = {
             salo_ita
         }
     }
-    CAMUNNI = {
+    CMNNI = {
         color = { 208 212 73 }
         locations = {
             chiavenna
@@ -1082,7 +1094,7 @@ location_painter_assignments = {
             monza
         }
     }
-    CANTIACI = {
+    CANTI = {
         color = { 207 85 63 }
         locations = {
             canterbury
@@ -1110,7 +1122,7 @@ location_painter_assignments = {
             kavaje
         }
     }
-    CAPORI = {
+    CAPOR = {
         color = { 210 113 81 }
         locations = {
             lalin
@@ -1121,7 +1133,7 @@ location_painter_assignments = {
             santiago_compostela
         }
     }
-    CARISTII = {
+    CARIS = {
         color = { 70 72 195 }
         locations = {
             bilbao
@@ -1139,7 +1151,7 @@ location_painter_assignments = {
             trieste
         }
     }
-    CARNUTES = {
+    CARNU = {
         color = { 189 61 95 }
         locations = {
             alluyes
@@ -1160,7 +1172,7 @@ location_painter_assignments = {
             gibraltar
         }
     }
-    CATUWELLAUNOI = {
+    CATUW = {
         color = { 32 203 163 }
         locations = {
             broyes
@@ -1179,7 +1191,7 @@ location_painter_assignments = {
             toro
         }
     }
-    CELEGERI = {
+    CELEG = {
         color = { 31 30 31 }
         locations = {
             caracal
@@ -1192,7 +1204,7 @@ location_painter_assignments = {
             targu_bengai
         }
     }
-    CELTICI = {
+    CELTI = {
         color = { 170 208 238 }
         locations = {
             almonaster_la_real
@@ -1216,26 +1228,26 @@ location_painter_assignments = {
             zafra
         }
     }
-    CIBARCI = {
+    CIBAR = {
         color = { 155 48 217 }
         locations = {
             mondonedo
         }
     }
-    COERENSES = {
+    COERE = {
         color = { 48 213 180 }
         locations = {
             jaraicejo
         }
     }
-    COLIACINI = {
+    COLIA = {
         color = { 37 157 208 }
         locations = {
             llanes
             riano
         }
     }
-    CONCANI = {
+    CONCA = {
         color = { 179 101 55 }
         locations = {
             potes
@@ -1250,7 +1262,7 @@ location_painter_assignments = {
             serpa
         }
     }
-    CONSGI = {
+    CONSG = {
         color = { 71 215 138 }
         locations = {
             laredo
@@ -1268,7 +1280,7 @@ location_painter_assignments = {
             saint_malo
         }
     }
-    CRATISTII = {
+    CRATI = {
         color = { 28 94 48 }
         locations = {
             huete
@@ -1369,7 +1381,7 @@ location_painter_assignments = {
             zubarah
         }
     }
-    DISCODUARTERAE = {
+    DISCO = {
         color = { 205 60 104 }
         locations = {
             tryavna
@@ -1392,7 +1404,7 @@ location_painter_assignments = {
             pyli
         }
     }
-    EBURONES = {
+    EBURO = {
         color = { 87 203 165 }
         locations = {
             aachen
@@ -1454,7 +1466,7 @@ location_painter_assignments = {
             suq
         }
     }
-    ELISYKOI = {
+    ELISY = {
         color = { 29 99 129 }
         locations = {
             agde
@@ -1478,7 +1490,7 @@ location_painter_assignments = {
             trapani
         }
     }
-    EPANTERRI = {
+    EPANT = {
         color = { 60 108 124 }
         locations = {
             barcelonnette
@@ -1586,14 +1598,14 @@ location_painter_assignments = {
             tudela
         }
     }
-    GARUMNI = {
+    GARUM = {
         color = { 197 38 149 }
         locations = {
             benabarre
             talarn
         }
     }
-    GENNATES = {
+    GENNA = {
         color = { 212 43 43 }
         locations = {
             genoa
@@ -1613,7 +1625,7 @@ location_painter_assignments = {
             slobozia
         }
     }
-    GROVII = {
+    GROVI = {
         color = { 195 40 79 }
         locations = {
             tuy
@@ -1735,7 +1747,7 @@ location_painter_assignments = {
             sansevero
         }
     }
-    IBOLCANI = {
+    IBOLC = {
         color = { 81 214 99 }
         locations = {
             alhambra_location
@@ -1753,7 +1765,7 @@ location_painter_assignments = {
             palma_del_rio
         }
     }
-    INGAUMI = {
+    INGAU = {
         color = { 96 205 185 }
         locations = {
             albenga
@@ -1775,7 +1787,7 @@ location_painter_assignments = {
             turin
         }
     }
-    INTERNELLI = {
+    INTER = {
         color = { 52 176 218 }
         locations = {
             grasse
@@ -1783,7 +1795,7 @@ location_painter_assignments = {
             puget_theniers
         }
     }
-    IOLCUS = {
+    IOLC = {
         color = { 216 85 137 }
         locations = {
             demetrias
@@ -1798,7 +1810,7 @@ location_painter_assignments = {
             pangalia
         }
     }
-    IREUCUTIONI = {
+    IREUC = {
         color = { 200 94 201 }
         locations = {
             meda
@@ -1815,7 +1827,7 @@ location_painter_assignments = {
             tabqah
         }
     }
-    KARTUBA = {
+    KARTU = {
         color = { 125 191 43 }
         locations = {
             belalcazar
@@ -1906,7 +1918,7 @@ location_painter_assignments = {
             yalvac
         }
     }
-    KYNETES = {
+    KYNET = {
         color = { 82 209 200 }
         locations = {
             faro
@@ -1925,14 +1937,14 @@ location_painter_assignments = {
             tsepina
         }
     }
-    LAGAMI = {
+    LAGAM = {
         color = { 211 54 117 }
         locations = {
             castellane
             draguignan
         }
     }
-    LAPCINI = {
+    LAPCI = {
         color = { 113 53 187 }
         locations = {
             bardi
@@ -1940,7 +1952,7 @@ location_painter_assignments = {
             rovegno
         }
     }
-    LAPIATINEI = {
+    LAPIA = {
         color = { 197 38 120 }
         locations = {
             ferrol
@@ -1966,13 +1978,13 @@ location_painter_assignments = {
             molyvos
         }
     }
-    LEMAVI = {
+    LEMAV = {
         color = { 150 181 59 }
         locations = {
             monforte_de_lemos
         }
     }
-    LEMOVICES = {
+    LEMOV = {
         color = { 51 167 209 }
         locations = {
             aixe
@@ -2046,7 +2058,7 @@ location_painter_assignments = {
             tobruk
         }
     }
-    LINGONES = {
+    LINGO = {
         color = { 32 76 76 }
         locations = {
             auxerre
@@ -2062,7 +2074,7 @@ location_painter_assignments = {
             villemaur
         }
     }
-    LOBETANI = {
+    LOBET = {
         color = { 58 147 182 }
         locations = {
             albarracin
@@ -2073,7 +2085,7 @@ location_painter_assignments = {
             torralba
         }
     }
-    LOUGEI = {
+    LOUGE = {
         color = { 147 199 56 }
         locations = {
             barco_de_valdeorras
@@ -2097,7 +2109,7 @@ location_painter_assignments = {
             yuksekkum
         }
     }
-    LUSONES = {
+    LUSON = {
         color = { 70 42 207 }
         locations = {
             calatanazor
@@ -2143,7 +2155,7 @@ location_painter_assignments = {
             malaga
         }
     }
-    MANDUBIO = {
+    MANDU = {
         color = { 109 200 70 }
         locations = {
             gien
@@ -2214,7 +2226,7 @@ location_painter_assignments = {
             brie_comte_robert
         }
     }
-    MENAPII = {
+    MENAP = {
         color = { 63 74 65 }
         locations = {
             aalst
@@ -2238,7 +2250,7 @@ location_painter_assignments = {
             ypres
         }
     }
-    MENTESANI = {
+    MENTE = {
         color = { 90 198 47 }
         locations = {
             alcaraz
@@ -2247,7 +2259,7 @@ location_painter_assignments = {
             villapalacios
         }
     }
-    MENTESONI = {
+    METSO = {
         color = { 186 221 60 }
         locations = {
             jodar
@@ -2267,7 +2279,7 @@ location_painter_assignments = {
             urla
         }
     }
-    MIROBRIGENSES = {
+    MIROB = {
         color = { 34 216 131 }
         locations = {
             alcacer_do_sal
@@ -2323,7 +2335,7 @@ location_painter_assignments = {
             siatista
         }
     }
-    MORINI = {
+    MORIN = {
         color = { 194 64 196 }
         locations = {
             boulogne_sur_mer
@@ -2342,7 +2354,7 @@ location_painter_assignments = {
             redon
         }
     }
-    NEMETATI = {
+    NEMET = {
         color = { 215 211 86 }
         locations = {
             barcelos
@@ -2355,7 +2367,7 @@ location_painter_assignments = {
             finisterre
         }
     }
-    NERVII = {
+    NERVI = {
         color = { 139 198 63 }
         locations = {
             ath
@@ -2462,7 +2474,7 @@ location_painter_assignments = {
             scalea
         }
     }
-    OLCADES = {
+    OLCAD = {
         color = { 64 128 191 }
         locations = {
             alarcon
@@ -2481,27 +2493,27 @@ location_painter_assignments = {
             andujar
         }
     }
-    OPPIDANI = {
+    OPPID = {
         color = { 68 191 213 }
         locations = {
             alcobaca
             torres_vedras
         }
     }
-    ORCHOMENUS = {
+    ORCHO = {
         color = { 209 71 61 }
         locations = {
             atalanti
             gravia
         }
     }
-    ORNIACI = {
+    ORNIA = {
         color = { 208 185 37 }
         locations = {
             mieres
         }
     }
-    OROBLI = {
+    OROBL = {
         color = { 62 117 71 }
         locations = {
             bergamo
@@ -2573,7 +2585,7 @@ location_painter_assignments = {
             nevrokop
         }
     }
-    PAESICI = {
+    PAESI = {
         color = { 66 110 205 }
         locations = {
             aviles
@@ -2625,7 +2637,7 @@ location_painter_assignments = {
             yenicepazari
         }
     }
-    PALANTI = {
+    PALAN = {
         color = { 95 64 196 }
         locations = {
             coria
@@ -2637,7 +2649,7 @@ location_painter_assignments = {
             valverde
         }
     }
-    PARISI = {
+    PARIS = {
         color = { 35 153 199 }
         locations = {
             auneau
@@ -2665,7 +2677,7 @@ location_painter_assignments = {
             seydisehir
         }
     }
-    PETROCORIIS = {
+    PETRO = {
         color = { 87 91 214 }
         locations = {
             bergerac
@@ -2689,13 +2701,13 @@ location_painter_assignments = {
             thouars
         }
     }
-    POEMANI = {
+    POEMA = {
         color = { 200 88 208 }
         locations = {
             navia_de_suarna
         }
     }
-    POLLENTINI = {
+    POLLE = {
         color = { 35 136 199 }
         locations = {
             cairo_montenotte
@@ -2720,7 +2732,7 @@ location_painter_assignments = {
             modon
         }
     }
-    QUARQUENI = {
+    QUARQ = {
         color = { 66 209 76 }
         locations = {
             ginzo_de_limia
@@ -2766,7 +2778,7 @@ location_painter_assignments = {
             vitre
         }
     }
-    REGINI = {
+    REGIN = {
         color = { 73 122 212 }
         locations = {
             amesbury
@@ -2788,7 +2800,7 @@ location_painter_assignments = {
             roucy
         }
     }
-    RHODES = {
+    RHODE = {
         color = { 77 219 96 }
         locations = {
             karpathos
@@ -2806,14 +2818,14 @@ location_painter_assignments = {
             villefranche
         }
     }
-    SABATES = {
+    SABAT = {
         color = { 83 113 198 }
         locations = {
             finalborgo
             savona
         }
     }
-    SAELINI = {
+    SAELI = {
         color = { 83 73 218 }
         locations = {
             villablino
@@ -2864,7 +2876,7 @@ location_painter_assignments = {
             st_jean_dangely
         }
     }
-    SARDONNES = {
+    SARDO = {
         color = { 216 152 79 }
         locations = {
             fenouillet
@@ -2955,7 +2967,7 @@ location_painter_assignments = {
             zyryan
         }
     }
-    SEAREAE = {
+    SEARE = {
         color = { 51 43 202 }
         locations = {
             lamego
@@ -3009,7 +3021,7 @@ location_painter_assignments = {
             urbino
         }
     }
-    SENONES = {
+    SENES = {
         color = { 205 71 215 }
         locations = {
             beaugency
@@ -3034,20 +3046,20 @@ location_painter_assignments = {
             thoire
         }
     }
-    SETUEI = {
+    SETUE = {
         color = { 184 207 32 }
         locations = {
             nesle
             saint_quentin
         }
     }
-    SEURBI = {
+    SEURB = {
         color = { 196 79 207 }
         locations = {
             viana_do_castelo
         }
     }
-    SEURRI = {
+    SEURR = {
         color = { 177 202 63 }
         locations = {
             sarria
@@ -3091,7 +3103,7 @@ location_painter_assignments = {
             terranovasic
         }
     }
-    SILVANECTES = {
+    SILVA = {
         color = { 198 220 56 }
         locations = {
             corbeil
@@ -3118,7 +3130,7 @@ location_painter_assignments = {
             nogaro
         }
     }
-    SPARTA = {
+    SPART = {
         color = { 196 54 125 }
         locations = {
             astros
@@ -3139,7 +3151,7 @@ location_painter_assignments = {
             teramo
         }
     }
-    STATIELLI = {
+    STATI = {
         color = { 67 59 186 }
         locations = {
             acqui
@@ -3148,14 +3160,14 @@ location_painter_assignments = {
             mondovi
         }
     }
-    SUBINATES = {
+    SUBIN = {
         color = { 81 93 219 }
         locations = {
             arona
             varese
         }
     }
-    SUELTERI = {
+    SUELT = {
         color = { 201 204 36 }
         locations = {
             brignoles
@@ -3163,7 +3175,7 @@ location_painter_assignments = {
             toulon
         }
     }
-    SUESSETANI = {
+    SUESS = {
         color = { 107 47 202 }
         locations = {
             anso
@@ -3173,7 +3185,7 @@ location_painter_assignments = {
             viana
         }
     }
-    SUESSIONES = {
+    SUESO = {
         color = { 106 193 62 }
         locations = {
             braine
@@ -3202,7 +3214,7 @@ location_painter_assignments = {
             taybah
         }
     }
-    TALURES = {
+    TALUR = {
         color = { 200 40 112 }
         locations = {
             ponte_sor
@@ -3212,7 +3224,7 @@ location_painter_assignments = {
             torres_novas
         }
     }
-    TAPORI = {
+    TAPOR = {
         color = { 91 101 200 }
         locations = {
             castelo_branco
@@ -3303,14 +3315,14 @@ location_painter_assignments = {
             preveza
         }
     }
-    TEUCOR = {
+    TEUCO = {
         color = { 32 207 59 }
         locations = {
             saint_avold
             sarreguemines
         }
     }
-    THEBES = {
+    THEBE = {
         color = { 199 105 87 }
         locations = {
             livadeia
@@ -3338,14 +3350,14 @@ location_painter_assignments = {
             xanthia
         }
     }
-    TIGULIN = {
+    TIGUL = {
         color = { 206 111 59 }
         locations = {
             lavagna
             sarzana
         }
     }
-    TIMACHI = {
+    TIMAC = {
         color = { 89 207 164 }
         locations = {
             archar
@@ -3356,7 +3368,7 @@ location_painter_assignments = {
             vratsa
         }
     }
-    TITTII = {
+    TITTI = {
         color = { 79 81 120 }
         locations = {
             almazan
@@ -3376,7 +3388,7 @@ location_painter_assignments = {
             vico
         }
     }
-    TREWEROI = {
+    TREWE = {
         color = { 13 46 49 }
         locations = {
             chalons_champagne
@@ -3401,7 +3413,7 @@ location_painter_assignments = {
             wallerfangen
         }
     }
-    TRICASSES = {
+    TRICA = {
         color = { 205 98 71 }
         locations = {
             etampes
@@ -3416,21 +3428,21 @@ location_painter_assignments = {
             tripoli_syria
         }
     }
-    TURDILI = {
+    TURDI = {
         color = { 38 207 106 }
         locations = {
             chao_de_couce
             leiria
         }
     }
-    TURDULI ARTIGI = {
+    TUART = {
         color = { 72 191 64 }
         locations = {
             almaden
             ciudad_real
         }
     }
-    TURDULI BUDANI = {
+    TUBUD = {
         color = { 206 64 90 }
         locations = {
             escurial
@@ -3440,14 +3452,14 @@ location_painter_assignments = {
             puebla_de_alcocer
         }
     }
-    TURDULI DIPONI = {
+    TUDIP = {
         color = { 56 196 204 }
         locations = {
             villanueva_de_la_serena
             zalamea
         }
     }
-    TURDULI SOSIPONI = {
+    TUSOS = {
         color = { 77 203 132 }
         locations = {
             alcazar_de_san_juan
@@ -3455,7 +3467,7 @@ location_painter_assignments = {
             malagon
         }
     }
-    TURDULI VETERES = {
+    TUVET = {
         color = { 121 53 222 }
         locations = {
             besteiros
@@ -3465,7 +3477,7 @@ location_painter_assignments = {
             figueira
         }
     }
-    TURMOGI = {
+    TURMO = {
         color = { 191 211 60 }
         locations = {
             aranda_de_duero
@@ -3479,7 +3491,7 @@ location_painter_assignments = {
             villadiego
         }
     }
-    TURONES = {
+    TURON = {
         color = { 10 230 116 }
         locations = {
             chinon
@@ -3542,7 +3554,7 @@ location_painter_assignments = {
             wurzburg
         }
     }
-    UELAUII = {
+    UELAU = {
         color = { 149 207 79 }
         locations = {
             brioude
@@ -3618,7 +3630,7 @@ location_painter_assignments = {
             yerevan
         }
     }
-    URGAPA = {
+    URGAP = {
         color = { 44 206 68 }
         locations = {
             lucena
@@ -3631,7 +3643,7 @@ location_painter_assignments = {
             osuna
         }
     }
-    VACCAEI = {
+    VACCA = {
         color = { 187 102 62 }
         locations = {
             alba_de_aliste
@@ -3645,7 +3657,7 @@ location_painter_assignments = {
             zamora
         }
     }
-    VADRULI = {
+    VADRU = {
         color = { 202 81 68 }
         locations = {
             estella
@@ -3681,7 +3693,7 @@ location_painter_assignments = {
             le_puy
         }
     }
-    VENATISOCI = {
+    VENAT = {
         color = { 145 190 55 }
         locations = {
             los_yebenes
@@ -3723,7 +3735,7 @@ location_painter_assignments = {
             vicenza
         }
     }
-    VENOSTES = {
+    VENOS = {
         color = { 174 203 58 }
         locations = {
             bludenz
@@ -3734,7 +3746,7 @@ location_painter_assignments = {
             werdenberg
         }
     }
-    VERUCINI = {
+    VERUC = {
         color = { 107 202 83 }
         locations = {
             barjols
@@ -3747,7 +3759,7 @@ location_painter_assignments = {
             vasto
         }
     }
-    VETTONES = {
+    VETTO = {
         color = { 137 81 214 }
         locations = {
             alba_de_tormes
@@ -3770,7 +3782,7 @@ location_painter_assignments = {
             bayeux
         }
     }
-    VIROMANDU = {
+    VIROM = {
         color = { 74 185 207 }
         locations = {
             clermont_en_beauvaisis
@@ -3830,7 +3842,7 @@ location_painter_assignments = {
             villemur
         }
     }
-    VOLTICIANI = {
+    VOLTI = {
         color = { 44 216 196 }
         locations = {
             caspe
@@ -3872,7 +3884,7 @@ location_painter_assignments = {
             rodoscuk
         }
     }
-    ZOELAE = {
+    ZOELA = {
         color = { 134 207 94 }
         locations = {
             braganca

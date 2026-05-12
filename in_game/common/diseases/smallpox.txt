@@ -1,23 +1,23 @@
 smallpox = {
-	# Bronze Era safety override: disabled as a vanilla colonial/late disease while preserving the UI key.
-	potential = { always = no }
-	monthly_spawn_chance = { value = 0 }
-	monthly_resistance_reduction = 0
+	# Bronze Era active override: rare epidemic outbreaks remain possible.
+	potential = { always = yes }
+	monthly_spawn_chance = { value = 0.0004 }
+	monthly_resistance_reduction = 0.012
 
 	spawn = {
 	}
 
-	r0 = { value = 0 }
-	location_spread_threshold = { value = 1 }
+	r0 = { value = 1.3 }
+	location_spread_threshold = { value = 0.06 }
 	calc_interval_days = 30
-	location_stagnation_chance = { value = 1 }
-	percentage_to_meet_their_fate_on_calc = { value = 0 }
+	location_stagnation_chance = { value = 0.28 }
+	percentage_to_meet_their_fate_on_calc = { value = 0.009 }
 
 	location_modifier = {
 	}
 
-	mortality_rate = { value = 0 }
-	character_mortality_chance = { value = 0 }
+	mortality_rate = { value = 0.035 }
+	character_mortality_chance = { value = 0.001 }
 
 	map_color = {
 		lerp = {

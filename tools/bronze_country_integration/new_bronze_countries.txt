@@ -6,6 +6,8 @@ Newly created Bronze Age countries
 - ADUAT
 - AICUB
 - ALBIO
+- ALCEN
+- ALDIA
 - AMBIA
 - ANDEC
 - ANTIC
@@ -17,8 +19,6 @@ Newly created Bronze Age countries
 - ATACI
 - ATREB
 - AULER
-- ALCEN
-- ALDIA
 - AUTRI
 - BAEDU
 - BARDI
@@ -38,7 +38,6 @@ Newly created Bronze Age countries
 - CALLA
 - CALON
 - CAMAO
-- CMNNI
 - CANTI
 - CAPOR
 - CARIS
@@ -48,6 +47,7 @@ Newly created Bronze Age countries
 - CELEG
 - CELTI
 - CIBAR
+- CMNNI
 - COERE
 - COLIA
 - CONCA
@@ -116,8 +116,8 @@ Newly created Bronze Age countries
 - STATI
 - SUBIN
 - SUELT
-- SUESS
 - SUESO
+- SUESS
 - TALUR
 - TAPOR
 - TEUCO
@@ -126,14 +126,14 @@ Newly created Bronze Age countries
 - TITTI
 - TREWE
 - TRICA
-- TURDI
 - TUART
 - TUBUD
 - TUDIP
-- TUSOS
-- TUVET
+- TURDI
 - TURMO
 - TURON
+- TUSOS
+- TUVET
 - TYLE
 - UBI
 - UELAU

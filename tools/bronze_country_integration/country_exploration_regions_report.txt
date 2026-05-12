@@ -49,6 +49,12 @@ ALASI (Alashiya)
 ALBIO (Albiones)
 - discovered_regions: iberia_region
 
+ALCEN (Aulerci Cenomani)
+- discovered_regions: france_region
+
+ALDIA (Aulerci Diablintes)
+- discovered_regions: france_region
+
 ALLOB (Allobroges)
 - discovered_regions: france_region
 
@@ -121,12 +127,6 @@ ATREB (Atrebates)
 AULER (Aulerci)
 - discovered_regions: france_region
 
-ALCEN (Aulerci Cenomani)
-- discovered_regions: france_region
-
-ALDIA (Aulerci Diablintes)
-- discovered_regions: france_region
-
 AUTRI (Autrigones)
 - discovered_regions: iberia_region
 
@@ -163,10 +163,10 @@ BERIT (Berit)
 BIBRO (Bibroci)
 - discovered_regions: great_britain_region
 
-BITUR (Bituriges)
+BITCU (Bituriges Cubi)
 - discovered_regions: france_region
 
-BITCU (Bituriges Cubi)
+BITUR (Bituriges)
 - discovered_regions: france_region
 
 BLETO (Bletonessi)
@@ -223,9 +223,6 @@ CAMAO (Camaolenses)
 CAMUN (Camunic)
 - discovered_regions: italy_region south_german_region
 
-CMNNI (Camunni)
-- discovered_regions: italy_region south_german_region
-
 CANTI (Cantiaci)
 - discovered_regions: great_britain_region
 
@@ -261,6 +258,9 @@ CELTI (Celtici)
 
 CIBAR (Cibarci)
 - discovered_regions: iberia_region
+
+CMNNI (Camunni)
+- discovered_regions: italy_region south_german_region
 
 COERE (Coerenses)
 - discovered_regions: iberia_region
@@ -673,14 +673,14 @@ SEGUS (Segusiaves)
 SEHA (Seha River Land)
 - discovered_regions: anatolia_region
 
+SENES (Senones)
+- discovered_regions: france_region
+
 SENOM (Senomes)
 - discovered_regions: italy_region
 
 SENON (Senonian)
 - discovered_regions: italy_region
-
-SENES (Senones)
-- discovered_regions: france_region
 
 SEQUA (Sequances)
 - discovered_regions: france_region
@@ -727,11 +727,11 @@ SUBIN (Subinates)
 SUELT (Suelteri)
 - discovered_regions: france_region
 
-SUESS (Suessetani)
-- discovered_regions: iberia_region
-
 SUESO (Suessiones)
 - discovered_regions: france_region
+
+SUESS (Suessetani)
+- discovered_regions: iberia_region
 
 SURRT (Surrtenia)
 - discovered_regions: italy_region
@@ -793,9 +793,6 @@ TRICA (Tricasses)
 TRPOL (Tripoli)
 - discovered_regions: crescent_region
 
-TURDI (Turdili)
-- discovered_regions: iberia_region
-
 TUART (Turduli Artigi)
 - discovered_regions: iberia_region
 
@@ -805,10 +802,7 @@ TUBUD (Turduli Budani)
 TUDIP (Turduli Diponi)
 - discovered_regions: iberia_region
 
-TUSOS (Turduli Sosiponi)
-- discovered_regions: iberia_region
-
-TUVET (Turduli Veteres)
+TURDI (Turdili)
 - discovered_regions: iberia_region
 
 TURMO (Turmogi)
@@ -816,6 +810,12 @@ TURMO (Turmogi)
 
 TURON (Turones)
 - discovered_regions: france_region
+
+TUSOS (Turduli Sosiponi)
+- discovered_regions: iberia_region
+
+TUVET (Turduli Veteres)
+- discovered_regions: iberia_region
 
 TYLE (Tyle)
 - discovered_regions: balkan_region

@@ -407,6 +407,56 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
+	##AULERCI CENOMANI
+	ALCEN = {
+		capital = bauge
+		culture = aulerci_cenomani
+		religion = gaulish_pagan
+
+		discovered_regions = {
+			france_region
+		}
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			bauge le_lude sable sainte_suzanne
+		}
+		accepted_cultures = { aulerci_cenomani gaulish }
+		tolerated_cultures = {  }
+	}
+
+	##AULERCI DIABLINTES
+	ALDIA = {
+		capital = angers
+		culture = aulerci_diablintes
+		religion = gaulish_pagan
+
+		discovered_regions = {
+			france_region
+		}
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			angers chateau_gontier laval mayenne
+		}
+		accepted_cultures = { aulerci_diablintes gaulish }
+		tolerated_cultures = {  }
+	}
+
 	##ALLOBROGES
 	ALLOB = {
 		capital = die
@@ -995,59 +1045,9 @@ countries = {
 		}
 
 		own_control_core = {
-			alencon argentan beaumont_au_maine le_mans villaines
+			alencon argentan beaumont_au_maine laigle le_mans mortagne senonches villaines
 		}
 		accepted_cultures = { aulerci gaulish }
-		tolerated_cultures = {  }
-	}
-
-	##AULERCI CENOMANI
-	ALCEN = {
-		capital = bauge
-		culture = aulerci_cenomani
-		religion = gaulish_pagan
-
-		discovered_regions = {
-			france_region
-		}
-
-		country_rank = rank_kingdom
-
-		include = "catholic_monarchy_not_present"
-
-		government = {
-			ruler = random
-		}
-
-		own_control_core = {
-			bauge le_lude sable sainte_suzanne
-		}
-		accepted_cultures = { aulerci_cenomani gaulish }
-		tolerated_cultures = {  }
-	}
-
-	##AULERCI DIABLINTES
-	ALDIA = {
-		capital = angers
-		culture = aulerci_diablintes
-		religion = gaulish_pagan
-
-		discovered_regions = {
-			france_region
-		}
-
-		country_rank = rank_kingdom
-
-		include = "catholic_monarchy_not_present"
-
-		government = {
-			ruler = random
-		}
-
-		own_control_core = {
-			angers chateau_gontier laval mayenne
-		}
-		accepted_cultures = { aulerci_diablintes gaulish }
 		tolerated_cultures = {  }
 	}
 
@@ -1344,30 +1344,6 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##BITURIGES
-	BITUR = {
-		capital = benauges
-		culture = gaulish
-		religion = gaulish_pagan
-
-		country_rank = rank_kingdom
-
-		include = "catholic_monarchy_not_present"
-
-		government = {
-			ruler = random
-		}
-
-		own_control_core = {
-			benauges bordeaux castelnau_de_medoc lesparre_medoc libourne
-		}
-		accepted_cultures = { gaulish }
-		tolerated_cultures = {  }
-		discovered_regions = {
-			france_region
-		}
-	}
-
 	##BITURIGES CUBI
 	BITCU = {
 		capital = bourges
@@ -1392,6 +1368,30 @@ countries = {
 		}
 		accepted_cultures = { bituriges_cubi gaulish }
 		tolerated_cultures = {  }
+	}
+
+	##BITURIGES
+	BITUR = {
+		capital = benauges
+		culture = gaulish
+		religion = gaulish_pagan
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			benauges bordeaux castelnau_de_medoc lesparre_medoc libourne
+		}
+		accepted_cultures = { gaulish }
+		tolerated_cultures = {  }
+		discovered_regions = {
+			france_region
+		}
 	}
 
 	##BLETONESSI
@@ -1837,32 +1837,6 @@ countries = {
 		}
 	}
 
-	##CAMUNNI
-	CMNNI = {
-		capital = chiavenna
-		culture = camunni
-		religion = gaulish_pagan
-
-		discovered_regions = {
-			italy_region south_german_region
-		}
-
-		country_rank = rank_kingdom
-
-		include = "catholic_monarchy_not_present"
-
-		government = {
-			ruler = random
-		}
-
-		own_control_core = {
-			chiavenna chur como davos disentis ilanz lugano mesocco
-			monza
-		}
-		accepted_cultures = { camunni gaulish }
-		tolerated_cultures = {  }
-	}
-
 	##CANTIACI
 	CANTI = {
 		capital = canterbury
@@ -2159,6 +2133,32 @@ countries = {
 			mondonedo
 		}
 		accepted_cultures = { cibarci celtiberian }
+		tolerated_cultures = {  }
+	}
+
+	##CAMUNNI
+	CMNNI = {
+		capital = chiavenna
+		culture = camunni
+		religion = gaulish_pagan
+
+		discovered_regions = {
+			italy_region south_german_region
+		}
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			chiavenna chur como davos disentis ilanz lugano mesocco
+			monza
+		}
+		accepted_cultures = { camunni gaulish }
 		tolerated_cultures = {  }
 	}
 
@@ -4902,7 +4902,7 @@ countries = {
 		}
 
 		own_control_core = {
-			auneau chartres dreux evreux laigle monfort_lamaury mortagne senonches
+			auneau chartres corbeil dreux evreux mantes monfort_lamaury paris
 		}
 		accepted_cultures = { parisi gaulish }
 		tolerated_cultures = {  }
@@ -5557,6 +5557,31 @@ countries = {
 		}
 	}
 
+	##SENONES
+	SENES = {
+		capital = beaugency
+		culture = senones
+		religion = gaulish_pagan
+
+		discovered_regions = {
+			france_region
+		}
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			beaugency orleans sully vitry_aux_loges
+		}
+		accepted_cultures = { senones gaulish }
+		tolerated_cultures = {  }
+	}
+
 	##SENOMES
 	SENOM = {
 		capital = argenta
@@ -5603,31 +5628,6 @@ countries = {
 		discovered_regions = {
 			italy_region
 		}
-	}
-
-	##SENONES
-	SENES = {
-		capital = beaugency
-		culture = senones
-		religion = gaulish_pagan
-
-		discovered_regions = {
-			france_region
-		}
-
-		country_rank = rank_kingdom
-
-		include = "catholic_monarchy_not_present"
-
-		government = {
-			ruler = random
-		}
-
-		own_control_core = {
-			beaugency orleans sully vitry_aux_loges
-		}
-		accepted_cultures = { senones gaulish }
-		tolerated_cultures = {  }
 	}
 
 	##SEQUANCES
@@ -5803,7 +5803,7 @@ countries = {
 
 	##SILVANECTES
 	SILVA = {
-		capital = corbeil
+		capital = meaux
 		culture = silvanectes
 		religion = gaulish_pagan
 
@@ -5820,7 +5820,7 @@ countries = {
 		}
 
 		own_control_core = {
-			corbeil mantes meaux montmorency paris
+			meaux montmorency
 		}
 		accepted_cultures = { silvanectes gaulish }
 		tolerated_cultures = {  }
@@ -5997,31 +5997,6 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##SUESSETANI
-	SUESS = {
-		capital = anso
-		culture = suessetani
-		religion = gaulish_pagan
-
-		discovered_regions = {
-			iberia_region
-		}
-
-		country_rank = rank_kingdom
-
-		include = "catholic_monarchy_not_present"
-
-		government = {
-			ruler = random
-		}
-
-		own_control_core = {
-			anso olite roncesvalles sanguesa viana
-		}
-		accepted_cultures = { suessetani gaulish }
-		tolerated_cultures = {  }
-	}
-
 	##SUESSIONES
 	SUESO = {
 		capital = braine
@@ -6044,6 +6019,31 @@ countries = {
 			braine crepy soissons
 		}
 		accepted_cultures = { suessiones gaulish }
+		tolerated_cultures = {  }
+	}
+
+	##SUESSETANI
+	SUESS = {
+		capital = anso
+		culture = suessetani
+		religion = gaulish_pagan
+
+		discovered_regions = {
+			iberia_region
+		}
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			anso olite roncesvalles sanguesa viana
+		}
+		accepted_cultures = { suessetani gaulish }
 		tolerated_cultures = {  }
 	}
 
@@ -6538,31 +6538,6 @@ countries = {
 		}
 	}
 
-	##TURDILI
-	TURDI = {
-		capital = chao_de_couce
-		culture = turdili
-		religion = lusitanian_pagan
-
-		discovered_regions = {
-			iberia_region
-		}
-
-		country_rank = rank_kingdom
-
-		include = "catholic_monarchy_not_present"
-
-		government = {
-			ruler = random
-		}
-
-		own_control_core = {
-			chao_de_couce leiria
-		}
-		accepted_cultures = { turdili lusitanian }
-		tolerated_cultures = {  }
-	}
-
 	##TURDULI ARTIGI
 	TUART = {
 		capital = almaden
@@ -6638,35 +6613,10 @@ countries = {
 		tolerated_cultures = {  }
 	}
 
-	##TURDULI SOSIPONI
-	TUSOS = {
-		capital = alcazar_de_san_juan
-		culture = turduli_sosiponi
-		religion = iberian_pagan
-
-		discovered_regions = {
-			iberia_region
-		}
-
-		country_rank = rank_kingdom
-
-		include = "catholic_monarchy_not_present"
-
-		government = {
-			ruler = random
-		}
-
-		own_control_core = {
-			alcazar_de_san_juan consuegra malagon
-		}
-		accepted_cultures = { turduli_sosiponi celtiberian }
-		tolerated_cultures = {  }
-	}
-
-	##TURDULI VETERES
-	TUVET = {
-		capital = besteiros
-		culture = turduli_veteres
+	##TURDILI
+	TURDI = {
+		capital = chao_de_couce
+		culture = turdili
 		religion = lusitanian_pagan
 
 		discovered_regions = {
@@ -6682,9 +6632,9 @@ countries = {
 		}
 
 		own_control_core = {
-			besteiros coimbra esgueira feira figueira
+			chao_de_couce leiria
 		}
-		accepted_cultures = { turduli_veteres lusitanian }
+		accepted_cultures = { turdili lusitanian }
 		tolerated_cultures = {  }
 	}
 
@@ -6736,6 +6686,56 @@ countries = {
 			chinon loudun saumur
 		}
 		accepted_cultures = { turones gaulish }
+		tolerated_cultures = {  }
+	}
+
+	##TURDULI SOSIPONI
+	TUSOS = {
+		capital = alcazar_de_san_juan
+		culture = turduli_sosiponi
+		religion = iberian_pagan
+
+		discovered_regions = {
+			iberia_region
+		}
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			alcazar_de_san_juan consuegra malagon
+		}
+		accepted_cultures = { turduli_sosiponi celtiberian }
+		tolerated_cultures = {  }
+	}
+
+	##TURDULI VETERES
+	TUVET = {
+		capital = besteiros
+		culture = turduli_veteres
+		religion = lusitanian_pagan
+
+		discovered_regions = {
+			iberia_region
+		}
+
+		country_rank = rank_kingdom
+
+		include = "catholic_monarchy_not_present"
+
+		government = {
+			ruler = random
+		}
+
+		own_control_core = {
+			besteiros coimbra esgueira feira figueira
+		}
+		accepted_cultures = { turduli_veteres lusitanian }
 		tolerated_cultures = {  }
 	}
 
