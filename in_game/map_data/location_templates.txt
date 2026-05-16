@@ -2985,10 +2985,10 @@ manfredonia = { topography = wetlands vegetation = grasslands climate = cold_ari
 rotondo = { topography = hills vegetation = woods climate = cold_arid religion = italic_pagan culture = iapygian raw_material = alum natural_harbor_suitability = 0.00}
 sansevero = { topography = flatland vegetation = grasslands climate = cold_arid religion = italic_pagan culture = iapygian raw_material = wine natural_harbor_suitability = 0.00}
 lake_varano = { topography = lakes climate = cold_arid}
-lecce = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = saffron natural_harbor_suitability = 0.00}
+lecce = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = saffron natural_harbor_suitability = 0.00}
 brindisi = { topography = flatland vegetation = grasslands climate = mediterranean religion = italic_pagan culture = iapygian raw_material = fruit natural_harbor_suitability = 0.75}
-francavilla = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = cotton}
-gallipoliita = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = olives natural_harbor_suitability = 0.00}
+francavilla = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = cotton}
+gallipoliita = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = olives natural_harbor_suitability = 0.00}
 martinafr = { topography = flatland vegetation = farmland climate = cold_arid religion = italic_pagan culture = iapygian raw_material = livestock natural_harbor_suitability = 0.00}
 taranto = { topography = flatland vegetation = farmland climate = cold_arid religion = italic_pagan culture = iapygian raw_material = wine natural_harbor_suitability = 1.00}
 potenza = { topography = hills vegetation = woods climate = oceanic religion = italic_pagan culture = oenotrian raw_material = lumber}
@@ -2997,20 +2997,20 @@ lagonegro = { topography = mountains vegetation = forest climate = oceanic relig
 matera = { topography = flatland vegetation = grasslands climate = cold_arid religion = italic_pagan culture = oenotrian raw_material = olives natural_harbor_suitability = 0.00}
 melfi = { topography = plateau vegetation = woods climate = cold_arid religion = italic_pagan culture = oenotrian raw_material = wine}
 montepeloso = { topography = hills vegetation = sparse climate = cold_arid religion = italic_pagan culture = apennine raw_material = horses}
-santarcangelo = { topography = hills vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = wine natural_harbor_suitability = 0.00}
-catanzaro = { topography = hills vegetation = sparse climate = mediterranean religion = mycenaean culture = mycenaean raw_material = silk natural_harbor_suitability = 0.00}
-cotrone = { topography = flatland vegetation = sparse climate = mediterranean religion = mycenaean culture = mycenaean raw_material = cotton natural_harbor_suitability = 0.00}
-gerace = { topography = hills vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = lead natural_harbor_suitability = 0.00}
+santarcangelo = { topography = hills vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = wine natural_harbor_suitability = 0.00}
+catanzaro = { topography = hills vegetation = sparse climate = mediterranean religion = hellenic culture = mycenaean raw_material = silk natural_harbor_suitability = 0.00}
+cotrone = { topography = flatland vegetation = sparse climate = mediterranean religion = hellenic culture = mycenaean raw_material = cotton natural_harbor_suitability = 0.00}
+gerace = { topography = hills vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = lead natural_harbor_suitability = 0.00}
 monteleone = { topography = hills vegetation = grasslands climate = mediterranean religion = italic_pagan culture = ausonian raw_material = olives natural_harbor_suitability = 0.00}
-nicastro = { topography = hills vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = iron natural_harbor_suitability = 0.00}
-palmi = { topography = flatland vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = lumber natural_harbor_suitability = 0.00}
-reggiocal = { topography = mountains vegetation = sparse climate = oceanic religion = mycenaean culture = mycenaean raw_material = cotton natural_harbor_suitability = 0.75}
+nicastro = { topography = hills vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = iron natural_harbor_suitability = 0.00}
+palmi = { topography = flatland vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = lumber natural_harbor_suitability = 0.00}
+reggiocal = { topography = mountains vegetation = sparse climate = oceanic religion = hellenic culture = mycenaean raw_material = cotton natural_harbor_suitability = 0.75}
 cosenza = { topography = hills vegetation = woods climate = oceanic religion = italic_pagan culture = oenotrian raw_material = silk}
 cassano = { topography = plateau vegetation = grasslands climate = mediterranean religion = italic_pagan culture = oenotrian raw_material = wheat natural_harbor_suitability = 0.00}
 castrovillari = { topography = hills vegetation = woods climate = oceanic religion = italic_pagan culture = oenotrian raw_material = lumber}
 scalea = { topography = mountains vegetation = woods climate = oceanic religion = italic_pagan culture = ausonian raw_material = wine natural_harbor_suitability = 0.00}
 paola = { topography = mountains vegetation = sparse climate = mediterranean religion = gaulish_pagan culture = gaulish raw_material = salt natural_harbor_suitability = 0.00}
-rossano = { topography = hills vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = livestock natural_harbor_suitability = 0.00}
+rossano = { topography = hills vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = livestock natural_harbor_suitability = 0.00}
 southern_apennines = { topography = mountain_wasteland vegetation = sparse climate = continental}
 naples = { topography = flatland vegetation = farmland climate = mediterranean religion = italic_pagan culture = ausonian raw_material = wine natural_harbor_suitability = 0.75}
 caserta = { topography = flatland vegetation = farmland climate = mediterranean religion = italic_pagan culture = ausonian raw_material = fiber_crops natural_harbor_suitability = 0.00}
@@ -5756,7 +5756,7 @@ prijepolje = { topography = hills vegetation = forest climate = continental reli
 visegrad = { topography = mountains vegetation = forest climate = continental religion = thracian_pagan culture = glasinac_mati raw_material = stone}
 babadag = { topography = hills vegetation = woods climate = cold_arid religion = dacian_pagan culture = tei raw_material = horses natural_harbor_suitability = 0.00}
 cernavoda = { topography = flatland vegetation = grasslands climate = cold_arid religion = dacian_pagan culture = tei raw_material = beeswax}
-constanta = { topography = flatland vegetation = grasslands climate = cold_arid religion = mycenaean culture = tei raw_material = livestock natural_harbor_suitability = 0.00}
+constanta = { topography = flatland vegetation = grasslands climate = cold_arid religion = hellenic culture = tei raw_material = livestock natural_harbor_suitability = 0.00}
 enisala = { topography = wetlands vegetation = woods climate = cold_arid religion = dacian_pagan culture = tei raw_material = fiber_crops natural_harbor_suitability = 0.00}
 isaccea = { topography = wetlands vegetation = grasslands climate = cold_arid religion = dacian_pagan culture = tei raw_material = millet}
 tulcea = { topography = wetlands vegetation = woods climate = cold_arid religion = dacian_pagan culture = tei raw_material = fish natural_harbor_suitability = 0.50}
@@ -5786,11 +5786,11 @@ samokov = { topography = plateau vegetation = forest climate = continental relig
 svoge = { topography = plateau vegetation = forest climate = continental religion = thracian_pagan culture = ezero raw_material = fur}
 zemlungrad = { topography = mountains vegetation = forest climate = continental religion = thracian_pagan culture = ezero raw_material = coal}
 balkan_mountains4 = { topography = mountain_wasteland vegetation = woods climate = arctic}
-karvuna = { topography = flatland vegetation = grasslands climate = cold_arid religion = mycenaean culture = ezero raw_material = wool natural_harbor_suitability = 0.00}
+karvuna = { topography = flatland vegetation = grasslands climate = cold_arid religion = hellenic culture = ezero raw_material = wool natural_harbor_suitability = 0.00}
 drastar = { topography = flatland vegetation = woods climate = cold_arid religion = thracian_pagan culture = ezero raw_material = fruit}
-kaliakra = { topography = flatland vegetation = grasslands climate = cold_arid religion = mycenaean culture = ezero raw_material = fish natural_harbor_suitability = 0.00}
+kaliakra = { topography = flatland vegetation = grasslands climate = cold_arid religion = hellenic culture = ezero raw_material = fish natural_harbor_suitability = 0.00}
 kladentsi = { topography = flatland vegetation = woods climate = cold_arid religion = thracian_pagan culture = ezero raw_material = horses}
-pangalia = { topography = flatland vegetation = grasslands climate = cold_arid religion = mycenaean culture = ezero raw_material = legumes natural_harbor_suitability = 0.00}
+pangalia = { topography = flatland vegetation = grasslands climate = cold_arid religion = hellenic culture = ezero raw_material = legumes natural_harbor_suitability = 0.00}
 tutrakan = { topography = flatland vegetation = woods climate = continental religion = thracian_pagan culture = ezero raw_material = lumber}
 tarnovo = { topography = hills vegetation = farmland climate = continental religion = thracian_pagan culture = ezero raw_material = dyes}
 cherven = { topography = flatland vegetation = grasslands climate = continental religion = thracian_pagan culture = ezero raw_material = millet}
@@ -5809,21 +5809,21 @@ vratsa = { topography = hills vegetation = woods climate = continental religion 
 balkan_mountains1 = { topography = mountain_wasteland vegetation = woods climate = arctic}
 balkan_mountains2 = { topography = mountain_wasteland vegetation = woods climate = arctic}
 edessa = { topography = flatland vegetation = woods climate = subtropical religion = thracian_pagan culture = paeonian raw_material = copper}
-giannitsa = { topography = flatland vegetation = woods climate = subtropical religion = mycenaean culture = mycenaean raw_material = wheat}
-gynaikokastro = { topography = hills vegetation = sparse climate = cold_arid religion = mycenaean culture = mycenaean raw_material = wine}
-hatera = { topography = flatland vegetation = sparse climate = cold_arid religion = mycenaean culture = mycenaean raw_material = salt natural_harbor_suitability = 0.00}
-kilkis = { topography = flatland vegetation = grasslands climate = subtropical religion = mycenaean culture = mycenaean raw_material = clay}
-veria = { topography = flatland vegetation = sparse climate = mediterranean religion = mycenaean culture = mycenaean raw_material = cotton}
-thessaloniki = { topography = flatland vegetation = woods climate = cold_arid religion = mycenaean culture = mycenaean raw_material = medicaments natural_harbor_suitability = 0.75}
-kassandreia = { topography = hills vegetation = woods climate = cold_arid religion = mycenaean culture = mycenaean raw_material = gems natural_harbor_suitability = 0.00}
-mount_athos = { topography = mountains vegetation = forest climate = mediterranean religion = mycenaean culture = mycenaean raw_material = livestock natural_harbor_suitability = 0.00}
-polygyros = { topography = hills vegetation = forest climate = mediterranean religion = mycenaean culture = mycenaean raw_material = goods_gold natural_harbor_suitability = 0.00}
+giannitsa = { topography = flatland vegetation = woods climate = subtropical religion = hellenic culture = mycenaean raw_material = wheat}
+gynaikokastro = { topography = hills vegetation = sparse climate = cold_arid religion = hellenic culture = mycenaean raw_material = wine}
+hatera = { topography = flatland vegetation = sparse climate = cold_arid religion = hellenic culture = mycenaean raw_material = salt natural_harbor_suitability = 0.00}
+kilkis = { topography = flatland vegetation = grasslands climate = subtropical religion = hellenic culture = mycenaean raw_material = clay}
+veria = { topography = flatland vegetation = sparse climate = mediterranean religion = hellenic culture = mycenaean raw_material = cotton}
+thessaloniki = { topography = flatland vegetation = woods climate = cold_arid religion = hellenic culture = mycenaean raw_material = medicaments natural_harbor_suitability = 0.75}
+kassandreia = { topography = hills vegetation = woods climate = cold_arid religion = hellenic culture = mycenaean raw_material = gems natural_harbor_suitability = 0.00}
+mount_athos = { topography = mountains vegetation = forest climate = mediterranean religion = hellenic culture = mycenaean raw_material = livestock natural_harbor_suitability = 0.00}
+polygyros = { topography = hills vegetation = forest climate = mediterranean religion = hellenic culture = mycenaean raw_material = goods_gold natural_harbor_suitability = 0.00}
 lake_volvi = { topography = lakes climate = mediterranean}
 serres = { topography = flatland vegetation = sparse climate = cold_arid religion = thracian_pagan culture = paeonian raw_material = iron}
-drama = { topography = flatland vegetation = grasslands climate = subtropical religion = mycenaean culture = mycenaean raw_material = millet}
-kavala = { topography = hills vegetation = sparse climate = mediterranean religion = mycenaean culture = mycenaean raw_material = salt natural_harbor_suitability = 0.25}
-rentina = { topography = hills vegetation = sparse climate = subtropical religion = mycenaean culture = mycenaean raw_material = wool natural_harbor_suitability = 0.00}
-thasos = { topography = mountains vegetation = sparse climate = mediterranean religion = mycenaean culture = mycenaean raw_material = marble natural_harbor_suitability = 0.25}
+drama = { topography = flatland vegetation = grasslands climate = subtropical religion = hellenic culture = mycenaean raw_material = millet}
+kavala = { topography = hills vegetation = sparse climate = mediterranean religion = hellenic culture = mycenaean raw_material = salt natural_harbor_suitability = 0.25}
+rentina = { topography = hills vegetation = sparse climate = subtropical religion = hellenic culture = mycenaean raw_material = wool natural_harbor_suitability = 0.00}
+thasos = { topography = mountains vegetation = sparse climate = mediterranean religion = hellenic culture = mycenaean raw_material = marble natural_harbor_suitability = 0.25}
 lake_achinos = { topography = lakes climate = cold_arid}
 melnik = { topography = hills vegetation = forest climate = cold_arid religion = thracian_pagan culture = ezero raw_material = silver}
 bansko = { topography = plateau vegetation = forest climate = continental religion = thracian_pagan culture = ezero raw_material = wool}
@@ -5847,10 +5847,10 @@ pindus_mountains2 = { topography = mountain_wasteland vegetation = forest climat
 pindus_mountains3 = { topography = mountain_wasteland vegetation = forest climate = arctic}
 pindus_mountains4 = { topography = mountain_wasteland vegetation = forest climate = arctic}
 pindus_mountains8 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
-grevena = { topography = plateau vegetation = woods climate = oceanic religion = mycenaean culture = mycenaean raw_material = alum}
+grevena = { topography = plateau vegetation = woods climate = oceanic religion = hellenic culture = mycenaean raw_material = alum}
 kastoria = { topography = plateau vegetation = woods climate = oceanic religion = thracian_pagan culture = paeonian raw_material = fur}
-servia = { topography = plateau vegetation = forest climate = mediterranean religion = mycenaean culture = mycenaean raw_material = saffron}
-siatista = { topography = plateau vegetation = woods climate = oceanic religion = mycenaean culture = mycenaean raw_material = beeswax}
+servia = { topography = plateau vegetation = forest climate = mediterranean religion = hellenic culture = mycenaean raw_material = saffron}
+siatista = { topography = plateau vegetation = woods climate = oceanic religion = hellenic culture = mycenaean raw_material = beeswax}
 ostrovo = { topography = plateau vegetation = grasslands climate = mediterranean religion = dacian_pagan culture = dacian raw_material = livestock}
 pindus_mountains5 = { topography = mountain_wasteland vegetation = woods climate = continental}
 pindus_mountains9 = { topography = mountain_wasteland vegetation = forest climate = continental}
@@ -5863,36 +5863,36 @@ kumanovo = { topography = flatland vegetation = woods climate = subtropical reli
 shtip = { topography = flatland vegetation = woods climate = cold_arid religion = thracian_pagan culture = ezero raw_material = wool}
 strumica = { topography = hills vegetation = grasslands climate = cold_arid religion = thracian_pagan culture = ezero raw_material = millet}
 veles = { topography = hills vegetation = woods climate = cold_arid religion = thracian_pagan culture = ezero raw_material = fiber_crops}
-burgas = { topography = flatland vegetation = grasslands climate = subtropical religion = mycenaean culture = thracian raw_material = fish natural_harbor_suitability = 0.75}
-anhialo = { topography = flatland vegetation = forest climate = subtropical religion = mycenaean culture = thracian raw_material = salt natural_harbor_suitability = 0.25}
-aytos = { topography = hills vegetation = forest climate = oceanic religion = mycenaean culture = thracian raw_material = wine}
+burgas = { topography = flatland vegetation = grasslands climate = subtropical religion = hellenic culture = thracian raw_material = fish natural_harbor_suitability = 0.75}
+anhialo = { topography = flatland vegetation = forest climate = subtropical religion = hellenic culture = thracian raw_material = salt natural_harbor_suitability = 0.25}
+aytos = { topography = hills vegetation = forest climate = oceanic religion = hellenic culture = thracian raw_material = wine}
 lardeja = { topography = hills vegetation = woods climate = subtropical religion = gaulish_pagan culture = tyle raw_material = lumber}
-rusokastro = { topography = flatland vegetation = forest climate = subtropical religion = mycenaean culture = thracian raw_material = legumes natural_harbor_suitability = 0.00}
-sozopol = { topography = hills vegetation = forest climate = subtropical religion = mycenaean culture = thracian raw_material = wool natural_harbor_suitability = 0.25}
-constantinople = { topography = flatland vegetation = farmland climate = mediterranean religion = mycenaean culture = thracian raw_material = silk natural_harbor_suitability = 1.00}
-vize = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = thracian raw_material = wheat}
-catalca = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = thracian raw_material = fish natural_harbor_suitability = 0.00}
-silivri = { topography = flatland vegetation = farmland climate = mediterranean religion = mycenaean culture = thracian raw_material = wool natural_harbor_suitability = 0.00}
-corlu = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = thracian raw_material = fiber_crops natural_harbor_suitability = 0.00}
-gallipoli = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = thracian raw_material = salt natural_harbor_suitability = 1.00}
-enez = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = thracian raw_material = salt natural_harbor_suitability = 0.00}
-hayrabolu = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = thracian raw_material = fur}
-malgara = { topography = flatland vegetation = woods climate = mediterranean religion = mycenaean culture = thracian raw_material = beeswax}
-rodoscuk = { topography = hills vegetation = grasslands climate = mediterranean religion = mycenaean culture = thracian raw_material = wool natural_harbor_suitability = 0.00}
-kesan = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = thracian raw_material = wine natural_harbor_suitability = 0.00}
-edirne = { topography = flatland vegetation = farmland climate = subtropical religion = mycenaean culture = thracian raw_material = dyes}
-ahtopol = { topography = hills vegetation = grasslands climate = oceanic religion = mycenaean culture = thracian raw_material = iron natural_harbor_suitability = 0.00}
-luleburgaz = { topography = flatland vegetation = woods climate = mediterranean religion = mycenaean culture = thracian raw_material = wine}
-kiyikoy = { topography = hills vegetation = woods climate = mediterranean religion = mycenaean culture = thracian raw_material = medicaments natural_harbor_suitability = 0.00}
-kirklareli = { topography = flatland vegetation = woods climate = mediterranean religion = mycenaean culture = thracian raw_material = lumber}
-demotica = { topography = flatland vegetation = grasslands climate = subtropical religion = mycenaean culture = thracian raw_material = horses}
-traianopolis = { topography = hills vegetation = woods climate = mediterranean religion = mycenaean culture = thracian raw_material = fiber_crops natural_harbor_suitability = 0.00}
-komotini = { topography = flatland vegetation = woods climate = mediterranean religion = mycenaean culture = thracian raw_material = alum natural_harbor_suitability = 0.00}
-xanthia = { topography = hills vegetation = woods climate = mediterranean religion = mycenaean culture = thracian raw_material = cotton natural_harbor_suitability = 0.00}
+rusokastro = { topography = flatland vegetation = forest climate = subtropical religion = hellenic culture = thracian raw_material = legumes natural_harbor_suitability = 0.00}
+sozopol = { topography = hills vegetation = forest climate = subtropical religion = hellenic culture = thracian raw_material = wool natural_harbor_suitability = 0.25}
+constantinople = { topography = flatland vegetation = farmland climate = mediterranean religion = hellenic culture = thracian raw_material = silk natural_harbor_suitability = 1.00}
+vize = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = thracian raw_material = wheat}
+catalca = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = thracian raw_material = fish natural_harbor_suitability = 0.00}
+silivri = { topography = flatland vegetation = farmland climate = mediterranean religion = hellenic culture = thracian raw_material = wool natural_harbor_suitability = 0.00}
+corlu = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = thracian raw_material = fiber_crops natural_harbor_suitability = 0.00}
+gallipoli = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = thracian raw_material = salt natural_harbor_suitability = 1.00}
+enez = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = thracian raw_material = salt natural_harbor_suitability = 0.00}
+hayrabolu = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = thracian raw_material = fur}
+malgara = { topography = flatland vegetation = woods climate = mediterranean religion = hellenic culture = thracian raw_material = beeswax}
+rodoscuk = { topography = hills vegetation = grasslands climate = mediterranean religion = hellenic culture = thracian raw_material = wool natural_harbor_suitability = 0.00}
+kesan = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = thracian raw_material = wine natural_harbor_suitability = 0.00}
+edirne = { topography = flatland vegetation = farmland climate = subtropical religion = hellenic culture = thracian raw_material = dyes}
+ahtopol = { topography = hills vegetation = grasslands climate = oceanic religion = hellenic culture = thracian raw_material = iron natural_harbor_suitability = 0.00}
+luleburgaz = { topography = flatland vegetation = woods climate = mediterranean religion = hellenic culture = thracian raw_material = wine}
+kiyikoy = { topography = hills vegetation = woods climate = mediterranean religion = hellenic culture = thracian raw_material = medicaments natural_harbor_suitability = 0.00}
+kirklareli = { topography = flatland vegetation = woods climate = mediterranean religion = hellenic culture = thracian raw_material = lumber}
+demotica = { topography = flatland vegetation = grasslands climate = subtropical religion = hellenic culture = thracian raw_material = horses}
+traianopolis = { topography = hills vegetation = woods climate = mediterranean religion = hellenic culture = thracian raw_material = fiber_crops natural_harbor_suitability = 0.00}
+komotini = { topography = flatland vegetation = woods climate = mediterranean religion = hellenic culture = thracian raw_material = alum natural_harbor_suitability = 0.00}
+xanthia = { topography = hills vegetation = woods climate = mediterranean religion = hellenic culture = thracian raw_material = cotton natural_harbor_suitability = 0.00}
 stanimaka = { topography = mountains vegetation = forest climate = subtropical religion = gaulish_pagan culture = tyle raw_material = legumes}
 beden = { topography = mountains vegetation = forest climate = continental religion = thracian_pagan culture = thracian raw_material = wild_game}
 haskovo = { topography = flatland vegetation = woods climate = subtropical religion = thracian_pagan culture = thracian raw_material = cotton}
-ormenio = { topography = flatland vegetation = woods climate = subtropical religion = mycenaean culture = thracian raw_material = wine}
+ormenio = { topography = flatland vegetation = woods climate = subtropical religion = hellenic culture = thracian raw_material = wine}
 perperek = { topography = mountains vegetation = forest climate = subtropical religion = thracian_pagan culture = thracian raw_material = fur}
 smolyan = { topography = mountains vegetation = forest climate = oceanic religion = thracian_pagan culture = thracian raw_material = stone}
 ustra = { topography = mountains vegetation = forest climate = oceanic religion = thracian_pagan culture = thracian raw_material = wool}
@@ -5900,9 +5900,9 @@ rhodope_mountains5 = { topography = mountain_wasteland vegetation = forest clima
 rhodope_mountains6 = { topography = mountain_wasteland vegetation = forest climate = arctic}
 sliven = { topography = hills vegetation = woods climate = subtropical religion = gaulish_pagan culture = tyle raw_material = millet}
 boruy = { topography = flatland vegetation = grasslands climate = subtropical religion = gaulish_pagan culture = tyle raw_material = wool}
-bukelon = { topography = hills vegetation = grasslands climate = subtropical religion = mycenaean culture = thracian raw_material = livestock}
+bukelon = { topography = hills vegetation = grasslands climate = subtropical religion = hellenic culture = thracian raw_material = livestock}
 constantia_bul = { topography = flatland vegetation = grasslands climate = subtropical religion = gaulish_pagan culture = tyle raw_material = wine}
-elhovo = { topography = flatland vegetation = forest climate = subtropical religion = mycenaean culture = thracian raw_material = horses}
+elhovo = { topography = flatland vegetation = forest climate = subtropical religion = hellenic culture = thracian raw_material = horses}
 hiambouli = { topography = flatland vegetation = grasslands climate = subtropical religion = gaulish_pagan culture = tyle raw_material = clay}
 plovdiv = { topography = flatland vegetation = farmland climate = subtropical religion = gaulish_pagan culture = tyle raw_material = horses}
 kostenets = { topography = hills vegetation = forest climate = continental religion = thracian_pagan culture = ezero raw_material = wool}
@@ -5914,7 +5914,7 @@ durres = { topography = flatland vegetation = sparse climate = mediterranean rel
 ballsh = { topography = hills vegetation = farmland climate = mediterranean religion = illyrian_pagan culture = illyrian raw_material = wheat natural_harbor_suitability = 0.00}
 berat = { topography = hills vegetation = sparse climate = mediterranean religion = illyrian_pagan culture = illyrian raw_material = wool}
 debar = { topography = mountains vegetation = woods climate = continental religion = illyrian_pagan culture = illyrian raw_material = wild_game}
-devol = { topography = plateau vegetation = grasslands climate = oceanic religion = mycenaean culture = mycenaean raw_material = wine}
+devol = { topography = plateau vegetation = grasslands climate = oceanic religion = hellenic culture = mycenaean raw_material = wine}
 elbasan = { topography = mountains vegetation = woods climate = mediterranean religion = illyrian_pagan culture = illyrian raw_material = iron}
 kavaje = { topography = flatland vegetation = grasslands climate = mediterranean religion = illyrian_pagan culture = illyrian raw_material = fish natural_harbor_suitability = 0.00}
 kruje = { topography = mountains vegetation = woods climate = subtropical religion = illyrian_pagan culture = illyrian raw_material = livestock natural_harbor_suitability = 0.00}
@@ -5924,76 +5924,76 @@ dukagjini = { topography = mountains vegetation = woods climate = subtropical re
 has = { topography = mountains vegetation = woods climate = subtropical religion = illyrian_pagan culture = illyrian raw_material = copper}
 koman = { topography = mountains vegetation = woods climate = subtropical religion = illyrian_pagan culture = illyrian raw_material = lumber}
 lezha = { topography = flatland vegetation = grasslands climate = subtropical religion = illyrian_pagan culture = illyrian raw_material = fur natural_harbor_suitability = 0.25}
-avlonya = { topography = mountains vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = fiber_crops natural_harbor_suitability = 0.75}
-argyrokastro = { topography = mountains vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = olives natural_harbor_suitability = 0.00}
-butrint = { topography = hills vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = wool natural_harbor_suitability = 0.00}
-kleisoura_epirus = { topography = mountains vegetation = sparse climate = oceanic religion = mycenaean culture = mycenaean raw_material = medicaments}
-konitsa = { topography = mountains vegetation = woods climate = oceanic religion = mycenaean culture = mycenaean raw_material = lumber}
+avlonya = { topography = mountains vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = fiber_crops natural_harbor_suitability = 0.75}
+argyrokastro = { topography = mountains vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = olives natural_harbor_suitability = 0.00}
+butrint = { topography = hills vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = wool natural_harbor_suitability = 0.00}
+kleisoura_epirus = { topography = mountains vegetation = sparse climate = oceanic religion = hellenic culture = mycenaean raw_material = medicaments}
+konitsa = { topography = mountains vegetation = woods climate = oceanic religion = hellenic culture = mycenaean raw_material = lumber}
 pindus_mountains6 = { topography = mountain_wasteland vegetation = forest climate = continental}
-angelokastron = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = fish natural_harbor_suitability = 0.50}
-karpenisi = { topography = mountains vegetation = forest climate = oceanic religion = mycenaean culture = mycenaean raw_material = lumber}
+angelokastron = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = fish natural_harbor_suitability = 0.50}
+karpenisi = { topography = mountains vegetation = forest climate = oceanic religion = hellenic culture = mycenaean raw_material = lumber}
 loidoriki = { topography = mountains vegetation = forest climate = oceanic religion = hellenic culture = pelasgian raw_material = stone}
-nafpaktos = { topography = hills vegetation = forest climate = mediterranean religion = mycenaean culture = mycenaean raw_material = clay natural_harbor_suitability = 0.75}
+nafpaktos = { topography = hills vegetation = forest climate = mediterranean religion = hellenic culture = mycenaean raw_material = clay natural_harbor_suitability = 0.75}
 salona = { topography = mountains vegetation = sparse climate = mediterranean religion = hellenic culture = pelasgian raw_material = stone natural_harbor_suitability = 0.00}
-vonitsa = { topography = hills vegetation = forest climate = mediterranean religion = mycenaean culture = mycenaean raw_material = olives natural_harbor_suitability = 0.25}
+vonitsa = { topography = hills vegetation = forest climate = mediterranean religion = hellenic culture = mycenaean raw_material = olives natural_harbor_suitability = 0.25}
 lake_trichonida = { topography = lakes climate = mediterranean}
 pindus_mountains11 = { topography = mountain_wasteland vegetation = forest climate = continental}
 pindus_mountains12 = { topography = mountain_wasteland vegetation = forest climate = continental}
 athens = { topography = flatland vegetation = farmland climate = mediterranean religion = hellenic culture = ionian raw_material = marble natural_harbor_suitability = 1.00}
 atalanti = { topography = flatland vegetation = woods climate = mediterranean religion = hellenic culture = pelasgian raw_material = iron natural_harbor_suitability = 0.00}
-livadeia = { topography = hills vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = wine natural_harbor_suitability = 0.00}
-megara = { topography = hills vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = olives natural_harbor_suitability = 0.75}
-thebes = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = silk natural_harbor_suitability = 0.00}
+livadeia = { topography = hills vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = wine natural_harbor_suitability = 0.00}
+megara = { topography = hills vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = olives natural_harbor_suitability = 0.75}
+thebes = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = silk natural_harbor_suitability = 0.00}
 lake_kopais = { topography = lakes climate = mediterranean}
-corfu = { topography = hills vegetation = forest climate = mediterranean religion = mycenaean culture = mycenaean raw_material = fruit natural_harbor_suitability = 0.75}
-cephalonia = { topography = mountains vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = livestock natural_harbor_suitability = 0.25}
-leukas = { topography = mountains vegetation = forest climate = mediterranean religion = mycenaean culture = mycenaean raw_material = sand natural_harbor_suitability = 0.00}
-zakynthos = { topography = hills vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = fish natural_harbor_suitability = 0.25}
-neopatras = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = wool}
-bodonitsa = { topography = hills vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = livestock natural_harbor_suitability = 0.00}
+corfu = { topography = hills vegetation = forest climate = mediterranean religion = hellenic culture = mycenaean raw_material = fruit natural_harbor_suitability = 0.75}
+cephalonia = { topography = mountains vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = livestock natural_harbor_suitability = 0.25}
+leukas = { topography = mountains vegetation = forest climate = mediterranean religion = hellenic culture = mycenaean raw_material = sand natural_harbor_suitability = 0.00}
+zakynthos = { topography = hills vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = fish natural_harbor_suitability = 0.25}
+neopatras = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = wool}
+bodonitsa = { topography = hills vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = livestock natural_harbor_suitability = 0.00}
 gravia = { topography = flatland vegetation = woods climate = mediterranean religion = hellenic culture = pelasgian raw_material = dyes}
 zetounion = { topography = flatland vegetation = farmland climate = mediterranean religion = hellenic culture = pelasgian raw_material = legumes natural_harbor_suitability = 0.00}
-arta = { topography = hills vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = fruit natural_harbor_suitability = 0.00}
-ioannina = { topography = hills vegetation = forest climate = oceanic religion = mycenaean culture = mycenaean raw_material = gems}
-parga = { topography = hills vegetation = forest climate = mediterranean religion = mycenaean culture = mycenaean raw_material = horses natural_harbor_suitability = 0.25}
-preveza = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = beeswax natural_harbor_suitability = 0.75}
-pyli = { topography = mountains vegetation = forest climate = oceanic religion = mycenaean culture = mycenaean raw_material = wool}
+arta = { topography = hills vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = fruit natural_harbor_suitability = 0.00}
+ioannina = { topography = hills vegetation = forest climate = oceanic religion = hellenic culture = mycenaean raw_material = gems}
+parga = { topography = hills vegetation = forest climate = mediterranean religion = hellenic culture = mycenaean raw_material = horses natural_harbor_suitability = 0.25}
+preveza = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = beeswax natural_harbor_suitability = 0.75}
+pyli = { topography = mountains vegetation = forest climate = oceanic religion = hellenic culture = mycenaean raw_material = wool}
 pindus_mountains7 = { topography = mountain_wasteland vegetation = forest climate = continental}
 larissa = { topography = flatland vegetation = grasslands climate = cold_arid religion = hellenic culture = aeolian raw_material = horses}
 demetrias = { topography = mountains vegetation = forest climate = mediterranean religion = hellenic culture = aeolian raw_material = fish natural_harbor_suitability = 0.75}
-elassona = { topography = hills vegetation = sparse climate = mediterranean religion = mycenaean culture = mycenaean raw_material = fiber_crops}
+elassona = { topography = hills vegetation = sparse climate = mediterranean religion = hellenic culture = mycenaean raw_material = fiber_crops}
 farsala = { topography = flatland vegetation = farmland climate = mediterranean religion = hellenic culture = aeolian raw_material = fruit}
-karditsa = { topography = flatland vegetation = farmland climate = mediterranean religion = mycenaean culture = mycenaean raw_material = wheat}
+karditsa = { topography = flatland vegetation = farmland climate = mediterranean religion = hellenic culture = mycenaean raw_material = wheat}
 stomio = { topography = mountains vegetation = forest climate = mediterranean religion = hellenic culture = aeolian raw_material = lumber natural_harbor_suitability = 0.00}
-trikala = { topography = mountains vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = wine}
+trikala = { topography = mountains vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = wine}
 tyrnavos = { topography = hills vegetation = sparse climate = mediterranean religion = hellenic culture = aeolian raw_material = olives}
 mount_olympos = { topography = mountain_wasteland vegetation = forest climate = continental}
-patras = { topography = hills vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = fish natural_harbor_suitability = 0.25}
-chalandritsa = { topography = flatland vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = beeswax natural_harbor_suitability = 0.00}
+patras = { topography = hills vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = fish natural_harbor_suitability = 0.25}
+chalandritsa = { topography = flatland vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = beeswax natural_harbor_suitability = 0.00}
 kalavryta = { topography = mountains vegetation = woods climate = oceanic religion = hellenic culture = arcadian raw_material = wool}
-vostitsa = { topography = hills vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = fish natural_harbor_suitability = 0.25}
+vostitsa = { topography = hills vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = fish natural_harbor_suitability = 0.25}
 tripolitsa = { topography = plateau vegetation = sparse climate = oceanic religion = hellenic culture = arcadian raw_material = silk}
 karytaina = { topography = hills vegetation = forest climate = oceanic religion = hellenic culture = arcadian raw_material = saltpeter}
 veligosti = { topography = mountains vegetation = woods climate = oceanic religion = hellenic culture = arcadian raw_material = wool}
-argos = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = iron natural_harbor_suitability = 0.50}
-astros = { topography = hills vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = fish natural_harbor_suitability = 0.25}
-ermioni = { topography = hills vegetation = sparse climate = mediterranean religion = mycenaean culture = mycenaean raw_material = livestock natural_harbor_suitability = 0.75}
-nafplio = { topography = hills vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = olives natural_harbor_suitability = 0.75}
-corinth = { topography = hills vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = stone natural_harbor_suitability = 0.75}
-damala = { topography = hills vegetation = sparse climate = mediterranean religion = mycenaean culture = mycenaean raw_material = fish natural_harbor_suitability = 0.00}
-xylokastro = { topography = mountains vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = wine natural_harbor_suitability = 0.00}
+argos = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = iron natural_harbor_suitability = 0.50}
+astros = { topography = hills vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = fish natural_harbor_suitability = 0.25}
+ermioni = { topography = hills vegetation = sparse climate = mediterranean religion = hellenic culture = mycenaean raw_material = livestock natural_harbor_suitability = 0.75}
+nafplio = { topography = hills vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = olives natural_harbor_suitability = 0.75}
+corinth = { topography = hills vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = stone natural_harbor_suitability = 0.75}
+damala = { topography = hills vegetation = sparse climate = mediterranean religion = hellenic culture = mycenaean raw_material = fish natural_harbor_suitability = 0.00}
+xylokastro = { topography = mountains vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = wine natural_harbor_suitability = 0.00}
 peloponnesian_mountains1 = { topography = mountain_wasteland vegetation = sparse climate = oceanic}
-andravida = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = wine natural_harbor_suitability = 0.00}
+andravida = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = wine natural_harbor_suitability = 0.00}
 andritsaina = { topography = mountains vegetation = woods climate = mediterranean religion = hellenic culture = arcadian raw_material = fruit natural_harbor_suitability = 0.00}
-pontikokastro = { topography = hills vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = silk natural_harbor_suitability = 0.00}
-mystras = { topography = plateau vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = tin natural_harbor_suitability = 0.00}
+pontikokastro = { topography = hills vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = silk natural_harbor_suitability = 0.00}
+mystras = { topography = plateau vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = tin natural_harbor_suitability = 0.00}
 kythira = { topography = hills vegetation = sparse climate = mediterranean religion = hellenic culture = cycladic raw_material = fish natural_harbor_suitability = 0.25}
-monemvasia = { topography = hills vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = iron natural_harbor_suitability = 0.25}
-oitylo = { topography = hills vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = olives natural_harbor_suitability = 0.00}
-kalamata = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = olives natural_harbor_suitability = 0.75}
-kyparissia = { topography = hills vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = lumber natural_harbor_suitability = 0.25}
-leuktron = { topography = mountains vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = silk natural_harbor_suitability = 0.00}
-modon = { topography = hills vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = fish natural_harbor_suitability = 0.25}
+monemvasia = { topography = hills vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = iron natural_harbor_suitability = 0.25}
+oitylo = { topography = hills vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = olives natural_harbor_suitability = 0.00}
+kalamata = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = olives natural_harbor_suitability = 0.75}
+kyparissia = { topography = hills vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = lumber natural_harbor_suitability = 0.25}
+leuktron = { topography = mountains vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = silk natural_harbor_suitability = 0.00}
+modon = { topography = hills vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = fish natural_harbor_suitability = 0.25}
 peloponnesian_mountains2 = { topography = mountain_wasteland vegetation = woods climate = oceanic}
 chios = { topography = hills vegetation = grasslands climate = mediterranean religion = hellenic culture = ionian raw_material = medicaments natural_harbor_suitability = 0.25}
 ikaria = { topography = mountains vegetation = woods climate = mediterranean religion = hellenic culture = cycladic raw_material = fish natural_harbor_suitability = 0.25}
@@ -6009,11 +6009,11 @@ viannos = { topography = mountains vegetation = sparse climate = mediterranean r
 negroponte = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = ionian raw_material = salt natural_harbor_suitability = 0.60}
 eretreia = { topography = mountains vegetation = woods climate = mediterranean religion = hellenic culture = ionian raw_material = salt natural_harbor_suitability = 0.00}
 karystos = { topography = hills vegetation = sparse climate = mediterranean religion = hellenic culture = ionian raw_material = olives natural_harbor_suitability = 0.75}
-kleisoura = { topography = hills vegetation = forest climate = mediterranean religion = mycenaean culture = mycenaean raw_material = cotton natural_harbor_suitability = 0.00}
-kymi = { topography = hills vegetation = sparse climate = mediterranean religion = mycenaean culture = mycenaean raw_material = beeswax natural_harbor_suitability = 0.00}
+kleisoura = { topography = hills vegetation = forest climate = mediterranean religion = hellenic culture = mycenaean raw_material = cotton natural_harbor_suitability = 0.00}
+kymi = { topography = hills vegetation = sparse climate = mediterranean religion = hellenic culture = mycenaean raw_material = beeswax natural_harbor_suitability = 0.00}
 oreos = { topography = hills vegetation = forest climate = mediterranean religion = hellenic culture = ionian raw_material = wine natural_harbor_suitability = 0.25}
-mitilene = { topography = hills vegetation = forest climate = mediterranean religion = mycenaean culture = mycenaean raw_material = dyes natural_harbor_suitability = 0.25}
-molyvos = { topography = hills vegetation = sparse climate = mediterranean religion = mycenaean culture = mycenaean raw_material = salt natural_harbor_suitability = 0.25}
+mitilene = { topography = hills vegetation = forest climate = mediterranean religion = hellenic culture = mycenaean raw_material = dyes natural_harbor_suitability = 0.25}
+molyvos = { topography = hills vegetation = sparse climate = mediterranean religion = hellenic culture = mycenaean raw_material = salt natural_harbor_suitability = 0.25}
 imbros = { topography = hills vegetation = sparse climate = mediterranean religion = luwian culture = luwian raw_material = fish natural_harbor_suitability = 0.25}
 lemnos = { topography = flatland vegetation = sparse climate = mediterranean religion = luwian culture = luwian raw_material = alum natural_harbor_suitability = 1.00}
 sporades = { topography = hills vegetation = forest climate = mediterranean religion = hellenic culture = cycladic raw_material = sand natural_harbor_suitability = 0.00}
@@ -6807,19 +6807,19 @@ iznik = { topography = hills vegetation = forest climate = mediterranean religio
 lake_iznik = { topography = lakes climate = mediterranean}
 balikesir = { topography = flatland vegetation = grasslands climate = mediterranean religion = hittite culture = hittite raw_material = cotton}
 balya = { topography = hills vegetation = woods climate = mediterranean religion = luwian culture = luwian raw_material = clay}
-bergama = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = salt natural_harbor_suitability = 0.00}
+bergama = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = salt natural_harbor_suitability = 0.00}
 bigadic = { topography = hills vegetation = woods climate = oceanic religion = hittite culture = hittite raw_material = clay}
 edremit = { topography = hills vegetation = forest climate = mediterranean religion = luwian culture = luwian raw_material = iron natural_harbor_suitability = 0.50}
 manyas = { topography = flatland vegetation = woods climate = mediterranean religion = luwian culture = luwian raw_material = olives}
 mihalic = { topography = flatland vegetation = woods climate = mediterranean religion = luwian culture = luwian raw_material = legumes}
 soma = { topography = hills vegetation = forest climate = mediterranean religion = hittite culture = hittite raw_material = lumber}
-susurluk = { topography = hills vegetation = forest climate = oceanic religion = mycenaean culture = mycenaean raw_material = copper}
+susurluk = { topography = hills vegetation = forest climate = oceanic religion = hellenic culture = mycenaean raw_material = copper}
 lake_manyas = { topography = lakes climate = mediterranean}
 lake_uluabat = { topography = lakes climate = mediterranean}
-izmit = { topography = flatland vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = fish natural_harbor_suitability = 0.75}
-atpazari = { topography = flatland vegetation = woods climate = subtropical religion = mycenaean culture = mycenaean raw_material = lumber natural_harbor_suitability = 0.00}
-uskudar = { topography = flatland vegetation = forest climate = mediterranean religion = mycenaean culture = mycenaean raw_material = lumber natural_harbor_suitability = 0.75}
-silli = { topography = flatland vegetation = forest climate = mediterranean religion = mycenaean culture = mycenaean raw_material = wine natural_harbor_suitability = 0.00}
+izmit = { topography = flatland vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = fish natural_harbor_suitability = 0.75}
+atpazari = { topography = flatland vegetation = woods climate = subtropical religion = hellenic culture = mycenaean raw_material = lumber natural_harbor_suitability = 0.00}
+uskudar = { topography = flatland vegetation = forest climate = mediterranean religion = hellenic culture = mycenaean raw_material = lumber natural_harbor_suitability = 0.75}
+silli = { topography = flatland vegetation = forest climate = mediterranean religion = hellenic culture = mycenaean raw_material = wine natural_harbor_suitability = 0.00}
 kutahya = { topography = plateau vegetation = farmland climate = continental religion = hittite culture = phrygian raw_material = alum}
 aslanapa = { topography = plateau vegetation = woods climate = continental religion = luwian culture = luwian raw_material = livestock}
 domanic = { topography = hills vegetation = forest climate = oceanic religion = hittite culture = phrygian raw_material = lumber}
@@ -6833,11 +6833,11 @@ eynegol = { topography = hills vegetation = woods climate = continental religion
 inonu = { topography = plateau vegetation = woods climate = continental religion = hittite culture = phrygian raw_material = livestock}
 nalli = { topography = hills vegetation = forest climate = cold_arid religion = hittite culture = hittite raw_material = rice}
 sogut = { topography = hills vegetation = woods climate = cold_arid religion = hittite culture = hittite raw_material = medicaments}
-bolu = { topography = hills vegetation = woods climate = continental religion = mycenaean culture = mycenaean raw_material = wheat}
-akcasehir = { topography = flatland vegetation = forest climate = oceanic religion = mycenaean culture = mycenaean raw_material = fish natural_harbor_suitability = 0.00}
-akyazi = { topography = flatland vegetation = forest climate = oceanic religion = mycenaean culture = mycenaean raw_material = silk}
+bolu = { topography = hills vegetation = woods climate = continental religion = hellenic culture = mycenaean raw_material = wheat}
+akcasehir = { topography = flatland vegetation = forest climate = oceanic religion = hellenic culture = mycenaean raw_material = fish natural_harbor_suitability = 0.00}
+akyazi = { topography = flatland vegetation = forest climate = oceanic religion = hellenic culture = mycenaean raw_material = silk}
 eregli = { topography = hills vegetation = forest climate = oceanic religion = hattian culture = palaic raw_material = coal natural_harbor_suitability = 0.25}
-konrapa = { topography = hills vegetation = forest climate = continental religion = mycenaean culture = mycenaean raw_material = beeswax}
+konrapa = { topography = hills vegetation = forest climate = continental religion = hellenic culture = mycenaean raw_material = beeswax}
 mudurnu = { topography = mountains vegetation = forest climate = continental religion = hittite culture = hittite raw_material = fruit}
 giresun = { topography = mountains vegetation = forest climate = oceanic religion = kartvelian_pagan culture = colchian raw_material = olives natural_harbor_suitability = 0.00}
 akkus = { topography = mountains vegetation = forest climate = continental religion = kartvelian_pagan culture = kartvelian raw_material = wild_game}
@@ -6886,7 +6886,7 @@ elmali = { topography = plateau vegetation = grasslands climate = continental re
 finike = { topography = mountains vegetation = forest climate = mediterranean religion = luwian culture = lycian raw_material = olives natural_harbor_suitability = 0.00}
 kas = { topography = mountains vegetation = forest climate = mediterranean religion = sea_peoples_cult culture = lukka raw_material = fish natural_harbor_suitability = 0.25}
 istanoz = { topography = hills vegetation = woods climate = mediterranean religion = luwian culture = lycian raw_material = clay}
-tire = { topography = flatland vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = mercury}
+tire = { topography = flatland vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = mercury}
 alasehir = { topography = flatland vegetation = woods climate = mediterranean religion = luwian culture = luwian raw_material = silk}
 balat = { topography = hills vegetation = forest climate = mediterranean religion = hellenic culture = ionian raw_material = salt natural_harbor_suitability = 0.00}
 birgi = { topography = flatland vegetation = woods climate = mediterranean religion = hittite culture = hittite raw_material = olives}
@@ -6917,13 +6917,13 @@ west_taurus_4 = { topography = mountain_wasteland vegetation = forest climate = 
 manisa = { topography = flatland vegetation = farmland climate = mediterranean religion = hittite culture = hittite raw_material = cotton}
 akhisar = { topography = flatland vegetation = forest climate = mediterranean religion = hittite culture = hittite raw_material = wine}
 demirci = { topography = hills vegetation = woods climate = mediterranean religion = hittite culture = hittite raw_material = beeswax}
-foca = { topography = hills vegetation = woods climate = mediterranean religion = mycenaean culture = mycenaean raw_material = alum natural_harbor_suitability = 0.75}
+foca = { topography = hills vegetation = woods climate = mediterranean religion = hellenic culture = mycenaean raw_material = alum natural_harbor_suitability = 0.75}
 gordes = { topography = hills vegetation = woods climate = mediterranean religion = hittite culture = hittite raw_material = fiber_crops}
 kula = { topography = flatland vegetation = woods climate = mediterranean religion = hittite culture = hittite raw_material = wheat}
 lake_marmara = { topography = lakes climate = mediterranean}
-smyrna = { topography = flatland vegetation = grasslands climate = mediterranean religion = mycenaean culture = mycenaean raw_material = saffron natural_harbor_suitability = 1.00}
+smyrna = { topography = flatland vegetation = grasslands climate = mediterranean religion = hellenic culture = mycenaean raw_material = saffron natural_harbor_suitability = 1.00}
 ayasuluk = { topography = flatland vegetation = forest climate = mediterranean religion = hittite culture = hittite raw_material = silk natural_harbor_suitability = 0.00}
-cesme = { topography = hills vegetation = forest climate = mediterranean religion = mycenaean culture = mycenaean raw_material = fish natural_harbor_suitability = 0.25}
+cesme = { topography = hills vegetation = forest climate = mediterranean religion = hellenic culture = mycenaean raw_material = fish natural_harbor_suitability = 0.25}
 menemen = { topography = flatland vegetation = woods climate = mediterranean religion = hittite culture = hittite raw_material = salt natural_harbor_suitability = 0.00}
 urla = { topography = hills vegetation = forest climate = mediterranean religion = hittite culture = hittite raw_material = wine natural_harbor_suitability = 0.25}
 usak = { topography = plateau vegetation = woods climate = mediterranean religion = luwian culture = luwian raw_material = clay}
@@ -28571,4 +28571,5 @@ pacific_tasmania_current9 = { topography = deep_ocean climate = oceanic movement
 pacific_tasmania_current10 = { topography = deep_ocean climate = oceanic movement_assistance = { 36.95 86.86 }}
 zealandia_sea = { topography = ocean_wasteland climate = continental}
 eastern_southern_ocean = { topography = ocean_wasteland climate = oceanic}
+
 

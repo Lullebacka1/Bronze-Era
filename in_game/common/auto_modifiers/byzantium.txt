@@ -1,4 +1,4 @@
-﻿byz_greek_culture = {
+byz_greek_culture = {
 	potential_trigger = {
 		has_societal_value = societal_value_type:latinization_vs_hellenization
 

@@ -4,7 +4,7 @@
 0001G = {
     color = { 63 18 186 }
     culture = mycenaean
-    religion = mycenaean
+    religion = hellenic
     discovered_regions = { anatolia_region balkan_region }
 
     own_control_core = {
@@ -315,7 +315,7 @@ ACCIO = {
 ACHAE = {
     color = { 89 207 160 }
     culture = mycenaean
-    religion = mycenaean
+    religion = hellenic
     discovered_regions = { balkan_region }
 
     own_control_core = {
@@ -1201,7 +1201,7 @@ BOLI = {
 BOSPH = {
     color = { 66 212 215 }
     culture = thracian
-    religion = mycenaean
+    religion = hellenic
     discovered_regions = { anatolia_region balkan_region }
 
     own_control_core = {
@@ -1225,7 +1225,7 @@ BOSPH = {
 BOTTI = {
     color = { 54 63 201 }
     culture = mycenaean
-    religion = mycenaean
+    religion = hellenic
     discovered_regions = { balkan_region }
 
     own_control_core = {
@@ -1472,7 +1472,7 @@ CANTI = {
 CAONI = {
     color = { 53 109 182 }
     culture = mycenaean
-    religion = mycenaean
+    religion = hellenic
     discovered_regions = { balkan_region }
 
     own_control_core = {
@@ -1895,7 +1895,7 @@ DOBER = {
 DOLOP = {
     color = { 182 58 60 }
     culture = mycenaean
-    religion = mycenaean
+    religion = hellenic
     discovered_regions = { balkan_region }
 
     own_control_core = {
@@ -1994,7 +1994,7 @@ ELISY = {
 ELMIT = {
     color = { 192 187 48 }
     culture = mycenaean
-    religion = mycenaean
+    religion = hellenic
     discovered_regions = { balkan_region }
 
     own_control_core = {
@@ -2691,7 +2691,7 @@ LATIN = {
 LAZPA = {
     color = { 85 87 206 }
     culture = mycenaean
-    religion = mycenaean
+    religion = hellenic
     discovered_regions = { balkan_region }
 
     own_control_core = {
@@ -3183,7 +3183,7 @@ MOESI = {
 MOLOS = {
     color = { 141 75 195 }
     culture = mycenaean
-    religion = mycenaean
+    religion = hellenic
     discovered_regions = { balkan_region }
 
     own_control_core = {
@@ -3743,7 +3743,7 @@ POTUL = {
 PYLOS = {
     color = { 175 221 49 }
     culture = mycenaean
-    religion = mycenaean
+    religion = hellenic
     discovered_regions = { balkan_region }
 
     own_control_core = {
@@ -3901,7 +3901,7 @@ SAELI = {
 SAHIR = {
     color = { 197 48 90 }
     culture = mycenaean
-    religion = mycenaean
+    religion = hellenic
     discovered_regions = { anatolia_region }
 
     own_control_core = {
@@ -4312,7 +4312,7 @@ SOTIA = {
 SPART = {
     color = { 196 54 125 }
     culture = mycenaean
-    religion = mycenaean
+    religion = hellenic
     discovered_regions = { balkan_region }
 
     own_control_core = {
@@ -4569,7 +4569,7 @@ TAURI = {
 TESPR = {
     color = { 82 201 64 }
     culture = mycenaean
-    religion = mycenaean
+    religion = hellenic
     discovered_regions = { balkan_region }
 
     own_control_core = {
@@ -4594,7 +4594,7 @@ TEUCO = {
 THEBE = {
     color = { 199 105 87 }
     culture = mycenaean
-    religion = mycenaean
+    religion = hellenic
     discovered_regions = { balkan_region }
 
     own_control_core = {

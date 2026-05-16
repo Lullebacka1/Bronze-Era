@@ -158,7 +158,7 @@ mycenae_palace_shrine = {
 	location = argos
 	type = temple
 	importance = 5
-	religions = { mycenaean }
+	religions = { hellenic }
 }
 
 delos_birth_shrine = {

@@ -555,7 +555,7 @@ sea_peoples_add_mediterranean_coastal_enclave = {
 				4 = { add_pop = { type = pop_type:peasants size = 0.100 culture = culture:elymian religion = religion:italic_pagan } }
 				3 = { add_pop = { type = pop_type:peasants size = 0.100 culture = culture:torrean religion = religion:nuragic } }
 				6 = { add_pop = { type = pop_type:peasants size = 0.100 culture = culture:minoan religion = religion:minoan } }
-				6 = { add_pop = { type = pop_type:peasants size = 0.100 culture = culture:mycenaean religion = religion:mycenaean } }
+				6 = { add_pop = { type = pop_type:peasants size = 0.100 culture = culture:mycenaean religion = religion:hellenic } }
 			}
 			random_list = {
 				22 = { add_pop = { type = pop_type:burghers size = 0.020 culture = culture:phoenician religion = religion:phoenician } }
@@ -789,3 +789,4 @@ sea_peoples_clear_acute_damage = {
 		sea_peoples_add_famine_pressure = { value = -6 }
 	}
 }
+

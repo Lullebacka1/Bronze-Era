@@ -121,7 +121,7 @@ poseidon_wanax = {
 	icon = god_folk_dark_blue
 
 	religion = {
-		religion = mycenaean
+		religion = hellenic
 		name_key = poseidon_wanax
 	}
 

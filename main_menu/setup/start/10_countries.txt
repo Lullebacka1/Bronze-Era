@@ -19,7 +19,7 @@ countries = {
 	0001G = {
 		capital = argos
 		culture = mycenaean
-		religion = mycenaean
+		religion = hellenic
 
 		country_rank = rank_kingdom
 
@@ -167,7 +167,7 @@ countries = {
 	ACHAE = {
 		capital = chalandritsa
 		culture = mycenaean
-		religion = mycenaean
+		religion = hellenic
 
 		discovered_regions = {
 			balkan_region
@@ -1448,7 +1448,7 @@ countries = {
 	BOSPH = {
 		capital = ahtopol
 		culture = thracian
-		religion = mycenaean
+		religion = hellenic
 
 		country_rank = rank_county
 
@@ -1472,7 +1472,7 @@ countries = {
 	BOTTI = {
 		capital = edessa
 		culture = mycenaean
-		religion = mycenaean
+		religion = hellenic
 
 		country_rank = rank_kingdom
 
@@ -1867,7 +1867,7 @@ countries = {
 	CAONI = {
 		capital = avlonya
 		culture = mycenaean
-		religion = mycenaean
+		religion = hellenic
 
 		country_rank = rank_kingdom
 
@@ -2488,7 +2488,7 @@ countries = {
 	DOLOP = {
 		capital = arta
 		culture = mycenaean
-		religion = mycenaean
+		religion = hellenic
 
 		country_rank = rank_kingdom
 
@@ -2590,7 +2590,7 @@ countries = {
 	ELMIT = {
 		capital = grevena
 		culture = mycenaean
-		religion = mycenaean
+		religion = hellenic
 
 		country_rank = rank_kingdom
 
@@ -3575,7 +3575,7 @@ countries = {
 	LAZPA = {
 		capital = mitilene
 		culture = mycenaean
-		religion = mycenaean
+		religion = hellenic
 
 		country_rank = rank_kingdom
 
@@ -4267,7 +4267,7 @@ countries = {
 	MOLOS = {
 		capital = argyrokastro
 		culture = mycenaean
-		religion = mycenaean
+		religion = hellenic
 
 		country_rank = rank_kingdom
 
@@ -5060,7 +5060,7 @@ countries = {
 	PYLOS = {
 		capital = kalamata
 		culture = mycenaean
-		religion = mycenaean
+		religion = hellenic
 
 		discovered_regions = {
 			balkan_region
@@ -5311,7 +5311,7 @@ countries = {
 	SAHIR = {
 		capital = akcasehir
 		culture = mycenaean
-		religion = mycenaean
+		religion = hellenic
 
 		country_rank = rank_county
 
@@ -5877,7 +5877,7 @@ countries = {
 	SPART = {
 		capital = astros
 		culture = mycenaean
-		religion = mycenaean
+		religion = hellenic
 
 		discovered_regions = {
 			balkan_region
@@ -6271,7 +6271,7 @@ countries = {
 	TESPR = {
 		capital = ioannina
 		culture = mycenaean
-		religion = mycenaean
+		religion = hellenic
 
 		country_rank = rank_kingdom
 
@@ -6319,7 +6319,7 @@ countries = {
 	THEBE = {
 		capital = livadeia
 		culture = mycenaean
-		religion = mycenaean
+		religion = hellenic
 
 		discovered_regions = {
 			balkan_region
@@ -7559,3 +7559,4 @@ countries = {
 
 	}
 }
+

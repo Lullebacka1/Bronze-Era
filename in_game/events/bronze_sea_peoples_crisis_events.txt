@@ -1,4 +1,4 @@
-﻿namespace = sea_peoples_crisis
+namespace = sea_peoples_crisis
 
 sea_peoples_crisis.1 = {
 	type = country_event

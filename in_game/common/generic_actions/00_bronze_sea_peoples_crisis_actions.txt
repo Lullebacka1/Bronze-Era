@@ -1,4 +1,4 @@
-﻿sea_peoples_fortify_coastal_palaces = {
+sea_peoples_fortify_coastal_palaces = {
 	type = situation
 	show_message = yes
 	ai_tick = monthly

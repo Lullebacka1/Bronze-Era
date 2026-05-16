@@ -1,4 +1,4 @@
-﻿market_manager = {
+market_manager = {
 	#europe
 	
 
@@ -12,11 +12,9 @@
 
 	
 	#Africa
-	add_market = fez
 	add_market = alexandria
 	
 
-	add_market = tunis
 	
 	#East Africa
 	
@@ -28,19 +26,6 @@
 	add_market = damascus
 	add_market = trebizond
 	add_market = tabriz
-	add_market = isfahan
-	add_market = nishapur
-	add_market = hormuz
-	add_market = kabul
-	add_market = zaranj
-	add_market = adan
-	add_market = mecca
-	add_market = al_ahsa
-	add_market = al_hajr
-	add_market = samarkand
-	add_market = almaty
-	add_market = sarayjuk
-	add_market = urgench
 	
 	# East Asia
 	
