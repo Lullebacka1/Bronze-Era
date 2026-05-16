@@ -146,7 +146,7 @@ war_council_law = {
 			scope:target ?= {
 				NOT = { is_member_of_international_organization = root }
 			}
-			var:mycenaean_league_authority >= 30
+			var:mycenaean_league_authority >= 20
 		}
 	}
 
@@ -156,7 +156,7 @@ war_council_law = {
 			scope:target ?= {
 				NOT = { is_member_of_international_organization = root }
 			}
-			var:mycenaean_league_authority >= 45
+			var:mycenaean_league_authority >= 25
 		}
 	}
 
@@ -166,14 +166,14 @@ war_council_law = {
 			scope:target ?= {
 				NOT = { is_member_of_international_organization = root }
 			}
-			var:mycenaean_league_authority >= 35
+			var:mycenaean_league_authority >= 20
 		}
 		join_offensive_wars_can_call = {
 			exists = scope:actor
 			scope:actor ?= {
 				is_leader_of_international_organization = root
 			}
-			var:mycenaean_league_authority >= 60
+			var:mycenaean_league_authority >= 45
 		}
 		country_modifier = {
 			monthly_prestige = 0.025

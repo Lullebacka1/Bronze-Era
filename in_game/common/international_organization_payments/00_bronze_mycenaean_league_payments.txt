@@ -39,16 +39,26 @@ mycenaean_palace_tribute = {
 	}
 
 	price_multiplier = {
-		add = {
-			desc = MYCENAEAN_LEAGUE_TRIBUTE_BASE
+		if = {
+			limit = {
+				international_organization_has_leader = no
+			}
 			value = 0
+		}
+		else = {
 			every_international_organization_member = {
 				limit = {
 					NOT = { is_leader_of_international_organization = root }
 				}
 				add = {
+					desc = MYCENAEAN_LEAGUE_TRIBUTE_BASE
 					value = monthly_income_trade_and_tax
-					multiply = 0.08
+					multiply = 0.06
+				}
+				add = {
+					desc = MYCENAEAN_LEAGUE_TRIBUTE_STORED_WEALTH
+					value = gold
+					multiply = 0.0005
 				}
 			}
 		}
@@ -58,6 +68,11 @@ mycenaean_palace_tribute = {
 		add = {
 			desc = MYCENAEAN_LEAGUE_TRIBUTE_SHARE
 			value = monthly_income_trade_and_tax
+		}
+		add = {
+			desc = MYCENAEAN_LEAGUE_TRIBUTE_STORED_WEALTH
+			value = gold
+			multiply = 0.005
 		}
 	}
 

@@ -152,6 +152,16 @@ mycenaean_league = {
 	antagonism_modifier_for_taking_land_from_member_as_outsider = 1.5
 	no_cb_price_modifier_for_fellow_member = 0.75
 
+	# League members share palace roads and harbor access even before a war begins.
+	has_military_access = {
+		scope:recipient ?= {
+			is_member_of_international_organization = root
+		}
+		scope:actor ?= {
+			is_member_of_international_organization = root
+		}
+	}
+
 	# The High Wanax can draw the league into defensive wars when authority is healthy.
 	only_leader_country_joins_defensive_wars = no
 	join_defensive_wars_auto_call = {
@@ -159,21 +169,14 @@ mycenaean_league = {
 		scope:target ?= {
 			NOT = { is_member_of_international_organization = root }
 		}
-		var:mycenaean_league_authority >= 45
+		var:mycenaean_league_authority >= 35
 	}
 	join_defensive_wars_can_call = {
 		exists = scope:target
 		scope:target ?= {
 			NOT = { is_member_of_international_organization = root }
 		}
-		var:mycenaean_league_authority >= 20
-	}
-	join_offensive_wars_can_call = {
-		exists = scope:actor
-		scope:actor ?= {
-			is_leader_of_international_organization = root
-		}
-		var:mycenaean_league_authority >= 65
+		var:mycenaean_league_authority >= 10
 	}
 
 	can_declare_war = {
