@@ -1,0 +1,41 @@
+bronze_hatti_send_grain_to_cities_price = {
+	scaled_gold = 1.2
+	government_power = 15
+	stability = 5
+}
+
+bronze_hatti_fortify_the_coast_price = {
+	scaled_gold = 1.4
+	scaled_manpower = 0.08
+	stability = 5
+}
+
+bronze_hatti_appease_vassals_price = {
+	prestige = 10
+	government_power = 20
+	stability = 5
+}
+
+bronze_hatti_crush_rebellious_lords_price = {
+	scaled_manpower = 0.16
+	stability = 15
+	prestige = 5
+}
+
+bronze_hatti_evacuate_settlements_price = {
+	scaled_gold = 0.8
+	government_power = 10
+	stability = 10
+}
+
+bronze_hatti_centralize_around_hattusa_price = {
+	prestige = 20
+	government_power = 25
+	stability = 15
+}
+
+bronze_hatti_recognize_successors_price = {
+	prestige = 25
+	stability = 10
+	government_power = 15
+}

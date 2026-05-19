@@ -16677,6 +16677,7 @@ subjects_advance = {
     age = age_1_traditions
     icon = diplomatic_influence
     requires = codified_laws
+    starting_technology_level = 3
     allow_subjects = yes
     unlock_subject_type = vassal
 }

@@ -1,0 +1,353 @@
+bronze_hatti_send_grain_to_cities = {
+	type = situation
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 18
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = price:bronze_hatti_send_grain_to_cities_price
+
+	cooldown = {
+		type = bronze_hatti_send_grain_to_cities
+		years = 4
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:bronze_hatti_collapse = this
+			situation_is_active = yes
+			scope:actor ?= { bronze_hatti_collapse_active_country = yes }
+		}
+	}
+	potential = {
+		scope:actor ?= {
+			bronze_hatti_collapse_active_country = yes
+			NOT = { has_variable = bronze_hatti_grain_relief_sent }
+		}
+	}
+	allow = {
+		scope:actor ?= { is_during_bankruptcy = no }
+	}
+	effect = {
+		scope:actor ?= {
+			set_variable = { name = bronze_hatti_grain_relief_sent value = 1 years = 4 }
+			bronze_hatti_collapse_add_famine = { value = -14 }
+			bronze_hatti_collapse_add_pressure = { value = -5 }
+			add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_weak_bonus }
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_penalty }
+			custom_tooltip = bronze_hatti_send_grain_to_cities_tt
+		}
+	}
+	ai_will_do = {
+		add = 12
+		subtract = 2
+	}
+}
+
+bronze_hatti_fortify_the_coast = {
+	type = situation
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 24
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = price:bronze_hatti_fortify_the_coast_price
+
+	cooldown = {
+		type = bronze_hatti_fortify_the_coast
+		years = 6
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:bronze_hatti_collapse = this
+			situation_is_active = yes
+			scope:actor ?= { bronze_hatti_collapse_active_country = yes }
+		}
+	}
+	potential = {
+		scope:actor ?= {
+			bronze_hatti_collapse_active_country = yes
+			NOT = { has_variable = bronze_hatti_coast_fortified }
+		}
+	}
+	allow = {
+		scope:actor ?= { is_during_bankruptcy = no }
+	}
+	effect = {
+		scope:actor ?= {
+			set_variable = { name = bronze_hatti_coast_fortified value = 1 years = 6 }
+			bronze_hatti_collapse_add_pressure = { value = -6 }
+			add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_weak_penalty }
+			custom_tooltip = bronze_hatti_fortify_the_coast_tt
+		}
+	}
+	ai_will_do = {
+		add = 9
+		subtract = 2
+	}
+}
+
+bronze_hatti_appease_vassals = {
+	type = situation
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 24
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = price:bronze_hatti_appease_vassals_price
+
+	cooldown = {
+		type = bronze_hatti_appease_vassals
+		years = 5
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:bronze_hatti_collapse = this
+			situation_is_active = yes
+			scope:actor ?= { bronze_hatti_collapse_active_country = yes }
+		}
+	}
+	potential = {
+		scope:actor ?= {
+			bronze_hatti_collapse_active_country = yes
+			bronze_hatti_collapse_phase_at_least = { value = 2 }
+			NOT = { has_variable = bronze_hatti_vassals_appeased }
+		}
+	}
+	allow = {
+		scope:actor ?= { is_during_bankruptcy = no }
+	}
+	effect = {
+		scope:actor ?= {
+			set_variable = { name = bronze_hatti_vassals_appeased value = 1 years = 5 }
+			bronze_hatti_collapse_add_pressure = { value = -9 }
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_bonus }
+			add_prestige = prestige_weak_penalty
+			custom_tooltip = bronze_hatti_appease_vassals_tt
+		}
+	}
+	ai_will_do = {
+		add = 10
+		subtract = 3
+	}
+}
+
+bronze_hatti_crush_rebellious_lords = {
+	type = situation
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 24
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = price:bronze_hatti_crush_rebellious_lords_price
+
+	cooldown = {
+		type = bronze_hatti_crush_rebellious_lords
+		years = 4
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:bronze_hatti_collapse = this
+			situation_is_active = yes
+			scope:actor ?= { bronze_hatti_collapse_active_country = yes }
+		}
+	}
+	potential = {
+		scope:actor ?= {
+			bronze_hatti_collapse_active_country = yes
+			bronze_hatti_collapse_phase_at_least = { value = 3 }
+			NOT = { has_variable = bronze_hatti_lords_crushed }
+		}
+	}
+	allow = {
+		scope:actor ?= { is_during_bankruptcy = no }
+	}
+	effect = {
+		scope:actor ?= {
+			set_variable = { name = bronze_hatti_lords_crushed value = 1 years = 4 }
+			random_list = {
+				55 = {
+					bronze_hatti_collapse_add_pressure = { value = -12 }
+					add_prestige = prestige_weak_bonus
+					custom_tooltip = bronze_hatti_crush_rebellious_lords_success_tt
+				}
+				45 = {
+					bronze_hatti_collapse_add_pressure = { value = 8 }
+					bronze_hatti_collapse_mark_internal_breakdown = yes
+					custom_tooltip = bronze_hatti_crush_rebellious_lords_failure_tt
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		add = 6
+		subtract = 4
+	}
+}
+
+bronze_hatti_evacuate_settlements = {
+	type = situation
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 36
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = price:bronze_hatti_evacuate_settlements_price
+
+	cooldown = {
+		type = bronze_hatti_evacuate_settlements
+		years = 5
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:bronze_hatti_collapse = this
+			situation_is_active = yes
+			scope:actor ?= { bronze_hatti_collapse_active_country = yes }
+		}
+	}
+	potential = {
+		scope:actor ?= {
+			bronze_hatti_collapse_active_country = yes
+			bronze_hatti_collapse_phase_at_least = { value = 2 }
+			NOT = { has_variable = bronze_hatti_evacuation_orders }
+		}
+	}
+	effect = {
+		scope:actor ?= {
+			set_variable = { name = bronze_hatti_evacuation_orders value = 1 years = 5 }
+			bronze_hatti_collapse_add_pressure = { value = -6 }
+			bronze_hatti_collapse_add_famine = { value = 3 }
+			add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_weak_penalty }
+			custom_tooltip = bronze_hatti_evacuate_settlements_tt
+		}
+	}
+	ai_will_do = {
+		add = 7
+		subtract = 2
+	}
+}
+
+bronze_hatti_centralize_around_hattusa = {
+	type = situation
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 48
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = price:bronze_hatti_centralize_around_hattusa_price
+
+	cooldown = {
+		type = bronze_hatti_centralize_around_hattusa
+		years = 10
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:bronze_hatti_collapse = this
+			situation_is_active = yes
+			scope:actor ?= { bronze_hatti_collapse_active_country = yes }
+		}
+	}
+	potential = {
+		scope:actor ?= {
+			bronze_hatti_collapse_active_country = yes
+			bronze_hatti_collapse_phase_at_least = { value = 4 }
+			NOT = { has_variable = bronze_hatti_centralized_core }
+		}
+	}
+	effect = {
+		scope:actor ?= {
+			set_variable = { name = bronze_hatti_centralized_core value = 1 years = 10 }
+			set_variable = { name = bronze_hatti_peripheral_abandonment value = 1 years = 8 }
+			bronze_hatti_collapse_add_pressure = { value = -16 }
+			bronze_hatti_collapse_add_famine = { value = -4 }
+			add_prestige = prestige_medium_penalty
+			custom_tooltip = bronze_hatti_centralize_around_hattusa_tt
+		}
+	}
+	ai_will_do = {
+		add = 6
+		subtract = 2
+	}
+}
+
+bronze_hatti_recognize_successors = {
+	type = situation
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 60
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = price:bronze_hatti_recognize_successors_price
+
+	cooldown = {
+		type = bronze_hatti_recognize_successors
+		years = 20
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:bronze_hatti_collapse = this
+			situation_is_active = yes
+			scope:actor ?= { bronze_hatti_collapse_active_country = yes }
+		}
+	}
+	potential = {
+		scope:actor ?= {
+			bronze_hatti_collapse_active_country = yes
+			bronze_hatti_collapse_phase_at_least = { value = 4 }
+			NOT = { has_variable = bronze_hatti_recognized_successors }
+		}
+	}
+	effect = {
+		scope:actor ?= {
+			set_variable = { name = bronze_hatti_recognized_successors value = 1 years = 80 }
+			bronze_hatti_collapse_fragment_periphery = yes
+			add_prestige = prestige_medium_penalty
+			custom_tooltip = bronze_hatti_recognize_successors_tt
+		}
+	}
+	ai_will_do = {
+		add = 4
+		subtract = 2
+	}
+}

@@ -1,0 +1,431 @@
+namespace = bronze_hatti_collapse
+
+bronze_hatti_collapse.1 = {
+	type = country_event
+	title = bronze_hatti_collapse.1.title
+	desc = bronze_hatti_collapse.1.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	major = yes
+	orphan = yes
+
+	trigger = {
+		tag = 0003G
+		NOT = { has_variable = bronze_hatti_collapse_active }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.1.a
+		custom_tooltip = bronze_hatti_collapse_1a_tt
+		bronze_hatti_collapse_begin = yes
+		add_prestige = prestige_weak_penalty
+	}
+	option = {
+		name = bronze_hatti_collapse.1.b
+		custom_tooltip = bronze_hatti_collapse_1b_tt
+		bronze_hatti_collapse_begin = yes
+		set_variable = { name = bronze_hatti_coast_fortified value = 1 years = 4 }
+		bronze_hatti_collapse_add_pressure = { value = -3 }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_weak_penalty }
+	}
+}
+
+bronze_hatti_collapse.5 = {
+	type = country_event
+	title = bronze_hatti_collapse.5.title
+	desc = bronze_hatti_collapse.5.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 2 }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.5.a
+		custom_tooltip = bronze_hatti_collapse_5a_tt
+		bronze_hatti_collapse_mark_grain_crisis = yes
+	}
+}
+
+bronze_hatti_collapse.6 = {
+	type = country_event
+	title = bronze_hatti_collapse.6.title
+	desc = bronze_hatti_collapse.6.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 3 }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.6.a
+		custom_tooltip = bronze_hatti_collapse_6a_tt
+		bronze_hatti_collapse_mark_vassal_defiance = yes
+	}
+}
+
+bronze_hatti_collapse.7 = {
+	type = country_event
+	title = bronze_hatti_collapse.7.title
+	desc = bronze_hatti_collapse.7.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 4 }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.7.a
+		custom_tooltip = bronze_hatti_collapse_7a_tt
+		bronze_hatti_collapse_mark_internal_breakdown = yes
+	}
+	option = {
+		name = bronze_hatti_collapse.7.b
+		custom_tooltip = bronze_hatti_collapse_7b_tt
+		set_variable = { name = bronze_hatti_centralized_core value = 1 years = 8 }
+		bronze_hatti_collapse_add_pressure = { value = -10 }
+		add_prestige = prestige_medium_penalty
+	}
+}
+
+bronze_hatti_collapse.8 = {
+	type = country_event
+	title = bronze_hatti_collapse.8.title
+	desc = bronze_hatti_collapse.8.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	major = yes
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 5 }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.8.a
+		custom_tooltip = bronze_hatti_collapse_8a_tt
+		bronze_hatti_collapse_fragment_periphery = yes
+	}
+	option = {
+		name = bronze_hatti_collapse.8.b
+		custom_tooltip = bronze_hatti_collapse_8b_tt
+		set_variable = { name = bronze_hatti_last_stand value = 1 years = 8 }
+		bronze_hatti_collapse_mark_internal_breakdown = yes
+		add_prestige = prestige_weak_bonus
+	}
+}
+
+bronze_hatti_collapse.10 = {
+	type = country_event
+	title = bronze_hatti_collapse.10.title
+	desc = bronze_hatti_collapse.10.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 1 }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.10.a
+		custom_tooltip = bronze_hatti_collapse_10a_tt
+		bronze_hatti_collapse_add_pressure = { value = 4 }
+		bronze_hatti_collapse_add_famine = { value = 3 }
+	}
+	option = {
+		name = bronze_hatti_collapse.10.b
+		custom_tooltip = bronze_hatti_collapse_10b_tt
+		bronze_hatti_collapse_add_pressure = { value = 1 }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_penalty }
+	}
+}
+
+bronze_hatti_collapse.20 = {
+	type = country_event
+	title = bronze_hatti_collapse.20.title
+	desc = bronze_hatti_collapse.20.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 2 }
+		any_port_in_country = { is_coastal = yes }
+	}
+
+	immediate = {
+		random_port_in_country = {
+			limit = {
+				is_coastal = yes
+				NOT = { has_location_modifier = recently_raided_by_horde }
+			}
+			save_scope_as = target_location
+		}
+		if = {
+			limit = { NOT = { exists = scope:target_location } }
+			random_port_in_country = {
+				limit = { is_coastal = yes }
+				save_scope_as = target_location
+			}
+		}
+	}
+
+	option = {
+		name = bronze_hatti_collapse.20.a
+		custom_tooltip = bronze_hatti_collapse_20a_tt
+		random_list = {
+			25 = {
+				trigger = { has_variable = bronze_hatti_coast_fortified }
+				bronze_hatti_collapse_add_pressure = { value = -3 }
+				custom_tooltip = bronze_hatti_collapse_raid_repulsed_tt
+			}
+			15 = {
+				trigger = {
+					scope:target_location ?= { modifier:fort_level > 0 }
+				}
+				bronze_hatti_collapse_add_pressure = { value = -2 }
+				custom_tooltip = bronze_hatti_collapse_raid_repulsed_tt
+			}
+			15 = {
+				trigger = {
+					any_army = {
+						count > 0
+						unit_location = { is_coastal = yes }
+					}
+				}
+				bronze_hatti_collapse_add_pressure = { value = -2 }
+				custom_tooltip = bronze_hatti_collapse_raid_repulsed_tt
+			}
+			15 = {
+				trigger = {
+					OR = {
+						navy_size_percentage >= 0.25
+						any_navy = { count > 0 }
+					}
+				}
+				bronze_hatti_collapse_add_pressure = { value = -2 }
+				custom_tooltip = bronze_hatti_collapse_raid_repulsed_tt
+			}
+			70 = {
+				bronze_hatti_collapse_local_raid_damage = yes
+			}
+		}
+	}
+}
+
+bronze_hatti_collapse.30 = {
+	type = country_event
+	title = bronze_hatti_collapse.30.title
+	desc = bronze_hatti_collapse.30.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 2 }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.30.a
+		custom_tooltip = bronze_hatti_collapse_30a_tt
+		bronze_hatti_collapse_mark_grain_crisis = yes
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_mild_penalty }
+	}
+	option = {
+		name = bronze_hatti_collapse.30.b
+		custom_tooltip = bronze_hatti_collapse_30b_tt
+		bronze_hatti_collapse_add_famine = { value = 4 }
+		bronze_hatti_collapse_add_pressure = { value = 2 }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_penalty }
+	}
+}
+
+bronze_hatti_collapse.40 = {
+	type = country_event
+	title = bronze_hatti_collapse.40.title
+	desc = bronze_hatti_collapse.40.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 3 }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.40.a
+		custom_tooltip = bronze_hatti_collapse_40a_tt
+		bronze_hatti_collapse_mark_vassal_defiance = yes
+	}
+	option = {
+		name = bronze_hatti_collapse.40.b
+		custom_tooltip = bronze_hatti_collapse_40b_tt
+		bronze_hatti_collapse_add_pressure = { value = -4 }
+		add_prestige = prestige_weak_penalty
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_bonus }
+	}
+}
+
+bronze_hatti_collapse.50 = {
+	type = country_event
+	title = bronze_hatti_collapse.50.title
+	desc = bronze_hatti_collapse.50.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 3 }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.50.a
+		custom_tooltip = bronze_hatti_collapse_50a_tt
+		bronze_hatti_collapse_add_pressure = { value = 7 }
+		bronze_hatti_collapse_add_famine = { value = 3 }
+	}
+	option = {
+		name = bronze_hatti_collapse.50.b
+		custom_tooltip = bronze_hatti_collapse_50b_tt
+		bronze_hatti_collapse_add_pressure = { value = 3 }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_penalty }
+	}
+}
+
+bronze_hatti_collapse.60 = {
+	type = country_event
+	title = bronze_hatti_collapse.60.title
+	desc = bronze_hatti_collapse.60.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 4 }
+		NOT = { has_variable = bronze_hatti_fragmented_periphery }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.60.a
+		custom_tooltip = bronze_hatti_collapse_60a_tt
+		bronze_hatti_collapse_spawn_tarhuntassa = yes
+		bronze_hatti_collapse_add_pressure = { value = 4 }
+	}
+	option = {
+		name = bronze_hatti_collapse.60.b
+		custom_tooltip = bronze_hatti_collapse_60b_tt
+		bronze_hatti_collapse_add_pressure = { value = 10 }
+		add_stability = stability_weak_penalty
+	}
+}
+
+bronze_hatti_collapse.70 = {
+	type = country_event
+	title = bronze_hatti_collapse.70.title
+	desc = bronze_hatti_collapse.70.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 4 }
+		NOT = { has_variable = bronze_hatti_fragmented_periphery }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.70.a
+		custom_tooltip = bronze_hatti_collapse_70a_tt
+		bronze_hatti_collapse_spawn_carchemish_continuity = yes
+		bronze_hatti_collapse_spawn_melid_gurgum = yes
+		bronze_hatti_collapse_add_pressure = { value = 6 }
+	}
+	option = {
+		name = bronze_hatti_collapse.70.b
+		custom_tooltip = bronze_hatti_collapse_70b_tt
+		bronze_hatti_collapse_add_pressure = { value = 8 }
+		add_prestige = prestige_weak_penalty
+	}
+}
+
+bronze_hatti_collapse.80 = {
+	type = country_event
+	title = bronze_hatti_collapse.80.title
+	desc = bronze_hatti_collapse.80.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = positive
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		has_variable = bronze_hatti_centralized_core
+	}
+
+	option = {
+		name = bronze_hatti_collapse.80.a
+		custom_tooltip = bronze_hatti_collapse_80a_tt
+		bronze_hatti_collapse_add_pressure = { value = -15 }
+		bronze_hatti_collapse_add_famine = { value = -8 }
+		add_prestige = prestige_weak_bonus
+	}
+}
+
+bronze_hatti_collapse.90 = {
+	type = country_event
+	title = bronze_hatti_collapse.90.title
+	desc = bronze_hatti_collapse.90.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	major = yes
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 5 }
+		NOT = { has_variable = bronze_hatti_fragmented_periphery }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.90.a
+		custom_tooltip = bronze_hatti_collapse_90a_tt
+		bronze_hatti_collapse_fragment_periphery = yes
+	}
+	option = {
+		name = bronze_hatti_collapse.90.b
+		custom_tooltip = bronze_hatti_collapse_90b_tt
+		set_variable = { name = bronze_hatti_last_stand value = 1 years = 10 }
+		bronze_hatti_collapse_add_pressure = { value = 12 }
+		add_prestige = prestige_weak_bonus
+	}
+}

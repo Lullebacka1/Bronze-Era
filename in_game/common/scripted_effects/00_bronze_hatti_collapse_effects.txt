@@ -1,0 +1,327 @@
+bronze_hatti_collapse_begin = {
+	custom_description = {
+		text = bronze_hatti_collapse_begin_text
+		if = {
+			limit = {
+				situation:bronze_hatti_collapse = {
+					situation_is_active = no
+					situation_has_ended = no
+				}
+			}
+			activate_situation = situation:bronze_hatti_collapse
+		}
+		set_variable = { name = bronze_hatti_collapse_active value = 1 }
+		set_variable = { name = bronze_hatti_collapse_intro_seen value = 1 years = 80 }
+		set_variable = { name = bronze_hatti_collapse_phase value = 1 }
+		set_variable = { name = bronze_hatti_collapse_pressure value = 15 }
+		set_variable = { name = bronze_hatti_famine_pressure value = 10 }
+	}
+}
+
+bronze_hatti_collapse_add_pressure = {
+	custom_description = {
+		text = bronze_hatti_collapse_add_pressure_text
+		value = $value$
+		if = {
+			limit = { NOT = { has_variable = bronze_hatti_collapse_pressure } }
+			set_variable = { name = bronze_hatti_collapse_pressure value = 0 }
+		}
+		change_variable = { name = bronze_hatti_collapse_pressure add = $value$ }
+		if = {
+			limit = { var:bronze_hatti_collapse_pressure > 100 }
+			set_variable = { name = bronze_hatti_collapse_pressure value = 100 }
+		}
+		if = {
+			limit = { var:bronze_hatti_collapse_pressure < 0 }
+			set_variable = { name = bronze_hatti_collapse_pressure value = 0 }
+		}
+	}
+}
+
+bronze_hatti_collapse_add_famine = {
+	custom_description = {
+		text = bronze_hatti_collapse_add_famine_text
+		value = $value$
+		if = {
+			limit = { NOT = { has_variable = bronze_hatti_famine_pressure } }
+			set_variable = { name = bronze_hatti_famine_pressure value = 0 }
+		}
+		change_variable = { name = bronze_hatti_famine_pressure add = $value$ }
+		if = {
+			limit = { var:bronze_hatti_famine_pressure > 100 }
+			set_variable = { name = bronze_hatti_famine_pressure value = 100 }
+		}
+		if = {
+			limit = { var:bronze_hatti_famine_pressure < 0 }
+			set_variable = { name = bronze_hatti_famine_pressure value = 0 }
+		}
+	}
+}
+
+bronze_hatti_collapse_set_phase = {
+	custom_description = {
+		text = bronze_hatti_collapse_set_phase_text
+		value = $value$
+		set_variable = { name = bronze_hatti_collapse_active value = 1 }
+		set_variable = { name = bronze_hatti_collapse_phase value = $value$ }
+		if = {
+			limit = { var:bronze_hatti_collapse_phase > 5 }
+			set_variable = { name = bronze_hatti_collapse_phase value = 5 }
+		}
+		if = {
+			limit = { var:bronze_hatti_collapse_phase < 1 }
+			set_variable = { name = bronze_hatti_collapse_phase value = 1 }
+		}
+	}
+}
+
+bronze_hatti_collapse_sea_peoples_monthly_pressure = {
+	custom_description = {
+		text = bronze_hatti_collapse_sea_peoples_monthly_pressure_text
+		# Minimal link to the separate Sea Peoples situation: Hatti only reads its global pressure.
+		situation:sea_peoples_crisis ?= {
+			if = {
+				limit = { var:sea_peoples_global_phase >= 2 }
+				c:0003G ?= { bronze_hatti_collapse_add_pressure = { value = 1 } }
+			}
+			if = {
+				limit = { var:sea_peoples_global_phase >= 3 }
+				c:0003G ?= {
+					bronze_hatti_collapse_add_pressure = { value = 1 }
+					bronze_hatti_collapse_add_famine = { value = 1 }
+				}
+			}
+			if = {
+				limit = { var:sea_peoples_global_pressure >= 70 }
+				c:0003G ?= { bronze_hatti_collapse_add_pressure = { value = 1 } }
+			}
+			if = {
+				limit = { var:sea_peoples_global_famine_pressure >= 60 }
+				c:0003G ?= { bronze_hatti_collapse_add_famine = { value = 1 } }
+			}
+		}
+	}
+}
+
+bronze_hatti_collapse_mark_grain_crisis = {
+	custom_description = {
+		text = bronze_hatti_collapse_mark_grain_crisis_text
+		set_variable = { name = bronze_hatti_grain_crisis value = 1 years = 6 }
+		set_variable = { name = bronze_hatti_trade_collapse value = 1 years = 5 }
+		bronze_hatti_collapse_add_pressure = { value = 6 }
+		bronze_hatti_collapse_add_famine = { value = 12 }
+	}
+}
+
+bronze_hatti_collapse_mark_vassal_defiance = {
+	custom_description = {
+		text = bronze_hatti_collapse_mark_vassal_defiance_text
+		set_variable = { name = bronze_hatti_vassal_defiance value = 1 years = 8 }
+		bronze_hatti_collapse_add_pressure = { value = 8 }
+		add_stability = stability_weak_penalty
+	}
+}
+
+bronze_hatti_collapse_mark_internal_breakdown = {
+	custom_description = {
+		text = bronze_hatti_collapse_mark_internal_breakdown_text
+		set_variable = { name = bronze_hatti_internal_breakdown value = 1 years = 8 }
+		bronze_hatti_collapse_add_pressure = { value = 10 }
+		add_stability = stability_weak_penalty
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_penalty }
+	}
+}
+
+bronze_hatti_collapse_local_raid_damage = {
+	custom_description = {
+		text = bronze_hatti_collapse_local_raid_damage_text
+		set_variable = { name = bronze_hatti_southern_coast_raided value = 1 years = 5 }
+		set_variable = { name = bronze_hatti_trade_collapse value = 1 years = 5 }
+		bronze_hatti_collapse_add_pressure = { value = 7 }
+		bronze_hatti_collapse_add_famine = { value = 5 }
+		add_stability = stability_weak_penalty
+		scope:target_location ?= {
+			change_prosperity = prosperity_severe_penalty
+			change_development = development_weak_penalty
+			add_location_modifier = {
+				modifier = recently_raided_by_horde
+				years = 5
+				mode = add_and_extend
+			}
+			province = {
+				change_province_food_percentage = -0.20
+			}
+			random_pop = {
+				limit = {
+					pop_size > 0.03
+				}
+				add_pop_size = {
+					value = pop_size
+					multiply = -0.015
+				}
+			}
+		}
+	}
+}
+
+bronze_hatti_collapse_prepare_successor = {
+	custom_description = {
+		text = bronze_hatti_collapse_prepare_successor_text
+		tag = $tag$
+		location = $location$
+		if = {
+			limit = {
+				owns = location:$location$
+			}
+			location:$location$ = { add_core = c:$tag$ }
+		}
+	}
+}
+
+bronze_hatti_collapse_release_successor = {
+	custom_description = {
+		text = bronze_hatti_collapse_release_successor_text
+		tag = $tag$
+		if = {
+			limit = {
+				NOT = { country_exists = c:$tag$ }
+			}
+			create_country_from_cores_in_our_locations = c:$tag$
+			c:$tag$ ?= {
+				change_culture = culture:$culture$
+				change_religion = religion:$religion$
+				add_accepted_culture = culture:$accepted_culture$
+				set_variable = { name = bronze_hatti_successor_state value = 1 years = 80 }
+			}
+		}
+	}
+}
+
+bronze_hatti_collapse_spawn_tarhuntassa = {
+	custom_description = {
+		text = bronze_hatti_collapse_spawn_tarhuntassa_text
+		# Tarhuntassa/rough lands: south-central Anatolia and Cilician approaches.
+		bronze_hatti_collapse_prepare_successor = { tag = TARHU location = konya }
+		bronze_hatti_collapse_prepare_successor = { tag = TARHU location = larende }
+		bronze_hatti_collapse_prepare_successor = { tag = TARHU location = ermenek }
+		bronze_hatti_collapse_prepare_successor = { tag = TARHU location = mut }
+		bronze_hatti_collapse_prepare_successor = { tag = TARHU location = silifke }
+		bronze_hatti_collapse_release_successor = { tag = TARHU culture = luwian accepted_culture = hittite religion = luwian }
+	}
+}
+
+bronze_hatti_collapse_spawn_tabal = {
+	custom_description = {
+		text = bronze_hatti_collapse_spawn_tabal_text
+		# Tabal: Cappadocian highlands and the Taurus interior.
+		bronze_hatti_collapse_prepare_successor = { tag = TABAL location = kayseri }
+		bronze_hatti_collapse_prepare_successor = { tag = TABAL location = nigde }
+		bronze_hatti_collapse_prepare_successor = { tag = TABAL location = aksaray }
+		bronze_hatti_collapse_prepare_successor = { tag = TABAL location = nevsehir }
+		bronze_hatti_collapse_prepare_successor = { tag = TABAL location = develi }
+		bronze_hatti_collapse_prepare_successor = { tag = TABAL location = tomarza }
+		bronze_hatti_collapse_release_successor = { tag = TABAL culture = luwian accepted_culture = hittite religion = luwian }
+	}
+}
+
+bronze_hatti_collapse_spawn_melid_gurgum = {
+	custom_description = {
+		text = bronze_hatti_collapse_spawn_melid_gurgum_text
+		# Melid and Gurgum: upper Euphrates and Maras highlands.
+		bronze_hatti_collapse_prepare_successor = { tag = MELID location = malatya }
+		bronze_hatti_collapse_prepare_successor = { tag = MELID location = darende }
+		bronze_hatti_collapse_prepare_successor = { tag = MELID location = gurun }
+		bronze_hatti_collapse_release_successor = { tag = MELID culture = luwian accepted_culture = hurrian religion = hittite }
+		bronze_hatti_collapse_prepare_successor = { tag = GURGU location = marash }
+		bronze_hatti_collapse_prepare_successor = { tag = GURGU location = elbistan }
+		bronze_hatti_collapse_prepare_successor = { tag = GURGU location = goksun }
+		bronze_hatti_collapse_release_successor = { tag = GURGU culture = luwian accepted_culture = hittite religion = hittite }
+	}
+}
+
+bronze_hatti_collapse_spawn_kummuh_hamath = {
+	custom_description = {
+		text = bronze_hatti_collapse_spawn_kummuh_hamath_text
+		# Kummuh and Hamath: only if Hatti actually controls these frontier/Syrian lands.
+		bronze_hatti_collapse_prepare_successor = { tag = KUMMU location = samsat }
+		bronze_hatti_collapse_prepare_successor = { tag = KUMMU location = besni }
+		bronze_hatti_collapse_prepare_successor = { tag = KUMMU location = kahta }
+		bronze_hatti_collapse_release_successor = { tag = KUMMU culture = luwian accepted_culture = aramaean religion = hittite }
+		bronze_hatti_collapse_prepare_successor = { tag = HAMAT location = hama }
+		bronze_hatti_collapse_prepare_successor = { tag = HAMAT location = homs }
+		bronze_hatti_collapse_prepare_successor = { tag = HAMAT location = qaryatayn }
+		bronze_hatti_collapse_release_successor = { tag = HAMAT culture = aramaean accepted_culture = ugaritic religion = canaanite }
+	}
+}
+
+bronze_hatti_collapse_spawn_que_pattin = {
+	custom_description = {
+		text = bronze_hatti_collapse_spawn_que_pattin_text
+		# Que/Cilicia and Pattin: only Hatti-held Cilician and Amuq coastlands are touched.
+		bronze_hatti_collapse_prepare_successor = { tag = QUE location = adana }
+		bronze_hatti_collapse_prepare_successor = { tag = QUE location = tarsus }
+		bronze_hatti_collapse_prepare_successor = { tag = QUE location = ayas }
+		bronze_hatti_collapse_prepare_successor = { tag = QUE location = sis }
+		bronze_hatti_collapse_release_successor = { tag = QUE culture = luwian accepted_culture = denyen religion = luwian }
+		bronze_hatti_collapse_prepare_successor = { tag = PATT location = iskenderun }
+		bronze_hatti_collapse_prepare_successor = { tag = PATT location = arsuz }
+		bronze_hatti_collapse_prepare_successor = { tag = PATT location = artah }
+		bronze_hatti_collapse_release_successor = { tag = PATT culture = luwian accepted_culture = ugaritic religion = luwian }
+	}
+}
+
+bronze_hatti_collapse_spawn_kaskian_north = {
+	custom_description = {
+		text = bronze_hatti_collapse_spawn_kaskian_north_text
+		# Northern pressure: Kaskian-style hill country only where Hatti still owns land.
+		bronze_hatti_collapse_prepare_successor = { tag = KASKA location = corum }
+		bronze_hatti_collapse_prepare_successor = { tag = KASKA location = amasya }
+		bronze_hatti_collapse_prepare_successor = { tag = KASKA location = tokat }
+		bronze_hatti_collapse_prepare_successor = { tag = KASKA location = zile }
+		bronze_hatti_collapse_prepare_successor = { tag = KASKA location = iskilip }
+		bronze_hatti_collapse_release_successor = { tag = KASKA culture = colchian accepted_culture = hittite religion = kartvelian_pagan }
+	}
+}
+
+bronze_hatti_collapse_spawn_carchemish_continuity = {
+	custom_description = {
+		text = bronze_hatti_collapse_spawn_carchemish_continuity_text
+		# Carchemish continuity: Euphrates frontier, not central Anatolia.
+		bronze_hatti_collapse_prepare_successor = { tag = KARKA location = birecik }
+		bronze_hatti_collapse_prepare_successor = { tag = KARKA location = manbij }
+		bronze_hatti_collapse_prepare_successor = { tag = KARKA location = suruc }
+		bronze_hatti_collapse_release_successor = { tag = KARKA culture = luwian accepted_culture = aramaean religion = hittite }
+	}
+}
+
+bronze_hatti_collapse_fragment_periphery = {
+	custom_description = {
+		text = bronze_hatti_collapse_fragment_periphery_text
+		bronze_hatti_collapse_spawn_tarhuntassa = yes
+		bronze_hatti_collapse_spawn_tabal = yes
+		bronze_hatti_collapse_spawn_melid_gurgum = yes
+		bronze_hatti_collapse_spawn_kummuh_hamath = yes
+		bronze_hatti_collapse_spawn_que_pattin = yes
+		bronze_hatti_collapse_spawn_kaskian_north = yes
+		bronze_hatti_collapse_spawn_carchemish_continuity = yes
+		set_variable = { name = bronze_hatti_fragmented_periphery value = 1 years = 80 }
+		bronze_hatti_collapse_add_pressure = { value = -12 }
+		add_stability = stability_weak_penalty
+	}
+}
+
+bronze_hatti_collapse_cleanup = {
+	custom_description = {
+		text = bronze_hatti_collapse_cleanup_text
+		remove_variable = bronze_hatti_collapse_active
+		remove_variable = bronze_hatti_collapse_intro_seen
+		remove_variable = bronze_hatti_collapse_phase
+		remove_variable = bronze_hatti_collapse_pressure
+		remove_variable = bronze_hatti_famine_pressure
+		remove_variable = bronze_hatti_grain_crisis
+		remove_variable = bronze_hatti_trade_collapse
+		remove_variable = bronze_hatti_vassal_defiance
+		remove_variable = bronze_hatti_internal_breakdown
+		remove_variable = bronze_hatti_southern_coast_raided
+	}
+}

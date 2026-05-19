@@ -1,0 +1,124 @@
+bronze_hatti_phase_1_rumours_from_the_coast = {
+	potential_trigger = {
+		bronze_hatti_collapse_phase_at_least = { value = 1 }
+	}
+
+	import_efficiency = -0.05
+	global_trade_center_power = -0.03
+	pop_join_rebel_threshold = -0.02
+	monthly_prestige = -0.01
+}
+
+bronze_hatti_phase_2_grain_crisis = {
+	potential_trigger = {
+		bronze_hatti_collapse_phase_at_least = { value = 2 }
+	}
+
+	global_monthly_food_modifier = -0.10
+	global_population_growth = -0.0004
+	global_pop_food_consumption = 0.05
+	monthly_rebel_growth = 0.001
+}
+
+bronze_hatti_phase_3_vassals_defy_hattusa = {
+	potential_trigger = {
+		bronze_hatti_collapse_phase_at_least = { value = 3 }
+	}
+
+	global_monthly_control_decline = 0.01
+	global_estate_target_satisfaction = -0.03
+	pop_join_rebel_threshold = -0.06
+	monthly_war_exhaustion = 0.03
+}
+
+bronze_hatti_phase_4_empire_cracks = {
+	potential_trigger = {
+		bronze_hatti_collapse_phase_at_least = { value = 4 }
+	}
+
+	global_monthly_control_decline = 0.02
+	import_efficiency = -0.15
+	global_production_efficiency = -0.10
+	monthly_rebel_growth = 0.002
+}
+
+bronze_hatti_phase_5_fall_of_hatti = {
+	potential_trigger = {
+		bronze_hatti_collapse_phase_at_least = { value = 5 }
+	}
+
+	global_monthly_control_decline = 0.03
+	import_efficiency = -0.25
+	global_monthly_food_modifier = -0.15
+	monthly_war_exhaustion = 0.06
+	pop_join_rebel_threshold = -0.12
+}
+
+bronze_hatti_grain_crisis_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_grain_crisis
+		var:bronze_hatti_grain_crisis > 0
+	}
+
+	global_monthly_food_modifier = -0.12
+	global_pop_food_consumption = 0.08
+	global_population_growth = -0.0005
+}
+
+bronze_hatti_trade_collapse_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_trade_collapse
+		var:bronze_hatti_trade_collapse > 0
+	}
+
+	import_efficiency = -0.15
+	global_trade_center_power = -0.08
+	global_production_efficiency = -0.05
+	global_maritime_presence_modifier = -0.06
+}
+
+bronze_hatti_vassal_defiance_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_vassal_defiance
+		var:bronze_hatti_vassal_defiance > 0
+	}
+
+	global_monthly_control_decline = 0.015
+	global_estate_target_satisfaction = -0.05
+	monthly_rebel_growth = 0.0015
+}
+
+bronze_hatti_internal_breakdown_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_internal_breakdown
+		var:bronze_hatti_internal_breakdown > 0
+	}
+
+	monthly_rebel_growth = 0.003
+	pop_join_rebel_threshold = -0.10
+	global_monthly_control_decline = 0.025
+	monthly_war_exhaustion = 0.05
+}
+
+bronze_hatti_southern_coast_raided_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_southern_coast_raided
+		var:bronze_hatti_southern_coast_raided > 0
+	}
+
+	global_prosperity_decay = 0.05
+	global_trade_center_power = -0.08
+	global_maritime_presence_modifier = -0.08
+	monthly_war_exhaustion = 0.04
+}
+
+bronze_hatti_successor_state_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_successor_state
+		var:bronze_hatti_successor_state > 0
+	}
+
+	global_monthly_control = 0.003
+	global_estate_target_satisfaction = 0.02
+	global_population_growth = 0.0002
+}

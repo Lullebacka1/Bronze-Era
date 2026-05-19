@@ -1,0 +1,54 @@
+bronze_hatti_collapse_phase_at_least = {
+	custom_description = {
+		text = bronze_hatti_collapse_phase_at_least_text
+		value = $value$
+		has_variable = bronze_hatti_collapse_phase
+		var:bronze_hatti_collapse_phase >= $value$
+	}
+}
+
+bronze_hatti_collapse_active_country = {
+	custom_description = {
+		text = bronze_hatti_collapse_active_country_text
+		tag = 0003G
+		has_variable = bronze_hatti_collapse_active
+	}
+}
+
+bronze_hatti_collapse_relevant_country = {
+	custom_description = {
+		text = bronze_hatti_collapse_relevant_country_text
+		OR = {
+			tag = 0003G
+			tag = KARKA
+			tag = KASKA
+			tag = MITAN
+			tag = AMURU
+			tag = UGART
+			tag = TRPOL
+			tag = SUTU
+			tag = ALZIY
+			tag = AZZI
+			tag = PALA
+			tag = HAPAL
+			tag = MIRA
+			tag = SEHA
+			tag = LUKKA
+			tag = ULIBA
+			tag = WILUS
+			culture = culture:hittite
+			culture = culture:luwian
+			culture = culture:hattian
+			culture = culture:palaic
+			capital ?= { region = region:anatolia_region }
+		}
+	}
+}
+
+bronze_hatti_collapse_successor_candidate = {
+	custom_description = {
+		text = bronze_hatti_collapse_successor_candidate_text
+		tag = 0003G
+		bronze_hatti_collapse_phase_at_least = { value = 4 }
+	}
+}

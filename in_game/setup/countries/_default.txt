@@ -222,6 +222,38 @@ KASKA = {
 	color = rgb { 197 99 43 }
 	color2 = rgb { 110 27 27 }
 }
+TARHU = {
+	color = rgb { 126 82 190 }
+	color2 = rgb { 110 27 27 }
+}
+TABAL = {
+	color = rgb { 83 151 188 }
+	color2 = rgb { 110 27 27 }
+}
+MELID = {
+	color = rgb { 196 111 61 }
+	color2 = rgb { 110 27 27 }
+}
+GURGU = {
+	color = rgb { 179 72 82 }
+	color2 = rgb { 110 27 27 }
+}
+QUE = {
+	color = rgb { 66 164 114 }
+	color2 = rgb { 110 27 27 }
+}
+PATT = {
+	color = rgb { 208 155 64 }
+	color2 = rgb { 110 27 27 }
+}
+KUMMU = {
+	color = rgb { 126 166 79 }
+	color2 = rgb { 110 27 27 }
+}
+HAMAT = {
+	color = rgb { 188 90 136 }
+	color2 = rgb { 110 27 27 }
+}
 LAEAE = {
 	color = rgb { 42 174 198 }
 	color2 = rgb { 110 27 27 }

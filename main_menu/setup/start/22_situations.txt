@@ -2,4 +2,7 @@ situation_manager = {
 	sea_peoples_crisis = {
 		status = active
 	}
+	bronze_hatti_collapse = {
+		status = active
+	}
 }

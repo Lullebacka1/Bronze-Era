@@ -7,11 +7,14 @@ sea_peoples_crisis = {
 	}
 
 	can_start = {
-		always = yes
+		NOT = { has_global_variable = sea_peoples_crisis_ended }
 	}
 
 	can_end = {
-		always = no
+		OR = {
+			years_since_situation_start >= 30
+			var:sea_peoples_situation_months >= 360
+		}
 	}
 
 	visible = {
@@ -46,6 +49,39 @@ sea_peoples_crisis = {
 				NOT = { has_variable = sea_peoples_crisis_active }
 			}
 			trigger_event_non_silently = sea_peoples_crisis.1
+		}
+	}
+
+	on_ending = {
+		set_global_variable = { name = sea_peoples_crisis_ended value = 1 }
+
+		every_country = {
+			limit = {
+				OR = {
+					has_variable = sea_peoples_crisis_active
+					has_variable = sea_peoples_situation_intro_seen
+					has_variable = sea_peoples_crisis_phase
+					has_variable = sea_peoples_crisis_pressure
+					has_variable = sea_peoples_famine_pressure
+					has_variable = sea_peoples_raided_coast
+					has_variable = sea_peoples_refugee_pressure
+					has_variable = sea_peoples_palace_economy_collapse
+					has_variable = sea_peoples_internal_breakdown
+					has_variable = sea_peoples_settlement_pressure
+					has_variable = sea_peoples_assimilation_pressure
+				}
+			}
+			remove_variable = sea_peoples_crisis_active
+			remove_variable = sea_peoples_situation_intro_seen
+			remove_variable = sea_peoples_crisis_phase
+			remove_variable = sea_peoples_crisis_pressure
+			remove_variable = sea_peoples_famine_pressure
+			remove_variable = sea_peoples_raided_coast
+			remove_variable = sea_peoples_refugee_pressure
+			remove_variable = sea_peoples_palace_economy_collapse
+			remove_variable = sea_peoples_internal_breakdown
+			remove_variable = sea_peoples_settlement_pressure
+			remove_variable = sea_peoples_assimilation_pressure
 		}
 	}
 
