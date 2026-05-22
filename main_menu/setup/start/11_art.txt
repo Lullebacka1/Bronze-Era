@@ -1,5 +1,6 @@
 work_of_art_manager = {
-	#Ancient Monuments
-	monument = { location = amesbury origin = amesbury  quality = 10 creation_date = -2500.1.1  key = stonehenge }
-	monument = { location = giza origin = giza quality = 87 creation_date = -2560.1.1 key = pyramid_art_key }
+	# Bronze Era uses positive engine dates. These monuments are already old
+	# at the visual 1209 BC start, so they are anchored to the stable start date.
+	monument = { location = amesbury origin = amesbury  quality = 10 creation_date = 1.1.1  key = stonehenge }
+	monument = { location = giza origin = giza quality = 87 creation_date = 1.1.1 key = pyramid_art_key }
 }

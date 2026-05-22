@@ -7,6 +7,9 @@ sea_peoples_crisis = {
 	}
 
 	can_start = {
+		# Visual chronology: 1195 BC.
+		# Internal year 1 = 1209 BC, so 1195 BC = internal year 15.
+		current_date >= 15.1.1
 		NOT = { has_global_variable = sea_peoples_crisis_ended }
 	}
 

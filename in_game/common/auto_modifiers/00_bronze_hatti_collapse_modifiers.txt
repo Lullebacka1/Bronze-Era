@@ -122,3 +122,168 @@ bronze_hatti_successor_state_modifier = {
 	global_estate_target_satisfaction = 0.02
 	global_population_growth = 0.0002
 }
+
+bronze_hatti_grain_relief_sent_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_grain_relief_sent
+		var:bronze_hatti_grain_relief_sent > 0
+	}
+
+	global_monthly_food_modifier = 0.08
+	global_pop_food_consumption = -0.03
+	global_estate_target_satisfaction = 0.01
+}
+
+bronze_hatti_coast_fortified_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_coast_fortified
+		var:bronze_hatti_coast_fortified > 0
+	}
+
+	global_maritime_presence_modifier = 0.10
+	global_prosperity_decay = -0.02
+	fort_limit = 1
+}
+
+bronze_hatti_vassals_appeased_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_vassals_appeased
+		var:bronze_hatti_vassals_appeased > 0
+	}
+
+	subject_loyalty = 10
+	global_monthly_control_decline = -0.005
+	monthly_prestige = -0.03
+}
+
+bronze_hatti_lords_crushed_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_lords_crushed
+		var:bronze_hatti_lords_crushed > 0
+	}
+
+	global_monthly_control = 0.005
+	pop_join_rebel_threshold = 0.04
+	monthly_war_exhaustion = -0.02
+}
+
+bronze_hatti_evacuation_orders_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_evacuation_orders
+		var:bronze_hatti_evacuation_orders > 0
+	}
+
+	global_population_growth = -0.0002
+	global_prosperity_decay = 0.03
+	global_monthly_control_decline = -0.004
+}
+
+bronze_hatti_centralized_core_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_centralized_core
+		var:bronze_hatti_centralized_core > 0
+	}
+
+	global_monthly_control = 0.008
+	global_monthly_food_modifier = 0.05
+	import_efficiency = -0.05
+}
+
+bronze_hatti_peripheral_abandonment_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_peripheral_abandonment
+		var:bronze_hatti_peripheral_abandonment > 0
+	}
+
+	subject_loyalty = -10
+	global_trade_center_power = -0.05
+	monthly_prestige = -0.04
+}
+
+bronze_hatti_client_loyal_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_client_loyal
+		var:bronze_hatti_client_loyal > 0
+	}
+
+	loyalty_to_overlord = 12
+	global_monthly_control = 0.004
+	monthly_prestige = 0.01
+}
+
+bronze_hatti_client_defiant_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_client_defiant
+		var:bronze_hatti_client_defiant > 0
+	}
+
+	loyalty_to_overlord = -18
+	global_monthly_control_decline = 0.01
+	monthly_rebel_growth = 0.001
+}
+
+bronze_hatti_client_broken_oath_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_client_broken_oath
+		var:bronze_hatti_client_broken_oath > 0
+	}
+
+	global_monthly_control = 0.003
+	global_estate_target_satisfaction = 0.01
+	monthly_prestige = -0.01
+}
+
+bronze_hatti_client_kings_hosted_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_client_kings_hosted
+		var:bronze_hatti_client_kings_hosted > 0
+	}
+
+	subject_loyalty = 8
+	diplomatic_capacity = -1
+	monthly_prestige = -0.02
+}
+
+bronze_hatti_client_kings_restless_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_client_kings_restless
+		var:bronze_hatti_client_kings_restless > 0
+	}
+
+	subject_loyalty = -8
+	global_monthly_control_decline = 0.006
+}
+
+bronze_hatti_temple_grain_seized_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_temple_grain_seized
+		var:bronze_hatti_temple_grain_seized > 0
+	}
+
+	global_monthly_food_modifier = 0.10
+	monthly_prestige = -0.04
+	clergy_estate_target_satisfaction = -0.05
+}
+
+bronze_hatti_chariot_host_mobilized_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_chariot_host_mobilized
+		var:bronze_hatti_chariot_host_mobilized > 0
+	}
+
+	land_morale_modifier = 0.08
+	army_initiative = 0.05
+	global_manpower_modifier = -0.08
+	global_monthly_food_modifier = -0.04
+}
+
+bronze_hatti_syrian_road_abandoned_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_syrian_road_abandoned
+		var:bronze_hatti_syrian_road_abandoned > 0
+	}
+
+	import_efficiency = -0.12
+	global_trade_center_power = -0.10
+	global_monthly_control = 0.004
+}

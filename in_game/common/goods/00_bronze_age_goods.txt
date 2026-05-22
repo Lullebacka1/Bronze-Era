@@ -1,0 +1,18 @@
+bronze_age_bronze = {
+	category = produced
+	color = goods_bronze_age_bronze
+	default_market_price = 4
+	transport_cost = 1
+
+	demand_add = {
+		nobles = 0.04
+		soldiers = 0.004
+		laborers = 0.0005
+	}
+
+	wealth_impact_threshold = {
+		all = 0.95
+	}
+
+	custom_tags = { bronze_age_goods }
+}

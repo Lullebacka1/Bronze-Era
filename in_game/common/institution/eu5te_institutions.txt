@@ -9,7 +9,7 @@ banking = {
 }
 
 bronze_large_libraries = {
-    age = bronze_age_5_hellenistic
+    age = age_5_absolutism
     can_spawn = {
         # Add EU5 appearance conditions here.
     }
@@ -19,32 +19,32 @@ bronze_large_libraries = {
 }
 
 bronze_professional_armies = {
-    age = bronze_age_5_hellenistic
+    age = age_5_absolutism
 }
 
 bronze_routes = {
-    age = bronze_age_1_bronze
+    age = age_1_traditions
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # selling_efficiency = 0.05
 }
 
 chariot_warfare = {
-    age = bronze_age_1_bronze
+    age = age_1_traditions
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # discipline = 0.05
 }
 
 classical_philosophy = {
-    age = bronze_age_4_classic
+    age = age_4_reformation
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # research_cost = 0.05
 }
 
 commercial_counters = {
-    age = bronze_age_2_iron
+    age = age_2_renaissance
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # selling_efficiency = 0.05
@@ -66,7 +66,7 @@ global_trade = {
 }
 
 hellenistic_cosmopolitanism = {
-    age = bronze_age_5_hellenistic
+    age = age_5_absolutism
     can_spawn = {
         # Add EU5 appearance conditions here.
     }
@@ -77,14 +77,14 @@ hellenistic_cosmopolitanism = {
 }
 
 hoplite_phalanx = {
-    age = bronze_age_3_archaic
+    age = age_3_discovery
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # discipline = 0.05
 }
 
 imperial_administration = {
-    age = bronze_age_4_classic
+    age = age_4_reformation
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # selling_efficiency = 0.05
@@ -94,7 +94,7 @@ industrialization = {
 }
 
 iron_metallurgy = {
-    age = bronze_age_2_iron
+    age = age_2_renaissance
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # research_cost = 0.05
@@ -105,7 +105,7 @@ legalism = {
 }
 
 legions = {
-    age = bronze_age_6_roman
+    age = age_6_revolutions
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # discipline = 0.05
@@ -118,7 +118,7 @@ manufactories = {
 }
 
 mediterranean_colonization = {
-    age = bronze_age_3_archaic
+    age = age_3_discovery
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # selling_efficiency = 0.05
@@ -136,44 +136,40 @@ new_world = {
 }
 
 palatial_economy = {
-    age = bronze_age_1_bronze
+    age = age_1_traditions
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # selling_efficiency = 0.05
 }
 
 phoenician_alphabet = {
-    age = bronze_age_3_archaic
+    age = age_3_discovery
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # selling_efficiency = 0.05
 }
 
 pike_and_shot = {
-    age = age_3_discovery
 }
 
 printing_press = {
-    age = age_3_discovery
 }
 
 professional_armies = {
-    age = age_2_renaissance
 }
 
 renaissance = {
-    age = age_2_renaissance
 }
 
 road_network = {
-    age = bronze_age_6_roman
+    age = age_6_revolutions
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # selling_efficiency = 0.05
 }
 
 roman_law = {
-    age = bronze_age_6_roman
+    age = age_6_revolutions
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # research_cost = 0.05
@@ -183,14 +179,14 @@ scientific_revolution = {
 }
 
 standardized_currency = {
-    age = bronze_age_4_classic
+    age = age_4_reformation
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # selling_efficiency = 0.05
 }
 
 tribal_migrations = {
-    age = bronze_age_2_iron
+    age = age_2_renaissance
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     # Institution effects are not emitted as executable script because vanilla institutions use can_spawn/promote_chance/spread_* keys.
     # tolerance_heathen = 0.05

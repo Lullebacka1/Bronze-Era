@@ -176,6 +176,46 @@ situation_panel = {
 			}
 		}
 
+		situation_fancy_two_line_card = {
+			block "card_datacontext" {}
+
+			blockoverride "left_flag" {
+				icon = {
+					size = { 40 40 }
+					texture = "gfx/interface/icons/laws/resolutions/law_voting.dds"
+				}
+			}
+			blockoverride "left_bottom_flag" {}
+			blockoverride "left_top_text" {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				text = "bronze_hatti_collapse_panel_vassal_oaths"
+			}
+			blockoverride "left_bottom_text" {
+				layoutpolicy_horizontal = expanding
+				align = left|nobaseline
+				text = "bronze_hatti_collapse_panel_vassal_oaths_value"
+			}
+
+			blockoverride "right_flag" {
+				icon = {
+					size = { 40 40 }
+					texture = "gfx/interface/icons/laws/resolutions/law_voting.dds"
+				}
+			}
+			blockoverride "right_bottom_flag" {}
+			blockoverride "right_top_text" {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				text = "bronze_hatti_collapse_panel_client_status"
+			}
+			blockoverride "right_bottom_text" {
+				layoutpolicy_horizontal = expanding
+				align = right|nobaseline
+				text = "bronze_hatti_collapse_panel_client_status_value"
+			}
+		}
+
 		situation_card_expandable = {
 			blockoverride "header_button_onclick" {
 				onclick = "[LateralView.Vars.Toggle( 'bronze_hatti_actions_toggled' )]"

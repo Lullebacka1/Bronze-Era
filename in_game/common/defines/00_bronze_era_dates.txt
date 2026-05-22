@@ -1,0 +1,10 @@
+NGame = {
+	# Stable Bronze Era chronology.
+	# Internal year 1 = displayed historical year 1209 BC.
+	# Internal year 1329 = displayed historical year 120 AD.
+	# Negative years are intentionally avoided because vanilla timers,
+	# cooldowns, AI scheduling, situations, institutions and saves assume
+	# a normal positive calendar in several places.
+	START_DATE = "1.1.1"
+	END_DATE = "1329.12.31"
+}

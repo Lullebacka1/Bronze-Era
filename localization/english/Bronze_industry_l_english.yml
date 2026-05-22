@@ -1,0 +1,27 @@
+﻿l_english:
+ bronze_age_bronze_foundry: "Bronze Foundry"
+ bronze_age_bronze_foundry_desc: "A workshop of furnaces, crucibles and molds where copper is alloyed with precious tin to create bronze for palace economies, artisans and armorers."
+
+ bronze_age_bronze: "Bronze"
+ bronze_age_bronze_desc: "Bronze is an alloy of copper and tin, prized for tools, weapons, fittings and prestige objects. Its production depends on fragile long-distance tin routes."
+
+ tin: "Tin"
+ tin_desc: "Tin is a rare strategic metal required for true bronze. Its scarcity made distant mines and maritime trade routes vital to Late Bronze Age economies."
+
+ bronze_age_full_bronze_supply: "Full Bronze Supply"
+ bronze_age_full_bronze_supply_desc: "The foundry has reliable access to both copper and tin, allowing its smiths to cast durable bronze at full efficiency."
+
+ bronze_age_bronze_shortage: "Tin Shortage Smelting"
+ bronze_age_bronze_shortage_desc: "Tin routes are unreliable. The foundry stretches copper stocks, recycles scrap and produces only a small quantity of usable bronze."
+
+ bronze_age_tools_bronze_recipe: "Bronze Tool Production"
+ bronze_age_tools_bronze_recipe_desc: "Artisans cast bronze blades, chisels, awls and agricultural tools. The method is effective for the Bronze Age, but less scalable than later iron industries."
+
+ bronze_age_tools_workshop_bronze_recipe: "Bronze Tool Workshop"
+ bronze_age_tools_workshop_bronze_recipe_desc: "Organized workshops turn bronze ingots into tools for farms, palaces and shipyards."
+
+ bronze_age_weapons_bronze_recipe: "Bronze Weapon Production"
+ bronze_age_weapons_bronze_recipe_desc: "Bronze is worked into spearheads, daggers, swords and fittings for elite warriors. The output is limited by the supply of imported tin."
+
+ bronze_age_weapons_workshop_bronze_recipe: "Bronze Weapons Workshop"
+ bronze_age_weapons_workshop_bronze_recipe_desc: "Specialized smiths shape bronze into weapons for palace arsenals and aristocratic retinues."

@@ -136,9 +136,8 @@ bronze_hatti_appease_vassals = {
 	}
 	effect = {
 		scope:actor ?= {
-			set_variable = { name = bronze_hatti_vassals_appeased value = 1 years = 5 }
-			bronze_hatti_collapse_add_pressure = { value = -9 }
-			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_bonus }
+			bronze_hatti_collapse_secure_client_kings = yes
+			bronze_hatti_collapse_add_pressure = { value = -2 }
 			add_prestige = prestige_weak_penalty
 			custom_tooltip = bronze_hatti_appease_vassals_tt
 		}
@@ -344,6 +343,192 @@ bronze_hatti_recognize_successors = {
 			bronze_hatti_collapse_fragment_periphery = yes
 			add_prestige = prestige_medium_penalty
 			custom_tooltip = bronze_hatti_recognize_successors_tt
+		}
+	}
+	ai_will_do = {
+		add = 4
+		subtract = 2
+	}
+}
+
+bronze_hatti_host_vassal_kings = {
+	type = situation
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 24
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = price:bronze_hatti_host_vassal_kings_price
+
+	cooldown = {
+		type = bronze_hatti_host_vassal_kings
+		years = 6
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:bronze_hatti_collapse = this
+			situation_is_active = yes
+			scope:actor ?= { bronze_hatti_collapse_active_country = yes }
+		}
+	}
+	potential = {
+		scope:actor ?= {
+			bronze_hatti_collapse_active_country = yes
+			bronze_hatti_collapse_phase_at_least = { value = 2 }
+			NOT = { has_variable = bronze_hatti_client_kings_hosted }
+		}
+	}
+	allow = {
+		scope:actor ?= { is_during_bankruptcy = no }
+	}
+	effect = {
+		scope:actor ?= {
+			bronze_hatti_collapse_secure_client_kings = yes
+			custom_tooltip = bronze_hatti_host_vassal_kings_tt
+		}
+	}
+	ai_will_do = {
+		add = 10
+		subtract = 2
+	}
+}
+
+bronze_hatti_seize_temple_grain = {
+	type = situation
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 30
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = price:bronze_hatti_seize_temple_grain_price
+
+	cooldown = {
+		type = bronze_hatti_seize_temple_grain
+		years = 5
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:bronze_hatti_collapse = this
+			situation_is_active = yes
+			scope:actor ?= { bronze_hatti_collapse_active_country = yes }
+		}
+	}
+	potential = {
+		scope:actor ?= {
+			bronze_hatti_collapse_active_country = yes
+			bronze_hatti_collapse_phase_at_least = { value = 2 }
+			NOT = { has_variable = bronze_hatti_temple_grain_seized }
+		}
+	}
+	effect = {
+		scope:actor ?= {
+			bronze_hatti_collapse_seize_temple_grain = yes
+			custom_tooltip = bronze_hatti_seize_temple_grain_tt
+		}
+	}
+	ai_will_do = {
+		add = 7
+		subtract = 3
+	}
+}
+
+bronze_hatti_call_chariot_host = {
+	type = situation
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 30
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = price:bronze_hatti_call_chariot_host_price
+
+	cooldown = {
+		type = bronze_hatti_call_chariot_host
+		years = 4
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:bronze_hatti_collapse = this
+			situation_is_active = yes
+			scope:actor ?= { bronze_hatti_collapse_active_country = yes }
+		}
+	}
+	potential = {
+		scope:actor ?= {
+			bronze_hatti_collapse_active_country = yes
+			bronze_hatti_collapse_phase_at_least = { value = 3 }
+			NOT = { has_variable = bronze_hatti_chariot_host_mobilized }
+		}
+	}
+	allow = {
+		scope:actor ?= { is_during_bankruptcy = no }
+	}
+	effect = {
+		scope:actor ?= {
+			bronze_hatti_collapse_call_chariot_host = yes
+			custom_tooltip = bronze_hatti_call_chariot_host_tt
+		}
+	}
+	ai_will_do = {
+		add = 8
+		subtract = 3
+	}
+}
+
+bronze_hatti_abandon_syrian_road = {
+	type = situation
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 60
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = price:bronze_hatti_abandon_syrian_road_price
+
+	cooldown = {
+		type = bronze_hatti_abandon_syrian_road
+		years = 20
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:bronze_hatti_collapse = this
+			situation_is_active = yes
+			scope:actor ?= { bronze_hatti_collapse_active_country = yes }
+		}
+	}
+	potential = {
+		scope:actor ?= {
+			bronze_hatti_collapse_active_country = yes
+			bronze_hatti_collapse_phase_at_least = { value = 4 }
+			NOT = { has_variable = bronze_hatti_syrian_road_abandoned }
+		}
+	}
+	effect = {
+		scope:actor ?= {
+			bronze_hatti_collapse_abandon_syrian_road = yes
+			custom_tooltip = bronze_hatti_abandon_syrian_road_tt
 		}
 	}
 	ai_will_do = {

@@ -216,6 +216,11 @@ bronze_hatti_collapse.20 = {
 				bronze_hatti_collapse_add_pressure = { value = -2 }
 				custom_tooltip = bronze_hatti_collapse_raid_repulsed_tt
 			}
+			12 = {
+				trigger = { has_variable = bronze_hatti_chariot_host_mobilized }
+				bronze_hatti_collapse_add_pressure = { value = -2 }
+				custom_tooltip = bronze_hatti_collapse_chariot_raid_repulsed_tt
+			}
 			15 = {
 				trigger = {
 					OR = {
@@ -427,5 +432,179 @@ bronze_hatti_collapse.90 = {
 		set_variable = { name = bronze_hatti_last_stand value = 1 years = 10 }
 		bronze_hatti_collapse_add_pressure = { value = 12 }
 		add_prestige = prestige_weak_bonus
+	}
+}
+
+bronze_hatti_collapse.100 = {
+	type = country_event
+	title = bronze_hatti_collapse.100.title
+	desc = bronze_hatti_collapse.100.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 3 }
+		NOT = { has_variable = bronze_hatti_wilusa_oath_tested }
+		c:WILUS ?= { is_subject_of = root }
+	}
+
+	immediate = {
+		set_variable = { name = bronze_hatti_wilusa_oath_tested value = 1 years = 20 }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.100.a
+		custom_tooltip = bronze_hatti_collapse_100a_tt
+		c:WILUS ?= {
+			set_variable = { name = bronze_hatti_client_loyal value = 1 years = 6 }
+			remove_variable = bronze_hatti_client_defiant
+		}
+		bronze_hatti_collapse_add_pressure = { value = -3 }
+		add_prestige = prestige_weak_penalty
+	}
+	option = {
+		name = bronze_hatti_collapse.100.b
+		custom_tooltip = bronze_hatti_collapse_100b_tt
+		c:WILUS ?= { set_variable = { name = bronze_hatti_client_defiant value = 1 years = 6 } }
+		bronze_hatti_collapse_add_pressure = { value = 5 }
+	}
+	option = {
+		name = bronze_hatti_collapse.100.c
+		custom_tooltip = bronze_hatti_collapse_100c_tt
+		bronze_hatti_collapse_client_breaks_oath = { tag = WILUS pressure = 2 }
+	}
+}
+
+bronze_hatti_collapse.110 = {
+	type = country_event
+	title = bronze_hatti_collapse.110.title
+	desc = bronze_hatti_collapse.110.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 3 }
+		NOT = { has_variable = bronze_hatti_seha_oath_tested }
+		c:SEHA ?= { is_subject_of = root }
+	}
+
+	immediate = {
+		set_variable = { name = bronze_hatti_seha_oath_tested value = 1 years = 20 }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.110.a
+		custom_tooltip = bronze_hatti_collapse_110a_tt
+		c:SEHA ?= {
+			set_variable = { name = bronze_hatti_client_loyal value = 1 years = 6 }
+			remove_variable = bronze_hatti_client_defiant
+		}
+		bronze_hatti_collapse_add_pressure = { value = -3 }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_bonus }
+	}
+	option = {
+		name = bronze_hatti_collapse.110.b
+		custom_tooltip = bronze_hatti_collapse_110b_tt
+		c:SEHA ?= { set_variable = { name = bronze_hatti_client_defiant value = 1 years = 6 } }
+		bronze_hatti_collapse_add_pressure = { value = 6 }
+		add_prestige = prestige_weak_penalty
+	}
+	option = {
+		name = bronze_hatti_collapse.110.c
+		custom_tooltip = bronze_hatti_collapse_110c_tt
+		bronze_hatti_collapse_client_breaks_oath = { tag = SEHA pressure = 3 }
+	}
+}
+
+bronze_hatti_collapse.120 = {
+	type = country_event
+	title = bronze_hatti_collapse.120.title
+	desc = bronze_hatti_collapse.120.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 4 }
+		NOT = { has_variable = bronze_hatti_mira_oath_tested }
+		c:MIRA ?= { is_subject_of = root }
+	}
+
+	immediate = {
+		set_variable = { name = bronze_hatti_mira_oath_tested value = 1 years = 20 }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.120.a
+		custom_tooltip = bronze_hatti_collapse_120a_tt
+		c:MIRA ?= {
+			set_variable = { name = bronze_hatti_client_loyal value = 1 years = 6 }
+			remove_variable = bronze_hatti_client_defiant
+		}
+		bronze_hatti_collapse_add_pressure = { value = -4 }
+		add_prestige = prestige_medium_penalty
+	}
+	option = {
+		name = bronze_hatti_collapse.120.b
+		custom_tooltip = bronze_hatti_collapse_120b_tt
+		c:MIRA ?= { set_variable = { name = bronze_hatti_client_defiant value = 1 years = 8 } }
+		bronze_hatti_collapse_add_pressure = { value = 8 }
+	}
+	option = {
+		name = bronze_hatti_collapse.120.c
+		custom_tooltip = bronze_hatti_collapse_120c_tt
+		bronze_hatti_collapse_client_breaks_oath = { tag = MIRA pressure = 4 }
+	}
+}
+
+bronze_hatti_collapse.130 = {
+	type = country_event
+	title = bronze_hatti_collapse.130.title
+	desc = bronze_hatti_collapse.130.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/SeaPeople.dds"
+	outcome = negative
+	orphan = yes
+
+	trigger = {
+		bronze_hatti_collapse_active_country = yes
+		bronze_hatti_collapse_phase_at_least = { value = 4 }
+		NOT = { has_variable = bronze_hatti_hapalla_oath_tested }
+		c:HAPAL ?= { is_subject_of = root }
+	}
+
+	immediate = {
+		set_variable = { name = bronze_hatti_hapalla_oath_tested value = 1 years = 20 }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.130.a
+		custom_tooltip = bronze_hatti_collapse_130a_tt
+		c:HAPAL ?= {
+			set_variable = { name = bronze_hatti_client_loyal value = 1 years = 6 }
+			remove_variable = bronze_hatti_client_defiant
+		}
+		bronze_hatti_collapse_add_pressure = { value = -4 }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_bonus }
+	}
+	option = {
+		name = bronze_hatti_collapse.130.b
+		custom_tooltip = bronze_hatti_collapse_130b_tt
+		c:HAPAL ?= { set_variable = { name = bronze_hatti_client_defiant value = 1 years = 8 } }
+		bronze_hatti_collapse_add_pressure = { value = 7 }
+		add_stability = stability_weak_penalty
+	}
+	option = {
+		name = bronze_hatti_collapse.130.c
+		custom_tooltip = bronze_hatti_collapse_130c_tt
+		bronze_hatti_collapse_client_breaks_oath = { tag = HAPAL pressure = 4 }
 	}
 }

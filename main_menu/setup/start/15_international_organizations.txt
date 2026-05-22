@@ -1,7 +1,9 @@
 international_organization_manager = {
 	add_international_organization = {
 		type = mycenaean_league
-		creation_date = -1300.1.1
+		# Internal positive date for engine stability.
+		# Historically represents a pre-start palace network before 1209 BC.
+		creation_date = 1.1.1
 
 		map_color = hsv360 { 36 72 70 }
 

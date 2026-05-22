@@ -1,0 +1,246 @@
+# Bronze Age metallurgy.  The building is constructed with vanilla workshop
+# materials; copper and tin are economic inputs only after the foundry exists.
+bronze_age_bronze_foundry = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = workshop_max_level
+
+	category = basic_industry_category
+	employment_size = workshop_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = workshop_build_time
+	construction_demand = workshop_construction
+
+	unique_production_methods = {
+		bronze_age_full_bronze_supply = {
+			copper = 0.75
+			tin = 0.08
+			produced = bronze_age_bronze
+			output = 1.0
+
+			debug_max_profit = 0.35
+			category = workshop_input
+		}
+
+		# Fallback for disrupted tin routes.  It keeps the foundry useful, but
+		# the output is intentionally poor to make tin trade strategically vital.
+		bronze_age_bronze_shortage = {
+			copper = 0.55
+			produced = bronze_age_bronze
+			output = 0.25
+
+			debug_max_profit = 0.08
+			category = workshop_input
+		}
+	}
+
+	custom_tags = { workshop bronze_age_industry }
+}
+
+# Vanilla tools buildings with Bronze Age recipes added.  These overrides keep
+# the vanilla recipes intact while adding a true Bronze -> Tools chain.
+tools_guild = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+
+	category = basic_industry_category
+	employment_size = guild_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = guild_build_time
+
+	unique_production_methods = {
+		metalwork_guild_maintenance = {
+			iron = 0.75
+			produced = tools
+			output = 1
+
+			debug_max_profit = 0.4
+			category = guild_input
+		}
+		stone_tools_guild_maintenance = {
+			stone = 0.70
+			produced = tools
+			output = 0.25
+			debug_max_profit = 0.1
+
+			category = guild_input
+		}
+
+		bronze_tools_guild_maintenance = {
+			copper = 0.5
+			tin = 0.04
+			produced = tools
+			output = 0.6
+			debug_max_profit = 0.2
+
+			category = guild_input
+		}
+		bronze_age_tools_bronze_recipe = {
+			bronze_age_bronze = 0.45
+			produced = tools
+			output = 0.7
+			debug_max_profit = 0.25
+
+			category = guild_input
+		}
+		copper_tools_guild_maintenance = {
+			copper = 0.5
+			produced = tools
+			output = 0.55
+			debug_max_profit = 0.15
+
+			category = guild_input
+		}
+	}
+
+	construction_demand = guild_construction
+}
+
+tools_workshop = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = workshop_max_level
+
+	category = basic_industry_category
+	employment_size = workshop_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = workshop_build_time
+
+	unique_production_methods = {
+		metalwork_workshop_maintenance = {
+			iron = 0.8
+			produced = tools
+			output = 1.1
+			debug_max_profit = 0.5
+			category = workshop_input
+		}
+		bronze_age_tools_workshop_bronze_recipe = {
+			bronze_age_bronze = 0.6
+			produced = tools
+			output = 0.9
+			debug_max_profit = 0.35
+			category = workshop_input
+		}
+	}
+
+	construction_demand = workshop_construction
+
+	obsolete = tools_guild
+}
+
+# Vanilla weapons buildings with Bronze Age recipes added.  These produce the
+# vanilla weaponry good from bronze, without creating units or technologies.
+weapon_guild = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+
+	category = weapons_industry_category
+	employment_size = guild_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = guild_build_time
+
+	unique_production_methods = {
+		pre_columbian_weapon_smith_maintenance = {
+			lumber = 0.07
+			stone = 1.0
+			produced = weaponry
+			output = 0.4
+			category = guild_input
+
+			debug_max_profit = 0.1
+		}
+		weapon_smith_maintenance = {
+			lumber = 0.25
+			coal = 0.3
+			tools = 0.5
+			category = guild_input
+			produced = weaponry
+			output = 1
+		}
+		bronze_age_weapons_bronze_recipe = {
+			lumber = 0.15
+			bronze_age_bronze = 0.55
+			tools = 0.1
+			produced = weaponry
+			output = 0.8
+
+			debug_max_profit = 0.25
+			category = guild_input
+		}
+		weapon_guild_obsidian_maintenance = {
+			lumber = 0.12
+			stone = 0.5
+			gems = 0.1
+			produced = weaponry
+			output = 0.4
+			category = guild_input
+
+			debug_max_profit = 0.2
+		}
+	}
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+}
+
+weapon_workshop = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = workshop_max_level
+
+	category = weapons_industry_category
+	employment_size = workshop_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = workshop_build_time
+
+	unique_production_methods = {
+		weapon_workshop_maintenance = {
+			lumber = 0.3
+			coal = 0.3
+			iron = 0.25
+			tools = 0.2
+			category = workshop_input
+			produced = weaponry
+			output = 1.1
+
+			debug_max_profit = 0.5
+		}
+		bronze_age_weapons_workshop_bronze_recipe = {
+			lumber = 0.2
+			bronze_age_bronze = 0.75
+			tools = 0.15
+			category = workshop_input
+			produced = weaponry
+			output = 1.0
+
+			debug_max_profit = 0.4
+		}
+	}
+
+	obsolete = weapon_guild
+
+	custom_tags = { workshop }
+	construction_demand = workshop_construction
+}

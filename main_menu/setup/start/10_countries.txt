@@ -80,7 +80,7 @@ countries = {
 		culture = hittite
 		religion = hittite
 
-		country_rank = rank_kingdom
+		country_rank = rank_empire
 
 		include = "Bronze"
 
@@ -107,16 +107,10 @@ countries = {
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { hittite luwian }
+		accepted_cultures = { luwian }
 		tolerated_cultures = { hurrian denyen hattian }
 		discovered_regions = {
 			anatolia_region caucasus_region crescent_region
-		}
-		variables = {
-			data = { { flag = "bronze_hatti_collapse_active" data = { type = value identity = 1 } } }
-			data = { { flag = "bronze_hatti_collapse_phase" data = { type = value identity = 1 } } }
-			data = { { flag = "bronze_hatti_collapse_pressure" data = { type = value identity = 10 } } }
-			data = { { flag = "bronze_hatti_famine_pressure" data = { type = value identity = 10 } } }
 		}
 	}
 
@@ -2980,7 +2974,7 @@ countries = {
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { luwian }
+		accepted_cultures = { hittite }
 		tolerated_cultures = {  }
 		discovered_regions = {
 			anatolia_region
@@ -4188,7 +4182,7 @@ countries = {
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { hittite mycenaean }
+		accepted_cultures = { luwian mycenaean }
 		tolerated_cultures = {  }
 		discovered_regions = {
 			anatolia_region
@@ -5556,7 +5550,7 @@ countries = {
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { hittite mycenaean }
+		accepted_cultures = { luwian mycenaean }
 		tolerated_cultures = {  }
 		discovered_regions = {
 			anatolia_region
@@ -7531,7 +7525,7 @@ countries = {
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { luwian thracian }
+		accepted_cultures = { hittite thracian }
 		tolerated_cultures = {  }
 		discovered_regions = {
 			anatolia_region balkan_region

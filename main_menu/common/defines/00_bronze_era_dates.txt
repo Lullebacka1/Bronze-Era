@@ -1,0 +1,8 @@
+NGame = {
+	# Stable Bronze Era chronology.
+	# Internal year 1 = displayed historical year 1209 BC.
+	# Internal year 1329 = displayed historical year 120 AD.
+	# Keep this mirrored with in_game/common/defines/00_bronze_era_dates.txt.
+	START_DATE = "1.1.1"
+	END_DATE = "1329.12.31"
+}

@@ -13,6 +13,7 @@ yearly_country_pulse = {
 		yearly_flavor_pol_union_pulse   # in_union_with = c:POL
 		yearly_flavor_cop_pulse         # Copernicus date window (>= 1520)
 		yearly_infidel_holds_rome_pulse # catholic + non-Christian owns Rome
+		bronze_chronology_yearly_pulse  # Visual BC/AD chronology for Bronze Era
 		mycenaean_league_yearly_pulse   # Bronze Era Achaean palace politics
 	}
 	# Tag-locked events - mutually exclusive, so first_valid_on_action pays at most one tag
@@ -908,6 +909,37 @@ yearly_infidel_holds_rome_pulse = {
 		add_antagonism = {
 			target = location:rome.owner
 			modifier = antagonism_infidel_holds_rome
+		}
+	}
+}
+
+bronze_chronology_yearly_pulse = {
+	trigger = {
+		is_real_country = yes
+	}
+	effect = {
+		# Fallback correction for old saves: calculate from current_year instead
+		# of decrementing, since yearly_country_pulse is not tied to January 1.
+		set_variable = {
+			name = bronze_display_year
+			value = {
+				value = 1210
+				subtract = current_year
+			}
+		}
+		set_variable = {
+			name = bronze_display_ad_year
+			value = {
+				value = current_year
+				subtract = 1209
+				min = 0
+			}
+		}
+		if = {
+			limit = {
+				var:bronze_display_year < 1
+			}
+			set_variable = { name = bronze_display_year value = 0 }
 		}
 	}
 }

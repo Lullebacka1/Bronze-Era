@@ -1,0 +1,3 @@
+colors = {
+	goods_bronze_age_bronze = rgb { 176 107 58 }
+}

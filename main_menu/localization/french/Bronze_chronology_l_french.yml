@@ -1,0 +1,3 @@
+﻿l_french:
+ bronze_era_chronology_note: "Chronologie Bronze Era"
+ bronze_era_chronology_note_desc: "Pour préserver la stabilité technique, le moteur utilise des années internes positives. L'année interne 1 représente 1209 BC ; l'année interne 15 représente 1195 BC ; l'année interne 1329 représente 120 AD. Pendant la partie BC de la campagne, l'année historique correspond environ à 1210 moins l'année interne du moteur."

@@ -1,41 +1,70 @@
 bronze_hatti_send_grain_to_cities_price = {
-	scaled_gold = 1.2
-	government_power = 15
-	stability = 5
-}
-
-bronze_hatti_fortify_the_coast_price = {
-	scaled_gold = 1.4
-	scaled_manpower = 0.08
-	stability = 5
-}
-
-bronze_hatti_appease_vassals_price = {
-	prestige = 10
+	scaled_gold = 2.0
 	government_power = 20
 	stability = 5
 }
 
+bronze_hatti_fortify_the_coast_price = {
+	scaled_gold = 2.2
+	scaled_manpower = 0.12
+	government_power = 10
+	stability = 5
+}
+
+bronze_hatti_appease_vassals_price = {
+	scaled_gold = 1.0
+	prestige = 15
+	government_power = 25
+	stability = 5
+}
+
 bronze_hatti_crush_rebellious_lords_price = {
-	scaled_manpower = 0.16
-	stability = 15
-	prestige = 5
+	scaled_gold = 0.8
+	scaled_manpower = 0.22
+	stability = 20
+	prestige = 8
 }
 
 bronze_hatti_evacuate_settlements_price = {
-	scaled_gold = 0.8
-	government_power = 10
+	scaled_gold = 1.0
+	government_power = 15
 	stability = 10
 }
 
 bronze_hatti_centralize_around_hattusa_price = {
-	prestige = 20
-	government_power = 25
+	scaled_gold = 1.2
+	prestige = 25
+	government_power = 35
 	stability = 15
 }
 
 bronze_hatti_recognize_successors_price = {
-	prestige = 25
-	stability = 10
+	prestige = 35
+	stability = 15
+	government_power = 25
+}
+
+bronze_hatti_host_vassal_kings_price = {
+	scaled_gold = 1.6
+	prestige = 12
+	government_power = 20
+	stability = 5
+}
+
+bronze_hatti_seize_temple_grain_price = {
+	stability = 15
+	prestige = 10
 	government_power = 15
+}
+
+bronze_hatti_call_chariot_host_price = {
+	scaled_gold = 1.0
+	scaled_manpower = 0.18
+	stability = 10
+}
+
+bronze_hatti_abandon_syrian_road_price = {
+	prestige = 30
+	government_power = 20
+	stability = 15
 }

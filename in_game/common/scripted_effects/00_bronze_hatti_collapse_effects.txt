@@ -13,8 +13,9 @@ bronze_hatti_collapse_begin = {
 		set_variable = { name = bronze_hatti_collapse_active value = 1 }
 		set_variable = { name = bronze_hatti_collapse_intro_seen value = 1 years = 80 }
 		set_variable = { name = bronze_hatti_collapse_phase value = 1 }
-		set_variable = { name = bronze_hatti_collapse_pressure value = 15 }
-		set_variable = { name = bronze_hatti_famine_pressure value = 10 }
+		set_variable = { name = bronze_hatti_collapse_pressure value = 5 }
+		set_variable = { name = bronze_hatti_famine_pressure value = 5 }
+		set_variable = { name = bronze_hatti_vassal_oaths value = 4 }
 	}
 }
 
@@ -81,11 +82,11 @@ bronze_hatti_collapse_sea_peoples_monthly_pressure = {
 		# Minimal link to the separate Sea Peoples situation: Hatti only reads its global pressure.
 		situation:sea_peoples_crisis ?= {
 			if = {
-				limit = { var:sea_peoples_global_phase >= 2 }
+				limit = { var:sea_peoples_global_phase >= 3 }
 				c:0003G ?= { bronze_hatti_collapse_add_pressure = { value = 1 } }
 			}
 			if = {
-				limit = { var:sea_peoples_global_phase >= 3 }
+				limit = { var:sea_peoples_global_phase >= 4 }
 				c:0003G ?= {
 					bronze_hatti_collapse_add_pressure = { value = 1 }
 					bronze_hatti_collapse_add_famine = { value = 1 }
@@ -117,8 +118,101 @@ bronze_hatti_collapse_mark_vassal_defiance = {
 	custom_description = {
 		text = bronze_hatti_collapse_mark_vassal_defiance_text
 		set_variable = { name = bronze_hatti_vassal_defiance value = 1 years = 8 }
+		set_variable = { name = bronze_hatti_client_kings_restless value = 1 years = 6 }
 		bronze_hatti_collapse_add_pressure = { value = 8 }
 		add_stability = stability_weak_penalty
+		if = {
+			limit = { NOT = { has_variable = bronze_hatti_vassals_appeased } }
+			c:MIRA ?= { set_variable = { name = bronze_hatti_client_defiant value = 1 years = 5 } }
+			c:SEHA ?= { set_variable = { name = bronze_hatti_client_defiant value = 1 years = 5 } }
+			c:HAPAL ?= { set_variable = { name = bronze_hatti_client_defiant value = 1 years = 5 } }
+			c:WILUS ?= { set_variable = { name = bronze_hatti_client_defiant value = 1 years = 5 } }
+		}
+	}
+}
+
+bronze_hatti_collapse_secure_client_kings = {
+	custom_description = {
+		text = bronze_hatti_collapse_secure_client_kings_text
+		set_variable = { name = bronze_hatti_vassals_appeased value = 1 years = 6 }
+		set_variable = { name = bronze_hatti_client_kings_hosted value = 1 years = 6 }
+		bronze_hatti_collapse_add_pressure = { value = -7 }
+		c:MIRA ?= {
+			set_variable = { name = bronze_hatti_client_loyal value = 1 years = 6 }
+			remove_variable = bronze_hatti_client_defiant
+		}
+		c:SEHA ?= {
+			set_variable = { name = bronze_hatti_client_loyal value = 1 years = 6 }
+			remove_variable = bronze_hatti_client_defiant
+		}
+		c:HAPAL ?= {
+			set_variable = { name = bronze_hatti_client_loyal value = 1 years = 6 }
+			remove_variable = bronze_hatti_client_defiant
+		}
+		c:WILUS ?= {
+			set_variable = { name = bronze_hatti_client_loyal value = 1 years = 6 }
+			remove_variable = bronze_hatti_client_defiant
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_bonus }
+	}
+}
+
+bronze_hatti_collapse_client_breaks_oath = {
+	custom_description = {
+		text = bronze_hatti_collapse_client_breaks_oath_text
+		tag = $tag$
+		if = {
+			limit = {
+				c:$tag$ ?= { is_subject_of = root }
+			}
+			cancel_subject = c:$tag$
+			change_variable = { name = bronze_hatti_vassal_oaths add = -1 }
+			if = {
+				limit = { var:bronze_hatti_vassal_oaths < 0 }
+				set_variable = { name = bronze_hatti_vassal_oaths value = 0 }
+			}
+		}
+		c:$tag$ ?= {
+			set_variable = { name = bronze_hatti_client_broken_oath value = 1 years = 20 }
+			set_variable = { name = bronze_hatti_successor_state value = 1 years = 80 }
+			remove_variable = bronze_hatti_client_loyal
+		}
+		bronze_hatti_collapse_add_pressure = { value = $pressure$ }
+		add_prestige = prestige_weak_penalty
+	}
+}
+
+bronze_hatti_collapse_seize_temple_grain = {
+	custom_description = {
+		text = bronze_hatti_collapse_seize_temple_grain_text
+		set_variable = { name = bronze_hatti_temple_grain_seized value = 1 years = 5 }
+		bronze_hatti_collapse_add_famine = { value = -12 }
+		bronze_hatti_collapse_add_pressure = { value = 4 }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_mild_penalty }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_penalty }
+	}
+}
+
+bronze_hatti_collapse_call_chariot_host = {
+	custom_description = {
+		text = bronze_hatti_collapse_call_chariot_host_text
+		set_variable = { name = bronze_hatti_chariot_host_mobilized value = 1 years = 4 }
+		bronze_hatti_collapse_add_pressure = { value = -8 }
+		bronze_hatti_collapse_add_famine = { value = 4 }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_mild_penalty }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_bonus }
+	}
+}
+
+bronze_hatti_collapse_abandon_syrian_road = {
+	custom_description = {
+		text = bronze_hatti_collapse_abandon_syrian_road_text
+		set_variable = { name = bronze_hatti_syrian_road_abandoned value = 1 years = 20 }
+		bronze_hatti_collapse_spawn_carchemish_continuity = yes
+		bronze_hatti_collapse_spawn_kummuh_hamath = yes
+		bronze_hatti_collapse_add_pressure = { value = -10 }
+		bronze_hatti_collapse_add_famine = { value = -2 }
+		add_prestige = prestige_medium_penalty
 	}
 }
 
@@ -318,10 +412,20 @@ bronze_hatti_collapse_cleanup = {
 		remove_variable = bronze_hatti_collapse_phase
 		remove_variable = bronze_hatti_collapse_pressure
 		remove_variable = bronze_hatti_famine_pressure
+		remove_variable = bronze_hatti_vassal_oaths
 		remove_variable = bronze_hatti_grain_crisis
 		remove_variable = bronze_hatti_trade_collapse
 		remove_variable = bronze_hatti_vassal_defiance
 		remove_variable = bronze_hatti_internal_breakdown
 		remove_variable = bronze_hatti_southern_coast_raided
+		remove_variable = bronze_hatti_client_kings_restless
+		remove_variable = bronze_hatti_client_kings_hosted
+		remove_variable = bronze_hatti_temple_grain_seized
+		remove_variable = bronze_hatti_chariot_host_mobilized
+		remove_variable = bronze_hatti_syrian_road_abandoned
+		remove_variable = bronze_hatti_wilusa_oath_tested
+		remove_variable = bronze_hatti_seha_oath_tested
+		remove_variable = bronze_hatti_mira_oath_tested
+		remove_variable = bronze_hatti_hapalla_oath_tested
 	}
 }

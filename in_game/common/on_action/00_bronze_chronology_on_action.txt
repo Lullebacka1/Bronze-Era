@@ -1,0 +1,77 @@
+on_game_start = {
+	on_actions = {
+		bronze_chronology_game_start
+	}
+}
+
+monthly_country_pulse = {
+	on_actions = {
+		bronze_chronology_monthly_pulse
+	}
+}
+
+bronze_chronology_game_start = {
+	effect = {
+		# Proper chronology shim:
+		# The engine stays on stable positive years. These country variables drive
+		# the topbar's visual Bronze Age date: internal year 1 = 1209 BC.
+		every_country = {
+			limit = {
+				is_real_country = yes
+			}
+			set_variable = {
+				name = bronze_display_year
+				value = {
+					value = 1210
+					subtract = current_year
+				}
+			}
+			set_variable = {
+				name = bronze_display_ad_year
+				value = {
+					value = current_year
+					subtract = 1209
+					min = 0
+				}
+			}
+			if = {
+				limit = {
+					var:bronze_display_year < 1
+				}
+				set_variable = { name = bronze_display_year value = 0 }
+			}
+		}
+	}
+}
+
+bronze_chronology_monthly_pulse = {
+	trigger = {
+		is_real_country = yes
+	}
+	effect = {
+		# Recalculate from current_year instead of decrementing from a pulse.
+		# This prevents the visual year from changing early when yearly_country_pulse
+		# happens on a country-specific date rather than on January 1.
+		set_variable = {
+			name = bronze_display_year
+			value = {
+				value = 1210
+				subtract = current_year
+			}
+		}
+		set_variable = {
+			name = bronze_display_ad_year
+			value = {
+				value = current_year
+				subtract = 1209
+				min = 0
+			}
+		}
+		if = {
+			limit = {
+				var:bronze_display_year < 1
+			}
+			set_variable = { name = bronze_display_year value = 0 }
+		}
+	}
+}
