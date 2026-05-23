@@ -322,7 +322,7 @@ BOSPH = {
 	color = rgb { 54 201 103 }
 	color2 = rgb { 110 27 27 }
 }
-0003G = {
+HATTI = {
 	color = rgb { 18 131 217 }
 	color2 = rgb { 110 27 27 }
 }

@@ -305,7 +305,7 @@ function configureLocationOverrides() {
   setLocation("phoenician", ["acre"]);
   setLocation("peleset", ["gaza", "jaffa", "majdal"]);
 
-  setTag("0003G", "hittite");
+  setTag("HATTI", "hittite");
   setLocation("hattian", ["amasya", "corum", "cankiri", "tosya", "sungurlu", "zile"]);
   setLocation("luwian", ["adana", "anavarza", "ayas", "comana_cil", "corycus", "ereglu_kar", "eregli_kar", "iskenderun", "kilis", "larende", "mut", "silifke", "sis", "tarsus"]);
   setLocation("denyen", ["adana", "ayas", "iskenderun", "tarsus"]);

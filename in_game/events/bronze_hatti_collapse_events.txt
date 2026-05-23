@@ -11,7 +11,7 @@ bronze_hatti_collapse.1 = {
 	orphan = yes
 
 	trigger = {
-		tag = 0003G
+		tag = HATTI
 		NOT = { has_variable = bronze_hatti_collapse_active }
 	}
 

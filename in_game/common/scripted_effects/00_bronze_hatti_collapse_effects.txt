@@ -83,22 +83,22 @@ bronze_hatti_collapse_sea_peoples_monthly_pressure = {
 		situation:sea_peoples_crisis ?= {
 			if = {
 				limit = { var:sea_peoples_global_phase >= 3 }
-				c:0003G ?= { bronze_hatti_collapse_add_pressure = { value = 1 } }
+				c:HATTI ?= { bronze_hatti_collapse_add_pressure = { value = 1 } }
 			}
 			if = {
 				limit = { var:sea_peoples_global_phase >= 4 }
-				c:0003G ?= {
+				c:HATTI ?= {
 					bronze_hatti_collapse_add_pressure = { value = 1 }
 					bronze_hatti_collapse_add_famine = { value = 1 }
 				}
 			}
 			if = {
 				limit = { var:sea_peoples_global_pressure >= 70 }
-				c:0003G ?= { bronze_hatti_collapse_add_pressure = { value = 1 } }
+				c:HATTI ?= { bronze_hatti_collapse_add_pressure = { value = 1 } }
 			}
 			if = {
 				limit = { var:sea_peoples_global_famine_pressure >= 60 }
-				c:0003G ?= { bronze_hatti_collapse_add_famine = { value = 1 } }
+				c:HATTI ?= { bronze_hatti_collapse_add_famine = { value = 1 } }
 			}
 		}
 	}

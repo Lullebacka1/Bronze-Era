@@ -75,7 +75,7 @@ countries = {
 	}
 
 	##HATTI
-	0003G = {
+	HATTI = {
 		capital = adana
 		culture = hittite
 		religion = hittite

@@ -664,7 +664,7 @@ function historicalIdentityOverride(tag, validCultures, validReligions) {
   const overrides = new Map([
     ["0001G", { culture: "mycenaean", religion: "mycenaean" }],
     ["0002G", { culture: "upper_egyptian", religion: "kemetic" }],
-    ["0003G", { culture: "hittite", religion: "hittite" }],
+    ["HATTI", { culture: "hittite", religion: "hittite" }],
     ["ACHAE", { culture: "mycenaean", religion: "mycenaean" }],
     ["ACHAEA", { culture: "mycenaean", religion: "mycenaean" }],
     ["ATHEN", { culture: "mycenaean", religion: "mycenaean" }],
@@ -1029,7 +1029,7 @@ function titleFromTag(tag) {
   const overrides = new Map([
     ["0001G", "Mycenae"],
     ["0002G", "Egypt"],
-    ["0003G", "Hatti"],
+    ["HATTI", "Hatti"],
     ["ACRE", "Acre"],
     ["ABRIN", "Abrincates"],
     ["ACHAE", "Achaea"],
@@ -1229,7 +1229,7 @@ function adjectiveFromName(name) {
 
 function adjectiveFromTag(tag, fallbackName) {
   const overrides = new Map([
-    ["0001G", "Mycenaean"], ["0002G", "Egyptian"], ["0003G", "Hittite"],
+    ["0001G", "Mycenaean"], ["0002G", "Egyptian"], ["HATTI", "Hittite"],
     ["ABRIN", "Abrincatian"], ["ACHAE", "Achaean"], ["ACHAEA", "Achaean"],
     ["ACRE", "Acrean"], ["AEDUI", "Aeduan"], ["AEQUI", "Aequian"],
     ["AGRIA", "Agrianian"], ["ALASI", "Alashiyan"], ["ALMOP", "Almopian"],

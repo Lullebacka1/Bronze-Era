@@ -33,7 +33,7 @@ Low religion-stability coverage warnings: 0
 - culture weights: upper_egyptian:21.49 lower_egyptian:12.91 canaanite:8.21 libyan:8.15 phoenician:4.24
 - religion weights: kemetic:34.48 canaanite:8.21 berber_pagan:8.15 phoenician:4.24 nubian:3.14
 
-0003G (Hatti)
+HATTI (Hatti)
 - culture: hittite (historical override)
 - religion: hittite (historical override)
 - accepted_cultures: hittite luwian

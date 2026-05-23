@@ -139,7 +139,7 @@
     }
 }
 
-0003G = {
+HATTI = {
     color = { 18 131 217 }
     culture = hittite
     religion = hittite
