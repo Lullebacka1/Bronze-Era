@@ -1,18 +1,3 @@
-#Written Alphabet
-written_alphabet = {
-	age = age_1_traditions
-	icon = abacus_advance
-	depth = 0
-	research_cost = 2.0
-	
-	
-	global_max_literacy = 5
-	global_monthly_literacy = 0.01
-	
-	starting_technology_level = 2
-	
-}
-
 #This tech's effects are a placeholder, please ignore or advise better
 settlements_advance = {
 	age = age_1_traditions
@@ -26,6 +11,49 @@ settlements_advance = {
 	
 }
 
+#####################################
+# Palace Economy
+#####################################
+
+palace_economy_advance = {
+	age = age_1_traditions
+	icon = meritocracy
+		
+	country_cabinet_efficiency = 0.03
+
+	unlock_building = bronze_age_palatial_complex
+	
+	depth = 0
+
+	allow = { has_embraced_institution = institution:palatial_economy }
+
+	potential = {
+		has_tribal_government = no
+	}
+
+}
+
+workforce_specialization_advance = {
+	age = age_1_traditions
+	icon = meritocracy
+	
+	global_max_literacy = 2
+	global_monthly_literacy = 0.01
+
+	requires = palace_economy_advance
+
+}
+
+written_alphabet = {
+	age = age_1_traditions
+	icon = abacus_advance
+	
+	global_max_literacy = 5
+	global_monthly_literacy = 0.01
+	
+	starting_technology_level = 3
+	requires = palace_economy_advance
+}
 
 cultural_traditions_law_advance = {
 	age = age_1_traditions
@@ -114,39 +142,6 @@ state_administration_advance = {
 	potential = {
 		has_tribal_government = no
 	}
-}
-
-#####################################
-# Palace Economy
-#####################################
-
-palace_economy_advance = {
-	age = age_1_traditions
-	icon = meritocracy
-		
-	country_cabinet_efficiency = 0.03
-
-	unlock_building = bronze_age_palatial_complex
-	
-	depth = 0
-
-	allow = { has_embraced_institution = institution:palatial_economy }
-
-	potential = {
-		has_tribal_government = no
-	}
-
-}
-
-workforce_specialization_advance = {
-	age = age_1_traditions
-	icon = meritocracy
-	
-	global_max_literacy = 2
-	global_monthly_literacy = 0.01
-
-	requires = palace_economy_advance
-
 }
 
 #####################################
