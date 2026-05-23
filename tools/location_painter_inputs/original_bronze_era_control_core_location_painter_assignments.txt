@@ -168,7 +168,7 @@ location_painter_assignments = {
             warrada
         }
     }
-    0003G = {
+    HATTI = {
         # setup: own_control_core=139
         color = { 18 131 217 }
         locations = {

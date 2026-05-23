@@ -12,7 +12,7 @@ const reportPath = "tools/location_painter_country_import_report.txt";
 const tagOverrides = new Map([
   ["AHHIY", "0001G"],
   ["KEMET", "0002G"],
-  ["HATTI", "0003G"],
+  ["HATTI", "HATTI"],
   ["SIDON", "ACRE"],
   ["AGRIANES", "AGRIA"],
   ["ALMOPIANS", "ALMOP"],
@@ -46,7 +46,7 @@ const tagOverrides = new Map([
 const names = new Map([
   ["0001G", ["Ahhiyawa", "Ahhiyawan"]],
   ["0002G", ["Kemet", "Kemetic"]],
-  ["0003G", ["Hatti", "Hittite"]],
+  ["HATTI", ["Hatti", "Hittite"]],
   ["ACRE", ["Acre", "Acrean"]],
   ["ELIMI", ["Elimi", "Elimian"]],
   ["AGRIA", ["Agrianes", "Agrianian"]],

@@ -7,7 +7,7 @@ bronze_hatti_collapse = {
 	}
 
 	can_start = {
-		country_exists = c:0003G
+		country_exists = c:HATTI
 		# Visual chronology: 1195 BC.
 		# Internal year 1 = 1209 BC, so 1195 BC = internal year 15.
 		current_date >= 15.1.1
@@ -17,7 +17,7 @@ bronze_hatti_collapse = {
 				has_variable = sea_peoples_global_phase
 				var:sea_peoples_global_phase >= 2
 			}
-			c:0003G ?= {
+			c:HATTI ?= {
 				OR = {
 					has_variable = sea_peoples_raided_coast
 					any_owned_location = {
@@ -30,12 +30,12 @@ bronze_hatti_collapse = {
 
 	can_end = {
 		OR = {
-			NOT = { country_exists = c:0003G }
+			NOT = { country_exists = c:HATTI }
 			AND = {
 				has_variable = bronze_hatti_situation_months
 				var:bronze_hatti_situation_months >= 420
 			}
-			c:0003G = {
+			c:HATTI = {
 				has_variable = bronze_hatti_collapse_active
 				var:bronze_hatti_collapse_phase >= 3
 				var:bronze_hatti_collapse_pressure <= 5
@@ -45,7 +45,7 @@ bronze_hatti_collapse = {
 
 	visible = {
 		OR = {
-			tag = 0003G
+			tag = HATTI
 			has_variable = bronze_hatti_successor_state
 			bronze_hatti_collapse_relevant_country = yes
 		}
@@ -53,14 +53,14 @@ bronze_hatti_collapse = {
 
 	on_start = {
 		set_variable = { name = bronze_hatti_situation_months value = 0 }
-		c:0003G ?= {
+		c:HATTI ?= {
 			trigger_event_non_silently = bronze_hatti_collapse.1
 		}
 	}
 
 	on_ending = {
 		set_global_variable = { name = bronze_hatti_collapse_ended value = 1 }
-		c:0003G ?= {
+		c:HATTI ?= {
 			bronze_hatti_collapse_cleanup = yes
 		}
 	}
@@ -72,7 +72,7 @@ bronze_hatti_collapse = {
 		}
 		change_variable = { name = bronze_hatti_situation_months add = 1 }
 
-		c:0003G ?= {
+		c:HATTI ?= {
 			if = {
 				limit = { NOT = { has_variable = bronze_hatti_collapse_active } }
 				bronze_hatti_collapse_begin = yes
@@ -94,7 +94,7 @@ bronze_hatti_collapse = {
 
 		bronze_hatti_collapse_sea_peoples_monthly_pressure = yes
 
-		c:0003G ?= {
+		c:HATTI ?= {
 			if = {
 				limit = {
 					var:bronze_hatti_collapse_pressure >= 25
@@ -151,7 +151,7 @@ bronze_hatti_collapse = {
 					trigger = {
 						bronze_hatti_collapse_phase_at_least = { value = 3 }
 						NOT = { has_variable = bronze_hatti_wilusa_oath_tested }
-						c:WILUS ?= { is_subject_of = c:0003G }
+						c:WILUS ?= { is_subject_of = c:HATTI }
 					}
 					trigger_event_non_silently = bronze_hatti_collapse.100
 				}
@@ -159,7 +159,7 @@ bronze_hatti_collapse = {
 					trigger = {
 						bronze_hatti_collapse_phase_at_least = { value = 3 }
 						NOT = { has_variable = bronze_hatti_seha_oath_tested }
-						c:SEHA ?= { is_subject_of = c:0003G }
+						c:SEHA ?= { is_subject_of = c:HATTI }
 					}
 					trigger_event_non_silently = bronze_hatti_collapse.110
 				}
@@ -167,7 +167,7 @@ bronze_hatti_collapse = {
 					trigger = {
 						bronze_hatti_collapse_phase_at_least = { value = 4 }
 						NOT = { has_variable = bronze_hatti_mira_oath_tested }
-						c:MIRA ?= { is_subject_of = c:0003G }
+						c:MIRA ?= { is_subject_of = c:HATTI }
 					}
 					trigger_event_non_silently = bronze_hatti_collapse.120
 				}
@@ -175,7 +175,7 @@ bronze_hatti_collapse = {
 					trigger = {
 						bronze_hatti_collapse_phase_at_least = { value = 4 }
 						NOT = { has_variable = bronze_hatti_hapalla_oath_tested }
-						c:HAPAL ?= { is_subject_of = c:0003G }
+						c:HAPAL ?= { is_subject_of = c:HATTI }
 					}
 					trigger_event_non_silently = bronze_hatti_collapse.130
 				}
@@ -231,9 +231,9 @@ bronze_hatti_collapse = {
 		if = {
 			limit = {
 				has_owner = yes
-				owner = c:0003G
+				owner = c:HATTI
 			}
-			value = c:0003G.country_color
+			value = c:HATTI.country_color
 		}
 		else_if = {
 			limit = {

@@ -4,9 +4,11 @@ diplomacy_manager = {
 	#scripted_oneway = { first = ENG second = SBL type = guarantee }
 	
    # Hatti and its western Anatolian client kingdoms.
-   dependency = { first = 0003G second = MIRA subject_type = vassal }
-   dependency = { first = 0003G second = SEHA subject_type = vassal }
-   dependency = { first = 0003G second = HAPAL subject_type = vassal }
-   dependency = { first = 0003G second = WILUS subject_type = vassal }
+   # HATTI uses a letter-leading TAG so the vanilla dependency parser shows
+   # vassals correctly on the country selection screen.
+   dependency = { first = HATTI second = MIRA subject_type = vassal }
+   dependency = { first = HATTI second = SEHA subject_type = vassal }
+   dependency = { first = HATTI second = HAPAL subject_type = vassal }
+   dependency = { first = HATTI second = WILUS subject_type = vassal }
 
 }

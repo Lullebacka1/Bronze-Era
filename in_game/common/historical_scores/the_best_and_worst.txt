@@ -4,7 +4,7 @@ hs_egypt = {
 }
 
 hs_hatti = {
-	tag = 0003G
+	tag = HATTI
 	score = 38000
 }
 

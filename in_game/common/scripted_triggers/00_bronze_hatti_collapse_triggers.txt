@@ -10,7 +10,7 @@ bronze_hatti_collapse_phase_at_least = {
 bronze_hatti_collapse_active_country = {
 	custom_description = {
 		text = bronze_hatti_collapse_active_country_text
-		tag = 0003G
+		tag = HATTI
 		has_variable = bronze_hatti_collapse_active
 	}
 }
@@ -19,7 +19,7 @@ bronze_hatti_collapse_relevant_country = {
 	custom_description = {
 		text = bronze_hatti_collapse_relevant_country_text
 		OR = {
-			tag = 0003G
+			tag = HATTI
 			tag = KARKA
 			tag = KASKA
 			tag = MITAN
@@ -48,7 +48,7 @@ bronze_hatti_collapse_relevant_country = {
 bronze_hatti_collapse_successor_candidate = {
 	custom_description = {
 		text = bronze_hatti_collapse_successor_candidate_text
-		tag = 0003G
+		tag = HATTI
 		bronze_hatti_collapse_phase_at_least = { value = 4 }
 	}
 }

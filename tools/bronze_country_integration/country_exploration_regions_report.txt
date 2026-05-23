@@ -10,7 +10,7 @@ Countries checked: 383
 0002G (Egypt)
 - discovered_regions: crescent_region egypt_region
 
-0003G (Hatti)
+HATTI (Hatti)
 - discovered_regions: anatolia_region caucasus_region crescent_region
 
 ABRIN (Abrincates)
