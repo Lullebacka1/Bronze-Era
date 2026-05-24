@@ -11,42 +11,62 @@ location_painter_assignments = {
             andros
             angelokastron
             argos
+            astros
+            atalanti
+            athens
             balat
             bodonitsa
             bodrum
             candia
             cephalonia
+            chalandritsa
             chania
             chios
             corinth
             damala
+            demetrias
             elounda
             eretreia
             ermioni
             farsala
             gergeri
+            gravia
             hagios_pavlos
             ikaria
+            kalamata
+            kalavryta
+            karpathos
             karystos
             karytaina
             kleisoura
             kos
             kymi
+            kyparissia
+            kythira
             kythnos
             larissa
             leukas
+            leuktron
+            livadeia
             loidoriki
             megara
             milos
+            modon
+            monemvasia
             mykonos
+            mystras
             nafpaktos
             nafplio
             naxos
             negroponte
             neopatras
+            oitylo
             oreos
+            patras
             pontikokastro
             rethymno
+            rodos
+            salona
             samos
             siteia
             sporades
@@ -54,33 +74,13 @@ location_painter_assignments = {
             thebes
             tripolitsa
             tyrnavos
+            veligosti
             viannos
             vonitsa
+            vostitsa
             xylokastro
             zakynthos
             zetounion
-            chalandritsa
-            kalavryta
-            patras
-            vostitsa
-            athens
-            demetrias
-            atalanti
-            gravia
-            kalamata
-            kyparissia
-            leuktron
-            modon
-            karpathos
-            rodos
-            astros
-            kythira
-            monemvasia
-            mystras
-            oitylo
-            veligosti
-            livadeia
-            salona
         }
     }
     0002G = {
@@ -102,6 +102,7 @@ location_painter_assignments = {
             damanhur
             damietta
             dara
+            daw_sud
             edfu
             el_alamein
             el_arish
@@ -113,6 +114,7 @@ location_painter_assignments = {
             esna
             faiyum
             faqus
+            faras
             fuwa
             gaza
             giza
@@ -122,6 +124,8 @@ location_painter_assignments = {
             jaffa
             jerusalem
             kafr_saqr
+            kalabsha
+            kerma
             kharibta
             kom_ombo
             majdal
@@ -134,12 +138,14 @@ location_painter_assignments = {
             nawa
             nekhel
             qalyub
+            qasr_ibrim
             qatya
             qena
             qus
             ramsis
             rashid
             safed
+            sai
             sallum
             samanoud
             sharuna
@@ -150,150 +156,6 @@ location_painter_assignments = {
             ushmum_tannah
             wadi_el_natrun
             warrada
-        }
-    }
-    HATTI = {
-        color = { 18 131 217 }
-        locations = {
-            adana
-            afrin
-            afsin
-            akdagmadeni
-            aksaray
-            aksehir
-            al_bab
-            aleppo
-            altinekin
-            altintas
-            amasya
-            anamur
-            anavarza
-            ankara
-            arguvan
-            arsuz
-            artah
-            ayas
-            aydincik
-            ayntab
-            baliseyh
-            bayat
-            bekarlar
-            besni
-            beypazari
-            birecik
-            bogazliyan
-            bolvadin
-            bor_tur
-            bozan
-            bozok
-            candir
-            candir_cil
-            cankiri
-            caxud
-            celtik
-            cemisgezek
-            comana_cil
-            corum
-            corycus
-            cubuk
-            cumra
-            dabiq
-            darende
-            dasmenda
-            deliktash
-            develi
-            dinek_keskin
-            divrigi
-            dluk
-            elbistan
-            emirdag
-            enguzud
-            eregli_kar
-            ermenek
-            erzincan
-            eskil
-            gemerek
-            gerger
-            goksun
-            gumus
-            gurun
-            hacibektas
-            hafik
-            hargan
-            harput
-            hatunsaray
-            haymana
-            huseyinabad
-            ilgin
-            ilic
-            insuyu
-            iskenderun
-            iskilip
-            jabbul
-            kahta
-            kalecik
-            kapan
-            karahisar_i_sahib
-            karakecili
-            karapinar
-            kars_armenia
-            kayseri
-            kaysun
-            keban
-            kemah
-            kilis
-            kirsehir
-            kizilca
-            kochisar
-            konya
-            koyulhisar
-            kulu_turkey
-            kursunlu
-            kuzucan
-            ladik
-            larende
-            malatya
-            manbij
-            marash
-            merzifon
-            mihaliccik
-            molevon
-            mut
-            nevsehir
-            nigde
-            obruk
-            pertek
-            pirloganda
-            polatli
-            sabanozu
-            samsat
-            sariyahsi
-            sarkisla
-            sebinkarahisar
-            seyitgazi
-            silifke
-            siran
-            sis
-            sivas
-            sivrihisar
-            sorgun
-            suhut
-            suluklu
-            sulusaray
-            sungurlu
-            suruc
-            tarsus
-            tokat
-            tomarza
-            tosya
-            trapessac
-            turgut
-            ulnia
-            urgup
-            yahyali
-            zara
-            zardana
-            zile
         }
     }
     ABRIN = {
@@ -1488,6 +1350,15 @@ location_painter_assignments = {
             santander
         }
     }
+    CORI1 = {
+        color = { 212 109 84 }
+        locations = {
+            carlow
+            ferns
+            new_ross
+            wexford
+        }
+    }
     CORIE = {
         color = { 200 76 187 }
         locations = {
@@ -1514,24 +1385,6 @@ location_painter_assignments = {
             saint_malo
         }
     }
-    CORI1 = {
-        color = { 212 109 84 }
-        locations = {
-            carlow
-            ferns
-            new_ross
-            wexford
-        }
-    }
-    CORNO = {
-        color = { 213 83 126 }
-        locations = {
-            bideford
-            bodmin
-            launceston
-            truro
-        }
-    }
     CORN1 = {
         color = { 169 75 206 }
         locations = {
@@ -1545,6 +1398,15 @@ location_painter_assignments = {
             stafford
             stoke
             tamworth
+        }
+    }
+    CORNO = {
+        color = { 213 83 126 }
+        locations = {
+            bideford
+            bodmin
+            launceston
+            truro
         }
     }
     CRATI = {
@@ -2120,6 +1982,153 @@ location_painter_assignments = {
             seyhli
             tavsanli
             usak
+        }
+    }
+    HATTI = {
+        color = { 18 131 217 }
+        locations = {
+            adana
+            afrin
+            afsin
+            akdagmadeni
+            aksaray
+            aksehir
+            al_bab
+            aleppo
+            altinekin
+            altintas
+            amasya
+            anamur
+            anavarza
+            ankara
+            arapgir
+            arguvan
+            arsuz
+            artah
+            ayas
+            aydincik
+            ayntab
+            baliseyh
+            bayat
+            bekarlar
+            besni
+            beypazari
+            birecik
+            bogazliyan
+            bolvadin
+            bor_tur
+            bozan
+            bozok
+            candir
+            candir_cil
+            cankiri
+            caxud
+            celtik
+            cemisgezek
+            comana_cil
+            corum
+            corycus
+            cubuk
+            cumra
+            dabiq
+            darende
+            dasmenda
+            deliktash
+            develi
+            dinek_keskin
+            divrigi
+            dluk
+            egin
+            elbistan
+            emirdag
+            enguzud
+            eregli_kar
+            ermenek
+            erzincan
+            eskil
+            gemerek
+            gerger
+            goksun
+            gumus
+            gurun
+            hacibektas
+            hafik
+            hargan
+            harput
+            hatunsaray
+            haymana
+            huseyinabad
+            ilgin
+            ilic
+            insuyu
+            iskenderun
+            iskilip
+            jabbul
+            kahta
+            kalecik
+            kapan
+            karahisar_i_sahib
+            karakecili
+            karapinar
+            kars_armenia
+            kaymaz
+            kayseri
+            kaysun
+            keban
+            kemah
+            kilis
+            kirsehir
+            kizilca
+            kochisar
+            konya
+            koyulhisar
+            kulu_turkey
+            kursunlu
+            kuzucan
+            ladik
+            larende
+            malatya
+            manbij
+            marash
+            merzifon
+            mihaliccik
+            molevon
+            mut
+            nevsehir
+            nigde
+            obruk
+            pertek
+            pirloganda
+            polatli
+            sabanozu
+            samsat
+            sariyahsi
+            sarkisla
+            sebinkarahisar
+            seyitgazi
+            silifke
+            siran
+            sis
+            sivas
+            sivrihisar
+            sorgun
+            suhut
+            suluklu
+            sulusaray
+            sungurlu
+            suruc
+            tarsus
+            tokat
+            tomarza
+            tosya
+            trapessac
+            turgut
+            ulnia
+            urgup
+            yahyali
+            zara
+            zardana
+            zile
         }
     }
     HELVE = {
@@ -2929,13 +2938,6 @@ location_painter_assignments = {
             redon
         }
     }
-    NEMET = {
-        color = { 215 211 86 }
-        locations = {
-            barcelos
-            guimaraes
-        }
-    }
     NEME1 = {
         color = { 132 207 89 }
         locations = {
@@ -2951,6 +2953,13 @@ location_painter_assignments = {
             schwabach
             ulm
             weissenburg
+        }
+    }
+    NEMET = {
+        color = { 215 211 86 }
+        locations = {
+            barcelos
+            guimaraes
         }
     }
     NERII = {
@@ -3028,6 +3037,28 @@ location_painter_assignments = {
             ancona
             fermo
             macerata
+        }
+    }
+    NUBI = {
+        color = { 210 138 55 }
+        locations = {
+            al_jeblien
+            arbaji
+            branko
+            dongola
+            ed_damer
+            ed_debba
+            el_manaqil
+            el_metemma
+            karima
+            korti
+            omdurman
+            qerri
+            quz_rajab
+            shemkhiya
+            shendi
+            soba
+            waylula
         }
     }
     NURAG = {
