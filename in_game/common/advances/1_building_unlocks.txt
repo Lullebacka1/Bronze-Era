@@ -64,6 +64,14 @@
  	requires = workforce_specialization_advance
  }
 
+ royal_tablets_workshop_advance = {
+ 	age = age_1_traditions
+	
+ 	unlock_building = tablets_guild
+	
+ 	requires = workforce_specialization_advance
+ }
+
 # ###############################
 # # Basic Buildings
 # ###############################

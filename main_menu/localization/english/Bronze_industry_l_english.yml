@@ -29,6 +29,15 @@
  pottery_maker: "Local Pottery Maker"
  pottery_maker_desc: "In the early Bronze Age, pottery production is a household craft. Villagers create simple pottery for their own use, without the specialization or scale of organized labor."
 
+ tablets_guild: "Royal Tablets Workshop"
+ tablets_guild_desc: "The invention of writing tablets allows for the recording of information, communication, and the development of complex administrative systems in Bronze Age societies."
+
+ clay_tablets_maintenance: "Clay Tablets Production"
+ clay_tablets_maintenance_desc: "The local tablets workshop produces simple clay tablets for record-keeping and communication."
+
+ copper_tablets_maintenance: "Copper Tablets Production"
+ copper_tablets_maintenance_desc: "The local tablets workshop produces copper tablets for record-keeping and communication."
+
 # ########################
 # PRODUCTION METHODS
 # ########################

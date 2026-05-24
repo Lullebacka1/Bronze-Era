@@ -349,3 +349,43 @@ pottery_maker = {
 
 	construction_demand = guild_construction
 }
+
+tablets_guild = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = guild_max_level
+
+	category = basic_industry_category
+	employment_size = guild_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = guild_build_time
+
+	unique_production_methods = {
+		clay_tablets_maintenance = {
+			lumber = 0.02
+			clay = 1.0
+			produced = bronze_age_tablets
+			output = 0.4
+			category = guild_input
+
+			debug_max_profit = 0.3
+		}
+
+		copper_tablets_maintenance = {
+			copper = 1.0
+			produced = bronze_age_tablets
+			output = 0.65
+			category = guild_input
+
+			debug_max_profit = 0.5
+		}		
+
+	}
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+}
