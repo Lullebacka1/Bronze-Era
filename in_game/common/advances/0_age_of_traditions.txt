@@ -224,8 +224,6 @@ commodity_money_advance = {
 	trade_land_efficiency = 0.2
 
 	unlock_law = coin_laws
-	unlock_policy = commodity_money_policy_common
-
 
 	starting_technology_level = 2
 

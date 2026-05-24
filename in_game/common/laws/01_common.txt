@@ -1988,16 +1988,20 @@ coin_laws= {
 	commodity_money_policy_common = {
 
 		country_modifier = {
-			pottery_used_for_minting = yes
-			pottery_impacts_inflation = 0.1
-			cloth_used_for_minting = yes
-			cloth_impacts_inflation = 0.1
-			tools_used_for_minting = yes
-			tools_impacts_inflation = 0.1
+			wheat_used_for_minting = yes
+			wheat_impacts_inflation = 0.1
 
+			maize_used_for_minting = yes
+			maize_impacts_inflation = 0.1
 
-			minting_inflation_threshold = 0.01
-			minting_income_factor = 0.01
+			rice_used_for_minting = yes
+			rice_impacts_inflation = 0.1
+
+			millet_used_for_minting = yes
+			millet_impacts_inflation = 0.1
+
+			minting_inflation_threshold = 0.02
+			minting_income_factor = 0.02
 		}
 		estate_preferences = {
 			peasants_estate
@@ -2013,6 +2017,105 @@ coin_laws= {
 			tools_impacts_inflation = 0.1
 			weaponry_used_for_minting = yes
 			weaponry_impacts_inflation = 0.1
+
+			minting_inflation_threshold = 0.02
+			minting_income_factor = 0.02
+		}
+
+		estate_preferences = {
+			nobles_estate
+		}
+	}
+
+	commodity_money_policy_textiles = {
+		country_modifier = {
+			cloth_used_for_minting = yes
+			cloth_impacts_inflation = 0.1
+			silk_used_for_minting = yes
+			silk_impacts_inflation = 0.1
+
+			minting_inflation_threshold = 0.02
+			minting_income_factor = 0.02
+		}
+
+		estate_preferences = {
+			burghers_estate
+		}
+	}
+
+	commodity_money_policy_salt = {
+		country_modifier = {
+			salt_used_for_minting = yes
+			salt_impacts_inflation = 0.2
+
+			minting_inflation_threshold = 0.02
+			minting_income_factor = 0.02
+		}
+
+		estate_preferences = {
+			peasants_estate
+		}
+	}
+
+	commodity_money_policy_furs = {
+		country_modifier = {
+			fur_used_for_minting = yes
+			fur_impacts_inflation = 0.2
+
+			minting_inflation_threshold = 0.02
+			minting_income_factor = 0.02
+		}
+
+		estate_preferences = {
+			peasants_estate
+		}
+	}
+
+	commodity_money_policy_spices = {
+		country_modifier = {
+			saffron_used_for_minting = yes
+			saffron_impacts_inflation = 0.1
+
+			pepper_used_for_minting = yes
+			pepper_impacts_inflation = 0.1
+
+			cloves_used_for_minting = yes
+			cloves_impacts_inflation = 0.1
+
+			chili_used_for_minting = yes
+			chili_impacts_inflation = 0.1
+
+			minting_inflation_threshold = 0.02
+			minting_income_factor = 0.02
+		}
+
+		estate_preferences = {
+			burghers_estate
+		}
+	}
+
+	commodity_money_policy_jewelry = {
+		country_modifier = {
+			jewelry_used_for_minting = yes
+			jewelry_impacts_inflation = 0.3
+
+			minting_inflation_threshold = 0.02
+			minting_income_factor = 0.02
+		}
+
+		estate_preferences = {
+			burghers_estate
+			nobles_estate
+		}
+	}
+
+	commodity_money_policy_livestock = {
+		country_modifier = {
+			livestock_used_for_minting = yes
+			livestock_impacts_inflation = 0.2
+
+			minting_inflation_threshold = 0.02
+			minting_income_factor = 0.02
 		}
 
 		estate_preferences = {
