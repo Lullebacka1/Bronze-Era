@@ -32,9 +32,6 @@
  irrigation_systems_advance: "Irrigation Systems"
  irrigation_systems_advance_desc: "Irrigation systems are networks of channels, pipes, and other infrastructure used to distribute water for agricultural purposes. These systems are essential for supporting crop production in areas with limited rainfall or seasonal water availability."
 
- royal_scribe_guild_advance: "Royal Scribes"
- royal_scribe_guild_advance_desc: "Scribes are highly skilled individuals who are trained in the art of writing and record-keeping. In Bronze Age societies, royal scribes played a crucial role in the administration of the palace economy, maintaining records of resources, transactions, and other important information. They were often associated with the royal court and contributed to the development of complex bureaucratic systems."
-
 # ##########################
 # BUILDINGS
 # ##########################
@@ -44,6 +41,9 @@
 
  tools_maker_advance: "Toolmaking Traditions"
  tools_maker_advance_desc: "In the early Bronze Age, tool production is a household craft. Villagers cast simple tools for their own use, without the specialization or scale of organized labor."
+
+ weaponry_maker_advance: "Weaponmaking Traditions"
+ weaponry_maker_advance_desc: "In the early Bronze Age, weapon production is a household craft. Villagers cast simple weapons for their own use, without the specialization or scale of organized labor."
 
  pottery_maker_advance: "Domestic Pottery Making"
  pottery_maker_advance_desc: "In the early Bronze Age, pottery production is a household craft. Villagers create simple pottery for their own use, without the specialization or scale of organized labor."
@@ -57,9 +57,15 @@
  royal_tablets_workshop_advance: "Royal Tablets Workshop"
  royal_tablets_workshop_advance_desc: "The invention of writing tablets allows for the recording of information, communication, and the development of complex administrative systems in Bronze Age societies."
 
+ royal_scribe_guild_advance: "Royal Scribes"
+ royal_scribe_guild_advance_desc: "Scribes are highly skilled individuals who are trained in the art of writing and record-keeping. In Bronze Age societies, royal scribes played a crucial role in the administration of the palace economy, maintaining records of resources, transactions, and other important information. They were often associated with the royal court and contributed to the development of complex bureaucratic systems."
+
 # ##########################
 # PRODUCTION METHODS
 # ##########################
 
  bronze_tools_maker_maintenance_maintenance_advance: "Bronze Tools"
  bronze_tools_maker_maintenance_maintenance_advance_desc: "Tools made of bronze are more durable and efficient than those made of stone or copper, allowing for improved productivity and craftsmanship in various tasks and industries."
+
+ bronze_weaponry_maker_maintenance_maintenance_advance: "Bronze Weapons"
+ bronze_weaponry_maker_maintenance_maintenance_advance_desc: "Weapons made of bronze are more durable and effective than those made of stone or copper, allowing for improved combat effectiveness."

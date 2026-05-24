@@ -281,6 +281,7 @@ tools_maker = {
 	category = basic_industry_category
 	employment_size = guild_employment
 
+	rural_settlement = yes
 	town = yes
 	city = no
 	megalopolis = no
@@ -326,6 +327,61 @@ tools_maker = {
 	construction_demand = guild_construction
 }
 
+# Pre-Palatial weaponry production.  This is a peasant industry with very low output.
+weaponry_maker = {
+	is_foreign = no
+	pop_type = peasants
+	max_levels = guild_max_level
+
+	category = basic_industry_category
+	employment_size = guild_employment
+
+	rural_settlement = yes
+	town = yes
+	city = no
+	megalopolis = no
+
+	build_time = guild_build_time
+
+	unique_production_methods = {
+		metalwork_weaponry_maker_maintenance = {
+			iron = 0.5
+			produced = weaponry
+			output = 0.5
+
+			debug_max_profit = 0.2
+			category = guild_input
+		}
+		stone_weaponry_maker_maintenance = {
+			stone = 0.70
+			produced = weaponry
+			output = 0.25
+			debug_max_profit = 0.1
+
+			category = guild_input
+		}
+
+		bronze_weaponry_maker_maintenance = {
+			bronze_age_bronze = 0.25
+			produced = weaponry
+			output = 0.4
+			debug_max_profit = 0.15
+
+			category = guild_input
+		}
+		copper_weaponry_maker_maintenance = {
+			copper = 0.5
+			produced = weaponry
+			output = 0.55
+			debug_max_profit = 0.15
+
+			category = guild_input
+		}
+	}
+
+	construction_demand = guild_construction
+}
+
 pottery_maker = {
 	is_foreign = no
 	pop_type = peasants
@@ -334,6 +390,7 @@ pottery_maker = {
 	category = basic_industry_category
 	employment_size = guild_employment
 
+	rural_settlement = yes
 	town = yes
 	city = no
 	megalopolis = no

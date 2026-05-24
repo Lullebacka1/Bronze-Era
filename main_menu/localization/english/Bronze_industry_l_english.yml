@@ -41,6 +41,9 @@
  royal_scribe_guild: "Royal Scribe School"
  royal_scribe_guild_desc: "The royal scribe school is a prestigious institution where the most talented individuals are trained in the art of writing and record-keeping. The school produces highly skilled scribes who serve the administrative needs of the palace and contribute to the development of complex bureaucratic systems in Bronze Age societies."
 
+ weaponry_maker: "Local Weapon Maker"
+ weaponry_maker_desc: "In the early Bronze Age, weapon production is a household craft. Villagers cast simple weapons for their own use, without the specialization or scale of organized labor."
+
 
 # ########################
 # PRODUCTION METHODS
@@ -81,3 +84,15 @@
 
  scribe_paper_maintenance: "Paper Writing Materials"
  scribe_paper_maintenance_desc: "The royal scribes use paper for their work."
+
+ metalwork_weaponry_maker_maintenance: "Local Iron Weapon Production"
+ metalwork_weaponry_maker_maintenance_desc: "The local weapon maker produces iron weapons, but the quality is inconsistent and the output is limited by the scarcity of iron ore and the lack of advanced smelting oven."
+
+ bronze_weaponry_maker_maintenance: "Local Bronze Weapon Production"
+ bronze_weaponry_maker_maintenance_desc: "The local weapon maker produces bronze weapons, but the output is limited by the supply of imported tin and the lack of advanced smelting ovens."
+
+ stone_weaponry_maker_maintenance: "Local Stone Weapon Production"
+ stone_weaponry_maker_maintenance_desc: "The local weapon maker produces stone weapons."
+
+ copper_weaponry_maker_maintenance: "Local Copper Weapon Production"
+ copper_weaponry_maker_maintenance_desc: "The local weapon maker produces copper weapons."
