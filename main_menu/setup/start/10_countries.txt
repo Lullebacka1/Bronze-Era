@@ -69,6 +69,7 @@ countries = {
 			mansoura matruh menouf minya nablus nawa nekhel qalyub
 			qatya qena qus ramsis rashid safed sallum samanoud
 			sharuna tahna tarrana tidah tinnis ushmum_tannah wadi_el_natrun warrada
+			daw_sud faras kalabsha kerma qasr_ibrim sai 
 		}
 		government = {
 			ruler = character_merneptah
@@ -79,6 +80,16 @@ countries = {
 			crescent_region egypt_region
 		}
 	}
+
+
+
+
+
+
+
+
+
+
 
 	##HATTI
 	HATTI = {
@@ -108,7 +119,7 @@ countries = {
 			sariyahsi sarkisla sebinkarahisar seyitgazi silifke siran sis sivas
 			sivrihisar sorgun suhut suluklu sulusaray sungurlu suruc tarsus
 			tokat tomarza tosya trapessac turgut ulnia urgup yahyali
-			zara zardana zile
+			zara zardana zile kaymaz 
 		}
 		government = {
 			ruler = random
