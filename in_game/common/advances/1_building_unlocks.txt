@@ -34,6 +34,20 @@
 	starting_technology_level = 1
  }
 
+ pottery_maker_advance = {
+ 	age = age_1_traditions
+
+	unlock_building = pottery_maker
+	
+ 	requires = settlements_advance
+
+	starting_technology_level = 1
+ }
+
+# ###############################
+# ROYAL WORKSHOPS TECH
+# ###############################
+
  royal_tools_workshop_advance = {
  	age = age_1_traditions
 	
