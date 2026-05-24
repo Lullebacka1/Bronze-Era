@@ -74,25 +74,27 @@
  	requires = workforce_specialization_advance
  }
 
- royal_tablets_workshop_advance = {
- 	age = age_1_traditions
-
-	potential = {
-		has_advance = written_alphabet
-	}
-	
- 	unlock_building = tablets_guild
-	
- 	requires = workforce_specialization_advance
- }
-
  royal_scribe_guild_advance = {
  	age = age_1_traditions
 	
  	unlock_building = royal_scribe_guild
 	
- 	requires = royal_tablets_workshop_advance
+ 	requires = elite_scripts_advance
  }
+
+ royal_tablets_workshop_advance = {
+ 	age = age_1_traditions
+
+	# Historical nonsense, but im leaving it here for a template
+#	potential = {
+#		has_advance = written_alphabet
+#	}
+	
+ 	unlock_building = tablets_guild
+	
+ 	requires = royal_scribe_guild_advance
+ }
+
 
 # ###############################
 # # Basic Buildings

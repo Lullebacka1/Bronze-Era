@@ -12,8 +12,8 @@
  commodity_money_policy_salt: "Salt as Currency"
  commodity_money_policy_salt_desc: "In some Bronze Age societies, salt was used as a form of currency. The value of salt, which was essential for preserving food and enhancing flavor, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
 
- commodity_money_policy_fur: "Fur as Currency"
- commodity_money_policy_fur_desc: "In some Bronze Age societies, fur was used as a form of currency. The value of fur, which was essential for clothing and warmth, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
+ commodity_money_policy_furs: "Fur as Currency"
+ commodity_money_policy_furs_desc: "In some Bronze Age societies, fur was used as a form of currency. The value of fur, which was essential for clothing and warmth, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
 
  commodity_money_policy_spices: "Spices as Currency"
  commodity_money_policy_spices_desc: "In some Bronze Age societies, spices were used as a form of currency. The value of spices, which were essential for flavoring food and preserving it, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
@@ -23,3 +23,6 @@
 
  commodity_money_policy_livestock: "Livestock as Currency"
  commodity_money_policy_livestock_desc: "In some Bronze Age societies, livestock was used as a form of currency. The value of livestock, which was essential for food, labor, and other resources, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
+
+ commodity_money_policy_tea: "Tea as Currency"
+ commodity_money_policy_tea_desc: "In some Bronze Age societies, tea was used as a form of currency. The value of tea, which was essential for its stimulating properties and cultural significance, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."

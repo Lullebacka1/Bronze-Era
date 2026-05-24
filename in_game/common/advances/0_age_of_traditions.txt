@@ -52,63 +52,38 @@ workforce_specialization_advance = {
 	age = age_1_traditions
 	icon = meritocracy
 	
-	global_max_literacy = 2
+	global_max_literacy = 1
 	global_monthly_literacy = 0.01
 
 	requires = palace_economy_advance
 
 }
 
-written_alphabet = {
+elite_scripts_advance = {
 	age = age_1_traditions
-	icon = abacus_advance
+	icon = meritocracy
+	research_cost = 2.0
 	
-	global_max_literacy = 5
-	global_monthly_literacy = 0.01
-	
+	global_nobles_max_literacy = 2
+	global_burghers_max_literacy = 1
+
 	starting_technology_level = 2
-	requires = palace_economy_advance
+
+	requires = workforce_specialization_advance
 }
 
 cultural_traditions_law_advance = {
 	age = age_1_traditions
-	requires = written_alphabet
+	requires = elite_scripts_advance
 	unlock_law = cultural_traditions_law
 	starting_technology_level = 2
-}
-
-cultural_acceptance_advance = {
-	age = age_1_traditions
-	icon = cultural_acceptance_advance
-	cultures_capacity = 1
-	starting_technology_level = 3
-	requires = cultural_traditions_law_advance
-}
-
-mapmaking = {
-	age = age_1_traditions
-	icon = maritime_advance_age_4
-	requires = written_alphabet
-	
-	research_cost = 1.0
-	may_explore = yes
-	unlock_law = immigration_law
-}
-
-colonies = {
-	age = age_1_traditions
-	icon = colonies
-	requires = mapmaking
-	
-	research_cost = 1.0
-	can_colonize = yes
 }
 
 codified_laws = {
 	age = age_1_traditions
 	icon = scholasticism
 	
-	requires = written_alphabet
+	requires = elite_scripts_advance
 	
 	research_cost = 2.0
 	has_codified_laws = yes
@@ -132,7 +107,7 @@ subjects_advance = {
 	allow_subjects = yes
 	unlock_subject_type = vassal
 	
-	requires = codified_laws
+	requires = distribution_of_power_advance
 
 	starting_technology_level = 2
 }
@@ -146,7 +121,7 @@ contract_law_advance = {
 
 	requires = codified_laws
 
-	starting_technology_level = 3
+	starting_technology_level = 2
 }
 
 taxation_advance = {
@@ -256,4 +231,41 @@ trade_caravans = {
 	}
 	
 	starting_technology_level = 3
+}
+
+intercultural_relations_advance = {
+	age = age_1_traditions
+	icon = cultural_acceptance_advance
+	cultures_capacity = 1
+	starting_technology_level = 3
+	requires = long_distance_trade_advance
+}
+
+alphabet_script_advance = {
+	age = age_1_traditions
+	icon = abacus_advance
+	
+	global_max_literacy = 5
+	global_monthly_literacy = 0.01
+	
+	starting_technology_level = 3
+	requires = intercultural_relations_advance
+}
+
+mapmaking = {
+	age = age_1_traditions
+	icon = maritime_advance_age_4
+	requires = long_distance_trade_advance
+	
+	may_explore = yes
+	unlock_law = immigration_law
+}
+
+colonies = {
+	age = age_1_traditions
+	icon = colonies
+	requires = mapmaking
+	
+	research_cost = 1.0
+	can_colonize = yes
 }

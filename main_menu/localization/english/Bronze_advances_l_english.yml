@@ -32,6 +32,15 @@
  irrigation_systems_advance: "Irrigation Systems"
  irrigation_systems_advance_desc: "Irrigation systems are networks of channels, pipes, and other infrastructure used to distribute water for agricultural purposes. These systems are essential for supporting crop production in areas with limited rainfall or seasonal water availability."
 
+ intercultural_relations_advance: "Intercultural Relations"
+ intercultural_relations_advance_desc: "Intercultural relations refer to the interactions and relationships between different cultures and societies. These relations can involve various aspects such as trade, diplomacy, cultural exchange, and cooperation. Intercultural relations play a crucial role in fostering understanding, collaboration, and mutual respect among diverse groups of people."
+
+ alphabet_script_advance: "Alphabetic Writing System"
+ alphabet_script_advance_desc: "The development of an alphabetic writing system in Bronze Age societies marked a significant advancement in communication and record-keeping. An alphabetic script uses a set of symbols to represent individual sounds, allowing for more efficient and flexible writing compared to earlier pictographic or logographic systems. This innovation facilitated the recording of information, the transmission of knowledge, and the development of trade."
+
+ elite_scripts_advance: "Elite Scripts"
+ elite_scripts_advance_desc: "The development of elite scripts in Bronze Age societies allowed for the creation of sophisticated written records and communication methods. These advanced writing systems were typically used by scribes and scholars, enabling the preservation and transmission of complex information and knowledge."
+
 # ##########################
 # BUILDINGS
 # ##########################
