@@ -119,6 +119,9 @@
  merchant_house_advance: "Mercantile Literacy"
  merchant_house_advance_desc: "The spread of practical alphabetic writing allows merchants to keep contracts, inventories, debts, and correspondence without reliance on palace scribes. Trade becomes increasingly organized around independent commercial households and long-distance exchange networks."
 
+ bronze_age_trade_posts_advance: "Foreign Trading Posts"
+ bronze_age_trade_posts_advance_desc: "Increasing volumes of long-distance trade lead communities to establish permanent stopping points along major routes and crossings. These early trading posts provide storage, security, and regular meeting places for merchants, caravans, and foreign traders."
+
 # ##########################
 # BUILDINGS
 # ##########################

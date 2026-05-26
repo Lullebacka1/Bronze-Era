@@ -501,8 +501,6 @@ intercultural_relations_advance = {
 	requires = long_distance_trade_advance
 }
 
-
-
 alphabet_script_advance = {
 	age = age_1_traditions
 	icon = abacus_advance

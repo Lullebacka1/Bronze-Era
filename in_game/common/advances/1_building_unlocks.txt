@@ -135,6 +135,17 @@ merchant_house_advance = {
 
 	starting_technology_level = 3
 
+	requires = scribe_alphabetic_maintenance
+}
+
+bronze_age_trade_posts_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_building = bronze_age_trade_office
+
+	starting_technology_level = 3
+
 	requires = intercultural_relations_advance
 }
 
