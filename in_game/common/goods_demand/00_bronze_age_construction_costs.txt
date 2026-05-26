@@ -18,7 +18,7 @@ bronze_age_monument_construction = {
 }
 
 build_holloway_demand = {
-	lumber = 0.5
+	lumber = 0.2
 	category = building_construction
 }
 
@@ -35,6 +35,7 @@ maintain_holloway_demand = {
 }
 
 maintain_maintained_holloway_demand = {
-	sand = 0.002
+	sand = 0.02
+	lumber = 0.02
 	category = building_maintenance
 }

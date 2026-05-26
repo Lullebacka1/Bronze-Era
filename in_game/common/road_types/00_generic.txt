@@ -8,7 +8,7 @@
 	construction_demand = build_gravel_road_demand
 	maintenance_demand = maintain_gravel_road_demand
 	color = map_gravel_road
-	spline_style_id = 0
+	spline_style_id = 2
 }
 
 
@@ -23,7 +23,7 @@ paved_road = {
 	construction_demand = build_paved_road_demand
 	maintenance_demand = maintain_paved_road_demand
 	color = map_paved_road
-	spline_style_id = 1
+	spline_style_id = 3
 }
 
 # modern_road = {
@@ -37,7 +37,7 @@ paved_road = {
 # 	construction_demand = build_modern_road_demand
 # 	maintenance_demand = maintain_modern_road_demand
 # 	color = map_modern_road
-# 	spline_style_id = 2
+# 	spline_style_id = 4
 # }
 
 # railroad = {
@@ -51,5 +51,5 @@ paved_road = {
 # 	construction_demand = build_railroad_demand
 # 	maintenance_demand = maintain_railroad_demand
 # 	color = map_railroad
-# 	spline_style_id = 3
+# 	spline_style_id = 5
 # }

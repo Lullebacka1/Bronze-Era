@@ -107,6 +107,17 @@
  spoked_wheel_advance: "Spoked Wheel"
  spoked_wheel_advance_desc: "The spoked wheel creates lighter and faster vehicles than older solid-wheel designs, enabling swift chariots, improved transport, and more efficient long-distance communication. Its construction requires skilled woodworking and stronger craftsmanship, making it a prestige technology often associated with elites and warfare."
 
+ holloway_advance: "Holloways"
+ holloway_advance_desc: "Frequently traveled routes between settlements gradually form recognizable land corridors shaped by merchants, herders, and migrating peoples. These informal paths improve regional movement but remain vulnerable to weather and terrain."
+
+ maintained_holloway_advance: "Holloway Maintenance"
+ maintained_holloway_advance_desc: "Communities and local rulers begin periodically clearing, draining, and reinforcing heavily used holloways to keep them passable through changing seasons. These routes remain organic paths shaped by generations of travel rather than formally engineered roads, but regular upkeep improves trade and movement between settlements."
+
+ scribe_alphabetic_maintenance: "Perishable Writing Media"
+ scribe_alphabetic_maintenance_desc: "Simple alphabetic scripts spread onto cheap and widely available materials such as leather, wooden tablets, wax boards, and broken pottery shards. Writing escapes the confines of palace archives, allowing practical recordkeeping, trade notes, and personal messages to circulate through broader society."
+
+ merchant_house_advance: "Mercantile Literacy"
+ merchant_house_advance_desc: "The spread of practical alphabetic writing allows merchants to keep contracts, inventories, debts, and correspondence without reliance on palace scribes. Trade becomes increasingly organized around independent commercial households and long-distance exchange networks."
 
 # ##########################
 # BUILDINGS

@@ -123,8 +123,8 @@ palace_economy_advance = {
 
 city_building_advance = {
 	age = age_1_traditions
-	icon = city_building_advance
 	research_cost = 2.0
+
 	can_build_cities = yes
 
 	requires = palace_economy_advance
@@ -156,7 +156,7 @@ elite_scripts_advance = {
 	research_cost = 2.0
 	
 	global_nobles_max_literacy = 2
-	global_burghers_max_literacy = 1
+	global_clergy_max_literacy = 2
 
 	starting_technology_level = 3
 
@@ -167,7 +167,7 @@ religious_texts_advance = {
 	age = age_1_traditions
 	research_cost = 1.5
 	
-	global_clergy_max_literacy = 2
+	global_clergy_max_literacy = 1
 
 	starting_technology_level = 3
 
@@ -208,16 +208,6 @@ agricultural_calendar_advance = {
 	requires = astronomical_observations_advance
 }
 
-regnal_dating_system_advance = {
-	age = age_1_traditions
-	
-	monthly_prestige = 0.05
-
-	starting_technology_level = 3
-
-	requires = astronomical_observations_advance
-}
-
 administrative_calendar_advance = {
 	age = age_1_traditions
 	
@@ -226,7 +216,7 @@ administrative_calendar_advance = {
 
 	starting_technology_level = 3
 
-	requires = regnal_dating_system_advance
+	requires = astronomical_observations_advance
 }
 
 cultural_traditions_law_advance = {
@@ -326,6 +316,16 @@ warrior_aristocracy_advance = {
 	allow = { has_embraced_institution = institution:chariot_warfare }
 
 	starting_technology_level = 2
+}
+
+regnal_dating_system_advance = {
+	age = age_1_traditions
+	
+	monthly_prestige = 0.05
+
+	starting_technology_level = 3
+
+	requires = warrior_aristocracy_advance
 }
 
 aristocratic_burial_advance = {
@@ -500,6 +500,8 @@ intercultural_relations_advance = {
 	starting_technology_level = 3
 	requires = long_distance_trade_advance
 }
+
+
 
 alphabet_script_advance = {
 	age = age_1_traditions
