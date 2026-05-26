@@ -36,20 +36,18 @@ horse_domestication_advance = {
 
 	can_extract_horses = yes
 
-	starting_technology_level = 1
+	starting_technology_level = 2
 }
 
-wheeled_transport = {
+wheeled_transport_advance = {
 	age = age_1_traditions
 
-	requires = horse_domestication_advance
+	requires = animal_husbandry_advance
 
 	global_construction_speed = 0.1
 
-	starting_technology_level = 1
+	starting_technology_level = 2
 }
-
-
 
 settlements_advance = {
 	age = age_1_traditions

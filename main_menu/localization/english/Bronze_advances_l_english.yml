@@ -98,8 +98,8 @@
  horse_domestication_advance: "Horse Domestication"
  horse_domestication_advance_desc: "Early horse domestication is limited and prestige-based rather than fully transformative. Horses are mainly used for scouting, messengers, ritual display, and pulling light chariots or carts; effective cavalry is rare due to primitive riding techniques, lack of advanced saddles and stirrups, and the high cost of breeding and feeding horses."
 
- wheeled_transport: "Wheeled Transport"
- wheeled_transport_desc: "Early wheeled transport is slow, fragile, and dependent on prepared routes, but greatly improves movement of goods, tribute, and armies between settlements. Most vehicles are ox-drawn carts or wagons used by elites, merchants and temples."
+ wheeled_transport_advance: "Wheeled Transport"
+ wheeled_transport_advance_desc: "Early wheeled transport is slow, fragile, and dependent on prepared routes, but greatly improves movement of goods, tribute, and armies between settlements. Most vehicles are ox-drawn carts or wagons used by elites, merchants and temples."
 
  animal_husbandry_advance: "Animal Husbandry"
  animal_husbandry_advance_desc: "Animal husbandry provides a stable source of food, labor, hides, wool, and manure, forming the economic backbone of most settled societies. Herd animals increase agricultural output and transport capacity, but require pasture, seasonal management, and protection from disease, raiding, and famine."

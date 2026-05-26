@@ -182,30 +182,45 @@ unlock_archers_advance = {
 # Cavalry
 ######################
 
+simple_chariot_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	allow = {
+		has_advance = horse_domestication_advance
+	}
+
+	requires = wheeled_transport_advance
+
+	unlock_unit = a_horsemen
+
+	starting_technology_level = 2
+}
+
 unlock_horsemen_advance = {
 	age = age_1_traditions
-	unlock_unit = a_horsemen
+	unlock_unit = a_armored_horsemen
 	
 	requires = horse_riding_advance
 	
 }
 
-unlock_armored_horsemen_advance = {
-	age = age_1_traditions
-	unlock_unit = a_armored_horsemen
+# unlock_armored_horsemen_advance = {
+# 	age = age_1_traditions
+# 	unlock_unit = a_armored_horsemen
 	
-	allow = {
-		any_market_present_in_country = { 
-			OR = {
-				is_produced_in_market = goods:tools 
-				is_traded_in_market = goods:tools 
-			}
-		}
-	}
+# 	allow = {
+# 		any_market_present_in_country = { 
+# 			OR = {
+# 				is_produced_in_market = goods:tools 
+# 				is_traded_in_market = goods:tools 
+# 			}
+# 		}
+# 	}
 
-	requires = unlock_horsemen_advance
+# 	requires = unlock_horsemen_advance
 	
-}
+# }
 
 # unlock_cavalry_advance = {
 # 	age = age_2_renaissance
