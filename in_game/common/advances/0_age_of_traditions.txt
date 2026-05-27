@@ -20,6 +20,15 @@ agriculture_advance = {
 	starting_technology_level = 1
 }
 
+ritual_sites_advance = {
+	age = age_1_traditions
+
+	requires = agriculture_advance
+
+	unlock_building = neolithic_sanctuary
+	unlock_building = neolithic_feast_court
+}
+
 animal_husbandry_advance = {
 	age = age_1_traditions
 
