@@ -13,6 +13,7 @@ agriculture_advance = {
 	can_extract_legumes = yes
 
 	unlock_building = farming_village
+	unlock_building = neolithic_granary
 
 	depth = 0
 
@@ -78,7 +79,6 @@ ceremonial_burial_advance = {
 	icon = ceremonial_burial
 	research_cost = 1.5
 	
-	global_monthly_prestige = 0.01
 	unlock_law = burial_law
 
 	unlock_building = bronze_age_burial_pits
@@ -136,6 +136,22 @@ city_building_advance = {
 	starting_technology_level = 3
 }
 
+temple_complex_advance = {
+	age = age_1_traditions
+	research_cost = 2.0
+
+	unlock_building = temple_granary
+
+	requires = city_building_advance
+
+	starting_technology_level = 3
+
+}
+
+temple_granary_advance = {
+
+}
+
 
 workforce_specialization_advance = {
 	age = age_1_traditions
@@ -177,7 +193,7 @@ religious_texts_advance = {
 temple_archives_advance = {
 	age = age_1_traditions
 	
-	monthly_prestige = 0.1
+	monthly_prestige = 0.01
 	global_clergy_city_desired_pop = 0.02
 
 	starting_technology_level = 3
@@ -266,7 +282,7 @@ contract_law_advance = {
 	icon = contract_law
 	research_cost = 2.0
 	
-	country_cabinet_efficiency = 0.05
+	global_merchant_capacity_modifier = 0.10
 
 	requires = codified_laws
 
@@ -279,6 +295,10 @@ taxation_advance = {
 	research_cost = 2.5
 	enable_taxation = yes
 	has_stability_investment = yes
+
+	allow = {
+		has_advance = commodity_money_advance
+	}
 	
 	requires = contract_law_advance
 
@@ -375,11 +395,10 @@ divine_kingship_advance = {
 	starting_technology_level = 3
 }
 
-fertility_rituals_advance = {
+royal_rituals_advance = {
 	age = age_1_traditions
 
-	global_monthly_legitimacy = 0.02
-	global_monthly_religious_influence = 0.01
+	global_estate_target_satisfaction = small_permanent_target_satisfaction
 
 	requires = divine_kingship_advance
 
@@ -412,7 +431,7 @@ royal_reliefs_advance = {
 	age = age_1_traditions
 	research_cost = 1.5
 	
-	global_monthly_prestige = 0.01
+	monthly_prestige = 0.01
 
 	requires = divine_kingship_advance
 
