@@ -1,0 +1,16 @@
+﻿a_slingers = {
+	copy_from = a_age_1_traditions_light_infantry
+	
+
+	upgrades_to = a_archers
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+	
+	maintenance_demand = slinger_infantry_maintenance
+	construction_demand = slinger_infantry_construction
+	gfx_tags = { slingers_tag medium_tag }
+}
