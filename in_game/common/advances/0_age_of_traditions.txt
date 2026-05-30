@@ -15,6 +15,11 @@ agriculture_advance = {
 	unlock_building = farming_village
 	unlock_building = neolithic_granary
 
+	unlock_levy = levy_noble_cavalry
+	unlock_levy = levy_tribal_cavalry
+
+	unlock_law = medieval_levy_law
+
 	depth = 0
 
 	starting_technology_level = 1
@@ -26,6 +31,9 @@ mining_advance = {
 	requires = agriculture_advance
 
 
+	can_extract_lead = yes
+	can_extract_silver = yes
+	can_extract_gold = yes
 	can_extract_stone = yes
 	can_extract_marble = yes
 	can_extract_copper = yes
@@ -372,7 +380,7 @@ warrior_aristocracy_advance = {
 	icon = a_footmen
 	research_cost = 2.0
 		
-	unlock_unit = a_champions
+	unlock_unit = a_footmen_levy
 	unlock_estate_privilege = noble_leaders_only
 	
 	depth = 0

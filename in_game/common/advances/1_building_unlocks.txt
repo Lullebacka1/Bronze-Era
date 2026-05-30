@@ -22,7 +22,7 @@
 	
 	unlock_building = bronze_age_bronze_forge
 
-	requires = settlements_advance
+	requires = mining_advance
 	
 	starting_technology_level = 2
 	
