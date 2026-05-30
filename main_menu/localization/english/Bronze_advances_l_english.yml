@@ -174,3 +174,16 @@
 
  bronze_weaponry_maker_maintenance_maintenance_advance: "Bronze Weapons"
  bronze_weaponry_maker_maintenance_maintenance_advance_desc: "Weapons made of bronze are more durable and effective than those made of stone or copper, allowing for improved combat effectiveness."
+
+# ##############################
+# MILITARY UPGRADES
+# ##############################
+
+ back_axle_advance: "Rear Attached Axle"
+ back_axle_advance_desc: "By moving the axle toward the rear of the vehicle, chariot builders improve balance, speed, and maneuverability while reducing strain on the horse team. This refinement allows chariots to carry warriors more effectively and operate as true battlefield vehicles rather than simple transport platforms."
+
+ yoke_saddle_advance: "Yoke Saddle Harnesses"
+ yoke_saddle_advance_desc: "Improvements in harness design and horse handling allow draft animals to pull vehicles more efficiently and with less strain. Better harnessing practices increase the endurance and reliability of chariot forces."
+
+ efficient_chariot_construction_advance: "Efficient Chariot Construction"
+ efficient_chariot_construction_advance_desc: "Established construction templates and specialized craftsmanship reduce the material and labor required to build war chariots, allowing larger chariot forces to be fielded at lower cost."
