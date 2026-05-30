@@ -53,7 +53,7 @@ unlock_horsemen_advance = {
 	age = age_1_traditions
 	unlock_unit = a_armored_horsemen
 	
-	requires = horse_riding_advance
+	requires = horse_domestication_advance
 	
 }
 

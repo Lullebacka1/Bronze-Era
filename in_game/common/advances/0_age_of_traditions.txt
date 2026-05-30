@@ -375,7 +375,7 @@ warrior_aristocracy_advance = {
 	icon = a_footmen
 	research_cost = 2.0
 		
-	unlock_unit = a_champions
+	unlock_unit = a_footmen_levy
 	unlock_estate_privilege = noble_leaders_only
 	
 	depth = 0
