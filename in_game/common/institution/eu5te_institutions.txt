@@ -106,6 +106,7 @@ banking = {
 
 bronze_large_libraries = {
     age = age_5_absolutism
+
 }
 
 bronze_professional_armies = {
@@ -114,12 +115,26 @@ bronze_professional_armies = {
 
 bronze_routes = {
     age = age_1_traditions
+    spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_early
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+    spread_from_any_import = institution_trade_spread_value_early
+    spread_from_any_export = institution_trade_spread_value_early
+    spread_from_was_possible_spawn = institution_spread_from_was_possible_spawn_early
+    spread_scale_on_control_if_owner_embraced = 2
+    spread_embraced_to_capital = institution_total_embraced_to_capital_early
+    spread_to_market_member = institution_spread_to_market_member_early
 }
 
 chariot_warfare = {
     age = age_1_traditions
+    spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_early
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+    spread_from_any_import = institution_trade_spread_value_early
+    spread_from_any_export = institution_trade_spread_value_early
+    spread_from_was_possible_spawn = institution_spread_from_was_possible_spawn_early
+    spread_scale_on_control_if_owner_embraced = 2
+    spread_embraced_to_capital = institution_total_embraced_to_capital_early
+    spread_to_market_member = institution_spread_to_market_member_early
 }
 
 classical_philosophy = {
@@ -314,11 +329,38 @@ hellenistic_cosmopolitanism = {
 
 hoplite_phalanx = {
     age = age_3_discovery
+	can_spawn = {
+        OR = {
+        	continent = continent:europe
+			sub_continent = sub_continent:middle_east
+        }
+        has_owner = yes
+        owner ?= { root = capital }
+        OR = {
+        	location_rank = location_rank:city
+        	location_rank = location_rank:megalopolis
+        }
+        dominant_culture = owner.culture
+    }
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
 }
 
 imperial_administration = {
     age = age_4_reformation
+	can_spawn = {
+        OR = {
+        	continent = continent:europe
+        	sub_continent = sub_continent:north_africa
+			sub_continent = sub_continent:middle_east
+        }
+        has_owner = yes
+        owner ?= { root = capital }
+        OR = {
+        	location_rank = location_rank:city
+        	location_rank = location_rank:megalopolis
+        }
+        dominant_culture = owner.culture
+    }
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
 }
 
@@ -373,6 +415,20 @@ industrialization = {
 
 iron_metallurgy = {
     age = age_2_renaissance
+	can_spawn = {
+        OR = {
+        	continent = continent:europe
+        	sub_continent = sub_continent:north_africa
+			sub_continent = sub_continent:middle_east
+        }
+        has_owner = yes
+        owner ?= { root = capital }
+        OR = {
+        	location_rank = location_rank:city
+        	location_rank = location_rank:megalopolis
+        }
+        dominant_culture = owner.culture
+    }
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
 }
 
@@ -658,12 +714,53 @@ new_world = {
 
 palatial_economy = {
     age = age_1_traditions
+	can_spawn = {
+        OR = {
+        	continent = continent:europe
+        	sub_continent = sub_continent:north_africa
+			sub_continent = sub_continent:middle_east
+        }
+        has_owner = yes
+        owner ?= { root = capital }
+        OR = {
+        	location_rank = location_rank:city
+        	location_rank = location_rank:megalopolis
+        }
+        dominant_culture = owner.culture
+    }
+    spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_early
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+    spread_from_any_import = institution_trade_spread_value_early
+    spread_from_any_export = institution_trade_spread_value_early
+    spread_from_was_possible_spawn = institution_spread_from_was_possible_spawn_early
+    spread_scale_on_control_if_owner_embraced = 2
+    spread_embraced_to_capital = institution_total_embraced_to_capital_early
+    spread_to_market_member = institution_spread_to_market_member_early
 }
 
 phoenician_alphabet = {
     age = age_3_discovery
-    spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+	can_spawn = {
+        OR = {
+        	sub_continent = sub_continent:north_africa
+			sub_continent = sub_continent:middle_east
+        }
+        has_owner = yes
+        owner ?= { root = capital }
+        OR = {
+        	location_rank = location_rank:city
+        	location_rank = location_rank:megalopolis
+        }
+        dominant_culture = owner.culture
+    }
+    spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_mid
+    spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_mid
+    spread_from_any_import = institution_trade_spread_value_mid
+    spread_from_any_export = institution_trade_spread_value_mid
+    spread_from_was_possible_spawn = institution_spread_from_was_possible_spawn_mid
+    spread_scale_on_control_if_owner_embraced = 2
+    spread_embraced_to_capital = institution_total_embraced_to_capital_mid
+    spread_to_market_member = institution_spread_to_market_member_mid
 }
 
 pike_and_shot = {
