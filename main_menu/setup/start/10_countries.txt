@@ -61,15 +61,94 @@ countries = {
 		include = "Bronze"
 
 		own_control_core = {
-			acre akhmim al_mima alexandria ashmunayn aswan asyut atfih
-			beersheba beni_suef bilbeis cairo dakahla damanhur damietta dara
-			edfu el_alamein el_arish el_bahnasa el_balyana el_burullus el_buwit el_mahalla
-			esna faiyum faqus fuwa gaza giza hebron hiw
-			irbid jaffa jerusalem kafr_saqr kharibta kom_ombo majdal manfalut
-			mansoura matruh menouf minya nablus nawa nekhel qalyub
-			qatya qena qus ramsis rashid safed sallum samanoud
-			sharuna tahna tarrana tidah tinnis ushmum_tannah wadi_el_natrun warrada
-			daw_sud faras kalabsha kerma qasr_ibrim sai 
+			acre
+            akhmim
+            al_mima
+            alexandria
+            ashmunayn
+            aswan
+            asyut
+            atfih
+            bahariyya
+            baris
+            beersheba
+            beni_suef
+            bilbeis
+            cairo
+            dakahla
+            damanhur
+            damietta
+            dara
+            daw_sud
+            deraheib
+            edfu
+            el_alamein
+            el_arish
+            el_bahnasa
+            el_balyana
+            el_burullus
+            el_buwit
+            el_jundi
+            el_mahalla
+            el_qasr
+            el_qoseir
+            el_tor
+            esna
+            faiyum
+            faqus
+            faran
+            faras
+            fuwa
+            gaza
+            giza
+            hebron
+            hiw
+            irbid
+            jaffa
+            jerusalem
+            kafr_saqr
+            kalabsha
+            kerma
+            kharga
+            kharibta
+            kom_ombo
+            majdal
+            manfalut
+            mansoura
+            matruh
+            menouf
+            minya
+            nablus
+            nawa
+            nekhel
+            nuweiba
+            qalyub
+            qasr_farafra
+            qasr_ibrim
+            qatya
+            qena
+            qus
+            ramsis
+            ras_gharib
+            rashid
+            safaga
+            safed
+            sai
+            saint_anthony
+            saint_katrine
+            saint_paul_anchorite
+            sallum
+            samanoud
+            selima
+            sharuna
+            suez
+            tahna
+            tarrana
+            tidah
+            tinnis
+            ushmum_tannah
+            wadi_el_natrun
+            warrada
 		}
 		government = {
 			ruler = character_merneptah
