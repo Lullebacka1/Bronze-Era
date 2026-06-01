@@ -94,6 +94,8 @@ location_painter_assignments = {
             aswan
             asyut
             atfih
+            bahariyya
+            baris
             beersheba
             beni_suef
             bilbeis
@@ -103,6 +105,7 @@ location_painter_assignments = {
             damietta
             dara
             daw_sud
+            deraheib
             edfu
             el_alamein
             el_arish
@@ -110,10 +113,15 @@ location_painter_assignments = {
             el_balyana
             el_burullus
             el_buwit
+            el_jundi
             el_mahalla
+            el_qasr
+            el_qoseir
+            el_tor
             esna
             faiyum
             faqus
+            faran
             faras
             fuwa
             gaza
@@ -126,6 +134,7 @@ location_painter_assignments = {
             kafr_saqr
             kalabsha
             kerma
+            kharga
             kharibta
             kom_ombo
             majdal
@@ -137,18 +146,27 @@ location_painter_assignments = {
             nablus
             nawa
             nekhel
+            nuweiba
             qalyub
+            qasr_farafra
             qasr_ibrim
             qatya
             qena
             qus
             ramsis
+            ras_gharib
             rashid
+            safaga
             safed
             sai
+            saint_anthony
+            saint_katrine
+            saint_paul_anchorite
             sallum
             samanoud
+            selima
             sharuna
+            suez
             tahna
             tarrana
             tidah
@@ -176,12 +194,6 @@ location_painter_assignments = {
         color = { 161 88 95 }
         locations = {
             olvera
-        }
-    }
-    SIDON = {
-        color = { 171 151 94 }
-        locations = {
-            sidon
         }
     }
     ADUAT = {
@@ -4157,6 +4169,12 @@ location_painter_assignments = {
             terranovasic
         }
     }
+    SIDON = {
+        color = { 171 151 94 }
+        locations = {
+            sidon
+        }
+    }
     SILOR = {
         color = { 115 158 128 }
         locations = {
@@ -4777,8 +4795,8 @@ location_painter_assignments = {
         color = { 98 98 131 }
         locations = {
             antioch
-            latakia
             jableh
+            latakia
         }
     }
     ULIBA = {
