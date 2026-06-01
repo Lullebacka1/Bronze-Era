@@ -1,0 +1,14 @@
+# ###############################
+# TRADE BUILDINGS
+# ###############################
+
+merchant_house_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_building = merchant_house
+
+	starting_technology_level = 3
+
+	requires = scribe_alphabetic_maintenance
+}
