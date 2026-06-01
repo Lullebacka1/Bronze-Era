@@ -79,7 +79,7 @@ maintain_railroad_demand = {
 }
 
 build_town_demand = {
-	copper = 1
+	pottery = 1
 	masonry = 2
 	lumber = 1
 	category = government_activities
@@ -87,7 +87,7 @@ build_town_demand = {
 }
 
 build_city_demand = {
-	copper = 2
+	pottery = 2
 	masonry = 4
 	lumber = 2
 
@@ -96,7 +96,7 @@ build_city_demand = {
 }
 
 build_megalopolis_demand = {
-	copper = 8
+	pottery = 8
 	masonry = 16
 	lumber = 8
 
