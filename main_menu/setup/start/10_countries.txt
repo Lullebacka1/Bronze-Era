@@ -175,42 +175,56 @@ countries = {
 
 	##HATTI
 	HATTI = {
-		capital = adana
-		culture = hittite
-		religion = hittite
+	capital = adana
+	culture = hittite
+	religion = hittite
 
-		country_rank = rank_empire
+	country_rank = rank_empire
 
 		include = "Bronze"
 
-		own_control_core = {
-			adana afrin afsin akdagmadeni aksaray aksehir al_bab aleppo
-			altinekin altintas amasya anamur anavarza ankara arguvan arsuz
-			artah ayas aydincik ayntab baliseyh bayat bekarlar besni
-			beypazari birecik bogazliyan bolvadin bor_tur bozan bozok candir
-			candir_cil cankiri caxud celtik cemisgezek comana_cil corum corycus
-			cubuk cumra dabiq darende dasmenda deliktash develi dinek_keskin
-			divrigi dluk elbistan emirdag enguzud eregli_kar ermenek erzincan
-			eskil gemerek gerger goksun gumus gurun hacibektas hafik
-			hargan harput hatunsaray haymana huseyinabad ilgin ilic insuyu
-			iskenderun iskilip jabbul kahta kalecik kapan karahisar_i_sahib karakecili
-			karapinar kars_armenia kayseri kaysun keban kemah kilis kirsehir
-			kizilca kochisar konya koyulhisar kulu_turkey kursunlu kuzucan ladik
-			larende malatya manbij marash merzifon mihaliccik molevon mut
-			nevsehir nigde obruk pertek pirloganda polatli sabanozu samsat
-			sariyahsi sarkisla sebinkarahisar seyitgazi silifke siran sis sivas
-			sivrihisar sorgun suhut suluklu sulusaray sungurlu suruc tarsus
-			tokat tomarza tosya trapessac turgut ulnia urgup yahyali
-			zara zardana zile kaymaz 
-		}
+	own_control_core = {
+		adana           afrin           afsin           akdagmadeni     aksaray         aksehir
+		al_bab          aleppo          altinekin       amasya          anavarza        ankara
+		arapgir         arguvan         arsuz           artah           ayas            aydincik
+		ayntab          baliseyh        bayat           bekarlar        besni           beypazari
+		birecik         bogazliyan      bor_tur         bozan           bozok           candir
+		candir_cil      cankiri         caxud           celtik          cemisgezek      comana_cil
+		corum           corycus         cubuk           cumra           dabiq           darende
+		dasmenda        deliktash       develi          dinek_keskin    divrigi         dluk
+		egin            elbistan        emirdag         enguzud         eregli_kar      erzincan
+		eskil           gemerek         gerger          goksun          gumus           gurun
+		hacibektas      hafik           hargan          harput          hatunsaray      haymana
+		huseyinabad     ilgin           ilic            insuyu          iskenderun      iskilip
+		jabbul          kahta           kalecik         kapan           karakecili      karapinar
+		kars_armenia    kaymaz          kayseri         kaysun          keban           kemah
+		kilis           kirsehir        kizilca         kochisar        konya           koyulhisar
+		kulu_turkey     kursunlu        kuzucan         ladik           larende         malatya
+		manbij          marash          merzifon        mihaliccik      molevon         mut
+		nevsehir        nigde           obruk           pertek          pirloganda      polatli
+		sabanozu        samsat          sariyahsi       sarkisla        sebinkarahisar  seyitgazi
+		silifke         siran           sis             sivas           sivrihisar      sorgun
+		suluklu         sulusaray       sungurlu        suruc           tarsus          tokat
+		tomarza         tosya           trapessac       turgut          ulnia           urgup
+		yahyali         zara            zardana         zile
+	}
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { hittite luwian }
-		tolerated_cultures = { hurrian denyen hattian }
-		discovered_regions = {
-			anatolia_region caucasus_region crescent_region
-		}
+	accepted_cultures = {
+		hittite
+		luwian
+	}
+	tolerated_cultures = {
+		denyen
+		hattian
+		hurrian
+	}
+	discovered_regions = {
+		anatolia_region
+		caucasus_region
+		crescent_region
+	}
 	}
 
 	##ABRINCATES
@@ -2355,26 +2369,30 @@ countries = {
 
 	##THRACIAN BOSPORUS
 	BOSPH = {
-		capital = ahtopol
-		culture = thracian
-		religion = hellenic
+	capital = ahtopol
+	culture = thracian
+	religion = hellenic
 
-		country_rank = rank_county
+	country_rank = rank_county
 
-		include = "Neolithic"
+		include = "Bronze"
 
-		own_control_core = {
-			ahtopol atpazari catalca constantinople corlu izmit kirklareli kiyikoy
-			luleburgaz silivri silli sozopol uskudar vize
-		}
+	own_control_core = {
+		ahtopol         catalca         constantinople  corlu           edirne          enez
+		gallipoli       hayrabolu       kesan           kirklareli      kiyikoy         luleburgaz
+		malgara         rodoscuk        silivri         sozopol         vize
+	}
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { thracian mycenaean }
+	accepted_cultures = {
+		mycenaean
+		thracian
+	}
 		tolerated_cultures = {  }
-		discovered_regions = {
-			anatolia_region balkan_region
-		}
+	discovered_regions = {
+		balkan_region
+	}
 	}
 
 	##BOTTIAEA
@@ -4648,26 +4666,28 @@ countries = {
 
 	##HAPALLA
 	HAPAL = {
-		capital = alasehir
-		culture = luwian
-		religion = luwian
+	capital = alasehir
+	culture = luwian
+	religion = luwian
 
-		country_rank = rank_kingdom
+	country_rank = rank_kingdom
 
 		include = "Bronze"
 
-		own_control_core = {
-			alasehir aslanapa banaz dinar gediz honaz lazkiye nazilli
-			sandikli seyhli tavsanli usak
-		}
+	own_control_core = {
+		altintas           aslanapa           banaz              bolvadin           gediz              karahisar_i_sahib
+		sandikli           suhut              tavsanli
+	}
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { luwian }
+	accepted_cultures = {
+		luwian
+	}
 		tolerated_cultures = {  }
-		discovered_regions = {
-			anatolia_region
-		}
+	discovered_regions = {
+		anatolia_region
+	}
 	}
 
 	##HELVETII
@@ -5088,26 +5108,31 @@ countries = {
 
 	##KASKA
 	KASKA = {
-		capital = akkus
-		culture = colchian
-		religion = kartvelian_pagan
+	capital = akkus
+	culture = colchian
+	religion = kartvelian_pagan
 
-		country_rank = rank_county
+	country_rank = rank_county
 
 		include = "Neolithic"
 
-		own_control_core = {
-			akkus bafra bayramlu gadegara giresun ladik_pontus mesudiye niksar
-			samsun sonisa terme unye
-		}
+	own_control_core = {
+		akkus         bafra         bayramlu      giresun       ladik_pontus  mesudiye
+		niksar        samsun        sonisa        terme         unye
+	}
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { colchian kartvelian }
-		tolerated_cultures = { hittite }
-		discovered_regions = {
-			anatolia_region
-		}
+	accepted_cultures = {
+		colchian
+		kartvelian
+	}
+	tolerated_cultures = {
+		hittite
+	}
+	discovered_regions = {
+		anatolia_region
+	}
 	}
 
 	##KASSITES
@@ -5141,25 +5166,28 @@ countries = {
 
 	##KUWAL
 	KUWAL = {
-		capital = burdur
-		culture = luwian
-		religion = luwian
+	capital = burdur
+	culture = luwian
+	religion = luwian
 
-		country_rank = rank_kingdom
+	country_rank = rank_kingdom
 
 		include = "Bronze"
 
-		own_control_core = {
-			burdur egirdir isparta sarkikaraagac uluborlu yalvac
-		}
+	own_control_core = {
+		burdur         dinar          egirdir        isparta        sarkikaraagac  stefani
+		uluborlu       yalvac
+	}
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { luwian }
+	accepted_cultures = {
+		luwian
+	}
 		tolerated_cultures = {  }
-		discovered_regions = {
-			anatolia_region
-		}
+	discovered_regions = {
+		anatolia_region
+	}
 	}
 
 	##KYNETES
@@ -5659,26 +5687,28 @@ countries = {
 
 	##LUKKA
 	LUKKA = {
-		capital = cine
-		culture = lukka
-		religion = sea_peoples_cult
+	capital = cine
+	culture = lukka
+	religion = sea_peoples_cult
 
-		country_rank = rank_kingdom
+	country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "Sea_Peoples"
 
-		own_control_core = {
-			cine gokabat golhisar kas marmaris megri milas mugla
-			tavas yuksekkum
-		}
+	own_control_core = {
+		antalya  elmali   finike   istanoz  kas      megri
+	}
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { lukka carian }
+	accepted_cultures = {
+		carian
+		lukka
+	}
 		tolerated_cultures = {  }
-		discovered_regions = {
-			anatolia_region
-		}
+	discovered_regions = {
+		anatolia_region
+	}
 	}
 
 	##LUSONES
@@ -6058,26 +6088,29 @@ countries = {
 
 	##MIRA
 	MIRA = {
-		capital = ayasuluk
-		culture = hittite
-		religion = hittite
+	capital = ayasuluk
+	culture = hittite
+	religion = hittite
 
-		country_rank = rank_kingdom
+	country_rank = rank_kingdom
 
 		include = "Bronze"
 
-		own_control_core = {
-			ayasuluk birgi cesme guzelhisar kula manisa smyrna tire
-			urla
-		}
+	own_control_core = {
+		alasehir    guzelhisar  honaz       lazkiye     nazilli     seyhli
+		usak
+	}
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { hittite mycenaean }
+	accepted_cultures = {
+		hittite
+		mycenaean
+	}
 		tolerated_cultures = {  }
-		discovered_regions = {
-			anatolia_region
-		}
+	discovered_regions = {
+		anatolia_region
+	}
 	}
 
 	##MIROBRIGENSES
@@ -6926,27 +6959,29 @@ countries = {
 
 	##PALA
 	PALA = {
-		capital = amasra
-		culture = palaic
-		religion = hattian
+	capital = amasra
+	culture = palaic
+	religion = hattian
 
-		country_rank = rank_kingdom
+	country_rank = rank_kingdom
 
 		include = "Bronze"
 
-		own_control_core = {
-			amasra arac bartin boyabat cerkes devrekani eregli gerede
-			gerze inebolu kastamonu kure_i_mamure mengen safranbolu sinop taskopru
-			ulus yenicepazari
-		}
+	own_control_core = {
+		arac          bartin        boyabat       cerkes        devrekani     eregli
+		gerede        kastamonu     mengen        safranbolu    taskopru      ulus
+		yenicepazari
+	}
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { palaic }
+	accepted_cultures = {
+		palaic
+	}
 		tolerated_cultures = {  }
-		discovered_regions = {
-			anatolia_region
-		}
+	discovered_regions = {
+		anatolia_region
+	}
 	}
 
 	##PALANTI
@@ -7001,26 +7036,28 @@ countries = {
 
 	##PARTHA
 	PARTH = {
-		capital = alaiye
-		culture = lycian
-		religion = luwian
+	capital = alaiye
+	culture = lycian
+	religion = luwian
 
-		country_rank = rank_kingdom
+	country_rank = rank_kingdom
 
 		include = "Bronze"
 
-		own_control_core = {
-			alaiye antalya beysehir elmali finike istanoz karahisar_i_teke manavgat
-			selinti seydisehir
-		}
+	own_control_core = {
+		alaiye            anamur            beysehir          ermenek           karahisar_i_teke  manavgat
+		selinti           seydisehir
+	}
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { lycian }
+	accepted_cultures = {
+		lycian
+	}
 		tolerated_cultures = {  }
-		discovered_regions = {
-			anatolia_region
-		}
+	discovered_regions = {
+		anatolia_region
+	}
 	}
 
 	##PETROCORIIS
@@ -7695,26 +7732,29 @@ countries = {
 
 	##SEHA RIVER LAND
 	SEHA = {
-		capital = akhisar
-		culture = hittite
-		religion = hittite
+	capital = akhisar
+	culture = hittite
+	religion = hittite
 
-		country_rank = rank_kingdom
+	country_rank = rank_kingdom
 
 		include = "Bronze"
 
-		own_control_core = {
-			akhisar balikesir bergama bigadic demirci foca gordes menemen
-			soma susurluk
-		}
+	own_control_core = {
+		akhisar    balikesir  bergama    bigadic    demirci    foca
+		gordes     kula       soma       susurluk
+	}
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { hittite mycenaean }
+	accepted_cultures = {
+		hittite
+		mycenaean
+	}
 		tolerated_cultures = {  }
-		discovered_regions = {
-			anatolia_region
-		}
+	discovered_regions = {
+		anatolia_region
+	}
 	}
 
 	##SELGOWII
@@ -8674,26 +8714,30 @@ countries = {
 
 	##THRACE
 	THRAC = {
-		capital = bukelon
-		culture = thracian
-		religion = thracian_pagan
+	capital = bukelon
+	culture = thracian
+	religion = thracian_pagan
 
-		country_rank = rank_county
+	country_rank = rank_county
 
-		include = "Neolithic"
+		include = "Bronze"
 
-		own_control_core = {
-			bukelon burgas demotica edirne elhovo haskovo hayrabolu komotini
-			malgara ormenio perperek rusokastro smolyan traianopolis ustra xanthia
-		}
+	own_control_core = {
+		aytos           boruy           bukelon         burgas          constantia_bul  demotica
+		elhovo          haskovo         hiambouli       komotini        lardeja         ormenio
+		perperek        plovdiv         rusokastro      smolyan         stanimaka       traianopolis
+		ustra           xanthia
+	}
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { thracian }
+	accepted_cultures = {
+		thracian
+	}
 		tolerated_cultures = {  }
-		discovered_regions = {
-			balkan_region
-		}
+	discovered_regions = {
+		balkan_region
+	}
 	}
 
 	##THULE
@@ -9226,15 +9270,15 @@ countries = {
 
 	##TYLE
 	TYLE = {
-		capital = boruy
-		culture = tyle
-		religion = gaulish_pagan
+	capital = boruy
+	culture = tyle
+	religion = gaulish_pagan
 
-		discovered_regions = {
-			balkan_region
-		}
+	discovered_regions = {
+		balkan_region
+	}
 
-		country_rank = rank_county
+	country_rank = rank_county
 
 		include = "Neolithic"
 
@@ -9242,10 +9286,13 @@ countries = {
 			ruler = random
 		}
 
-		own_control_core = {
-			boruy constantia_bul hiambouli kran lardeja plovdiv sliven stanimaka
-		}
-		accepted_cultures = { tyle gaulish }
+	own_control_core = {
+		kran    sliven
+	}
+	accepted_cultures = {
+		gaulish
+		tyle
+	}
 		tolerated_cultures = {  }
 	}
 
@@ -10220,27 +10267,31 @@ countries = {
 
 	##WILUSA
 	WILUS = {
-		capital = ayvacik
-		culture = luwian
-		religion = luwian
+	capital = ayvacik
+	culture = luwian
+	religion = luwian
 
-		country_rank = rank_kingdom
+	country_rank = rank_kingdom
 
 		include = "Bronze"
 
-		own_control_core = {
-			ayvacik balya bandirma bayramic biga can canakkale edremit
-			enez gallipoli gonen imbros kesan lapseki lemnos manyas
-			mihalic rodoscuk
-		}
+	own_control_core = {
+		ayvacik    balya      bandirma   bayramic   biga       can
+		canakkale  edremit    gonen      imbros     lapseki    lemnos
+		manyas     mihalic
+	}
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { luwian thracian }
+	accepted_cultures = {
+		luwian
+		thracian
+	}
 		tolerated_cultures = {  }
-		discovered_regions = {
-			anatolia_region balkan_region
-		}
+	discovered_regions = {
+		anatolia_region
+		balkan_region
+	}
 	}
 
 	##WOCOMIUGI
@@ -10674,11 +10725,11 @@ countries = {
 	}
 	##MEDIANS
 	MEDIA = {
-		capital = abhar
-		culture = hindu
-		religion = hindu
+	capital = abhar
+	culture = mede
+	religion = iranic
 
-		country_rank = rank_county
+	country_rank = rank_county
 
 		include = "Bronze"
 
@@ -10686,18 +10737,28 @@ countries = {
 			ruler = random
 		}
 
-		own_control_core = {
-			abhar avaj aveh bandar_e_anzali damavand delijan eyvanekey firuzkuh
-			fuman hashatjin kahak karaj kashan khwar lahijan langarud
-			maranjab natanz neyasar qazvin qeydar qom rahimabad rasht
-			razeqan rey rudbar sagzabad saveh savojbolagh shahrestan_sofla shamiram
-			sirdan takestan varamin
-		}
-		accepted_cultures = { hindu harappan vedic }
-		tolerated_cultures = { harappan vedic dravidian gandharan }
-			discovered_regions = {
-				india_region persia_region
-			}
+	own_control_core = {
+		abhar             avaj              aveh              bandar_e_anzali   damavand          delijan
+		eyvanekey         firuzkuh          fuman             hashatjin         kahak             karaj
+		kashan            khwar             lahijan           langarud          maranjab          natanz
+		neyasar           qazvin            qeydar            qom               rahimabad         rasht
+		razeqan           rey               rudbar            sagzabad          saveh             savojbolagh
+		shahrestan_sofla  shamiram          sirdan            takestan          varamin
+	}
+	accepted_cultures = {
+		harappan
+		hindu
+		vedic
+	}
+	tolerated_cultures = {
+		dravidian
+		gandharan
+		harappan
+		vedic
+	}
+	discovered_regions = {
+		persia_region
+	}
 	}
 	##MITATHAL
 	MITAT = {
@@ -11025,5 +11086,135 @@ countries = {
 				india_region persia_region
 			}
 	}
+
+	AHHI = { # change culture to Lydian to group after
+		culture = luwian
+		religion = luwian
+		country_rank = rank_county
+		own_control_core = {
+			ayasuluk  cesme     manisa    smyrna    tire      urla
+		}
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			luwian
+		}
+		discovered_regions = {
+			anatolia_region
+		}
 	}
+
+	KARK = {
+		culture = carian
+		religion = luwian
+		country_rank = rank_duchy
+		own_control_core = {
+			gokabat    golhisar   marmaris   mugla      tavas      yuksekkum
+		}
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			carian
+		}
+		discovered_regions = {
+			anatolia_region
+		}
+	}
+
+	LYCIA = { # Troy warfare
+		culture = dorian
+		religion = hellenic
+		country_rank = rank_duchy
+		own_control_core = {
+			birgi
+		}
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			dorian
+		}
+		discovered_regions = {
+			anatolia_region
+		}
+	}
+
+	MWAN = {
+		culture = carian
+		religion = luwian
+		country_rank = rank_county
+		own_control_core = {
+			cine   milas
+		}
+		capital = milas
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			carian
+		}
+		discovered_regions = {
+			anatolia_region
+		}
+	}
+
+	QUWE = {
+		culture = hittite
+		religion = hittite
+		country_rank = rank_duchy
+		include = "Bronze_coast"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			hittite
+		}
+	}
+
+	TUMM = {
+		culture = palaic
+		religion = hittite
+		country_rank = rank_county
+		own_control_core = {
+			amasra         inebolu        kure_i_mamure  sinop
+		}
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			palaic
+		}
+		discovered_regions = {
+			anatolia_region
+		}
+	}
+
+	ZALP = {
+		culture = hittite
+		religion = hittite
+		country_rank = rank_county
+		own_control_core = {
+			gadegara  gerze
+		}
+		capital = gerze
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			hittite
+			palaic
+		}
+		discovered_regions = {
+			anatolia_region
+		}
+	}
+}
 }
