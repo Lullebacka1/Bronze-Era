@@ -1,5 +1,93 @@
-locations={
+# Anssigns location Ranks and could also assging templates to location with buldnings 
+locations = {
+    #  ITALY & WESTERN MEDITERRANEAN 
+    syracuse = { rank = town }               
+    martinafr = { rank = town }          
+	caserta = { rank = town } 
 
+    #  MYCENAEAN GREECE 
+    negroponte = { rank = city }       
+    demetrias = { rank = city }        
+    megara = { rank = town }          
+    argos = { rank = city }            
+    nafplio = { rank = town }          
+    mystras = { rank = city }          
+    modon = { rank = city }            
+    kalamata = { rank = city }         
+    chalandritsa = { rank = town }     
+    thebes_greece = { rank = city }    
+    athens = { rank = city }         
+    pylos = { rank = city }            
+    sparta = { rank = city }           
+
+    #  ANATOLIA (HITTITE EMPIRE) 
+    canakkale = { rank = city }      
+    balat = { rank = city }            
+    bodrum = { rank = city }          
+    bigadic = { rank = city }         
+    corum = { rank = town }           
+    amasya = { rank = town }          
+    huseyinabad = { rank = city }     
+    akdagmadeni = { rank = city }     
+    konya = { rank = town }          
+    tarsus = { rank = city }          
+    silifke = { rank = city }         
+    bogazkale = { rank = city }       
+    yozgat = { rank = city }          
+    alaca_hoyuk = { rank = city }      
+    ephesus = { rank = city }         
+    fethiye = { rank = town }         
+
+    #  CRETE & CYPRUS 
+    chania = { rank = city }       	   
+    candia = { rank = city }         
+    kyrenia = { rank = town }          
+    famagusta = { rank = city }       
+    larnaca = { rank = town }          
+    paphos = { rank = town }           
+
+    #  THE LEVANT (SYRIA & LEBANON) 
+    artah = { rank = town }            
+    latakia = { rank = city }           
+    maskanah = { rank = town }        
+    manbij = { rank = city }           
+    aleppo = { rank = city }            
+    raqqa = { rank = city }            
+    tartus = { rank = city }            
+    khanaser = { rank = town }       
+    beirut = { rank = town }           
+    deir_qamar = { rank = town }       
+    damascus = { rank = city }        
+    sidon = { rank = city }
+    tyre = { rank = town }             
+    karkamis = { rank = city }        
+    palmyra = { rank = town }          
+
+    #  PALESTINE & DESERT FRONTIERS 
+    acre = { rank = town }             
+    majdal = { rank = city }           
+    gaza = { rank = city }             
+    jerusalem = { rank = city }       
+    beersheba = { rank = town }         
+    aqaba = { rank = town }            
+
+    #  NEW KINGDOM OF EGYPT 
+    faqus = { rank = city }            
+    qalyub = { rank = city }         
+    giza = { rank = city }             
+    faiyum = { rank = city }            
+    cairo = { rank = city }           
+
+    #  MESOPOTAMIA 
+    balad = { rank = town }             
+    al_sinn = { rank = town }          
+    baghdad = { rank = city }           
+    karbala = { rank = town }           
+    hillah = { rank = city }            
+    suq_al_shuyukh = { rank = town }    
+    abdanan = { rank = town }           
+    mosul = { rank = city }             
+    al_sharqat = { rank = city }        
 }
 
 # for the unique and special buildings
