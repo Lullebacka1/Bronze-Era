@@ -67,6 +67,16 @@
 	starting_technology_level = 1
  }
 
+ charcoal_maker_advance = {
+ 	age = age_1_traditions
+
+	unlock_building = charcoal_maker
+	
+ 	requires = bronze_forge_advance
+
+	starting_technology_level = 1
+ }
+
 # ###############################
 # ROYAL WORKSHOPS TECH
 # ###############################
@@ -136,6 +146,29 @@ bronze_age_trade_posts_advance = {
 	starting_technology_level = 3
 
 	requires = intercultural_relations_advance
+}
+
+# ############################
+# IRON BUILDINGS AND UPGRADES
+# ############################
+
+high_temp_furnace_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+	
+	global_weaponry_output_modifier = 0.25
+	global_tools_output_modifier = 0.25
+
+	requires = charcoal_maker_advance
+}
+
+iron_extraction_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	can_extract_iron = yes
+
+	requires = high_temp_furnace_advance
 }
 
 # ###############################
