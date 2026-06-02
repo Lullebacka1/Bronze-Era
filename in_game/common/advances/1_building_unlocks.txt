@@ -67,6 +67,16 @@
 	starting_technology_level = 1
  }
 
+ charcoal_maker_advance = {
+ 	age = age_1_traditions
+
+	unlock_building = charcoal_maker
+	
+ 	requires = bronze_forge_advance
+
+	starting_technology_level = 1
+ }
+
 # ###############################
 # ROYAL WORKSHOPS TECH
 # ###############################

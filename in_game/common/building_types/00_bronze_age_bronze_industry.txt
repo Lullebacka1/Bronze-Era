@@ -91,41 +91,11 @@ tools_guild = {
 
 	build_time = guild_build_time
 
-	unique_production_methods = {
-		metalwork_guild_maintenance = {
-			iron = 0.75
-			produced = tools
-			output = 1
-
-			debug_max_profit = 0.4
-			category = guild_input
-		}
-		tools_guild_stone_recipe = {
-			stone = 0.5
-			produced = tools
-			output = 0.3
-			debug_max_profit = 0.1
-
-			category = guild_input
-		}
-
-		tools_guild_bronze_recipe = {
-			bronze_age_bronze = 0.5
-			produced = tools
-			output = 0.6
-			debug_max_profit = 0.25
-
-			category = guild_input
-		}
-
-		tools_guild_copper_recipe = {
-			copper = 0.5
-			produced = tools
-			output = 0.5
-			debug_max_profit = 0.15
-
-			category = guild_input
-		}
+	production_methods = {
+		tools_guild_stone_recipe
+		tools_guild_copper_recipe
+		tools_guild_bronze_recipe
+		tools_guild_iron_recipe
 	}
 
 	construction_demand = guild_construction
@@ -185,49 +155,12 @@ weapon_guild = {
 
 	build_time = guild_build_time
 
-	unique_production_methods = {
-
-		weapon_guild_stone_recipe = {
-			lumber = 0.3
-			stone = 0.3
-			tools = 0.2
-			category = guild_input
-			produced = weaponry
-			output = 0.3
-		}
-
-		weapon_guild_copper_recipe = {
-			lumber = 0.2
-			copper = 0.5
-			coal = 0.3
-			tools = 0.2
-			category = guild_input
-			produced = weaponry
-			output = 0.5
-		}
-
-		weapon_guild_bronze_recipe = {
-			lumber = 0.1
-			bronze_age_bronze = 0.5
-			coal = 0.3
-			tools = 0.2
-			produced = weaponry
-			output = 0.6
-
-			debug_max_profit = 0.25
-			category = guild_input
-		}
-		weapon_guild_obsidian_recipe = {
-			lumber = 0.2
-			stone = 0.5
-			gems = 0.1
-			produced = weaponry
-			output = 0.5
-			
-			category = guild_input
-
-			debug_max_profit = 0.2
-		}
+	production_methods = {
+		weapon_guild_stone_recipe
+		weapon_guild_copper_recipe
+		weapon_guild_bronze_recipe
+		weapon_guild_obsidian_recipe
+		weapon_guild_iron_recipe
 	}
 
 	custom_tags = { guild }

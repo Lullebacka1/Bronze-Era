@@ -14,40 +14,11 @@ tools_maker = {
 
 	build_time = village_build_time
 
-	unique_production_methods = {
-		metalwork_tools_maker_maintenance = {
-			iron = 0.2
-			produced = tools
-			output = 0.5
-
-			debug_max_profit = 0.2
-			category = guild_input
-		}
-		stone_tools_maker_maintenance = {
-			stone = 1
-			produced = tools
-			output = 0.5
-			debug_max_profit = 0.1
-
-			category = guild_input
-		}
-
-		bronze_tools_maker_maintenance = {
-			bronze_age_bronze = 0.25
-			produced = tools
-			output = 0.5
-			debug_max_profit = 0.15
-
-			category = guild_input
-		}
-		copper_tools_maker_maintenance = {
-			copper = 0.5
-			produced = tools
-			output = 0.5
-			debug_max_profit = 0.15
-
-			category = guild_input
-		}
+	production_methods = {
+		tools_maker_stone_recipe
+		tools_maker_copper_recipe
+		tools_maker_bronze_recipe
+		tools_maker_iron_recipe
 	}
 
 	construction_demand = guild_construction
@@ -70,35 +41,7 @@ weaponry_maker = {
 	build_time = village_build_time
 
 	unique_production_methods = {
-		metalwork_weaponry_maker_maintenance = {
-			iron = 0.2
-			produced = weaponry
-			output = 0.5
-
-			category = guild_input
-		}
-		stone_weaponry_maker_maintenance = {
-			stone = 1
-			produced = weaponry
-			output = 0.5
-
-			category = guild_input
-		}
-
-		bronze_weaponry_maker_maintenance = {
-			bronze_age_bronze = 0.25
-			produced = weaponry
-			output = 0.5
-
-			category = guild_input
-		}
-		copper_weaponry_maker_maintenance = {
-			copper = 0.5
-			produced = weaponry
-			output = 0.5
-
-			category = guild_input
-		}
+		
 	}
 
 	construction_demand = guild_construction
