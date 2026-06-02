@@ -185,6 +185,15 @@
  advanced_chariot_advance: "Developed Chariots"
  advanced_chariot_advance_desc: "The development of more advanced chariots in Bronze Age societies allowed for increased speed, maneuverability, and combat effectiveness on the battlefield. These improved chariots were often lighter, faster, and better equipped than earlier designs, making them formidable weapons of war and symbols of elite status."
 
+ unlock_bowmen_advance: "Organized Archery"
+ unlock_bowmen_advance_desc: "The bow evolves from a hunting tool into a weapon of war as communities begin training dedicated archers capable of supporting warriors from a distance."
+
+ composite_bow_advance: "Composite Bows"
+ composite_bow_advance_desc: "The demands of chariot warfare drive the development of compact composite bows made from wood, horn, and sinew. Powerful despite their small size, these weapons allow chariot warriors to deliver deadly missile fire while remaining highly mobile."
+
+ organized_units_advance: "Warrior Retinues"
+ organized_units_advance_desc: "The rise of warrior elites allows rulers and chieftains to maintain permanent retinues equipped for distinct battlefield roles. Spears and axes become increasingly standardized as noble households gather trained followers whose status and livelihood are tied to warfare."
+
 # ##############################
 # MILITARY UPGRADES
 # ##############################

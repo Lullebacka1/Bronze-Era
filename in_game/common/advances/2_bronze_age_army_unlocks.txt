@@ -1,3 +1,15 @@
+organized_units_advance =  {
+	age = a_age_1_traditions
+	research_cost = 1.5
+
+	unlock_unit = a_axemen
+	unlock_unit = a_spearmen
+
+	starting_technology_level = 4
+
+	requires = warrior_aristocracy_advance
+}
+
 simple_chariot_advance = {
 	age = age_1_traditions
 	research_cost = 1.5
@@ -11,4 +23,30 @@ simple_chariot_advance = {
 	unlock_unit = a_simple_chariots
 
 	starting_technology_level = 2
+}
+
+unlock_bowmen_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_unit = a_neolithic_bowmen
+
+	starting_technology_level = 2
+
+	requires = settlements_advance
+}
+
+composite_bow_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_unit = a_composite_bowmen
+
+	starting_technology_level = 4
+
+	allow = {
+		has_advance = unlock_bowmen_advance
+	}
+
+	requires = simple_chariot_advance
 }

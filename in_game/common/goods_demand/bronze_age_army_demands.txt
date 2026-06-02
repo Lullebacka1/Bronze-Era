@@ -1,7 +1,42 @@
 ﻿# PRODUCION
 
+early_infantry_construction = {
+	weaponry = 0.01
+	leather = 0.01
+	cloth = 0.01
+	category = regiment_construction
+}
+
 slinger_infantry_construction = {
 	weaponry = 0.02
+	leather = 0.02
+	cloth = 0.02
+	category = regiment_construction
+}
+
+spearmen_infantry_construction = {
+	weaponry = 0.03
+	leather = 0.02
+	cloth = 0.02
+	category = regiment_construction
+}
+
+axemen_infantry_construction = {
+	weaponry = 0.03
+	leather = 0.02
+	cloth = 0.02
+	category = regiment_construction
+}
+
+neolithic_bowmen_construction = {
+	weaponry = 0.02
+	leather = 0.02
+	cloth = 0.02
+	category = regiment_construction
+}
+
+composite_bowmen_construction = {
+	weaponry = 0.03
 	leather = 0.02
 	cloth = 0.02
 	category = regiment_construction
@@ -35,8 +70,43 @@ expensive_heavy_chariot_construction = {
 
 # MAINTENANCE
 
+early_infantry_maintenance = {
+	weaponry = 0.01
+	leather = 0.01
+	cloth = 0.01
+	category = regiment_maintenance
+}
+
 slinger_infantry_maintenance = {
 	weaponry = 0.01
+	leather = 0.01
+	cloth = 0.01
+	category = regiment_maintenance
+}
+
+spearmen_infantry_maintenance = {
+	weaponry = 0.01
+	leather = 0.01
+	cloth = 0.01
+	category = regiment_maintenance
+}
+
+axemen_infantry_maintenance = {
+	weaponry = 0.02
+	leather = 0.01
+	cloth = 0.01
+	category = regiment_maintenance
+}
+
+neolithic_bowmen_maintenance = {
+	weaponry = 0.01
+	leather = 0.01
+	cloth = 0.01
+	category = regiment_maintenance
+}
+
+composite_bowmen_maintenance = {
+	weaponry = 0.02
 	leather = 0.01
 	cloth = 0.01
 	category = regiment_maintenance
