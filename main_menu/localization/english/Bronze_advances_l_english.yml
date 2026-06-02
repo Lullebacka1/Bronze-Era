@@ -169,11 +169,11 @@
 # PRODUCTION METHODS
 # ##########################
 
- bronze_tools_maker_maintenance_maintenance_advance: "Bronze Tools"
- bronze_tools_maker_maintenance_maintenance_advance_desc: "Tools made of bronze are more durable and efficient than those made of stone or copper, allowing for improved productivity and craftsmanship in various tasks and industries."
+ tools_maker_bronze_recipe_advance: "Bronze Tools"
+ tools_maker_bronze_recipe_advance_desc: "Tools made of bronze are more durable and efficient than those made of stone or copper, allowing for improved productivity and craftsmanship in various tasks and industries."
 
- bronze_weaponry_maker_maintenance_maintenance_advance: "Bronze Weapons"
- bronze_weaponry_maker_maintenance_maintenance_advance_desc: "Weapons made of bronze are more durable and effective than those made of stone or copper, allowing for improved combat effectiveness."
+ weaponry_maker_bronze_recipe_advance: "Bronze Weapons"
+ weaponry_maker_bronze_recipe_advance_desc: "Weapons made of bronze are more durable and effective than those made of stone or copper, allowing for improved combat effectiveness."
 
 # ##############################
 # MILITARY UPGRADES
