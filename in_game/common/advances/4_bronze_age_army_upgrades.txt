@@ -21,7 +21,7 @@ yoke_saddle_advance = {
 efficient_chariot_construction_advance = {
 	age = age_1_traditions
 
-	requires = advanced_chariot_advance
+	requires = yoke_saddle_advance
 	
 	army_light_cavalry_build_cost_modifier = -0.1
 

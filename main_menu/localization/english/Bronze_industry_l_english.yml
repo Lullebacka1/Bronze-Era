@@ -69,3 +69,6 @@
 
   weapon_guild_copper_recipe: "Copper Weapon Workshops"
   weapon_guild_copper_recipe_desc: "Royal weapon workshops cast and hammer copper into axes, daggers, spearheads, and other arms that surpass stone weapons in versatility and status."
+
+  weapon_guild_iron_recipe: "Iron Arms Forging"
+  weapon_guild_iron_recipe_desc: "With the advent of iron smelting, royal workshops begin forging iron weapons. While early iron is often brittle and less durable than bronze, it represents a significant technological shift with the potential for mass production and widespread access to weaponry."

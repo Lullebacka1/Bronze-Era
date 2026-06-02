@@ -2375,7 +2375,7 @@ countries = {
 
 	country_rank = rank_county
 
-		include = "Neolithic"
+		include = "Bronze"
 
 	own_control_core = {
 		ahtopol         catalca         constantinople  corlu           edirne          enez
@@ -5693,7 +5693,7 @@ countries = {
 
 	country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "Sea_Peoples"
 
 	own_control_core = {
 		antalya  elmali   finike   istanoz  kas      megri
@@ -8720,7 +8720,7 @@ countries = {
 
 	country_rank = rank_county
 
-		include = "Neolithic"
+		include = "Bronze"
 
 	own_control_core = {
 		aytos           boruy           bukelon         burgas          constantia_bul  demotica
