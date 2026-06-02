@@ -1,0 +1,28 @@
+trojan_war_phase_1 = {
+    montly_spawn_chance = {
+        Value = 1
+    }
+    Can_start = {
+        current_date >= 5.1.1
+        NOT = { has_global_variable = "trojan_war_phase_1_started" }
+        NOT = { has_global_variable = "trojan_war_phase_1_Ended" }
+    } 
+    Can_end = {
+        current_date >= 14.1.1
+        has_global_variable = "trojan_war_phase_1_started"
+        NOT = { has_global_variable = "trojan_war_phase_1_Ended" }
+    }
+    End_conditions = {
+        current_date >= 14.1.1
+    }
+    Visible = {
+       OR {
+        is_playing = 0001G #Mycenaea
+        
+       }
+       And {
+        has_global_variable = "trojan_war_phase_1_started"
+        NOT = { has_global_variable = "trojan_war_phase_1_Ended" }
+       }
+    }
+}
