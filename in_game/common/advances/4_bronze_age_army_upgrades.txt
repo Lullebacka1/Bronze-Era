@@ -1,7 +1,17 @@
+war_horse_training_advance = {
+	age = age_1_traditions
+
+	requires = simple_chariot_advance
+	
+	global_horses_output_modifier = 0.1
+
+	starting_technology_level = 3
+}
+
 back_axle_advance = {
 	age = age_1_traditions
 
-	requires = advanced_chariot_advance
+	requires = simple_chariot_advance
 	
 	army_light_cavalry_power = 0.1
 

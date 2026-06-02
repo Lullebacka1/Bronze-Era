@@ -1,0 +1,10 @@
+advanced_chariot_advance = {
+	age = age_1_traditions
+
+	requires = efficient_chariot_construction_advance
+
+	unlock_unit = a_heavy_chariots
+	unlock_unit = a_light_chariots
+
+	starting_technology_level = 3
+}

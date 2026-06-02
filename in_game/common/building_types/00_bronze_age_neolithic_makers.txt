@@ -14,7 +14,7 @@ tools_maker = {
 
 	build_time = village_build_time
 
-	production_methods = {
+	possible_production_methods = {
 		tools_maker_stone_recipe
 		tools_maker_copper_recipe
 		tools_maker_bronze_recipe
@@ -40,8 +40,11 @@ weaponry_maker = {
 
 	build_time = village_build_time
 
-	unique_production_methods = {
-		
+	possible_production_methods = {
+		weaponry_maker_stone_recipe
+		weaponry_maker_copper_recipe
+		weaponry_maker_bronze_recipe
+		weaponry_maker_iron_recipe
 	}
 
 	construction_demand = guild_construction

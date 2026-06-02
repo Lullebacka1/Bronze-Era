@@ -1,6 +1,6 @@
 ﻿# Bronzeworking
 
-bronze_tools_maker_maintenance_maintenance_advance = {
+tools_maker_bronze_recipe_advance = {
 	age = age_1_traditions
 	
 	unlock_production_method = tools_guild_bronze_recipe
@@ -9,7 +9,7 @@ bronze_tools_maker_maintenance_maintenance_advance = {
 	requires = bronze_forge_advance
 }
 
-bronze_weaponry_maker_maintenance_maintenance_advance = {
+weaponry_maker_bronze_recipe_advance = {
 	age = age_1_traditions
 	
 	unlock_production_method = weapon_guild_bronze_recipe

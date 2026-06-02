@@ -137,6 +137,9 @@
  temple_granary_advance: "Temple Granaries"
  temple_granary_advance_desc: "Religious centers develop dedicated granaries and storage halls overseen by priesthoods and administrators responsible for collecting, managing, and redistributing agricultural surplus. Control over stored food strengthens the economic and political influence of temple institutions within urban society."
 
+ maritime_transport_containers_advance: "Maritime Transport Containers"
+ maritime_transport_containers_advance_desc: "The development of specialized containers for maritime transport allows for more efficient and secure movement of goods across seas and oceans, facilitating long-distance trade and economic growth."
+
 # ##########################
 # BUILDINGS
 # ##########################
@@ -169,11 +172,18 @@
 # PRODUCTION METHODS
 # ##########################
 
- bronze_tools_maker_maintenance_maintenance_advance: "Bronze Tools"
- bronze_tools_maker_maintenance_maintenance_advance_desc: "Tools made of bronze are more durable and efficient than those made of stone or copper, allowing for improved productivity and craftsmanship in various tasks and industries."
+ tools_maker_bronze_recipe_advance: "Bronze Tools"
+ tools_maker_bronze_recipe_advance_desc: "Tools made of bronze are more durable and efficient than those made of stone or copper, allowing for improved productivity and craftsmanship in various tasks and industries."
 
- bronze_weaponry_maker_maintenance_maintenance_advance: "Bronze Weapons"
- bronze_weaponry_maker_maintenance_maintenance_advance_desc: "Weapons made of bronze are more durable and effective than those made of stone or copper, allowing for improved combat effectiveness."
+ weaponry_maker_bronze_recipe_advance: "Bronze Weapons"
+ weaponry_maker_bronze_recipe_advance_desc: "Weapons made of bronze are more durable and effective than those made of stone or copper, allowing for improved combat effectiveness."
+
+# ##############################
+# MILITARY UNITS
+# ##############################
+
+ advanced_chariot_advance: "Developed Chariots"
+ advanced_chariot_advance_desc: "The development of more advanced chariots in Bronze Age societies allowed for increased speed, maneuverability, and combat effectiveness on the battlefield. These improved chariots were often lighter, faster, and better equipped than earlier designs, making them formidable weapons of war and symbols of elite status."
 
 # ##############################
 # MILITARY UPGRADES
@@ -187,3 +197,22 @@
 
  efficient_chariot_construction_advance: "Efficient Chariot Construction"
  efficient_chariot_construction_advance_desc: "Established construction templates and specialized craftsmanship reduce the material and labor required to build war chariots, allowing larger chariot forces to be fielded at lower cost."
+
+ war_horse_training_advance: "War Horse Training"
+ war_horse_training_advance_desc: "Emerging charriot warfare creates demand for horses trained to endure the rigors of battle, including noise, chaos, and physical strain. Specialized training techniques improve the reliability and effectiveness of chariot horses on the battlefield."
+
+# ##############################
+# METALURGY
+# ##############################
+
+ high_temp_furnace_advance: "High-Temperature Furnaces"
+ high_temp_furnace_advance_desc: "Advances in furnace construction and airflow control allow smiths to reach unprecedented temperatures, improving the production of tools, weapons, and metal goods."
+
+ iron_extraction_advance: "Iron Extraction"
+ iron_extraction_advance_desc: "Metalworkers learn to identify, collect, and process iron-bearing ores, opening access to a resource far more abundant than the metals required for bronze."
+
+ bloomery_smelting_advance: "Bloomery Smelting"
+ bloomery_smelting_advance_desc: "Specialized bloomery furnaces enable more reliable iron production, increasing yields and spreading ironworking knowledge among skilled craftsmen."
+
+ bog_iron_smelting_advance: "Bog Iron Smelting"
+ bog_iron_smelting_advance_desc: "Communities learn to exploit renewable deposits of bog iron formed in wetlands and marshes, providing an accessible source of iron beyond traditional mining regions."

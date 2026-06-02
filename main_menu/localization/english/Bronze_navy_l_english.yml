@@ -1,0 +1,13 @@
+﻿l_english:
+
+ n_canoe: "Monoxylon"
+ n_canoe_desc: "A simple boat, used for transportation and fishing along rivers and coastal waters."
+
+ n_early_galley: "Early Galley"
+ n_early_galley_desc: "Sails and oars allow for greater speed and maneuverability, making it ideal for coastal navigation and raiding."
+
+ n_long_boat: "Long Boat"
+ n_long_boat_desc: "Capable of greater speed and adapted for open sea travel, the long boat is a significant advancement in naval technology."
+
+ n_round_ship: "Round Ship"
+ n_round_ship_desc: "A sturdy vessel designed for stability and cargo transport, the round ship serves as a reliable means of maritime commerce."
