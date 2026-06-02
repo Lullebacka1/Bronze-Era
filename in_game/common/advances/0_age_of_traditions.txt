@@ -592,6 +592,15 @@ sailing_advance = {
 	starting_technology_level = 3
 }
 
+maritime_transport_containers_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	merchant_power_from_maritime = 0.025
+
+	requires = long_distance_trade_advance
+}
+
 intercultural_relations_advance = {
 	age = age_1_traditions
 	icon = cultural_acceptance_advance
