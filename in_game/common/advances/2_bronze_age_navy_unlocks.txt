@@ -1,0 +1,36 @@
+braided_sail_advance = {
+	age = age_1_traditions
+
+	starting_technology_level = 4
+	requires = sailing_advance
+
+	navy_movement_speed = 0.1
+}
+
+unlock_long_boat_advance = {
+	age = age_1_traditions
+
+	starting_technology_level = 4
+	requires = braided_sail_advance
+
+	unlock_unit = n_long_boat
+
+}
+
+mortise_and_tenon_advance = {
+	age = age_1_traditions
+
+	starting_technology_level = 4
+	requires = sailing_advance
+
+	ship_build_speed = 0.1
+}
+
+unlock_round_ship_advance = {
+	age = age_1_traditions
+
+	starting_technology_level = 4
+	requires = mortise_and_tenon_advance
+
+	unlock_unit = n_round_ship
+}

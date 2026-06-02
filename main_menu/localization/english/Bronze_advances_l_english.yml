@@ -200,3 +200,19 @@
 
  war_horse_training_advance: "War Horse Training"
  war_horse_training_advance_desc: "Emerging charriot warfare creates demand for horses trained to endure the rigors of battle, including noise, chaos, and physical strain. Specialized training techniques improve the reliability and effectiveness of chariot horses on the battlefield."
+
+# ##############################
+# METALURGY
+# ##############################
+
+ high_temp_furnace_advance: "High-Temperature Furnaces"
+ high_temp_furnace_advance_desc: "Advances in furnace construction and airflow control allow smiths to reach unprecedented temperatures, improving the production of tools, weapons, and metal goods."
+
+ iron_extraction_advance: "Iron Extraction"
+ iron_extraction_advance_desc: "Metalworkers learn to identify, collect, and process iron-bearing ores, opening access to a resource far more abundant than the metals required for bronze."
+
+ bloomery_smelting_advance: "Bloomery Smelting"
+ bloomery_smelting_advance_desc: "Specialized bloomery furnaces enable more reliable iron production, increasing yields and spreading ironworking knowledge among skilled craftsmen."
+
+ bog_iron_smelting_advance: "Bog Iron Smelting"
+ bog_iron_smelting_advance_desc: "Communities learn to exploit renewable deposits of bog iron formed in wetlands and marshes, providing an accessible source of iron beyond traditional mining regions."

@@ -1,0 +1,15 @@
+n_neolithic_monoxylon = {
+	category = navy_light_ship
+	use_ship_names = no
+	buildable = no
+	maritime_presence = ship_small_maritime
+	movement_speed = 6
+	hull_size = 2
+	cannons = 1
+	crew_size = 0.015
+	blockade_capacity = 0.2
+
+	maintenance_demand =  light_ship_1_maintenance
+	construction_demand = light_ship_1_construction
+	age = "age_1_traditions"
+}
