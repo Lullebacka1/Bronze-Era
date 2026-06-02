@@ -1,0 +1,66 @@
+# Sea Peoples template: mobile maritime raider confederations and displaced
+# coastal warbands. Reusable with include = "Sea_people" in country setup.
+#
+# Engine note:
+# "navy" is a country_type, not a government type. If a tag must become a true
+# navy-based country like vanilla pirates, apply change_country_type = navy in a
+# start effect/event for that tag. This template handles the valid government,
+# laws, reform, money and societal setup.
+starting_technology_level = 3
+
+currency_data = {
+	gold = 200
+}
+
+government = {
+	type = navy
+	heir_selection = pirate_elective
+
+	centralization_vs_decentralization = -90
+	traditionalist_vs_innovative = -50
+	spiritualist_vs_humanist = -55
+	aristocracy_vs_plutocracy = 25
+	serfdom_vs_free_subjects = 25
+	mercantilism_vs_free_trade = -35
+	belligerent_vs_conciliatory = -100
+	quality_vs_quantity = 0
+	offensive_vs_defensive = 20
+	land_vs_naval = 100
+	capital_economy_vs_traditional_economy = 25
+	individualism_vs_communalism = 45
+	outward_vs_inward = -25
+
+	parliament = {
+		parliament_type = assembly
+	}
+
+	reforms = {
+		pirate_brethren_reform
+	}
+
+	laws = {
+		marriage_law = polygyny
+		heir_religion_law = heir_same_religion
+		distribution_of_power_law = dop_traditional_distribution_of_power
+		immigration_law = open_borders_law
+		maritime_law = smugglers_haven
+		piracy_law = state_piracy_policy
+		coin_laws = gold_and_silver_coins
+	}
+
+	privilege = {
+		# Nobility / war leaders
+		favor_the_elites
+		traditional_distribution
+
+		# Burghers / ports
+		building_rights
+		trade_monopolies
+		commercial_advisory_council
+		sponsored_maritime_contracts
+
+		# Commoners / crews
+		communal_lands
+		allow_hunting
+	}
+}
