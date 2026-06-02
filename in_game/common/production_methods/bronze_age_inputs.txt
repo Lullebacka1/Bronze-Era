@@ -46,6 +46,7 @@ tools_maker_iron_recipe = {
 	debug_max_profit = 0.2
 	category = guild_input
 }
+
 tools_maker_stone_recipe = {
 	stone = 1
 	produced = tools
@@ -64,6 +65,7 @@ tools_maker_bronze_recipe = {
 
 	category = guild_input
 }
+
 tools_maker_copper_recipe = {
 	copper = 0.5
 	lumber = 0.1
@@ -83,6 +85,7 @@ weaponry_maker_iron_recipe = {
 
 	category = guild_input
 }
+
 weaponry_maker_stone_recipe = {
 	stone = 1
 	produced = weaponry
@@ -99,6 +102,7 @@ weaponry_maker_bronze_recipe = {
 
 	category = guild_input
 }
+
 weaponry_maker_copper_recipe = {
 	copper = 0.5
 	lumber = 0.1
@@ -111,29 +115,28 @@ weaponry_maker_copper_recipe = {
 # TOOLS GUILD
 
 tools_guild_iron_recipe = {
-	iron = 0.75
+	coal = 0.1
 	lumber = 0.2
+	iron = 0.6
 	produced = tools
-	output = 1
+	output = 1.2
 
-	debug_max_profit = 0.4
 	category = guild_input
 }
 tools_guild_stone_recipe = {
 	stone = 0.5
 	produced = tools
 	output = 0.3
-	debug_max_profit = 0.1
 
 	category = guild_input
 }
 
 tools_guild_bronze_recipe = {
-	bronze_age_bronze = 0.5
+	coal = 0.1
 	lumber = 0.2
+	bronze_age_bronze = 0.5
 	produced = tools
-	output = 0.6
-	debug_max_profit = 0.25
+	output = 1.2
 
 	category = guild_input
 }
@@ -142,8 +145,7 @@ tools_guild_copper_recipe = {
 	copper = 0.5
 	lumber = 0.2
 	produced = tools
-	output = 0.5
-	debug_max_profit = 0.15
+	output = 1
 
 	category = guild_input
 }
@@ -151,12 +153,12 @@ tools_guild_copper_recipe = {
 # WEAPON GUILD
 
 weapon_guild_stone_recipe = {
-	lumber = 0.3
+	lumber = 0.2
 	stone = 0.3
 	tools = 0.2
 	category = guild_input
 	produced = weaponry
-	output = 0.3
+	output = 0.5
 }
 
 weapon_guild_copper_recipe = {
@@ -165,17 +167,17 @@ weapon_guild_copper_recipe = {
 	tools = 0.2
 	category = guild_input
 	produced = weaponry
-	output = 0.5
+	output = 1
 }
 
 weapon_guild_bronze_recipe = {
 	lumber = 0.1
+	coal = 0.1
 	bronze_age_bronze = 0.5
 	tools = 0.2
 	produced = weaponry
-	output = 0.6
+	output = 1.2
 
-	debug_max_profit = 0.25
 	category = guild_input
 }
 
@@ -184,22 +186,20 @@ weapon_guild_obsidian_recipe = {
 	stone = 0.5
 	gems = 0.1
 	produced = weaponry
-	output = 0.5
+	output = 1
 	
 	category = guild_input
 
-	debug_max_profit = 0.2
 }
 
 weapon_guild_iron_recipe = {
 	lumber = 0.1
+	coal = 0.1
 	iron = 0.6
-	coal = 0.4
 	tools = 0.2
 	produced = weaponry
-	output = 0.6
+	output = 1.2
 	
 	category = guild_input
 
-	debug_max_profit = 0.2
 }
