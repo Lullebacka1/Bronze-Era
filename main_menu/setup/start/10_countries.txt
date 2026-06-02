@@ -8723,9 +8723,10 @@ countries = {
 		include = "Neolithic"
 
 	own_control_core = {
-		bukelon       burgas        demotica      elhovo        haskovo       komotini
-		ormenio       perperek      rusokastro    smolyan       stanimaka     traianopolis
-		ustra         xanthia
+		aytos           boruy           bukelon         burgas          constantia_bul  demotica
+		elhovo          haskovo         hiambouli       komotini        lardeja         ormenio
+		perperek        plovdiv         rusokastro      smolyan         stanimaka       traianopolis
+		ustra           xanthia
 	}
 		government = {
 			ruler = random
@@ -9286,8 +9287,7 @@ countries = {
 		}
 
 	own_control_core = {
-		boruy           constantia_bul  hiambouli       kran            lardeja         plovdiv
-		sliven
+		kran    sliven
 	}
 	accepted_cultures = {
 		gaulish
@@ -10725,11 +10725,11 @@ countries = {
 	}
 	##MEDIANS
 	MEDIA = {
-		capital = abhar
-		culture = hindu
-		religion = hindu
+	capital = abhar
+	culture = mede
+	religion = iranic
 
-		country_rank = rank_county
+	country_rank = rank_county
 
 		include = "Bronze"
 
@@ -10737,18 +10737,28 @@ countries = {
 			ruler = random
 		}
 
-		own_control_core = {
-			abhar avaj aveh bandar_e_anzali damavand delijan eyvanekey firuzkuh
-			fuman hashatjin kahak karaj kashan khwar lahijan langarud
-			maranjab natanz neyasar qazvin qeydar qom rahimabad rasht
-			razeqan rey rudbar sagzabad saveh savojbolagh shahrestan_sofla shamiram
-			sirdan takestan varamin
-		}
-		accepted_cultures = { hindu harappan vedic }
-		tolerated_cultures = { harappan vedic dravidian gandharan }
-			discovered_regions = {
-				india_region persia_region
-			}
+	own_control_core = {
+		abhar             avaj              aveh              bandar_e_anzali   damavand          delijan
+		eyvanekey         firuzkuh          fuman             hashatjin         kahak             karaj
+		kashan            khwar             lahijan           langarud          maranjab          natanz
+		neyasar           qazvin            qeydar            qom               rahimabad         rasht
+		razeqan           rey               rudbar            sagzabad          saveh             savojbolagh
+		shahrestan_sofla  shamiram          sirdan            takestan          varamin
+	}
+	accepted_cultures = {
+		harappan
+		hindu
+		vedic
+	}
+	tolerated_cultures = {
+		dravidian
+		gandharan
+		harappan
+		vedic
+	}
+	discovered_regions = {
+		persia_region
+	}
 	}
 	##MITATHAL
 	MITAT = {
