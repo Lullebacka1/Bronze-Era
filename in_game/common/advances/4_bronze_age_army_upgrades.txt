@@ -1,0 +1,29 @@
+back_axle_advance = {
+	age = age_1_traditions
+
+	requires = advanced_chariot_advance
+	
+	army_light_cavalry_power = 0.1
+
+	starting_technology_level = 3
+}
+
+yoke_saddle_advance = {
+	age = age_1_traditions
+
+	requires = back_axle_advance
+	
+	army_light_cavalry_maintenance_cost_modifier = -0.05
+
+	starting_technology_level = 3
+}
+
+efficient_chariot_construction_advance = {
+	age = age_1_traditions
+
+	requires = advanced_chariot_advance
+	
+	army_light_cavalry_build_cost_modifier = -0.1
+
+	starting_technology_level = 3
+}

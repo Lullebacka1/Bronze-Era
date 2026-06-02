@@ -13,3 +13,13 @@ simple_chariot_advance = {
 	starting_technology_level = 2
 }
 
+advanced_chariot_advance = {
+	age = age_1_traditions
+
+	requires = spoked_wheel_advance
+
+	unlock_unit = a_heavy_chariots
+	unlock_unit = a_light_chariots
+
+	starting_technology_level = 3
+}

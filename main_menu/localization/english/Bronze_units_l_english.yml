@@ -8,3 +8,6 @@
 
   a_heavy_chariots: "Heavy Chariots"
   a_heavy_chariots_desc: "Built with sturdier frames and larger crews, heavy chariots deliver shock and prestige on the battlefield. Though costly and terrain-dependent, they can dominate less organized foes in open terrain."
+
+  a_light_chariots: "Light Chariots"
+  a_light_chariots_desc: "The backbone of mature chariot warfare, light chariots combine speed, maneuverability, and missile power to dominate open battlefields. Crewed by skilled warriors and drawn by trained horse teams, they excel at skirmishing, pursuit, and disrupting enemy formations."

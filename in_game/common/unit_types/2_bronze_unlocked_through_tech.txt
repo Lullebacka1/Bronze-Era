@@ -19,7 +19,7 @@ a_simple_chariots = {
 	copy_from = a_light_chariot
 	
 	
-	upgrades_to = a_cavalrymen
+	upgrades_to = a_heavy_chariots
 
 	#root = location. Checks location_potential first so don't need that scripting in
 	mercenaries_per_location = {
@@ -50,4 +50,23 @@ a_heavy_chariots = {
 	upgrades_to = a_heavy_cavalrymen
 
 	gfx_tags = { heavy_tag }
+}
+
+a_light_chariots = {
+	copy_from = a_age_1_traditions_light_chariot
+	
+	
+	upgrades_to = a_heavy_chariots
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.2
+	}
+	
+	mercenaries_per_location = {
+		pop_type = tribesmen
+		multiply = 0.02
+	}
+	gfx_tags = { medium_tag }
 }

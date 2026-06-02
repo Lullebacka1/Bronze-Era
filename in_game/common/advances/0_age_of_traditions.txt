@@ -85,8 +85,7 @@ spoked_wheel_advance = {
 
 	requires = wheeled_transport_advance
 	
-	army_heavy_cavalry_power = 0.05
-	army_light_cavalry_power = 0.05
+	army_movement_speed = 0.1
 
 	starting_technology_level = 3
 }
@@ -519,14 +518,27 @@ long_distance_trade_advance = {
 
 }
 
+standard_measurements_advance = {
+	age = age_1_traditions
+	icon = merchants_and_trade
+	research_cost = 1.5
+
+	requires = long_distance_trade_advance
+
+	unlock_building = market_village
+	selling_efficiency = small_trade_efficiency_bonus
+
+	starting_technology_level = 2
+
+}
+
 commodity_money_advance = {
 	age = age_1_traditions
 	icon = merchants_and_trade
 	research_cost = 2.0
 
-	requires = long_distance_trade_advance
+	requires = standard_measurements_advance
 
-	unlock_building = market_village
 	trade_land_efficiency = 0.2
 
 	unlock_law = coin_laws
@@ -555,11 +567,27 @@ trade_caravans = {
 
 	requires = commodity_money_advance
 	
-	trade_land_efficiency = 0.5
+	trade_land_efficiency = 0.2
+	trade_range = 250
 
-	potential = {
-		original_capital ?= { sub_continent = sub_continent:central_asia }
+	allow = {
+		has_advance = animal_husbandry_advance
 	}
+	
+	starting_technology_level = 3
+}
+
+sailing_advance = {
+	age = age_1_traditions
+	icon = trade_caravans
+	research_cost = 1.5
+
+	requires = long_distance_trade_advance
+	
+	trade_sea_efficiency = 0.2
+	trade_range_modifier = 0.2
+
+	unlock_unit = n_traditional_galley
 	
 	starting_technology_level = 3
 }
@@ -590,13 +618,4 @@ mapmaking = {
 	
 	may_explore = yes
 	unlock_law = immigration_law
-}
-
-colonies = {
-	age = age_1_traditions
-	icon = colonies
-	requires = mapmaking
-	
-	research_cost = 1.0
-	can_colonize = yes
 }
