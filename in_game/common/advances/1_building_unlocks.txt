@@ -148,29 +148,6 @@ bronze_age_trade_posts_advance = {
 	requires = intercultural_relations_advance
 }
 
-# ############################
-# IRON BUILDINGS AND UPGRADES
-# ############################
-
-high_temp_furnace_advance = {
-	age = age_1_traditions
-	research_cost = 1.5
-	
-	global_weaponry_output_modifier = 0.25
-	global_tools_output_modifier = 0.25
-
-	requires = charcoal_maker_advance
-}
-
-iron_extraction_advance = {
-	age = age_1_traditions
-	research_cost = 1.5
-
-	can_extract_iron = yes
-
-	requires = high_temp_furnace_advance
-}
-
 # ###############################
 # # Basic Buildings
 # ###############################

@@ -1,0 +1,40 @@
+# ############################
+# IRON UPGRADES
+# ############################
+
+high_temp_furnace_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+	
+	global_weaponry_output_modifier = 0.25
+	global_tools_output_modifier = 0.25
+
+	requires = charcoal_maker_advance
+}
+
+iron_extraction_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	can_extract_iron = yes
+
+	requires = high_temp_furnace_advance
+}
+
+bloomery_smelting_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	global_iron_output_modifier = 0.2
+
+	requires = iron_extraction_advance
+}
+
+bog_iron_smelting_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_building = bog_iron_smelter
+
+	requires = bloomery_smelting_advance
+}
