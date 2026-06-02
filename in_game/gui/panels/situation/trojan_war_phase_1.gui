@@ -1,0 +1,88 @@
+﻿types bronze_gui_types {
+    
+    type situation_panel_base = window {
+        datacontext = "[SituationView.GetActiveSituation]"
+        size = { 500 1000 } 
+
+        blockoverride "situation_panel_content" {
+            vbox = {
+                layoutpolicy_horizontal = expanding
+                layoutpolicy_vertical = preferred
+                spacing = 15
+
+                # --- CARD 1: TROJAN WAR OVERVIEW ---
+                situation_card_expandable = {
+                    blockoverride "header_button_onclick" {
+                        onclick = "[LateralView.Vars.Toggle( 'trojan_war_overview_toggled' )]"
+                    }
+                    blockoverride "header_text" {
+                        text = "trojan_war_panel_header" 
+                    }
+                    blockoverride "header_icon" {
+                        texture = "gfx/interface/icons/situations/00_bronze_trojan_war_phase_1.dds"
+                    }
+                    blockoverride "bottom_content" {
+                        text_multi = {
+                            autoresize = yes
+                            multiline = yes
+                            maximumsize = { 450 -1 }
+                            text = "trojan_war_phase_1_desc" 
+                        }
+                    }
+                    blockoverride "bottom_content_onclick" {
+                        visible = "[LateralView.Vars.Exists( 'trojan_war_overview_toggled' )]"
+                    }
+                    blockoverride "icon_replace_visible_yes" {
+                        visible = "[LateralView.Vars.Exists( 'trojan_war_overview_toggled' )]"
+                    }
+                    blockoverride "icon_replace_visible_not" {
+                        visible = "[Not(LateralView.Vars.Exists( 'trojan_war_overview_toggled' ))]"
+                    }
+                }
+                # --- CARD 2: SITUATION ACTIONS ---
+                situation_card_expandable = {
+                    blockoverride "header_button_onclick" {
+                        onclick = "[LateralView.Vars.Toggle( 'trojan_war_actions_toggled' )]"
+                    }
+                    blockoverride "header_text" {
+                        text = "SITUATION_ACTIONS_HEADER"
+                    }
+                    blockoverride "header_icon" {
+                        texture = "gfx/interface/icons/flat_icons/military.dds"
+                    }
+                    blockoverride "bottom_content" {
+                        vbox = {
+                            layoutpolicy_horizontal = expanding
+                            layoutpolicy_vertical = preferred
+                            margin = { 10 10 }
+                            
+                            button_regular = {
+                                name = "my_test_button"
+                                size = { 150 40 }
+                                buttonText = "TEST BUTTON"
+                                onclick = "{}" 
+                            }
+                        }
+                    
+                    }
+                    blockoverride "bottom_content_onclick" {
+                        visible = "[LateralView.Vars.Exists( 'trojan_war_actions_toggled' )]"
+                    }
+                    blockoverride "icon_replace_visible_yes" {
+                        visible = "[LateralView.Vars.Exists( 'trojan_war_actions_toggled' )]"
+                    }
+                    blockoverride "icon_replace_visible_not" {
+                        visible = "[Not(LateralView.Vars.Exists( 'trojan_war_actions_toggled' ))]"
+                    }
+                }
+
+                expand = {}
+            }
+        }
+    }
+}
+
+
+situation_panel = {
+    using = situation_panel_base
+}
