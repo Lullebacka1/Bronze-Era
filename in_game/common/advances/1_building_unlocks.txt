@@ -143,6 +143,17 @@ temple_healing_sanctuary_advance = {
 	requires = temple_complex_advance
 }
 
+temple_court_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_building = temple_court
+
+	starting_technology_level = 3
+
+	requires = temple_complex_advance
+}
+
 # ###############################
 # TRADE BUILDINGS
 # ###############################

@@ -7,6 +7,15 @@
 	category = building_construction
 }
 
+bronze_age_temple_complex_construction = {
+	masonry = 3.0
+	lumber = 2.0
+	tools = 0.75
+	goods_gold = 0.5
+
+	category = building_construction
+}
+
 bronze_age_monument_construction = {
 	masonry = 5
 	lumber = 5
@@ -38,4 +47,11 @@ maintain_maintained_holloway_demand = {
 	sand = 0.02
 	lumber = 0.02
 	category = building_maintenance
+}
+
+bronze_religious_building_construction = {
+	lumber = 0.3
+	masonry = 0.7
+	pottery = 0.2
+	category = building_construction
 }

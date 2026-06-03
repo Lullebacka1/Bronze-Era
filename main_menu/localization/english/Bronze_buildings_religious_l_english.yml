@@ -17,6 +17,9 @@
   temple_healing_sanctuary: "Temple Healing Sanctuary"
   temple_healing_sanctuary_desc: "Dedicated healing spaces within temples provide care for the sick and injured, combining religious devotion with practical medical practices."
 
+  temple_court: "Temple Court"
+  temple_court_desc: "Attached to a major temple, the temple court serves as a center of arbitration, legal proceedings, oath-taking, and the resolution of disputes under sacred authority. Priests and magistrates oversee judgments, contracts, and customary law, making the court an important institution of governance as well as religion."
+
 # #########################################
 # PRODUCTION AND MAINTENANCE METHODS
 # #########################################
