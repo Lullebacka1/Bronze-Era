@@ -1,0 +1,46 @@
+frontier_post = {
+	
+	max_levels = 1
+	pop_type = soldiers
+	
+	category = defense_category
+	obsolete = stockade
+	
+	employment_size = stockade_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = no
+	megalopolis = no
+	
+	
+	build_time = small_fort_building
+
+	expensive = yes
+	
+	
+	
+	unique_production_methods = {
+	
+		frontier_post_maintenance = {
+			lumber = 0.1
+			weaponry = 0.03
+			tar = 0.02
+			category = building_maintenance
+		}
+	}
+	construction_demand = stockade_construction
+	
+
+	modifier = {
+		local_garrison_size = 0.15
+		local_unrest = -0.03
+		local_crown_estate_power = 0.1
+	}
+	
+	raw_modifier = {
+		fort_level = 1
+		local_laborers_desired_pop = 0.005
+		propagating_zone_of_control = yes
+	}
+}

@@ -36,6 +36,14 @@ mining_advance = {
 	can_extract_coal = yes
 }
 
+masonry_advance = {
+	age = age_1_traditions
+
+	requires = mining_advance
+
+	unlock_building = mason
+}
+
 ritual_sites_advance = {
 	age = age_1_traditions
 

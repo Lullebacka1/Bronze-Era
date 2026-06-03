@@ -10,7 +10,6 @@
 	starting_technology_level = 1
 	
 }
-
 ###############################
 # Industry Buildings
 ###############################
@@ -147,6 +146,44 @@ bronze_age_trade_posts_advance = {
 
 	requires = intercultural_relations_advance
 }
+
+# #########
+# FORTS
+# #########
+
+stockade_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_building = stockade
+
+	requires = settlements_advance
+	
+	starting_technology_level = 2
+}
+
+city_walls_advance = {
+	age = age_1_traditions
+	research_cost = 2
+
+	unlock_building = city_walls
+
+	requires = masonry_advance
+	
+	starting_technology_level = 3
+}
+
+frontier_post_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_building = frontier_post
+
+	requires = trade_caravans
+	
+	starting_technology_level = 3
+}
+
 
 # ###############################
 # # Basic Buildings
