@@ -91,7 +91,7 @@ tools_guild = {
 
 	build_time = guild_build_time
 
-	production_methods = {
+	possible_production_methods = {
 		tools_guild_stone_recipe
 		tools_guild_copper_recipe
 		tools_guild_bronze_recipe
@@ -155,7 +155,7 @@ weapon_guild = {
 
 	build_time = guild_build_time
 
-	production_methods = {
+	possible_production_methods = {
 		weapon_guild_stone_recipe
 		weapon_guild_copper_recipe
 		weapon_guild_bronze_recipe

@@ -1,9 +1,26 @@
+organized_units_advance =  {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_unit = a_axemen
+	unlock_unit = a_spearmen
+
+	requires = warrior_aristocracy_advance
+}
+
 simple_chariot_advance = {
 	age = age_1_traditions
 	research_cost = 1.5
 
 	allow = {
 		has_advance = horse_domestication_advance
+	}
+
+	potential = {
+		OR = {
+ 			can_research_advance = horse_domestication_advance
+ 			has_advance = horse_domestication_advance
+ 		}
 	}
 
 	requires = wheeled_transport_advance
@@ -13,13 +30,28 @@ simple_chariot_advance = {
 	starting_technology_level = 2
 }
 
-advanced_chariot_advance = {
+unlock_bowmen_advance = {
 	age = age_1_traditions
+	research_cost = 1.5
 
-	requires = spoked_wheel_advance
+	unlock_unit = a_neolithic_bowmen
 
-	unlock_unit = a_heavy_chariots
-	unlock_unit = a_light_chariots
+	starting_technology_level = 2
 
-	starting_technology_level = 3
+	requires = settlements_advance
+}
+
+composite_bow_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_unit = a_composite_bowmen
+
+	starting_technology_level = 4
+
+	allow = {
+		has_advance = unlock_bowmen_advance
+	}
+
+	requires = simple_chariot_advance
 }

@@ -1,8 +1,81 @@
-﻿a_light_chariot = {
+﻿a_bronze_age_1_traditions_light_infantry = {
+	copy_from = a_light_infantry
+	hide = yes
+	buildable = no
+	max_strength = 0.05
+	combat_power = 1
+
+	maintenance_demand =  early_infantry_maintenance
+	construction_demand = early_infantry_construction
+	age = "age_1_traditions"
+}
+
+a_bronze_age_1_traditions_heavy_infantry = {
+	copy_from = a_heavy_infantry
+	hide = yes
+	buildable = no
+	max_strength = 0.05
+	combat_power = 1
+
+
+	maintenance_demand =  early_infantry_maintenance
+	construction_demand = early_infantry_construction
+	age = "age_1_traditions"
+}
+
+a_bronze_age_1_traditions_light_cavalry = {
+	copy_from = a_light_cavalry
+	hide = yes
+
+	buildable = no
+	max_strength = 0.02
+	combat_power = 4
+
+
+	age = "age_1_traditions"
+}
+
+a_bronze_age_1_traditions_heavy_cavalry = {
+	copy_from = a_heavy_cavalry
+	hide = yes
+
+	buildable = no
+	max_strength = 0.02
+	combat_power = 4
+	age = "age_1_traditions"
+}
+
+a_bronze_age_1_traditions_auxiliary = {
+	category = army_auxiliary
+	hide = yes
+	buildable = no
+	max_strength = 0.05
+	combat_power = 0.25
+
+	age = "age_1_traditions"
+}
+
+a_bronze_age_1_traditions_artillery = {
+	category = army_artillery
+	hide = yes
+	buildable = no
+	max_strength = 0.1
+	combat_power = 2
+	
+	bombard_efficiency = 0.1
+	
+	artillery_barrage = 1
+
+	age = "age_1_traditions"
+}
+
+a_light_chariot = {
 	category = army_light_cavalry
 	buildable = no
 	empty = yes
 	hide = yes
+
+	max_strength = 0.02
 
 	impact = { 
 		jungle = 0.10
@@ -22,6 +95,8 @@ a_heavy_chariot = {
 	buildable = no
 	empty = yes
 	hide = yes
+
+	max_strength = 0.02
 	
 	impact = { 
 		jungle = 0.10
@@ -41,8 +116,7 @@ a_age_1_traditions_light_chariot = {
 	hide = yes
 
 	buildable = no
-	max_strength = 0.2
-	combat_power = 4
+	combat_power = 1
 
 
 	age = "age_1_traditions"
@@ -53,7 +127,6 @@ a_age_1_traditions_heavy_chariot = {
 	hide = yes
 
 	buildable = no
-	max_strength = 0.2
-	combat_power = 4
+	combat_power = 2
 	age = "age_1_traditions"
 }
