@@ -29,4 +29,6 @@
         NOT = { has_global_variable = "trojan_war_phase_1_Ended" } 
     }
     gui = "00_bronze_trojan_war_phase_1"
+
+    
 }

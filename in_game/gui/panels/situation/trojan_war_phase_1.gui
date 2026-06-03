@@ -1,11 +1,12 @@
 ﻿types bronze_gui_types {
     
     type situation_panel_base = window {
+        using = default_situation_panel
         datacontext = "[SituationView.GetActiveSituation]"
         size = { 500 1000 } 
 
-        blockoverride "situation_panel_content" {
-            vbox = {
+        blockoverride "content" {
+            vbox = { # MAIN VBOX (Start)
                 layoutpolicy_horizontal = expanding
                 layoutpolicy_vertical = preferred
                 spacing = 15
@@ -25,7 +26,7 @@
                         text_multi = {
                             autoresize = yes
                             multiline = yes
-                            maximumsize = { 450 -1 }
+                            maximumsize = { 450 150 }
                             text = "trojan_war_phase_1_desc" 
                         }
                     }
@@ -39,49 +40,44 @@
                         visible = "[Not(LateralView.Vars.Exists( 'trojan_war_overview_toggled' ))]"
                     }
                 }
-                # --- CARD 2: SITUATION ACTIONS ---
-                situation_card_expandable = {
-                    blockoverride "header_button_onclick" {
-                        onclick = "[LateralView.Vars.Toggle( 'trojan_war_actions_toggled' )]"
+              
+                # Buttons
+                vbox = { 
+                    layoutpolicy_horizontal = expanding
+                    layoutpolicy_vertical = preferred
+                   datacontext = "[GetScriptedGui('raid_on_anatolia_gui')]" 
+                    # BUTTON 1: Raid on Anatolia (Mycenaea Only)
+                    button_regular = {
+                        size = { 400 50 }
+                        text = "Raid on Anatolia" 
+                        
+                        
+                        visible = "[ScriptedGui.IsShown( GuidContext, GetPlayer )]"
+                        onclick = "[ScriptedGui.Execute( GuidContext, GetPlayer )]"
+                        enabled = "[ScriptedGui.IsValid( GuidContext, GetPlayer )]"
                     }
-                    blockoverride "header_text" {
-                        text = "SITUATION_ACTIONS_HEADER"
-                    }
-                    blockoverride "header_icon" {
-                        texture = "gfx/interface/icons/flat_icons/military.dds"
-                    }
-                    blockoverride "bottom_content" {
-                        vbox = {
-                            layoutpolicy_horizontal = expanding
-                            layoutpolicy_vertical = preferred
-                            margin = { 10 10 }
-                            
-                            button_regular = {
-                                name = "my_test_button"
-                                size = { 150 40 }
-                                buttonText = "TEST BUTTON"
-                                onclick = "{}" 
-                            }
-                        }
-                    
-                    }
-                    blockoverride "bottom_content_onclick" {
-                        visible = "[LateralView.Vars.Exists( 'trojan_war_actions_toggled' )]"
-                    }
-                    blockoverride "icon_replace_visible_yes" {
-                        visible = "[LateralView.Vars.Exists( 'trojan_war_actions_toggled' )]"
-                    }
-                    blockoverride "icon_replace_visible_not" {
-                        visible = "[Not(LateralView.Vars.Exists( 'trojan_war_actions_toggled' ))]"
+                }
+                vbox = { 
+                    layoutpolicy_horizontal = expanding
+                    layoutpolicy_vertical = preferred
+                    datacontext = "[GetScriptedGui('defend_coastline_gui')]"
+                    # BUTTON 2: Defend Coastline (All Other Countries)
+                    button_regular = {
+                        size = { 400 50 }
+                        text = "Defend coastline"
+                        
+                        
+                        visible = "[ScriptedGui.IsShown( GuidContext, GetPlayer )]"
+                        onclick = "[ScriptedGui.Execute( GuidContext, GetPlayer )]"
+                        enabled = "[ScriptedGui.IsValid( GuidContext, GetPlayer )]"
                     }
                 }
 
                 expand = {}
             }
-        }
+        } 
     }
 }
-
 
 situation_panel = {
     using = situation_panel_base
