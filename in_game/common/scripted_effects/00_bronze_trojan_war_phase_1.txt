@@ -1,6 +1,6 @@
 raid_on_anatolia_gui = {
 	is_shown = { #Mycenaea Only mabey other greeks
-		this = c:0001G #Mycenaea
+		root = c:0001G #Mycenaea
 		NOT = { has_global_variable = "trojan_war_phase_1_Ended" }
 	}
 	# what youll need to activate the effect of this action, e.g. manpower, treasury, cooldowns, etc.
@@ -48,9 +48,9 @@ raid_on_anatolia_gui = {
 }
 defend_coastline_gui = {
 	is_shown = {
-		NOT = { this = c:0001G }#Mycenaea
+		NOT = { root = c:0001G }#Mycenaea
 		OR = {	#enmy side of the event
-			this = c:WILUS #Wilusa	
+			root = c:WILUS #Wilusa	
 		}
 		NOT = { has_global_variable = "trojan_war_phase_1_Ended" }
 	}

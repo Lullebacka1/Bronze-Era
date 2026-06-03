@@ -6,12 +6,12 @@
         size = { 500 1000 } 
 
         blockoverride "content" {
-            vbox = { # MAIN VBOX (Start)
+            vbox = { # MAIN VBOX 
                 layoutpolicy_horizontal = expanding
                 layoutpolicy_vertical = preferred
                 spacing = 15
 
-                # --- CARD 1: TROJAN WAR OVERVIEW ---
+                # CARD 1: TROJAN WAR OVERVIEW 
                 situation_card_expandable = {
                     blockoverride "header_button_onclick" {
                         onclick = "[LateralView.Vars.Toggle( 'trojan_war_overview_toggled' )]"
@@ -39,7 +39,7 @@
                     blockoverride "icon_replace_visible_not" {
                         visible = "[Not(LateralView.Vars.Exists( 'trojan_war_overview_toggled' ))]"
                     }
-                }
+                } # trojan_war_overview_toggled is local varible
               
                 # Buttons
                 vbox = { 
