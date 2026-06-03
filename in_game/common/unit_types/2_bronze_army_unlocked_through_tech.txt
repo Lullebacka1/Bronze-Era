@@ -165,3 +165,12 @@ a_composite_bowmen = {
 	construction_demand = composite_bowmen_construction
 	gfx_tags = { composite_bowmen_tag medium_tag }
 }
+
+a_mustered_infantry = {
+	copy_from = a_age_1_traditions_light_infantry
+
+	buildable = no
+	levy = yes
+
+	gfx_tags = { light_tag }
+}

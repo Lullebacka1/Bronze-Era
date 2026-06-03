@@ -17,3 +17,6 @@
 
   a_composite_bowmen: "Composite Bowmen"
   a_composite_bowmen_desc: "Equipped with advanced composite bows, these skilled archers deliver accurate fire at longer ranges and with greater force than ordinary bowmen."
+
+  a_mustered_infantry: "Mustered Infantry"
+  a_mustered_infantry_desc: "Drawn from households obligated to provide military service, these warriors bring their own weapons and equipment when called upon by local chiefs and rulers. They lack the training of elite retainers but provide the manpower needed for larger campaigns."

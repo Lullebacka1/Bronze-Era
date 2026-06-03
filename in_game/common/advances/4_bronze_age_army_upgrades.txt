@@ -48,3 +48,47 @@ cut_and_thust_sword_advance = {
 
 	starting_technology_level = 4
 }
+
+military_record_keeping_advance = {
+	age = age_1_traditions
+
+	requires = organized_units_advance
+
+	army_reinforce_cost = -0.05
+	global_garrison_size_modifier = 0.10
+
+	starting_technology_level = 3
+
+}
+
+standardized_rations_advance = {
+	age = age_1_traditions
+
+	requires = military_record_keeping_advance
+
+	global_supply_limit_modifier = 0.1
+
+	starting_technology_level = 3
+}
+
+miltary_officials_advance = {
+	age = age_1_traditions
+
+	requires = standardized_rations_advance
+
+	hire_advisor_cost_modifier = -0.05
+	train_general_cost_modifier = -0.05
+	train_admiral_cost_modifier = -0.05
+
+	starting_technology_level = 3
+}
+
+levy_obligations_advance = {
+	age = age_1_traditions
+
+	requires = military_record_keeping_advance
+
+	unlock_levy = levy_a_mustered_infantry
+
+	starting_technology_level = 3
+}

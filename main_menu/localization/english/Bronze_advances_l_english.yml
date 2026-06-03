@@ -222,6 +222,9 @@
   cut_and_thust_sword_advance: "Cut-and-Thrust Swords"
   cut_and_thust_sword_advance_desc: "Advances in blade design produce versatile swords capable of both powerful cuts and effective thrusts. Favored by warrior elites and professional retainers, these weapons increase the effectiveness of infantry in close combat."
 
+  military_record_keeping_advance: "Military Administration"
+  military_record_keeping_advance_desc: "Scribes and officials begin maintaining records of warriors, supplies, obligations, and campaigns. Better administrative oversight allows rulers to provision armies more efficiently and sustain larger forces in the field."
+
   # ##############################
   # METALURGY
   # ##############################
