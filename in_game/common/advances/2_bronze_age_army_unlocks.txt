@@ -1,11 +1,9 @@
 organized_units_advance =  {
-	age = a_age_1_traditions
+	age = age_1_traditions
 	research_cost = 1.5
 
 	unlock_unit = a_axemen
 	unlock_unit = a_spearmen
-
-	starting_technology_level = 4
 
 	requires = warrior_aristocracy_advance
 }

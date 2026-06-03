@@ -178,6 +178,12 @@
  weaponry_maker_bronze_recipe_advance: "Bronze Weapons"
  weaponry_maker_bronze_recipe_advance_desc: "Weapons made of bronze are more durable and effective than those made of stone or copper, allowing for improved combat effectiveness."
 
+ iron_tools_maker_maintenance_advance: "Iron Toolsmithing"
+ iron_tools_maker_maintenance_advance_desc: "Mastery of ironworking allows craftsmen to produce durable tools from abundant iron ores, reducing dependence on costly bronze and expanding access to essential implements."
+
+ iron_weaponry_maker_maintenance_advance: "Iron Weaponsmithing"
+ iron_weaponry_maker_maintenance_advance_desc: "The spread of ironworking techniques enables the production of sturdy iron weapons on a larger scale, gradually transforming the equipment available to both warriors and rulers."
+
 # ##############################
 # MILITARY UNITS
 # ##############################
