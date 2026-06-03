@@ -118,7 +118,7 @@
  }
 
  # ###############################
- # TEMPLE WORKSHOPS TECH
+ # TEMPLE COMPLEX TECH
  # ###############################
 
  temple_scribes_advance = {
@@ -130,6 +130,17 @@
 	starting_technology_level = 2
 
 	requires = religious_texts_advance
+}
+
+temple_healing_sanctuary_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_building = temple_healing_sanctuary
+
+	starting_technology_level = 3
+
+	requires = temple_complex_advance
 }
 
 # ###############################

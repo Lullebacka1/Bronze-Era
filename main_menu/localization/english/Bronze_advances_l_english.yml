@@ -168,6 +168,12 @@
   royal_scribe_guild_advance: "Royal Scribes"
   royal_scribe_guild_advance_desc: "Scribes are highly skilled individuals who are trained in the art of writing and record-keeping. In Bronze Age societies, royal scribes played a crucial role in the administration of the palace economy, maintaining records of resources, transactions, and other important information. They were often associated with the royal court and contributed to the development of complex bureaucratic systems."
 
+  temple_healing_sanctuary_advance: "Sacred Healing Sanctuaries"
+  temple_healing_sanctuary_advance_desc: "Major temples establish dedicated sanctuaries where the sick seek divine aid, ritual purification, and treatment from priestly healers. These institutions become important centers of both spiritual and practical medicine."
+
+  medical_texts_advance: "Medical Texts"
+  medical_texts_advance_desc: "The development of medical texts in Bronze Age societies allowed for the recording and transmission of medical knowledge, including treatments, remedies, and surgical techniques. These texts often combined practical medical information with religious and spiritual beliefs, reflecting the holistic approach to health and healing."
+
   # ##########################
   # PRODUCTION METHODS
   # ##########################

@@ -190,7 +190,7 @@ temple_complex_advance = {
 	age = age_1_traditions
 	research_cost = 2.0
 
-	# unlock_building = temple_complex
+	unlock_building = temple_complex
 
 	requires = city_building_advance
 
