@@ -28,21 +28,3 @@ scribe_alphabetic_maintenance = {
 	requires = alphabet_script_advance
 }
 
-iron_tools_maker_maintenance_advance = {
-	age = age_1_traditions
-	
-	unlock_production_method = tools_maker_iron_recipe
-	unlock_production_method = tools_guild_iron_recipe
-	
-	requires = high_temp_furnace_advance
-}
-
-iron_weaponry_maker_maintenance_advance = {
-	age = age_1_traditions
-	
-	unlock_production_method = weaponry_maker_iron_recipe
-	unlock_production_method = weapon_guild_iron_recipe
-	
-	requires = high_temp_furnace_advance
-}
-
