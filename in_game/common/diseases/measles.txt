@@ -1,35 +1,38 @@
-measles = {
-	# Bronze Era active override: uncommon crowd disease among dense settlement networks.
-	potential = { always = yes }
-	monthly_spawn_chance = { value = 0.0006 }
-	monthly_resistance_reduction = 0.012
+﻿measles = {
+	# Bronze Era: disabled.
+	# Keep the vanilla key inert so vanilla references do not break, while the
+	# active Bronze Age disease set stays limited to vanilla-compatible entries.
+	potential = { always = no }
 
-	spawn = {
-	}
-
-	r0 = { value = 1.35 }
-	location_spread_threshold = { value = 0.06 }
-	calc_interval_days = 30
-	location_stagnation_chance = { value = 0.3 }
-	percentage_to_meet_their_fate_on_calc = { value = 0.007 }
-
-	location_modifier = {
-	}
-
-	mortality_rate = { value = 0.02 }
-	character_mortality_chance = { value = 0.0006 }
+	monthly_spawn_chance = { value = 0 }
+	spawn = { }
+	r0 = { value = 0 }
+	calc_interval_days = { 365 365 }
+	location_stagnation_chance = { value = 1 }
+	sub_unit_stagnation_chance = { value = 1 }
+	percentage_to_meet_their_fate_on_calc = { value = 0 }
+	location_modifier = { }
+	monthly_resistance_reduction = 0
+	mortality_rate = { value = 0 }
+	character_mortality_chance = { value = 0 }
+	on_spread_to_country = { }
 
 	map_color = {
 		lerp = {
-			min_color = rgb { 190 148 95 }
-			max_color = rgb { 145 82 40 }
+			min_color = rgb { 244 187 119 }
+			max_color = rgb { 252 136 0 }
 			factor = "disease_presence(scope:disease)"
 		}
 	}
+
 	secondary_map_color = {
 		if = {
-			limit = { disease_affects_pops_here = scope:disease }
-			value = rgb { 168 104 60 }
+			limit = {
+				disease_affects_pops_here = scope:disease
+			}
+			value = rgb { 100 120 188 }
 		}
 	}
+
+	location_spread_threshold = { value = 1 }
 }

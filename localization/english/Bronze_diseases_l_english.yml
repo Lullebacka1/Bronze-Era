@@ -1,0 +1,3 @@
+﻿l_english:
+ BRONZE_DISEASES_DISABLED_TITLE: "Disease System Paused"
+ BRONZE_DISEASES_DISABLED_DESC: "Disease outbreaks are temporarily disabled in Bronze Era while the disease interface crash is isolated. Vanilla disease definitions remain present, but no new outbreaks should spawn at game start."

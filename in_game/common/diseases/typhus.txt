@@ -1,35 +1,36 @@
-typhus = {
-	# Bronze Era active override: famine, war, and crowded settlements can still produce outbreaks.
-	potential = { always = yes }
-	monthly_spawn_chance = { value = 0.001 }
-	monthly_resistance_reduction = 0.015
+﻿typhus = {
+	# Bronze Era: disabled.
+	# Keep the vanilla key inert so vanilla references do not break, while the
+	# active Bronze Age disease set stays limited to vanilla-compatible entries.
+	potential = { always = no }
 
-	spawn = {
-	}
-
-	r0 = { value = 1.2 }
-	location_spread_threshold = { value = 0.05 }
-	calc_interval_days = 30
-	location_stagnation_chance = { value = 0.35 }
-	percentage_to_meet_their_fate_on_calc = { value = 0.006 }
-
-	location_modifier = {
-	}
-
-	mortality_rate = { value = 0.018 }
-	character_mortality_chance = { value = 0.0005 }
+	monthly_spawn_chance = { value = 0 }
+	spawn = { }
+	r0 = { value = 0 }
+	calc_interval_days = { 365 365 }
+	location_stagnation_chance = { value = 1 }
+	sub_unit_stagnation_chance = { value = 1 }
+	percentage_to_meet_their_fate_on_calc = { value = 0 }
+	location_modifier = { }
+	monthly_resistance_reduction = 0
+	mortality_rate = { value = 0 }
+	character_mortality_chance = { value = 0 }
+	on_spread_to_country = { }
 
 	map_color = {
 		lerp = {
-			min_color = rgb { 152 143 120 }
-			max_color = rgb { 91 83 68 }
+			min_color = rgb { 211 157 128 }
+			max_color = rgb { 129 47 3 }
 			factor = "disease_presence(scope:disease)"
 		}
 	}
+
 	secondary_map_color = {
 		if = {
-			limit = { disease_affects_pops_here = scope:disease }
-			value = rgb { 110 99 78 }
+			limit = {
+				disease_affects_pops_here = scope:disease
+			}
+			value = rgb { 100 120 188 }
 		}
 	}
 }
