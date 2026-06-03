@@ -243,6 +243,22 @@
   levy_obligations_advance: "Levy Obligations"
   levy_obligations_advance_desc: "Military service becomes a recognized duty owed by households and communities to their rulers and nobles, providing a dependable source of manpower during times of war."
 
+  # ##############
+  # NAVY
+  # ##############
+
+  braided_sail_advance: "Braided Sails"
+  braided_sail_advance_desc: "Advances in weaving and rope-making produce stronger, more durable sails capable of harnessing the wind more effectively. Ships travel faster and more reliably across long distances."
+
+  unlock_long_boat_advance: "Longboats"
+  unlock_long_boat_advance_desc: "Long, narrow vessels designed for speed and versatility become common along coasts and rivers. Combining oars and sails, they excel at transport, raiding, reconnaissance, and warfare."
+
+  mortise_and_tenon_advance: "Mortise-and-Tenon Joinery"
+  mortise_and_tenon_advance_desc: "Shipwrights strengthen hulls through interlocking wooden joints that improve durability and simplify the construction of larger seagoing vessels."
+
+  unlock_round_ship_advance: "Round Ships"
+  unlock_round_ship_advance_desc: "Broad-beamed merchant vessels capable of carrying substantial cargo transform maritime trade. Though slower than warships, their capacity makes them indispensable for long-distance commerce."
+
   # ##############################
   # METALURGY
   # ##############################
