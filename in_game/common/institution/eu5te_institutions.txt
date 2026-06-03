@@ -106,11 +106,18 @@ banking = {
 
 bronze_large_libraries = {
     age = age_5_absolutism
-
+	can_spawn = { always = no }
+    location = cairo # Bronze Era fallback; future institution, disabled at start.
+    promote_chance = { value = 0 }
+    spread = { value = 0 }
 }
 
 bronze_professional_armies = {
     age = age_5_absolutism
+	can_spawn = { always = no }
+    location = cairo # Bronze Era fallback; future institution, disabled at start.
+    promote_chance = { value = 0 }
+    spread = { value = 0 }
 }
 
 bronze_routes = {
@@ -128,6 +135,18 @@ bronze_routes = {
         	location_rank = location_rank:megalopolis
         }
         dominant_culture = owner.culture
+    }
+    location = cairo # fallback for when no valid spawn location is found
+    promote_chance = {
+    	add = {
+    		value = average_location_literacy
+    	}
+    	add = {
+    		if = {
+    			limit = { is_port = yes }
+    			value = 5
+    		}
+    	}
     }
     spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_early
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
@@ -155,6 +174,16 @@ chariot_warfare = {
         }
         dominant_culture = owner.culture
     }
+    location = cairo # fallback for when no valid spawn location is found
+    promote_chance = {
+    	add = {
+    		value = num_pop_type:nobles
+    		multiply = 10
+    	}
+    	add = {
+    		value = average_location_literacy
+    	}
+    }
     spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_early
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     spread_from_any_import = institution_trade_spread_value_early
@@ -167,12 +196,20 @@ chariot_warfare = {
 
 classical_philosophy = {
     age = age_4_reformation
+	can_spawn = { always = no }
+    location = athens # Bronze Era fallback; later Greek institution.
+    promote_chance = { value = 0 }
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+    spread = { value = 0 }
 }
 
 commercial_counters = {
     age = age_2_renaissance
+	can_spawn = { always = no }
+    location = sidon # Bronze Era fallback; future trade institution.
+    promote_chance = { value = 0 }
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+    spread = { value = 0 }
 }
 
 confessionalism = {
@@ -353,6 +390,10 @@ global_trade = {
 
 hellenistic_cosmopolitanism = {
     age = age_5_absolutism
+	can_spawn = { always = no }
+    location = alexandria # Bronze Era fallback; future institution.
+    promote_chance = { value = 0 }
+    spread = { value = 0 }
 }
 
 hoplite_phalanx = {
@@ -370,7 +411,20 @@ hoplite_phalanx = {
         }
         dominant_culture = owner.culture
     }
+    location = athens # fallback for when no valid spawn location is found
+    promote_chance = {
+    	add = {
+    		value = num_pop_type:nobles
+    		multiply = 10
+    	}
+    }
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+    spread_from_any_import = institution_trade_spread_value_early
+    spread_from_any_export = institution_trade_spread_value_early
+    spread_from_was_possible_spawn = institution_spread_from_was_possible_spawn_early
+    spread_scale_on_control_if_owner_embraced = 2
+    spread_embraced_to_capital = institution_total_embraced_to_capital_early
+    spread_to_market_member = institution_spread_to_market_member_early
 }
 
 imperial_administration = {
@@ -389,7 +443,23 @@ imperial_administration = {
         }
         dominant_culture = owner.culture
     }
+    location = cairo # fallback for when no valid spawn location is found
+    promote_chance = {
+    	add = {
+    		value = average_location_literacy
+    	}
+    	add = {
+    		value = num_pop_type:nobles
+    		multiply = 5
+    	}
+    }
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+    spread_from_any_import = institution_trade_spread_value_early
+    spread_from_any_export = institution_trade_spread_value_early
+    spread_from_was_possible_spawn = institution_spread_from_was_possible_spawn_early
+    spread_scale_on_control_if_owner_embraced = 2
+    spread_embraced_to_capital = institution_total_embraced_to_capital_early
+    spread_to_market_member = institution_spread_to_market_member_early
 }
 
 industrialization = {
@@ -457,7 +527,19 @@ iron_metallurgy = {
         }
         dominant_culture = owner.culture
     }
+    location = hatunsaray # fallback for when no valid spawn location is found
+    promote_chance = {
+    	add = {
+    		value = average_location_literacy
+    	}
+    }
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+    spread_from_any_import = institution_trade_spread_value_early
+    spread_from_any_export = institution_trade_spread_value_early
+    spread_from_was_possible_spawn = institution_spread_from_was_possible_spawn_early
+    spread_scale_on_control_if_owner_embraced = 2
+    spread_embraced_to_capital = institution_total_embraced_to_capital_early
+    spread_to_market_member = institution_spread_to_market_member_early
 }
 
 legalism = {
@@ -484,7 +566,11 @@ legalism = {
 
 legions = {
     age = age_6_revolutions
+	can_spawn = { always = no }
+    location = rome # Bronze Era fallback; future institution.
+    promote_chance = { value = 0 }
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+    spread = { value = 0 }
 }
 
 levee_en_masse = {
@@ -603,7 +689,11 @@ manufactories = {
 
 mediterranean_colonization = {
     age = age_3_discovery
+	can_spawn = { always = no }
+    location = sidon # Bronze Era fallback; later maritime institution.
+    promote_chance = { value = 0 }
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+    spread = { value = 0 }
 }
 
 meritocracy = {
@@ -756,6 +846,16 @@ palatial_economy = {
         }
         dominant_culture = owner.culture
     }
+    location = cairo # fallback for when no valid spawn location is found
+    promote_chance = {
+    	add = {
+    		value = average_location_literacy
+    	}
+    	add = {
+    		value = num_pop_type:nobles
+    		multiply = 5
+    	}
+    }
     spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_early
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
     spread_from_any_import = institution_trade_spread_value_early
@@ -780,6 +880,18 @@ phoenician_alphabet = {
         	location_rank = location_rank:megalopolis
         }
         dominant_culture = owner.culture
+    }
+    location = sidon # fallback for when no valid spawn location is found
+    promote_chance = {
+    	add = {
+    		value = average_location_literacy
+    	}
+    	add = {
+    		if = {
+    			limit = { is_port = yes }
+    			value = 5
+    		}
+    	}
     }
     spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_mid
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_mid
@@ -1078,12 +1190,20 @@ renaissance = {
 
 road_network = {
     age = age_6_revolutions
+	can_spawn = { always = no }
+    location = rome # Bronze Era fallback; future institution.
+    promote_chance = { value = 0 }
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+    spread = { value = 0 }
 }
 
 roman_law = {
     age = age_6_revolutions
+	can_spawn = { always = no }
+    location = rome # Bronze Era fallback; future institution.
+    promote_chance = { value = 0 }
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+    spread = { value = 0 }
 }
 
 scientific_revolution = {
@@ -1139,10 +1259,18 @@ scientific_revolution = {
 
 standardized_currency = {
     age = age_4_reformation
+	can_spawn = { always = no }
+    location = sidon # Bronze Era fallback; future institution.
+    promote_chance = { value = 0 }
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+    spread = { value = 0 }
 }
 
 tribal_migrations = {
     age = age_2_renaissance
+	can_spawn = { always = no }
+    location = rome # Bronze Era fallback; future migration institution.
+    promote_chance = { value = 0 }
     spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
+    spread = { value = 0 }
 }

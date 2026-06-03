@@ -1,0 +1,36 @@
+﻿great_pestilence = {
+	# Bronze Era: disabled.
+	# Keep the vanilla key inert so vanilla references do not break, but the
+	# medieval great pestilence cannot spawn in the Bronze Age setup.
+	potential = { always = no }
+
+	monthly_spawn_chance = { value = 0 }
+	spawn = { }
+	r0 = { value = 0 }
+	calc_interval_days = { 365 365 }
+	location_stagnation_chance = { value = 1 }
+	sub_unit_stagnation_chance = { value = 1 }
+	percentage_to_meet_their_fate_on_calc = { value = 0 }
+	location_modifier = { }
+	monthly_resistance_reduction = 0
+	mortality_rate = { value = 0 }
+	character_mortality_chance = { value = 0 }
+	on_spread_to_country = { }
+
+	map_color = {
+		lerp = {
+			min_color = rgb { 95 80 74 }
+			max_color = rgb { 48 38 34 }
+			factor = "disease_presence(scope:disease)"
+		}
+	}
+
+	secondary_map_color = {
+		if = {
+			limit = {
+				disease_affects_pops_here = scope:disease
+			}
+			value = rgb { 100 120 188 }
+		}
+	}
+}

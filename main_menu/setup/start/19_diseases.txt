@@ -1,7 +1,7 @@
 disease_outbreak_manager = {
     #Example for adding some endemic resistance
     #add_disease_resistance = {
-    #    type = bubonic_plague
+    #    type = smallpox
     #    resistance = 1
     #    regions = { south_german_region north_german_region }
     #    areas = { alsace_area lorraine_area }

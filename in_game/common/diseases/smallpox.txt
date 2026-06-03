@@ -1,35 +1,117 @@
-smallpox = {
-	# Bronze Era active override: rare epidemic outbreaks remain possible.
-	potential = { always = yes }
-	monthly_spawn_chance = { value = 0.0004 }
-	monthly_resistance_reduction = 0.012
+﻿smallpox = { # Vanilla smallpox ID, narrowed for Bronze Age dense networks.
+	# Bronze Era temporary safety switch:
+	# Keep the vanilla disease ID valid, but prevent automatic outbreaks while
+	# the Geopolitics disease menu crash is being isolated.
+	potential = { always = no }
+
+	monthly_spawn_chance = {
+		# Rare but dangerous in the Bronze Age setup.
+		value = 0
+	}
 
 	spawn = {
 	}
 
-	r0 = { value = 1.3 }
-	location_spread_threshold = { value = 0.06 }
-	calc_interval_days = 30
-	location_stagnation_chance = { value = 0.28 }
-	percentage_to_meet_their_fate_on_calc = { value = 0.009 }
+	r0 = {
+		if = {
+			limit = {
+				location_rank ?= location_rank:rural_settlement
+			}
+			value = { 2 4 }
+		}
+		else_if = {
+			limit = {
+				location_rank ?= location_rank:town
+			}
+			value = { 4 8 }
+		}
+		else = {
+			value = { 8 12 }
+		}
 
-	location_modifier = {
+		if = {
+			limit = {
+				OR = {
+					is_capital = yes
+					has_building_with_at_least_one_level = market_village
+					has_building_with_at_least_one_level = marketplace
+					has_building_with_at_least_one_level = slave_market
+					has_building_with_at_least_one_level = entrepot
+					has_building_with_at_least_one_level = trading_hub
+					has_building_with_at_least_one_level = stock_exchange
+				}
+			}
+			multiply = 1.2
+		}
+		multiply = {
+			value = "disease_presence(scope:disease)"
+			multiply = 2
+			add = 1
+		}
 	}
 
-	mortality_rate = { value = 0.035 }
-	character_mortality_chance = { value = 0.001 }
+	calc_interval_days = { 3 9 }
+
+	location_stagnation_chance = {
+		if = {
+			limit = {
+				"disease_presence(scope:disease)" > 0.05
+			}
+			value = "distance_to_squared(scope:disease.origin)"
+			multiply = 0.0006
+			multiply = 0.005
+		}
+		else = {
+			value = "distance_to_squared(scope:disease.origin)"
+			multiply = 0.00006
+		}
+	}
+
+	percentage_to_meet_their_fate_on_calc = {
+		value = 0.25
+	}
+
+	location_modifier = {
+		local_population_growth = -0.006
+		local_forced_attrition = 1
+		max_attrition = 2
+		local_monthly_control = -0.001
+		local_monthly_development = -0.005
+	}
+
+	monthly_resistance_reduction = 0.001
+
+	mortality_rate = {
+		# Keep a direct range here. The disease panel reads this value for
+		# display, and nested script-value ranges can crash the vanilla view.
+		0.05 0.25
+	}
+
+	character_trait = smallpox_trait
+
+	character_mortality_chance = {
+		value = 0.04
+		multiply = "disease_presence(scope:disease)"
+	}
+
+	on_spread_to_country = {
+		trigger_event_non_silently = diseases.1
+	}
 
 	map_color = {
 		lerp = {
-			min_color = rgb { 188 125 118 }
-			max_color = rgb { 130 54 51 }
+			min_color = rgb { 133 195 136 }
+			max_color = rgb { 2 120 9 }
 			factor = "disease_presence(scope:disease)"
 		}
 	}
+
 	secondary_map_color = {
 		if = {
-			limit = { disease_affects_pops_here = scope:disease }
-			value = rgb { 158 75 70 }
+			limit = {
+				disease_affects_pops_here = scope:disease
+			}
+			value = rgb { 100 120 188 }
 		}
 	}
 }

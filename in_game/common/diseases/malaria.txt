@@ -1,24 +1,133 @@
-malaria = {
-	# Bronze Era active override: endemic fever can appear in river valleys, marshes, and warm lowlands.
-	potential = { always = yes }
-	monthly_spawn_chance = { value = 0.001 }
-	monthly_resistance_reduction = 0.02
+﻿malaria = { # Bronze Era adaptation of the vanilla environmental fever.
+	# Bronze Era temporary safety switch:
+	# Keep the vanilla disease ID valid, but prevent automatic outbreaks while
+	# the Geopolitics disease menu crash is being isolated.
+	potential = { always = no }
+
+	monthly_spawn_chance = {
+		# Malaria is endemic and appears through environmental infection.
+		value = 0
+	}
 
 	spawn = {
 	}
 
-	r0 = { value = 1.05 }
-	environmental_infection = { value = 0.035 }
-	location_spread_threshold = { value = 0.04 }
-	calc_interval_days = 30
-	location_stagnation_chance = { value = 0.2 }
-	percentage_to_meet_their_fate_on_calc = { value = 0.006 }
+	monthly_resistance_reduction = 0
 
-	location_modifier = {
+	r0 = {
+		# Mosquito-borne; it does not spread person-to-person.
+		value = 0
 	}
 
-	mortality_rate = { value = 0.018 }
-	character_mortality_chance = { value = 0.00045 }
+	environmental_infection = {
+		value = 0
+
+		# Warm river agriculture and wetlands are dangerous; true deserts,
+		# mountains and northern cold climates remain poor malaria ground.
+		if = {
+			limit = {
+				OR = {
+					climate = subtropical
+					climate = tropical
+				}
+			}
+			multiply = 2
+		}
+		else_if = {
+			limit = { climate = mediterranean }
+			multiply = 1.15
+		}
+		else_if = {
+			limit = {
+				OR = {
+					climate = arid
+					climate = cold_arid
+				}
+			}
+			multiply = 0.75
+		}
+		else_if = {
+			limit = {
+				OR = {
+					climate = continental
+					climate = arctic
+				}
+			}
+			multiply = 0
+		}
+		else_if = {
+			limit = { climate = oceanic }
+			multiply = 0.2
+		}
+
+		if = {
+			limit = { topography = wetlands }
+			multiply = 3
+		}
+		else_if = {
+			limit = { topography = mountains }
+			multiply = 0
+		}
+
+		if = {
+			limit = { vegetation = farmland }
+			multiply = 1.4
+		}
+		else_if = {
+			limit = { vegetation = grasslands }
+			multiply = 0.9
+		}
+		else_if = {
+			limit = {
+				OR = {
+					vegetation = woods
+					vegetation = forest
+					vegetation = jungle
+				}
+			}
+			multiply = 1.1
+		}
+		else_if = {
+			limit = { vegetation = sparse }
+			multiply = 0.3
+		}
+		else_if = {
+			limit = { vegetation = desert }
+			multiply = 0
+		}
+	}
+
+	calc_interval_days = { 10 15 }
+
+	location_stagnation_chance = {
+		value = 0
+	}
+
+	percentage_to_meet_their_fate_on_calc = {
+		value = 1
+	}
+
+	location_modifier = {
+		local_population_growth = -0.004
+		local_manpower = -0.02
+		local_forced_attrition = 1
+		max_attrition = 2
+		local_monthly_development_modifier = -0.02
+	}
+
+	mortality_rate = {
+		# Keep a direct range here. The disease panel reads this value for
+		# display, and nested script-value ranges can crash the vanilla view.
+		0.03 0.12
+	}
+
+	character_mortality_chance = {
+		value = 0.04
+		multiply = "disease_presence(scope:disease)"
+	}
+
+	on_spread_to_country = {
+	}
 
 	map_color = {
 		lerp = {
@@ -27,9 +136,12 @@ malaria = {
 			factor = "disease_presence(scope:disease)"
 		}
 	}
+
 	secondary_map_color = {
 		if = {
-			limit = { disease_affects_pops_here = scope:disease }
+			limit = {
+				disease_has_outbreak_here = scope:disease
+			}
 			value = rgb { 91 116 52 }
 		}
 	}
