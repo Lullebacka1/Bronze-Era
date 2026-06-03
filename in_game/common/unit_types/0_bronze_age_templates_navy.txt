@@ -1,0 +1,31 @@
+n_neolithic_monoxylon = {
+	category = navy_light_ship
+	use_ship_names = no
+	buildable = no
+	maritime_presence = ship_neglible_maritime
+	movement_speed = 6
+	hull_size = 2
+	cannons = 1
+	crew_size = 0.015
+	blockade_capacity = 0.2
+
+	maintenance_demand =  light_ship_1_maintenance
+	construction_demand = light_ship_1_construction
+	age = "age_1_traditions"
+}
+
+n_bronze_age_roundboat = {
+	category = navy_transport
+	use_ship_names = yes
+	buildable = no
+	maritime_presence = ship_neglible_maritime
+	movement_speed = 5
+	hull_size = 9
+	cannons = 3
+	transport_capacity = 0.03
+	food_storage_per_strength = 15
+	crew_size = 0.020
+	maintenance_demand =  transport_1_maintenance
+	construction_demand = transport_1_construction
+	age = "age_1_traditions"
+}

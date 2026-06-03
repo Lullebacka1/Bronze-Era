@@ -1,0 +1,54 @@
+# n_monoxylon = {
+# 	copy_from = n_neolithic_monoxylon
+# 	age = "age_1_traditions"
+
+# 	upgrades_to = n_traditional_galley
+
+# 	mercenaries_per_location = {
+	# 	pop_type = tribesmen
+	# 	multiply = 0.02
+# 	}
+# }
+
+n_early_galley = {
+	copy_from = n_age_1_traditions_galley
+	age = "age_1_traditions"
+
+	crew_size = -0.01
+	cannons = -4
+	hull_size = -1
+	transport_capacity = 0.02
+
+	upgrades_to = n_long_boat
+
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.02
+	}
+}
+
+n_long_boat = {
+	copy_from = n_age_1_traditions_galley
+	age = "age_1_traditions"
+
+	transport_capacity = 0.04
+
+	upgrades_to = n_traditional_galley
+
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.02
+	}
+}
+
+n_round_ship = {
+	copy_from = n_bronze_age_roundboat
+	age = "age_1_traditions"
+
+	upgrades_to = n_traditional_galley
+
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.05
+	}
+}

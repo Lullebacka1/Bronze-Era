@@ -10,6 +10,10 @@ unlock_footmen_advance = {
 	
 	requires = iron_working
 
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
+
 }
 
 unlock_archers_advance = {
@@ -19,6 +23,10 @@ unlock_archers_advance = {
 	
 	requires = unlock_footmen_advance	
 
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
+
 
 }
 
@@ -27,6 +35,10 @@ unlock_feudal_levy_advance = {
 	unlock_levy = levy_a_feudal_levy
 	
 	requires = feudalism_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 unlock_men_at_arms_advance = {
@@ -45,6 +57,10 @@ unlock_men_at_arms_advance = {
 		} 
 	}
 
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
+
 }
 
 
@@ -53,6 +69,10 @@ unlock_crossbowmen_advance = {
 	unlock_unit = a_crossbowmen
 	
 	requires = armory_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 
 }
 
@@ -71,6 +91,10 @@ unlock_reformed_crusader_knights_advance = {
 		}
 	}
 
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
+
 }
 
 unlock_peasant_levy_advance = {
@@ -78,6 +102,10 @@ unlock_peasant_levy_advance = {
 	unlock_levy = levy_a_peasant_levy
 	
 	requires = medieval_military
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 
@@ -87,6 +115,10 @@ unlock_halberdiers_advance = {
 	
 	requires = training_fields_advance
 
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
+
 }
 
 unlock_early_arquebusiers_advance = {
@@ -95,6 +127,10 @@ unlock_early_arquebusiers_advance = {
 	
 	requires = matchlock_gun
 
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
+
 }
 
 unlock_matchlock_levy = {
@@ -102,6 +138,10 @@ unlock_matchlock_levy = {
 	unlock_levy = levy_a_matchlock_levy
 	
 	requires = unlock_early_arquebusiers_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 
@@ -112,6 +152,10 @@ unlock_arquebusiers_advance = {
 	
 	requires = flintlock_gun
 
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
+
 }
 
 unlock_pikemen_advance = {
@@ -119,6 +163,10 @@ unlock_pikemen_advance = {
 	unlock_unit = a_pikemen
 	
 	requires = barracks_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 
 }
 
@@ -128,6 +176,10 @@ unlock_flintlock_levy = {
 	unlock_levy = levy_a_flintlock_levy
 	
 	requires = unlock_arquebusiers_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 unlock_hunters_advance = {
@@ -136,6 +188,10 @@ unlock_hunters_advance = {
 	
 	
 	requires = military_revolution_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 unlock_musketeers_advance = {
@@ -144,6 +200,10 @@ unlock_musketeers_advance = {
 	
 	
 	requires = unlock_hunters_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 militiamen_advance = {
@@ -151,11 +211,19 @@ militiamen_advance = {
 	unlock_levy = levy_a_militiamen
 	
 	requires = unlock_musketeers_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 unlock_sharpshooters_advance = {
 	age = age_6_revolutions
 	unlock_unit = a_sharpshooters
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 	
 
 	requires = long_rifle
@@ -167,6 +235,10 @@ unlock_fusiliers_advance = {
 	
 
 	requires = conscription_center_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 unlock_grenadiers_advance = {
@@ -174,6 +246,10 @@ unlock_grenadiers_advance = {
 	unlock_unit = a_grenadiers
 
 	requires = conscription_center_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 
@@ -182,6 +258,10 @@ conscription_advance = {
 	unlock_levy = levy_conscripts
 	
 	requires = unlock_fusiliers_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 
@@ -194,6 +274,10 @@ unlock_horsemen_advance = {
 	unlock_unit = a_horsemen
 	
 	requires = horse_riding_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 	
 }
 
@@ -211,6 +295,10 @@ unlock_armored_horsemen_advance = {
 	}
 
 	requires = unlock_horsemen_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 	
 }
 
@@ -220,6 +308,10 @@ unlock_cavalry_advance = {
 	
 
 	requires = correct_box_advance_renaissance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 unlock_heavy_cavalry_advance = {
@@ -228,6 +320,10 @@ unlock_heavy_cavalry_advance = {
 	
 
 	requires = unlock_cavalry_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 
@@ -237,6 +333,10 @@ unlock_lancers_advance = {
 	
 
 	requires = training_fields_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 
@@ -247,6 +347,10 @@ unlock_light_lancers_advance = {
 	
 
 	requires = training_fields_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 
@@ -256,6 +360,10 @@ unlock_pistoleers_advance = {
 	
 
 	requires = flintlock_gun
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 unlock_heavy_lancers_advance = {
@@ -263,6 +371,10 @@ unlock_heavy_lancers_advance = {
 	unlock_unit = a_heavy_lancers
 	
 	requires = barracks_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 
@@ -274,6 +386,10 @@ unlock_hussars_advance = {
 
 
 	requires = regimental_camp_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 unlock_gallop_cavalry_advance = {
@@ -282,6 +398,10 @@ unlock_gallop_cavalry_advance = {
 	
 
 	requires = regimental_camp_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 unlock_light_dragoons_advance = {
@@ -290,6 +410,10 @@ unlock_light_dragoons_advance = {
 
 
 	requires = conscription_center_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 
@@ -302,6 +426,10 @@ unlock_cuirassiers_advance = {
 	
 
 	requires = unlock_light_dragoons_advance
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 }
 
 
@@ -315,13 +443,20 @@ unlock_houfnice_advance = {
 	
 	requires = cannon_maker_advance
 
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
+
 }
 
 
 unlock_falconet_advance = {
 	age = age_3_discovery
 	unlock_unit = a_falconet
-	
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 
 
 	requires = training_fields_advance
@@ -330,6 +465,10 @@ unlock_falconet_advance = {
 unlock_chambered_cannon_advance = {
 	age = age_4_reformation
 	unlock_unit = a_chambered_cannon
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 	
 
 	requires = assault_ability_reformation
@@ -339,6 +478,10 @@ unlock_chambered_cannon_advance = {
 unlock_royal_mortar_advance = {
 	age = age_5_absolutism
 	unlock_unit = a_royal_mortar
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 	
 
 	requires = regimental_camp_advance
@@ -347,6 +490,10 @@ unlock_royal_mortar_advance = {
 unlock_flying_battery_advance = {
 	age = age_6_revolutions
 	unlock_unit = a_flying_battery
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 	
 
 	requires = military_tactics_advance_6
@@ -360,6 +507,10 @@ unlock_flying_battery_advance = {
 unlock_supply_carts = {
 	age = age_2_renaissance
 	unlock_unit = a_supply_carts
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 	
 	requires = supply_depot_advance_age_2_renaissance
 
@@ -371,6 +522,10 @@ unlock_supply_carts = {
 unlock_supply_convoy = {
 	age = age_3_discovery
 	unlock_unit = a_supply_convoy
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 	
 
 	requires = training_fields_advance
@@ -379,6 +534,10 @@ unlock_supply_convoy = {
 unlock_baggage_train = {
 	age = age_4_reformation
 	unlock_unit = a_baggage_train
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 	
 	requires = recruitment_improvements_reformation
 }
@@ -388,12 +547,20 @@ unlock_wagon_train = {
 	age = age_5_absolutism
 	unlock_unit = a_wagon_train
 
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
+
 	requires = army_movement_speed_absolutism
 }
 
 unlock_logistics_corps = {
 	age = age_6_revolutions
 	unlock_unit = a_logistics_corps
+
+	potential = { 
+		has_or_had_tag = PREMODERN
+	}
 	
 	requires = corps_organisation
 }

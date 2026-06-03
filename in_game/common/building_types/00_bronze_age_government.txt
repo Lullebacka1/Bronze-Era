@@ -2,6 +2,7 @@ bronze_age_victory_stelae = {
 	is_foreign = no
 	pop_type = laborers
 	max_levels = 1
+	forbidden_for_estates = yes
 
 	category = government_category
 
