@@ -116,7 +116,7 @@ a_age_1_traditions_light_chariot = {
 	hide = yes
 
 	buildable = no
-	combat_power = 4
+	combat_power = 1
 
 
 	age = "age_1_traditions"
@@ -127,6 +127,6 @@ a_age_1_traditions_heavy_chariot = {
 	hide = yes
 
 	buildable = no
-	combat_power = 4
+	combat_power = 2
 	age = "age_1_traditions"
 }

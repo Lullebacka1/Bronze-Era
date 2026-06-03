@@ -8,3 +8,13 @@ advanced_chariot_advance = {
 
 	starting_technology_level = 3
 }
+
+unlock_swordsmen_advance = {
+	age = age_1_traditions
+
+	requires = cut_and_thust_sword_advance
+
+	unlock_unit = a_swordsmen
+
+	starting_technology_level = 4
+}

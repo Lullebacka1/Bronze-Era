@@ -37,3 +37,14 @@ efficient_chariot_construction_advance = {
 
 	starting_technology_level = 3
 }
+
+cut_and_thust_sword_advance = {
+	age = age_1_traditions
+
+	requires = organized_units_advance
+	
+	army_heavy_infantry_power = 0.1
+	army_light_infantry_power = 0.1
+
+	starting_technology_level = 4
+}

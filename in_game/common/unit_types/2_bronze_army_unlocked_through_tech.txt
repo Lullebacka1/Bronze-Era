@@ -17,7 +17,7 @@
 }
 
 a_simple_chariots = {
-	copy_from = a_light_chariot
+	copy_from = a_age_1_traditions_light_chariot
 	
 	
 	upgrades_to = a_heavy_chariots
@@ -59,6 +59,8 @@ a_light_chariots = {
 	
 	upgrades_to = a_heavy_chariots
 
+	strength_damage_done = 0.02
+
 	#root = location. Checks location_potential first so don't need that scripting in
 	mercenaries_per_location = {
 		pop_type = nobles
@@ -94,7 +96,7 @@ a_axemen = {
 
 	upgrades_to = a_footmen
 
-	strength_damage_taken = 0.01
+	strength_damage_taken = 0.02
 	strength_damage_done = 0.05
 
 	#root = location. Checks location_potential first so don't need that scripting in
@@ -105,6 +107,24 @@ a_axemen = {
 	
 	maintenance_demand = axemen_infantry_maintenance
 	construction_demand = axemen_infantry_construction
+}
+
+a_swordsmen = {
+	copy_from = a_bronze_age_1_traditions_heavy_infantry
+
+	upgrades_to = a_footmen
+
+	strength_damage_done = 0.02
+	initiative = 1
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+	
+	maintenance_demand = swordsmen_infantry_maintenance
+	construction_demand = swordsmen_infantry_construction
 }
 
 a_neolithic_bowmen = {
