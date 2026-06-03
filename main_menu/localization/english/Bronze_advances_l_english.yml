@@ -174,6 +174,9 @@
   medical_texts_advance: "Medical Texts"
   medical_texts_advance_desc: "The development of medical texts in Bronze Age societies allowed for the recording and transmission of medical knowledge, including treatments, remedies, and surgical techniques. These texts often combined practical medical information with religious and spiritual beliefs, reflecting the holistic approach to health and healing."
 
+  house_of_remedies_advance: "Houses of Remedies"
+  house_of_remedies_advance_desc: "Specialized healers establish dedicated centers for the preparation of medicines and treatment of injuries. Drawing on accumulated knowledge of plants, minerals, and practical medicine, these institutions represent an early step toward organized healthcare."
+
   # ##########################
   # PRODUCTION METHODS
   # ##########################

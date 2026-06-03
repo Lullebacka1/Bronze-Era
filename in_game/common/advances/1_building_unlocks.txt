@@ -170,7 +170,7 @@ stockade_advance = {
 
 	requires = settlements_advance
 	
-	starting_technology_level = 2
+	starting_technology_level = 1
 }
 
 city_walls_advance = {
@@ -195,6 +195,20 @@ frontier_post_advance = {
 	starting_technology_level = 3
 }
 
+# ################################
+# NEOLITHIC BUILDINGS
+# ################################
+
+house_of_remedies_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_building = house_of_remedies
+
+	requires = settlements_advance
+	
+	starting_technology_level = 1
+}
 
 # ###############################
 # # Basic Buildings
