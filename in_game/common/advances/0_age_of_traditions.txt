@@ -68,6 +68,24 @@ horse_domestication_advance = {
 
 	requires = animal_husbandry_advance
 
+	allow = { 
+		OR = {
+			original_capital ?= { continent = continent:europe }
+			original_capital ?= { continent = continent:asia }
+			original_capital ?= { sub_continent = sub_continent:north_africa }
+			original_capital ?= { sub_continent = sub_continent:west_africa }
+			
+			original_capital ?= {
+				market ?= { 
+					OR = {
+						is_produced_in_market = goods:horses 
+						is_traded_in_market = goods:horses 
+					}
+				} 
+			}
+		}
+	}
+
 	can_extract_horses = yes
 
 	starting_technology_level = 2
