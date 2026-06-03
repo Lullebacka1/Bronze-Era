@@ -1688,6 +1688,8 @@ marriage_law = {
 				is_country_religion_pagan = yes
 				religion = religion:hindu
 				culture = { has_culture_group = culture_group:indian_group }
+				government_type = government_type:tribe
+				has_reform = government_reform:pirate_brethren_reform
 			}
 		}
 		country_modifier = {

@@ -174,13 +174,6 @@ international_organization_manager = {
 			OLYMP
 		}
 
-		laws = {
-			recognized_high_wanax_policy
-			bronze_tribute_policy
-			shared_festivals_policy
-			palace_oaths_policy
-		}
-
 		variables = {
 			mycenaean_league_authority = 80
 		}

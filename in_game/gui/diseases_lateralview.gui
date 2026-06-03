@@ -1,0 +1,72 @@
+lateralview = {
+	name = "diseases_lateralview"
+	widgetid = "diseases_lateralview"
+
+	blockoverride "panel_header" {
+		using = geopolitics_header
+	}
+
+	blockoverride "panel_content" {
+		using = geopolitics_tabs
+
+		vbox = {
+			using = layoutpolicy_expanding
+			using = bg_main_inner_alt
+			using = window_main_tabs_margin_alt
+
+			widget = {
+				layoutpolicy_horizontal = expanding
+				size = { -1 56 }
+
+				icon = {
+					parentanchor = bottom
+					size = { 100% 40 }
+					using = button_main_tab_icon_texture
+					using = button_secondary_tab_alt_color
+
+					hbox = {
+						margin_top = 5
+
+						text_single = {
+							align = left|nobaseline
+							text = "CURRENT_OUTBREAKS_TAB"
+						}
+					}
+				}
+			}
+
+			vbox = {
+				using = layoutpolicy_expanding
+				using = bg_secondary_inner_alt
+				using = bg_secondary_inner_image_alt
+
+				widget = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+
+					vbox = {
+						using = bg_paper_card
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						margin = { 20 20 }
+						spacing = 12
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							align = center|nobaseline
+							text = "BRONZE_DISEASES_DISABLED_TITLE"
+						}
+
+						text_multi = {
+							layoutpolicy_horizontal = expanding
+							layoutpolicy_vertical = expanding
+							align = center
+							autoresize = no
+							text = "BRONZE_DISEASES_DISABLED_DESC"
+						}
+					}
+				}
+			}
+		}
+	}
+}
