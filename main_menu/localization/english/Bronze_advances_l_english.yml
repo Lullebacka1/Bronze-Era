@@ -234,6 +234,15 @@
   military_record_keeping_advance: "Military Administration"
   military_record_keeping_advance_desc: "Scribes and officials begin maintaining records of warriors, supplies, obligations, and campaigns. Better administrative oversight allows rulers to provision armies more efficiently and sustain larger forces in the field."
 
+  standardized_rations_advance: "Standardized Rations"
+  standardized_rations_advance_desc: "Established systems of provisioning ensure that warriors receive regular supplies during campaigns, allowing larger forces to remain in the field for longer periods."
+
+  miltary_officials_advance: "Military Officials"
+  miltary_officials_advance_desc: "Trusted retainers and experienced veterans take on permanent administrative and command duties, improving the coordination, training, and leadership of military forces."
+
+  levy_obligations_advance: "Levy Obligations"
+  levy_obligations_advance_desc: "Military service becomes a recognized duty owed by households and communities to their rulers and nobles, providing a dependable source of manpower during times of war."
+
   # ##############################
   # METALURGY
   # ##############################

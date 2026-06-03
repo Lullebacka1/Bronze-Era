@@ -12,6 +12,15 @@
   a_light_chariots: "Light Chariots"
   a_light_chariots_desc: "The backbone of mature chariot warfare, light chariots combine speed, maneuverability, and missile power to dominate open battlefields. Crewed by skilled warriors and drawn by trained horse teams, they excel at skirmishing, pursuit, and disrupting enemy formations."
 
+  a_spearmen: "Spearmen"
+  a_spearmen_desc: "Armed with long spears and simple shields, spearmen form disciplined defensive formations capable of holding the line against infantry, chariots, and cavalry. They are the backbone of many Bronze Age armies."
+
+  a_axemen: "Axemen"
+  a_axemen_desc: "Wielding heavy axes designed for brutal close combat, axemen excel at breaking enemy formations and overwhelming opponents through aggressive assaults. Their ferocity makes them valuable shock troops."
+
+  a_swordsmen: "Swordsmen"
+  a_swordsmen_desc: "Equipped with versatile cut-and-thrust swords, these warriors are trained for mobile close-quarters combat. They exploit gaps in enemy lines and adapt readily to the changing conditions of battle."
+
   a_neolithic_bowmen: "Bowmen"
   a_neolithic_bowmen_desc: "Armed with simple self bows, these archers provide ranged support and can harass enemies before close combat begins."
 
