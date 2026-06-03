@@ -184,13 +184,24 @@ stockade_advance = {
 	starting_technology_level = 1
 }
 
+town_walls_advance = {
+	age = age_1_traditions
+	research_cost = 2
+
+	unlock_building = town_walls
+
+	requires = masonry_advance
+	
+	starting_technology_level = 2
+}
+
 city_walls_advance = {
 	age = age_1_traditions
 	research_cost = 2
 
 	unlock_building = city_walls
 
-	requires = masonry_advance
+	requires = city_building_advance
 	
 	starting_technology_level = 3
 }

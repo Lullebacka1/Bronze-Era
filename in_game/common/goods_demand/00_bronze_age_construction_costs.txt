@@ -55,3 +55,15 @@ bronze_religious_building_construction = {
 	pottery = 0.2
 	category = building_construction
 }
+
+town_walls_construction = {
+	masonry = 2.5
+	
+	category = building_construction
+}
+
+bronze_city_walls_construction = {
+	masonry = 5.0
+	
+	category = building_construction
+}

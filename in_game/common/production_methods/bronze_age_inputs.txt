@@ -203,3 +203,19 @@ weapon_guild_iron_recipe = {
 	category = guild_input
 
 }
+
+town_walls_maintenance = {
+	masonry = 0.05
+	tools = 0.02
+	weaponry = 0.05
+	tar = 0.02
+	category = building_maintenance
+}
+
+bronze_city_walls_maintenance = {
+	masonry = 0.1
+	tools = 0.05
+	weaponry = 0.1
+	tar = 0.025
+	category = building_maintenance
+}

@@ -177,6 +177,9 @@
   house_of_remedies_advance: "Houses of Remedies"
   house_of_remedies_advance_desc: "Specialized healers establish dedicated centers for the preparation of medicines and treatment of injuries. Drawing on accumulated knowledge of plants, minerals, and practical medicine, these institutions represent an early step toward organized healthcare."
 
+  temple_court_advance: "Temple Courts"
+  temple_court_advance_desc: "As temple institutions expand, they increasingly serve as centers of arbitration, oath-taking, and legal judgment. Religious authorities oversee disputes, contracts, and customary law, extending sacred influence into the administration of society."
+
   # ##########################
   # PRODUCTION METHODS
   # ##########################
@@ -281,6 +284,9 @@
 
   stockade_advance: "Timber Fortifications"
   stockade_advance_desc: "Settled communities protect themselves with wooden palisades, ditches, and earthworks that provide a first line of defense against raiders and rival groups."
+
+  town_walls_advance: "Settlement Walls"
+  town_walls_advance_desc: "Masons and laborers construct defensive walls, gates, and supporting fortifications to protect settlements from raiders and rival communities."
 
   city_walls_advance: "Fortified Cities"
   city_walls_advance_desc: "Advances in masonry allow major settlements to surround themselves with imposing walls, transforming urban centers into strongholds of political, economic, and military power."
