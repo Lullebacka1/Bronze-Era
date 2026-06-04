@@ -1,34 +1,40 @@
-﻿trojan_war_phase_1 = {
-    monthly_spawn_chance = {
-        value = 1
-    }
-    can_start = {
-        current_date >= 5.1.1
-        NOT = { has_global_variable = "trojan_war_phase_1_started" }
-        NOT = { has_global_variable = "trojan_war_phase_1_Ended" }
-    } 
-    on_start = {
-        set_global_variable = { name = "trojan_war_phase_1_started" value = yes }
-    }
-    can_end = {
-        current_date >= 14.1.1
-        has_global_variable = "trojan_war_phase_1_started"
-        NOT = { has_global_variable = "trojan_war_phase_1_Ended" }
-    }
-    end_conditions = {
-        current_date >= 14.1.1
-    }
-    on_end = {
-        set_global_variable = { name = "trojan_war_phase_1_Ended" value = yes }
-    }
-    visible = {
-       OR = {
-        this  = c:0001G #Mycenaea
-        this  = c:WILUS #Wilusa
-       }
-        NOT = { has_global_variable = "trojan_war_phase_1_Ended" } 
-    }
-    gui = "00_bronze_trojan_war_phase_1"
+trojan_war_phase_1 = {
+	monthly_spawn_chance = {
+		value = 1
+	}
 
-    
+	can_start = {
+		current_date >= 5.1.1
+		NOT = { has_global_variable = "trojan_war_phase_1_started" }
+		NOT = { has_global_variable = "trojan_war_phase_1_ended" }
+	}
+
+	on_start = {
+		set_global_variable = { name = "trojan_war_phase_1_started" value = yes }
+	}
+
+	can_end = {
+		current_date >= 14.1.1
+		has_global_variable = "trojan_war_phase_1_started"
+		NOT = { has_global_variable = "trojan_war_phase_1_ended" }
+	}
+
+	end_conditions = {
+		current_date >= 14.1.1
+	}
+
+	on_end = {
+		set_global_variable = { name = "trojan_war_phase_1_ended" value = yes }
+	}
+
+	visible = {
+		OR = {
+			tag = 0001G # Mycenaea
+			tag = WILUS # Wilusa
+		}
+		NOT = { has_global_variable = "trojan_war_phase_1_ended" }
+	}
+
+	# EU5 situation panels are resolved from the situation key:
+	# in_game/gui/panels/situation/trojan_war_phase_1.gui
 }

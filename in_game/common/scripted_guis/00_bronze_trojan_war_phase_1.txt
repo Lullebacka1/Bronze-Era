@@ -1,0 +1,86 @@
+raid_on_anatolia_gui = {
+	scope = country
+
+	is_shown = {
+		tag = 0001G # Mycenaea
+		NOT = { has_global_variable = "trojan_war_phase_1_ended" }
+	}
+
+	is_valid = {
+		treasury >= 75
+		manpower >= 250
+		NOT = { has_variable = trojan_war_raid_on_anatolia_cooldown }
+	}
+
+	effect = {
+		set_global_variable = { name = "trojan_war_raid_toggled" value = yes }
+		set_variable = {
+			name = trojan_war_raid_on_anatolia_cooldown
+			value = yes
+			duration = { months = 6 }
+		}
+
+		random_list = {
+			80 = {
+				modifier = {
+					factor = 0.75
+					c:WILUS ?= { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				add_country_modifier = {
+					name = trojan_war_raid_on_anatolia_success
+					duration = { months = 12 }
+				}
+			}
+
+			20 = {
+				modifier = {
+					factor = 1.25
+					c:WILUS ?= { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				add_country_modifier = {
+					name = trojan_war_raid_on_anatolia_failed
+					duration = { months = 12 }
+				}
+			}
+		}
+
+		add_manpower = -250
+		add_treasury = -75
+	}
+
+	ai_is_valid = { always = no }
+}
+
+defend_coastline_gui = {
+	scope = country
+
+	is_shown = {
+		tag = WILUS # Wilusa
+		NOT = { has_global_variable = "trojan_war_phase_1_ended" }
+	}
+
+	is_valid = {
+		manpower >= 150
+		treasury >= 25
+		NOT = { has_variable = trojan_war_defend_coastline_cooldown }
+	}
+
+	effect = {
+		set_global_variable = { name = "trojan_war_defend_toggled" value = yes }
+		set_variable = {
+			name = trojan_war_defend_coastline_cooldown
+			value = yes
+			duration = { months = 6 }
+		}
+
+		add_country_modifier = {
+			name = anatolia_coastline_is_defend
+			duration = { months = 6 }
+		}
+
+		add_manpower = -150
+		add_treasury = -25
+	}
+
+	ai_is_valid = { always = no }
+}

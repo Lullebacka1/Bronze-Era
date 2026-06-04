@@ -1,84 +1,151 @@
-﻿types bronze_gui_types {
-    
-    type situation_panel_base = window {
-        using = default_situation_panel
-        datacontext = "[SituationView.GetActiveSituation]"
-        size = { 500 1000 } 
-
-        blockoverride "content" {
-            vbox = { # MAIN VBOX 
-                layoutpolicy_horizontal = expanding
-                layoutpolicy_vertical = preferred
-                spacing = 15
-
-                # CARD 1: TROJAN WAR OVERVIEW 
-                situation_card_expandable = {
-                    blockoverride "header_button_onclick" {
-                        onclick = "[LateralView.Vars.Toggle( 'trojan_war_overview_toggled' )]"
-                    }
-                    blockoverride "header_text" {
-                        text = "trojan_war_panel_header" 
-                    }
-                    blockoverride "header_icon" {
-                        texture = "gfx/interface/icons/situations/00_bronze_trojan_war_phase_1.dds"
-                    }
-                    blockoverride "bottom_content" {
-                        text_multi = {
-                            autoresize = yes
-                            multiline = yes
-                            maximumsize = { 450 150 }
-                            text = "trojan_war_phase_1_desc" 
-                        }
-                    }
-                    blockoverride "bottom_content_onclick" {
-                        visible = "[LateralView.Vars.Exists( 'trojan_war_overview_toggled' )]"
-                    }
-                    blockoverride "icon_replace_visible_yes" {
-                        visible = "[LateralView.Vars.Exists( 'trojan_war_overview_toggled' )]"
-                    }
-                    blockoverride "icon_replace_visible_not" {
-                        visible = "[Not(LateralView.Vars.Exists( 'trojan_war_overview_toggled' ))]"
-                    }
-                } # trojan_war_overview_toggled is local varible
-              
-                # Buttons
-                vbox = { 
-                    layoutpolicy_horizontal = expanding
-                    layoutpolicy_vertical = preferred
-                   datacontext = "[GetScriptedGui('raid_on_anatolia_gui')]" 
-                    # BUTTON 1: Raid on Anatolia (Mycenaea Only)
-                    button_regular = {
-                        size = { 400 50 }
-                        text = "Raid on Anatolia" 
-                        
-                        
-                        visible = "[ScriptedGui.IsShown( GuidContext, GetPlayer )]"
-                        onclick = "[ScriptedGui.Execute( GuidContext, GetPlayer )]"
-                        enabled = "[ScriptedGui.IsValid( GuidContext, GetPlayer )]"
-                    }
-                }
-                vbox = { 
-                    layoutpolicy_horizontal = expanding
-                    layoutpolicy_vertical = preferred
-                    datacontext = "[GetScriptedGui('defend_coastline_gui')]"
-                    # BUTTON 2: Defend Coastline (All Other Countries)
-                    button_regular = {
-                        size = { 400 50 }
-                        text = "Defend coastline"
-                        
-                        
-                        visible = "[ScriptedGui.IsShown( GuidContext, GetPlayer )]"
-                        onclick = "[ScriptedGui.Execute( GuidContext, GetPlayer )]"
-                        enabled = "[ScriptedGui.IsValid( GuidContext, GetPlayer )]"
-                    }
-                }
-
-                expand = {}
-            }
-        } 
-    }
-}
-
 situation_panel = {
-    using = situation_panel_base
+
+	blockoverride "situation_header_left" {
+		icon = {
+			size = { 32 32 }
+			texture = "gfx/interface/icons/situations/00_bronze_trojan_war_phase_1.dds"
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+
+			text_single = {
+				layoutpolicy_horizontal = expanding
+				fontsize = 13
+				text = "trojan_war_panel_phase"
+				default_format = "#subtle_name"
+			}
+
+			text_single = {
+				layoutpolicy_horizontal = expanding
+				fontsize = 13
+				text = "trojan_war_panel_phase_value"
+				default_format = "#Y"
+			}
+		}
+
+		expand = {}
+	}
+
+	blockoverride "situation_header_right" {
+		expand = {}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+
+			text_single = {
+				layoutpolicy_horizontal = expanding
+				align = right|nobaseline
+				fontsize = 13
+				text = "trojan_war_panel_escalation"
+				default_format = "#subtle_name"
+			}
+
+			text_single = {
+				layoutpolicy_horizontal = expanding
+				align = right|nobaseline
+				fontsize = 13
+				text = "trojan_war_panel_escalation_value"
+				default_format = "#R"
+			}
+		}
+
+		icon = {
+			size = { 32 32 }
+			texture = "gfx/interface/icons/flat_icons/geopolitics/privateer.dds"
+		}
+	}
+
+	blockoverride "situation_subheader_content" {}
+
+	blockoverride "situation_panel_main_content" {
+		situation_card_expandable = {
+			blockoverride "header_button_onclick" {
+				onclick = "[LateralView.Vars.Toggle( 'trojan_war_overview_toggled' )]"
+			}
+			blockoverride "header_text" {
+				text = "trojan_war_panel_header"
+			}
+			blockoverride "header_icon" {
+				texture = "gfx/interface/icons/situations/00_bronze_trojan_war_phase_1.dds"
+			}
+			blockoverride "bottom_content" {
+				text_multi = {
+					autoresize = no
+					multiline = yes
+					size = { 470 140 }
+					text = "trojan_war_phase_1_desc"
+				}
+			}
+			blockoverride "bottom_content_onclick" {
+				visible = "[LateralView.Vars.Exists( 'trojan_war_overview_toggled' )]"
+			}
+			blockoverride "icon_replace_visible_yes" {
+				visible = "[LateralView.Vars.Exists( 'trojan_war_overview_toggled' )]"
+			}
+			blockoverride "icon_replace_visible_not" {
+				visible = "[Not(LateralView.Vars.Exists( 'trojan_war_overview_toggled' ))]"
+			}
+		}
+	}
+
+	blockoverride "situation_panel_main_content_bottom" {
+		situation_card_expandable = {
+			blockoverride "header_button_onclick" {
+				onclick = "[LateralView.Vars.Toggle( 'trojan_war_actions_toggled' )]"
+			}
+			blockoverride "header_text" {
+				text = "trojan_war_actions_header"
+			}
+			blockoverride "header_icon" {
+				texture = "gfx/interface/icons/religious_doctrines/catholic/religious_actions.dds"
+			}
+			blockoverride "bottom_content" {
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = preferred
+					spacing = 8
+
+					vbox = {
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('raid_on_anatolia_gui')]"
+
+						button_regular = {
+							size = { 470 34 }
+							fontsize = 14
+							text = "trojan_war_raid_on_anatolia"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							on_action = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "raid_on_anatolia_effect_desc"
+						}
+					}
+
+					vbox = {
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('defend_coastline_gui')]"
+
+						button_regular = {
+							size = { 470 34 }
+							fontsize = 14
+							text = "trojan_war_defend_coastline"
+							visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							on_action = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "defend_coastline_effect_desc"
+						}
+					}
+				}
+			}
+			blockoverride "bottom_content_onclick" {
+				visible = "[LateralView.Vars.Exists( 'trojan_war_actions_toggled' )]"
+			}
+			blockoverride "icon_replace_visible_yes" {
+				visible = "[LateralView.Vars.Exists( 'trojan_war_actions_toggled' )]"
+			}
+			blockoverride "icon_replace_visible_not" {
+				visible = "[Not(LateralView.Vars.Exists( 'trojan_war_actions_toggled' ))]"
+			}
+		}
+	}
 }
