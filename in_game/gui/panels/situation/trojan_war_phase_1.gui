@@ -1,4 +1,4 @@
-situation_panel = {
+﻿situation_panel = {
 
 	blockoverride "situation_header_left" {
 		icon = {
@@ -12,14 +12,14 @@ situation_panel = {
 			text_single = {
 				layoutpolicy_horizontal = expanding
 				fontsize = 13
-				text = "trojan_war_panel_phase"
+				text = "trojan_war_panel_phase" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
 				default_format = "#subtle_name"
 			}
 
 			text_single = {
 				layoutpolicy_horizontal = expanding
 				fontsize = 13
-				text = "trojan_war_panel_phase_value"
+				text = "trojan_war_panel_phase_value" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
 				default_format = "#Y"
 			}
 		}
@@ -37,7 +37,7 @@ situation_panel = {
 				layoutpolicy_horizontal = expanding
 				align = right|nobaseline
 				fontsize = 13
-				text = "trojan_war_panel_escalation"
+				text = "trojan_war_panel_escalation" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
 				default_format = "#subtle_name"
 			}
 
@@ -45,7 +45,7 @@ situation_panel = {
 				layoutpolicy_horizontal = expanding
 				align = right|nobaseline
 				fontsize = 13
-				text = "trojan_war_panel_escalation_value"
+				text = "trojan_war_panel_escalation_value" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
 				default_format = "#R"
 			}
 		}
@@ -64,7 +64,7 @@ situation_panel = {
 				onclick = "[LateralView.Vars.Toggle( 'trojan_war_overview_toggled' )]"
 			}
 			blockoverride "header_text" {
-				text = "trojan_war_panel_header"
+				text = "trojan_war_panel_header" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
 			}
 			blockoverride "header_icon" {
 				texture = "gfx/interface/icons/situations/00_bronze_trojan_war_phase_1.dds"
@@ -74,7 +74,7 @@ situation_panel = {
 					autoresize = no
 					multiline = yes
 					size = { 470 140 }
-					text = "trojan_war_phase_1_desc"
+					text = "trojan_war_phase_1_desc" #is in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
 				}
 			}
 			blockoverride "bottom_content_onclick" {
