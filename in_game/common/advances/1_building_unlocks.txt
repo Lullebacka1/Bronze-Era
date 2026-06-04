@@ -118,7 +118,7 @@
  }
 
  # ###############################
- # TEMPLE WORKSHOPS TECH
+ # TEMPLE COMPLEX TECH
  # ###############################
 
  temple_scribes_advance = {
@@ -130,6 +130,28 @@
 	starting_technology_level = 2
 
 	requires = religious_texts_advance
+}
+
+temple_healing_sanctuary_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_building = temple_healing_sanctuary
+
+	starting_technology_level = 3
+
+	requires = temple_complex_advance
+}
+
+temple_court_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_building = temple_court
+
+	starting_technology_level = 3
+
+	requires = temple_complex_advance
 }
 
 # ###############################
@@ -159,6 +181,17 @@ stockade_advance = {
 
 	requires = settlements_advance
 	
+	starting_technology_level = 1
+}
+
+town_walls_advance = {
+	age = age_1_traditions
+	research_cost = 2
+
+	unlock_building = town_walls
+
+	requires = masonry_advance
+	
 	starting_technology_level = 2
 }
 
@@ -168,7 +201,7 @@ city_walls_advance = {
 
 	unlock_building = city_walls
 
-	requires = masonry_advance
+	requires = city_building_advance
 	
 	starting_technology_level = 3
 }
@@ -184,6 +217,20 @@ frontier_post_advance = {
 	starting_technology_level = 3
 }
 
+# ################################
+# NEOLITHIC BUILDINGS
+# ################################
+
+house_of_remedies_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	unlock_building = house_of_remedies
+
+	requires = settlements_advance
+	
+	starting_technology_level = 1
+}
 
 # ###############################
 # # Basic Buildings

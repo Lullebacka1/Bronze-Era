@@ -1,0 +1,308 @@
+@ratio = 1.5
+@height = 512
+@width = @[height*ratio]
+
+# Bronze Age country coats of arms.
+# These definitions use vanilla EU5 patterns and emblems only, so they can load
+# immediately without custom DDS assets. Optional bespoke DDS replacements are
+# documented in docs/bronze_age_coa_readme.md.
+
+bronze_age_EGY_coa = { # Egypt: Nile blue, royal gold, cobra and solar disk.
+	pattern = "pattern_solid.dds"
+	color1 = "blue_dark"
+	color2 = "yellow_mid"
+	color3 = "red_dark"
+
+	colored_emblem = {
+		texture = "ce_sun_radiant_simple.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.28 } scale = { 0.55 0.55 } }
+	}
+	colored_emblem = {
+		texture = "ce_snake_cobra.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.62 } scale = { 0.7 0.7 } }
+	}
+	colored_emblem = {
+		texture = "ce_lotus_simple.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.88 } scale = { 0.32 0.32 } }
+	}
+}
+
+bronze_age_HAT_coa = { # Hatti: Hittite red and gold with a double-headed eagle.
+	pattern = "pattern_border_thin.dds"
+	color1 = "red_dark"
+	color2 = "yellow_mid"
+	color3 = "black"
+
+	colored_emblem = {
+		texture = "ce_eagle_doubleheaded_wide.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.55 } scale = { 0.86 0.86 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.22 } scale = { 0.36 0.36 } }
+	}
+}
+
+bronze_age_MYC_coa = { # Mycenae: bronze-red palace power and paired lion guardians.
+	pattern = "pattern_solid.dds"
+	color1 = "red_dark"
+	color2 = "yellow_dark"
+	color3 = "brown_light"
+
+	colored_emblem = {
+		texture = "ce_lion_rampant_wide.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.38 0.53 } scale = { 0.48 0.68 } }
+	}
+	colored_emblem = {
+		texture = "ce_lion_rampant_wide.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.62 0.53 } scale = { -0.48 0.68 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.72 } scale = { 0.08 0.45 } }
+	}
+}
+
+bronze_age_TRO_coa = { # Troy/Wilusa: dark red and gold with a horse.
+	pattern = "pattern_horizontal_split_01.dds"
+	color1 = "red_dark"
+	color2 = "brown"
+	color3 = "yellow_mid"
+
+	colored_emblem = {
+		texture = "ce_horse_trippant.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.55 } scale = { 0.85 0.85 } }
+	}
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.86 } scale = { 0.35 0.28 } }
+	}
+}
+
+bronze_age_ASS_coa = { # Assyria: black, white and gold, with eagle and sun.
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow_mid"
+	color3 = "white"
+
+	colored_emblem = {
+		texture = "ce_sun_in_splendor.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.28 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_eagle_wide.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.5 0.64 } scale = { 0.8 0.8 } }
+	}
+}
+
+bronze_age_BAB_coa = { # Babylon: lapis-blue field, lion and Ishtar-style star.
+	pattern = "pattern_solid.dds"
+	color1 = "blue_dark"
+	color2 = "yellow_mid"
+	color3 = "white"
+
+	colored_emblem = {
+		texture = "ce_lion_passant_wide.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.58 } scale = { 0.86 0.86 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_08.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.25 } scale = { 0.32 0.32 } }
+	}
+}
+
+bronze_age_PHO_coa = { # Phoenicia: Tyrian purple, maritime trade and shell dye.
+	pattern = "pattern_solid.dds"
+	color1 = "tyrian"
+	color2 = "yellow_mid"
+	color3 = "cyan"
+
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.48 } scale = { 0.72 0.72 } }
+	}
+	colored_emblem = {
+		texture = "ce_conch_shell.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.78 } scale = { 0.28 0.28 } }
+	}
+}
+
+bronze_age_MIN_coa = { # Minoans: red and white, bull horns and double axe.
+	pattern = "pattern_solid.dds"
+	color1 = "red_dark"
+	color2 = "white"
+	color3 = "yellow_mid"
+
+	colored_emblem = {
+		texture = "ce_bulls_horns_affronted_shield.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.36 } scale = { 0.72 0.72 } }
+	}
+	colored_emblem = {
+		texture = "ce_axes_addorsed_shield.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.66 } scale = { 0.55 0.55 } }
+	}
+}
+
+bronze_age_LUK_coa = { # Lukka: sea green, bronze and Aegean raiding ships.
+	pattern = "pattern_horizontal_split_02.dds"
+	color1 = "indigo_green"
+	color2 = "blue_dark"
+	color3 = "yellow_dark"
+
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.52 } scale = { 0.8 0.8 } }
+	}
+	colored_emblem = {
+		texture = "ce_fish_okeane.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.82 } scale = { 0.32 0.32 } }
+	}
+}
+
+bronze_age_SEA_coa = { # Sea Peoples: dark sea field, raider helmet and ship sign.
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "blue_dark"
+	color3 = "yellow_dark"
+
+	colored_emblem = {
+		texture = "ce_helmet.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.38 } scale = { 0.58 0.58 } }
+	}
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.72 } scale = { 0.52 0.52 } }
+	}
+}
+
+bronze_age_NUB_coa = { # Nubia: gold, black and red, with bow and sun.
+	pattern = "pattern_vertical_split_01.dds"
+	color1 = "black"
+	color2 = "red_dark"
+	color3 = "yellow_mid"
+
+	colored_emblem = {
+		texture = "ce_bow_arrow.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.58 } scale = { 0.72 0.72 } }
+	}
+	colored_emblem = {
+		texture = "ce_african_sun.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.25 } scale = { 0.32 0.32 } }
+	}
+}
+
+bronze_age_ELA_coa = { # Elam: highland green and gold, mountain and star.
+	pattern = "pattern_solid.dds"
+	color1 = "green_pine"
+	color2 = "yellow_mid"
+	color3 = "white"
+
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.62 } scale = { 0.82 0.65 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_08_mena.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.24 } scale = { 0.32 0.32 } }
+	}
+}
+
+bronze_age_URU_coa = { # Urartu: red and pale stone, mountain fortress.
+	pattern = "pattern_border_thin.dds"
+	color1 = "red_dark"
+	color2 = "grey"
+	color3 = "yellow_mid"
+
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.58 } scale = { 0.82 0.68 } }
+	}
+	colored_emblem = {
+		texture = "ce_wampum_four_forts.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.29 } scale = { 0.34 0.34 } }
+	}
+}
+
+bronze_age_AHH_coa = { # Ahhiyawa: Achaean bronze, spear, helmet and lion.
+	pattern = "pattern_diagonal_split_01.dds"
+	color1 = "brown_light"
+	color2 = "red_dark"
+	color3 = "yellow_mid"
+	color4 = "black"
+
+	colored_emblem = {
+		texture = "ce_spear_head_random_small.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.35 0.5 } scale = { 0.75 0.75 } }
+		instance = { position = { 0.65 0.5 } scale = { -0.75 0.75 } }
+	}
+	colored_emblem = {
+		texture = "ce_helmet.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.5 0.38 } scale = { 0.48 0.48 } }
+	}
+	colored_emblem = {
+		texture = "ce_lion_head.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.5 0.74 } scale = { 0.28 0.28 } }
+	}
+}

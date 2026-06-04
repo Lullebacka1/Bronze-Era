@@ -90,6 +90,15 @@ indian_religion_group = {
 	allow_slaves_of_same_group = yes
 }
 
+# Vanilla-compatible group restored for the retained Hindu religion.
+# This keeps Hindu religious figures/UI logic valid without restoring
+# unrelated medieval or modern religions.
+dharmic = {
+	color = color_hindu
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
 african_religion_group = {
 	color = rgb { 174 126 77 }
 	convert_slaves_at_start = no

@@ -37,3 +37,40 @@ neolithic_granary = {
 
 	ai_forbid_shutdown = yes
 }
+
+house_of_remedies = {
+	is_foreign = no
+	pop_type = peasants
+
+	max_levels = 1
+	employment_size = tiny_rural_peasant_enhance_employment
+
+	category = infrastructure_category
+
+	rural_settlement = yes
+	town = no
+	city = no
+	megalopolis = no
+
+
+	build_time = rural_build_time
+
+	modifier = {
+		local_disease_resistance = 0.15
+	}
+
+	unique_production_methods = {
+		remedies_production = {
+			fiber_crops = 0.1
+			wild_game = 0.05
+
+			produced = medicaments
+			output = 0.3
+
+			category = guild_input
+		}
+	}
+
+
+	construction_demand = town_building_construction
+}

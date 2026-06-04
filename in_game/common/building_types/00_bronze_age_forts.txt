@@ -45,3 +45,93 @@ frontier_post = {
 		propagating_zone_of_control = yes
 	}
 }
+
+town_walls = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = soldiers
+	
+	category = defense_category
+	
+	employment_size = stockade_employment
+	
+	rural_settlement = no
+	town = yes
+	city = no
+	megalopolis = no
+	
+	
+	build_time = huge_unique_build_time
+
+	expensive = yes
+	
+	possible_production_methods = {
+		town_walls_maintenance
+	}
+	
+	construction_demand = town_walls_construction
+	
+
+	modifier = {
+		local_garrison_size = 1.0
+		local_defensive = 0.10
+		movement_cost = 0.2
+		local_unrest = -0.03
+	}
+
+	raw_modifier = {
+		minimum_fort_level = 1
+		propagating_zone_of_control = no
+	}
+
+	graphical_tags = { small_city_walls city_walls }
+}
+
+bronze_city_walls = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = soldiers
+	
+	category = defense_category
+	
+	employment_size = castle_employment
+	
+	rural_settlement = no
+	town = setup_only
+	city = yes
+	megalopolis = yes
+	
+	
+	build_time = huge_unique_build_time
+
+	expensive = yes
+	
+	possible_production_methods = {
+		bronze_city_walls_maintenance
+	}
+	
+	construction_demand = bronze_city_walls_construction
+	
+
+	modifier = {
+		local_garrison_size = 1.0
+		local_defensive = 0.25
+		blocks_vision_from_land = yes
+		blocks_vision_from_sea = yes
+		movement_cost = 0.2
+		local_unrest = -0.05
+		local_burghers_estate_power = 0.1
+		local_crown_estate_power = -0.1
+	}
+
+	market_center_modifier = {
+		local_trade_center_power = 0.1
+	}
+
+	raw_modifier = {
+		minimum_fort_level = 1
+		propagating_zone_of_control = no
+	}
+
+	graphical_tags = { small_city_walls city_walls }
+}

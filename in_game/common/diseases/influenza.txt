@@ -1,23 +1,112 @@
-influenza = {
-	# Bronze Era active override: recurring respiratory outbreaks remain possible.
-	potential = { always = yes }
-	monthly_spawn_chance = { value = 0.0015 }
-	monthly_resistance_reduction = 0.015
+﻿influenza = { # Bronze Era adaptation of the vanilla respiratory disease.
+	# Bronze Era temporary safety switch:
+	# Keep the vanilla disease ID valid, but prevent automatic outbreaks while
+	# the Geopolitics disease menu crash is being isolated.
+	potential = { always = no }
+
+	# Common seasonal epidemic. Winter, dense settlements, markets and sieges
+	# are the main Bronze Age outbreak environments.
+	monthly_spawn_chance = {
+		value = 0
+	}
 
 	spawn = {
 	}
 
-	r0 = { value = 1.25 }
-	location_spread_threshold = { value = 0.05 }
-	calc_interval_days = 30
-	location_stagnation_chance = { value = 0.35 }
-	percentage_to_meet_their_fate_on_calc = { value = 0.004 }
+	r0 = {
+		value = { 1 2 }
 
-	location_modifier = {
+		if = {
+			limit = {
+				OR = {
+					climate = continental
+					climate = cold_arid
+					winter_level = normal
+					winter_level = severe
+				}
+			}
+			multiply = 1.2
+		}
+		if = {
+			limit = {
+				OR = {
+					location_rank ?= location_rank:town
+					location_rank ?= location_rank:city
+					location_rank ?= location_rank:megalopolis
+					is_capital = yes
+				}
+			}
+			multiply = 1.15
+		}
+		if = {
+			limit = {
+				OR = {
+					has_building_with_at_least_one_level = market_village
+					has_building_with_at_least_one_level = marketplace
+					has_building_with_at_least_one_level = slave_market
+					has_building_with_at_least_one_level = entrepot
+					has_building_with_at_least_one_level = trading_hub
+					has_building_with_at_least_one_level = stock_exchange
+				}
+			}
+			multiply = 1.2
+		}
+		if = {
+			limit = { has_siege = yes }
+			multiply = 1.25
+		}
+		multiply = {
+			value = "disease_presence(scope:disease)"
+			multiply = 2
+			add = 1
+		}
 	}
 
-	mortality_rate = { value = 0.008 }
-	character_mortality_chance = { value = 0.00025 }
+	calc_interval_days = { 4 12 }
+
+	location_stagnation_chance = {
+		if = {
+			limit = {
+				"disease_presence(scope:disease)" > 0.05
+			}
+			value = "distance_to_squared(scope:disease.origin)"
+			multiply = 0.0006
+			multiply = 0.005
+		}
+		else = {
+			value = "distance_to_squared(scope:disease.origin)"
+			multiply = 0.00006
+		}
+	}
+
+	sub_unit_stagnation_chance = {
+		value = 0.25
+	}
+
+	percentage_to_meet_their_fate_on_calc = {
+		value = 0.25
+	}
+
+	location_modifier = {
+		local_population_growth = -0.002
+		local_manpower = -0.005
+		tax_income_efficiency = -0.005
+	}
+
+	monthly_resistance_reduction = 0.003
+
+	mortality_rate = {
+		value = 0.001
+	}
+
+	character_mortality_chance = {
+		value = 0.04
+		multiply = "disease_presence(scope:disease)"
+	}
+
+	on_spread_to_country = {
+		trigger_event_non_silently = diseases.1
+	}
 
 	map_color = {
 		lerp = {
@@ -26,9 +115,12 @@ influenza = {
 			factor = "disease_presence(scope:disease)"
 		}
 	}
+
 	secondary_map_color = {
 		if = {
-			limit = { disease_affects_pops_here = scope:disease }
+			limit = {
+				disease_affects_pops_here = scope:disease
+			}
 			value = rgb { 100 120 188 }
 		}
 	}

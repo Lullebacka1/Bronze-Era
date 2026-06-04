@@ -2,9 +2,15 @@
   neolithic_granary: "Household Granaries"
   neolithic_granary_desc: "Small communal and family granaries store seasonal harvests close to farms and villages, helping communities endure poor harvests, organize surplus food, and support larger permanent settlements. Their spread encourages more stable agriculture and strengthens local resilience during famine or hardship."
 
+  house_of_remedies: "House of Remedies"
+  house_of_remedies_desc: "A specialized center where healers prepare medicines, store medicinal ingredients, and treat the sick and injured. Drawing upon generations of practical knowledge, these institutions serve as hubs of early medical practice within growing settlements."
+
   # #######################
   # PRODUCTION METHODS
   # #######################
 
   neolithic_granary_maintenance: "Stored Harvests"
   neolithic_granary_maintenance_desc: "Granaries preserve grain and other foodstuffs in dedicated storage structures, protecting vital reserves from spoilage, pests, and seasonal shortages."
+
+  remedies_production: "Medicinal Preparations"
+  remedies_production_desc: "Healers gather herbs, minerals, oils, and other ingredients to create remedies for wounds, illnesses, and common ailments, preserving and expanding the community's medical knowledge."

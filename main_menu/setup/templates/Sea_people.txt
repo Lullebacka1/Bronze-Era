@@ -34,33 +34,4 @@ government = {
 		parliament_type = assembly
 	}
 
-	reforms = {
-		pirate_brethren_reform
-	}
-
-	laws = {
-		marriage_law = polygyny
-		heir_religion_law = heir_same_religion
-		distribution_of_power_law = dop_traditional_distribution_of_power
-		immigration_law = open_borders_law
-		maritime_law = smugglers_haven
-		piracy_law = state_piracy_policy
-		coin_laws = gold_and_silver_coins
-	}
-
-	privilege = {
-		# Nobility / war leaders
-		favor_the_elites
-		traditional_distribution
-
-		# Burghers / ports
-		building_rights
-		trade_monopolies
-		commercial_advisory_council
-		sponsored_maritime_contracts
-
-		# Commoners / crews
-		communal_lands
-		allow_hunting
-	}
 }

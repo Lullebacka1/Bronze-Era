@@ -28,31 +28,4 @@ government = {
 		parliament_type = assembly
 	}
 
-	laws = {
-		marriage_law = monogamous_marriage
-		heir_religion_law = heir_same_religion
-		distribution_of_power_law = dop_traditional_distribution_of_power
-		immigration_law = open_borders_law
-		coin_laws = gold_and_silver_coins
-	}
-	privilege = {
-		# Nobility
-		favor_the_elites
-
-		# Burghers
-		trade_monopolies
-		commercial_advisory_council
-		building_rights
-		sponsored_maritime_contracts
-
-		# Clergy
-		religious_advisory_council
-		temple_land_rights
-		state_supported_temples
-
-		#Commoners
-		communal_lands
-		allow_hunting
-	}
-
 }
