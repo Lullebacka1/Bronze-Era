@@ -13,8 +13,8 @@ age_1_traditions = {
 
 	goods_demand = {
 		global_liquor_pop_demand    = -0.75	# spirits rare — monastic/alchemical curiosity only
-		global_tobacco_pop_demand   = -0.75	# unknown outside Americas in Old World
-		global_coffee_pop_demand    = -0.5	# confined to East African/Yemeni monastic use
+		global_tobacco_pop_demand   = -1	# unknown outside Americas in Old World
+		global_coffee_pop_demand    = -1	# confined to East African/Yemeni monastic use
 		global_sugar_pop_demand     = -0.25	# luxury spice, very limited supply
 		global_tea_pop_demand       = -0.25	# confined to East Asia; negligible Old World demand
 	}
@@ -73,9 +73,9 @@ age_2_renaissance = {
 
 	goods_demand = {
 		global_liquor_pop_demand    = -0.5	# brandy appears in Italian cities; still marginal
-		global_tobacco_pop_demand   = -0.75	# still unknown in Old World
-		global_coffee_pop_demand    = -0.5	# same as Age 1
-		global_sugar_pop_demand     = -0.1	# Madeira/Canary Islands sugar beginning
+		global_tobacco_pop_demand   = -1	# still unknown in Old World
+		global_coffee_pop_demand    = -1	# same as Age 1
+		global_sugar_pop_demand     = -0.25	# Madeira/Canary Islands sugar beginning
 		global_tea_pop_demand       = -0.25	# same as Age 1
 	}
 
@@ -131,10 +131,10 @@ age_3_discovery = {
 
 	goods_demand = {
 		global_liquor_pop_demand    = 0		# aquavit in Scandinavia, brandy normalizing
-		global_tobacco_pop_demand   = -0.25	# introduced post-1492 but extremely rare
-		global_coffee_pop_demand    = -0.25	# spreading through Islamic world; not yet in Europe
-		global_sugar_pop_demand     = 0.25	# Atlantic island plantations; prices falling
-		global_tea_pop_demand       = -0.1	# Silk Road trickle to Middle East
+		global_tobacco_pop_demand   = -1	# introduced post-1492 but extremely rare
+		global_coffee_pop_demand    = -1	# spreading through Islamic world; not yet in Europe
+		global_sugar_pop_demand     = -0.25	# Atlantic island plantations; prices falling
+		global_tea_pop_demand       = -0.25	# Silk Road trickle to Middle East
 	}
 
 	war_score_from_battles = -0.05
@@ -191,10 +191,10 @@ age_4_reformation = {
 
 	goods_demand = {
 		global_liquor_pop_demand    = 0.5	# spirits culture spreading across Europe
-		global_tobacco_pop_demand   = 0.5	# tobacco craze sweeping Europe by 1530s–40s
-		global_coffee_pop_demand    = 0		# Ottoman coffee houses established
-		global_sugar_pop_demand     = 0.75	# Caribbean sugar revolution underway
-		global_tea_pop_demand       = 0		# reaching Europe via Portuguese; still a curiosity
+		global_tobacco_pop_demand   = 1	# tobacco craze sweeping Europe by 1530s–40s
+		global_coffee_pop_demand    = 1		# Ottoman coffee houses established
+		global_sugar_pop_demand     = -0.25		# Caribbean sugar revolution underway
+		global_tea_pop_demand       = -0.25		# reaching Europe via Portuguese; still a curiosity
 	}
 
 	war_score_from_battles = -0.1
@@ -265,10 +265,10 @@ age_5_absolutism = {
 
 	goods_demand = {
 		global_liquor_pop_demand    = 1.0	# gin, rum, cognac all established luxury goods
-		global_tobacco_pop_demand   = 1.0	# major plantation good; colonial economies built on it
-		global_coffee_pop_demand    = 0.5	# coffee houses in London, Paris, Amsterdam
-		global_sugar_pop_demand     = 1.25	# mass consumption in Europe
-		global_tea_pop_demand       = 0.5	# Dutch/English East India Company tea trade
+		global_tobacco_pop_demand   = -1.0	# major plantation good; colonial economies built on it
+		global_coffee_pop_demand    = -1	# coffee houses in London, Paris, Amsterdam
+		global_sugar_pop_demand     = 0.25	# mass consumption in Europe
+		global_tea_pop_demand       = 0.25	# Dutch/English East India Company tea trade
 	}
 
 	war_score_from_battles = -0.15
