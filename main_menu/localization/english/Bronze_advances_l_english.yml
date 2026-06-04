@@ -294,6 +294,9 @@
   frontier_post_advance: "Frontier Outposts"
   frontier_post_advance_desc: "Growing trade networks and territorial ambitions encourage the establishment of permanent outposts along roads, river crossings, and borderlands, extending the reach of rulers into distant regions."
 
+  royal_registry_advance: "Royal Registries"
+  royal_registry_advance_desc: "Palatial administrations develop dedicated systems for recording landholders, obligations, labor, and military service. These registries strengthen the ability of rulers to mobilize resources and manpower across their domains."
+
 # ###################
 # CULTURE SPECIFIC
 # ###################
