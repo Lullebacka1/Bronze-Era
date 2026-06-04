@@ -1,0 +1,110 @@
+# Bronze Age custom flag definitions.
+# These definitions do not overwrite vanilla files; they add new tag-specific
+# definitions for the Bronze Era total conversion.
+
+EGY = { # Egypt
+	flag_definition = { coa = bronze_age_EGY_coa priority = 10000 }
+}
+0002G = { # Local Bronze Era placeholder for Egypt.
+	flag_definition = { coa = bronze_age_EGY_coa priority = 10000 }
+}
+
+HAT = { # Hatti short tag, if used.
+	flag_definition = { coa = bronze_age_HAT_coa priority = 10000 }
+}
+HATTI = { # Local Bronze Era Hatti tag.
+	flag_definition = { coa = bronze_age_HAT_coa priority = 10000 }
+}
+
+MYC = { # Mycenae short tag, if used.
+	flag_definition = { coa = bronze_age_MYC_coa priority = 10000 }
+}
+0001G = { # Local Bronze Era Mycenae placeholder.
+	flag_definition = { coa = bronze_age_MYC_coa priority = 10000 }
+}
+
+TRO = { # Troy short tag, if used.
+	flag_definition = { coa = bronze_age_TRO_coa priority = 10000 }
+}
+WILUS = { # Local Wilusa/Troy tag.
+	flag_definition = { coa = bronze_age_TRO_coa priority = 10000 }
+}
+
+ASS = { # Assyria short tag, if used.
+	flag_definition = { coa = bronze_age_ASS_coa priority = 10000 }
+}
+ASYRI = { # Local Bronze Era Assyria tag.
+	flag_definition = { coa = bronze_age_ASS_coa priority = 10000 }
+}
+
+BAB = { # Babylon short tag, if used.
+	flag_definition = { coa = bronze_age_BAB_coa priority = 10000 }
+}
+KASSI = { # Local Kassite Babylonia / Babylonian sphere tag.
+	flag_definition = { coa = bronze_age_BAB_coa priority = 10000 }
+}
+
+PHO = { # Phoenicia short tag, if used.
+	flag_definition = { coa = bronze_age_PHO_coa priority = 10000 }
+}
+SIDON = { # Local Phoenician coastal city tag.
+	flag_definition = { coa = bronze_age_PHO_coa priority = 10000 }
+}
+ARWAD = { # Local Phoenician coastal city tag.
+	flag_definition = { coa = bronze_age_PHO_coa priority = 10000 }
+}
+
+MIN = { # Minoans short tag, if used.
+	flag_definition = { coa = bronze_age_MIN_coa priority = 10000 }
+}
+KNOSS = { # Local Knossos tag.
+	flag_definition = { coa = bronze_age_MIN_coa priority = 10000 }
+}
+KYDON = { # Local Kydonia tag.
+	flag_definition = { coa = bronze_age_MIN_coa priority = 10000 }
+}
+PHAIS = { # Local Phaistos tag.
+	flag_definition = { coa = bronze_age_MIN_coa priority = 10000 }
+}
+MALIA = { # Local Malia tag.
+	flag_definition = { coa = bronze_age_MIN_coa priority = 10000 }
+}
+ZAKRO = { # Local Zakros tag.
+	flag_definition = { coa = bronze_age_MIN_coa priority = 10000 }
+}
+
+LUK = { # Lukka short tag, if used.
+	flag_definition = { coa = bronze_age_LUK_coa priority = 10000 }
+}
+LUKKA = { # Local Bronze Era Lukka tag.
+	flag_definition = { coa = bronze_age_LUK_coa priority = 10000 }
+}
+
+SEA = { # Sea Peoples / maritime raiders.
+	flag_definition = { coa = bronze_age_SEA_coa priority = 10000 }
+}
+
+NUB = { # Nubia short tag, if used.
+	flag_definition = { coa = bronze_age_NUB_coa priority = 10000 }
+}
+
+ELA = { # Elam short tag, if used.
+	flag_definition = { coa = bronze_age_ELA_coa priority = 10000 }
+}
+ELAM = { # Local Bronze Era Elam tag.
+	flag_definition = { coa = bronze_age_ELA_coa priority = 10000 }
+}
+
+URU = { # Urartu short tag, if used.
+	flag_definition = { coa = bronze_age_URU_coa priority = 10000 }
+}
+URATU = { # Local Bronze Era Urartu tag.
+	flag_definition = { coa = bronze_age_URU_coa priority = 10000 }
+}
+
+AHH = { # Ahhiyawa short tag, if used.
+	flag_definition = { coa = bronze_age_AHH_coa priority = 10000 }
+}
+ACHAE = { # Local Achaea tag, tied to the Ahhiyawa/Achaean visual theme.
+	flag_definition = { coa = bronze_age_AHH_coa priority = 10000 }
+}
