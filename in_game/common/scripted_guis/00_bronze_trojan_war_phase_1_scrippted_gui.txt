@@ -7,8 +7,8 @@ raid_on_anatolia_gui = {
 	}
 
 	is_valid = {
-		treasury >= 75
-		manpower >= 250
+		Gold >= 50
+		manpower_pool >= 250
 		NOT = { has_variable = trojan_war_raid_on_anatolia_cooldown }
 	}
 
@@ -19,33 +19,36 @@ raid_on_anatolia_gui = {
 			value = yes
 			duration = { months = 6 }
 		}
-
+			# If the raid is successful, 80% chance, otherwise 20% chance for failure. Success chance is reduced if Wilusa has defended their coastline.
 		random_list = {
 			80 = {
 				modifier = {
 					factor = 0.75
-					c:WILUS ?= { has_country_modifier = anatolia_coastline_is_defend }
+					c:WILUS = { has_country_modifier = anatolia_coastline_is_defend }
 				}
 				add_country_modifier = {
 					name = trojan_war_raid_on_anatolia_success
-					duration = { months = 12 }
+					duration = { months = 12 }	
 				}
+				trigger_event_non_silently = {id = trojan_war_raid_on_anatolia_success}
 			}
 
 			20 = {
 				modifier = {
-					factor = 1.25
-					c:WILUS ?= { has_country_modifier = anatolia_coastline_is_defend }
+					factor = 2
+					c:WILUS = { has_country_modifier = anatolia_coastline_is_defend }
 				}
 				add_country_modifier = {
 					name = trojan_war_raid_on_anatolia_failed
 					duration = { months = 12 }
+					
 				}
+				trigger_event_non_silently = {id = trojan_war_raid_on_anatolia_failed}
 			}
 		}
 
-		add_manpower = -250
-		add_treasury = -75
+		add_manpower_pool = -250
+		add_gold = -50
 	}
 
 	ai_is_valid = { always = no }
@@ -60,8 +63,8 @@ defend_coastline_gui = {
 	}
 
 	is_valid = {
-		manpower >= 150
-		treasury >= 25
+		manpower_pool >= 150
+		Gold >= 25
 		NOT = { has_variable = trojan_war_defend_coastline_cooldown }
 	}
 
@@ -77,9 +80,9 @@ defend_coastline_gui = {
 			name = anatolia_coastline_is_defend
 			duration = { months = 6 }
 		}
-
-		add_manpower = -150
-		add_treasury = -25
+		trigger_event_non_silently = {id = anatolia_coastline_is_defend} 
+		add_manpower_pool = -150
+		add_gold = -25
 	}
 
 	ai_is_valid = { always = no }

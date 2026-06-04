@@ -1,0 +1,57 @@
+
+# Mycenae Outcomes
+trojan_war_raid_on_anatolia_success = {
+    type = country_event
+    title = trojan_war_raid_on_anatolia_success.t
+    desc = trojan_war_raid_on_anatolia_success.d
+    
+    
+    hidden = no 
+
+    option = {
+        name = trojan_war_raid_on_anatolia_success.a
+        add_gold = 100
+		add_prestige = 20                         
+        custom_flavor_text = "treasure_secured" 
+    }
+	option = {
+		name = trojan_war_raid_on_anatolia_success.b
+		add_gold = 150
+		custom_flavor_text = "treasure_secured"
+	}
+}
+
+trojan_war_raid_on_anatolia_failed = {
+    type = country_event
+    title = trojan_war_raid_on_anatolia_failed.t
+    desc = trojan_war_raid_on_anatolia_failed.d
+
+    hidden = no
+
+    option = {
+        name = trojan_war_raid_on_anatolia_failed.a
+        add_gold = - 10
+		add_manpower_pool = - 100					 
+		custom_flavor_text = "raid_failed"
+    }
+	option = {
+		name = trojan_war_raid_on_anatolia_failed.b
+		add_gold = - 20
+		add_manpower_pool = - 10					 
+		custom_flavor_text = "raid_failed"
+	}
+}
+
+# Wilusa / Anatolia Outcomes
+anatolia_coastline_is_defend = {
+	type = country_event
+	title = anatolia_coastline_is_defend.t
+	desc = anatolia_coastline_is_defend.d
+
+	hidden = no
+
+	option = {
+		name = anatolia_coastline_is_defend.a                       
+		custom_flavor_text = "coastline_defended" 
+	}
+}
