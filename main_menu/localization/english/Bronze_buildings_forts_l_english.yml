@@ -1,3 +1,17 @@
 ﻿l_english:
   frontier_post: "Frontier Outpost"
   frontier_post_desc: "A fortified outpost established along trade routes, borderlands, and strategic crossings. Garrisoned by loyal retainers and officials, it projects authority into distant regions, safeguards commerce, and serves as a base for patrols, messengers, and local administration."
+
+  town_walls: "Settlement Walls"
+  town_walls_desc: "Stone walls, gates, and defensive earthworks surround the settlement, providing protection against raiders and rival communities. Their construction reflects the growing permanence and prosperity of early towns.
+
+  bronze_city_walls: "City Walls"
+  bronze_city_walls_desc: "Monumental fortifications encircle the city with imposing walls, towers, and fortified gates maintained by centralized authorities. Beyond their defensive value, these structures proclaim the wealth, power, and organizational capacity of the urban state."
+
+  # GOODS DEMAND, PRODUCTION METHODS AND MAINTENANCE
+
+  town_walls_construction: "Settlement Walls Construction"
+  town_walls_construction_desc: "Masons and laborers construct defensive walls, gates, and supporting fortifications to protect settlements from raiders and rival communities."
+
+  bronze_city_walls_construction: "City Wall Construction"
+  bronze_city_walls_construction_desc: "The construction of massive urban fortifications requires extensive masonry work, large labor forces, and careful planning to defend major population centers and seats of power."

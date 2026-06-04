@@ -190,7 +190,7 @@ temple_complex_advance = {
 	age = age_1_traditions
 	research_cost = 2.0
 
-	# unlock_building = temple_complex
+	unlock_building = temple_complex
 
 	requires = city_building_advance
 
@@ -611,15 +611,6 @@ sailing_advance = {
 	unlock_unit = n_early_galley
 	
 	starting_technology_level = 3
-}
-
-maritime_transport_containers_advance = {
-	age = age_1_traditions
-	research_cost = 1.5
-
-	merchant_power_from_maritime = 0.025
-
-	requires = long_distance_trade_advance
 }
 
 intercultural_relations_advance = {

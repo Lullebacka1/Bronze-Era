@@ -11,6 +11,15 @@
   temple_scribes_guild: "Temple Scribe School"
   temple_scribes_guild_desc: "The temple scribe school is first and foremost an expression of the priesthood's political power, but it also serves to train scribes who maintain records of religious rituals, offerings, and temple administration in Bronze Age societies."
 
+  temple_complex: "Temple Complex"
+  temple_complex_desc: "A vast religious institution combining shrines, storehouses, administrative offices, workshops, and ceremonial spaces under the supervision of an organized priesthood. Temple complexes stand at the heart of many Bronze Age cities, serving as centers of worship, learning, redistribution, and political influence."
+
+  temple_healing_sanctuary: "Temple Healing Sanctuary"
+  temple_healing_sanctuary_desc: "Dedicated healing spaces within temples provide care for the sick and injured, combining religious devotion with practical medical practices."
+
+  temple_court: "Temple Court"
+  temple_court_desc: "Attached to a major temple, the temple court serves as a center of arbitration, legal proceedings, oath-taking, and the resolution of disputes under sacred authority. Priests and magistrates oversee judgments, contracts, and customary law, making the court an important institution of governance as well as religion."
+
 # #########################################
 # PRODUCTION AND MAINTENANCE METHODS
 # #########################################
@@ -35,3 +44,6 @@
 
   temple_granary_maintenance: "Priestly Storehouse Administration"
   temple_granary_maintenance_desc: "Temple granaries are overseen by priestly administrators who organize tribute, maintain records, supervise laborers, and redistribute stored food through the authority of the cult and the state."
+
+  bronze_age_temple_complex_administration: "Priestly Administration"
+  bronze_age_temple_complex_administration_desc: "A hierarchy of priests, scribes, and attendants manages offerings, records, food reserves, ritual obligations, and temple property, transforming the sanctuary into a powerful institution woven into every aspect of urban life."
