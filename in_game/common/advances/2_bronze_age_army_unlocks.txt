@@ -16,13 +16,6 @@ simple_chariot_advance = {
 		has_advance = horse_domestication_advance
 	}
 
-	potential = {
-		OR = {
- 			can_research_advance = horse_domestication_advance
- 			has_advance = horse_domestication_advance
- 		}
-	}
-
 	requires = wheeled_transport_advance
 
 	unlock_unit = a_simple_chariots

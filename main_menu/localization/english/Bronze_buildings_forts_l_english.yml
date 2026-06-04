@@ -15,3 +15,8 @@
 
   bronze_city_walls_construction: "City Wall Construction"
   bronze_city_walls_construction_desc: "The construction of massive urban fortifications requires extensive masonry work, large labor forces, and careful planning to defend major population centers and seats of power."
+
+  # CULTURE SPECIFIC
+
+  cyclopean_walls: "Cyclopean Walls"
+  cyclopean_walls_desc: "Constructed from massive stone blocks fitted without mortar, these immense fortifications surround royal citadels and palace centers. Their scale inspires awe among subjects and visitors alike, making them both formidable defenses and enduring symbols of royal power."

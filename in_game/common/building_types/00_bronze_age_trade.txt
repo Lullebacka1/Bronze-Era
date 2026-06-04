@@ -18,7 +18,6 @@ merchant_house = {
 			cloth = 0.06
 			jewelry = 0.05
 			leather = 0.05
-			coal = 0.03
 
 			category = building_maintenance
 		}
@@ -27,7 +26,6 @@ merchant_house = {
 			cloth = 0.06
 			jewelry = 0.05
 			pottery = 0.05
-			coal = 0.03
 
 			category = building_maintenance
 		}
@@ -36,7 +34,6 @@ merchant_house = {
 			cloth = 0.06
 			jewelry = 0.05
 			lumber = 0.1
-			coal = 0.03
 
 			category = building_maintenance
 		}
@@ -45,7 +42,6 @@ merchant_house = {
 			cloth = 0.06
 			jewelry = 0.05
 			paper = 0.05
-			coal = 0.03
 
 			category = building_maintenance
 		}

@@ -179,7 +179,7 @@ city_building_advance = {
 
 	requires = palace_economy_advance
 
-	potential = {
+	allow = {
 		has_tribal_government = no
 	}
 

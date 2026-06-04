@@ -74,6 +74,9 @@ bronze_age_palatial_complex = {
 		local_unrest = -0.03
 		local_garrison_size = 0.15
 		local_defensive = 0.10
+
+		local_manpower = 0.02
+		can_recruit_regiment_in_this_location = yes
 	}
 
 	capital_country_modifier = {
@@ -141,4 +144,42 @@ bronze_age_palace_house = {
 	construction_demand = early_soldier_building_construction
 
 	custom_tags = { palace bronze_age_palace_network }
+}
+
+
+# ADDITIONS
+
+palace_registry = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	
+	category = military_category
+	forbidden_for_estates = yes
+	
+	employment_size = estate_manpower_employment
+	
+	town = no
+	city = yes
+	megalopolis = yes
+	
+	build_time = medium_soldier_building
+	
+	location_potential = {
+		has_building = building_type:bronze_age_palatial_complex
+	}
+	
+	modifier = {
+		local_manpower = 0.01
+		can_recruit_regiment_in_this_location = yes
+	}
+
+	possible_production_methods =  {
+		palace_registry_maintenance_tablets
+		palace_registry_maintenance_leather
+		palace_registry_maintenance_potsherds
+		palace_registry_maintenance_wood
+		palace_registry_maintenance_paper
+	}
+	construction_demand = palace_addition_construction
 }

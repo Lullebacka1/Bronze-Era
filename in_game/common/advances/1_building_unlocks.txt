@@ -118,6 +118,25 @@
  }
 
  # ###############################
+ # PALACE COMPLEX TECH
+ # ###############################
+
+ royal_registry_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	allow = {
+		has_advance = elite_scripts_advance
+	}
+
+	unlock_building = palace_registry
+	starting_technology_level = 3
+
+	requires = palace_economy_advance
+ }
+
+
+ # ###############################
  # TEMPLE COMPLEX TECH
  # ###############################
 
@@ -195,11 +214,11 @@ town_walls_advance = {
 	starting_technology_level = 2
 }
 
-city_walls_advance = {
+bronze_city_walls_advance = {
 	age = age_1_traditions
 	research_cost = 2
 
-	unlock_building = city_walls
+	unlock_building = bronze_city_walls
 
 	requires = city_building_advance
 	

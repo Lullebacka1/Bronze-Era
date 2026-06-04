@@ -1,0 +1,12 @@
+cyclopean_walls_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	potential = {
+		culture = culture:mycenaean
+	}
+
+	unlock_building = cyclopean_walls
+
+	requires = bronze_city_walls_advance
+}
