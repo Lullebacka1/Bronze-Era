@@ -74,6 +74,7 @@ bronze_age_palatial_complex = {
 		local_unrest = -0.03
 		local_garrison_size = 0.15
 		local_defensive = 0.10
+		local_manpower = 0.02
 	}
 
 	capital_country_modifier = {

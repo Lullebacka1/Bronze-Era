@@ -195,11 +195,11 @@ town_walls_advance = {
 	starting_technology_level = 2
 }
 
-city_walls_advance = {
+bronze_city_walls_advance = {
 	age = age_1_traditions
 	research_cost = 2
 
-	unlock_building = city_walls
+	unlock_building = bronze_city_walls
 
 	requires = city_building_advance
 	
