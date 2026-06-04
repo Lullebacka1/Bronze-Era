@@ -1,6 +1,6 @@
 raid_on_anatolia_gui = {
 	scope = country
-
+	#The button is cliable but the effect dosnt seam to trigger if it even gets here grom the sitaion gui file
 	is_shown = {
 		tag = 0001G # Mycenaea
 		NOT = { has_global_variable = "trojan_war_phase_1_ended" }
@@ -26,6 +26,7 @@ raid_on_anatolia_gui = {
 					factor = 0.75
 					c:WILUS = { has_country_modifier = anatolia_coastline_is_defend }
 				}
+			  		 #country modifier could be broken and mabey it should be add_modifier
 				add_country_modifier = {
 					name = trojan_war_raid_on_anatolia_success
 					duration = { months = 12 }	

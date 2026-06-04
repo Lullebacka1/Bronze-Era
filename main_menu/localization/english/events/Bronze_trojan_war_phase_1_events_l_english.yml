@@ -1,0 +1,20 @@
+l_english:
+# Event 1: Successful Raid Outcomes
+  trojan_war_raid_on_anatolia_success: "Successful Raid on Anatolia"
+  trojan_war_raid_on_anatolia_success.t: "Successful Raid on Anatolia"
+  trojan_war_raid_on_anatolia_success.d: "Thy raiding forces sent to Anatolia have returned victorious, bringing back spoils and weakening the enemy's supply lines. The morale of our troops has been boosted, and the Greek forces are now on the defensive."
+  trojan_war_raid_on_anatolia_success.a: "Celebrate the Victory"
+  trojan_war_raid_on_anatolia_success.b: "Secure the Spoils"
+
+  # Event 2: Failed Raid Outcomes
+  trojan_war_raid_on_anatolia_failed: "Failed Raid on Anatolia"
+  trojan_war_raid_on_anatolia_failed.t: "Failed Raid on Anatolia"
+  trojan_war_raid_on_anatolia_failed.d: "Thy raiding forces sent to Anatolia have returned empty-handed, suffering heavy losses and failing to disrupt the enemy's supply lines. The morale of our troops has been damaged, and the Greek forces are now emboldened."
+  trojan_war_raid_on_anatolia_failed.a: "Leave the Survivors to Languish"
+  trojan_war_raid_on_anatolia_failed.b: "Recruit a force to rescue the Survivors"
+
+  # Event 3: Coastline Defended Outcomes
+  anatolia_coastline_is_defend: "Defended Coastline"
+  anatolia_coastline_is_defend.t: "Defense against the Greeks"
+  anatolia_coastline_is_defend.d: "Our defenses have been heightened by the coastal watch; the Greek forces will have a harder time launching successful raids against our coastal provinces."
+  anatolia_coastline_is_defend.a: "Continue to Defend the Coastline"
