@@ -184,7 +184,7 @@ temple_granary = {
 	city = yes
 	megalopolis = yes
 
-	allow = {
+	location_potential = {
 		has_building = building_type:temple_complex
 	}
 
@@ -227,7 +227,7 @@ temple_scribes_guild = {
 	city = yes
 	megalopolis = yes
 
-	allow = {
+	location_potential = {
 		has_building = building_type:temple_complex
 	}
 
@@ -303,7 +303,7 @@ temple_court = {
 	city = yes
 	megalopolis = yes
 
-	allow = {
+	location_potential = {
 		has_building = building_type:temple_complex
 	}
 

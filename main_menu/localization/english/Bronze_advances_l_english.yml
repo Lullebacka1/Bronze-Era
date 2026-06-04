@@ -288,8 +288,18 @@
   town_walls_advance: "Settlement Walls"
   town_walls_advance_desc: "Masons and laborers construct defensive walls, gates, and supporting fortifications to protect settlements from raiders and rival communities."
 
-  city_walls_advance: "Fortified Cities"
-  city_walls_advance_desc: "Advances in masonry allow major settlements to surround themselves with imposing walls, transforming urban centers into strongholds of political, economic, and military power."
+  bronze_city_walls_advance: "Fortified Cities"
+  bronze_city_walls_advance_desc: "Advances in masonry allow major settlements to surround themselves with imposing walls, transforming urban centers into strongholds of political, economic, and military power."
 
   frontier_post_advance: "Frontier Outposts"
   frontier_post_advance_desc: "Growing trade networks and territorial ambitions encourage the establishment of permanent outposts along roads, river crossings, and borderlands, extending the reach of rulers into distant regions."
+
+  royal_registry_advance: "Royal Registries"
+  royal_registry_advance_desc: "Palatial administrations develop dedicated systems for recording landholders, obligations, labor, and military service. These registries strengthen the ability of rulers to mobilize resources and manpower across their domains."
+
+# ###################
+# CULTURE SPECIFIC
+# ###################
+
+  cyclopean_walls_advance: "Cyclopean Masonry"
+  cyclopean_walls_advance_desc: "Master builders learn to erect colossal fortifications from immense, irregular stone blocks. These monumental walls protect royal citadels while proclaiming the wealth, authority, and engineering prowess of the ruling dynasty."
