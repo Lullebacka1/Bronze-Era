@@ -264,3 +264,11 @@ palace_registry_maintenance_paper = {
 	
 	category = building_maintenance
 }
+
+megaron_maintenance = {
+	bronze_age_bronze = 0.3
+	fine_cloth = 0.2
+	jewelry = 0.2
+
+	category = building_maintenance
+}

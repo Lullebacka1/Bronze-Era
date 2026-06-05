@@ -182,4 +182,6 @@ palace_registry = {
 		palace_registry_maintenance_paper
 	}
 	construction_demand = palace_addition_construction
+
+	custom_tags = { palace_addition }
 }
