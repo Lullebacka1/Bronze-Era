@@ -563,10 +563,12 @@ countries = {
 	}
 
 	##KOS
+	# Homeric island kingdom of Antiphus and Phidippus. The twin royal
+	# tradition is represented by its dedicated two-spear emblem.
 	KOS = {
 		type = building
 		capital = kos
-		culture = ionian
+		culture = dorian
 		religion = hellenic
 
 		discovered_regions = {
@@ -580,8 +582,8 @@ countries = {
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { ionian mycenaean }
-		tolerated_cultures = { cycladic carian }
+		accepted_cultures = { dorian mycenaean }
+		tolerated_cultures = { ionian cycladic carian }
 	}
 
 	##CEPHALONIA
@@ -610,6 +612,53 @@ countries = {
 	ZAKYN = {
 		type = building
 		capital = zakynthos
+		culture = mycenaean
+		religion = hellenic
+
+		discovered_regions = {
+			balkan_region
+		}
+
+		country_rank = rank_kingdom
+
+		include = "Bronze"
+
+		government = {
+			ruler = random
+		}
+		accepted_cultures = { mycenaean }
+		tolerated_cultures = { arcadian }
+	}
+
+	##ITHACA
+	# Legendary Ionian palace kingdom associated with Odysseus. Its palace
+	# network is represented in both Cephalonia and Zakynthos.
+	ITHA = {
+		type = building
+		capital = cephalonia
+		culture = mycenaean
+		religion = hellenic
+
+		discovered_regions = {
+			balkan_region
+		}
+
+		country_rank = rank_kingdom
+
+		include = "Bronze"
+
+		government = {
+			ruler = random
+		}
+		accepted_cultures = { mycenaean }
+		tolerated_cultures = { arcadian }
+	}
+
+	##LEUKAS
+	# Minor Ionian palace polity centered on the island of Leukas.
+	LEUK = {
+		type = building
+		capital = leukas
 		culture = mycenaean
 		religion = hellenic
 
