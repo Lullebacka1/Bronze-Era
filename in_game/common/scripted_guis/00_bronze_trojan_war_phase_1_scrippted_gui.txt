@@ -1,0 +1,142 @@
+raid_on_anatolia_gui = {
+	scope = country
+	#The button is cliable but the effect dosnt seam to trigger if it even gets here grom the sitaion gui file
+	is_shown = {
+		tag = 0001G # Mycenaea
+		NOT = { has_global_variable = "trojan_war_phase_1_ended" }
+	}
+
+	is_valid = { #has problems with checking money and mapower but colwdon works
+		root = {
+			treasury = { value >= 50 }
+			manpower = { value >= 250 }      
+			NOT = { has_variable = trojan_war_raid_on_anatolia_cooldown }
+		}
+	}
+
+	effect = {
+		set_global_variable = { name = "trojan_war_raid_toggled" value = yes }
+		set_variable = {
+			name = trojan_war_raid_on_anatolia_cooldown
+			value = yes
+			months = 6 
+		}
+		add_manpower_pool = -250
+		add_gold = -50	
+		# If the raid is successful, 80% chance, otherwise 20% chance for failure. Success chance is reduced if Wilusa has defended their coastline.
+		random_list = {
+			80 = {
+				modifier = {
+					factor = 0.89
+					c:WILUS = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 0.89
+					c:AHHI = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 0.89
+					c:LYCIA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 0.89
+					c:SEHA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 0.89
+					c:LUKKA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 0.89
+					c:MASA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+			  		
+				add_country_modifier = {
+					modifier = trojan_war_raid_on_anatolia_success
+					months = 12
+				}
+				trigger_event_non_silently = { id = trojan_war_raid_on_anatolia_success }
+			}
+
+			20 = {
+				modifier = {
+					factor = 1.12
+					c:WILUS = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 1.12
+					c:AHHI = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 1.12
+					c:LYCIA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 1.12
+					c:SEHA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 1.12
+					c:LUKKA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 1.12
+					c:MASA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				add_country_modifier = {
+					modifier = trojan_war_raid_on_anatolia_failed
+					months = 12
+					
+				}
+				trigger_event_non_silently = { id = trojan_war_raid_on_anatolia_failed }
+			}
+		}
+
+		
+	}
+
+	ai_is_valid = { always = no }
+}
+
+defend_coastline_gui = {
+	scope = country
+
+	is_shown = {
+		OR = {
+			tag = WILUS # Wilusa
+			tag = AHHI # Ahhiyawa
+			tag = LYCIA # Lycia
+			tag = SEHA # Seha River Land
+			tag = LUKKA # Lukka
+			tag = MASA # Masaa
+			}
+		NOT = { has_global_variable = "trojan_war_phase_1_ended" }
+	}
+
+is_valid = {
+		root = {
+			treasury = { value >= 25 }
+			manpower = { value >= 150 }
+			NOT = { has_variable = trojan_war_defend_coastline_cooldown }
+		}
+	}
+
+	effect = {
+		set_global_variable = { name = "trojan_war_defend_toggled" value = yes }
+		set_variable = {
+			name = trojan_war_defend_coastline_cooldown
+			value = yes
+			months = 6
+		}
+
+		add_country_modifier = {
+			modifier = anatolia_coastline_is_defend
+			months = 6
+		}
+		add_manpower_pool = -150
+		add_gold = -25
+		trigger_event_non_silently = { id = anatolia_coastline_is_defend } 
+	}
+
+	ai_is_valid = { always = no }
+}
