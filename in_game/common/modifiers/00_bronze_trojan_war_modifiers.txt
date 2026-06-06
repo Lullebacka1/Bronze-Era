@@ -13,3 +13,30 @@ trojan_war_raid_on_anatolia_failed = {
 anatolia_coastline_is_defend = {
 	
 }
+
+trojan_war_anatolia_modifier_phase_2 ={
+	siege_ability = {
+			 value = global:anatolia_raid_failed_count
+			 multiply = 0.02
+			 max = 0.30
+			 add = -0.20
+		}
+	levy_combat_efficiency = {
+			 value = global:anatolia_raid_failed_count
+			 multiply = 0.02
+			 max = 0.25	
+		}
+	}
+
+global:anatolia_raid_success_count = {
+	siege_ability = {
+		value = global:anatolia_raid_success_count
+		multiply = 0.01
+		max = 0.20
+	}
+	navy_levy_size = {
+		value = global:anatolia_raid_success_count
+		multiply = 0.02
+		max = 0.50
+	}
+}

@@ -8,6 +8,13 @@ trojan_war_raid_on_anatolia_success = {
     
     hidden = no 
 
+	 immediate = {
+        change_variable = { 
+            name = global:anatolia_raid_success_count 
+            add = 1 
+        }
+    }
+
     option = {
         name = trojan_war_raid_on_anatolia_success.a
         add_gold = 100
@@ -27,6 +34,13 @@ trojan_war_raid_on_anatolia_failed = {
     desc = trojan_war_raid_on_anatolia_failed.d
 
     hidden = no
+
+	 immediate = {
+        change_variable = { 
+            name = global:anatolia_raid_failed_count 
+            add = 1 
+        }
+    }
 
     option = {
         name = trojan_war_raid_on_anatolia_failed.a

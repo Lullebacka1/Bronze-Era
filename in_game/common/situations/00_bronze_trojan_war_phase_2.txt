@@ -11,10 +11,11 @@ trojan_war_phase_2 = {
 
 	on_start = {
 		set_global_variable = { name = "trojan_war_phase_2_started" value = yes }
+		
 	}
 
 	can_end = {
-		#we want it to en when war score is above 75% and we will have scrippted peace deal
+		#we want it to en when war score is above 75% and we will have scripted peace deal
 		has_global_variable = "trojan_war_phase_2_started"
 		NOT = { has_global_variable = "trojan_war_phase_2_ended" }
 	}
