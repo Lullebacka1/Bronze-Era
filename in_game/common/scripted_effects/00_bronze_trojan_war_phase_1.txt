@@ -1,0 +1,3 @@
+# Trojan War action buttons are scripted GUIs, not scripted effects.
+# Their implementation lives in:
+# in_game/common/scripted_guis/00_bronze_trojan_war_phase_1.txt

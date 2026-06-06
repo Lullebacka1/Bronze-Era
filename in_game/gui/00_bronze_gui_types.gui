@@ -1,0 +1,9 @@
+# This files link guis to there paths
+
+#links trojan war phase 1 gui to its path
+gui_types = {
+    gui_type = {
+        name = "00_bronze_trojan_war_phase_1"
+        path = "gui/panels/situation/trojan_war_phase_1.gui"
+    }
+}

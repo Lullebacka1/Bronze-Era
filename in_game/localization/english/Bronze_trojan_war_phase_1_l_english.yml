@@ -1,0 +1,17 @@
+﻿l_english:
+  trojan_war_phase_1: "The Trojan War - Phase 1"
+  trojan_war_phase_1_desc: "Thy conflict has escalated into a fullwar but both sides are still testing the waters and trying to gain an upper hand. The Greeks have launched raids against Anatoilas coastline and they have responded by fortifying their coastal defenses. The war is still in its early stages and the outcome is uncertain, but the actions taken now will shape the course of the conflict."
+  trojan_war_panel_header: "THE TROJAN WAR"
+  trojan_war_panel_phase: "Current Phase:"
+  trojan_war_panel_phase_value: "Phase 1: The Beachhead"
+  trojan_war_panel_escalation: "Escalation Level:"
+  trojan_war_panel_escalation_value: "High"
+  trojan_war_actions_header: "War Actions"
+  trojan_war_raid_on_anatolia: "Raid Anatolia"
+  trojan_war_defend_coastline: "Defend the Coastline"
+  trojan_war_raid_toggled: "The Trojan War - Phase 1 Raid Toggled"
+  raid_on_anatolia_effect_desc: "Spend 75 treasury and 250 manpower to launch naval raiding parties across the Aegean Sea. Success grants a temporary raiding bonus; failure weakens the expedition."
+  defend_coastline_effect_desc: "Spend 25 treasury and 150 manpower to mobilize coastal watches for six months, reducing the success chance of enemy raids."
+  trojan_war_defend_toggled: "The Trojan War - Phase 1 Coastline Defended"
+  
+  
