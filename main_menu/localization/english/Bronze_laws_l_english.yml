@@ -1,53 +1,99 @@
 ﻿l_english:
 
-# ########################
-# CURRENCY POLICIES
-# ########################
+  # ########################
+  # CURRENCY POLICIES
+  # ########################
 
- commodity_money_policy_common: "Crop Standard Currency"
- commodity_money_policy_desc: "The introduction of commodity money in Bronze Age societies allowed for more efficient trade and economic transactions, replacing barter systems with a standardized medium of exchange. The currency represents value in and of itself, and can be used for trade, savings, and as a unit of account. This policy allows the use of crops as a form of commodity money, facilitating the first steps towards a more complex economy and the development of trade networks in Bronze Age societies."
+  commodity_money_policy_common: "Crop Standard Currency"
+  commodity_money_policy_desc: "The introduction of commodity money in Bronze Age societies allowed for more efficient trade and economic transactions, replacing barter systems with a standardized medium of exchange. The currency represents value in and of itself, and can be used for trade, savings, and as a unit of account. This policy allows the use of crops as a form of commodity money, facilitating the first steps towards a more complex economy and the development of trade networks in Bronze Age societies."
 
- commodity_money_policy_weaponry: "Weaponry as Currency"
- commodity_money_policy_weaponry_desc: "In some Bronze Age societies, weaponry was used as a form of currency. The value of weapons, such as swords, spears, or axes, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
+  commodity_money_policy_weaponry: "Weaponry as Currency"
+  commodity_money_policy_weaponry_desc: "In some Bronze Age societies, weaponry was used as a form of currency. The value of weapons, such as swords, spears, or axes, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
 
- commodity_money_policy_textiles: "Textiles as Currency"
- commodity_money_policy_textiles_desc: "In some Bronze Age societies, textiles were used as a form of currency. The value of textiles, such as woven fabrics or garments, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
+  commodity_money_policy_textiles: "Textiles as Currency"
+  commodity_money_policy_textiles_desc: "In some Bronze Age societies, textiles were used as a form of currency. The value of textiles, such as woven fabrics or garments, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
 
- commodity_money_policy_salt: "Salt as Currency"
- commodity_money_policy_salt_desc: "In some Bronze Age societies, salt was used as a form of currency. The value of salt, which was essential for preserving food and enhancing flavor, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
+  commodity_money_policy_salt: "Salt as Currency"
+  commodity_money_policy_salt_desc: "In some Bronze Age societies, salt was used as a form of currency. The value of salt, which was essential for preserving food and enhancing flavor, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
 
- commodity_money_policy_furs: "Fur as Currency"
- commodity_money_policy_furs_desc: "In some Bronze Age societies, fur was used as a form of currency. The value of fur, which was essential for clothing and warmth, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
+  commodity_money_policy_furs: "Fur as Currency"
+  commodity_money_policy_furs_desc: "In some Bronze Age societies, fur was used as a form of currency. The value of fur, which was essential for clothing and warmth, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
 
- commodity_money_policy_spices: "Spices as Currency"
- commodity_money_policy_spices_desc: "In some Bronze Age societies, spices were used as a form of currency. The value of spices, which were essential for flavoring food and preserving it, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
+  commodity_money_policy_spices: "Spices as Currency"
+  commodity_money_policy_spices_desc: "In some Bronze Age societies, spices were used as a form of currency. The value of spices, which were essential for flavoring food and preserving it, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
 
- commodity_money_policy_jewelry: "Jewelry as Currency"
- commodity_money_policy_jewelry_desc: "In some Bronze Age societies, jewelry was used as a form of currency. The value of jewelry, which was often made from precious metals and adorned with gemstones, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
+  commodity_money_policy_jewelry: "Jewelry as Currency"
+  commodity_money_policy_jewelry_desc: "In some Bronze Age societies, jewelry was used as a form of currency. The value of jewelry, which was often made from precious metals and adorned with gemstones, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
 
- commodity_money_policy_livestock: "Livestock as Currency"
- commodity_money_policy_livestock_desc: "In some Bronze Age societies, livestock was used as a form of currency. The value of livestock, which was essential for food, labor, and other resources, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
+  commodity_money_policy_livestock: "Livestock as Currency"
+  commodity_money_policy_livestock_desc: "In some Bronze Age societies, livestock was used as a form of currency. The value of livestock, which was essential for food, labor, and other resources, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
 
- commodity_money_policy_tea: "Tea as Currency"
- commodity_money_policy_tea_desc: "In some Bronze Age societies, tea was used as a form of currency. The value of tea, which was essential for its stimulating properties and cultural significance, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
+  commodity_money_policy_tea: "Tea as Currency"
+  commodity_money_policy_tea_desc: "In some Bronze Age societies, tea was used as a form of currency. The value of tea, which was essential for its stimulating properties and cultural significance, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
 
-# BURIAL POLICIES
+  # BURIAL POLICIES
 
- bronze_age_burial_pits_law: "Burial Pits"
- bronze_age_burial_pits_law_desc: "The burial pits law mandates the use of simple burial pits for interring the deceased in Bronze Age societies. This practice reflects the cultural beliefs and social norms related to death and the afterlife, emphasizing a more modest approach to burial compared to elaborate tombs or mausoleums."
+  bronze_age_burial_pits_law: "Burial Pits"
+  bronze_age_burial_pits_law_desc: "The burial pits law mandates the use of simple burial pits for interring the deceased in Bronze Age societies. This practice reflects the cultural beliefs and social norms related to death and the afterlife, emphasizing a more modest approach to burial compared to elaborate tombs or mausoleums."
 
- bronze_age_aristocratic_mounds_law: "Aristocratic Mounds"
- bronze_age_aristocratic_mounds_law_desc: "The aristocratic mounds law mandates the use of elaborate burial mounds for interring the deceased in Bronze Age societies. This practice reflects the cultural beliefs and social norms related to death and the afterlife, emphasizing a more prestigious approach to burial compared to simple burial pits."
+  bronze_age_aristocratic_mounds_law: "Aristocratic Mounds"
+  bronze_age_aristocratic_mounds_law_desc: "The aristocratic mounds law mandates the use of elaborate burial mounds for interring the deceased in Bronze Age societies. This practice reflects the cultural beliefs and social norms related to death and the afterlife, emphasizing a more prestigious approach to burial compared to simple burial pits."
 
- bronze_age_urnfields_law: "Urnfields"
- bronze_age_urnfields_law_desc: "The urnfields became increasingly common in the late Bronze Age, as societies shifted towards cremation and the use of urns for burial. The urnfields law mandates the use of designated areas for interring the deceased in Bronze Age societies. This practice reflects the cultural beliefs and social norms related to death and the afterlife, emphasizing a more communal approach to burial compared to individual graves."
+  bronze_age_urnfields_law: "Urnfields"
+  bronze_age_urnfields_law_desc: "The urnfields became increasingly common in the late Bronze Age, as societies shifted towards cremation and the use of urns for burial. The urnfields law mandates the use of designated areas for interring the deceased in Bronze Age societies. This practice reflects the cultural beliefs and social norms related to death and the afterlife, emphasizing a more communal approach to burial compared to individual graves."
 
- bronze_age_collective_tombs_law: "Collective Tombs"
- bronze_age_collective_tombs_law_desc: "The collective tombs law mandates the use of shared burial spaces for interring the deceased in Bronze Age societies. This practice reflects the cultural beliefs and social norms related to death and the afterlife, emphasizing a communal approach to burial."
+  bronze_age_collective_tombs_law: "Collective Tombs"
+  bronze_age_collective_tombs_law_desc: "The collective tombs law mandates the use of shared burial spaces for interring the deceased in Bronze Age societies. This practice reflects the cultural beliefs and social norms related to death and the afterlife, emphasizing a communal approach to burial."
 
-# ########################
-# LAWS
-# ########################
+  # ####################
+  # SUBJECT POLICIES
+  # ####################
 
- burial_law: "Burial Law"
- burial_law_desc: "The burial law governs the practices and customs surrounding the interment of the deceased in Bronze Age societies. It establishes guidelines for funeral rites, burial sites, and the treatment of the dead, reflecting cultural beliefs and social norms related to death and the afterlife."
+  freeman_recognition_law: "Freeman Recognition"
+  freeman_recognition_law_desc: "The law recognizes a broad class of freemen whose rights and obligations are defined by custom rather than by land ownership, household status, debt, or personal dependence. Though distinctions of wealth, gender, and social standing remain, legal recognition extends beyond narrow privileged groups."
+
+  landed_subj_law: "Landed Subjectivity"
+  landed_subj_law_desc: "Full legal standing is reserved for those who possess land or hold recognized rights to its use. Property ownership serves as the foundation of civic status, political participation, and legal protection, while the landless enjoy fewer rights and privileges."
+
+  household_subj_law: "Household Recognition"
+  household_subj_law_desc: "The household rather than the individual is recognized as the primary subject of law and custom. Rights, obligations, taxation, and service are assigned collectively through family units and their acknowledged heads."
+
+  periodical_cancel_law: "Periodical Debt Cancellation"
+  periodical_cancel_law_desc: "Authorities periodically forgive outstanding debts, restoring the position of indebted households and preventing the accumulation of obligations that might otherwise threaten social stability."
+
+  indebt_servitude_law: "Indebted Servitude"
+  indebt_servitude_law_desc: "Debtors may be compelled to provide labor or enter personal dependence in order to satisfy unpaid obligations. Debt thus becomes an important source of labor and social hierarchy."
+
+  negotiated_payment_law: "Negotiated Payment"
+  negotiated_payment_law_desc: "Debt disputes are settled through negotiation, arbitration, and compromise between creditors and debtors. Flexible arrangements help preserve economic relationships while avoiding severe social disruption."
+
+  generational_debt_law: "Generational Debt"
+  generational_debt_law_desc: "Unpaid debts may be inherited by descendants, binding families to long-term obligations that can persist across generations. This system strengthens creditors while reinforcing enduring social and economic hierarchies."
+
+  compensation_law: "Compensation Favored"
+  compensation_law_desc: "Courts favor restitution over coercion, requiring offenders to compensate those they have harmed. Such settlements strengthen customary law and social cohesion, though they often depend upon the influence and resources of established families."
+
+  punishment_law: "Punishment Favored"
+  punishment_law_desc: "Authorities increasingly reserve the right to punish offenders directly through fines, corporal penalties, or other sanctions. The enforcement of justice becomes more closely associated with public authority and the maintenance of order."
+
+  retribution_law: "Retributive Justice"
+  retribution_law_desc: "Wrongs are expected to be answered with proportional retaliation, whether through blood feuds, vengeance, or reciprocal obligations. Such customs reduce the need for formal institutions but can weaken central authority and perpetuate cycles of conflict."
+
+  mediated_sett_law: "Mediated Settlement"
+  mediated_sett_law_desc: "Disputes are resolved through arbitration by respected elders, priests, judges, or local notables. Maintaining harmony requires extensive negotiation and oversight, but settlements reached through consensus are often more enduring and broadly accepted."
+
+  # ########################
+  # LAWS
+  # ########################
+
+  burial_law: "Burial Law"
+  burial_law_desc: "The burial law governs the practices and customs surrounding the interment of the deceased in Bronze Age societies. It establishes guidelines for funeral rites, burial sites, and the treatment of the dead, reflecting cultural beliefs and social norms related to death and the afterlife."
+
+  subj_law: "Legal Subjecthood"
+  subj_law_desc: "These laws determine who is recognized as a legal subject of the realm and on what basis rights, obligations, protections, and civic duties are granted."
+
+  debt_law: "Debt Management"
+  debt_law_desc: "These laws regulate the treatment of debt, defining the rights of creditors and debtors as well as the obligations that arise from unpaid obligations. Different approaches balance social stability, economic activity, and the interests of powerful groups."
+
+  verdict_law: "Verdict Resolution"
+  verdict_law_desc: "Ancient justice was rarely concerned solely with determining guilt. Courts, assemblies, rulers, priests, and kin groups sought to restore social order after wrongdoing through a variety of means, balancing the interests of victims, offenders, powerful families, and the wider community."
