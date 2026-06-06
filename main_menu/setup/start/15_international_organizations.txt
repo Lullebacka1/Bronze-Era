@@ -32,6 +32,8 @@ international_organization_manager = {
 			KOS
 			CEPHA
 			ZAKYN
+			ITHA
+			LEUK
 			MILOS
 			MIDEA
 			GLA
@@ -125,6 +127,8 @@ international_organization_manager = {
 			KOS
 			CEPHA
 			ZAKYN
+			ITHA
+			LEUK
 			MILOS
 			PHAIS
 			MALIA
@@ -156,6 +160,8 @@ international_organization_manager = {
 			KOS
 			CEPHA
 			ZAKYN
+			ITHA
+			LEUK
 			MILOS
 			MIDEA
 			GLA

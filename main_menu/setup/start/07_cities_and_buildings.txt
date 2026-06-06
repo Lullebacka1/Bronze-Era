@@ -119,6 +119,10 @@ building_manager = {
 	bronze_age_palace_house = { tag = KOS level = 1 location = kos }
 	bronze_age_palace_house = { tag = CEPHA level = 1 location = cephalonia }
 	bronze_age_palace_house = { tag = ZAKYN level = 1 location = zakynthos }
+	# Ithaca represents the wider Odyssean palace network across the Ionian islands.
+	bronze_age_palace_house = { tag = ITHA level = 1 location = cephalonia }
+	bronze_age_palace_house = { tag = ITHA level = 1 location = zakynthos }
+	bronze_age_palace_house = { tag = LEUK level = 1 location = leukas }
 	bronze_age_palace_house = { tag = MILOS level = 1 location = milos }
 	bronze_age_palace_house = { tag = MIDEA level = 1 location = ermioni }
 	bronze_age_palace_house = { tag = GLA level = 1 location = atalanti }

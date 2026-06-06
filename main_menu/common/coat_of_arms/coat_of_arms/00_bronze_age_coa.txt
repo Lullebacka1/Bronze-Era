@@ -306,3 +306,67 @@ bronze_age_AHH_coa = { # Ahhiyawa: Achaean bronze, spear, helmet and lion.
 		instance = { position = { 0.5 0.74 } scale = { 0.28 0.28 } }
 	}
 }
+
+bronze_age_ITHA_coa = { # Ithaca: Ionian blue, royal bronze, ship and bow of Odysseus.
+	pattern = "pattern_horizontal_split_02.dds"
+	color1 = "blue_dark"
+	color2 = "indigo_green"
+	color3 = "yellow_dark"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.5 0.42 } scale = { 0.7 0.7 } }
+	}
+	colored_emblem = {
+		texture = "ce_bow_arrow.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.76 } scale = { 0.42 0.42 } }
+	}
+}
+
+bronze_age_LEUK_coa = { # Leukas: island green, sea blue and a mountain-bound ship.
+	pattern = "pattern_diagonal_split_02.dds"
+	color1 = "indigo_green"
+	color2 = "blue_dark"
+	color3 = "yellow_mid"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.5 0.66 } scale = { 0.68 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.5 0.38 } scale = { 0.5 0.5 } }
+	}
+}
+
+bronze_age_KOS_coa = { # Kos: sea-green island kingdom, Achaean ship and the twin spears of Antiphus and Phidippus.
+	pattern = "pattern_horizontal_split_02.dds"
+	color1 = "indigo_green"
+	color2 = "blue_dark"
+	color3 = "yellow_mid"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.5 0.4 } scale = { 0.62 0.62 } }
+	}
+	colored_emblem = {
+		texture = "ce_spear_head_random_small.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.39 0.75 } scale = { 0.42 0.42 } }
+		instance = { position = { 0.61 0.75 } scale = { -0.42 0.42 } }
+	}
+}

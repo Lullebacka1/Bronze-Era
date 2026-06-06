@@ -108,3 +108,15 @@ AHH = { # Ahhiyawa short tag, if used.
 ACHAE = { # Local Achaea tag, tied to the Ahhiyawa/Achaean visual theme.
 	flag_definition = { coa = bronze_age_AHH_coa priority = 10000 }
 }
+
+ITHA = { # Ithaca, the Ionian palace kingdom of the Odyssean tradition.
+	flag_definition = { coa = bronze_age_ITHA_coa priority = 10000 }
+}
+
+LEUK = { # Leukas, a minor Ionian island palace polity.
+	flag_definition = { coa = bronze_age_LEUK_coa priority = 10000 }
+}
+
+KOS = { # Kos, Homeric island kingdom of Antiphus and Phidippus.
+	flag_definition = { coa = bronze_age_KOS_coa priority = 10000 }
+}
