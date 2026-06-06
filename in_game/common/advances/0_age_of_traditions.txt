@@ -345,6 +345,8 @@ codified_laws = {
 	research_cost = 2.0
 
 	has_codified_laws = yes
+
+	unlock_law = subj_law
 	
 	starting_technology_level = 3
 }

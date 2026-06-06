@@ -10,8 +10,6 @@ burial_law = {
 			monthly_towards_spiritualist = societal_value_tiny_monthly_move
 		}
 
-		unlock building = bronze_age_burial_pits
-
 		estate_preferences = {
 			peasants_estate
 			tribes_estate
@@ -59,5 +57,62 @@ burial_law = {
 		}
 		years = 2
 	}
+
+}
+
+# Legal Subjectivity
+subj_law = {
+	law_category = socioeconomic
+
+	# Policies
+	freeman_recognition_law = {
+		country_modifier = {
+			global_pop_promotion_speed_modifier = 0.1
+			monthly_rebel_growth = -0.0005
+			peasants_estate_target_satisfaction = small_permanent_target_satisfaction
+			tribesmen_estate_target_satisfaction = small_permanent_target_satisfaction
+			burghers_estate_target_satisfaction = small_permanent_target_satisfaction
+		}
+
+		estate_preferences = {
+			peasants_estate
+			tribes_estate
+		}
+
+		years = 2
+	}
+
+	landed_subj_law = {
+		country_modifier = {
+			tax_income_efficiency = small_tax_income_efficiency_bonus
+			global_monthly_prosperity = 0.0005
+			nobles_estate_target_satisfaction = medium_permanent_target_satisfaction
+			clergy_estate_target_satisfaction = small_permanent_target_satisfaction
+			burghers_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			tribesmen_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+		}
+
+		estate_preferences = {
+			nobles_estate
+		}
+
+		years = 2
+	}
+
+	household_subj_law = {
+		country_modifier = {
+			tax_income_efficiency = tiny_tax_income_efficiency_bonus
+			stability_cost = -0.05
+			cultural_tradition_modifier = 0.1
+		}
+
+		estate_preferences = {
+			tribes_estate
+		}
+
+		years = 2
+	}
+
 
 }
