@@ -5,7 +5,7 @@ tools_maker = {
 	max_levels = rural_building_cap
 
 	category = basic_industry_category
-	employment_size = village_employment_size
+	employment_size = tiny_rural_peasant_produce_employment
 
 	rural_settlement = yes
 	town = yes
@@ -31,7 +31,7 @@ weaponry_maker = {
 	max_levels = rural_building_cap
 
 	category = basic_industry_category
-	employment_size = village_employment_size
+	employment_size = tiny_rural_peasant_produce_employment
 
 	rural_settlement = yes
 	town = yes
@@ -56,7 +56,7 @@ pottery_maker = {
 	max_levels = rural_building_cap
 
 	category = basic_industry_category
-	employment_size = village_employment_size
+	employment_size = tiny_rural_peasant_produce_employment
 
 	rural_settlement = yes
 	town = yes
@@ -86,7 +86,7 @@ neolithic_leather_maker = {
 	max_levels = rural_building_cap
 
 	category = basic_industry_category
-	employment_size = village_employment_size
+	employment_size = tiny_rural_peasant_produce_employment
 
 	rural_settlement = yes
 	town = yes
