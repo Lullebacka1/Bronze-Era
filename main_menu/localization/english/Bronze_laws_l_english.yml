@@ -58,6 +58,18 @@
   household_subj_law: "Household Recognition"
   household_subj_law_desc: "The household rather than the individual is recognized as the primary subject of law and custom. Rights, obligations, taxation, and service are assigned collectively through family units and their acknowledged heads."
 
+  periodical_cancel_law: "Periodical Debt Cancellation"
+  periodical_cancel_law_desc: "Authorities periodically forgive outstanding debts, restoring the position of indebted households and preventing the accumulation of obligations that might otherwise threaten social stability."
+
+  indebt_servitude_law: "Indebted Servitude"
+  indebt_servitude_law_desc: "Debtors may be compelled to provide labor or enter personal dependence in order to satisfy unpaid obligations. Debt thus becomes an important source of labor and social hierarchy."
+
+  negotiated_payment_law: "Negotiated Payment"
+  negotiated_payment_law_desc: "Debt disputes are settled through negotiation, arbitration, and compromise between creditors and debtors. Flexible arrangements help preserve economic relationships while avoiding severe social disruption."
+
+  generational_debt_law: "Generational Debt"
+  generational_debt_law_desc: "Unpaid debts may be inherited by descendants, binding families to long-term obligations that can persist across generations. This system strengthens creditors while reinforcing enduring social and economic hierarchies."
+
   # ########################
   # LAWS
   # ########################
@@ -67,3 +79,6 @@
 
   subj_law: "Legal Subjecthood"
   subj_law_desc: "These laws determine who is recognized as a legal subject of the realm and on what basis rights, obligations, protections, and civic duties are granted."
+
+  debt_law: "Debt Management"
+  debt_law_desc: "These laws regulate the treatment of debt, defining the rights of creditors and debtors as well as the obligations that arise from unpaid obligations. Different approaches balance social stability, economic activity, and the interests of powerful groups."

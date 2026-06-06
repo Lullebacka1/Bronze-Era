@@ -116,3 +116,404 @@ subj_law = {
 
 
 }
+
+coin_laws= {
+	law_category = socioeconomic
+
+	gold_and_silver_coins = {
+		country_modifier = {
+			
+			
+			goods_gold_used_for_minting = yes
+			silver_used_for_minting = yes
+			
+			minting_inflation_threshold = 0.03
+			minting_income_factor = 0.1
+		}
+		estate_preferences = {
+			crown_estate
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					root = {
+						capital.market = {
+							"goods_supply_in_market(goods:goods_gold)" > 0
+							"goods_supply_in_market(goods:silver)" > 0
+						}
+					}
+				}
+				add = {
+					desc = "has gold and silver"
+					value = 200
+				}
+			}
+		}
+
+		years = 2
+	}
+
+	gold_coins = {
+		country_modifier = {
+			goods_gold_used_for_minting = yes
+			goods_gold_impacts_inflation = 0.1
+			
+			minting_inflation_threshold = 0.01
+			minting_income_factor = 0.1
+		}
+		estate_preferences = {
+			crown_estate
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					root = {
+						capital.market = {
+							"goods_supply_in_market(goods:goods_gold)" > 0
+						}
+					}
+				}
+				add = {
+					desc = "has gold"
+					value = 100
+				}
+			}
+		}
+
+		years = 2
+	}
+
+	silver_coins = {
+		country_modifier = {
+			silver_used_for_minting = yes
+			silver_impacts_inflation = 0.1
+			
+			minting_inflation_threshold = 0.01
+			minting_income_factor = 0.1
+		}
+		estate_preferences = {
+			crown_estate
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					root = {
+						capital.market = {
+							"goods_supply_in_market(goods:silver)" > 0
+						}
+					}
+				}
+				add = {
+					desc = "has silver"
+					value = 100
+				}
+			}
+		}
+
+
+		years = 2
+	}
+
+	copper_coins = {
+		country_modifier = {
+			copper_used_for_minting = yes
+			copper_impacts_inflation = 0.1
+			
+			minting_inflation_threshold = -0.025
+			minting_income_factor = 0.2
+		}
+		estate_preferences = {
+			crown_estate
+		}
+		years = 2
+	}
+
+	bullion_coins = {
+		country_modifier = {
+			silver_used_for_minting = yes
+			copper_used_for_minting = yes
+			
+			minting_inflation_threshold = 0.02
+			minting_income_factor = 0.1
+		}
+		estate_preferences = {
+			crown_estate
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					root = {
+						capital.market = {
+							"goods_supply_in_market(goods:silver)" > 0
+							"goods_supply_in_market(goods:copper)" > 0
+						}
+					}
+				}
+				add = {
+					desc = "has silver and copper"
+					value = 200
+				}
+			}
+		}
+		years = 2
+	}
+
+	barter_exchange = {
+		country_modifier = {
+			minting_inflation_threshold = 0
+			minting_income_factor = 0
+		}
+		estate_preferences = {
+			crown_estate
+		}
+		years = 2
+	}
+
+	commodity_money_policy_common = {
+
+		country_modifier = {
+			wheat_used_for_minting = yes
+			maize_used_for_minting = yes
+			rice_used_for_minting = yes
+			millet_used_for_minting = yes
+
+			minting_inflation_threshold = 0.05
+			minting_income_factor = 0.01
+		}
+		estate_preferences = {
+			peasants_estate
+			crown_estate
+		}
+
+		years = 2
+	}
+
+	commodity_money_policy_weaponry = {
+
+		potential = {
+
+			capital.market = {
+				"goods_supply_in_market(goods:weaponry)" > 10
+			}
+
+		}
+
+		country_modifier = {
+			tools_used_for_minting = yes
+			tools_impacts_inflation = 0.01
+			weaponry_used_for_minting = yes
+			weaponry_impacts_inflation = 0.01
+
+			minting_inflation_threshold = 0
+			minting_income_factor = 0.02
+		}
+
+		estate_preferences = {
+			nobles_estate
+		}
+	}
+
+	commodity_money_policy_textiles = {
+
+		potential = {
+
+			capital.market = {
+				"goods_supply_in_market(goods:cloth)" > 10
+			}
+
+		}
+
+		country_modifier = {
+			cloth_used_for_minting = yes
+			cloth_impacts_inflation = 0.015
+			silk_used_for_minting = yes
+			silk_impacts_inflation = 0.015
+
+			minting_inflation_threshold = 0.02
+			minting_income_factor = 0.08
+		}
+
+		estate_preferences = {
+			burghers_estate
+		}
+	}
+
+	commodity_money_policy_salt = {
+
+		potential = {
+
+			capital.market = {
+				"goods_supply_in_market(goods:salt)" > 10
+			}
+
+		}
+
+		country_modifier = {
+			salt_used_for_minting = yes
+			salt_impacts_inflation = 0.1
+
+			minting_inflation_threshold = 0.02
+			minting_income_factor = 0.03
+		}
+
+		estate_preferences = {
+			peasants_estate
+		}
+	}
+
+	commodity_money_policy_furs = {
+		country_modifier = {
+			fur_used_for_minting = yes
+			fur_impacts_inflation = 0.2
+
+			minting_inflation_threshold = 0.02
+			minting_income_factor = 0.02
+		}
+
+		estate_preferences = {
+			peasants_estate
+		}
+	}
+
+	commodity_money_policy_spices = {
+		country_modifier = {
+			saffron_used_for_minting = yes
+			saffron_impacts_inflation = 0.1
+
+			pepper_used_for_minting = yes
+			pepper_impacts_inflation = 0.1
+
+			cloves_used_for_minting = yes
+			cloves_impacts_inflation = 0.1
+
+			chili_used_for_minting = yes
+			chili_impacts_inflation = 0.1
+
+			minting_inflation_threshold = 0.02
+			minting_income_factor = 0.02
+		}
+
+		estate_preferences = {
+			burghers_estate
+		}
+	}
+
+	commodity_money_policy_jewelry = {
+		country_modifier = {
+			jewelry_used_for_minting = yes
+			jewelry_impacts_inflation = 0.25
+
+			minting_inflation_threshold = -0.03
+			minting_income_factor = 0.11
+		}
+
+		estate_preferences = {
+			burghers_estate
+			nobles_estate
+		}
+	}
+
+	commodity_money_policy_livestock = {
+		country_modifier = {
+			livestock_used_for_minting = yes
+			livestock_impacts_inflation = 0.01
+
+			minting_inflation_threshold = 0.1
+			minting_income_factor = 0.01
+		}
+
+		estate_preferences = {
+			nobles_estate
+		}
+	}
+
+	commodity_money_policy_tea = {
+		country_modifier = {
+			tea_used_for_minting = yes
+			tea_impacts_inflation = 0.15
+
+			minting_inflation_threshold = 0.06
+			minting_income_factor = 0.015
+		}
+
+		estate_preferences = {
+			crown_estate
+		}
+	}
+	
+}
+
+debt_law = {
+	law_category = socioeconomic
+
+	# Policies
+	periodical_cancel_law = {
+		country_modifier = {
+			tax_income_efficiency = small_tax_income_efficiency_penalty
+			minting_inflation_threshold = 0.02
+			estate_enrichment = -0.2
+			peasants_estate_target_satisfaction = small_permanent_target_satisfaction
+		}
+
+		estate_preferences = {
+			peasants_estate
+			crown_estate
+		}
+
+		years = 2
+	}
+
+	indebt_servitude_law = {
+		country_modifier = {
+			global_slaves_goods_output_modifier = 0.1
+			global_rgo_build_time = -0.05
+			global_build_buildings_cost = -0.10
+			global_manpower_modifier = 0.1
+			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+		}
+
+		estate_preferences = {
+			clergy_estate
+			nobles_estate
+		}
+
+		years = 2
+	}
+
+	negotiated_payment_law = {
+		country_modifier = {
+			global_estate_target_satisfaction = small_permanent_target_satisfaction
+			tax_income_efficiency = small_tax_income_efficiency_penalty
+			court_spending_cost_modifier = 0.05
+		}
+
+		estate_preferences = {
+			burghers_estate
+		}
+
+		years = 2
+	}
+
+	generational_debt_law = {
+		country_modifier = {
+			tax_income_efficiency = medium_tax_income_efficiency_bonus
+			minting_inflation_threshold = -0.03
+			estate_enrichment = 0.1
+			global_clergy_estate_power = 0.5
+			global_nobles_estate_power = 0.5
+			global_burghers_estate_power = 0.2
+			global_peasants_estate_power = -0.5
+		}
+
+		estate_preferences = {
+			nobles_estate
+		}
+
+		years = 2
+	}
+	
+}
