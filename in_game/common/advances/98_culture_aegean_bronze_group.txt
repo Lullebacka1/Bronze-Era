@@ -1,0 +1,11 @@
+megarons_advance = {
+	age = age_1_traditions
+
+	potential = {
+		culture = { has_culture_group = culture_group:aegean_bronze_group }
+	}
+
+	unlock_building = megaron
+
+	requires = palace_economy_advance
+}

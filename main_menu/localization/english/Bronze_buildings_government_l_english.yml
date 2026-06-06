@@ -2,9 +2,15 @@
   bronze_age_victory_stelae: "Victory Stelae"
   bronze_age_victory_stelae_desc: "The victory stelae were monumental stone slabs erected to commemorate significant military victories and achievements in Bronze Age societies. These stelae served as powerful symbols of triumph and were often inscribed with detailed accounts of the victorious campaigns, showcasing the prowess and dominance of the ruling elite. The victory stelae law mandates the construction of these commemorative monuments, reflecting the cultural importance placed on military success and the desire to immortalize such achievements for future generations."
 
+  megaron: "Megaron"
+  megaron_desc: "A grand audience hall forming the ceremonial heart of a palatial complex. The megaron hosts feasts, councils, diplomatic receptions, and royal ceremonies, reinforcing the prestige of the ruling dynasty and the cultural traditions of the realm."
+
   # #####################################
   # PRODUCTION METHODS AND MAINTENANCE
   # #####################################
 
   bronze_age_victory_stelae_maintenance_simple: "Inscribed Victory Monuments"
   bronze_age_victory_stelae_maintenance_simple_desc: "Skilled laborers erect stone monuments adorned with bronze fittings, inscriptions, and reliefs celebrating the achievements of rulers, warriors, and the gods who favor them."
+
+  megaron_maintenance: "Ceremonial Functions"
+  megaron_maintenance_desc: "Feasts, audiences, religious observances, and political gatherings ensure that the megaron remains the focal point of elite society and royal authority."

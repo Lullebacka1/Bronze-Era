@@ -67,3 +67,12 @@ bronze_city_walls_construction = {
 	
 	category = building_construction
 }
+
+palace_addition_construction = {
+	masonry = 1.0
+	lumber = 1.0
+	tools = 0.2
+	goods_gold = 0.2
+
+	category = building_construction
+}
