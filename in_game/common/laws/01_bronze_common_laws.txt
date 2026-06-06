@@ -571,3 +571,77 @@ verdict_law = {
 	}
 
 }
+
+land_property_law = {
+	law_category = administrative
+
+	royal_land_law = {
+		country_modifier = {
+			tax_income_efficiency = small_tax_income_efficiency_bonus
+			peasants_estate_levy_size = 0.10
+			global_clergy_estate_power = -0.05
+			global_noble_estate_power = -0.05
+			global_crown_estate_power = 0.1
+
+			global_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+			court_spending_cost_modifier = 0.2
+		}
+
+		estate_preferences = {
+			crown_estate
+		}
+
+		years = 2
+	}
+
+	temple_land_law = {
+		country_modifier = {
+			tax_income_efficiency = tiny_tax_income_efficiency_bonus
+			global_clergy_estate_power = 0.15
+			global_noble_estate_power = -0.05
+			global_crown_estate_power = -0.1
+			clergy_estate_target_satisfaction = small_permanent_target_satisfaction
+
+			nobles_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+		}
+
+		estate_preferences = {
+			clergy_estate
+		}
+
+		years = 2
+	}
+
+	household_land_law = {
+		country_modifier = {
+			global_noble_estate_power = 0.15
+			global_clergy_estate_power = -0.05
+			global_crown_estate_power = -0.1
+			nobles_estate_levy_size = 0.15
+			nobles_estate_target_satisfaction = small_permanent_target_satisfaction
+
+			nobles_estate_max_tax = -0.1
+			clergy_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+		}
+
+		estate_preferences = {
+			nobles_estate
+		}
+
+		years = 2
+	}
+
+	bureaucratic_land_law = {
+		country_modifier = {
+			tax_income_efficiency = medium_tax_income_efficiency_bonus
+			global_clergy_estate_power = -0.05
+			global_noble_estate_power = -0.05
+			global_crown_estate_power = 0.1
+
+			global_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+			court_spending_cost_modifier = 0.25
+		}
+
+		years = 2
+	}
+}
