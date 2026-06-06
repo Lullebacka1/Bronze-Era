@@ -30,14 +30,14 @@ trojan_war_raid_on_anatolia_failed = {
 
     option = {
         name = trojan_war_raid_on_anatolia_failed.a
-        add_gold = - 10
-		add_manpower_pool = - 100					 
+        add_gold = -10
+		add_manpower_pool = -100					 
 		custom_flavor_text = "raid_failed"
     }
 	option = {
 		name = trojan_war_raid_on_anatolia_failed.b
-		add_gold = - 20
-		add_manpower_pool = - 10					 
+		add_gold = -20
+		add_manpower_pool = -10					 
 		custom_flavor_text = "raid_failed"
 	}
 }

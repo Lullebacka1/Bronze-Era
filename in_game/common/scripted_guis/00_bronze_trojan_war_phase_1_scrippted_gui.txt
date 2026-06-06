@@ -7,9 +7,11 @@ raid_on_anatolia_gui = {
 	}
 
 	is_valid = {
-		gold >= 50
-		manpower_pool >= 250
-		NOT = { has_variable = trojan_war_raid_on_anatolia_cooldown }
+		root = {
+			treasury >= 50                    
+			manpower_pool >= 250             
+			NOT = { has_variable = trojan_war_raid_on_anatolia_cooldown }
+		}
 	}
 
 	effect = {
@@ -17,9 +19,11 @@ raid_on_anatolia_gui = {
 		set_variable = {
 			name = trojan_war_raid_on_anatolia_cooldown
 			value = yes
-			duration = { months = 6 }
+			months = 6 
 		}
-			# If the raid is successful, 80% chance, otherwise 20% chance for failure. Success chance is reduced if Wilusa has defended their coastline.
+		add_manpower_pool = -250
+		add_gold = -50	
+		# If the raid is successful, 80% chance, otherwise 20% chance for failure. Success chance is reduced if Wilusa has defended their coastline.
 		random_list = {
 			80 = {
 				modifier = {
@@ -29,27 +33,26 @@ raid_on_anatolia_gui = {
 			  		 #country modifier could be broken and mabey it should be add_modifier
 				add_country_modifier = {
 					modifier = trojan_war_raid_on_anatolia_success
-					duration = { months = 12 }	
+					months = 12
 				}
 				trigger_event_non_silently = { id = trojan_war_raid_on_anatolia_success }
 			}
 
 			20 = {
 				modifier = {
-					factor = 2
+					factor = 2.0
 					c:WILUS = { has_country_modifier = anatolia_coastline_is_defend }
 				}
 				add_country_modifier = {
 					modifier = trojan_war_raid_on_anatolia_failed
-					duration = { months = 12 }
+					months = 12
 					
 				}
 				trigger_event_non_silently = { id = trojan_war_raid_on_anatolia_failed }
 			}
 		}
 
-		add_manpower_pool = -250
-		add_gold = -50
+		
 	}
 
 	ai_is_valid = { always = no }
@@ -63,10 +66,12 @@ defend_coastline_gui = {
 		NOT = { has_global_variable = "trojan_war_phase_1_ended" }
 	}
 
-	is_valid = {
-		manpower_pool >= 150
-		gold >= 25
-		NOT = { has_variable = trojan_war_defend_coastline_cooldown }
+is_valid = {
+		root = {
+			treasury >= 25
+			manpower_pool >= 150
+			NOT = { has_variable = trojan_war_defend_coastline_cooldown }
+		}
 	}
 
 	effect = {
@@ -74,12 +79,12 @@ defend_coastline_gui = {
 		set_variable = {
 			name = trojan_war_defend_coastline_cooldown
 			value = yes
-			duration = { months = 6 }
+			months = 6
 		}
 
 		add_country_modifier = {
 			modifier = anatolia_coastline_is_defend
-			duration = { months = 6 }
+			months = 6
 		}
 		add_manpower_pool = -150
 		add_gold = -25
