@@ -366,7 +366,7 @@ contract_law_advance = {
 taxation_advance = {
 	age = age_1_traditions
 	icon = genoese_banking_traditions
-	research_cost = 2.5
+
 	enable_taxation = yes
 	has_stability_investment = yes
 
@@ -379,18 +379,14 @@ taxation_advance = {
 	starting_technology_level = 3
 }
 
-state_administration_advance = {
+debt_management_advance = {
 	age = age_1_traditions
-	research_cost = 2.5
-	unlock_law = administrative_system
+
+	unlock_law = debt_law
 	
 	requires = taxation_advance
 
 	starting_technology_level = 3
-
-	potential = {
-		has_tribal_government = no
-	}
 }
 
 #####################################
