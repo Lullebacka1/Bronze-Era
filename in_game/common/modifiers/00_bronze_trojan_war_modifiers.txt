@@ -28,7 +28,7 @@ trojan_war_anatolia_modifier_phase_2 ={
 		}
 	}
 
-global:anatolia_raid_success_count = {
+trojan_war_greece_modifier_phase_2 = {
 	siege_ability = {
 		value = global:anatolia_raid_success_count
 		multiply = 0.01
