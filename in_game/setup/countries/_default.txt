@@ -722,6 +722,14 @@ ZAKYN = {
 	color = rgb { 116 114 140 }
 	color2 = rgb { 110 27 27 }
 }
+ITHA = {
+	color = rgb { 91 122 158 }
+	color2 = rgb { 110 27 27 }
+}
+LEUK = {
+	color = rgb { 119 154 139 }
+	color2 = rgb { 110 27 27 }
+}
 MILOS = {
 	color = rgb { 168 133 94 }
 	color2 = rgb { 110 27 27 }
