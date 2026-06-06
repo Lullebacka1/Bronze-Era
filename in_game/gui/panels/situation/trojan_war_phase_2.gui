@@ -1,0 +1,92 @@
+﻿situation_panel = {
+
+	blockoverride "situation_header_left" {
+		icon = {
+			size = { 32 32 }
+			texture = "gfx/interface/icons/situations/00_bronze_trojan_war_phase_2.dds"
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+
+			text_single = {
+				layoutpolicy_horizontal = expanding
+				fontsize = 13
+				text = "trojan_war_panel_phase" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
+				default_format = "#subtle_name"
+			}
+
+			text_single = {
+				layoutpolicy_horizontal = expanding
+				fontsize = 13
+				text = "trojan_war_panel_phase_value2" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
+				default_format = "#Y"
+			}
+		}
+
+		expand = {}
+	}
+
+	blockoverride "situation_header_right" {
+		expand = {}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+
+			text_single = {
+				layoutpolicy_horizontal = expanding
+				align = right|nobaseline
+				fontsize = 13
+				text = "trojan_war_panel_escalation" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
+				default_format = "#subtle_name"
+			}
+
+			text_single = {
+				layoutpolicy_horizontal = expanding
+				align = right|nobaseline
+				fontsize = 13
+				text = "trojan_war_panel_escalation_value" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
+				default_format = "#R"
+			}
+		}
+
+		icon = {
+			size = { 32 32 }
+			texture = "gfx/interface/icons/flat_icons/geopolitics/privateer.dds"
+		}
+	}
+
+	blockoverride "situation_subheader_content" {}
+
+	blockoverride "situation_panel_main_content" {
+		situation_card_expandable = {
+			blockoverride "header_button_onclick" {
+				onclick = "[LateralView.Vars.Toggle( 'trojan_war2_overview_toggled' )]"
+			}
+			blockoverride "header_text" {
+				text = "trojan_war_panel_header" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
+			}
+			blockoverride "header_icon" {
+				texture = "gfx/interface/icons/situations/00_bronze_trojan_war_phase_2.dds"
+			}
+			blockoverride "bottom_content" {
+				text_multi = {
+					autoresize = no
+					multiline = yes
+					size = { 470 140 }
+					text = "trojan_war_phase_2_desc" #is in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
+				}
+			}
+			blockoverride "bottom_content_onclick" {
+				visible = "[LateralView.Vars.Exists( 'trojan_war2_overview_toggled' )]"
+			}
+			blockoverride "icon_replace_visible_yes" {
+				visible = "[LateralView.Vars.Exists( 'trojan_war2_overview_toggled' )]"
+			}
+			blockoverride "icon_replace_visible_not" {
+				visible = "[Not(LateralView.Vars.Exists( 'trojan_war2_overview_toggled' ))]"
+			}
+		}
+	}
+
+}

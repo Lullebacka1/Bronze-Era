@@ -13,5 +13,7 @@
   raid_on_anatolia_effect_desc: "Spend 75 treasury and 250 manpower to launch naval raiding parties across the Aegean Sea. Success grants a temporary raiding bonus; failure weakens the expedition."
   defend_coastline_effect_desc: "Spend 25 treasury and 150 manpower to mobilize coastal watches for six months, reducing the success chance of enemy raids."
   trojan_war_defend_toggled: "The Trojan War - Phase 1 Coastline Defended"
-  
+  trojan_war_phase_1: "The Trojan War - Phase 2"
+  trojan_war_phase_1_desc: "The raiding have blown it to a full scaled war and both sieds have fully raised their armies"
+  trojan_war_panel_phase_value2: "Phase 2: Vengeance"
   
