@@ -52,3 +52,38 @@ cyclopean_walls = {
 
 	graphical_tags = { small_city_walls city_walls }
 }
+
+megaron = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	
+	category = government_category
+	forbidden_for_estates = yes
+	
+	employment_size = minor_noble_employment
+	
+	town = no
+	city = yes
+	megalopolis = yes
+	
+	build_time = government_build_time
+	
+	location_potential = {
+		has_building = building_type:bronze_age_palatial_complex
+	}
+	
+	modifier = {
+		local_crown_estate_power = 0.05
+		local_noble_estate_power = 0.05
+		local_cultural_influence = 0.05
+		local_cultural_tradition = 0.05
+	}
+
+	possible_production_methods =  {
+		megaron_maintenance
+	}
+	construction_demand = palace_addition_construction
+
+	custom_tags = { palace_addition }
+}

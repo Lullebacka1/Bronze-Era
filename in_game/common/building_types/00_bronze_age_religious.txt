@@ -212,6 +212,8 @@ temple_granary = {
 
 	obsolete = neolithic_feast_court
 
+	custom_tags = { temple_addition }
+
 	ai_forbid_shutdown = yes
 }
 
@@ -250,7 +252,7 @@ temple_scribes_guild = {
 		scribe_wood_maintenance
 	}
 
-	custom_tags = { scribe }
+	custom_tags = { scribe temple_addition }
 	construction_demand = bronze_religious_building_construction
 }
 
@@ -326,4 +328,6 @@ temple_court = {
 	}
 
 	construction_demand = bronze_religious_building_construction
+
+	custom_tags = { temple_addition }
 }

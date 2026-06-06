@@ -180,6 +180,9 @@
   temple_court_advance: "Temple Courts"
   temple_court_advance_desc: "As temple institutions expand, they increasingly serve as centers of arbitration, oath-taking, and legal judgment. Religious authorities oversee disputes, contracts, and customary law, extending sacred influence into the administration of society."
 
+  megarons_advance: "Megarons"
+  megarons_advance_desc: "The rulers of the Aegean develop monumental audience halls centered on a great hearth and throne room. These megarons serve as ceremonial, political, and administrative centers where authority is displayed, alliances are forged, and elite culture is cultivated."
+
   # ##########################
   # PRODUCTION METHODS
   # ##########################
