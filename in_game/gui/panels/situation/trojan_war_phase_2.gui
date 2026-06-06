@@ -12,14 +12,14 @@
 			text_single = {
 				layoutpolicy_horizontal = expanding
 				fontsize = 13
-				text = "trojan_war_panel_phase" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
+				text = "trojan_war_panel_phase" 
 				default_format = "#subtle_name"
 			}
 
 			text_single = {
 				layoutpolicy_horizontal = expanding
 				fontsize = 13
-				text = "trojan_war_panel_phase_value2" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
+				text = "trojan_war_panel_phase_value2" 
 				default_format = "#Y"
 			}
 		}
@@ -37,7 +37,7 @@
 				layoutpolicy_horizontal = expanding
 				align = right|nobaseline
 				fontsize = 13
-				text = "trojan_war_panel_escalation" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
+				text = "trojan_war_panel_escalation" 
 				default_format = "#subtle_name"
 			}
 
@@ -45,7 +45,7 @@
 				layoutpolicy_horizontal = expanding
 				align = right|nobaseline
 				fontsize = 13
-				text = "trojan_war_panel_escalation_value" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
+				text = "trojan_war_panel_escalation_value" 
 				default_format = "#R"
 			}
 		}
@@ -64,7 +64,7 @@
 				onclick = "[LateralView.Vars.Toggle( 'trojan_war2_overview_toggled' )]"
 			}
 			blockoverride "header_text" {
-				text = "trojan_war_panel_header" #isnt in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
+				text = "trojan_war_panel_header" 
 			}
 			blockoverride "header_icon" {
 				texture = "gfx/interface/icons/situations/00_bronze_trojan_war_phase_2.dds"
@@ -74,7 +74,7 @@
 					autoresize = no
 					multiline = yes
 					size = { 470 140 }
-					text = "trojan_war_phase_2_desc" #is in Bronze-Era\localization\english\Bronze_trojan_war_phase_1_l_english.yml
+					text = "trojan_war_phase_2_desc" 
 				}
 			}
 			blockoverride "bottom_content_onclick" {
