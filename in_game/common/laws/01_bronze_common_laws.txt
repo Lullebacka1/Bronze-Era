@@ -514,3 +514,60 @@ debt_law = {
 	}
 	
 }
+
+verdict_law = {
+	law_category = administrative
+
+	compensation_law = {
+		country_modifier = {
+			global_nobles_estate_power = 0.1
+			cultural_tradition_modifier = 0.02
+			stability_cost = -0.1
+		}
+
+		years = 2
+	}
+
+	punishment_law = {
+		country_modifier = {
+			global_crown_estate_power = 0.1
+			global_monthly_control = 0.002
+			global_production_efficiency = small_production_efficiency_penalty
+		}
+
+		years = 2
+	}
+
+	retribution_law = {
+		country_modifier = {
+			stability_cost = -0.25
+			court_spending_cost_modifier = -0.1
+			nobles_estate_levy_size = -0.10
+			global_monthly_development = -0.001
+		}
+
+		years = 2
+
+		estate_preferences = {
+			nobles_estate
+		}
+	}
+
+	mediated_sett_law = {
+		country_modifier = {
+			stability_cost = -0.1
+			stability_decay = -0.00025
+			court_spending_cost_modifier = 0.15
+			global_nobles_estate_power = 0.05
+			global_clergy_estate_power = 0.05
+			global_crown_estate_power = -0.1
+		}
+
+		years = 2
+
+		estate_preferences = {
+			clergy_estate
+		}		
+	}
+
+}

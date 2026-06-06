@@ -347,6 +347,7 @@ codified_laws = {
 	has_codified_laws = yes
 
 	unlock_law = subj_law
+	unlock_law = verdict_law
 	
 	starting_technology_level = 3
 }

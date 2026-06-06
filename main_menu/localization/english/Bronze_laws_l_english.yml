@@ -70,6 +70,18 @@
   generational_debt_law: "Generational Debt"
   generational_debt_law_desc: "Unpaid debts may be inherited by descendants, binding families to long-term obligations that can persist across generations. This system strengthens creditors while reinforcing enduring social and economic hierarchies."
 
+  compensation_law: "Compensation Favored"
+  compensation_law_desc: "Courts favor restitution over coercion, requiring offenders to compensate those they have harmed. Such settlements strengthen customary law and social cohesion, though they often depend upon the influence and resources of established families."
+
+  punishment_law: "Punishment Favored"
+  punishment_law_desc: "Authorities increasingly reserve the right to punish offenders directly through fines, corporal penalties, or other sanctions. The enforcement of justice becomes more closely associated with public authority and the maintenance of order."
+
+  retribution_law: "Retributive Justice"
+  retribution_law_desc: "Wrongs are expected to be answered with proportional retaliation, whether through blood feuds, vengeance, or reciprocal obligations. Such customs reduce the need for formal institutions but can weaken central authority and perpetuate cycles of conflict."
+
+  mediated_sett_law: "Mediated Settlement"
+  mediated_sett_law_desc: "Disputes are resolved through arbitration by respected elders, priests, judges, or local notables. Maintaining harmony requires extensive negotiation and oversight, but settlements reached through consensus are often more enduring and broadly accepted."
+
   # ########################
   # LAWS
   # ########################
@@ -82,3 +94,6 @@
 
   debt_law: "Debt Management"
   debt_law_desc: "These laws regulate the treatment of debt, defining the rights of creditors and debtors as well as the obligations that arise from unpaid obligations. Different approaches balance social stability, economic activity, and the interests of powerful groups."
+
+  verdict_law: "Verdict Resolution"
+  verdict_law_desc: "Ancient justice was rarely concerned solely with determining guilt. Courts, assemblies, rulers, priests, and kin groups sought to restore social order after wrongdoing through a variety of means, balancing the interests of victims, offenders, powerful families, and the wider community."
