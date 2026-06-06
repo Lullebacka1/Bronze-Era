@@ -10,7 +10,7 @@ trojan_war_phase_2 = {
 	}
 
 	on_start = {
-		# add all contry modifers
+		# to do add all contry modifers
 		set_global_variable = { name = "trojan_war_phase_2_started" value = yes }
 		add_country_modifier = {}
 	}
@@ -28,7 +28,7 @@ trojan_war_phase_2 = {
 	on_end = {
 		set_global_variable = { name = "trojan_war_phase_2_ended" value = yes }
 		remove_country_modifier = {
-			# add all contries
+			# to do add all contries
 			 0001G = { remove_country_modifier = trojan_war_greece_modifier_phase_2 }
 			 WILUS = { remove_country_modifier = trojan_war_anatolia_modifier_phase_2 }
 		}
