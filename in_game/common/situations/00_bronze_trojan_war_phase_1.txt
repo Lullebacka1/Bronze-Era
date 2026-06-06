@@ -31,6 +31,11 @@ trojan_war_phase_1 = {
 		OR = {
 			tag = 0001G # Mycenaea
 			tag = WILUS # Wilusa
+			tag = AHHI # Ahhiyawa
+			tag = LYCIA # Lycia
+			tag = SEHA # Seha River Land
+			tag = LUKKA # Lukka
+			tag = MASA # Masaa
 		}
 		NOT = { has_global_variable = "trojan_war_phase_1_ended" }
 	}

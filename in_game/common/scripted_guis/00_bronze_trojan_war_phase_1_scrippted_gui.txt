@@ -27,10 +27,30 @@ raid_on_anatolia_gui = {
 		random_list = {
 			80 = {
 				modifier = {
-					factor = 0.75
+					factor = 0.89
 					c:WILUS = { has_country_modifier = anatolia_coastline_is_defend }
 				}
-			  		 #country modifier could be broken and mabey it should be add_modifier
+				modifier = {
+					factor = 0.89
+					c:AHHI = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 0.89
+					c:LYCIA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 0.89
+					c:SEHA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 0.89
+					c:LUKKA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 0.89
+					c:MASA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+			  		
 				add_country_modifier = {
 					modifier = trojan_war_raid_on_anatolia_success
 					months = 12
@@ -40,8 +60,28 @@ raid_on_anatolia_gui = {
 
 			20 = {
 				modifier = {
-					factor = 2.0
+					factor = 1.12
 					c:WILUS = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 1.12
+					c:AHHI = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 1.12
+					c:LYCIA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 1.12
+					c:SEHA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 1.12
+					c:LUKKA = { has_country_modifier = anatolia_coastline_is_defend }
+				}
+				modifier = {
+					factor = 1.12
+					c:MASA = { has_country_modifier = anatolia_coastline_is_defend }
 				}
 				add_country_modifier = {
 					modifier = trojan_war_raid_on_anatolia_failed
@@ -62,7 +102,14 @@ defend_coastline_gui = {
 	scope = country
 
 	is_shown = {
-		tag = WILUS # Wilusa
+		OR = {
+			tag = WILUS # Wilusa
+			tag = AHHI # Ahhiyawa
+			tag = LYCIA # Lycia
+			tag = SEHA # Seha River Land
+			tag = LUKKA # Lukka
+			tag = MASA # Masaa
+			}
 		NOT = { has_global_variable = "trojan_war_phase_1_ended" }
 	}
 
