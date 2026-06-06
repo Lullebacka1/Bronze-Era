@@ -1,0 +1,15 @@
+
+
+# Mycenae Outcomes
+trojan_war_raid_on_anatolia_success = {
+	
+}
+
+trojan_war_raid_on_anatolia_failed = {
+	
+}
+
+# Wilusa / Anatolia Outcomes
+anatolia_coastline_is_defend = {
+	
+}
