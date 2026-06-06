@@ -6,10 +6,10 @@ raid_on_anatolia_gui = {
 		NOT = { has_global_variable = "trojan_war_phase_1_ended" }
 	}
 
-	is_valid = {
+	is_valid = { #has problems with checking money and mapower but colwdon works
 		root = {
-			treasury >= 50                    
-			manpower_pool >= 250             
+			treasury = { value >= 50 }
+			manpower = { value >= 250 }      
 			NOT = { has_variable = trojan_war_raid_on_anatolia_cooldown }
 		}
 	}
@@ -68,8 +68,8 @@ defend_coastline_gui = {
 
 is_valid = {
 		root = {
-			treasury >= 25
-			manpower_pool >= 150
+			treasury = { value >= 25 }
+			manpower = { value >= 150 }
 			NOT = { has_variable = trojan_war_defend_coastline_cooldown }
 		}
 	}
