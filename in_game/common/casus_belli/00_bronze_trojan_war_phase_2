@@ -1,3 +1,36 @@
 trojan_war_casus_belli = {
-    
+	valid_for_wargoal = yes
+
+	is_badboy_war = no
+
+	is_triggered_only = yes
+
+	wargoal = {
+		type = take_province
+		allow = {
+		province = province_biga
+		owner = {
+			is_defending_in_war = yes
+		}
+		}
+	}
+
+	war_score_cost = {
+		value = 2.0
+	}
+
+	ae_cost = {
+		value = 2.75
+	}
+
+	prestige_gain = {
+		value = 0.5
+	}
+
+	peace_options = {
+		take_province
+		concede_defeat
+		annul_treaty
+		full_annexation
+	}
 }
