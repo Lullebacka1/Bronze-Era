@@ -186,6 +186,9 @@
   megarons_advance: "Megarons"
   megarons_advance_desc: "The rulers of the Aegean develop monumental audience halls centered on a great hearth and throne room. These megarons serve as ceremonial, political, and administrative centers where authority is displayed, alliances are forged, and elite culture is cultivated."
 
+  wharf_unlock_advance: "Wharf Construction"
+  wharf_unlock_advance_desc: "Communities begin building permanent waterfront structures for loading cargo, repairing vessels, and managing maritime traffic. These facilities improve the efficiency of trade and strengthen connections between coastal settlements and distant markets."
+
   # ##########################
   # PRODUCTION METHODS
   # ##########################

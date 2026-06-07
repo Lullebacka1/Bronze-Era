@@ -188,6 +188,16 @@ bronze_age_trade_posts_advance = {
 	requires = intercultural_relations_advance
 }
 
+wharf_unlock_advance = {
+	age = age_1_traditions
+
+	unlock_building = wharf
+
+	starting_technology_level = 3
+
+	requires = sailing_advance
+}
+
 # #########
 # FORTS
 # #########
