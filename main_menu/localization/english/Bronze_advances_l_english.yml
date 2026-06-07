@@ -192,6 +192,9 @@
   merchants_quarters_unlock_advance: "Merchant Communities"
   merchants_quarters_unlock_advance_desc: "The spread of practical literacy allows merchants to manage contracts, accounts, and correspondence with greater ease. As trade expands, permanent merchant communities emerge within towns and cities, forming distinct centers of commerce and exchange."
 
+  palace_trade_registry_advance: "Trade Registries"
+  palace_trade_registry_advance_desc: "Growing commercial activity encourages rulers to record merchants, shipments, obligations, and exchanges. Dedicated trade registries improve oversight of commerce and strengthen connections between administrative centers and markets."
+
   # ##########################
   # PRODUCTION METHODS
   # ##########################

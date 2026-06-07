@@ -1120,6 +1120,8 @@ pirate_build_time = 		180
 generic_event_building = 90
 instant_build_time = 1
 
+palace_addition_build_time = 365
+
 
 #################################
 # Ship Maritime Values

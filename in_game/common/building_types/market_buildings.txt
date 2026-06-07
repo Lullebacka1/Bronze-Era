@@ -1,79 +1,40 @@
-﻿# entrepot = {
-# 	is_foreign = no
-# 	pop_type = burghers
-# 	max_levels = 1
+﻿ trading_hub = {
+ 	is_foreign = no
+ 	pop_type = burghers
+ 	max_levels = 1
 	
-# 	category = trade_category
+	category = trade_category
 	
-# 	employment_size = trade_employment
+ 	employment_size = trade_employment
 	
-# 	town = yes
-# 	city = yes
-# 	megalopolis = yes
+ 	town = yes
+ 	city = yes
+ 	megalopolis = yes
 	
-# 	expensive = yes
-# 	build_time = market_build_time
+ 	expensive = yes
+ 	build_time = market_build_time
 	
-# 	location_potential = {
-# 		is_market_center = yes
-# 	}
-	
-# 	remove_if = {
-# 		location = { is_market_center = no }
-# 	}
-# 	modifier = {
-# 		local_merchant_capacity = 5
-# 	}
-	
-# 	market_center_modifier = {
-# 		local_trade_center_power = 0.1
-		
-# 	}
-	
-	
-# 	possible_production_methods = {
-# 		market_center_building_maintenance
-# 	}
-# 	construction_demand = market_center_building_construction
-# }
+ 	location_potential = {
+ 		is_market_center = yes
+ 	}
 
-# trading_hub = {
-# 	is_foreign = no
-# 	pop_type = burghers
-# 	max_levels = 1
+ 	remove_if = {
+ 		location = { is_market_center = no }
+ 	}
+ 	modifier = {
+ 		local_merchant_capacity = 5
+ 	}
 	
-# 	category = trade_category
-	
-# 	employment_size = trade_employment
-	
-# 	town = yes
-# 	city = yes
-# 	megalopolis = yes
-	
-# 	expensive = yes
-# 	build_time = market_build_time
-	
-# 	location_potential = {
-# 		is_market_center = yes
-# 	}
-
-# 	remove_if = {
-# 		location = { is_market_center = no }
-# 	}
-# 	modifier = {
-# 		local_merchant_capacity = 5
-# 	}
-	
-# 	market_center_modifier = {
-# 		local_trade_center_power = 0.1
-# 	}
+ 	market_center_modifier = {
+ 		local_trade_center_power = 0.1
+ 	}
 	
 	
-# 	possible_production_methods =  {
-# 		market_center_building_maintenance
-# 	}
-# 	construction_demand = market_center_building_construction
-# }
+ 	possible_production_methods =  {
+ 		market_center_building_maintenance
+ 	}
+ 	construction_demand = bronze_market_center_building_construction
+ }
 
 # customs_house = {
 # 	is_foreign = no

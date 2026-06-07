@@ -123,16 +123,20 @@
 
  royal_registry_advance = {
 	age = age_1_traditions
-	research_cost = 1.5
-
-	allow = {
-		has_advance = elite_scripts_advance
-	}
 
 	unlock_building = palace_registry
 	starting_technology_level = 3
 
-	requires = palace_economy_advance
+	requires = palace_administration
+ }
+
+ palace_trade_registry_advance = {
+	age = age_1_traditions
+
+	unlock_building = palace_trade_registry
+	starting_technology_level = 3
+
+	requires = palace_administration
  }
 
 
