@@ -76,3 +76,10 @@ palace_addition_construction = {
 
 	category = building_construction
 }
+
+warrior_halls_building_construction = {
+	leather = 1
+	stone = 0.4
+	lumber = 1
+	weaponry = 1
+}

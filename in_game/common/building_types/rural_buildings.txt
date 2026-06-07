@@ -106,8 +106,6 @@ fishing_village = {
 
 		local_sailors = 0.001
 
-
-
 	}
 	raw_modifier = {
 		local_laborers_desired_pop = 0.1
@@ -639,4 +637,33 @@ settlement_building = {
 		local_population_growth = 0.01
 	}
 	
+}
+
+warrior_halls = {
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+	
+	category = military_category
+	forbidden_for_estates = yes
+	
+	employment_size = small_rural_peasant_produce_employment
+	
+	rural_settlement = yes
+	town = no
+	city = no
+	megalopolis = no
+	
+	build_time = soldier_building
+	
+	modifier = {
+		local_manpower = 0.010
+		can_recruit_regiment_in_this_location = yes
+		local_nobles_estate_power = 0.10
+	}
+
+	possible_production_methods =  {
+		warrior_halls_maintenance
+	}
+	construction_demand = warrior_halls_building_construction
 }
