@@ -12,13 +12,53 @@ trojan_war_phase_2 = {
 	on_start = {
 		# to do add all contry modifers
 		set_global_variable = { name = "trojan_war_phase_2_started" value = yes }
-		add_country_modifier = {}
+		0001G = {
+            add_country_modifier = { name = trojan_war_greece_modifier_phase_2 }
+        }
+        WILUS = {
+            add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 }
+        }
+        AHHI = {
+            add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 }
+        }
+        LYCIA = {
+            add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 }
+        }
+        SEHA = {
+            add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 }
+        }
+        LUKKA = {
+            add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 }
+        }
+        MASA = {
+            add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 }
+        }
+		0001G ={
+			start_war = {
+				target = WILUS
+				type = trojan_war_casus_belli
+				helpers = {
+					tag = AHHI # Ahhiyawa
+					tag = LYCIA # Lycia
+					tag = SEHA # Seha River Land
+					tag = LUKKA # Lukka
+					tag = MASA # Masaa
+				}
+			}
+		}
 	}
 
 	can_end = {
 		#we want it to en when war score is above 75% and we will have scripted peace deal
 		has_global_variable = "trojan_war_phase_2_started"
 		NOT = { has_global_variable = "trojan_war_phase_2_ended" }
+		NOT = {
+			any_current_war = {
+				any_war_participant = { tag = 0001G }
+				any_war_participant = { tag = WILUS }
+				cb_type = trojan_war_casus_belli
+			}
+		}
 	}
 
 	end_conditions = {
@@ -27,11 +67,27 @@ trojan_war_phase_2 = {
 
 	on_end = {
 		set_global_variable = { name = "trojan_war_phase_2_ended" value = yes }
-		remove_country_modifier = {
-			# to do add all contries
-			 0001G = { remove_country_modifier = trojan_war_greece_modifier_phase_2 }
-			 WILUS = { remove_country_modifier = trojan_war_anatolia_modifier_phase_2 }
-		}
+		0001G = {
+            remove_country_modifier = trojan_war_greece_modifier_phase_2
+        }
+        WILUS = {
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2
+        }
+        AHHI = {
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2
+        }
+        LYCIA = {
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2
+        }
+        SEHA = {
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2
+        }
+        LUKKA = {
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2
+        }
+        MASA = {
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2
+        }
 	}
 
 	visible = {

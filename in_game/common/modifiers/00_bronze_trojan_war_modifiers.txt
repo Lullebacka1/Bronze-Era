@@ -14,29 +14,40 @@ anatolia_coastline_is_defend = {
 	
 }
 
-trojan_war_anatolia_modifier_phase_2 ={
-	siege_ability = {
-			 value = global:anatolia_raid_failed_count
-			 multiply = 0.02
-			 max = 0.30
-			 add = -0.20
-		}
-	levy_combat_efficiency = {
-			 value = global:anatolia_raid_failed_count
-			 multiply = 0.02
-			 max = 0.25	
-		}
-	}
+trojan_war_anatolia_modifier_phase_2 = {
+    siege_ability = {
+        value = -0.20
+        add = {
+            value = global:anatolia_raid_failed_count
+            multiply = 0.02
+        }
+        max = 0.30
+    }
+    levy_combat_efficiency = {
+        value = 0.0
+        add = {
+            value = global:anatolia_raid_failed_count
+            multiply = 0.02
+        }
+        max = 0.25	
+    }
+}
 
 trojan_war_greece_modifier_phase_2 = {
-	siege_ability = {
-		value = global:anatolia_raid_success_count
-		multiply = 0.01
-		max = 0.20
-	}
-	navy_levy_size = {
-		value = global:anatolia_raid_success_count
-		multiply = 0.02
-		max = 0.50
-	}
+    siege_ability = {
+        value = 0.0
+        add = {
+            value = global:anatolia_raid_success_count
+            multiply = 0.01
+        }
+        max = 0.20
+    }
+    navy_levy_size = {
+        value = 0.0
+        add = {
+            value = global:anatolia_raid_success_count
+            multiply = 0.02
+        }
+        max = 0.50
+    }
 }
