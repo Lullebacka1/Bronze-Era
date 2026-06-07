@@ -1019,6 +1019,8 @@ tiny_rural_peasant_enhance_employment = 0.1
 elephant_hunting_grounds_employment = 	2.5
 small_peasant_employment = 				0.25
 
+bronze_generic_peasant_building_employment = 	0.2
+
 #tribesmen
 generic_tribesmen_employment = 			0.5
 
