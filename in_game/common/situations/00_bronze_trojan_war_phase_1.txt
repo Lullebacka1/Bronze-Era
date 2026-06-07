@@ -25,10 +25,6 @@ trojan_war_phase_1 = {
 
 	on_end = {
 		set_global_variable = { name = "trojan_war_phase_1_ended" value = yes }
-		trigger_situation = {
-			key = trojan_war_phase_2
-			target = 0001G
-		}
 	}
 
 	visible = {

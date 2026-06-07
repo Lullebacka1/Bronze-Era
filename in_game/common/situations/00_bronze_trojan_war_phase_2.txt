@@ -1,8 +1,12 @@
 trojan_war_phase_2 = {
-	is_triggered_only = yes
+	monthly_spawn_chance = {
+		value = 100
+	}
 
-	allowed_targets = {
-		this = { tag = 0001G }
+	can_start = {
+		current_date >= 14.1.2
+		NOT = { has_global_variable = "trojan_war_phase_2_started" }
+		NOT = { has_global_variable = "trojan_war_phase_2_ended" }
 	}
 	
 	on_start = {
@@ -38,7 +42,7 @@ trojan_war_phase_2 = {
 					type = trojan_war_casus_belli
 				}
 				
-			/
+			
 				any_current_war = {
 					limit = {
 						cb_type = trojan_war_casus_belli
