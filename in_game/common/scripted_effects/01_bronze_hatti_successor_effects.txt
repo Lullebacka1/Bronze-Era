@@ -176,9 +176,12 @@ bronze_hatti_collapse_spawn_arpad = {
 }
 
 bronze_hatti_collapse_spawn_que = {
+	# Iskenderun belongs to Que's Cilician coastal sphere.
+	bronze_hatti_collapse_convert_location_population = { location = iskenderun culture = hittite religion = hittite fraction = 0.25 }
 	bronze_hatti_collapse_prepare_successor = { tag = QUE location = tarsus }
 	bronze_hatti_collapse_prepare_successor = { tag = QUE location = adana }
 	bronze_hatti_collapse_prepare_successor = { tag = QUE location = ayas }
+	bronze_hatti_collapse_prepare_successor = { tag = QUE location = iskenderun }
 	bronze_hatti_collapse_prepare_successor = { tag = QUE location = kars_armenia }
 	bronze_hatti_collapse_prepare_successor = { tag = QUE location = sis }
 	bronze_hatti_collapse_prepare_successor = { tag = QUE location = anavarza }
@@ -192,6 +195,8 @@ bronze_hatti_collapse_spawn_que = {
 		religion = hittite
 		accepted_culture = luwian
 	}
+	# Fallback first, preferred historical capital last.
+	bronze_hatti_collapse_set_successor_capital = { tag = QUE location = iskenderun }
 	bronze_hatti_collapse_set_successor_capital = { tag = QUE location = adana }
 	bronze_hatti_collapse_mark_neo_hittite = { tag = QUE }
 }
@@ -293,9 +298,18 @@ bronze_hatti_collapse_spawn_carchemish = {
 }
 
 bronze_hatti_collapse_spawn_tabal_deterministic = {
+	# Eastern Taurus highland additions assigned to Tabal.
+	bronze_hatti_collapse_convert_location_population = { location = goksun culture = hittite religion = hittite fraction = 0.2 }
+	bronze_hatti_collapse_convert_location_population = { location = afsin culture = hittite religion = hittite fraction = 0.2 }
+	bronze_hatti_collapse_convert_location_population = { location = comana_cil culture = hittite religion = hittite fraction = 0.2 }
+	bronze_hatti_collapse_convert_location_population = { location = hargan culture = hittite religion = hittite fraction = 0.2 }
 	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = gurun }
 	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = deliktash }
 	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = dasmenda }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = goksun }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = afsin }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = comana_cil }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = hargan }
 	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = tomarza }
 	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = kayseri }
 	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = gemerek }
@@ -315,6 +329,8 @@ bronze_hatti_collapse_spawn_tabal_deterministic = {
 		religion = hittite
 		accepted_culture = luwian
 	}
+	# Goksun keeps the state viable if Kayseri was lost before fragmentation.
+	bronze_hatti_collapse_set_successor_capital = { tag = TABAL location = goksun }
 	bronze_hatti_collapse_set_successor_capital = { tag = TABAL location = kayseri }
 	bronze_hatti_collapse_mark_neo_hittite = { tag = TABAL }
 }
@@ -364,6 +380,7 @@ bronze_hatti_collapse_spawn_urartu_deterministic = {
 }
 
 bronze_hatti_collapse_spawn_luwiya = {
+	bronze_hatti_collapse_convert_location_population = { location = insuyu culture = luwian religion = luwian fraction = 0.25 }
 	bronze_hatti_collapse_convert_location_population = { location = aksehir culture = luwian religion = luwian fraction = 0.25 }
 	bronze_hatti_collapse_convert_location_population = { location = ilgin culture = luwian religion = luwian fraction = 0.25 }
 	bronze_hatti_collapse_convert_location_population = { location = ladik culture = luwian religion = luwian fraction = 0.25 }
@@ -382,6 +399,7 @@ bronze_hatti_collapse_spawn_luwiya = {
 	bronze_hatti_collapse_convert_location_population = { location = hatunsaray culture = luwian religion = luwian fraction = 0.25 }
 	bronze_hatti_collapse_convert_location_population = { location = nevsehir culture = luwian religion = luwian fraction = 0.25 }
 	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = aksehir }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = insuyu }
 	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = ilgin }
 	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = ladik }
 	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = altinekin }
@@ -404,6 +422,8 @@ bronze_hatti_collapse_spawn_luwiya = {
 		religion = luwian
 		accepted_culture = hittite
 	}
+	# Insuyu is a fallback; Aksaray remains the preferred capital.
+	bronze_hatti_collapse_set_successor_capital = { tag = LUWIY location = insuyu }
 	bronze_hatti_collapse_set_successor_capital = { tag = LUWIY location = aksaray }
 }
 

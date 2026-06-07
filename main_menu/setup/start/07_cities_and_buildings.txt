@@ -15,10 +15,8 @@ locations = {
     modon = { rank = city }            
     kalamata = { rank = city }         
     chalandritsa = { rank = town }     
-    thebes_greece = { rank = city }    
+    thebes = { rank = city }
     athens = { rank = city }         
-    pylos = { rank = city }            
-    sparta = { rank = city }           
 
     #  ANATOLIA (HITTITE EMPIRE) 
     canakkale = { rank = city }      
@@ -32,11 +30,8 @@ locations = {
     konya = { rank = town }          
     tarsus = { rank = city }          
     silifke = { rank = city }         
-    bogazkale = { rank = city }       
-    yozgat = { rank = city }          
-    alaca_hoyuk = { rank = city }      
-    ephesus = { rank = city }         
-    fethiye = { rank = town }         
+    ayasuluk = { rank = city }
+    megri = { rank = town }
 
     #  CRETE & CYPRUS 
     chania = { rank = city }       	   
@@ -59,9 +54,8 @@ locations = {
     deir_qamar = { rank = town }       
     damascus = { rank = city }        
     sidon = { rank = city }
-    tyre = { rank = town }             
-    karkamis = { rank = city }        
-    palmyra = { rank = town }          
+    dluk = { rank = city }
+    tadmur = { rank = town }
 
     #  PALESTINE & DESERT FRONTIERS 
     acre = { rank = town }             
@@ -80,14 +74,13 @@ locations = {
 
     #  MESOPOTAMIA 
     balad = { rank = town }             
-    al_sinn = { rank = town }          
+    al_sinn = { rank = city }
     baghdad = { rank = city }           
     karbala = { rank = town }           
     hillah = { rank = city }            
     suq_al_shuyukh = { rank = town }    
     abdanan = { rank = town }           
     mosul = { rank = city }             
-    al_sharqat = { rank = city }        
 }
 
 # for the unique and special buildings

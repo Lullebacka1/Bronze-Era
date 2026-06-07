@@ -127,13 +127,6 @@ bronze_hatti_collapse.8 = {
 			bronze_hatti_collapse_final_fragmentation = yes
 		}
 	}
-	option = {
-		name = bronze_hatti_collapse.8.b
-		custom_tooltip = bronze_hatti_collapse_8b_tt
-		set_variable = { name = bronze_hatti_last_stand value = 1 years = 8 }
-		bronze_hatti_collapse_mark_internal_breakdown = yes
-		add_prestige = prestige_weak_bonus
-	}
 }
 
 bronze_hatti_collapse.10 = {
@@ -439,13 +432,6 @@ bronze_hatti_collapse.90 = {
 			bronze_hatti_collapse_final_fragmentation = yes
 		}
 	}
-	option = {
-		name = bronze_hatti_collapse.90.b
-		custom_tooltip = bronze_hatti_collapse_90b_tt
-		set_variable = { name = bronze_hatti_last_stand value = 1 years = 10 }
-		bronze_hatti_collapse_add_pressure = { value = 12 }
-		add_prestige = prestige_weak_bonus
-	}
 }
 
 bronze_hatti_collapse.100 = {
@@ -648,5 +634,31 @@ bronze_hatti_collapse.200 = {
 			limit = { country_exists = c:QUE }
 			change_player = c:QUE
 		}
+	}
+}
+
+# Historical deadline survival outcome: 1185 BC (internal year 25).
+bronze_hatti_collapse.210 = {
+	type = country_event
+	title = bronze_hatti_collapse.210.title
+	desc = bronze_hatti_collapse.210.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/bronze_hatti_collapse.dds"
+	outcome = positive
+	major = yes
+	orphan = yes
+
+	trigger = {
+		tag = HATTI
+		is_human = yes
+		has_variable = bronze_hatti_deadline_event_pending
+		NOT = { has_global_variable = bronze_hatti_final_fragmentation_complete }
+		NOT = { has_global_variable = bronze_hatti_survived_collapse }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.210.a
+		custom_tooltip = bronze_hatti_collapse_210a_tt
+		bronze_hatti_collapse_survival_outcome = yes
 	}
 }
