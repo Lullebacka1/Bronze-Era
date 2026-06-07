@@ -201,6 +201,9 @@
   royal_navy_supply_advance: "Royal Naval Workshops"
   royal_navy_supply_advance_desc: "The growing importance of maritime trade and warfare encourages palatial administrations to establish specialized workshops dedicated to the production of sails, rope, pitch, rigging, and other essential naval supplies."
 
+  slave_market_advance: "Organized Slave Trade"
+  slave_market_advance_desc: "The growth of long-distance exchange networks and warfare creates opportunities for the organized trade of captives and bonded laborers. Dedicated markets emerge where slaves are bought, sold, and redistributed across regions and societies."
+
   # ##########################
   # PRODUCTION METHODS
   # ##########################

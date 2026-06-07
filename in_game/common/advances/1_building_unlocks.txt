@@ -115,6 +115,7 @@
 	unlock_building = beer_palace
 	unlock_building = pottery_palace
 	unlock_building = winery_palace
+	unlock_building = jewelry_palace
 	
  	requires = workforce_specialization_advance
  }
@@ -231,6 +232,14 @@ merchants_quarters_unlock_advance = {
 	unlock_building = merchants_quarters
 
 	requires = alphabet_script_advance
+}
+
+slave_market_advance = {
+	age = age_1_traditions
+
+	unlock_building = slave_market
+
+	requires = intercultural_relations_advance
 }
 
 # #########

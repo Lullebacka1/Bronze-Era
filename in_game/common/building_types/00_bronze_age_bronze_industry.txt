@@ -547,3 +547,97 @@ winery_palace = {
 	construction_demand = guild_construction
 
 }
+
+jewelry_palace = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = guild_max_level
+	
+	category = consumer_goods_category
+	
+	employment_size = guild_employment
+	
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		
+		gold_base = {
+			goods_gold = 0.5
+
+			produced = jewelry
+			output = 1
+			
+			category = guild_input
+		}
+		silver_base = {
+			silver = 0.7
+			
+			produced = jewelry
+			output = 1
+			
+			category = guild_input
+		}
+		copper_base = {
+			#unlocked by copperworking
+			copper = 1.3
+			
+			produced = jewelry
+			output = 1
+			
+			category = guild_input
+		}
+
+		bronze_base = {
+			bronze_age_bronze = 0.7
+			
+			produced = jewelry
+			output = 1
+			
+			category = guild_input
+		}
+
+	}
+
+
+	unique_production_methods = {
+		
+		
+		ivory_enhancement = {
+			ivory = 0.1
+			produced = jewelry
+			output = 0.1
+			
+			category = guild_input
+		}
+		amber_enhancement = {
+			amber = 0.1
+			produced = jewelry
+			output = 0.1
+			
+			category = guild_input
+		}
+		gems_enhancement = {
+			gems = 0.1
+			produced = jewelry
+			output = 0.1
+			
+			category = guild_input
+		}
+		pearls_enhancement = {
+			pearls = 0.1
+			produced = jewelry
+			output = 0.1
+			
+			category = guild_input
+		}
+		
+	}
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+
+}

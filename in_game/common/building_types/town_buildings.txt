@@ -33,44 +33,44 @@
 
 # }
 
-# construction_center = {
+construction_center = {
 
-# 	is_foreign = no
-# 	max_levels = construction_center_max_level 
-# 	pop_type = laborers
-# 	forbidden_for_estates = yes
+	is_foreign = no
+	max_levels = construction_center_max_level 
+	pop_type = laborers
+	forbidden_for_estates = yes
 
-# 	employment_size = construction_employment
+	employment_size = construction_employment
 
-# 	category = infrastructure_category
+	category = infrastructure_category
 
-# 	town = yes
-# 	city = yes
-# 	megalopolis = yes
+	town = yes
+	city = yes
+	megalopolis = yes
 
 	
-# 	increase_per_level_cost = 0.5
+	increase_per_level_cost = 0.5
 
-# 	build_time = government_build_time
-
-
-# 	unique_production_methods = {
-# 		construction_center_maintenance = {
-# 			masonry = 0.2
-# 			tools = 0.25
-# 			category = building_maintenance
-# 		}
-# 	}
+	build_time = government_build_time
 
 
-# 	construction_demand = town_building_construction
+	unique_production_methods = {
+		construction_center_maintenance = {
+			masonry = 0.2
+			tools = 0.25
+			category = building_maintenance
+		}
+	}
 
 
-# 	modifier = {
-# 		max_constructions_at_same_time = 1
-# 	}
+	construction_demand = town_building_construction
 
-# }
+
+	modifier = {
+		max_constructions_at_same_time = 1
+	}
+
+}
 
 # counting_house = {
 # 	is_foreign = no
@@ -509,71 +509,67 @@
 # 	}
 # }
 
-# slave_market = {
-# 	is_foreign = no
-# 	max_levels = slave_market_max_level
-# 	pop_type = burghers
+slave_market = {
+	is_foreign = no
+	max_levels = slave_market_max_level
+	pop_type = burghers
 
-# 	category = government_category
+	category = government_category
 
+	obsolete = neolithic_slave_market
 
-# 	employment_size = trade_employment
-
-
-# 	rural_settlement = no
-# 	town = yes
-# 	city = yes
-# 	megalopolis = yes
+	employment_size = trade_employment
 
 
-# 	country_potential = {
-# 		religion.group != religion_group:christian
-# 	}
+	rural_settlement = no
+	town = yes
+	city = yes
+	megalopolis = yes
 
 
-# 	allow = {
-# 		scope:actor = {
-# 			has_slavery = yes
-# 		}
-# 	}
-
-# 	remove_if = {
-# 		scope:actor = {
-# 			has_slavery = no
-# 		}
-# 	}
-
-	
-
-# 	build_time = generic_town_build_time
-
-# 	unique_production_methods = {
-
-# 		slave_market_maintenance = {
-# 			leather = 0.5
-# 			tools = 0.45
-# 			weaponry = 0.4
-# 			paper = 0.35
-
-# 			produced = slaves_goods
-# 			output = 2.0
-
-# 			category = building_maintenance
-# 		}
+	country_potential = {
+		religion.group != religion_group:christian
+	}
 
 
-# 	}
+	allow = {
+		scope:actor = {
+			has_slavery = yes
+		}
+	}
 
-# 	modifier = {
-# 		building_enslavement_power = 0.02
-# 		local_slave_pop_satisfaction = -0.025
-# 	}
+	remove_if = {
+		scope:actor = {
+			has_slavery = no
+		}
+	}
+
+	build_time = generic_town_build_time
+
+	unique_production_methods = {
+
+		slave_market_maintenance = {
+			leather = 0.6
+			tools = 0.5
+			weaponry = 0.5
+
+			produced = slaves_goods
+			output = 2.0
+
+			category = building_maintenance
+		}
 
 
+	}
 
-# 	construction_demand = town_building_construction
+	modifier = {
+		building_enslavement_power = 0.02
+		local_slave_pop_satisfaction = -0.025
+	}
 
-# }
+	construction_demand = town_building_construction
+
+}
 
 
 # #Aqueducts

@@ -17,6 +17,9 @@
   neolithic_dyes_maker: "Village Dyers"
   neolithic_dyes_maker_desc: "Households and small workshops produce dyes from local plants, minerals, and other natural materials. Though limited in scale, these craftsmen supply pigments for textiles, decoration, and ritual use."
 
+  neolithic_slave_market: "Captive Yard"
+  neolithic_slave_market_desc: "Before the emergence of formal slave markets, captives taken in war, raiding, debt disputes, or judicial proceedings were gathered in simple enclosures where they could be held, exchanged, ransomed, or assigned to new masters. These yards serve as local centers for the redistribution of unfree labor."
+
 
   # #############################
   # PRODUCTION METHODS
@@ -78,3 +81,6 @@
 
   alum_dyes_maker_maintenance: "Alum Mordants"
   alum_dyes_maker_maintenance_desc: "The use of alum improves the fixation and durability of dyes, producing brighter colors and reducing fading in dyed textiles."
+
+  neolithic_slave_market_maintenance: "Captive Handling"
+  neolithic_slave_market_maintenance_desc: "Guards, equipment, and basic provisions are required to secure, transport, and manage captives awaiting exchange, ransom, or assignment."

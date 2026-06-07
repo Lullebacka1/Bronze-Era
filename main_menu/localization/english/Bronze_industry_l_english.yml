@@ -44,6 +44,10 @@
   winery_palace: "Royal Wineries"
   winery_palace_desc: "Palatial wineries produce fermented beverages for feasting, diplomacy, religious ceremonies, and elite consumption. Their products serve both as symbols of prestige and as valuable goods within the redistributive economy."
 
+  jewelry_palace: "Royal Jewelers"
+  jewelry_palace_desc: "Working under palatial supervision, skilled artisans craft jewelry, ornaments, ceremonial regalia, and prestige goods from precious metals and gemstones. Their creations serve as symbols of status, diplomatic gifts, religious offerings, and displays of royal wealth."
+
+
   # ########################
   # PRODUCTION METHODS
   # ########################
