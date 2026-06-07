@@ -346,43 +346,43 @@
 # }
 
 
-# nobled_sponsored_temple = {
-# 	is_foreign = no
-# 	max_levels = estate_building_single_level
-# 	pop_type = clergy
+nobled_sponsored_temple = {
+	is_foreign = no
+	max_levels = estate_building_single_level
+	pop_type = clergy
 	
-# 	employment_size = estate_clergy_employment
+	employment_size = estate_clergy_employment
 	
-# 	category = estate_category
+	category = estate_category
 	
-# 	rural_settlement = yes
-# 	town = yes
-# 	city = yes
-# 	megalopolis = yes
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
 
-# 	build_time = estate_build_time
+	build_time = estate_build_time
 
-# 	graphical_tags = { small_religious }
-
-	
-# 	estate = nobles_estate
-	
-	
-# 	possible_production_methods = {
-# 		estate_building_input
-# 	}
-
+	graphical_tags = { small_religious }
 
 	
-# 	construction_demand = estate_construct_building
+	estate = nobles_estate
+	
+	
+	possible_production_methods = {
+		estate_building_input
+	}
+
+
+	
+	construction_demand = estate_construct_building
 	
 
 	
-# 	modifier = {
-# 		local_nobles_estate_power = 0.5
-# 		local_unrest = -0.025
-# 	}
-# }
+	modifier = {
+		local_nobles_estate_power = 0.5
+		local_unrest = -0.025
+	}
+}
 
 
 
@@ -487,40 +487,40 @@
 # 	}
 # }
 
-# local_shrine = {
-# 	is_foreign = no
-# 	max_levels = estate_building_single_level
-# 	pop_type = clergy
+local_shrine = {
+	is_foreign = no
+	max_levels = estate_building_single_level
+	pop_type = clergy
 	
-# 	employment_size = estate_clergy_employment
+	employment_size = estate_clergy_employment
 	
-# 	category = estate_category
+	category = estate_category
 	
-# 	rural_settlement = yes
-# 	town = yes
-# 	city = no
+	rural_settlement = yes
+	town = yes
+	city = no
 
-# 	build_time = estate_build_time
+	build_time = estate_build_time
 	
 
-# 	graphical_tags = { small_religious }
+	graphical_tags = { small_religious }
 	
-# 	estate = clergy_estate
+	estate = clergy_estate
 	
-# 	possible_production_methods = {
-# 		estate_building_input
-# 	}
+	possible_production_methods = {
+		estate_building_input
+	}
 	
-# 	construction_demand = estate_construct_building
+	construction_demand = estate_construct_building
 		
-# 	country_potential = {
-# 	}
+	country_potential = {
+	}
 	
-# 	modifier = {
-# 		local_clergy_estate_power = 0.1
-# 		local_clergy_conversion_blocked = yes
-# 	}
-# }
+	modifier = {
+		local_clergy_estate_power = 0.1
+		local_clergy_conversion_blocked = yes
+	}
+}
 
 # clerical_archives = {
 # 	is_foreign = no
@@ -728,38 +728,38 @@
 # 	custom_tags = { guild }
 # }
 
-# local_markets = {
-# 	is_foreign = no
-# 	max_levels = estate_building_single_level
-# 	pop_type = burghers
+local_markets = {
+	is_foreign = no
+	max_levels = estate_building_single_level
+	pop_type = burghers
 	
-# 	employment_size = estate_burgher_employment
+	employment_size = estate_burgher_employment
 	
-# 	rural_settlement = yes
-# 	town = no
-# 	city = no
+	rural_settlement = yes
+	town = no
+	city = no
 	
-# 	category = estate_category
+	category = estate_category
 	
-# 	build_time = estate_build_time
+	build_time = estate_build_time
 	
-# 	estate = burghers_estate
+	estate = burghers_estate
 	
 
 	
 	
-# 	possible_production_methods = {
-# 		estate_building_input
-# 	}
+	possible_production_methods = {
+		estate_building_input
+	}
 
-# 	construction_demand = estate_construct_building
+	construction_demand = estate_construct_building
 	
-# 	modifier = {
-# 		local_burghers_estate_power = 0.25
-# 		local_merchant_power = 0.05
-# 		local_market_access = 0.01
-# 	}
-# }
+	modifier = {
+		local_burghers_estate_power = 0.25
+		local_merchant_power = 0.05
+		local_market_access = 0.01
+	}
+}
 
 # burgher_mansion = {
 # 	is_foreign = no
@@ -983,48 +983,44 @@
 # 	}
 # }
 
-# peasants_hunting_grounds = {
-# 	is_foreign = no
-# 	max_levels = estate_building_single_level
-# 	pop_type = peasants
+peasants_hunting_grounds = {
+	is_foreign = no
+	max_levels = estate_building_single_level
+	pop_type = peasants
 	
-# 	category = estate_category
-# 	employment_size = estate_peasants_employment
+	category = estate_category
+	employment_size = estate_peasants_employment
 	
-# 	rural_settlement = yes
-# 	town = no
-# 	city = no
+	rural_settlement = yes
+	town = no
+	city = no
 	
-# 	estate = peasants_estate
-# 	build_time = estate_build_time
+	estate = peasants_estate
+	build_time = estate_build_time
 	
 
 
-# 	possible_production_methods = {
-# 		estate_building_input
-# 	}
+	possible_production_methods = {
+		estate_building_input
+	}
 
-# 	country_potential = {
-# 		has_estate_privilege = estate_privilege:allow_hunting
-# 	}
+	location_potential = {
+		OR = {
+			vegetation = woods
+			vegetation = forest
+			vegetation = jungle
+		}
+	}
 
-# 	location_potential = {
-# 		OR = {
-# 			vegetation = woods
-# 			vegetation = forest
-# 			vegetation = jungle
-# 		}
-# 	}
-
-# 	construction_demand = estate_construct_building
+	construction_demand = estate_construct_building
 	
-# 	modifier = {
-# 		local_peasants_estate_power = 0.5
-# 		local_peasants_food_consumption = -0.1
-# 		local_peasant_enfranchisment = 0.01
-# 	}
+	modifier = {
+		local_peasants_estate_power = 0.5
+		local_peasants_food_consumption = -0.1
+		local_peasant_enfranchisment = 0.01
+	}
 
-# }
+}
 
 # local_schools = {
 # 	is_foreign = no

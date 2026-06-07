@@ -123,3 +123,91 @@ neolithic_leather_maker = {
 
 	construction_demand = guild_construction
 }
+
+neolithic_beer_maker = {
+	is_foreign = no
+	pop_type = peasants
+	max_levels = rural_building_cap
+	
+	category = consumer_goods_category
+	
+	employment_size = tiny_rural_peasant_produce_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = no
+	megalopolis = no
+
+	build_time = village_build_time
+	
+	unique_production_methods = {
+	
+		wheat_brewery_maintenance = {
+			wheat = 0.6
+			lumber = 0.15
+			tools = 0.06
+			
+			produced = beer
+			output = 0.5
+			
+			category = guild_input
+		}
+	
+		millet_brewery_maintenance = {
+			millet = 0.6
+			lumber = 0.15
+			tools = 0.06
+			
+			produced = beer
+			output = 0.5
+			
+			category = guild_input
+		}
+	
+		fruit_brewery_maintenance = {
+			fruit = 0.6
+			lumber = 0.10
+			tools = 0.06
+			
+			produced = beer
+			output = 1
+			
+			category = guild_input
+		}
+
+		maize_brewery_maintenance = {
+			maize = 0.7
+			pottery = 0.15
+			
+			produced = beer
+			output = 0.5
+			category = guild_input
+				
+		}
+	
+		honey_brewery_maintenance = {
+			beeswax = 0.15
+			millet = 0.25
+			lumber = 0.15
+			tools = 0.06
+
+			produced = beer
+			output = 0.5
+
+			category = guild_input
+		}
+
+		rice_brewery_maintenance = {
+			rice = 0.6
+			lumber = 0.15
+			tools = 0.06
+
+			produced = beer
+			output = 0.5
+
+			category = guild_input
+		}
+	}
+
+	construction_demand = guild_construction
+}

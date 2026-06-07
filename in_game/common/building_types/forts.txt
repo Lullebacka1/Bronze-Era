@@ -1,49 +1,49 @@
-﻿# stockade = {
+﻿stockade = {
 	
-# 	max_levels = 1
-# 	pop_type = soldiers
+	max_levels = 1
+	pop_type = soldiers
 	
-# 	category = defense_category
+	category = defense_category
 	
-# 	employment_size = stockade_employment
+	employment_size = stockade_employment
 	
-# 	rural_settlement = yes
-# 	town = yes
-# 	city = yes
-# 	megalopolis = yes
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
 	
 	
-# 	build_time = small_fort_building
+	build_time = small_fort_building
 
-# 	expensive = yes
+	expensive = yes
 	
-	
-
-	
-# 	unique_production_methods = {
-	
-# 		stockade_maintenance = {
-# 			lumber = 0.1
-# 			weaponry = 0.02
-# 			tar = 0.02
-# 			category = building_maintenance
-# 		}
-# 	}
-# 	construction_demand = stockade_construction
 	
 
-# 	modifier = {
-# 		local_garrison_size = 0.1
-# 		local_unrest = -0.025
-# 		local_nobles_estate_power = 0.5
-# 	}
 	
-# 	raw_modifier = {
-# 		fort_level = 1
-# 		local_nobles_desired_pop = 0.005
-# 		pure_tooltip_entry = pte_no_propagating_zone_of_control            # propagating_zone_of_control = no
-# 	}
-# }
+	unique_production_methods = {
+	
+		stockade_maintenance = {
+			lumber = 0.1
+			weaponry = 0.02
+			tar = 0.02
+			category = building_maintenance
+		}
+	}
+	construction_demand = stockade_construction
+	
+
+	modifier = {
+		local_garrison_size = 0.1
+		local_unrest = -0.025
+		local_nobles_estate_power = 0.5
+	}
+	
+	raw_modifier = {
+		fort_level = 1
+		local_nobles_desired_pop = 0.005
+		pure_tooltip_entry = pte_no_propagating_zone_of_control            # propagating_zone_of_control = no
+	}
+}
 
 # castle = {
 # 	is_foreign = no
