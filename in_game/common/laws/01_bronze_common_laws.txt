@@ -107,10 +107,6 @@ subj_law = {
 			cultural_tradition_modifier = 0.1
 		}
 
-		estate_preferences = {
-			tribes_estate
-		}
-
 		years = 2
 	}
 
