@@ -189,6 +189,9 @@
   wharf_unlock_advance: "Wharf Construction"
   wharf_unlock_advance_desc: "Communities begin building permanent waterfront structures for loading cargo, repairing vessels, and managing maritime traffic. These facilities improve the efficiency of trade and strengthen connections between coastal settlements and distant markets."
 
+  merchants_quarters_unlock_advance: "Merchant Communities"
+  merchants_quarters_unlock_advance_desc: "The spread of practical literacy allows merchants to manage contracts, accounts, and correspondence with greater ease. As trade expands, permanent merchant communities emerge within towns and cities, forming distinct centers of commerce and exchange."
+
   # ##########################
   # PRODUCTION METHODS
   # ##########################

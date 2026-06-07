@@ -83,3 +83,19 @@ warrior_halls_building_construction = {
 	lumber = 1
 	weaponry = 1
 }
+
+bronze_market_center_building_construction = {
+	lumber = 0.2
+	masonry = 0.2
+	tools = 0.2
+	pottery = 0.2
+	livestock = 0.1
+	category = building_construction
+}
+
+town_building_construction = {
+	masonry = 0.75
+	lumber = 0.3
+	category = building_construction
+
+}

@@ -1,4 +1,4 @@
-dock = {
+bronze_dock = {
 	is_foreign = no
 	max_levels = 1
 	pop_type = soldiers
@@ -6,7 +6,7 @@ dock = {
 
 	category = naval_category
 
-	employment_size = dock_employment
+	employment_size = bronze_dock_employment
 
 	town = yes
 	city = yes
@@ -21,9 +21,9 @@ dock = {
 
 	unique_production_methods = {
 		dock_maintenance = {
-			tar = 0.2
+			tar = 0.1
 			naval_supplies = 0.1
-			tools = 0.2
+			tools = 0.1
 			lumber = 0.2
 			cloth = 0.1
 			category = building_maintenance
@@ -36,7 +36,7 @@ dock = {
 
 	modifier = {
 		max_ships_built_at_same_time = 1
-		local_sailors = 0.016
+		local_sailors = 0.012
 		can_build_ships_in_this_location = yes
 		harbor_suitability = 0.1
 		local_repair_speed = 0.02

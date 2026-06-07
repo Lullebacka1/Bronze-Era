@@ -1,87 +1,87 @@
-﻿# marketplace = {
-# 	is_foreign = no
-# 	max_levels = marketplace_max_level
-# 	pop_type = burghers
+﻿marketplace = {
+ 	is_foreign = no
+ 	max_levels = marketplace_max_level
+ 	pop_type = burghers
 	
-# 	category = trade_category
+ 	category = trade_category
 	
-# 	employment_size = trade_employment
+ 	employment_size = trade_employment
 
-# 	town = yes
-# 	city = yes
-# 	megalopolis = yes
+ 	town = yes
+ 	city = yes
+ 	megalopolis = yes
 	
-# 	build_time = merchant_build_time
+ 	build_time = merchant_build_time
 
-# 	unique_production_methods = { 
-# 		marketplace_maintenance = {
-# 			cloth = 0.06
-# 			jewelry = 0.05
-# 			paper = 0.05
-# 			salt = 0.06
+ 	unique_production_methods = { 
+ 		marketplace_maintenance = {
+ 			cloth = 0.06
+ 			jewelry = 0.05
+			pottery = 0.06
+ 			salt = 0.06
 
-# 			category = building_maintenance
-# 		}
-# 	}
+ 			category = building_maintenance
+ 		}
+ 	}
 	
-# 	construction_demand = town_building_construction
+ 	construction_demand = town_building_construction
 	
-# 	modifier = {
-# 		local_pop_assimilation_speed_modifier = 0.01
-# 		local_burghers_estate_power = 0.1
+ 	modifier = {
+ 		local_pop_assimilation_speed_modifier = 0.01
+ 		local_burghers_estate_power = 0.1
 
-# 		local_market_access = 0.005
+ 		local_market_access = 0.005
 
 
-# 		local_merchant_power = 1
-# 		local_trades_per_burgher = 1
-# 		local_merchant_capacity = 1
-# 	}
-# }
+ 		local_merchant_power = 1
+ 		local_trades_per_burgher = 1
+ 		local_merchant_capacity = 1
+ 	}
+ }
 
-# merchants_quarters = {
+ merchants_quarters = {
 
-# 	is_foreign = no
-# 	max_levels = market_max_level
-# 	pop_type = burghers
+ 	is_foreign = no
+ 	max_levels = market_max_level
+ 	pop_type = burghers
 	
-# 	category = trade_category
+ 	category = trade_category
 	
-# 	employment_size = trade_employment
+ 	employment_size = trade_employment
 
-# 	town = yes
-# 	city = yes
-# 	megalopolis = yes
+ 	town = yes
+ 	city = yes
+ 	megalopolis = yes
 
 	
-# 	build_time = merchant_build_time
-# 	unique_production_methods = { 
-# 		merchants_quarters_maintenance = {
-# 			cloth = 0.075
-# 			jewelry = 0.075
-# 			paper = 0.075
-# 			salt = 0.075
-# 			beeswax = 0.03
+ 	build_time = merchant_build_time
+ 	unique_production_methods = { 
+ 		merchants_quarters_maintenance = {
+ 			cloth = 0.075
+ 			jewelry = 0.075
+ 			pottery = 0.075
+ 			salt = 0.075
+ 			beeswax = 0.03
 			
-# 			category = building_maintenance
-# 		}
+ 			category = building_maintenance
+ 		}
 
-# 	}
-# 	construction_demand = town_building_construction
+ 	}
+ 	construction_demand = town_building_construction
 	
-# 	modifier = {
-# 		local_pop_assimilation_speed_modifier = 0.01
-# 		local_burghers_estate_power = 0.1
+ 	modifier = {
+		local_pop_assimilation_speed_modifier = 0.01
+ 		local_burghers_estate_power = 0.1
 		
-# 		local_market_access = 0.005
+ 		local_market_access = 0.005
 		
-# 		local_merchant_power = 1.5
-# 		local_trades_per_burgher = 1.5
-# 		local_merchant_capacity = 1.5
-# 	}
+ 		local_merchant_power = 1.5
+		local_trades_per_burgher = 1.5
+ 		local_merchant_capacity = 1.5
+ 	}
 	
-# 	obsolete = marketplace
-# }
+	obsolete = marketplace
+ }
 
 # grand_marketplace = {
 # 	is_foreign = no

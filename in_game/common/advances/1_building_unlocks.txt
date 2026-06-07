@@ -198,6 +198,14 @@ wharf_unlock_advance = {
 	requires = sailing_advance
 }
 
+merchants_quarters_unlock_advance = {
+	age = age_1_traditions
+
+	unlock_building = merchants_quarters
+
+	requires = alphabet_script_advance
+}
+
 # #########
 # FORTS
 # #########
