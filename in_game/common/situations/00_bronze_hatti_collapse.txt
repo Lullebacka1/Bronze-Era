@@ -31,6 +31,7 @@ bronze_hatti_collapse = {
 	can_end = {
 		OR = {
 			NOT = { country_exists = c:HATTI }
+			has_global_variable = bronze_hatti_final_fragmentation_complete
 			AND = {
 				has_variable = bronze_hatti_situation_months
 				var:bronze_hatti_situation_months >= 420

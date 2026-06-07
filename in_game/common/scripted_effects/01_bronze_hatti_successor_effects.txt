@@ -1,0 +1,472 @@
+# Deterministic successor map for the final phase of the Hatti collapse.
+# Only locations directly owned by Hatti are eligible. Lost or foreign lands
+# are never seized, which keeps this compatible with divergent campaigns.
+
+bronze_hatti_collapse_materialize_successor = {
+	if = {
+		limit = {
+			any_owned_location = {
+				is_core_of = c:$tag$
+			}
+		}
+		if = {
+			limit = { country_exists = c:$tag$ }
+			every_owned_location = {
+				limit = { is_core_of = c:$tag$ }
+				change_location_owner = c:$tag$
+			}
+		}
+		else = {
+			create_country_from_cores_in_our_locations = c:$tag$
+		}
+		c:$tag$ ?= {
+			change_culture = culture:$culture$
+			change_religion = religion:$religion$
+			add_accepted_culture = culture:$accepted_culture$
+			set_country_rank = country_rank:rank_kingdom
+			set_variable = { name = bronze_hatti_successor_state value = 1 }
+		}
+	}
+}
+
+bronze_hatti_collapse_set_successor_capital = {
+	if = {
+		limit = {
+			c:$tag$ ?= {
+				owns = location:$location$
+			}
+		}
+		c:$tag$ = {
+			set_capital = location:$location$
+		}
+	}
+}
+
+bronze_hatti_collapse_mark_neo_hittite = {
+	c:$tag$ ?= {
+		set_variable = { name = bronze_hatti_neo_hittite_state value = 1 }
+		set_variable = { name = bronze_hatti_religious_continuity value = 1 }
+	}
+}
+
+bronze_hatti_collapse_convert_location_population = {
+	if = {
+		limit = { owns = location:$location$ }
+		location:$location$ = {
+			every_pop = {
+				limit = {
+					pop_size > 0.001
+					OR = {
+						NOT = { culture = culture:$culture$ }
+						NOT = { religion = religion:$religion$ }
+					}
+				}
+				split_pop = {
+					fraction = $fraction$
+					culture = culture:$culture$
+					religion = religion:$religion$
+				}
+			}
+		}
+	}
+}
+
+bronze_hatti_collapse_preserve_royal_house = {
+	ruler ?= {
+		save_scope_as = bronze_hatti_fugitive_ruler
+		dynasty ?= {
+			save_scope_as = bronze_hatti_royal_dynasty
+		}
+	}
+}
+
+bronze_hatti_collapse_clear_successor_cores = {
+	# Prevent legacy saves or earlier prototype events from expanding a
+	# successor beyond the deterministic location list.
+	every_owned_location = {
+		if = { limit = { is_core_of = c:ARPAD } remove_core = c:ARPAD }
+		if = { limit = { is_core_of = c:QUE } remove_core = c:QUE }
+		if = { limit = { is_core_of = c:SAMAL } remove_core = c:SAMAL }
+		if = { limit = { is_core_of = c:TILBA } remove_core = c:TILBA }
+		if = { limit = { is_core_of = c:KUMMU } remove_core = c:KUMMU }
+		if = { limit = { is_core_of = c:GURGU } remove_core = c:GURGU }
+		if = { limit = { is_core_of = c:KHILA } remove_core = c:KHILA }
+		if = { limit = { is_core_of = c:PATT } remove_core = c:PATT }
+		if = { limit = { is_core_of = c:CARCH } remove_core = c:CARCH }
+		if = { limit = { is_core_of = c:TABAL } remove_core = c:TABAL }
+		if = { limit = { is_core_of = c:KAMMA } remove_core = c:KAMMA }
+		if = { limit = { is_core_of = c:URATU } remove_core = c:URATU }
+		if = { limit = { is_core_of = c:LUWIY } remove_core = c:LUWIY }
+		if = { limit = { is_core_of = c:PHRYG } remove_core = c:PHRYG }
+	}
+}
+
+bronze_hatti_collapse_establish_royal_house_in_que = {
+	if = {
+		limit = {
+			country_exists = c:QUE
+			exists = scope:bronze_hatti_fugitive_ruler
+		}
+		scope:bronze_hatti_fugitive_ruler = {
+			move_country = c:QUE
+			if = {
+				limit = { is_married = yes }
+				first_spouse = { move_country = c:QUE }
+			}
+			every_child = {
+				limit = { is_alive = yes }
+				move_country = c:QUE
+			}
+		}
+		c:QUE = {
+			set_new_ruler = scope:bronze_hatti_fugitive_ruler
+		}
+	}
+	else_if = {
+		limit = {
+			country_exists = c:QUE
+			exists = scope:bronze_hatti_royal_dynasty
+		}
+		c:QUE = {
+			create_character = {
+				culture = culture:hittite
+				religion = religion:hittite
+				dynasty = scope:bronze_hatti_royal_dynasty
+				estate = estate_type:nobles_estate
+				age = 35
+				save_scope_as = bronze_hatti_que_ruler
+			}
+			set_new_ruler = scope:bronze_hatti_que_ruler
+		}
+	}
+	else_if = {
+		limit = { country_exists = c:QUE }
+		c:QUE = {
+			create_character = {
+				culture = culture:hittite
+				religion = religion:hittite
+				estate = estate_type:nobles_estate
+				age = 35
+				save_scope_as = bronze_hatti_que_ruler
+			}
+			set_new_ruler = scope:bronze_hatti_que_ruler
+		}
+	}
+	c:QUE ?= {
+		set_variable = { name = bronze_hatti_legitimate_dynasty value = 1 years = 25 }
+		add_legitimacy = legitimacy_mild_bonus
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+bronze_hatti_collapse_spawn_arpad = {
+	bronze_hatti_collapse_prepare_successor = { tag = ARPAD location = manbij }
+	bronze_hatti_collapse_prepare_successor = { tag = ARPAD location = al_bab }
+	bronze_hatti_collapse_prepare_successor = { tag = ARPAD location = jabbul }
+	bronze_hatti_collapse_prepare_successor = { tag = ARPAD location = dabiq }
+	bronze_hatti_collapse_prepare_successor = { tag = ARPAD location = aleppo }
+	bronze_hatti_collapse_materialize_successor = {
+		tag = ARPAD
+		culture = hittite
+		religion = hittite
+		accepted_culture = luwian
+	}
+	bronze_hatti_collapse_set_successor_capital = { tag = ARPAD location = aleppo }
+	bronze_hatti_collapse_mark_neo_hittite = { tag = ARPAD }
+}
+
+bronze_hatti_collapse_spawn_que = {
+	bronze_hatti_collapse_prepare_successor = { tag = QUE location = tarsus }
+	bronze_hatti_collapse_prepare_successor = { tag = QUE location = adana }
+	bronze_hatti_collapse_prepare_successor = { tag = QUE location = ayas }
+	bronze_hatti_collapse_prepare_successor = { tag = QUE location = kars_armenia }
+	bronze_hatti_collapse_prepare_successor = { tag = QUE location = sis }
+	bronze_hatti_collapse_prepare_successor = { tag = QUE location = anavarza }
+	bronze_hatti_collapse_prepare_successor = { tag = QUE location = candir_cil }
+	bronze_hatti_collapse_prepare_successor = { tag = QUE location = corycus }
+	bronze_hatti_collapse_prepare_successor = { tag = QUE location = kapan }
+	bronze_hatti_collapse_prepare_successor = { tag = QUE location = ulnia }
+	bronze_hatti_collapse_materialize_successor = {
+		tag = QUE
+		culture = hittite
+		religion = hittite
+		accepted_culture = luwian
+	}
+	bronze_hatti_collapse_set_successor_capital = { tag = QUE location = adana }
+	bronze_hatti_collapse_mark_neo_hittite = { tag = QUE }
+}
+
+bronze_hatti_collapse_spawn_samal = {
+	bronze_hatti_collapse_prepare_successor = { tag = SAMAL location = trapessac }
+	bronze_hatti_collapse_prepare_successor = { tag = SAMAL location = enguzud }
+	bronze_hatti_collapse_materialize_successor = {
+		tag = SAMAL
+		culture = hittite
+		religion = hittite
+		accepted_culture = luwian
+	}
+	bronze_hatti_collapse_set_successor_capital = { tag = SAMAL location = trapessac }
+	bronze_hatti_collapse_mark_neo_hittite = { tag = SAMAL }
+}
+
+bronze_hatti_collapse_spawn_til_barsip = {
+	bronze_hatti_collapse_prepare_successor = { tag = TILBA location = birecik }
+	bronze_hatti_collapse_prepare_successor = { tag = TILBA location = suruc }
+	bronze_hatti_collapse_materialize_successor = {
+		tag = TILBA
+		culture = hittite
+		religion = hittite
+		accepted_culture = luwian
+	}
+	bronze_hatti_collapse_set_successor_capital = { tag = TILBA location = birecik }
+	bronze_hatti_collapse_mark_neo_hittite = { tag = TILBA }
+}
+
+bronze_hatti_collapse_spawn_kummukhi = {
+	bronze_hatti_collapse_prepare_successor = { tag = KUMMU location = gerger }
+	bronze_hatti_collapse_prepare_successor = { tag = KUMMU location = kahta }
+	bronze_hatti_collapse_prepare_successor = { tag = KUMMU location = samsat }
+	bronze_hatti_collapse_materialize_successor = {
+		tag = KUMMU
+		culture = hittite
+		religion = hittite
+		accepted_culture = luwian
+	}
+	bronze_hatti_collapse_set_successor_capital = { tag = KUMMU location = samsat }
+	bronze_hatti_collapse_mark_neo_hittite = { tag = KUMMU }
+}
+
+bronze_hatti_collapse_spawn_gurgum = {
+	bronze_hatti_collapse_prepare_successor = { tag = GURGU location = marash }
+	bronze_hatti_collapse_prepare_successor = { tag = GURGU location = kilis }
+	bronze_hatti_collapse_prepare_successor = { tag = GURGU location = besni }
+	bronze_hatti_collapse_materialize_successor = {
+		tag = GURGU
+		culture = hittite
+		religion = hittite
+		accepted_culture = luwian
+	}
+	bronze_hatti_collapse_set_successor_capital = { tag = GURGU location = marash }
+	bronze_hatti_collapse_mark_neo_hittite = { tag = GURGU }
+}
+
+bronze_hatti_collapse_spawn_khilakku = {
+	bronze_hatti_collapse_prepare_successor = { tag = KHILA location = caxud }
+	bronze_hatti_collapse_prepare_successor = { tag = KHILA location = molevon }
+	bronze_hatti_collapse_materialize_successor = {
+		tag = KHILA
+		culture = hittite
+		religion = hittite
+		accepted_culture = luwian
+	}
+	bronze_hatti_collapse_set_successor_capital = { tag = KHILA location = caxud }
+	bronze_hatti_collapse_mark_neo_hittite = { tag = KHILA }
+}
+
+bronze_hatti_collapse_spawn_pattina = {
+	bronze_hatti_collapse_prepare_successor = { tag = PATT location = arsuz }
+	bronze_hatti_collapse_prepare_successor = { tag = PATT location = artah }
+	bronze_hatti_collapse_prepare_successor = { tag = PATT location = afrin }
+	bronze_hatti_collapse_materialize_successor = {
+		tag = PATT
+		culture = hittite
+		religion = hittite
+		accepted_culture = luwian
+	}
+	bronze_hatti_collapse_set_successor_capital = { tag = PATT location = artah }
+	bronze_hatti_collapse_mark_neo_hittite = { tag = PATT }
+}
+
+bronze_hatti_collapse_spawn_carchemish = {
+	# CARCH is intentionally separate from the already active KARKA/Karkamissa tag.
+	bronze_hatti_collapse_prepare_successor = { tag = CARCH location = dluk }
+	bronze_hatti_collapse_prepare_successor = { tag = CARCH location = ayntab }
+	bronze_hatti_collapse_prepare_successor = { tag = CARCH location = kaysun }
+	bronze_hatti_collapse_materialize_successor = {
+		tag = CARCH
+		culture = hittite
+		religion = hittite
+		accepted_culture = luwian
+	}
+	bronze_hatti_collapse_set_successor_capital = { tag = CARCH location = dluk }
+	bronze_hatti_collapse_mark_neo_hittite = { tag = CARCH }
+}
+
+bronze_hatti_collapse_spawn_tabal_deterministic = {
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = gurun }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = deliktash }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = dasmenda }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = tomarza }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = kayseri }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = gemerek }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = sarkisla }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = develi }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = yahyali }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = nigde }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = silifke }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = mut }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = larende }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = pirloganda }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = eregli_kar }
+	bronze_hatti_collapse_prepare_successor = { tag = TABAL location = bor_tur }
+	bronze_hatti_collapse_materialize_successor = {
+		tag = TABAL
+		culture = hittite
+		religion = hittite
+		accepted_culture = luwian
+	}
+	bronze_hatti_collapse_set_successor_capital = { tag = TABAL location = kayseri }
+	bronze_hatti_collapse_mark_neo_hittite = { tag = TABAL }
+}
+
+bronze_hatti_collapse_spawn_kammanu = {
+	bronze_hatti_collapse_prepare_successor = { tag = KAMMA location = elbistan }
+	bronze_hatti_collapse_prepare_successor = { tag = KAMMA location = darende }
+	bronze_hatti_collapse_prepare_successor = { tag = KAMMA location = malatya }
+	bronze_hatti_collapse_prepare_successor = { tag = KAMMA location = arguvan }
+	bronze_hatti_collapse_materialize_successor = {
+		tag = KAMMA
+		culture = hittite
+		religion = hittite
+		accepted_culture = luwian
+	}
+	bronze_hatti_collapse_set_successor_capital = { tag = KAMMA location = arguvan }
+	bronze_hatti_collapse_mark_neo_hittite = { tag = KAMMA }
+}
+
+bronze_hatti_collapse_spawn_urartu_deterministic = {
+	bronze_hatti_collapse_convert_location_population = { location = arapgir culture = urartian religion = urartian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = egin culture = urartian religion = urartian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = ilic culture = urartian religion = urartian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = kemah culture = urartian religion = urartian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = erzincan culture = urartian religion = urartian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = siran culture = urartian religion = urartian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = sebinkarahisar culture = urartian religion = urartian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = pertek culture = urartian religion = urartian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = cemisgezek culture = urartian religion = urartian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = kuzucan culture = urartian religion = urartian fraction = 0.25 }
+	bronze_hatti_collapse_prepare_successor = { tag = URATU location = arapgir }
+	bronze_hatti_collapse_prepare_successor = { tag = URATU location = egin }
+	bronze_hatti_collapse_prepare_successor = { tag = URATU location = ilic }
+	bronze_hatti_collapse_prepare_successor = { tag = URATU location = kemah }
+	bronze_hatti_collapse_prepare_successor = { tag = URATU location = erzincan }
+	bronze_hatti_collapse_prepare_successor = { tag = URATU location = siran }
+	bronze_hatti_collapse_prepare_successor = { tag = URATU location = sebinkarahisar }
+	bronze_hatti_collapse_prepare_successor = { tag = URATU location = pertek }
+	bronze_hatti_collapse_prepare_successor = { tag = URATU location = cemisgezek }
+	bronze_hatti_collapse_prepare_successor = { tag = URATU location = kuzucan }
+	bronze_hatti_collapse_materialize_successor = {
+		tag = URATU
+		culture = urartian
+		religion = urartian
+		accepted_culture = hittite
+	}
+}
+
+bronze_hatti_collapse_spawn_luwiya = {
+	bronze_hatti_collapse_convert_location_population = { location = aksehir culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = ilgin culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = ladik culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = altinekin culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = obruk culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = eskil culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = aksaray culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = kulu_turkey culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = bekarlar culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = suluklu culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = karapinar culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = konya culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = kochisar culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = sariyahsi culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = cumra culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = hatunsaray culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_convert_location_population = { location = nevsehir culture = luwian religion = luwian fraction = 0.25 }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = aksehir }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = ilgin }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = ladik }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = altinekin }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = obruk }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = eskil }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = aksaray }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = kulu_turkey }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = bekarlar }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = suluklu }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = karapinar }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = konya }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = kochisar }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = sariyahsi }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = cumra }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = hatunsaray }
+	bronze_hatti_collapse_prepare_successor = { tag = LUWIY location = nevsehir }
+	bronze_hatti_collapse_materialize_successor = {
+		tag = LUWIY
+		culture = luwian
+		religion = luwian
+		accepted_culture = hittite
+	}
+	bronze_hatti_collapse_set_successor_capital = { tag = LUWIY location = aksaray }
+}
+
+bronze_hatti_collapse_spawn_phrygian_remainder = {
+	# All Hatti lands left after the fixed successor map become Phrygia.
+	# The local Hattian cult is used because no separate Phrygian religion exists.
+	every_owned_location = {
+		every_pop = {
+			limit = {
+				pop_size > 0.001
+				OR = {
+					NOT = { culture = culture:phrygian }
+					NOT = { religion = religion:hattian }
+				}
+			}
+			split_pop = {
+				fraction = 0.35
+				culture = culture:phrygian
+				religion = religion:hattian
+			}
+		}
+		add_core = c:PHRYG
+	}
+	bronze_hatti_collapse_materialize_successor = {
+		tag = PHRYG
+		culture = phrygian
+		religion = hattian
+		accepted_culture = hittite
+	}
+	bronze_hatti_collapse_set_successor_capital = { tag = PHRYG location = huseyinabad }
+}
+
+bronze_hatti_collapse_final_fragmentation = {
+	custom_description = {
+		text = bronze_hatti_collapse_final_fragmentation_text
+		if = {
+			limit = { NOT = { has_variable = bronze_hatti_fragmented_periphery } }
+			set_variable = { name = bronze_hatti_fragmented_periphery value = 1 }
+			set_global_variable = { name = bronze_hatti_imperial_faith_collapsed value = 1 }
+			set_global_variable = { name = bronze_hatti_final_fragmentation_complete value = 1 }
+			bronze_hatti_collapse_preserve_royal_house = yes
+			bronze_hatti_collapse_clear_successor_cores = yes
+
+			# Neo-Hittite continuity states.
+			# TODO: HAMAT/Hamath has no mapped location set in the design request.
+			# TODO: HATLU/Hatarikka-Luhuti has no mapped location set yet.
+			bronze_hatti_collapse_spawn_arpad = yes
+			bronze_hatti_collapse_spawn_que = yes
+			bronze_hatti_collapse_spawn_samal = yes
+			bronze_hatti_collapse_spawn_til_barsip = yes
+			bronze_hatti_collapse_spawn_kummukhi = yes
+			bronze_hatti_collapse_spawn_gurgum = yes
+			bronze_hatti_collapse_spawn_khilakku = yes
+			bronze_hatti_collapse_spawn_pattina = yes
+			bronze_hatti_collapse_spawn_carchemish = yes
+			bronze_hatti_collapse_spawn_tabal_deterministic = yes
+			bronze_hatti_collapse_spawn_kammanu = yes
+			bronze_hatti_collapse_establish_royal_house_in_que = yes
+
+			# Non-Hittite successor zones, followed by the Phrygian remainder.
+			bronze_hatti_collapse_spawn_urartu_deterministic = yes
+			bronze_hatti_collapse_spawn_luwiya = yes
+			bronze_hatti_collapse_spawn_phrygian_remainder = yes
+		}
+	}
+}

@@ -119,7 +119,13 @@ bronze_hatti_collapse.8 = {
 	option = {
 		name = bronze_hatti_collapse.8.a
 		custom_tooltip = bronze_hatti_collapse_8a_tt
-		bronze_hatti_collapse_fragment_periphery = yes
+		if = {
+			limit = { is_human = yes }
+			trigger_event_non_silently = bronze_hatti_collapse.200
+		}
+		else = {
+			bronze_hatti_collapse_final_fragmentation = yes
+		}
 	}
 	option = {
 		name = bronze_hatti_collapse.8.b
@@ -341,8 +347,9 @@ bronze_hatti_collapse.60 = {
 	option = {
 		name = bronze_hatti_collapse.60.a
 		custom_tooltip = bronze_hatti_collapse_60a_tt
-		bronze_hatti_collapse_spawn_tarhuntassa = yes
-		bronze_hatti_collapse_add_pressure = { value = 4 }
+		set_variable = { name = bronze_hatti_southern_dynasts_recognized value = 1 years = 15 }
+		bronze_hatti_collapse_add_pressure = { value = -4 }
+		add_prestige = prestige_mild_penalty
 	}
 	option = {
 		name = bronze_hatti_collapse.60.b
@@ -370,9 +377,9 @@ bronze_hatti_collapse.70 = {
 	option = {
 		name = bronze_hatti_collapse.70.a
 		custom_tooltip = bronze_hatti_collapse_70a_tt
-		bronze_hatti_collapse_spawn_carchemish_continuity = yes
-		bronze_hatti_collapse_spawn_melid_gurgum = yes
-		bronze_hatti_collapse_add_pressure = { value = 6 }
+		set_variable = { name = bronze_hatti_euphrates_archives_preserved value = 1 years = 20 }
+		bronze_hatti_collapse_add_pressure = { value = -5 }
+		add_prestige = prestige_mild_penalty
 	}
 	option = {
 		name = bronze_hatti_collapse.70.b
@@ -424,7 +431,13 @@ bronze_hatti_collapse.90 = {
 	option = {
 		name = bronze_hatti_collapse.90.a
 		custom_tooltip = bronze_hatti_collapse_90a_tt
-		bronze_hatti_collapse_fragment_periphery = yes
+		if = {
+			limit = { is_human = yes }
+			trigger_event_non_silently = bronze_hatti_collapse.200
+		}
+		else = {
+			bronze_hatti_collapse_final_fragmentation = yes
+		}
 	}
 	option = {
 		name = bronze_hatti_collapse.90.b
@@ -606,5 +619,34 @@ bronze_hatti_collapse.130 = {
 		name = bronze_hatti_collapse.130.c
 		custom_tooltip = bronze_hatti_collapse_130c_tt
 		bronze_hatti_collapse_client_breaks_oath = { tag = HAPAL pressure = 4 }
+	}
+}
+
+# Human Hatti continuation event. The fragmentation effect preserves the
+# current ruler and dynasty in Que before control is transferred.
+bronze_hatti_collapse.200 = {
+	type = country_event
+	title = bronze_hatti_collapse.200.title
+	desc = bronze_hatti_collapse.200.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/bronze_hatti_collapse.dds"
+	outcome = negative
+	major = yes
+	orphan = yes
+
+	trigger = {
+		tag = HATTI
+		is_human = yes
+		NOT = { has_variable = bronze_hatti_fragmented_periphery }
+	}
+
+	option = {
+		name = bronze_hatti_collapse.200.a
+		custom_tooltip = bronze_hatti_collapse_200a_tt
+		bronze_hatti_collapse_final_fragmentation = yes
+		if = {
+			limit = { country_exists = c:QUE }
+			change_player = c:QUE
+		}
 	}
 }

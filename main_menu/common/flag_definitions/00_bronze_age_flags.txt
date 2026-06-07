@@ -120,3 +120,21 @@ LEUK = { # Leukas, a minor Ionian island palace polity.
 KOS = { # Kos, Homeric island kingdom of Antiphus and Phidippus.
 	flag_definition = { coa = bronze_age_KOS_coa priority = 10000 }
 }
+
+# Hatti-collapse successor placeholders reuse the Hatti emblem until
+# dedicated Neo-Hittite and Anatolian emblems are supplied.
+ARPAD = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }
+HATLU = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }
+QUE = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }
+SAMAL = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }
+TILBA = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }
+KUMMU = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }
+GURGU = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }
+KHILA = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }
+PATT = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }
+CARCH = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }
+TABAL = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }
+KAMMA = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }
+HAMAT = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }
+PHRYG = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }
+LUWIY = { flag_definition = { coa = bronze_age_HAT_coa priority = 10000 } }

@@ -340,7 +340,13 @@ bronze_hatti_recognize_successors = {
 	effect = {
 		scope:actor ?= {
 			set_variable = { name = bronze_hatti_recognized_successors value = 1 years = 80 }
-			bronze_hatti_collapse_fragment_periphery = yes
+			if = {
+				limit = { is_human = yes }
+				trigger_event_non_silently = bronze_hatti_collapse.200
+			}
+			else = {
+				bronze_hatti_collapse_final_fragmentation = yes
+			}
 			add_prestige = prestige_medium_penalty
 			custom_tooltip = bronze_hatti_recognize_successors_tt
 		}

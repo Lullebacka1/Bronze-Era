@@ -208,8 +208,9 @@ bronze_hatti_collapse_abandon_syrian_road = {
 	custom_description = {
 		text = bronze_hatti_collapse_abandon_syrian_road_text
 		set_variable = { name = bronze_hatti_syrian_road_abandoned value = 1 years = 20 }
-		bronze_hatti_collapse_spawn_carchemish_continuity = yes
-		bronze_hatti_collapse_spawn_kummuh_hamath = yes
+		# Successor states now appear only during the deterministic final collapse.
+		# This action preserves the Syrian archives and lowers immediate pressure.
+		set_variable = { name = bronze_hatti_syrian_archives_preserved value = 1 years = 20 }
 		bronze_hatti_collapse_add_pressure = { value = -10 }
 		bronze_hatti_collapse_add_famine = { value = -2 }
 		add_prestige = prestige_medium_penalty
@@ -391,16 +392,9 @@ bronze_hatti_collapse_spawn_carchemish_continuity = {
 bronze_hatti_collapse_fragment_periphery = {
 	custom_description = {
 		text = bronze_hatti_collapse_fragment_periphery_text
-		bronze_hatti_collapse_spawn_tarhuntassa = yes
-		bronze_hatti_collapse_spawn_tabal = yes
-		bronze_hatti_collapse_spawn_melid_gurgum = yes
-		bronze_hatti_collapse_spawn_kummuh_hamath = yes
-		bronze_hatti_collapse_spawn_que_pattin = yes
-		bronze_hatti_collapse_spawn_kaskian_north = yes
-		bronze_hatti_collapse_spawn_carchemish_continuity = yes
-		set_variable = { name = bronze_hatti_fragmented_periphery value = 1 years = 80 }
-		bronze_hatti_collapse_add_pressure = { value = -12 }
-		add_stability = stability_weak_penalty
+		# Compatibility alias for events/actions created before the deterministic
+		# successor pass. All final fragmentation now runs through one effect.
+		bronze_hatti_collapse_final_fragmentation = yes
 	}
 }
 

@@ -250,6 +250,44 @@ HAMAT = {
 	color = rgb { 159 117 120 }
 	color2 = rgb { 110 27 27 }
 }
+# Deterministic Hatti-collapse successors. HAMAT and HATLU remain reserved
+# placeholders until their historical location sets are mapped.
+ARPAD = {
+	color = rgb { 145 83 70 }
+	color2 = rgb { 214 171 82 }
+}
+HATLU = {
+	color = rgb { 124 91 71 }
+	color2 = rgb { 201 153 77 }
+}
+SAMAL = {
+	color = rgb { 154 112 77 }
+	color2 = rgb { 77 48 38 }
+}
+TILBA = {
+	color = rgb { 117 129 102 }
+	color2 = rgb { 202 163 84 }
+}
+KHILA = {
+	color = rgb { 150 133 91 }
+	color2 = rgb { 89 60 43 }
+}
+CARCH = {
+	color = rgb { 119 92 126 }
+	color2 = rgb { 215 171 79 }
+}
+KAMMA = {
+	color = rgb { 139 103 83 }
+	color2 = rgb { 218 174 82 }
+}
+PHRYG = {
+	color = rgb { 139 90 98 }
+	color2 = rgb { 199 158 89 }
+}
+LUWIY = {
+	color = rgb { 174 121 68 }
+	color2 = rgb { 89 55 38 }
+}
 LAEAE = {
 	color = rgb { 114 143 140 }
 	color2 = rgb { 110 27 27 }
