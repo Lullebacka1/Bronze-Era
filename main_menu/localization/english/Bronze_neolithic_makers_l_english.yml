@@ -14,6 +14,10 @@
   neolithic_beer_maker: "Village Brewery"
   neolithic_beer_maker_desc: "Brewing is carried out on a household and village scale using locally available grains, fruits, and other fermentable crops. These small producers supply communities with beverages used in daily life, feasting, and ritual."
 
+  neolithic_dyes_maker: "Village Dyers"
+  neolithic_dyes_maker_desc: "Households and small workshops produce dyes from local plants, minerals, and other natural materials. Though limited in scale, these craftsmen supply pigments for textiles, decoration, and ritual use."
+
+
   # #############################
   # PRODUCTION METHODS
   # #############################
@@ -68,3 +72,9 @@
 
   rice_brewery_maintenance: "Rice Brewing"
   rice_brewery_maintenance_desc: "Rice is fermented into alcoholic beverages that serve both everyday consumption and ceremonial purposes in rice-growing communities."
+
+  dyes_maker_maintenance: "Natural Dyes"
+  dyes_maker_maintenance_desc: "Dyes are produced from locally available plants, bark, roots, and other organic materials gathered from the surrounding landscape."
+
+  alum_dyes_maker_maintenance: "Alum Mordants"
+  alum_dyes_maker_maintenance_desc: "The use of alum improves the fixation and durability of dyes, producing brighter colors and reducing fading in dyed textiles."

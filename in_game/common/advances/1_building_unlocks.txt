@@ -93,6 +93,29 @@
 	
  	unlock_building = weapon_guild
 	
+ 	requires = royal_tools_workshop_advance
+ }
+
+ royal_navy_supply_advance = {
+ 	age = age_1_traditions
+	
+ 	unlock_building = naval_supplies_palace
+
+	allow = {
+		has_advance = sailing_advance
+	}
+	
+ 	requires = royal_weapon_workshop_advance
+ }
+
+ royal_production_advance = {
+ 	age = age_1_traditions
+	
+ 	unlock_building = fine_cloth_palace
+	unlock_building = beer_palace
+	unlock_building = pottery_palace
+	unlock_building = winery_palace
+	
  	requires = workforce_specialization_advance
  }
 

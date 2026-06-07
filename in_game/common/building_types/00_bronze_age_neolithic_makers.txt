@@ -211,3 +211,45 @@ neolithic_beer_maker = {
 
 	construction_demand = guild_construction
 }
+
+neolithic_dyes_maker = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = rural_building_cap
+	
+	category = basic_industry_category
+	
+	employment_size = tiny_rural_peasant_produce_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = no
+	megalopolis = no
+
+	build_time = village_build_time
+	
+	unique_production_methods = {
+		dyes_maker_maintenance = {
+			lumber = 0.25
+		
+			produced = dyes
+			output = 0.1
+			
+			category = guild_input
+		}
+		alum_dyes_maker_maintenance = {
+			alum = 0.02
+			lumber = 0.35
+			
+			
+			produced = dyes
+			output = 0.15
+			
+			debug_max_profit = 0.4		#better one
+			category = guild_input
+		}
+	}
+
+	construction_demand = guild_construction
+
+}

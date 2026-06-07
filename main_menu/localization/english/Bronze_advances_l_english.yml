@@ -195,6 +195,12 @@
   palace_trade_registry_advance: "Trade Registries"
   palace_trade_registry_advance_desc: "Growing commercial activity encourages rulers to record merchants, shipments, obligations, and exchanges. Dedicated trade registries improve oversight of commerce and strengthen connections between administrative centers and markets."
 
+  royal_production_advance: "Royal Workshops"
+  royal_production_advance_desc: "As palatial institutions expand, rulers increasingly concentrate skilled craftsmen under direct administrative supervision. Specialized workshops produce tools, weapons, textiles, luxury goods, and other necessities for the court, transforming craft production into an instrument of royal power and economic organization."
+
+  royal_navy_supply_advance: "Royal Naval Workshops"
+  royal_navy_supply_advance_desc: "The growing importance of maritime trade and warfare encourages palatial administrations to establish specialized workshops dedicated to the production of sails, rope, pitch, rigging, and other essential naval supplies."
+
   # ##########################
   # PRODUCTION METHODS
   # ##########################

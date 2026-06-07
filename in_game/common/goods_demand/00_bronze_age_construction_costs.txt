@@ -99,3 +99,9 @@ town_building_construction = {
 	category = building_construction
 
 }
+
+guild_construction = {
+	stone = 0.25
+	lumber = 0.25
+	category = building_construction
+}

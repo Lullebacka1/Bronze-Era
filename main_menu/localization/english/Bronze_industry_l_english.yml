@@ -29,6 +29,20 @@
   royal_scribe_guild: "Royal Scribe School"
   royal_scribe_guild_desc: "The royal scribe school is a prestigious institution where the most talented individuals are trained in the art of writing and record-keeping. The school produces highly skilled scribes who serve the administrative needs of the palace and contribute to the development of complex bureaucratic systems in Bronze Age societies."
 
+  fine_cloth_palace: "Royal Weavers"
+  fine_cloth_palace_desc: "Attached to the palace economy, royal weaving workshops produce fine textiles for courtly dress, ceremonial use, diplomatic gifts, and elite consumption. Their craftsmen transform valuable fibers and dyes into goods that display wealth, status, and authority."
+
+  beer_palace: "Royal Brewers"
+  beer_palace_desc: "Operating under palatial supervision, royal breweries produce large quantities of fermented beverages for feasts, religious ceremonies, labor rations, diplomatic gifts, and elite consumption. Their output supports both the daily functioning and prestige of the palace economy."
+
+  pottery_palace: "Royal Potters"
+  pottery_palace_desc: "Palatial pottery workshops produce storage jars, tableware, transport containers, and ceremonial vessels in large quantities. Their output supports administration, trade, religious institutions, and the daily needs of the palace economy."
+
+  naval_supplies_palace: "Royal Shipwrights"
+  naval_supplies_palace_desc: "Working under palatial supervision, shipwrights and craftsmen produce rope, sails, rigging, pitch, and other essential maritime supplies. Their workshops sustain trade fleets, fishing vessels, and warships that extend the reach of the realm across rivers and seas."
+
+  winery_palace: "Royal Wineries"
+  winery_palace_desc: "Palatial wineries produce fermented beverages for feasting, diplomacy, religious ceremonies, and elite consumption. Their products serve both as symbols of prestige and as valuable goods within the redistributive economy."
 
   # ########################
   # PRODUCTION METHODS
@@ -72,3 +86,54 @@
 
   weapon_guild_iron_recipe: "Iron Arms Forging"
   weapon_guild_iron_recipe_desc: "With the advent of iron smelting, royal workshops begin forging iron weapons. While early iron is often brittle and less durable than bronze, it represents a significant technological shift with the potential for mass production and widespread access to weaponry."
+
+  fine_cloth_guild_maintenance: "Fine Cloth Weaving"
+  fine_cloth_guild_maintenance_desc: "Skilled weavers refine ordinary cloth into higher-quality textiles suitable for elite households and administrative institutions."
+
+  wool_weavers_maintenance: "Wool Weaving"
+  wool_weavers_maintenance_desc: "Experienced craftsmen produce fine woolen textiles valued for their durability, comfort, and versatility."
+
+  silk_weavers_maintenance: "Silk Weaving"
+  silk_weavers_maintenance_desc: "Rare silk fibers are transformed into luxurious textiles reserved for the wealthiest patrons and the most prestigious ceremonial uses."
+
+  base_fine_cloth_guild_maintenance: "Dyed Textiles"
+  base_fine_cloth_guild_maintenance_desc: "The application of dyes increases the value and desirability of fine textiles while expanding the range of available colors."
+
+  alum_fine_cloth_guild_maintenance: "Mordant Dyeing"
+  alum_fine_cloth_guild_maintenance_desc: "Alum improves the brightness and durability of dyed fabrics, allowing weavers to produce more vibrant and lasting textiles."
+
+  fur_trim_guild_maintenance: "Fur Trimmings"
+  fur_trim_guild_maintenance_desc: "Fine garments are enhanced with carefully selected furs, increasing their prestige and appeal among elite consumers."
+
+  wheat_palace_brewery_maintenance: "Wheat Brewing"
+  wheat_palace_brewery_maintenance_desc: "Palace brewers produce wheat-based beer for distribution to workers, retainers, officials, and ceremonial gatherings."
+
+  millet_palace_brewery_maintenance: "Millet Brewing"
+  millet_palace_brewery_maintenance_desc: "Millet provides a dependable foundation for large-scale brewing operations serving the needs of the palace and its dependents."
+
+  fruit_palace_brewery_maintenance: "Fruit Fermentation"
+  fruit_palace_brewery_maintenance_desc: "Fruit-based beverages are produced for feasting, ritual observances, and the tables of elite households."
+
+  maize_palace_brewery_maintenance: "Maize Brewing"
+  maize_palace_brewery_maintenance_desc: "Specialized brewers ferment maize into beverages consumed during ceremonies, communal gatherings, and official functions."
+
+  honey_palace_brewery_maintenance: "Honey Brewing"
+  honey_palace_brewery_maintenance_desc: "Honey and grain are used to create prized fermented drinks associated with hospitality, prestige, and ritual celebration."
+
+  rice_palace_brewery_maintenance: "Rice Brewing"
+  rice_palace_brewery_maintenance_desc: "Rice-based alcoholic beverages are produced in organized workshops to supply both everyday consumption and ceremonial needs."
+
+  palace_pottery_maintenance: "Ceramic Production"
+  palace_pottery_maintenance_desc: "Skilled potters shape and fire clay into vessels used for storage, transport, cooking, trade, and administrative purposes throughout the realm."
+
+  naval_supplies_palace_maintenance: "Naval Equipment Production"
+  naval_supplies_palace_maintenance_desc: "Specialized craftsmen manufacture the ropes, sails, caulking materials, and fittings required to construct, maintain, and operate seagoing vessels."
+
+  palace_fruit_winery_maintenance: "Fruit Winemaking"
+  palace_fruit_winery_maintenance_desc: "Skilled vintners ferment fruit into prized beverages reserved for feasts, ceremonies, and the households of the wealthy."
+
+  palace_rice_winery_maintenance: "Rice Winemaking"
+  palace_rice_winery_maintenance_desc: "Rice is carefully fermented into refined alcoholic beverages consumed at courtly gatherings and important ritual occasions."
+
+  palace_honey_winery_maintenance: "Honey Winemaking"
+  palace_honey_winery_maintenance_desc: "Honey is transformed into luxurious fermented drinks associated with hospitality, religious observance, and elite status."
