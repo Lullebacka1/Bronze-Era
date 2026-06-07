@@ -7,11 +7,14 @@ trojan_war_casus_belli = {
 
 	wargoal = {
 		type = take_province
-		allow = {
-		province = province_biga
-		owner = {
-			is_defending_in_war = yes
-		}
+	}
+
+	trigger = {
+		any_province = {
+			province = province_biga
+			owner = {
+				is_defending_in_war = yes
+			}
 		}
 	}
 

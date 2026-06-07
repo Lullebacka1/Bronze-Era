@@ -51,3 +51,40 @@ trojan_war_greece_modifier_phase_2 = {
         max = 0.50
     }
 }
+
+trojan_war_greece_victory = {
+	siege_ability = {
+        value = 0.0
+        add = {
+            value = global:anatolia_raid_success_count
+            multiply = 0.01
+        }
+        max = 0.05
+    }
+	   maritime_presence = {
+        value = 0.0
+        add = {
+            value = global:anatolia_raid_success_count
+            multiply = 0.01
+        }
+        max = 0.05
+    }
+}
+trojan_war_anatolian_victory = {
+	    siege_ability = {
+        value = 0.0
+        add = {
+            value = global:anatolia_raid_failed_count
+            multiply = 0.01
+        }
+        max = 0.05
+    }
+    levy_combat_efficiency = {
+        value = 0.0
+        add = {
+            value = global:anatolia_raid_failed_count
+            multiply = 0.01
+        }
+        max = 0.05	
+    }	
+}

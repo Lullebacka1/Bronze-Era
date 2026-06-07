@@ -1,6 +1,6 @@
 trojan_war_phase_1 = {
 	monthly_spawn_chance = {
-		value = 1
+		value = 100
 	}
 
 	can_start = {
@@ -20,11 +20,15 @@ trojan_war_phase_1 = {
 	}
 
 	end_conditions = {
-		current_date >= 14.1.1
+		
 	}
 
 	on_end = {
 		set_global_variable = { name = "trojan_war_phase_1_ended" value = yes }
+		trigger_situation = {
+			key = trojan_war_phase_2
+			target = 0001G
+		}
 	}
 
 	visible = {

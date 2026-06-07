@@ -1,16 +1,11 @@
 trojan_war_phase_2 = {
-	monthly_spawn_chance = {
-		value = 1
-	}
+	is_triggered_only = yes
 
-	can_start = {
-		has_global_variable = "trojan_war_phase_1_ended"
-		NOT = { has_global_variable = "trojan_war_phase_2_started" }
-		NOT = { has_global_variable = "trojan_war_phase_2_ended" }
+	allowed_targets = {
+		this = { tag = 0001G }
 	}
-
+	
 	on_start = {
-		# to do add all contry modifers
 		set_global_variable = { name = "trojan_war_phase_2_started" value = yes }
 		0001G = {
             add_country_modifier = { name = trojan_war_greece_modifier_phase_2 }
@@ -33,25 +28,37 @@ trojan_war_phase_2 = {
         MASA = {
             add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 }
         }
-		0001G ={
-			start_war = {
-				target = WILUS
-				type = trojan_war_casus_belli
-				helpers = {
-					tag = AHHI # Ahhiyawa
-					tag = LYCIA # Lycia
-					tag = SEHA # Seha River Land
-					tag = LUKKA # Lukka
-					tag = MASA # Masaa
+		
+		
+		delayed_effect = {
+			days = 1
+			0001G = {
+				start_war = {
+					target = WILUS
+					type = trojan_war_casus_belli
+				}
+				
+			/
+				any_current_war = {
+					limit = {
+						cb_type = trojan_war_casus_belli
+					}
+					add_war_participant = { side = defender tag = AHHI } # Ahhiyawa
+					add_war_participant = { side = defender tag = LYCIA } # Lycia
+					add_war_participant = { side = defender tag = SEHA } # Seha River Land
+					add_war_participant = { side = defender tag = LUKKA } # Lukka
+					add_war_participant = { side = defender tag = MASA } # Masaa
 				}
 			}
 		}
 	}
 
 	can_end = {
-		#we want it to en when war score is above 75% and we will have scripted peace deal
+		
 		has_global_variable = "trojan_war_phase_2_started"
 		NOT = { has_global_variable = "trojan_war_phase_2_ended" }
+
+		
 		NOT = {
 			any_current_war = {
 				any_war_participant = { tag = 0001G }
@@ -61,8 +68,37 @@ trojan_war_phase_2 = {
 		}
 	}
 
-	end_conditions = {
+	end_conditions = {	
 		
+		0001G = {
+			if = {
+				limit = {
+					any_current_war = {
+						cb_type = trojan_war_casus_belli
+						war_score > 0
+					}
+				}
+				set_global_variable = { name = "greece_actually_won" value = yes }
+			}
+		}
+
+		
+		0001G = {
+			if = {
+				limit = {
+					has_global_variable = "greece_actually_won"
+				}
+				add_country_modifier = { name = trojan_war_greece_victory }
+			}
+			else = {
+				WILUS = { add_country_modifier = { name = trojan_war_anatolian_victory } }
+				AHHI = { add_country_modifier = { name = trojan_war_anatolian_victory } }
+				LYCIA = { add_country_modifier = { name = trojan_war_anatolian_victory } }
+				SEHA = { add_country_modifier = { name = trojan_war_anatolian_victory } }
+				LUKKA = { add_country_modifier = { name = trojan_war_anatolian_victory } }
+				MASA = { add_country_modifier = { name = trojan_war_anatolian_victory } }
+			}
+		}
 	}
 
 	on_end = {
