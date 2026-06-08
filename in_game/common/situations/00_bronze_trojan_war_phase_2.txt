@@ -4,14 +4,14 @@ trojan_war_phase_2 = {
 	}
 
 	can_start = {
-		current_date >= 14.1.2
+		current_date >= 14.1.1
 		NOT = { has_global_variable = "trojan_war_phase_2_started" }
 		NOT = { has_global_variable = "trojan_war_phase_2_ended" }
 	}
 	
 	on_start = {
 		set_global_variable = { name = "trojan_war_phase_2_started" value = yes }
-		0001G = {
+		"0001G" = {
             add_country_modifier = { name = trojan_war_greece_modifier_phase_2 }
         }
         WILUS = {
@@ -34,24 +34,28 @@ trojan_war_phase_2 = {
         }
 		
 		
+		"0001G" = {
+			start_war = {
+				attacker = 0001G
+				target = WILUS
+				type = trojan_war_casus_belli
+			}
+		}
+		
+		
 		delayed_effect = {
 			days = 1
-			0001G = {
-				start_war = {
-					target = WILUS
-					type = trojan_war_casus_belli
-				}
-				
-			
+			"0001G" = {
 				any_current_war = {
 					limit = {
 						cb_type = trojan_war_casus_belli
+						any_war_participant = { tag = WILUS }
 					}
-					add_war_participant = { side = defender tag = AHHI } # Ahhiyawa
-					add_war_participant = { side = defender tag = LYCIA } # Lycia
-					add_war_participant = { side = defender tag = SEHA } # Seha River Land
-					add_war_participant = { side = defender tag = LUKKA } # Lukka
-					add_war_participant = { side = defender tag = MASA } # Masaa
+					add_war_participant = { side = defender tag = AHHI }
+					add_war_participant = { side = defender tag = LYCIA }
+					add_war_participant = { side = defender tag = SEHA }
+					add_war_participant = { side = defender tag = LUKKA }
+					add_war_participant = { side = defender tag = MASA }
 				}
 			}
 		}
@@ -79,7 +83,7 @@ trojan_war_phase_2 = {
 				limit = {
 					any_current_war = {
 						cb_type = trojan_war_casus_belli
-						war_score > 0
+						war_score ={ value > 0}
 					}
 				}
 				set_global_variable = { name = "greece_actually_won" value = yes }
