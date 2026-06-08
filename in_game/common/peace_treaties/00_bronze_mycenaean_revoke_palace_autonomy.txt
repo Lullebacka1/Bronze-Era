@@ -14,7 +14,10 @@ peace_mycenaean_revoke_palace_autonomy = {
 	potential = {
 		scope:loser = {
 			country_type = location
-			is_member_of_international_organization = international_organization:mycenaean_league
+			OR = {
+				has_variable = mycenaean_fully_independent_palace
+				is_member_of_international_organization = international_organization:mycenaean_league
+			}
 			num_locations < 5
 		}
 		scope:winner = {

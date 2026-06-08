@@ -216,7 +216,46 @@ mycenaean_league = {
 
 	can_join_trigger = {
 		is_rebel_country = no
+		NOT = { has_variable = mycenaean_fully_independent_palace }
 		mycenaean_league_palace_network_identity = yes
+	}
+
+	on_joined = {
+		remove_variable = mycenaean_fully_independent_palace
+	}
+
+	on_left = {
+		# A landed palace that leaves is no longer under the High Wanax in any
+		# capacity. Its territory leaves the league map and all temporary league
+		# obligations are cleared. Re-entry requires military restoration.
+		if = {
+			limit = { country_type = location }
+			set_variable = { name = mycenaean_fully_independent_palace value = 1 }
+		}
+		every_owned_location = {
+			limit = {
+				is_owned_by_international_organization = scope:recipient
+			}
+			scope:recipient = {
+				remove_location_from_international_organization = prev
+			}
+		}
+		remove_variable = mycenaean_megaron_council
+		remove_variable = mycenaean_shared_sacrifice
+		remove_variable = mycenaean_linear_b_administration
+		remove_variable = mycenaean_palace_mediation
+		remove_variable = mycenaean_rival_claimant
+		remove_variable = mycenaean_bronze_tribute_demand
+		remove_variable = mycenaean_palace_levies_mustered
+		remove_variable = mycenaean_pan_achaean_expedition
+		remove_variable = mycenaean_high_wanax_fragmentation_council
+		remove_variable = mycenaean_palace_privileges_granted
+		remove_variable = mycenaean_palace_redistribution
+		remove_variable = mycenaean_palace_hostages_taken
+		remove_variable = mycenaean_league_oath_summoned_recently
+		remove_variable = mycenaean_league_accepted_order
+		remove_variable = mycenaean_fragmentation_seen
+		remove_variable = mycenaean_palace_influence
 	}
 
 	can_leave_trigger = {
@@ -270,6 +309,23 @@ mycenaean_league = {
 	}
 
 	monthly_effect = {
+		# Save compatibility: older versions landed palace countries without
+		# removing them from the league. Expel only those already marked as
+		# autonomous/landed; loyal building countries remain untouched.
+		every_international_organization_member = {
+			limit = {
+				NOT = { is_leader_of_international_organization = international_organization:mycenaean_league }
+				country_type = location
+				OR = {
+					has_variable = mycenaean_landed_palace
+					has_variable = mycenaean_palace_autonomy_claimed
+				}
+			}
+			save_temporary_scope_as = mycenaean_legacy_independent_palace
+			international_organization:mycenaean_league = {
+				remove_country_from_international_organization = scope:mycenaean_legacy_independent_palace
+			}
+		}
 		if = {
 			limit = {
 				situation:mycenaean_fragmentation = {

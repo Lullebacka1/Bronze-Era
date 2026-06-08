@@ -36,8 +36,14 @@ cb_mycenaean_high_wanax_reassert_authority = {
 	create_enabled = {
 		is_leader_of_international_organization = international_organization:mycenaean_league
 		scope:target = {
-			is_member_of_international_organization = international_organization:mycenaean_league
-			NOT = { is_leader_of_international_organization = international_organization:mycenaean_league }
+			country_type = location
+			OR = {
+				has_variable = mycenaean_fully_independent_palace
+				AND = {
+					is_member_of_international_organization = international_organization:mycenaean_league
+					NOT = { is_leader_of_international_organization = international_organization:mycenaean_league }
+				}
+			}
 		}
 	}
 
