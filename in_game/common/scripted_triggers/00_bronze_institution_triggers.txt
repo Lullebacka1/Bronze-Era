@@ -1,0 +1,64 @@
+# Shared spawn pool for Bronze Age institutions.
+# Greek locations are eligible only while directly owned by Mycenaea (0001G).
+bronze_age_core_institution_spawn_location = {
+	has_owner = yes
+	OR = {
+		location_rank = location_rank:city
+		location_rank = location_rank:megalopolis
+	}
+	OR = {
+		region = region:egypt_region
+		region = region:crescent_region
+		region = region:anatolia_region
+		owner = { tag = 0001G }
+	}
+}
+
+# Generic capital-based origin for later custom institutions. Requiring an
+# urban capital prevents institutions from appearing in empty rural locations.
+bronze_age_institution_urban_spawn_location = {
+	has_owner = yes
+	owner ?= { root = capital }
+	OR = {
+		location_rank = location_rank:city
+		location_rank = location_rank:megalopolis
+	}
+	dominant_culture = owner.culture
+}
+
+bronze_age_institution_port_spawn_location = {
+	bronze_age_institution_urban_spawn_location = yes
+	is_port = yes
+}
+
+# Used by migration horizons, which may originate in a non-urban capital.
+bronze_age_institution_capital_spawn_location = {
+	has_owner = yes
+	owner ?= { root = capital }
+}
+
+bronze_age_institution_military_spawn_location = {
+	bronze_age_institution_urban_spawn_location = yes
+	num_pop_type:nobles > 0
+}
+
+# Iron Metallurgy must originate in Anatolia. Its spread is deliberately not
+# restricted afterward, allowing the technology horizon to leave Anatolia.
+bronze_age_anatolian_iron_spawn_location = {
+	has_owner = yes
+	owner ?= { root = capital }
+	region = region:anatolia_region
+}
+
+bronze_age_phoenician_writing_spawn_location = {
+	bronze_age_institution_urban_spawn_location = yes
+	region = region:crescent_region
+}
+
+bronze_age_greek_urban_spawn_location = {
+	bronze_age_institution_urban_spawn_location = yes
+	OR = {
+		region = region:balkan_region
+		owner = { tag = 0001G }
+	}
+}

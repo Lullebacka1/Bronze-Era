@@ -208,8 +208,9 @@ bronze_hatti_collapse_abandon_syrian_road = {
 	custom_description = {
 		text = bronze_hatti_collapse_abandon_syrian_road_text
 		set_variable = { name = bronze_hatti_syrian_road_abandoned value = 1 years = 20 }
-		bronze_hatti_collapse_spawn_carchemish_continuity = yes
-		bronze_hatti_collapse_spawn_kummuh_hamath = yes
+		# Successor states now appear only during the deterministic final collapse.
+		# This action preserves the Syrian archives and lowers immediate pressure.
+		set_variable = { name = bronze_hatti_syrian_archives_preserved value = 1 years = 20 }
 		bronze_hatti_collapse_add_pressure = { value = -10 }
 		bronze_hatti_collapse_add_famine = { value = -2 }
 		add_prestige = prestige_medium_penalty
@@ -314,6 +315,10 @@ bronze_hatti_collapse_spawn_tabal = {
 		bronze_hatti_collapse_prepare_successor = { tag = TABAL location = nevsehir }
 		bronze_hatti_collapse_prepare_successor = { tag = TABAL location = develi }
 		bronze_hatti_collapse_prepare_successor = { tag = TABAL location = tomarza }
+		bronze_hatti_collapse_prepare_successor = { tag = TABAL location = goksun }
+		bronze_hatti_collapse_prepare_successor = { tag = TABAL location = afsin }
+		bronze_hatti_collapse_prepare_successor = { tag = TABAL location = comana_cil }
+		bronze_hatti_collapse_prepare_successor = { tag = TABAL location = hargan }
 		bronze_hatti_collapse_release_successor = { tag = TABAL culture = luwian accepted_culture = hittite religion = luwian }
 	}
 }
@@ -328,7 +333,6 @@ bronze_hatti_collapse_spawn_melid_gurgum = {
 		bronze_hatti_collapse_release_successor = { tag = MELID culture = luwian accepted_culture = hurrian religion = hittite }
 		bronze_hatti_collapse_prepare_successor = { tag = GURGU location = marash }
 		bronze_hatti_collapse_prepare_successor = { tag = GURGU location = elbistan }
-		bronze_hatti_collapse_prepare_successor = { tag = GURGU location = goksun }
 		bronze_hatti_collapse_release_successor = { tag = GURGU culture = luwian accepted_culture = hittite religion = hittite }
 	}
 }
@@ -356,8 +360,8 @@ bronze_hatti_collapse_spawn_que_pattin = {
 		bronze_hatti_collapse_prepare_successor = { tag = QUE location = tarsus }
 		bronze_hatti_collapse_prepare_successor = { tag = QUE location = ayas }
 		bronze_hatti_collapse_prepare_successor = { tag = QUE location = sis }
+		bronze_hatti_collapse_prepare_successor = { tag = QUE location = iskenderun }
 		bronze_hatti_collapse_release_successor = { tag = QUE culture = luwian accepted_culture = denyen religion = luwian }
-		bronze_hatti_collapse_prepare_successor = { tag = PATT location = iskenderun }
 		bronze_hatti_collapse_prepare_successor = { tag = PATT location = arsuz }
 		bronze_hatti_collapse_prepare_successor = { tag = PATT location = artah }
 		bronze_hatti_collapse_release_successor = { tag = PATT culture = luwian accepted_culture = ugaritic religion = luwian }
@@ -391,16 +395,20 @@ bronze_hatti_collapse_spawn_carchemish_continuity = {
 bronze_hatti_collapse_fragment_periphery = {
 	custom_description = {
 		text = bronze_hatti_collapse_fragment_periphery_text
-		bronze_hatti_collapse_spawn_tarhuntassa = yes
-		bronze_hatti_collapse_spawn_tabal = yes
-		bronze_hatti_collapse_spawn_melid_gurgum = yes
-		bronze_hatti_collapse_spawn_kummuh_hamath = yes
-		bronze_hatti_collapse_spawn_que_pattin = yes
-		bronze_hatti_collapse_spawn_kaskian_north = yes
-		bronze_hatti_collapse_spawn_carchemish_continuity = yes
-		set_variable = { name = bronze_hatti_fragmented_periphery value = 1 years = 80 }
-		bronze_hatti_collapse_add_pressure = { value = -12 }
-		add_stability = stability_weak_penalty
+		# Compatibility alias for events/actions created before the deterministic
+		# successor pass. All final fragmentation now runs through one effect.
+		bronze_hatti_collapse_final_fragmentation = yes
+	}
+}
+
+bronze_hatti_collapse_survival_outcome = {
+	custom_description = {
+		text = bronze_hatti_collapse_survival_outcome_text
+		set_global_variable = { name = bronze_hatti_survived_collapse value = 1 }
+		set_variable = { name = bronze_hatti_collapse_survived value = 1 years = 25 }
+		add_stability = stability_weak_bonus
+		add_prestige = prestige_medium_bonus
+		add_legitimacy = legitimacy_mild_bonus
 	}
 }
 
@@ -427,5 +435,7 @@ bronze_hatti_collapse_cleanup = {
 		remove_variable = bronze_hatti_seha_oath_tested
 		remove_variable = bronze_hatti_mira_oath_tested
 		remove_variable = bronze_hatti_hapalla_oath_tested
+		remove_variable = bronze_hatti_deadline_event_pending
+		remove_variable = bronze_hatti_terminal_collapse_pending
 	}
 }
