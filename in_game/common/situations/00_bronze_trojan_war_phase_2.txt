@@ -34,11 +34,12 @@ trojan_war_phase_2 = {
         }
 		
 		
-		"0001G" = {
+		0001G = {
 			start_war = {
-				attacker = 0001G
+				
 				target = WILUS
 				type = trojan_war_casus_belli
+				force = yes
 			}
 		}
 		
@@ -65,7 +66,8 @@ trojan_war_phase_2 = {
 		
 		has_global_variable = "trojan_war_phase_2_started"
 		NOT = { has_global_variable = "trojan_war_phase_2_ended" }
-
+			#so the war has time to load in
+		current_date >= 14.4.1
 		
 		NOT = {
 			any_current_war = {
