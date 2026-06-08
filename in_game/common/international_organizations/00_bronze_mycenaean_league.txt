@@ -6,6 +6,8 @@ mycenaean_league = {
 	show_leave_message = yes
 	use_laws_as_join_reason = yes
 	has_dynastic_power = yes
+	# Landless palace houses draw army provisions from the shared Achaean network.
+	gives_food_access_to_members = yes
 
 	map_color = hsv360 { 36 72 70 }
 	leader_color = define:NMapColors|INTERNATIONAL_ORGANIZATION_LEADER_COLOR
