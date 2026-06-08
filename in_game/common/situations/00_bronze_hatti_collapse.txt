@@ -15,6 +15,7 @@ bronze_hatti_collapse = {
 		# Internal year 25 = 1185 BC.
 		current_date < 25.1.1
 		NOT = { has_global_variable = bronze_hatti_collapse_ended }
+		NOT = { has_global_variable = bronze_hatti_empire_restored }
 		OR = {
 			situation:sea_peoples_crisis ?= {
 				has_variable = sea_peoples_global_phase

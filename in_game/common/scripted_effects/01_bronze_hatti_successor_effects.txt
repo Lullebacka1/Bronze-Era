@@ -429,20 +429,20 @@ bronze_hatti_collapse_spawn_luwiya = {
 
 bronze_hatti_collapse_spawn_phrygian_remainder = {
 	# All Hatti lands left after the fixed successor map become Phrygia.
-	# The local Hattian cult is used because no separate Phrygian religion exists.
+	# Hattian communities retain their culture but use the unified Hittite cult.
 	every_owned_location = {
 		every_pop = {
 			limit = {
 				pop_size > 0.001
 				OR = {
 					NOT = { culture = culture:phrygian }
-					NOT = { religion = religion:hattian }
+					NOT = { religion = religion:hittite }
 				}
 			}
 			split_pop = {
 				fraction = 0.35
 				culture = culture:phrygian
-				religion = religion:hattian
+				religion = religion:hittite
 			}
 		}
 		add_core = c:PHRYG
@@ -450,7 +450,7 @@ bronze_hatti_collapse_spawn_phrygian_remainder = {
 	bronze_hatti_collapse_materialize_successor = {
 		tag = PHRYG
 		culture = phrygian
-		religion = hattian
+		religion = hittite
 		accepted_culture = hittite
 	}
 	bronze_hatti_collapse_set_successor_capital = { tag = PHRYG location = huseyinabad }

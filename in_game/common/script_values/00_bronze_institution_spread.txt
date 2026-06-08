@@ -1,5 +1,6 @@
-# Bronze Age institutions need a non-zero base because literacy is intentionally
-# low in this total conversion. Values are monthly institution progress.
+# Custom institutions need a non-zero base because literacy and urbanization
+# are intentionally low in this total conversion. These values are shared by
+# every modded institution; vanilla institution values remain untouched.
 
 bronze_age_institution_trade_spread = {
 	value = 0.35
@@ -50,5 +51,65 @@ bronze_age_institution_market_spread = {
 	add = {
 		value = average_location_literacy
 		multiply = 0.01
+	}
+}
+
+# Promotion weights used when selecting an origin location. A fixed base keeps
+# custom institutions viable even when Bronze Age pop categories are tiny.
+bronze_age_institution_urban_promotion = {
+	value = 10
+	add = {
+		value = development
+		multiply = 0.10
+	}
+	add = {
+		value = average_location_literacy
+		multiply = 0.10
+	}
+}
+
+bronze_age_institution_maritime_promotion = {
+	value = 12
+	add = {
+		value = num_pop_type:burghers
+		multiply = 2
+	}
+	add = {
+		if = {
+			limit = { is_port = yes }
+			value = 8
+		}
+	}
+}
+
+bronze_age_institution_military_promotion = {
+	value = 12
+	add = {
+		value = num_pop_type:nobles
+		multiply = 4
+	}
+	add = {
+		value = modifier:local_manpower
+		multiply = 0.5
+	}
+}
+
+bronze_age_institution_knowledge_promotion = {
+	value = 10
+	add = {
+		value = average_location_literacy
+		multiply = 0.25
+	}
+	add = {
+		value = num_pop_type:clergy
+		multiply = 2
+	}
+}
+
+bronze_age_institution_migration_promotion = {
+	value = 10
+	add = {
+		value = num_pop_type:peasants
+		multiply = 0.10
 	}
 }

@@ -6624,7 +6624,7 @@ caspian_sea36 = { topography = inland_sea climate = cold_arid}
 caspian_sea37 = { topography = inland_sea climate = cold_arid}
 caspian_sea38 = { topography = inland_sea climate = cold_arid}
 caspian_sea39 = { topography = inland_sea climate = cold_arid}
-amasya = { topography = hills vegetation = woods climate = cold_arid religion = hattian culture = hattian raw_material = horses}
+amasya = { topography = hills vegetation = woods climate = cold_arid religion = hittite culture = hattian raw_material = horses}
 gadegara = { topography = hills vegetation = forest climate = oceanic religion = kartvelian_pagan culture = colchian raw_material = lumber}
 ladik_pontus = { topography = hills vegetation = forest climate = continental religion = kartvelian_pagan culture = colchian raw_material = rice}
 merzifon = { topography = hills vegetation = grasslands climate = cold_arid religion = hittite culture = hittite raw_material = wheat}
@@ -6634,11 +6634,11 @@ baliseyh = { topography = plateau vegetation = grasslands climate = cold_arid re
 candir = { topography = hills vegetation = woods climate = cold_arid religion = hittite culture = hittite raw_material = wool}
 dinek_keskin = { topography = plateau vegetation = grasslands climate = cold_arid religion = hittite culture = hittite raw_material = saffron}
 sorgun = { topography = plateau vegetation = sparse climate = cold_arid religion = hittite culture = hittite raw_material = livestock}
-corum = { topography = hills vegetation = grasslands climate = cold_arid religion = hattian culture = hattian raw_material = legumes}
+corum = { topography = hills vegetation = grasslands climate = cold_arid religion = hittite culture = hattian raw_material = legumes}
 gumus = { topography = hills vegetation = forest climate = continental religion = hittite culture = hittite raw_material = silver}
 huseyinabad = { topography = plateau vegetation = grasslands climate = continental religion = hittite culture = hittite raw_material = clay}
 iskilip = { topography = hills vegetation = forest climate = continental religion = hittite culture = hittite raw_material = fur}
-sungurlu = { topography = plateau vegetation = grasslands climate = cold_arid religion = hattian culture = hattian raw_material = legumes}
+sungurlu = { topography = plateau vegetation = grasslands climate = cold_arid religion = hittite culture = hattian raw_material = legumes}
 divrigi = { topography = hills vegetation = woods climate = continental religion = hittite culture = hittite raw_material = iron}
 arapgir = { topography = hills vegetation = sparse climate = continental religion = hittite culture = hittite raw_material = wool}
 arguvan = { topography = hills vegetation = sparse climate = cold_arid religion = hittite culture = hittite raw_material = livestock}
@@ -6681,7 +6681,7 @@ aydincik = { topography = hills vegetation = woods climate = continental religio
 koyulhisar = { topography = mountains vegetation = woods climate = continental religion = hittite culture = hittite raw_material = livestock}
 niksar = { topography = hills vegetation = grasslands climate = continental religion = hittite culture = hittite raw_material = wheat}
 sulusaray = { topography = hills vegetation = woods climate = cold_arid religion = hittite culture = hittite raw_material = livestock}
-zile = { topography = hills vegetation = woods climate = continental religion = hattian culture = hattian raw_material = saffron}
+zile = { topography = hills vegetation = woods climate = continental religion = hittite culture = hattian raw_material = saffron}
 aksaray = { topography = plateau vegetation = sparse climate = cold_arid religion = hittite culture = hittite raw_material = alum}
 kochisar = { topography = plateau vegetation = sparse climate = cold_arid religion = hittite culture = hittite raw_material = salt}
 kulu_turkey = { topography = plateau vegetation = sparse climate = cold_arid religion = hittite culture = hittite raw_material = beeswax}
@@ -6709,12 +6709,12 @@ erenler_mountains = { topography = mountain_wasteland vegetation = woods climate
 sultan_mountains_1 = { topography = mountain_wasteland vegetation = woods climate = continental}
 sultan_mountains_2 = { topography = mountain_wasteland vegetation = woods climate = continental}
 sultan_mountains_3 = { topography = mountain_wasteland vegetation = woods climate = cold_arid}
-cankiri = { topography = hills vegetation = forest climate = cold_arid religion = hattian culture = hattian raw_material = beeswax}
+cankiri = { topography = hills vegetation = forest climate = cold_arid religion = hittite culture = hattian raw_material = beeswax}
 bayat = { topography = hills vegetation = forest climate = cold_arid religion = hittite culture = hittite raw_material = livestock}
-cerkes = { topography = mountains vegetation = woods climate = continental religion = hattian culture = palaic raw_material = livestock}
+cerkes = { topography = mountains vegetation = woods climate = continental religion = hittite culture = palaic raw_material = livestock}
 kursunlu = { topography = hills vegetation = forest climate = continental religion = hittite culture = hittite raw_material = lumber}
 sabanozu = { topography = hills vegetation = forest climate = cold_arid religion = hittite culture = hittite raw_material = horses}
-tosya = { topography = hills vegetation = forest climate = continental religion = hattian culture = hattian raw_material = wild_game}
+tosya = { topography = hills vegetation = forest climate = continental religion = hittite culture = hattian raw_material = wild_game}
 karahisar_i_sahib = { topography = plateau vegetation = woods climate = cold_arid religion = hittite culture = hittite raw_material = medicaments}
 altintas = { topography = plateau vegetation = forest climate = cold_arid religion = hittite culture = hittite raw_material = wild_game}
 emirdag = { topography = plateau vegetation = grasslands climate = cold_arid religion = hittite culture = hittite raw_material = wool}
@@ -6836,7 +6836,7 @@ sogut = { topography = hills vegetation = woods climate = cold_arid religion = h
 bolu = { topography = hills vegetation = woods climate = continental religion = hellenic culture = mycenaean raw_material = wheat}
 akcasehir = { topography = flatland vegetation = forest climate = oceanic religion = hellenic culture = mycenaean raw_material = fish natural_harbor_suitability = 0.00}
 akyazi = { topography = flatland vegetation = forest climate = oceanic religion = hellenic culture = mycenaean raw_material = silk}
-eregli = { topography = hills vegetation = forest climate = oceanic religion = hattian culture = palaic raw_material = coal natural_harbor_suitability = 0.25}
+eregli = { topography = hills vegetation = forest climate = oceanic religion = hittite culture = palaic raw_material = coal natural_harbor_suitability = 0.25}
 konrapa = { topography = hills vegetation = forest climate = continental religion = hellenic culture = mycenaean raw_material = beeswax}
 mudurnu = { topography = mountains vegetation = forest climate = continental religion = hittite culture = hittite raw_material = fruit}
 giresun = { topography = mountains vegetation = forest climate = oceanic religion = kartvelian_pagan culture = colchian raw_material = olives natural_harbor_suitability = 0.00}
@@ -6847,24 +6847,24 @@ terme = { topography = flatland vegetation = woods climate = subtropical religio
 unye = { topography = hills vegetation = forest climate = oceanic religion = kartvelian_pagan culture = colchian raw_material = lumber natural_harbor_suitability = 0.00}
 west_pontus_mountains_1 = { topography = mountain_wasteland vegetation = woods climate = continental}
 west_pontus_mountains_2 = { topography = mountain_wasteland vegetation = woods climate = arctic}
-kastamonu = { topography = plateau vegetation = woods climate = continental religion = hattian culture = palaic raw_material = copper}
-arac = { topography = hills vegetation = forest climate = continental religion = hattian culture = palaic raw_material = clay}
-devrekani = { topography = plateau vegetation = woods climate = continental religion = hattian culture = palaic raw_material = livestock}
-inebolu = { topography = mountains vegetation = forest climate = oceanic religion = hattian culture = palaic raw_material = fish natural_harbor_suitability = 0.00}
-kure_i_mamure = { topography = mountains vegetation = forest climate = oceanic religion = hattian culture = palaic raw_material = copper natural_harbor_suitability = 0.00}
-taskopru = { topography = plateau vegetation = woods climate = continental religion = hattian culture = palaic raw_material = livestock}
+kastamonu = { topography = plateau vegetation = woods climate = continental religion = hittite culture = palaic raw_material = copper}
+arac = { topography = hills vegetation = forest climate = continental religion = hittite culture = palaic raw_material = clay}
+devrekani = { topography = plateau vegetation = woods climate = continental religion = hittite culture = palaic raw_material = livestock}
+inebolu = { topography = mountains vegetation = forest climate = oceanic religion = hittite culture = palaic raw_material = fish natural_harbor_suitability = 0.00}
+kure_i_mamure = { topography = mountains vegetation = forest climate = oceanic religion = hittite culture = palaic raw_material = copper natural_harbor_suitability = 0.00}
+taskopru = { topography = plateau vegetation = woods climate = continental religion = hittite culture = palaic raw_material = livestock}
 ilgaz_mountains = { topography = mountain_wasteland vegetation = forest climate = continental}
-safranbolu = { topography = hills vegetation = woods climate = continental religion = hattian culture = palaic raw_material = saffron}
-amasra = { topography = hills vegetation = forest climate = oceanic religion = hattian culture = palaic raw_material = fruit natural_harbor_suitability = 0.25}
-bartin = { topography = hills vegetation = forest climate = subtropical religion = hattian culture = palaic raw_material = fish natural_harbor_suitability = 0.00}
-gerede = { topography = hills vegetation = woods climate = continental religion = hattian culture = palaic raw_material = iron}
-mengen = { topography = mountains vegetation = forest climate = oceanic religion = hattian culture = palaic raw_material = lumber}
-ulus = { topography = hills vegetation = forest climate = oceanic religion = hattian culture = palaic raw_material = fur}
-yenicepazari = { topography = mountains vegetation = forest climate = oceanic religion = hattian culture = palaic raw_material = wild_game}
-sinop = { topography = hills vegetation = forest climate = mediterranean religion = hattian culture = palaic raw_material = dyes natural_harbor_suitability = 0.75}
+safranbolu = { topography = hills vegetation = woods climate = continental religion = hittite culture = palaic raw_material = saffron}
+amasra = { topography = hills vegetation = forest climate = oceanic religion = hittite culture = palaic raw_material = fruit natural_harbor_suitability = 0.25}
+bartin = { topography = hills vegetation = forest climate = subtropical religion = hittite culture = palaic raw_material = fish natural_harbor_suitability = 0.00}
+gerede = { topography = hills vegetation = woods climate = continental religion = hittite culture = palaic raw_material = iron}
+mengen = { topography = mountains vegetation = forest climate = oceanic religion = hittite culture = palaic raw_material = lumber}
+ulus = { topography = hills vegetation = forest climate = oceanic religion = hittite culture = palaic raw_material = fur}
+yenicepazari = { topography = mountains vegetation = forest climate = oceanic religion = hittite culture = palaic raw_material = wild_game}
+sinop = { topography = hills vegetation = forest climate = mediterranean religion = hittite culture = palaic raw_material = dyes natural_harbor_suitability = 0.75}
 bafra = { topography = flatland vegetation = farmland climate = mediterranean religion = kartvelian_pagan culture = colchian raw_material = wheat natural_harbor_suitability = 0.00}
-boyabat = { topography = hills vegetation = forest climate = oceanic religion = hattian culture = palaic raw_material = lumber}
-gerze = { topography = hills vegetation = forest climate = oceanic religion = hattian culture = palaic raw_material = fruit natural_harbor_suitability = 0.00}
+boyabat = { topography = hills vegetation = forest climate = oceanic religion = hittite culture = palaic raw_material = lumber}
+gerze = { topography = hills vegetation = forest climate = oceanic religion = hittite culture = palaic raw_material = fruit natural_harbor_suitability = 0.00}
 samsun = { topography = hills vegetation = woods climate = oceanic religion = kartvelian_pagan culture = colchian raw_material = olives natural_harbor_suitability = 0.25}
 trebizond = { topography = mountains vegetation = forest climate = oceanic religion = kartvelian_pagan culture = colchian raw_material = silk natural_harbor_suitability = 0.25}
 gorele = { topography = mountains vegetation = forest climate = oceanic religion = kartvelian_pagan culture = colchian raw_material = lumber natural_harbor_suitability = 0.00}

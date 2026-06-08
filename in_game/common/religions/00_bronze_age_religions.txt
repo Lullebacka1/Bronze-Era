@@ -90,9 +90,11 @@ sumerian = {
 hittite = {
 	color = rgb { 164 107 68 }
 	group = anatolian_religion_group
+	has_religious_influence = yes
 
 	definition_modifier = {
 		monthly_legitimacy = 0.1
+		monthly_religious_influence = 0.1
 		global_clergy_estate_power = 0.1
 		global_build_buildings_cost = -0.03
 		global_pop_conversion_speed_modifier = -0.1
@@ -114,22 +116,6 @@ luwian = {
 		global_clergy_estate_power = 0.1
 		global_build_buildings_cost = -0.03
 		global_pop_conversion_speed_modifier = -0.1
-	}
-
-	opinions = {
-	}
-
-	tags = { folk_european_gfx pagan_gfx }
-}
-
-hattian = {
-	color = rgb { 128 107 83 }
-	group = anatolian_religion_group
-
-	definition_modifier = {
-		global_defensive = 0.1
-		retreat_delay = -5
-		tolerance_heathen = 0.5
 	}
 
 	opinions = {

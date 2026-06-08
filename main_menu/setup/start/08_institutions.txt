@@ -1,1082 +1,2973 @@
 # Bronze Era starting institutions.
+# Bronze Routes: Mycenaea, Egypt, Hatti, Assyria and every country based in the Middle East.
+# Chariot Warfare: Egypt and Hatti.
+# Palace Economy: Mycenaea, Egypt, Hatti and Assyria.
 # Feudalism, Legalism and Meritocracy are intentionally absent.
-# Palace Economy begins fully established in the four major palace states.
 locations = {
 
-	# MYCENAEA (0001G)
-	amorgos = {
-		palatial_economy = yes
-	}
-	andravida = {
-		palatial_economy = yes
-	}
-	andritsaina = {
-		palatial_economy = yes
-	}
-	andros = {
-		palatial_economy = yes
-	}
-	angelokastron = {
-		palatial_economy = yes
-	}
-	argos = {
-		palatial_economy = yes
-	}
-	balat = {
-		palatial_economy = yes
-	}
-	bodonitsa = {
-		palatial_economy = yes
-	}
-	bodrum = {
-		palatial_economy = yes
-	}
-	candia = {
-		palatial_economy = yes
-	}
-	cephalonia = {
-		palatial_economy = yes
-	}
-	chania = {
-		palatial_economy = yes
-	}
-	chios = {
-		palatial_economy = yes
-	}
-	corinth = {
-		palatial_economy = yes
-	}
-	damala = {
-		palatial_economy = yes
-	}
-	elounda = {
-		palatial_economy = yes
-	}
-	eretreia = {
-		palatial_economy = yes
-	}
-	ermioni = {
-		palatial_economy = yes
-	}
-	farsala = {
-		palatial_economy = yes
-	}
-	gergeri = {
-		palatial_economy = yes
-	}
-	hagios_pavlos = {
-		palatial_economy = yes
-	}
-	ikaria = {
-		palatial_economy = yes
-	}
-	karystos = {
-		palatial_economy = yes
-	}
-	karytaina = {
-		palatial_economy = yes
-	}
-	kleisoura = {
-		palatial_economy = yes
-	}
-	kos = {
-		palatial_economy = yes
-	}
-	kymi = {
-		palatial_economy = yes
-	}
-	kythnos = {
-		palatial_economy = yes
-	}
-	larissa = {
-		palatial_economy = yes
-	}
-	leukas = {
-		palatial_economy = yes
-	}
-	loidoriki = {
-		palatial_economy = yes
-	}
-	megara = {
-		palatial_economy = yes
-	}
-	milos = {
-		palatial_economy = yes
-	}
-	mykonos = {
-		palatial_economy = yes
-	}
-	nafpaktos = {
-		palatial_economy = yes
-	}
-	nafplio = {
-		palatial_economy = yes
-	}
-	naxos = {
-		palatial_economy = yes
-	}
-	negroponte = {
-		palatial_economy = yes
-	}
-	neopatras = {
-		palatial_economy = yes
-	}
-	oreos = {
-		palatial_economy = yes
-	}
-	pontikokastro = {
-		palatial_economy = yes
-	}
-	rethymno = {
-		palatial_economy = yes
-	}
-	samos = {
-		palatial_economy = yes
-	}
-	siteia = {
-		palatial_economy = yes
-	}
-	sporades = {
-		palatial_economy = yes
-	}
-	stomio = {
-		palatial_economy = yes
-	}
-	thebes = {
-		palatial_economy = yes
-	}
-	tripolitsa = {
-		palatial_economy = yes
-	}
-	tyrnavos = {
-		palatial_economy = yes
-	}
-	viannos = {
-		palatial_economy = yes
-	}
-	vonitsa = {
-		palatial_economy = yes
-	}
-	xylokastro = {
-		palatial_economy = yes
-	}
-	zakynthos = {
-		palatial_economy = yes
-	}
-	zetounion = {
-		palatial_economy = yes
-	}
-	chalandritsa = {
-		palatial_economy = yes
-	}
-	kalavryta = {
-		palatial_economy = yes
-	}
-	patras = {
-		palatial_economy = yes
-	}
-	vostitsa = {
-		palatial_economy = yes
-	}
-	athens = {
-		palatial_economy = yes
-	}
-	demetrias = {
-		palatial_economy = yes
-	}
-	atalanti = {
-		palatial_economy = yes
-	}
-	gravia = {
-		palatial_economy = yes
-	}
-	kalamata = {
-		palatial_economy = yes
-	}
-	kyparissia = {
-		palatial_economy = yes
-	}
-	leuktron = {
-		palatial_economy = yes
-	}
-	modon = {
-		palatial_economy = yes
-	}
-	karpathos = {
-		palatial_economy = yes
-	}
-	rodos = {
-		palatial_economy = yes
-	}
-	astros = {
-		palatial_economy = yes
-	}
-	kythira = {
-		palatial_economy = yes
-	}
-	monemvasia = {
-		palatial_economy = yes
-	}
-	mystras = {
-		palatial_economy = yes
-	}
-	oitylo = {
-		palatial_economy = yes
-	}
-	veligosti = {
-		palatial_economy = yes
-	}
-	livadeia = {
-		palatial_economy = yes
-	}
-	salona = {
-		palatial_economy = yes
-	}
+	############################################################
+	# PALACE STATES WITH CHARIOT WARFARE (EGYPT AND HATTI)
+	############################################################
 
-	# EGYPT (0002G)
 	acre = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
-	akhmim = {
-		palatial_economy = yes
-	}
-	al_mima = {
-		palatial_economy = yes
-	}
-	alexandria = {
-		palatial_economy = yes
-	}
-	ashmunayn = {
-		palatial_economy = yes
-	}
-	aswan = {
-		palatial_economy = yes
-	}
-	asyut = {
-		palatial_economy = yes
-	}
-	atfih = {
-		palatial_economy = yes
-	}
-	bahariyya = {
-		palatial_economy = yes
-	}
-	baris = {
-		palatial_economy = yes
-	}
-	beersheba = {
-		palatial_economy = yes
-	}
-	beni_suef = {
-		palatial_economy = yes
-	}
-	bilbeis = {
-		palatial_economy = yes
-	}
-	cairo = {
-		palatial_economy = yes
-	}
-	dakahla = {
-		palatial_economy = yes
-	}
-	damanhur = {
-		palatial_economy = yes
-	}
-	damietta = {
-		palatial_economy = yes
-	}
-	dara = {
-		palatial_economy = yes
-	}
-	daw_sud = {
-		palatial_economy = yes
-	}
-	deraheib = {
-		palatial_economy = yes
-	}
-	edfu = {
-		palatial_economy = yes
-	}
-	el_alamein = {
-		palatial_economy = yes
-	}
-	el_arish = {
-		palatial_economy = yes
-	}
-	el_bahnasa = {
-		palatial_economy = yes
-	}
-	el_balyana = {
-		palatial_economy = yes
-	}
-	el_burullus = {
-		palatial_economy = yes
-	}
-	el_buwit = {
-		palatial_economy = yes
-	}
-	el_jundi = {
-		palatial_economy = yes
-	}
-	el_mahalla = {
-		palatial_economy = yes
-	}
-	el_qasr = {
-		palatial_economy = yes
-	}
-	el_qoseir = {
-		palatial_economy = yes
-	}
-	el_tor = {
-		palatial_economy = yes
-	}
-	esna = {
-		palatial_economy = yes
-	}
-	faiyum = {
-		palatial_economy = yes
-	}
-	faqus = {
-		palatial_economy = yes
-	}
-	faran = {
-		palatial_economy = yes
-	}
-	faras = {
-		palatial_economy = yes
-	}
-	fuwa = {
-		palatial_economy = yes
-	}
-	gaza = {
-		palatial_economy = yes
-	}
-	giza = {
-		palatial_economy = yes
-	}
-	hebron = {
-		palatial_economy = yes
-	}
-	hiw = {
-		palatial_economy = yes
-	}
-	irbid = {
-		palatial_economy = yes
-	}
-	jaffa = {
-		palatial_economy = yes
-	}
-	jerusalem = {
-		palatial_economy = yes
-	}
-	kafr_saqr = {
-		palatial_economy = yes
-	}
-	kalabsha = {
-		palatial_economy = yes
-	}
-	kerma = {
-		palatial_economy = yes
-	}
-	kharga = {
-		palatial_economy = yes
-	}
-	kharibta = {
-		palatial_economy = yes
-	}
-	kom_ombo = {
-		palatial_economy = yes
-	}
-	majdal = {
-		palatial_economy = yes
-	}
-	manfalut = {
-		palatial_economy = yes
-	}
-	mansoura = {
-		palatial_economy = yes
-	}
-	matruh = {
-		palatial_economy = yes
-	}
-	menouf = {
-		palatial_economy = yes
-	}
-	minya = {
-		palatial_economy = yes
-	}
-	nablus = {
-		palatial_economy = yes
-	}
-	nawa = {
-		palatial_economy = yes
-	}
-	nekhel = {
-		palatial_economy = yes
-	}
-	nuweiba = {
-		palatial_economy = yes
-	}
-	qalyub = {
-		palatial_economy = yes
-	}
-	qasr_farafra = {
-		palatial_economy = yes
-	}
-	qasr_ibrim = {
-		palatial_economy = yes
-	}
-	qatya = {
-		palatial_economy = yes
-	}
-	qena = {
-		palatial_economy = yes
-	}
-	qus = {
-		palatial_economy = yes
-	}
-	ramsis = {
-		palatial_economy = yes
-	}
-	ras_gharib = {
-		palatial_economy = yes
-	}
-	rashid = {
-		palatial_economy = yes
-	}
-	safaga = {
-		palatial_economy = yes
-	}
-	safed = {
-		palatial_economy = yes
-	}
-	sai = {
-		palatial_economy = yes
-	}
-	saint_anthony = {
-		palatial_economy = yes
-	}
-	saint_katrine = {
-		palatial_economy = yes
-	}
-	saint_paul_anchorite = {
-		palatial_economy = yes
-	}
-	sallum = {
-		palatial_economy = yes
-	}
-	samanoud = {
-		palatial_economy = yes
-	}
-	selima = {
-		palatial_economy = yes
-	}
-	sharuna = {
-		palatial_economy = yes
-	}
-	suez = {
-		palatial_economy = yes
-	}
-	tahna = {
-		palatial_economy = yes
-	}
-	tarrana = {
-		palatial_economy = yes
-	}
-	tidah = {
-		palatial_economy = yes
-	}
-	tinnis = {
-		palatial_economy = yes
-	}
-	ushmum_tannah = {
-		palatial_economy = yes
-	}
-	wadi_el_natrun = {
-		palatial_economy = yes
-	}
-	warrada = {
-		palatial_economy = yes
-	}
-
-	# HATTI (HATTI)
 	adana = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	afrin = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	afsin = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	akdagmadeni = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	akhmim = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	aksaray = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	aksehir = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	al_bab = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	al_mima = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	aleppo = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	alexandria = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	altinekin = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	amasya = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	anavarza = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	ankara = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	arapgir = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	arguvan = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	arsuz = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	artah = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	ashmunayn = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	aswan = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	asyut = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	atfih = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	ayas = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	aydincik = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	ayntab = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	bahariyya = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	baliseyh = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	baris = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	bayat = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	beersheba = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	bekarlar = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	beni_suef = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	besni = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	beypazari = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	bilbeis = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	birecik = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	bogazliyan = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	bor_tur = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	bozan = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	bozok = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	cairo = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	candir = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	candir_cil = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	cankiri = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	caxud = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	celtik = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	cemisgezek = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	comana_cil = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	corum = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	corycus = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	cubuk = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	cumra = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	dabiq = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	dakahla = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	damanhur = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	damietta = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	dara = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	darende = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	dasmenda = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	daw_sud = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	deliktash = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	deraheib = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	develi = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	dinek_keskin = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	divrigi = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	dluk = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	edfu = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	egin = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	el_alamein = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	el_arish = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	el_bahnasa = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	el_balyana = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	el_burullus = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	el_buwit = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	el_jundi = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	el_mahalla = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	el_qasr = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	el_qoseir = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	el_tor = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	elbistan = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	emirdag = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	enguzud = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	eregli_kar = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	erzincan = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	eskil = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	esna = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	faiyum = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	faqus = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	faran = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	faras = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	fuwa = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	gaza = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	gemerek = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	gerger = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	giza = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	goksun = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	gumus = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	gurun = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	hacibektas = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	hafik = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	hargan = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	harput = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	hatunsaray = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	haymana = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	hebron = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	hiw = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	huseyinabad = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	ilgin = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	ilic = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	insuyu = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	irbid = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	iskenderun = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	iskilip = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	jabbul = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	jaffa = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	jerusalem = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	kafr_saqr = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kahta = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	kalabsha = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kalecik = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kapan = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	karakecili = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	karapinar = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kars_armenia = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kaymaz = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kayseri = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kaysun = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	keban = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kemah = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	kerma = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	kharga = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	kharibta = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kilis = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kirsehir = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kizilca = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kochisar = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	kom_ombo = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	konya = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	koyulhisar = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kulu_turkey = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kursunlu = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	kuzucan = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	ladik = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	larende = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	majdal = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	malatya = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	manbij = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	manfalut = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	mansoura = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	marash = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	matruh = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	menouf = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	merzifon = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	mihaliccik = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	minya = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	molevon = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	mut = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	nablus = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	nawa = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	nekhel = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	nevsehir = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	nigde = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	nuweiba = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	obruk = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	pertek = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	pirloganda = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	polatli = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	qalyub = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	qasr_farafra = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	qasr_ibrim = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	qatya = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	qena = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	qus = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	ramsis = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	ras_gharib = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	rashid = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	sabanozu = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	safaga = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	safed = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	sai = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	saint_anthony = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	saint_katrine = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	saint_paul_anchorite = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	sallum = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	samanoud = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	samsat = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	sariyahsi = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	sarkisla = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	sebinkarahisar = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	selima = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	seyitgazi = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	sharuna = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	silifke = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	siran = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	sis = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	sivas = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	sivrihisar = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	sorgun = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	suez = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	suluklu = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	sulusaray = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	sungurlu = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	suruc = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	tahna = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	tarrana = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	tarsus = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	tidah = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	tinnis = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	tokat = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	tomarza = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	tosya = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	trapessac = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	turgut = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	ulnia = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	urgup = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	ushmum_tannah = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	wadi_el_natrun = {
+		bronze_routes = yes
+		chariot_warfare = yes
+		palatial_economy = yes
+	}
+	warrada = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	yahyali = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	zara = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	zardana = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 	zile = {
+		bronze_routes = yes
+		chariot_warfare = yes
 		palatial_economy = yes
 	}
 
-	# ASSYRIA (ASYRI)
+	############################################################
+	# OTHER PALACE STATES (MYCENAEA AND ASSYRIA)
+	############################################################
+
 	abu_kemal = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	akre = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	al_anbar = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	al_sinn = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	altun_kupri = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	amadiya = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	amorgos = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	anah = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	andravida = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	andritsaina = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	andros = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	angelokastron = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	ar_rabb = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	araban = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	argos = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	astros = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	atalanti = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	athens = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	ayn_tamr = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	bahcesaray = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	balad = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	balat = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	bara_iraq = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	barqaid = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	bodonitsa = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	bodrum = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	busayrah = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	candia = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	cephalonia = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	chalandritsa = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	chamchamal = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	chania = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	chios = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	cizre = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	corinth = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	damala = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	daquq = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	deir_ez_zor = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	demetrias = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	duhok = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	dunaysir = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	elounda = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	erbil = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	eretreia = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	ermioni = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	eruh = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	farsala = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	gergeri = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	gravia = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	haditha = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	hagios_pavlos = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	hakkari = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	hasakah = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	hasankeyf = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	hit = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	ikaria = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	kalamata = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	kalavryta = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	karbala = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	karpathos = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	karystos = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	karytaina = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	kirkuk = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	kleisoura = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	kos = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	kozluk = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	kymi = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	kyparissia = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	kythira = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	kythnos = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	larissa = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	leukas = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	leuktron = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	livadeia = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	loidoriki = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	makisin = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	mardin = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	mawet = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	megara = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	midyat = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	milos = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	modon = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	monemvasia = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	mosul = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	mykonos = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	mystras = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	nafpaktos = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	nafplio = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	naxos = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	negroponte = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	neopatras = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	nusaybin = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	oitylo = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	oreos = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	patras = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	piranshahr = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	pontikokastro = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	qaladiza = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	qayyarah = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	rahba = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	ras_ayn = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	rawanduz = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	rethymno = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	rodos = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	salona = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	samarra = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	samos = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	sardasht = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	semdinli = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	siirt = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	sinjar = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	sirnak = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	siteia = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	sporades = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	stomio = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	sulaymaniyah = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	tal_afar = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	thebes = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	tikrit = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	tripolitsa = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	tunanir = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	tuz_khurma = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	tyrnavos = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	ukbara = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	veligosti = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	viannos = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	vonitsa = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	vostitsa = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	xylokastro = {
+		bronze_routes = yes
 		palatial_economy = yes
 	}
 	zakho = {
+		bronze_routes = yes
 		palatial_economy = yes
+	}
+	zakynthos = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+	zetounion = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+
+	############################################################
+	# OTHER MIDDLE EASTERN BRONZE ROUTE CENTERS
+	############################################################
+
+	abadan = {
+		bronze_routes = yes
+	}
+	abdanan = {
+		bronze_routes = yes
+	}
+	abdas = {
+		bronze_routes = yes
+	}
+	abhar = {
+		bronze_routes = yes
+	}
+	abu_dhabi = {
+		bronze_routes = yes
+	}
+	adranos = {
+		bronze_routes = yes
+	}
+	aghkand = {
+		bronze_routes = yes
+	}
+	ahar = {
+		bronze_routes = yes
+	}
+	ahvaz = {
+		bronze_routes = yes
+	}
+	akcasehir = {
+		bronze_routes = yes
+	}
+	akhisar = {
+		bronze_routes = yes
+	}
+	akkus = {
+		bronze_routes = yes
+	}
+	akyazi = {
+		bronze_routes = yes
+	}
+	al_ayn = {
+		bronze_routes = yes
+	}
+	al_dhaid = {
+		bronze_routes = yes
+	}
+	al_kamil_wal_wafi = {
+		bronze_routes = yes
+	}
+	al_khaburah = {
+		bronze_routes = yes
+	}
+	al_madar = {
+		bronze_routes = yes
+	}
+	al_mashqar = {
+		bronze_routes = yes
+	}
+	al_qatr = {
+		bronze_routes = yes
+	}
+	al_quwayrah = {
+		bronze_routes = yes
+	}
+	al_tib = {
+		bronze_routes = yes
+	}
+	al_uqayr = {
+		bronze_routes = yes
+	}
+	alaiye = {
+		bronze_routes = yes
+	}
+	alasehir = {
+		bronze_routes = yes
+	}
+	altintas = {
+		bronze_routes = yes
+	}
+	amasra = {
+		bronze_routes = yes
+	}
+	amman = {
+		bronze_routes = yes
+	}
+	an_nil = {
+		bronze_routes = yes
+	}
+	anamur = {
+		bronze_routes = yes
+	}
+	antalya = {
+		bronze_routes = yes
+	}
+	antioch = {
+		bronze_routes = yes
+	}
+	aqaba = {
+		bronze_routes = yes
+	}
+	ar_rukai = {
+		bronze_routes = yes
+	}
+	arac = {
+		bronze_routes = yes
+	}
+	arak = {
+		bronze_routes = yes
+	}
+	arkvaz = {
+		bronze_routes = yes
+	}
+	as_sib = {
+		bronze_routes = yes
+	}
+	ash_shuaybah = {
+		bronze_routes = yes
+	}
+	aslanapa = {
+		bronze_routes = yes
+	}
+	avaj = {
+		bronze_routes = yes
+	}
+	aveh = {
+		bronze_routes = yes
+	}
+	awaran = {
+		bronze_routes = yes
+	}
+	ayasuluk = {
+		bronze_routes = yes
+	}
+	ayvacik = {
+		bronze_routes = yes
+	}
+	azraq = {
+		bronze_routes = yes
+	}
+	baalbek = {
+		bronze_routes = yes
+	}
+	badra = {
+		bronze_routes = yes
+	}
+	bafra = {
+		bronze_routes = yes
+	}
+	bagh_malek = {
+		bronze_routes = yes
+	}
+	baghdad = {
+		bronze_routes = yes
+	}
+	bahla = {
+		bronze_routes = yes
+	}
+	bakusaya = {
+		bronze_routes = yes
+	}
+	balad_ruz = {
+		bronze_routes = yes
+	}
+	balikesir = {
+		bronze_routes = yes
+	}
+	balya = {
+		bronze_routes = yes
+	}
+	banaz = {
+		bronze_routes = yes
+	}
+	bandar_deylam = {
+		bronze_routes = yes
+	}
+	bandar_e_anzali = {
+		bronze_routes = yes
+	}
+	bandar_rig = {
+		bronze_routes = yes
+	}
+	bandirma = {
+		bronze_routes = yes
+	}
+	baniyas = {
+		bronze_routes = yes
+	}
+	baqubah = {
+		bronze_routes = yes
+	}
+	bartin = {
+		bronze_routes = yes
+	}
+	barza = {
+		bronze_routes = yes
+	}
+	basht = {
+		bronze_routes = yes
+	}
+	basra = {
+		bronze_routes = yes
+	}
+	bayazit = {
+		bronze_routes = yes
+	}
+	bayramic = {
+		bronze_routes = yes
+	}
+	bayramlu = {
+		bronze_routes = yes
+	}
+	behbahan = {
+		bronze_routes = yes
+	}
+	beirut = {
+		bronze_routes = yes
+	}
+	bela = {
+		bronze_routes = yes
+	}
+	bergama = {
+		bronze_routes = yes
+	}
+	besima = {
+		bronze_routes = yes
+	}
+	beysehir = {
+		bronze_routes = yes
+	}
+	biga = {
+		bronze_routes = yes
+	}
+	bigadic = {
+		bronze_routes = yes
+	}
+	bilecik = {
+		bronze_routes = yes
+	}
+	birgi = {
+		bronze_routes = yes
+	}
+	bolu = {
+		bronze_routes = yes
+	}
+	bolvadin = {
+		bronze_routes = yes
+	}
+	borazjan = {
+		bronze_routes = yes
+	}
+	bosra = {
+		bronze_routes = yes
+	}
+	boyabat = {
+		bronze_routes = yes
+	}
+	bukan = {
+		bronze_routes = yes
+	}
+	burdur = {
+		bronze_routes = yes
+	}
+	burraq = {
+		bronze_routes = yes
+	}
+	bursa = {
+		bronze_routes = yes
+	}
+	can = {
+		bronze_routes = yes
+	}
+	canakkale = {
+		bronze_routes = yes
+	}
+	cerkes = {
+		bronze_routes = yes
+	}
+	cermik = {
+		bronze_routes = yes
+	}
+	cesme = {
+		bronze_routes = yes
+	}
+	chagai = {
+		bronze_routes = yes
+	}
+	chaman = {
+		bronze_routes = yes
+	}
+	cine = {
+		bronze_routes = yes
+	}
+	damascus = {
+		bronze_routes = yes
+	}
+	damavand = {
+		bronze_routes = yes
+	}
+	dayr_aqul = {
+		bronze_routes = yes
+	}
+	dehdasht = {
+		bronze_routes = yes
+	}
+	dehdez = {
+		bronze_routes = yes
+	}
+	dehloran = {
+		bronze_routes = yes
+	}
+	dehram = {
+		bronze_routes = yes
+	}
+	deir_qamar = {
+		bronze_routes = yes
+	}
+	delijan = {
+		bronze_routes = yes
+	}
+	demirci = {
+		bronze_routes = yes
+	}
+	devrekani = {
+		bronze_routes = yes
+	}
+	dhadar = {
+		bronze_routes = yes
+	}
+	dinar = {
+		bronze_routes = yes
+	}
+	dishmok = {
+		bronze_routes = yes
+	}
+	diyarbekir = {
+		bronze_routes = yes
+	}
+	dogonbadan = {
+		bronze_routes = yes
+	}
+	domanic = {
+		bronze_routes = yes
+	}
+	dowraq = {
+		bronze_routes = yes
+	}
+	dubai = {
+		bronze_routes = yes
+	}
+	duki = {
+		bronze_routes = yes
+	}
+	dursunbey = {
+		bronze_routes = yes
+	}
+	edremit = {
+		bronze_routes = yes
+	}
+	egil = {
+		bronze_routes = yes
+	}
+	egirdir = {
+		bronze_routes = yes
+	}
+	eglat_faisal = {
+		bronze_routes = yes
+	}
+	elmali = {
+		bronze_routes = yes
+	}
+	emet = {
+		bronze_routes = yes
+	}
+	eregli = {
+		bronze_routes = yes
+	}
+	ergani = {
+		bronze_routes = yes
+	}
+	ermenek = {
+		bronze_routes = yes
+	}
+	eynegol = {
+		bronze_routes = yes
+	}
+	eyvan = {
+		bronze_routes = yes
+	}
+	eyvanekey = {
+		bronze_routes = yes
+	}
+	famagusta = {
+		bronze_routes = yes
+	}
+	farashband = {
+		bronze_routes = yes
+	}
+	finike = {
+		bronze_routes = yes
+	}
+	firuzabad = {
+		bronze_routes = yes
+	}
+	firuzkuh = {
+		bronze_routes = yes
+	}
+	foca = {
+		bronze_routes = yes
+	}
+	fuman = {
+		bronze_routes = yes
+	}
+	gadegara = {
+		bronze_routes = yes
+	}
+	gediz = {
+		bronze_routes = yes
+	}
+	gerede = {
+		bronze_routes = yes
+	}
+	gerze = {
+		bronze_routes = yes
+	}
+	gilan_gharb = {
+		bronze_routes = yes
+	}
+	giresun = {
+		bronze_routes = yes
+	}
+	gokabat = {
+		bronze_routes = yes
+	}
+	golhisar = {
+		bronze_routes = yes
+	}
+	gonen = {
+		bronze_routes = yes
+	}
+	gordes = {
+		bronze_routes = yes
+	}
+	gorele = {
+		bronze_routes = yes
+	}
+	goris = {
+		bronze_routes = yes
+	}
+	goynuk = {
+		bronze_routes = yes
+	}
+	gulistan = {
+		bronze_routes = yes
+	}
+	gumushane = {
+		bronze_routes = yes
+	}
+	guzelhisar = {
+		bronze_routes = yes
+	}
+	gwadar = {
+		bronze_routes = yes
+	}
+	gwatar = {
+		bronze_routes = yes
+	}
+	hadishahr = {
+		bronze_routes = yes
+	}
+	hama = {
+		bronze_routes = yes
+	}
+	hamidiyeh = {
+		bronze_routes = yes
+	}
+	haql = {
+		bronze_routes = yes
+	}
+	harmancik = {
+		bronze_routes = yes
+	}
+	harran = {
+		bronze_routes = yes
+	}
+	harunabad = {
+		bronze_routes = yes
+	}
+	hashatjin = {
+		bronze_routes = yes
+	}
+	hashtrud = {
+		bronze_routes = yes
+	}
+	hawraman = {
+		bronze_routes = yes
+	}
+	hazro = {
+		bronze_routes = yes
+	}
+	hendijan = {
+		bronze_routes = yes
+	}
+	heni = {
+		bronze_routes = yes
+	}
+	heris = {
+		bronze_routes = yes
+	}
+	hillah = {
+		bronze_routes = yes
+	}
+	hinglaj = {
+		bronze_routes = yes
+	}
+	homs = {
+		bronze_routes = yes
+	}
+	honaz = {
+		bronze_routes = yes
+	}
+	hoveyzeh = {
+		bronze_routes = yes
+	}
+	huwwarin = {
+		bronze_routes = yes
+	}
+	ibra = {
+		bronze_routes = yes
+	}
+	ibri = {
+		bronze_routes = yes
+	}
+	idlib = {
+		bronze_routes = yes
+	}
+	ilam = {
+		bronze_routes = yes
+	}
+	imbros = {
+		bronze_routes = yes
+	}
+	inebolu = {
+		bronze_routes = yes
+	}
+	inonu = {
+		bronze_routes = yes
+	}
+	isparta = {
+		bronze_routes = yes
+	}
+	istanoz = {
+		bronze_routes = yes
+	}
+	ithriya = {
+		bronze_routes = yes
+	}
+	izeh = {
+		bronze_routes = yes
+	}
+	izki = {
+		bronze_routes = yes
+	}
+	iznik = {
+		bronze_routes = yes
+	}
+	jabar = {
+		bronze_routes = yes
+	}
+	jableh = {
+		bronze_routes = yes
+	}
+	jalan_buani_buali = {
+		bronze_routes = yes
+	}
+	jannaba = {
+		bronze_routes = yes
+	}
+	javanrud = {
+		bronze_routes = yes
+	}
+	jayrud = {
+		bronze_routes = yes
+	}
+	jhao = {
+		bronze_routes = yes
+	}
+	julfa = {
+		bronze_routes = yes
+	}
+	julfar = {
+		bronze_routes = yes
+	}
+	kaf = {
+		bronze_routes = yes
+	}
+	kafartab = {
+		bronze_routes = yes
+	}
+	kahak = {
+		bronze_routes = yes
+	}
+	kalameh = {
+		bronze_routes = yes
+	}
+	kalat = {
+		bronze_routes = yes
+	}
+	kaleybar = {
+		bronze_routes = yes
+	}
+	kamyaran = {
+		bronze_routes = yes
+	}
+	kapan_armenia = {
+		bronze_routes = yes
+	}
+	karahisar_i_sahib = {
+		bronze_routes = yes
+	}
+	karahisar_i_teke = {
+		bronze_routes = yes
+	}
+	karaj = {
+		bronze_routes = yes
+	}
+	karak = {
+		bronze_routes = yes
+	}
+	kas = {
+		bronze_routes = yes
+	}
+	kashan = {
+		bronze_routes = yes
+	}
+	kastamonu = {
+		bronze_routes = yes
+	}
+	kavar = {
+		bronze_routes = yes
+	}
+	kazerun = {
+		bronze_routes = yes
+	}
+	kazimah = {
+		bronze_routes = yes
+	}
+	kermanshah = {
+		bronze_routes = yes
+	}
+	khalafabad = {
+		bronze_routes = yes
+	}
+	khalis = {
+		bronze_routes = yes
+	}
+	khameneh = {
+		bronze_routes = yes
+	}
+	khanaqin = {
+		bronze_routes = yes
+	}
+	khanaser = {
+		bronze_routes = yes
+	}
+	kharan = {
+		bronze_routes = yes
+	}
+	khor_fakkan = {
+		bronze_routes = yes
+	}
+	khoy = {
+		bronze_routes = yes
+	}
+	khupati = {
+		bronze_routes = yes
+	}
+	khuzdar = {
+		bronze_routes = yes
+	}
+	khwar = {
+		bronze_routes = yes
+	}
+	kibrus = {
+		bronze_routes = yes
+	}
+	konrapa = {
+		bronze_routes = yes
+	}
+	kuddan = {
+		bronze_routes = yes
+	}
+	kula = {
+		bronze_routes = yes
+	}
+	kulp = {
+		bronze_routes = yes
+	}
+	kure_i_mamure = {
+		bronze_routes = yes
+	}
+	kutahya = {
+		bronze_routes = yes
+	}
+	kyrenia = {
+		bronze_routes = yes
+	}
+	ladik_pontus = {
+		bronze_routes = yes
+	}
+	lahijan = {
+		bronze_routes = yes
+	}
+	lakhsar = {
+		bronze_routes = yes
+	}
+	langarud = {
+		bronze_routes = yes
+	}
+	lapseki = {
+		bronze_routes = yes
+	}
+	larnaca = {
+		bronze_routes = yes
+	}
+	latakia = {
+		bronze_routes = yes
+	}
+	lazkiye = {
+		bronze_routes = yes
+	}
+	lemnos = {
+		bronze_routes = yes
+	}
+	limassol = {
+		bronze_routes = yes
+	}
+	lordegan = {
+		bronze_routes = yes
+	}
+	lorelai = {
+		bronze_routes = yes
+	}
+	maan = {
+		bronze_routes = yes
+	}
+	machul = {
+		bronze_routes = yes
+	}
+	madaba = {
+		bronze_routes = yes
+	}
+	madinat_far = {
+		bronze_routes = yes
+	}
+	mahabad = {
+		bronze_routes = yes
+	}
+	maku = {
+		bronze_routes = yes
+	}
+	malekan = {
+		bronze_routes = yes
+	}
+	manama = {
+		bronze_routes = yes
+	}
+	manavgat = {
+		bronze_routes = yes
+	}
+	mandali = {
+		bronze_routes = yes
+	}
+	manisa = {
+		bronze_routes = yes
+	}
+	manyas = {
+		bronze_routes = yes
+	}
+	maragheh = {
+		bronze_routes = yes
+	}
+	marand = {
+		bronze_routes = yes
+	}
+	maranjab = {
+		bronze_routes = yes
+	}
+	mardanaqom = {
+		bronze_routes = yes
+	}
+	marivan = {
+		bronze_routes = yes
+	}
+	marmaris = {
+		bronze_routes = yes
+	}
+	marrat = {
+		bronze_routes = yes
+	}
+	maruf = {
+		bronze_routes = yes
+	}
+	mashkai = {
+		bronze_routes = yes
+	}
+	masirah = {
+		bronze_routes = yes
+	}
+	masjed_soleyman = {
+		bronze_routes = yes
+	}
+	maskanah = {
+		bronze_routes = yes
+	}
+	masqat = {
+		bronze_routes = yes
+	}
+	mastung = {
+		bronze_routes = yes
+	}
+	masyaf = {
+		bronze_routes = yes
+	}
+	mayyafariqin = {
+		bronze_routes = yes
+	}
+	megri = {
+		bronze_routes = yes
+	}
+	mengen = {
+		bronze_routes = yes
+	}
+	mesudiye = {
+		bronze_routes = yes
+	}
+	meymeh = {
+		bronze_routes = yes
+	}
+	miandoab = {
+		bronze_routes = yes
+	}
+	mihalic = {
+		bronze_routes = yes
+	}
+	milas = {
+		bronze_routes = yes
+	}
+	miyaneh = {
+		bronze_routes = yes
+	}
+	morphou = {
+		bronze_routes = yes
+	}
+	mosharahat = {
+		bronze_routes = yes
+	}
+	mudurnu = {
+		bronze_routes = yes
+	}
+	mugla = {
+		bronze_routes = yes
+	}
+	muhammerah = {
+		bronze_routes = yes
+	}
+	naalbandin = {
+		bronze_routes = yes
+	}
+	nabek = {
+		bronze_routes = yes
+	}
+	nagh = {
+		bronze_routes = yes
+	}
+	nakhal = {
+		bronze_routes = yes
+	}
+	nakhchivan = {
+		bronze_routes = yes
+	}
+	nal = {
+		bronze_routes = yes
+	}
+	nalli = {
+		bronze_routes = yes
+	}
+	nasiriyah = {
+		bronze_routes = yes
+	}
+	natanz = {
+		bronze_routes = yes
+	}
+	nawah = {
+		bronze_routes = yes
+	}
+	nazilli = {
+		bronze_routes = yes
+	}
+	nazok_olya = {
+		bronze_routes = yes
+	}
+	neyasar = {
+		bronze_routes = yes
+	}
+	nicosia_cyp = {
+		bronze_routes = yes
+	}
+	niksar = {
+		bronze_routes = yes
+	}
+	nizwa = {
+		bronze_routes = yes
+	}
+	numaniyyah = {
+		bronze_routes = yes
+	}
+	nurabad = {
+		bronze_routes = yes
+	}
+	nushki = {
+		bronze_routes = yes
+	}
+	ormara = {
+		bronze_routes = yes
+	}
+	osnavieh = {
+		bronze_routes = yes
+	}
+	paphos = {
+		bronze_routes = yes
+	}
+	pasni = {
+		bronze_routes = yes
+	}
+	qahqaheh = {
+		bronze_routes = yes
+	}
+	qalhat = {
+		bronze_routes = yes
+	}
+	qarahziaoddin = {
+		bronze_routes = yes
+	}
+	qaryatayn = {
+		bronze_routes = yes
+	}
+	qasr_shirin = {
+		bronze_routes = yes
+	}
+	qastal = {
+		bronze_routes = yes
+	}
+	qazvin = {
+		bronze_routes = yes
+	}
+	qeydar = {
+		bronze_routes = yes
+	}
+	qom = {
+		bronze_routes = yes
+	}
+	quban = {
+		bronze_routes = yes
+	}
+	quetta = {
+		bronze_routes = yes
+	}
+	qurain = {
+		bronze_routes = yes
+	}
+	qusayr = {
+		bronze_routes = yes
+	}
+	qutayfah = {
+		bronze_routes = yes
+	}
+	rahimabad = {
+		bronze_routes = yes
+	}
+	ramhormoz = {
+		bronze_routes = yes
+	}
+	raqqa = {
+		bronze_routes = yes
+	}
+	rasht = {
+		bronze_routes = yes
+	}
+	razeqan = {
+		bronze_routes = yes
+	}
+	rey = {
+		bronze_routes = yes
+	}
+	reyshahr = {
+		bronze_routes = yes
+	}
+	rize = {
+		bronze_routes = yes
+	}
+	rudbar = {
+		bronze_routes = yes
+	}
+	rusafa = {
+		bronze_routes = yes
+	}
+	rustaq = {
+		bronze_routes = yes
+	}
+	safranbolu = {
+		bronze_routes = yes
+	}
+	sagzabad = {
+		bronze_routes = yes
+	}
+	saham = {
+		bronze_routes = yes
+	}
+	sahrazur = {
+		bronze_routes = yes
+	}
+	sain = {
+		bronze_routes = yes
+	}
+	salamiyya = {
+		bronze_routes = yes
+	}
+	salkhad = {
+		bronze_routes = yes
+	}
+	salmas = {
+		bronze_routes = yes
+	}
+	samawa = {
+		bronze_routes = yes
+	}
+	samsun = {
+		bronze_routes = yes
+	}
+	sandikli = {
+		bronze_routes = yes
+	}
+	santeh = {
+		bronze_routes = yes
+	}
+	sar_mashhad = {
+		bronze_routes = yes
+	}
+	sarab = {
+		bronze_routes = yes
+	}
+	sarkikaraagac = {
+		bronze_routes = yes
+	}
+	sason = {
+		bronze_routes = yes
+	}
+	saveh = {
+		bronze_routes = yes
+	}
+	savojbolagh = {
+		bronze_routes = yes
+	}
+	savur = {
+		bronze_routes = yes
+	}
+	sayhat = {
+		bronze_routes = yes
+	}
+	selinti = {
+		bronze_routes = yes
+	}
+	seydisehir = {
+		bronze_routes = yes
+	}
+	seyhli = {
+		bronze_routes = yes
+	}
+	shahrestan_sofla = {
+		bronze_routes = yes
+	}
+	shamiram = {
+		bronze_routes = yes
+	}
+	sharjah = {
+		bronze_routes = yes
+	}
+	shinas = {
+		bronze_routes = yes
+	}
+	shoubak = {
+		bronze_routes = yes
+	}
+	shush = {
+		bronze_routes = yes
+	}
+	shushtar = {
+		bronze_routes = yes
+	}
+	siah_cheshmeh = {
+		bronze_routes = yes
+	}
+	sidon = {
+		bronze_routes = yes
+	}
+	simav = {
+		bronze_routes = yes
+	}
+	sinaw = {
+		bronze_routes = yes
+	}
+	sinop = {
+		bronze_routes = yes
+	}
+	sirdan = {
+		bronze_routes = yes
+	}
+	siverek = {
+		bronze_routes = yes
+	}
+	smyrna = {
+		bronze_routes = yes
+	}
+	sogut = {
+		bronze_routes = yes
+	}
+	soma = {
+		bronze_routes = yes
+	}
+	sonamiani = {
+		bronze_routes = yes
+	}
+	sonisa = {
+		bronze_routes = yes
+	}
+	stefani = {
+		bronze_routes = yes
+	}
+	sughar = {
+		bronze_routes = yes
+	}
+	suhar = {
+		bronze_routes = yes
+	}
+	suhut = {
+		bronze_routes = yes
+	}
+	sukhnah = {
+		bronze_routes = yes
+	}
+	sultanonu = {
+		bronze_routes = yes
+	}
+	suq = {
+		bronze_routes = yes
+	}
+	suq_al_shuyukh = {
+		bronze_routes = yes
+	}
+	sur = {
+		bronze_routes = yes
+	}
+	surab = {
+		bronze_routes = yes
+	}
+	surmene = {
+		bronze_routes = yes
+	}
+	susurluk = {
+		bronze_routes = yes
+	}
+	suwayda = {
+		bronze_routes = yes
+	}
+	tabqah = {
+		bronze_routes = yes
+	}
+	tabriz = {
+		bronze_routes = yes
+	}
+	tadmur = {
+		bronze_routes = yes
+	}
+	takestan = {
+		bronze_routes = yes
+	}
+	takht_e_soleyman = {
+		bronze_routes = yes
+	}
+	tank = {
+		bronze_routes = yes
+	}
+	tartus = {
+		bronze_routes = yes
+	}
+	taskopru = {
+		bronze_routes = yes
+	}
+	tatev = {
+		bronze_routes = yes
+	}
+	tavas = {
+		bronze_routes = yes
+	}
+	tavsanli = {
+		bronze_routes = yes
+	}
+	taybah = {
+		bronze_routes = yes
+	}
+	terme = {
+		bronze_routes = yes
+	}
+	tire = {
+		bronze_routes = yes
+	}
+	trebizond = {
+		bronze_routes = yes
+	}
+	tripoli_syria = {
+		bronze_routes = yes
+	}
+	tufarqan = {
+		bronze_routes = yes
+	}
+	turbat = {
+		bronze_routes = yes
+	}
+	ujan = {
+		bronze_routes = yes
+	}
+	uluborlu = {
+		bronze_routes = yes
+	}
+	ulus = {
+		bronze_routes = yes
+	}
+	unye = {
+		bronze_routes = yes
+	}
+	urfa = {
+		bronze_routes = yes
+	}
+	urgun = {
+		bronze_routes = yes
+	}
+	urla = {
+		bronze_routes = yes
+	}
+	urmia = {
+		bronze_routes = yes
+	}
+	usak = {
+		bronze_routes = yes
+	}
+	varamin = {
+		bronze_routes = yes
+	}
+	viransehir = {
+		bronze_routes = yes
+	}
+	wadh = {
+		bronze_routes = yes
+	}
+	wana = {
+		bronze_routes = yes
+	}
+	washuk = {
+		bronze_routes = yes
+	}
+	wasit = {
+		bronze_routes = yes
+	}
+	wazakhwa = {
+		bronze_routes = yes
+	}
+	yalvac = {
+		bronze_routes = yes
+	}
+	yanqul = {
+		bronze_routes = yes
+	}
+	yenicepazari = {
+		bronze_routes = yes
+	}
+	yuksekkum = {
+		bronze_routes = yes
+	}
+	zarghun_shahr = {
+		bronze_routes = yes
+	}
+	zhob = {
+		bronze_routes = yes
+	}
+	zik = {
+		bronze_routes = yes
+	}
+	zubarah = {
+		bronze_routes = yes
+	}
+	zuwayr = {
+		bronze_routes = yes
 	}
 
 }
