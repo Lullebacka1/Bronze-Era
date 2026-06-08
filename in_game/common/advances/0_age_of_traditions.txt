@@ -618,6 +618,7 @@ sailing_advance = {
 	trade_range_modifier = 0.2
 
 	unlock_unit = n_early_galley
+	unlock_building = bronze_dock
 	
 	starting_technology_level = 3
 }

@@ -89,3 +89,48 @@ wharf = {
 		local_repair_speed = 0.01
 	}
 }
+
+neolithic_dock = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = laborers
+	forbidden_for_estates = yes
+
+	category = naval_category
+
+	employment_size = bronze_dock_employment
+
+	town = yes
+	city = no
+	megalopolis = no
+
+	location_potential = {
+		is_port = yes
+	}
+
+	build_time = rural_build_time
+
+
+	unique_production_methods = {
+		dock_maintenance = {
+			tar = 0.05
+			tools = 0.05
+			lumber = 0.1
+			cloth = 0.05
+			category = building_maintenance
+		}
+
+	}
+
+	construction_demand = port_building_construction
+
+
+	modifier = {
+		max_ships_built_at_same_time = 1
+		local_sailors = 0.005
+		can_build_ships_in_this_location = yes
+		harbor_suitability = 0.05
+		local_repair_speed = 0.005
+
+	}
+}
