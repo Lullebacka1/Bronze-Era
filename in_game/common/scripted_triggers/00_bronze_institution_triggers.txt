@@ -1,0 +1,15 @@
+# Shared spawn pool for Bronze Age institutions.
+# Greek locations are eligible only while directly owned by Mycenaea (0001G).
+bronze_age_core_institution_spawn_location = {
+	has_owner = yes
+	OR = {
+		location_rank = location_rank:city
+		location_rank = location_rank:megalopolis
+	}
+	OR = {
+		region = region:egypt_region
+		region = region:crescent_region
+		region = region:anatolia_region
+		owner = { tag = 0001G }
+	}
+}

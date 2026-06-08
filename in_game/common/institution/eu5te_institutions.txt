@@ -123,75 +123,49 @@ bronze_professional_armies = {
 bronze_routes = {
     age = age_1_traditions
 	can_spawn = {
-        OR = {
-        	continent = continent:europe
-        	sub_continent = sub_continent:north_africa
-			sub_continent = sub_continent:middle_east
-        }
-        has_owner = yes
-        owner ?= { root = capital }
-        OR = {
-        	location_rank = location_rank:city
-        	location_rank = location_rank:megalopolis
-        }
-        dominant_culture = owner.culture
-    }
+		bronze_age_core_institution_spawn_location = yes
+	}
     location = cairo # fallback for when no valid spawn location is found
     promote_chance = {
-    	add = {
-    		value = average_location_literacy
-    	}
-    	add = {
-    		if = {
-    			limit = { is_port = yes }
-    			value = 5
-    		}
-    	}
+		value = 10
+		add = {
+			if = {
+				limit = { is_port = yes }
+				value = 2
+			}
+		}
     }
-    spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_early
-    spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
-    spread_from_any_import = institution_trade_spread_value_early
-    spread_from_any_export = institution_trade_spread_value_early
-    spread_from_was_possible_spawn = institution_spread_from_was_possible_spawn_early
+    spread_from_friendly_coast_border_location = bronze_age_institution_friendly_neighbor_spread
+    spread_from_any_coast_border_location = bronze_age_institution_neighbor_spread
+    spread_from_any_import = bronze_age_institution_trade_spread
+    spread_from_any_export = bronze_age_institution_trade_spread
+    spread_from_was_possible_spawn = bronze_age_institution_possible_spawn_spread
     spread_scale_on_control_if_owner_embraced = 2
-    spread_embraced_to_capital = institution_total_embraced_to_capital_early
-    spread_to_market_member = institution_spread_to_market_member_early
+    spread_embraced_to_capital = bronze_age_institution_embraced_capital_spread
+    spread_to_market_member = bronze_age_institution_market_spread
 }
 
 chariot_warfare = {
     age = age_1_traditions
 	can_spawn = {
-        OR = {
-        	continent = continent:europe
-        	sub_continent = sub_continent:north_africa
-			sub_continent = sub_continent:middle_east
-        }
-        has_owner = yes
-        owner ?= { root = capital }
-        OR = {
-        	location_rank = location_rank:city
-        	location_rank = location_rank:megalopolis
-        }
-        dominant_culture = owner.culture
-    }
+		bronze_age_core_institution_spawn_location = yes
+	}
     location = cairo # fallback for when no valid spawn location is found
     promote_chance = {
-    	add = {
-    		value = num_pop_type:nobles
-    		multiply = 10
-    	}
-    	add = {
-    		value = average_location_literacy
-    	}
+		value = 10
+		add = {
+			value = num_pop_type:nobles
+			multiply = 0.25
+		}
     }
-    spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_early
-    spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
-    spread_from_any_import = institution_trade_spread_value_early
-    spread_from_any_export = institution_trade_spread_value_early
-    spread_from_was_possible_spawn = institution_spread_from_was_possible_spawn_early
+    spread_from_friendly_coast_border_location = bronze_age_institution_friendly_neighbor_spread
+    spread_from_any_coast_border_location = bronze_age_institution_neighbor_spread
+    spread_from_any_import = bronze_age_institution_trade_spread
+    spread_from_any_export = bronze_age_institution_trade_spread
+    spread_from_was_possible_spawn = bronze_age_institution_possible_spawn_spread
     spread_scale_on_control_if_owner_embraced = 2
-    spread_embraced_to_capital = institution_total_embraced_to_capital_early
-    spread_to_market_member = institution_spread_to_market_member_early
+    spread_embraced_to_capital = bronze_age_institution_embraced_capital_spread
+    spread_to_market_member = bronze_age_institution_market_spread
 }
 
 classical_philosophy = {
@@ -542,26 +516,20 @@ iron_metallurgy = {
     spread_to_market_member = institution_spread_to_market_member_early
 }
 
+# Inactive compatibility definitions: these vanilla institutions do not belong
+# in the Bronze Age, but retaining their IDs avoids broken legacy references.
+feudalism = {
+	age = age_1_traditions
+	can_spawn = { always = no }
+	promote_chance = { value = 0 }
+	spread = { value = 0 }
+}
+
 legalism = {
-    age = age_1_traditions
-    can_spawn = {
-        continent = continent:europe
-        has_owner = yes
-        num_pop_type:nobles > 0
-    }
-    promote_chance = {
-    	add = {
-    		value = num_pop_type:clergy
-    		multiply = 10
-    	}
-    }
-    spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_early
-    spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
-    spread_from_any_import = institution_trade_spread_value_early
-    spread_from_any_export = institution_trade_spread_value_early
-    spread_scale_on_control_if_owner_embraced = 2
-    spread_embraced_to_capital = institution_total_embraced_to_capital_early
-    spread_to_market_member = institution_spread_to_market_member_early
+	age = age_1_traditions
+	can_spawn = { always = no }
+	promote_chance = { value = 0 }
+	spread = { value = 0 }
 }
 
 legions = {
@@ -698,32 +666,9 @@ mediterranean_colonization = {
 
 meritocracy = {
     age = age_1_traditions
-    can_spawn = {
-        continent = continent:asia
-        has_owner = yes
-        owner ?= { root = capital }
-        OR = {
-        	location_rank = location_rank:city
-        	location_rank = location_rank:megalopolis
-        }
-        dominant_culture = owner.culture
-    }
-    promote_chance = {
-    	add = {
-    		value = average_location_literacy
-    	}
-    	add = {
-    		value = num_pop_type:burghers
-    		multiply = 10
-    	}
-    }
-    spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_early
-    spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
-    spread_from_any_import = institution_trade_spread_value_early
-    spread_from_any_export = institution_trade_spread_value_early
-    spread_scale_on_control_if_owner_embraced = 2
-    spread_embraced_to_capital = institution_total_embraced_to_capital_early
-    spread_to_market_member = institution_spread_to_market_member_early
+	can_spawn = { always = no }
+	promote_chance = { value = 0 }
+	spread = { value = 0 }
 }
 
 military_revolution = {
@@ -833,37 +778,24 @@ new_world = {
 palatial_economy = {
     age = age_1_traditions
 	can_spawn = {
-        OR = {
-        	continent = continent:europe
-        	sub_continent = sub_continent:north_africa
-			sub_continent = sub_continent:middle_east
-        }
-        has_owner = yes
-        owner ?= { root = capital }
-        OR = {
-        	location_rank = location_rank:city
-        	location_rank = location_rank:megalopolis
-        }
-        dominant_culture = owner.culture
-    }
+		bronze_age_core_institution_spawn_location = yes
+	}
     location = cairo # fallback for when no valid spawn location is found
     promote_chance = {
-    	add = {
-    		value = average_location_literacy
-    	}
-    	add = {
-    		value = num_pop_type:nobles
-    		multiply = 5
-    	}
+		value = 10
+		add = {
+			value = num_pop_type:nobles
+			multiply = 0.15
+		}
     }
-    spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_early
-    spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_early
-    spread_from_any_import = institution_trade_spread_value_early
-    spread_from_any_export = institution_trade_spread_value_early
-    spread_from_was_possible_spawn = institution_spread_from_was_possible_spawn_early
+    spread_from_friendly_coast_border_location = bronze_age_institution_friendly_neighbor_spread
+    spread_from_any_coast_border_location = bronze_age_institution_neighbor_spread
+    spread_from_any_import = bronze_age_institution_trade_spread
+    spread_from_any_export = bronze_age_institution_trade_spread
+    spread_from_was_possible_spawn = bronze_age_institution_possible_spawn_spread
     spread_scale_on_control_if_owner_embraced = 2
-    spread_embraced_to_capital = institution_total_embraced_to_capital_early
-    spread_to_market_member = institution_spread_to_market_member_early
+    spread_embraced_to_capital = bronze_age_institution_embraced_capital_spread
+    spread_to_market_member = bronze_age_institution_market_spread
 }
 
 phoenician_alphabet = {

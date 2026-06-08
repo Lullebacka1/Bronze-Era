@@ -1,0 +1,54 @@
+# Bronze Age institutions need a non-zero base because literacy is intentionally
+# low in this total conversion. Values are monthly institution progress.
+
+bronze_age_institution_trade_spread = {
+	value = 0.35
+	add = {
+		value = development
+		multiply = 0.02
+	}
+	add = {
+		value = average_location_literacy
+		multiply = 0.01
+	}
+}
+
+bronze_age_institution_friendly_neighbor_spread = {
+	value = 0.50
+	add = {
+		value = average_location_literacy
+		multiply = 0.015
+	}
+}
+
+bronze_age_institution_neighbor_spread = {
+	value = 0.20
+	add = {
+		value = average_location_literacy
+		multiply = 0.005
+	}
+}
+
+bronze_age_institution_possible_spawn_spread = {
+	value = 0.20
+	add = {
+		value = average_location_literacy
+		multiply = 0.01
+	}
+}
+
+bronze_age_institution_embraced_capital_spread = {
+	value = 0.75
+	add = {
+		value = average_location_literacy
+		multiply = 0.02
+	}
+}
+
+bronze_age_institution_market_spread = {
+	value = 0.30
+	add = {
+		value = average_location_literacy
+		multiply = 0.01
+	}
+}
