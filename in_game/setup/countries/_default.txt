@@ -1899,3 +1899,38 @@ VAINI = {
 	color = rgb { 159 127 96 }
 	color2 = rgb { 110 27 27 }
 }
+
+AHHI = {
+	color = rgb { 74 57 142 }
+	color2 = rgb { 110 27 27 }
+}
+
+KARK = {
+	color = rgb { 152 53 182 }
+	color2 = rgb { 110 27 27 }
+}
+
+LYCIA = {
+	color = rgb { 108 63 120 }
+	color2 = rgb { 110 27 27 }
+}
+
+MWAN = {
+	color = rgb { 152 53 182 }
+	color2 = rgb { 110 27 27 }
+}
+
+QUWE = {
+	color = rgb { 37 101 48 }
+	color2 = rgb { 110 27 27 }
+}
+
+TUMM = {
+	color = rgb { 182 104 53 }
+	color2 = rgb { 110 27 27 }
+}
+
+ZALP = {
+	color = rgb { 182 171 53 }
+	color2 = rgb { 110 27 27 }
+}
