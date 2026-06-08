@@ -76,3 +76,32 @@ palace_addition_construction = {
 
 	category = building_construction
 }
+
+warrior_halls_building_construction = {
+	leather = 1
+	stone = 0.4
+	lumber = 1
+	weaponry = 1
+}
+
+bronze_market_center_building_construction = {
+	lumber = 0.2
+	masonry = 0.2
+	tools = 0.2
+	pottery = 0.2
+	livestock = 0.1
+	category = building_construction
+}
+
+town_building_construction = {
+	masonry = 0.75
+	lumber = 0.3
+	category = building_construction
+
+}
+
+guild_construction = {
+	stone = 0.25
+	lumber = 0.25
+	category = building_construction
+}

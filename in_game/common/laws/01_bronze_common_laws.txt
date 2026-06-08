@@ -107,10 +107,6 @@ subj_law = {
 			cultural_tradition_modifier = 0.1
 		}
 
-		estate_preferences = {
-			tribes_estate
-		}
-
 		years = 2
 	}
 
@@ -454,6 +450,7 @@ debt_law = {
 	periodical_cancel_law = {
 		country_modifier = {
 			tax_income_efficiency = small_tax_income_efficiency_penalty
+
 			minting_inflation_threshold = 0.02
 			estate_enrichment = -0.2
 			peasants_estate_target_satisfaction = small_permanent_target_satisfaction
@@ -485,7 +482,7 @@ debt_law = {
 
 	negotiated_payment_law = {
 		country_modifier = {
-			global_estate_target_satisfaction = medium_permanent_target_satisfaction
+			global_estate_target_satisfaction = small_permanent_target_satisfaction
 			court_spending_cost_modifier = 0.05
 		}
 
@@ -499,11 +496,9 @@ debt_law = {
 	generational_debt_law = {
 		country_modifier = {
 			tax_income_efficiency = medium_tax_income_efficiency_bonus
+
 			minting_inflation_threshold = -0.02
 			estate_enrichment = 0.1
-			global_clergy_estate_power = 0.2
-			global_nobles_estate_power = 0.2
-			global_burghers_estate_power = 0.1
 		}
 
 		estate_preferences = {
@@ -520,7 +515,6 @@ verdict_law = {
 
 	compensation_law = {
 		country_modifier = {
-			global_nobles_estate_power = 0.1
 			cultural_tradition_modifier = 0.02
 			stability_cost = -0.1
 		}
@@ -532,7 +526,7 @@ verdict_law = {
 		country_modifier = {
 			global_crown_estate_power = 0.1
 			global_monthly_control = 0.002
-			global_production_efficiency = small_production_efficiency_penalty
+			global_production_efficiency = tiny_production_efficiency_penalty
 		}
 
 		years = 2
@@ -540,9 +534,7 @@ verdict_law = {
 
 	retribution_law = {
 		country_modifier = {
-			stability_cost = -0.25
-			court_spending_cost_modifier = -0.1
-			nobles_estate_levy_size = -0.10
+			court_spending_cost_modifier = -0.15
 			global_monthly_development = -0.001
 		}
 
@@ -558,9 +550,6 @@ verdict_law = {
 			stability_cost = -0.1
 			stability_decay = -0.00025
 			court_spending_cost_modifier = 0.15
-			global_nobles_estate_power = 0.05
-			global_clergy_estate_power = 0.05
-			global_crown_estate_power = -0.1
 		}
 
 		years = 2
@@ -570,4 +559,72 @@ verdict_law = {
 		}		
 	}
 
+}
+
+land_property_law = {
+	law_category = administrative
+
+	royal_land_law = {
+		country_modifier = {
+			tax_income_efficiency = small_tax_income_efficiency_bonus
+			peasants_estate_levy_size = 0.10
+			global_crown_estate_power = 0.1
+
+			global_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+			court_spending_cost_modifier = 0.1
+		}
+
+		estate_preferences = {
+			crown_estate
+		}
+
+		years = 2
+	}
+
+	temple_land_law = {
+		country_modifier = {
+			tax_income_efficiency = tiny_tax_income_efficiency_bonus
+			clergy_estate_target_satisfaction = small_permanent_target_satisfaction
+
+			global_clergy_estate_power = 0.15
+		}
+
+		estate_preferences = {
+			clergy_estate
+		}
+
+		years = 2
+	}
+
+	household_land_law = {
+		country_modifier = {
+			global_noble_estate_power = 0.15
+			global_clergy_estate_power = -0.05
+			nobles_estate_levy_size = 0.15
+			nobles_estate_target_satisfaction = small_permanent_target_satisfaction
+
+			nobles_estate_max_tax = -0.1
+			global_crown_estate_power = -0.10
+		}
+
+		estate_preferences = {
+			nobles_estate
+		}
+
+		years = 2
+	}
+
+	bureaucratic_land_law = {
+		country_modifier = {
+			tax_income_efficiency = medium_tax_income_efficiency_bonus
+			global_clergy_estate_power = -0.05
+			global_noble_estate_power = -0.05
+			global_crown_estate_power = 0.1
+
+			global_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+			court_spending_cost_modifier = 0.15
+		}
+
+		years = 2
+	}
 }

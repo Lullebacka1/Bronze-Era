@@ -52,5 +52,8 @@
 
 # ADDITIONS
 
-  palace_registry: "Palace Registry"
+  palace_registry: "Palace Service Registry"
   palace_registry_desc: "A central office of scribes and administrators responsible for maintaining records of households, obligations, landholdings, and military service. The registry provides the palace with the information needed to raise troops and govern its territories effectively."
+
+  palace_trade_registry: "Palace Trade Registry"
+  palace_trade_registry_desc: "Scribes attached to the palace maintain records of caravans, merchants, tribute deliveries, imported goods, and exchange agreements. These archives allow the administration to monitor and direct the flow of wealth throughout the realm."

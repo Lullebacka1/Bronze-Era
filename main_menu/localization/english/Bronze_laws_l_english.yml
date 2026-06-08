@@ -82,6 +82,18 @@
   mediated_sett_law: "Mediated Settlement"
   mediated_sett_law_desc: "Disputes are resolved through arbitration by respected elders, priests, judges, or local notables. Maintaining harmony requires extensive negotiation and oversight, but settlements reached through consensus are often more enduring and broadly accepted."
 
+  royal_land_law: "Royal Land"
+  royal_land_law_desc: "The ruler claims ultimate ownership over much of the realm's land, granting usage rights in exchange for taxes, labor, and service. Such arrangements strengthen central authority but require extensive oversight and administration."
+
+  temple_land_law: "Temple Holdings"
+  temple_land_law_desc: "Large tracts of land are entrusted to religious institutions, whose revenues sustain cults, priesthoods, and sacred obligations. Temples accumulate considerable influence through their control of agricultural wealth and dependent labor."
+
+  household_land_law: "Household Property"
+  household_land_law_desc: "Land is primarily controlled by households, lineages, and local elites who pass property through inheritance and custom. This system strengthens traditional social structures and provides a reliable source of local military manpower."
+
+  bureaucratic_land_law: "Bureaucratic Assignment"
+  bureaucratic_land_law_desc: "Rights to land are distributed and managed through administrative appointment rather than permanent ownership. Such arrangements improve the collection of revenue and limit the emergence of independent landed interests, but require a substantial governing apparatus."
+
   # ########################
   # LAWS
   # ########################
@@ -97,3 +109,6 @@
 
   verdict_law: "Verdict Resolution"
   verdict_law_desc: "Ancient justice was rarely concerned solely with determining guilt. Courts, assemblies, rulers, priests, and kin groups sought to restore social order after wrongdoing through a variety of means, balancing the interests of victims, offenders, powerful families, and the wider community."
+
+  land_property_law: "Land Property"
+  land_property_law_desc: "These laws determine who ultimately controls agricultural land and the obligations attached to its use. As the foundation of wealth, taxation, military service, and political authority, land ownership lies at the heart of ancient social organization."

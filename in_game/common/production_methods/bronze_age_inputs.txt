@@ -272,3 +272,11 @@ megaron_maintenance = {
 
 	category = building_maintenance
 }
+
+warrior_halls_maintenance = {
+	weaponry = 0.2
+	leather = 0.2
+	cloth = 0.1
+
+	category = building_maintenance
+}

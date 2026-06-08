@@ -93,6 +93,30 @@
 	
  	unlock_building = weapon_guild
 	
+ 	requires = royal_tools_workshop_advance
+ }
+
+ royal_navy_supply_advance = {
+ 	age = age_1_traditions
+	
+ 	unlock_building = naval_supplies_palace
+
+	allow = {
+		has_advance = sailing_advance
+	}
+	
+ 	requires = royal_weapon_workshop_advance
+ }
+
+ royal_production_advance = {
+ 	age = age_1_traditions
+	
+ 	unlock_building = fine_cloth_palace
+	unlock_building = beer_palace
+	unlock_building = pottery_palace
+	unlock_building = winery_palace
+	unlock_building = jewelry_palace
+	
  	requires = workforce_specialization_advance
  }
 
@@ -123,16 +147,20 @@
 
  royal_registry_advance = {
 	age = age_1_traditions
-	research_cost = 1.5
-
-	allow = {
-		has_advance = elite_scripts_advance
-	}
 
 	unlock_building = palace_registry
 	starting_technology_level = 3
 
-	requires = palace_economy_advance
+	requires = palace_administration
+ }
+
+ palace_trade_registry_advance = {
+	age = age_1_traditions
+
+	unlock_building = palace_trade_registry
+	starting_technology_level = 3
+
+	requires = palace_administration
  }
 
 
@@ -184,6 +212,32 @@ bronze_age_trade_posts_advance = {
 	unlock_building = bronze_age_trade_office
 
 	starting_technology_level = 3
+
+	requires = intercultural_relations_advance
+}
+
+wharf_unlock_advance = {
+	age = age_1_traditions
+
+	unlock_building = wharf
+
+	starting_technology_level = 3
+
+	requires = sailing_advance
+}
+
+merchants_quarters_unlock_advance = {
+	age = age_1_traditions
+
+	unlock_building = merchants_quarters
+
+	requires = alphabet_script_advance
+}
+
+slave_market_advance = {
+	age = age_1_traditions
+
+	unlock_building = slave_market
 
 	requires = intercultural_relations_advance
 }
