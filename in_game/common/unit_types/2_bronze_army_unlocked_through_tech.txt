@@ -16,6 +16,24 @@
 	gfx_tags = { slingers_tag medium_tag }
 }
 
+a_household_warriors = {
+	copy_from = a_bronze_age_1_traditions_heavy_infantry
+	
+	strength_damage_done = -0.01
+
+	upgrades_to = a_spearmen
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = tribesmen
+		multiply = 0.05
+	}
+	
+	maintenance_demand = spearmen_infantry_maintenance
+	construction_demand = spearmen_infantry_construction
+	gfx_tags = { warriors_tag medium_tag }
+}
+
 a_simple_chariots = {
 	copy_from = a_age_1_traditions_light_chariot
 	

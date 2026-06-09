@@ -31,47 +31,47 @@ n_traditional_galley = {
 
 }
 
-n_mediterrannean_galley = {
-	category = navy_galley
-	copy_from = n_age_2_renaissance_galley
-	upgrades_to = n_war_galley
-	age = "age_2_renaissance"
+# n_mediterrannean_galley = {
+# 	category = navy_galley
+# 	copy_from = n_age_2_renaissance_galley
+# 	upgrades_to = n_war_galley
+# 	age = "age_2_renaissance"
 
-	potential = { 
-		has_or_had_tag = PREMODERN
-	}
-}
+# 	potential = { 
+# 		has_or_had_tag = PREMODERN
+# 	}
+# }
 
-n_war_galley = {
-	category = navy_galley
-	copy_from = n_age_3_discovery_galley
-	upgrades_to = n_galleass
-	age = "age_3_discovery"
+# n_war_galley = {
+# 	category = navy_galley
+# 	copy_from = n_age_3_discovery_galley
+# 	upgrades_to = n_galleass
+# 	age = "age_3_discovery"
 
-	potential = { 
-		has_or_had_tag = PREMODERN
-	}
-}
+# 	potential = { 
+# 		has_or_had_tag = PREMODERN
+# 	}
+# }
 
-n_galleass = {
-	category = navy_galley
-	copy_from = n_age_4_reformation_galley
-	upgrades_to = n_xebec
-	age = "age_4_reformation"
+# n_galleass = {
+# 	category = navy_galley
+# 	copy_from = n_age_4_reformation_galley
+# 	upgrades_to = n_xebec
+# 	age = "age_4_reformation"
 
-	potential = { 
-		has_or_had_tag = PREMODERN
-	}
-}
+# 	potential = { 
+# 		has_or_had_tag = PREMODERN
+# 	}
+# }
 
-n_xebec = {
-	category = navy_galley
-	copy_from = n_age_5_absolutism_galley
-	age = "age_5_absolutism"
-	upgrades_to = n_archipelago_frigate
+# n_xebec = {
+# 	category = navy_galley
+# 	copy_from = n_age_5_absolutism_galley
+# 	age = "age_5_absolutism"
+# 	upgrades_to = n_archipelago_frigate
 
-	potential = { 
-		has_or_had_tag = PREMODERN
-	}
-}
+# 	potential = { 
+# 		has_or_had_tag = PREMODERN
+# 	}
+# }
 
