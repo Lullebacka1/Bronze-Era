@@ -53,7 +53,7 @@ hattusa_storm_temple = {
 	location = corum
 	type = temple
 	importance = 5
-	religions = { hittite hattian }
+	religions = { hittite }
 }
 
 tarhuntassa_sanctuary = {

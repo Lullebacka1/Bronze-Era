@@ -533,7 +533,10 @@ mycenaean_league.230 = {
 	orphan = yes
 
 	trigger = {
-		is_member_of_international_organization = international_organization:mycenaean_league
+		OR = {
+			has_variable = mycenaean_fully_independent_palace
+			is_member_of_international_organization = international_organization:mycenaean_league
+		}
 		NOT = { is_leader_of_international_organization = international_organization:mycenaean_league }
 	}
 

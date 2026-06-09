@@ -380,6 +380,16 @@ taxation_advance = {
 	starting_technology_level = 3
 }
 
+land_property_advance = {
+	age = age_1_traditions
+
+	unlock_law = land_property_law
+	
+	requires = taxation_advance
+
+	starting_technology_level = 3
+}
+
 debt_management_advance = {
 	age = age_1_traditions
 

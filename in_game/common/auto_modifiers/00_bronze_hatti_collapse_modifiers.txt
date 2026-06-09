@@ -287,3 +287,61 @@ bronze_hatti_syrian_road_abandoned_modifier = {
 	global_trade_center_power = -0.10
 	global_monthly_control = 0.004
 }
+
+# The imperial state cult loses legitimacy after Hatti fragments. Neo-Hittite
+# continuity kingdoms are explicitly exempt from this severe version.
+collapse_of_hittite_faith = {
+	potential_trigger = {
+		has_global_variable = bronze_hatti_imperial_faith_collapsed
+		religion = religion:hittite
+		NOT = { has_variable = bronze_hatti_neo_hittite_state }
+		NOT = { has_variable = bronze_hatti_religious_continuity }
+		NOT = { has_variable = bronze_hatti_restored_empire }
+	}
+
+	monthly_religious_influence = -1.00
+	monthly_legitimacy = -0.20
+	global_clergy_estate_power = -0.30
+	global_pop_conversion_speed_modifier = -0.75
+	global_estate_target_satisfaction = -0.08
+	pop_join_rebel_threshold = -0.15
+}
+
+neo_hittite_religious_continuity = {
+	potential_trigger = {
+		has_variable = bronze_hatti_neo_hittite_state
+		has_variable = bronze_hatti_religious_continuity
+		religion = religion:hittite
+	}
+
+	monthly_religious_influence = 0.15
+	monthly_legitimacy = 0.04
+	global_clergy_estate_power = 0.05
+	global_pop_conversion_speed_modifier = 0.05
+	pop_join_rebel_threshold = 0.02
+}
+
+restored_hittite_imperial_cult = {
+	potential_trigger = {
+		has_variable = bronze_hatti_restored_empire
+		religion = religion:hittite
+	}
+
+	monthly_religious_influence = 0.25
+	monthly_legitimacy = 0.10
+	global_clergy_estate_power = 0.10
+	global_monthly_control = 0.005
+	global_estate_target_satisfaction = 0.04
+}
+
+bronze_hatti_legitimate_dynasty_modifier = {
+	potential_trigger = {
+		has_variable = bronze_hatti_legitimate_dynasty
+		var:bronze_hatti_legitimate_dynasty > 0
+	}
+
+	monthly_legitimacy = 0.08
+	monthly_prestige = 0.03
+	global_monthly_control = 0.004
+	global_estate_target_satisfaction = 0.02
+}

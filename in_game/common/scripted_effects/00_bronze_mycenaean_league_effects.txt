@@ -48,12 +48,13 @@ subtract_mycenaean_league_authority = {
 
 # Converts an extraterritorial palace house into a normal country by handing
 # over the locations where it already owns the dominant palace-building network.
-# This mirrors the vanilla Japanese clan -> daimyo conversion flow.
+# It also removes the new territorial kingdom from the Mycenaean League:
+# autonomy is full political independence, not merely landed league membership.
 turn_mycenaean_palace_into_normal_tag = {
+	save_temporary_scope_as = target_palace
 	custom_tooltip = {
 		text = turn_mycenaean_palace_into_normal_tag.tt
 		change_country_type = location
-		save_temporary_scope_as = target_palace
 		every_owned_foreign_building_location = {
 			limit = {
 				mycenaean_palace_house_can_take_location = yes
@@ -76,7 +77,9 @@ turn_mycenaean_palace_into_normal_tag = {
 		}
 		set_variable = { name = mycenaean_landed_palace value = 1 years = 30 }
 		set_variable = { name = mycenaean_palace_autonomy_claimed value = 1 years = 8 }
-		change_variable = { name = mycenaean_palace_influence add = 10 }
+	}
+	international_organization:mycenaean_league ?= {
+		remove_country_from_international_organization = scope:target_palace
 	}
 	reverse_add_opinion = { modifier = bronze_mycenaean_palace_autonomy target = international_organization:mycenaean_league.leader_country }
 }
@@ -85,9 +88,9 @@ turn_mycenaean_palace_into_normal_tag = {
 # High Wanax: land returns to the league leader, while the old palace survives
 # as an extraterritorial political house.
 turn_mycenaean_palace_into_building_based = {
+	save_temporary_scope_as = target_palace
 	custom_tooltip = {
 		text = turn_mycenaean_palace_into_building_based.tt
-		save_temporary_scope_as = target_palace
 		every_owned_location = {
 			change_location_owner = international_organization:mycenaean_league.leader_country
 			add_core = international_organization:mycenaean_league.leader_country
@@ -100,6 +103,7 @@ turn_mycenaean_palace_into_building_based = {
 		change_country_type = building
 		remove_variable = mycenaean_landed_palace
 		remove_variable = mycenaean_palace_autonomy_claimed
+		remove_variable = mycenaean_fully_independent_palace
 		if = {
 			limit = { NOT = { has_variable = mycenaean_palace_influence } }
 			set_variable = { name = mycenaean_palace_influence value = 0 }
@@ -108,6 +112,16 @@ turn_mycenaean_palace_into_building_based = {
 		if = {
 			limit = { var:mycenaean_palace_influence < 0 }
 			set_variable = { name = mycenaean_palace_influence value = 0 }
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				is_member_of_international_organization = international_organization:mycenaean_league
+			}
+		}
+		international_organization:mycenaean_league ?= {
+			add_country_to_international_organization = scope:target_palace
 		}
 	}
 	add_opinion = { modifier = bronze_mycenaean_reconciled_palace target = international_organization:mycenaean_league.leader_country }

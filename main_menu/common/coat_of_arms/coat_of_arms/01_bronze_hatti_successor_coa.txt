@@ -1,0 +1,315 @@
+@ratio = 1.5
+@height = 512
+@width = @[height*ratio]
+
+# Hatti-collapse successor coats of arms.
+# These use vanilla EU5 patterns and colored emblems so no external asset pack
+# is required. Neo-Hittite states share solar and bronze visual language while
+# retaining a distinct regional symbol.
+
+bronze_age_HAMAT_coa = { # Hamath: sacred bull, dark red and bronze.
+	pattern = "pattern_border_thin.dds"
+	color1 = "red_dark"
+	color2 = "yellow_dark"
+	color3 = "brown"
+
+	colored_emblem = {
+		texture = "ce_bull_statant.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.57 } scale = { 0.82 0.82 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.22 } scale = { 0.28 0.28 } }
+	}
+}
+
+bronze_age_ARPAD_coa = { # Arpad: fortified city gate, deep blue and bronze.
+	pattern = "pattern_solid.dds"
+	color1 = "blue_dark"
+	color2 = "yellow_dark"
+	color3 = "brown"
+
+	colored_emblem = {
+		texture = "ce_stylized_gate_sulu.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.57 } scale = { 0.78 0.78 } }
+	}
+	colored_emblem = {
+		texture = "ce_rosette_06.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.22 } scale = { 0.24 0.24 } }
+	}
+}
+
+bronze_age_HATLU_coa = { # Hatarikka-Luhuti: storm god sign, dark green and gold.
+	pattern = "pattern_border_thin.dds"
+	color1 = "green_pine"
+	color2 = "yellow_mid"
+	color3 = "black"
+
+	colored_emblem = {
+		texture = "ce_zhuang_cloud_thunder.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.53 } scale = { 0.72 0.72 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.2 } scale = { 0.25 0.25 } }
+	}
+}
+
+bronze_age_QUE_coa = { # Que: royal Hittite continuity, winged sun in purple and gold.
+	pattern = "pattern_border_thin.dds"
+	color1 = "tyrian"
+	color2 = "yellow_mid"
+	color3 = "red_dark"
+
+	textured_emblem = {
+		texture = "ba_winged_sun.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.82 0.82 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 0.3 0.3 } }
+	}
+}
+
+bronze_age_SAMAL_coa = { # Sam'Al: guardian lion, sandstone and red.
+	pattern = "pattern_horizontal_split_02.dds"
+	color1 = "brown_light"
+	color2 = "red_dark"
+	color3 = "yellow_dark"
+
+	colored_emblem = {
+		texture = "ce_lion_passant_wide.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.55 } scale = { 0.82 0.82 } }
+	}
+}
+
+bronze_age_TILBA_coa = { # Til-Barsip: Euphrates river sign, blue and silver.
+	pattern = "pattern_solid.dds"
+	color1 = "blue_dark"
+	color2 = "pearl"
+	color3 = "blue_light"
+
+	colored_emblem = {
+		texture = "ce_water_in_base.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.65 } scale = { 0.88 0.62 } }
+	}
+	colored_emblem = {
+		texture = "ce_rosette_06.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.27 } scale = { 0.3 0.3 } }
+	}
+}
+
+bronze_age_KUMMU_coa = { # Kummukhi: highland mountain and uncrowned eagle.
+	pattern = "pattern_solid.dds"
+	color1 = "green_pine"
+	color2 = "yellow_dark"
+	color3 = "brown"
+
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.72 } scale = { 0.78 0.52 } }
+	}
+	colored_emblem = {
+		texture = "ce_eagle_wide.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.38 } scale = { 0.6 0.6 } }
+	}
+}
+
+bronze_age_GURGU_coa = { # Gurgum: sun disk and twin spears, orange and gold.
+	pattern = "pattern_solid.dds"
+	color1 = "orange"
+	color2 = "yellow_mid"
+	color3 = "red_dark"
+
+	colored_emblem = {
+		texture = "ce_sun_radiant_simple.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.35 } scale = { 0.46 0.46 } }
+	}
+	colored_emblem = {
+		texture = "ce_spear_head_random_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.37 0.7 } scale = { 0.52 0.52 } }
+		instance = { position = { 0.63 0.7 } scale = { -0.52 0.52 } }
+	}
+}
+
+bronze_age_KHILA_coa = { # Khilakku: Cilician ship and coastal waters.
+	pattern = "pattern_horizontal_split_02.dds"
+	color1 = "blue_dark"
+	color2 = "blue_mid"
+	color3 = "yellow_dark"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.5 0.5 } scale = { 0.76 0.76 } }
+	}
+	colored_emblem = {
+		texture = "ce_fish_okeane.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.82 } scale = { 0.26 0.26 } }
+	}
+}
+
+bronze_age_PATT_coa = { # Pattina: port trade, turquoise and gold.
+	pattern = "pattern_solid.dds"
+	color1 = "cyan"
+	color2 = "yellow_mid"
+	color3 = "blue_dark"
+
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.5 } scale = { 0.68 0.68 } }
+	}
+	colored_emblem = {
+		texture = "ce_conch_shell.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.8 } scale = { 0.25 0.25 } }
+	}
+}
+
+bronze_age_CARCH_coa = { # Carchemish: monumental gate, dark red and black.
+	pattern = "pattern_border_thin.dds"
+	color1 = "red_dark"
+	color2 = "black"
+	color3 = "yellow_dark"
+
+	textured_emblem = {
+		texture = "ba_fortress.dds"
+		instance = { position = { 0.5 0.58 } scale = { 0.78 0.78 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.21 } scale = { 0.24 0.24 } }
+	}
+}
+
+bronze_age_TABAL_coa = { # Tabal: sacred Anatolian mountain, purple and bronze.
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "yellow_dark"
+	color3 = "brown"
+
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.62 } scale = { 0.88 0.7 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.23 } scale = { 0.3 0.3 } }
+	}
+}
+
+bronze_age_KAMMA_coa = { # Kammanu: temple columns and solar priesthood.
+	pattern = "pattern_border_thin.dds"
+	color1 = "white"
+	color2 = "yellow_mid"
+	color3 = "brown"
+
+	colored_emblem = {
+		texture = "ce_column.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.36 0.61 } scale = { 0.42 0.62 } }
+		instance = { position = { 0.64 0.61 } scale = { 0.42 0.62 } }
+	}
+	colored_emblem = {
+		texture = "ce_rosette_06.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.28 } scale = { 0.32 0.32 } }
+	}
+}
+
+bronze_age_PHRYG_coa = { # Phrygia: Gordian knot, purple and dark red.
+	pattern = "pattern_diagonal_split_01.dds"
+	color1 = "purple"
+	color2 = "red_dark"
+	color3 = "yellow_dark"
+
+	colored_emblem = {
+		texture = "ce_endless_loop_knot.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.52 } scale = { 0.76 0.76 } }
+	}
+}
+
+bronze_age_URATU_SUCCESSOR_coa = { # Urartu: eastern highland fortress, black and gold.
+	pattern = "pattern_border_thin.dds"
+	color1 = "black"
+	color2 = "yellow_mid"
+	color3 = "grey_dark"
+
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.7 } scale = { 0.88 0.58 } }
+	}
+	colored_emblem = {
+		texture = "ce_wampum_four_forts.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.31 } scale = { 0.42 0.42 } }
+	}
+}
+
+bronze_age_LUWIY_coa = { # Luwiya: Luwian solar disk and double axe.
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue_dark"
+	color3 = "yellow_dark"
+
+	colored_emblem = {
+		texture = "ce_sun_radiant_simple.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.3 } scale = { 0.46 0.46 } }
+	}
+	colored_emblem = {
+		texture = "ce_mena_axes_addorsed.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.68 } scale = { 0.58 0.58 } }
+	}
+}
