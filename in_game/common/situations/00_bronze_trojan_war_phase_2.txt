@@ -1,4 +1,5 @@
 trojan_war_phase_2 = {
+	# the war is connected with Bronze-Era\in_game\common\peace_treaties\00_bronze_trojan_war_phase_2_winner.txt
 	monthly_spawn_chance = {
 		value = 100
 	}
