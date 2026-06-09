@@ -96,10 +96,10 @@ ELAM = { # Local Bronze Era Elam tag.
 }
 
 URU = { # Urartu short tag, if used.
-	flag_definition = { coa = bronze_age_URU_coa priority = 10000 }
+	flag_definition = { coa = bronze_age_URATU_SUCCESSOR_coa priority = 10000 }
 }
 URATU = { # Local Bronze Era Urartu tag.
-	flag_definition = { coa = bronze_age_URU_coa priority = 10000 }
+	flag_definition = { coa = bronze_age_URATU_SUCCESSOR_coa priority = 10000 }
 }
 
 AHH = { # Ahhiyawa short tag, if used.
@@ -120,3 +120,20 @@ LEUK = { # Leukas, a minor Ionian island palace polity.
 KOS = { # Kos, Homeric island kingdom of Antiphus and Phidippus.
 	flag_definition = { coa = bronze_age_KOS_coa priority = 10000 }
 }
+
+# Unique Hatti-collapse successor flags.
+HAMAT = { flag_definition = { coa = bronze_age_HAMAT_coa priority = 10000 } }
+ARPAD = { flag_definition = { coa = bronze_age_ARPAD_coa priority = 10000 } }
+HATLU = { flag_definition = { coa = bronze_age_HATLU_coa priority = 10000 } }
+QUE = { flag_definition = { coa = bronze_age_QUE_coa priority = 10000 } }
+SAMAL = { flag_definition = { coa = bronze_age_SAMAL_coa priority = 10000 } }
+TILBA = { flag_definition = { coa = bronze_age_TILBA_coa priority = 10000 } }
+KUMMU = { flag_definition = { coa = bronze_age_KUMMU_coa priority = 10000 } }
+GURGU = { flag_definition = { coa = bronze_age_GURGU_coa priority = 10000 } }
+KHILA = { flag_definition = { coa = bronze_age_KHILA_coa priority = 10000 } }
+PATT = { flag_definition = { coa = bronze_age_PATT_coa priority = 10000 } }
+CARCH = { flag_definition = { coa = bronze_age_CARCH_coa priority = 10000 } }
+TABAL = { flag_definition = { coa = bronze_age_TABAL_coa priority = 10000 } }
+KAMMA = { flag_definition = { coa = bronze_age_KAMMA_coa priority = 10000 } }
+PHRYG = { flag_definition = { coa = bronze_age_PHRYG_coa priority = 10000 } }
+LUWIY = { flag_definition = { coa = bronze_age_LUWIY_coa priority = 10000 } }

@@ -566,7 +566,10 @@ mycenaean_reassert_palace_authority = {
 		none_available_msg_key = "no_valid_countries"
 		column = { data = name }
 		visible = {
-			is_member_of_international_organization = international_organization:mycenaean_league
+			OR = {
+				has_variable = mycenaean_fully_independent_palace
+				is_member_of_international_organization = international_organization:mycenaean_league
+			}
 			this != scope:actor
 			country_type = location
 			num_locations < 6

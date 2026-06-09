@@ -163,7 +163,7 @@ palace_registry = {
 	city = yes
 	megalopolis = yes
 	
-	build_time = medium_soldier_building
+	build_time = palace_addition_build_time
 	
 	location_potential = {
 		has_building = building_type:bronze_age_palatial_complex
@@ -173,6 +173,47 @@ palace_registry = {
 		local_manpower = 0.01
 		can_recruit_regiment_in_this_location = yes
 	}
+
+	possible_production_methods =  {
+		palace_registry_maintenance_tablets
+		palace_registry_maintenance_leather
+		palace_registry_maintenance_potsherds
+		palace_registry_maintenance_wood
+		palace_registry_maintenance_paper
+	}
+	construction_demand = palace_addition_construction
+
+	custom_tags = { palace_addition }
+}
+
+palace_trade_registry = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	
+	category = government_category
+	forbidden_for_estates = yes
+	
+	employment_size = estate_manpower_employment
+	
+	town = no
+	city = yes
+	megalopolis = yes
+	
+	build_time = palace_addition_build_time
+	
+	location_potential = {
+		has_building = building_type:bronze_age_palatial_complex
+	}
+	
+	modifier = {
+		local_market_access = 0.005
+		local_burghers_estate_power = 0.05
+	}
+
+	market_center_modifier = {
+		local_trade_center_power = 0.1
+ 	}
 
 	possible_production_methods =  {
 		palace_registry_maintenance_tablets

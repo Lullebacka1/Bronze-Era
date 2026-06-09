@@ -1,0 +1,83 @@
+# Restoration of Hatti after the deterministic Bronze Age collapse.
+# The required location list is the exact starting territory of Hatti.
+# A Neo-Hittite successor must recover 70% of it and the five principal
+# Anatolian centers before the imperial title can be restored.
+
+HATTI_f = {
+	level = 4
+	required_locations_fraction = 0.70
+	capital_required = no
+	potential_requires_own = yes
+	rule = historical
+	content_priority = 950
+
+	potential = {
+		has_global_variable = bronze_hatti_final_fragmentation_complete
+		has_variable = bronze_hatti_neo_hittite_state
+		NOT = { tag = HATTI }
+		NOT = { country_exists = c:HATTI }
+	}
+
+	allow = {
+		culture = culture:hittite
+		religion = religion:hittite
+		owns = location:huseyinabad
+		owns = location:ankara
+		owns = location:sivas
+		owns = location:konya
+		owns = location:adana
+	}
+
+	name = HATTI
+	flag = HATTI
+	adjective = HATTI_ADJ
+	tag = HATTI
+	color = map_HATTI
+
+	locations = {
+		adana afrin afsin akdagmadeni aksaray aksehir
+		al_bab aleppo altinekin amasya anavarza ankara
+		arapgir arguvan arsuz artah ayas aydincik
+		ayntab baliseyh bayat bekarlar besni beypazari
+		birecik bogazliyan bor_tur bozan bozok candir
+		candir_cil cankiri caxud celtik cemisgezek comana_cil
+		corum corycus cubuk cumra dabiq darende
+		dasmenda deliktash develi dinek_keskin divrigi dluk
+		egin elbistan emirdag enguzud eregli_kar erzincan
+		eskil gemerek gerger goksun gumus gurun
+		hacibektas hafik hargan harput hatunsaray haymana
+		huseyinabad ilgin ilic insuyu iskenderun iskilip
+		jabbul kahta kalecik kapan karakecili karapinar
+		kars_armenia kaymaz kayseri kaysun keban kemah
+		kilis kirsehir kizilca kochisar konya koyulhisar
+		kulu_turkey kursunlu kuzucan ladik larende malatya
+		manbij marash merzifon mihaliccik molevon mut
+		nevsehir nigde obruk pertek pirloganda polatli
+		sabanozu samsat sariyahsi sarkisla sebinkarahisar seyitgazi
+		silifke siran sis sivas sivrihisar sorgun
+		suluklu sulusaray sungurlu suruc tarsus tokat
+		tomarza tosya trapessac turgut ulnia urgup
+		yahyali zara zardana zile
+	}
+
+	form_effect = {
+		change_culture = culture:hittite
+		change_religion = religion:hittite
+		set_capital = location:huseyinabad
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
+
+		set_variable = { name = bronze_hatti_restored_empire value = 1 }
+		set_variable = { name = bronze_hatti_religious_continuity value = 1 }
+		set_global_variable = { name = bronze_hatti_empire_restored value = 1 }
+		remove_variable = bronze_hatti_successor_state
+		remove_variable = bronze_hatti_neo_hittite_state
+
+		add_religious_influence = religious_influence_radical_bonus
+		add_legitimacy = legitimacy_mild_bonus
+		add_prestige = prestige_mild_bonus
+		add_stability = stability_weak_bonus
+	}
+}

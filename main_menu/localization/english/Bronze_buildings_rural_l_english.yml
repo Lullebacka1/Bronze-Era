@@ -5,6 +5,10 @@
   house_of_remedies: "House of Remedies"
   house_of_remedies_desc: "A specialized center where healers prepare medicines, store medicinal ingredients, and treat the sick and injured. Drawing upon generations of practical knowledge, these institutions serve as hubs of early medical practice within growing settlements."
 
+  warrior_halls: "Warrior Halls"
+  warrior_halls_desc: "A residence and gathering place for the armed followers of a local ruler, administrator, or prominent household. These halls provide lodging, storage, and a focal point for the small groups of professional or semi-professional warriors who form the earliest permanent military forces."
+
+
   # #######################
   # PRODUCTION METHODS
   # #######################
@@ -14,3 +18,6 @@
 
   remedies_production: "Medicinal Preparations"
   remedies_production_desc: "Healers gather herbs, minerals, oils, and other ingredients to create remedies for wounds, illnesses, and common ailments, preserving and expanding the community's medical knowledge."
+
+  warrior_halls_maintenance: "Warrior Retinues"
+  warrior_halls_maintenance_desc: "The hall's inhabitants are supplied with weapons, clothing, and provisions in return for military service. Maintaining a permanent body of fighting men requires a steady investment in equipment and support."

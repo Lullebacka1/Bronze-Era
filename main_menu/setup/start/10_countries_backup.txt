@@ -6961,7 +6961,7 @@ countries = {
 	PALA = {
 	capital = amasra
 	culture = palaic
-	religion = hattian
+	religion = hittite
 
 	country_rank = rank_kingdom
 

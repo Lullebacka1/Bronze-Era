@@ -223,32 +223,70 @@ TARHU = {
 	color2 = rgb { 110 27 27 }
 }
 TABAL = {
-	color = rgb { 124 137 138 }
-	color2 = rgb { 110 27 27 }
+	color = rgb { 76 52 88 }
+	color2 = rgb { 176 128 66 }
 }
 MELID = {
 	color = rgb { 160 116 89 }
 	color2 = rgb { 110 27 27 }
 }
 GURGU = {
-	color = rgb { 147 99 91 }
-	color2 = rgb { 110 27 27 }
+	color = rgb { 158 88 42 }
+	color2 = rgb { 210 165 72 }
 }
 QUE = {
-	color = rgb { 107 129 103 }
-	color2 = rgb { 110 27 27 }
+	color = rgb { 91 51 100 }
+	color2 = rgb { 211 166 69 }
 }
 PATT = {
-	color = rgb { 166 143 99 }
-	color2 = rgb { 110 27 27 }
+	color = rgb { 54 120 119 }
+	color2 = rgb { 207 167 72 }
 }
 KUMMU = {
-	color = rgb { 127 134 95 }
-	color2 = rgb { 110 27 27 }
+	color = rgb { 48 76 54 }
+	color2 = rgb { 172 126 64 }
 }
 HAMAT = {
-	color = rgb { 159 117 120 }
-	color2 = rgb { 110 27 27 }
+	color = rgb { 119 52 49 }
+	color2 = rgb { 177 129 65 }
+}
+# Deterministic Hatti-collapse successors. HAMAT and HATLU remain reserved
+# placeholders until their historical location sets are mapped.
+ARPAD = {
+	color = rgb { 43 66 102 }
+	color2 = rgb { 184 138 68 }
+}
+HATLU = {
+	color = rgb { 43 77 55 }
+	color2 = rgb { 205 165 72 }
+}
+SAMAL = {
+	color = rgb { 153 113 75 }
+	color2 = rgb { 124 49 44 }
+}
+TILBA = {
+	color = rgb { 63 101 130 }
+	color2 = rgb { 174 181 183 }
+}
+KHILA = {
+	color = rgb { 46 83 109 }
+	color2 = rgb { 174 128 67 }
+}
+CARCH = {
+	color = rgb { 89 39 39 }
+	color2 = rgb { 35 31 29 }
+}
+KAMMA = {
+	color = rgb { 177 166 136 }
+	color2 = rgb { 207 169 75 }
+}
+PHRYG = {
+	color = rgb { 91 52 96 }
+	color2 = rgb { 117 45 48 }
+}
+LUWIY = {
+	color = rgb { 172 174 166 }
+	color2 = rgb { 39 66 104 }
 }
 LAEAE = {
 	color = rgb { 114 143 140 }
@@ -495,8 +533,8 @@ ULIBA = {
 	color2 = rgb { 110 27 27 }
 }
 URATU = {
-	color = rgb { 148 105 93 }
-	color2 = rgb { 110 27 27 }
+	color = rgb { 58 52 45 }
+	color2 = rgb { 206 163 70 }
 }
 WALAN = {
 	color = rgb { 144 154 90 }
@@ -1859,5 +1897,40 @@ SUTKG = {
 
 VAINI = {
 	color = rgb { 159 127 96 }
+	color2 = rgb { 110 27 27 }
+}
+
+AHHI = {
+	color = rgb { 74 57 142 }
+	color2 = rgb { 110 27 27 }
+}
+
+KARK = {
+	color = rgb { 152 53 182 }
+	color2 = rgb { 110 27 27 }
+}
+
+LYCIA = {
+	color = rgb { 108 63 120 }
+	color2 = rgb { 110 27 27 }
+}
+
+MWAN = {
+	color = rgb { 152 53 182 }
+	color2 = rgb { 110 27 27 }
+}
+
+QUWE = {
+	color = rgb { 37 101 48 }
+	color2 = rgb { 110 27 27 }
+}
+
+TUMM = {
+	color = rgb { 182 104 53 }
+	color2 = rgb { 110 27 27 }
+}
+
+ZALP = {
+	color = rgb { 182 171 53 }
 	color2 = rgb { 110 27 27 }
 }

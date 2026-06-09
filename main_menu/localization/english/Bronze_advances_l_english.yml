@@ -186,6 +186,24 @@
   megarons_advance: "Megarons"
   megarons_advance_desc: "The rulers of the Aegean develop monumental audience halls centered on a great hearth and throne room. These megarons serve as ceremonial, political, and administrative centers where authority is displayed, alliances are forged, and elite culture is cultivated."
 
+  wharf_unlock_advance: "Wharf Construction"
+  wharf_unlock_advance_desc: "Communities begin building permanent waterfront structures for loading cargo, repairing vessels, and managing maritime traffic. These facilities improve the efficiency of trade and strengthen connections between coastal settlements and distant markets."
+
+  merchants_quarters_unlock_advance: "Merchant Communities"
+  merchants_quarters_unlock_advance_desc: "The spread of practical literacy allows merchants to manage contracts, accounts, and correspondence with greater ease. As trade expands, permanent merchant communities emerge within towns and cities, forming distinct centers of commerce and exchange."
+
+  palace_trade_registry_advance: "Trade Registries"
+  palace_trade_registry_advance_desc: "Growing commercial activity encourages rulers to record merchants, shipments, obligations, and exchanges. Dedicated trade registries improve oversight of commerce and strengthen connections between administrative centers and markets."
+
+  royal_production_advance: "Royal Workshops"
+  royal_production_advance_desc: "As palatial institutions expand, rulers increasingly concentrate skilled craftsmen under direct administrative supervision. Specialized workshops produce tools, weapons, textiles, luxury goods, and other necessities for the court, transforming craft production into an instrument of royal power and economic organization."
+
+  royal_navy_supply_advance: "Royal Naval Workshops"
+  royal_navy_supply_advance_desc: "The growing importance of maritime trade and warfare encourages palatial administrations to establish specialized workshops dedicated to the production of sails, rope, pitch, rigging, and other essential naval supplies."
+
+  slave_market_advance: "Organized Slave Trade"
+  slave_market_advance_desc: "The growth of long-distance exchange networks and warfare creates opportunities for the organized trade of captives and bonded laborers. Dedicated markets emerge where slaves are bought, sold, and redistributed across regions and societies."
+
   # ##########################
   # PRODUCTION METHODS
   # ##########################
