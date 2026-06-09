@@ -1,0 +1,15 @@
+on_peace_treaty = {
+	effect = {
+		if = {
+			limit = {
+				
+				has_war_regime = trojan_war_casus_belli
+				
+				
+				winner = { tag = 0001G }
+			}
+			
+			set_global_variable = { name = "greece_actually_won" value = yes }
+		}
+	}
+}

@@ -12,7 +12,7 @@
 			text_single = {
 				layoutpolicy_horizontal = expanding
 				fontsize = 13
-				# KORRIGERAT: Lagt till GetLoc för att hämta din text från lokaliseringsfilerna
+				
 				text = "[GetLoc('trojan_war_panel_phase')]" 
 				default_format = "#subtle_name"
 			}
@@ -20,7 +20,7 @@
 			text_single = {
 				layoutpolicy_horizontal = expanding
 				fontsize = 13
-				# KORRIGERAT: Hämtar värdet för fasen via lokalisering
+				
 				text = "[GetLoc('trojan_war_panel_phase_value2')]" 
 				default_format = "#Y"
 			}
@@ -39,7 +39,7 @@
 				layoutpolicy_horizontal = expanding
 				align = right|nobaseline
 				fontsize = 13
-				# KORRIGERAT: Hämtar texten för eskalering
+				
 				text = "[GetLoc('trojan_war_panel_escalation')]" 
 				default_format = "#subtle_name"
 			}
@@ -48,7 +48,7 @@
 				layoutpolicy_horizontal = expanding
 				align = right|nobaseline
 				fontsize = 13
-				# KORRIGERAT: Hämtar värdet för eskalering
+				
 				text = "[GetLoc('trojan_war_panel_escalation_value')]" 
 				default_format = "#R"
 			}

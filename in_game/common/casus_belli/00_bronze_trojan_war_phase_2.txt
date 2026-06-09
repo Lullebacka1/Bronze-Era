@@ -9,13 +9,9 @@ trojan_war_casus_belli = {
 		type = take_province
 	}
 
+	
 	trigger = {
-		any_province = {
-			province = province_biga
-			owner = {
-				is_defending_in_war = yes
-			}
-		}
+		always = yes
 	}
 
 	war_score_cost = {

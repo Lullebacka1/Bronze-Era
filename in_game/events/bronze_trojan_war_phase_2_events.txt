@@ -1,0 +1,41 @@
+trojan_war_phase_2_start = {
+		type = country_event
+		title = trojan_war_phase_2_start.t
+    desc = trojan_war_phase_2_start.d
+    
+    is_triggered_only = yes 
+
+    hidden = no 
+	
+	option = {
+        name = trojan_war_phase_2_start.a
+        create_war = {
+			attacker = 0001G
+			defender = WILUS
+			casus_belli = trojan_war_casus_belli
+			
+			
+			if = {
+				limit = { exists = AHHI }
+				add_co_belligerent = AHHI
+			}
+			if = {
+				limit = { exists = LYCIA }
+				add_co_belligerent = LYCIA
+			}
+			if = {
+				limit = { exists = SEHA }
+				add_co_belligerent = SEHA
+			}
+			if = {
+				limit = { exists = LUKKA }
+				add_co_belligerent = LUKKA
+			}
+			if = {
+				limit = { exists = MASA }
+				add_co_belligerent = MASA
+			}
+		} 
+    }
+	
+}
