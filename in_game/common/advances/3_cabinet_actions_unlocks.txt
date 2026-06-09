@@ -116,6 +116,6 @@ settle_the_frontier_advance = {
 	# 	}
 	# 	NOT = { is_subject_type = colonial_nation }
 	# }
-	requires = city_building_advance
+	requires = settlements_advance
 	unlock_cabinet_action = settle_the_frontier
 }
