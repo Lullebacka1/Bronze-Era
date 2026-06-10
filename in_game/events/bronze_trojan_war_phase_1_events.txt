@@ -1,6 +1,6 @@
 
 # Mycenae Outcomes
-trojan_war_raid_on_anatolia_success = {
+trojan_war_raid_on_anatolia_success.1 = {
     type = country_event
     title = trojan_war_raid_on_anatolia_success.t
     desc = trojan_war_raid_on_anatolia_success.d
@@ -28,7 +28,7 @@ trojan_war_raid_on_anatolia_success = {
 	}
 }
 
-trojan_war_raid_on_anatolia_failed = {
+trojan_war_raid_on_anatolia_failed.1 = {
     type = country_event
     title = trojan_war_raid_on_anatolia_failed.t
     desc = trojan_war_raid_on_anatolia_failed.d
@@ -57,7 +57,7 @@ trojan_war_raid_on_anatolia_failed = {
 }
 
 # Wilusa / Anatolia Outcomes
-anatolia_coastline_is_defend = {
+anatolia_coastline_is_defend.1 = {
 	type = country_event
 	title = anatolia_coastline_is_defend.t
 	desc = anatolia_coastline_is_defend.d
