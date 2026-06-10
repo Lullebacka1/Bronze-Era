@@ -33,7 +33,7 @@ neolithic_feast_court = {
 	modifier = {
 		local_food_capacity = 100
 		local_food_decay_modifier = -0.02
-		local_max_control = 0.1
+		local_max_control = 0.05
 	}
 
 	ai_forbid_shutdown = yes
@@ -112,7 +112,7 @@ neolithic_sanctuary = {
 	}
 
 	raw_modifier = {
-		local_max_control = 0.05
+		local_max_control = 0.03
 	}
 
 }
@@ -148,7 +148,7 @@ temple_complex = {
 	graphical_tags = { palace }
 
 	modifier = {
-		local_max_control = 0.10
+		local_max_control = 0.15
 		local_monthly_control = 0.001
 		local_clergy_estate_power = 0.35
 		local_clergy_max_literacy = 10
@@ -207,7 +207,7 @@ temple_granary = {
 	modifier = {
 		local_food_capacity = 200
 		local_food_decay_modifier = -0.05
-		local_max_control = 0.2
+		local_max_control = 0.06
 	}
 
 	obsolete = neolithic_feast_court
