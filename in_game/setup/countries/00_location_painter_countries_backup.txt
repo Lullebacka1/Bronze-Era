@@ -1,7 +1,0 @@
-
-
-1TEST = {
-	color = rgb { 119 25 138 }
-	culture = minangkabau_culture
-	religion = anglican
-}
