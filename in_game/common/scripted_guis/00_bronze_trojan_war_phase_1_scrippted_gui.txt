@@ -55,7 +55,7 @@ raid_on_anatolia_gui = {
 					modifier = trojan_war_raid_on_anatolia_success
 					months = 12
 				}
-				trigger_event_non_silently = { id = trojan_war_raid_on_anatolia_success } 
+				trigger_event_non_silently = { id = trojan_war_raid_on_anatolia_success.1 } 
 			}
 
 			20 = {
@@ -88,7 +88,7 @@ raid_on_anatolia_gui = {
 					months = 12
 					
 				}
-				trigger_event_non_silently =  { id = trojan_war_raid_on_anatolia_failed }  
+				trigger_event_non_silently =  { id = trojan_war_raid_on_anatolia_failed.1 }  
 			}
 		}
 
@@ -135,7 +135,7 @@ is_valid = {
 		}
 		add_manpower_pool = -150
 		add_gold = -25
-		trigger_event_non_silently = { id=anatolia_coastline_is_defend }  
+		trigger_event_non_silently = { id = anatolia_coastline_is_defend.1 }  
 	}
 
 	ai_is_valid = { always = no }
