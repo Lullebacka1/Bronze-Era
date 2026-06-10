@@ -1002,6 +1002,8 @@ mills_employment = 						0.5
 granary_employment =					0.05
 aqueduct_system_employment =            1
 
+monumental_laborers_employment =        3
+
 
 #peasants / laborers 
 estate_peasants_employment =			0.05
@@ -1123,6 +1125,7 @@ generic_event_building = 90
 instant_build_time = 1
 
 palace_addition_build_time = 365
+bronze_age_monument_build_time = 1825
 
 
 #################################

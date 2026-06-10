@@ -20,6 +20,8 @@
   neolithic_slave_market: "Captive Yard"
   neolithic_slave_market_desc: "Before the emergence of formal slave markets, captives taken in war, raiding, debt disputes, or judicial proceedings were gathered in simple enclosures where they could be held, exchanged, ransomed, or assigned to new masters. These yards serve as local centers for the redistribution of unfree labor."
 
+  navy_supplies_maker: "Rope and Sail Makers"
+  navy_supplies_maker_desc: "Small workshops produce rope, sailcloth, pitch, and other materials required for the construction and maintenance of vessels. Their goods support trade, fishing, transport, and travel along waterways."
 
   # #############################
   # PRODUCTION METHODS
@@ -84,3 +86,6 @@
 
   neolithic_slave_market_maintenance: "Captive Handling"
   neolithic_slave_market_maintenance_desc: "Guards, equipment, and basic provisions are required to secure, transport, and manage captives awaiting exchange, ransom, or assignment."
+
+  naval_supplies_maker_maintenance: "Maritime Supplies"
+  naval_supplies_maker_maintenance_desc: "Craftsmen manufacture rope, sailcloth, caulking materials, and other essential supplies needed to equip and maintain working vessels."

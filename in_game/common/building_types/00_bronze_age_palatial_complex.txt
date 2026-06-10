@@ -63,7 +63,7 @@ bronze_age_palatial_complex = {
 	graphical_tags = { palace }
 
 	modifier = {
-		local_max_control = 0.12
+		local_max_control = 0.10
 		local_monthly_control = 0.001
 		local_crown_estate_power = 0.35
 		local_production_efficiency = 0.03
