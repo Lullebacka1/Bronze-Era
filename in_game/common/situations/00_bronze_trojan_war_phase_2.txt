@@ -26,7 +26,7 @@ trojan_war_phase_2 = {
 		# event located in \Bronze-Era\in_game\events\bronze_trojan_war_phase_2_events.txt
 		# the event that triggers is in \Bronze-Era\in_game\events\bronze_trojan_war_phase_1_events.txt and is the trojan_war_raid_on_anatolia_success
 		0001G = {
-			trigger_event_non_silently = trojan_war_phase_2_events.1
+			trigger_event_non_silently = start_trojan_war_phase_2.1
 		}
 		
 	}

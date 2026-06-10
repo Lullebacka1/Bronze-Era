@@ -1,4 +1,4 @@
-trojan_war_phase_2_start = {
+start_trojan_war_phase_2 = {
 		type = country_event
 		title = trojan_war_phase_2_start.t
     desc = trojan_war_phase_2_start.d
