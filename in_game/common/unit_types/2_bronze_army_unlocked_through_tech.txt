@@ -13,7 +13,7 @@
 	
 	maintenance_demand = slinger_infantry_maintenance
 	construction_demand = slinger_infantry_construction
-	gfx_tags = { slingers_tag medium_tag }
+	gfx_tags = { light_tag }
 }
 
 a_household_warriors = {
@@ -31,14 +31,14 @@ a_household_warriors = {
 	
 	maintenance_demand = spearmen_infantry_maintenance
 	construction_demand = spearmen_infantry_construction
-	gfx_tags = { warriors_tag medium_tag }
+	gfx_tags = { light_tag }
 }
 
 a_simple_chariots = {
-	copy_from = a_age_1_traditions_light_chariot
+	copy_from = a_age_1_traditions_simple_chariot
 	
 	
-	upgrades_to = a_heavy_chariots
+	upgrades_to = a_light_chariots
 
 	#root = location. Checks location_potential first so don't need that scripting in
 	mercenaries_per_location = {
@@ -107,6 +107,8 @@ a_spearmen = {
 	
 	maintenance_demand = spearmen_infantry_maintenance
 	construction_demand = spearmen_infantry_construction
+
+	gfx_tags = { light_tag }
 }
 
 a_axemen = {
@@ -125,6 +127,8 @@ a_axemen = {
 	
 	maintenance_demand = axemen_infantry_maintenance
 	construction_demand = axemen_infantry_construction
+
+	gfx_tags = { light_tag }
 }
 
 a_swordsmen = {
@@ -143,6 +147,8 @@ a_swordsmen = {
 	
 	maintenance_demand = swordsmen_infantry_maintenance
 	construction_demand = swordsmen_infantry_construction
+
+	gfx_tags = { light_tag }
 }
 
 a_neolithic_bowmen = {
@@ -163,7 +169,7 @@ a_neolithic_bowmen = {
 	
 	maintenance_demand = neolithic_bowmen_maintenance
 	construction_demand = neolithic_bowmen_construction
-	gfx_tags = { neolithic_bowmen_tag medium_tag }
+	gfx_tags = { light_tag }
 }
 
 a_composite_bowmen = {
@@ -181,7 +187,7 @@ a_composite_bowmen = {
 	
 	maintenance_demand = composite_bowmen_maintenance
 	construction_demand = composite_bowmen_construction
-	gfx_tags = { composite_bowmen_tag medium_tag }
+	gfx_tags = { light_tag }
 }
 
 a_mustered_infantry = {
