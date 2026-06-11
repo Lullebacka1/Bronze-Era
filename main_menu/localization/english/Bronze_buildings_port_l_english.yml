@@ -1,0 +1,14 @@
+﻿l_english:
+  bronze_dock: "Dockyard"
+  bronze_dock_desc: "A permanent waterfront facility where ships are constructed, repaired, equipped, and sheltered. Dockyards bring together shipwrights, sailors, laborers, and supplies, serving as the foundation of organized maritime activity."
+
+  neolithic_dock: "Boatyard"
+  neolithic_dock_desc: "A modest waterfront facility where vessels are constructed, repaired, stored, and launched. Maintained by local craftsmen and boatmen, it supports transport, trade, fishing, and travel along waterways."
+
+  # PRODUCTION METHODS
+
+  dock_maintenance: "Ship Maintenance"
+  dock_maintenance_desc: "Timber, pitch, sails, tools, and skilled labor are continually required to maintain vessels, repair damage, and keep ships seaworthy throughout the sailing season."
+
+  dock_maintenance: "Boat Maintenance"
+  dock_maintenance_desc: "Timber, pitch, cloth, and tools are consumed in the upkeep of vessels, ensuring they remain serviceable for transport, trade, and communication."

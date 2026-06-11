@@ -28,7 +28,12 @@ bronze_age_triumphal_monument = {
 	}
 
 	modifier = {
-		local_crown_estate_power = 0.05
-		local_max_control = 0.020
+		local_crown_estate_power = 0.20
+		local_cultural_influence = 0.20
+		local_max_control = 0.15
 	}
+
+	raw_modifier = {
+		local_cultural_tradition = 0.20
+	}	
 }

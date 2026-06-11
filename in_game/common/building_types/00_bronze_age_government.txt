@@ -27,7 +27,7 @@ bronze_age_victory_stelae = {
 
 	modifier = {
 		local_crown_estate_power = 0.1
-		local_cultural_influence = 0.05
+		local_cultural_influence = 0.1
 		local_max_control = 0.02
 	}
 

@@ -17,11 +17,11 @@ bronze_age_temple_complex_construction = {
 }
 
 bronze_age_monument_construction = {
-	masonry = 5
-	lumber = 5
-	tools = 5
-	goods_gold = 1
-	bronze_age_bronze = 5
+	masonry = 5.0
+	lumber = 5.0
+	tools = 5.0
+	goods_gold = 1.0
+	bronze_age_bronze = 5.0
 
 	category = building_construction
 }
