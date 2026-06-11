@@ -76,8 +76,8 @@ megaron = {
 	modifier = {
 		local_crown_estate_power = 0.05
 		local_noble_estate_power = 0.05
-		local_cultural_influence = 0.05
-		local_cultural_tradition = 0.05
+		local_cultural_influence = 0.06
+		local_cultural_tradition = 0.06
 	}
 
 	possible_production_methods =  {

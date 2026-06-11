@@ -204,6 +204,12 @@
   slave_market_advance: "Organized Slave Trade"
   slave_market_advance_desc: "The growth of long-distance exchange networks and warfare creates opportunities for the organized trade of captives and bonded laborers. Dedicated markets emerge where slaves are bought, sold, and redistributed across regions and societies."
 
+  foreign_cultural_law_advance: "Foreign Communities"
+  foreign_cultural_law_advance_desc: "Growing trade, migration, diplomacy, and conquest bring increasing numbers of foreigners into the realm. Authorities develop customs and legal practices governing the rights, obligations, and status of communities whose traditions differ from those of the dominant culture."
+
+  fort_limit_1_advance: "Defensive Architecture"
+  fort_limit_1_advance_desc: "Growing political competition, expanding warfare, and increasing wealth encourage the construction of permanent fortifications. Defensive works become more numerous and sophisticated, allowing rulers and communities to secure key settlements, frontiers, and strategic routes."
+
   # ##########################
   # PRODUCTION METHODS
   # ##########################

@@ -314,3 +314,35 @@ neolithic_slave_market = {
 	construction_demand = town_building_construction
 
 }
+
+navy_supplies_maker = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = 1
+
+	category = basic_industry_category
+	employment_size = tiny_rural_peasant_produce_employment
+
+	rural_settlement = no
+	town = yes
+	city = no
+	megalopolis = no
+
+	build_time = village_build_time
+
+	unique_production_methods = {
+		naval_supplies_maker_maintenance = {
+			lumber = 0.1
+			fiber_crops = 0.25
+			tar = 0.30
+			cloth = 0.02
+
+			produced = naval_supplies
+			output = 0.3
+			
+			category = guild_input
+		}
+	}
+
+	construction_demand = guild_construction
+}
