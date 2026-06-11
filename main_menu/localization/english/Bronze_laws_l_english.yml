@@ -94,6 +94,28 @@
   bureaucratic_land_law: "Bureaucratic Assignment"
   bureaucratic_land_law_desc: "Rights to land are distributed and managed through administrative appointment rather than permanent ownership. Such arrangements improve the collection of revenue and limit the emergence of independent landed interests, but require a substantial governing apparatus."
 
+  # ############################
+  # ADVISOR COUNCIL POLICIES
+  # ############################
+
+  clergy_admin_policy: "Priestly Advisors"
+  clergy_admin_policy_desc: "Religious officials and temple functionaries occupy prominent positions within the ruler's council. Their knowledge of ritual, tradition, and administration grants the priesthood significant influence over governance."
+
+  noble_admin_policy: "Noble Advisors"
+  noble_admin_policy_desc: "Government is guided by warrior aristocrats and leading landholders whose experience in warfare, leadership, and local affairs makes them natural counselors to the ruler."
+
+  burgher_admin_policy: "Merchant Advisors"
+  burgher_admin_policy_desc: "Merchants, financiers, and trading officials play an important role in administration. Their expertise in exchange, logistics, and commerce encourages a government attentive to economic affairs."
+
+  commune_admin_policy: "Communal Representation"
+  commune_admin_policy_desc: "Village elders, clan leaders, and local assemblies contribute to governance. Their participation ensures that administration remains connected to the needs and customs of ordinary communities."
+
+  dynastic_admin_policy: "Dynastic Household"
+  dynastic_admin_policy_desc: "The ruler increasingly relies upon relatives, household retainers, and personal dependents rather than established institutions. Authority becomes more centralized around the ruling household and its immediate circle."
+
+  council_of_captains: "Council of Captains"
+  council_of_captains_desc: "The realm is guided by a council of experienced captains whose authority rests upon martial success, seamanship, and the loyalty of their followers."
+
   # ###################
   # OTHER POLICIES
   # ###################
@@ -119,3 +141,6 @@
 
   land_property_law: "Land Property"
   land_property_law_desc: "These laws determine who ultimately controls agricultural land and the obligations attached to its use. As the foundation of wealth, taxation, military service, and political authority, land ownership lies at the heart of ancient social organization."
+
+  advisor_council_law: "Advisor Council"
+  advisor_council_law_desc: "Rulers rarely govern alone. These laws determine which social groups provide advisors, administrators, and trusted counselors, shaping the priorities and character of government."

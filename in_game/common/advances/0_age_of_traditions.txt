@@ -418,17 +418,27 @@ regnal_dating_system_advance = {
 	requires = warrior_aristocracy_advance
 }
 
-aristocratic_burial_advance = {
+aristocratic_recognition_advance = {
 	age = age_1_traditions
 	research_cost = 1.5
+	
+	unlock_law = advisor_council_law
+
+	starting_technology_level = 2
+
+	requires = warrior_aristocracy_advance
+}
+
+aristocratic_burial_advance = {
+	age = age_1_traditions
 	
 	unlock_policy = bronze_age_aristocratic_mounds_law
 
 	unlock_building = bronze_age_aristocratic_mounds
 
-	starting_technology_level = 2
+	starting_technology_level = 3
 
-	requires = warrior_aristocracy_advance
+	requires = aristocratic_recognition_advance
 }
 
 heroic_cult_advance = {
