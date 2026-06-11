@@ -1,3 +1,5 @@
+namespace = start_trojan_war_phase_2
+
 start_trojan_war_phase_2.1 = {
 		type = country_event
 		title = trojan_war_phase_2_start.t
