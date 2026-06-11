@@ -297,7 +297,6 @@ palace_administration = {
 	
 	research_cost = 2.0
 
-	unlock_policy = aristocratic_court_policy
 	allow_council_parliament = yes
 	
 	starting_technology_level = 3
@@ -311,7 +310,7 @@ subjects_advance = {
 	allow_subjects = yes
 	unlock_subject_type = tributary
 	
-	requires = distribution_of_power_advance
+	requires = palace_administration
 
 	starting_technology_level = 3
 }
@@ -323,8 +322,6 @@ codified_laws = {
 	requires = palace_administration
 	
 	research_cost = 2.0
-
-	has_codified_laws = yes
 
 	unlock_law = subj_law
 	unlock_law = verdict_law

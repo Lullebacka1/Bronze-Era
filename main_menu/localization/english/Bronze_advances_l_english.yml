@@ -143,6 +143,18 @@
   debt_management_advance: "Debt Administration"
   debt_management_advance_desc: "As economic relations grow more complex, communities develop formal customs and legal frameworks governing loans, obligations, repayment, and default. The regulation of debt becomes an important responsibility of rulers, judges, and local authorities."
 
+  sailing_advance: "Sailing"
+  sailing_advance_desc: "Advances in hull design, rigging, navigation, and seamanship allow vessels to travel greater distances with increased reliability. Waterborne routes become an increasingly important means of communication, exchange, and exploration."
+
+  standard_measurements_advance: "Standard Measurements"
+  standard_measurements_advance_desc: "The adoption of recognized systems of weights, measures, and quantities reduces uncertainty in trade and taxation. Merchants and authorities alike benefit from more predictable exchanges and easier administration."
+
+  charcoal_maker_advance: "Charcoal Production"
+  charcoal_maker_advance_desc: "Specialized methods of converting wood into charcoal provide a fuel that burns hotter and more consistently than ordinary timber, supporting advanced crafts and metallurgical industries."
+
+  masonry_advance: "Masonry"
+  masonry_advance_desc: "The development of specialized stoneworking techniques allows builders to shape, transport, and assemble stone with greater precision. Masonry supports the construction of durable buildings, fortifications, monuments, and public works."
+
   # ##########################
   # BUILDINGS
   # ##########################
