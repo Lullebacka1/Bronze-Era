@@ -1,1 +1,90 @@
-﻿#
+﻿cultural_traditions_law = {
+	law_category = socioeconomic
+	martial_society = {
+		country_modifier = {
+			monthly_army_tradition = 0.05
+			monthly_towards_belligerent = societal_value_monthly_move
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+	civil_society = {
+		country_modifier = {
+			peasants_estate_max_tax = 0.025
+			monthly_towards_conciliatory = societal_value_monthly_move
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+	maritime_society = {
+		unique = yes
+		potential = {
+			OR = {
+				has_or_had_tag = HSA
+				AND = {
+					country_type = building
+					is_merchant_republic = yes
+				}
+			}
+		}
+		country_modifier = {
+			navy_tradition_decay = -0.001
+			monthly_towards_naval = societal_value_minor_monthly_move
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+	pietism_society = { #prussian virtues
+		country_modifier = {
+			monthly_towards_humanist = societal_value_monthly_move
+			stability_decay = -0.00025
+			global_monthly_control = 0.002
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+}
+
+foreign_cultural_law = {
+	law_category = socioeconomic
+
+	allow_foreign_rituals = {
+		country_modifier = {
+			cultures_capacity = 1
+			add_accepted_culture_cost_modifier = -0.25
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+	integrate_foreign_traditions = {
+		country_modifier = {
+			global_pop_assimilation_speed_modifier = 0.1
+			cultural_influence_modifier = 0.05
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+	blood_tax_of_foreigners = {
+		country_modifier = {
+			peasants_estate_max_tax = 0.05
+			wrong_culture_levy_size = 0.25
+			add_accepted_culture_cost_modifier = 0.25
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+}

@@ -94,6 +94,13 @@
   bureaucratic_land_law: "Bureaucratic Assignment"
   bureaucratic_land_law_desc: "Rights to land are distributed and managed through administrative appointment rather than permanent ownership. Such arrangements improve the collection of revenue and limit the emergence of independent landed interests, but require a substantial governing apparatus."
 
+  # ###################
+  # OTHER POLICIES
+  # ###################
+
+  pietism_society: "Pious Society"
+  pietism_society_law_desc: "The community places great importance on maintaining harmony with the divine through ritual, sacrifice, and observance. Religious institutions play a prominent role in preserving social order, legitimizing authority, and guiding the traditions of the people."
+
   # ########################
   # LAWS
   # ########################
