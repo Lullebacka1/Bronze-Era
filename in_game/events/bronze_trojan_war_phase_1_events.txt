@@ -5,11 +5,16 @@ trojan_war_raid_on_anatolia_success.1 = {
     title = trojan_war_raid_on_anatolia_success.t
     desc = trojan_war_raid_on_anatolia_success.d
     
+     trigger = {
+         NOT = {
+            has_global_variable = trojan_war_phase_1_ended
+         }
+    }
     
     hidden = no 
 
-	 immediate = {
-        change_variable = { 
+	immediate = {
+        change_variable_value = { 
             name = global:anatolia_raid_success_count 
             add = 1 
         }
@@ -35,8 +40,8 @@ trojan_war_raid_on_anatolia_failed.1 = {
 
     hidden = no
 
-	 immediate = {
-        change_variable = { 
+	immediate = {
+        change_variable_value = { 
             name = global:anatolia_raid_failed_count 
             add = 1 
         }
@@ -61,6 +66,12 @@ anatolia_coastline_is_defend.1 = {
 	type = country_event
 	title = anatolia_coastline_is_defend.t
 	desc = anatolia_coastline_is_defend.d
+
+     trigger = {
+         NOT = {
+            has_global_variable = trojan_war_phase_1_ended
+         }
+    }
 
 	hidden = no
 
