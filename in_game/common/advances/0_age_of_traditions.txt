@@ -139,17 +139,6 @@ ceremonial_burial_advance = {
 	requires = settlements_advance
 }
 
-urnfield_advance = {
-	age = age_1_traditions
-	icon = urnfield_advance
-	research_cost = 1.5
-	
-	unlock_policy = bronze_age_urnfields_law
-	unlock_building = bronze_age_urnfield_burial_site
-
-	requires = ceremonial_burial_advance
-}
-
 #####################################
 # Palace Economy
 #####################################
