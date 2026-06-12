@@ -2019,3 +2019,8 @@ NOK = {
 	color = rgb { 182 135 53 }
 	color2 = rgb { 66 48 10 }
 }
+
+BANCH = {
+	color = rgb { 159 149 163 }
+	color2 = rgb { 68 24 82 }
+}

@@ -11637,5 +11637,25 @@ countries = {
 			guinea_region
 		}
 	}
+
+	BANCH = {
+		culture = austroasiatic
+		religion = austroasiatic_rites
+		country_rank = rank_county
+		own_control_core = {
+			mancha_khiri
+		}
+		capital = mancha_khiri
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			austroasiatic
+		}
+		discovered_regions = {
+			indochina_region
+		}
+	}
 }
 }
