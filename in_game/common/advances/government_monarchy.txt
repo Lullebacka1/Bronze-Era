@@ -15,7 +15,7 @@ companion_retinues = {
  centralized_administration = {
  	age = age_1_traditions
  	government = monarchy
- 	requires = noble_knights
+ 	requires = palace_administration
 	
  	global_monthly_food_modifier = 0.05
  }
