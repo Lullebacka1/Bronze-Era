@@ -1934,3 +1934,93 @@ ZALP = {
 	color = rgb { 182 171 53 }
 	color2 = rgb { 110 27 27 }
 }
+
+DER = {
+	color = rgb { 111 64 114 }
+	color2 = rgb { 68 24 82 }
+}
+
+ISIN = {
+	color = rgb { 87 57 96 }
+	color2 = rgb { 68 24 82 }
+}
+
+BACTR = {
+	color = rgb { 53 132 182 }
+	color2 = rgb { 24 73 83 }
+}
+
+DEDAN = {
+	color = rgb { 61 53 182 }
+	color2 = rgb { 24 39 83 }
+}
+
+MIDAN = {
+	color = rgb { 182 160 53 }
+	color2 = rgb { 83 64 24 }
+}
+
+OXUS = {
+	color = rgb { 182 53 66 }
+	color2 = rgb { 83 24 33 }
+}
+
+SABA = {
+	color = rgb { 178 184 127 }
+	color2 = rgb { 70 83 24 }
+}
+
+TAYMA = {
+	color = rgb { 182 53 66 }
+	color2 = rgb { 83 24 39 }
+}
+
+THAMU = {
+	color = rgb { 53 150 182 }
+	color2 = rgb { 24 50 83 }
+}
+
+FERGA = {
+	color = rgb { 81 182 53 }
+	color2 = rgb { 42 83 24 }
+}
+
+DIAOK = {
+	color = rgb { 164 106 153 }
+	color2 = rgb { 68 24 82 }
+}
+
+GARA = {
+	color = rgb { 82 105 117 }
+	color2 = rgb { 24 63 83 }
+}
+
+MAYA = {
+	color = rgb { 182 111 53 }
+	color2 = rgb { 83 51 24 }
+}
+
+OLMEC = {
+	color = rgb { 152 53 182 }
+	color2 = rgb { 68 24 82 }
+}
+
+MOKAY = {
+	color = rgb { 182 53 122 }
+	color2 = rgb { 83 24 72 }
+}
+
+TLAPA = {
+	color = rgb { 234 83 201 }
+	color2 = rgb { 83 24 61 }
+}
+
+NOK = {
+	color = rgb { 182 135 53 }
+	color2 = rgb { 66 48 10 }
+}
+
+BANCH = {
+	color = rgb { 159 149 163 }
+	color2 = rgb { 68 24 82 }
+}
