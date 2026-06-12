@@ -1944,3 +1944,38 @@ ISIN = {
 	color = rgb { 87 57 96 }
 	color2 = rgb { 68 24 82 }
 }
+
+BACTR = {
+	color = rgb { 53 132 182 }
+	color2 = rgb { 24 73 83 }
+}
+
+DEDAN = {
+	color = rgb { 61 53 182 }
+	color2 = rgb { 24 39 83 }
+}
+
+MIDAN = {
+	color = rgb { 182 160 53 }
+	color2 = rgb { 83 64 24 }
+}
+
+OXUS = {
+	color = rgb { 182 53 66 }
+	color2 = rgb { 83 24 33 }
+}
+
+SABA = {
+	color = rgb { 178 184 127 }
+	color2 = rgb { 70 83 24 }
+}
+
+TAYMA = {
+	color = rgb { 182 53 66 }
+	color2 = rgb { 83 24 39 }
+}
+
+THAMU = {
+	color = rgb { 53 150 182 }
+	color2 = rgb { 24 50 83 }
+}

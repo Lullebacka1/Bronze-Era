@@ -11468,5 +11468,25 @@ countries = {
 			arabia_region
 		}
 	}
+
+	FERGA = {
+		culture = andronovo
+		religion = iranic
+		country_rank = rank_county
+		own_control_core = {
+			fergana    marghinan  quva       rishton
+		}
+		capital = fergana
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			andronovo
+		}
+		discovered_regions = {
+			khorasan_region
+		}
+	}
 }
 }

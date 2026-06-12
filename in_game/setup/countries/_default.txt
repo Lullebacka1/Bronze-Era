@@ -1979,3 +1979,8 @@ THAMU = {
 	color = rgb { 53 150 182 }
 	color2 = rgb { 24 50 83 }
 }
+
+FERGA = {
+	color = rgb { 81 182 53 }
+	color2 = rgb { 42 83 24 }
+}
