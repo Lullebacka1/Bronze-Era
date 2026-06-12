@@ -1934,3 +1934,13 @@ ZALP = {
 	color = rgb { 182 171 53 }
 	color2 = rgb { 110 27 27 }
 }
+
+DER = {
+	color = rgb { 111 64 114 }
+	color2 = rgb { 68 24 82 }
+}
+
+ISIN = {
+	color = rgb { 87 57 96 }
+	color2 = rgb { 68 24 82 }
+}
