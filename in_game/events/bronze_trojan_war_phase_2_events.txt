@@ -12,7 +12,7 @@ start_trojan_war_phase_2.1 = {
 	option = {
         name = trojan_war_phase_2_start.a
         create_war = {
-			attacker = 0001G
+			attacker = root
 			defender = WILUS
 			casus_belli = trojan_war_casus_belli
 			# connected to \Bronze-Era\in_game\common\casus_belli\00_bronze_trojan_war_phase_2.txt

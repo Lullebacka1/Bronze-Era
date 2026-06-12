@@ -55,7 +55,7 @@ raid_on_anatolia_gui = {
 					modifier = trojan_war_raid_on_anatolia_success
 					months = 12
 				}
-				trigger_event_non_silently = { id = trojan_war_raid_on_anatolia_success.1 } 
+				trigger_event_non_silently = trojan_war_raid_on_anatolia_success.1 
 			}
 
 			20 = {
@@ -88,7 +88,7 @@ raid_on_anatolia_gui = {
 					months = 12
 					
 				}
-				trigger_event_non_silently =  { id = trojan_war_raid_on_anatolia_failed.1 }  
+				trigger_event_non_silently = trojan_war_raid_on_anatolia_failed.1 
 			}
 		}
 

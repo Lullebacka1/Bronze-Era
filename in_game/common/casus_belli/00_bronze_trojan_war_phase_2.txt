@@ -1,3 +1,4 @@
+# the war goal used for the trojan war phase 2
 trojan_war_casus_belli = {
 	valid_for_wargoal = yes
 
