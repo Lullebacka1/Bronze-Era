@@ -1,4 +1,20 @@
-﻿# ############################
+﻿# # Age 1 - Bronze Age
+
+companion_retinues = {
+	age = age_1_traditions
+	government = monarchy
+
+	train_general_cost_modifier = -0.05
+	monthly_army_tradition = 0.05
+
+	starting_technology_level = 4
+
+	requires = aristocratic_recognition_advance
+}
+
+
+
+############################
 # # age_1_traditions 4
 # ############################
 # noble_knights = {
