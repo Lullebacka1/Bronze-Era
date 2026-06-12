@@ -11,31 +11,32 @@ start_trojan_war_phase_2.1 = {
 	
 	option = {
         name = trojan_war_phase_2_start.a
-        create_war = {
+       
+		create_war = {
 			attacker = root
-			defender = WILUS
+			defender = c:WILUS
 			casus_belli = trojan_war_casus_belli
 			# connected to \Bronze-Era\in_game\common\casus_belli\00_bronze_trojan_war_phase_2.txt
 		}
 			if = {
-				limit = { exists = AHHI }
-				add_co_belligerent = AHHI
+				limit = { exists = C:AHHI }
+				add_co_belligerent = C:AHHI
 			}
 			if = {
-				limit = { exists = LYCIA }
-				add_co_belligerent = LYCIA
+				limit = { exists = C:LYCIA }
+				add_co_belligerent = C:LYCIA
 			}
 			if = {
-				limit = { exists = SEHA }
-				add_co_belligerent = SEHA
+				limit = { exists = C:SEHA }
+				add_co_belligerent = C:SEHA
 			}
 			if = {
-				limit = { exists = LUKKA }
-				add_co_belligerent = LUKKA
+				limit = { exists = C:LUKKA }
+				add_co_belligerent = C:LUKKA
 			}
 			if = {
-				limit = { exists = MASA }
-				add_co_belligerent = MASA
+				limit = { exists = C:MASA }
+				add_co_belligerent = C:MASA
 			}
 		 
     }

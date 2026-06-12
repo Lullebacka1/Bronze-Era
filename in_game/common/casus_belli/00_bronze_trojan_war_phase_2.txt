@@ -8,11 +8,14 @@ trojan_war_casus_belli = {
 
 	wargoal = {
 		type = take_province
+		allowed_provinces = {
+			always = yes
+		}
 	}
 
 	
 	trigger = {
-		always = yes
+		NOT = { tag = FROM }
 	}
 
 	war_score_cost = {
