@@ -11559,13 +11559,53 @@ countries = {
 		culture = olmec
 		religion = olmec_rites
 		country_rank = rank_kingdom
-		own_control_core = {
-			acayucan             atzaccan             coatlicamac          coatzacoalco         cosamaloapan         iztachacalapan
-			puctlan              suchilapan           tesechoacan          texistepec           tlacotlalpan         tonala_coatzacoalco
-			tozlan
-		}
+	own_control_core = {
+		acayucan        atzaccan        coatlicamac     coatzacoalco    cosamaloapan    iztachacalapan
+		puctlan         suchilapan      tesechoacan     texistepec      tlacotlalpan    tozlan
+	}
 		capital = tesechoacan
 		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			olmec
+		}
+		discovered_regions = {
+			mesoamerica_region
+		}
+	}
+
+	MOKAY = {
+		culture = olmec
+		religion = olmec_rites
+		country_rank = rank_county
+		own_control_core = {
+			cupilco              tonala_coatzacoalco
+		}
+		capital = tonala_coatzacoalco
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			olmec
+		}
+		discovered_regions = {
+			mesoamerica_region
+		}
+	}
+
+	TLAPA = {
+		culture = olmec
+		religion = olmec_rites
+		country_rank = rank_county
+		own_control_core = {
+			azcapotzalco  chalco        cuauhtitlan   culhuacan     tehotihuacan  tenochtitlan
+			tetzcoco      tlacopan      xaltocan      xochimilco
+		}
+		capital = tenochtitlan
+		include = "Neolithic"
 		government = {
 			ruler = random
 		}
