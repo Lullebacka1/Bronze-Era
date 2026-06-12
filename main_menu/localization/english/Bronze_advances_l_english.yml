@@ -345,3 +345,10 @@
 
   cyclopean_walls_advance: "Cyclopean Masonry"
   cyclopean_walls_advance_desc: "Master builders learn to erect colossal fortifications from immense, irregular stone blocks. These monumental walls protect royal citadels while proclaiming the wealth, authority, and engineering prowess of the ruling dynasty."
+
+# ####################
+# GOVERNMENT SPECIFIC
+# ####################
+
+  centralized_administration: "Centralized Administration"
+  centralized_administration_desc: "Rather than relying upon negotiation between competing local interests, authority is increasingly exercised through institutions answerable to the ruler. The concentration of administrative power allows the monarchy to coordinate the movement of food, labor, and supplies across the realm with greater efficiency."
