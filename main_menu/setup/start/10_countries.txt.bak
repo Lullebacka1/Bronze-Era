@@ -11595,5 +11595,26 @@ countries = {
 			mesoamerica_region
 		}
 	}
+
+	TLAPA = {
+		culture = olmec
+		religion = olmec_rites
+		country_rank = rank_county
+		own_control_core = {
+			azcapotzalco  chalco        cuauhtitlan   culhuacan     tehotihuacan  tenochtitlan
+			tetzcoco      tlacopan      xaltocan      xochimilco
+		}
+		capital = tenochtitlan
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			olmec
+		}
+		discovered_regions = {
+			mesoamerica_region
+		}
+	}
 }
 }

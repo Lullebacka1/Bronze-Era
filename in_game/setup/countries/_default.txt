@@ -2014,3 +2014,8 @@ TLAPA = {
 	color = rgb { 234 83 201 }
 	color2 = rgb { 83 24 61 }
 }
+
+NOK = {
+	color = rgb { 182 135 53 }
+	color2 = rgb { 66 48 10 }
+}

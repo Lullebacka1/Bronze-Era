@@ -2009,3 +2009,8 @@ MOKAY = {
 	color = rgb { 182 53 122 }
 	color2 = rgb { 83 24 72 }
 }
+
+TLAPA = {
+	color = rgb { 234 83 201 }
+	color2 = rgb { 83 24 61 }
+}

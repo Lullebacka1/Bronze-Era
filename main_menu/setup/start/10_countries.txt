@@ -11616,5 +11616,26 @@ countries = {
 			mesoamerica_region
 		}
 	}
+
+	NOK = {
+		culture = nok
+		religion = mande_rites
+		country_rank = rank_county
+		own_control_core = {
+			jos    kuje   lafia  lapai  minna  zuba
+		}
+		capital = zuba
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			nok
+		}
+		discovered_regions = {
+			central_africa_region
+			guinea_region
+		}
+	}
 }
 }
