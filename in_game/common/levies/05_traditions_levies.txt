@@ -158,10 +158,10 @@ levy_steppe_horde = {
 # 	unit = a_mailed_knights
 # }
 
-# levy_noble_cavalry = {
-# 	size = levy_generic_noble_cavalry_size
+#  levy_noble_cavalry = {
+#  	size = levy_generic_noble_cavalry_size
 	
-# 	allowed_pop_type = nobles
+#  	allowed_pop_type = nobles
 	
 # 	unit = a_noble_cavalry
 # }
@@ -191,20 +191,17 @@ levy_chieftains = {
 	unit = a_chieftains
 }
 
-levy_a_mustered_infantry = {
-	size = levy_generic_infantry_size
+# levy_a_mustered_infantry = {
+# 	size = levy_generic_infantry_size
 	
-	allowed_pop_type = peasants
-	allowed_pop_type = laborers
+# 	allowed_pop_type = peasants
+# 	allowed_pop_type = laborers
 	
-	unit = a_mustered_infantry
-}
+# 	unit = a_mustered_infantry
+# }
 
 levy_a_villagers = {
 	size = levy_generic_infantry_size
-	
-	allowed_pop_type = peasants
-	allowed_pop_type = laborers
 	
 	unit = a_villagers
 }

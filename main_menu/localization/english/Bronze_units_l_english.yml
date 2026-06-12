@@ -3,6 +3,8 @@
   a_slingers: "Slingers"
   a_slingers_desc: "Drawn from shepherds, hunters, and common folk, slingers hurl stones with surprising force and accuracy. Cheap to equip and easy to recruit, they provide valuable ranged support on the battlefield."
 
+  a_household_warriors: "Household Guard"
+
   a_simple_chariots: "Simple Chariots"
   a_simple_chariots_desc: "Fast and agile vehicles crewed by a driver and warrior, simple chariots excel at scouting, skirmishing, and harassing slower enemies across open ground."
 

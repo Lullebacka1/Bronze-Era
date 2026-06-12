@@ -4699,10 +4699,9 @@ countries = {
 
 		include = "Neolithic"
 
-		own_control_core = {
-			artanuji batumi gorele khikhani khupati rize savsat surmene
-			trebizond
-		}
+	own_control_core = {
+		gorele     rize       surmene    trebizond
+	}
 		government = {
 			ruler = random
 		}
@@ -5194,15 +5193,16 @@ countries = {
 
 		include = "Bronze"
 
-		own_control_core = {
-			abadan abdanan abdas ahvaz al_madar al_qatr al_tib an_nil
-			arkvaz badra baghdad bakusaya balad_ruz baqubah basra dayr_aqul
-			dehloran dowraq eyvan gilan_gharb hamidiyeh harunabad hawraman hillah
-			hoveyzeh ilam javanrud kamyaran kermanshah khalafabad khalis khanaqin
-			mandali marivan meymeh mosharahat muhammerah nasiriyah numaniyyah qasr_shirin
-			quban rusafa sahrazur samawa shush shushtar suq_al_shuyukh wasit
-			zuwayr
-		}
+	own_control_core = {
+		abadan       abdanan      abdas        ahvaz        al_madar     al_tib
+		an_nil       arkvaz       badra        baghdad      bakusaya     balad_ruz
+		baqubah      basra        dayr_aqul    dehloran     dowraq       eyvan
+		gilan_gharb  hamidiyeh    harunabad    hawraman     hillah       hoveyzeh
+		ilam         javanrud     kamyaran     kermanshah   khalafabad   khalis
+		khanaqin     mandali      marivan      meymeh       mosharahat   muhammerah
+		nasiriyah    numaniyyah   qasr_shirin  quban        rusafa       sahrazur
+		samawa       shush        shushtar     wasit        zuwayr
+	}
 		government = {
 			ruler = random
 		}
@@ -7636,10 +7636,10 @@ countries = {
 
 		include = "Neolithic"
 
-		own_control_core = {
-			al_quwayrah amman aqaba haql karak maan madaba shoubak
-			sughar
-		}
+	own_control_core = {
+		al_quwayrah  amman        aqaba        karak        maan         madaba
+		shoubak      sughar
+	}
 		government = {
 			ruler = random
 		}
@@ -11263,6 +11263,398 @@ countries = {
 		}
 		discovered_regions = {
 			anatolia_region
+		}
+	}
+
+	DER = {
+		culture = sumerian
+		religion = sumerian
+		country_rank = rank_county
+		own_control_core = {
+			badreh       darrehshahr  pol_dokhtar
+		}
+		capital = pol_dokhtar
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			babylonian
+			elamite
+		}
+		tolerated_cultures = {
+			babylonian
+			elamite
+		}
+		discovered_regions = {
+			persia_region
+		}
+	}
+
+	ISIN = {
+		culture = babylonian
+		religion = babylonian
+		country_rank = rank_county
+		own_control_core = {
+			al_qatr         suq_al_shuyukh
+		}
+		capital = al_qatr
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			babylonian
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	BACTR = {
+		culture = bactrian
+		religion = iranic
+		country_rank = rank_kingdom
+		own_control_core = {
+			aiwanj          andarab         andkhoy         aqca            araska          arkhan
+			ashkamesh       baghlan         balkh           basand          boyena_qara     darzanji
+			denov           farkhor         fayzabad        hissar          hulbuk          kelif
+			kerki           khamyab         khulm           kishim          kulob           kunduz
+			mazar_i_sharif  munk            qubodijon       samangan        sangcharak      sar_pol
+			sheberghan      shuman          taleqan         termez          vakhs           wesgird
+			zadian
+		}
+		capital = aiwanj
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			bactrian
+		}
+		discovered_regions = {
+			khorasan_region
+		}
+	}
+
+	DEDAN = {
+		culture = midianite
+		religion = arabian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			al_azlam     al_hawra     al_manjur    al_wajh      bada_yaqub   bir_al_qurr
+			umluj
+		}
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			midianite
+		}
+		discovered_regions = {
+			arabia_region
+		}
+	}
+
+	MIDAN = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_kingdom
+		own_control_core = {
+			al_bad        al_muwaylih   aynuna        bajdah        dhat_al_hajj  duba
+			haql          makna
+		}
+		capital = aynuna
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			egyptian
+		}
+		discovered_regions = {
+			arabia_region
+		}
+	}
+
+	OXUS = {
+		culture = bactrian
+		religion = iranic
+		country_rank = rank_kingdom
+		own_control_core = {
+			akhsisek          alat              amol_turkmenabad  ayni              barkdiz           bukhara
+			chiroqchi         darganata         daya_kathyn       dimishk           firabr            guzor
+			karmana           khoja_idat_kala   kish_shahrisabz   koson             merv              muborak
+			nasaf             navidakh          paikend           panjakent         paykend           samarkand
+			tim_samarkand     vardanzi
+		}
+		capital = firabr
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			bactrian
+		}
+		discovered_regions = {
+			khorasan_region
+		}
+	}
+
+	SABA = {
+		culture = sabaean
+		religion = sabaean
+		country_rank = rank_county
+		own_control_core = {
+			adan                   al_arah                al_ghulayfiqah         al_mafalis             al_mandab              al_mukha
+			as_salafiyah           assab                  bayul                  dhafar                 edd                    hays
+			ibb                    juban                  lahj                   mawza                  mikhlaf_al_hubishiyah  mudhaykirah
+			musaymir               radaa                  rahayta                taizz                  yahr                   zabid
+			zinjibar
+		}
+		capital = ibb
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			sabaean
+		}
+		discovered_regions = {
+			arabia_region
+			ethiopia_region
+		}
+	}
+
+	TAYMA = {
+		culture = arabian
+		religion = arabian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			abu_qasr  basithah  bir_fajr
+		}
+		capital = bir_fajr
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			arabian
+		}
+		discovered_regions = {
+			arabia_region
+		}
+	}
+
+	THAMU = {
+		culture = midianite
+		religion = arabian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			ad_disah      al_bleiteh    al_khanbarah  al_muazzam    al_ukhaydir   al_ula
+			tayma
+		}
+		capital = al_muazzam
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			midianite
+		}
+		discovered_regions = {
+			arabia_region
+		}
+	}
+
+	FERGA = {
+		culture = andronovo
+		religion = iranic
+		country_rank = rank_county
+		own_control_core = {
+			fergana    marghinan  quva       rishton
+		}
+		capital = fergana
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			andronovo
+		}
+		discovered_regions = {
+			khorasan_region
+		}
+	}
+
+	DIAOK = {
+		culture = kartvelian
+		religion = kartvelian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			akhaltsikhe  artanuji     batumi       khikhani     khupati      ozurgeti
+			savsat
+		}
+		capital = khupati
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			kartvelian
+		}
+		discovered_regions = {
+			anatolia_region
+			caucasus_region
+		}
+	}
+
+	GARA = {
+		culture = garamantian
+		religion = garamantian
+		country_rank = rank_county
+		own_control_core = {
+			brak       djanet     ghat       in_amenas  murzuk     qatrun
+			sabha      tazirbu    ubari      zawila
+		}
+		capital = ubari
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			berber
+		}
+		discovered_regions = {
+			maghreb_region
+			sahel_region
+		}
+	}
+
+	MAYA = {
+		culture = olmec
+		religion = olmec_rites
+		country_rank = rank_kingdom
+		own_control_core = {
+			acasaguastlan  campin         chiquimula     cuauhtemallan  guazacapan     huehuetan
+			itzcuintlan    kakol_kiej     nito           paliac         pusilha        toquegua
+			tzoite         xelahuh
+		}
+		capital = acasaguastlan
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			olmec
+		}
+		discovered_regions = {
+			central_america_region
+			mesoamerica_region
+		}
+	}
+
+	OLMEC = {
+		culture = olmec
+		religion = olmec_rites
+		country_rank = rank_kingdom
+	own_control_core = {
+		acayucan        atzaccan        coatlicamac     coatzacoalco    cosamaloapan    iztachacalapan
+		puctlan         suchilapan      tesechoacan     texistepec      tlacotlalpan    tozlan
+	}
+		capital = tesechoacan
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			olmec
+		}
+		discovered_regions = {
+			mesoamerica_region
+		}
+	}
+
+	MOKAY = {
+		culture = olmec
+		religion = olmec_rites
+		country_rank = rank_county
+		own_control_core = {
+			cupilco              tonala_coatzacoalco
+		}
+		capital = tonala_coatzacoalco
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			olmec
+		}
+		discovered_regions = {
+			mesoamerica_region
+		}
+	}
+
+	TLAPA = {
+		culture = olmec
+		religion = olmec_rites
+		country_rank = rank_county
+		own_control_core = {
+			azcapotzalco  chalco        cuauhtitlan   culhuacan     tehotihuacan  tenochtitlan
+			tetzcoco      tlacopan      xaltocan      xochimilco
+		}
+		capital = tenochtitlan
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			olmec
+		}
+		discovered_regions = {
+			mesoamerica_region
+		}
+	}
+
+	NOK = {
+		culture = nok
+		religion = mande_rites
+		country_rank = rank_county
+		own_control_core = {
+			jos    kuje   lafia  lapai  minna  zuba
+		}
+		capital = zuba
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			nok
+		}
+		discovered_regions = {
+			central_africa_region
+			guinea_region
+		}
+	}
+
+	BANCH = {
+		culture = austroasiatic
+		religion = austroasiatic_rites
+		country_rank = rank_county
+		own_control_core = {
+			mancha_khiri
+		}
+		capital = mancha_khiri
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			austroasiatic
+		}
+		discovered_regions = {
+			indochina_region
 		}
 	}
 }
