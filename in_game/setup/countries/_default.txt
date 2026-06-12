@@ -1984,3 +1984,13 @@ FERGA = {
 	color = rgb { 81 182 53 }
 	color2 = rgb { 42 83 24 }
 }
+
+DIAOK = {
+	color = rgb { 164 106 153 }
+	color2 = rgb { 68 24 82 }
+}
+
+GARA = {
+	color = rgb { 82 105 117 }
+	color2 = rgb { 24 63 83 }
+}

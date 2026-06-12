@@ -4699,10 +4699,9 @@ countries = {
 
 		include = "Neolithic"
 
-		own_control_core = {
-			artanuji batumi gorele khikhani khupati rize savsat surmene
-			trebizond
-		}
+	own_control_core = {
+		gorele     rize       surmene    trebizond
+	}
 		government = {
 			ruler = random
 		}
@@ -11466,6 +11465,48 @@ countries = {
 		}
 		discovered_regions = {
 			arabia_region
+		}
+	}
+
+	FERGA = {
+		culture = andronovo
+		religion = iranic
+		country_rank = rank_county
+		own_control_core = {
+			fergana    marghinan  quva       rishton
+		}
+		capital = fergana
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			andronovo
+		}
+		discovered_regions = {
+			khorasan_region
+		}
+	}
+
+	DIAOK = {
+		culture = kartvelian
+		religion = kartvelian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			akhaltsikhe  artanuji     batumi       khikhani     khupati      ozurgeti
+			savsat
+		}
+		capital = khupati
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			kartvelian
+		}
+		discovered_regions = {
+			anatolia_region
+			caucasus_region
 		}
 	}
 }
