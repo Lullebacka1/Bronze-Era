@@ -7637,10 +7637,10 @@ countries = {
 
 		include = "Neolithic"
 
-		own_control_core = {
-			al_quwayrah amman aqaba haql karak maan madaba shoubak
-			sughar
-		}
+	own_control_core = {
+		al_quwayrah  amman        aqaba        karak        maan         madaba
+		shoubak      sughar
+	}
 		government = {
 			ruler = random
 		}
@@ -11309,6 +11309,163 @@ countries = {
 		}
 		discovered_regions = {
 			crescent_region
+		}
+	}
+
+	BACTR = {
+		culture = bactrian
+		religion = iranic
+		country_rank = rank_kingdom
+		own_control_core = {
+			aiwanj          andarab         andkhoy         aqca            araska          arkhan
+			ashkamesh       baghlan         balkh           basand          boyena_qara     darzanji
+			denov           farkhor         fayzabad        hissar          hulbuk          kelif
+			kerki           khamyab         khulm           kishim          kulob           kunduz
+			mazar_i_sharif  munk            qubodijon       samangan        sangcharak      sar_pol
+			sheberghan      shuman          taleqan         termez          vakhs           wesgird
+			zadian
+		}
+		capital = aiwanj
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			bactrian
+		}
+		discovered_regions = {
+			khorasan_region
+		}
+	}
+
+	DEDAN = {
+		culture = midianite
+		religion = arabian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			al_azlam     al_hawra     al_manjur    al_wajh      bada_yaqub   bir_al_qurr
+			umluj
+		}
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			midianite
+		}
+		discovered_regions = {
+			arabia_region
+		}
+	}
+
+	MIDAN = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_kingdom
+		own_control_core = {
+			al_bad        al_muwaylih   aynuna        bajdah        dhat_al_hajj  duba
+			haql          makna
+		}
+		capital = aynuna
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			egyptian
+		}
+		discovered_regions = {
+			arabia_region
+		}
+	}
+
+	OXUS = {
+		culture = bactrian
+		religion = iranic
+		country_rank = rank_kingdom
+		own_control_core = {
+			akhsisek          alat              amol_turkmenabad  ayni              barkdiz           bukhara
+			chiroqchi         darganata         daya_kathyn       dimishk           firabr            guzor
+			karmana           khoja_idat_kala   kish_shahrisabz   koson             merv              muborak
+			nasaf             navidakh          paikend           panjakent         paykend           samarkand
+			tim_samarkand     vardanzi
+		}
+		capital = firabr
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			bactrian
+		}
+		discovered_regions = {
+			khorasan_region
+		}
+	}
+
+	SABA = {
+		culture = sabaean
+		religion = sabaean
+		country_rank = rank_county
+		own_control_core = {
+			adan                   al_arah                al_ghulayfiqah         al_mafalis             al_mandab              al_mukha
+			as_salafiyah           assab                  bayul                  dhafar                 edd                    hays
+			ibb                    juban                  lahj                   mawza                  mikhlaf_al_hubishiyah  mudhaykirah
+			musaymir               radaa                  rahayta                taizz                  yahr                   zabid
+			zinjibar
+		}
+		capital = ibb
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			sabaean
+		}
+		discovered_regions = {
+			arabia_region
+			ethiopia_region
+		}
+	}
+
+	TAYMA = {
+		culture = arabian
+		religion = arabian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			abu_qasr  basithah  bir_fajr
+		}
+		capital = bir_fajr
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			arabian
+		}
+		discovered_regions = {
+			arabia_region
+		}
+	}
+
+	THAMU = {
+		culture = midianite
+		religion = arabian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			ad_disah      al_bleiteh    al_khanbarah  al_muazzam    al_ukhaydir   al_ula
+			tayma
+		}
+		capital = al_muazzam
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			midianite
+		}
+		discovered_regions = {
+			arabia_region
 		}
 	}
 }
