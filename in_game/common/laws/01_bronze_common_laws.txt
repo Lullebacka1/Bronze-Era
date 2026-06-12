@@ -628,3 +628,89 @@ land_property_law = {
 		years = 2
 	}
 }
+
+advisor_council_law = {
+	law_category = administrative
+
+	clergy_admin_policy = {
+		country_modifier = {
+			country_cabinet_efficiency = 0.1
+			monthly_towards_traditionalist = societal_value_monthly_move
+			clergy_estate_target_satisfaction = small_permanent_target_satisfaction
+			global_clergy_city_desired_pop = 0.05
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+
+	noble_admin_policy = {
+		country_modifier = {
+			monthly_army_tradition = 0.05
+			monthly_towards_aristocracy = societal_value_monthly_move
+			nobles_estate_target_satisfaction = small_permanent_target_satisfaction
+			global_nobles_city_desired_pop = 0.005
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+
+	burgher_admin_policy = {
+		country_modifier = {
+			monthly_navy_tradition = 0.05
+			burghers_estate_target_satisfaction = small_permanent_target_satisfaction
+			global_burghers_city_desired_pop = 0.1
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+
+	commune_admin_policy = {
+		country_modifier = {
+			peasants_estate_levy_size = 0.05
+			tribesmen_estate_target_satisfaction = tiny_permanent_target_satisfaction
+			peasants_estate_target_satisfaction = tiny_permanent_target_satisfaction
+			global_tribesmen_desired_pop = 0.025
+			global_peasamt_desired_pop = 0.025
+		}
+		estate_preferences = {
+			tribesmen_estate
+			peasants_estate
+		}
+		years = 2
+	}
+
+	dynastic_admin_policy = {
+		country_modifier = {
+			global_clergy_estate_power = -0.1
+			global_nobles_estate_power = -0.1
+			global_burghers_estate_power = -0.1
+			legislative_efficiency = -0.10
+			monthly_towards_centralization = societal_value_monthly_move
+		}
+		estate_preferences = {
+			crown_estate
+		}
+		years = 2
+	}
+
+	council_of_captains = {
+		unique = yes
+		potential = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+		country_modifier = {
+			monthly_towards_belligerent = societal_value_large_monthly_move
+			monthly_navy_tradition = 0.1
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+}

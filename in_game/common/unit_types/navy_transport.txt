@@ -22,93 +22,93 @@
 	gfx_tags = { fishing_tag }
 }
 
-n_cog = {
-	category = navy_transport
-	copy_from = n_age_1_traditions_transport
-	#root = location. Checks location_potential first so don't need that scripting in
-	mercenaries_per_location = {
-		pop_type = burghers
-		multiply = 0.05
-	}
+# n_cog = {
+# 	category = navy_transport
+# 	copy_from = n_age_1_traditions_transport
+# 	#root = location. Checks location_potential first so don't need that scripting in
+# 	mercenaries_per_location = {
+# 		pop_type = burghers
+# 		multiply = 0.05
+# 	}
 	
-	age = "age_1_traditions"
+# 	age = "age_1_traditions"
 	
-	upgrades_to = n_hulk
+# 	upgrades_to = n_hulk
 
-	potential = { 
-		has_or_had_tag = PREMODERN
-	}
-}
+# 	potential = { 
+# 		has_or_had_tag = PREMODERN
+# 	}
+# }
 
-n_hulk = {
-	category = navy_transport
-	copy_from = n_age_2_renaissance_transport
-	#root = location. Checks location_potential first so don't need that scripting in
-	mercenaries_per_location = {
-		pop_type = burghers
-		multiply = 0.05
-	}
-	age = "age_2_renaissance"
+# n_hulk = {
+# 	category = navy_transport
+# 	copy_from = n_age_2_renaissance_transport
+# 	#root = location. Checks location_potential first so don't need that scripting in
+# 	mercenaries_per_location = {
+# 		pop_type = burghers
+# 		multiply = 0.05
+# 	}
+# 	age = "age_2_renaissance"
 	
-	upgrades_to = n_flute
+# 	upgrades_to = n_flute
 
-	potential = { 
-		has_or_had_tag = PREMODERN
-	}
-}
+# 	potential = { 
+# 		has_or_had_tag = PREMODERN
+# 	}
+# }
 
-n_flute = {
-	category = navy_transport
-	copy_from = n_age_3_discovery_transport
+# n_flute = {
+# 	category = navy_transport
+# 	copy_from = n_age_3_discovery_transport
 	
-	mercenaries_per_location = {
-		pop_type = burghers
-		multiply = 0.025
-	}
-	age = "age_3_discovery"
-	upgrades_to = n_brig
+# 	mercenaries_per_location = {
+# 		pop_type = burghers
+# 		multiply = 0.025
+# 	}
+# 	age = "age_3_discovery"
+# 	upgrades_to = n_brig
 
-	potential = { 
-		has_or_had_tag = PREMODERN
-	}
-}
+# 	potential = { 
+# 		has_or_had_tag = PREMODERN
+# 	}
+# }
 
-n_brig = {
-	category = navy_transport
-	copy_from = n_age_4_reformation_transport
-	age = "age_4_reformation"
+# n_brig = {
+# 	category = navy_transport
+# 	copy_from = n_age_4_reformation_transport
+# 	age = "age_4_reformation"
 	
-	mercenaries_per_location = {
-		pop_type = burghers
-		multiply = 0.01
-	}
+# 	mercenaries_per_location = {
+# 		pop_type = burghers
+# 		multiply = 0.01
+# 	}
 
-	potential = { 
-		has_or_had_tag = PREMODERN
-	}
+# 	potential = { 
+# 		has_or_had_tag = PREMODERN
+# 	}
 
 	
-	upgrades_to = n_merchantman
-}
+# 	upgrades_to = n_merchantman
+# }
 
-n_merchantman = {
-	category = navy_transport
-	copy_from = n_age_5_absolutism_transport
-	age = "age_5_absolutism"
-	upgrades_to = n_eastindiaman
+# n_merchantman = {
+# 	category = navy_transport
+# 	copy_from = n_age_5_absolutism_transport
+# 	age = "age_5_absolutism"
+# 	upgrades_to = n_eastindiaman
 
-	potential = { 
-		has_or_had_tag = PREMODERN
-	}
-}
+# 	potential = { 
+# 		has_or_had_tag = PREMODERN
+# 	}
+# }
 
-n_eastindiaman = {
-	category = navy_transport
-	copy_from = n_age_6_revolutions_transport
-	age = "age_6_revolutions"
+# n_eastindiaman = {
+# 	category = navy_transport
+# 	copy_from = n_age_6_revolutions_transport
+# 	age = "age_6_revolutions"
 
-	potential = { 
-		has_or_had_tag = PREMODERN
-	}
+# 	potential = { 
+# 		has_or_had_tag = PREMODERN
+# 	}
 
-}
+# }
