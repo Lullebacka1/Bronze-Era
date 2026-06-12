@@ -11509,5 +11509,27 @@ countries = {
 			caucasus_region
 		}
 	}
+
+	GARA = {
+		culture = garamantian
+		religion = garamantian
+		country_rank = rank_county
+		own_control_core = {
+			brak       djanet     ghat       in_amenas  murzuk     qatrun
+			sabha      tazirbu    ubari      zawila
+		}
+		capital = ubari
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			berber
+		}
+		discovered_regions = {
+			maghreb_region
+			sahel_region
+		}
+	}
 }
 }

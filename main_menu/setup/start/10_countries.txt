@@ -11531,5 +11531,50 @@ countries = {
 			sahel_region
 		}
 	}
+
+	MAYA = {
+		culture = olmec
+		religion = olmec_rites
+		country_rank = rank_kingdom
+		own_control_core = {
+			acasaguastlan  campin         chiquimula     cuauhtemallan  guazacapan     huehuetan
+			itzcuintlan    kakol_kiej     nito           paliac         pusilha        toquegua
+			tzoite         xelahuh
+		}
+		capital = acasaguastlan
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			olmec
+		}
+		discovered_regions = {
+			central_america_region
+			mesoamerica_region
+		}
+	}
+
+	OLMEC = {
+		culture = olmec
+		religion = olmec_rites
+		country_rank = rank_kingdom
+		own_control_core = {
+			acayucan             atzaccan             coatlicamac          coatzacoalco         cosamaloapan         iztachacalapan
+			puctlan              suchilapan           tesechoacan          texistepec           tlacotlalpan         tonala_coatzacoalco
+			tozlan
+		}
+		capital = tesechoacan
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			olmec
+		}
+		discovered_regions = {
+			mesoamerica_region
+		}
+	}
 }
 }

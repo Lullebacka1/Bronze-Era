@@ -1994,3 +1994,13 @@ GARA = {
 	color = rgb { 82 105 117 }
 	color2 = rgb { 24 63 83 }
 }
+
+MAYA = {
+	color = rgb { 182 111 53 }
+	color2 = rgb { 83 51 24 }
+}
+
+OLMEC = {
+	color = rgb { 152 53 182 }
+	color2 = rgb { 68 24 82 }
+}
