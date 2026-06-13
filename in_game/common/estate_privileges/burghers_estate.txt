@@ -1,0 +1,124 @@
+﻿protected_travel = {
+	estate = burghers_estate
+	
+	country_modifier = {
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_burghers_estate_power = 0.20
+		land_cost_on_distance_from_capital_speed_propagation = 0.1
+		court_spending_cost_modifier = 0.05
+	}
+}
+
+protection_abroad = {
+	estate = burghers_estate
+	
+	country_modifier = {
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_burghers_estate_power = 0.20
+		diplomatic_spending_cost = 0.10
+
+		export_efficiency = tiny_trade_efficiency_bonus
+
+	}
+}
+
+royal_compensation = {
+	estate = burghers_estate
+	
+	country_modifier = {
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_burghers_estate_power = 0.20
+		court_spending_cost_modifier = 0.05
+	}
+}
+
+customs_exemption = {
+	estate = burghers_estate
+	
+	country_modifier = {
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		export_efficiency = small_trade_efficiency_bonus
+		global_burghers_estate_power = 0.30
+		burghers_estate_max_tax = -0.1
+	}
+}
+
+trade_districts = {
+	estate = burghers_estate
+	
+	country_modifier = {
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_burghers_estate_power = 0.30
+		global_max_rgo_size_modifier_in_non_rural = -0.20
+
+		export_efficiency = small_trade_efficiency_bonus
+		import_efficiency = small_trade_efficiency_bonus
+	}
+}
+
+commercial_monopolies = {
+	estate = burghers_estate
+	allow = {
+    	NOT = { has_estate_privilege = estate_privilege:administrative_incorporation }
+	}
+	
+	country_modifier = {
+		burghers_estate_target_satisfaction = large_privilege_target_satisfaction
+		global_trades_per_burgher = 1.0
+		global_merchant_capacity_modifier = -0.50
+		global_burghers_estate_power = 0.50
+	}
+}
+
+protected_inheritance = {
+	estate = burghers_estate
+	
+	country_modifier = {
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_burghers_estate_power = 0.40
+		estate_enrichment = 0.10
+
+	}
+}
+
+administrative_incorporation = {
+	estate = burghers_estate
+	allow = {
+    	NOT = { has_estate_privilege = estate_privilege:commercial_monopolies }
+	}
+
+	country_modifier = {
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_burghers_estate_power = 0.50
+		global_trades_per_burgher = -1.0
+		global_merchant_capacity_modifier = 0.50
+	}
+}
+
+burghers_protected_faith = {
+	estate = burghers_estate
+	allow = { 
+		religious_unity < 0.66
+	}
+	country_modifier = {
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_burghers_estate_power = 0.30
+		global_burghers_conversion_blocked = yes
+	}
+
+	can_revoke = {}
+}
+
+sponsor_maritime_contracts = {
+	estate = burghers_estate
+
+	potential = {
+		num_of_ports > 0
+	}
+	
+	country_modifier = {
+		global_maritime_presence_modifier = 0.05
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_burghers_estate_power = 0.30
+	}
+}

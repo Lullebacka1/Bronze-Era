@@ -1,0 +1,31 @@
+﻿l_english:
+
+  protected_travel: "Protected Travel"
+  protected_travel_desc: "Merchants are granted guarantees of safe passage along roads, rivers, and trade routes. Authorities commit resources to maintaining the security of commerce and the movement of goods."
+
+  protection_abroad: "Protection Abroad"
+  protection_abroad_desc: "The state extends its protection to merchants operating beyond its borders, employing diplomacy and political influence to safeguard commercial interests in foreign lands."
+
+  royal_compensation: "Royal Compensation"
+  royal_compensation_desc: "Merchants who suffer losses through banditry, piracy, or official misconduct may seek compensation from the ruler's administration, reducing the risks associated with long-distance trade."
+
+  customs_exemption: "Customs Exemption"
+  customs_exemption_desc: "Favored merchants receive exemptions from certain tolls, duties, and market fees, encouraging commercial activity while reducing the revenues available to the state."
+
+  trade_districts: "Trade Districts"
+  trade_districts_desc: "Designated commercial quarters concentrate merchants, warehouses, markets, and workshops in specific areas, creating thriving centers of exchange and economic activity."
+
+  commercial_monopolies: "Commercial Monopolies"
+  commercial_monopolies_desc: "Exclusive trading rights are granted to privileged merchant groups, allowing them to dominate key routes and commodities while limiting competition from rivals."
+
+  protected_inheritance: "Protected Inheritance"
+  protected_inheritance_desc: "Commercial property, contracts, and accumulated wealth enjoy strong legal protections, allowing merchant families to preserve and expand their fortunes across generations."
+
+  administrative_incorporation: "Administrative Incorporation"
+  administrative_incorporation_desc: "Merchant communities are increasingly integrated into the state's administrative structures. Commercial expertise is employed in governance, taxation, logistics, and the management of exchange."
+
+  burghers_protected_faith: "Protected Faith"
+  burghers_protected_faith_desc: "Merchant communities are permitted to maintain their own religious traditions and practices, encouraging commerce across cultural and religious boundaries."
+
+  sponsor_maritime_contracts: "Sponsored Maritime Contracts"
+  sponsor_maritime_contracts_desc: "Authorities support commercial ventures by recognizing and enforcing agreements related to shipping, cargo, and maritime trade, reducing uncertainty for merchants operating on waterways."
