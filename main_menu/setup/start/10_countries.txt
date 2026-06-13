@@ -11766,5 +11766,49 @@ countries = {
 			persia_region
 		}
 	}
+
+	CIMME = {
+		culture = scythian
+		religion = scythian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			kaynar          koskuduk        kulagin         manysai         mavliberda      sarayjuk
+			shagan          shagiz          shatyrlysay     tas_kichu       tenteksor       ushkan
+			zhaksy_karasay
+		}
+		capital = sarayjuk
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			scythian
+		}
+		discovered_regions = {
+			khorasan_region
+			steppes_region
+		}
+	}
+
+	MUMUN = {
+		culture = mumun
+		religion = mumun_rites
+		country_rank = rank_county
+		own_control_core = {
+			geoje     hadong    hapcheon  jinju     namhae    sacheon
+			uian
+		}
+		capital = sacheon
+		include = "Neolithic_Est"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			mumun
+		}
+		discovered_regions = {
+			korea_region
+		}
+	}
 }
 }

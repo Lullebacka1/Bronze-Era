@@ -2049,3 +2049,13 @@ SHERH = {
 	color = rgb { 223 93 139 }
 	color2 = rgb { 210 86 135 }
 }
+
+CIMME = {
+	color = rgb { 53 91 182 }
+	color2 = rgb { 28 24 83 }
+}
+
+MUMUN = {
+	color = rgb { 54 66 221 }
+	color2 = rgb { 57 43 125 }
+}

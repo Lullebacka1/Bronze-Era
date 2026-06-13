@@ -10783,7 +10783,7 @@ countries = {
 
 	country_rank = rank_county
 
-		include = "Bronze"
+		include = "Neolithic_Est"
 
 		government = {
 			ruler = random
@@ -10798,9 +10798,7 @@ countries = {
 		shahrestan_sofla  shamiram          sirdan            takestan          varamin
 	}
 	accepted_cultures = {
-		harappan
-		hindu
-		vedic
+		persian
 	}
 	tolerated_cultures = {
 		dravidian
