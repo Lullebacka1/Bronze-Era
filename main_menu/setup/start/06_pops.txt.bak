@@ -77858,7 +77858,12 @@ nkambe = {
 	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
 }
 lafia = {
-	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = tribesmen
+		size = 0
+		culture = nok
+		religion = mande_rites
+	}
 }
 gaoui = {
 	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
@@ -87000,31 +87005,116 @@ hemang = {
 	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
 }
 mokwa = {
-	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = mande	religion = mande_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
 }
 bida = {
-	define_pop = {	type = nobles	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = burghers	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = mande	religion = mande_rites }
-	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0
+		culture = nok
+		religion = mande_rites
+	}
 }
 tada = {
-	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = mande	religion = mande_rites }
-	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0
+		culture = nok
+		religion = mande_rites
+	}
 }
 nupeko = {
-	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = mande	religion = mande_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
 }
 minna = {
-	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = mande	religion = mande_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
 }
 jebba = {
 	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
@@ -87032,27 +87122,92 @@ jebba = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = mande	religion = mande_rites }
 }
 lokoja = {
-	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = mande	religion = mande_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
 }
 lapai = {
-	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = mande	religion = mande_rites }
-	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0
+		culture = nok
+		religion = mande_rites
+	}
 }
 zuba = {
-	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = mande	religion = mande_rites }
-	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0
+		culture = nok
+		religion = mande_rites
+	}
 }
 jos = {
-	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = mande	religion = mande_rites }
-	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0
+		culture = nok
+		religion = mande_rites
+	}
 }
 kuje = {
-	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = tribesmen
+		size = 0
+		culture = nok
+		religion = mande_rites
+	}
 }
 idah = {
 	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
@@ -88592,9 +88747,24 @@ zuru = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = mande	religion = mande_rites }
 }
 kulfo = {
-	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = mande	religion = mande_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
 }
 kotonkoro = {
 	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
@@ -88609,19 +88779,64 @@ zazzau = {
 	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
 }
 turunku = {
-	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = mande	religion = mande_rites }
-	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0
+		culture = nok
+		religion = mande_rites
+	}
 }
 birnin_gwari = {
-	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = mande	religion = mande_rites }
-	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0
+		culture = nok
+		religion = mande_rites
+	}
 }
 lere = {
-	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = mande	religion = mande_rites }
-	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0
+		culture = nok
+		religion = mande_rites
+	}
 }
 anchau = {
 	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
@@ -88629,9 +88844,24 @@ anchau = {
 	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
 }
 tegina = {
-	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = mande	religion = mande_rites }
-	define_pop = {	type = tribesmen	size = 00.000	culture = mande	religion = mande_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = nok
+		religion = mande_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0
+		culture = nok
+		religion = mande_rites
+	}
 }
 biram = {
 	define_pop = {	type = clergy	size = 0.010	culture = mande	religion = mande_rites }

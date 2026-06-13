@@ -3904,9 +3904,10 @@ countries = {
 
 		include = "Bronze"
 
-		own_control_core = {
-			al_mashqar al_uqayr eglat_faisal manama sayhat zubarah
-		}
+	own_control_core = {
+		al_bidda      al_huwaila    al_jubayl     al_mashqar    al_qatif      al_udayd
+		al_uqayr      eglat_faisal  manama        sayhat        sir_bani_yas  zubarah
+	}
 		government = {
 			ruler = random
 		}
@@ -5795,12 +5796,14 @@ countries = {
 
 		include = "Bronze"
 
-		own_control_core = {
-			abu_dhabi al_ayn al_dhaid al_kamil_wal_wafi al_khaburah as_sib bahla dubai
-			ibra ibri izki jalan_buani_buali julfar khor_fakkan masirah masqat
-			nakhal nizwa qalhat rustaq saham sharjah shinas sinaw
-			suhar sur yanqul
-		}
+	own_control_core = {
+		abu_dhabi          al_ayn             al_dhaid           al_kamil_wal_wafi  al_khaburah        as_sib
+		bahla              bandar_e_jask      dubai              hormuz             ibra               ibri
+		izki               jalan_buani_buali  julfar             khor_fakkan        marawah            masirah
+		masqat             nakhal             nizwa              qalhat             rustaq             saham
+		sharjah            shinas             sinaw              sirik              suhar              sur
+		yanqul
+	}
 		government = {
 			ruler = random
 		}
@@ -10526,9 +10529,9 @@ countries = {
 			ruler = random
 		}
 
-		own_control_core = {
-			ar_rukai ash_shuaybah kazimah qurain
-		}
+	own_control_core = {
+		ar_rukai      ash_shuaybah  jannah        kazimah       qurain
+	}
 		accepted_cultures = { hindu harappan vedic }
 		tolerated_cultures = { harappan vedic dravidian gandharan }
 			discovered_regions = {
@@ -10780,7 +10783,7 @@ countries = {
 
 	country_rank = rank_county
 
-		include = "Bronze"
+		include = "Neolithic_Est"
 
 		government = {
 			ruler = random
@@ -10795,9 +10798,7 @@ countries = {
 		shahrestan_sofla  shamiram          sirdan            takestan          varamin
 	}
 	accepted_cultures = {
-		harappan
-		hindu
-		vedic
+		persian
 	}
 	tolerated_cultures = {
 		dravidian
@@ -11103,9 +11104,9 @@ countries = {
 			ruler = random
 		}
 
-		own_control_core = {
-			gwadar gwatar kuddan
-		}
+	own_control_core = {
+		gwadar
+	}
 		accepted_cultures = { hindu harappan vedic }
 		tolerated_cultures = { harappan vedic dravidian gandharan }
 			discovered_regions = {
@@ -11635,6 +11636,134 @@ countries = {
 		discovered_regions = {
 			central_africa_region
 			guinea_region
+		}
+	}
+
+	BANCH = {
+		culture = austroasiatic
+		religion = austroasiatic_rites
+		country_rank = rank_county
+		own_control_core = {
+			mancha_khiri
+		}
+		capital = mancha_khiri
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			austroasiatic
+		}
+		discovered_regions = {
+			indochina_region
+		}
+	}
+
+	ANSHA = {
+		culture = persian
+		religion = iranic
+		country_rank = rank_county
+		own_control_core = {
+			abadeh          abadeh_tashk    abarkuh         aspas           bavanat         beyza
+			eqlid           fasa            harat           istakhr         khabar          kherameh
+			marvast         meshkan         meymand         neyriz          qala_safid      qaryat_al_bidh
+			saadatshahr     samiram         sarvestan       shahr_e_babak   shahr_meyan     shiraz
+			sisakht         yasuj           yazdikhwast     zarqan
+		}
+		capital = kherameh
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			persian
+		}
+		discovered_regions = {
+			persia_region
+		}
+	}
+
+	GUPIN = {
+		culture = persian
+		religion = iranic
+		country_rank = rank_county
+		own_control_core = {
+			al_tiz       bih          gwatar       kalmat       qasr_e_qand  rask
+		}
+		capital = gwatar
+		include = "Neolithic_Est"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			persian
+		}
+		discovered_regions = {
+			persia_region
+		}
+	}
+
+	LULU = {
+		culture = iranun_culture
+		religion = iranic
+		country_rank = rank_county
+		own_control_core = {
+			aleshtar      khorramabad   sarab_dowreh
+		}
+		capital = sarab_dowreh
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			iranun_culture
+		}
+		discovered_regions = {
+			persia_region
+		}
+	}
+
+	MARHA = {
+		culture = persian
+		religion = iranic
+		country_rank = rank_county
+		own_control_core = {
+			arzu                   baft                   bandar_khamir          darab                  darz                   fin
+			gamrun                 hajjiabad              hajjiabad_zarrindasht  ij_iran                jahrom                 jannat_shahr
+			juyom                  kariyan                khabr                  khatunabad             lar                    qatruyeh
+			rostaq                 ruydar                 saadatabad             sirjan                 soghan                 tarom
+		}
+		capital = juyom
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			persian
+		}
+		discovered_regions = {
+			persia_region
+		}
+	}
+
+	SHERH = {
+		culture = persian
+		religion = iranic
+		country_rank = rank_county
+		own_control_core = {
+			ahel           asir           bandar_charak  bandar_lengeh  bastak         kish
+			siraf
+		}
+		capital = kish
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			persian
+		}
+		discovered_regions = {
+			persia_region
 		}
 	}
 }
