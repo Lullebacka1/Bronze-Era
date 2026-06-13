@@ -1,7 +1,7 @@
 ﻿{
 	"name":	"Bronze Era ",
 	"id":	"vador03.bronzeage.test",
-	"version":	"01.7.9",
+	"version":	"01.8.3",
 	"supported_game_version":	"1.2.5",
 	"short_description":	"Bronze Age   Date",
 	"tags":	["Events", "Historical", "Map"],
