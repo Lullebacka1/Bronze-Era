@@ -595,6 +595,18 @@ trade_caravans = {
 	starting_technology_level = 3
 }
 
+merchant_enclaves_advance = {
+	age = age_1_traditions
+	icon = trade_caravans
+	research_cost = 1.5
+
+	requires = trade_caravans
+
+	unlock_subject_type = merchant_enclave
+
+	starting_technology_level = 3
+}
+
 sailing_advance = {
 	age = age_1_traditions
 	icon = trade_caravans
