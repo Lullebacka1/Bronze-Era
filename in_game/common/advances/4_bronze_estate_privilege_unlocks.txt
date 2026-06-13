@@ -1,0 +1,82 @@
+protected_travel_advance = {
+	age = age_1_traditions
+	icon = trade_caravans
+	research_cost = 1.5
+
+	requires = maintained_holloway_advance
+
+	unlock_estate_privilege = protected_travel
+
+	starting_technology_level = 4
+}
+
+protection_abroad_advance = {
+	age = age_1_traditions
+	icon = trade_caravans
+	research_cost = 1.5
+
+	requires = bronze_age_trade_posts_advance
+
+	unlock_estate_privilege = protection_abroad
+
+	starting_technology_level = 4
+}
+
+tax_exemption_advance = {
+	age = age_1_traditions
+	icon = trade_caravans
+	research_cost = 1.5
+
+	requires = taxation_advance
+
+	unlock_estate_privilege = customs_exemption
+	unlock_estate_privilege = clergy_tax_exemption
+
+	starting_technology_level = 4
+}
+
+administrative_incorporation_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	requires = palace_trade_registry_advance
+
+	unlock_estate_privilege = administrative_incorporation
+
+	starting_technology_level = 3
+}
+
+commercial_monopolies_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	requires = merchants_quarters_unlock_advance
+
+	unlock_estate_privilege = commercial_monopolies
+
+	starting_technology_level = 4
+}
+
+sponsor_maritime_contracts_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	requires = unlock_round_ship_advance
+
+	unlock_estate_privilege = sponsor_maritime_contracts
+
+	starting_technology_level = 4
+}
+
+ritual_service_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	requires = royal_rituals_advance
+
+	unlock_estate_privilege = ritual_service
+
+	starting_technology_level = 4
+}
+
+
