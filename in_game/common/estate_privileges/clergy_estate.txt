@@ -1,1 +1,72 @@
-﻿
+﻿clergy_tax_exemption = {
+	estate = clergy_estate
+	
+	country_modifier = {
+		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_clergy_estate_power = 0.30
+		clergy_estate_max_tax = -0.15
+	}
+}
+
+clergy_judicial_authority = {
+	estate = clergy_estate
+	
+	country_modifier = {
+		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_clergy_estate_power = 0.30
+
+		tolerance_heretic = -0.1
+		tolerance_heathen = -0.1
+	}
+}
+
+clergy_exclusive_literacy_rights = {
+	estate = clergy_estate
+
+	potential = {
+		OR = {
+			has_advance = elite_scripts_advance
+			has_advance = alphabet_script_advance
+		}
+	}
+	allow = {
+	}
+	can_revoke = {
+	}
+	
+	country_modifier = {
+		clergy_estate_target_satisfaction = large_privilege_target_satisfaction
+		global_clergy_max_literacy = 5
+		global_clergy_estate_power = 0.40
+		
+		global_nobles_max_literacy = -5
+		global_peasants_max_literacy = -5
+		global_burghers_max_literacy = -5
+
+		monthly_towards_traditionalist = societal_value_monthly_move
+	}
+}
+
+ritual_service = {
+	estate = clergy_estate
+	
+	country_modifier = {
+		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_clergy_estate_power = 0.20
+
+		stability_cost = -0.1
+	}
+}
+
+sacred_herds = {
+	estate = clergy_estate
+	
+	country_modifier = {
+		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_clergy_estate_power = 0.10
+		monthly_religious_influence = 0.2
+
+		estate_enrichment = 0.10
+		global_livestock_output_modifier = -0.025
+	}
+}
