@@ -155,6 +155,9 @@
   masonry_advance: "Masonry"
   masonry_advance_desc: "The development of specialized stoneworking techniques allows builders to shape, transport, and assemble stone with greater precision. Masonry supports the construction of durable buildings, fortifications, monuments, and public works."
 
+  merchant_enclaves_advance: "Merchant Enclaves"
+  merchant_enclaves_advance_desc: "Growing trade networks encourage rulers and communities to grant foreign merchants designated quarters, ports, and settlements from which they can conduct business. These enclaves serve as centers of exchange, linking distant markets while facilitating the movement of goods, information, and commercial practices."
+
   # ##########################
   # BUILDINGS
   # ##########################
@@ -345,3 +348,10 @@
 
   cyclopean_walls_advance: "Cyclopean Masonry"
   cyclopean_walls_advance_desc: "Master builders learn to erect colossal fortifications from immense, irregular stone blocks. These monumental walls protect royal citadels while proclaiming the wealth, authority, and engineering prowess of the ruling dynasty."
+
+# ####################
+# GOVERNMENT SPECIFIC
+# ####################
+
+  centralized_administration: "Centralized Administration"
+  centralized_administration_desc: "Rather than relying upon negotiation between competing local interests, authority is increasingly exercised through institutions answerable to the ruler. The concentration of administrative power allows the monarchy to coordinate the movement of food, labor, and supplies across the realm with greater efficiency."
