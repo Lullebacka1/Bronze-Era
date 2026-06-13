@@ -10798,9 +10798,7 @@ countries = {
 		shahrestan_sofla  shamiram          sirdan            takestan          varamin
 	}
 	accepted_cultures = {
-		harappan
-		hindu
-		vedic
+		persian
 	}
 	tolerated_cultures = {
 		dravidian
