@@ -23,7 +23,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 		own_control_core = {
 			amorgos andravida andritsaina andros angelokastron argos balat bodonitsa
@@ -58,7 +58,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_empire"
 
 		own_control_core = {
 			acre
@@ -181,7 +181,7 @@ countries = {
 
 	country_rank = rank_empire
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 	own_control_core = {
 		adana           afrin           afsin           akdagmadeni     aksaray         aksehir
@@ -235,7 +235,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -263,7 +263,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -289,7 +289,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -311,7 +311,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -333,7 +333,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -355,7 +355,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -377,7 +377,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -399,7 +399,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -421,7 +421,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -443,7 +443,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -465,7 +465,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -487,7 +487,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -509,7 +509,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -531,7 +531,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -553,7 +553,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -577,7 +577,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -599,7 +599,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -621,7 +621,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -645,7 +645,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -668,7 +668,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -690,7 +690,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -712,7 +712,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -734,7 +734,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -756,7 +756,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -778,7 +778,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -800,7 +800,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -822,7 +822,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -844,7 +844,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -866,7 +866,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -888,7 +888,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -910,7 +910,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -932,7 +932,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -954,7 +954,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -976,7 +976,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -998,7 +998,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -1020,7 +1020,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -1041,7 +1041,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -1062,7 +1062,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		own_control_core = {
 			sidon
@@ -1089,7 +1089,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -1110,7 +1110,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -1159,7 +1159,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			dupnitsa samokov sredets svoge tsaribrod velbuzd zemlungrad
@@ -1186,7 +1186,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -1208,7 +1208,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		own_control_core = {
 			famagusta kyrenia larnaca limassol morphou nicosia_cyp paphos
@@ -1235,7 +1235,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -1260,7 +1260,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -1285,7 +1285,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -1306,7 +1306,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -1330,7 +1330,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			debar kicevo ohrid prilep skopje tetovo
@@ -1353,7 +1353,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_caucasus"
 
 		own_control_core = {
 			ahlat bargiri baskale catak ercis hosap tatvan van
@@ -1376,7 +1376,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -1404,7 +1404,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -1425,7 +1425,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		own_control_core = {
 			baalbek hama homs idlib kafartab khanaser marrat masyaf
@@ -1453,7 +1453,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -1481,7 +1481,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -1506,7 +1506,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -1527,7 +1527,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -1555,7 +1555,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -1580,7 +1580,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -1601,7 +1601,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_iran_arabia"
 
 		government = {
 			ruler = random
@@ -1625,7 +1625,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			borac doboj dubrovnik gacko glaz gradina gradiski_brod jajce
@@ -1655,7 +1655,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -1681,7 +1681,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -1703,7 +1703,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		own_control_core = {
 			adra almanzora almeria baza caravaca cartagena cieza gergal
@@ -1731,7 +1731,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -1756,7 +1756,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -1777,7 +1777,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -1802,7 +1802,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		own_control_core = {
 			baniyas tartus tripoli_syria
@@ -1825,7 +1825,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_empire"
 
 		own_control_core = {
 			abu_kemal akre al_anbar al_sinn altun_kupri amadiya anah ar_rabb
@@ -1858,7 +1858,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -1884,7 +1884,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -1905,7 +1905,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -1930,7 +1930,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -1955,7 +1955,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -1980,7 +1980,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -2001,7 +2001,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_caucasus"
 
 		own_control_core = {
 			bayburt erzurum gumushane hasankale hinis ispir kelkit oltu
@@ -2029,7 +2029,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -2054,7 +2054,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -2075,7 +2075,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -2099,7 +2099,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		own_control_core = {
 			ciudadela_de_menorca ibiza manacor palma pollensa
@@ -2122,7 +2122,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		own_control_core = {
 			tavira
@@ -2149,7 +2149,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -2174,7 +2174,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -2199,7 +2199,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -2225,7 +2225,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -2246,7 +2246,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze_Coast"
+		include = "bronze_maritime"
 
 		own_control_core = {
 			deir_qamar
@@ -2273,7 +2273,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -2298,7 +2298,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -2320,7 +2320,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -2348,7 +2348,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -2369,7 +2369,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -2424,7 +2424,7 @@ countries = {
 
 	country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_balkan"
 
 	own_control_core = {
 		ahtopol         catalca         constantinople  corlu           edirne          enez
@@ -2452,7 +2452,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		own_control_core = {
 			edessa elassona giannitsa gynaikokastro hatera kassandreia kavala kilkis
@@ -2476,7 +2476,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			glamoc livno sinj
@@ -2503,7 +2503,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -2528,7 +2528,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -2553,7 +2553,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -2575,7 +2575,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze_Coast"
+		include = "bronze_maritime"
 
 		own_control_core = {
 			beirut
@@ -2602,7 +2602,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -2627,7 +2627,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -2652,7 +2652,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -2677,7 +2677,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -2702,7 +2702,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -2727,7 +2727,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -2753,7 +2753,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -2778,7 +2778,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -2800,7 +2800,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -2828,7 +2828,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -2853,7 +2853,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -2878,7 +2878,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -2927,7 +2927,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -2949,7 +2949,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		own_control_core = {
 			avlonya ballsh berat devol elbasan kavaje
@@ -2976,7 +2976,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -3001,7 +3001,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -3022,7 +3022,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -3050,7 +3050,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -3075,7 +3075,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -3097,7 +3097,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		own_control_core = {
 			algeciras gibraltar
@@ -3124,7 +3124,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -3149,7 +3149,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -3174,7 +3174,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -3199,7 +3199,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -3225,7 +3225,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -3250,7 +3250,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -3277,7 +3277,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -3302,7 +3302,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -3327,7 +3327,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -3378,7 +3378,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -3403,7 +3403,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -3428,7 +3428,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -3453,7 +3453,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -3478,7 +3478,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -3503,7 +3503,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -3525,7 +3525,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -3553,7 +3553,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -3578,7 +3578,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -3603,7 +3603,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -3629,7 +3629,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -3655,7 +3655,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -3676,7 +3676,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -3705,7 +3705,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -3730,7 +3730,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -3751,7 +3751,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			arilje belgrad branicevo brskovo brvenik budimlja carasova debrc
@@ -3783,7 +3783,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -3808,7 +3808,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -3833,7 +3833,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -3858,7 +3858,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -3879,7 +3879,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			glubocica medveda novo_brdo pristina vranje
@@ -3902,7 +3902,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 	own_control_core = {
 		al_bidda      al_huwaila    al_jubayl     al_mashqar    al_qatif      al_udayd
@@ -3930,7 +3930,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -3951,7 +3951,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			bansko krupnik melnik
@@ -3978,7 +3978,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -4000,7 +4000,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		own_control_core = {
 			arta karditsa karpenisi pyli
@@ -4027,7 +4027,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -4052,7 +4052,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -4077,7 +4077,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -4102,7 +4102,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -4127,7 +4127,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -4149,7 +4149,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 		own_control_core = {
 			bagh_malek bandar_deylam bandar_rig basht behbahan borazjan dehdasht dehdez
@@ -4179,7 +4179,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -4200,7 +4200,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		own_control_core = {
 			grevena trikala
@@ -4250,7 +4250,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -4275,7 +4275,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -4300,7 +4300,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -4325,7 +4325,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -4351,7 +4351,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -4372,7 +4372,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -4450,7 +4450,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -4478,7 +4478,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -4503,7 +4503,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -4528,7 +4528,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -4553,7 +4553,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -4599,7 +4599,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -4628,7 +4628,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -4649,7 +4649,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		own_control_core = {
 			azraq bosra burraq damascus jayrud kaf qutayfah salkhad
@@ -4677,7 +4677,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_nordic"
 
 		government = {
 			ruler = random
@@ -4698,7 +4698,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_caucasus"
 
 	own_control_core = {
 		gorele     rize       surmene    trebizond
@@ -4721,7 +4721,7 @@ countries = {
 
 	country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 	own_control_core = {
 		altintas           aslanapa           banaz              bolvadin           gediz              karahisar_i_sahib
@@ -4747,7 +4747,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -4773,7 +4773,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			kaseg knin novigrad pag sibenik zadar
@@ -4796,7 +4796,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -4820,7 +4820,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			brac split
@@ -4871,7 +4871,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -4896,7 +4896,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -4921,7 +4921,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -4996,7 +4996,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -5022,7 +5022,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -5039,7 +5039,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -5067,7 +5067,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -5092,7 +5092,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -5115,7 +5115,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		own_control_core = {
 			jabar madinat_far maskanah raqqa tabqah
@@ -5142,7 +5142,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -5163,7 +5163,7 @@ countries = {
 
 	country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_iran_arabia"
 
 	own_control_core = {
 		akkus         bafra         bayramlu      giresun       ladik_pontus  mesudiye
@@ -5192,7 +5192,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 	own_control_core = {
 		abadan       abdanan      abdas        ahvaz        al_madar     al_tib
@@ -5222,7 +5222,7 @@ countries = {
 
 	country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 	own_control_core = {
 		burdur         dinar          egirdir        isparta        sarkikaraagac  stefani
@@ -5252,7 +5252,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -5273,7 +5273,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			kostenets stipon strelcha tsepina
@@ -5300,7 +5300,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -5350,7 +5350,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -5395,7 +5395,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		own_control_core = {
 			mitilene molyvos
@@ -5422,7 +5422,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -5447,7 +5447,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -5498,7 +5498,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -5524,7 +5524,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -5545,7 +5545,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -5569,7 +5569,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -5593,7 +5593,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_african"
 
 		own_control_core = {
 			ajdabiya al_bayda al_khuimat awjila barca benghazi derna mechili
@@ -5621,7 +5621,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -5647,7 +5647,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -5672,7 +5672,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -5697,7 +5697,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -5722,7 +5722,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -5773,7 +5773,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -5794,7 +5794,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 	own_control_core = {
 		abu_dhabi          al_ayn             al_dhaid           al_kamil_wal_wafi  al_khaburah        as_sib
@@ -5822,7 +5822,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		own_control_core = {
 			malaga
@@ -5849,7 +5849,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -5874,7 +5874,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -5895,7 +5895,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			metkovic slano
@@ -5918,7 +5918,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_iran_arabia"
 
 		government = {
 			ruler = random
@@ -5968,7 +5968,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 		own_control_core = {
 			adranos bilecik bursa domanic dursunbey emet eynegol harmancik
@@ -5996,7 +5996,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -6023,7 +6023,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -6048,7 +6048,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -6075,7 +6075,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -6100,7 +6100,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -6125,7 +6125,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -6146,7 +6146,7 @@ countries = {
 
 	country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 	own_control_core = {
 		alasehir    guzelhisar  honaz       lazkiye     nazilli     seyhli
@@ -6177,7 +6177,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -6198,7 +6198,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 		own_control_core = {
 			adakli bingol cermik diyarbekir egil ergani genc harran
@@ -6223,7 +6223,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -6247,7 +6247,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		own_control_core = {
 			argyrokastro butrint corfu kastoria kleisoura_epirus konitsa siatista
@@ -6274,7 +6274,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -6299,7 +6299,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -6324,7 +6324,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -6349,7 +6349,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -6370,7 +6370,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -6398,7 +6398,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -6423,7 +6423,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -6449,7 +6449,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -6474,7 +6474,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -6496,7 +6496,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			drijeva makarska
@@ -6519,7 +6519,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -6549,7 +6549,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -6648,7 +6648,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -6673,7 +6673,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -6698,7 +6698,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -6724,7 +6724,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -6745,7 +6745,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_nordic"
 
 		government = {
 			ruler = random
@@ -6770,7 +6770,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -6796,7 +6796,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -6873,7 +6873,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -6895,7 +6895,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -6919,7 +6919,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			bitola florina kocani kratovo kumanovo prosek shtip strumica
@@ -6943,7 +6943,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			beden dospat nevrokop
@@ -6970,7 +6970,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -6991,7 +6991,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -7017,7 +7017,7 @@ countries = {
 
 	country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 	own_control_core = {
 		arac          bartin        boyabat       cerkes        devrekani     eregli
@@ -7048,7 +7048,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -7073,7 +7073,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -7094,7 +7094,7 @@ countries = {
 
 	country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 	own_control_core = {
 		alaiye            anamur            beysehir          ermenek           karahisar_i_teke  manavgat
@@ -7124,7 +7124,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -7145,7 +7145,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -7174,7 +7174,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -7220,7 +7220,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -7249,7 +7249,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -7270,7 +7270,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -7291,7 +7291,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -7322,7 +7322,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -7343,7 +7343,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -7371,7 +7371,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -7397,7 +7397,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -7423,7 +7423,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_maritime"
 
 		government = {
 			ruler = random
@@ -7444,7 +7444,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -7465,7 +7465,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -7518,7 +7518,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -7539,7 +7539,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_iran_arabia"
 
 		own_control_core = {
 			akcasehir akyazi bolu goynuk kibrus konrapa mudurnu nalli
@@ -7563,7 +7563,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -7587,7 +7587,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -7616,7 +7616,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -7637,7 +7637,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_iran_arabia"
 
 	own_control_core = {
 		al_quwayrah  amman        aqaba        karak        maan         madaba
@@ -7661,7 +7661,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -7719,7 +7719,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -7744,7 +7744,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -7765,7 +7765,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -7790,7 +7790,7 @@ countries = {
 
 	country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 	own_control_core = {
 		akhisar    balikesir  bergama    bigadic    demirci    foca
@@ -7821,7 +7821,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -7846,7 +7846,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -7915,7 +7915,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -7944,7 +7944,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -7969,7 +7969,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -7994,7 +7994,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -8015,7 +8015,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -8090,7 +8090,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -8115,7 +8115,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -8136,7 +8136,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			drama serres
@@ -8159,7 +8159,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -8188,7 +8188,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -8283,7 +8283,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -8308,7 +8308,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -8333,7 +8333,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -8378,7 +8378,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_iran_arabia"
 
 		own_control_core = {
 			arak huwwarin ithriya qaryatayn qastal salamiyya sukhnah tadmur
@@ -8406,7 +8406,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -8431,7 +8431,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -8456,7 +8456,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -8502,7 +8502,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -8526,7 +8526,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		own_control_core = {
 			arcos_de_la_frontera ayamonte cadiz carmona coria_del_rio huelva jerez_de_la_frontera medina_sidonia
@@ -8550,7 +8550,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		own_control_core = {
 			bar_cg dukagjini durres gjakova has koman kruje lezha
@@ -8574,7 +8574,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -8603,7 +8603,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -8629,7 +8629,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -8650,7 +8650,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		own_control_core = {
 			ioannina parga preveza
@@ -8677,7 +8677,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -8702,7 +8702,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -8727,7 +8727,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -8755,7 +8755,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		government = {
 			ruler = random
@@ -8772,7 +8772,7 @@ countries = {
 
 	country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_balkan"
 
 	own_control_core = {
 		aytos           boruy           bukelon         burgas          constantia_bul  demotica
@@ -8804,7 +8804,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_nordic"
 
 		government = {
 			ruler = random
@@ -8854,7 +8854,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -8879,7 +8879,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -8904,7 +8904,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -8953,7 +8953,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -8980,7 +8980,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -9006,7 +9006,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -9031,7 +9031,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -9056,7 +9056,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -9081,7 +9081,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -9106,7 +9106,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -9131,7 +9131,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -9156,7 +9156,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -9181,7 +9181,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -9206,7 +9206,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -9231,7 +9231,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -9257,7 +9257,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -9282,7 +9282,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -9307,7 +9307,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -9332,7 +9332,7 @@ countries = {
 
 	country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_eastern_europe"
 
 		government = {
 			ruler = random
@@ -9360,7 +9360,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -9387,7 +9387,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -9412,7 +9412,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -9437,7 +9437,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -9458,7 +9458,7 @@ countries = {
 
 		country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_city_state"
 
 		own_control_core = {
 			antioch latakia jableh
@@ -9481,7 +9481,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_caucasus"
 
 		government = {
 			ruler = random
@@ -9509,7 +9509,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -9555,7 +9555,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -9583,7 +9583,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -9608,7 +9608,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -9629,7 +9629,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_caucasus"
 
 		government = {
 			ruler = random
@@ -9658,7 +9658,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -9683,7 +9683,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -9708,7 +9708,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -9733,7 +9733,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -9759,7 +9759,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -9784,7 +9784,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -9806,7 +9806,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -9830,7 +9830,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -9854,7 +9854,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -9882,7 +9882,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -9903,7 +9903,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -9957,7 +9957,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -9982,7 +9982,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -10007,7 +10007,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -10056,7 +10056,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -10078,7 +10078,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -10106,7 +10106,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -10127,7 +10127,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -10151,7 +10151,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -10179,7 +10179,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_germania"
 
 		government = {
 			ruler = random
@@ -10226,7 +10226,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_gaul"
 
 		government = {
 			ruler = random
@@ -10255,7 +10255,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -10280,7 +10280,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -10301,7 +10301,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_iran_arabia"
 
 		government = {
 			ruler = random
@@ -10325,7 +10325,7 @@ countries = {
 
 	country_rank = rank_kingdom
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 	own_control_core = {
 		ayvacik    balya      bandirma   bayramic   biga       can
@@ -10358,7 +10358,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_britannia"
 
 		government = {
 			ruler = random
@@ -10383,7 +10383,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Neolithic"
+		include = "neolithic_ibero_celtic"
 
 		government = {
 			ruler = random
@@ -10404,7 +10404,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10427,7 +10427,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10450,7 +10450,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 		government = {
 			ruler = random
@@ -10473,7 +10473,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10496,7 +10496,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 		government = {
 			ruler = random
@@ -10523,7 +10523,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 		government = {
 			ruler = random
@@ -10546,7 +10546,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10569,7 +10569,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10593,7 +10593,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10616,7 +10616,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10640,7 +10640,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10666,7 +10666,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10689,7 +10689,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10712,7 +10712,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10735,7 +10735,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10759,7 +10759,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10783,7 +10783,7 @@ countries = {
 
 	country_rank = rank_county
 
-		include = "Neolithic_Est"
+		include = "neolithic_iran_arabia"
 
 		government = {
 			ruler = random
@@ -10818,7 +10818,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10841,7 +10841,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10864,7 +10864,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10887,7 +10887,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_north_africa"
 
 		government = {
 			ruler = random
@@ -10912,7 +10912,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10935,7 +10935,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10959,7 +10959,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -10982,7 +10982,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -11006,7 +11006,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 		government = {
 			ruler = random
@@ -11029,7 +11029,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -11052,7 +11052,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 		government = {
 			ruler = random
@@ -11075,7 +11075,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -11098,7 +11098,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 
 		government = {
 			ruler = random
@@ -11121,7 +11121,7 @@ countries = {
 
 		country_rank = rank_county
 
-		include = "Bronze"
+		include = "bronze_india"
 
 		government = {
 			ruler = random
@@ -11144,7 +11144,7 @@ countries = {
 		own_control_core = {
 			ayasuluk  cesme     manisa    smyrna    tire      urla
 		}
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 		government = {
 			ruler = random
 		}
@@ -11163,7 +11163,7 @@ countries = {
 		own_control_core = {
 			gokabat    golhisar   marmaris   mugla      tavas      yuksekkum
 		}
-		include = "Bronze"
+		include = "bronze_maritime"
 		government = {
 			ruler = random
 		}
@@ -11182,7 +11182,7 @@ countries = {
 		own_control_core = {
 			birgi
 		}
-		include = "Bronze"
+		include = "bronze_maritime"
 		government = {
 			ruler = random
 		}
@@ -11202,7 +11202,7 @@ countries = {
 			cine   milas
 		}
 		capital = milas
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 		government = {
 			ruler = random
 		}
@@ -11218,7 +11218,7 @@ countries = {
 		culture = hittite
 		religion = hittite
 		country_rank = rank_duchy
-		include = "Bronze_coast"
+		include = "bronze_maritime"
 		government = {
 			ruler = random
 		}
@@ -11234,7 +11234,7 @@ countries = {
 		own_control_core = {
 			amasra         inebolu        kure_i_mamure  sinop
 		}
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 		government = {
 			ruler = random
 		}
@@ -11254,7 +11254,7 @@ countries = {
 			gadegara  gerze
 		}
 		capital = gerze
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 		government = {
 			ruler = random
 		}
@@ -11275,7 +11275,7 @@ countries = {
 			badreh       darrehshahr  pol_dokhtar
 		}
 		capital = pol_dokhtar
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 		government = {
 			ruler = random
 		}
@@ -11300,7 +11300,7 @@ countries = {
 			al_qatr         suq_al_shuyukh
 		}
 		capital = al_qatr
-		include = "Bronze"
+		include = "bronze_city_state"
 		government = {
 			ruler = random
 		}
@@ -11326,7 +11326,7 @@ countries = {
 			zadian
 		}
 		capital = aiwanj
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 		government = {
 			ruler = random
 		}
@@ -11346,7 +11346,7 @@ countries = {
 			al_azlam     al_hawra     al_manjur    al_wajh      bada_yaqub   bir_al_qurr
 			umluj
 		}
-		include = "Bronze"
+		include = "bronze_city_state"
 		government = {
 			ruler = random
 		}
@@ -11367,7 +11367,7 @@ countries = {
 			haql          makna
 		}
 		capital = aynuna
-		include = "Bronze"
+		include = "bronze_city_state"
 		government = {
 			ruler = random
 		}
@@ -11391,7 +11391,7 @@ countries = {
 			tim_samarkand     vardanzi
 		}
 		capital = firabr
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 		government = {
 			ruler = random
 		}
@@ -11415,7 +11415,7 @@ countries = {
 			zinjibar
 		}
 		capital = ibb
-		include = "Bronze"
+		include = "bronze_city_state"
 		government = {
 			ruler = random
 		}
@@ -11436,7 +11436,7 @@ countries = {
 			abu_qasr  basithah  bir_fajr
 		}
 		capital = bir_fajr
-		include = "Bronze"
+		include = "bronze_city_state"
 		government = {
 			ruler = random
 		}
@@ -11457,7 +11457,7 @@ countries = {
 			tayma
 		}
 		capital = al_muazzam
-		include = "Neolithic"
+		include = "neolithic_iran_arabia"
 		government = {
 			ruler = random
 		}
@@ -11477,7 +11477,7 @@ countries = {
 			fergana    marghinan  quva       rishton
 		}
 		capital = fergana
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 		government = {
 			ruler = random
 		}
@@ -11498,7 +11498,7 @@ countries = {
 			savsat
 		}
 		capital = khupati
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 		government = {
 			ruler = random
 		}
@@ -11520,7 +11520,7 @@ countries = {
 			sabha      tazirbu    ubari      zawila
 		}
 		capital = ubari
-		include = "Neolithic"
+		include = "neolithic_african"
 		government = {
 			ruler = random
 		}
@@ -11543,7 +11543,7 @@ countries = {
 			tzoite         xelahuh
 		}
 		capital = acasaguastlan
-		include = "Bronze"
+		include = "bronze_mesoamerica"
 		government = {
 			ruler = random
 		}
@@ -11565,7 +11565,7 @@ countries = {
 		puctlan         suchilapan      tesechoacan     texistepec      tlacotlalpan    tozlan
 	}
 		capital = tesechoacan
-		include = "Bronze"
+		include = "bronze_mesoamerica"
 		government = {
 			ruler = random
 		}
@@ -11585,7 +11585,7 @@ countries = {
 			cupilco              tonala_coatzacoalco
 		}
 		capital = tonala_coatzacoalco
-		include = "Bronze"
+		include = "bronze_mesoamerica"
 		government = {
 			ruler = random
 		}
@@ -11606,7 +11606,7 @@ countries = {
 			tetzcoco      tlacopan      xaltocan      xochimilco
 		}
 		capital = tenochtitlan
-		include = "Neolithic"
+		include = "neolithic_north_america"
 		government = {
 			ruler = random
 		}
@@ -11626,7 +11626,7 @@ countries = {
 			jos    kuje   lafia  lapai  minna  zuba
 		}
 		capital = zuba
-		include = "Neolithic"
+		include = "neolithic_african"
 		government = {
 			ruler = random
 		}
@@ -11647,7 +11647,7 @@ countries = {
 			mancha_khiri
 		}
 		capital = mancha_khiri
-		include = "Bronze"
+		include = "bronze_southeast_asia"
 		government = {
 			ruler = random
 		}
@@ -11671,7 +11671,7 @@ countries = {
 			sisakht         yasuj           yazdikhwast     zarqan
 		}
 		capital = kherameh
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 		government = {
 			ruler = random
 		}
@@ -11691,7 +11691,7 @@ countries = {
 			al_tiz       bih          gwatar       kalmat       qasr_e_qand  rask
 		}
 		capital = gwatar
-		include = "Neolithic_Est"
+		include = "neolithic_iran_arabia"
 		government = {
 			ruler = random
 		}
@@ -11711,7 +11711,7 @@ countries = {
 			aleshtar      khorramabad   sarab_dowreh
 		}
 		capital = sarab_dowreh
-		include = "Neolithic"
+		include = "neolithic_iran_arabia"
 		government = {
 			ruler = random
 		}
@@ -11734,7 +11734,7 @@ countries = {
 			rostaq                 ruydar                 saadatabad             sirjan                 soghan                 tarom
 		}
 		capital = juyom
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 		government = {
 			ruler = random
 		}
@@ -11755,7 +11755,7 @@ countries = {
 			siraf
 		}
 		capital = kish
-		include = "Bronze"
+		include = "bronze_palatial_kingdom"
 		government = {
 			ruler = random
 		}
@@ -11799,7 +11799,7 @@ countries = {
 			uian
 		}
 		capital = sacheon
-		include = "Neolithic_Est"
+		include = "neolithic_asian"
 		government = {
 			ruler = random
 		}
