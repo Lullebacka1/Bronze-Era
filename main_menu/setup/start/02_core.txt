@@ -1,16 +1,16 @@
 institution_manager = {
 	institutions = {
-		feudalism = {
-			active = no
-			birth_place = aachen
+		bronze_routes = {
+			active = yes
+			birth_place = latakia
 		}
-		legalism = {
-			active = no
-			birth_place = rome
+		chariot_warfare = {
+			active = yes
+			birth_place = aleppo
 		}
-		meritocracy = {
-			active = no
-			birth_place = dadu
+		palatial_economy = {
+			active = yes
+			birth_place = thebes
 		}
 	}
 }
