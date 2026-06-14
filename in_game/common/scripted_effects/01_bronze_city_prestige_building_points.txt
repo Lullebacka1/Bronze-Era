@@ -1,0 +1,87 @@
+﻿# ============================================================================
+# CITY PRESTIGE - BUILDING POINTS
+# ============================================================================
+# Root scope: location
+#
+# This is the only file that must be edited to make an urban building award
+# City Prestige points.
+#
+# Copy this template inside bronze_city_prestige_add_building_points:
+#
+#	if = {
+#		limit = {
+#			has_building = building_type:your_building_id
+#		}
+#		change_variable = {
+#			name = bronze_city_prestige_score
+#			add = 25
+#		}
+#	}
+#
+# Buildings are evaluated independently. If several listed buildings coexist
+# in one location, their points are cumulative.
+# ============================================================================
+
+bronze_city_prestige_add_building_points = {
+	# Local exchange and market infrastructure.
+	if = {
+		limit = {
+			has_building = building_type:market_village
+		}
+		change_variable = {
+			name = bronze_city_prestige_score
+			add = 10
+		}
+	}
+
+	if = {
+		limit = {
+			has_building = building_type:marketplace
+		}
+		change_variable = {
+			name = bronze_city_prestige_score
+			add = 20
+		}
+	}
+
+	if = {
+		limit = {
+			has_building = building_type:entrepot
+		}
+		change_variable = {
+			name = bronze_city_prestige_score
+			add = 30
+		}
+	}
+
+	if = {
+		limit = {
+			has_building = building_type:trading_hub
+		}
+		change_variable = {
+			name = bronze_city_prestige_score
+			add = 40
+		}
+	}
+
+	if = {
+		limit = {
+			has_building = building_type:stock_exchange
+		}
+		change_variable = {
+			name = bronze_city_prestige_score
+			add = 50
+		}
+	}
+
+	# Major Bronze Age administrative and monumental center.
+	if = {
+		limit = {
+			has_building = building_type:bronze_age_palatial_complex
+		}
+		change_variable = {
+			name = bronze_city_prestige_score
+			add = 100
+		}
+	}
+}

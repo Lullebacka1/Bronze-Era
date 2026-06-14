@@ -1,0 +1,155 @@
+﻿# Root = country. Each owned location is considered at most once per year.
+bronze_city_prestige_runtime_bootstrap = {
+	trigger = {
+		is_real_country = yes
+		NOT = {
+			has_global_variable = bronze_city_prestige_runtime_v9_initialized
+		}
+	}
+
+	effect = {
+		# Runs only once for converted saves. New campaigns receive the marker
+		# from bronze_city_prestige_initialize_world during on_game_start.
+		remove_global_variable = bronze_city_prestige_manager
+		bronze_city_prestige_initialize_world = yes
+	}
+}
+
+# Root = country. Runs only once per campaign version for the human player,
+# after player ownership and discovery data are available to the GUI.
+bronze_city_prestige_player_ledger_bootstrap = {
+	trigger = {
+		is_real_country = yes
+		is_ai = no
+		NOT = {
+			has_variable = bronze_city_prestige_ledger_v10_initialized
+		}
+	}
+
+	effect = {
+		# Repair saves where the version marker survived but the persistent
+		# global city list did not.
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						has_global_variable_list = bronze_city_prestige_world_cities
+					}
+					global_variable_list_size = {
+						name = bronze_city_prestige_world_cities
+						value < 1
+					}
+				}
+			}
+			remove_global_variable = bronze_city_prestige_manager
+			bronze_city_prestige_initialize_world = yes
+		}
+
+		bronze_city_prestige_rebuild_known_city_list = yes
+		# The rebuild may have registered owned cities missing from a converted
+		# global list. Sort once now so those entries receive exact positions.
+		bronze_city_prestige_update_world_ranking = yes
+		set_variable = {
+			name = bronze_city_prestige_ledger_v10_initialized
+			value = 1
+		}
+	}
+}
+
+# Root = human country. Cheap monthly guard: the expensive repair runs only
+# when a player owns an urban location but the GUI list is absent.
+bronze_city_prestige_player_ledger_repair = {
+	trigger = {
+		is_real_country = yes
+		is_ai = no
+		OR = {
+			AND = {
+				OR = {
+					NOT = {
+						has_variable = bronze_city_prestige_known_city_count
+					}
+					var:bronze_city_prestige_known_city_count < 1
+					NOT = {
+						has_variable_list = bronze_city_prestige_known_cities
+					}
+					variable_list_size = {
+						name = bronze_city_prestige_known_cities
+						value < 1
+					}
+				}
+				any_owned_location = {
+					bronze_city_prestige_is_urban = yes
+				}
+			}
+			any_owned_location = {
+				bronze_city_prestige_is_urban = yes
+				NOT = { has_variable = bronze_city_prestige_global_rank }
+			}
+			any_owned_location = {
+				bronze_city_prestige_is_urban = yes
+				has_variable = bronze_city_prestige_global_rank
+				var:bronze_city_prestige_global_rank < 1
+			}
+		}
+	}
+
+	effect = {
+		bronze_city_prestige_rebuild_known_city_list = yes
+		bronze_city_prestige_update_world_ranking = yes
+	}
+}
+
+# Root = country. One-time compatibility bootstrap for campaigns saved before
+# the City Prestige system was installed.
+bronze_city_prestige_yearly_pulse = {
+	trigger = {
+		is_real_country = yes
+	}
+
+	effect = {
+		bronze_city_prestige_yearly_update = yes
+
+		if = {
+			limit = {
+				NOT = { has_variable = bronze_city_prestige_eligibility_years }
+			}
+			set_variable = { name = bronze_city_prestige_eligibility_years value = 0 }
+		}
+		change_variable = { name = bronze_city_prestige_eligibility_years add = 1 }
+
+		if = {
+			limit = { var:bronze_city_prestige_eligibility_years >= 5 }
+			set_variable = { name = bronze_city_prestige_eligibility_years value = 0 }
+			bronze_city_prestige_five_year_eligibility_update = yes
+		}
+
+		# Recover cleanly if a converted save predates the manager variable or
+		# another script deliberately clears it.
+		if = {
+			limit = {
+				NOT = { has_global_variable = bronze_city_prestige_manager }
+			}
+			set_global_variable = {
+				name = bronze_city_prestige_manager
+				value = this
+			}
+		}
+
+		# Only the designated manager performs the world sort and player-list
+		# rebuild, avoiding one global scan per country.
+		if = {
+			limit = {
+				has_global_variable = bronze_city_prestige_manager
+				this = global_var:bronze_city_prestige_manager
+			}
+			bronze_city_prestige_update_world_ranking = yes
+		}
+
+		# The player list is refreshed from the complete city pool regardless of
+		# whether this country is currently the global ranking manager.
+		if = {
+			limit = { is_ai = no }
+			bronze_city_prestige_rebuild_known_city_list = yes
+		}
+	}
+}

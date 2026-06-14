@@ -1,5 +1,8 @@
 ﻿on_game_start = {
 	effect = {
+		# Bronze Era: initialize the limited pool used by City Prestige.
+		bronze_city_prestige_initialize_world = yes
+
 		#catholics
 		if = {
 			limit = { NOT = { has_global_variable_list = pope_countries } }

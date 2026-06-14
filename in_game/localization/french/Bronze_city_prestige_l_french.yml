@@ -1,7 +1,6 @@
 ﻿l_french:
- STATIC_MODIFIER_NAME_recently_raided_by_horde: "Raid recent des Peuples de la Mer"
  bronze_city_prestige: "Prestige urbain"
- bronze_city_prestige_desc: "Les centres urbains importants sont classes selon leur population, leur prosperite, leur statut politique, leur commerce, leurs monuments, leur importance historique et leur prestige militaire."
+ bronze_city_prestige_desc: "Les villes et megalopoles sont classees selon leur population, leur prosperite, leur statut politique, leur commerce, leurs monuments, leur importance historique et leur prestige militaire."
  bronze_city_prestige_score: "Score de prestige urbain"
  bronze_city_prestige_rank: "Rang d'influence urbaine"
  bronze_city_prestige_rank_1_name: "Ville mondiale"
@@ -49,4 +48,3 @@
  STATIC_MODIFIER_DESC_bronze_city_prestige_influence_4: "Les villes du royaume influencent la diplomatie, le commerce et le prestige du monde connu."
  STATIC_MODIFIER_NAME_bronze_city_prestige_influence_5: "Maitre des grandes villes"
  STATIC_MODIFIER_DESC_bronze_city_prestige_influence_5: "Plusieurs des plus grandes villes du monde sont placees sous l'autorite de ce royaume."
-

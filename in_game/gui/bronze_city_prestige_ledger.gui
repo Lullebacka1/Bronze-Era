@@ -1,0 +1,249 @@
+template bronze_city_prestige_ledger_content {
+	vbox = {
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+		margin = { 12 10 }
+		spacing = 8
+
+		widget = {
+			layoutpolicy_horizontal = expanding
+			size = { -1 72 }
+			using = bg_paper_card
+			using = bg_cabinet_card_frame
+
+			hbox = {
+				margin = { 14 8 }
+				spacing = 12
+
+				icon = {
+					size = { 42 42 }
+					texture = "gfx/interface/icons/flat_icons/power_projection.dds"
+					tooltip = "BRONZE_CITY_PRESTIGE_URBAN_INFLUENCE_TT"
+				}
+
+				vbox = {
+					layoutpolicy_horizontal = expanding
+
+					text_single = {
+						text = "BRONZE_CITY_PRESTIGE_URBAN_INFLUENCE"
+						default_format = "#yellow_titles"
+					}
+					text_single = {
+						text = "BRONZE_CITY_PRESTIGE_URBAN_INFLUENCE_DESC"
+						autoresize = no
+					}
+				}
+
+				vbox = {
+					size = { 120 -1 }
+					text_single = {
+						align = center
+						text = "BRONZE_CITY_PRESTIGE_INFLUENCE_SCORE"
+						default_format = "#yellow_titles"
+					}
+					text_single = {
+						align = center
+						text = "[Player.MakeScope.GetVariable('bronze_city_prestige_influence_score').GetValue|0]"
+						default_format = "#bold"
+					}
+				}
+
+				vbox = {
+					size = { 140 -1 }
+					text_single = {
+						align = center
+						text = "game_concept_power_projection"
+						default_format = "#yellow_titles"
+					}
+					text_single = {
+						align = center
+						datacontext = "[Player]"
+						text = "[Player.GetPowerProjection|1]"
+						default_format = "#bold"
+						tooltipwidget = {
+							using = power_projection_tooltip
+						}
+					}
+				}
+			}
+		}
+
+		widget = {
+			layoutpolicy_horizontal = expanding
+			size = { -1 38 }
+
+			background = {
+				using = bg_sortby_group
+			}
+
+			hbox = {
+				margin = { 12 4 }
+				margin_right = 30
+				spacing = 10
+
+				text_single = {
+					size = { 80 -1 }
+					align = center
+					text = "BRONZE_CITY_PRESTIGE_WORLD_RANK"
+					default_format = "#yellow_titles"
+				}
+				text_single = {
+					size = { 250 -1 }
+					text = "BRONZE_CITY_PRESTIGE_CITY"
+					default_format = "#yellow_titles"
+				}
+				text_single = {
+					size = { 250 -1 }
+					text = "BRONZE_CITY_PRESTIGE_OWNER"
+					default_format = "#yellow_titles"
+				}
+				text_single = {
+					size = { 150 -1 }
+					align = center
+					text = "bronze_city_prestige_score"
+					default_format = "#yellow_titles"
+				}
+				text_single = {
+					size = { 160 -1 }
+					align = center
+					text = "BRONZE_CITY_PRESTIGE_POPULATION"
+					default_format = "#yellow_titles"
+				}
+				text_single = {
+					layoutpolicy_horizontal = expanding
+					text = "BRONZE_CITY_PRESTIGE_CULTURE"
+					default_format = "#yellow_titles"
+				}
+			}
+		}
+
+		widget = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			using = bg_main_inner_alt
+
+			text_single = {
+				visible = "[Not(GreaterThan_CFixedPoint(Player.MakeScope.GetVariable('bronze_city_prestige_known_city_count').GetValue, '(CFixedPoint)0'))]"
+				parentanchor = center
+				maximumsize = { 700 -1 }
+				align = center
+				text = "BRONZE_CITY_PRESTIGE_NO_KNOWN_CITIES"
+			}
+
+			scrollarea = {
+				visible = "[GreaterThan_CFixedPoint(Player.MakeScope.GetVariable('bronze_city_prestige_known_city_count').GetValue, '(CFixedPoint)0')]"
+				using = layoutpolicy_expanding
+				scrollbarpolicy_horizontal = always_off
+				autoresizescrollarea = no
+
+				scrollbar_vertical = {
+					using = Scrollbar_Vertical
+				}
+
+				scrollwidget = {
+					dynamicgridbox = {
+						layoutpolicy_horizontal = expanding
+						flipdirection = yes
+						datamodel_wrap = 1
+						maxhorizontalslots = 1
+						datamodel = "[Player.MakeScope.GetList('bronze_city_prestige_known_cities')]"
+
+						item = {
+							button = {
+								size = { 100% 48 }
+								datacontext = "[Scope.GetVariable('bronze_city_prestige_gui_location').GetLocation]"
+								using = bg_paper_card
+								onclick = "[PanToLocation(Location.Self)]"
+								tooltipwidget = {
+									using = location_simple_tooltip
+								}
+
+								hbox = {
+									margin = { 12 4 }
+									margin_right = 30
+									spacing = 10
+
+									text_single = {
+										size = { 80 -1 }
+										align = center
+										visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_global_rank').GetValue, '(CFixedPoint)0')]"
+										text = "[Location.MakeScope.GetVariable('bronze_city_prestige_global_rank').GetValue|0]"
+										default_format = "#bold"
+									}
+									text_single = {
+										size = { 80 -1 }
+										align = center
+										visible = "[Not(GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_global_rank').GetValue, '(CFixedPoint)0'))]"
+										text = "BRONZE_CITY_PRESTIGE_UNRANKED"
+										default_format = "#bold"
+									}
+
+									hbox = {
+										size = { 250 -1 }
+										spacing = 8
+
+										icon = {
+											size = { 24 24 }
+											texture = "[Location.GetRankIcon]"
+											tooltipwidget = {
+												using = location_rank_tooltip
+											}
+										}
+										text_single = {
+											layoutpolicy_horizontal = expanding
+											autoresize = no
+											text = "[Location.GetNameWithNoTooltip]"
+											default_format = "#yellow_titles"
+										}
+									}
+
+									hbox = {
+										size = { 250 -1 }
+										spacing = 8
+										datacontext = "[Location.GetOwner]"
+
+										country_flag_small = {}
+										text_single = {
+											layoutpolicy_horizontal = expanding
+											autoresize = no
+											text = "[Country.GetNameWithNoTooltip]"
+										}
+										tooltipwidget = {
+											using = CountryTooltip
+										}
+									}
+
+									text_single = {
+										size = { 150 -1 }
+										align = center
+										text = "[Location.MakeScope.GetVariable('bronze_city_prestige_score').GetValue|0]"
+									}
+
+									hbox = {
+										size = { 160 -1 }
+										spacing = 4
+										text_single = {
+											layoutpolicy_horizontal = expanding
+											align = right
+											text = "[Location.GetTotalPopulation]"
+										}
+										icon = {
+											size = { 18 18 }
+											texture = "[GetConceptTexture('population')]"
+										}
+									}
+
+									text_single = {
+										layoutpolicy_horizontal = expanding
+										autoresize = no
+										text = "[Location.GetDominantCulture.GetNameWithNoTooltip]"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
