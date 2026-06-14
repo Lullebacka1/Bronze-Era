@@ -1,1 +1,25 @@
-﻿
+﻿nobles_tax_exemption = {
+	estate = nobles_estate
+	
+	country_modifier = {
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 0.30
+		nobles_estate_max_tax = -0.15
+	}
+}
+
+nobles_judicial_authority = {
+	estate = nobles_estate
+
+	allow = {
+    	NOT = { has_estate_privilege = estate_privilege:clergy_judicial_authority }
+	}
+	
+	country_modifier = {
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 0.30
+
+		tolerance_heretic = -0.1
+		tolerance_heathen = -0.1
+	}
+}
