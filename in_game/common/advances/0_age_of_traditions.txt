@@ -597,6 +597,14 @@ trade_caravans = {
 	starting_technology_level = 3
 }
 
+intercultural_relations_advance = {
+	age = age_1_traditions
+	icon = cultural_acceptance_advance
+	cultures_capacity = 1
+	starting_technology_level = 3
+	requires = trade_caravans
+}
+
 merchant_enclaves_advance = {
 	age = age_1_traditions
 	icon = trade_caravans
@@ -623,14 +631,6 @@ sailing_advance = {
 	unlock_building = bronze_dock
 	
 	starting_technology_level = 3
-}
-
-intercultural_relations_advance = {
-	age = age_1_traditions
-	icon = cultural_acceptance_advance
-	cultures_capacity = 1
-	starting_technology_level = 3
-	requires = long_distance_trade_advance
 }
 
 mapmaking = {
