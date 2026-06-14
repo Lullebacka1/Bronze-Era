@@ -44,3 +44,21 @@
 
   sacred_herds: "Sacred Herds"
   sacred_herds_desc: "The priesthood maintains herds dedicated to religious purposes. These animals provide offerings for rituals, support temple economies, and serve as visible symbols of divine favor and sacred authority."
+
+  nobles_tax_exemption: "Tax Exemption"
+  nobles_tax_exemption_desc: "Warrior aristocrats and leading landholders are exempted from certain taxes and obligations. Such privileges reinforce their status while reducing the resources available to the central authorities."
+
+  nobles_judicial_authority: "Judicial Authority"
+  nobles_judicial_authority_desc: "Nobles are granted the right to hear disputes and administer justice within their domains. Local authority is strengthened, but legal standards become increasingly dependent upon the interests and customs of powerful families."
+
+  court_offices: "Court Offices"
+  court_offices_desc: "Important administrative, military, and ceremonial positions are reserved for members of the aristocracy. Service at court strengthens ties between the ruler and noble households while drawing the elite into the machinery of government."
+
+  right_to_plunder: "Right to Plunder"
+  right_to_plunder_desc: "Warriors are permitted to enrich themselves through the seizure of goods, livestock, and captives during campaigns. The expectation of plunder encourages military service and helps sustain martial elites during wartime."
+
+  hereditary_titles: "Hereditary Titles"
+  hereditary_titles_desc: "Ranks, offices, and privileges pass from one generation to the next, transforming positions of authority into enduring family possessions. Established lineages accumulate wealth and influence while providing greater continuity in governance."
+
+  charioteer_retinues: "Charioteer Retinues"
+  charioteer_retinues_desc: "Prominent noble households maintain chariots, horses, drivers, and supporting retainers as part of their military obligations. These prestigious warrior retinues provide rulers with a ready source of elite mobile forces while reinforcing the social position of the aristocracy."

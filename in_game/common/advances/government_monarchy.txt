@@ -31,6 +31,18 @@ companion_retinues = {
 	starting_technology_level = 3
 }
 
+court_offices_advance = {
+	age = age_1_traditions
+	government = monarchy
+	research_cost = 1.5
+
+	requires = palace_administration
+
+	unlock_estate_privilege = court_offices
+
+	starting_technology_level = 4
+}
+
 
 
 ############################

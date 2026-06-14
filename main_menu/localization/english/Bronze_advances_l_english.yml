@@ -176,6 +176,9 @@
   ritual_service_advance: "Ritual Service"
   ritual_service_advance_desc: "Religious institutions assume formal responsibility for maintaining the rituals, sacrifices, festivals, and ceremonial observances believed necessary for the prosperity of the realm. The performance of sacred duties becomes an established public function entrusted to the priesthood."
 
+  charioteer_retinues_advance: "Charioteer Retinues"
+  charioteer_retinues_advance_desc: "The growing military importance of horse-drawn vehicles encourages noble households to maintain permanent chariot contingents. These retinues include warriors, drivers, horse handlers, and supporting personnel whose service forms a key component of aristocratic military obligations."
+
   # ##########################
   # BUILDINGS
   # ##########################

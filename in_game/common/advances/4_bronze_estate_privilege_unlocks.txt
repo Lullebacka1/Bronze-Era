@@ -31,6 +31,7 @@ tax_exemption_advance = {
 
 	unlock_estate_privilege = customs_exemption
 	unlock_estate_privilege = clergy_tax_exemption
+	unlock_estate_privilege = nobles_tax_exemption
 
 	starting_technology_level = 4
 }
@@ -79,4 +80,14 @@ ritual_service_advance = {
 	starting_technology_level = 4
 }
 
+charioteer_retinues_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	requires = war_horse_training_advance
+
+	unlock_estate_privilege = charioteer_retinues
+
+	starting_technology_level = 4
+}
 
