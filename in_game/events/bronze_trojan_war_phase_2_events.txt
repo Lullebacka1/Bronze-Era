@@ -16,28 +16,14 @@ start_trojan_war_phase_2.1 = {
         declare_war_with_cb = {
             target = c:WILUS
             type = trojan_war_casus_belli
-        }
-
-      
-        if = {
-            limit = { c:AHHI = { exists = yes } }
-            add_co_belligerent = c:AHHI
-        }
-        if = {
-            limit = { c:LYCIA = { exists = yes } }
-            add_co_belligerent = c:LYCIA
-        }
-        if = {
-            limit = { c:SEHA = { exists = yes } }
-            add_co_belligerent = c:SEHA
-        }
-        if = {
-            limit = { c:LUKKA = { exists = yes } }
-            add_co_belligerent = c:LUKKA
-        }
-        if = {
-            limit = { c:MASA = { exists = yes } }
-            add_co_belligerent = c:MASA
+			co_belligerent = scope:AHHI
+			co_belligerent = scope:LYCIA
+			co_belligerent = scope:SEHA
+			co_belligerent = scope:LUKKA
+			co_belligerent = scope:MASA
+			call_in_overlord = no   
+        	call_in_subjects = no   
+       		call_in_allies = no 
         }
     }
 	
