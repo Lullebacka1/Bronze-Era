@@ -4,6 +4,7 @@
 	research_cost = 1.5
 
 	unlock_building = irrigation_systems
+	unlock_estate_privilege = common_waterways
 
 	requires = settlements_advance
 	
