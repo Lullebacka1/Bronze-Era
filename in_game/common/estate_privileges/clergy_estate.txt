@@ -10,6 +10,10 @@
 
 clergy_judicial_authority = {
 	estate = clergy_estate
+
+	allow = {
+    	NOT = { has_estate_privilege = estate_privilege:nobles_judicial_authority }
+	}
 	
 	country_modifier = {
 		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction

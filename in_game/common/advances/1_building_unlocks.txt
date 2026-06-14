@@ -4,6 +4,7 @@
 	research_cost = 1.5
 
 	unlock_building = irrigation_systems
+	unlock_estate_privilege = common_waterways
 
 	requires = settlements_advance
 	
@@ -214,14 +215,6 @@ wharf_unlock_advance = {
 	starting_technology_level = 3
 
 	requires = sailing_advance
-}
-
-merchants_quarters_unlock_advance = {
-	age = age_1_traditions
-
-	unlock_building = merchants_quarters
-
-	requires = alphabet_script_advance
 }
 
 slave_market_advance = {

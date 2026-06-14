@@ -1,0 +1,10 @@
+alphabet_script_advance = {
+	age = age_1_traditions
+	icon = abacus_advance
+	
+	global_max_literacy = 5
+	global_monthly_literacy = 0.01
+	
+	starting_technology_level = 3
+	requires = bronze_age_trade_posts_advance
+}
