@@ -62,3 +62,21 @@
 
   charioteer_retinues: "Charioteer Retinues"
   charioteer_retinues_desc: "Prominent noble households maintain chariots, horses, drivers, and supporting retainers as part of their military obligations. These prestigious warrior retinues provide rulers with a ready source of elite mobile forces while reinforcing the social position of the aristocracy."
+
+  peasants_tax_exemption: "Tax Exemption"
+  peasants_tax_exemption_desc: "Peasant communities are relieved of certain taxes and obligations, preserving a greater share of their production while reducing the revenues available to rulers and local elites."
+
+  communal_lands: "Communal Lands"
+  communal_lands_desc: "Fields, pastures, forests, and other resources are held and managed collectively by local communities. These arrangements strengthen village autonomy and limit the concentration of land in the hands of powerful individuals."
+
+  common_waterways: "Common Waterways"
+  common_waterways_desc: "Rivers, lakes, canals, and fishing grounds remain open to communal use rather than becoming the exclusive property of elites. Shared access supports local subsistence, trade, and communication."
+
+  right_to_appeal: "Right to Appeal"
+  right_to_appeal_desc: "Commoners may petition higher authorities when they believe local judgments to be unjust. While such rights do not guarantee equality before the law, they provide a measure of protection against arbitrary treatment."
+
+  labor_substitution: "Labor Substitution"
+  labor_substitution_desc: "Communities are permitted to satisfy certain labor obligations through alternative payments, goods, or negotiated arrangements. This grants households greater flexibility while preserving their duties to the state or local authorities."
+
+  household_property: "Household Property"
+  household_property_desc: "Families enjoy recognized rights to the homes, fields, and productive resources they occupy. Stronger protection of household holdings limits elite encroachment and strengthens the position of independent rural communities."

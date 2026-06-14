@@ -179,6 +179,9 @@
   charioteer_retinues_advance: "Charioteer Retinues"
   charioteer_retinues_advance_desc: "The growing military importance of horse-drawn vehicles encourages noble households to maintain permanent chariot contingents. These retinues include warriors, drivers, horse handlers, and supporting personnel whose service forms a key component of aristocratic military obligations."
 
+  labor_substitution_advance: "Labor Substitution"
+  labor_substitution_advance_desc: "As systems of exchange become more sophisticated, labor obligations can increasingly be commuted into payments in grain, livestock, metal, or other valuable goods. Such arrangements reduce the need for direct service while creating new opportunities for administration and taxation."
+
   # ##########################
   # BUILDINGS
   # ##########################
