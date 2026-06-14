@@ -119,9 +119,6 @@
   scribe_alphabetic_maintenance: "Perishable Writing Media"
   scribe_alphabetic_maintenance_desc: "Simple alphabetic scripts spread onto cheap and widely available materials such as leather, wooden tablets, wax boards, and broken pottery shards. Writing escapes the confines of palace archives, allowing practical recordkeeping, trade notes, and personal messages to circulate through broader society."
 
-  merchant_house_advance: "Mercantile Literacy"
-  merchant_house_advance_desc: "The spread of practical alphabetic writing allows merchants to keep contracts, inventories, debts, and correspondence without reliance on palace scribes. Trade becomes increasingly organized around independent commercial households and long-distance exchange networks."
-
   bronze_age_trade_posts_advance: "Foreign Trading Posts"
   bronze_age_trade_posts_advance_desc: "Increasing volumes of long-distance trade lead communities to establish permanent stopping points along major routes and crossings. These early trading posts provide storage, security, and regular meeting places for merchants, caravans, and foreign traders."
 
@@ -178,6 +175,9 @@
 
   ritual_service_advance: "Ritual Service"
   ritual_service_advance_desc: "Religious institutions assume formal responsibility for maintaining the rituals, sacrifices, festivals, and ceremonial observances believed necessary for the prosperity of the realm. The performance of sacred duties becomes an established public function entrusted to the priesthood."
+
+  charioteer_retinues_advance: "Charioteer Retinues"
+  charioteer_retinues_advance_desc: "The growing military importance of horse-drawn vehicles encourages noble households to maintain permanent chariot contingents. These retinues include warriors, drivers, horse handlers, and supporting personnel whose service forms a key component of aristocratic military obligations."
 
   # ##########################
   # BUILDINGS

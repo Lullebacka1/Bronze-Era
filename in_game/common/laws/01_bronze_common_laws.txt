@@ -586,6 +586,8 @@ land_property_law = {
 			tax_income_efficiency = tiny_tax_income_efficiency_bonus
 			clergy_estate_target_satisfaction = small_permanent_target_satisfaction
 
+			clergy_estate_allowed_to_build_rgo = yes
+
 			global_clergy_estate_power = 0.15
 		}
 
@@ -602,6 +604,8 @@ land_property_law = {
 			global_clergy_estate_power = -0.05
 			nobles_estate_levy_size = 0.15
 			nobles_estate_target_satisfaction = small_permanent_target_satisfaction
+
+			nobles_estate_allowed_to_build_rgo = yes
 
 			nobles_estate_max_tax = -0.1
 			global_crown_estate_power = -0.10
