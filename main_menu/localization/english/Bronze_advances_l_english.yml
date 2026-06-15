@@ -249,6 +249,9 @@
   fort_limit_1_advance: "Defensive Architecture"
   fort_limit_1_advance_desc: "Growing political competition, expanding warfare, and increasing wealth encourage the construction of permanent fortifications. Defensive works become more numerous and sophisticated, allowing rulers and communities to secure key settlements, frontiers, and strategic routes."
 
+  megalithic_monument_advance: "Megalithic Monuments"
+  megalithic_monument_advance_desc: "Communities begin undertaking the construction of enduring ceremonial monuments built from massive stones. Serving as places of worship, assembly, burial, and ancestral remembrance, these structures strengthen shared traditions and provide visible expressions of communal identity and religious devotion."
+
   # ##########################
   # PRODUCTION METHODS
   # ##########################
