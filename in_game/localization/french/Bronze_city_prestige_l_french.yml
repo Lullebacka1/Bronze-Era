@@ -1,7 +1,6 @@
 ﻿l_french:
- STATIC_MODIFIER_NAME_recently_raided_by_horde: "Raid recent des Peuples de la Mer"
  bronze_city_prestige: "Prestige urbain"
- bronze_city_prestige_desc: "Les centres urbains importants sont classes selon leur population, leur prosperite, leur statut politique, leur commerce, leurs monuments, leur importance historique et leur prestige militaire."
+ bronze_city_prestige_desc: "Les villes et megalopoles sont classees selon leur population, leur prosperite, leur statut politique, leur commerce, leurs monuments, leur importance historique et leur prestige militaire."
  bronze_city_prestige_score: "Score de prestige urbain"
  bronze_city_prestige_rank: "Rang d'influence urbaine"
  bronze_city_prestige_rank_1_name: "Ville mondiale"
@@ -23,7 +22,7 @@
  STATIC_MODIFIER_NAME_bronze_city_prestige_rank_5_local_city: "Prestige urbain : ville locale"
  STATIC_MODIFIER_DESC_bronze_city_prestige_rank_5_local_city: "Un centre urbain reconnu exercant son influence sur son arriere-pays immediat."
  BRONZE_CITY_PRESTIGE_LEDGER_TAB: "Grandes villes"
- BRONZE_CITY_PRESTIGE_LEDGER_TITLE: "Grandes villes du monde connu"
+ BRONZE_CITY_PRESTIGE_LEDGER_TITLE: "Grandes villes du monde"
  BRONZE_CITY_PRESTIGE_URBAN_INFLUENCE: "Influence urbaine"
  BRONZE_CITY_PRESTIGE_URBAN_INFLUENCE_DESC: "Toutes les villes et megalopoles du monde sont affichees. Les quinze villes les mieux classees accordent de l'influence urbaine a leur proprietaire."
  BRONZE_CITY_PRESTIGE_URBAN_INFLUENCE_TT: "L'influence urbaine est obtenue en possedant une ville du top 15 mondial. Elle est convertie en projection de puissance et en prestige mensuel par un seul modificateur national."
@@ -106,4 +105,3 @@
  bronze_city_prestige.7.desc: "Les destructions et l'insecurite chassent les familles de [bronze_city.GetName]. Les artisans emportent leurs outils et la renommee de la ville disparait avec ses habitants."
  bronze_city_prestige.7.a: "Organiser leur reinstallation dans le royaume."
  bronze_city_prestige.7.b: "Fermer les portes et preserver le tresor."
-
