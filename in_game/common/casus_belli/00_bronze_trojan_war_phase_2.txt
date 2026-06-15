@@ -1,22 +1,13 @@
-# the war goal used for the trojan war phase 2
+﻿# the war goal used for the trojan war phase 2
 trojan_war_casus_belli = {
 	valid_for_wargoal = yes
-
 	is_badboy_war = no
-
 	is_triggered_only = yes
 
-	wargoal = {
-		type = take_province
-		allowed_provinces = {
-			always = yes
-		}
-	}
+	
+	war_goal_type = conquest_wargoal 
 
 	
-	trigger = {
-		NOT = { tag = FROM }
-	}
 
 	war_score_cost = {
 		value = 2.0

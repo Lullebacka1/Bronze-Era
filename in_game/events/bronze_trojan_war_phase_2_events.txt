@@ -1,30 +1,26 @@
 namespace = start_trojan_war_phase_2
 
 start_trojan_war_phase_2.1 = {
-		type = country_event
-		title = trojan_war_phase_2_start.t
+    type = country_event
+    title = trojan_war_phase_2_start.t
     desc = trojan_war_phase_2_start.d
     
     is_triggered_only = yes 
-
     hidden = no 
 	
- option = {
+   option = {
         name = "trojan_war_phase_2_start.a"
-       
-       
+        
+    
         declare_war_with_cb = {
             target = c:WILUS
             type = trojan_war_casus_belli
-			co_belligerent = scope:AHHI
-			co_belligerent = scope:LYCIA
-			co_belligerent = scope:SEHA
-			co_belligerent = scope:LUKKA
-			co_belligerent = scope:MASA
-			call_in_overlord = no   
-        	call_in_subjects = no   
-       		call_in_allies = no 
         }
+
+        c:AHHI  = { join_war = c:WILUS }
+        c:LYCIA = { join_war = c:WILUS }
+        c:SEHA  = { join_war = c:WILUS }
+        c:LUKKA = { join_war = c:WILUS }
+        c:MASA  = { join_war = c:WILUS }
     }
-	
 }

@@ -16,13 +16,12 @@ trojan_war_phase_2 = {
             value = c:0001G 
         }
 
-        
-        var:situation_leader = {
-            trigger_event_silently = {
-                id = start_trojan_war_phase_2.1
-                days = 1
-            }
+	  var:situation_leader = {
+        trigger_event = {
+            id = start_trojan_war_phase_2.1
+            days = 1
         }
+    }
 		set_global_variable = { name = "trojan_war_phase_2_started" value = yes }
 		
 		
