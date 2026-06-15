@@ -1,0 +1,19 @@
+megalithic_monument_advance = {
+	age = age_1_traditions
+
+	requires = ritual_sites_advance
+
+	unlock_building = megalithic_religious_monument
+
+	starting_technology_level = 4
+}
+
+monumental_gates_advance = {
+	age = age_1_traditions
+
+	requires = bronze_city_walls_advance
+
+	unlock_building = bronze_monumental_gates
+
+	starting_technology_level = 4
+}
