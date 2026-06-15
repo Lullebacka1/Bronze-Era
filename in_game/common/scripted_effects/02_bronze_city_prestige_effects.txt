@@ -1,0 +1,864 @@
+﻿# Backend only. A ledger can safely consume bronze_city_prestige_enabled,
+# score, owner reward, and an independent global ledger list maintained here.
+#
+# Historical setup example once an exact location key is known:
+# location:<location_id> = {
+#     set_variable = { name = bronze_historic_city value = 100 }
+# }
+#
+# Root = location.
+bronze_city_prestige_initialize_city = {
+	if = {
+		limit = {
+			NOT = { has_variable = bronze_city_prestige_enabled }
+		}
+		set_variable = { name = bronze_city_prestige_enabled value = 1 }
+		set_variable = { name = bronze_city_prestige_score value = 0 }
+		set_variable = { name = bronze_city_prestige_rank value = 5 }
+	}
+
+	# Global GUI lists expose entries as generic scopes. This typed
+	# self-reference is retained for compatibility with older saves and UI code.
+	set_variable = {
+		name = bronze_city_prestige_gui_location
+		value = this
+	}
+
+	# Keep a compact owner-side list so yearly updates do not scan every location.
+	owner ?= {
+		if = {
+			limit = {
+				NOT = {
+					is_target_in_variable_list = {
+						name = bronze_city_prestige_cities
+						target = prev
+					}
+				}
+			}
+			add_to_variable_list = {
+				name = bronze_city_prestige_cities
+				target = prev
+			}
+		}
+	}
+
+	# The world ranking must use a global list. Scopes such as
+	# ordered_ownable_location only enumerate locations belonging to the
+	# current country, which previously left almost the entire world unranked.
+	if = {
+		limit = {
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = bronze_city_prestige_world_cities
+					target = this
+				}
+			}
+		}
+		add_to_global_variable_list = {
+			name = bronze_city_prestige_world_cities
+			target = this
+		}
+	}
+}
+
+# Root = location. Removes obsolete entries when a ranked settlement is
+# downgraded below city status.
+bronze_city_prestige_disable_city = {
+	owner ?= {
+		remove_list_variable = {
+			name = bronze_city_prestige_cities
+			target = prev
+		}
+	}
+
+	remove_location_modifier = bronze_city_prestige_rank_1_world_city
+	remove_location_modifier = bronze_city_prestige_rank_2_imperial_city
+	remove_location_modifier = bronze_city_prestige_rank_3_great_city
+	remove_location_modifier = bronze_city_prestige_rank_4_regional_city
+	remove_location_modifier = bronze_city_prestige_rank_5_local_city
+	remove_variable = bronze_city_prestige_enabled
+	remove_variable = bronze_city_prestige_score
+	remove_variable = bronze_city_prestige_rank
+	remove_variable = bronze_city_prestige_global_rank
+	remove_variable = bronze_city_prestige_rank_percentile
+	remove_variable = bronze_city_prestige_relative_score
+	remove_variable = bronze_city_prestige_gui_location
+}
+
+# Root = location.
+# bronze_historic_city and bronze_city_prestige_military_score are optional
+# extension hooks. Their numeric values are added directly to the score.
+bronze_city_prestige_recalculate_city = {
+	set_variable = { name = bronze_city_prestige_score value = 0 }
+
+	# Settlement rank supplies the urban base score. A megalopolis begins with
+	# four times the urban weight of a normal city.
+	if = {
+		limit = { location_rank = location_rank:megalopolis }
+		change_variable = { name = bronze_city_prestige_score add = 100 }
+	}
+	else_if = {
+		limit = { location_rank = location_rank:city }
+		change_variable = { name = bronze_city_prestige_score add = 25 }
+	}
+
+	# Location population values are expressed in thousands.
+	if = {
+		limit = { population >= 10 }
+		change_variable = { name = bronze_city_prestige_score add = 10 }
+	}
+	if = {
+		limit = { population >= 50 }
+		change_variable = { name = bronze_city_prestige_score add = 25 }
+	}
+	if = {
+		limit = { population >= 100 }
+		change_variable = { name = bronze_city_prestige_score add = 50 }
+	}
+	if = {
+		limit = { population >= 250 }
+		change_variable = { name = bronze_city_prestige_score add = 100 }
+	}
+	if = {
+		limit = { population >= 500 }
+		change_variable = { name = bronze_city_prestige_score add = 200 }
+	}
+
+	# Prosperity represents the current success and reputation of the urban
+	# economy. The brackets are exclusive so this remains meaningful without
+	# overwhelming population, buildings, or historical importance.
+	if = {
+		limit = { prosperity >= 0.75 }
+		change_variable = { name = bronze_city_prestige_score add = 50 }
+	}
+	else_if = {
+		limit = { prosperity >= 0.50 }
+		change_variable = { name = bronze_city_prestige_score add = 35 }
+	}
+	else_if = {
+		limit = { prosperity >= 0.25 }
+		change_variable = { name = bronze_city_prestige_score add = 20 }
+	}
+	else_if = {
+		limit = { prosperity >= 0 }
+		change_variable = { name = bronze_city_prestige_score add = 10 }
+	}
+	else_if = {
+		limit = { prosperity >= -0.25 }
+		change_variable = { name = bronze_city_prestige_score add = 5 }
+	}
+
+	if = {
+		limit = { is_capital = yes }
+		change_variable = { name = bronze_city_prestige_score add = 50 }
+	}
+
+	# Geographic trade role is awarded once even if both conditions are true.
+	if = {
+		limit = {
+			OR = {
+				is_market_center = yes
+				is_port = yes
+			}
+		}
+		change_variable = { name = bronze_city_prestige_score add = 50 }
+	}
+
+	# All building-based points are configured in one dedicated effect file:
+	# 01_bronze_city_prestige_building_points.txt
+	bronze_city_prestige_add_building_points = yes
+
+	# Optional hooks for historical sites, future monuments, and military systems.
+	if = {
+		limit = {
+			has_variable = bronze_historic_city
+			var:bronze_historic_city > 0
+		}
+		change_variable = {
+			name = bronze_city_prestige_score
+			add = var:bronze_historic_city
+		}
+	}
+	if = {
+		limit = {
+			has_variable = bronze_city_monument_score
+			var:bronze_city_monument_score > 0
+		}
+		change_variable = {
+			name = bronze_city_prestige_score
+			add = var:bronze_city_monument_score
+		}
+	}
+	if = {
+		limit = {
+			has_variable = bronze_city_prestige_military_score
+			var:bronze_city_prestige_military_score > 0
+		}
+		change_variable = {
+			name = bronze_city_prestige_score
+			add = var:bronze_city_prestige_military_score
+		}
+	}
+
+	# Temporary urban events alter the next rankings without creating a second
+	# prestige system. Positive and negative event modifiers remain visible in
+	# the location panel and are translated here into score changes.
+	if = {
+		limit = { has_location_modifier = bronze_city_scholars_gathered }
+		change_variable = { name = bronze_city_prestige_score add = 15 }
+	}
+	if = {
+		limit = { has_location_modifier = bronze_city_famous_craftsmen }
+		change_variable = { name = bronze_city_prestige_score add = 20 }
+	}
+	if = {
+		limit = { has_location_modifier = bronze_city_merchant_caravan }
+		change_variable = { name = bronze_city_prestige_score add = 10 }
+	}
+	if = {
+		limit = { has_location_modifier = bronze_city_famine }
+		change_variable = { name = bronze_city_prestige_score subtract = 25 }
+	}
+	if = {
+		limit = { has_location_modifier = bronze_city_trade_collapse }
+		change_variable = { name = bronze_city_prestige_score subtract = 20 }
+	}
+	if = {
+		limit = { has_location_modifier = bronze_city_population_exodus }
+		change_variable = { name = bronze_city_prestige_score subtract = 30 }
+	}
+
+}
+
+# Root = location.
+# The exact world position and the influence category are separate concepts.
+# Influence categories require both a competitive world position and enough
+# raw prestige. Only the first-ranked city may ever be a World City.
+bronze_city_prestige_apply_rank = {
+	# Rank modifiers are mutually exclusive.
+	remove_location_modifier = bronze_city_prestige_rank_1_world_city
+	remove_location_modifier = bronze_city_prestige_rank_2_imperial_city
+	remove_location_modifier = bronze_city_prestige_rank_3_great_city
+	remove_location_modifier = bronze_city_prestige_rank_4_regional_city
+	remove_location_modifier = bronze_city_prestige_rank_5_local_city
+
+	if = {
+		limit = {
+			var:bronze_city_prestige_global_rank = 1
+		}
+		set_variable = { name = bronze_city_prestige_rank value = 1 }
+		add_location_modifier = {
+			modifier = bronze_city_prestige_rank_1_world_city
+			years = -1
+			mode = replace
+		}
+	}
+	else_if = {
+		limit = {
+			var:bronze_city_prestige_rank_percentile <= 20
+			var:bronze_city_prestige_score >= 100
+			OR = {
+				owner = {
+					country_rank = country_rank:rank_empire
+				}
+				AND = {
+					is_capital = yes
+					owner = {
+						country_rank = country_rank:rank_kingdom
+					}
+				}
+			}
+		}
+		set_variable = { name = bronze_city_prestige_rank value = 2 }
+		add_location_modifier = {
+			modifier = bronze_city_prestige_rank_2_imperial_city
+			years = -1
+			mode = replace
+		}
+	}
+	else_if = {
+		limit = {
+			var:bronze_city_prestige_rank_percentile <= 45
+			var:bronze_city_prestige_score >= 75
+		}
+		set_variable = { name = bronze_city_prestige_rank value = 3 }
+		add_location_modifier = {
+			modifier = bronze_city_prestige_rank_3_great_city
+			years = -1
+			mode = replace
+		}
+	}
+	else_if = {
+		limit = {
+			var:bronze_city_prestige_rank_percentile <= 75
+			var:bronze_city_prestige_score >= 45
+		}
+		set_variable = { name = bronze_city_prestige_rank value = 4 }
+		add_location_modifier = {
+			modifier = bronze_city_prestige_rank_4_regional_city
+			years = -1
+			mode = replace
+		}
+	}
+	else = {
+		set_variable = { name = bronze_city_prestige_rank value = 5 }
+		add_location_modifier = {
+			modifier = bronze_city_prestige_rank_5_local_city
+			years = -1
+			mode = replace
+		}
+	}
+}
+
+# Root = country. Only cities already stored in the compact variable list are
+# recalculated here. Stale entries after conquest are ignored by the owner check.
+bronze_city_prestige_yearly_update = {
+	if = {
+		limit = { has_variable_list = bronze_city_prestige_cities }
+		every_in_list = {
+			variable = bronze_city_prestige_cities
+			limit = {
+				owner = root
+				has_variable = bronze_city_prestige_enabled
+				var:bronze_city_prestige_enabled > 0
+			}
+			if = {
+				limit = { bronze_city_prestige_is_urban = yes }
+				bronze_city_prestige_recalculate_city = yes
+			}
+			else = {
+				bronze_city_prestige_disable_city = yes
+			}
+		}
+	}
+}
+
+# Root = country.
+# Applies one consolidated country modifier based on the combined value of all
+# top-15 cities owned by the country. This keeps the modifier panel readable.
+bronze_city_prestige_apply_owner_reward = {
+	remove_country_modifier = bronze_city_prestige_influence_1
+	remove_country_modifier = bronze_city_prestige_influence_2
+	remove_country_modifier = bronze_city_prestige_influence_3
+	remove_country_modifier = bronze_city_prestige_influence_4
+	remove_country_modifier = bronze_city_prestige_influence_5
+
+	if = {
+		limit = { var:bronze_city_prestige_influence_score >= 13 }
+		add_country_modifier = {
+			modifier = bronze_city_prestige_influence_5
+			years = -1
+			mode = replace
+		}
+	}
+	else_if = {
+		limit = { var:bronze_city_prestige_influence_score >= 8 }
+		add_country_modifier = {
+			modifier = bronze_city_prestige_influence_4
+			years = -1
+			mode = replace
+		}
+	}
+	else_if = {
+		limit = { var:bronze_city_prestige_influence_score >= 5 }
+		add_country_modifier = {
+			modifier = bronze_city_prestige_influence_3
+			years = -1
+			mode = replace
+		}
+	}
+	else_if = {
+		limit = { var:bronze_city_prestige_influence_score >= 3 }
+		add_country_modifier = {
+			modifier = bronze_city_prestige_influence_2
+			years = -1
+			mode = replace
+		}
+	}
+	else_if = {
+		limit = { var:bronze_city_prestige_influence_score > 0 }
+		add_country_modifier = {
+			modifier = bronze_city_prestige_influence_1
+			years = -1
+			mode = replace
+		}
+	}
+}
+
+# Root = country. A famous royal capital supports the ruler's legitimacy.
+# The modifier is recalculated after every world ranking pass, so changing the
+# capital or losing influence removes the obsolete tier automatically.
+bronze_city_prestige_apply_royal_capital_bonus = {
+	remove_country_modifier = bronze_city_royal_capital_regional
+	remove_country_modifier = bronze_city_royal_capital_great
+	remove_country_modifier = bronze_city_royal_capital_imperial
+	remove_country_modifier = bronze_city_royal_capital_world
+
+	if = {
+		limit = {
+			exists = capital
+			capital = {
+				has_variable = bronze_city_prestige_rank
+				var:bronze_city_prestige_rank = 1
+			}
+		}
+		add_country_modifier = {
+			modifier = bronze_city_royal_capital_world
+			years = -1
+			mode = replace
+		}
+	}
+	else_if = {
+		limit = {
+			exists = capital
+			capital = {
+				has_variable = bronze_city_prestige_rank
+				var:bronze_city_prestige_rank = 2
+			}
+		}
+		add_country_modifier = {
+			modifier = bronze_city_royal_capital_imperial
+			years = -1
+			mode = replace
+		}
+	}
+	else_if = {
+		limit = {
+			exists = capital
+			capital = {
+				has_variable = bronze_city_prestige_rank
+				var:bronze_city_prestige_rank = 3
+			}
+		}
+		add_country_modifier = {
+			modifier = bronze_city_royal_capital_great
+			years = -1
+			mode = replace
+		}
+	}
+	else_if = {
+		limit = {
+			exists = capital
+			capital = {
+				has_variable = bronze_city_prestige_rank
+				var:bronze_city_prestige_rank = 4
+			}
+		}
+		add_country_modifier = {
+			modifier = bronze_city_royal_capital_regional
+			years = -1
+			mode = replace
+		}
+	}
+}
+
+# Root = any scope.
+# The ledger is deliberately independent from the prestige ranking. It lists
+# every city and megalopolis in the world, with no discovery, ownership, score,
+# rank, or country filter.
+bronze_city_prestige_rebuild_ledger_list = {
+	if = {
+		limit = {
+			has_global_variable_list = bronze_city_prestige_ledger_cities
+		}
+		clear_global_variable_list = bronze_city_prestige_ledger_cities
+	}
+
+	every_location_in_the_world = {
+		limit = {
+			OR = {
+				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
+			}
+		}
+
+		# Store the typed location reference expected by generic GUI list scopes.
+		bronze_city_prestige_initialize_city = yes
+
+		add_to_global_variable_list = {
+			name = bronze_city_prestige_ledger_cities
+			target = this
+		}
+	}
+}
+
+# Root = prestigious destination location.
+# Creates a small, temporary migration route from a neighboring country or a
+# country known by the destination owner. The route moves real peasants, so the
+# source culture and religion are retained without replacing the host majority.
+bronze_city_prestige_create_foreign_migration = {
+	save_scope_as = bronze_city_prestige_destination
+	owner ?= {
+		save_scope_as = bronze_city_prestige_destination_owner
+
+		random_list = {
+			70 = {
+				random_neighbor_country = {
+					limit = {
+						is_real_country = yes
+						exists = capital
+						total_population > 1
+						NOT = { this = scope:bronze_city_prestige_destination_owner }
+						capital = {
+							NOT = {
+								province_definition = scope:bronze_city_prestige_destination.province_definition
+							}
+						}
+					}
+					save_scope_as = bronze_city_prestige_migrant_source
+				}
+			}
+			30 = {
+				random_known_country = {
+					limit = {
+						is_real_country = yes
+						exists = capital
+						total_population > 1
+						NOT = { this = scope:bronze_city_prestige_destination_owner }
+						capital = {
+							NOT = {
+								province_definition = scope:bronze_city_prestige_destination.province_definition
+							}
+						}
+					}
+					save_scope_as = bronze_city_prestige_migrant_source
+				}
+			}
+		}
+	}
+
+	if = {
+		limit = { exists = scope:bronze_city_prestige_migrant_source }
+
+		if = {
+			limit = { var:bronze_city_prestige_global_rank <= 3 }
+			add_migration = {
+				owner = scope:bronze_city_prestige_migrant_source
+				to_owner = scope:bronze_city_prestige_destination_owner
+				from = scope:bronze_city_prestige_migrant_source.capital.province_definition
+				to = scope:bronze_city_prestige_destination.province_definition
+				type = pop_type:peasants
+				amount = 0.003
+				months = 24
+			}
+		}
+		else_if = {
+			limit = { var:bronze_city_prestige_global_rank <= 10 }
+			add_migration = {
+				owner = scope:bronze_city_prestige_migrant_source
+				to_owner = scope:bronze_city_prestige_destination_owner
+				from = scope:bronze_city_prestige_migrant_source.capital.province_definition
+				to = scope:bronze_city_prestige_destination.province_definition
+				type = pop_type:peasants
+				amount = 0.002
+				months = 24
+			}
+		}
+		else = {
+			add_migration = {
+				owner = scope:bronze_city_prestige_migrant_source
+				to_owner = scope:bronze_city_prestige_destination_owner
+				from = scope:bronze_city_prestige_migrant_source.capital.province_definition
+				to = scope:bronze_city_prestige_destination.province_definition
+				type = pop_type:peasants
+				amount = 0.001
+				months = 24
+			}
+		}
+
+		# At most one prestige-generated foreign route per city every four years.
+		set_variable = {
+			name = bronze_city_prestige_foreign_migration_cooldown
+			value = 1
+			years = 4
+		}
+	}
+}
+
+# Root = ranked location.
+bronze_city_prestige_try_foreign_migration = {
+	if = {
+		limit = {
+			has_owner = yes
+			NOT = { has_variable = bronze_city_prestige_foreign_migration_cooldown }
+			var:bronze_city_prestige_global_rank <= 3
+		}
+		random = {
+			chance = 35
+			bronze_city_prestige_create_foreign_migration = yes
+		}
+	}
+	else_if = {
+		limit = {
+			has_owner = yes
+			NOT = { has_variable = bronze_city_prestige_foreign_migration_cooldown }
+			var:bronze_city_prestige_global_rank <= 10
+		}
+		random = {
+			chance = 20
+			bronze_city_prestige_create_foreign_migration = yes
+		}
+	}
+	else_if = {
+		limit = {
+			has_owner = yes
+			NOT = { has_variable = bronze_city_prestige_foreign_migration_cooldown }
+			var:bronze_city_prestige_global_rank <= 30
+		}
+		random = {
+			chance = 10
+			bronze_city_prestige_create_foreign_migration = yes
+		}
+	}
+}
+
+# Root = the country stored as the ranking manager.
+# Balance controls:
+# - Top-city influence weights are in the five rank checks below.
+# - Country reward tiers are in bronze_city_prestige_apply_owner_reward.
+# - Foreign migration intensity is in the two migration effects above.
+bronze_city_prestige_update_world_ranking = {
+	# The manager owns a temporary pool rebuilt directly from world locations.
+	# This does not depend on the persistent global list being available during
+	# game-start initialization or save conversion.
+	save_scope_as = bronze_city_prestige_ranking_manager
+
+	clear_variable_list = bronze_city_prestige_ranking_pool
+
+	# Register and refresh every valid urban location, then place it in the
+	# manager-owned pool used by both ordered ranking passes.
+	every_location_in_the_world = {
+		limit = {
+			has_owner = yes
+			bronze_city_prestige_is_urban = yes
+		}
+		bronze_city_prestige_initialize_city = yes
+		bronze_city_prestige_recalculate_city = yes
+		save_scope_as = bronze_city_prestige_rank_pool_city
+		scope:bronze_city_prestige_ranking_manager = {
+			add_to_variable_list = {
+				name = bronze_city_prestige_ranking_pool
+				target = scope:bronze_city_prestige_rank_pool_city
+			}
+		}
+	}
+
+	every_country = {
+		limit = { is_real_country = yes }
+		set_variable = { name = bronze_city_prestige_influence_score value = 0 }
+		remove_country_modifier = bronze_city_prestige_influence_1
+		remove_country_modifier = bronze_city_prestige_influence_2
+		remove_country_modifier = bronze_city_prestige_influence_3
+		remove_country_modifier = bronze_city_prestige_influence_4
+		remove_country_modifier = bronze_city_prestige_influence_5
+	}
+
+	# First local-list pass: count valid cities for percentile thresholds.
+	set_variable = { name = bronze_city_prestige_ranking_counter value = 0 }
+
+	every_in_list = {
+		variable = bronze_city_prestige_ranking_pool
+		root = {
+			change_variable = {
+				name = bronze_city_prestige_ranking_counter
+				add = 1
+			}
+		}
+	}
+
+	set_variable = {
+		name = bronze_city_prestige_total_ranked_cities
+		value = var:bronze_city_prestige_ranking_counter
+	}
+
+	# Second local-list pass: assign the unique positions 1, 2, 3, ...
+	set_variable = { name = bronze_city_prestige_ranking_counter value = 0 }
+
+	ordered_in_list = {
+		variable = bronze_city_prestige_ranking_pool
+		order_by = var:bronze_city_prestige_score
+		max = 10000
+		check_range_bounds = no
+
+		root = {
+			change_variable = {
+				name = bronze_city_prestige_ranking_counter
+				add = 1
+			}
+		}
+		set_variable = {
+			name = bronze_city_prestige_global_rank
+			value = root.var:bronze_city_prestige_ranking_counter
+		}
+		set_variable = {
+			name = bronze_city_prestige_rank_percentile
+			value = {
+				value = root.var:bronze_city_prestige_ranking_counter
+				multiply = 100
+				divide = root.var:bronze_city_prestige_total_ranked_cities
+				min = 0
+				max = 100
+			}
+		}
+		remove_variable = bronze_city_prestige_relative_score
+		bronze_city_prestige_apply_rank = yes
+
+		# The top fifteen cities contribute to their owner's urban influence.
+		if = {
+			limit = {
+				root.var:bronze_city_prestige_ranking_counter = 1
+			}
+			owner ?= {
+				change_variable = {
+					name = bronze_city_prestige_influence_score
+					add = 8
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				root.var:bronze_city_prestige_ranking_counter <= 3
+			}
+			owner ?= {
+				change_variable = {
+					name = bronze_city_prestige_influence_score
+					add = 5
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				root.var:bronze_city_prestige_ranking_counter <= 5
+			}
+			owner ?= {
+				change_variable = {
+					name = bronze_city_prestige_influence_score
+					add = 3
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				root.var:bronze_city_prestige_ranking_counter <= 10
+			}
+			owner ?= {
+				change_variable = {
+					name = bronze_city_prestige_influence_score
+					add = 2
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				root.var:bronze_city_prestige_ranking_counter <= 15
+			}
+			owner ?= {
+				change_variable = {
+					name = bronze_city_prestige_influence_score
+					add = 1
+				}
+			}
+		}
+
+		bronze_city_prestige_try_foreign_migration = yes
+	}
+
+	clear_variable_list = bronze_city_prestige_ranking_pool
+
+	every_country = {
+		limit = { is_real_country = yes }
+		bronze_city_prestige_apply_owner_reward = yes
+		bronze_city_prestige_apply_royal_capital_bonus = yes
+	}
+}
+
+# Root = country. This broader scan runs only once every five yearly pulses.
+bronze_city_prestige_five_year_eligibility_update = {
+	every_owned_location = {
+		if = {
+			limit = { bronze_city_prestige_is_urban = yes }
+			bronze_city_prestige_initialize_city = yes
+			bronze_city_prestige_recalculate_city = yes
+		}
+		else_if = {
+			limit = {
+				has_variable = bronze_city_prestige_enabled
+				var:bronze_city_prestige_enabled > 0
+			}
+			bronze_city_prestige_disable_city = yes
+		}
+	}
+}
+
+# Root = global scope at game start.
+bronze_city_prestige_initialize_world = {
+	if = {
+		limit = { has_global_variable_list = bronze_city_prestige_world_cities }
+		clear_global_variable_list = bronze_city_prestige_world_cities
+	}
+
+	every_location_in_the_world = {
+		limit = { bronze_city_prestige_is_urban = yes }
+		bronze_city_prestige_initialize_city = yes
+		bronze_city_prestige_recalculate_city = yes
+	}
+
+	# Bronze countries keep the update timer, but their capitals must still be
+	# cities or megalopolises to enter the prestige ranking.
+	every_country = {
+		limit = { bronze_city_prestige_is_bronze_country = yes }
+		set_variable = { name = bronze_city_prestige_bronze_country value = 1 }
+		set_variable = { name = bronze_city_prestige_eligibility_years value = 0 }
+	}
+
+	# Non-Bronze countries also need the timer for future qualifying cities.
+	every_country = {
+		limit = {
+			is_real_country = yes
+			NOT = { has_variable = bronze_city_prestige_eligibility_years }
+		}
+		set_variable = { name = bronze_city_prestige_eligibility_years value = 0 }
+	}
+
+	# The first human country becomes the single yearly ranking manager.
+	every_country = {
+		limit = {
+			is_real_country = yes
+			is_ai = no
+			NOT = { has_global_variable = bronze_city_prestige_manager }
+		}
+		set_global_variable = {
+			name = bronze_city_prestige_manager
+			value = this
+		}
+		bronze_city_prestige_update_world_ranking = yes
+	}
+
+	# Observer-less starts still receive a manager.
+	if = {
+		limit = {
+			NOT = { has_global_variable = bronze_city_prestige_manager }
+		}
+		random_country = {
+			limit = {
+				is_real_country = yes
+				exists = capital
+			}
+			set_global_variable = {
+				name = bronze_city_prestige_manager
+				value = this
+			}
+			bronze_city_prestige_update_world_ranking = yes
+		}
+	}
+
+	# The ledger is a plain world list and does not depend on ranking success.
+	bronze_city_prestige_rebuild_ledger_list = yes
+
+	# Save-compatible initialization marker. Existing campaigns that predate
+	# City Prestige are rebuilt once by the monthly bootstrap on-action.
+	set_global_variable = {
+		name = bronze_city_prestige_runtime_v9_initialized
+		value = 1
+	}
+}

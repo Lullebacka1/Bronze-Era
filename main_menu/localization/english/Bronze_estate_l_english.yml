@@ -1,0 +1,82 @@
+﻿l_english:
+
+  protected_travel: "Protected Travel"
+  protected_travel_desc: "Merchants are granted guarantees of safe passage along roads, rivers, and trade routes. Authorities commit resources to maintaining the security of commerce and the movement of goods."
+
+  protection_abroad: "Protection Abroad"
+  protection_abroad_desc: "The state extends its protection to merchants operating beyond its borders, employing diplomacy and political influence to safeguard commercial interests in foreign lands."
+
+  royal_compensation: "Royal Compensation"
+  royal_compensation_desc: "Merchants who suffer losses through banditry, piracy, or official misconduct may seek compensation from the ruler's administration, reducing the risks associated with long-distance trade."
+
+  customs_exemption: "Customs Exemption"
+  customs_exemption_desc: "Favored merchants receive exemptions from certain tolls, duties, and market fees, encouraging commercial activity while reducing the revenues available to the state."
+
+  trade_districts: "Trade Districts"
+  trade_districts_desc: "Designated commercial quarters concentrate merchants, warehouses, markets, and workshops in specific areas, creating thriving centers of exchange and economic activity."
+
+  commercial_monopolies: "Commercial Monopolies"
+  commercial_monopolies_desc: "Exclusive trading rights are granted to privileged merchant groups, allowing them to dominate key routes and commodities while limiting competition from rivals."
+
+  protected_inheritance: "Protected Inheritance"
+  protected_inheritance_desc: "Commercial property, contracts, and accumulated wealth enjoy strong legal protections, allowing merchant families to preserve and expand their fortunes across generations."
+
+  administrative_incorporation: "Administrative Incorporation"
+  administrative_incorporation_desc: "Merchant communities are increasingly integrated into the state's administrative structures. Commercial expertise is employed in governance, taxation, logistics, and the management of exchange."
+
+  burghers_protected_faith: "Protected Faith"
+  burghers_protected_faith_desc: "Merchant communities are permitted to maintain their own religious traditions and practices, encouraging commerce across cultural and religious boundaries."
+
+  sponsor_maritime_contracts: "Sponsored Maritime Contracts"
+  sponsor_maritime_contracts_desc: "Authorities support commercial ventures by recognizing and enforcing agreements related to shipping, cargo, and maritime trade, reducing uncertainty for merchants operating on waterways."
+
+  clergy_tax_exemption: "Tax Exemption"
+  clergy_tax_exemption_desc: "Temples, shrines, and religious institutions are exempted from certain taxes and obligations. The resources preserved through these privileges strengthen the economic position and independence of the priesthood."
+
+  clergy_judicial_authority: "Judicial Authority"
+  clergy_judicial_authority_desc: "Religious authorities are granted the right to hear disputes, interpret sacred law, and pass judgment on matters within their jurisdiction. This strengthens the influence of priestly institutions while encouraging conformity to established traditions."
+
+  clergy_exclusive_literacy_rights: "Exclusive Literacy Rights"
+  clergy_exclusive_literacy_rights_desc: "The knowledge of reading and writing is concentrated within temples and priestly institutions. Control over literacy grants the priesthood considerable influence over administration, education, record-keeping, and the preservation of knowledge."
+
+  ritual_service: "Ritual Service"
+  ritual_service_desc: "Religious institutions are entrusted with the performance of public ceremonies, sacrifices, festivals, and other sacred obligations believed necessary for the well-being of the community and the favor of the gods."
+
+  sacred_herds: "Sacred Herds"
+  sacred_herds_desc: "The priesthood maintains herds dedicated to religious purposes. These animals provide offerings for rituals, support temple economies, and serve as visible symbols of divine favor and sacred authority."
+
+  nobles_tax_exemption: "Tax Exemption"
+  nobles_tax_exemption_desc: "Warrior aristocrats and leading landholders are exempted from certain taxes and obligations. Such privileges reinforce their status while reducing the resources available to the central authorities."
+
+  nobles_judicial_authority: "Judicial Authority"
+  nobles_judicial_authority_desc: "Nobles are granted the right to hear disputes and administer justice within their domains. Local authority is strengthened, but legal standards become increasingly dependent upon the interests and customs of powerful families."
+
+  court_offices: "Court Offices"
+  court_offices_desc: "Important administrative, military, and ceremonial positions are reserved for members of the aristocracy. Service at court strengthens ties between the ruler and noble households while drawing the elite into the machinery of government."
+
+  right_to_plunder: "Right to Plunder"
+  right_to_plunder_desc: "Warriors are permitted to enrich themselves through the seizure of goods, livestock, and captives during campaigns. The expectation of plunder encourages military service and helps sustain martial elites during wartime."
+
+  hereditary_titles: "Hereditary Titles"
+  hereditary_titles_desc: "Ranks, offices, and privileges pass from one generation to the next, transforming positions of authority into enduring family possessions. Established lineages accumulate wealth and influence while providing greater continuity in governance."
+
+  charioteer_retinues: "Charioteer Retinues"
+  charioteer_retinues_desc: "Prominent noble households maintain chariots, horses, drivers, and supporting retainers as part of their military obligations. These prestigious warrior retinues provide rulers with a ready source of elite mobile forces while reinforcing the social position of the aristocracy."
+
+  peasants_tax_exemption: "Tax Exemption"
+  peasants_tax_exemption_desc: "Peasant communities are relieved of certain taxes and obligations, preserving a greater share of their production while reducing the revenues available to rulers and local elites."
+
+  communal_lands: "Communal Lands"
+  communal_lands_desc: "Fields, pastures, forests, and other resources are held and managed collectively by local communities. These arrangements strengthen village autonomy and limit the concentration of land in the hands of powerful individuals."
+
+  common_waterways: "Common Waterways"
+  common_waterways_desc: "Rivers, lakes, canals, and fishing grounds remain open to communal use rather than becoming the exclusive property of elites. Shared access supports local subsistence, trade, and communication."
+
+  right_to_appeal: "Right to Appeal"
+  right_to_appeal_desc: "Commoners may petition higher authorities when they believe local judgments to be unjust. While such rights do not guarantee equality before the law, they provide a measure of protection against arbitrary treatment."
+
+  labor_substitution: "Labor Substitution"
+  labor_substitution_desc: "Communities are permitted to satisfy certain labor obligations through alternative payments, goods, or negotiated arrangements. This grants households greater flexibility while preserving their duties to the state or local authorities."
+
+  household_property: "Household Property"
+  household_property_desc: "Families enjoy recognized rights to the homes, fields, and productive resources they occupy. Stronger protection of household holdings limits elite encroachment and strengthens the position of independent rural communities."

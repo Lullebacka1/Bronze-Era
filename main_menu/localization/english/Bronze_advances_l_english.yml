@@ -119,9 +119,6 @@
   scribe_alphabetic_maintenance: "Perishable Writing Media"
   scribe_alphabetic_maintenance_desc: "Simple alphabetic scripts spread onto cheap and widely available materials such as leather, wooden tablets, wax boards, and broken pottery shards. Writing escapes the confines of palace archives, allowing practical recordkeeping, trade notes, and personal messages to circulate through broader society."
 
-  merchant_house_advance: "Mercantile Literacy"
-  merchant_house_advance_desc: "The spread of practical alphabetic writing allows merchants to keep contracts, inventories, debts, and correspondence without reliance on palace scribes. Trade becomes increasingly organized around independent commercial households and long-distance exchange networks."
-
   bronze_age_trade_posts_advance: "Foreign Trading Posts"
   bronze_age_trade_posts_advance_desc: "Increasing volumes of long-distance trade lead communities to establish permanent stopping points along major routes and crossings. These early trading posts provide storage, security, and regular meeting places for merchants, caravans, and foreign traders."
 
@@ -154,6 +151,36 @@
 
   masonry_advance: "Masonry"
   masonry_advance_desc: "The development of specialized stoneworking techniques allows builders to shape, transport, and assemble stone with greater precision. Masonry supports the construction of durable buildings, fortifications, monuments, and public works."
+
+  merchant_enclaves_advance: "Merchant Enclaves"
+  merchant_enclaves_advance_desc: "Growing trade networks encourage rulers and communities to grant foreign merchants designated quarters, ports, and settlements from which they can conduct business. These enclaves serve as centers of exchange, linking distant markets while facilitating the movement of goods, information, and commercial practices."
+
+  protected_travel_advance: "Protected Travel"
+  protected_travel_advance_desc: "Authorities recognize the importance of secure trade routes and commit resources to protecting merchants, caravans, and commercial travelers from banditry and other disruptions."
+
+  protection_abroad_advance: "Protection Abroad"
+  protection_abroad_advance_desc: "Rulers increasingly concern themselves with the treatment of merchants beyond their borders, using diplomacy, treaties, and political influence to safeguard commercial interests in foreign lands."
+
+  tax_exemption_advance: "Tax Exemptions"
+  tax_exemption_advance_desc: "As systems of taxation become more sophisticated, rulers gain the ability to selectively exempt individuals, communities, temples, and commercial interests from certain obligations. Such privileges become valuable tools for rewarding loyalty, encouraging economic activity, and cultivating influential supporters."
+
+  administrative_incorporation_advance: "Administrative Incorporation"
+  administrative_incorporation_advance_desc: "Experienced merchants and commercial officials are increasingly drawn into administrative service, where their knowledge of exchange, accounting, and logistics strengthens the institutions of the state."
+
+  commercial_monopolies_advance: "Commercial Monopolies"
+  commercial_monopolies_advance_desc: "Rulers grant exclusive trading rights to favored individuals, families, or merchant organizations, concentrating commercial activity in exchange for reliable revenues and political support."
+
+  sponsor_maritime_contracts_advance: "Maritime Contracts"
+  sponsor_maritime_contracts_advance_desc: "The growing complexity of waterborne commerce encourages the formal recognition of agreements governing cargoes, shipping ventures, investment, and liability, reducing uncertainty for merchants and shipowners."
+
+  ritual_service_advance: "Ritual Service"
+  ritual_service_advance_desc: "Religious institutions assume formal responsibility for maintaining the rituals, sacrifices, festivals, and ceremonial observances believed necessary for the prosperity of the realm. The performance of sacred duties becomes an established public function entrusted to the priesthood."
+
+  charioteer_retinues_advance: "Charioteer Retinues"
+  charioteer_retinues_advance_desc: "The growing military importance of horse-drawn vehicles encourages noble households to maintain permanent chariot contingents. These retinues include warriors, drivers, horse handlers, and supporting personnel whose service forms a key component of aristocratic military obligations."
+
+  labor_substitution_advance: "Labor Substitution"
+  labor_substitution_advance_desc: "As systems of exchange become more sophisticated, labor obligations can increasingly be commuted into payments in grain, livestock, metal, or other valuable goods. Such arrangements reduce the need for direct service while creating new opportunities for administration and taxation."
 
   # ##########################
   # BUILDINGS
@@ -221,6 +248,9 @@
 
   fort_limit_1_advance: "Defensive Architecture"
   fort_limit_1_advance_desc: "Growing political competition, expanding warfare, and increasing wealth encourage the construction of permanent fortifications. Defensive works become more numerous and sophisticated, allowing rulers and communities to secure key settlements, frontiers, and strategic routes."
+
+  megalithic_monument_advance: "Megalithic Monuments"
+  megalithic_monument_advance_desc: "Communities begin undertaking the construction of enduring ceremonial monuments built from massive stones. Serving as places of worship, assembly, burial, and ancestral remembrance, these structures strengthen shared traditions and provide visible expressions of communal identity and religious devotion."
 
   # ##########################
   # PRODUCTION METHODS
@@ -345,3 +375,10 @@
 
   cyclopean_walls_advance: "Cyclopean Masonry"
   cyclopean_walls_advance_desc: "Master builders learn to erect colossal fortifications from immense, irregular stone blocks. These monumental walls protect royal citadels while proclaiming the wealth, authority, and engineering prowess of the ruling dynasty."
+
+# ####################
+# GOVERNMENT SPECIFIC
+# ####################
+
+  centralized_administration: "Centralized Administration"
+  centralized_administration_desc: "Rather than relying upon negotiation between competing local interests, authority is increasingly exercised through institutions answerable to the ruler. The concentration of administrative power allows the monarchy to coordinate the movement of food, labor, and supplies across the realm with greater efficiency."

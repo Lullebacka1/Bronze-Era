@@ -1,0 +1,3 @@
+﻿l_english:
+  merchant_enclave: "Merchant Enclave"
+  merchant_enclave_desc: "A $merchant_enclave$ is an investment conglomerate, directed at incurring monetary benefits for itself and its [overlord|e]. They are always a [ShowGovernmentTypeName('republic')] and get increased [ShowModifierTypeName('selling_efficiency')], as well as increased payment obligations to their overlord compared to a regular [ShowSubjectTypeName('vassal')]."

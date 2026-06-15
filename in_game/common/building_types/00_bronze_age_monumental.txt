@@ -37,3 +37,42 @@ bronze_age_triumphal_monument = {
 		local_cultural_tradition = 0.20
 	}	
 }
+
+megalithic_religious_monument = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = clergy
+
+	category = monumental_building_category
+	employment_size = construction_employment
+
+	rural_settlement = yes
+	town = no
+	city = no
+	megalopolis = no
+
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = neolithic_monument_construction
+
+	unique_production_methods = {
+		megalithic_religious_monument_maintenance_simple = {
+			lumber = 0.2
+			wild_game = 0.5
+
+			category = building_maintenance
+		}
+
+	}
+
+	modifier = {
+		local_crown_estate_power = 0.20
+		local_clergy_estate_power = 0.20
+		local_cultural_influence = 0.15
+		local_pop_conversion_speed = 0.02
+	}
+
+	raw_modifier = {
+		local_cultural_tradition = 0.15
+	}	
+}

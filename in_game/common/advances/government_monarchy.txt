@@ -12,6 +12,37 @@ companion_retinues = {
 	requires = aristocratic_recognition_advance
 }
 
+ centralized_administration = {
+ 	age = age_1_traditions
+ 	government = monarchy
+ 	requires = palace_administration
+	
+ 	global_monthly_food_modifier = 0.05
+ }
+
+ levy_obligations_advance = {
+	age = age_1_traditions
+	government = monarchy
+
+	requires = military_record_keeping_advance
+
+	unlock_levy = levy_a_mustered_infantry
+
+	starting_technology_level = 3
+}
+
+court_offices_advance = {
+	age = age_1_traditions
+	government = monarchy
+	research_cost = 1.5
+
+	requires = palace_administration
+
+	unlock_estate_privilege = court_offices
+
+	starting_technology_level = 4
+}
+
 
 
 ############################
