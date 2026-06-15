@@ -29941,13 +29941,13 @@ ushkan = {
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 }
@@ -29955,13 +29955,13 @@ koskuduk = {
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 }
@@ -29969,13 +29969,13 @@ manysai = {
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 }
@@ -29983,13 +29983,13 @@ shagan = {
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 }
@@ -29997,13 +29997,13 @@ zhaksy_karasay = {
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 }
@@ -30289,13 +30289,13 @@ tas_kichu = {
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = andronovo
+		culture = scythian
 		religion = steppe_pagan
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = andronovo
+		culture = scythian
 		religion = steppe_pagan
 	}
 }
@@ -30303,13 +30303,13 @@ kaynar = {
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 }
@@ -30317,13 +30317,13 @@ shagiz = {
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 }
@@ -30331,13 +30331,13 @@ tenteksor = {
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 }
@@ -30783,13 +30783,13 @@ atzhaksy = {
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 }
@@ -30797,13 +30797,13 @@ shatyrlysay = {
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 }
@@ -30811,13 +30811,13 @@ temir = {
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 }
@@ -32166,13 +32166,13 @@ sam = {
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 }
@@ -32180,13 +32180,13 @@ shuruk = {
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = andronovo
+		culture = scythian
 		religion = scythian_pagan
 	}
 }

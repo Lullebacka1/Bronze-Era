@@ -1,0 +1,3 @@
+[0613/225046.928:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:108] CreateFile: Odmowa dostępu. (0x5)
+[0613/225046.931:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:108] CreateFile: Odmowa dostępu. (0x5)
+[0613/225052.673:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:108] CreateFile: Odmowa dostępu. (0x5)

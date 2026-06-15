@@ -82,13 +82,3 @@ miltary_officials_advance = {
 
 	starting_technology_level = 3
 }
-
-levy_obligations_advance = {
-	age = age_1_traditions
-
-	requires = military_record_keeping_advance
-
-	unlock_levy = levy_a_mustered_infantry
-
-	starting_technology_level = 3
-}

@@ -1,0 +1,29 @@
+# Structural variant of Bronze for South Asian states. No balance changes.
+starting_technology_level = 3
+
+currency_data = {
+	gold = 200
+}
+
+government = {
+	type = monarchy
+	heir_selection = cognatic_primogeniture
+
+	centralization_vs_decentralization = 0
+	traditionalist_vs_innovative = -35
+	spiritualist_vs_humanist = -55
+	aristocracy_vs_plutocracy = -45
+	serfdom_vs_free_subjects = 25
+	mercantilism_vs_free_trade = 0
+	belligerent_vs_conciliatory = 10
+	quality_vs_quantity = 0
+	offensive_vs_defensive = 5
+	land_vs_naval = -15
+	capital_economy_vs_traditional_economy = 45
+	individualism_vs_communalism = 25
+	outward_vs_inward = 0
+
+	parliament = {
+		parliament_type = assembly
+	}
+}

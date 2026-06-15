@@ -1,0 +1,182 @@
+﻿bronze_city_prestige_rank_1_world_city = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = 0.15
+	local_trade_center_power = 0.10
+}
+
+bronze_city_prestige_rank_2_imperial_city = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = 0.10
+	local_trade_center_power = 0.075
+}
+
+bronze_city_prestige_rank_3_great_city = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = 0.05
+	local_trade_center_power = 0.05
+}
+
+bronze_city_prestige_rank_4_regional_city = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = 0.025
+}
+
+bronze_city_prestige_rank_5_local_city = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = 0.01
+}
+
+# Consolidated national rewards from ownership of top-15 world cities.
+bronze_city_prestige_influence_1 = {
+	game_data = {
+		category = country
+	}
+	power_projection = 1
+	monthly_prestige = 0.005
+}
+
+bronze_city_prestige_influence_2 = {
+	game_data = {
+		category = country
+	}
+	power_projection = 3
+	monthly_prestige = 0.01
+}
+
+bronze_city_prestige_influence_3 = {
+	game_data = {
+		category = country
+	}
+	power_projection = 5
+	monthly_prestige = 0.02
+}
+
+bronze_city_prestige_influence_4 = {
+	game_data = {
+		category = country
+	}
+	power_projection = 8
+	monthly_prestige = 0.03
+}
+
+bronze_city_prestige_influence_5 = {
+	game_data = {
+		category = country
+	}
+	power_projection = 10
+	monthly_prestige = 0.05
+}
+
+# Royal capitals translate urban renown into dynastic legitimacy.
+bronze_city_royal_capital_regional = {
+	game_data = {
+		category = country
+	}
+	monthly_legitimacy = 0.02
+}
+
+bronze_city_royal_capital_great = {
+	game_data = {
+		category = country
+	}
+	monthly_legitimacy = 0.05
+}
+
+bronze_city_royal_capital_imperial = {
+	game_data = {
+		category = country
+	}
+	monthly_legitimacy = 0.10
+}
+
+bronze_city_royal_capital_world = {
+	game_data = {
+		category = country
+	}
+	monthly_legitimacy = 0.15
+}
+
+# Positive city event modifiers.
+bronze_city_scholars_gathered = {
+	game_data = {
+		category = location
+	}
+	local_monthly_prosperity = 0.002
+}
+
+bronze_city_scholarly_patronage = {
+	game_data = {
+		category = country
+	}
+	research_speed_modifier = 0.03
+	monthly_towards_innovative = societal_value_tiny_monthly_move
+	monthly_prestige = 0.01
+}
+
+bronze_city_scholarly_court = {
+	game_data = {
+		category = character
+	}
+	character_child_education = 0.10
+}
+
+bronze_city_famous_craftsmen = {
+	game_data = {
+		category = location
+	}
+	local_production_efficiency = 0.10
+	local_monthly_prosperity = 0.003
+}
+
+bronze_city_merchant_caravan = {
+	game_data = {
+		category = location
+	}
+	local_trade_center_power = 0.10
+	local_monthly_prosperity = 0.002
+}
+
+bronze_city_foreign_envoys = {
+	game_data = {
+		category = country
+	}
+	diplomatic_reputation = 0.50
+	monthly_prestige = 0.02
+}
+
+# Urban decline remains temporary but materially weakens city rankings.
+bronze_city_famine = {
+	game_data = {
+		category = location
+	}
+	local_monthly_prosperity = -0.01
+	local_migration_attraction = -0.20
+	local_production_efficiency = -0.10
+}
+
+bronze_city_trade_collapse = {
+	game_data = {
+		category = location
+	}
+	local_trade_center_power = -0.25
+	local_monthly_prosperity = -0.0075
+	local_production_efficiency = -0.05
+}
+
+bronze_city_population_exodus = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = -0.50
+	local_monthly_prosperity = -0.01
+}

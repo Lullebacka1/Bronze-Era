@@ -26,6 +26,15 @@ bronze_age_monument_construction = {
 	category = building_construction
 }
 
+neolithic_monument_construction = {
+	stone = 7.0
+	lumber = 4.0
+	clay = 1.0
+	wild_game = 5.0
+
+	category = building_construction
+}
+
 build_holloway_demand = {
 	lumber = 0.2
 	category = building_construction

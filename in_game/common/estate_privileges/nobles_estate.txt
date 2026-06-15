@@ -1,0 +1,80 @@
+﻿nobles_tax_exemption = {
+	estate = nobles_estate
+	
+	country_modifier = {
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 0.30
+		nobles_estate_max_tax = -0.15
+	}
+}
+
+nobles_judicial_authority = {
+	estate = nobles_estate
+
+	allow = {
+    	NOT = { has_estate_privilege = estate_privilege:clergy_judicial_authority }
+	}
+	
+	country_modifier = {
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 0.30
+
+		global_peasant_enfranchisment = -0.10
+
+		court_spending_cost_modifier = -0.025
+	}
+}
+
+court_offices = {
+	estate = nobles_estate
+	
+	country_modifier = {
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 0.30
+
+		country_cabinet_efficiency = 0.05
+	}
+}
+
+right_to_plunder = {
+	estate = nobles_estate
+
+	country_modifier = {
+		potential_trigger = {
+			at_war = yes
+		}
+		global_estate_max_tax = -0.2
+		global_estate_min_tax = -0.2
+		global_estate_target_satisfaction = medium_privilege_target_satisfaction
+		monthly_war_exhaustion = -0.1
+	}
+	country_modifier = {
+		global_estate_target_satisfaction = small_privilege_target_satisfaction
+		global_nobles_estate_power = 0.20
+	}
+}
+
+hereditary_titles = {
+	estate = nobles_estate
+	
+	country_modifier = {
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 0.30
+		estate_enrichment = 0.10
+
+		tax_income_efficiency = small_tax_income_efficiency_bonus
+	}
+}
+
+charioteer_retinues = {
+	estate = nobles_estate
+	
+	country_modifier = {
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 0.30
+
+		nobles_estate_levy_size = 0.20
+		army_heavy_cavalry_maintenance_cost_modifier = -0.10
+		army_light_cavalry_maintenance_cost_modifier = -0.10
+	}
+}

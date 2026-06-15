@@ -2019,3 +2019,33 @@ NOK = {
 	color = rgb { 182 135 53 }
 	color2 = rgb { 66 48 10 }
 }
+
+BANCH = {
+	color = rgb { 159 149 163 }
+	color2 = rgb { 68 24 82 }
+}
+
+ANSHA = {
+	color = rgb { 102 149 101 }
+	color2 = rgb { 92 70 98 }
+}
+
+GUPIN = {
+	color = rgb { 75 125 206 }
+	color2 = rgb { 70 200 185 }
+}
+
+LULU = {
+	color = rgb { 205 206 120 }
+	color2 = rgb { 68 24 82 }
+}
+
+MARHA = {
+	color = rgb { 141 182 53 }
+	color2 = rgb { 76 83 24 }
+}
+
+SHERH = {
+	color = rgb { 223 93 139 }
+	color2 = rgb { 210 86 135 }
+}
