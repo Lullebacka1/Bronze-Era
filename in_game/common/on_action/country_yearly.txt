@@ -16,6 +16,7 @@ yearly_country_pulse = {
 		bronze_chronology_yearly_pulse  # Visual BC/AD chronology for Bronze Era
 		mycenaean_league_yearly_pulse   # Bronze Era Achaean palace politics
 		bronze_city_prestige_yearly_pulse # Lightweight Bronze Era city ranking
+		bronze_city_prestige_urban_event_pulse # Rare stories for prestigious cities
 	}
 	# Tag-locked events - mutually exclusive, so first_valid_on_action pays at most one tag
 	# check per non-matching country instead of evaluating all three event triggers.

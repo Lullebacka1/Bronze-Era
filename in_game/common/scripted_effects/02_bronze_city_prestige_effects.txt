@@ -1,5 +1,5 @@
 ﻿# Backend only. A ledger can safely consume bronze_city_prestige_enabled,
-# score, owner reward, and discovery-filtered player list maintained here.
+# score, owner reward, and an independent global ledger list maintained here.
 #
 # Historical setup example once an exact location key is known:
 # location:<location_id> = {
@@ -17,9 +17,8 @@ bronze_city_prestige_initialize_city = {
 		set_variable = { name = bronze_city_prestige_rank value = 5 }
 	}
 
-	# GUI scope lists expose their elements as generic Scope objects. Store an
-	# explicit typed self-reference so ledger rows can resolve the location
-	# through the vanilla-supported GetVariable(...).GetLocation path.
+	# Global GUI lists expose entries as generic scopes. This typed
+	# self-reference is retained for compatibility with older saves and UI code.
 	set_variable = {
 		name = bronze_city_prestige_gui_location
 		value = this
@@ -201,6 +200,34 @@ bronze_city_prestige_recalculate_city = {
 		}
 	}
 
+	# Temporary urban events alter the next rankings without creating a second
+	# prestige system. Positive and negative event modifiers remain visible in
+	# the location panel and are translated here into score changes.
+	if = {
+		limit = { has_location_modifier = bronze_city_scholars_gathered }
+		change_variable = { name = bronze_city_prestige_score add = 15 }
+	}
+	if = {
+		limit = { has_location_modifier = bronze_city_famous_craftsmen }
+		change_variable = { name = bronze_city_prestige_score add = 20 }
+	}
+	if = {
+		limit = { has_location_modifier = bronze_city_merchant_caravan }
+		change_variable = { name = bronze_city_prestige_score add = 10 }
+	}
+	if = {
+		limit = { has_location_modifier = bronze_city_famine }
+		change_variable = { name = bronze_city_prestige_score subtract = 25 }
+	}
+	if = {
+		limit = { has_location_modifier = bronze_city_trade_collapse }
+		change_variable = { name = bronze_city_prestige_score subtract = 20 }
+	}
+	if = {
+		limit = { has_location_modifier = bronze_city_population_exodus }
+		change_variable = { name = bronze_city_prestige_score subtract = 30 }
+	}
+
 }
 
 # Root = location.
@@ -283,100 +310,6 @@ bronze_city_prestige_apply_rank = {
 	}
 }
 
-# Root = human country.
-# Rebuilds the ledger independently from influence-rank eligibility. Every
-# owned or discovered city and megalopolis is listed, including Local Cities.
-# This separation prevents political requirements for Imperial City from ever
-# producing an empty ledger.
-bronze_city_prestige_rebuild_known_city_list = {
-	clear_variable_list = bronze_city_prestige_known_cities
-	clear_variable_list = bronze_city_prestige_known_city_candidates
-	save_scope_as = bronze_city_prestige_observer
-
-	# Build the ledger from the same authoritative world scan used by the
-	# ranking system. The former persistent global-list dependency could leave
-	# the GUI empty even while locations already had valid world ranks.
-	every_location_in_the_world = {
-		limit = {
-			has_owner = yes
-			has_variable = bronze_city_prestige_enabled
-			var:bronze_city_prestige_enabled > 0
-			bronze_city_prestige_is_urban = yes
-			OR = {
-				owner = scope:bronze_city_prestige_observer
-				is_discovered_by = scope:bronze_city_prestige_observer
-			}
-		}
-
-		bronze_city_prestige_initialize_city = yes
-		save_scope_as = bronze_city_prestige_known_city_candidate
-		scope:bronze_city_prestige_observer = {
-			add_to_variable_list = {
-				name = bronze_city_prestige_known_city_candidates
-				target = scope:bronze_city_prestige_known_city_candidate
-			}
-		}
-	}
-
-	# Owned cities are an unconditional fallback. This also initializes urban
-	# locations introduced by converted saves before they enter the display
-	# list.
-	every_owned_location = {
-		limit = { bronze_city_prestige_is_urban = yes }
-		bronze_city_prestige_initialize_city = yes
-		bronze_city_prestige_recalculate_city = yes
-		save_scope_as = bronze_city_prestige_owned_fallback
-		scope:bronze_city_prestige_observer = {
-			if = {
-				limit = {
-					NOT = {
-						is_target_in_variable_list = {
-							name = bronze_city_prestige_known_city_candidates
-							target = scope:bronze_city_prestige_owned_fallback
-						}
-					}
-				}
-				add_to_variable_list = {
-					name = bronze_city_prestige_known_city_candidates
-					target = scope:bronze_city_prestige_owned_fallback
-				}
-			}
-		}
-	}
-
-	# Store the final GUI list in descending prestige order, which is the same
-	# order as World Rank 1, 2, 3, and so on.
-	ordered_in_list = {
-		variable = bronze_city_prestige_known_city_candidates
-		order_by = var:bronze_city_prestige_score
-		max = 10000
-		check_range_bounds = no
-
-		save_scope_as = bronze_city_prestige_known_city
-		scope:bronze_city_prestige_observer = {
-			add_to_variable_list = {
-				name = bronze_city_prestige_known_cities
-				target = scope:bronze_city_prestige_known_city
-			}
-		}
-	}
-
-	clear_variable_list = bronze_city_prestige_known_city_candidates
-
-	# Cached count is deliberately separate from the GUI data model. It makes
-	# empty-state visibility deterministic and provides a cheap repair signal.
-	set_variable = { name = bronze_city_prestige_known_city_count value = 0 }
-	every_in_list = {
-		variable = bronze_city_prestige_known_cities
-		root = {
-			change_variable = {
-				name = bronze_city_prestige_known_city_count
-				add = 1
-			}
-		}
-	}
-}
-
 # Root = country. Only cities already stored in the compact variable list are
 # recalculated here. Stale entries after conquest are ignored by the owner check.
 bronze_city_prestige_yearly_update = {
@@ -448,6 +381,103 @@ bronze_city_prestige_apply_owner_reward = {
 			modifier = bronze_city_prestige_influence_1
 			years = -1
 			mode = replace
+		}
+	}
+}
+
+# Root = country. A famous royal capital supports the ruler's legitimacy.
+# The modifier is recalculated after every world ranking pass, so changing the
+# capital or losing influence removes the obsolete tier automatically.
+bronze_city_prestige_apply_royal_capital_bonus = {
+	remove_country_modifier = bronze_city_royal_capital_regional
+	remove_country_modifier = bronze_city_royal_capital_great
+	remove_country_modifier = bronze_city_royal_capital_imperial
+	remove_country_modifier = bronze_city_royal_capital_world
+
+	if = {
+		limit = {
+			exists = capital
+			capital = {
+				has_variable = bronze_city_prestige_rank
+				var:bronze_city_prestige_rank = 1
+			}
+		}
+		add_country_modifier = {
+			modifier = bronze_city_royal_capital_world
+			years = -1
+			mode = replace
+		}
+	}
+	else_if = {
+		limit = {
+			exists = capital
+			capital = {
+				has_variable = bronze_city_prestige_rank
+				var:bronze_city_prestige_rank = 2
+			}
+		}
+		add_country_modifier = {
+			modifier = bronze_city_royal_capital_imperial
+			years = -1
+			mode = replace
+		}
+	}
+	else_if = {
+		limit = {
+			exists = capital
+			capital = {
+				has_variable = bronze_city_prestige_rank
+				var:bronze_city_prestige_rank = 3
+			}
+		}
+		add_country_modifier = {
+			modifier = bronze_city_royal_capital_great
+			years = -1
+			mode = replace
+		}
+	}
+	else_if = {
+		limit = {
+			exists = capital
+			capital = {
+				has_variable = bronze_city_prestige_rank
+				var:bronze_city_prestige_rank = 4
+			}
+		}
+		add_country_modifier = {
+			modifier = bronze_city_royal_capital_regional
+			years = -1
+			mode = replace
+		}
+	}
+}
+
+# Root = any scope.
+# The ledger is deliberately independent from the prestige ranking. It lists
+# every city and megalopolis in the world, with no discovery, ownership, score,
+# rank, or country filter.
+bronze_city_prestige_rebuild_ledger_list = {
+	if = {
+		limit = {
+			has_global_variable_list = bronze_city_prestige_ledger_cities
+		}
+		clear_global_variable_list = bronze_city_prestige_ledger_cities
+	}
+
+	every_location_in_the_world = {
+		limit = {
+			OR = {
+				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
+			}
+		}
+
+		# Store the typed location reference expected by generic GUI list scopes.
+		bronze_city_prestige_initialize_city = yes
+
+		add_to_global_variable_list = {
+			name = bronze_city_prestige_ledger_cities
+			target = this
 		}
 	}
 }
@@ -738,15 +768,7 @@ bronze_city_prestige_update_world_ranking = {
 	every_country = {
 		limit = { is_real_country = yes }
 		bronze_city_prestige_apply_owner_reward = yes
-	}
-
-	# Keep every human ledger synchronized after the annual world ranking.
-	every_country = {
-		limit = {
-			is_real_country = yes
-			is_ai = no
-		}
-		bronze_city_prestige_rebuild_known_city_list = yes
+		bronze_city_prestige_apply_royal_capital_bonus = yes
 	}
 }
 
@@ -829,6 +851,9 @@ bronze_city_prestige_initialize_world = {
 			bronze_city_prestige_update_world_ranking = yes
 		}
 	}
+
+	# The ledger is a plain world list and does not depend on ranking success.
+	bronze_city_prestige_rebuild_ledger_list = yes
 
 	# Save-compatible initialization marker. Existing campaigns that predate
 	# City Prestige are rebuilt once by the monthly bootstrap on-action.

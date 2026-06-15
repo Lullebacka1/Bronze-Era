@@ -15,20 +15,21 @@ bronze_city_prestige_runtime_bootstrap = {
 	}
 }
 
-# Root = country. Runs only once per campaign version for the human player,
-# after player ownership and discovery data are available to the GUI.
+# Root = country. Runs once per campaign version for the human player.
+# Version 14 restores the original ranking bootstrap and creates the separate,
+# unfiltered city/megalopolis ledger list.
 bronze_city_prestige_player_ledger_bootstrap = {
 	trigger = {
 		is_real_country = yes
 		is_ai = no
 		NOT = {
-			has_variable = bronze_city_prestige_ledger_v10_initialized
+			has_variable = bronze_city_prestige_ledger_v14_initialized
 		}
 	}
 
 	effect = {
-		# Repair saves where the version marker survived but the persistent
-		# global city list did not.
+		# Repair saves where the runtime marker survived but the world registry
+		# did not.
 		if = {
 			limit = {
 				OR = {
@@ -45,41 +46,31 @@ bronze_city_prestige_player_ledger_bootstrap = {
 			bronze_city_prestige_initialize_world = yes
 		}
 
-		bronze_city_prestige_rebuild_known_city_list = yes
-		# The rebuild may have registered owned cities missing from a converted
-		# global list. Sort once now so those entries receive exact positions.
+		# Restore the former behavior: the human bootstrap performs one complete
+		# world ranking pass so valid cities cannot remain without World Rank.
 		bronze_city_prestige_update_world_ranking = yes
+
+		# This is a separate plain city/megalopolis scan. It cannot affect ranks.
+		bronze_city_prestige_rebuild_ledger_list = yes
 		set_variable = {
-			name = bronze_city_prestige_ledger_v10_initialized
+			name = bronze_city_prestige_ledger_v14_initialized
 			value = 1
 		}
 	}
 }
 
-# Root = human country. Cheap monthly guard: the expensive repair runs only
-# when a player owns an urban location but the GUI list is absent.
+# Root = human country. Cheap monthly guard for converted or damaged saves.
 bronze_city_prestige_player_ledger_repair = {
 	trigger = {
 		is_real_country = yes
 		is_ai = no
 		OR = {
-			AND = {
-				OR = {
-					NOT = {
-						has_variable = bronze_city_prestige_known_city_count
-					}
-					var:bronze_city_prestige_known_city_count < 1
-					NOT = {
-						has_variable_list = bronze_city_prestige_known_cities
-					}
-					variable_list_size = {
-						name = bronze_city_prestige_known_cities
-						value < 1
-					}
-				}
-				any_owned_location = {
-					bronze_city_prestige_is_urban = yes
-				}
+			NOT = {
+				has_global_variable_list = bronze_city_prestige_ledger_cities
+			}
+			global_variable_list_size = {
+				name = bronze_city_prestige_ledger_cities
+				value < 1
 			}
 			any_owned_location = {
 				bronze_city_prestige_is_urban = yes
@@ -94,8 +85,26 @@ bronze_city_prestige_player_ledger_repair = {
 	}
 
 	effect = {
-		bronze_city_prestige_rebuild_known_city_list = yes
-		bronze_city_prestige_update_world_ranking = yes
+		# Ranking repair is only invoked when an owned city is genuinely missing
+		# its previous World Rank variable.
+		if = {
+			limit = {
+				OR = {
+					any_owned_location = {
+						bronze_city_prestige_is_urban = yes
+						NOT = { has_variable = bronze_city_prestige_global_rank }
+					}
+					any_owned_location = {
+						bronze_city_prestige_is_urban = yes
+						has_variable = bronze_city_prestige_global_rank
+						var:bronze_city_prestige_global_rank < 1
+					}
+				}
+			}
+			bronze_city_prestige_update_world_ranking = yes
+		}
+
+		bronze_city_prestige_rebuild_ledger_list = yes
 	}
 }
 
@@ -143,13 +152,33 @@ bronze_city_prestige_yearly_pulse = {
 				this = global_var:bronze_city_prestige_manager
 			}
 			bronze_city_prestige_update_world_ranking = yes
+			bronze_city_prestige_rebuild_ledger_list = yes
 		}
 
-		# The player list is refreshed from the complete city pool regardless of
-		# whether this country is currently the global ranking manager.
-		if = {
-			limit = { is_ai = no }
-			bronze_city_prestige_rebuild_known_city_list = yes
+	}
+}
+
+# Root = country. One urban story is sampled at most once per yearly pulse,
+# with a large no-event weight and a three-year country cooldown.
+bronze_city_prestige_urban_event_pulse = {
+	trigger = {
+		is_real_country = yes
+		NOT = { has_variable = bronze_city_prestige_event_cooldown }
+		any_owned_location = {
+			bronze_city_prestige_is_regional_or_higher = yes
 		}
+	}
+
+	random_events = {
+		sample_count = 1
+
+		250 = 0
+		5 = bronze_city_prestige.1
+		5 = bronze_city_prestige.2
+		5 = bronze_city_prestige.3
+		5 = bronze_city_prestige.4
+		5 = bronze_city_prestige.5
+		5 = bronze_city_prestige.6
+		5 = bronze_city_prestige.7
 	}
 }

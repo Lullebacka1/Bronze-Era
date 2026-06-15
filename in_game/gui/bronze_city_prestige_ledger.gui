@@ -123,7 +123,7 @@ template bronze_city_prestige_ledger_content {
 			using = bg_main_inner_alt
 
 			text_single = {
-				visible = "[Not(GreaterThan_CFixedPoint(Player.MakeScope.GetVariable('bronze_city_prestige_known_city_count').GetValue, '(CFixedPoint)0'))]"
+				visible = "[IsDataModelEmpty(GetGlobalList('bronze_city_prestige_ledger_cities'))]"
 				parentanchor = center
 				maximumsize = { 700 -1 }
 				align = center
@@ -131,7 +131,7 @@ template bronze_city_prestige_ledger_content {
 			}
 
 			scrollarea = {
-				visible = "[GreaterThan_CFixedPoint(Player.MakeScope.GetVariable('bronze_city_prestige_known_city_count').GetValue, '(CFixedPoint)0')]"
+				visible = "[Not(IsDataModelEmpty(GetGlobalList('bronze_city_prestige_ledger_cities')))]"
 				using = layoutpolicy_expanding
 				scrollbarpolicy_horizontal = always_off
 				autoresizescrollarea = no
@@ -146,7 +146,7 @@ template bronze_city_prestige_ledger_content {
 						flipdirection = yes
 						datamodel_wrap = 1
 						maxhorizontalslots = 1
-						datamodel = "[Player.MakeScope.GetList('bronze_city_prestige_known_cities')]"
+						datamodel = "[GetGlobalList('bronze_city_prestige_ledger_cities')]"
 
 						item = {
 							button = {

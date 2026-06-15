@@ -142,3 +142,91 @@ bronze_city_prestige_is_urban = {
 		location_rank = location_rank:megalopolis
 	}
 }
+
+# Location-scope rank helpers used by the urban event pool.
+bronze_city_prestige_is_great_or_higher = {
+	bronze_city_prestige_is_urban = yes
+	has_variable = bronze_city_prestige_rank
+	var:bronze_city_prestige_rank <= 3
+}
+
+bronze_city_prestige_is_regional_or_higher = {
+	bronze_city_prestige_is_urban = yes
+	has_variable = bronze_city_prestige_rank
+	var:bronze_city_prestige_rank <= 4
+}
+
+bronze_city_prestige_is_imperial_or_higher = {
+	bronze_city_prestige_is_urban = yes
+	has_variable = bronze_city_prestige_rank
+	var:bronze_city_prestige_rank <= 2
+}
+
+bronze_city_prestige_has_artisan_industry = {
+	OR = {
+		has_building_with_at_least_one_level = bronze_age_bronze_foundry
+		has_building_with_at_least_one_level = bronze_age_bronze_forge
+		has_building_with_at_least_one_level = tools_guild
+		has_building_with_at_least_one_level = tools_workshop
+		has_building_with_at_least_one_level = weapon_guild
+		has_building_with_at_least_one_level = weapon_workshop
+	}
+}
+
+bronze_city_prestige_has_trade_infrastructure = {
+	OR = {
+		is_market_center = yes
+		has_building_with_at_least_one_level = market_village
+		has_building_with_at_least_one_level = marketplace
+		has_building_with_at_least_one_level = merchants_quarters
+		has_building_with_at_least_one_level = trading_hub
+	}
+}
+
+bronze_city_prestige_scholars_event_location = {
+	bronze_city_prestige_is_great_or_higher = yes
+	NOT = { has_location_modifier = bronze_city_scholars_gathered }
+}
+
+bronze_city_prestige_craftsmen_event_location = {
+	bronze_city_prestige_is_great_or_higher = yes
+	bronze_city_prestige_has_artisan_industry = yes
+	NOT = { has_location_modifier = bronze_city_famous_craftsmen }
+}
+
+bronze_city_prestige_caravan_event_location = {
+	bronze_city_prestige_is_regional_or_higher = yes
+	bronze_city_prestige_has_trade_infrastructure = yes
+	NOT = { has_location_modifier = bronze_city_merchant_caravan }
+}
+
+bronze_city_prestige_envoys_event_location = {
+	bronze_city_prestige_is_imperial_or_higher = yes
+}
+
+bronze_city_prestige_famine_event_location = {
+	bronze_city_prestige_is_regional_or_higher = yes
+	population >= 50
+	province = {
+		province_food_percentage < 0.25
+	}
+	NOT = { has_location_modifier = bronze_city_famine }
+}
+
+bronze_city_prestige_trade_collapse_event_location = {
+	bronze_city_prestige_is_regional_or_higher = yes
+	market_access < 0.40
+	NOT = { has_location_modifier = bronze_city_trade_collapse }
+}
+
+# EU5 does not expose one stable high-devastation location trigger to script.
+# Severe negative prosperity and recent raid damage are the supported proxies.
+bronze_city_prestige_exodus_event_location = {
+	bronze_city_prestige_is_regional_or_higher = yes
+	population >= 25
+	OR = {
+		prosperity < -0.25
+		has_location_modifier = recently_raided_by_horde
+	}
+	NOT = { has_location_modifier = bronze_city_population_exodus }
+}

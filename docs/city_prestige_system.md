@@ -16,7 +16,10 @@ Prestige represents the international importance of a location through:
 - historical importance;
 - military reputation.
 
-The system is intentionally lightweight. It does not add laws, privileges, buildings, events, or technologies.
+The system is intentionally lightweight. It does not add laws, privileges,
+buildings, or technologies. A small yearly event pool gives prestigious cities
+positive opportunities and exposes them to decline when food, trade, or
+prosperity fail.
 
 ## Eligible Locations
 
@@ -53,7 +56,7 @@ Countries use:
 | `bronze_city_prestige_bronze_country` | Marks countries that started with a Bronze template. |
 | `bronze_city_prestige_eligibility_years` | Controls the five-year eligibility scan. |
 | `bronze_city_prestige_cities` | Compact variable list containing the country's tracked cities. |
-| `bronze_city_prestige_known_cities` | Ordered list of owned or discovered cities available to this human country's ledger. |
+| `bronze_city_prestige_ledger_cities` | Global GUI list containing every ranked city shown in the ledger. |
 | `bronze_city_prestige_influence_score` | Combined influence from cities owned in the global top fifteen. |
 
 ## Score Calculation
@@ -208,7 +211,8 @@ urban location, sorts it, and assigns unique consecutive positions from 1.
 Cities are sorted by:
 
 1. prestige score, descending;
-2. the persistent global location-list order when prestige values are equal.
+2. population, descending, when prestige values are equal;
+3. the persistent global location-list order as the deterministic final fallback.
 
 The final fallback is deterministic because world locations enter the
 persistent list in map iteration order.
@@ -232,29 +236,70 @@ No research modifier is currently applied because EU5 does not expose a reliable
 The system avoids:
 
 - monthly world scans;
-- population loops;
-- `every_pop`;
+- population loops during normal ranking updates;
 - repeated exact comparisons between every city.
+
+The famine and exodus event options may iterate the affected city's pops once
+to apply proportional losses. These loops run only when the rare event fires,
+not during the yearly ranking calculation.
 
 At game start, one world scan initializes existing cities and megalopolises.
 When an older save does not contain the initialization marker, the first
 monthly country pulse performs the same scan once and reconstructs every city
-list, rank modifier, owner reward, and human ledger list.
+list, rank modifier, owner reward, and player ledger cache.
 
 After initialization:
 
 - each country stores its eligible locations in `bronze_city_prestige_cities`;
 - every eligible location is also registered once in the persistent global
   `bronze_city_prestige_world_cities` list;
-- the yearly update iterates only that compact list;
+- country updates iterate their compact owner lists, while the single ranking
+  manager rebuilds and sorts the world pool once per yearly ranking pass;
 - stale entries created by ownership changes are ignored by an owner check;
 - a broader owned-location eligibility scan runs once every five years.
 
 One human country is selected as the ranking manager at game start. Only this
-country sorts the global city list, assigns exact global positions, applies
-top-fifteen rewards, and rebuilds each human player's discovery-filtered ledger
-list. The global work is therefore performed once rather than once per country,
-without accidentally limiting the ranking to the manager's own territory.
+country sorts the global city list, assigns exact global positions, and applies
+top-fifteen rewards. After the sort, a separate global display list is rebuilt
+for the ledger. This uses EU5's native `GetGlobalList` GUI path and cannot alter
+the rank variables produced by the ranking system.
+
+## Prestigious City Events
+
+The yearly country pulse samples at most one rare event and then applies a
+three-year country cooldown.
+
+Positive opportunities:
+
+- **Scholars Gather**, for Great Cities or higher;
+- **Famous Craftsmen**, for Great Cities or higher with artisan industry;
+- **Merchant Caravan**, for Regional Cities or higher with trade infrastructure;
+- **Foreign Envoys**, for Imperial Cities or the World City.
+
+Urban decline:
+
+- **Urban Famine**, when a populous prestigious city has critically low food;
+- **Trade Collapse**, when a prestigious city has poor market access;
+- **Population Exodus**, after severe prosperity loss or recent raid damage.
+
+Each temporary location modifier changes the next annual City Prestige score,
+so a crisis can lower a city's rank and a successful urban opportunity can
+raise it.
+
+## Royal Capitals
+
+When a country's capital is a Regional City or higher, the country receives one
+consolidated legitimacy modifier:
+
+| Capital influence rank | Monthly legitimacy |
+| --- | ---: |
+| Regional City | +0.02 |
+| Great City | +0.05 |
+| Imperial City | +0.10 |
+| World City | +0.15 |
+
+The modifier is recalculated after every world ranking and is removed
+automatically if the capital changes or loses its qualifying influence rank.
 
 The location window contains a compact City Prestige badge above the normal
 condition icons. It displays the city's world position; its tooltip displays
@@ -268,7 +313,7 @@ high title solely because few cities currently exist.
 
 ## Great Cities Ledger
 
-The standard ledger contains a `Great Cities` tab. It lists ranked cities in
+The standard ledger contains a `Great Cities` tab. It lists every ranked city in
 descending score order and displays:
 
 - exact world rank;
@@ -277,26 +322,11 @@ descending score order and displays:
 - population;
 - dominant culture.
 
-Each human country receives a separate ordered list. A city enters that list
-when it is owned by the country or `is_discovered_by` succeeds, so the
-interface does not reveal unknown foreign locations. Owned cities are retained
-as a safety fallback even while discovery data is still initializing. Missing
-rank numbers are intentional when a higher-ranked city remains undiscovered.
-
-The ledger list does not filter by Influence Rank. Every known `city` and
-`megalopolis`, including Local Cities, appears in the table. A dedicated player
-bootstrap creates the list on the first monthly pulse, while the yearly update
-keeps it synchronized with ownership, discovery, score, and settlement changes.
-
-Before reading the global list, the rebuild explicitly registers every urban
-location owned by the player. A second owned-location fallback adds any city
-still missing from a malformed converted save, so a player with valid owned
-cities cannot receive an empty ledger.
-
-A cheap monthly guard checks only whether a human country owns an urban
-location while its ledger list is absent. In that exceptional state, the list
-and world ranking are repaired immediately; otherwise the guard performs no
-world scan.
+The ledger reads one global list created during the ordered world-ranking pass.
+It does not filter by discovery, ownership, or Influence Rank. Every `city` and
+`megalopolis`, including Local Cities, appears in the table. A versioned player
+bootstrap repairs converted saves, while a cheap monthly guard rebuilds the
+ranking only if the global GUI list is absent or empty.
 
 ## Urban Influence
 
@@ -484,8 +514,8 @@ The population ledger contains a `Great Cities` tab implemented in:
 
 `in_game/gui/bronze_city_prestige_ledger.gui`
 
-The tab displays only locations discovered by the current human country. It
-shows exact global rank, city, owner, score, population, dominant culture,
+The tab displays every city and megalopolis in the world. It shows exact global
+rank, city, owner, score, population, dominant culture,
 Urban Influence, and the country's current Power Projection.
 
 ## Testing Checklist
@@ -503,7 +533,7 @@ Verify:
 7. Newly urbanized or sufficiently populated locations join within five years.
 8. Conquered cities are registered by their new owner during the five-year repair pass.
 9. English and French modifier names display correctly.
-10. The `Great Cities` tab opens and lists only discovered cities.
+10. The `Great Cities` tab opens and lists all cities and megalopolises.
 11. Clicking a ledger row moves the camera to that city.
 12. No City Prestige errors appear in `error.log`.
 
