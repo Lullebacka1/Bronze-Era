@@ -53,6 +53,14 @@ ritual_sites_advance = {
 	unlock_building = neolithic_feast_court
 }
 
+megalithic_monument_advance = {
+	age = age_1_traditions
+
+	requires = ritual_sites_advance
+
+	unlock_building = megalithic_religious_monument
+}
+
 animal_husbandry_advance = {
 	age = age_1_traditions
 
