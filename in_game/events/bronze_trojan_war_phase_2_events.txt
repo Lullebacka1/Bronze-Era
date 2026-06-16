@@ -9,18 +9,22 @@ start_trojan_war_phase_2.1 = {
     hidden = no 
 	
    option = {
-        name = "trojan_war_phase_2_start.a"
-        
+    name = "trojan_war_phase_2_start.a"
     
-        declare_war_with_cb = {
-            target = c:WILUS
-            type = trojan_war_casus_belli
-        }
-
-        c:AHHI  = { join_war = c:WILUS }
-        c:LYCIA = { join_war = c:WILUS }
-        c:SEHA  = { join_war = c:WILUS }
-        c:LUKKA = { join_war = c:WILUS }
-        c:MASA  = { join_war = c:WILUS }
+    declare_war_with_cb = {
+        target = c:WILUS
+        type = trojan_war_casus_belli
+       
+        call_attackers_allies = no 
+        call_defender_overlord = no
+        call_defenders_allies = no 
     }
+
+    
+    c:AHHI  = { join_war = c:WILUS }
+    c:LYCIA = { join_war = c:WILUS }
+    c:SEHA  = { join_war = c:WILUS }
+    c:LUKKA = { join_war = c:WILUS }
+    c:MASA  = { join_war = c:WILUS }
+}
 }

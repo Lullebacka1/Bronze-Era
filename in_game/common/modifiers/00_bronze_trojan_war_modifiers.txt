@@ -15,6 +15,9 @@ anatolia_coastline_is_defend = {
 }
 
 trojan_war_anatolia_modifier_phase_2 = {
+    game_data = {
+		category = country   
+	}
     siege_ability = {
         value = -0.20
         add = {
@@ -34,6 +37,9 @@ trojan_war_anatolia_modifier_phase_2 = {
 }
 
 trojan_war_greece_modifier_phase_2 = {
+      game_data = {
+		category = country   
+	}
     siege_ability = {
         value = 0.0
         add = {
@@ -53,6 +59,9 @@ trojan_war_greece_modifier_phase_2 = {
 }
 
 trojan_war_greece_victory = {
+      game_data = {
+		category = country   
+	}
 	siege_ability = {
         value = 0.0
         add = {
@@ -71,6 +80,9 @@ trojan_war_greece_victory = {
     }
 }
 trojan_war_anatolian_victory = {
+      game_data = {
+		category = country   
+	}
 	    siege_ability = {
         value = 0.0
         add = {

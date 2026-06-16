@@ -17,7 +17,7 @@ trojan_war_phase_2 = {
         }
 
 	  var:situation_leader = {
-        trigger_event = {
+       trigger_event_non_silently = {
             id = start_trojan_war_phase_2.1
             days = 1
         }
