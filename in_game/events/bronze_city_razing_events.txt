@@ -1,0 +1,295 @@
+namespace = bronze_city_razing
+
+bronze_city_razing.1 = {
+	type = country_event
+	title = bronze_city_razing.1.title
+	desc = bronze_city_razing.1.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = exterior
+		10 = angry
+	}
+
+	trigger = {
+		exists = scope:bronze_captured_city
+	}
+
+	option = {
+		name = bronze_city_razing.1.a
+		custom_tooltip = bronze_city_razing_1a_tt
+		bronze_city_capture_occupy_effect = yes
+	}
+
+	option = {
+		name = bronze_city_razing.1.b
+		custom_tooltip = bronze_city_razing_1b_tt
+		bronze_city_start_sack_effect = yes
+	}
+
+	option = {
+		name = bronze_city_razing.1.c
+		custom_tooltip = bronze_city_razing_1c_tt
+		bronze_city_start_raze_effect = yes
+	}
+}
+
+bronze_city_razing.2 = {
+	type = country_event
+	title = bronze_city_razing.2.title
+	desc = bronze_city_razing.2.desc
+	outcome = negative
+
+	illustration_tags = {
+		10 = exterior
+		10 = angry
+	}
+
+	trigger = {
+		exists = scope:bronze_captured_city
+		scope:bronze_captured_city = {
+			has_variable = bronze_city_active_sack
+		}
+	}
+
+	option = {
+		name = bronze_city_razing.2.a
+		custom_tooltip = bronze_city_razing_2a_tt
+		bronze_city_resolve_sack_effect = yes
+	}
+}
+
+bronze_city_razing.3 = {
+	type = country_event
+	title = bronze_city_razing.3.title
+	desc = bronze_city_razing.3.desc
+	outcome = negative
+
+	illustration_tags = {
+		10 = exterior
+		10 = angry
+	}
+
+	trigger = {
+		exists = scope:bronze_captured_city
+		scope:bronze_captured_city = {
+			has_variable = bronze_city_active_raze
+		}
+	}
+
+	option = {
+		name = bronze_city_razing.3.a
+		custom_tooltip = bronze_city_razing_3a_tt
+		bronze_city_resolve_raze_effect = yes
+	}
+}
+
+bronze_city_razing.9 = {
+	type = country_event
+	title = bronze_city_razing.9.title
+	desc = bronze_city_razing.9.desc
+	outcome = positive
+
+	illustration_tags = {
+		10 = interior
+		10 = exterior
+	}
+
+	trigger = {
+		bronze_city_razing_can_fund_expedition = yes
+	}
+
+	immediate = {
+		set_variable = {
+			name = bronze_ruins_expedition_country_cooldown
+			value = 1
+			years = 5
+		}
+		random_owned_location = {
+			limit = { bronze_city_razing_explorable_ruin = yes }
+			save_scope_as = bronze_ruins_site
+		}
+	}
+
+	option = {
+		name = bronze_city_razing.9.a
+		custom_tooltip = bronze_city_razing_9a_tt
+		bronze_ruins_start_expedition_effect = yes
+	}
+
+	option = {
+		name = bronze_city_razing.9.b
+		custom_tooltip = bronze_city_razing_9b_tt
+	}
+}
+
+bronze_city_razing.10 = {
+	type = country_event
+	title = bronze_city_razing.10.title
+	desc = bronze_city_razing.10.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = exterior
+	}
+
+	trigger = {
+		any_owned_location = {
+			has_variable = bronze_ruins_expedition_underway
+		}
+	}
+
+	immediate = {
+		random_owned_location = {
+			limit = { has_variable = bronze_ruins_expedition_underway }
+			save_scope_as = bronze_ruins_site
+		}
+	}
+
+	option = {
+		name = bronze_city_razing.10.a
+		custom_tooltip = bronze_city_razing_10a_tt
+		add_gold = -20
+		random_list = {
+			20 = { trigger_event_non_silently = { id = bronze_city_razing.11 days = 90 } }
+			20 = { trigger_event_non_silently = { id = bronze_city_razing.12 days = 90 } }
+			20 = { trigger_event_non_silently = { id = bronze_city_razing.13 days = 90 } }
+			20 = { trigger_event_non_silently = { id = bronze_city_razing.14 days = 90 } }
+			20 = { trigger_event_non_silently = { id = bronze_city_razing.15 days = 90 } }
+		}
+	}
+
+	option = {
+		name = bronze_city_razing.10.b
+		custom_tooltip = bronze_city_razing_10b_tt
+		bronze_ruins_finish_expedition = yes
+		add_prestige = prestige_weak_penalty
+	}
+}
+
+bronze_city_razing.11 = {
+	type = country_event
+	title = bronze_city_razing.11.title
+	desc = bronze_city_razing.11.desc
+	outcome = negative
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	trigger = {
+		any_owned_location = {
+			has_variable = bronze_ruins_expedition_underway
+		}
+	}
+
+	option = {
+		name = bronze_city_razing.11.a
+		custom_tooltip = bronze_city_razing_11a_tt
+		add_gold = -30
+		add_prestige = prestige_weak_penalty
+		bronze_ruins_finish_expedition = yes
+	}
+}
+
+bronze_city_razing.12 = {
+	type = country_event
+	title = bronze_city_razing.12.title
+	desc = bronze_city_razing.12.desc
+	outcome = positive
+
+	illustration_tags = {
+		10 = interior
+	}
+
+	trigger = {
+		any_owned_location = {
+			has_variable = bronze_ruins_expedition_underway
+		}
+	}
+
+	option = {
+		name = bronze_city_razing.12.a
+		custom_tooltip = bronze_city_razing_12a_tt
+		add_gold = 120
+		add_prestige = prestige_weak_bonus
+		bronze_ruins_finish_expedition = yes
+	}
+}
+
+bronze_city_razing.13 = {
+	type = country_event
+	title = bronze_city_razing.13.title
+	desc = bronze_city_razing.13.desc
+	outcome = positive
+
+	illustration_tags = {
+		10 = interior
+	}
+
+	trigger = {
+		any_owned_location = {
+			has_variable = bronze_ruins_expedition_underway
+		}
+	}
+
+	option = {
+		name = bronze_city_razing.13.a
+		custom_tooltip = bronze_city_razing_13a_tt
+		add_research_progress = research_progress_mild_bonus
+		add_prestige = prestige_weak_bonus
+		bronze_ruins_finish_expedition = yes
+	}
+}
+
+bronze_city_razing.14 = {
+	type = country_event
+	title = bronze_city_razing.14.title
+	desc = bronze_city_razing.14.desc
+	outcome = positive
+
+	illustration_tags = {
+		10 = interior
+	}
+
+	trigger = {
+		any_owned_location = {
+			has_variable = bronze_ruins_expedition_underway
+		}
+	}
+
+	option = {
+		name = bronze_city_razing.14.a
+		custom_tooltip = bronze_city_razing_14a_tt
+		add_prestige = prestige_mild_bonus
+		add_gold = 60
+		bronze_ruins_finish_expedition = yes
+	}
+}
+
+bronze_city_razing.15 = {
+	type = country_event
+	title = bronze_city_razing.15.title
+	desc = bronze_city_razing.15.desc
+	outcome = negative
+
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+
+	trigger = {
+		any_owned_location = {
+			has_variable = bronze_ruins_expedition_underway
+		}
+	}
+
+	option = {
+		name = bronze_city_razing.15.a
+		custom_tooltip = bronze_city_razing_15a_tt
+		add_stability = stability_weak_penalty
+		add_prestige = prestige_weak_penalty
+		bronze_ruins_finish_expedition = yes
+	}
+}

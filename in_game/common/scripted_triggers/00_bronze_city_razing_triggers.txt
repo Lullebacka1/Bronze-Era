@@ -1,0 +1,77 @@
+# Bronze Era - City Sacking / Razing / Ruins
+# Keep these triggers intentionally small. They are evaluated from capture
+# on_actions, so expensive scans here would run often during wars.
+
+# Location scope. Root is the victorious controller country from the capture
+# on_action.
+bronze_city_razing_valid_capture_target = {
+	has_owner = yes
+	owner ?= {
+		NOT = { this = root }
+	}
+	controller ?= {
+		this = root
+	}
+	OR = {
+		location_rank = location_rank:town
+		location_rank = location_rank:city
+		location_rank = location_rank:megalopolis
+	}
+	NOT = { has_variable = bronze_city_capture_choice_cooldown }
+	NOT = { has_variable = bronze_city_active_sack }
+	NOT = { has_variable = bronze_city_active_raze }
+	NOT = { has_variable = bronze_ancient_ruins }
+}
+
+# Location scope. Root is an army unit. Used by the army buttons so the
+# player can start pillage/raze as a timed map action instead of a popup.
+bronze_city_razing_valid_army_action_target = {
+	has_owner = yes
+	owner ?= {
+		is_at_war_with = root.owner
+	}
+	controller ?= {
+		this = root.owner
+	}
+	OR = {
+		location_rank = location_rank:town
+		location_rank = location_rank:city
+		location_rank = location_rank:megalopolis
+	}
+	NOT = { has_variable = bronze_city_active_sack }
+	NOT = { has_variable = bronze_city_active_raze }
+	NOT = { has_variable = bronze_ancient_ruins }
+	NOT = { has_location_modifier = bronze_city_recently_sacked }
+	NOT = { has_location_modifier = bronze_city_razed }
+}
+
+# Location scope. Root is the country that ordered the sack/raze.
+# Player armies are intentionally not locked, so leaving the location before
+# completion interrupts the action. AI armies are locked by scripted effect.
+bronze_city_attacker_army_present = {
+	any_unit_in_location = {
+		count >= 1
+		owner = root
+		is_army = yes
+		is_exiled = no
+		is_moving = no
+		in_combat = no
+	}
+}
+
+# Location scope. Used by the yearly expedition pulse.
+bronze_city_razing_explorable_ruin = {
+	has_owner = yes
+	has_variable = bronze_ancient_ruins
+	NOT = { has_variable = bronze_ruins_too_fresh }
+	NOT = { has_variable = bronze_ruins_expedition_underway }
+	NOT = { has_variable = bronze_ruins_explored }
+}
+
+# Country scope.
+bronze_city_razing_can_fund_expedition = {
+	gold >= 50
+	any_owned_location = {
+		bronze_city_razing_explorable_ruin = yes
+	}
+}

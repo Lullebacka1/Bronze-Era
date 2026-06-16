@@ -1,0 +1,71 @@
+bronze_city_orderly_occupation = {
+	game_data = {
+		category = location
+	}
+	local_unrest = -0.025
+	local_monthly_prosperity = -0.001
+}
+
+bronze_city_being_sacked = {
+	game_data = {
+		category = location
+	}
+	local_unrest = 0.30
+	local_population_growth = -0.004
+	local_migration_attraction = -0.75
+	local_monthly_prosperity = -0.015
+	local_trade_center_power = -0.15
+}
+
+bronze_city_recently_sacked = {
+	game_data = {
+		category = location
+	}
+	local_unrest = 0.10
+	local_population_growth = -0.001
+	local_migration_attraction = -0.25
+	local_monthly_prosperity = -0.004
+	local_trade_center_power = -0.05
+}
+
+bronze_city_razing_underway = {
+	game_data = {
+		category = location
+	}
+	local_unrest = 0.35
+	local_population_growth = -0.005
+	local_migration_attraction = -1.00
+	local_monthly_prosperity = -0.025
+	local_trade_center_power = -0.25
+}
+
+bronze_city_razed = {
+	game_data = {
+		category = location
+	}
+	local_unrest = 0.20
+	local_population_growth = -0.003
+	local_migration_attraction = -1.00
+	local_monthly_prosperity = -0.020
+	local_trade_center_power = -0.25
+}
+
+bronze_city_severe_ruins = {
+	game_data = {
+		category = location
+	}
+}
+
+bronze_ancient_ruins_location = {
+	game_data = {
+		category = location
+	}
+}
+
+bronze_ruins_expedition_camp = {
+	game_data = {
+		category = location
+	}
+	local_unrest = 0.025
+	local_migration_attraction = 0.03
+}

@@ -3670,7 +3670,7 @@ lateralview = {
 
 									icon = {
 										size = { 22 22 }
-										texture = "gfx/interface/icons/flat_icons/power_projection.dds"
+										texture = "gfx/interface/icons/bronze_age/bronze_city_prestige.dds"
 									}
 
 									text_single = {
@@ -3694,7 +3694,7 @@ lateralview = {
 										blockoverride "title_icon" {
 											icon = {
 												using = tooltip_title_icon_size
-												texture = "gfx/interface/icons/flat_icons/power_projection.dds"
+												texture = "gfx/interface/icons/bronze_age/bronze_city_prestige.dds"
 											}
 										}
 										blockoverride "title_text" {
@@ -3805,6 +3805,52 @@ lateralview = {
 												}
 											}
 										}
+									}
+								}
+							}
+
+							# Bronze Era: Ancient Ruins button. This opens an empty
+							# context panel for future ruin-specific content.
+							card_header_button_04 = {
+								size = { 36 36 }
+								datacontext = "[LocationView.GetLocation]"
+								visible = "[Location.MakeScope.GetVariable('bronze_ancient_ruins').IsSet]"
+								onclick = "[PdxGuiWidget.ToggleContextMenu]"
+
+								tooltipwidget = {
+									SimpleContextualTooltipType = {
+										blockoverride "title_icon" {
+											icon = {
+												using = tooltip_title_icon_size
+												texture = "gfx/interface/icons/bronze_age/bronze_ruins.dds"
+											}
+										}
+										blockoverride "title_text" {
+											text = "bronze_ruins_button"
+										}
+										blockoverride "tooltip_content" {
+											TooltipTextBlock = {
+												blockoverride "text" {
+													text = "bronze_ruins_button_desc"
+												}
+											}
+										}
+									}
+								}
+
+								contextmenu_widget = {
+									BronzeRuinsContextMenu = {}
+								}
+
+								icon = {
+									size = { 23 23 }
+									parentanchor = center
+									texture = "gfx/interface/icons/bronze_age/bronze_ruins.dds"
+									glow = {
+										name = "drop_shadow"
+										glow_radius = 3
+										color = {0.0 0.0 0.0 1.0}
+										alpha = 0.4
 									}
 								}
 							}

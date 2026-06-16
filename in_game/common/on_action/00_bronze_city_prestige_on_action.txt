@@ -8,22 +8,22 @@ bronze_city_prestige_runtime_bootstrap = {
 	}
 
 	effect = {
-		# Runs only once for converted saves. New campaigns receive the marker
-		# from bronze_city_prestige_initialize_world during on_game_start.
+		# Runs once on the first monthly pulse, or later for converted saves
+		# where the runtime marker is missing.
 		remove_global_variable = bronze_city_prestige_manager
 		bronze_city_prestige_initialize_world = yes
 	}
 }
 
 # Root = country. Runs once per campaign version for the human player.
-# Version 14 restores the original ranking bootstrap and creates the separate,
+# Version 15 keeps the original ranking bootstrap and creates the separate,
 # unfiltered city/megalopolis ledger list.
 bronze_city_prestige_player_ledger_bootstrap = {
 	trigger = {
 		is_real_country = yes
 		is_ai = no
 		NOT = {
-			has_variable = bronze_city_prestige_ledger_v14_initialized
+			has_variable = bronze_city_prestige_ledger_v15_initialized
 		}
 	}
 
@@ -53,7 +53,7 @@ bronze_city_prestige_player_ledger_bootstrap = {
 		# This is a separate plain city/megalopolis scan. It cannot affect ranks.
 		bronze_city_prestige_rebuild_ledger_list = yes
 		set_variable = {
-			name = bronze_city_prestige_ledger_v14_initialized
+			name = bronze_city_prestige_ledger_v15_initialized
 			value = 1
 		}
 	}
@@ -116,20 +116,19 @@ bronze_city_prestige_yearly_pulse = {
 	}
 
 	effect = {
-		bronze_city_prestige_yearly_update = yes
+		if = {
+			limit = {
+				NOT = { has_variable = bronze_city_prestige_update_years }
+			}
+			set_variable = { name = bronze_city_prestige_update_years value = 0 }
+		}
+		change_variable = { name = bronze_city_prestige_update_years add = 1 }
 
 		if = {
 			limit = {
 				NOT = { has_variable = bronze_city_prestige_eligibility_years }
 			}
 			set_variable = { name = bronze_city_prestige_eligibility_years value = 0 }
-		}
-		change_variable = { name = bronze_city_prestige_eligibility_years add = 1 }
-
-		if = {
-			limit = { var:bronze_city_prestige_eligibility_years >= 5 }
-			set_variable = { name = bronze_city_prestige_eligibility_years value = 0 }
-			bronze_city_prestige_five_year_eligibility_update = yes
 		}
 
 		# Recover cleanly if a converted save predates the manager variable or
@@ -144,17 +143,26 @@ bronze_city_prestige_yearly_pulse = {
 			}
 		}
 
-		# Only the designated manager performs the world sort and player-list
-		# rebuild, avoiding one global scan per country.
+		# Full prestige refresh runs every five yearly pulses. New campaigns
+		# still receive their first full ranking during game-start/bootstrap.
 		if = {
-			limit = {
-				has_global_variable = bronze_city_prestige_manager
-				this = global_var:bronze_city_prestige_manager
-			}
-			bronze_city_prestige_update_world_ranking = yes
-			bronze_city_prestige_rebuild_ledger_list = yes
-		}
+			limit = { var:bronze_city_prestige_update_years >= 5 }
+			set_variable = { name = bronze_city_prestige_update_years value = 0 }
+			set_variable = { name = bronze_city_prestige_eligibility_years value = 0 }
+			bronze_city_prestige_yearly_update = yes
+			bronze_city_prestige_five_year_eligibility_update = yes
 
+			# Only the designated manager performs the world sort and player-list
+			# rebuild, avoiding one global scan per country.
+			if = {
+				limit = {
+					has_global_variable = bronze_city_prestige_manager
+					this = global_var:bronze_city_prestige_manager
+				}
+				bronze_city_prestige_update_world_ranking = yes
+				bronze_city_prestige_rebuild_ledger_list = yes
+			}
+		}
 	}
 }
 
