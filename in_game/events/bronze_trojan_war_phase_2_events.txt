@@ -4,27 +4,21 @@ start_trojan_war_phase_2.1 = {
     type = country_event
     title = trojan_war_phase_2_start.t
     desc = trojan_war_phase_2_start.d
-    
-    is_triggered_only = yes 
-    hidden = no 
-	
-   option = {
+    is_triggered_only = yes
+    hidden = no
+
+    option = {
     name = "trojan_war_phase_2_start.a"
-    
+
     declare_war_with_cb = {
         target = c:WILUS
-        type = trojan_war_casus_belli
-       
-        call_attackers_allies = no 
-        call_defender_overlord = no
-        call_defenders_allies = no 
+        type = casus_belli:trojan_war_casus_belli
     }
 
-    
-    c:AHHI  = { join_war = c:WILUS }
-    c:LYCIA = { join_war = c:WILUS }
-    c:SEHA  = { join_war = c:WILUS }
-    c:LUKKA = { join_war = c:WILUS }
-    c:MASA  = { join_war = c:WILUS }
+    c:AHHI = { join_war_as_defender = { war = scope:target_war } }
+    c:LYCIA = { join_war_as_defender = { war = scope:target_war } }
+    c:SEHA = { join_war_as_defender = { war = scope:target_war } }
+    c:LUKKA = { join_war_as_defender = { war = scope:target_war } }
+    c:MASA = { join_war_as_defender = { war = scope:target_war } }
 }
 }

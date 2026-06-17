@@ -1,30 +1,17 @@
-﻿# the war goal used for the trojan war phase 2
-trojan_war_casus_belli = {
-	valid_for_wargoal = yes
-	is_badboy_war = no
-	is_triggered_only = yes
+﻿trojan_war_casus_belli = {
+    valid_for_wargoal = yes
+    is_badboy_war = no
+    is_triggered_only = yes
+    war_goal_type = conquest_wargoal
 
-	
-	war_goal_type = conquest_wargoal 
+    war_score_cost = { value = 2.0 }
+    ae_cost = { value = 2.75 }
+    prestige_gain = { value = 0.5 }
 
-	
-
-	war_score_cost = {
-		value = 2.0
-	}
-
-	ae_cost = {
-		value = 2.75
-	}
-
-	prestige_gain = {
-		value = 0.5
-	}
-
-	peace_options = {
-		take_province
-		concede_defeat
-		annul_treaty
-		full_annexation
-	}
+    peace_options = {
+        take_province
+        concede_defeat
+        annul_treaty
+        full_annexation
+    }
 }
