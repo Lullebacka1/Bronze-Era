@@ -431,17 +431,6 @@ aristocratic_burial_advance = {
 	requires = aristocratic_recognition_advance
 }
 
-heroic_cult_advance = {
-	age = age_1_traditions
-	research_cost = 1.5
-	
-	monthly_army_tradition = 0.1
-
-	requires = warrior_aristocracy_advance
-
-	starting_technology_level = 2
-}
-
 epics_advance = {
 	age = age_1_traditions
 	research_cost = 1.5
@@ -449,7 +438,7 @@ epics_advance = {
 	court_spending_cost_modifier = -0.05
 	num_possible_artists = 1
 
-	requires = heroic_cult_advance
+	requires = warrior_aristocracy_advance
 
 	starting_technology_level = 3
 }
