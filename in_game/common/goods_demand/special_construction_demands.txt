@@ -21,7 +21,7 @@ upgrade_rgo_demand_gathering = {
 }
 
 upgrade_rgo_demand_forestry = {
-	masonry = 0.1
+	stone = 0.1
 	category = building_construction
 }
 
@@ -147,14 +147,14 @@ create_sea_exploration = {
 	tools = 1 #fixings
 	naval_supplies = 1 #boaty things
 	cloth = 1 #sails
-	liquor = 1 #booze
+	wine = 1 #booze
 
 	category = building_construction
 }
 
 create_land_exploration = {
 	cloth = 1 #tents
-	liquor = 1 #booze
+	wine = 1 #booze
 
 	category = building_construction
 }
