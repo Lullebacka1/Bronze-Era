@@ -1,0 +1,838 @@
+# Bronze Era - City Sacking / Razing / Ruins
+# Scope contract:
+# - Capture effects run in victorious country scope.
+# - They expect scope:bronze_captured_city to be a location.
+# - Ruin creation runs in location scope.
+
+bronze_city_capture_prepare_scopes = {
+	scope:target = {
+		save_scope_as = bronze_captured_city
+		owner ?= {
+			save_scope_as = bronze_city_former_owner
+		}
+		set_variable = {
+			name = bronze_city_capture_choice_cooldown
+			value = 1
+			months = 6
+		}
+	}
+}
+
+bronze_city_capture_occupy_effect = {
+	custom_description = {
+		text = bronze_city_capture_occupy_effect_tt
+		add_prestige = prestige_weak_bonus
+		scope:bronze_captured_city ?= {
+			add_location_modifier = {
+				modifier = bronze_city_orderly_occupation
+				years = 3
+				mode = add_and_extend
+			}
+			change_prosperity = prosperity_very_weak_penalty
+		}
+	}
+}
+
+bronze_city_reduce_prestige_score = {
+	if = {
+		limit = {
+			scope:bronze_captured_city ?= {
+				has_variable = bronze_city_prestige_score
+			}
+		}
+		scope:bronze_captured_city = {
+			change_variable = {
+				name = bronze_city_prestige_score
+				subtract = $value$
+			}
+			if = {
+				limit = { var:bronze_city_prestige_score < 0 }
+				set_variable = { name = bronze_city_prestige_score value = 0 }
+			}
+		}
+	}
+}
+
+# Country scope. Gives the attacker bonus warscore against the former owner
+# when civilian casualties are inflicted during a sack or razing.
+bronze_city_add_civilian_loss_warscore = {
+	if = {
+		limit = { exists = scope:bronze_city_former_owner }
+		scope:bronze_city_former_owner = {
+			if = {
+				limit = { is_at_war_with = root }
+				"war_with_country(root)" = {
+					add_bonus_warscore = {
+						country = root
+						amount = $amount$
+					}
+				}
+			}
+		}
+	}
+}
+
+# Unit scope. Same purpose as bronze_city_add_civilian_loss_warscore, but
+# unit abilities have the army as root and the attacker country as root.owner.
+bronze_city_add_civilian_loss_warscore_from_unit = {
+	if = {
+		limit = { exists = scope:bronze_city_former_owner }
+		scope:bronze_city_former_owner = {
+			if = {
+				limit = { is_at_war_with = root.owner }
+				"war_with_country(root.owner)" = {
+					add_bonus_warscore = {
+						country = root.owner
+						amount = $amount$
+					}
+				}
+			}
+		}
+	}
+}
+
+# Country scope. Used by event-started sack/raze actions. Player armies remain
+# movable so the player can flee; AI armies are locked to avoid leaving an
+# unfinished action stuck behind them.
+bronze_city_lock_ai_sack_army = {
+	if = {
+		limit = { is_ai = yes }
+		scope:bronze_captured_city ?= {
+			random_unit_in_location = {
+				limit = {
+					owner = root
+					is_army = yes
+					is_exiled = no
+				}
+				lock_unit = 16
+				set_variable = { name = bronze_city_locked_for_sack value = 1 days = 16 }
+			}
+		}
+	}
+}
+
+bronze_city_lock_ai_raze_army = {
+	if = {
+		limit = { is_ai = yes }
+		scope:bronze_captured_city ?= {
+			random_unit_in_location = {
+				limit = {
+					owner = root
+					is_army = yes
+					is_exiled = no
+				}
+				lock_unit = 16
+				set_variable = { name = bronze_city_locked_for_raze value = 1 days = 16 }
+			}
+		}
+	}
+}
+
+bronze_city_unlock_action_armies = {
+	scope:bronze_captured_city ?= {
+		every_unit_in_location = {
+			limit = {
+				owner = root
+				OR = {
+					has_variable = bronze_city_locked_for_sack
+					has_variable = bronze_city_locked_for_raze
+				}
+			}
+			unlock_unit = yes
+			remove_variable = bronze_city_locked_for_sack
+			remove_variable = bronze_city_locked_for_raze
+		}
+	}
+}
+
+bronze_city_start_sack_effect = {
+	if = {
+		limit = {
+			scope:bronze_captured_city ?= {
+				bronze_city_attacker_army_present = yes
+			}
+		}
+		custom_description = {
+			text = bronze_city_start_sack_effect_tt
+			scope:bronze_captured_city ?= {
+				set_variable = {
+					name = bronze_city_active_sack
+					value = 1
+					days = 16
+				}
+				add_location_modifier = {
+					modifier = bronze_city_being_sacked
+					days = 16
+					mode = replace
+				}
+			}
+			bronze_city_lock_ai_sack_army = yes
+			trigger_event_non_silently = {
+				id = bronze_city_razing.2
+				days = 14
+			}
+		}
+	}
+	else = {
+		bronze_city_capture_occupy_effect = yes
+	}
+}
+
+bronze_city_sack_interrupted_effect = {
+	custom_description = {
+		text = bronze_city_sack_interrupted_effect_tt
+		bronze_city_reduce_prestige_score = { value = 5 }
+
+		scope:bronze_captured_city ?= {
+			remove_variable = bronze_city_active_sack
+			remove_location_modifier = bronze_city_being_sacked
+			add_location_modifier = {
+				modifier = bronze_city_recently_sacked
+				years = 1
+				mode = add_and_extend
+			}
+			change_prosperity = prosperity_weak_penalty
+			province = {
+				change_province_food_percentage = -0.02
+			}
+			every_pop = {
+				limit = { pop_size > 0.02 }
+				add_pop_size = {
+					value = pop_size
+					multiply = -0.01
+				}
+			}
+		}
+		bronze_city_add_civilian_loss_warscore = { amount = 1 }
+	}
+}
+
+bronze_city_resolve_sack_effect = {
+	bronze_city_unlock_action_armies = yes
+	if = {
+		limit = {
+			scope:bronze_captured_city ?= {
+				controller = root
+				bronze_city_attacker_army_present = yes
+			}
+		}
+		bronze_city_sack_effect = yes
+	}
+	else = {
+		bronze_city_sack_interrupted_effect = yes
+	}
+}
+
+bronze_city_sack_effect = {
+	custom_description = {
+		text = bronze_city_sack_effect_tt
+		add_gold = {
+			value = scope:bronze_captured_city.location_tax_base
+			multiply = 4
+			min = 15
+			max = 250
+		}
+		add_prestige = prestige_weak_bonus
+		loot_location = scope:bronze_captured_city
+		bronze_city_reduce_prestige_score = { value = 25 }
+
+		scope:bronze_captured_city ?= {
+			remove_variable = bronze_city_active_sack
+			remove_location_modifier = bronze_city_being_sacked
+			add_location_modifier = {
+				modifier = bronze_city_recently_sacked
+				years = 8
+				mode = add_and_extend
+			}
+			change_prosperity = prosperity_severe_penalty
+			province = {
+				change_province_food_percentage = -0.10
+			}
+			every_pop = {
+				limit = { pop_size > 0.02 }
+				add_pop_size = {
+					value = pop_size
+					multiply = -0.08
+				}
+			}
+		}
+		bronze_city_add_civilian_loss_warscore = { amount = 2 }
+		if = {
+			limit = {
+				scope:bronze_captured_city ?= { location_rank = location_rank:city }
+			}
+			bronze_city_add_civilian_loss_warscore = { amount = 1 }
+		}
+		if = {
+			limit = {
+				scope:bronze_captured_city ?= { location_rank = location_rank:megalopolis }
+			}
+			bronze_city_add_civilian_loss_warscore = { amount = 2 }
+		}
+	}
+}
+
+bronze_city_start_raze_effect = {
+	if = {
+		limit = {
+			scope:bronze_captured_city ?= {
+				bronze_city_attacker_army_present = yes
+			}
+		}
+		custom_description = {
+			text = bronze_city_start_raze_effect_tt
+			scope:bronze_captured_city ?= {
+				set_variable = {
+					name = bronze_city_active_raze
+					value = 1
+					days = 16
+				}
+				add_location_modifier = {
+					modifier = bronze_city_razing_underway
+					days = 16
+					mode = replace
+				}
+			}
+			bronze_city_lock_ai_raze_army = yes
+			trigger_event_non_silently = {
+				id = bronze_city_razing.3
+				days = 14
+			}
+		}
+	}
+	else = {
+		bronze_city_capture_occupy_effect = yes
+	}
+}
+
+bronze_city_start_unit_sack_effect = {
+	custom_description = {
+		text = bronze_city_start_unit_sack_effect_tt
+		lock_unit = 16
+		set_variable = { name = bronze_city_locked_for_sack value = 1 days = 16 }
+		unit_location = {
+			set_variable = {
+				name = bronze_city_active_sack
+				value = 1
+				days = 16
+			}
+			add_location_modifier = {
+				modifier = bronze_city_being_sacked
+				days = 16
+				mode = replace
+			}
+		}
+	}
+}
+
+bronze_city_finish_unit_sack_effect = {
+	unlock_unit = yes
+	unit_location = {
+		save_scope_as = bronze_captured_city
+		owner ?= {
+			save_scope_as = bronze_city_former_owner
+		}
+	}
+	if = {
+		limit = {
+			in_combat = no
+			is_moving = no
+			is_exiled = no
+			in_siege = no
+			scope:bronze_captured_city ?= {
+				has_variable = bronze_city_active_sack
+				controller ?= { this = root.owner }
+			}
+		}
+		custom_description = {
+			text = bronze_city_sack_effect_tt
+			owner = {
+				add_gold = {
+					value = scope:bronze_captured_city.location_tax_base
+					multiply = 4
+					min = 15
+					max = 250
+				}
+				add_prestige = prestige_weak_bonus
+				loot_location = scope:bronze_captured_city
+			}
+			bronze_city_reduce_prestige_score = { value = 25 }
+
+			scope:bronze_captured_city ?= {
+				remove_variable = bronze_city_active_sack
+				remove_location_modifier = bronze_city_being_sacked
+				add_location_modifier = {
+					modifier = bronze_city_recently_sacked
+					years = 8
+					mode = add_and_extend
+				}
+				change_prosperity = prosperity_severe_penalty
+				province = {
+					change_province_food_percentage = -0.10
+				}
+				every_pop = {
+					limit = { pop_size > 0.02 }
+					add_pop_size = {
+						value = pop_size
+						multiply = -0.08
+					}
+				}
+			}
+			bronze_city_add_civilian_loss_warscore_from_unit = { amount = 2 }
+			if = {
+				limit = {
+					scope:bronze_captured_city ?= { location_rank = location_rank:city }
+				}
+				bronze_city_add_civilian_loss_warscore_from_unit = { amount = 1 }
+			}
+			if = {
+				limit = {
+					scope:bronze_captured_city ?= { location_rank = location_rank:megalopolis }
+				}
+				bronze_city_add_civilian_loss_warscore_from_unit = { amount = 2 }
+			}
+		}
+	}
+}
+
+bronze_city_start_unit_raze_effect = {
+	custom_description = {
+		text = bronze_city_start_unit_raze_effect_tt
+		lock_unit = 16
+		set_variable = { name = bronze_city_locked_for_raze value = 1 days = 16 }
+		unit_location = {
+			set_variable = {
+				name = bronze_city_active_raze
+				value = 1
+				days = 16
+			}
+			add_location_modifier = {
+				modifier = bronze_city_razing_underway
+				days = 16
+				mode = replace
+			}
+		}
+	}
+}
+
+bronze_city_finish_unit_raze_effect = {
+	unlock_unit = yes
+	unit_location = {
+		save_scope_as = bronze_captured_city
+		owner ?= {
+			save_scope_as = bronze_city_former_owner
+		}
+	}
+	if = {
+		limit = {
+			in_combat = no
+			is_moving = no
+			is_exiled = no
+			in_siege = no
+			scope:bronze_captured_city ?= {
+				has_variable = bronze_city_active_raze
+			}
+		}
+		if = {
+			limit = {
+				scope:bronze_captured_city ?= {
+					controller ?= { this = root.owner }
+				}
+			}
+			bronze_city_raze_effect_from_unit = yes
+		}
+		else = {
+			bronze_city_raze_interrupted_effect_from_unit = yes
+		}
+	}
+}
+
+bronze_city_raze_interrupted_effect_from_unit = {
+	custom_description = {
+		text = bronze_city_raze_interrupted_effect_tt
+		bronze_city_reduce_prestige_score = { value = 10 }
+
+		scope:bronze_captured_city ?= {
+			remove_variable = bronze_city_active_raze
+			remove_location_modifier = bronze_city_razing_underway
+			add_location_modifier = {
+				modifier = bronze_city_recently_sacked
+				years = 2
+				mode = add_and_extend
+			}
+			change_prosperity = prosperity_mild_penalty
+			province = {
+				change_province_food_percentage = -0.05
+			}
+			every_pop = {
+				limit = { pop_size > 0.02 }
+				add_pop_size = {
+					value = pop_size
+					multiply = -0.03
+				}
+			}
+		}
+		bronze_city_add_civilian_loss_warscore_from_unit = { amount = 1 }
+	}
+}
+
+bronze_city_raze_effect_from_unit = {
+	custom_description = {
+		text = bronze_city_raze_effect_tt
+		owner = {
+			add_gold = {
+				value = scope:bronze_captured_city.location_tax_base
+				multiply = 8
+				min = 35
+				max = 500
+			}
+			add_prestige = prestige_mild_penalty
+			loot_location = scope:bronze_captured_city
+		}
+		bronze_city_reduce_prestige_score = { value = 75 }
+		bronze_city_add_civilian_loss_warscore_from_unit = { amount = 5 }
+		if = {
+			limit = {
+				scope:bronze_captured_city ?= { location_rank = location_rank:town }
+			}
+			bronze_city_add_civilian_loss_warscore_from_unit = { amount = 1 }
+		}
+		if = {
+			limit = {
+				scope:bronze_captured_city ?= { location_rank = location_rank:city }
+			}
+			bronze_city_add_civilian_loss_warscore_from_unit = { amount = 3 }
+		}
+		if = {
+			limit = {
+				scope:bronze_captured_city ?= { location_rank = location_rank:megalopolis }
+			}
+			bronze_city_add_civilian_loss_warscore_from_unit = { amount = 5 }
+		}
+
+		scope:bronze_captured_city ?= {
+			remove_variable = bronze_city_active_raze
+			remove_location_modifier = bronze_city_razing_underway
+			add_location_modifier = {
+				modifier = bronze_city_razed
+				years = 20
+				mode = add_and_extend
+			}
+			change_prosperity = prosperity_radical_penalty
+			change_development = development_mild_penalty
+			province = {
+				change_province_food_percentage = -0.25
+			}
+			every_pop = {
+				limit = { pop_size > 0.02 }
+				add_pop_size = {
+					value = pop_size
+					multiply = -0.25
+				}
+			}
+			every_buildings_in_location = {
+				save_temporary_scope_as = bronze_city_target_building
+				PREV = {
+					destroy_building = scope:bronze_city_target_building
+				}
+			}
+
+			if = {
+				limit = { location_rank = location_rank:megalopolis }
+				change_location_rank = location_rank:city
+			}
+			else_if = {
+				limit = { location_rank = location_rank:city }
+				change_location_rank = location_rank:town
+			}
+			else_if = {
+				limit = { location_rank = location_rank:town }
+				change_location_rank = location_rank:rural_settlement
+			}
+
+			if = {
+				limit = {
+					has_variable = bronze_city_prestige_enabled
+					NOT = { bronze_city_prestige_is_urban = yes }
+				}
+				bronze_city_prestige_disable_city = yes
+			}
+
+			# A completed razing always creates a persistent ruin marker so the
+			# location-window ruins button has a reliable state to read.
+			bronze_city_create_ancient_ruins_from_unit_effect = yes
+		}
+	}
+}
+
+bronze_city_raze_interrupted_effect = {
+	custom_description = {
+		text = bronze_city_raze_interrupted_effect_tt
+		bronze_city_reduce_prestige_score = { value = 10 }
+
+		scope:bronze_captured_city ?= {
+			remove_variable = bronze_city_active_raze
+			remove_location_modifier = bronze_city_razing_underway
+			add_location_modifier = {
+				modifier = bronze_city_recently_sacked
+				years = 2
+				mode = add_and_extend
+			}
+			change_prosperity = prosperity_mild_penalty
+			province = {
+				change_province_food_percentage = -0.05
+			}
+			every_pop = {
+				limit = { pop_size > 0.02 }
+				add_pop_size = {
+					value = pop_size
+					multiply = -0.03
+				}
+			}
+		}
+		bronze_city_add_civilian_loss_warscore = { amount = 1 }
+	}
+}
+
+bronze_city_resolve_raze_effect = {
+	bronze_city_unlock_action_armies = yes
+	if = {
+		limit = {
+			scope:bronze_captured_city ?= {
+				controller = root
+				bronze_city_attacker_army_present = yes
+			}
+		}
+		bronze_city_raze_effect = yes
+	}
+	else = {
+		bronze_city_raze_interrupted_effect = yes
+	}
+}
+
+bronze_city_raze_effect = {
+	custom_description = {
+		text = bronze_city_raze_effect_tt
+		add_gold = {
+			value = scope:bronze_captured_city.location_tax_base
+			multiply = 8
+			min = 35
+			max = 500
+		}
+		add_prestige = prestige_mild_penalty
+		loot_location = scope:bronze_captured_city
+		bronze_city_reduce_prestige_score = { value = 75 }
+		bronze_city_add_civilian_loss_warscore = { amount = 5 }
+		if = {
+			limit = {
+				scope:bronze_captured_city ?= { location_rank = location_rank:town }
+			}
+			bronze_city_add_civilian_loss_warscore = { amount = 1 }
+		}
+		if = {
+			limit = {
+				scope:bronze_captured_city ?= { location_rank = location_rank:city }
+			}
+			bronze_city_add_civilian_loss_warscore = { amount = 3 }
+		}
+		if = {
+			limit = {
+				scope:bronze_captured_city ?= { location_rank = location_rank:megalopolis }
+			}
+			bronze_city_add_civilian_loss_warscore = { amount = 5 }
+		}
+
+		scope:bronze_captured_city ?= {
+			remove_variable = bronze_city_active_raze
+			remove_location_modifier = bronze_city_razing_underway
+			add_location_modifier = {
+				modifier = bronze_city_razed
+				years = 20
+				mode = add_and_extend
+			}
+			change_prosperity = prosperity_radical_penalty
+			change_development = development_mild_penalty
+			province = {
+				change_province_food_percentage = -0.25
+			}
+			every_pop = {
+				limit = { pop_size > 0.02 }
+				add_pop_size = {
+					value = pop_size
+					multiply = -0.25
+				}
+			}
+			every_buildings_in_location = {
+				save_temporary_scope_as = bronze_city_target_building
+				PREV = {
+					destroy_building = scope:bronze_city_target_building
+				}
+			}
+
+			if = {
+				limit = { location_rank = location_rank:megalopolis }
+				change_location_rank = location_rank:city
+			}
+			else_if = {
+				limit = { location_rank = location_rank:city }
+				change_location_rank = location_rank:town
+			}
+			else_if = {
+				limit = { location_rank = location_rank:town }
+				change_location_rank = location_rank:rural_settlement
+			}
+
+			if = {
+				limit = {
+					has_variable = bronze_city_prestige_enabled
+					NOT = { bronze_city_prestige_is_urban = yes }
+				}
+				bronze_city_prestige_disable_city = yes
+			}
+
+			# A completed razing always creates a persistent ruin marker so the
+			# location-window ruins button has a reliable state to read.
+			bronze_city_create_ancient_ruins_effect = yes
+		}
+	}
+}
+
+# Location scope. Converts a destroyed urban center into a persistent ruin.
+bronze_city_create_ancient_ruins_effect = {
+	custom_description = {
+		text = bronze_city_create_ancient_ruins_effect_tt
+		set_variable = { name = bronze_ancient_ruins value = 1 }
+		set_variable = { name = bronze_ruins_too_fresh value = 1 years = 50 }
+		set_variable = { name = bronze_ruins_destroyed_year value = current_year }
+		set_variable = { name = bronze_ruins_destroyer value = root }
+		remove_variable = bronze_city_active_sack
+		remove_variable = bronze_city_active_raze
+		remove_location_modifier = bronze_city_being_sacked
+		remove_location_modifier = bronze_city_razing_underway
+		remove_location_modifier = bronze_city_recently_sacked
+		remove_location_modifier = bronze_city_razed
+		remove_location_modifier = bronze_city_severe_ruins
+		owner ?= {
+			save_scope_as = bronze_ruins_original_owner_scope
+		}
+		if = {
+			limit = { exists = scope:bronze_ruins_original_owner_scope }
+			set_variable = {
+				name = bronze_ruins_original_owner
+				value = scope:bronze_ruins_original_owner_scope
+			}
+		}
+		if = {
+			limit = { has_variable = bronze_city_prestige_score }
+			set_variable = {
+				name = bronze_ruins_former_prestige
+				value = var:bronze_city_prestige_score
+			}
+		}
+		add_location_modifier = {
+			modifier = bronze_ancient_ruins_location
+			years = -1
+			mode = replace
+		}
+		change_location_rank = location_rank:rural_settlement
+		if = {
+			limit = { has_variable = bronze_city_prestige_enabled }
+			bronze_city_prestige_disable_city = yes
+		}
+	}
+}
+
+# Location scope. Unit-root variant so the destroyer is recorded as the army
+# owner rather than the temporary unit scope.
+bronze_city_create_ancient_ruins_from_unit_effect = {
+	custom_description = {
+		text = bronze_city_create_ancient_ruins_effect_tt
+		set_variable = { name = bronze_ancient_ruins value = 1 }
+		set_variable = { name = bronze_ruins_too_fresh value = 1 years = 50 }
+		set_variable = { name = bronze_ruins_destroyed_year value = current_year }
+		set_variable = { name = bronze_ruins_destroyer value = root.owner }
+		remove_variable = bronze_city_active_sack
+		remove_variable = bronze_city_active_raze
+		remove_location_modifier = bronze_city_being_sacked
+		remove_location_modifier = bronze_city_razing_underway
+		remove_location_modifier = bronze_city_recently_sacked
+		remove_location_modifier = bronze_city_razed
+		remove_location_modifier = bronze_city_severe_ruins
+		owner ?= {
+			save_scope_as = bronze_ruins_original_owner_scope
+		}
+		if = {
+			limit = { exists = scope:bronze_ruins_original_owner_scope }
+			set_variable = {
+				name = bronze_ruins_original_owner
+				value = scope:bronze_ruins_original_owner_scope
+			}
+		}
+		if = {
+			limit = { has_variable = bronze_city_prestige_score }
+			set_variable = {
+				name = bronze_ruins_former_prestige
+				value = var:bronze_city_prestige_score
+			}
+		}
+		add_location_modifier = {
+			modifier = bronze_ancient_ruins_location
+			years = -1
+			mode = replace
+		}
+		change_location_rank = location_rank:rural_settlement
+		if = {
+			limit = { has_variable = bronze_city_prestige_enabled }
+			bronze_city_prestige_disable_city = yes
+		}
+	}
+}
+
+# Country scope. Starts a random expedition into one owned, old ruin.
+bronze_ruins_start_expedition_effect = {
+	custom_description = {
+		text = bronze_ruins_start_expedition_effect_tt
+		add_gold = -50
+		if = {
+			limit = {
+				scope:bronze_ruins_site ?= {
+					bronze_city_razing_explorable_ruin = yes
+				}
+			}
+			scope:bronze_ruins_site = {
+				set_variable = { name = bronze_ruins_expedition_underway value = 1 years = 2 }
+				add_location_modifier = {
+					modifier = bronze_ruins_expedition_camp
+					years = 2
+					mode = add_and_extend
+				}
+			}
+		}
+		else = {
+			random_owned_location = {
+				limit = { bronze_city_razing_explorable_ruin = yes }
+				save_scope_as = bronze_ruins_site
+				set_variable = { name = bronze_ruins_expedition_underway value = 1 years = 2 }
+				add_location_modifier = {
+					modifier = bronze_ruins_expedition_camp
+					years = 2
+					mode = add_and_extend
+				}
+			}
+		}
+		trigger_event_non_silently = {
+			id = bronze_city_razing.10
+			days = 180
+		}
+	}
+}
+
+bronze_ruins_finish_expedition = {
+	random_owned_location = {
+		limit = { has_variable = bronze_ruins_expedition_underway }
+		save_scope_as = bronze_ruins_site
+		remove_variable = bronze_ruins_expedition_underway
+		set_variable = { name = bronze_ruins_explored value = 1 years = 25 }
+		remove_location_modifier = bronze_ruins_expedition_camp
+	}
+}

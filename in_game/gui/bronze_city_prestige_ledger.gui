@@ -17,7 +17,7 @@ template bronze_city_prestige_ledger_content {
 
 				icon = {
 					size = { 42 42 }
-					texture = "gfx/interface/icons/flat_icons/power_projection.dds"
+					texture = "gfx/interface/icons/bronze_age/bronze_city_prestige.dds"
 					tooltip = "BRONZE_CITY_PRESTIGE_URBAN_INFLUENCE_TT"
 				}
 

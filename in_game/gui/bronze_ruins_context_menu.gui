@@ -1,0 +1,35 @@
+types BronzeRuinsContextMenuTypes
+{
+	type BronzeRuinsContextMenu = ContextMenuBase {
+		blockoverride "contextmenu_content" {
+			ContextMenuSection = {
+				blockoverride "title_icon" {
+					icon = {
+						size = { 24 24 }
+						texture = "gfx/interface/icons/bronze_age/bronze_ruins.dds"
+						using = ui_direction_button_detail
+					}
+				}
+
+				blockoverride "title_text" {
+					text = "bronze_ruins_panel_title"
+				}
+
+				blockoverride "contextmenu_entries" {
+					widget = {
+						size = { 285 90 }
+						using = bg_paper_card
+
+						text_multi = {
+							margin = { 12 10 }
+							autoresize = no
+							multiline = yes
+							size = { 260 70 }
+							text = "bronze_ruins_panel_empty_desc"
+						}
+					}
+				}
+			}
+		}
+	}
+}
