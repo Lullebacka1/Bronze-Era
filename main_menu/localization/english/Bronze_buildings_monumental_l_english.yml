@@ -5,6 +5,9 @@
   megalithic_religious_monument: "Megalithic Sanctuary"
   megalithic_religious_monument_desc: "Raised through the collective labor of entire communities, these great stone monuments serve as centers of ritual, assembly, and ancestral remembrance. Their enduring presence reinforces shared traditions, sacred authority, and the cultural identity of the surrounding population."
 
+  bronze_monumental_gates: "Monumental Gates"
+  bronze_monumental_gates_desc: "Grand gates transform a city's walls from mere fortifications into symbols of power and prestige. Decorated with reliefs, inscriptions, sculptures, and costly materials, they proclaim the wealth, authority, and cultural achievements of the community to all who enter."
+
 
 # PRODUCTION AND MAINTENANCE METHODS
 
@@ -13,6 +16,9 @@
 
   megalithic_religious_monument_maintenance_simple: "Ritual Observances"
   megalithic_religious_monument_maintenance_simple_desc: "Ceremonies, offerings, feasts, and periodic upkeep preserve the sanctity of the monument and maintain its role as a focal point of religious and communal life."
+
+  bronze_age_triumphal_monument_maintenance_simple: "Gate Upkeep"
+  bronze_age_triumphal_monument_maintenance_simple_desc: "The gates require continual maintenance of their masonry, wooden structures, metal fittings, decorations, and ceremonial features to preserve both their defensive function and symbolic grandeur."
 
 # CONSTRUCTION COSTS
 

@@ -70,7 +70,7 @@ subj_law = {
 			global_pop_promotion_speed_modifier = 0.1
 			monthly_rebel_growth = -0.0005
 			peasants_estate_target_satisfaction = small_permanent_target_satisfaction
-			tribesmen_estate_target_satisfaction = small_permanent_target_satisfaction
+			tribes_estate_target_satisfaction = small_permanent_target_satisfaction
 			burghers_estate_target_satisfaction = small_permanent_target_satisfaction
 		}
 
@@ -90,7 +90,7 @@ subj_law = {
 			clergy_estate_target_satisfaction = small_permanent_target_satisfaction
 			burghers_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
 			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
-			tribesmen_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			tribes_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 		}
 
 		estate_preferences = {
@@ -600,7 +600,7 @@ land_property_law = {
 
 	household_land_law = {
 		country_modifier = {
-			global_noble_estate_power = 0.15
+			global_nobles_estate_power = 0.15
 			global_clergy_estate_power = -0.05
 			nobles_estate_levy_size = 0.15
 			nobles_estate_target_satisfaction = small_permanent_target_satisfaction
@@ -622,7 +622,7 @@ land_property_law = {
 		country_modifier = {
 			tax_income_efficiency = medium_tax_income_efficiency_bonus
 			global_clergy_estate_power = -0.05
-			global_noble_estate_power = -0.05
+			global_nobles_estate_power = -0.05
 			global_crown_estate_power = 0.1
 
 			global_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
@@ -677,13 +677,13 @@ advisor_council_law = {
 	commune_admin_policy = {
 		country_modifier = {
 			peasants_estate_levy_size = 0.05
-			tribesmen_estate_target_satisfaction = tiny_permanent_target_satisfaction
+			tribes_estate_target_satisfaction = tiny_permanent_target_satisfaction
 			peasants_estate_target_satisfaction = tiny_permanent_target_satisfaction
 			global_tribesmen_desired_pop = 0.025
-			global_peasamt_desired_pop = 0.025
+			global_peasants_desired_pop = 0.025
 		}
 		estate_preferences = {
-			tribesmen_estate
+			tribes_estate
 			peasants_estate
 		}
 		years = 2

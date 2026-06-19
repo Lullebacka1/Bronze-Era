@@ -6,6 +6,8 @@
 	unlock_road_type = holloway
 
 	requires = wheeled_transport_advance
+
+	starting_technology_level = 2
 }
 
 maintained_holloway_advance = {
@@ -19,6 +21,8 @@ maintained_holloway_advance = {
 	allow = {
 		has_advance = holloway_advance
 	}
+
+	starting_technology_level = 3
 }
 
 
