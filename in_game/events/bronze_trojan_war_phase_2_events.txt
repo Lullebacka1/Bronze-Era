@@ -1,5 +1,5 @@
 namespace = start_trojan_war_phase_2
-namespace = join_trojan_war_phase_2
+
 start_trojan_war_phase_2.1 = {
     type = country_event
     title = trojan_war_phase_2_start.t
@@ -12,34 +12,15 @@ start_trojan_war_phase_2.1 = {
 
     declare_war_with_cb = {
         target = c:WILUS
-        type = casus_belli:trojan_war_casus_belli
+        type = casus_belli:trojan_war_casus_belli  
+    c:AHHI = { join_war_as_defender = { war = scope:target_war } }
+    c:LYCIA = { join_war_as_defender = { war = scope:target_war } }
+    c:SEHA = { join_war_as_defender = { war = scope:target_war } }
+    c:LUKKA = { join_war_as_defender = { war = scope:target_war } }
+    c:MASA = { join_war_as_defender = { war = scope:target_war } }
     }
-    c:AHHI = { trigger_event_non_silently = join_trojan_war_phase_2.1 }
-    c:LYCIA = { trigger_event_non_silently = join_trojan_war_phase_2.1 }
-    c:SEHA = { trigger_event_non_silently = join_trojan_war_phase_2.1 }
-    c:LUKKA = { trigger_event_non_silently = join_trojan_war_phase_2.1 }
-    c:MASA = { trigger_event_non_silently = join_trojan_war_phase_2.1 }
-   # c:AHHI = { join_war_as_defender = { war = scope:target_war } }
-   # c:LYCIA = { join_war_as_defender = { war = scope:target_war } }
-   # c:SEHA = { join_war_as_defender = { war = scope:target_war } }
-   # c:LUKKA = { join_war_as_defender = { war = scope:target_war } }
-   # c:MASA = { join_war_as_defender = { war = scope:target_war } }
-    # could make it trigger event to join war insted of doing it in the same
-}
-}
- join_trojan_war_phase_2.1 = {
-    type = country_event
-    title = join_trojan_war_phase_2.t
-    desc = join_trojan_war_phase_2.d
-    is_triggered_only = yes
-    hidden = no
 
-   option = {
-        name = "join_trojan_war_phase_2.a"
-        ROOT = {
-                join_war_as_defender = {
-                war = c:WILUS.current_war
-            }
-        }
-    }
- }
+  
+   
+}
+}

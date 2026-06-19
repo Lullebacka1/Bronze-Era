@@ -1,17 +1,10 @@
 ﻿trojan_war_casus_belli = {
-    valid_for_wargoal = yes
-    is_badboy_war = no
-    is_triggered_only = yes
-    war_goal_type = conquest_wargoal
-
-    war_score_cost = { value = 2.0 }
-    ae_cost = { value = 2.75 }
-    prestige_gain = { value = 0.5 }
-
-    peace_options = {
-        take_province
-        concede_defeat
-        annul_treaty
-        full_annexation
+    create_visible = {
+        always = no
     }
+    create_enabled = {
+        always = no
+    }
+    is_triggered_only = yes
+    war_goal_type = trojan_war_wargoal
 }

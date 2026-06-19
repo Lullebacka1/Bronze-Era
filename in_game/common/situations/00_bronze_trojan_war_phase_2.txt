@@ -15,7 +15,12 @@ trojan_war_phase_2 = {
             name = situation_leader 
             value = c:0001G 
         }
-
+		#c:WILUS = {
+       	#	 change_subject_type = subject_type:trojan_situation_vassal
+   		#	}
+		#c:SHEA = {
+       	#	 change_subject_type = subject_type:trojan_situation_vassal
+   		#	}
 	  var:situation_leader = {
        trigger_event_non_silently = {
             id = start_trojan_war_phase_2.1
