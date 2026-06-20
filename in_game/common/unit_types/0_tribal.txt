@@ -44,7 +44,7 @@ a_warriors = {
 	construction_demand = a_warriors_construction
 	maintenance_demand =  a_warriors_maintenance
 	
-	buildable = no
+	buildable = yes
 	levy = yes
 
 	location_potential = {

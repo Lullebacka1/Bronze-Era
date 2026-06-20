@@ -249,6 +249,34 @@ council_of_elders_advance = {
 	requires = established_custom
 }
 
+household_companions_advance = {
+	age = age_1_traditions
+
+	unlock_unit = a_champions
+
+	starting_technology_level = 3
+	requires = established_custom
+}
+
+warrior_lodges_advance = {
+	age = age_1_traditions
+
+	army_maintenance_efficiency = 0.10
+	unlock_building = warrior_lodges
+
+	starting_technology_level = 3
+	requires = household_companions_advance
+}
+
+hill_forts_advance = {
+	age = age_1_traditions
+
+	unlock_building = hill_fort
+
+	starting_technology_level = 4
+	requires = warrior_lodges_advance
+}
+
 #####################################
 # Palace Economy
 #####################################
