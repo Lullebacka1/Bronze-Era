@@ -38,6 +38,15 @@
   council_of_elders_advance: "Council of Elders"
   council_of_elders_advance_desc: "Respected elders and leading household heads gather to deliberate on matters affecting the wider community. Their collective authority helps mediate disputes, preserve tradition, and restrain arbitrary rule."
 
+  household_companions_advance: "Household Companions"
+  household_companions_advance_desc: "Prominent chiefs and leading families maintain bands of loyal companions bound by personal allegiance, gift exchange, and shared martial reputation. These warriors form the nucleus of military power and often accompany their patrons in war, diplomacy, and public ceremonies."
+
+  warrior_lodges_advance: "Warrior Lodges"
+  warrior_lodges_advance_desc: "Dedicated institutions for the training, organization, and maintenance of warriors become established within the community. By concentrating martial knowledge and fostering bonds among fighting men, these lodges improve military readiness and reduce the burden of mobilization."
+
+  hill_forts_advance: "Hill Forts"
+  hill_forts_advance_desc: "Communities increasingly invest in fortified hilltop settlements and strongholds. These defensible sites provide refuge during conflict, protect valuable resources, and serve as centers of political authority over the surrounding countryside."
+
   long_distance_trade_advance: "Long-Distance Trade Networks"
   long_distance_trade_advance_desc: "Long-distance trade networks refer to the complex systems of trade and commerce that connect different regions and civilizations across vast distances. These networks facilitate the exchange of goods, ideas, and cultural influences between societies."
 
