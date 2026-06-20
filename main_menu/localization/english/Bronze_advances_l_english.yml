@@ -8,6 +8,36 @@
   cathedral_advance: "Monumental Temple Construction"
   cathedral_advance_desc: "We shall build a dedicated place of worship to our gods, a temple that will stand as a testament to our devotion and faith. This grand structure will not only serve as a spiritual center for our people but also as a symbol of our cultural and religious identity."
 
+  tribal_hegemony_advance: "Tribal Hegemony"
+  tribal_hegemony_advance_desc: "Powerful tribes extend their influence beyond their immediate homeland, establishing networks of subordinate communities bound by tribute, alliance, and customary obligations. Authority rests upon reputation, military strength, and the ability to maintain loyalty among dependent groups."
+
+  chiefly_tribute_advance: "Chiefly Tribute"
+  chiefly_tribute_advance_desc: "Rulers develop more regular systems for collecting tribute from subordinate communities. Goods, livestock, and other resources are gathered through established obligations, strengthening the position of the paramount chief and their household."
+
+  prestige_governance: "Prestige Governance"
+  prestige_governance_desc: "Political authority depends upon the ruler's ability to maintain honor, generosity, and personal reputation. Feasting, gift-giving, public works, and military success become essential tools for preserving social cohesion and political legitimacy."
+
+  lineage_authority: "Lineage Authority"
+  lineage_authority_desc: "The right to rule becomes increasingly associated with membership in particular family lines. Genealogy, ancestry, and inherited status provide a recognized framework for succession and political legitimacy."
+
+  agnatic_cognatic_law_advance: "Expanded Lineage Rights"
+  agnatic_cognatic_law_advance_desc: "Succession customs evolve to recognize claims through both male and female lines of descent, broadening the pool of legitimate heirs while preserving the importance of lineage."
+
+  partition_inheritance_advance: "Partition Inheritance"
+  partition_inheritance_advance_desc: "Inheritance customs divide authority and property among multiple heirs, reflecting the importance of kinship obligations and the collective rights of ruling families."
+
+  sky_lore_advance: "Sky Lore"
+  sky_lore_advance_desc: "Generations of observation produce extensive knowledge of celestial movements and seasonal patterns. This body of knowledge informs ritual life, navigation, timekeeping, and the organization of communal activities."
+
+  seasonal_reckoning_advance: "Seasonal Reckoning"
+  seasonal_reckoning_advance_desc: "The careful tracking of seasonal cycles allows communities to better coordinate planting, harvesting, migration, and storage, reducing uncertainty and improving the management of resources."
+
+  established_custom: "Established Custom"
+  established_custom_desc: "Long-standing traditions and precedents become recognized as authoritative standards for resolving disputes and governing communal life. Customary law provides a stable framework for political and social order."
+
+  council_of_elders_advance: "Council of Elders"
+  council_of_elders_advance_desc: "Respected elders and leading household heads gather to deliberate on matters affecting the wider community. Their collective authority helps mediate disputes, preserve tradition, and restrain arbitrary rule."
+
   long_distance_trade_advance: "Long-Distance Trade Networks"
   long_distance_trade_advance_desc: "Long-distance trade networks refer to the complex systems of trade and commerce that connect different regions and civilizations across vast distances. These networks facilitate the exchange of goods, ideas, and cultural influences between societies."
 
