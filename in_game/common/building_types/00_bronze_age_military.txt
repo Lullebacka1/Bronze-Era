@@ -1,0 +1,36 @@
+warrior_lodges = {
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+	
+	category = military_category
+	forbidden_for_estates = yes
+	
+	employment_size = estate_manpower_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = no
+	megalopolis = no
+	
+	build_time = small_fort_building
+	
+	modifier = {
+		local_manpower = 0.01
+		can_recruit_regiment_in_this_location = yes
+		local_nobles_estate_power = 0.10
+		local_crown_estate_power = 0.10
+		local_unrest = -0.01
+	}
+
+	unique_production_methods =  {
+		warrior_lodges_maintenance = {
+			weaponry = 0.20
+			wild_game = 0.10
+			cloth = 0.10
+
+			category = building_maintenance
+		}
+	}
+	construction_demand = stockade_construction
+}

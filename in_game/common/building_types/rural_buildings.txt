@@ -657,7 +657,7 @@ warrior_halls = {
 	build_time = soldier_building
 	
 	modifier = {
-		local_manpower = 0.010
+		local_manpower = 0.005
 		can_recruit_regiment_in_this_location = yes
 		local_nobles_estate_power = 0.10
 	}
