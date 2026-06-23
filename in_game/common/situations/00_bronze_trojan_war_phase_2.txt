@@ -15,12 +15,12 @@ trojan_war_phase_2 = {
             name = situation_leader 
             value = c:0001G 
         }
-		#c:WILUS = {
-       	#	 change_subject_type = subject_type:trojan_situation_vassal
-   		#	}
-		#c:SHEA = {
-       	#	 change_subject_type = subject_type:trojan_situation_vassal
-   		#	}
+		c:WILUS = {
+       		 change_subject_type = subject_type:trojan_situation_vassal
+   			}
+		c:SHEA = {
+       		 change_subject_type = subject_type:trojan_situation_vassal
+   			}
 	  var:situation_leader = {
        trigger_event_non_silently = {
             id = start_trojan_war_phase_2.1
@@ -62,7 +62,7 @@ trojan_war_phase_2 = {
         }
     }
 }
-
+# rework have this logic done some where else then added in on end add contry modifer
 	end_conditions = {	
     0001G = {
         if = {
@@ -105,6 +105,12 @@ trojan_war_phase_2 = {
         MASA = {
             remove_country_modifier = trojan_war_anatolia_modifier_phase_2
         }
+		c:WILUS = {
+       		 change_subject_type = subject_type:vassal
+   			}
+		c:SHEA = {
+       		 change_subject_type = subject_type:vassal
+   			}
 	}
 
 	visible = {

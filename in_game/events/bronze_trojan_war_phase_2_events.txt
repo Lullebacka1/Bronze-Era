@@ -10,6 +10,7 @@ start_trojan_war_phase_2.1 = {
     option = {
     name = "trojan_war_phase_2_start.a"
 
+    # get the join to work so it isnt just Wilus and 0001G
     declare_war_with_cb = {
         target = c:WILUS
         type = casus_belli:trojan_war_casus_belli  
