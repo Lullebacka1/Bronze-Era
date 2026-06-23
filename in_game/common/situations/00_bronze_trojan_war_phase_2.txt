@@ -18,7 +18,7 @@ trojan_war_phase_2 = {
 		c:WILUS = {
        		 change_subject_type = subject_type:trojan_situation_vassal
    			}
-		c:SHEA = {
+		c:SEHA = {
        		 change_subject_type = subject_type:trojan_situation_vassal
    			}
 	  var:situation_leader = {
@@ -108,7 +108,7 @@ trojan_war_phase_2 = {
 		c:WILUS = {
        		 change_subject_type = subject_type:vassal
    			}
-		c:SHEA = {
+		c:SEHA = {
        		 change_subject_type = subject_type:vassal
    			}
 	}

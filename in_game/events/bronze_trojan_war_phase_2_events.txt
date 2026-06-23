@@ -14,11 +14,11 @@ start_trojan_war_phase_2.1 = {
     declare_war_with_cb = {
         target = c:WILUS
         type = casus_belli:trojan_war_casus_belli  
-    c:AHHI = { join_war_as_defender = { war = scope:target_war } }
-    c:LYCIA = { join_war_as_defender = { war = scope:target_war } }
-    c:SEHA = { join_war_as_defender = { war = scope:target_war } }
-    c:LUKKA = { join_war_as_defender = { war = scope:target_war } }
-    c:MASA = { join_war_as_defender = { war = scope:target_war } }
+    c:AHHI = { join_war_as_defender = { war = scope:WILUS } }
+    c:LYCIA = { join_war_as_defender = { war = scope:WILUS } }
+    c:SEHA = { join_war_as_defender = { war = scope:WILUS } }
+    c:LUKKA = { join_war_as_defender = { war = scope:WILUS } }
+    c:MASA = { join_war_as_defender = { war = scope:WILUS } }
     }
 
   
