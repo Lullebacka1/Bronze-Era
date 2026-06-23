@@ -132,3 +132,57 @@ bronze_city_walls = {
 
 	graphical_tags = { small_city_walls city_walls }
 }
+
+hill_fort = {
+	
+	max_levels = 1
+	pop_type = soldiers
+	forbidden_for_estates = yes
+	
+	category = defense_category
+	
+	employment_size = stockade_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = no
+	megalopolis = no
+
+	location_potential = {
+		OR = {
+			topography = mountains
+			topography = plateau
+			topography = hills
+		}
+	}
+	
+	
+	build_time = small_fort_building
+
+	expensive = yes
+	
+	
+	
+	unique_production_methods = {
+	
+		frontier_post_maintenance = {
+			lumber = 0.1
+			weaponry = 0.03
+			tar = 0.02
+			category = building_maintenance
+		}
+	}
+	construction_demand = stockade_construction
+	
+
+	modifier = {
+		local_garrison_size = 0.2
+		local_unrest = -0.03
+		local_crown_estate_power = 0.1
+	}
+	
+	raw_modifier = {
+		fort_level = 1
+		propagating_zone_of_control = yes
+	}
+}
