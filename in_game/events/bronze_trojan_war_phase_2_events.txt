@@ -1,4 +1,5 @@
 namespace = start_trojan_war_phase_2
+namespace = join_trojan_War
 
 start_trojan_war_phase_2.1 = {
     type = country_event
@@ -14,14 +15,57 @@ start_trojan_war_phase_2.1 = {
     declare_war_with_cb = {
         target = c:WILUS
         type = casus_belli:trojan_war_casus_belli  
-    c:AHHI = { join_war_as_defender = { war = scope:WILUS } }
-    c:LYCIA = { join_war_as_defender = { war = scope:WILUS } }
-    c:SEHA = { join_war_as_defender = { war = scope:WILUS } }
-    c:LUKKA = { join_war_as_defender = { war = scope:WILUS } }
-    c:MASA = { join_war_as_defender = { war = scope:WILUS } }
+    
     }
-
+    c:AHHI =  { trigger_event_non_silently = {
+            id = join_trojan_War.1
+            days = 10
+        } }
+    c:LYCIA = { trigger_event_non_silently = {
+            id = join_trojan_War.1
+            days = 10
+        } }
+    c:SEHA = { trigger_event_non_silently = {
+            id = join_trojan_War.1
+            days = 10
+        } }
+    c:LUKKA = { trigger_event_non_silently = {
+            id = join_trojan_War.1
+            days = 10
+        } }
+    c:MASA = { trigger_event_non_silently = {
+            id = join_trojan_War.1
+            days = 10
+        } }
   
    
 }
 }
+
+join_trojan_War.1 = {
+    type = country_event
+    title = join_trojan_War.t
+    desc = join_trojan_War.d
+    is_triggered_only = yes
+    hidden = no 
+    
+immediate = {
+    save_scope_as = actor
+    random_current_war = {
+        limit = {
+            attacker_leader = c:0001G
+            defender_leader = c:WILUS
+        }
+        save_scope_as = trojan_war
+    }
+}
+
+option = {
+    name = "join_trojan_war"
+    if = {
+        limit = { exists = scope:trojan_war }
+        join_war_as_defender = { war = scope:trojan_war }
+    }
+}
+}
+
