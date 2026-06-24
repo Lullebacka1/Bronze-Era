@@ -18,18 +18,57 @@ bronze_city_razing.1 = {
 	option = {
 		name = bronze_city_razing.1.a
 		custom_tooltip = bronze_city_razing_1a_tt
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 5
+				scope:bronze_captured_city = {
+					bronze_city_ai_should_preserve_capture_target = yes
+				}
+			}
+		}
 		bronze_city_capture_occupy_effect = yes
 	}
 
 	option = {
 		name = bronze_city_razing.1.b
 		custom_tooltip = bronze_city_razing_1b_tt
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 0
+				scope:bronze_captured_city = {
+					bronze_city_ai_should_preserve_capture_target = yes
+				}
+			}
+			modifier = {
+				factor = 1.25
+				scope:bronze_captured_city = {
+					bronze_city_ai_high_value_plunder_target = yes
+				}
+			}
+		}
 		bronze_city_start_sack_effect = yes
 	}
 
 	option = {
 		name = bronze_city_razing.1.c
 		custom_tooltip = bronze_city_razing_1c_tt
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				scope:bronze_captured_city = {
+					bronze_city_ai_should_preserve_capture_target = yes
+				}
+			}
+			modifier = {
+				factor = 1.5
+				scope:bronze_captured_city = {
+					bronze_city_ai_high_value_plunder_target = yes
+				}
+			}
+		}
 		bronze_city_start_raze_effect = yes
 	}
 }
@@ -48,7 +87,10 @@ bronze_city_razing.2 = {
 	trigger = {
 		exists = scope:bronze_captured_city
 		scope:bronze_captured_city = {
-			has_variable = bronze_city_active_sack
+			OR = {
+				has_variable = bronze_city_active_sack
+				has_variable = bronze_city_sack_marker
+			}
 		}
 	}
 
@@ -73,7 +115,10 @@ bronze_city_razing.3 = {
 	trigger = {
 		exists = scope:bronze_captured_city
 		scope:bronze_captured_city = {
-			has_variable = bronze_city_active_raze
+			OR = {
+				has_variable = bronze_city_active_raze
+				has_variable = bronze_city_raze_marker
+			}
 		}
 	}
 
