@@ -1,0 +1,34 @@
+# Bronze Era - Ruins Exploration GUI support
+# This wraps the existing ruins expedition backend so the new GUI can launch
+# an expedition from the currently opened ruin without changing old events.
+
+# Country scope. Requires scope:be_ruin_location as a location.
+be_ruins_start_expedition_effect = {
+	custom_description = {
+		text = be_ruins_start_expedition_effect_tt
+		add_gold = -50
+		add_manpower_pool = -100
+
+		if = {
+			limit = { NOT = { has_variable = be_ruin_expeditions_active } }
+			set_variable = { name = be_ruin_expeditions_active value = 0 }
+		}
+		change_variable = { name = be_ruin_expeditions_active add = 1 }
+
+		scope:be_ruin_location = {
+			set_variable = { name = bronze_ruins_expedition_underway value = 1 years = 2 }
+			set_variable = { name = be_ruin_expedition_start_year value = current_year }
+			set_variable = { name = be_ruin_expedition_success_chance value = 60 }
+			add_location_modifier = {
+				modifier = bronze_ruins_expedition_camp
+				years = 2
+				mode = add_and_extend
+			}
+		}
+
+		trigger_event_non_silently = {
+			id = bronze_city_razing.10
+			days = 180
+		}
+	}
+}

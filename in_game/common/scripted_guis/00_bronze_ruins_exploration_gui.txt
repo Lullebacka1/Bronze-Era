@@ -1,0 +1,27 @@
+be_ruins_start_expedition_gui = {
+	scope = country
+	saved_scopes = { be_ruin_location }
+
+	is_shown = {
+		scope:be_ruin_location ?= {
+			has_variable = bronze_ancient_ruins
+		}
+	}
+
+	is_valid = {
+		root = {
+			be_ruins_can_start_ruin_expedition = yes
+		}
+		scope:be_ruin_location ?= {
+			be_ruins_selected_location_can_be_explored = yes
+		}
+	}
+
+	effect = {
+		root = {
+			be_ruins_start_expedition_effect = yes
+		}
+	}
+
+	ai_is_valid = { always = no }
+}

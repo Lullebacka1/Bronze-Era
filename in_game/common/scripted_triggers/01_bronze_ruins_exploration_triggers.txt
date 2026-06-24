@@ -1,0 +1,41 @@
+# Bronze Era - Ruins Exploration GUI support
+# These triggers are intentionally small and country/location scoped so the
+# location-window GUI can stay responsive.
+
+# Location scope. Used by the direct location GUI action.
+be_ruins_selected_location_can_be_explored = {
+	has_owner = yes
+	has_variable = bronze_ancient_ruins
+	NOT = { has_variable = bronze_ruins_too_fresh }
+	NOT = { has_variable = bronze_ruins_expedition_underway }
+	NOT = { has_variable = bronze_ruins_explored }
+}
+
+# Country scope. Fixed V1 capacity: 2 active expeditions.
+be_ruins_has_available_expedition_capacity = {
+	OR = {
+		NOT = { has_variable = be_ruin_expeditions_active }
+		var:be_ruin_expeditions_active < 2
+	}
+}
+
+# Country scope. Goods are represented visually in the GUI for now; the
+# existing expedition backend still spends gold and manpower only.
+be_ruins_has_required_goods_for_ruin_expedition = {
+	gold >= 50
+	manpower = { value >= 100 }
+}
+
+# Country scope. A real leader picker can replace this with character logic
+# later; V1 uses the ruler/regent portrait as expedition patron.
+be_ruins_has_valid_expedition_leader = {
+	always = yes
+}
+
+# Country scope.
+be_ruins_can_start_ruin_expedition = {
+	is_during_bankruptcy = no
+	be_ruins_has_available_expedition_capacity = yes
+	be_ruins_has_required_goods_for_ruin_expedition = yes
+	be_ruins_has_valid_expedition_leader = yes
+}

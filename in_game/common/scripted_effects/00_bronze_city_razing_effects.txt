@@ -839,10 +839,20 @@ bronze_ruins_start_expedition_effect = {
 }
 
 bronze_ruins_finish_expedition = {
+	if = {
+		limit = { has_variable = be_ruin_expeditions_active }
+		change_variable = { name = be_ruin_expeditions_active subtract = 1 }
+		if = {
+			limit = { var:be_ruin_expeditions_active < 0 }
+			set_variable = { name = be_ruin_expeditions_active value = 0 }
+		}
+	}
 	random_owned_location = {
 		limit = { has_variable = bronze_ruins_expedition_underway }
 		save_scope_as = bronze_ruins_site
 		remove_variable = bronze_ruins_expedition_underway
+		remove_variable = be_ruin_expedition_start_year
+		remove_variable = be_ruin_expedition_success_chance
 		set_variable = { name = bronze_ruins_explored value = 1 years = 25 }
 		remove_location_modifier = bronze_ruins_expedition_camp
 	}

@@ -3912,8 +3912,8 @@ lateralview = {
 								}
 							}
 
-							# Bronze Era: Ancient Ruins button. This opens an empty
-							# context panel for future ruin-specific content.
+							# Bronze Era: Ancient Ruins button. Opens the dedicated
+							# Ruins Exploration GUI for this location.
 							card_header_button_04 = {
 								size = { 36 36 }
 								datacontext = "[LocationView.GetLocation]"
@@ -3942,7 +3942,7 @@ lateralview = {
 								}
 
 								contextmenu_widget = {
-									BronzeRuinsContextMenu = {}
+									BronzeRuinsExplorationWindow = {}
 								}
 
 								icon = {

@@ -1,0 +1,443 @@
+types BronzeRuinsExplorationTypes
+{
+	type BronzeRuinsExplorationWindow = ContextMenuBase {
+		blockoverride "contextmenu_content" {
+			widget = {
+				size = { 1220 720 }
+				using = bg_main_inner_alt
+				using = bg_cabinet_card_frame
+
+				vbox = {
+					margin = { 14 12 }
+					spacing = 10
+
+					# Header
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						size = { -1 46 }
+						using = bg_paper_card
+						using = bg_cabinet_card_frame
+
+						hbox = {
+							margin = { 12 6 }
+							spacing = 10
+
+							icon = {
+								size = { 34 34 }
+								texture = "gfx/interface/icons/bronze_age/bronze_ruins.dds"
+							}
+
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								text_single = {
+									text = "be_ruins_exploration_title"
+									default_format = "#T"
+								}
+								text_single = {
+									text = "be_ruins_exploration_subtitle"
+									default_format = "#subtle"
+								}
+							}
+
+							button_close_alt = {
+								size = { 26 26 }
+								onclick = "[ExtraTooltipInfo.CloseContextMenu]"
+							}
+						}
+					}
+
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						spacing = 10
+
+						# Left column: available ruins. V1 intentionally exposes the
+						# currently selected ruin first; a global ruins list can later
+						# replace this panel without changing the expedition action.
+						vbox = {
+							size = { 315 100% }
+							spacing = 8
+							using = bg_paper_card
+							using = bg_cabinet_card_frame
+
+							vbox = {
+								margin = { 10 8 }
+								spacing = 8
+
+								text_single = {
+									text = "be_ruins_available_ruins"
+									default_format = "#yellow_titles"
+								}
+
+								hbox = {
+									spacing = 5
+									button_small = {
+										size = { 68 24 }
+										text = "be_ruins_filter_region"
+										enabled = no
+										tooltip = "be_ruins_filter_placeholder_tt"
+									}
+									button_small = {
+										size = { 70 24 }
+										text = "be_ruins_sort_difficulty"
+										enabled = no
+										tooltip = "be_ruins_filter_placeholder_tt"
+									}
+									button_small = {
+										size = { 70 24 }
+										text = "be_ruins_sort_age"
+										enabled = no
+										tooltip = "be_ruins_filter_placeholder_tt"
+									}
+									button_small = {
+										size = { 80 24 }
+										text = "be_ruins_sort_reward"
+										enabled = no
+										tooltip = "be_ruins_filter_placeholder_tt"
+									}
+								}
+
+								scrollarea = {
+									size = { 295 565 }
+									scrollbarpolicy_horizontal = always_off
+									autoresizescrollarea = no
+
+									scrollbar_vertical = {
+										using = Scrollbar_Vertical
+									}
+
+									scrollwidget = {
+										vbox = {
+											spacing = 6
+
+											button = {
+												size = { 275 96 }
+												using = bg_paper_card
+												using = bg_cabinet_card_frame
+												tooltip = "be_ruins_selected_ruin_tt"
+
+												hbox = {
+													margin = { 8 6 }
+													spacing = 8
+
+													icon = {
+														size = { 46 46 }
+														texture = "gfx/interface/icons/bronze_age/bronze_ruins.dds"
+													}
+
+													vbox = {
+														layoutpolicy_horizontal = expanding
+														spacing = 2
+
+														text_single = {
+															layoutpolicy_horizontal = expanding
+															autoresize = no
+															text = "[Location.GetNameWithNoTooltip]"
+															default_format = "#yellow_titles"
+														}
+														text_single = {
+															text = "be_ruins_type_city"
+															default_format = "#subtle"
+														}
+														text_single = {
+															text = "be_ruins_difficulty_three"
+															default_format = "#Y"
+														}
+														text_single = {
+															visible = "[Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet]"
+															text = "be_ruins_state_exploring"
+															default_format = "#Y"
+														}
+														text_single = {
+															visible = "[Location.MakeScope.GetVariable('bronze_ruins_explored').IsSet]"
+															text = "be_ruins_state_explored"
+															default_format = "#medium"
+														}
+														text_single = {
+															visible = "[Location.MakeScope.GetVariable('bronze_ruins_too_fresh').IsSet]"
+															text = "be_ruins_state_locked"
+															default_format = "#R"
+														}
+														text_single = {
+															visible = "[And3(Not(Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet), Not(Location.MakeScope.GetVariable('bronze_ruins_explored').IsSet), Not(Location.MakeScope.GetVariable('bronze_ruins_too_fresh').IsSet))]"
+															text = "be_ruins_state_available"
+															default_format = "#P"
+														}
+													}
+												}
+											}
+
+											widget = {
+												size = { 275 90 }
+												using = bg_dark_paper_card
+												text_multi = {
+													margin = { 10 8 }
+													size = { 255 70 }
+													autoresize = no
+													multiline = yes
+													text = "be_ruins_available_ruins_note"
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+
+						# Center panel: selected ruin details.
+						vbox = {
+							size = { 545 100% }
+							spacing = 8
+							using = bg_paper_card
+							using = bg_cabinet_card_frame
+
+							vbox = {
+								margin = { 10 8 }
+								spacing = 8
+
+								widget = {
+									size = { 525 170 }
+									using = bg_main_inner_alt
+									background = {
+										texture = "gfx/interface/illustrations/work_of_art/palace.dds"
+										spriteType = stretched
+										alpha = 0.45
+									}
+									icon = {
+										parentanchor = center
+										size = { 86 86 }
+										texture = "gfx/interface/icons/bronze_age/bronze_ruins.dds"
+										alpha = 0.85
+									}
+								}
+
+								text_single = {
+									text = "[Location.GetNameWithNoTooltip]"
+									default_format = "#T"
+								}
+
+								text_multi = {
+									size = { 525 54 }
+									autoresize = no
+									multiline = yes
+									text = "be_ruins_selected_desc"
+								}
+
+								vbox = {
+									layoutpolicy_horizontal = expanding
+									spacing = 4
+									using = bg_dark_paper_card
+									margin = { 8 6 }
+
+									hbox = {
+										spacing = 8
+										text_single = { size = { 210 20 } text = "be_ruins_creation_date" default_format = "#yellow_titles" }
+										text_single = {
+											visible = "[Location.MakeScope.GetVariable('bronze_ruins_destroyed_year').IsSet]"
+											text = "[Location.MakeScope.GetVariable('bronze_ruins_destroyed_year').GetValue|0]"
+										}
+										text_single = {
+											visible = "[Not(Location.MakeScope.GetVariable('bronze_ruins_destroyed_year').IsSet)]"
+											text = "be_ruins_unknown_value"
+										}
+									}
+
+									hbox = {
+										spacing = 8
+										text_single = { size = { 210 20 } text = "be_ruins_former_city" default_format = "#yellow_titles" }
+										text_single = { text = "[Location.GetNameWithNoTooltip]" }
+									}
+
+									hbox = {
+										spacing = 8
+										text_single = { size = { 210 20 } text = "be_ruins_origin_culture" default_format = "#yellow_titles" }
+										text_single = { text = "[Location.GetDominantCulture.GetNameWithNoTooltip]" }
+									}
+
+									hbox = {
+										spacing = 8
+										text_single = { size = { 210 20 } text = "be_ruins_origin_religion" default_format = "#yellow_titles" }
+										text_single = { text = "[Location.GetDominantReligion.GetNameWithNoTooltip]" }
+									}
+
+									hbox = {
+										spacing = 8
+										text_single = { size = { 210 20 } text = "be_ruins_ruin_type" default_format = "#yellow_titles" }
+										text_single = { text = "be_ruins_type_city" }
+									}
+
+									hbox = {
+										spacing = 8
+										text_single = { size = { 210 20 } text = "be_ruins_difficulty" default_format = "#yellow_titles" }
+										text_single = { text = "be_ruins_difficulty_three" default_format = "#Y" }
+									}
+
+									hbox = {
+										spacing = 8
+										text_single = { size = { 210 20 } text = "be_ruins_success_chance" default_format = "#yellow_titles" }
+										text_single = { text = "be_ruins_success_chance_default" default_format = "#P" }
+									}
+								}
+
+								text_single = {
+									text = "be_ruins_possible_rewards"
+									default_format = "#yellow_titles"
+								}
+
+								hbox = {
+									spacing = 8
+									icon = { size = { 34 34 } texture = "gfx/interface/icons/trade_goods/icon_goods_goods_gold.dds" tooltip = "be_ruins_reward_gold" }
+									icon = { size = { 34 34 } texture = "gfx/interface/icons/flat_icons/prestige.dds" tooltip = "be_ruins_reward_prestige" }
+									icon = { size = { 34 34 } texture = "gfx/interface/icons/trade_goods/icon_goods_pottery.dds" tooltip = "be_ruins_reward_artifacts" }
+									icon = { size = { 34 34 } texture = "gfx/interface/icons/trade_goods/icon_goods_books.dds" tooltip = "be_ruins_reward_knowledge" }
+									icon = { size = { 34 34 } texture = "gfx/interface/icons/events/event.dds" tooltip = "be_ruins_reward_event" }
+								}
+							}
+						}
+
+						# Right panel: expedition preparation.
+						vbox = {
+							size = { 330 100% }
+							spacing = 8
+							using = bg_paper_card
+							using = bg_cabinet_card_frame
+
+							vbox = {
+								margin = { 10 8 }
+								spacing = 8
+
+								text_single = {
+									text = "be_ruins_prepare_expedition"
+									default_format = "#yellow_titles"
+								}
+
+								widget = {
+									size = { 310 150 }
+									using = bg_dark_paper_card
+
+									hbox = {
+										margin = { 8 8 }
+										spacing = 8
+
+										widget = {
+											size = { 92 128 }
+											using = bg_paper_card
+											datacontext = "[Player.GetGovernment.GetRulerOrRegent]"
+											portrait_standard_head_button = {
+												size = { 84 84 }
+												parentanchor = top|hcenter
+												position = { 0 6 }
+											}
+										}
+
+										vbox = {
+											layoutpolicy_horizontal = expanding
+											spacing = 4
+											text_single = {
+												text = "be_ruins_expedition_leader"
+												default_format = "#yellow_titles"
+											}
+											text_single = {
+												text = "[Player.GetGovernment.GetRulerOrRegent.GetShortNameWithNoTooltip]"
+												autoresize = no
+											}
+											text_single = {
+												text = "be_ruins_leader_role_archivist"
+												default_format = "#subtle"
+											}
+											text_multi = {
+												size = { 185 54 }
+												autoresize = no
+												multiline = yes
+												text = "be_ruins_leader_bonus_default"
+											}
+											button_small = {
+												size = { 86 24 }
+												text = "be_ruins_change_leader"
+												enabled = no
+												tooltip = "be_ruins_change_leader_placeholder_tt"
+											}
+										}
+									}
+								}
+
+								vbox = {
+									layoutpolicy_horizontal = expanding
+									spacing = 5
+									using = bg_dark_paper_card
+									margin = { 8 6 }
+
+									hbox = { spacing = 8 text_single = { size = { 170 20 } text = "be_ruins_manpower_committed" default_format = "#yellow_titles" } text_single = { text = "100" } }
+									hbox = { spacing = 8 text_single = { size = { 170 20 } text = "be_ruins_gold_cost" default_format = "#yellow_titles" } text_single = { text = "50" } }
+									hbox = { spacing = 8 text_single = { size = { 170 20 } text = "be_ruins_duration" default_format = "#yellow_titles" } text_single = { text = "be_ruins_duration_default" } }
+									hbox = { spacing = 8 text_single = { size = { 170 20 } text = "be_ruins_final_success" default_format = "#yellow_titles" } text_single = { text = "be_ruins_success_chance_default" default_format = "#P" } }
+									hbox = { spacing = 8 text_single = { size = { 170 20 } text = "be_ruins_estimated_risk" default_format = "#yellow_titles" } text_single = { text = "be_ruins_risk_medium" default_format = "#Y" } }
+								}
+
+								text_single = {
+									text = "be_ruins_required_goods"
+									default_format = "#yellow_titles"
+								}
+
+								hbox = {
+									spacing = 8
+									icon = { size = { 30 30 } texture = "gfx/interface/icons/trade_goods/icon_goods_tools.dds" tooltip = "be_ruins_goods_tools" }
+									icon = { size = { 30 30 } texture = "gfx/interface/icons/trade_goods/icon_goods_lumber.dds" tooltip = "be_ruins_goods_timber" }
+									icon = { size = { 30 30 } texture = "gfx/interface/icons/trade_goods/icon_goods_wheat.dds" tooltip = "be_ruins_goods_food" }
+									icon = { size = { 30 30 } texture = "gfx/interface/icons/trade_goods/icon_goods_paper.dds" tooltip = "be_ruins_goods_records" }
+								}
+
+								vbox = {
+									layoutpolicy_horizontal = expanding
+									datacontext = "[GetScriptedGui('be_ruins_start_expedition_gui')]"
+
+									button_regular = {
+										size = { 310 42 }
+										text = "be_ruins_launch_expedition"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)]"
+										tooltip = "be_ruins_launch_expedition_tt"
+									}
+								}
+
+								text_single = {
+									text = "be_ruins_active_expeditions"
+									default_format = "#yellow_titles"
+								}
+								text_single = {
+									text = "be_ruins_capacity_text"
+								}
+
+								widget = {
+									size = { 310 80 }
+									using = bg_dark_paper_card
+
+									vbox = {
+										margin = { 8 6 }
+										spacing = 4
+										text_single = {
+											visible = "[Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet]"
+											text = "be_ruins_current_expedition_here"
+											default_format = "#Y"
+										}
+										text_single = {
+											visible = "[Not(Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet)]"
+											text = "be_ruins_no_expedition_here"
+											default_format = "#subtle"
+										}
+										text_single = {
+											visible = "[Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet]"
+											datacontext = "[Location.MakeScope.GetVariable('bronze_ruins_expedition_underway')]"
+											text = "[VariableInfo.GetExpirationDate]"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
