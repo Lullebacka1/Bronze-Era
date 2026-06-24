@@ -14,25 +14,44 @@ bronze_city_razing_on_city_capture = {
 
 		if = {
 			limit = { is_ai = yes }
-			random_list = {
-				55 = { bronze_city_capture_occupy_effect = yes }
-				25 = { bronze_city_start_sack_effect = yes }
-				15 = {
-					trigger = { gold < 20 }
-					bronze_city_start_sack_effect = yes
+			if = {
+				limit = {
+					scope:target = {
+						bronze_city_ai_should_preserve_capture_target = yes
+					}
 				}
-				10 = { bronze_city_start_raze_effect = yes }
-				10 = {
-					trigger = {
-						scope:target = {
-							OR = {
-								has_location_modifier = bronze_city_recently_sacked
-								has_location_modifier = bronze_city_razed
-								has_location_modifier = recently_raided_by_horde
+				bronze_city_capture_occupy_effect = yes
+			}
+			else = {
+				random_list = {
+					50 = { bronze_city_capture_occupy_effect = yes }
+					35 = { bronze_city_start_sack_effect = yes }
+					10 = { bronze_city_start_raze_effect = yes }
+					10 = {
+						trigger = { gold < 20 }
+						bronze_city_start_sack_effect = yes
+					}
+					10 = {
+						trigger = {
+							scope:target = {
+								bronze_city_ai_high_value_plunder_target = yes
 							}
 						}
+						bronze_city_start_sack_effect = yes
 					}
-					bronze_city_start_raze_effect = yes
+					5 = {
+						trigger = {
+							scope:target = {
+								bronze_city_ai_high_value_plunder_target = yes
+								OR = {
+									has_location_modifier = bronze_city_recently_sacked
+									has_location_modifier = bronze_city_razed
+									has_location_modifier = recently_raided_by_horde
+								}
+							}
+						}
+						bronze_city_start_raze_effect = yes
+					}
 				}
 			}
 		}

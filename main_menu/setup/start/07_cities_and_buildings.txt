@@ -86,6 +86,49 @@ locations = {
 # for the unique and special buildings
 
 building_manager = {
+	# Starting city fortifications.
+	# Every location defined as a city in this setup receives Bronze Age city walls at game start.
+	bronze_city_walls = { level = 1 location = negroponte }
+	bronze_city_walls = { level = 1 location = demetrias }
+	bronze_city_walls = { level = 1 location = argos }
+	bronze_city_walls = { level = 1 location = mystras }
+	bronze_city_walls = { level = 1 location = modon }
+	bronze_city_walls = { level = 1 location = kalamata }
+	bronze_city_walls = { level = 1 location = thebes }
+	bronze_city_walls = { level = 1 location = athens }
+	bronze_city_walls = { level = 1 location = canakkale }
+	bronze_city_walls = { level = 1 location = balat }
+	bronze_city_walls = { level = 1 location = bodrum }
+	bronze_city_walls = { level = 1 location = bigadic }
+	bronze_city_walls = { level = 1 location = huseyinabad }
+	bronze_city_walls = { level = 1 location = akdagmadeni }
+	bronze_city_walls = { level = 1 location = tarsus }
+	bronze_city_walls = { level = 1 location = silifke }
+	bronze_city_walls = { level = 1 location = ayasuluk }
+	bronze_city_walls = { level = 1 location = chania }
+	bronze_city_walls = { level = 1 location = candia }
+	bronze_city_walls = { level = 1 location = famagusta }
+	bronze_city_walls = { level = 1 location = latakia }
+	bronze_city_walls = { level = 1 location = manbij }
+	bronze_city_walls = { level = 1 location = aleppo }
+	bronze_city_walls = { level = 1 location = raqqa }
+	bronze_city_walls = { level = 1 location = tartus }
+	bronze_city_walls = { level = 1 location = damascus }
+	bronze_city_walls = { level = 1 location = sidon }
+	bronze_city_walls = { level = 1 location = dluk }
+	bronze_city_walls = { level = 1 location = majdal }
+	bronze_city_walls = { level = 1 location = gaza }
+	bronze_city_walls = { level = 1 location = jerusalem }
+	bronze_city_walls = { level = 1 location = faqus }
+	bronze_city_walls = { level = 1 location = qalyub }
+	bronze_city_walls = { level = 1 location = giza }
+	bronze_city_walls = { level = 1 location = faiyum }
+	bronze_city_walls = { level = 1 location = cairo }
+	bronze_city_walls = { level = 1 location = al_sinn }
+	bronze_city_walls = { level = 1 location = baghdad }
+	bronze_city_walls = { level = 1 location = hillah }
+	bronze_city_walls = { level = 1 location = mosul }
+
 	# Mycenaean League palace houses.
 	# These are foreign buildings owned by type = building countries; they keep
 	# regional palace elites politically present while 0001G owns the land.

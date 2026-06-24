@@ -6,6 +6,14 @@ bronze_city_orderly_occupation = {
 	local_monthly_prosperity = -0.001
 }
 
+# The active sack/raze modifiers are also used as visual state. Their map and
+# modifier icons live at:
+# - gfx/interface/icons/map_pillage_city.dds
+# - gfx/interface/icons/map_raze_city.dds
+# - gfx/interface/icons/modifiers/bronze_city_being_sacked.dds
+# - gfx/interface/icons/modifiers/bronze_city_razing_underway.dds
+# The variables that show the map marker are set/removed in
+# in_game/common/scripted_effects/00_bronze_city_razing_effects.txt.
 bronze_city_being_sacked = {
 	game_data = {
 		category = location
