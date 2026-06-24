@@ -43,6 +43,33 @@ court_offices_advance = {
 	starting_technology_level = 4
 }
 
+dynastic_legitimacy = {
+	age = age_1_traditions
+	government = monarchy
+
+	unlock_heir_selection = salic_law
+
+	starting_technology_level = 3
+
+	requires = divine_kingship_advance
+}
+
+court_succession = {
+	age = age_1_traditions
+	government = monarchy
+
+	requires = dynastic_legitimacy
+	unlock_heir_selection = semi_salic_law
+}
+
+dynastic_partition = {
+	age = age_1_traditions
+	government = monarchy
+
+	requires = dynastic_legitimacy
+	unlock_heir_selection = partition_inheritance
+}
+
 
 
 ############################

@@ -27,7 +27,14 @@ bronze_age_triumphal_monument = {
 
 	}
 
+	on_built = {
+		location = {
+			change_variable = { name = bronze_city_prestige_score add = 10 }
+		}
+	}
+
 	modifier = {
+		pure_tooltip_entry = adds_10_city_prestige
 		local_crown_estate_power = 0.20
 		local_cultural_influence = 0.20
 		local_max_control = 0.15
@@ -74,5 +81,61 @@ megalithic_religious_monument = {
 
 	raw_modifier = {
 		local_cultural_tradition = 0.15
+	}	
+}
+
+bronze_monumental_gates = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = soldiers
+
+	category = monumental_building_category
+	employment_size = construction_employment
+
+	rural_settlement = no
+	town = no
+	city = yes
+	megalopolis = yes
+
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+
+	location_potential = {
+		has_building = building_type:bronze_city_walls
+	}
+
+	unique_production_methods = {
+		bronze_age_triumphal_monument_maintenance_simple = {
+			masonry = 0.1
+			lumber = 0.1
+			tools = 0.2
+			bronze_age_bronze = 0.1
+
+			category = building_maintenance
+		}
+
+	}
+
+	on_built = {
+		location = {
+			change_variable = { name = bronze_city_prestige_score add = 10 }
+		}
+	}
+
+	modifier = {
+		pure_tooltip_entry = adds_10_city_prestige
+		local_crown_estate_power = 0.20
+		local_cultural_influence = 0.10
+		local_max_control = 0.10
+
+		local_garrison_size = 1.0
+		local_defensive = 0.25
+		movement_cost = -0.2
+		local_unrest = -0.05
+	}
+
+	raw_modifier = {
+		local_cultural_tradition = 0.20
 	}	
 }

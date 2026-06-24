@@ -28,7 +28,7 @@ mining_advance = {
 
 	can_extract_lead = yes
 	can_extract_silver = yes
-	can_extract_gold = yes
+	can_extract_goods_gold = yes
 	can_extract_stone = yes
 	can_extract_marble = yes
 	can_extract_copper = yes
@@ -51,14 +51,6 @@ ritual_sites_advance = {
 
 	unlock_building = neolithic_sanctuary
 	unlock_building = neolithic_feast_court
-}
-
-megalithic_monument_advance = {
-	age = age_1_traditions
-
-	requires = ritual_sites_advance
-
-	unlock_building = megalithic_religious_monument
 }
 
 animal_husbandry_advance = {
@@ -148,13 +140,151 @@ ceremonial_burial_advance = {
 }
 
 #####################################
+# Household Expansion
+#####################################
+
+tribal_hegemony_advance = {
+	age = age_1_traditions
+	icon = diplomatic_influence
+
+	depth = 0
+
+	government = tribe
+	
+	allow_subjects = yes
+	unlock_subject_type = tributary
+
+	starting_technology_level = 3
+}
+
+chiefly_tribute_advance = {
+	age = age_1_traditions
+	icon = genoese_banking_traditions
+	research_cost = 1.5
+
+	enable_taxation = yes
+
+	allow = {
+		has_advance = commodity_money_advance
+	}
+	
+	requires = tribal_hegemony_advance
+
+	starting_technology_level = 3
+}
+
+prestige_governance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	has_stability_investment = yes
+
+	starting_technology_level = 3
+
+	requires = tribal_hegemony_advance
+}
+
+lineage_authority = {
+	age = age_1_traditions
+
+	unlock_heir_selection = salic_law
+
+	starting_technology_level = 3
+
+	requires = prestige_governance
+}
+
+agnatic_cognatic_law_advance = {
+	age = age_1_traditions
+
+	requires = lineage_authority
+	unlock_heir_selection = semi_salic_law
+}
+
+partition_inheritance_advance = {
+	age = age_1_traditions
+
+	requires = lineage_authority
+	unlock_heir_selection = partition_inheritance
+}
+
+sky_lore_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+	
+	cultural_tradition_modifier = 0.10
+
+	starting_technology_level = 3
+	requires = tribal_hegemony_advance
+}
+
+seasonal_reckoning_advance = {
+	age = age_1_traditions
+	
+	global_monthly_food_modifier = 0.10
+
+	starting_technology_level = 3
+
+	requires = sky_lore_advance
+}
+
+established_custom = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	has_codified_laws = yes
+
+	unlock_law = verdict_law
+	
+	starting_technology_level = 3
+	requires = tribal_hegemony_advance
+}
+
+council_of_elders_advance = {
+	age = age_1_traditions
+
+	allow_council_parliament = yes
+
+	starting_technology_level = 1
+	requires = established_custom
+}
+
+household_companions_advance = {
+	age = age_1_traditions
+
+	unlock_unit = a_champions
+
+	starting_technology_level = 3
+	requires = established_custom
+}
+
+warrior_lodges_advance = {
+	age = age_1_traditions
+
+	army_maintenance_efficiency = 0.10
+	unlock_building = warrior_lodges
+
+	starting_technology_level = 3
+	requires = household_companions_advance
+}
+
+hill_forts_advance = {
+	age = age_1_traditions
+
+	unlock_building = hill_fort
+
+	starting_technology_level = 4
+	requires = warrior_lodges_advance
+}
+
+#####################################
 # Palace Economy
 #####################################
 
 palace_economy_advance = {
 	age = age_1_traditions
 	icon = meritocracy
-	research_cost = 2.0
+	government = monarchy
 		
 	country_cabinet_efficiency = 0.03
 
@@ -170,7 +300,7 @@ palace_economy_advance = {
 
 city_building_advance = {
 	age = age_1_traditions
-	research_cost = 2.0
+	research_cost = 1.5
 
 	can_build_cities = yes
 
@@ -185,7 +315,7 @@ city_building_advance = {
 
 temple_complex_advance = {
 	age = age_1_traditions
-	research_cost = 2.0
+	research_cost = 1.5
 
 	unlock_building = temple_complex
 
@@ -197,7 +327,6 @@ temple_complex_advance = {
 
 temple_granary_advance = {
 	age = age_1_traditions
-	research_cost = 2.0
 
 	unlock_building = temple_granary
 
@@ -224,7 +353,6 @@ workforce_specialization_advance = {
 elite_scripts_advance = {
 	age = age_1_traditions
 	icon = meritocracy
-	research_cost = 2.0
 	
 	global_nobles_max_literacy = 2
 	global_clergy_max_literacy = 2
@@ -236,7 +364,6 @@ elite_scripts_advance = {
 
 religious_texts_advance = {
 	age = age_1_traditions
-	research_cost = 1.5
 	
 	global_clergy_max_literacy = 1
 
@@ -258,7 +385,6 @@ temple_archives_advance = {
 
 astronomical_observations_advance = {
 	age = age_1_traditions
-	research_cost = 1.5
 	
 	global_monthly_food_modifier = 0.05
 	trade_range = 50
@@ -270,7 +396,6 @@ astronomical_observations_advance = {
 
 agricultural_calendar_advance = {
 	age = age_1_traditions
-	research_cost = 1.5
 	
 	global_monthly_food_modifier = 0.10
 
@@ -302,8 +427,6 @@ palace_administration = {
 	icon = scholasticism
 	
 	requires = elite_scripts_advance
-	
-	research_cost = 2.0
 
 	allow_council_parliament = yes
 	
@@ -313,7 +436,6 @@ palace_administration = {
 subjects_advance = {
 	age = age_1_traditions
 	icon = diplomatic_influence
-	research_cost = 2.0
 	
 	allow_subjects = yes
 	unlock_subject_type = tributary
@@ -328,8 +450,6 @@ codified_laws = {
 	icon = scholasticism
 	
 	requires = palace_administration
-	
-	research_cost = 2.0
 
 	has_codified_laws = yes
 
@@ -342,7 +462,6 @@ codified_laws = {
 contract_law_advance = {
 	age = age_1_traditions
 	icon = contract_law
-	research_cost = 2.0
 	
 	global_merchant_capacity_modifier = 0.10
 
@@ -439,17 +558,6 @@ aristocratic_burial_advance = {
 	requires = aristocratic_recognition_advance
 }
 
-heroic_cult_advance = {
-	age = age_1_traditions
-	research_cost = 1.5
-	
-	monthly_army_tradition = 0.1
-
-	requires = warrior_aristocracy_advance
-
-	starting_technology_level = 2
-}
-
 epics_advance = {
 	age = age_1_traditions
 	research_cost = 1.5
@@ -457,7 +565,7 @@ epics_advance = {
 	court_spending_cost_modifier = -0.05
 	num_possible_artists = 1
 
-	requires = heroic_cult_advance
+	requires = warrior_aristocracy_advance
 
 	starting_technology_level = 3
 }

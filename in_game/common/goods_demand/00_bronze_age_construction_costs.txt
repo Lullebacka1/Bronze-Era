@@ -73,6 +73,14 @@ town_walls_construction = {
 
 bronze_city_walls_construction = {
 	masonry = 5.0
+	tools = 1.0
+	
+	category = building_construction
+}
+
+cyclopean_walls_construction = {
+	masonry = 7.0
+	tools = 2.0
 	
 	category = building_construction
 }
