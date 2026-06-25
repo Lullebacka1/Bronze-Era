@@ -22,8 +22,41 @@ be_ruins_has_available_expedition_capacity = {
 # Country scope. Goods are represented visually in the GUI for now; the
 # existing expedition backend still spends gold and manpower only.
 be_ruins_has_required_goods_for_ruin_expedition = {
-	gold >= 50
-	manpower = { value >= 100 }
+	OR = {
+		AND = {
+			scope:be_ruin_location ?= { var:be_ruins_difficulty >= 5 }
+			gold >= 120
+			manpower = { value >= 300 }
+		}
+		AND = {
+			scope:be_ruin_location ?= { var:be_ruins_difficulty >= 4 }
+			scope:be_ruin_location ?= { var:be_ruins_difficulty < 5 }
+			gold >= 100
+			manpower = { value >= 220 }
+		}
+		AND = {
+			scope:be_ruin_location ?= { var:be_ruins_difficulty >= 3 }
+			scope:be_ruin_location ?= { var:be_ruins_difficulty < 4 }
+			gold >= 75
+			manpower = { value >= 150 }
+		}
+		AND = {
+			scope:be_ruin_location ?= { var:be_ruins_difficulty >= 2 }
+			scope:be_ruin_location ?= { var:be_ruins_difficulty < 3 }
+			gold >= 50
+			manpower = { value >= 100 }
+		}
+		AND = {
+			scope:be_ruin_location ?= {
+				OR = {
+					NOT = { has_variable = be_ruins_difficulty }
+					var:be_ruins_difficulty < 2
+				}
+			}
+			gold >= 35
+			manpower = { value >= 75 }
+		}
+	}
 }
 
 # Country scope. A real leader picker can replace this with character logic
@@ -32,10 +65,31 @@ be_ruins_has_valid_expedition_leader = {
 	always = yes
 }
 
+# Country scope. Requires scope:be_ruin_location.
+be_ruins_has_access_to_selected_ruin = {
+	scope:be_ruin_location ?= {
+		OR = {
+			owner = root
+			owner = {
+				is_allied_with = { target = root }
+			}
+			owner = {
+				opinion = { target = root value >= 25 }
+			}
+		}
+		NOT = {
+			owner = {
+				is_at_war_with = root
+			}
+		}
+	}
+}
+
 # Country scope.
 be_ruins_can_start_ruin_expedition = {
 	is_during_bankruptcy = no
 	be_ruins_has_available_expedition_capacity = yes
 	be_ruins_has_required_goods_for_ruin_expedition = yes
 	be_ruins_has_valid_expedition_leader = yes
+	be_ruins_has_access_to_selected_ruin = yes
 }

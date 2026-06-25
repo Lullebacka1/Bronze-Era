@@ -179,15 +179,21 @@ bronze_city_razing.10 = {
 	}
 
 	trigger = {
-		any_owned_location = {
-			has_variable = bronze_ruins_expedition_underway
+		OR = {
+			scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway }
+			any_owned_location = {
+				has_variable = bronze_ruins_expedition_underway
+			}
 		}
 	}
 
 	immediate = {
-		random_owned_location = {
-			limit = { has_variable = bronze_ruins_expedition_underway }
-			save_scope_as = bronze_ruins_site
+		if = {
+			limit = { NOT = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } } }
+			random_owned_location = {
+				limit = { has_variable = bronze_ruins_expedition_underway }
+				save_scope_as = bronze_ruins_site
+			}
 		}
 	}
 
@@ -195,12 +201,44 @@ bronze_city_razing.10 = {
 		name = bronze_city_razing.10.a
 		custom_tooltip = bronze_city_razing_10a_tt
 		add_gold = -20
-		random_list = {
-			20 = { trigger_event_non_silently = { id = bronze_city_razing.11 days = 90 } }
-			20 = { trigger_event_non_silently = { id = bronze_city_razing.12 days = 90 } }
-			20 = { trigger_event_non_silently = { id = bronze_city_razing.13 days = 90 } }
-			20 = { trigger_event_non_silently = { id = bronze_city_razing.14 days = 90 } }
-			20 = { trigger_event_non_silently = { id = bronze_city_razing.15 days = 90 } }
+		if = {
+			limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_success_chance >= 75 } }
+			random_list = {
+				10 = { trigger_event_non_silently = { id = bronze_city_razing.11 days = 90 } }
+				30 = { trigger_event_non_silently = { id = bronze_city_razing.12 days = 90 } }
+				30 = { trigger_event_non_silently = { id = bronze_city_razing.13 days = 90 } }
+				25 = { trigger_event_non_silently = { id = bronze_city_razing.14 days = 90 } }
+				5 = { trigger_event_non_silently = { id = bronze_city_razing.15 days = 90 } }
+			}
+		}
+		else_if = {
+			limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_success_chance >= 60 } }
+			random_list = {
+				15 = { trigger_event_non_silently = { id = bronze_city_razing.11 days = 90 } }
+				25 = { trigger_event_non_silently = { id = bronze_city_razing.12 days = 90 } }
+				25 = { trigger_event_non_silently = { id = bronze_city_razing.13 days = 90 } }
+				20 = { trigger_event_non_silently = { id = bronze_city_razing.14 days = 90 } }
+				15 = { trigger_event_non_silently = { id = bronze_city_razing.15 days = 90 } }
+			}
+		}
+		else_if = {
+			limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_success_chance >= 45 } }
+			random_list = {
+				25 = { trigger_event_non_silently = { id = bronze_city_razing.11 days = 90 } }
+				20 = { trigger_event_non_silently = { id = bronze_city_razing.12 days = 90 } }
+				20 = { trigger_event_non_silently = { id = bronze_city_razing.13 days = 90 } }
+				15 = { trigger_event_non_silently = { id = bronze_city_razing.14 days = 90 } }
+				20 = { trigger_event_non_silently = { id = bronze_city_razing.15 days = 90 } }
+			}
+		}
+		else = {
+			random_list = {
+				30 = { trigger_event_non_silently = { id = bronze_city_razing.11 days = 90 } }
+				15 = { trigger_event_non_silently = { id = bronze_city_razing.12 days = 90 } }
+				15 = { trigger_event_non_silently = { id = bronze_city_razing.13 days = 90 } }
+				10 = { trigger_event_non_silently = { id = bronze_city_razing.14 days = 90 } }
+				30 = { trigger_event_non_silently = { id = bronze_city_razing.15 days = 90 } }
+			}
 		}
 	}
 
@@ -224,16 +262,28 @@ bronze_city_razing.11 = {
 	}
 
 	trigger = {
-		any_owned_location = {
-			has_variable = bronze_ruins_expedition_underway
+		OR = {
+			scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway }
+			any_owned_location = {
+				has_variable = bronze_ruins_expedition_underway
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } } }
+			random_owned_location = {
+				limit = { has_variable = bronze_ruins_expedition_underway }
+				save_scope_as = bronze_ruins_site
+			}
 		}
 	}
 
 	option = {
 		name = bronze_city_razing.11.a
 		custom_tooltip = bronze_city_razing_11a_tt
-		add_gold = -30
-		add_prestige = prestige_weak_penalty
+		be_ruins_dynamic_negative_reward_effect = yes
 		bronze_ruins_finish_expedition = yes
 	}
 }
@@ -249,16 +299,28 @@ bronze_city_razing.12 = {
 	}
 
 	trigger = {
-		any_owned_location = {
-			has_variable = bronze_ruins_expedition_underway
+		OR = {
+			scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway }
+			any_owned_location = {
+				has_variable = bronze_ruins_expedition_underway
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } } }
+			random_owned_location = {
+				limit = { has_variable = bronze_ruins_expedition_underway }
+				save_scope_as = bronze_ruins_site
+			}
 		}
 	}
 
 	option = {
 		name = bronze_city_razing.12.a
 		custom_tooltip = bronze_city_razing_12a_tt
-		add_gold = 120
-		add_prestige = prestige_weak_bonus
+		be_ruins_dynamic_gold_reward_effect = yes
 		bronze_ruins_finish_expedition = yes
 	}
 }
@@ -274,16 +336,28 @@ bronze_city_razing.13 = {
 	}
 
 	trigger = {
-		any_owned_location = {
-			has_variable = bronze_ruins_expedition_underway
+		OR = {
+			scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway }
+			any_owned_location = {
+				has_variable = bronze_ruins_expedition_underway
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } } }
+			random_owned_location = {
+				limit = { has_variable = bronze_ruins_expedition_underway }
+				save_scope_as = bronze_ruins_site
+			}
 		}
 	}
 
 	option = {
 		name = bronze_city_razing.13.a
 		custom_tooltip = bronze_city_razing_13a_tt
-		add_research_progress = research_progress_mild_bonus
-		add_prestige = prestige_weak_bonus
+		be_ruins_dynamic_knowledge_reward_effect = yes
 		bronze_ruins_finish_expedition = yes
 	}
 }
@@ -299,16 +373,29 @@ bronze_city_razing.14 = {
 	}
 
 	trigger = {
-		any_owned_location = {
-			has_variable = bronze_ruins_expedition_underway
+		OR = {
+			scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway }
+			any_owned_location = {
+				has_variable = bronze_ruins_expedition_underway
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } } }
+			random_owned_location = {
+				limit = { has_variable = bronze_ruins_expedition_underway }
+				save_scope_as = bronze_ruins_site
+			}
 		}
 	}
 
 	option = {
 		name = bronze_city_razing.14.a
 		custom_tooltip = bronze_city_razing_14a_tt
-		add_prestige = prestige_mild_bonus
-		add_gold = 60
+		be_ruins_dynamic_gold_reward_effect = yes
+		be_ruins_dynamic_knowledge_reward_effect = yes
 		bronze_ruins_finish_expedition = yes
 	}
 }
@@ -325,16 +412,28 @@ bronze_city_razing.15 = {
 	}
 
 	trigger = {
-		any_owned_location = {
-			has_variable = bronze_ruins_expedition_underway
+		OR = {
+			scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway }
+			any_owned_location = {
+				has_variable = bronze_ruins_expedition_underway
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } } }
+			random_owned_location = {
+				limit = { has_variable = bronze_ruins_expedition_underway }
+				save_scope_as = bronze_ruins_site
+			}
 		}
 	}
 
 	option = {
 		name = bronze_city_razing.15.a
 		custom_tooltip = bronze_city_razing_15a_tt
-		add_stability = stability_weak_penalty
-		add_prestige = prestige_weak_penalty
+		be_ruins_dynamic_negative_reward_effect = yes
 		bronze_ruins_finish_expedition = yes
 	}
 }

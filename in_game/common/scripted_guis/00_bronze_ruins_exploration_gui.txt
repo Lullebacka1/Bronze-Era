@@ -25,3 +25,81 @@ be_ruins_start_expedition_gui = {
 
 	ai_is_valid = { always = no }
 }
+
+be_ruins_open_leader_picker_gui = {
+	scope = country
+
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+
+	effect = {
+		root = { be_ruins_open_leader_picker_effect = yes }
+	}
+
+	ai_is_valid = { always = no }
+}
+
+be_ruins_close_leader_picker_gui = {
+	scope = country
+
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+
+	effect = {
+		root = { be_ruins_close_leader_picker_effect = yes }
+	}
+
+	ai_is_valid = { always = no }
+}
+
+be_ruins_select_archivist_gui = {
+	scope = country
+
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+
+	effect = {
+		root = { be_ruins_select_archivist_effect = yes }
+	}
+
+	ai_is_valid = { always = no }
+}
+
+be_ruins_select_captain_gui = {
+	scope = country
+
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+
+	effect = {
+		root = { be_ruins_select_captain_effect = yes }
+	}
+
+	ai_is_valid = { always = no }
+}
+
+be_ruins_select_quartermaster_gui = {
+	scope = country
+
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+
+	effect = {
+		root = { be_ruins_select_quartermaster_effect = yes }
+	}
+
+	ai_is_valid = { always = no }
+}
+
+be_ruins_select_priest_gui = {
+	scope = country
+
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+
+	effect = {
+		root = { be_ruins_select_priest_effect = yes }
+	}
+
+	ai_is_valid = { always = no }
+}

@@ -136,11 +136,63 @@ types BronzeRuinsExplorationTypes
 															default_format = "#yellow_titles"
 														}
 														text_single = {
-															text = "be_ruins_type_city"
+															visible = "[Location.MakeScope.GetVariable('be_ruins_type_capital').IsSet]"
+															text = "be_ruins_type_capital"
 															default_format = "#subtle"
 														}
 														text_single = {
+															visible = "[Location.MakeScope.GetVariable('be_ruins_type_palace').IsSet]"
+															text = "be_ruins_type_palace"
+															default_format = "#subtle"
+														}
+														text_single = {
+															visible = "[Location.MakeScope.GetVariable('be_ruins_type_temple').IsSet]"
+															text = "be_ruins_type_temple"
+															default_format = "#subtle"
+														}
+														text_single = {
+															visible = "[Location.MakeScope.GetVariable('be_ruins_type_port').IsSet]"
+															text = "be_ruins_type_port"
+															default_format = "#subtle"
+														}
+														text_single = {
+															visible = "[Location.MakeScope.GetVariable('be_ruins_type_fortress').IsSet]"
+															text = "be_ruins_type_fortress"
+															default_format = "#subtle"
+														}
+														text_single = {
+															visible = "[Location.MakeScope.GetVariable('be_ruins_type_village').IsSet]"
+															text = "be_ruins_type_village"
+															default_format = "#subtle"
+														}
+														text_single = {
+															visible = "[Location.MakeScope.GetVariable('be_ruins_type_generic').IsSet]"
+															text = "be_ruins_type_generic"
+															default_format = "#subtle"
+														}
+														text_single = {
+															visible = "[GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)5')]"
+															text = "be_ruins_difficulty_five"
+															default_format = "#Y"
+														}
+														text_single = {
+															visible = "[And(LessThan_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)5'), GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)4'))]"
+															text = "be_ruins_difficulty_four"
+															default_format = "#Y"
+														}
+														text_single = {
+															visible = "[And(LessThan_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)4'), GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)3'))]"
 															text = "be_ruins_difficulty_three"
+															default_format = "#Y"
+														}
+														text_single = {
+															visible = "[And(LessThan_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)3'), GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)2'))]"
+															text = "be_ruins_difficulty_two"
+															default_format = "#Y"
+														}
+														text_single = {
+															visible = "[LessThan_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)2')]"
+															text = "be_ruins_difficulty_one"
 															default_format = "#Y"
 														}
 														text_single = {
@@ -250,6 +302,19 @@ types BronzeRuinsExplorationTypes
 
 									hbox = {
 										spacing = 8
+										text_single = { size = { 210 20 } text = "be_ruins_former_prestige" default_format = "#yellow_titles" }
+										text_single = {
+											visible = "[Location.MakeScope.GetVariable('bronze_ruins_former_prestige').IsSet]"
+											text = "[Location.MakeScope.GetVariable('bronze_ruins_former_prestige').GetValue|0]"
+										}
+										text_single = {
+											visible = "[Not(Location.MakeScope.GetVariable('bronze_ruins_former_prestige').IsSet)]"
+											text = "be_ruins_unknown_value"
+										}
+									}
+
+									hbox = {
+										spacing = 8
 										text_single = { size = { 210 20 } text = "be_ruins_origin_culture" default_format = "#yellow_titles" }
 										text_single = { text = "[Location.GetDominantCulture.GetNameWithNoTooltip]" }
 									}
@@ -263,19 +328,37 @@ types BronzeRuinsExplorationTypes
 									hbox = {
 										spacing = 8
 										text_single = { size = { 210 20 } text = "be_ruins_ruin_type" default_format = "#yellow_titles" }
-										text_single = { text = "be_ruins_type_city" }
+										text_single = { visible = "[Location.MakeScope.GetVariable('be_ruins_type_capital').IsSet]" text = "be_ruins_type_capital" }
+										text_single = { visible = "[Location.MakeScope.GetVariable('be_ruins_type_palace').IsSet]" text = "be_ruins_type_palace" }
+										text_single = { visible = "[Location.MakeScope.GetVariable('be_ruins_type_temple').IsSet]" text = "be_ruins_type_temple" }
+										text_single = { visible = "[Location.MakeScope.GetVariable('be_ruins_type_port').IsSet]" text = "be_ruins_type_port" }
+										text_single = { visible = "[Location.MakeScope.GetVariable('be_ruins_type_fortress').IsSet]" text = "be_ruins_type_fortress" }
+										text_single = { visible = "[Location.MakeScope.GetVariable('be_ruins_type_village').IsSet]" text = "be_ruins_type_village" }
+										text_single = { visible = "[Location.MakeScope.GetVariable('be_ruins_type_generic').IsSet]" text = "be_ruins_type_generic" }
 									}
 
 									hbox = {
 										spacing = 8
 										text_single = { size = { 210 20 } text = "be_ruins_difficulty" default_format = "#yellow_titles" }
-										text_single = { text = "be_ruins_difficulty_three" default_format = "#Y" }
+										text_single = { visible = "[GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)5')]" text = "be_ruins_difficulty_five" default_format = "#Y" }
+										text_single = { visible = "[And(LessThan_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)5'), GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)4'))]" text = "be_ruins_difficulty_four" default_format = "#Y" }
+										text_single = { visible = "[And(LessThan_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)4'), GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)3'))]" text = "be_ruins_difficulty_three" default_format = "#Y" }
+										text_single = { visible = "[And(LessThan_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)3'), GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)2'))]" text = "be_ruins_difficulty_two" default_format = "#Y" }
+										text_single = { visible = "[LessThan_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)2')]" text = "be_ruins_difficulty_one" default_format = "#Y" }
 									}
 
 									hbox = {
 										spacing = 8
 										text_single = { size = { 210 20 } text = "be_ruins_success_chance" default_format = "#yellow_titles" }
-										text_single = { text = "be_ruins_success_chance_default" default_format = "#P" }
+										text_single = {
+											visible = "[Location.MakeScope.GetVariable('be_ruins_success_chance').IsSet]"
+											text = "be_ruins_success_chance_value"
+											default_format = "#P"
+										}
+										text_single = {
+											visible = "[Not(Location.MakeScope.GetVariable('be_ruins_success_chance').IsSet)]"
+											text = "be_ruins_unknown_value"
+										}
 									}
 								}
 
@@ -342,21 +425,116 @@ types BronzeRuinsExplorationTypes
 												autoresize = no
 											}
 											text_single = {
+												visible = "[Or(Not(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').IsSet), EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)1'))]"
 												text = "be_ruins_leader_role_archivist"
 												default_format = "#subtle"
 											}
+											text_single = {
+												visible = "[EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)2')]"
+												text = "be_ruins_leader_role_captain"
+												default_format = "#subtle"
+											}
+											text_single = {
+												visible = "[EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)3')]"
+												text = "be_ruins_leader_role_quartermaster"
+												default_format = "#subtle"
+											}
+											text_single = {
+												visible = "[EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)4')]"
+												text = "be_ruins_leader_role_priest"
+												default_format = "#subtle"
+											}
 											text_multi = {
+												visible = "[Or(Not(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').IsSet), EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)1'))]"
 												size = { 185 54 }
 												autoresize = no
 												multiline = yes
 												text = "be_ruins_leader_bonus_default"
 											}
+											text_multi = {
+												visible = "[EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)2')]"
+												size = { 185 54 }
+												autoresize = no
+												multiline = yes
+												text = "be_ruins_leader_bonus_captain"
+											}
+											text_multi = {
+												visible = "[EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)3')]"
+												size = { 185 54 }
+												autoresize = no
+												multiline = yes
+												text = "be_ruins_leader_bonus_quartermaster"
+											}
+											text_multi = {
+												visible = "[EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)4')]"
+												size = { 185 54 }
+												autoresize = no
+												multiline = yes
+												text = "be_ruins_leader_bonus_priest"
+											}
 											button_small = {
+												datacontext = "[GetScriptedGui('be_ruins_open_leader_picker_gui')]"
 												size = { 86 24 }
 												text = "be_ruins_change_leader"
-												enabled = no
-												tooltip = "be_ruins_change_leader_placeholder_tt"
+												enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+												onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+												tooltip = "be_ruins_change_leader_tt"
 											}
+										}
+									}
+								}
+
+								widget = {
+									visible = "[Player.MakeScope.GetVariable('be_ruins_show_leader_picker').IsSet]"
+									size = { 310 196 }
+									using = bg_dark_paper_card
+
+									vbox = {
+										margin = { 8 6 }
+										spacing = 5
+
+										hbox = {
+											layoutpolicy_horizontal = expanding
+											text_single = {
+												layoutpolicy_horizontal = expanding
+												text = "be_ruins_choose_leader"
+												default_format = "#yellow_titles"
+											}
+											button_small = {
+												datacontext = "[GetScriptedGui('be_ruins_close_leader_picker_gui')]"
+												size = { 46 22 }
+												text = "be_ruins_close_leader_picker"
+												onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											}
+										}
+
+										button_small = {
+											datacontext = "[GetScriptedGui('be_ruins_select_archivist_gui')]"
+											size = { 294 34 }
+											text = "be_ruins_leader_archivist"
+											onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											tooltip = "be_ruins_leader_archivist_tt"
+										}
+										button_small = {
+											datacontext = "[GetScriptedGui('be_ruins_select_captain_gui')]"
+											size = { 294 34 }
+											text = "be_ruins_leader_captain"
+											onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											tooltip = "be_ruins_leader_captain_tt"
+										}
+										button_small = {
+											datacontext = "[GetScriptedGui('be_ruins_select_quartermaster_gui')]"
+											size = { 294 34 }
+											text = "be_ruins_leader_quartermaster"
+											onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											tooltip = "be_ruins_leader_quartermaster_tt"
+										}
+										button_small = {
+											datacontext = "[GetScriptedGui('be_ruins_select_priest_gui')]"
+											size = { 294 34 }
+											text = "be_ruins_leader_priest"
+											onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											tooltip = "be_ruins_leader_priest_tt"
 										}
 									}
 								}
@@ -367,11 +545,30 @@ types BronzeRuinsExplorationTypes
 									using = bg_dark_paper_card
 									margin = { 8 6 }
 
-									hbox = { spacing = 8 text_single = { size = { 170 20 } text = "be_ruins_manpower_committed" default_format = "#yellow_titles" } text_single = { text = "100" } }
-									hbox = { spacing = 8 text_single = { size = { 170 20 } text = "be_ruins_gold_cost" default_format = "#yellow_titles" } text_single = { text = "50" } }
-									hbox = { spacing = 8 text_single = { size = { 170 20 } text = "be_ruins_duration" default_format = "#yellow_titles" } text_single = { text = "be_ruins_duration_default" } }
-									hbox = { spacing = 8 text_single = { size = { 170 20 } text = "be_ruins_final_success" default_format = "#yellow_titles" } text_single = { text = "be_ruins_success_chance_default" default_format = "#P" } }
-									hbox = { spacing = 8 text_single = { size = { 170 20 } text = "be_ruins_estimated_risk" default_format = "#yellow_titles" } text_single = { text = "be_ruins_risk_medium" default_format = "#Y" } }
+									hbox = { spacing = 8 text_single = { size = { 170 20 } text = "be_ruins_manpower_committed" default_format = "#yellow_titles" } text_single = { text = "[Location.MakeScope.GetVariable('be_ruins_required_manpower').GetValue|0]" } }
+									hbox = { spacing = 8 text_single = { size = { 170 20 } text = "be_ruins_gold_cost" default_format = "#yellow_titles" } text_single = { text = "[Location.MakeScope.GetVariable('be_ruins_required_gold').GetValue|0]" } }
+									hbox = {
+										spacing = 8
+										text_single = { size = { 170 20 } text = "be_ruins_duration" default_format = "#yellow_titles" }
+										text_single = {
+											visible = "[Location.MakeScope.GetVariable('be_ruin_expedition_remaining_months').IsSet]"
+											text = "be_ruins_remaining_months_value"
+										}
+										text_single = {
+											visible = "[Not(Location.MakeScope.GetVariable('be_ruin_expedition_remaining_months').IsSet)]"
+											text = "be_ruins_duration_months_value"
+										}
+									}
+									hbox = { spacing = 8 text_single = { size = { 170 20 } text = "be_ruins_final_success" default_format = "#yellow_titles" } text_single = { text = "be_ruins_success_chance_value" default_format = "#P" } }
+									hbox = {
+										spacing = 8
+										text_single = { size = { 170 20 } text = "be_ruins_estimated_risk" default_format = "#yellow_titles" }
+										text_single = { visible = "[GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_risk').GetValue, '(CFixedPoint)5')]" text = "be_ruins_risk_five" default_format = "#R" }
+										text_single = { visible = "[And(LessThan_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_risk').GetValue, '(CFixedPoint)5'), GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_risk').GetValue, '(CFixedPoint)4'))]" text = "be_ruins_risk_four" default_format = "#R" }
+										text_single = { visible = "[And(LessThan_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_risk').GetValue, '(CFixedPoint)4'), GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_risk').GetValue, '(CFixedPoint)3'))]" text = "be_ruins_risk_three" default_format = "#Y" }
+										text_single = { visible = "[And(LessThan_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_risk').GetValue, '(CFixedPoint)3'), GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_risk').GetValue, '(CFixedPoint)2'))]" text = "be_ruins_risk_two" default_format = "#Y" }
+										text_single = { visible = "[LessThan_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_risk').GetValue, '(CFixedPoint)2')]" text = "be_ruins_risk_one" default_format = "#P" }
+									}
 								}
 
 								text_single = {
@@ -385,6 +582,53 @@ types BronzeRuinsExplorationTypes
 									icon = { size = { 30 30 } texture = "gfx/interface/icons/trade_goods/icon_goods_lumber.dds" tooltip = "be_ruins_goods_timber" }
 									icon = { size = { 30 30 } texture = "gfx/interface/icons/trade_goods/icon_goods_wheat.dds" tooltip = "be_ruins_goods_food" }
 									icon = { size = { 30 30 } texture = "gfx/interface/icons/trade_goods/icon_goods_paper.dds" tooltip = "be_ruins_goods_records" }
+								}
+
+								vbox = {
+									layoutpolicy_horizontal = expanding
+									spacing = 3
+									using = bg_dark_paper_card
+									margin = { 8 6 }
+
+									text_single = {
+										text = "be_ruins_launch_status"
+										default_format = "#yellow_titles"
+									}
+									text_single = {
+										visible = "[Location.MakeScope.GetVariable('bronze_ruins_too_fresh').IsSet]"
+										text = "be_ruins_blocked_too_fresh"
+										default_format = "#R"
+									}
+									text_single = {
+										visible = "[Location.MakeScope.GetVariable('bronze_ruins_explored').IsSet]"
+										text = "be_ruins_blocked_explored"
+										default_format = "#medium"
+									}
+									text_single = {
+										visible = "[Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet]"
+										text = "be_ruins_blocked_underway"
+										default_format = "#Y"
+									}
+									text_single = {
+										visible = "[GreaterThanOrEqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruin_expeditions_active').GetValue, '(CFixedPoint)2')]"
+										text = "be_ruins_blocked_capacity"
+										default_format = "#R"
+									}
+									text_single = {
+										visible = "[LessThan_CFixedPoint(Player.GetFixedPointCurrencyValue('gold'), '(CFixedPoint)35')]"
+										text = "be_ruins_blocked_gold"
+										default_format = "#R"
+									}
+									text_single = {
+										visible = "[LessThan_CFixedPoint(Player.GetFixedPointCurrencyValue('manpower'), '(CFixedPoint)75')]"
+										text = "be_ruins_blocked_manpower"
+										default_format = "#R"
+									}
+									text_single = {
+										visible = "[And4(And3(Not(Location.MakeScope.GetVariable('bronze_ruins_too_fresh').IsSet), Not(Location.MakeScope.GetVariable('bronze_ruins_explored').IsSet), Not(Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet)), Not(GreaterThanOrEqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruin_expeditions_active').GetValue, '(CFixedPoint)2')), Not(LessThan_CFixedPoint(Player.GetFixedPointCurrencyValue('gold'), '(CFixedPoint)35')), Not(LessThan_CFixedPoint(Player.GetFixedPointCurrencyValue('manpower'), '(CFixedPoint)75')))]"
+										text = "be_ruins_ready_to_launch"
+										default_format = "#P"
+									}
 								}
 
 								vbox = {
@@ -430,6 +674,18 @@ types BronzeRuinsExplorationTypes
 											visible = "[Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet]"
 											datacontext = "[Location.MakeScope.GetVariable('bronze_ruins_expedition_underway')]"
 											text = "[VariableInfo.GetExpirationDate]"
+										}
+										text_single = {
+											visible = "[Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet]"
+											text = "be_ruins_expedition_progress_text"
+										}
+										text_single = {
+											visible = "[Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet]"
+											text = "be_ruins_expedition_supplies_text"
+										}
+										text_single = {
+											visible = "[Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet]"
+											text = "be_ruins_expedition_morale_text"
 										}
 									}
 								}

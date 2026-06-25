@@ -1,0 +1,192 @@
+# Bronze Era - Ruins Expedition Story Layer
+# Country scope unless stated otherwise. Requires scope:bronze_ruins_site.
+#
+# This file extends the existing ruins expedition backend with a Victoria 3
+# inspired event chain. It deliberately stores state on the ruin location so
+# saves remain robust and the GUI can read the expedition state later.
+
+be_ruin_expedition_initialize_story_effect = {
+	if = {
+		limit = { scope:bronze_ruins_site ?= { NOT = { has_variable = be_ruins_stats_generated } } }
+		scope:bronze_ruins_site = { be_ruins_generate_stats_effect = yes }
+	}
+	scope:bronze_ruins_site = {
+		set_variable = { name = be_ruin_expedition_phase value = 1 }
+		set_variable = { name = be_ruin_expedition_progress value = 0 }
+		set_variable = { name = be_ruin_expedition_supplies value = 70 }
+		set_variable = { name = be_ruin_expedition_morale value = 50 }
+		set_variable = { name = be_ruin_expedition_reward_bonus value = 0 }
+		set_variable = { name = be_ruin_expedition_risk_bonus value = 0 }
+		set_variable = { name = be_ruin_expedition_story_events value = 0 }
+		set_variable = { name = be_ruin_expedition_remaining_months value = var:be_ruins_duration_months }
+		if = {
+			limit = { NOT = { has_variable = be_ruin_expedition_success_chance } }
+			set_variable = { name = be_ruin_expedition_success_chance value = var:be_ruins_success_chance }
+		}
+		if = {
+			limit = { NOT = { has_variable = be_ruin_expedition_artifact_chance } }
+			set_variable = { name = be_ruin_expedition_artifact_chance value = var:be_ruins_artifact_chance }
+		}
+		if = {
+			limit = { NOT = { has_variable = be_ruin_expedition_leader_profile } }
+			set_variable = { name = be_ruin_expedition_leader_profile value = 1 }
+		}
+	}
+}
+
+be_ruin_expedition_gain_profile_xp_effect = {
+	if = {
+		limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_leader_profile = 1 } }
+		if = { limit = { NOT = { has_variable = be_ruins_leader_archivist_xp } } set_variable = { name = be_ruins_leader_archivist_xp value = 0 } }
+		change_variable = { name = be_ruins_leader_archivist_xp add = 1 }
+	}
+	else_if = {
+		limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_leader_profile = 2 } }
+		if = { limit = { NOT = { has_variable = be_ruins_leader_captain_xp } } set_variable = { name = be_ruins_leader_captain_xp value = 0 } }
+		change_variable = { name = be_ruins_leader_captain_xp add = 1 }
+	}
+	else_if = {
+		limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_leader_profile = 3 } }
+		if = { limit = { NOT = { has_variable = be_ruins_leader_quartermaster_xp } } set_variable = { name = be_ruins_leader_quartermaster_xp value = 0 } }
+		change_variable = { name = be_ruins_leader_quartermaster_xp add = 1 }
+	}
+	else_if = {
+		limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_leader_profile = 4 } }
+		if = { limit = { NOT = { has_variable = be_ruins_leader_priest_xp } } set_variable = { name = be_ruins_leader_priest_xp value = 0 } }
+		change_variable = { name = be_ruins_leader_priest_xp add = 1 }
+	}
+}
+
+be_ruin_expedition_minor_progress_effect = {
+	scope:bronze_ruins_site = {
+		change_variable = { name = be_ruin_expedition_progress add = 10 }
+		change_variable = { name = be_ruin_expedition_remaining_months subtract = 1 }
+		change_variable = { name = be_ruin_expedition_story_events add = 1 }
+	}
+	be_ruin_expedition_gain_profile_xp_effect = yes
+}
+
+be_ruin_expedition_major_progress_effect = {
+	scope:bronze_ruins_site = {
+		change_variable = { name = be_ruin_expedition_progress add = 20 }
+		change_variable = { name = be_ruin_expedition_remaining_months subtract = 2 }
+		change_variable = { name = be_ruin_expedition_story_events add = 1 }
+	}
+	be_ruin_expedition_gain_profile_xp_effect = yes
+}
+
+be_ruin_expedition_cautious_progress_effect = {
+	scope:bronze_ruins_site = {
+		change_variable = { name = be_ruin_expedition_progress add = 8 }
+		change_variable = { name = be_ruin_expedition_remaining_months add = 1 }
+		change_variable = { name = be_ruin_expedition_risk_bonus subtract = 1 }
+		change_variable = { name = be_ruin_expedition_story_events add = 1 }
+	}
+	be_ruin_expedition_gain_profile_xp_effect = yes
+}
+
+be_ruin_expedition_raise_risk_effect = {
+	scope:bronze_ruins_site = {
+		change_variable = { name = be_ruin_expedition_risk_bonus add = 1 }
+		change_variable = { name = be_ruins_risk add = 1 }
+	}
+}
+
+be_ruin_expedition_lower_risk_effect = {
+	scope:bronze_ruins_site = {
+		change_variable = { name = be_ruin_expedition_risk_bonus subtract = 1 }
+		if = {
+			limit = { var:be_ruins_risk > 1 }
+			change_variable = { name = be_ruins_risk subtract = 1 }
+		}
+	}
+}
+
+be_ruin_expedition_add_reward_quality_effect = {
+	scope:bronze_ruins_site = {
+		change_variable = { name = be_ruin_expedition_reward_bonus add = 1 }
+		change_variable = { name = be_ruins_reward_value add = 1 }
+		change_variable = { name = be_ruins_gold_potential add = 20 }
+	}
+}
+
+be_ruin_expedition_add_knowledge_quality_effect = {
+	scope:bronze_ruins_site = {
+		change_variable = { name = be_ruin_expedition_reward_bonus add = 1 }
+		change_variable = { name = be_ruins_knowledge_potential add = 3 }
+		change_variable = { name = be_ruin_expedition_progress add = 8 }
+	}
+}
+
+be_ruin_expedition_award_artifact_effect = {
+	if = {
+		limit = {
+			scope:bronze_ruins_site ?= { var:be_ruin_expedition_artifact_chance >= 50 }
+			NOT = { has_global_variable = be_ruins_unique_solar_seal_found }
+		}
+		random_list = {
+			15 = {
+				set_global_variable = be_ruins_unique_solar_seal_found
+				if = { limit = { NOT = { has_variable = be_ruins_artifact_unique_count } } set_variable = { name = be_ruins_artifact_unique_count value = 0 } }
+				change_variable = { name = be_ruins_artifact_unique_count add = 1 }
+				add_prestige = prestige_severe_bonus
+			}
+			85 = {
+				if = { limit = { NOT = { has_variable = be_ruins_artifact_rare_count } } set_variable = { name = be_ruins_artifact_rare_count value = 0 } }
+				change_variable = { name = be_ruins_artifact_rare_count add = 1 }
+			}
+		}
+	}
+	else_if = {
+		limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_artifact_chance >= 30 } }
+		if = { limit = { NOT = { has_variable = be_ruins_artifact_rare_count } } set_variable = { name = be_ruins_artifact_rare_count value = 0 } }
+		change_variable = { name = be_ruins_artifact_rare_count add = 1 }
+	}
+	else = {
+		if = { limit = { NOT = { has_variable = be_ruins_artifact_common_count } } set_variable = { name = be_ruins_artifact_common_count value = 0 } }
+		change_variable = { name = be_ruins_artifact_common_count add = 1 }
+	}
+}
+
+be_ruin_expedition_schedule_next_story_event_effect = {
+	scope:bronze_ruins_site = {
+		if = { limit = { var:be_ruin_expedition_remaining_months < 0 } set_variable = { name = be_ruin_expedition_remaining_months value = 0 } }
+		if = { limit = { var:be_ruin_expedition_supplies < 0 } set_variable = { name = be_ruin_expedition_supplies value = 0 } }
+		if = { limit = { var:be_ruin_expedition_morale < 0 } set_variable = { name = be_ruin_expedition_morale value = 0 } }
+	}
+	if = {
+		limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_progress >= 100 } }
+		trigger_event_non_silently = { id = bronze_city_razing.29 days = 30 }
+	}
+	else_if = {
+		limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_supplies < 1 } }
+		trigger_event_non_silently = { id = bronze_city_razing.28 days = 20 }
+	}
+	else_if = {
+		limit = {
+			scope:bronze_ruins_site ?= {
+				exists = owner
+				NOT = { owner = root }
+			}
+		}
+		random_list = {
+			15 = { trigger_event_non_silently = { id = bronze_city_razing.21 days = 45 } }
+			15 = { trigger_event_non_silently = { id = bronze_city_razing.22 days = 45 } }
+			15 = { trigger_event_non_silently = { id = bronze_city_razing.23 days = 45 } }
+			15 = { trigger_event_non_silently = { id = bronze_city_razing.24 days = 45 } }
+			15 = { trigger_event_non_silently = { id = bronze_city_razing.25 days = 45 } }
+			10 = { trigger_event_non_silently = { id = bronze_city_razing.26 days = 45 } }
+			15 = { trigger_event_non_silently = { id = bronze_city_razing.27 days = 45 } }
+		}
+	}
+	else = {
+		random_list = {
+			18 = { trigger_event_non_silently = { id = bronze_city_razing.21 days = 45 } }
+			18 = { trigger_event_non_silently = { id = bronze_city_razing.22 days = 45 } }
+			18 = { trigger_event_non_silently = { id = bronze_city_razing.23 days = 45 } }
+			18 = { trigger_event_non_silently = { id = bronze_city_razing.24 days = 45 } }
+			18 = { trigger_event_non_silently = { id = bronze_city_razing.25 days = 45 } }
+			10 = { trigger_event_non_silently = { id = bronze_city_razing.26 days = 45 } }
+		}
+	}
+}
