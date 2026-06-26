@@ -3,6 +3,9 @@ namespace = bronze_city_razing
 # Bronze Era - Narrative Ruins Expeditions
 # These events extend the existing expedition backend. Each event expects
 # scope:bronze_ruins_site to point at the ruin location.
+#
+# Keep option effects inside hidden_effect. Otherwise EU5 expands the full
+# random follow-up chain in option tooltips, causing heavy hover lag.
 
 bronze_city_razing.20 = {
 	type = country_event
@@ -22,40 +25,46 @@ bronze_city_razing.20 = {
 	option = {
 		name = bronze_city_razing.20.a
 		custom_tooltip = bronze_city_razing_20a_tt
-		add_gold = -20
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_cautious value = 1 }
-			change_variable = { name = be_ruin_expedition_supplies add = 20 }
-			change_variable = { name = be_ruin_expedition_morale add = 5 }
+		hidden_effect = {
+					add_gold = -20
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_supplies add = 20 }
+						change_variable = { name = be_ruin_expedition_morale add = 5 }
+					}
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 
 	option = {
 		name = bronze_city_razing.20.b
 		custom_tooltip = bronze_city_razing_20b_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_reckless value = 1 }
-			change_variable = { name = be_ruin_expedition_supplies subtract = 10 }
-			change_variable = { name = be_ruin_expedition_morale subtract = 5 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_reckless value = 1 }
+						change_variable = { name = be_ruin_expedition_supplies subtract = 10 }
+						change_variable = { name = be_ruin_expedition_morale subtract = 5 }
+					}
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 
 	option = {
 		name = bronze_city_razing.20.c
 		custom_tooltip = bronze_city_razing_20c_tt
-		add_gold = -15
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_scholarly value = 1 }
-			change_variable = { name = be_ruin_expedition_success_chance add = 5 }
-			change_variable = { name = be_ruin_expedition_supplies add = 5 }
+		hidden_effect = {
+					add_gold = -15
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+						change_variable = { name = be_ruin_expedition_supplies add = 5 }
+					}
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -72,32 +81,38 @@ bronze_city_razing.21 = {
 	option = {
 		name = bronze_city_razing.21.a
 		custom_tooltip = bronze_city_razing_21a_tt
-		scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_cautious value = 1 } }
-		be_ruin_expedition_cautious_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
+		hidden_effect = {
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_cautious value = 1 } }
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
 	}
 	option = {
 		name = bronze_city_razing.21.b
 		custom_tooltip = bronze_city_razing_21b_tt
-		add_manpower_pool = -30
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_reckless value = 1 }
-			change_variable = { name = be_ruin_expedition_supplies subtract = 15 }
+		hidden_effect = {
+					add_manpower_pool = -30
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_reckless value = 1 }
+						change_variable = { name = be_ruin_expedition_supplies subtract = 15 }
+					}
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.21.c
 		custom_tooltip = bronze_city_razing_21c_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_respectful value = 1 }
-			change_variable = { name = be_ruin_expedition_morale add = 8 }
-			change_variable = { name = be_ruin_expedition_success_chance add = 3 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_respectful value = 1 }
+						change_variable = { name = be_ruin_expedition_morale add = 8 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 3 }
+					}
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -114,35 +129,41 @@ bronze_city_razing.22 = {
 	option = {
 		name = bronze_city_razing.22.a
 		custom_tooltip = bronze_city_razing_22a_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_scholarly value = 1 }
-			set_variable = { name = be_ruin_found_archive value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_archive value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_knowledge_quality_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.22.b
 		custom_tooltip = bronze_city_razing_22b_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_reckless value = 1 }
-			set_variable = { name = be_ruin_found_treasury value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_reckless value = 1 }
+						set_variable = { name = be_ruin_found_treasury value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_reward_quality_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.22.c
 		custom_tooltip = bronze_city_razing_22c_tt
-		scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_respectful value = 1 } }
-		be_ruin_expedition_lower_risk_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
+		hidden_effect = {
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_respectful value = 1 } }
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
 	}
 }
 
@@ -162,41 +183,47 @@ bronze_city_razing.23 = {
 	option = {
 		name = bronze_city_razing.23.a
 		custom_tooltip = bronze_city_razing_23a_tt
-		add_manpower_pool = -50
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_complication_collapse value = 1 }
-			set_variable = { name = be_ruin_expedition_respectful value = 1 }
-			change_variable = { name = be_ruin_expedition_morale add = 8 }
+		hidden_effect = {
+					add_manpower_pool = -50
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_collapse value = 1 }
+						set_variable = { name = be_ruin_expedition_respectful value = 1 }
+						change_variable = { name = be_ruin_expedition_morale add = 8 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_complication_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.23.b
 		custom_tooltip = bronze_city_razing_23b_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_complication_collapse value = 1 }
-			set_variable = { name = be_ruin_expedition_cautious value = 1 }
-			change_variable = { name = be_ruin_expedition_morale subtract = 10 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_collapse value = 1 }
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_morale subtract = 10 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_complication_effect = yes
-		be_ruin_expedition_lower_risk_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.23.c
 		custom_tooltip = bronze_city_razing_23c_tt
-		add_manpower_pool = -25
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_complication_collapse value = 1 }
-			set_variable = { name = be_ruin_expedition_military value = 1 }
-			change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+		hidden_effect = {
+					add_manpower_pool = -25
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_collapse value = 1 }
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_complication_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -213,40 +240,46 @@ bronze_city_razing.24 = {
 	option = {
 		name = bronze_city_razing.24.a
 		custom_tooltip = bronze_city_razing_24a_tt
-		add_gold = -15
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_complication_bandits value = 1 }
-			set_variable = { name = be_ruin_expedition_cautious value = 1 }
-			change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+		hidden_effect = {
+					add_gold = -15
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_bandits value = 1 }
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+					}
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.24.b
 		custom_tooltip = bronze_city_razing_24b_tt
-		add_manpower_pool = -40
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_complication_bandits value = 1 }
-			set_variable = { name = be_ruin_expedition_military value = 1 }
+		hidden_effect = {
+					add_manpower_pool = -40
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_bandits value = 1 }
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_complication_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.24.c
 		custom_tooltip = bronze_city_razing_24c_tt
-		add_gold = -25
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_greedy value = 1 }
-			set_variable = { name = be_ruin_found_tunnel value = 1 }
+		hidden_effect = {
+					add_gold = -25
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_tunnel value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_knowledge_quality_effect = yes
-		be_ruin_expedition_add_reward_quality_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -263,40 +296,46 @@ bronze_city_razing.25 = {
 	option = {
 		name = bronze_city_razing.25.a
 		custom_tooltip = bronze_city_razing_25a_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_scholarly value = 1 }
-			set_variable = { name = be_ruin_found_archive value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_archive value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_knowledge_quality_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.25.b
 		custom_tooltip = bronze_city_razing_25b_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_greedy value = 1 }
-			set_variable = { name = be_ruin_found_treasury value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_treasury value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_reward_quality_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.25.c
 		custom_tooltip = bronze_city_razing_25c_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_respectful value = 1 }
-			set_variable = { name = be_ruin_found_sanctuary value = 1 }
-			change_variable = { name = be_ruin_expedition_artifact_chance add = 5 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_respectful value = 1 }
+						set_variable = { name = be_ruin_found_sanctuary value = 1 }
+						change_variable = { name = be_ruin_expedition_artifact_chance add = 5 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_lower_risk_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -313,39 +352,45 @@ bronze_city_razing.26 = {
 	option = {
 		name = bronze_city_razing.26.a
 		custom_tooltip = bronze_city_razing_26a_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_reckless value = 1 }
-			set_variable = { name = be_ruin_found_treasury value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_reckless value = 1 }
+						set_variable = { name = be_ruin_found_treasury value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_reward_quality_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.26.b
 		custom_tooltip = bronze_city_razing_26b_tt
-		add_manpower_pool = -60
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_military value = 1 }
-			set_variable = { name = be_ruin_found_tunnel value = 1 }
+		hidden_effect = {
+					add_manpower_pool = -60
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+						set_variable = { name = be_ruin_found_tunnel value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.26.c
 		custom_tooltip = bronze_city_razing_26c_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_cautious value = 1 }
-			change_variable = { name = be_ruin_expedition_morale subtract = 5 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_morale subtract = 5 }
+					}
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_cautious_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -368,29 +413,35 @@ bronze_city_razing.27 = {
 	option = {
 		name = bronze_city_razing.27.a
 		custom_tooltip = bronze_city_razing_27a_tt
-		add_gold = -30
-		scope:bronze_ruins_site.owner = { add_opinion = { target = root modifier = opinion_good_relations } }
-		scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_respectful value = 1 } }
-		be_ruin_expedition_lower_risk_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
+		hidden_effect = {
+					add_gold = -30
+					scope:bronze_ruins_site.owner = { add_opinion = { target = root modifier = opinion_good_relations } }
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_respectful value = 1 } }
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
 	}
 	option = {
 		name = bronze_city_razing.27.b
 		custom_tooltip = bronze_city_razing_27b_tt
-		scope:bronze_ruins_site.owner = { add_opinion = { target = root modifier = opinion_irritated } }
-		scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_greedy value = 1 } }
-		be_ruin_expedition_add_reward_quality_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
+		hidden_effect = {
+					scope:bronze_ruins_site.owner = { add_opinion = { target = root modifier = opinion_irritated } }
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_greedy value = 1 } }
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
 	}
 	option = {
 		name = bronze_city_razing.27.c
 		custom_tooltip = bronze_city_razing_27c_tt
-		add_prestige = prestige_weak_penalty
-		bronze_ruins_finish_expedition = yes
+		hidden_effect = {
+					add_prestige = prestige_weak_penalty
+					bronze_ruins_finish_expedition = yes
+		}
 	}
 }
 
@@ -407,28 +458,34 @@ bronze_city_razing.28 = {
 	option = {
 		name = bronze_city_razing.28.a
 		custom_tooltip = bronze_city_razing_28a_tt
-		add_gold = -40
-		scope:bronze_ruins_site = {
-			change_variable = { name = be_ruin_expedition_supplies add = 30 }
-			change_variable = { name = be_ruin_expedition_morale add = 5 }
+		hidden_effect = {
+					add_gold = -40
+					scope:bronze_ruins_site = {
+						change_variable = { name = be_ruin_expedition_supplies add = 30 }
+						change_variable = { name = be_ruin_expedition_morale add = 5 }
+					}
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.28.b
 		custom_tooltip = bronze_city_razing_28b_tt
-		be_ruins_dynamic_negative_reward_effect = yes
-		bronze_ruins_finish_expedition = yes
+		hidden_effect = {
+					be_ruins_dynamic_negative_reward_effect = yes
+					bronze_ruins_finish_expedition = yes
+		}
 	}
 	option = {
 		name = bronze_city_razing.28.c
 		custom_tooltip = bronze_city_razing_28c_tt
-		add_manpower_pool = -80
-		scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_reckless value = 1 } }
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
+		hidden_effect = {
+					add_manpower_pool = -80
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_reckless value = 1 } }
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
 	}
 }
 
@@ -445,42 +502,48 @@ bronze_city_razing.30 = {
 	option = {
 		name = bronze_city_razing.30.a
 		custom_tooltip = bronze_city_razing_30a_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_scholarly value = 1 }
-			set_variable = { name = be_ruin_found_palace value = 1 }
-			set_variable = { name = be_ruin_found_archive value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_palace value = 1 }
+						set_variable = { name = be_ruin_found_archive value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_knowledge_quality_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.30.b
 		custom_tooltip = bronze_city_razing_30b_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_greedy value = 1 }
-			set_variable = { name = be_ruin_found_palace value = 1 }
-			set_variable = { name = be_ruin_found_treasury value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_palace value = 1 }
+						set_variable = { name = be_ruin_found_treasury value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_reward_quality_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.30.c
 		custom_tooltip = bronze_city_razing_30c_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_respectful value = 1 }
-			set_variable = { name = be_ruin_found_palace value = 1 }
-			change_variable = { name = be_ruin_expedition_artifact_chance add = 5 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_respectful value = 1 }
+						set_variable = { name = be_ruin_found_palace value = 1 }
+						change_variable = { name = be_ruin_expedition_artifact_chance add = 5 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_lower_risk_effect = yes
-		be_ruin_expedition_cautious_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -497,39 +560,45 @@ bronze_city_razing.31 = {
 	option = {
 		name = bronze_city_razing.31.a
 		custom_tooltip = bronze_city_razing_31a_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_scholarly value = 1 }
-			set_variable = { name = be_ruin_found_archive value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_archive value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_knowledge_quality_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.31.b
 		custom_tooltip = bronze_city_razing_31b_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_greedy value = 1 }
-			set_variable = { name = be_ruin_found_archive value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_archive value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_reward_quality_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.31.c
 		custom_tooltip = bronze_city_razing_31c_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_cautious value = 1 }
-			set_variable = { name = be_ruin_found_archive value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						set_variable = { name = be_ruin_found_archive value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_knowledge_quality_effect = yes
-		be_ruin_expedition_cautious_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -546,41 +615,47 @@ bronze_city_razing.32 = {
 	option = {
 		name = bronze_city_razing.32.a
 		custom_tooltip = bronze_city_razing_32a_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_respectful value = 1 }
-			set_variable = { name = be_ruin_found_tomb value = 1 }
-			change_variable = { name = be_ruin_expedition_artifact_chance add = 10 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_respectful value = 1 }
+						set_variable = { name = be_ruin_found_tomb value = 1 }
+						change_variable = { name = be_ruin_expedition_artifact_chance add = 10 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_lower_risk_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.32.b
 		custom_tooltip = bronze_city_razing_32b_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_greedy value = 1 }
-			set_variable = { name = be_ruin_found_tomb value = 1 }
-			set_variable = { name = be_ruin_found_treasury value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_tomb value = 1 }
+						set_variable = { name = be_ruin_found_treasury value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_reward_quality_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.32.c
 		custom_tooltip = bronze_city_razing_32c_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_military value = 1 }
-			set_variable = { name = be_ruin_found_tomb value = 1 }
-			change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+						set_variable = { name = be_ruin_found_tomb value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -597,36 +672,42 @@ bronze_city_razing.33 = {
 	option = {
 		name = bronze_city_razing.33.a
 		custom_tooltip = bronze_city_razing_33a_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_scholarly value = 1 }
-			set_variable = { name = be_ruin_found_warehouse value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_warehouse value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_knowledge_quality_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.33.b
 		custom_tooltip = bronze_city_razing_33b_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_greedy value = 1 }
-			set_variable = { name = be_ruin_found_warehouse value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_warehouse value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_reward_quality_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.33.c
 		custom_tooltip = bronze_city_razing_33c_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_military value = 1 }
-			change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+					}
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -643,39 +724,45 @@ bronze_city_razing.34 = {
 	option = {
 		name = bronze_city_razing.34.a
 		custom_tooltip = bronze_city_razing_34a_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_cautious value = 1 }
-			set_variable = { name = be_ruin_found_ship_cargo value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						set_variable = { name = be_ruin_found_ship_cargo value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_reward_quality_effect = yes
-		be_ruin_expedition_cautious_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.34.b
 		custom_tooltip = bronze_city_razing_34b_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_greedy value = 1 }
-			set_variable = { name = be_ruin_found_ship_cargo value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_ship_cargo value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_reward_quality_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.34.c
 		custom_tooltip = bronze_city_razing_34c_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_scholarly value = 1 }
-			set_variable = { name = be_ruin_found_archive value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_archive value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_knowledge_quality_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -692,41 +779,47 @@ bronze_city_razing.35 = {
 	option = {
 		name = bronze_city_razing.35.a
 		custom_tooltip = bronze_city_razing_35a_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_respectful value = 1 }
-			set_variable = { name = be_ruin_found_sanctuary value = 1 }
-			change_variable = { name = be_ruin_expedition_artifact_chance add = 8 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_respectful value = 1 }
+						set_variable = { name = be_ruin_found_sanctuary value = 1 }
+						change_variable = { name = be_ruin_expedition_artifact_chance add = 8 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_lower_risk_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.35.b
 		custom_tooltip = bronze_city_razing_35b_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_greedy value = 1 }
-			set_variable = { name = be_ruin_found_sanctuary value = 1 }
-			change_variable = { name = be_ruin_expedition_artifact_chance add = 15 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_sanctuary value = 1 }
+						change_variable = { name = be_ruin_expedition_artifact_chance add = 15 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_reward_quality_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.35.c
 		custom_tooltip = bronze_city_razing_35c_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_scholarly value = 1 }
-			set_variable = { name = be_ruin_found_sanctuary value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_sanctuary value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_knowledge_quality_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -743,36 +836,42 @@ bronze_city_razing.36 = {
 	option = {
 		name = bronze_city_razing.36.a
 		custom_tooltip = bronze_city_razing_36a_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_scholarly value = 1 }
-			set_variable = { name = be_ruin_found_armory value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_armory value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_knowledge_quality_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.36.b
 		custom_tooltip = bronze_city_razing_36b_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_military value = 1 }
-			set_variable = { name = be_ruin_found_armory value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+						set_variable = { name = be_ruin_found_armory value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_reward_quality_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.36.c
 		custom_tooltip = bronze_city_razing_36c_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_cautious value = 1 }
-			change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+					}
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_cautious_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -789,39 +888,45 @@ bronze_city_razing.37 = {
 	option = {
 		name = bronze_city_razing.37.a
 		custom_tooltip = bronze_city_razing_37a_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_scholarly value = 1 }
-			set_variable = { name = be_ruin_found_workshop value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_workshop value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_knowledge_quality_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.37.b
 		custom_tooltip = bronze_city_razing_37b_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_greedy value = 1 }
-			set_variable = { name = be_ruin_found_workshop value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_workshop value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_reward_quality_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.37.c
 		custom_tooltip = bronze_city_razing_37c_tt
-		add_gold = -20
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_cautious value = 1 }
-			set_variable = { name = be_ruin_found_workshop value = 1 }
-			change_variable = { name = be_ruin_expedition_success_chance add = 8 }
+		hidden_effect = {
+					add_gold = -20
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						set_variable = { name = be_ruin_found_workshop value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 8 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -838,35 +943,41 @@ bronze_city_razing.38 = {
 	option = {
 		name = bronze_city_razing.38.a
 		custom_tooltip = bronze_city_razing_38a_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_scholarly value = 1 }
-			set_variable = { name = be_ruin_found_tunnel value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_tunnel value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_add_knowledge_quality_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.38.b
 		custom_tooltip = bronze_city_razing_38b_tt
-		add_manpower_pool = -35
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_military value = 1 }
-			set_variable = { name = be_ruin_found_tunnel value = 1 }
-			change_variable = { name = be_ruin_expedition_success_chance add = 6 }
+		hidden_effect = {
+					add_manpower_pool = -35
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+						set_variable = { name = be_ruin_found_tunnel value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 6 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_discovery_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.38.c
 		custom_tooltip = bronze_city_razing_38c_tt
-		scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_cautious value = 1 } }
-		be_ruin_expedition_lower_risk_effect = yes
-		be_ruin_expedition_cautious_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
+		hidden_effect = {
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_cautious value = 1 } }
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
 	}
 }
 
@@ -883,40 +994,46 @@ bronze_city_razing.39 = {
 	option = {
 		name = bronze_city_razing.39.a
 		custom_tooltip = bronze_city_razing_39a_tt
-		add_manpower_pool = -45
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_complication_fire value = 1 }
-			set_variable = { name = be_ruin_expedition_respectful value = 1 }
-			change_variable = { name = be_ruin_expedition_supplies subtract = 10 }
+		hidden_effect = {
+					add_manpower_pool = -45
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_fire value = 1 }
+						set_variable = { name = be_ruin_expedition_respectful value = 1 }
+						change_variable = { name = be_ruin_expedition_supplies subtract = 10 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_complication_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.39.b
 		custom_tooltip = bronze_city_razing_39b_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_complication_fire value = 1 }
-			set_variable = { name = be_ruin_expedition_cautious value = 1 }
-			change_variable = { name = be_ruin_expedition_morale subtract = 8 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_fire value = 1 }
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_morale subtract = 8 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_complication_effect = yes
-		be_ruin_expedition_lower_risk_effect = yes
-		be_ruin_expedition_cautious_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.39.c
 		custom_tooltip = bronze_city_razing_39c_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_complication_fire value = 1 }
-			set_variable = { name = be_ruin_expedition_reckless value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_fire value = 1 }
+						set_variable = { name = be_ruin_expedition_reckless value = 1 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_complication_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -933,39 +1050,45 @@ bronze_city_razing.40 = {
 	option = {
 		name = bronze_city_razing.40.a
 		custom_tooltip = bronze_city_razing_40a_tt
-		add_gold = -20
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_complication_bandits value = 1 }
-			set_variable = { name = be_ruin_expedition_cautious value = 1 }
-			change_variable = { name = be_ruin_expedition_success_chance add = 4 }
+		hidden_effect = {
+					add_gold = -20
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_bandits value = 1 }
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 4 }
+					}
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.40.b
 		custom_tooltip = bronze_city_razing_40b_tt
-		add_manpower_pool = -55
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_complication_bandits value = 1 }
-			set_variable = { name = be_ruin_expedition_military value = 1 }
+		hidden_effect = {
+					add_manpower_pool = -55
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_bandits value = 1 }
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_complication_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.40.c
 		custom_tooltip = bronze_city_razing_40c_tt
-		add_gold = -30
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_complication_bandits value = 1 }
-			set_variable = { name = be_ruin_expedition_greedy value = 1 }
-			change_variable = { name = be_ruin_expedition_success_chance add = 8 }
+		hidden_effect = {
+					add_gold = -30
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_bandits value = 1 }
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 8 }
+					}
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -982,40 +1105,46 @@ bronze_city_razing.41 = {
 	option = {
 		name = bronze_city_razing.41.a
 		custom_tooltip = bronze_city_razing_41a_tt
-		add_manpower_pool = -35
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_complication_flood value = 1 }
-			set_variable = { name = be_ruin_expedition_cautious value = 1 }
-			change_variable = { name = be_ruin_expedition_supplies subtract = 8 }
+		hidden_effect = {
+					add_manpower_pool = -35
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_flood value = 1 }
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_supplies subtract = 8 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_complication_effect = yes
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.41.b
 		custom_tooltip = bronze_city_razing_41b_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_complication_flood value = 1 }
-			set_variable = { name = be_ruin_expedition_cautious value = 1 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_flood value = 1 }
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_complication_effect = yes
-		be_ruin_expedition_lower_risk_effect = yes
-		be_ruin_expedition_cautious_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.41.c
 		custom_tooltip = bronze_city_razing_41c_tt
-		add_manpower_pool = -70
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_complication_flood value = 1 }
-			set_variable = { name = be_ruin_expedition_reckless value = 1 }
+		hidden_effect = {
+					add_manpower_pool = -70
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_flood value = 1 }
+						set_variable = { name = be_ruin_expedition_reckless value = 1 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_record_complication_effect = yes
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 }
 
@@ -1032,26 +1161,32 @@ bronze_city_razing.42 = {
 	option = {
 		name = bronze_city_razing.42.a
 		custom_tooltip = bronze_city_razing_42a_tt
-		scope:bronze_ruins_site = {
-			set_variable = { name = be_ruin_expedition_scholarly value = 1 }
-			change_variable = { name = be_ruin_expedition_supplies subtract = 5 }
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						change_variable = { name = be_ruin_expedition_supplies subtract = 5 }
+					}
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
 		}
-		be_ruin_expedition_minor_progress_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
 	}
 	option = {
 		name = bronze_city_razing.42.b
 		custom_tooltip = bronze_city_razing_42b_tt
-		scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_reckless value = 1 } }
-		be_ruin_expedition_major_progress_effect = yes
-		be_ruin_expedition_raise_risk_effect = yes
-		be_ruin_expedition_schedule_next_story_event_effect = yes
+		hidden_effect = {
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_reckless value = 1 } }
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
 	}
 	option = {
 		name = bronze_city_razing.42.c
 		custom_tooltip = bronze_city_razing_42c_tt
-		scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_cautious value = 1 } }
-		trigger_event_non_silently = { id = bronze_city_razing.29 days = 20 }
+		hidden_effect = {
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_cautious value = 1 } }
+					trigger_event_non_silently = { id = bronze_city_razing.29 days = 20 }
+		}
 	}
 }
 
@@ -1068,29 +1203,31 @@ bronze_city_razing.29 = {
 	option = {
 		name = bronze_city_razing.29.a
 		custom_tooltip = bronze_city_razing_29a_tt
-		be_ruin_expedition_apply_final_story_rewards_effect = yes
-		if = {
-			limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_success_chance >= 75 } }
-			be_ruins_dynamic_gold_reward_effect = yes
-			be_ruins_dynamic_knowledge_reward_effect = yes
-			be_ruin_expedition_award_artifact_effect = yes
+		hidden_effect = {
+					be_ruin_expedition_apply_final_story_rewards_effect = yes
+					if = {
+						limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_success_chance >= 75 } }
+						be_ruins_dynamic_gold_reward_effect = yes
+						be_ruins_dynamic_knowledge_reward_effect = yes
+						be_ruin_expedition_award_artifact_effect = yes
+					}
+					else_if = {
+						limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_success_chance >= 55 } }
+						random_list = {
+							35 = { be_ruins_dynamic_gold_reward_effect = yes }
+							35 = { be_ruins_dynamic_knowledge_reward_effect = yes }
+							20 = { be_ruin_expedition_award_artifact_effect = yes }
+							10 = { be_ruins_dynamic_negative_reward_effect = yes }
+						}
+					}
+					else = {
+						random_list = {
+							30 = { be_ruins_dynamic_gold_reward_effect = yes }
+							25 = { be_ruins_dynamic_knowledge_reward_effect = yes }
+							45 = { be_ruins_dynamic_negative_reward_effect = yes }
+						}
+					}
+					bronze_ruins_finish_expedition = yes
 		}
-		else_if = {
-			limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_success_chance >= 55 } }
-			random_list = {
-				35 = { be_ruins_dynamic_gold_reward_effect = yes }
-				35 = { be_ruins_dynamic_knowledge_reward_effect = yes }
-				20 = { be_ruin_expedition_award_artifact_effect = yes }
-				10 = { be_ruins_dynamic_negative_reward_effect = yes }
-			}
-		}
-		else = {
-			random_list = {
-				30 = { be_ruins_dynamic_gold_reward_effect = yes }
-				25 = { be_ruins_dynamic_knowledge_reward_effect = yes }
-				45 = { be_ruins_dynamic_negative_reward_effect = yes }
-			}
-		}
-		bronze_ruins_finish_expedition = yes
 	}
 }
