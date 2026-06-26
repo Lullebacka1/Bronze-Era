@@ -60,3 +60,41 @@ be_ruins_debug_force_active_expedition_return_effect = {
 		}
 	}
 }
+
+be_ruins_debug_enable_location_buttons_effect = {
+	custom_description = {
+		text = be_ruins_debug_enable_location_buttons_effect_tt
+		set_variable = { name = be_ruins_debug_buttons_enabled value = 1 years = 1 }
+	}
+}
+
+# Country scope. Requires scope:be_ruin_location from the opened location GUI.
+be_ruins_debug_prepare_selected_ruin_effect = {
+	custom_description = {
+		text = be_ruins_debug_prepare_selected_ruin_effect_tt
+		remove_variable = bronze_ruins_expedition_country_cooldown
+		set_variable = { name = be_ruin_expeditions_active value = 0 }
+
+		scope:be_ruin_location = {
+			remove_variable = bronze_ruins_explored
+			remove_variable = bronze_ruins_too_fresh
+			remove_variable = bronze_ruins_expedition_underway
+			remove_location_modifier = bronze_ruins_expedition_camp
+			if = {
+				limit = { NOT = { has_variable = be_ruins_stats_generated } }
+				be_ruins_generate_stats_effect = yes
+			}
+		}
+	}
+}
+
+# Country scope. Requires scope:be_ruin_location from the opened location GUI.
+# This starts the existing expedition flow after force-preparing the selected
+# ruin. It still uses normal expedition costs and the chosen leader profile.
+be_ruins_debug_start_selected_expedition_effect = {
+	custom_description = {
+		text = be_ruins_debug_start_selected_expedition_effect_tt
+		be_ruins_debug_prepare_selected_ruin_effect = yes
+		be_ruins_start_expedition_effect = yes
+	}
+}

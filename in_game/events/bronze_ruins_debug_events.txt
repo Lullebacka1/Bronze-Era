@@ -33,6 +33,12 @@ bronze_ruins_debug.1 = {
 
 	option = {
 		name = bronze_ruins_debug.1.d
+		custom_tooltip = bronze_ruins_debug_1d_tt
+		be_ruins_debug_enable_location_buttons_effect = yes
+	}
+
+	option = {
+		name = bronze_ruins_debug.1.e
 	}
 }
 
@@ -73,4 +79,3 @@ bronze_ruins_debug.2 = {
 		be_ruins_select_priest_effect = yes
 	}
 }
-

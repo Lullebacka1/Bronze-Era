@@ -103,3 +103,52 @@ be_ruins_select_priest_gui = {
 
 	ai_is_valid = { always = no }
 }
+
+be_ruins_debug_prepare_selected_ruin_gui = {
+	scope = country
+	saved_scopes = { be_ruin_location }
+
+	is_shown = {
+		root = { has_variable = be_ruins_debug_buttons_enabled }
+		scope:be_ruin_location ?= { has_variable = bronze_ancient_ruins }
+	}
+
+	is_valid = {
+		root = { has_variable = be_ruins_debug_buttons_enabled }
+		scope:be_ruin_location ?= {
+			has_owner = yes
+			has_variable = bronze_ancient_ruins
+		}
+	}
+
+	effect = {
+		root = { be_ruins_debug_prepare_selected_ruin_effect = yes }
+	}
+
+	ai_is_valid = { always = no }
+}
+
+be_ruins_debug_start_selected_expedition_gui = {
+	scope = country
+	saved_scopes = { be_ruin_location }
+
+	is_shown = {
+		root = { has_variable = be_ruins_debug_buttons_enabled }
+		scope:be_ruin_location ?= { has_variable = bronze_ancient_ruins }
+	}
+
+	is_valid = {
+		root = { has_variable = be_ruins_debug_buttons_enabled }
+		scope:be_ruin_location ?= {
+			has_owner = yes
+			has_variable = bronze_ancient_ruins
+			NOT = { has_variable = bronze_ruins_expedition_underway }
+		}
+	}
+
+	effect = {
+		root = { be_ruins_debug_start_selected_expedition_effect = yes }
+	}
+
+	ai_is_valid = { always = no }
+}

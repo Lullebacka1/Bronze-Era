@@ -588,6 +588,7 @@ types BronzeRuinsExplorationTypes
 									layoutpolicy_horizontal = expanding
 									spacing = 3
 									using = bg_dark_paper_card
+									datacontext = "[GetScriptedGui('be_ruins_start_expedition_gui')]"
 									margin = { 8 6 }
 
 									text_single = {
@@ -625,7 +626,12 @@ types BronzeRuinsExplorationTypes
 										default_format = "#R"
 									}
 									text_single = {
-										visible = "[And4(And3(Not(Location.MakeScope.GetVariable('bronze_ruins_too_fresh').IsSet), Not(Location.MakeScope.GetVariable('bronze_ruins_explored').IsSet), Not(Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet)), Not(GreaterThanOrEqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruin_expeditions_active').GetValue, '(CFixedPoint)2')), Not(LessThan_CFixedPoint(Player.GetFixedPointCurrencyValue('gold'), '(CFixedPoint)35')), Not(LessThan_CFixedPoint(Player.GetFixedPointCurrencyValue('manpower'), '(CFixedPoint)75')))]"
+										visible = "[And5(And3(Not(Location.MakeScope.GetVariable('bronze_ruins_too_fresh').IsSet), Not(Location.MakeScope.GetVariable('bronze_ruins_explored').IsSet), Not(Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet)), Not(GreaterThanOrEqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruin_expeditions_active').GetValue, '(CFixedPoint)2')), Not(LessThan_CFixedPoint(Player.GetFixedPointCurrencyValue('gold'), '(CFixedPoint)35')), Not(LessThan_CFixedPoint(Player.GetFixedPointCurrencyValue('manpower'), '(CFixedPoint)75')), Not(ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)))]"
+										text = "be_ruins_blocked_requirements"
+										default_format = "#R"
+									}
+									text_single = {
+										visible = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)]"
 										text = "be_ruins_ready_to_launch"
 										default_format = "#P"
 									}
@@ -642,6 +648,36 @@ types BronzeRuinsExplorationTypes
 										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)]"
 										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)]"
 										tooltip = "be_ruins_launch_expedition_tt"
+									}
+								}
+
+								vbox = {
+									layoutpolicy_horizontal = expanding
+									spacing = 4
+									datacontext = "[GetScriptedGui('be_ruins_debug_prepare_selected_ruin_gui')]"
+
+									button_regular = {
+										size = { 310 30 }
+										text = "be_ruins_debug_prepare_selected_ruin"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)]"
+										tooltip = "be_ruins_debug_prepare_selected_ruin_tt"
+									}
+								}
+
+								vbox = {
+									layoutpolicy_horizontal = expanding
+									spacing = 4
+									datacontext = "[GetScriptedGui('be_ruins_debug_start_selected_expedition_gui')]"
+
+									button_regular = {
+										size = { 310 30 }
+										text = "be_ruins_debug_start_selected_expedition"
+										visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)]"
+										enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)]"
+										onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)]"
+										tooltip = "be_ruins_debug_start_selected_expedition_tt"
 									}
 								}
 

@@ -911,6 +911,7 @@ bronze_ruins_finish_expedition = {
 			remove_variable = be_ruin_expedition_risk_bonus
 			remove_variable = be_ruin_expedition_story_events
 			remove_variable = be_ruin_expedition_remaining_months
+			be_ruin_expedition_clear_story_memory_effect = yes
 			set_variable = { name = bronze_ruins_explored value = 1 years = 25 }
 			remove_location_modifier = bronze_ruins_expedition_camp
 		}
@@ -932,6 +933,7 @@ bronze_ruins_finish_expedition = {
 			remove_variable = be_ruin_expedition_risk_bonus
 			remove_variable = be_ruin_expedition_story_events
 			remove_variable = be_ruin_expedition_remaining_months
+			be_ruin_expedition_clear_story_memory_effect = yes
 			set_variable = { name = bronze_ruins_explored value = 1 years = 25 }
 			remove_location_modifier = bronze_ruins_expedition_camp
 		}
