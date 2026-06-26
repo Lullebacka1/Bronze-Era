@@ -63,6 +63,12 @@ be_ruin_expedition_clear_story_memory_effect = {
 	remove_variable = be_ruin_complication_flood
 	remove_variable = be_ruin_discovery_count
 	remove_variable = be_ruin_complication_count
+	remove_variable = be_ruin_final_gold_reward
+	remove_variable = be_ruin_final_knowledge_reward
+	remove_variable = be_ruin_final_negative_reward
+	remove_variable = be_ruin_final_artifact_common
+	remove_variable = be_ruin_final_artifact_rare
+	remove_variable = be_ruin_final_artifact_unique
 }
 
 be_ruin_expedition_gain_profile_xp_effect = {
@@ -220,6 +226,80 @@ be_ruin_expedition_apply_final_story_rewards_effect = {
 	if = {
 		limit = { scope:bronze_ruins_site ?= { var:be_ruin_complication_count >= 3 } }
 		be_ruins_dynamic_negative_reward_effect = yes
+	}
+}
+
+be_ruin_expedition_prepare_final_rewards_effect = {
+	scope:bronze_ruins_site = {
+		remove_variable = be_ruin_final_gold_reward
+		remove_variable = be_ruin_final_knowledge_reward
+		remove_variable = be_ruin_final_negative_reward
+		remove_variable = be_ruin_final_artifact_common
+		remove_variable = be_ruin_final_artifact_rare
+		remove_variable = be_ruin_final_artifact_unique
+	}
+	if = {
+		limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_success_chance >= 75 } }
+		scope:bronze_ruins_site = {
+			set_variable = { name = be_ruin_final_gold_reward value = 1 }
+			set_variable = { name = be_ruin_final_knowledge_reward value = 1 }
+		}
+		be_ruin_expedition_prepare_final_artifact_reward_effect = yes
+	}
+	else_if = {
+		limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_success_chance >= 55 } }
+		random_list = {
+			35 = { scope:bronze_ruins_site = { set_variable = { name = be_ruin_final_gold_reward value = 1 } } }
+			35 = { scope:bronze_ruins_site = { set_variable = { name = be_ruin_final_knowledge_reward value = 1 } } }
+			20 = { be_ruin_expedition_prepare_final_artifact_reward_effect = yes }
+			10 = { scope:bronze_ruins_site = { set_variable = { name = be_ruin_final_negative_reward value = 1 } } }
+		}
+	}
+	else = {
+		random_list = {
+			30 = { scope:bronze_ruins_site = { set_variable = { name = be_ruin_final_gold_reward value = 1 } } }
+			25 = { scope:bronze_ruins_site = { set_variable = { name = be_ruin_final_knowledge_reward value = 1 } } }
+			45 = { scope:bronze_ruins_site = { set_variable = { name = be_ruin_final_negative_reward value = 1 } } }
+		}
+	}
+}
+
+be_ruin_expedition_prepare_final_artifact_reward_effect = {
+	if = {
+		limit = {
+			scope:bronze_ruins_site ?= { var:be_ruin_expedition_artifact_chance >= 50 }
+			NOT = { has_global_variable = be_ruins_unique_solar_seal_found }
+		}
+		random_list = {
+			15 = { scope:bronze_ruins_site = { set_variable = { name = be_ruin_final_artifact_unique value = 1 } } }
+			85 = { scope:bronze_ruins_site = { set_variable = { name = be_ruin_final_artifact_rare value = 1 } } }
+		}
+	}
+	else_if = {
+		limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_artifact_chance >= 30 } }
+		scope:bronze_ruins_site = { set_variable = { name = be_ruin_final_artifact_rare value = 1 } }
+	}
+	else = {
+		scope:bronze_ruins_site = { set_variable = { name = be_ruin_final_artifact_common value = 1 } }
+	}
+}
+
+be_ruin_expedition_apply_final_artifact_reward_effect = {
+	if = {
+		limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_artifact_unique } }
+		set_global_variable = be_ruins_unique_solar_seal_found
+		if = { limit = { NOT = { has_variable = be_ruins_artifact_unique_count } } set_variable = { name = be_ruins_artifact_unique_count value = 0 } }
+		change_variable = { name = be_ruins_artifact_unique_count add = 1 }
+	}
+	else_if = {
+		limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_artifact_rare } }
+		if = { limit = { NOT = { has_variable = be_ruins_artifact_rare_count } } set_variable = { name = be_ruins_artifact_rare_count value = 0 } }
+		change_variable = { name = be_ruins_artifact_rare_count add = 1 }
+	}
+	else_if = {
+		limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_artifact_common } }
+		if = { limit = { NOT = { has_variable = be_ruins_artifact_common_count } } set_variable = { name = be_ruins_artifact_common_count value = 0 } }
+		change_variable = { name = be_ruins_artifact_common_count add = 1 }
 	}
 }
 

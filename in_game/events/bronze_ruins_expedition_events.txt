@@ -6,6 +6,10 @@ namespace = bronze_city_razing
 #
 # Keep option effects inside hidden_effect. Otherwise EU5 expands the full
 # random follow-up chain in option tooltips, causing heavy hover lag.
+#
+# Static placeholder event art is one DDS per event under:
+# main_menu/gfx/interface/illustrations/event/backgrounds/bronze_era/
+# Replace the matching DDS later to change only that event image.
 
 bronze_city_razing.20 = {
 	type = country_event
@@ -13,10 +17,7 @@ bronze_city_razing.20 = {
 	desc = bronze_city_razing.20.desc
 	outcome = neutral
 
-	illustration_tags = {
-		10 = exterior
-		10 = interior
-	}
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_20_stores_seals_and_orders.dds"
 
 	trigger = {
 		scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway }
@@ -74,7 +75,7 @@ bronze_city_razing.21 = {
 	desc = bronze_city_razing.21.desc
 	outcome = neutral
 
-	illustration_tags = { 10 = exterior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_21_road_to_the_ruins.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -122,7 +123,7 @@ bronze_city_razing.22 = {
 	desc = bronze_city_razing.22.desc
 	outcome = neutral
 
-	illustration_tags = { 10 = interior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_22_unknown_chamber.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -173,10 +174,7 @@ bronze_city_razing.23 = {
 	desc = bronze_city_razing.23.desc
 	outcome = negative
 
-	illustration_tags = {
-		10 = angry
-		10 = interior
-	}
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_23_stone_and_dust.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -233,7 +231,7 @@ bronze_city_razing.24 = {
 	desc = bronze_city_razing.24.desc
 	outcome = neutral
 
-	illustration_tags = { 10 = angry 10 = exterior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_24_claimants_in_the_ruins.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -289,7 +287,7 @@ bronze_city_razing.25 = {
 	desc = bronze_city_razing.25.desc
 	outcome = positive
 
-	illustration_tags = { 10 = interior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_25_first_discovery.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -345,7 +343,7 @@ bronze_city_razing.26 = {
 	desc = bronze_city_razing.26.desc
 	outcome = neutral
 
-	illustration_tags = { 10 = interior 10 = angry }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_26_sealed_door.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -400,7 +398,7 @@ bronze_city_razing.27 = {
 	desc = bronze_city_razing.27.desc
 	outcome = negative
 
-	illustration_tags = { 10 = exterior 10 = angry }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_27_foreign_eyes.dds"
 
 	trigger = {
 		scope:bronze_ruins_site ?= {
@@ -451,7 +449,7 @@ bronze_city_razing.28 = {
 	desc = bronze_city_razing.28.desc
 	outcome = negative
 
-	illustration_tags = { 10 = angry 10 = exterior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_28_stores_run_low.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -495,7 +493,7 @@ bronze_city_razing.30 = {
 	desc = bronze_city_razing.30.desc
 	outcome = positive
 
-	illustration_tags = { 10 = interior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_30_royal_quarter.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -553,7 +551,7 @@ bronze_city_razing.31 = {
 	desc = bronze_city_razing.31.desc
 	outcome = positive
 
-	illustration_tags = { 10 = interior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_31_archive_room.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -608,7 +606,7 @@ bronze_city_razing.32 = {
 	desc = bronze_city_razing.32.desc
 	outcome = positive
 
-	illustration_tags = { 10 = interior 10 = angry }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_32_royal_tomb.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -665,7 +663,7 @@ bronze_city_razing.33 = {
 	desc = bronze_city_razing.33.desc
 	outcome = positive
 
-	illustration_tags = { 10 = exterior 10 = interior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_33_harbor_warehouses.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -717,7 +715,7 @@ bronze_city_razing.34 = {
 	desc = bronze_city_razing.34.desc
 	outcome = positive
 
-	illustration_tags = { 10 = exterior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_34_buried_ship_cargo.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -772,7 +770,7 @@ bronze_city_razing.35 = {
 	desc = bronze_city_razing.35.desc
 	outcome = positive
 
-	illustration_tags = { 10 = interior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_35_inner_sanctuary.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -829,7 +827,7 @@ bronze_city_razing.36 = {
 	desc = bronze_city_razing.36.desc
 	outcome = positive
 
-	illustration_tags = { 10 = interior 10 = angry }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_36_armory.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -881,7 +879,7 @@ bronze_city_razing.37 = {
 	desc = bronze_city_razing.37.desc
 	outcome = positive
 
-	illustration_tags = { 10 = exterior 10 = interior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_37_workshop_street.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -936,7 +934,7 @@ bronze_city_razing.38 = {
 	desc = bronze_city_razing.38.desc
 	outcome = neutral
 
-	illustration_tags = { 10 = interior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_38_hidden_passage.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -987,7 +985,7 @@ bronze_city_razing.39 = {
 	desc = bronze_city_razing.39.desc
 	outcome = negative
 
-	illustration_tags = { 10 = angry 10 = exterior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_39_fire_in_camp.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -1043,7 +1041,7 @@ bronze_city_razing.40 = {
 	desc = bronze_city_razing.40.desc
 	outcome = negative
 
-	illustration_tags = { 10 = angry 10 = exterior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_40_raiders_in_the_ruins.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -1098,7 +1096,7 @@ bronze_city_razing.41 = {
 	desc = bronze_city_razing.41.desc
 	outcome = negative
 
-	illustration_tags = { 10 = angry 10 = interior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_41_flooded_passages.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -1154,7 +1152,7 @@ bronze_city_razing.42 = {
 	desc = bronze_city_razing.42.desc
 	outcome = neutral
 
-	illustration_tags = { 10 = exterior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_42_silent_district.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
 
@@ -1196,38 +1194,46 @@ bronze_city_razing.29 = {
 	desc = bronze_city_razing.29.desc
 	outcome = positive
 
-	illustration_tags = { 10 = interior 10 = exterior }
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_29_expedition_returns.dds"
 
 	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	immediate = {
+		hidden_effect = { be_ruin_expedition_prepare_final_rewards_effect = yes }
+	}
 
 	option = {
 		name = bronze_city_razing.29.a
 		custom_tooltip = bronze_city_razing_29a_tt
+		be_ruin_expedition_apply_final_story_rewards_effect = yes
+		if = {
+			limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_gold_reward } }
+			be_ruins_dynamic_gold_reward_effect = yes
+		}
+		if = {
+			limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_knowledge_reward } }
+			be_ruins_dynamic_knowledge_reward_effect = yes
+		}
+		if = {
+			limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_negative_reward } }
+			be_ruins_dynamic_negative_reward_effect = yes
+		}
+		if = {
+			limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_artifact_unique } }
+			custom_tooltip = be_ruin_final_artifact_unique_tt
+			add_prestige = prestige_severe_bonus
+		}
+		else_if = {
+			limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_artifact_rare } }
+			custom_tooltip = be_ruin_final_artifact_rare_tt
+		}
+		else_if = {
+			limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_artifact_common } }
+			custom_tooltip = be_ruin_final_artifact_common_tt
+		}
 		hidden_effect = {
-					be_ruin_expedition_apply_final_story_rewards_effect = yes
-					if = {
-						limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_success_chance >= 75 } }
-						be_ruins_dynamic_gold_reward_effect = yes
-						be_ruins_dynamic_knowledge_reward_effect = yes
-						be_ruin_expedition_award_artifact_effect = yes
-					}
-					else_if = {
-						limit = { scope:bronze_ruins_site ?= { var:be_ruin_expedition_success_chance >= 55 } }
-						random_list = {
-							35 = { be_ruins_dynamic_gold_reward_effect = yes }
-							35 = { be_ruins_dynamic_knowledge_reward_effect = yes }
-							20 = { be_ruin_expedition_award_artifact_effect = yes }
-							10 = { be_ruins_dynamic_negative_reward_effect = yes }
-						}
-					}
-					else = {
-						random_list = {
-							30 = { be_ruins_dynamic_gold_reward_effect = yes }
-							25 = { be_ruins_dynamic_knowledge_reward_effect = yes }
-							45 = { be_ruins_dynamic_negative_reward_effect = yes }
-						}
-					}
-					bronze_ruins_finish_expedition = yes
+			be_ruin_expedition_apply_final_artifact_reward_effect = yes
+			bronze_ruins_finish_expedition = yes
 		}
 	}
 }
