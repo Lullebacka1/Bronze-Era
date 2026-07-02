@@ -8,64 +8,39 @@ start_trojan_war_phase_2.1 = {
     is_triggered_only = yes
     hidden = no
 
-    option = {
+option = {
     name = "trojan_war_phase_2_start.a"
-
-    # get the join to work so it isnt just Wilus and 0001G
     declare_war_with_cb = {
         target = c:WILUS
-        type = casus_belli:trojan_war_casus_belli  
-    
+        type = casus_belli:trojan_war_casus_belli
     }
-    c:AHHI =  { trigger_event_non_silently = {
-            id = join_trojan_War.1
-            days = 10
-        } }
-    c:LYCIA = { trigger_event_non_silently = {
-            id = join_trojan_War.1
-            days = 10
-        } }
-    c:SEHA = { trigger_event_non_silently = {
-            id = join_trojan_War.1
-            days = 10
-        } }
-    c:LUKKA = { trigger_event_non_silently = {
-            id = join_trojan_War.1
-            days = 10
-        } }
-    c:MASA = { trigger_event_non_silently = {
-            id = join_trojan_War.1
-            days = 10
-        } }
-  
-   
+    c:WILUS = { save_scope_as = target_country }
+    c:0001G = { save_scope_as = target }
+    random_current_war = {
+        limit = {
+            any_defender = { this = c:WILUS }
+        }
+        save_scope_as = trojan_war
+    }
+    c:AHHI = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
+    c:LYCIA = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
+    c:SEHA = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
+    c:LUKKA = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
+    c:MASA = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
+}  
 }
-}
+
 
 join_trojan_War.1 = {
     type = country_event
     title = join_trojan_War.t
     desc = join_trojan_War.d
     is_triggered_only = yes
-    hidden = no 
-    
-immediate = {
-    save_scope_as = actor
-    random_current_war = {
-        limit = {
-            attacker_leader = c:0001G
-            defender_leader = c:WILUS
-        }
-        save_scope_as = trojan_war
-    }
-}
+    hidden = no
 
-option = {
+ option = {
     name = "join_trojan_war"
-    if = {
-        limit = { exists = scope:trojan_war }
-        join_war_as_defender = { war = scope:trojan_war }
-    }
+    root = { join_war_as_defender = { war = scope:trojan_war } }
 }
 }
 

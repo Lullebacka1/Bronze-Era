@@ -6,5 +6,5 @@
         always = no
     }
     is_triggered_only = yes
-    war_goal_type = trojan_war_wargoal
+    war_goal_type = superiority
 }
