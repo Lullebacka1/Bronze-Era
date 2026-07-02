@@ -1,0 +1,81 @@
+namespace = bronze_ruins_debug
+
+# Console command:
+# event bronze_ruins_debug.1
+#
+# This is a debug-only helper for testing ruins expeditions. It does not run
+# from pulses or normal gameplay.
+bronze_ruins_debug.1 = {
+	type = country_event
+	title = bronze_ruins_debug.1.title
+	desc = bronze_ruins_debug.1.desc
+	outcome = neutral
+
+	illustration_tags = { 10 = interior 10 = exterior }
+
+	option = {
+		name = bronze_ruins_debug.1.a
+		custom_tooltip = bronze_ruins_debug_1a_tt
+		be_ruins_debug_reset_launch_timers_effect = yes
+	}
+
+	option = {
+		name = bronze_ruins_debug.1.b
+		custom_tooltip = bronze_ruins_debug_1b_tt
+		be_ruins_debug_force_active_expedition_return_effect = yes
+	}
+
+	option = {
+		name = bronze_ruins_debug.1.c
+		custom_tooltip = bronze_ruins_debug_1c_tt
+		trigger_event_non_silently = { id = bronze_ruins_debug.2 days = 1 }
+	}
+
+	option = {
+		name = bronze_ruins_debug.1.d
+		custom_tooltip = bronze_ruins_debug_1d_tt
+		be_ruins_debug_enable_location_buttons_effect = yes
+	}
+
+	option = {
+		name = bronze_ruins_debug.1.e
+	}
+}
+
+# Console command:
+# event bronze_ruins_debug.2
+#
+# V1 uses expedition leader profiles instead of true character assignment.
+# The GUI still displays the ruler/regent portrait as expedition patron.
+bronze_ruins_debug.2 = {
+	type = country_event
+	title = bronze_ruins_debug.2.title
+	desc = bronze_ruins_debug.2.desc
+	outcome = neutral
+
+	illustration_tags = { 10 = interior }
+
+	option = {
+		name = bronze_ruins_debug.2.a
+		custom_tooltip = bronze_ruins_debug_2a_tt
+		be_ruins_select_archivist_effect = yes
+	}
+
+	option = {
+		name = bronze_ruins_debug.2.b
+		custom_tooltip = bronze_ruins_debug_2b_tt
+		be_ruins_select_captain_effect = yes
+	}
+
+	option = {
+		name = bronze_ruins_debug.2.c
+		custom_tooltip = bronze_ruins_debug_2c_tt
+		be_ruins_select_quartermaster_effect = yes
+	}
+
+	option = {
+		name = bronze_ruins_debug.2.d
+		custom_tooltip = bronze_ruins_debug_2d_tt
+		be_ruins_select_priest_effect = yes
+	}
+}

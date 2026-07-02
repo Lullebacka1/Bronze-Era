@@ -1,0 +1,100 @@
+# Bronze Era - Ruins Expedition Debug Helpers
+# Country scope. These effects are intentionally isolated from the normal
+# expedition flow and are only meant to be called by console debug events.
+
+be_ruins_debug_reset_launch_timers_effect = {
+	custom_description = {
+		text = be_ruins_debug_reset_launch_timers_effect_tt
+		remove_variable = bronze_ruins_expedition_country_cooldown
+
+		# If no expedition is currently underway, also clear any stale active
+		# counter left by older save/test versions.
+		if = {
+			limit = {
+				NOT = { any_owned_location = { has_variable = bronze_ruins_expedition_underway } }
+				NOT = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+			}
+			set_variable = { name = be_ruin_expeditions_active value = 0 }
+		}
+
+		# Allows immediate retesting of ruins after an expedition completed.
+		every_owned_location = {
+			limit = { has_variable = bronze_ancient_ruins }
+			remove_variable = bronze_ruins_explored
+			remove_variable = bronze_ruins_too_fresh
+		}
+
+		if = {
+			limit = { scope:bronze_ruins_site ?= { has_variable = bronze_ancient_ruins } }
+			scope:bronze_ruins_site = {
+				remove_variable = bronze_ruins_explored
+				remove_variable = bronze_ruins_too_fresh
+			}
+		}
+	}
+}
+
+be_ruins_debug_force_active_expedition_return_effect = {
+	custom_description = {
+		text = be_ruins_debug_force_active_expedition_return_effect_tt
+
+		if = {
+			limit = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+			scope:bronze_ruins_site = {
+				set_variable = { name = be_ruin_expedition_progress value = 100 }
+				set_variable = { name = be_ruin_expedition_remaining_months value = 0 }
+				change_variable = { name = be_ruin_expedition_success_chance add = 25 }
+			}
+			trigger_event_non_silently = { id = bronze_city_razing.29 days = 1 }
+		}
+		else_if = {
+			limit = { any_owned_location = { has_variable = bronze_ruins_expedition_underway } }
+			random_owned_location = {
+				limit = { has_variable = bronze_ruins_expedition_underway }
+				save_scope_as = bronze_ruins_site
+				set_variable = { name = be_ruin_expedition_progress value = 100 }
+				set_variable = { name = be_ruin_expedition_remaining_months value = 0 }
+				change_variable = { name = be_ruin_expedition_success_chance add = 25 }
+			}
+			trigger_event_non_silently = { id = bronze_city_razing.29 days = 1 }
+		}
+	}
+}
+
+be_ruins_debug_enable_location_buttons_effect = {
+	custom_description = {
+		text = be_ruins_debug_enable_location_buttons_effect_tt
+		set_variable = { name = be_ruins_debug_buttons_enabled value = 1 years = 1 }
+	}
+}
+
+# Country scope. Requires scope:be_ruin_location from the opened location GUI.
+be_ruins_debug_prepare_selected_ruin_effect = {
+	custom_description = {
+		text = be_ruins_debug_prepare_selected_ruin_effect_tt
+		remove_variable = bronze_ruins_expedition_country_cooldown
+		set_variable = { name = be_ruin_expeditions_active value = 0 }
+
+		scope:be_ruin_location = {
+			remove_variable = bronze_ruins_explored
+			remove_variable = bronze_ruins_too_fresh
+			remove_variable = bronze_ruins_expedition_underway
+			remove_location_modifier = bronze_ruins_expedition_camp
+			if = {
+				limit = { NOT = { has_variable = be_ruins_stats_generated } }
+				be_ruins_generate_stats_effect = yes
+			}
+		}
+	}
+}
+
+# Country scope. Requires scope:be_ruin_location from the opened location GUI.
+# This starts the existing expedition flow after force-preparing the selected
+# ruin. It still uses normal expedition costs and the chosen leader profile.
+be_ruins_debug_start_selected_expedition_effect = {
+	custom_description = {
+		text = be_ruins_debug_start_selected_expedition_effect_tt
+		be_ruins_debug_prepare_selected_ruin_effect = yes
+		be_ruins_start_expedition_effect = yes
+	}
+}

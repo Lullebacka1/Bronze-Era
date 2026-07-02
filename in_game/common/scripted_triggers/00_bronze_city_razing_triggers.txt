@@ -20,6 +20,8 @@ bronze_city_razing_valid_capture_target = {
 	NOT = { has_variable = bronze_city_capture_choice_cooldown }
 	NOT = { has_variable = bronze_city_active_sack }
 	NOT = { has_variable = bronze_city_active_raze }
+	NOT = { has_variable = bronze_city_sack_marker }
+	NOT = { has_variable = bronze_city_raze_marker }
 	NOT = { has_variable = bronze_ancient_ruins }
 }
 
@@ -40,14 +42,16 @@ bronze_city_razing_valid_army_action_target = {
 	}
 	NOT = { has_variable = bronze_city_active_sack }
 	NOT = { has_variable = bronze_city_active_raze }
+	NOT = { has_variable = bronze_city_sack_marker }
+	NOT = { has_variable = bronze_city_raze_marker }
 	NOT = { has_variable = bronze_ancient_ruins }
 	NOT = { has_location_modifier = bronze_city_recently_sacked }
 	NOT = { has_location_modifier = bronze_city_razed }
 }
 
 # Location scope. Root is the country that ordered the sack/raze.
-# Player armies are intentionally not locked, so leaving the location before
-# completion interrupts the action. AI armies are locked by scripted effect.
+# This only checks that an army can start the action. Completion is controlled
+# by control/siege state, not by keeping the army locked in place.
 bronze_city_attacker_army_present = {
 	any_unit_in_location = {
 		count >= 1
@@ -56,6 +60,49 @@ bronze_city_attacker_army_present = {
 		is_exiled = no
 		is_moving = no
 		in_combat = no
+	}
+}
+
+# Location scope. Root is the country that ordered the event-started action.
+# A sack/raze now continues without locking an army. It only fails if the city
+# is liberated or if an active siege interrupts control of the settlement.
+bronze_city_action_can_complete_for_country = {
+	controller = root
+	NOT = { has_siege = yes }
+}
+
+# Location scope. Root is the army unit that ordered a unit-started action.
+bronze_city_action_can_complete_for_unit_owner = {
+	controller ?= {
+		this = root.owner
+	}
+	NOT = { has_siege = yes }
+}
+
+# Location scope. Root is the AI country that captured the city.
+# The AI should preserve places it sees as legitimate homeland territory or
+# where the local dominant culture already matches its own state culture.
+bronze_city_ai_should_preserve_capture_target = {
+	OR = {
+		is_core_of = root
+		dominant_culture = root.culture
+	}
+}
+
+# Location scope. Root is the AI country that captured the city.
+# Uses the existing City Prestige data instead of scanning every city at capture.
+bronze_city_ai_high_value_plunder_target = {
+	OR = {
+		location_rank = location_rank:megalopolis
+		is_capital = yes
+		AND = {
+			has_variable = bronze_city_prestige_score
+			var:bronze_city_prestige_score >= 100
+		}
+		AND = {
+			has_variable = bronze_city_prestige_rank
+			var:bronze_city_prestige_rank <= 3
+		}
 	}
 }
 

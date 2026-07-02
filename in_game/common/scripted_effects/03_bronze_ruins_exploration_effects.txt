@@ -1,0 +1,111 @@
+# Bronze Era - Ruins Exploration GUI support
+# This wraps the existing ruins expedition backend so the new GUI can launch
+# an expedition from the currently opened ruin without changing old events.
+
+# Country scope. Requires scope:be_ruin_location as a location.
+be_ruins_start_expedition_effect = {
+	custom_description = {
+		text = be_ruins_start_expedition_effect_tt
+		scope:be_ruin_location = {
+			if = {
+				limit = { NOT = { has_variable = be_ruins_stats_generated } }
+				be_ruins_generate_stats_effect = yes
+			}
+		}
+		be_ruins_pay_selected_expedition_cost_effect = yes
+		set_variable = {
+			name = bronze_ruins_expedition_country_cooldown
+			value = 1
+			years = 5
+		}
+
+		if = {
+			limit = { NOT = { has_variable = be_ruin_expeditions_active } }
+			set_variable = { name = be_ruin_expeditions_active value = 0 }
+		}
+		change_variable = { name = be_ruin_expeditions_active add = 1 }
+
+		scope:be_ruin_location = {
+			save_scope_as = bronze_ruins_site
+			set_variable = { name = bronze_ruins_expedition_underway value = 1 years = 3 }
+			add_location_modifier = {
+				modifier = bronze_ruins_expedition_camp
+				years = 3
+				mode = add_and_extend
+			}
+			set_variable = { name = be_ruin_expedition_start_year value = current_year }
+			set_variable = { name = be_ruin_expedition_success_chance value = var:be_ruins_success_chance }
+			set_variable = { name = be_ruin_expedition_artifact_chance value = var:be_ruins_artifact_chance }
+			if = {
+				limit = { root = { has_variable = be_ruins_selected_leader_profile } }
+				set_variable = { name = be_ruin_expedition_leader_profile value = root.var:be_ruins_selected_leader_profile }
+			}
+			else = {
+				set_variable = { name = be_ruin_expedition_leader_profile value = 1 }
+			}
+
+			if = {
+				limit = {
+					root = {
+						OR = {
+							NOT = { has_variable = be_ruins_selected_leader_profile }
+							var:be_ruins_selected_leader_profile = 1
+						}
+					}
+				}
+				change_variable = { name = be_ruin_expedition_success_chance add = 10 }
+				change_variable = { name = be_ruin_expedition_artifact_chance add = 5 }
+			}
+			else_if = {
+				limit = { root = { var:be_ruins_selected_leader_profile = 2 } }
+				change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+				change_variable = { name = be_ruins_risk subtract = 1 }
+				if = {
+					limit = { var:be_ruins_risk < 1 }
+					set_variable = { name = be_ruins_risk value = 1 }
+				}
+			}
+			else_if = {
+				limit = { root = { var:be_ruins_selected_leader_profile = 3 } }
+				change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+				change_variable = { name = be_ruins_gold_potential add = 20 }
+			}
+			else_if = {
+				limit = { root = { var:be_ruins_selected_leader_profile = 4 } }
+				change_variable = { name = be_ruin_expedition_artifact_chance add = 15 }
+				change_variable = { name = be_ruins_lore_value add = 1 }
+			}
+		}
+
+		be_ruin_expedition_initialize_story_effect = yes
+		trigger_event_non_silently = { id = bronze_city_razing.20 days = 30 }
+	}
+}
+
+be_ruins_select_archivist_effect = {
+	set_variable = { name = be_ruins_selected_leader_profile value = 1 }
+	remove_variable = be_ruins_show_leader_picker
+}
+
+be_ruins_select_captain_effect = {
+	set_variable = { name = be_ruins_selected_leader_profile value = 2 }
+	remove_variable = be_ruins_show_leader_picker
+}
+
+be_ruins_select_quartermaster_effect = {
+	set_variable = { name = be_ruins_selected_leader_profile value = 3 }
+	remove_variable = be_ruins_show_leader_picker
+}
+
+be_ruins_select_priest_effect = {
+	set_variable = { name = be_ruins_selected_leader_profile value = 4 }
+	remove_variable = be_ruins_show_leader_picker
+}
+
+be_ruins_open_leader_picker_effect = {
+	set_variable = { name = be_ruins_show_leader_picker value = 1 years = 1 }
+}
+
+be_ruins_close_leader_picker_effect = {
+	remove_variable = be_ruins_show_leader_picker
+}
