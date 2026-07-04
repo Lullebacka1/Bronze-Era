@@ -190,7 +190,7 @@
  sea_peoples_crisis_10a_tt: "Famine and crisis pressure rise sharply, and stability falls."
  sea_peoples_crisis_10b_tt: "Famine rises less, but prestige, nobles, and clergy pay for forced ration discipline."
  sea_peoples_crisis.20.title: "Raiders from the Sea"
- sea_peoples_crisis.20.desc: "Long ships have been sighted beyond [scope:target_location.GetName]. Harbor guards race to the shore, farmers hide their grain, and merchants pull bronze cargo from the quays. Forts, coastal armies, and patrol ships can blunt the attack, but a weak coast may still burn before the palace can answer."
+ sea_peoples_crisis.20.desc: "Long ships have been sighted beyond the coast. Harbor guards race to the shore, farmers hide their grain, and merchants pull bronze cargo from the quays. Forts, coastal armies, and patrol ships can blunt the attack, but a weak coast may still burn before the palace can answer."
  sea_peoples_crisis.20.a: "The coast burns."
  sea_peoples_crisis.20.b: "Raise harbor guards and patrol ships."
  sea_peoples_crisis_20_unprepared_tt: "A raid will test the coast. Existing port defenses, fortified palaces, forts, coastal armies, and a navy can still repulse it."

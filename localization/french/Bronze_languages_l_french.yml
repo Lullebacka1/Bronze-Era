@@ -8,7 +8,7 @@
  hurrian_bronze_language: "Hurrian"
  anatolian_bronze_language: "Anatolian"
  luwian_bronze_language: "Luwian"
- levantine_bronze_language: "Levantine"
+ levantine_bronze_language: "Canaanite"
  arabian_bronze_language: "Arabian"
  iranian_bronze_language: "Iranian"
  caucasian_bronze_language: "Caucasian"
@@ -32,3 +32,6 @@
  alpine_bronze_language: "Alpine"
  adriatic_bronze_language: "Adriatic"
  island_bronze_language: "Island"
+
+ danubian_bronze_language: "Danubian"
+ central_european_bronze_language: "Central European"

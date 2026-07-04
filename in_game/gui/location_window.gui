@@ -3809,8 +3809,111 @@ lateralview = {
 								}
 							}
 
-							# Bronze Era: Ancient Ruins button. This opens an empty
-							# context panel for future ruin-specific content.
+							# Bronze Era: temporary city action markers. The actual
+							# state is created/removed by the sack/raze scripted effects;
+							# this block only exposes that state in the location window.
+							card_header_button_04 = {
+								size = { 36 36 }
+								datacontext = "[LocationView.GetLocation]"
+								visible = "[And(Or(Location.MakeScope.GetVariable('bronze_city_sack_marker').IsSet, Location.MakeScope.GetVariable('bronze_city_active_sack').IsSet), Not(Or(Location.MakeScope.GetVariable('bronze_city_raze_marker').IsSet, Location.MakeScope.GetVariable('bronze_city_active_raze').IsSet)))]"
+
+								tooltipwidget = {
+									SimpleContextualTooltipType = {
+										blockoverride "title_icon" {
+											icon = {
+												using = tooltip_title_icon_size
+												texture = "gfx/interface/icons/map_pillage_city.dds"
+											}
+										}
+										blockoverride "title_text" {
+											text = "STATIC_MODIFIER_NAME_bronze_city_being_sacked"
+										}
+										blockoverride "tooltip_content" {
+											TooltipTextBlock = {
+												blockoverride "text" {
+													text = "STATIC_MODIFIER_DESC_bronze_city_being_sacked"
+												}
+											}
+											TooltipTextBlock = {
+												blockoverride "text" {
+													text = "bronze_city_action_completion_date"
+												}
+											}
+												TooltipTextBlock = {
+													datacontext = "[Location.MakeScope.GetVariable('bronze_city_active_sack')]"
+													blockoverride "text" {
+														text = "[VariableInfo.GetExpirationDate]"
+													}
+												}
+										}
+									}
+								}
+
+								icon = {
+									size = { 24 24 }
+									parentanchor = center
+									texture = "gfx/interface/icons/map_pillage_city.dds"
+									glow = {
+										name = "drop_shadow"
+										glow_radius = 3
+										color = {0.0 0.0 0.0 1.0}
+										alpha = 0.4
+									}
+								}
+							}
+
+							card_header_button_04 = {
+								size = { 36 36 }
+								datacontext = "[LocationView.GetLocation]"
+								visible = "[Or(Location.MakeScope.GetVariable('bronze_city_raze_marker').IsSet, Location.MakeScope.GetVariable('bronze_city_active_raze').IsSet)]"
+
+								tooltipwidget = {
+									SimpleContextualTooltipType = {
+										blockoverride "title_icon" {
+											icon = {
+												using = tooltip_title_icon_size
+												texture = "gfx/interface/icons/map_raze_city.dds"
+											}
+										}
+										blockoverride "title_text" {
+											text = "STATIC_MODIFIER_NAME_bronze_city_razing_underway"
+										}
+										blockoverride "tooltip_content" {
+											TooltipTextBlock = {
+												blockoverride "text" {
+													text = "STATIC_MODIFIER_DESC_bronze_city_razing_underway"
+												}
+											}
+											TooltipTextBlock = {
+												blockoverride "text" {
+													text = "bronze_city_action_completion_date"
+												}
+											}
+												TooltipTextBlock = {
+													datacontext = "[Location.MakeScope.GetVariable('bronze_city_active_raze')]"
+													blockoverride "text" {
+														text = "[VariableInfo.GetExpirationDate]"
+													}
+												}
+										}
+									}
+								}
+
+								icon = {
+									size = { 24 24 }
+									parentanchor = center
+									texture = "gfx/interface/icons/map_raze_city.dds"
+									glow = {
+										name = "drop_shadow"
+										glow_radius = 3
+										color = {0.0 0.0 0.0 1.0}
+										alpha = 0.4
+									}
+								}
+							}
+
+							# Bronze Era: Ancient Ruins button. Opens the dedicated
+							# Ruins Exploration GUI for this location.
 							card_header_button_04 = {
 								size = { 36 36 }
 								datacontext = "[LocationView.GetLocation]"
@@ -3839,7 +3942,7 @@ lateralview = {
 								}
 
 								contextmenu_widget = {
-									BronzeRuinsContextMenu = {}
+									BronzeRuinsExplorationWindow = {}
 								}
 
 								icon = {

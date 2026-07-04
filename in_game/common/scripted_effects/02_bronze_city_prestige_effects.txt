@@ -464,20 +464,18 @@ bronze_city_prestige_rebuild_ledger_list = {
 		clear_global_variable_list = bronze_city_prestige_ledger_cities
 	}
 
-	every_location_in_the_world = {
-		limit = {
-			OR = {
-				location_rank = location_rank:city
-				location_rank = location_rank:megalopolis
+	every_country = {
+		limit = { is_real_country = yes }
+		every_owned_location = {
+			limit = { bronze_city_prestige_is_urban = yes }
+
+			# Store the typed location reference expected by generic GUI list scopes.
+			bronze_city_prestige_initialize_city = yes
+
+			add_to_global_variable_list = {
+				name = bronze_city_prestige_ledger_cities
+				target = this
 			}
-		}
-
-		# Store the typed location reference expected by generic GUI list scopes.
-		bronze_city_prestige_initialize_city = yes
-
-		add_to_global_variable_list = {
-			name = bronze_city_prestige_ledger_cities
-			target = this
 		}
 	}
 }
@@ -627,18 +625,18 @@ bronze_city_prestige_update_world_ranking = {
 
 	# Register and refresh every valid urban location, then place it in the
 	# manager-owned pool used by both ordered ranking passes.
-	every_location_in_the_world = {
-		limit = {
-			has_owner = yes
-			bronze_city_prestige_is_urban = yes
-		}
-		bronze_city_prestige_initialize_city = yes
-		bronze_city_prestige_recalculate_city = yes
-		save_scope_as = bronze_city_prestige_rank_pool_city
-		scope:bronze_city_prestige_ranking_manager = {
-			add_to_variable_list = {
-				name = bronze_city_prestige_ranking_pool
-				target = scope:bronze_city_prestige_rank_pool_city
+	every_country = {
+		limit = { is_real_country = yes }
+		every_owned_location = {
+			limit = { bronze_city_prestige_is_urban = yes }
+			bronze_city_prestige_initialize_city = yes
+			bronze_city_prestige_recalculate_city = yes
+			save_scope_as = bronze_city_prestige_rank_pool_city
+			scope:bronze_city_prestige_ranking_manager = {
+				add_to_variable_list = {
+					name = bronze_city_prestige_ranking_pool
+					target = scope:bronze_city_prestige_rank_pool_city
+				}
 			}
 		}
 	}
@@ -797,10 +795,13 @@ bronze_city_prestige_initialize_world = {
 		clear_global_variable_list = bronze_city_prestige_world_cities
 	}
 
-	every_location_in_the_world = {
-		limit = { bronze_city_prestige_is_urban = yes }
-		bronze_city_prestige_initialize_city = yes
-		bronze_city_prestige_recalculate_city = yes
+	every_country = {
+		limit = { is_real_country = yes }
+		every_owned_location = {
+			limit = { bronze_city_prestige_is_urban = yes }
+			bronze_city_prestige_initialize_city = yes
+			bronze_city_prestige_recalculate_city = yes
+		}
 	}
 
 	# Bronze countries keep the update timer, but their capitals must still be

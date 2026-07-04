@@ -2,7 +2,27 @@
 # These legacy keys are not placed by the 1205 BCE setup; they only satisfy hardcoded vanilla references
 # in map templates, monuments, scripted triggers, and old saves so the database does not produce null religions.
 
+anglican = {
+	color = rgb { 85 85 85 }
+	group = bronze_legacy_reference_religion_group
+	definition_modifier = {
+	}
+	opinions = {
+	}
+	tags = { pagan_gfx }
+}
+
 a_fat_roog_religion = {
+	color = rgb { 85 85 85 }
+	group = bronze_legacy_reference_religion_group
+	definition_modifier = {
+	}
+	opinions = {
+	}
+	tags = { pagan_gfx }
+}
+
+bon = {
 	color = rgb { 85 85 85 }
 	group = bronze_legacy_reference_religion_group
 	definition_modifier = {
@@ -2683,6 +2703,89 @@ yuman_religion = {
 }
 
 yupik_shamanism = {
+	color = rgb { 85 85 85 }
+	group = bronze_legacy_reference_religion_group
+	definition_modifier = {
+	}
+	opinions = {
+	}
+	tags = { pagan_gfx }
+}
+
+# Extra compatibility-only IDs referenced by vanilla mechanics that are not used
+# by the Bronze Era setup. They keep old UI/actions/triggers from logging invalid
+# religion comparisons without restoring those religions as active content.
+buddhism = {
+	color = rgb { 85 85 85 }
+	group = bronze_legacy_reference_religion_group
+	definition_modifier = {
+	}
+	opinions = {
+	}
+	tags = { pagan_gfx }
+}
+
+ibadi = {
+	color = rgb { 85 85 85 }
+	group = bronze_legacy_reference_religion_group
+	definition_modifier = {
+	}
+	opinions = {
+	}
+	tags = { pagan_gfx }
+}
+
+inti = {
+	color = rgb { 85 85 85 }
+	group = bronze_legacy_reference_religion_group
+	definition_modifier = {
+	}
+	opinions = {
+	}
+	tags = { pagan_gfx }
+}
+
+judaism = {
+	color = rgb { 85 85 85 }
+	group = bronze_legacy_reference_religion_group
+	definition_modifier = {
+	}
+	opinions = {
+	}
+	tags = { pagan_gfx }
+}
+
+nahuatl = {
+	color = rgb { 85 85 85 }
+	group = bronze_legacy_reference_religion_group
+	definition_modifier = {
+	}
+	opinions = {
+	}
+	tags = { pagan_gfx }
+}
+
+tapu_religion = {
+	color = rgb { 85 85 85 }
+	group = bronze_legacy_reference_religion_group
+	definition_modifier = {
+	}
+	opinions = {
+	}
+	tags = { pagan_gfx }
+}
+
+vajrayana = {
+	color = rgb { 85 85 85 }
+	group = bronze_legacy_reference_religion_group
+	definition_modifier = {
+	}
+	opinions = {
+	}
+	tags = { pagan_gfx }
+}
+
+yazidism = {
 	color = rgb { 85 85 85 }
 	group = bronze_legacy_reference_religion_group
 	definition_modifier = {

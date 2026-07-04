@@ -7,8 +7,6 @@
 
   # PRODUCTION METHODS
 
-  dock_maintenance: "Ship Maintenance"
-  dock_maintenance_desc: "Timber, pitch, sails, tools, and skilled labor are continually required to maintain vessels, repair damage, and keep ships seaworthy throughout the sailing season."
 
   dock_maintenance: "Boat Maintenance"
   dock_maintenance_desc: "Timber, pitch, cloth, and tools are consumed in the upkeep of vessels, ensuring they remain serviceable for transport, trade, and communication."
