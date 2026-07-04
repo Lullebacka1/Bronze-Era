@@ -1,0 +1,17 @@
+trojan_war_wargoal = {
+    type = take_province
+    war_name = "TROJAN_WAR_NAME"
+    attacker = {
+        call_in_overlord = no
+        call_in_subjects = no
+        conquer_cost = 2
+        subjugate_cost = 2
+    }
+    defender = {
+        call_in_overlord = no
+        call_in_subjects = no
+        conquer_cost = 2
+        subjugate_cost = 2
+    }
+    ticking_war_score = 0.5
+}
