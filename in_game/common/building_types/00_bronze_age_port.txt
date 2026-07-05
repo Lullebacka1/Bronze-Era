@@ -6,7 +6,7 @@ bronze_dock = {
 
 	category = naval_category
 
-	employment_size = bronze_dock_employment
+	employment_size = stockade_employment
 
 	town = yes
 	city = yes
@@ -98,7 +98,7 @@ neolithic_dock = {
 
 	category = naval_category
 
-	employment_size = bronze_dock_employment
+	employment_size = stockade_employment
 
 	town = yes
 	city = no

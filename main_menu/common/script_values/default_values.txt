@@ -1052,7 +1052,7 @@ shipyard_employment = 					3.0
 grand_shipyard_employment = 			4.0
 naval_base_employment = 				5.0
 
-bronze_dock_employment =                0.2
+bronze_dock_employment = 				0.2
 
 
 
