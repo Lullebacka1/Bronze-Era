@@ -1,0 +1,12 @@
+on_game_start = {
+    effect = {
+        set_global_variable = {
+            name = anatolia_raid_success_count
+            value = 0
+        }
+		set_global_variable = {
+			name = anatolia_raid_failed_count
+			value = 0
+		}
+    }
+}

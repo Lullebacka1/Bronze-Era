@@ -153,3 +153,162 @@ bronze_legacy_reference_religion_group = {
 	allow_slaves_of_same_group = yes
 }
 
+# Compatibility-only vanilla groups. No Bronze Era setup assigns these groups
+# directly; they exist to keep vanilla triggers/localization from logging invalid
+# right-side comparisons after the medieval religions were removed.
+christian = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+muslim = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+israelite_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+buddhist = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+mandean_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+manichaean_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+zoroastrian_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_african_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_argentinian_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_aridoamerica_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_asian_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_australian_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_brazilian_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_caribbean_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_central_american_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_european_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_melanesian_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_micronesian_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_north_american_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_papuan_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_permic_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_peruvian_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_polynesian_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_se_asian_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+folk_south_american_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+tonal_group = {
+	color = rgb { 85 85 85 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+

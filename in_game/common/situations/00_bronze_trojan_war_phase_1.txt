@@ -1,6 +1,6 @@
 trojan_war_phase_1 = {
 	monthly_spawn_chance = {
-		value = 1
+		value = 100
 	}
 
 	can_start = {
@@ -20,7 +20,7 @@ trojan_war_phase_1 = {
 	}
 
 	end_conditions = {
-		current_date >= 14.1.1
+		
 	}
 
 	on_end = {

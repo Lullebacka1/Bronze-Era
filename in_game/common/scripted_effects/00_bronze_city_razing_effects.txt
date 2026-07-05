@@ -91,43 +91,8 @@ bronze_city_add_civilian_loss_warscore_from_unit = {
 	}
 }
 
-# Country scope. Used by event-started sack/raze actions. Player armies remain
-# movable so the player can flee; AI armies are locked to avoid leaving an
-# unfinished action stuck behind them.
-bronze_city_lock_ai_sack_army = {
-	if = {
-		limit = { is_ai = yes }
-		scope:bronze_captured_city ?= {
-			random_unit_in_location = {
-				limit = {
-					owner = root
-					is_army = yes
-					is_exiled = no
-				}
-				lock_unit = 16
-				set_variable = { name = bronze_city_locked_for_sack value = 1 days = 16 }
-			}
-		}
-	}
-}
-
-bronze_city_lock_ai_raze_army = {
-	if = {
-		limit = { is_ai = yes }
-		scope:bronze_captured_city ?= {
-			random_unit_in_location = {
-				limit = {
-					owner = root
-					is_army = yes
-					is_exiled = no
-				}
-				lock_unit = 16
-				set_variable = { name = bronze_city_locked_for_raze value = 1 days = 16 }
-			}
-		}
-	}
-}
-
+# Country scope. Compatibility cleanup for older saves where sack/raze could
+# leave a locked army variable behind. New actions do not lock units anymore.
 bronze_city_unlock_action_armies = {
 	scope:bronze_captured_city ?= {
 		every_unit_in_location = {
@@ -158,15 +123,15 @@ bronze_city_start_sack_effect = {
 				set_variable = {
 					name = bronze_city_active_sack
 					value = 1
-					days = 16
+					days = 14
 				}
+				set_variable = { name = bronze_city_sack_marker value = 1 }
 				add_location_modifier = {
 					modifier = bronze_city_being_sacked
-					days = 16
+					days = 14
 					mode = replace
 				}
 			}
-			bronze_city_lock_ai_sack_army = yes
 			trigger_event_non_silently = {
 				id = bronze_city_razing.2
 				days = 14
@@ -185,6 +150,7 @@ bronze_city_sack_interrupted_effect = {
 
 		scope:bronze_captured_city ?= {
 			remove_variable = bronze_city_active_sack
+			remove_variable = bronze_city_sack_marker
 			remove_location_modifier = bronze_city_being_sacked
 			add_location_modifier = {
 				modifier = bronze_city_recently_sacked
@@ -212,8 +178,7 @@ bronze_city_resolve_sack_effect = {
 	if = {
 		limit = {
 			scope:bronze_captured_city ?= {
-				controller = root
-				bronze_city_attacker_army_present = yes
+				bronze_city_action_can_complete_for_country = yes
 			}
 		}
 		bronze_city_sack_effect = yes
@@ -238,6 +203,7 @@ bronze_city_sack_effect = {
 
 		scope:bronze_captured_city ?= {
 			remove_variable = bronze_city_active_sack
+			remove_variable = bronze_city_sack_marker
 			remove_location_modifier = bronze_city_being_sacked
 			add_location_modifier = {
 				modifier = bronze_city_recently_sacked
@@ -282,21 +248,50 @@ bronze_city_start_raze_effect = {
 		custom_description = {
 			text = bronze_city_start_raze_effect_tt
 			scope:bronze_captured_city ?= {
-				set_variable = {
-					name = bronze_city_active_raze
-					value = 1
-					days = 16
+				if = {
+					limit = { location_rank = location_rank:megalopolis }
+					set_variable = {
+						name = bronze_city_active_raze
+						value = 1
+						months = 2
+					}
+					set_variable = { name = bronze_city_raze_marker value = 1 }
+					add_location_modifier = {
+						modifier = bronze_city_razing_underway
+						days = 60
+						mode = replace
+					}
 				}
-				add_location_modifier = {
-					modifier = bronze_city_razing_underway
-					days = 16
-					mode = replace
+				else = {
+					set_variable = {
+						name = bronze_city_active_raze
+						value = 1
+						months = 1
+					}
+					set_variable = { name = bronze_city_raze_marker value = 1 }
+					add_location_modifier = {
+						modifier = bronze_city_razing_underway
+						days = 30
+						mode = replace
+					}
 				}
 			}
-			bronze_city_lock_ai_raze_army = yes
-			trigger_event_non_silently = {
-				id = bronze_city_razing.3
-				days = 14
+			if = {
+				limit = {
+					scope:bronze_captured_city ?= {
+						location_rank = location_rank:megalopolis
+					}
+				}
+				trigger_event_non_silently = {
+					id = bronze_city_razing.3
+					months = 2
+				}
+			}
+			else = {
+				trigger_event_non_silently = {
+					id = bronze_city_razing.3
+					months = 1
+				}
 			}
 		}
 	}
@@ -308,17 +303,16 @@ bronze_city_start_raze_effect = {
 bronze_city_start_unit_sack_effect = {
 	custom_description = {
 		text = bronze_city_start_unit_sack_effect_tt
-		lock_unit = 16
-		set_variable = { name = bronze_city_locked_for_sack value = 1 days = 16 }
 		unit_location = {
 			set_variable = {
 				name = bronze_city_active_sack
 				value = 1
-				days = 16
+				days = 14
 			}
+			set_variable = { name = bronze_city_sack_marker value = 1 }
 			add_location_modifier = {
 				modifier = bronze_city_being_sacked
-				days = 16
+				days = 14
 				mode = replace
 			}
 		}
@@ -335,13 +329,10 @@ bronze_city_finish_unit_sack_effect = {
 	}
 	if = {
 		limit = {
-			in_combat = no
-			is_moving = no
 			is_exiled = no
-			in_siege = no
 			scope:bronze_captured_city ?= {
 				has_variable = bronze_city_active_sack
-				controller ?= { this = root.owner }
+				bronze_city_action_can_complete_for_unit_owner = yes
 			}
 		}
 		custom_description = {
@@ -360,6 +351,7 @@ bronze_city_finish_unit_sack_effect = {
 
 			scope:bronze_captured_city ?= {
 				remove_variable = bronze_city_active_sack
+				remove_variable = bronze_city_sack_marker
 				remove_location_modifier = bronze_city_being_sacked
 				add_location_modifier = {
 					modifier = bronze_city_recently_sacked
@@ -398,18 +390,33 @@ bronze_city_finish_unit_sack_effect = {
 bronze_city_start_unit_raze_effect = {
 	custom_description = {
 		text = bronze_city_start_unit_raze_effect_tt
-		lock_unit = 16
-		set_variable = { name = bronze_city_locked_for_raze value = 1 days = 16 }
 		unit_location = {
-			set_variable = {
-				name = bronze_city_active_raze
-				value = 1
-				days = 16
+			if = {
+				limit = { location_rank = location_rank:megalopolis }
+				set_variable = {
+					name = bronze_city_active_raze
+					value = 1
+					months = 2
+				}
+				set_variable = { name = bronze_city_raze_marker value = 1 }
+				add_location_modifier = {
+					modifier = bronze_city_razing_underway
+					days = 60
+					mode = replace
+				}
 			}
-			add_location_modifier = {
-				modifier = bronze_city_razing_underway
-				days = 16
-				mode = replace
+			else = {
+				set_variable = {
+					name = bronze_city_active_raze
+					value = 1
+					months = 1
+				}
+				set_variable = { name = bronze_city_raze_marker value = 1 }
+				add_location_modifier = {
+					modifier = bronze_city_razing_underway
+					days = 30
+					mode = replace
+				}
 			}
 		}
 	}
@@ -425,10 +432,7 @@ bronze_city_finish_unit_raze_effect = {
 	}
 	if = {
 		limit = {
-			in_combat = no
-			is_moving = no
 			is_exiled = no
-			in_siege = no
 			scope:bronze_captured_city ?= {
 				has_variable = bronze_city_active_raze
 			}
@@ -436,7 +440,7 @@ bronze_city_finish_unit_raze_effect = {
 		if = {
 			limit = {
 				scope:bronze_captured_city ?= {
-					controller ?= { this = root.owner }
+					bronze_city_action_can_complete_for_unit_owner = yes
 				}
 			}
 			bronze_city_raze_effect_from_unit = yes
@@ -454,6 +458,7 @@ bronze_city_raze_interrupted_effect_from_unit = {
 
 		scope:bronze_captured_city ?= {
 			remove_variable = bronze_city_active_raze
+			remove_variable = bronze_city_raze_marker
 			remove_location_modifier = bronze_city_razing_underway
 			add_location_modifier = {
 				modifier = bronze_city_recently_sacked
@@ -489,6 +494,19 @@ bronze_city_raze_effect_from_unit = {
 			add_prestige = prestige_mild_penalty
 			loot_location = scope:bronze_captured_city
 		}
+		scope:bronze_captured_city ?= {
+			if = {
+				limit = { has_variable = bronze_city_prestige_score }
+				set_variable = {
+					name = bronze_ruins_former_prestige
+					value = var:bronze_city_prestige_score
+				}
+			}
+			if = {
+				limit = { NOT = { has_variable = be_ruins_stats_generated } }
+				be_ruins_generate_stats_effect = yes
+			}
+		}
 		bronze_city_reduce_prestige_score = { value = 75 }
 		bronze_city_add_civilian_loss_warscore_from_unit = { amount = 5 }
 		if = {
@@ -512,6 +530,7 @@ bronze_city_raze_effect_from_unit = {
 
 		scope:bronze_captured_city ?= {
 			remove_variable = bronze_city_active_raze
+			remove_variable = bronze_city_raze_marker
 			remove_location_modifier = bronze_city_razing_underway
 			add_location_modifier = {
 				modifier = bronze_city_razed
@@ -529,6 +548,10 @@ bronze_city_raze_effect_from_unit = {
 					value = pop_size
 					multiply = -0.25
 				}
+			}
+			if = {
+				limit = { NOT = { has_variable = be_ruins_stats_generated } }
+				be_ruins_generate_stats_effect = yes
 			}
 			every_buildings_in_location = {
 				save_temporary_scope_as = bronze_city_target_building
@@ -572,6 +595,7 @@ bronze_city_raze_interrupted_effect = {
 
 		scope:bronze_captured_city ?= {
 			remove_variable = bronze_city_active_raze
+			remove_variable = bronze_city_raze_marker
 			remove_location_modifier = bronze_city_razing_underway
 			add_location_modifier = {
 				modifier = bronze_city_recently_sacked
@@ -599,8 +623,7 @@ bronze_city_resolve_raze_effect = {
 	if = {
 		limit = {
 			scope:bronze_captured_city ?= {
-				controller = root
-				bronze_city_attacker_army_present = yes
+				bronze_city_action_can_complete_for_country = yes
 			}
 		}
 		bronze_city_raze_effect = yes
@@ -621,6 +644,19 @@ bronze_city_raze_effect = {
 		}
 		add_prestige = prestige_mild_penalty
 		loot_location = scope:bronze_captured_city
+		scope:bronze_captured_city ?= {
+			if = {
+				limit = { has_variable = bronze_city_prestige_score }
+				set_variable = {
+					name = bronze_ruins_former_prestige
+					value = var:bronze_city_prestige_score
+				}
+			}
+			if = {
+				limit = { NOT = { has_variable = be_ruins_stats_generated } }
+				be_ruins_generate_stats_effect = yes
+			}
+		}
 		bronze_city_reduce_prestige_score = { value = 75 }
 		bronze_city_add_civilian_loss_warscore = { amount = 5 }
 		if = {
@@ -644,6 +680,7 @@ bronze_city_raze_effect = {
 
 		scope:bronze_captured_city ?= {
 			remove_variable = bronze_city_active_raze
+			remove_variable = bronze_city_raze_marker
 			remove_location_modifier = bronze_city_razing_underway
 			add_location_modifier = {
 				modifier = bronze_city_razed
@@ -661,6 +698,10 @@ bronze_city_raze_effect = {
 					value = pop_size
 					multiply = -0.25
 				}
+			}
+			if = {
+				limit = { NOT = { has_variable = be_ruins_stats_generated } }
+				be_ruins_generate_stats_effect = yes
 			}
 			every_buildings_in_location = {
 				save_temporary_scope_as = bronze_city_target_building
@@ -707,6 +748,8 @@ bronze_city_create_ancient_ruins_effect = {
 		set_variable = { name = bronze_ruins_destroyer value = root }
 		remove_variable = bronze_city_active_sack
 		remove_variable = bronze_city_active_raze
+		remove_variable = bronze_city_sack_marker
+		remove_variable = bronze_city_raze_marker
 		remove_location_modifier = bronze_city_being_sacked
 		remove_location_modifier = bronze_city_razing_underway
 		remove_location_modifier = bronze_city_recently_sacked
@@ -728,6 +771,10 @@ bronze_city_create_ancient_ruins_effect = {
 				name = bronze_ruins_former_prestige
 				value = var:bronze_city_prestige_score
 			}
+		}
+		if = {
+			limit = { NOT = { has_variable = be_ruins_stats_generated } }
+			be_ruins_generate_stats_effect = yes
 		}
 		add_location_modifier = {
 			modifier = bronze_ancient_ruins_location
@@ -753,6 +800,8 @@ bronze_city_create_ancient_ruins_from_unit_effect = {
 		set_variable = { name = bronze_ruins_destroyer value = root.owner }
 		remove_variable = bronze_city_active_sack
 		remove_variable = bronze_city_active_raze
+		remove_variable = bronze_city_sack_marker
+		remove_variable = bronze_city_raze_marker
 		remove_location_modifier = bronze_city_being_sacked
 		remove_location_modifier = bronze_city_razing_underway
 		remove_location_modifier = bronze_city_recently_sacked
@@ -774,6 +823,10 @@ bronze_city_create_ancient_ruins_from_unit_effect = {
 				name = bronze_ruins_former_prestige
 				value = var:bronze_city_prestige_score
 			}
+		}
+		if = {
+			limit = { NOT = { has_variable = be_ruins_stats_generated } }
+			be_ruins_generate_stats_effect = yes
 		}
 		add_location_modifier = {
 			modifier = bronze_ancient_ruins_location
@@ -800,10 +853,14 @@ bronze_ruins_start_expedition_effect = {
 				}
 			}
 			scope:bronze_ruins_site = {
-				set_variable = { name = bronze_ruins_expedition_underway value = 1 years = 2 }
+				if = {
+					limit = { NOT = { has_variable = be_ruins_stats_generated } }
+					be_ruins_generate_stats_effect = yes
+				}
+				set_variable = { name = bronze_ruins_expedition_underway value = 1 years = 3 }
 				add_location_modifier = {
 					modifier = bronze_ruins_expedition_camp
-					years = 2
+					years = 3
 					mode = add_and_extend
 				}
 			}
@@ -812,27 +869,73 @@ bronze_ruins_start_expedition_effect = {
 			random_owned_location = {
 				limit = { bronze_city_razing_explorable_ruin = yes }
 				save_scope_as = bronze_ruins_site
-				set_variable = { name = bronze_ruins_expedition_underway value = 1 years = 2 }
+				if = {
+					limit = { NOT = { has_variable = be_ruins_stats_generated } }
+					be_ruins_generate_stats_effect = yes
+				}
+				set_variable = { name = bronze_ruins_expedition_underway value = 1 years = 3 }
 				add_location_modifier = {
 					modifier = bronze_ruins_expedition_camp
-					years = 2
+					years = 3
 					mode = add_and_extend
 				}
 			}
 		}
-		trigger_event_non_silently = {
-			id = bronze_city_razing.10
-			days = 180
-		}
+		be_ruin_expedition_initialize_story_effect = yes
+		trigger_event_non_silently = { id = bronze_city_razing.20 days = 30 }
 	}
 }
 
 bronze_ruins_finish_expedition = {
-	random_owned_location = {
-		limit = { has_variable = bronze_ruins_expedition_underway }
-		save_scope_as = bronze_ruins_site
-		remove_variable = bronze_ruins_expedition_underway
-		set_variable = { name = bronze_ruins_explored value = 1 years = 25 }
-		remove_location_modifier = bronze_ruins_expedition_camp
+	if = {
+		limit = { has_variable = be_ruin_expeditions_active }
+		change_variable = { name = be_ruin_expeditions_active subtract = 1 }
+		if = {
+			limit = { var:be_ruin_expeditions_active < 0 }
+			set_variable = { name = be_ruin_expeditions_active value = 0 }
+		}
+	}
+	if = {
+		limit = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+		scope:bronze_ruins_site = {
+			remove_variable = bronze_ruins_expedition_underway
+			remove_variable = be_ruin_expedition_start_year
+			remove_variable = be_ruin_expedition_success_chance
+			remove_variable = be_ruin_expedition_artifact_chance
+			remove_variable = be_ruin_expedition_leader_profile
+			remove_variable = be_ruin_expedition_phase
+			remove_variable = be_ruin_expedition_progress
+			remove_variable = be_ruin_expedition_supplies
+			remove_variable = be_ruin_expedition_morale
+			remove_variable = be_ruin_expedition_reward_bonus
+			remove_variable = be_ruin_expedition_risk_bonus
+			remove_variable = be_ruin_expedition_story_events
+			remove_variable = be_ruin_expedition_remaining_months
+			be_ruin_expedition_clear_story_memory_effect = yes
+			set_variable = { name = bronze_ruins_explored value = 1 years = 25 }
+			remove_location_modifier = bronze_ruins_expedition_camp
+		}
+	}
+	else = {
+		random_owned_location = {
+			limit = { has_variable = bronze_ruins_expedition_underway }
+			save_scope_as = bronze_ruins_site
+			remove_variable = bronze_ruins_expedition_underway
+			remove_variable = be_ruin_expedition_start_year
+			remove_variable = be_ruin_expedition_success_chance
+			remove_variable = be_ruin_expedition_artifact_chance
+			remove_variable = be_ruin_expedition_leader_profile
+			remove_variable = be_ruin_expedition_phase
+			remove_variable = be_ruin_expedition_progress
+			remove_variable = be_ruin_expedition_supplies
+			remove_variable = be_ruin_expedition_morale
+			remove_variable = be_ruin_expedition_reward_bonus
+			remove_variable = be_ruin_expedition_risk_bonus
+			remove_variable = be_ruin_expedition_story_events
+			remove_variable = be_ruin_expedition_remaining_months
+			be_ruin_expedition_clear_story_memory_effect = yes
+			set_variable = { name = bronze_ruins_explored value = 1 years = 25 }
+			remove_location_modifier = bronze_ruins_expedition_camp
+		}
 	}
 }

@@ -169,7 +169,7 @@
  sea_peoples_crisis.10.a: "La faim se propage."
  sea_peoples_crisis.10.b: "Depenser du prestige pour maintenir les rations."
  sea_peoples_crisis.20.title: "Raideurs venus de la mer"
- sea_peoples_crisis.20.desc: "De longs navires ont ete apercus au large de [scope:target_location.GetName]. Les gardes courent vers la plage, les paysans cachent le grain et les marchands retirent les cargaisons de bronze des quais. Forts, armees cotieres et patrouilles navales peuvent briser l'attaque, mais une cote faible peut bruler avant que le palais ne reponde."
+ sea_peoples_crisis.20.desc: "De longs navires ont ete apercus au large de la cote. Les gardes courent vers la plage, les paysans cachent le grain et les marchands retirent les cargaisons de bronze des quais. Forts, armees cotieres et patrouilles navales peuvent briser l'attaque, mais une cote faible peut bruler avant que le palais ne reponde."
  sea_peoples_crisis.20.a: "La cote brule."
  sea_peoples_crisis.20.b: "Lever des gardes de port et des patrouilles navales."
  sea_peoples_crisis_20_unprepared_tt: "Un raid va tester la cote. Les defenses portuaires existantes, les palais fortifies, les forts, les armees cotieres et une marine peuvent encore le repousser."

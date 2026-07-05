@@ -21,7 +21,7 @@ raid_on_anatolia_gui = {
 			value = yes
 			months = 6 
 		}
-		add_manpower_pool = -250
+		add_manpower = -0.250
 		add_gold = -50	
 		# If the raid is successful, 80% chance, otherwise 20% chance for failure. Success chance is reduced if Wilusa has defended their coastline.
 		random_list = {
@@ -55,7 +55,7 @@ raid_on_anatolia_gui = {
 					modifier = trojan_war_raid_on_anatolia_success
 					months = 12
 				}
-				trigger_event_non_silently = { id = trojan_war_raid_on_anatolia_success }
+				trigger_event_non_silently = trojan_war_raid_on_anatolia_success.1 
 			}
 
 			20 = {
@@ -88,7 +88,7 @@ raid_on_anatolia_gui = {
 					months = 12
 					
 				}
-				trigger_event_non_silently = { id = trojan_war_raid_on_anatolia_failed }
+				trigger_event_non_silently = trojan_war_raid_on_anatolia_failed.1 
 			}
 		}
 
@@ -133,9 +133,9 @@ is_valid = {
 			modifier = anatolia_coastline_is_defend
 			months = 6
 		}
-		add_manpower_pool = -150
+		add_manpower_pool = -0.150
 		add_gold = -25
-		trigger_event_non_silently = { id = anatolia_coastline_is_defend } 
+		trigger_event_non_silently = { id = anatolia_coastline_is_defend.1 }  
 	}
 
 	ai_is_valid = { always = no }

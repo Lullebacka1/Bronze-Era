@@ -1,0 +1,1239 @@
+namespace = bronze_city_razing
+
+# Bronze Era - Narrative Ruins Expeditions
+# These events extend the existing expedition backend. Each event expects
+# scope:bronze_ruins_site to point at the ruin location.
+#
+# Keep option effects inside hidden_effect. Otherwise EU5 expands the full
+# random follow-up chain in option tooltips, causing heavy hover lag.
+#
+# Static placeholder event art is one DDS per event under:
+# main_menu/gfx/interface/illustrations/event/backgrounds/bronze_era/
+# Replace the matching DDS later to change only that event image.
+
+bronze_city_razing.20 = {
+	type = country_event
+	title = bronze_city_razing.20.title
+	desc = bronze_city_razing.20.desc
+	outcome = neutral
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_20_stores_seals_and_orders.dds"
+
+	trigger = {
+		scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway }
+	}
+
+	option = {
+		name = bronze_city_razing.20.a
+		custom_tooltip = bronze_city_razing_20a_tt
+		hidden_effect = {
+					add_gold = -20
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_supplies add = 20 }
+						change_variable = { name = be_ruin_expedition_morale add = 5 }
+					}
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+
+	option = {
+		name = bronze_city_razing.20.b
+		custom_tooltip = bronze_city_razing_20b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_reckless value = 1 }
+						change_variable = { name = be_ruin_expedition_supplies subtract = 10 }
+						change_variable = { name = be_ruin_expedition_morale subtract = 5 }
+					}
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+
+	option = {
+		name = bronze_city_razing.20.c
+		custom_tooltip = bronze_city_razing_20c_tt
+		hidden_effect = {
+					add_gold = -15
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+						change_variable = { name = be_ruin_expedition_supplies add = 5 }
+					}
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.21 = {
+	type = country_event
+	title = bronze_city_razing.21.title
+	desc = bronze_city_razing.21.desc
+	outcome = neutral
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_21_road_to_the_ruins.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.21.a
+		custom_tooltip = bronze_city_razing_21a_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_cautious value = 1 } }
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.21.b
+		custom_tooltip = bronze_city_razing_21b_tt
+		hidden_effect = {
+					add_manpower_pool = -30
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_reckless value = 1 }
+						change_variable = { name = be_ruin_expedition_supplies subtract = 15 }
+					}
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.21.c
+		custom_tooltip = bronze_city_razing_21c_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_respectful value = 1 }
+						change_variable = { name = be_ruin_expedition_morale add = 8 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 3 }
+					}
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.22 = {
+	type = country_event
+	title = bronze_city_razing.22.title
+	desc = bronze_city_razing.22.desc
+	outcome = neutral
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_22_unknown_chamber.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.22.a
+		custom_tooltip = bronze_city_razing_22a_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_archive value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.22.b
+		custom_tooltip = bronze_city_razing_22b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_reckless value = 1 }
+						set_variable = { name = be_ruin_found_treasury value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.22.c
+		custom_tooltip = bronze_city_razing_22c_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_respectful value = 1 } }
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.23 = {
+	type = country_event
+	title = bronze_city_razing.23.title
+	desc = bronze_city_razing.23.desc
+	outcome = negative
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_23_stone_and_dust.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.23.a
+		custom_tooltip = bronze_city_razing_23a_tt
+		hidden_effect = {
+					add_manpower_pool = -50
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_collapse value = 1 }
+						set_variable = { name = be_ruin_expedition_respectful value = 1 }
+						change_variable = { name = be_ruin_expedition_morale add = 8 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.23.b
+		custom_tooltip = bronze_city_razing_23b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_collapse value = 1 }
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_morale subtract = 10 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.23.c
+		custom_tooltip = bronze_city_razing_23c_tt
+		hidden_effect = {
+					add_manpower_pool = -25
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_collapse value = 1 }
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.24 = {
+	type = country_event
+	title = bronze_city_razing.24.title
+	desc = bronze_city_razing.24.desc
+	outcome = neutral
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_24_claimants_in_the_ruins.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.24.a
+		custom_tooltip = bronze_city_razing_24a_tt
+		hidden_effect = {
+					add_gold = -15
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_bandits value = 1 }
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+					}
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.24.b
+		custom_tooltip = bronze_city_razing_24b_tt
+		hidden_effect = {
+					add_manpower_pool = -40
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_bandits value = 1 }
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.24.c
+		custom_tooltip = bronze_city_razing_24c_tt
+		hidden_effect = {
+					add_gold = -25
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_tunnel value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.25 = {
+	type = country_event
+	title = bronze_city_razing.25.title
+	desc = bronze_city_razing.25.desc
+	outcome = positive
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_25_first_discovery.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.25.a
+		custom_tooltip = bronze_city_razing_25a_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_archive value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.25.b
+		custom_tooltip = bronze_city_razing_25b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_treasury value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.25.c
+		custom_tooltip = bronze_city_razing_25c_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_respectful value = 1 }
+						set_variable = { name = be_ruin_found_sanctuary value = 1 }
+						change_variable = { name = be_ruin_expedition_artifact_chance add = 5 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.26 = {
+	type = country_event
+	title = bronze_city_razing.26.title
+	desc = bronze_city_razing.26.desc
+	outcome = neutral
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_26_sealed_door.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.26.a
+		custom_tooltip = bronze_city_razing_26a_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_reckless value = 1 }
+						set_variable = { name = be_ruin_found_treasury value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.26.b
+		custom_tooltip = bronze_city_razing_26b_tt
+		hidden_effect = {
+					add_manpower_pool = -60
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+						set_variable = { name = be_ruin_found_tunnel value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.26.c
+		custom_tooltip = bronze_city_razing_26c_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_morale subtract = 5 }
+					}
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.27 = {
+	type = country_event
+	title = bronze_city_razing.27.title
+	desc = bronze_city_razing.27.desc
+	outcome = negative
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_27_foreign_eyes.dds"
+
+	trigger = {
+		scope:bronze_ruins_site ?= {
+			has_variable = bronze_ruins_expedition_underway
+			exists = owner
+			NOT = { owner = root }
+		}
+	}
+
+	option = {
+		name = bronze_city_razing.27.a
+		custom_tooltip = bronze_city_razing_27a_tt
+		hidden_effect = {
+					add_gold = -30
+					scope:bronze_ruins_site.owner = { add_opinion = { target = root modifier = opinion_good_relations } }
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_respectful value = 1 } }
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.27.b
+		custom_tooltip = bronze_city_razing_27b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site.owner = { add_opinion = { target = root modifier = opinion_irritated } }
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_greedy value = 1 } }
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.27.c
+		custom_tooltip = bronze_city_razing_27c_tt
+		hidden_effect = {
+					add_prestige = prestige_weak_penalty
+					bronze_ruins_finish_expedition = yes
+		}
+	}
+}
+
+bronze_city_razing.28 = {
+	type = country_event
+	title = bronze_city_razing.28.title
+	desc = bronze_city_razing.28.desc
+	outcome = negative
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_28_stores_run_low.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.28.a
+		custom_tooltip = bronze_city_razing_28a_tt
+		hidden_effect = {
+					add_gold = -40
+					scope:bronze_ruins_site = {
+						change_variable = { name = be_ruin_expedition_supplies add = 30 }
+						change_variable = { name = be_ruin_expedition_morale add = 5 }
+					}
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.28.b
+		custom_tooltip = bronze_city_razing_28b_tt
+		hidden_effect = {
+					be_ruins_dynamic_negative_reward_effect = yes
+					bronze_ruins_finish_expedition = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.28.c
+		custom_tooltip = bronze_city_razing_28c_tt
+		hidden_effect = {
+					add_manpower_pool = -80
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_reckless value = 1 } }
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.30 = {
+	type = country_event
+	title = bronze_city_razing.30.title
+	desc = bronze_city_razing.30.desc
+	outcome = positive
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_30_royal_quarter.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.30.a
+		custom_tooltip = bronze_city_razing_30a_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_palace value = 1 }
+						set_variable = { name = be_ruin_found_archive value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.30.b
+		custom_tooltip = bronze_city_razing_30b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_palace value = 1 }
+						set_variable = { name = be_ruin_found_treasury value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.30.c
+		custom_tooltip = bronze_city_razing_30c_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_respectful value = 1 }
+						set_variable = { name = be_ruin_found_palace value = 1 }
+						change_variable = { name = be_ruin_expedition_artifact_chance add = 5 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.31 = {
+	type = country_event
+	title = bronze_city_razing.31.title
+	desc = bronze_city_razing.31.desc
+	outcome = positive
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_31_archive_room.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.31.a
+		custom_tooltip = bronze_city_razing_31a_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_archive value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.31.b
+		custom_tooltip = bronze_city_razing_31b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_archive value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.31.c
+		custom_tooltip = bronze_city_razing_31c_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						set_variable = { name = be_ruin_found_archive value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.32 = {
+	type = country_event
+	title = bronze_city_razing.32.title
+	desc = bronze_city_razing.32.desc
+	outcome = positive
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_32_royal_tomb.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.32.a
+		custom_tooltip = bronze_city_razing_32a_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_respectful value = 1 }
+						set_variable = { name = be_ruin_found_tomb value = 1 }
+						change_variable = { name = be_ruin_expedition_artifact_chance add = 10 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.32.b
+		custom_tooltip = bronze_city_razing_32b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_tomb value = 1 }
+						set_variable = { name = be_ruin_found_treasury value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.32.c
+		custom_tooltip = bronze_city_razing_32c_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+						set_variable = { name = be_ruin_found_tomb value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.33 = {
+	type = country_event
+	title = bronze_city_razing.33.title
+	desc = bronze_city_razing.33.desc
+	outcome = positive
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_33_harbor_warehouses.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.33.a
+		custom_tooltip = bronze_city_razing_33a_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_warehouse value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.33.b
+		custom_tooltip = bronze_city_razing_33b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_warehouse value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.33.c
+		custom_tooltip = bronze_city_razing_33c_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+					}
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.34 = {
+	type = country_event
+	title = bronze_city_razing.34.title
+	desc = bronze_city_razing.34.desc
+	outcome = positive
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_34_buried_ship_cargo.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.34.a
+		custom_tooltip = bronze_city_razing_34a_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						set_variable = { name = be_ruin_found_ship_cargo value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.34.b
+		custom_tooltip = bronze_city_razing_34b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_ship_cargo value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.34.c
+		custom_tooltip = bronze_city_razing_34c_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_archive value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.35 = {
+	type = country_event
+	title = bronze_city_razing.35.title
+	desc = bronze_city_razing.35.desc
+	outcome = positive
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_35_inner_sanctuary.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.35.a
+		custom_tooltip = bronze_city_razing_35a_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_respectful value = 1 }
+						set_variable = { name = be_ruin_found_sanctuary value = 1 }
+						change_variable = { name = be_ruin_expedition_artifact_chance add = 8 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.35.b
+		custom_tooltip = bronze_city_razing_35b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_sanctuary value = 1 }
+						change_variable = { name = be_ruin_expedition_artifact_chance add = 15 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.35.c
+		custom_tooltip = bronze_city_razing_35c_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_sanctuary value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.36 = {
+	type = country_event
+	title = bronze_city_razing.36.title
+	desc = bronze_city_razing.36.desc
+	outcome = positive
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_36_armory.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.36.a
+		custom_tooltip = bronze_city_razing_36a_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_armory value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.36.b
+		custom_tooltip = bronze_city_razing_36b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+						set_variable = { name = be_ruin_found_armory value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.36.c
+		custom_tooltip = bronze_city_razing_36c_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 5 }
+					}
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.37 = {
+	type = country_event
+	title = bronze_city_razing.37.title
+	desc = bronze_city_razing.37.desc
+	outcome = positive
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_37_workshop_street.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.37.a
+		custom_tooltip = bronze_city_razing_37a_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_workshop value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.37.b
+		custom_tooltip = bronze_city_razing_37b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						set_variable = { name = be_ruin_found_workshop value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_reward_quality_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.37.c
+		custom_tooltip = bronze_city_razing_37c_tt
+		hidden_effect = {
+					add_gold = -20
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						set_variable = { name = be_ruin_found_workshop value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 8 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.38 = {
+	type = country_event
+	title = bronze_city_razing.38.title
+	desc = bronze_city_razing.38.desc
+	outcome = neutral
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_38_hidden_passage.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.38.a
+		custom_tooltip = bronze_city_razing_38a_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						set_variable = { name = be_ruin_found_tunnel value = 1 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_add_knowledge_quality_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.38.b
+		custom_tooltip = bronze_city_razing_38b_tt
+		hidden_effect = {
+					add_manpower_pool = -35
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+						set_variable = { name = be_ruin_found_tunnel value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 6 }
+					}
+					be_ruin_expedition_record_discovery_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.38.c
+		custom_tooltip = bronze_city_razing_38c_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_cautious value = 1 } }
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.39 = {
+	type = country_event
+	title = bronze_city_razing.39.title
+	desc = bronze_city_razing.39.desc
+	outcome = negative
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_39_fire_in_camp.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.39.a
+		custom_tooltip = bronze_city_razing_39a_tt
+		hidden_effect = {
+					add_manpower_pool = -45
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_fire value = 1 }
+						set_variable = { name = be_ruin_expedition_respectful value = 1 }
+						change_variable = { name = be_ruin_expedition_supplies subtract = 10 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.39.b
+		custom_tooltip = bronze_city_razing_39b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_fire value = 1 }
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_morale subtract = 8 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.39.c
+		custom_tooltip = bronze_city_razing_39c_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_fire value = 1 }
+						set_variable = { name = be_ruin_expedition_reckless value = 1 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.40 = {
+	type = country_event
+	title = bronze_city_razing.40.title
+	desc = bronze_city_razing.40.desc
+	outcome = negative
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_40_raiders_in_the_ruins.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.40.a
+		custom_tooltip = bronze_city_razing_40a_tt
+		hidden_effect = {
+					add_gold = -20
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_bandits value = 1 }
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 4 }
+					}
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.40.b
+		custom_tooltip = bronze_city_razing_40b_tt
+		hidden_effect = {
+					add_manpower_pool = -55
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_bandits value = 1 }
+						set_variable = { name = be_ruin_expedition_military value = 1 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.40.c
+		custom_tooltip = bronze_city_razing_40c_tt
+		hidden_effect = {
+					add_gold = -30
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_bandits value = 1 }
+						set_variable = { name = be_ruin_expedition_greedy value = 1 }
+						change_variable = { name = be_ruin_expedition_success_chance add = 8 }
+					}
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.41 = {
+	type = country_event
+	title = bronze_city_razing.41.title
+	desc = bronze_city_razing.41.desc
+	outcome = negative
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_41_flooded_passages.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.41.a
+		custom_tooltip = bronze_city_razing_41a_tt
+		hidden_effect = {
+					add_manpower_pool = -35
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_flood value = 1 }
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+						change_variable = { name = be_ruin_expedition_supplies subtract = 8 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.41.b
+		custom_tooltip = bronze_city_razing_41b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_flood value = 1 }
+						set_variable = { name = be_ruin_expedition_cautious value = 1 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_lower_risk_effect = yes
+					be_ruin_expedition_cautious_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.41.c
+		custom_tooltip = bronze_city_razing_41c_tt
+		hidden_effect = {
+					add_manpower_pool = -70
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_complication_flood value = 1 }
+						set_variable = { name = be_ruin_expedition_reckless value = 1 }
+					}
+					be_ruin_expedition_record_complication_effect = yes
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+}
+
+bronze_city_razing.42 = {
+	type = country_event
+	title = bronze_city_razing.42.title
+	desc = bronze_city_razing.42.desc
+	outcome = neutral
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_42_silent_district.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	option = {
+		name = bronze_city_razing.42.a
+		custom_tooltip = bronze_city_razing_42a_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = {
+						set_variable = { name = be_ruin_expedition_scholarly value = 1 }
+						change_variable = { name = be_ruin_expedition_supplies subtract = 5 }
+					}
+					be_ruin_expedition_minor_progress_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.42.b
+		custom_tooltip = bronze_city_razing_42b_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_reckless value = 1 } }
+					be_ruin_expedition_major_progress_effect = yes
+					be_ruin_expedition_raise_risk_effect = yes
+					be_ruin_expedition_schedule_next_story_event_effect = yes
+		}
+	}
+	option = {
+		name = bronze_city_razing.42.c
+		custom_tooltip = bronze_city_razing_42c_tt
+		hidden_effect = {
+					scope:bronze_ruins_site = { set_variable = { name = be_ruin_expedition_cautious value = 1 } }
+					trigger_event_non_silently = { id = bronze_city_razing.29 days = 20 }
+		}
+	}
+}
+
+bronze_city_razing.29 = {
+	type = country_event
+	title = bronze_city_razing.29.title
+	desc = bronze_city_razing.29.desc
+	outcome = positive
+
+	image = "gfx/interface/illustrations/event/backgrounds/bronze_era/be_ruins_29_expedition_returns.dds"
+
+	trigger = { scope:bronze_ruins_site ?= { has_variable = bronze_ruins_expedition_underway } }
+
+	immediate = {
+		hidden_effect = { be_ruin_expedition_prepare_final_rewards_effect = yes }
+	}
+
+	option = {
+		name = bronze_city_razing.29.a
+		custom_tooltip = bronze_city_razing_29a_tt
+		be_ruin_expedition_apply_final_story_rewards_effect = yes
+		if = {
+			limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_gold_reward } }
+			be_ruins_dynamic_gold_reward_effect = yes
+		}
+		if = {
+			limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_knowledge_reward } }
+			be_ruins_dynamic_knowledge_reward_effect = yes
+		}
+		if = {
+			limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_negative_reward } }
+			be_ruins_dynamic_negative_reward_effect = yes
+		}
+		if = {
+			limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_artifact_unique } }
+			custom_tooltip = be_ruin_final_artifact_unique_tt
+			add_prestige = prestige_severe_bonus
+		}
+		else_if = {
+			limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_artifact_rare } }
+			custom_tooltip = be_ruin_final_artifact_rare_tt
+		}
+		else_if = {
+			limit = { scope:bronze_ruins_site ?= { has_variable = be_ruin_final_artifact_common } }
+			custom_tooltip = be_ruin_final_artifact_common_tt
+		}
+		hidden_effect = {
+			be_ruin_expedition_apply_final_artifact_reward_effect = yes
+			bronze_ruins_finish_expedition = yes
+		}
+	}
+}
