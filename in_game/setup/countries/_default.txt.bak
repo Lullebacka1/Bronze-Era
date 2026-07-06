@@ -2059,3 +2059,18 @@ MUMUN = {
 	color = rgb { 96 105 151 }
 	color2 = rgb { 110 27 27 }
 }
+
+APAL = {
+	color = rgb { 28 93 196 }
+	color2 = rgb { 65 63 198 }
+}
+
+OSTER = {
+	color = rgb { 35 209 111 }
+	color2 = rgb { 68 24 82 }
+}
+
+VOLD = {
+	color = rgb { 223 38 102 }
+	color2 = rgb { 169 45 111 }
+}

@@ -11794,10 +11794,11 @@ countries = {
 		culture = mumun
 		religion = mumun_rites
 		country_rank = rank_county
-		own_control_core = {
-			geoje     hadong    hapcheon  jinju     namhae    sacheon
-			uian
-		}
+	own_control_core = {
+		geochang  geoje     gokseong  hadong    hapcheon  jinju
+		mupung    namhae    namwon    sacheon   seongju   suncheon
+		uian
+	}
 		capital = sacheon
 		include = "neolithic_asian"
 		government = {
@@ -11868,6 +11869,72 @@ countries = {
 		}
 		discovered_regions = {
 			scandinavian_region
+		}
+	}
+
+	PANLO = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			hanyang   jiangxia  jiayu     jinkou    wuchang
+		}
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	SHANG = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_kingdom
+		own_control_core = {
+			baima_daming         changge              changshe             changyuan            chaocheng            dancheng
+			dengfeng             dongming             fanxian              fengqiu              fugou                gongxian
+			guancheng_zhengzhou  jiyin                juancheng            kaifeng              kaocheng             lanyang
+			linying              luoyang              mengjin              mianchi              mixian               nanle
+			neihuang             puyang               qingfeng             qixian               shanxian             shouzhang
+			taikang              tongxu               wanqiu               weishi               wuzhi                xiangyi
+			xihua                xinan                xingyang             xinxiang             xinzheng             xucheng
+			yangdi               yanggu_yanzhou       yanjin               yanling              yanshi               yique
+			yiyang               yongning_shanzhou    yuanyang             yuncheng             zhongmu
+		}
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	TAMN = {
+		culture = tamna
+		religion = mumun_rites
+		country_rank = rank_county
+		own_control_core = {
+			seongwi  tamna
+		}
+		capital = tamna
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			tamna
+		}
+		discovered_regions = {
+			korea_region
 		}
 	}
 }

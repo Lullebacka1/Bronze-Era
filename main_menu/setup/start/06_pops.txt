@@ -53399,14 +53399,44 @@ gokseong = {
 	define_pop = {	type = peasants	size = 1.000	culture = mumun	religion = mumun_rites }
 }
 tamna = {
-	define_pop = {	type = nobles	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = nobles
+		size = 0.025
+		culture = tamna
+		religion = mumun_rites
+	}
+	define_pop = {
+		type = clergy
+		size = 0.025
+		culture = tamna
+		religion = mumun_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 2.451
+		culture = tamna
+		religion = mumun_rites
+	}
 }
 seongwi = {
-	define_pop = {	type = nobles	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = nobles
+		size = 0.025
+		culture = tamna
+		religion = mumun_rites
+	}
+	define_pop = {
+		type = clergy
+		size = 0.025
+		culture = tamna
+		religion = mumun_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 2.451
+		culture = tamna
+		religion = mumun_rites
+	}
 }
 haeju = {
 	define_pop = {	type = clergy	size = 0.010	culture = mumun	religion = mumun_rites }
