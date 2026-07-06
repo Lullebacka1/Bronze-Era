@@ -2089,3 +2089,18 @@ TAMN = {
 	color = rgb { 161 144 58 }
 	color2 = rgb { 76 83 24 }
 }
+
+OLA = {
+	color = rgb { 152 53 182 }
+	color2 = rgb { 68 24 82 }
+}
+
+OPES = {
+	color = rgb { 182 53 147 }
+	color2 = rgb { 83 24 61 }
+}
+
+OSUN = {
+	color = rgb { 91 182 53 }
+	color2 = rgb { 37 83 24 }
+}

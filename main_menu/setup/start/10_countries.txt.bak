@@ -11794,10 +11794,11 @@ countries = {
 		culture = mumun
 		religion = mumun_rites
 		country_rank = rank_county
-		own_control_core = {
-			geoje     hadong    hapcheon  jinju     namhae    sacheon
-			uian
-		}
+	own_control_core = {
+		geochang  geoje     gokseong  hadong    hapcheon  jinju
+		mupung    namhae    namwon    sacheon   seongju   suncheon
+		uian
+	}
 		capital = sacheon
 		include = "neolithic_asian"
 		government = {

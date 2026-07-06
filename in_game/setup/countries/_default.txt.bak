@@ -2074,3 +2074,18 @@ VOLD = {
 	color = rgb { 223 38 102 }
 	color2 = rgb { 169 45 111 }
 }
+
+PANLO = {
+	color = rgb { 61 153 199 }
+	color2 = rgb { 53 176 192 }
+}
+
+SHANG = {
+	color = rgb { 214 149 234 }
+	color2 = rgb { 68 24 82 }
+}
+
+TAMN = {
+	color = rgb { 161 144 58 }
+	color2 = rgb { 76 83 24 }
+}

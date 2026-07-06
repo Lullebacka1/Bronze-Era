@@ -77291,30 +77291,100 @@ wiang_sa = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = austroasiatic	religion = austroasiatic_rites }
 }
 gelanggi = {
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = austroasiatic	religion = austroasiatic_rites }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = austronesian
+		religion = austronesian_rites
+	}
 }
 johor_lama = {
 	define_pop = {	type = clergy	size = 0.010	culture = austronesian	religion = austronesian_rites }
 	define_pop = {	type = peasants	size = 1.000	culture = austronesian	religion = austronesian_rites }
 }
 malacca = {
-	define_pop = {	type = clergy	size = 0.010	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = austroasiatic	religion = austroasiatic_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = austronesian
+		religion = austronesian_rites
+	}
 }
 muar = {
-	define_pop = {	type = clergy	size = 0.010	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = austroasiatic	religion = austroasiatic_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = austronesian
+		religion = austronesian_rites
+	}
 }
 rantau_panjang = {
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = austroasiatic	religion = austroasiatic_rites }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = austronesian
+		religion = austronesian_rites
+	}
 }
 temasek = {
 	define_pop = {	type = nobles	size = 0.010	culture = austronesian	religion = austronesian_rites }
@@ -77374,26 +77444,96 @@ pahang = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = austronesian	religion = austronesian_rites }
 }
 bera = {
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = austroasiatic	religion = austroasiatic_rites }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = austronesian
+		religion = austronesian_rites
+	}
 }
 jerantut = {
-	define_pop = {	type = clergy	size = 0.010	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = austroasiatic	religion = austroasiatic_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = austronesian
+		religion = austronesian_rites
+	}
 }
 kuala_lipis = {
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = austroasiatic	religion = austroasiatic_rites }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = austronesian
+		religion = austronesian_rites
+	}
 }
 kuantan = {
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = austroasiatic	religion = austroasiatic_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = austroasiatic	religion = austroasiatic_rites }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = austronesian
+		religion = austronesian_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = austronesian
+		religion = austronesian_rites
+	}
 }
 klang = {
 	define_pop = {	type = clergy	size = 0.010	culture = austronesian	religion = austronesian_rites }
