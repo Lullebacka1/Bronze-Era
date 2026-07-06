@@ -11810,5 +11810,65 @@ countries = {
 			korea_region
 		}
 	}
+
+	APAL = {
+		culture = nordic
+		religion = norse
+		country_rank = rank_county
+		own_control_core = {
+			arboga      enkoping    oppunda     sodertalje  stockholm   strangnas
+			vasteras
+		}
+		capital = enkoping
+		include = "bronze_nodic_age"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			nordic
+		}
+		discovered_regions = {
+			scandinavian_region
+		}
+	}
+
+	OSTER = {
+		culture = nordic
+		religion = norse
+		country_rank = rank_county
+		own_control_core = {
+			alvastra     linkoping    norrkoping   soderkoping  vadstena
+		}
+		include = "bronze_nordic_age"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			nordic
+		}
+		discovered_regions = {
+			scandinavian_region
+		}
+	}
+
+	VOLD = {
+		culture = jutlandic
+		religion = norse
+		country_rank = rank_county
+		own_control_core = {
+			assens     odense     svendborg
+		}
+		capital = svendborg
+		include = "bronze_nordic_age"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			nordic
+		}
+		discovered_regions = {
+			scandinavian_region
+		}
+	}
 }
 }

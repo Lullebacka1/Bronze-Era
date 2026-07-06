@@ -1763,12 +1763,12 @@ nicobarese_religion = {
 }
 
 norse = {
-	color = rgb { 52 84 213 }
+	color = rgb { 85 85 85 }
 	group = bronze_legacy_reference_religion_group
-		definition_modifier = {
-		}
-		opinions = {
-		}
+	definition_modifier = {
+	}
+	opinions = {
+	}
 	tags = { pagan_gfx }
 }
 
