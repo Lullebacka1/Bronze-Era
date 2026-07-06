@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
   palace_economy_advance: "Palace Economy"
   palace_economy_advance_desc: "The palace economy is a system of economic organization in which the ruling elite, often centered around a palace or royal court, controls and manages the production and distribution of goods and resources."
 
@@ -415,10 +415,12 @@ l_english:
   cyclopean_walls_advance: "Cyclopean Masonry"
   cyclopean_walls_advance_desc: "Master builders learn to erect colossal fortifications from immense, irregular stone blocks. These monumental walls protect royal citadels while proclaiming the wealth, authority, and engineering prowess of the ruling dynasty."
 
+  myrmidones_unlock_advance: "Myrmidones"
+  myrmidones_unlock_advance_desc: "Elite household companions bound by oath and tradition come to be known as the Myrmidones. Celebrated in later heroic tradition for their discipline and steadfastness, they represent the ideal of the aristocratic warrior retinue."
+
 # ####################
 # GOVERNMENT SPECIFIC
 # ####################
 
   centralized_administration: "Centralized Administration"
   centralized_administration_desc: "Rather than relying upon negotiation between competing local interests, authority is increasingly exercised through institutions answerable to the ruler. The concentration of administrative power allows the monarchy to coordinate the movement of food, labor, and supplies across the realm with greater efficiency."
-

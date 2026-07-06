@@ -150,3 +150,12 @@ expensive_heavy_chariot_maintenance = {
 	tools = 0.2
 	category = regiment_maintenance
 }
+
+# UNIQUES
+
+myrmidones_maintenance = {
+	weaponry = 0.02
+	leather = 0.015
+	cloth = 0.015
+	category = regiment_maintenance
+}

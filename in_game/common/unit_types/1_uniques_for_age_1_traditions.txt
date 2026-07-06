@@ -1,4 +1,31 @@
-﻿a_villagers = {
+﻿a_myrmidones = {
+	copy_from = a_bronze_age_1_traditions_heavy_infantry
+	is_special = yes
+
+	upgrades_to = a_footmen
+
+	strength_damage_taken = -0.025
+	morale_damage_taken = -0.05
+
+ 	location_potential = {
+ 		dominant_culture = culture:aeolian
+ 	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.05
+	}
+	
+	maintenance_demand = myrmidones_maintenance
+	construction_demand = spearmen_infantry_construction
+
+	gfx_tags = { light_tag }
+}
+
+# VANILLA UNIQUES
+
+a_villagers = {
 	copy_from = a_age_1_traditions_light_infantry
 
 	strength_damage_taken = 0.2
