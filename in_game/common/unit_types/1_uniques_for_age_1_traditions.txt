@@ -23,6 +23,31 @@
 	gfx_tags = { light_tag }
 }
 
+a_hittite_chariot = {
+	copy_from = a_age_1_traditions_heavy_chariot
+	is_special = yes
+
+	upgrades_to = a_heavy_cavalrymen
+
+	strength_damage_taken = -0.010
+	strength_damage_done = 0.010
+	morale_damage_taken = -0.05
+	
+ 	location_potential = {
+ 		dominant_culture = culture:hittite
+ 	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.05
+	}
+	
+	maintenance_demand = hchariot_maintenance
+
+	gfx_tags = { heavy_tag }
+}
+
 # VANILLA UNIQUES
 
 a_villagers = {

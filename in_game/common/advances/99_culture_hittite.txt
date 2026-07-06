@@ -1,0 +1,11 @@
+hchariot_unlock_advance =  {
+	age = age_1_traditions
+
+	potential = {
+		culture = culture:hittite
+	}
+
+	unlock_unit = a_hittite_chariot
+
+	requires = advanced_chariot_advance
+}

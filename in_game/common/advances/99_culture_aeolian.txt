@@ -1,0 +1,11 @@
+myrmidones_unlock_advance =  {
+	age = age_1_traditions
+
+	potential = {
+		culture = culture:aeolian
+	}
+
+	unlock_unit = a_myrmidones
+
+	requires = organized_units_advance
+}

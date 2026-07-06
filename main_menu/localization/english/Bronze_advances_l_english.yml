@@ -421,6 +421,9 @@
   myrmidones_unlock_advance: "Myrmidones"
   myrmidones_unlock_advance_desc: "Elite household companions bound by oath and tradition come to be known as the Myrmidones. Celebrated in later heroic tradition for their discipline and steadfastness, they represent the ideal of the aristocratic warrior retinue."
 
+  hchariot_unlock_advance: "Hittite Chariots"
+  hchariot_unlock_advance_desc: "Hittite chariot warfare evolves toward heavier, more robust vehicles capable of carrying larger crews into battle. Combining mobility with greater staying power, these formidable chariots become a defining feature of Hittite military power."
+
 # ####################
 # GOVERNMENT SPECIFIC
 # ####################
