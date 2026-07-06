@@ -11840,6 +11840,7 @@ countries = {
 		own_control_core = {
 			alvastra     linkoping    norrkoping   soderkoping  vadstena
 		}
+		capital = norrkoping
 		include = "bronze_nordic_age"
 		government = {
 			ruler = random
@@ -11906,6 +11907,7 @@ countries = {
 			yangdi               yanggu_yanzhou       yanjin               yanling              yanshi               yique
 			yiyang               yongning_shanzhou    yuanyang             yuncheng             zhongmu
 		}
+		capital = luoyang
 		include = "bronze_china_korea"
 		government = {
 			ruler = random
@@ -11935,6 +11937,67 @@ countries = {
 		}
 		discovered_regions = {
 			korea_region
+		}
+	}
+
+	OLA = {
+		culture = austronesian
+		religion = austronesian_rites
+		country_rank = rank_county
+		own_control_core = {
+			bengkalis      daik           johor_lama     tanjungpinang  temasek
+		}
+		include = "neolithic_asian"
+		capital = johor_lama
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			austronesian
+		}
+		discovered_regions = {
+			indochina_region
+			indonesia_region
+		}
+	}
+
+	OPES = {
+		culture = austronesian
+		religion = austronesian_rites
+		country_rank = rank_county
+		own_control_core = {
+			kajang          klang           malacca         muar            rantau_panjang
+		}
+		capital = malacca
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			austronesian
+		}
+		discovered_regions = {
+			indochina_region
+		}
+	}
+
+	OSUN = {
+		culture = austronesian
+		religion = austronesian_rites
+		country_rank = rank_county
+		own_control_core = {
+			baram       hulu_baram  niah        tinjar
+		}
+		capital = baram
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			austronesian
+		}
+		discovered_regions = {
+			indonesia_region
 		}
 	}
 }
