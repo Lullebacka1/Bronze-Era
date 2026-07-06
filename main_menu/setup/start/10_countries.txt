@@ -12041,5 +12041,67 @@ countries = {
 			steppes_region
 		}
 	}
+
+	NAGAD = {
+		culture = lankan
+		religion = naga
+		country_rank = rank_county
+		own_control_core = {
+			anuradhapura   jaffna         mahatittha     medawachchiya  mullaitivu     salavata
+			vavuniya
+		}
+		capital = vavuniya
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			lankan
+		}
+		discovered_regions = {
+			deccan_region
+		}
+	}
+
+	ROHAN = {
+		culture = lankan
+		religion = Lankan
+		country_rank = rank_county
+		own_control_core = {
+			badulla        galle          gampola        hambantota     kotte          kurunegala
+			negombo        ratnapura_LKA  sitavaka       tissamaharama  yapavu
+		}
+		capital = gampola
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			lankan
+		}
+		discovered_regions = {
+			deccan_region
+		}
+	}
+
+	TAMBA = {
+		culture = lankan
+		religion = Lankan
+		country_rank = rank_county
+		own_control_core = {
+			digavapi        hatthigiripura  kandy           madakalapu      polonnaruva     trincomalee
+		}
+		capital = polonnaruva
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			lankan
+		}
+		discovered_regions = {
+			deccan_region
+		}
+	}
 }
 }

@@ -2109,3 +2109,8 @@ LUTRU = {
 	color = rgb { 61 53 182 }
 	color2 = rgb { 45 24 83 }
 }
+
+KIZIL = {
+	color = rgb { 61 124 225 }
+	color2 = rgb { 24 36 83 }
+}
