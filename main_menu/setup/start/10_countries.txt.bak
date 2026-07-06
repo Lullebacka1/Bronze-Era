@@ -12000,5 +12000,26 @@ countries = {
 			indonesia_region
 		}
 	}
+
+	LUTRU = {
+		culture = palawa
+		religion = dreaming_ways
+		country_rank = rank_county
+		own_control_core = {
+			east_palawa        lairmairrener      paredarerme        peerapper          pyemmairrener      tommeginne
+			toogee             tyerrernotepanner  west_palawa
+		}
+		capital = paredarerme
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			palawa
+		}
+		discovered_regions = {
+			australia_region
+		}
+	}
 }
 }

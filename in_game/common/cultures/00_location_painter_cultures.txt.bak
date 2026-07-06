@@ -8,3 +8,11 @@ tamna = {
 	opinions = {
 	}
 }
+
+palawa = {
+	culture_groups = { oceanian_bronze_group }
+	language = Palawan
+	color = rgb { 52 203 213 }
+	opinions = {
+	}
+}

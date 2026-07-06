@@ -25952,95 +25952,400 @@ shabran = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = mede	religion = iranic }
 }
 theodoro = {
-	define_pop = {	type = nobles	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 qirq_yer = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 lusta = {
-	define_pop = {	type = slaves	size = 0.010	culture = catacomb	religion = kartvelian_pagan }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 qarasuvbazar = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 crimean_mountains = {
 }
 kaffa = {
-	define_pop = {	type = nobles	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = nobles	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = burghers	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = burghers	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 soldaia = {
-	define_pop = {	type = nobles	size = 0.010	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = clergy	size = 0.010	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = burghers	size = 0.010	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = burghers	size = 0.010	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = slaves	size = 0.010	culture = catacomb	religion = kartvelian_pagan }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 vosporo = {
-	define_pop = {	type = nobles	size = 0.010	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = clergy	size = 0.010	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = burghers	size = 0.010	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = burghers	size = 0.010	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = catacomb	religion = kartvelian_pagan }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 seyitler = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 solkhat = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 kalay = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 kezlev = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 aqmecit = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 jurchi = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 or_qapi = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = kartvelian_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = kartvelian_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 lake_sasyk_syvash = {
 }
@@ -26049,10 +26354,30 @@ syvash_lagoon = {
 syvash_sand_bar = {
 }
 taman = {
-	define_pop = {	type = peasants	size = 1.000	culture = colchian	religion = kartvelian_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = colchian	religion = kartvelian_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = colchian	religion = kartvelian_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = colchian	religion = kartvelian_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kizil_Koba
+		religion = kartvelian_pagan
+	}
 }
 mapa = {
 	define_pop = {	type = clergy	size = 0.010	culture = circassian	religion = caucasian_pagan }

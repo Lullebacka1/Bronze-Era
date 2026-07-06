@@ -113539,31 +113539,76 @@ wathaurong = {
 corangamite_lake = {
 }
 east_palawa = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = aboriginal	religion = dreaming_ways }
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = palawa
+		religion = dreaming_ways
+	}
 }
 west_palawa = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = aboriginal	religion = dreaming_ways }
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = palawa
+		religion = dreaming_ways
+	}
 }
 peerapper = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = aboriginal	religion = dreaming_ways }
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = palawa
+		religion = dreaming_ways
+	}
 }
 tommeginne = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = aboriginal	religion = dreaming_ways }
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = palawa
+		religion = dreaming_ways
+	}
 }
 tyerrernotepanner = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = aboriginal	religion = dreaming_ways }
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = palawa
+		religion = dreaming_ways
+	}
 }
 pyemmairrener = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = aboriginal	religion = dreaming_ways }
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = palawa
+		religion = dreaming_ways
+	}
 }
 lairmairrener = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = aboriginal	religion = dreaming_ways }
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = palawa
+		religion = dreaming_ways
+	}
 }
 paredarerme = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = aboriginal	religion = dreaming_ways }
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = palawa
+		religion = dreaming_ways
+	}
 }
 toogee = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = aboriginal	religion = dreaming_ways }
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = palawa
+		religion = dreaming_ways
+	}
 }
 narangga = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = aboriginal	religion = dreaming_ways }

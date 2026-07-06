@@ -2104,3 +2104,8 @@ OSUN = {
 	color = rgb { 91 182 53 }
 	color2 = rgb { 37 83 24 }
 }
+
+LUTRU = {
+	color = rgb { 61 53 182 }
+	color2 = rgb { 45 24 83 }
+}

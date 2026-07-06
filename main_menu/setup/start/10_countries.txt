@@ -12021,5 +12021,25 @@ countries = {
 			australia_region
 		}
 	}
+
+	KIZIL = {
+		culture = Kizil_Koba
+		religion = caucasian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			lusta         qarasuvbazar  qirq_yer      soldaia       solkhat       theodoro
+		}
+		capital = lusta
+		include = "neolithic_russia"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Kizil_Koba
+		}
+		discovered_regions = {
+			steppes_region
+		}
+	}
 }
 }
