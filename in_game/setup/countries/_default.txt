@@ -2059,3 +2059,73 @@ MUMUN = {
 	color = rgb { 96 105 151 }
 	color2 = rgb { 110 27 27 }
 }
+
+APAL = {
+	color = rgb { 28 93 196 }
+	color2 = rgb { 65 63 198 }
+}
+
+OSTER = {
+	color = rgb { 35 209 111 }
+	color2 = rgb { 68 24 82 }
+}
+
+VOLD = {
+	color = rgb { 223 38 102 }
+	color2 = rgb { 169 45 111 }
+}
+
+PANLO = {
+	color = rgb { 61 153 199 }
+	color2 = rgb { 53 176 192 }
+}
+
+SHANG = {
+	color = rgb { 214 149 234 }
+	color2 = rgb { 68 24 82 }
+}
+
+TAMN = {
+	color = rgb { 161 144 58 }
+	color2 = rgb { 76 83 24 }
+}
+
+OLA = {
+	color = rgb { 152 53 182 }
+	color2 = rgb { 68 24 82 }
+}
+
+OPES = {
+	color = rgb { 182 53 147 }
+	color2 = rgb { 83 24 61 }
+}
+
+OSUN = {
+	color = rgb { 91 182 53 }
+	color2 = rgb { 37 83 24 }
+}
+
+LUTRU = {
+	color = rgb { 61 53 182 }
+	color2 = rgb { 45 24 83 }
+}
+
+KIZIL = {
+	color = rgb { 61 124 225 }
+	color2 = rgb { 24 36 83 }
+}
+
+NAGAD = {
+	color = rgb { 215 153 234 }
+	color2 = rgb { 40 27 44 }
+}
+
+ROHAN = {
+	color = rgb { 78 74 79 }
+	color2 = rgb { 49 48 49 }
+}
+
+TAMBA = {
+	color = rgb { 255 255 255 }
+	color2 = rgb { 226 222 227 }
+}

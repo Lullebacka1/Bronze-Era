@@ -1901,151 +1901,216 @@ VAINI = {
 }
 
 AHHI = {
-	color = rgb { 74 57 142 }
+	color = rgb { 104 91 137 }
 	color2 = rgb { 110 27 27 }
 }
 
 KARK = {
-	color = rgb { 152 53 182 }
+	color = rgb { 143 98 139 }
 	color2 = rgb { 110 27 27 }
 }
 
 LYCIA = {
-	color = rgb { 108 63 120 }
+	color = rgb { 121 96 128 }
 	color2 = rgb { 110 27 27 }
 }
 
 MWAN = {
-	color = rgb { 152 53 182 }
+	color = rgb { 161 107 148 }
 	color2 = rgb { 110 27 27 }
 }
 
 QUWE = {
-	color = rgb { 37 101 48 }
+	color = rgb { 91 132 79 }
 	color2 = rgb { 110 27 27 }
 }
 
 TUMM = {
-	color = rgb { 182 104 53 }
+	color = rgb { 167 116 78 }
 	color2 = rgb { 110 27 27 }
 }
 
 ZALP = {
-	color = rgb { 182 171 53 }
+	color = rgb { 168 151 91 }
 	color2 = rgb { 110 27 27 }
 }
 
 DER = {
-	color = rgb { 111 64 114 }
-	color2 = rgb { 68 24 82 }
+	color = rgb { 123 91 125 }
+	color2 = rgb { 110 27 27 }
 }
 
 ISIN = {
-	color = rgb { 87 57 96 }
-	color2 = rgb { 68 24 82 }
+	color = rgb { 94 82 120 }
+	color2 = rgb { 110 27 27 }
 }
 
 BACTR = {
-	color = rgb { 53 132 182 }
-	color2 = rgb { 24 73 83 }
+	color = rgb { 96 132 151 }
+	color2 = rgb { 110 27 27 }
 }
 
 DEDAN = {
-	color = rgb { 61 53 182 }
-	color2 = rgb { 24 39 83 }
+	color = rgb { 105 99 137 }
+	color2 = rgb { 110 27 27 }
 }
 
 MIDAN = {
-	color = rgb { 182 160 53 }
-	color2 = rgb { 83 64 24 }
+	color = rgb { 173 148 94 }
+	color2 = rgb { 110 27 27 }
 }
 
 OXUS = {
-	color = rgb { 182 53 66 }
-	color2 = rgb { 83 24 33 }
+	color = rgb { 158 91 89 }
+	color2 = rgb { 110 27 27 }
 }
 
 SABA = {
-	color = rgb { 178 184 127 }
-	color2 = rgb { 70 83 24 }
+	color = rgb { 167 156 113 }
+	color2 = rgb { 110 27 27 }
 }
 
 TAYMA = {
-	color = rgb { 182 53 66 }
-	color2 = rgb { 83 24 39 }
+	color = rgb { 145 86 76 }
+	color2 = rgb { 110 27 27 }
 }
 
 THAMU = {
-	color = rgb { 53 150 182 }
-	color2 = rgb { 24 50 83 }
+	color = rgb { 101 145 151 }
+	color2 = rgb { 110 27 27 }
 }
 
 FERGA = {
-	color = rgb { 81 182 53 }
-	color2 = rgb { 42 83 24 }
+	color = rgb { 112 151 92 }
+	color2 = rgb { 110 27 27 }
 }
 
 DIAOK = {
-	color = rgb { 164 106 153 }
-	color2 = rgb { 68 24 82 }
+	color = rgb { 157 108 143 }
+	color2 = rgb { 110 27 27 }
 }
 
 GARA = {
-	color = rgb { 82 105 117 }
-	color2 = rgb { 24 63 83 }
+	color = rgb { 104 121 132 }
+	color2 = rgb { 110 27 27 }
 }
 
 MAYA = {
-	color = rgb { 182 111 53 }
-	color2 = rgb { 83 51 24 }
+	color = rgb { 164 123 82 }
+	color2 = rgb { 110 27 27 }
 }
 
 OLMEC = {
+	color = rgb { 139 101 139 }
+	color2 = rgb { 110 27 27 }
+}
+
+MOKAY = {
+	color = rgb { 164 104 132 }
+	color2 = rgb { 110 27 27 }
+}
+
+TLAPA = {
+	color = rgb { 176 116 150 }
+	color2 = rgb { 110 27 27 }
+}
+
+NOK = {
+	color = rgb { 170 139 84 }
+	color2 = rgb { 110 27 27 }
+}
+
+BANCH = {
+	color = rgb { 145 137 148 }
+	color2 = rgb { 110 27 27 }
+}
+
+ANSHA = {
+	color = rgb { 112 146 108 }
+	color2 = rgb { 110 27 27 }
+}
+
+GUPIN = {
+	color = rgb { 101 131 158 }
+	color2 = rgb { 110 27 27 }
+}
+
+LULU = {
+	color = rgb { 169 166 110 }
+	color2 = rgb { 110 27 27 }
+}
+
+MARHA = {
+	color = rgb { 132 158 91 }
+	color2 = rgb { 110 27 27 }
+}
+
+SHERH = {
+	color = rgb { 174 111 133 }
+	color2 = rgb { 110 27 27 }
+}
+
+CIMME = {
+	color = rgb { 91 116 147 }
+	color2 = rgb { 110 27 27 }
+}
+
+MUMUN = {
+	color = rgb { 96 105 151 }
+	color2 = rgb { 110 27 27 }
+}
+
+APAL = {
+	color = rgb { 28 93 196 }
+	color2 = rgb { 65 63 198 }
+}
+
+OSTER = {
+	color = rgb { 35 209 111 }
+	color2 = rgb { 68 24 82 }
+}
+
+VOLD = {
+	color = rgb { 223 38 102 }
+	color2 = rgb { 169 45 111 }
+}
+
+PANLO = {
+	color = rgb { 61 153 199 }
+	color2 = rgb { 53 176 192 }
+}
+
+SHANG = {
+	color = rgb { 214 149 234 }
+	color2 = rgb { 68 24 82 }
+}
+
+TAMN = {
+	color = rgb { 161 144 58 }
+	color2 = rgb { 76 83 24 }
+}
+
+OLA = {
 	color = rgb { 152 53 182 }
 	color2 = rgb { 68 24 82 }
 }
 
-MOKAY = {
-	color = rgb { 182 53 122 }
-	color2 = rgb { 83 24 72 }
-}
-
-TLAPA = {
-	color = rgb { 234 83 201 }
+OPES = {
+	color = rgb { 182 53 147 }
 	color2 = rgb { 83 24 61 }
 }
 
-NOK = {
-	color = rgb { 182 135 53 }
-	color2 = rgb { 66 48 10 }
+OSUN = {
+	color = rgb { 91 182 53 }
+	color2 = rgb { 37 83 24 }
 }
 
-BANCH = {
-	color = rgb { 159 149 163 }
-	color2 = rgb { 68 24 82 }
+LUTRU = {
+	color = rgb { 61 53 182 }
+	color2 = rgb { 45 24 83 }
 }
 
-ANSHA = {
-	color = rgb { 102 149 101 }
-	color2 = rgb { 92 70 98 }
-}
-
-GUPIN = {
-	color = rgb { 75 125 206 }
-	color2 = rgb { 70 200 185 }
-}
-
-LULU = {
-	color = rgb { 205 206 120 }
-	color2 = rgb { 68 24 82 }
-}
-
-MARHA = {
-	color = rgb { 141 182 53 }
-	color2 = rgb { 76 83 24 }
-}
-
-SHERH = {
-	color = rgb { 223 93 139 }
-	color2 = rgb { 210 86 135 }
+KIZIL = {
+	color = rgb { 61 124 225 }
+	color2 = rgb { 24 36 83 }
 }

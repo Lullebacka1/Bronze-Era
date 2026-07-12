@@ -24,11 +24,3 @@ Kizil_Koba = {
 	opinions = {
 	}
 }
-
-lankan = {
-	culture_groups = { indic_bronze_group }
-	language = lankan
-	color = rgb { 245 0 0 }
-	opinions = {
-	}
-}
