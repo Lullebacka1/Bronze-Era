@@ -7,14 +7,6 @@ organized_units_advance =  {
 	requires = warrior_aristocracy_advance
 }
 
-myrmidones_unlock_advance =  {
-	age = age_1_traditions
-
-	unlock_unit = a_myrmidones
-
-	requires = organized_units_advance
-}
-
 simple_chariot_advance = {
 	age = age_1_traditions
 	research_cost = 1.5
