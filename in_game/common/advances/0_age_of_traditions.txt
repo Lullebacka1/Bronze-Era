@@ -277,6 +277,17 @@ hill_forts_advance = {
 	requires = warrior_lodges_advance
 }
 
+tribal_city_building_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	can_build_cities = yes
+
+	requires = hill_forts_advance
+
+	starting_technology_level = 4
+}
+
 #####################################
 # Palace Economy
 #####################################

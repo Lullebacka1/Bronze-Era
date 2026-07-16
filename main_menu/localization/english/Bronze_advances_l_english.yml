@@ -47,6 +47,9 @@
   hill_forts_advance: "Hill Forts"
   hill_forts_advance_desc: "Communities increasingly invest in fortified hilltop settlements and strongholds. These defensible sites provide refuge during conflict, protect valuable resources, and serve as centers of political authority over the surrounding countryside."
 
+  tribal_city_building_advance: "Proto-Urban Centers"
+  tribal_city_building_advance_desc: "While most cities emerge alongside centralized states, some societies may instead reach urban scale through the gradual expansion of tribal strongholds, market settlements, and communal institutions. Such centers represent a decentralized path to urban life, driven by population, commerce, and local cooperation rather than palatial administration."
+
   long_distance_trade_advance: "Long-Distance Trade Networks"
   long_distance_trade_advance_desc: "Long-distance trade networks refer to the complex systems of trade and commerce that connect different regions and civilizations across vast distances. These networks facilitate the exchange of goods, ideas, and cultural influences between societies."
 
@@ -417,6 +420,9 @@
 
   myrmidones_unlock_advance: "Myrmidones"
   myrmidones_unlock_advance_desc: "Elite household companions bound by oath and tradition come to be known as the Myrmidones. Celebrated in later heroic tradition for their discipline and steadfastness, they represent the ideal of the aristocratic warrior retinue."
+
+  hchariot_unlock_advance: "Hittite Chariots"
+  hchariot_unlock_advance_desc: "Hittite chariot warfare evolves toward heavier, more robust vehicles capable of carrying larger crews into battle. Combining mobility with greater staying power, these formidable chariots become a defining feature of Hittite military power."
 
 # ####################
 # GOVERNMENT SPECIFIC

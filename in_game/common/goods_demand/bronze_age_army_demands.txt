@@ -159,3 +159,12 @@ myrmidones_maintenance = {
 	cloth = 0.015
 	category = regiment_maintenance
 }
+
+hchariot_maintenance = {
+	leather = 0.1
+	weaponry = 0.2
+	cloth = 0.1
+	horses = 0.6
+	tools = 0.1
+	category = regiment_maintenance
+}

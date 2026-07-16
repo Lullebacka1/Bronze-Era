@@ -124,7 +124,7 @@ temple_complex = {
 	forbidden_for_estates = yes
 
 	category = religious_category
-	employment_size = huge_clergy_employment
+	employment_size = huge_religious_building_employment
 
 	rural_settlement = no
 	town = no
