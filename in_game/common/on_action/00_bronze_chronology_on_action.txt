@@ -10,6 +10,7 @@ monthly_country_pulse = {
 		bronze_city_prestige_runtime_bootstrap
 		bronze_city_prestige_player_ledger_bootstrap
 		bronze_city_prestige_player_ledger_repair
+		bronze_rome_foundation_monthly_pulse
 	}
 }
 
@@ -75,6 +76,29 @@ bronze_chronology_monthly_pulse = {
 				var:bronze_display_year < 1
 			}
 			set_variable = { name = bronze_display_year value = 0 }
+		}
+	}
+}
+
+bronze_rome_foundation_monthly_pulse = {
+	trigger = {
+		bronze_rome_foundation_candidate = yes
+	}
+
+	effect = {
+		if = {
+			limit = { is_human = yes }
+			set_global_variable = { name = bronze_rome_foundation_event_pending value = 1 }
+			if = {
+				limit = { bronze_rome_foundation_latin_owner = yes }
+				trigger_event_non_silently = bronze_rome_foundation.1
+			}
+			else = {
+				trigger_event_non_silently = bronze_rome_foundation.2
+			}
+		}
+		else = {
+			bronze_rome_foundation_create_kingdom = yes
 		}
 	}
 }

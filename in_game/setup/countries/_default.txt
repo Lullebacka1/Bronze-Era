@@ -380,6 +380,10 @@ LATIN = {
 	color = rgb { 153 130 84 }
 	color2 = rgb { 110 27 27 }
 }
+ROME = {
+	color = rgb { 164 36 24 }
+	color2 = rgb { 224 148 24 }
+}
 NORIC = {
 	color = rgb { 104 115 130 }
 	color2 = rgb { 110 27 27 }

@@ -1,0 +1,118 @@
+# Bronze Era - Foundation of Rome
+# Creates Rome dynamically from the current owner of location:rome.
+
+bronze_rome_foundation_create_kingdom = {
+	set_global_variable = { name = bronze_rome_foundation_resolved value = 1 }
+	remove_global_variable = bronze_rome_foundation_event_pending
+
+	# Core first, then materialize the tag through the same dynamic-country
+	# pattern used by the Hatti successor states.
+	location:rome = {
+		add_core = c:ROME
+	}
+
+	if = {
+		limit = { country_exists = c:ROME }
+		location:rome = {
+			change_location_owner = c:ROME
+			change_integration_level = core
+		}
+	}
+	else = {
+		create_country_from_cores_in_our_locations = c:ROME
+	}
+
+	c:ROME ?= {
+		change_culture = culture:latial
+		change_religion = religion:italic_pagan
+		add_accepted_culture = culture:apennine
+		set_country_rank = country_rank:rank_kingdom
+		set_capital = location:rome
+		set_variable = { name = bronze_rome_founded value = 1 }
+		add_gold = 80
+		add_manpower_pool = 150
+		add_prestige = prestige_mild_bonus
+		add_legitimacy = legitimacy_mild_bonus
+		add_country_modifier = {
+			modifier = bronze_rome_foundation_momentum
+			years = 15
+			mode = add_and_extend
+		}
+		create_character = {
+			first_name = name_romulus
+			culture = culture:latial
+			religion = religion:italic_pagan
+			dynasty = romulus_dynasty
+			adm = { 45 70 }
+			dip = { 35 65 }
+			mil = { 60 85 }
+			female = no
+			birth_location = location:rome
+			estate = estate_type:nobles_estate
+			age = 18
+			save_scope_as = bronze_rome_founder
+		}
+		set_new_ruler = scope:bronze_rome_founder
+	}
+
+	location:rome = {
+		set_variable = { name = bronze_rome_foundation_site value = 1 years = 30 }
+		add_location_modifier = {
+			modifier = bronze_rome_foundation_site
+			years = 15
+			mode = add_and_extend
+		}
+		change_prosperity = prosperity_weak_bonus
+		change_development = development_weak_bonus
+		change_control = control_mild_bonus
+		add_pop = { type = pop_type:peasants size = 0.120 culture = culture:latial religion = religion:italic_pagan }
+		add_pop = { type = pop_type:tribesmen size = 0.030 culture = culture:latial religion = religion:italic_pagan }
+		add_pop = { type = pop_type:burghers size = 0.015 culture = culture:latial religion = religion:italic_pagan }
+		add_pop = { type = pop_type:nobles size = 0.010 culture = culture:latial religion = religion:italic_pagan }
+		if = {
+			limit = { NOT = { has_building = building_type:frontier_post } }
+			change_building_level_in_location = {
+				building = building_type:frontier_post
+				value = 1
+			}
+		}
+		if = {
+			limit = { NOT = { has_building = building_type:warrior_halls } }
+			change_building_level_in_location = {
+				building = building_type:warrior_halls
+				value = 1
+			}
+		}
+		if = {
+			limit = { NOT = { has_building = building_type:market_village } }
+			change_building_level_in_location = {
+				building = building_type:market_village
+				value = 1
+			}
+		}
+		if = {
+			limit = { NOT = { has_building = building_type:bronze_age_victory_stelae } }
+			change_building_level_in_location = {
+				building = building_type:bronze_age_victory_stelae
+				value = 1
+			}
+		}
+	}
+}
+
+bronze_rome_foundation_absorb_settlement = {
+	remove_global_variable = bronze_rome_foundation_event_pending
+	set_variable = { name = bronze_rome_foundation_refused value = 1 years = 25 }
+	add_prestige = prestige_weak_bonus
+	add_legitimacy = legitimacy_weak_bonus
+	location:rome = {
+		set_variable = { name = bronze_rome_absorbed_settlement value = 1 years = 30 }
+		add_location_modifier = {
+			modifier = bronze_rome_absorbed_settlement
+			years = 15
+			mode = add_and_extend
+		}
+		change_prosperity = prosperity_very_weak_bonus
+		change_control = control_weak_bonus
+	}
+}
