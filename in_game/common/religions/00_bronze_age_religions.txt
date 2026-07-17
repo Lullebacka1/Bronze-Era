@@ -621,6 +621,40 @@ nordic_pagan = {
 	tags = { folk_european_gfx pagan_gfx }
 }
 
+baltic_pagan = {
+	color = rgb { 119 116 171 }
+	group = baltic_religion_group
+
+	definition_modifier = {
+		global_wild_game_output_modifier = 0.05
+		expand_rgo_forestry_cost_modifier = -0.05
+		global_levy_size_modifier = 0.05
+		tolerance_heathen = 0.25
+	}
+
+	opinions = {
+	}
+
+	tags = { folk_european_gfx pagan_gfx }
+}
+
+finnic_pagan = {
+	color = rgb { 94 145 128 }
+	group = finnic_religion_group
+
+	definition_modifier = {
+		global_wild_game_output_modifier = 0.1
+		expand_rgo_forestry_cost_modifier = -0.1
+		global_fur_output_modifier = 0.05
+		global_pop_conversion_speed_modifier = -0.05
+	}
+
+	opinions = {
+	}
+
+	tags = { folk_european_gfx pagan_gfx }
+}
+
 vedic = {
 	color = rgb { 177 121 64 }
 	group = indian_religion_group

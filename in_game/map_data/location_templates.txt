@@ -243,10 +243,10 @@ abo = { topography = flatland vegetation = woods climate = continental religion 
 nystad = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = nordic raw_material = fish natural_harbor_suitability = 0.00}
 poytis = { topography = flatland vegetation = forest climate = arctic religion = steppe_pagan culture = sintashta raw_material = wild_game}
 sauvo = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = nordic raw_material = millet natural_harbor_suitability = 0.00}
-helsinge = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = nordic raw_material = livestock natural_harbor_suitability = 0.75}
-ekenas = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = nordic raw_material = fish natural_harbor_suitability = 0.00}
-sjundea = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = nordic raw_material = lumber natural_harbor_suitability = 0.00}
-porvoo = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = nordic raw_material = millet natural_harbor_suitability = 0.00}
+helsinge = { topography = flatland vegetation = woods climate = continental religion = finnic_pagan culture = finnic raw_material = livestock natural_harbor_suitability = 0.75}
+ekenas = { topography = flatland vegetation = forest climate = continental religion = finnic_pagan culture = finnic raw_material = fish natural_harbor_suitability = 0.00}
+sjundea = { topography = flatland vegetation = forest climate = continental religion = finnic_pagan culture = finnic raw_material = lumber natural_harbor_suitability = 0.00}
+porvoo = { topography = flatland vegetation = woods climate = continental religion = finnic_pagan culture = finnic raw_material = millet natural_harbor_suitability = 0.00}
 liljendal = { topography = flatland vegetation = woods climate = arctic religion = nordic_pagan culture = nordic raw_material = lumber}
 ikalis = { topography = wetlands vegetation = forest climate = arctic religion = nordic_pagan culture = nordic raw_material = lumber}
 raumo = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = nordic raw_material = horses natural_harbor_suitability = 0.00}
@@ -285,7 +285,7 @@ pihlajavesi = { topography = lakes climate = arctic}
 haukivesi = { topography = lakes climate = arctic}
 puula = { topography = lakes climate = arctic}
 kyyvesi = { topography = lakes climate = arctic}
-kymi_fi = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = nordic raw_material = horses natural_harbor_suitability = 0.00}
+kymi_fi = { topography = flatland vegetation = woods climate = continental religion = finnic_pagan culture = finnic raw_material = horses natural_harbor_suitability = 0.00}
 vyborg = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = nordic raw_material = livestock natural_harbor_suitability = 0.75}
 villmanstrand = { topography = wetlands vegetation = woods climate = arctic religion = steppe_pagan culture = sintashta raw_material = fish}
 veckelax = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = nordic raw_material = millet natural_harbor_suitability = 0.00}
@@ -3598,33 +3598,33 @@ giurgiu = { topography = flatland vegetation = grasslands climate = continental 
 rusii_de_vede = { topography = flatland vegetation = woods climate = continental religion = dacian_pagan culture = tei raw_material = legumes}
 slatina = { topography = flatland vegetation = woods climate = continental religion = dacian_pagan culture = tei raw_material = livestock}
 zimnicea = { topography = flatland vegetation = farmland climate = continental religion = dacian_pagan culture = tei raw_material = wheat}
-kuldiga = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = lumber}
-dundaga = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = amber natural_harbor_suitability = 0.00}
+kuldiga = { topography = flatland vegetation = woods climate = continental religion = baltic_pagan culture = Baltic raw_material = lumber}
+dundaga = { topography = flatland vegetation = forest climate = continental religion = baltic_pagan culture = Baltic raw_material = amber natural_harbor_suitability = 0.00}
 durbe = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = fiber_crops natural_harbor_suitability = 0.00}
 grobina = { topography = wetlands vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = fish natural_harbor_suitability = 0.00}
-kandava = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = millet natural_harbor_suitability = 0.00}
-piltene = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = clay}
-saldus = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = wild_game}
-ventspils = { topography = wetlands vegetation = grasslands climate = continental religion = nordic_pagan culture = corded_ware raw_material = salt natural_harbor_suitability = 0.00}
-tallinn = { topography = flatland vegetation = grasslands climate = continental religion = nordic_pagan culture = corded_ware raw_material = stone natural_harbor_suitability = 0.50}
-narva = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = fish natural_harbor_suitability = 0.50}
-padise = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = fiber_crops natural_harbor_suitability = 0.00}
+kandava = { topography = flatland vegetation = forest climate = continental religion = baltic_pagan culture = Baltic raw_material = millet natural_harbor_suitability = 0.00}
+piltene = { topography = flatland vegetation = forest climate = continental religion = baltic_pagan culture = Baltic raw_material = clay}
+saldus = { topography = flatland vegetation = woods climate = continental religion = baltic_pagan culture = Baltic raw_material = wild_game}
+ventspils = { topography = wetlands vegetation = grasslands climate = continental religion = baltic_pagan culture = Baltic raw_material = salt natural_harbor_suitability = 0.00}
+tallinn = { topography = flatland vegetation = grasslands climate = continental religion = finnic_pagan culture = finnic raw_material = stone natural_harbor_suitability = 0.50}
+narva = { topography = flatland vegetation = woods climate = continental religion = finnic_pagan culture = finnic raw_material = fish natural_harbor_suitability = 0.50}
+padise = { topography = flatland vegetation = woods climate = continental religion = finnic_pagan culture = finnic raw_material = fiber_crops natural_harbor_suitability = 0.00}
 paide = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = wild_game}
-rakvere = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = clay}
+rakvere = { topography = flatland vegetation = woods climate = continental religion = finnic_pagan culture = finnic raw_material = clay}
 rapla = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = lumber}
-toolse = { topography = wetlands vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = millet natural_harbor_suitability = 0.00}
-vasknarva = { topography = wetlands vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = millet}
-cesis = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = millet}
-aluksne = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = fur}
-gulbene = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = lumber}
-rauna = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = wild_game}
+toolse = { topography = wetlands vegetation = forest climate = continental religion = finnic_pagan culture = finnic raw_material = millet natural_harbor_suitability = 0.00}
+vasknarva = { topography = wetlands vegetation = forest climate = continental religion = finnic_pagan culture = finnic raw_material = millet}
+cesis = { topography = flatland vegetation = woods climate = continental religion = baltic_pagan culture = Baltic raw_material = millet}
+aluksne = { topography = flatland vegetation = woods climate = continental religion = baltic_pagan culture = Baltic raw_material = fur}
+gulbene = { topography = flatland vegetation = forest climate = continental religion = baltic_pagan culture = Baltic raw_material = lumber}
+rauna = { topography = flatland vegetation = forest climate = continental religion = baltic_pagan culture = Baltic raw_material = wild_game}
 valmiera = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = legumes}
 vilaka = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = fiber_crops}
-jekabpils = { topography = wetlands vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = fur}
-kraslava = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = beeswax}
-makonkalns = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = wild_game}
+jekabpils = { topography = wetlands vegetation = woods climate = continental religion = baltic_pagan culture = Baltic raw_material = fur}
+kraslava = { topography = flatland vegetation = forest climate = continental religion = baltic_pagan culture = Baltic raw_material = beeswax}
+makonkalns = { topography = flatland vegetation = forest climate = continental religion = baltic_pagan culture = Baltic raw_material = wild_game}
 pietalava = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = lumber}
-rezekne = { topography = wetlands vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = medicaments}
+rezekne = { topography = wetlands vegetation = woods climate = continental religion = baltic_pagan culture = Baltic raw_material = medicaments}
 lake_lubans = { topography = lakes climate = continental}
 lake_razna = { topography = lakes climate = continental}
 parnu = { topography = wetlands vegetation = grasslands climate = continental religion = nordic_pagan culture = corded_ware raw_material = millet natural_harbor_suitability = 0.75}
@@ -3634,25 +3634,25 @@ saarde = { topography = flatland vegetation = forest climate = continental relig
 suure_jaani = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = livestock}
 viljandi = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = medicaments}
 lake_vorts = { topography = lakes climate = continental}
-hapsal = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = wheat natural_harbor_suitability = 0.00}
-kaina = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = fish natural_harbor_suitability = 0.00}
+hapsal = { topography = flatland vegetation = woods climate = continental religion = finnic_pagan culture = finnic raw_material = wheat natural_harbor_suitability = 0.00}
+kaina = { topography = flatland vegetation = woods climate = continental religion = finnic_pagan culture = finnic raw_material = fish natural_harbor_suitability = 0.00}
 kuressaare = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = wheat natural_harbor_suitability = 0.00}
 lihula = { topography = wetlands vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = fish natural_harbor_suitability = 0.00}
 st_martin = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = fiber_crops natural_harbor_suitability = 0.00}
 valjala = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = clay natural_harbor_suitability = 0.00}
-daugavpils = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = millet}
-aizkraukle = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = fiber_crops}
-selpils = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = fish}
-jelgava = { topography = wetlands vegetation = grasslands climate = continental religion = nordic_pagan culture = corded_ware raw_material = millet}
-bauska = { topography = flatland vegetation = farmland climate = continental religion = nordic_pagan culture = corded_ware raw_material = wheat}
-dobele = { topography = flatland vegetation = grasslands climate = continental religion = nordic_pagan culture = corded_ware raw_material = fiber_crops}
-tukums = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = fur natural_harbor_suitability = 0.00}
-riga = { topography = flatland vegetation = grasslands climate = continental religion = nordic_pagan culture = corded_ware raw_material = livestock natural_harbor_suitability = 0.50}
+daugavpils = { topography = flatland vegetation = woods climate = continental religion = baltic_pagan culture = Baltic raw_material = millet}
+aizkraukle = { topography = flatland vegetation = woods climate = continental religion = baltic_pagan culture = Baltic raw_material = fiber_crops}
+selpils = { topography = flatland vegetation = woods climate = continental religion = baltic_pagan culture = Baltic raw_material = fish}
+jelgava = { topography = wetlands vegetation = grasslands climate = continental religion = baltic_pagan culture = Baltic raw_material = millet}
+bauska = { topography = flatland vegetation = farmland climate = continental religion = baltic_pagan culture = Baltic raw_material = wheat}
+dobele = { topography = flatland vegetation = grasslands climate = continental religion = baltic_pagan culture = Baltic raw_material = fiber_crops}
+tukums = { topography = flatland vegetation = woods climate = continental religion = baltic_pagan culture = Baltic raw_material = fur natural_harbor_suitability = 0.00}
+riga = { topography = flatland vegetation = grasslands climate = continental religion = baltic_pagan culture = Baltic raw_material = livestock natural_harbor_suitability = 0.50}
 koknese = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = livestock}
-limbazi = { topography = wetlands vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = fish natural_harbor_suitability = 0.00}
-salaspils = { topography = flatland vegetation = grasslands climate = continental religion = nordic_pagan culture = corded_ware raw_material = legumes natural_harbor_suitability = 0.00}
+limbazi = { topography = wetlands vegetation = forest climate = continental religion = baltic_pagan culture = Baltic raw_material = fish natural_harbor_suitability = 0.00}
+salaspils = { topography = flatland vegetation = grasslands climate = continental religion = baltic_pagan culture = Baltic raw_material = legumes natural_harbor_suitability = 0.00}
 sigulda = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = lumber}
-straupe = { topography = wetlands vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = fiber_crops natural_harbor_suitability = 0.00}
+straupe = { topography = wetlands vegetation = woods climate = continental religion = baltic_pagan culture = Baltic raw_material = fiber_crops natural_harbor_suitability = 0.00}
 tartu = { topography = flatland vegetation = grasslands climate = continental religion = nordic_pagan culture = corded_ware raw_material = millet}
 valka = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = corded_ware raw_material = lumber}
 vastseliina = { topography = flatland vegetation = forest climate = continental religion = nordic_pagan culture = corded_ware raw_material = beeswax}
@@ -3759,10 +3759,10 @@ ashmyany = { topography = flatland vegetation = forest climate = continental rel
 halshany = { topography = flatland vegetation = forest climate = continental religion = steppe_pagan culture = corded_ware raw_material = medicaments}
 hieraniony = { topography = flatland vegetation = forest climate = continental religion = steppe_pagan culture = corded_ware raw_material = lumber}
 kreva = { topography = flatland vegetation = forest climate = continental religion = steppe_pagan culture = corded_ware raw_material = lumber}
-braslaw = { topography = flatland vegetation = forest climate = continental religion = steppe_pagan culture = corded_ware raw_material = fur}
+braslaw = { topography = flatland vegetation = forest climate = continental religion = baltic_pagan culture = Baltic raw_material = fur}
 drysvyaty = { topography = flatland vegetation = forest climate = continental religion = steppe_pagan culture = corded_ware raw_material = fiber_crops}
 ezerenai = { topography = wetlands vegetation = forest climate = continental religion = steppe_pagan culture = corded_ware raw_material = lumber}
-miory = { topography = wetlands vegetation = woods climate = continental religion = steppe_pagan culture = corded_ware raw_material = lumber}
+miory = { topography = wetlands vegetation = woods climate = continental religion = baltic_pagan culture = Baltic raw_material = lumber}
 kaunas = { topography = flatland vegetation = woods climate = continental religion = steppe_pagan culture = corded_ware raw_material = wool}
 alytus = { topography = wetlands vegetation = woods climate = continental religion = steppe_pagan culture = corded_ware raw_material = lumber}
 punia = { topography = flatland vegetation = woods climate = continental religion = steppe_pagan culture = corded_ware raw_material = wool}
@@ -4217,7 +4217,7 @@ bobr = { topography = flatland vegetation = woods climate = continental religion
 krupki = { topography = flatland vegetation = woods climate = continental religion = steppe_pagan culture = corded_ware raw_material = lumber}
 lukolm = { topography = flatland vegetation = woods climate = continental religion = steppe_pagan culture = corded_ware raw_material = legumes}
 lyubashany = { topography = flatland vegetation = woods climate = continental religion = steppe_pagan culture = corded_ware raw_material = fiber_crops}
-dzisna = { topography = flatland vegetation = woods climate = continental religion = steppe_pagan culture = corded_ware raw_material = fiber_crops}
+dzisna = { topography = flatland vegetation = woods climate = continental religion = baltic_pagan culture = Baltic raw_material = fiber_crops}
 asvieja = { topography = flatland vegetation = woods climate = continental religion = steppe_pagan culture = corded_ware raw_material = livestock}
 nevel = { topography = flatland vegetation = woods climate = continental religion = steppe_pagan culture = corded_ware raw_material = wild_game}
 nekloch = { topography = wetlands vegetation = woods climate = continental religion = steppe_pagan culture = corded_ware raw_material = livestock}
@@ -5328,7 +5328,7 @@ slavkovitchi = { topography = flatland vegetation = woods climate = continental 
 volodimerets = { topography = flatland vegetation = woods climate = continental religion = steppe_pagan culture = andronovo raw_material = legumes}
 voronich = { topography = flatland vegetation = woods climate = continental religion = steppe_pagan culture = andronovo raw_material = wild_game}
 koporye = { topography = flatland vegetation = woods climate = continental religion = nordic_pagan culture = nordic raw_material = wild_game natural_harbor_suitability = 0.00}
-ivangorod = { topography = flatland vegetation = woods climate = continental religion = steppe_pagan culture = andronovo raw_material = fur natural_harbor_suitability = 0.00}
+ivangorod = { topography = flatland vegetation = woods climate = continental religion = finnic_pagan culture = finnic raw_material = fur natural_harbor_suitability = 0.00}
 izori = { topography = wetlands vegetation = woods climate = continental religion = steppe_pagan culture = andronovo raw_material = legumes}
 khotchino = { topography = flatland vegetation = woods climate = arctic religion = steppe_pagan culture = andronovo raw_material = lumber}
 moloskovitsa = { topography = flatland vegetation = woods climate = arctic religion = steppe_pagan culture = andronovo raw_material = beeswax}

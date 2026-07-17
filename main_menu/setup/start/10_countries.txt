@@ -12127,7 +12127,7 @@ countries = {
 
 	CURO = {
 		culture = Baltic
-		religion = norse
+		religion = baltic_pagan
 		country_rank = rank_county
 		own_control_core = {
 			bauska     dobele     dundaga    jelgava    kandava    kuldiga
@@ -12147,19 +12147,20 @@ countries = {
 	}
 
 	FINNI = {
-		culture = Baltic
-		religion = norse
+		culture = finnic
+		religion = finnic_pagan
 		country_rank = rank_county
 		own_control_core = {
 			ekenas    hapsal    helsinge  kaina     kymi_fi   padise
 			porvoo    sjundea   tallinn
 		}
+		capital = tallinn
 		include = "Bronze"
 		government = {
 			ruler = random
 		}
 		accepted_cultures = {
-			Baltic
+			finnic
 		}
 		discovered_regions = {
 			baltic_region
@@ -12228,18 +12229,19 @@ countries = {
 	}
 
 	LAPEI = {
-		culture = Baltic
-		religion = norse
+		culture = finnic
+		religion = finnic_pagan
 		country_rank = rank_county
 		own_control_core = {
 			ivangorod  narva      rakvere    toolse     vasknarva
 		}
+		capital = narva
 		include = "neolithic_nordic"
 		government = {
 			ruler = random
 		}
 		accepted_cultures = {
-			Baltic
+			finnic
 		}
 		discovered_regions = {
 			baltic_region
@@ -12249,7 +12251,7 @@ countries = {
 
 	LATGA = {
 		culture = Baltic
-		religion = norse
+		religion = baltic_pagan
 		country_rank = rank_county
 		own_control_core = {
 			limbazi  straupe
@@ -12329,8 +12331,8 @@ countries = {
 	}
 
 	SELON = {
-		culture = abau_culture
-		religion = a_fat_roog_religion
+		culture = Baltic
+		religion = baltic_pagan
 		country_rank = rank_county
 		own_control_core = {
 			jekabpils   kraslava    makonkalns  rezekne
@@ -12341,7 +12343,7 @@ countries = {
 			ruler = random
 		}
 		accepted_cultures = {
-			abau_culture
+			Baltic
 		}
 		discovered_regions = {
 			baltic_region
@@ -12350,7 +12352,7 @@ countries = {
 
 	SEMIG = {
 		culture = Baltic
-		religion = norse
+		religion = baltic_pagan
 		country_rank = rank_county
 		own_control_core = {
 			aluksne  cesis    gulbene  rauna
@@ -12450,7 +12452,7 @@ countries = {
 
 	DAUGA = {
 		culture = Baltic
-		religion = norse
+		religion = baltic_pagan
 		country_rank = rank_county
 		own_control_core = {
 			aizkraukle  braslaw     daugavpils  dzisna      miory       selpils

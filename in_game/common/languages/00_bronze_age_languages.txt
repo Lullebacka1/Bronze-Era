@@ -363,4 +363,24 @@ central_european_bronze_language = {
 }
 
 
+baltic_bronze_language = {
+	color = rgb { 106 98 213 }
+	family = baltic_bronze_language_family
+
+	male_names = { Daugis Latgalis Selonis Semigalis Kuris }
+	female_names = { Laima Saule Austeja Medeina }
+	dynasty_names = { Daugis Latgalis Selonis Semigalis Kuris }
+	lowborn = { Daugis Latgalis Selonis }
+}
+
+finnic_bronze_language = {
+	color = rgb { 94 145 128 }
+	family = finnic_bronze_language_family
+
+	male_names = { Kaleva Ahti Ilmar Vaino }
+	female_names = { Aino Kyllikki Mielikki Tellervo }
+	dynasty_names = { Kaleva Ahti Ilmar Vaino }
+	lowborn = { Kaleva Ahti Ilmar }
+}
+
 

@@ -85,4 +85,12 @@ central_european_bronze_language_family = {
 }
 
 
+baltic_bronze_language_family = {
+	color = rgb { 106 98 213 }
+}
+
+finnic_bronze_language_family = {
+	color = rgb { 94 145 128 }
+}
+
 

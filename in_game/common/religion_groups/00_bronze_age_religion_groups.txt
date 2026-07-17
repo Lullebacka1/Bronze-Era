@@ -84,6 +84,18 @@ nordic_religion_group = {
 	allow_slaves_of_same_group = yes
 }
 
+baltic_religion_group = {
+	color = rgb { 119 116 171 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
+finnic_religion_group = {
+	color = rgb { 94 145 128 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
+
 indian_religion_group = {
 	color = rgb { 177 121 64 }
 	convert_slaves_at_start = no
