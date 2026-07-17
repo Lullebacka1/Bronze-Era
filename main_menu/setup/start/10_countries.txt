@@ -12447,5 +12447,26 @@ countries = {
 			north_china_region
 		}
 	}
+
+	DAUGA = {
+		culture = Baltic
+		religion = norse
+		country_rank = rank_county
+		own_control_core = {
+			aizkraukle  braslaw     daugavpils  dzisna      miory       selpils
+		}
+		capital = daugavpils
+		include = "neolithic_nordic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Baltic
+		}
+		discovered_regions = {
+			baltic_region
+			ruthenia_region
+		}
+	}
 }
 }
