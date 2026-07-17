@@ -21701,7 +21701,7 @@ grobina = {
 kandava = {
 	define_pop = {
 		type = peasants
-		size = 1
+		size = 1.003
 		culture = Baltic
 		religion = nordic_pagan
 	}
@@ -22518,25 +22518,25 @@ koknese = {
 limbazi = {
 	define_pop = {
 		type = nobles
-		size = 0.01
+		size = 0.019
 		culture = Baltic
 		religion = nordic_pagan
 	}
 	define_pop = {
 		type = clergy
-		size = 0.01
+		size = 0.019
 		culture = Baltic
 		religion = nordic_pagan
 	}
 	define_pop = {
 		type = peasants
-		size = 1
+		size = 1.937
 		culture = Baltic
 		religion = nordic_pagan
 	}
 	define_pop = {
 		type = peasants
-		size = 1
+		size = 1.937
 		culture = Baltic
 		religion = nordic_pagan
 	}
@@ -22584,7 +22584,7 @@ sigulda = {
 straupe = {
 	define_pop = {
 		type = peasants
-		size = 1
+		size = 1.937
 		culture = Baltic
 		religion = nordic_pagan
 	}

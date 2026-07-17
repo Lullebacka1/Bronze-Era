@@ -21601,197 +21601,742 @@ zimnicea = {
 	define_pop = {	type = peasants	size = 1.000	culture = tei	religion = dacian_pagan }
 }
 kuldiga = {
-	define_pop = {	type = nobles	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 dundaga = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 durbe = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 grobina = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 kandava = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 piltene = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 saldus = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 ventspils = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 tallinn = {
-	define_pop = {	type = nobles	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = burghers	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 narva = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 padise = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 paide = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 rakvere = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 rapla = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 toolse = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 vasknarva = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 cesis = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 aluksne = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 gulbene = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 rauna = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 valmiera = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 vilaka = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 jekabpils = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 kraslava = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 makonkalns = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 pietalava = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 rezekne = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 lake_lubans = {
 }
 lake_razna = {
 }
 parnu = {
-	define_pop = {	type = nobles	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 karksi = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 poltsamaa = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 saarde = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 suure_jaani = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 viljandi = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 lake_vorts = {
 }
 hapsal = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 kaina = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 kuressaare = {
-	define_pop = {	type = nobles	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 lihula = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 st_martin = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 valjala = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 daugavpils = {
 	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
@@ -21799,85 +22344,330 @@ daugavpils = {
 	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
 }
 aizkraukle = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 selpils = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 jelgava = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 bauska = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 dobele = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 tukums = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 riga = {
-	define_pop = {	type = nobles	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = burghers	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 koknese = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 limbazi = {
-	define_pop = {	type = nobles	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 salaspils = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 sigulda = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 straupe = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 tartu = {
-	define_pop = {	type = nobles	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = burghers	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = burghers	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 valka = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 vastseliina = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 vonnu = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 dobrzyn = {
 	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
@@ -22425,9 +23215,24 @@ upyte = {
 	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = steppe_pagan }
 }
 birzai = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = steppe_pagan
+	}
 }
 linkava = {
 	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
@@ -23065,16 +23870,56 @@ olsztyn = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = corded_ware	religion = nordic_pagan }
 }
 medininkai = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 palanga = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 rietavas = {
 	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
@@ -23091,10 +23936,30 @@ silale = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = corded_ware	religion = nordic_pagan }
 }
 skuodas = {
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 taurage = {
 	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
@@ -23133,21 +23998,76 @@ kraziai = {
 	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
 }
 mazeikiai = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 papile = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 zagare = {
-	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = nordic_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = nordic_pagan
+	}
 }
 glogow = {
 	define_pop = {	type = clergy	size = 0.010	culture = corded_ware	religion = nordic_pagan }
@@ -30238,8 +31158,18 @@ gdov = {
 	define_pop = {	type = peasants	size = 1.000	culture = andronovo	religion = steppe_pagan }
 }
 izborsk = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Baltic
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Baltic
+		religion = steppe_pagan
+	}
 }
 kobyle = {
 	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
