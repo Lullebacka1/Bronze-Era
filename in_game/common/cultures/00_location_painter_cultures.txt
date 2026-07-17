@@ -32,3 +32,11 @@ lankan = {
 	opinions = {
 	}
 }
+
+Baltic = {
+	culture_groups = { baltic_group }
+	language = Balte
+	color = rgb { 106 98 213 }
+	opinions = {
+	}
+}

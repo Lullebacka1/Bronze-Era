@@ -2133,3 +2133,88 @@ TAMBA = {
 	color = rgb { 255 255 255 }
 	color2 = rgb { 226 222 227 }
 }
+
+BAN = {
+	color = rgb { 182 171 53 }
+	color2 = rgb { 83 67 24 }
+}
+
+CURO = {
+	color = rgb { 104 53 182 }
+	color2 = rgb { 68 24 82 }
+}
+
+FINNI = {
+	color = rgb { 223 213 225 }
+	color2 = rgb { 222 215 224 }
+}
+
+HUI2 = {
+	color = rgb { 104 182 53 }
+	color2 = rgb { 24 83 42 }
+}
+
+JIA = {
+	color = rgb { 228 202 236 }
+	color2 = rgb { 197 181 201 }
+}
+
+LAI = {
+	color = rgb { 152 53 182 }
+	color2 = rgb { 209 158 224 }
+}
+
+LAPEI = {
+	color = rgb { 48 41 50 }
+	color2 = rgb { 57 47 60 }
+}
+
+LATGA = {
+	color = rgb { 129 156 238 }
+	color2 = rgb { 86 132 240 }
+}
+
+NANCH = {
+	color = rgb { 53 143 182 }
+	color2 = rgb { 24 44 83 }
+}
+
+NIAO = {
+	color = rgb { 96 215 120 }
+	color2 = rgb { 24 83 28 }
+}
+
+SAMI = {
+	color = rgb { 93 91 236 }
+	color2 = rgb { 81 59 247 }
+}
+
+SELON = {
+	color = rgb { 192 139 208 }
+	color2 = rgb { 217 187 226 }
+}
+
+SEMIG = {
+	color = rgb { 182 53 115 }
+	color2 = rgb { 68 24 82 }
+}
+
+XIAW = {
+	color = rgb { 182 53 98 }
+	color2 = rgb { 83 24 67 }
+}
+
+XUAN = {
+	color = rgb { 218 43 51 }
+	color2 = rgb { 83 24 50 }
+}
+
+YUE = {
+	color = rgb { 176 94 201 }
+	color2 = rgb { 68 24 82 }
+}
+
+YUYI = {
+	color = rgb { 182 165 53 }
+	color2 = rgb { 68 24 82 }
+}

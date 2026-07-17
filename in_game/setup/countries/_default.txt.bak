@@ -380,6 +380,10 @@ LATIN = {
 	color = rgb { 153 130 84 }
 	color2 = rgb { 110 27 27 }
 }
+ROME = {
+	color = rgb { 164 36 24 }
+	color2 = rgb { 224 148 24 }
+}
 NORIC = {
 	color = rgb { 104 115 130 }
 	color2 = rgb { 110 27 27 }
@@ -2113,4 +2117,19 @@ LUTRU = {
 KIZIL = {
 	color = rgb { 61 124 225 }
 	color2 = rgb { 24 36 83 }
+}
+
+NAGAD = {
+	color = rgb { 215 153 234 }
+	color2 = rgb { 40 27 44 }
+}
+
+ROHAN = {
+	color = rgb { 78 74 79 }
+	color2 = rgb { 49 48 49 }
+}
+
+TAMBA = {
+	color = rgb { 255 255 255 }
+	color2 = rgb { 226 222 227 }
 }
