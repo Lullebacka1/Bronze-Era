@@ -51689,77 +51689,192 @@ taihe = {
 	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
 }
 amis = {
-	define_pop = {	type = tribesmen	size = 00.000	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 9.231
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 paiwan = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 7.692
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 takbanuao = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 7.692
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 truku = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 7.692
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 nanhudashan = {
 }
 yushan = {
 }
 basai = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 3.187
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 kavalan = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 3.187
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 ketagalan = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 10.067
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 kulun = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 3.187
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 pakuali = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 3.187
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 squliq = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 3.187
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 siraya = {
-	define_pop = {	type = tribesmen	size = 00.000	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = peasants
+		size = 6.429
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 ishbukun = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 2.143
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 lloa = {
-	define_pop = {	type = tribesmen	size = 00.000	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = peasants
+		size = 10.714
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 makatao = {
-	define_pop = {	type = tribesmen	size = 00.000	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = peasants
+		size = 6.429
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 rukai = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 7.692
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 takitudu = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 5.833
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 tsou = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 4.286
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 papora = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 5.833
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 arikun = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 5.833
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 babuza = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 5.833
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 mayrinax = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 5.833
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 seediq = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 5.833
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 taokas = {
-	define_pop = {	type = tribesmen	size = 00.000	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 xueshan = {
 }
@@ -53923,13 +54038,28 @@ oozato = {
 kumejima = {
 }
 miyakojima = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 ishigaki = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 iriomote = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Formosan
+		religion = Formosan_Paganism
+	}
 }
 yonaguni = {
 }

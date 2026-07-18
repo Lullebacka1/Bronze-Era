@@ -12551,46 +12551,5 @@ countries = {
 			east_china_region
 		}
 	}
-
-	SAMBI = {
-		culture = Baltic
-		religion = baltic_pagan
-		country_rank = rank_county
-		own_control_core = {
-			fischhausen  konigsberg   labiau       memel        tilsit       wehlau
-			windenburg
-		}
-		capital = fischhausen
-		include = "neolithic_germania"
-		government = {
-			ruler = random
-		}
-		accepted_cultures = {
-			Lausitz
-		}
-		discovered_regions = {
-			baltic_region
-		}
-	}
-
-	VISTU = {
-		culture = Lausitz
-		religion = baltic_pagan
-		country_rank = rank_county
-		own_control_core = {
-			elblag   gdansk   malbork  puck     tczew
-		}
-		capital = gdansk
-		include = "neolithic_nordic"
-		government = {
-			ruler = random
-		}
-		accepted_cultures = {
-			Lausitz
-		}
-		discovered_regions = {
-			baltic_region
-		}
-	}
 }
 }

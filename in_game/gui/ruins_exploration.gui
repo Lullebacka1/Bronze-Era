@@ -1,9 +1,16 @@
 types BronzeRuinsExplorationTypes
 {
 	type BronzeRuinsExplorationWindow = ContextMenuBase {
+		# Bronze Era: keep the existing context-menu open/close path, but make
+		# the ruins panel behave like a compact window instead of a tall popup
+		# that can be clipped at the bottom of lower resolutions.
+		blockoverride "contextmenu_scroll_maximumsize" {
+			maximumsize = { -1 500 }
+		}
+
 		blockoverride "contextmenu_content" {
 			widget = {
-				size = { 1220 720 }
+				size = { 1220 470 }
 				using = bg_main_inner_alt
 				using = bg_cabinet_card_frame
 
@@ -98,7 +105,7 @@ types BronzeRuinsExplorationTypes
 								}
 
 								scrollarea = {
-									size = { 295 565 }
+									size = { 295 310 }
 									scrollbarpolicy_horizontal = always_off
 									autoresizescrollarea = no
 
@@ -245,12 +252,22 @@ types BronzeRuinsExplorationTypes
 							using = bg_paper_card
 							using = bg_cabinet_card_frame
 
-							vbox = {
-								margin = { 10 8 }
-								spacing = 8
+							scrollarea = {
+								using = layoutpolicy_expanding
+								scrollbarpolicy_horizontal = always_off
+								autoresizescrollarea = no
+
+								scrollbar_vertical = {
+									using = Scrollbar_Vertical
+								}
+
+								scrollwidget = {
+									vbox = {
+										margin = { 10 8 }
+										spacing = 8
 
 								widget = {
-									size = { 525 170 }
+									size = { 525 130 }
 									using = bg_main_inner_alt
 									background = {
 										texture = "gfx/interface/illustrations/work_of_art/palace.dds"
@@ -271,7 +288,7 @@ types BronzeRuinsExplorationTypes
 								}
 
 								text_multi = {
-									size = { 525 72 }
+									size = { 525 54 }
 									autoresize = no
 									multiline = yes
 									text = "be_ruins_selected_desc"
@@ -386,6 +403,8 @@ types BronzeRuinsExplorationTypes
 									icon = { size = { 34 34 } texture = "gfx/interface/icons/events/event.dds" tooltip = "be_ruins_reward_event" }
 								}
 							}
+								}
+							}
 						}
 
 						# Right panel: expedition preparation.
@@ -395,14 +414,24 @@ types BronzeRuinsExplorationTypes
 							using = bg_paper_card
 							using = bg_cabinet_card_frame
 
-							vbox = {
-								margin = { 10 8 }
-								spacing = 8
+							scrollarea = {
+								using = layoutpolicy_expanding
+								scrollbarpolicy_horizontal = always_off
+								autoresizescrollarea = no
 
-								text_single = {
-									text = "be_ruins_prepare_expedition"
-									default_format = "#yellow_titles"
+								scrollbar_vertical = {
+									using = Scrollbar_Vertical
 								}
+
+								scrollwidget = {
+									vbox = {
+										margin = { 10 8 }
+										spacing = 8
+
+										text_single = {
+											text = "be_ruins_prepare_expedition"
+											default_format = "#yellow_titles"
+										}
 
 								widget = {
 									size = { 310 178 }
@@ -759,6 +788,8 @@ types BronzeRuinsExplorationTypes
 											visible = "[Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet]"
 											text = "be_ruins_expedition_morale_text"
 										}
+									}
+								}
 									}
 								}
 							}
