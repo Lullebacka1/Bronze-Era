@@ -3020,4 +3020,169 @@ locations = {
 		bronze_routes = yes
 	}
 
+	############################################################
+	# SHANG BRONZE TRADE NETWORKS
+	# Starting presence only; spawn remains restricted by institution trigger.
+	############################################################
+
+	baima_daming = {
+		bronze_routes = yes
+	}
+	changge = {
+		bronze_routes = yes
+	}
+	changshe = {
+		bronze_routes = yes
+	}
+	changyuan = {
+		bronze_routes = yes
+	}
+	chaocheng = {
+		bronze_routes = yes
+	}
+	dancheng = {
+		bronze_routes = yes
+	}
+	dengfeng = {
+		bronze_routes = yes
+	}
+	dongming = {
+		bronze_routes = yes
+	}
+	fanxian = {
+		bronze_routes = yes
+	}
+	fengqiu = {
+		bronze_routes = yes
+	}
+	fugou = {
+		bronze_routes = yes
+	}
+	gongxian = {
+		bronze_routes = yes
+	}
+	guancheng_zhengzhou = {
+		bronze_routes = yes
+	}
+	jiyin = {
+		bronze_routes = yes
+	}
+	juancheng = {
+		bronze_routes = yes
+	}
+	kaifeng = {
+		bronze_routes = yes
+	}
+	kaocheng = {
+		bronze_routes = yes
+	}
+	lanyang = {
+		bronze_routes = yes
+	}
+	linying = {
+		bronze_routes = yes
+	}
+	luoyang = {
+		bronze_routes = yes
+	}
+	mengjin = {
+		bronze_routes = yes
+	}
+	mianchi = {
+		bronze_routes = yes
+	}
+	mixian = {
+		bronze_routes = yes
+	}
+	nanle = {
+		bronze_routes = yes
+	}
+	neihuang = {
+		bronze_routes = yes
+	}
+	puyang = {
+		bronze_routes = yes
+	}
+	qingfeng = {
+		bronze_routes = yes
+	}
+	qixian = {
+		bronze_routes = yes
+	}
+	shanxian = {
+		bronze_routes = yes
+	}
+	shouzhang = {
+		bronze_routes = yes
+	}
+	taikang = {
+		bronze_routes = yes
+	}
+	tongxu = {
+		bronze_routes = yes
+	}
+	wanqiu = {
+		bronze_routes = yes
+	}
+	weishi = {
+		bronze_routes = yes
+	}
+	wuzhi = {
+		bronze_routes = yes
+	}
+	xiangyi = {
+		bronze_routes = yes
+	}
+	xihua = {
+		bronze_routes = yes
+	}
+	xinan = {
+		bronze_routes = yes
+	}
+	xingyang = {
+		bronze_routes = yes
+	}
+	xinxiang = {
+		bronze_routes = yes
+	}
+	xinzheng = {
+		bronze_routes = yes
+	}
+	xucheng = {
+		bronze_routes = yes
+	}
+	yangdi = {
+		bronze_routes = yes
+	}
+	yanggu_yanzhou = {
+		bronze_routes = yes
+	}
+	yanjin = {
+		bronze_routes = yes
+	}
+	yanling = {
+		bronze_routes = yes
+	}
+	yanshi = {
+		bronze_routes = yes
+	}
+	yique = {
+		bronze_routes = yes
+	}
+	yiyang = {
+		bronze_routes = yes
+	}
+	yongning_shanzhou = {
+		bronze_routes = yes
+	}
+	yuanyang = {
+		bronze_routes = yes
+	}
+	yuncheng = {
+		bronze_routes = yes
+	}
+	zhongmu = {
+		bronze_routes = yes
+	}
+
 }
