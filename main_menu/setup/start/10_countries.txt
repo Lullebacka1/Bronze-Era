@@ -11821,7 +11821,7 @@ countries = {
 			vasteras
 		}
 		capital = enkoping
-		include = "bronze_nodic_age"
+		include = "bronze_nordic_age"
 		government = {
 			ruler = random
 		}

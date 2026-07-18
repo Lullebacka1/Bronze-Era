@@ -2970,4 +2970,54 @@ locations = {
 		bronze_routes = yes
 	}
 
+	############################################################
+	# BRONZE NORDIC AGE TRADE NETWORKS
+	############################################################
+
+	alvastra = {
+		bronze_routes = yes
+	}
+	arboga = {
+		bronze_routes = yes
+	}
+	assens = {
+		bronze_routes = yes
+	}
+	enkoping = {
+		bronze_routes = yes
+	}
+	linkoping = {
+		bronze_routes = yes
+	}
+	norrkoping = {
+		bronze_routes = yes
+	}
+	odense = {
+		bronze_routes = yes
+	}
+	oppunda = {
+		bronze_routes = yes
+	}
+	sodertalje = {
+		bronze_routes = yes
+	}
+	soderkoping = {
+		bronze_routes = yes
+	}
+	stockholm = {
+		bronze_routes = yes
+	}
+	strangnas = {
+		bronze_routes = yes
+	}
+	svendborg = {
+		bronze_routes = yes
+	}
+	vadstena = {
+		bronze_routes = yes
+	}
+	vasteras = {
+		bronze_routes = yes
+	}
+
 }
