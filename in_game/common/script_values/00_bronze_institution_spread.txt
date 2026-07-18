@@ -6,11 +6,11 @@ bronze_age_institution_trade_spread = {
 	value = 0.35
 	add = {
 		value = development
-		multiply = 0.02
+		multiply = 0.05
 	}
 	add = {
 		value = average_location_literacy
-		multiply = 0.01
+		multiply = 0.02
 	}
 }
 
@@ -60,7 +60,7 @@ bronze_age_institution_urban_promotion = {
 	value = 10
 	add = {
 		value = development
-		multiply = 0.10
+		multiply = 0.12
 	}
 	add = {
 		value = average_location_literacy
