@@ -12470,5 +12470,86 @@ countries = {
 			ruthenia_region
 		}
 	}
+
+	BEINA = {
+		culture = Formosan
+		religion = Formosan_Paganism
+		country_rank = rank_county
+		own_control_core = {
+			amis       paiwan     rukai      takbanuao  truku
+		}
+		capital = paiwan
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Formosan
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	FANZA = {
+		culture = Formosan
+		religion = Formosan_Paganism
+		country_rank = rank_county
+		own_control_core = {
+			arikun    babuza    mayrinax  papora    seediq    takitudu
+			taokas
+		}
+		capital = papora
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Formosan
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	NIAOS = {
+		culture = Formosan
+		religion = Formosan_Paganism
+		country_rank = rank_county
+		own_control_core = {
+			ishbukun  lloa      makatao   siraya    tsou
+		}
+		capital = siraya
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Formosan
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	YUANS = {
+		culture = Formosan
+		religion = Formosan_Paganism
+		country_rank = rank_county
+		own_control_core = {
+			basai      kavalan    ketagalan  kulun      pakuali    squliq
+		}
+		capital = kavalan
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Formosan
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
 }
 }

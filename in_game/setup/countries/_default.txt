@@ -2223,3 +2223,23 @@ DAUGA = {
 	color = rgb { 84 129 232 }
 	color2 = rgb { 211 183 220 }
 }
+
+BEINA = {
+	color = rgb { 40 21 45 }
+	color2 = rgb { 46 24 52 }
+}
+
+FANZA = {
+	color = rgb { 124 53 182 }
+	color2 = rgb { 51 24 83 }
+}
+
+NIAOS = {
+	color = rgb { 229 194 240 }
+	color2 = rgb { 233 200 243 }
+}
+
+YUANS = {
+	color = rgb { 166 242 219 }
+	color2 = rgb { 24 82 83 }
+}

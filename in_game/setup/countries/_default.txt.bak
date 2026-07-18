@@ -2218,3 +2218,8 @@ YUYI = {
 	color = rgb { 182 165 53 }
 	color2 = rgb { 68 24 82 }
 }
+
+DAUGA = {
+	color = rgb { 84 129 232 }
+	color2 = rgb { 211 183 220 }
+}

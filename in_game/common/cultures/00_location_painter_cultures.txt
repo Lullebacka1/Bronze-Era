@@ -48,3 +48,11 @@ finnic = {
 	opinions = {
 	}
 }
+
+Formosan = {
+	culture_groups = { east_asian_bronze_group }
+	language = Formosan
+	color = rgb { 212 100 227 }
+	opinions = {
+	}
+}
