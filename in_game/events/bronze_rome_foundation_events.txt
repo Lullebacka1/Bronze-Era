@@ -1,0 +1,66 @@
+namespace = bronze_rome_foundation
+
+bronze_rome_foundation.1 = {
+	type = country_event
+	title = bronze_rome_foundation.1.title
+	desc = bronze_rome_foundation.1.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/_default.dds"
+	outcome = positive
+	major = yes
+	orphan = yes
+
+	trigger = {
+		is_human = yes
+		bronze_rome_foundation_candidate = yes
+		bronze_rome_foundation_latin_owner = yes
+	}
+
+	option = {
+		name = bronze_rome_foundation.1.a
+		custom_tooltip = bronze_rome_foundation_1a_tt
+		bronze_rome_foundation_create_kingdom = yes
+		if = {
+			limit = {
+				country_exists = c:ROME
+				c:ROME = { owns = location:rome }
+			}
+			change_player = c:ROME
+		}
+	}
+
+	option = {
+		name = bronze_rome_foundation.1.b
+		custom_tooltip = bronze_rome_foundation_1b_tt
+		bronze_rome_foundation_absorb_settlement = yes
+	}
+}
+
+bronze_rome_foundation.2 = {
+	type = country_event
+	title = bronze_rome_foundation.2.title
+	desc = bronze_rome_foundation.2.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/_default.dds"
+	outcome = neutral
+	major = yes
+	orphan = yes
+
+	trigger = {
+		is_human = yes
+		bronze_rome_foundation_candidate = yes
+		NOT = { bronze_rome_foundation_latin_owner = yes }
+	}
+
+	option = {
+		name = bronze_rome_foundation.2.a
+		custom_tooltip = bronze_rome_foundation_2a_tt
+		bronze_rome_foundation_create_kingdom = yes
+	}
+
+	option = {
+		name = bronze_rome_foundation.2.b
+		custom_tooltip = bronze_rome_foundation_2b_tt
+		bronze_rome_foundation_absorb_settlement = yes
+	}
+}

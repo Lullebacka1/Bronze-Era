@@ -370,3 +370,15 @@ bronze_age_KOS_coa = { # Kos: sea-green island kingdom, Achaean ship and the twi
 		instance = { position = { 0.61 0.75 } scale = { -0.42 0.42 } }
 	}
 }
+
+bronze_age_ROME_coa = { # Rome: red and gold, using the provided she-wolf foundation emblem.
+	pattern = "pattern_solid.dds"
+	color1 = "red_dark"
+	color2 = "yellow_mid"
+	color3 = "brown"
+
+	textured_emblem = {
+		texture = "ba_rome_shewolf_flag.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}

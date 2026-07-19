@@ -380,6 +380,10 @@ LATIN = {
 	color = rgb { 153 130 84 }
 	color2 = rgb { 110 27 27 }
 }
+ROME = {
+	color = rgb { 164 36 24 }
+	color2 = rgb { 224 148 24 }
+}
 NORIC = {
 	color = rgb { 104 115 130 }
 	color2 = rgb { 110 27 27 }
@@ -2058,4 +2062,194 @@ CIMME = {
 MUMUN = {
 	color = rgb { 96 105 151 }
 	color2 = rgb { 110 27 27 }
+}
+
+APAL = {
+	color = rgb { 28 93 196 }
+	color2 = rgb { 65 63 198 }
+}
+
+OSTER = {
+	color = rgb { 35 209 111 }
+	color2 = rgb { 68 24 82 }
+}
+
+VOLD = {
+	color = rgb { 223 38 102 }
+	color2 = rgb { 169 45 111 }
+}
+
+PANLO = {
+	color = rgb { 61 153 199 }
+	color2 = rgb { 53 176 192 }
+}
+
+SHANG = {
+	color = rgb { 214 149 234 }
+	color2 = rgb { 68 24 82 }
+}
+
+TAMN = {
+	color = rgb { 161 144 58 }
+	color2 = rgb { 76 83 24 }
+}
+
+OLA = {
+	color = rgb { 152 53 182 }
+	color2 = rgb { 68 24 82 }
+}
+
+OPES = {
+	color = rgb { 182 53 147 }
+	color2 = rgb { 83 24 61 }
+}
+
+OSUN = {
+	color = rgb { 91 182 53 }
+	color2 = rgb { 37 83 24 }
+}
+
+LUTRU = {
+	color = rgb { 61 53 182 }
+	color2 = rgb { 45 24 83 }
+}
+
+KIZIL = {
+	color = rgb { 61 124 225 }
+	color2 = rgb { 24 36 83 }
+}
+
+NAGAD = {
+	color = rgb { 215 153 234 }
+	color2 = rgb { 40 27 44 }
+}
+
+ROHAN = {
+	color = rgb { 78 74 79 }
+	color2 = rgb { 49 48 49 }
+}
+
+TAMBA = {
+	color = rgb { 255 255 255 }
+	color2 = rgb { 226 222 227 }
+}
+
+BAN = {
+	color = rgb { 182 171 53 }
+	color2 = rgb { 83 67 24 }
+}
+
+CURO = {
+	color = rgb { 104 53 182 }
+	color2 = rgb { 68 24 82 }
+}
+
+FINNI = {
+	color = rgb { 223 213 225 }
+	color2 = rgb { 222 215 224 }
+}
+
+HUI2 = {
+	color = rgb { 104 182 53 }
+	color2 = rgb { 24 83 42 }
+}
+
+JIA = {
+	color = rgb { 228 202 236 }
+	color2 = rgb { 197 181 201 }
+}
+
+LAI = {
+	color = rgb { 152 53 182 }
+	color2 = rgb { 209 158 224 }
+}
+
+LAPEI = {
+	color = rgb { 48 41 50 }
+	color2 = rgb { 57 47 60 }
+}
+
+LATGA = {
+	color = rgb { 129 156 238 }
+	color2 = rgb { 86 132 240 }
+}
+
+NANCH = {
+	color = rgb { 53 143 182 }
+	color2 = rgb { 24 44 83 }
+}
+
+NIAO = {
+	color = rgb { 96 215 120 }
+	color2 = rgb { 24 83 28 }
+}
+
+SAMI = {
+	color = rgb { 93 91 236 }
+	color2 = rgb { 81 59 247 }
+}
+
+SELON = {
+	color = rgb { 192 139 208 }
+	color2 = rgb { 217 187 226 }
+}
+
+SEMIG = {
+	color = rgb { 182 53 115 }
+	color2 = rgb { 68 24 82 }
+}
+
+XIAW = {
+	color = rgb { 182 53 98 }
+	color2 = rgb { 83 24 67 }
+}
+
+XUAN = {
+	color = rgb { 218 43 51 }
+	color2 = rgb { 83 24 50 }
+}
+
+YUE = {
+	color = rgb { 176 94 201 }
+	color2 = rgb { 68 24 82 }
+}
+
+YUYI = {
+	color = rgb { 182 165 53 }
+	color2 = rgb { 68 24 82 }
+}
+
+DAUGA = {
+	color = rgb { 84 129 232 }
+	color2 = rgb { 211 183 220 }
+}
+
+BEINA = {
+	color = rgb { 40 21 45 }
+	color2 = rgb { 46 24 52 }
+}
+
+FANZA = {
+	color = rgb { 124 53 182 }
+	color2 = rgb { 51 24 83 }
+}
+
+NIAOS = {
+	color = rgb { 229 194 240 }
+	color2 = rgb { 233 200 243 }
+}
+
+YUANS = {
+	color = rgb { 166 242 219 }
+	color2 = rgb { 24 82 83 }
+}
+
+SAMBI = {
+	color = rgb { 71 62 65 }
+	color2 = rgb { 68 24 82 }
+}
+
+VISTU = {
+	color = rgb { 213 147 103 }
+	color2 = rgb { 121 102 127 }
 }

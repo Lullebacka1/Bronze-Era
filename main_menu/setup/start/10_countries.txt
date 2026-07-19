@@ -11794,10 +11794,11 @@ countries = {
 		culture = mumun
 		religion = mumun_rites
 		country_rank = rank_county
-		own_control_core = {
-			geoje     hadong    hapcheon  jinju     namhae    sacheon
-			uian
-		}
+	own_control_core = {
+		geochang  geoje     gokseong  hadong    hapcheon  jinju
+		mupung    namhae    namwon    sacheon   seongju   suncheon
+		uian
+	}
 		capital = sacheon
 		include = "neolithic_asian"
 		government = {
@@ -11808,6 +11809,787 @@ countries = {
 		}
 		discovered_regions = {
 			korea_region
+		}
+	}
+
+	APAL = {
+		culture = nordic
+		religion = norse
+		country_rank = rank_county
+		own_control_core = {
+			arboga      enkoping    oppunda     sodertalje  stockholm   strangnas
+			vasteras
+		}
+		capital = enkoping
+		include = "bronze_nordic_age"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			nordic
+		}
+		discovered_regions = {
+			scandinavian_region
+		}
+	}
+
+	OSTER = {
+		culture = nordic
+		religion = norse
+		country_rank = rank_county
+		own_control_core = {
+			alvastra     linkoping    norrkoping   soderkoping  vadstena
+		}
+		capital = norrkoping
+		include = "bronze_nordic_age"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			nordic
+		}
+		discovered_regions = {
+			scandinavian_region
+		}
+	}
+
+	VOLD = {
+		culture = jutlandic
+		religion = norse
+		country_rank = rank_county
+		own_control_core = {
+			assens     odense     svendborg
+		}
+		capital = svendborg
+		include = "bronze_nordic_age"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			nordic
+		}
+		discovered_regions = {
+			scandinavian_region
+		}
+	}
+
+	PANLO = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			hanyang   jiangxia  jiayu     jinkou    wuchang
+		}
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	SHANG = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_kingdom
+		own_control_core = {
+			baima_daming         changge              changshe             changyuan            chaocheng            dancheng
+			dengfeng             dongming             fanxian              fengqiu              fugou                gongxian
+			guancheng_zhengzhou  jiyin                juancheng            kaifeng              kaocheng             lanyang
+			linying              luoyang              mengjin              mianchi              mixian               nanle
+			neihuang             puyang               qingfeng             qixian               shanxian             shouzhang
+			taikang              tongxu               wanqiu               weishi               wuzhi                xiangyi
+			xihua                xinan                xingyang             xinxiang             xinzheng             xucheng
+			yangdi               yanggu_yanzhou       yanjin               yanling              yanshi               yique
+			yiyang               yongning_shanzhou    yuanyang             yuncheng             zhongmu
+		}
+		capital = luoyang
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	TAMN = {
+		culture = tamna
+		religion = mumun_rites
+		country_rank = rank_county
+		own_control_core = {
+			seongwi  tamna
+		}
+		capital = tamna
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			tamna
+		}
+		discovered_regions = {
+			korea_region
+		}
+	}
+
+	OLA = {
+		culture = austronesian
+		religion = austronesian_rites
+		country_rank = rank_county
+		own_control_core = {
+			bengkalis      daik           johor_lama     tanjungpinang  temasek
+		}
+		include = "neolithic_asian"
+		capital = johor_lama
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			austronesian
+		}
+		discovered_regions = {
+			indochina_region
+			indonesia_region
+		}
+	}
+
+	OPES = {
+		culture = austronesian
+		religion = austronesian_rites
+		country_rank = rank_county
+		own_control_core = {
+			kajang          klang           malacca         muar            rantau_panjang
+		}
+		capital = malacca
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			austronesian
+		}
+		discovered_regions = {
+			indochina_region
+		}
+	}
+
+	OSUN = {
+		culture = austronesian
+		religion = austronesian_rites
+		country_rank = rank_county
+		own_control_core = {
+			baram       hulu_baram  niah        tinjar
+		}
+		capital = baram
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			austronesian
+		}
+		discovered_regions = {
+			indonesia_region
+		}
+	}
+
+	LUTRU = {
+		culture = palawa
+		religion = dreaming_ways
+		country_rank = rank_county
+		own_control_core = {
+			east_palawa        lairmairrener      paredarerme        peerapper          pyemmairrener      tommeginne
+			toogee             tyerrernotepanner  west_palawa
+		}
+		capital = paredarerme
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			palawa
+		}
+		discovered_regions = {
+			australia_region
+		}
+	}
+
+	KIZIL = {
+		culture = Kizil_Koba
+		religion = caucasian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			lusta         qarasuvbazar  qirq_yer      soldaia       solkhat       theodoro
+		}
+		capital = lusta
+		include = "neolithic_russia"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Kizil_Koba
+		}
+		discovered_regions = {
+			steppes_region
+		}
+	}
+
+	NAGAD = {
+		culture = lankan
+		religion = naga
+		country_rank = rank_county
+		own_control_core = {
+			anuradhapura   jaffna         mahatittha     medawachchiya  mullaitivu     salavata
+			vavuniya
+		}
+		capital = vavuniya
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			lankan
+		}
+		discovered_regions = {
+			deccan_region
+		}
+	}
+
+	ROHAN = {
+		culture = lankan
+		religion = Lankan
+		country_rank = rank_county
+		own_control_core = {
+			badulla        galle          gampola        hambantota     kotte          kurunegala
+			negombo        ratnapura_LKA  sitavaka       tissamaharama  yapavu
+		}
+		capital = gampola
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			lankan
+		}
+		discovered_regions = {
+			deccan_region
+		}
+	}
+
+	TAMBA = {
+		culture = lankan
+		religion = Lankan
+		country_rank = rank_county
+		own_control_core = {
+			digavapi        hatthigiripura  kandy           madakalapu      polonnaruva     trincomalee
+		}
+		capital = polonnaruva
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			lankan
+		}
+		discovered_regions = {
+			deccan_region
+		}
+	}
+
+	BAN = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			ganyu    gegou    juxian   rizhao   shizilu  yishui
+		}
+		capital = gegou
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+			north_china_region
+		}
+	}
+
+	CURO = {
+		culture = Baltic
+		religion = baltic_pagan
+		country_rank = rank_county
+		own_control_core = {
+			bauska     dobele     dundaga    jelgava    kandava    kuldiga
+			piltene    riga       salaspils  saldus     tukums     ventspils
+		}
+		capital = riga
+		include = "neolithic_nordic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Baltic
+		}
+		discovered_regions = {
+			baltic_region
+		}
+	}
+
+	FINNI = {
+		culture = finnic
+		religion = finnic_pagan
+		country_rank = rank_county
+		own_control_core = {
+			ekenas    hapsal    helsinge  kaina     kymi_fi   padise
+			porvoo    sjundea   tallinn
+		}
+		capital = tallinn
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			finnic
+		}
+		discovered_regions = {
+			baltic_region
+			scandinavian_region
+		}
+	}
+
+	HUI2 = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			fuzhou_liaoyang  gaizhou          jinzhou_dalian   zhuanghe
+		}
+		capital = jinzhou_dalian
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			manchuria_region
+		}
+	}
+
+	JIA = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			guancheng  liaocheng  shenxian   tangyi     weixian    yuancheng
+		}
+		capital = yuancheng
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	LAI = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			huangxian  penglai
+		}
+		capital = penglai
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	LAPEI = {
+		culture = finnic
+		religion = finnic_pagan
+		country_rank = rank_county
+		own_control_core = {
+			ivangorod  narva      rakvere    toolse     vasknarva
+		}
+		capital = narva
+		include = "neolithic_nordic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			finnic
+		}
+		discovered_regions = {
+			baltic_region
+			russian_region
+		}
+	}
+
+	LATGA = {
+		culture = Baltic
+		religion = baltic_pagan
+		country_rank = rank_county
+		own_control_core = {
+			limbazi  straupe
+		}
+		capital = straupe
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Baltic
+		}
+		discovered_regions = {
+			baltic_region
+		}
+	}
+
+	NANCH = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			chaoxian          hanshan           hezhou_he         liangxian         quanjiao          wujiang_yingtian
+			wuwei
+		}
+		capital = chaoxian
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	NIAO = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			andong_huaian  banpu          qushan         shuyang        suqian         xinyi
+		}
+		capital = xinyi
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	SAMI = {
+		culture = nordic
+		religion = norse
+		country_rank = rank_county
+		own_control_core = {
+			branna      hienatiemi  pajala      ranea       tornea
+		}
+		capital = ranea
+		include = "neolithic_nordic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			nordic
+		}
+		discovered_regions = {
+			scandinavian_region
+		}
+	}
+
+	SELON = {
+		culture = Baltic
+		religion = baltic_pagan
+		country_rank = rank_county
+		own_control_core = {
+			jekabpils   kraslava    makonkalns  rezekne
+		}
+		capital = kraslava
+		include = "neolithic_nordic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Baltic
+		}
+		discovered_regions = {
+			baltic_region
+		}
+	}
+
+	SEMIG = {
+		culture = Baltic
+		religion = baltic_pagan
+		country_rank = rank_county
+		own_control_core = {
+			aluksne  cesis    gulbene  rauna
+		}
+		capital = rauna
+		include = "neolithic_nordic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Baltic
+		}
+		discovered_regions = {
+			baltic_region
+		}
+	}
+
+	XIAW = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			qinghe_huaian   taoyuan_huaian
+		}
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	XUAN = {
+		culture = abau_culture
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			dasong             fushan_jiaozhou    jiangshan_laiyang  jiaoshui           jiaoxi             jimo
+			laiyang            lingshanwei        luxiang            qixia              yexian_laizhou     zhaoyuan
+		}
+		capital = fushan_jiaozhou
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			abau_culture
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	YUE = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			cixi       shangyu    shaoxing   shengxian  xiaoshan   yuyao
+		}
+		capital = shangyu
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	YUYI = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			chengshan      fushan_muping  muping         rushan         weihai         wendeng
+		}
+		capital = rushan
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	DAUGA = {
+		culture = Baltic
+		religion = baltic_pagan
+		country_rank = rank_county
+		own_control_core = {
+			aizkraukle  braslaw     daugavpils  dzisna      miory       selpils
+		}
+		capital = daugavpils
+		include = "neolithic_nordic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Baltic
+		}
+		discovered_regions = {
+			baltic_region
+			ruthenia_region
+		}
+	}
+
+	BEINA = {
+		culture = Formosan
+		religion = Formosan_Paganism
+		country_rank = rank_county
+		own_control_core = {
+			amis       paiwan     rukai      takbanuao  truku
+		}
+		capital = paiwan
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Formosan
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	FANZA = {
+		culture = Formosan
+		religion = Formosan_Paganism
+		country_rank = rank_county
+		own_control_core = {
+			arikun    babuza    mayrinax  papora    seediq    takitudu
+			taokas
+		}
+		capital = papora
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Formosan
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	NIAOS = {
+		culture = Formosan
+		religion = Formosan_Paganism
+		country_rank = rank_county
+		own_control_core = {
+			ishbukun  lloa      makatao   siraya    tsou
+		}
+		capital = siraya
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Formosan
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	YUANS = {
+		culture = Formosan
+		religion = Formosan_Paganism
+		country_rank = rank_county
+		own_control_core = {
+			basai      kavalan    ketagalan  kulun      pakuali    squliq
+		}
+		capital = kavalan
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Formosan
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	SAMBI = {
+		culture = Baltic
+		religion = baltic_pagan
+		country_rank = rank_county
+		own_control_core = {
+			fischhausen  konigsberg   labiau       memel        tilsit       wehlau
+			windenburg
+		}
+		capital = fischhausen
+		include = "neolithic_germania"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Lausitz
+		}
+		discovered_regions = {
+			baltic_region
+		}
+	}
+
+	VISTU = {
+		culture = Lausitz
+		religion = baltic_pagan
+		country_rank = rank_county
+		own_control_core = {
+			elblag   gdansk   malbork  puck     tczew
+		}
+		capital = gdansk
+		include = "neolithic_nordic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Lausitz
+		}
+		discovered_regions = {
+			baltic_region
 		}
 	}
 }

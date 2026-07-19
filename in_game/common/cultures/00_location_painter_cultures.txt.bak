@@ -56,11 +56,3 @@ Formosan = {
 	opinions = {
 	}
 }
-
-Lausitz = {
-	culture_groups = { germanic_nordic_group }
-	language = Lausitz
-	color = rgb { 215 217 89 }
-	opinions = {
-	}
-}

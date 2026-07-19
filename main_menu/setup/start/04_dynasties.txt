@@ -14,6 +14,16 @@ dynasty_manager = {
 		}
 	}
 
+	# Bronze Era dynamic Rome foundation dynasty.
+	romulus_dynasty = {
+		name = { name = name_romulus_dynasty }
+		dynasty_name_type = descendant
+		home = rome
+		male_names = {
+			name_romulus
+		}
+	}
+
 	bjalbo_atten_dynasty = {
 		name = { name = bjalbo_atten_dynasty }
 		dynasty_name_type = location

@@ -1,6 +1,12 @@
 types BronzeRuinsExplorationTypes
 {
 	type BronzeRuinsExplorationWindow = ContextMenuBase {
+		# Bronze Era: preserve the original full ruins panel layout, but force
+		# the whole context menu to scroll when it cannot fit on screen.
+		blockoverride "contextmenu_scroll_maximumsize" {
+			maximumsize = { -1 600 }
+		}
+
 		blockoverride "contextmenu_content" {
 			widget = {
 				size = { 1220 720 }
@@ -111,7 +117,7 @@ types BronzeRuinsExplorationTypes
 											spacing = 6
 
 											button = {
-												size = { 275 96 }
+												size = { 275 122 }
 												using = bg_paper_card
 												using = bg_cabinet_card_frame
 												tooltip = "be_ruins_selected_ruin_tt"
@@ -131,9 +137,11 @@ types BronzeRuinsExplorationTypes
 
 														text_single = {
 															layoutpolicy_horizontal = expanding
+															size = { 195 22 }
 															autoresize = no
 															text = "[Location.GetNameWithNoTooltip]"
 															default_format = "#yellow_titles"
+															tooltip = "[Location.GetName]"
 														}
 														text_single = {
 															visible = "[Location.MakeScope.GetVariable('be_ruins_type_capital').IsSet]"
@@ -269,7 +277,7 @@ types BronzeRuinsExplorationTypes
 								}
 
 								text_multi = {
-									size = { 525 54 }
+									size = { 525 72 }
 									autoresize = no
 									multiline = yes
 									text = "be_ruins_selected_desc"
@@ -283,12 +291,16 @@ types BronzeRuinsExplorationTypes
 
 									hbox = {
 										spacing = 8
-										text_single = { size = { 210 20 } text = "be_ruins_creation_date" default_format = "#yellow_titles" }
+										text_single = { size = { 190 20 } text = "be_ruins_creation_date" default_format = "#yellow_titles" }
 										text_single = {
+											size = { 300 20 }
+											autoresize = no
 											visible = "[Location.MakeScope.GetVariable('bronze_ruins_destroyed_year').IsSet]"
 											text = "[Location.MakeScope.GetVariable('bronze_ruins_destroyed_year').GetValue|0]"
 										}
 										text_single = {
+											size = { 300 20 }
+											autoresize = no
 											visible = "[Not(Location.MakeScope.GetVariable('bronze_ruins_destroyed_year').IsSet)]"
 											text = "be_ruins_unknown_value"
 										}
@@ -296,18 +308,22 @@ types BronzeRuinsExplorationTypes
 
 									hbox = {
 										spacing = 8
-										text_single = { size = { 210 20 } text = "be_ruins_former_city" default_format = "#yellow_titles" }
-										text_single = { text = "[Location.GetNameWithNoTooltip]" }
+										text_single = { size = { 190 20 } text = "be_ruins_former_city" default_format = "#yellow_titles" }
+										text_single = { size = { 300 20 } autoresize = no text = "[Location.GetNameWithNoTooltip]" tooltip = "[Location.GetName]" }
 									}
 
 									hbox = {
 										spacing = 8
-										text_single = { size = { 210 20 } text = "be_ruins_former_prestige" default_format = "#yellow_titles" }
+										text_single = { size = { 190 20 } text = "be_ruins_former_prestige" default_format = "#yellow_titles" }
 										text_single = {
+											size = { 300 20 }
+											autoresize = no
 											visible = "[Location.MakeScope.GetVariable('bronze_ruins_former_prestige').IsSet]"
 											text = "[Location.MakeScope.GetVariable('bronze_ruins_former_prestige').GetValue|0]"
 										}
 										text_single = {
+											size = { 300 20 }
+											autoresize = no
 											visible = "[Not(Location.MakeScope.GetVariable('bronze_ruins_former_prestige').IsSet)]"
 											text = "be_ruins_unknown_value"
 										}
@@ -315,19 +331,19 @@ types BronzeRuinsExplorationTypes
 
 									hbox = {
 										spacing = 8
-										text_single = { size = { 210 20 } text = "be_ruins_origin_culture" default_format = "#yellow_titles" }
-										text_single = { text = "[Location.GetDominantCulture.GetNameWithNoTooltip]" }
+										text_single = { size = { 190 20 } text = "be_ruins_origin_culture" default_format = "#yellow_titles" }
+										text_single = { size = { 300 20 } autoresize = no text = "[Location.GetDominantCulture.GetNameWithNoTooltip]" tooltip = "[Location.GetDominantCulture.GetName]" }
 									}
 
 									hbox = {
 										spacing = 8
-										text_single = { size = { 210 20 } text = "be_ruins_origin_religion" default_format = "#yellow_titles" }
-										text_single = { text = "[Location.GetDominantReligion.GetNameWithNoTooltip]" }
+										text_single = { size = { 190 20 } text = "be_ruins_origin_religion" default_format = "#yellow_titles" }
+										text_single = { size = { 300 20 } autoresize = no text = "[Location.GetDominantReligion.GetNameWithNoTooltip]" tooltip = "[Location.GetDominantReligion.GetName]" }
 									}
 
 									hbox = {
 										spacing = 8
-										text_single = { size = { 210 20 } text = "be_ruins_ruin_type" default_format = "#yellow_titles" }
+										text_single = { size = { 190 20 } text = "be_ruins_ruin_type" default_format = "#yellow_titles" }
 										text_single = { visible = "[Location.MakeScope.GetVariable('be_ruins_type_capital').IsSet]" text = "be_ruins_type_capital" }
 										text_single = { visible = "[Location.MakeScope.GetVariable('be_ruins_type_palace').IsSet]" text = "be_ruins_type_palace" }
 										text_single = { visible = "[Location.MakeScope.GetVariable('be_ruins_type_temple').IsSet]" text = "be_ruins_type_temple" }
@@ -339,7 +355,7 @@ types BronzeRuinsExplorationTypes
 
 									hbox = {
 										spacing = 8
-										text_single = { size = { 210 20 } text = "be_ruins_difficulty" default_format = "#yellow_titles" }
+										text_single = { size = { 190 20 } text = "be_ruins_difficulty" default_format = "#yellow_titles" }
 										text_single = { visible = "[GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)5')]" text = "be_ruins_difficulty_five" default_format = "#Y" }
 										text_single = { visible = "[And(LessThan_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)5'), GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)4'))]" text = "be_ruins_difficulty_four" default_format = "#Y" }
 										text_single = { visible = "[And(LessThan_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)4'), GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)3'))]" text = "be_ruins_difficulty_three" default_format = "#Y" }
@@ -349,7 +365,7 @@ types BronzeRuinsExplorationTypes
 
 									hbox = {
 										spacing = 8
-										text_single = { size = { 210 20 } text = "be_ruins_success_chance" default_format = "#yellow_titles" }
+										text_single = { size = { 190 20 } text = "be_ruins_success_chance" default_format = "#yellow_titles" }
 										text_single = {
 											visible = "[Location.MakeScope.GetVariable('be_ruins_success_chance').IsSet]"
 											text = "be_ruins_success_chance_value"
@@ -395,7 +411,7 @@ types BronzeRuinsExplorationTypes
 								}
 
 								widget = {
-									size = { 310 150 }
+									size = { 310 178 }
 									using = bg_dark_paper_card
 
 									hbox = {
@@ -403,7 +419,7 @@ types BronzeRuinsExplorationTypes
 										spacing = 8
 
 										widget = {
-											size = { 92 128 }
+											size = { 92 156 }
 											using = bg_paper_card
 											datacontext = "[Player.GetGovernment.GetRulerOrRegent]"
 											portrait_standard_head_button = {
@@ -422,7 +438,9 @@ types BronzeRuinsExplorationTypes
 											}
 											text_single = {
 												text = "[Player.GetGovernment.GetRulerOrRegent.GetShortNameWithNoTooltip]"
+												size = { 185 20 }
 												autoresize = no
+												tooltip = "[Player.GetGovernment.GetRulerOrRegent.GetName]"
 											}
 											text_single = {
 												visible = "[Or(Not(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').IsSet), EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)1'))]"
@@ -446,28 +464,28 @@ types BronzeRuinsExplorationTypes
 											}
 											text_multi = {
 												visible = "[Or(Not(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').IsSet), EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)1'))]"
-												size = { 185 54 }
+												size = { 185 76 }
 												autoresize = no
 												multiline = yes
 												text = "be_ruins_leader_bonus_default"
 											}
 											text_multi = {
 												visible = "[EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)2')]"
-												size = { 185 54 }
+												size = { 185 76 }
 												autoresize = no
 												multiline = yes
 												text = "be_ruins_leader_bonus_captain"
 											}
 											text_multi = {
 												visible = "[EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)3')]"
-												size = { 185 54 }
+												size = { 185 76 }
 												autoresize = no
 												multiline = yes
 												text = "be_ruins_leader_bonus_quartermaster"
 											}
 											text_multi = {
 												visible = "[EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)4')]"
-												size = { 185 54 }
+												size = { 185 76 }
 												autoresize = no
 												multiline = yes
 												text = "be_ruins_leader_bonus_priest"
@@ -595,43 +613,67 @@ types BronzeRuinsExplorationTypes
 										text = "be_ruins_launch_status"
 										default_format = "#yellow_titles"
 									}
-									text_single = {
+									text_multi = {
 										visible = "[Location.MakeScope.GetVariable('bronze_ruins_too_fresh').IsSet]"
+										size = { 294 24 }
+										autoresize = no
+										multiline = yes
 										text = "be_ruins_blocked_too_fresh"
 										default_format = "#R"
 									}
-									text_single = {
+									text_multi = {
 										visible = "[Location.MakeScope.GetVariable('bronze_ruins_explored').IsSet]"
+										size = { 294 24 }
+										autoresize = no
+										multiline = yes
 										text = "be_ruins_blocked_explored"
 										default_format = "#medium"
 									}
-									text_single = {
+									text_multi = {
 										visible = "[Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet]"
+										size = { 294 24 }
+										autoresize = no
+										multiline = yes
 										text = "be_ruins_blocked_underway"
 										default_format = "#Y"
 									}
-									text_single = {
+									text_multi = {
 										visible = "[GreaterThanOrEqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruin_expeditions_active').GetValue, '(CFixedPoint)2')]"
+										size = { 294 24 }
+										autoresize = no
+										multiline = yes
 										text = "be_ruins_blocked_capacity"
 										default_format = "#R"
 									}
-									text_single = {
+									text_multi = {
 										visible = "[LessThan_CFixedPoint(Player.GetFixedPointCurrencyValue('gold'), '(CFixedPoint)35')]"
+										size = { 294 24 }
+										autoresize = no
+										multiline = yes
 										text = "be_ruins_blocked_gold"
 										default_format = "#R"
 									}
-									text_single = {
+									text_multi = {
 										visible = "[LessThan_CFixedPoint(Player.GetFixedPointCurrencyValue('manpower'), '(CFixedPoint)75')]"
+										size = { 294 24 }
+										autoresize = no
+										multiline = yes
 										text = "be_ruins_blocked_manpower"
 										default_format = "#R"
 									}
-									text_single = {
+									text_multi = {
 										visible = "[And5(And3(Not(Location.MakeScope.GetVariable('bronze_ruins_too_fresh').IsSet), Not(Location.MakeScope.GetVariable('bronze_ruins_explored').IsSet), Not(Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet)), Not(GreaterThanOrEqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruin_expeditions_active').GetValue, '(CFixedPoint)2')), Not(LessThan_CFixedPoint(Player.GetFixedPointCurrencyValue('gold'), '(CFixedPoint)35')), Not(LessThan_CFixedPoint(Player.GetFixedPointCurrencyValue('manpower'), '(CFixedPoint)75')), Not(ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)))]"
+										size = { 294 36 }
+										autoresize = no
+										multiline = yes
 										text = "be_ruins_blocked_requirements"
 										default_format = "#R"
 									}
-									text_single = {
+									text_multi = {
 										visible = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('be_ruin_location', Location.MakeScope).End)]"
+										size = { 294 24 }
+										autoresize = no
+										multiline = yes
 										text = "be_ruins_ready_to_launch"
 										default_format = "#P"
 									}
