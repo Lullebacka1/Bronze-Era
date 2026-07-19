@@ -288,6 +288,50 @@ house_of_remedies_advance = {
 	starting_technology_level = 1
 }
 
+# ################################
+# NEOLITHIC BUILDINGS
+# ################################
+
+craft_patronage_advance = {
+ 	age = age_1_traditions
+	icon = sculptor
+	
+ 	unlock_building = sponsored_tool_maker
+	unlock_building = sponsored_leather_maker
+	unlock_building = sponsored_beer_maker
+	unlock_building = sponsored_dyes_maker
+	unlock_building = sponsored_pottery_maker
+	
+ 	requires = prestige_governance
+
+	starting_technology_level = 1
+}
+
+weaponry_craft_patronage_advance = {
+ 	age = age_1_traditions
+	icon = sculptor
+	
+	unlock_building = sponsored_weaponry_maker
+	unlock_building = sponsored_navy_supplies_maker
+	
+ 	requires = craft_patronage_advance
+
+	starting_technology_level = 2
+}
+
+luxury_craft_patronage_advance = {
+ 	age = age_1_traditions
+	icon = sculptor
+	
+	unlock_building = sponsored_wine_maker
+	unlock_building = sponsored_jewelry_maker
+	unlock_building = sponsored_fine_cloth_maker
+	
+ 	requires = craft_patronage_advance
+
+	starting_technology_level = 2
+}
+
 # ###############################
 # # Basic Buildings
 # ###############################

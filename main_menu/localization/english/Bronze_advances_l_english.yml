@@ -294,6 +294,15 @@
   megalithic_monument_advance: "Megalithic Monuments"
   megalithic_monument_advance_desc: "Communities begin undertaking the construction of enduring ceremonial monuments built from massive stones. Serving as places of worship, assembly, burial, and ancestral remembrance, these structures strengthen shared traditions and provide visible expressions of communal identity and religious devotion."
 
+  craft_patronage_advance: "Craft Patronage"
+  craft_patronage_advance_desc: "Chiefs, temples, and prominent households increasingly support skilled craftsmen with food, materials, and protection, allowing them to devote themselves entirely to specialized production. Such patronage encourages innovation and raises the quality of essential goods."
+
+  weaponry_craft_patronage_advance: "Military Patronage"
+  weaponry_craft_patronage_advance_desc: "Elite sponsorship extends to armorers, smiths, and shipwrights, ensuring a steady supply of weapons and military equipment while allowing skilled specialists to perfect their craft."
+
+  luxury_craft_patronage_advance: "Luxury Patronage"
+  luxury_craft_patronage_advance_desc: "Prestige and competition among rulers drive the patronage of jewelers, weavers, vintners, and other luxury craftsmen, whose work produces the refined goods demanded for ceremonies, diplomacy, and displays of status."
+
   # ##########################
   # PRODUCTION METHODS
   # ##########################

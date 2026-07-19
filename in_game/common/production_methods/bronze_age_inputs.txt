@@ -109,6 +109,106 @@ weaponry_maker_copper_recipe = {
 	category = guild_input
 }
 
+# SPONSORED MAKERS
+
+
+tools_sponsored_iron_recipe = {
+	iron = 0.5
+	lumber = 0.15
+	coal = 0.15
+	produced = tools
+	output = 0.8
+
+	debug_max_profit = 0.2
+	category = guild_input
+}
+
+tools_sponsored_stone_recipe = {
+	stone = 0.5
+	produced = tools
+	output = 0.25
+	
+	debug_max_profit = 0.1
+
+	category = guild_input
+}
+
+tools_sponsored_bronze_recipe = {
+	bronze_age_bronze = 0.5
+	lumber = 0.15
+	coal = 0.1
+
+	produced = tools
+	output = 1.0
+
+	debug_max_profit = 0.15
+
+	category = guild_input
+}
+
+tools_sponsored_copper_recipe = {
+	copper = 0.5
+	lumber = 0.2
+
+	produced = tools
+	output = 0.8
+
+	debug_max_profit = 0.15
+
+	category = guild_input
+}
+
+
+weapon_sponsored_stone_recipe = {
+	lumber = 0.1
+	stone = 0.2
+	tools = 0.1
+	category = guild_input
+	produced = weaponry
+	output = 0.3
+}
+
+weapon_sponsored_copper_recipe = {
+	lumber = 0.1
+	copper = 0.5
+	tools = 0.1
+	category = guild_input
+	produced = weaponry
+	output = 0.8
+}
+
+weapon_sponsored_bronze_recipe = {
+	lumber = 0.1
+	coal = 0.1
+	bronze_age_bronze = 0.5
+	tools = 0.1
+	produced = weaponry
+	output = 1
+
+	category = guild_input
+}
+
+weapon_sponsored_obsidian_recipe = {
+	lumber = 0.2
+	stone = 0.5
+	gems = 0.1
+	produced = weaponry
+	output = 1
+	
+	category = guild_input
+}
+
+weapon_sponsored_iron_recipe = {
+	lumber = 0.1
+	coal = 0.1
+	iron = 0.5
+	tools = 0.1
+	produced = weaponry
+	output = 1
+	
+	category = guild_input
+}
+
 # TOOLS GUILD
 
 tools_guild_iron_recipe = {

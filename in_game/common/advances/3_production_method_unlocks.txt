@@ -5,6 +5,7 @@ tools_maker_bronze_recipe_advance = {
 	
 	unlock_production_method = tools_guild_bronze_recipe
 	unlock_production_method = tools_maker_bronze_recipe
+	unlock_production_method = tools_sponsored_bronze_recipe
 	
 	requires = bronze_forge_advance
 }
@@ -14,6 +15,7 @@ weaponry_maker_bronze_recipe_advance = {
 	
 	unlock_production_method = weapon_guild_bronze_recipe
 	unlock_production_method = weaponry_maker_bronze_recipe
+	unlock_production_method = weaponry_sponsored_bronze_recipe
 	
 	requires = bronze_forge_advance
 }
