@@ -1,0 +1,477 @@
+sponsored_tool_maker = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+
+	category = basic_industry_category
+	employment_size = guild_employment
+
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = no
+
+	forbidden_for_estates = yes
+
+	build_time = guild_build_time
+
+	possible_production_methods = {
+		tools_sponsored_stone_recipe
+		tools_sponsored_copper_recipe
+		tools_sponsored_bronze_recipe
+		tools_sponsored_iron_recipe
+	}
+
+	construction_demand = guild_construction
+}
+
+sponsored_weaponry_maker = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+
+	category = basic_industry_category
+	employment_size = guild_employment
+
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = no
+
+	forbidden_for_estates = yes
+
+	build_time = guild_build_time
+
+	possible_production_methods = {
+		weapon_sponsored_stone_recipe
+		weapon_sponsored_copper_recipe
+		weapon_sponsored_bronze_recipe
+		weapon_sponsored_iron_recipe
+		weapon_sponsored_obsidian_recipe
+	}
+
+	construction_demand = guild_construction
+}
+
+sponsored_fine_cloth_maker = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = fine_cloth_guild_max_level
+	
+	category = consumer_goods_category
+	
+	employment_size = guild_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = no
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		fine_cloth_sponsored_maintenance = {
+			cloth = 0.3
+			produced = fine_cloth
+			output = 0.25
+			
+			category = guild_input
+		}
+
+		wool_sponsored_maintenance = {
+			wool = 0.4
+			
+			produced = fine_cloth
+			output = 0.25
+			
+			category = guild_input
+		}
+
+		silk_sponsored_maintenance = {
+			silk = 0.3
+			
+			produced = fine_cloth
+			output = 0.35
+			
+			category = guild_input
+			debug_max_profit = 0.35	# its ok to be a bit better..
+		}
+	}
+
+	unique_production_methods = {
+		base_fine_cloth_sponsored_maintenance = {
+			produced = fine_cloth
+			dyes = 0.14
+			output = 0.1
+
+			category = guild_input
+
+			debug_max_profit = 0.1		#improvement
+		}
+
+		alum_fine_cloth_sponsored_maintenance = {
+			alum = 0.05
+			dyes = 0.2
+			produced = fine_cloth
+			output = 0.2
+
+			category = guild_input
+		}
+
+		fur_trim_sponsored_maintenance = {
+			fur = 0.5
+			produced = fine_cloth
+			output = 0.2
+
+			debug_max_profit = 0.2
+			category = guild_input
+		}
+
+	}
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+
+}
+
+sponsored_beer_maker = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = guild_max_level
+	
+	category = consumer_goods_category
+	
+	employment_size = guild_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = no
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+	
+		wheat_sponsored_brewery_maintenance = {
+			wheat = 0.75
+			lumber = 0.2
+			tools = 0.1
+			
+			produced = beer
+			output = 0.8
+			
+			category = guild_input
+		}
+	
+		millet_sponsored_brewery_maintenance = {
+			millet = 0.75
+			lumber = 0.2
+			tools = 0.1
+			
+			produced = beer
+			output = 0.8
+			
+			category = guild_input
+		}
+	
+		fruit_sponsored_brewery_maintenance = {
+			fruit = 0.75
+			lumber = 0.2
+			tools = 0.1
+			
+			produced = beer
+			output = 0.8
+			
+			category = guild_input
+		}
+
+		maize_sponsored_brewery_maintenance = {
+			maize = 1.0
+			pottery = 0.3
+			
+			produced = beer
+			output = 0.8
+			category = guild_input
+				
+		}
+	
+		honey_sponsored_brewery_maintenance = {
+			beeswax = 0.2
+			millet = 0.4
+			lumber = 0.2
+			tools = 0.1
+
+			produced = beer
+			output = 0.8
+
+			category = guild_input
+		}
+
+		rice_sponsored_brewery_maintenance = {
+			rice = 0.75
+			lumber = 0.2
+			tools = 0.1
+
+			produced = beer
+			output = 0.8
+
+			category = guild_input
+		}
+	}
+
+	construction_demand = guild_construction
+
+}
+
+sponsored_pottery_maker = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = guild_max_level
+	
+	category = consumer_goods_category
+	
+	employment_size = guild_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = no
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		sponsored_pottery_maintenance = {
+			clay = 0.75
+			lumber = 0.1
+			tools = 0.05
+			
+			produced = pottery
+			output = 0.8
+			
+			category = guild_input
+		}
+	}
+
+	construction_demand = guild_construction
+
+}
+
+sponsored_navy_supplies_maker = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+	
+	category = weapons_industry_category
+	
+	employment_size = guild_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = no
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		naval_supplies_sponsored_maintenance = {
+			lumber = 0.15
+			fiber_crops = 0.35
+			tar = 0.4
+			cloth = 0.04
+
+			produced = naval_supplies
+			output = 0.8
+			
+			category = guild_input
+		}
+	}
+	construction_demand = guild_construction
+
+}
+
+sponsored_wine_maker = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = guild_max_level
+	
+	category = consumer_goods_category
+	
+	employment_size = guild_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = no
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {		
+		sponsored_fruit_winery_maintenance = {
+			fruit = 1.2
+			lumber = 0.15
+			tools = 0.1
+
+			produced = wine
+			output = 1
+			category = guild_input
+
+			debug_max_profit = 0.2
+		}
+	
+		sponsored_rice_winery_maintenance = {
+			rice = 1.2
+			lumber = 0.15
+			tools = 0.1
+			
+			produced = wine
+			output = 1
+			category = guild_input
+
+			debug_max_profit = 0.2
+		}
+	
+		sponsored_honey_winery_maintenance = {
+			beeswax = 0.50
+			lumber = 0.20
+			tools = 0.1
+			
+			produced = wine
+			output = 1
+			
+			category = guild_input
+
+			debug_max_profit = 0.2
+		}
+	}
+
+	construction_demand = guild_construction
+
+}
+
+sponsored_jewelry_maker = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+	
+	category = consumer_goods_category
+	
+	employment_size = guild_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = no
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		
+		gold_base_sponsored = {
+			goods_gold = 0.15
+
+			produced = jewelry
+			output = 0.3
+			
+			category = guild_input
+		}
+		silver_base_sponsored = {
+			silver = 0.2
+			
+			produced = jewelry
+			output = 0.3
+			
+			category = guild_input
+		}
+		copper_base_sponsored = {
+			#unlocked by copperworking
+			copper = 0.4
+			
+			produced = jewelry
+			output = 0.3
+			
+			category = guild_input
+		}
+
+		bronze_base_sponsored = {
+			bronze_age_bronze = 0.25
+			
+			produced = jewelry
+			output = 0.4
+			
+			category = guild_input
+		}
+
+	}
+
+
+	unique_production_methods = {
+		
+		
+		ivory_enhancement_sponsored = {
+			ivory = 0.1
+			produced = jewelry
+			output = 0.1
+			
+			category = guild_input
+		}
+		amber_enhancement_sponsored = {
+			amber = 0.1
+			produced = jewelry
+			output = 0.1
+			
+			category = guild_input
+		}
+		gems_enhancement_sponsored = {
+			gems = 0.1
+			produced = jewelry
+			output = 0.1
+			
+			category = guild_input
+		}
+		pearls_enhancement_sponsored = {
+			pearls = 0.1
+			produced = jewelry
+			output = 0.1
+			
+			category = guild_input
+		}
+		
+	}
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+
+}
+
+sponsored_leather_maker = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = guild_max_level
+	
+	category = consumer_goods_category
+	
+	employment_size = guild_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = no
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		sponsored_leather_production = {
+			clay = 0.75
+			lumber = 0.1
+			tools = 0.05
+			
+			produced = pottery
+			output = 0.8
+			
+			category = guild_input
+		}
+	}
+
+	construction_demand = guild_construction
+
+}

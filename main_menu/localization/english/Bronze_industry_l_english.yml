@@ -17,6 +17,35 @@
   bronze_age_bronze_shortage: "Tin Shortage Smelting"
   bronze_age_bronze_shortage_desc: "Tin routes are unreliable. The foundry stretches copper stocks, recycles scrap and produces only a small quantity of usable bronze."
 
+
+
+  sponsored_tool_maker: "Sponsored Toolsmiths"
+  sponsored_tool_maker_desc: "Craftsmen supported by a chief, temple, or other patron devote themselves to the production of tools without relying solely upon the market. Such sponsorship allows skilled specialists to pursue their craft full-time."
+
+  sponsored_weaponry_maker: "Sponsored Weaponsmiths"
+  sponsored_weaponry_maker_desc: "Supported by powerful patrons, these smiths produce weapons for retainers, guards, and warriors. Their livelihood depends upon continued elite sponsorship rather than ordinary commercial demand."
+
+  sponsored_fine_cloth_maker: "Sponsored Weavers"
+  sponsored_fine_cloth_maker_desc: "Skilled textile workers create fine fabrics under the protection and patronage of local rulers, temples, or noble households, supplying prestigious garments for elites and ceremonial use."
+
+  sponsored_beer_maker: "Sponsored Brewers"
+  sponsored_beer_maker_desc: "Brewers maintained through chiefly or institutional patronage produce beverages for feasts, religious ceremonies, and dependent households, ensuring a reliable supply beyond ordinary village production."
+
+  sponsored_pottery_maker: "Sponsored Potters"
+  sponsored_pottery_maker_desc: "Professional potters supported by wealthy patrons produce vessels for storage, ritual, administration, and everyday use, allowing for greater specialization and consistency."
+
+  sponsored_navy_supplies_maker: "Sponsored Naval Outfitters"
+  sponsored_navy_supplies_maker_desc: "Specialists manufacture rope, rigging, tar preparations, sails, and other essential equipment under elite patronage, supporting organized navigation and the maintenance of watercraft."
+
+  sponsored_wine_maker: "Sponsored Vintners"
+  sponsored_wine_maker_desc: "Patron-supported vintners produce wine for elite households, ceremonial occasions, diplomatic exchange, and prestigious feasts, devoting themselves fully to the craft."
+
+  sponsored_jewelry_maker: "Sponsored Jewelers"
+  sponsored_jewelry_maker_desc: "Highly skilled artisans create ornaments, regalia, and luxury goods under the sponsorship of rulers, temples, or noble patrons, producing objects that symbolize wealth, status, and authority."
+
+  sponsored_leather_maker: "Sponsored Leatherworkers"
+  sponsored_leather_maker_desc: "Leatherworkers maintained through patronage produce harnesses, containers, clothing, and military equipment, supplying the needs of elite households and specialized institutions."
+
   tools_guild: "Royal Tools Workshop"
   tools_guild_desc: "The great task of building a prosperous domain requires the finest tools and equipment. The royal tools workshop is a dedicated facility where skilled craftsmen and artisans create high-quality tools and implements for distribution according to the orders from the Palace."
 
@@ -141,3 +170,48 @@
 
   palace_honey_winery_maintenance: "Honey Winemaking"
   palace_honey_winery_maintenance_desc: "Honey is transformed into luxurious fermented drinks associated with hospitality, religious observance, and elite status."
+
+  tools_sponsored_stone_recipe: "Stone Toolsmithing"
+  tools_sponsored_copper_recipe: "Copper Toolsmithing"
+  tools_sponsored_bronze_recipe: "Bronze Toolsmithing"
+  tools_sponsored_iron_recipe: "Iron Toolsmithing"
+
+  weapon_sponsored_stone_recipe: "Stone Weapons"
+  weapon_sponsored_copper_recipe: "Copper Weapons"
+  weapon_sponsored_bronze_recipe: "Bronze Weapons"
+  weapon_sponsored_iron_recipe: "Iron Weapons"
+  weapon_sponsored_obsidian_recipe: "Obsidian Weapons"
+
+  fine_cloth_sponsored_maintenance: "Cloth Weaving"
+  wool_sponsored_maintenance: "Wool Weaving"
+  silk_sponsored_maintenance: "Silk Weaving"
+
+  base_fine_cloth_sponsored_maintenance: "Natural Dyes"
+  alum_fine_cloth_sponsored_maintenance: "Alum Mordants"
+  fur_trim_sponsored_maintenance: "Fur Trimmings"
+
+  wheat_sponsored_brewery_maintenance: "Wheat Brewing"
+  millet_sponsored_brewery_maintenance: "Millet Brewing"
+  fruit_sponsored_brewery_maintenance: "Fruit Brewing"
+  maize_sponsored_brewery_maintenance: "Maize Brewing"
+  honey_sponsored_brewery_maintenance: "Honey Brewing"
+  rice_sponsored_brewery_maintenance: "Rice Brewing"
+
+  sponsored_pottery_maintenance: "Pottery Production"
+  sponsored_leather_production: "Leather Production"
+
+  naval_supplies_sponsored_maintenance: "Maritime Supplies"
+
+  sponsored_fruit_winery_maintenance: "Fruit Winemaking"
+  sponsored_rice_winery_maintenance: "Rice Winemaking"
+  sponsored_honey_winery_maintenance: "Honey Winemaking"
+
+  gold_base_sponsored: "Gold Jewelry"
+  silver_base_sponsored: "Silver Jewelry"
+  copper_base_sponsored: "Copper Jewelry"
+  bronze_base_sponsored: "Bronze Jewelry"
+
+  ivory_enhancement_sponsored: "Ivory Ornamentation"
+  amber_enhancement_sponsored: "Amber Ornamentation"
+  gems_enhancement_sponsored: "Gemstone Ornamentation"
+  pearls_enhancement_sponsored: "Pearl Ornamentation"
