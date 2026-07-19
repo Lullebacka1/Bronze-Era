@@ -102,7 +102,10 @@ bronze_monumental_gates = {
 	construction_demand = bronze_age_monument_construction
 
 	location_potential = {
+		OR = {
 		has_building = building_type:bronze_city_walls
+		has_building = building_type:bronze_city_walls
+		}
 	}
 
 	unique_production_methods = {
