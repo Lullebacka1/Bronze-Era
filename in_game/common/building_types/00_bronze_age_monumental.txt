@@ -104,7 +104,7 @@ bronze_monumental_gates = {
 	location_potential = {
 		OR = {
 		has_building = building_type:bronze_city_walls
-		has_building = building_type:bronze_city_walls
+		has_building = building_type:cyclopean_walls
 		}
 	}
 
