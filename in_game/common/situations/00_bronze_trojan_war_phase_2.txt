@@ -94,6 +94,16 @@ trojan_war_phase_2 = {
 		c:SEHA = {
        		 change_subject_type = subject_type:vassal
    			}
+
+		if = {
+        limit = { trojan_war_attacker_victory_check = yes }
+        c:0001G = { trigger_event = { id = trojan_war_end.1 } }
+    }
+
+   		if = {
+        limit = { trojan_war_defender_victory_check = yes }
+        c:WILUS = { trigger_event = { id = trojan_war_end.2 } }
+    }
 	}
 
 	visible = {
