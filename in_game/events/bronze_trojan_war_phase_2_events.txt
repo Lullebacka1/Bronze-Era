@@ -1,5 +1,6 @@
 namespace = start_trojan_war_phase_2
 namespace = join_trojan_War
+namespace = trojan_war_end
 
 start_trojan_war_phase_2.1 = {
     type = country_event
@@ -41,6 +42,62 @@ join_trojan_War.1 = {
  option = {
     name = "join_trojan_war"
     root = { join_war_as_defender = { war = scope:trojan_war } }
+}
+}
+
+trojan_war_end.1 = {
+    type = country_event
+    title = trojan_war_end.t
+    desc = trojan_war_end.d
+    is_triggered_only = yes
+    hidden = no
+
+ option = {
+    name = "trojan_war_end.a"
+    root = { add_prestige = 50 }
+   # temp will add modifers
+}
+}
+
+trojan_war_end.2 = {
+    type = country_event
+    title = trojan_war_end.t
+    desc = trojan_war_end.d
+    is_triggered_only = yes
+    hidden = no
+
+ option = {
+    name = "trojan_war_end.a"
+    root = { add_prestige = 50 }
+    # temp will add modifers
+}
+}
+
+trojan_war_end.3 = {
+    type = country_event
+    title = trojan_war_end.t
+    desc = trojan_war_end.d
+    is_triggered_only = yes
+    hidden = no
+
+ option = {
+    name = "trojan_war_end.a"
+    root = { add_prestige = 50 }
+    # temp will add modifers
+}
+}
+
+trojan_war_end.4 = {
+    type = country_event
+    title = trojan_war_end.t
+    desc = trojan_war_end.d
+    is_triggered_only = yes
+    hidden = no
+
+ option = {
+    name = "trojan_war_end.a"
+    root = { add_prestige = 50 }
+    # temp will add modifers
 }
 }
 
