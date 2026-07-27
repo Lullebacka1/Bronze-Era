@@ -38,9 +38,7 @@ trojan_war_phase_2 = {
 		LUKKA = { add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 } }
 		MASA = { add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 } }
 		
-		# this one dosent trigger in game but when triggered in debugg gives wrong event
-		# event located in \Bronze-Era\in_game\events\bronze_trojan_war_phase_2_events.txt
-		# the event that triggers is in \Bronze-Era\in_game\events\bronze_trojan_war_phase_1_events.txt and is the trojan_war_raid_on_anatolia_success
+
 	
     
 
@@ -64,22 +62,7 @@ trojan_war_phase_2 = {
 }
 # rework have this logic done some where else then added in on end add contry modifer
 	end_conditions = {	
-    0001G = {
-        if = {
-            limit = {
-                has_global_variable = "greece_actually_won"
-            }
-            add_country_modifier = { name = trojan_war_greece_victory }
-        }
-        else = {
-            	WILUS = { add_country_modifier = { name = trojan_war_anatolian_victory } }
-				AHHI = { add_country_modifier = { name = trojan_war_anatolian_victory } }
-				LYCIA = { add_country_modifier = { name = trojan_war_anatolian_victory } }
-				SEHA = { add_country_modifier = { name = trojan_war_anatolian_victory } }
-				LUKKA = { add_country_modifier = { name = trojan_war_anatolian_victory } }
-				MASA = { add_country_modifier = { name = trojan_war_anatolian_victory } }
-			}
-		}
+    
 	}
 
 	on_end = {
