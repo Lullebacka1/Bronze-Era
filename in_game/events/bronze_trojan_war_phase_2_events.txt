@@ -100,4 +100,32 @@ trojan_war_end.4 = {
     # temp will add modifers
 }
 }
+# For minor in anatolia under here
+trojan_war_end.5 = {
+    type = country_event
+    title = trojan_war_end.t
+    desc = trojan_war_end.d
+    is_triggered_only = yes
+    hidden = no
+
+ option = {
+    name = "trojan_war_end.a"
+    root = { add_prestige = 50 }
+    # temp will add modifers
+}
+}
+
+trojan_war_end.6 = {
+    type = country_event
+    title = trojan_war_end.t
+    desc = trojan_war_end.d
+    is_triggered_only = yes
+    hidden = no
+
+ option = {
+    name = "trojan_war_end.a"
+    root = { add_prestige = 50 }
+    # temp will add modifers
+}
+}
 
