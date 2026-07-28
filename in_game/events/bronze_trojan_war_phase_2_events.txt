@@ -40,7 +40,7 @@ join_trojan_War.1 = {
     hidden = no
 
  option = {
-    name = "join_trojan_war"
+    name = "join_trojan_war.a"
     root = { join_war_as_defender = { war = scope:trojan_war } }
 }
 }
@@ -61,8 +61,8 @@ trojan_war_end.1 = {
 
 trojan_war_end.2 = {
     type = country_event
-    title = trojan_war_end.t
-    desc = trojan_war_end.d
+    title = trojan_war_end.t.2
+    desc = trojan_war_end.d.2
     is_triggered_only = yes
     hidden = no
 # For Anatolia victory
@@ -75,8 +75,8 @@ trojan_war_end.2 = {
 
 trojan_war_end.3 = {
     type = country_event
-    title = trojan_war_end.t
-    desc = trojan_war_end.d
+    title = trojan_war_end.t.3
+    desc = trojan_war_end.d.3
     is_triggered_only = yes
     hidden = no
 # For Greece loss
@@ -89,8 +89,8 @@ trojan_war_end.3 = {
 
 trojan_war_end.4 = {
     type = country_event
-    title = trojan_war_end.t
-    desc = trojan_war_end.d
+    title = trojan_war_end.t.4
+    desc = trojan_war_end.d.4
     is_triggered_only = yes
     hidden = no
 # For Anatolia loss
@@ -103,8 +103,8 @@ trojan_war_end.4 = {
 # For minor in anatolia under here
 trojan_war_end.5 = {
     type = country_event
-    title = trojan_war_end.t
-    desc = trojan_war_end.d
+    title = trojan_war_end.t.5
+    desc = trojan_war_end.d.5
     is_triggered_only = yes
     hidden = no
 # For Anatolia loss
@@ -117,8 +117,8 @@ trojan_war_end.5 = {
 
 trojan_war_end.6 = {
     type = country_event
-    title = trojan_war_end.t
-    desc = trojan_war_end.d
+    title = trojan_war_end.t.6
+    desc = trojan_war_end.d.6
     is_triggered_only = yes
     hidden = no
 # For Anatolia victory
