@@ -99,12 +99,22 @@ trojan_war_phase_2 = {
         limit = { trojan_war_attacker_victory_check = yes }
         c:0001G = { trigger_event = { id = trojan_war_end.1 } }
 		c:WILUS = { trigger_event = { id = trojan_war_end.4 } }
+		c:AHHI = { trigger_event = { id = trojan_war_end.5 } }
+		c:LYCIA = { trigger_event = { id = trojan_war_end.5 } }
+		c:SEHA = { trigger_event = { id = trojan_war_end.5 } }
+		c:LUKKA = { trigger_event = { id = trojan_war_end.5 } }
+		c:MASA = { trigger_event = { id = trojan_war_end.5 } }
     }
 
    		if = {
         limit = { trojan_war_defender_victory_check = yes }
         c:WILUS = { trigger_event = { id = trojan_war_end.2 } }
 		c:0001G = { trigger_event = { id = trojan_war_end.3 } }
+		c:AHHI = { trigger_event = { id = trojan_war_end.6 } }
+		c:LYCIA = { trigger_event = { id = trojan_war_end.6 } }
+		c:SEHA = { trigger_event = { id = trojan_war_end.6 } }
+		c:LUKKA = { trigger_event = { id = trojan_war_end.6 } }
+		c:MASA = { trigger_event = { id = trojan_war_end.6 } }
     }
 	}
 
