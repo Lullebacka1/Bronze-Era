@@ -51,7 +51,7 @@ trojan_war_end.1 = {
     desc = trojan_war_end.d
     is_triggered_only = yes
     hidden = no
-
+# For Greece victory
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 50 }
@@ -65,7 +65,7 @@ trojan_war_end.2 = {
     desc = trojan_war_end.d
     is_triggered_only = yes
     hidden = no
-
+# For Anatolia victory
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 50 }
@@ -79,7 +79,7 @@ trojan_war_end.3 = {
     desc = trojan_war_end.d
     is_triggered_only = yes
     hidden = no
-
+# For Greece loss
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 50 }
@@ -93,7 +93,7 @@ trojan_war_end.4 = {
     desc = trojan_war_end.d
     is_triggered_only = yes
     hidden = no
-
+# For Anatolia loss
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 50 }
@@ -107,7 +107,7 @@ trojan_war_end.5 = {
     desc = trojan_war_end.d
     is_triggered_only = yes
     hidden = no
-
+# For Anatolia loss
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 50 }
@@ -121,7 +121,7 @@ trojan_war_end.6 = {
     desc = trojan_war_end.d
     is_triggered_only = yes
     hidden = no
-
+# For Anatolia victory
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 50 }
