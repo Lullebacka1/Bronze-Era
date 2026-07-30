@@ -382,3 +382,15 @@ bronze_age_ROME_coa = { # Rome: red and gold, using the provided she-wolf founda
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
 	}
 }
+
+bronze_age_ARMOR_coa = { # Armorica: green field with the provided Celtic triskelion.
+	pattern = "pattern_solid.dds"
+	color1 = "indigo_green"
+	color2 = "yellow_mid"
+	color3 = "red_dark"
+
+	textured_emblem = {
+		texture = "ba_armorica_triskelion.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}

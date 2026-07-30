@@ -125,6 +125,10 @@ ROME = { # Rome, founded in 753 BC by event in the Bronze Era chronology.
 	flag_definition = { coa = bronze_age_ROME_coa priority = 10000 }
 }
 
+ARMOR = { # Armorica formable, using the provided triskelion flag.
+	flag_definition = { coa = bronze_age_ARMOR_coa priority = 10000 }
+}
+
 # Unique Hatti-collapse successor flags.
 HAMAT = { flag_definition = { coa = bronze_age_HAMAT_coa priority = 10000 } }
 ARPAD = { flag_definition = { coa = bronze_age_ARPAD_coa priority = 10000 } }
