@@ -112,4 +112,20 @@ bronze_age_institution_migration_promotion = {
 		value = num_pop_type:peasants
 		multiply = 0.10
 	}
+	add = {
+		value = num_pop_type:burghers
+		multiply = 0.70	
+	}
+	add = {
+		value = num_pop_type:nobles
+		multiply = 0.70
+	}
+	add = {
+		value = num_pop_type:clergy
+		multiply = 0.25
+	}
+	add = {
+		value = num_pop_type:slaves
+		multiply = 0.10
+	}
 }
