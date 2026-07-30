@@ -495,6 +495,7 @@ bronze_city_raze_effect_from_unit = {
 			loot_location = scope:bronze_captured_city
 		}
 		scope:bronze_captured_city ?= {
+			bronze_historic_monuments_snapshot_for_ruins = yes
 			if = {
 				limit = { has_variable = bronze_city_prestige_score }
 				set_variable = {
@@ -645,6 +646,7 @@ bronze_city_raze_effect = {
 		add_prestige = prestige_mild_penalty
 		loot_location = scope:bronze_captured_city
 		scope:bronze_captured_city ?= {
+			bronze_historic_monuments_snapshot_for_ruins = yes
 			if = {
 				limit = { has_variable = bronze_city_prestige_score }
 				set_variable = {
@@ -742,6 +744,8 @@ bronze_city_raze_effect = {
 bronze_city_create_ancient_ruins_effect = {
 	custom_description = {
 		text = bronze_city_create_ancient_ruins_effect_tt
+		bronze_historic_monuments_snapshot_for_ruins = yes
+		bronze_historic_monuments_destroy_native_art_for_ruins = yes
 		set_variable = { name = bronze_ancient_ruins value = 1 }
 		set_variable = { name = bronze_ruins_too_fresh value = 1 years = 50 }
 		set_variable = { name = bronze_ruins_destroyed_year value = current_year }
@@ -794,6 +798,8 @@ bronze_city_create_ancient_ruins_effect = {
 bronze_city_create_ancient_ruins_from_unit_effect = {
 	custom_description = {
 		text = bronze_city_create_ancient_ruins_effect_tt
+		bronze_historic_monuments_snapshot_for_ruins = yes
+		bronze_historic_monuments_destroy_native_art_for_ruins = yes
 		set_variable = { name = bronze_ancient_ruins value = 1 }
 		set_variable = { name = bronze_ruins_too_fresh value = 1 years = 50 }
 		set_variable = { name = bronze_ruins_destroyed_year value = current_year }

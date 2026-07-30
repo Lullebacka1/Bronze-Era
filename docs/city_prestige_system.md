@@ -61,7 +61,9 @@ Countries use:
 
 ## Score Calculation
 
-The score is recalculated once per year.
+The general eligibility, decline, and world-ranking pass runs every five
+yearly pulses. Event, mission, monument, and controlled-abandonment changes
+call the central ranking update immediately.
 
 Immediately before the global sort, every registered city score is recalculated
 again. This prevents country yearly-pulse order from ranking one country with
@@ -254,7 +256,7 @@ After initialization:
 - every eligible location is also registered once in the persistent global
   `bronze_city_prestige_world_cities` list;
 - country updates iterate their compact owner lists, while the single ranking
-  manager rebuilds and sorts the world pool once per yearly ranking pass;
+  manager rebuilds and sorts the world pool once per five-year ranking pass;
 - stale entries created by ownership changes are ignored by an owner check;
 - a broader owned-location eligibility scan runs once every five years.
 
