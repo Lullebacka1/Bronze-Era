@@ -13,15 +13,7 @@ bronze_historic_monuments_snapshot_for_ruins = {
 		set_variable = { name = bronze_ruins_monument_count value = 0 }
 
 		if = {
-			limit = {
-				OR = {
-					has_building = building_type:bronze_monument_giza_pyramid_complex
-					any_work_of_art_in_location = {
-						this = work_of_art:pyramid_art_key
-						is_art_destroyed = no
-					}
-				}
-			}
+			limit = { has_building = building_type:bronze_monument_giza_pyramid_complex }
 			set_variable = { name = bronze_ruins_had_giza_pyramid_complex value = 1 }
 			set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
 			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
@@ -184,18 +176,6 @@ bronze_historic_monuments_snapshot_for_ruins = {
 # generic building-destruction loop cannot remove them. Run this only after
 # the monument snapshot and only when the location becomes permanent ruins.
 bronze_historic_monuments_destroy_native_art_for_ruins = {
-	if = {
-		limit = {
-			any_work_of_art_in_location = {
-				this = work_of_art:pyramid_art_key
-				is_art_destroyed = no
-			}
-		}
-		random_work_of_art_in_location = {
-			limit = { this = work_of_art:pyramid_art_key }
-			destroy_art = this
-		}
-	}
 	if = {
 		limit = {
 			any_work_of_art_in_location = {

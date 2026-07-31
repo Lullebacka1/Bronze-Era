@@ -16,16 +16,17 @@ All historical placements are centralized in:
 `main_menu/setup/start/07_bronze_historical_monuments.txt`
 
 An active custom-building monument appears inside that file's
-`building_manager` block. Giza and Stonehenge retain their existing native
-`work_of_art_manager` entries from `main_menu/setup/start/11_art.txt` instead
-of receiving duplicate buildings. Unconfirmed sites remain parse-safe comments
+`building_manager` block. Giza uses a dedicated Bronze Era building so its
+economic effects can be balanced independently. Stonehenge retains its native
+`work_of_art_manager` entry from `main_menu/setup/start/11_art.txt` instead of
+receiving a duplicate building. Unconfirmed sites remain parse-safe comments
 marked `TODO_MANUAL_LOCATION`.
 
 ## Confirmed Active Placements
 
 | Monument | Location |
 | --- | --- |
-| Giza Pyramid Complex | `giza` (`work_of_art:pyramid_art_key`) |
+| Giza Pyramid Complex | `giza` (`bronze_monument_giza_pyramid_complex`) |
 | Citadel of Mycenae | `argos` |
 | Cyclopean Fortifications of Tiryns | `nafplio` |
 | Palatial Complex of Knossos | `candia` |
@@ -34,12 +35,13 @@ marked `TODO_MANUAL_LOCATION`.
 | Stonehenge | `amesbury` (`work_of_art:stonehenge`) |
 | Brú na Bóinne | `drogheda` |
 
-Giza and Stonehenge are detected by exact work-of-art keys for City Prestige
-and are snapshotted and destroyed by the normal ruins conversion. Their
-prepared building definitions remain available as compatibility fallbacks but
-are not placed. The Greek placements reuse explicit Bronze Era mappings
-already used for palace sites. `karnak` is deliberately not used for Egyptian
-Karnak: the mod's location with that identifier is in Central Asia.
+Giza is a special building and is snapshotted by the normal ruins conversion.
+It grants `+200` City Prestige through the central score effect and no longer
+receives vanilla Art Quality multipliers. Stonehenge is detected by its exact
+work-of-art key and is destroyed when its location becomes ruins. The Greek
+placements reuse explicit Bronze Era mappings already used for palace sites.
+`karnak` is deliberately not used for Egyptian Karnak: the mod's location with
+that identifier is in Central Asia.
 
 ## Prepared But Not Placed
 
@@ -102,8 +104,8 @@ City Prestige points are defined only in:
 
 `in_game/common/scripted_effects/01_bronze_city_prestige_building_points.txt`
 
-This is the only score source, preventing double counting. Exact native
-work-of-art keys for Giza and Stonehenge are evaluated in the same effect.
+This is the only score source, preventing double counting. Stonehenge's exact
+native work-of-art key is evaluated in the same effect.
 Before razing or voluntary abandonment destroys buildings,
 `bronze_historic_monuments_snapshot_for_ruins` stores monument identities and
 royal, religious, military, administrative, commercial, and port categories.

@@ -9,7 +9,7 @@ types BronzeRuinsExplorationTypes
 
 		blockoverride "contextmenu_content" {
 			widget = {
-				size = { 1220 720 }
+				size = { 1500 720 }
 				using = bg_main_inner_alt
 				using = bg_cabinet_card_frame
 

@@ -8,6 +8,7 @@
 
 building_manager = {
 	# Placements confirmed by exact vanilla IDs and/or existing Bronze Era setup.
+	bronze_monument_giza_pyramid_complex = { level = 1 location = giza }
 	bronze_monument_mycenae_citadel = { level = 1 location = argos }
 	bronze_monument_tiryns_cyclopean = { level = 1 location = nafplio }
 	bronze_monument_knossos_complex = { level = 1 location = candia }
@@ -15,10 +16,9 @@ building_manager = {
 	bronze_monument_yin_xu = { level = 1 location = anyang }
 	bronze_monument_bru_na_boinne = { level = 1 location = drogheda }
 
-	# Giza and Stonehenge are already loaded as native monument works of art
-	# by main_menu/setup/start/11_art.txt. Do not place duplicate buildings.
-	# Their exact keys are integrated directly into City Prestige and ruins:
-	# work_of_art:pyramid_art_key at giza
+	# Stonehenge is already loaded as a native monument work of art by
+	# main_menu/setup/start/11_art.txt. Do not place a duplicate building.
+	# Its exact key is integrated directly into City Prestige and ruins:
 	# work_of_art:stonehenge at amesbury
 
 	# TODO_MANUAL_LOCATION - Palace of Pylos

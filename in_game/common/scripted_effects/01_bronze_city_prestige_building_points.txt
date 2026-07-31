@@ -87,18 +87,10 @@ bronze_city_prestige_add_building_points = {
 
 	# Historical monuments. Keep every fixed award in this single effect:
 	# setup, events, and building on_built blocks must not add it again.
-	# Giza is a native work_of_art in 11_art.txt. The building branch is a
-	# compatibility fallback and the OR prevents double counting.
+	# Giza is a dedicated Bronze Era building so its effects remain balanced and
+	# independent from the aggressive vanilla work-of-art quality multipliers.
 	if = {
-		limit = {
-			OR = {
-				has_building = building_type:bronze_monument_giza_pyramid_complex
-				any_work_of_art_in_location = {
-					this = work_of_art:pyramid_art_key
-					is_art_destroyed = no
-				}
-			}
-		}
+		limit = { has_building = building_type:bronze_monument_giza_pyramid_complex }
 		change_variable = { name = bronze_city_prestige_score add = 200 }
 	}
 	if = {
