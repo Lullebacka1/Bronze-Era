@@ -2,24 +2,24 @@
 	game_data = {
 		category = location
 	}
-	local_migration_attraction = 0.15
-	local_trade_center_power = 0.10
+	local_migration_attraction = 0.40
+	local_trade_center_power = 0.20
 }
 
 bronze_city_prestige_rank_2_imperial_city = {
 	game_data = {
 		category = location
 	}
-	local_migration_attraction = 0.10
-	local_trade_center_power = 0.075
+	local_migration_attraction = 0.30
+	local_trade_center_power = 0.15
 }
 
 bronze_city_prestige_rank_3_great_city = {
 	game_data = {
 		category = location
 	}
-	local_migration_attraction = 0.05
-	local_trade_center_power = 0.05
+	local_migration_attraction = 0.18
+	local_trade_center_power = 0.10
 }
 
 bronze_city_prestige_rank_4_regional_city = {
