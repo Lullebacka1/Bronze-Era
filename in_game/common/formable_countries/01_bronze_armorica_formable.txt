@@ -4,7 +4,7 @@
 
 ARMOR_f = {
 	level = 3
-	required_locations_fraction = 1.00
+	required_locations_fraction = 0.70
 	capital_required = no
 	potential_requires_own = yes
 	rule = historical
