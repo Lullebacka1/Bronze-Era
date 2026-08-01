@@ -1,0 +1,11 @@
+bronze_jotunheim_mountain_clans = {
+	game_data = {
+		category = country
+	}
+
+	global_defensive = 0.10
+	global_hostile_attrition = 0.5
+	land_unit_attrition = -0.05
+	land_morale_modifier = 0.05
+	global_garrison_size_modifier = 0.10
+}

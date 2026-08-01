@@ -420,3 +420,248 @@ bronze_age_ASGARD_coa = { # Asgard: Nordic blue, bronze sun and raven authority.
 		instance = { position = { 0.5 0.84 } scale = { 0.24 0.24 } }
 	}
 }
+
+bronze_age_MIDGARD_coa = { # Midgard: Swedish green, bronze sun, oak and spear law.
+	pattern = "pattern_border_thin.dds"
+	color1 = "green_pine"
+	color2 = "yellow_dark"
+	color3 = "brown"
+	color4 = "black"
+
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.24 } scale = { 0.34 0.34 } }
+	}
+	colored_emblem = {
+		texture = "ce_tree_oak_simple.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.58 } scale = { 0.62 0.62 } }
+	}
+	colored_emblem = {
+		texture = "ce_spear_head_random_small.dds"
+		color1 = color2
+		color2 = color4
+		instance = { position = { 0.36 0.78 } scale = { 0.34 0.34 } }
+		instance = { position = { 0.64 0.78 } scale = { -0.34 0.34 } }
+	}
+}
+
+bronze_age_VANAHEIM_coa = { # Vanaheim: green fields, bronze sun, oak and cattle.
+	pattern = "pattern_border_thin.dds"
+	color1 = "green"
+	color2 = "yellow_mid"
+	color3 = "brown"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.22 } scale = { 0.34 0.34 } }
+	}
+	colored_emblem = {
+		texture = "ce_tree_oak_simple.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.52 } scale = { 0.58 0.58 } }
+	}
+	colored_emblem = {
+		texture = "ce_bull_head_ringed.dds"
+		color1 = color2
+		color2 = color4
+		instance = { position = { 0.5 0.8 } scale = { 0.32 0.32 } }
+	}
+}
+
+bronze_age_JOTUNHEIM_coa = { # Jotunheim: stone-grey mountains, bronze axes and watchfire sun.
+	pattern = "pattern_border_thin.dds"
+	color1 = "grey"
+	color2 = "blue_dark"
+	color3 = "yellow_dark"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.22 } scale = { 0.3 0.3 } }
+	}
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.5 0.58 } scale = { 0.78 0.62 } }
+	}
+	colored_emblem = {
+		texture = "ce_axes_crossed_shield.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.5 0.78 } scale = { 0.34 0.34 } }
+	}
+}
+
+bronze_age_ALFHEIM_coa = { # Alfheim: Finnic forests under Norse solar rites.
+	pattern = "pattern_border_thin.dds"
+	color1 = "green_pine"
+	color2 = "yellow_mid"
+	color3 = "white"
+	color4 = "brown"
+
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.22 } scale = { 0.32 0.32 } }
+	}
+	colored_emblem = {
+		texture = "ce_tree_oak_simple.dds"
+		color1 = color2
+		color2 = color4
+		instance = { position = { 0.5 0.55 } scale = { 0.62 0.62 } }
+	}
+	colored_emblem = {
+		texture = "ce_antlers_in_pale_shield.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.5 0.8 } scale = { 0.28 0.28 } }
+	}
+}
+
+bronze_age_NIDAVELLIR_coa = { # Nidavellir: dark stone, copper sun and bronze tools.
+	pattern = "pattern_border_thin.dds"
+	color1 = "black"
+	color2 = "yellow_dark"
+	color3 = "brown"
+	color4 = "grey"
+
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.5 0.56 } scale = { 0.76 0.58 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.24 } scale = { 0.3 0.3 } }
+	}
+	colored_emblem = {
+		texture = "ce_axes_crossed_shield.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.78 } scale = { 0.34 0.34 } }
+	}
+}
+
+bronze_age_MUSPELLHEIM_coa = { # Muspellheim: volcanic red, sea routes and fire-colored sun.
+	pattern = "pattern_horizontal_split_02.dds"
+	color1 = "red_dark"
+	color2 = "black"
+	color3 = "yellow_mid"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_sun_radiant_simple.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.28 } scale = { 0.36 0.36 } }
+	}
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.5 0.58 } scale = { 0.62 0.48 } }
+	}
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.5 0.82 } scale = { 0.32 0.32 } }
+	}
+}
+
+bronze_age_NIFLHEIM_coa = { # Niflheim: cold northern mountains and pale star.
+	pattern = "pattern_border_thin.dds"
+	color1 = "blue_dark"
+	color2 = "white"
+	color3 = "grey"
+	color4 = "yellow_mid"
+
+	colored_emblem = {
+		texture = "ce_star_08.dds"
+		color1 = color2
+		color2 = color4
+		instance = { position = { 0.5 0.22 } scale = { 0.3 0.3 } }
+	}
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.58 } scale = { 0.78 0.62 } }
+	}
+	colored_emblem = {
+		texture = "ce_spear_head_random_small.dds"
+		color1 = color4
+		color2 = color3
+		instance = { position = { 0.38 0.8 } scale = { 0.3 0.3 } }
+		instance = { position = { 0.62 0.8 } scale = { -0.3 0.3 } }
+	}
+}
+
+bronze_age_HELHEIM_coa = { # Helheim: Danish ancestor rites, dark field and bronze passage.
+	pattern = "pattern_border_thin.dds"
+	color1 = "black"
+	color2 = "yellow_dark"
+	color3 = "grey"
+	color4 = "red_dark"
+
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.24 } scale = { 0.3 0.3 } }
+	}
+	colored_emblem = {
+		texture = "ce_bulls_horns_affronted_shield.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.5 0.54 } scale = { 0.58 0.58 } }
+	}
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.8 } scale = { 0.3 0.3 } }
+	}
+}
+
+bronze_age_VINDLAND_coa = { # Vindland: amber sun, Baltic ship and forest borderlands.
+	pattern = "pattern_border_thin.dds"
+	color1 = "green"
+	color2 = "yellow_mid"
+	color3 = "blue_dark"
+	color4 = "brown"
+
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.22 } scale = { 0.34 0.34 } }
+	}
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.52 } scale = { 0.56 0.56 } }
+	}
+	colored_emblem = {
+		texture = "ce_tree_oak_simple.dds"
+		color1 = color2
+		color2 = color4
+		instance = { position = { 0.5 0.82 } scale = { 0.3 0.3 } }
+	}
+}

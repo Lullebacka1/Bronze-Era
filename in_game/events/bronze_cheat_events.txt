@@ -1,0 +1,31 @@
+namespace = bronze
+
+# Console command:
+# event bronze.1
+#
+# Cheat name shown in-game:
+# bronze.annex_onclick
+bronze.1 = {
+	type = country_event
+	title = bronze.annex_onclick.title
+	desc = bronze.annex_onclick.desc
+	outcome = neutral
+
+	illustration_tags = { 10 = interior }
+
+	option = {
+		name = bronze.annex_onclick.a
+		custom_tooltip = bronze_annex_onclick_enable_effect_tt
+		bronze_annex_onclick_enable_effect = yes
+	}
+
+	option = {
+		name = bronze.annex_onclick.b
+		custom_tooltip = bronze_annex_onclick_disable_effect_tt
+		bronze_annex_onclick_disable_effect = yes
+	}
+
+	option = {
+		name = bronze.annex_onclick.c
+	}
+}
