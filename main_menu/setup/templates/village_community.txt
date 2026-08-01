@@ -1,4 +1,4 @@
-# Reusable setup template for late Neolithic and early Bronze Age village communities.
+﻿# Reusable setup template for late Neolithic and early Bronze Age village communities.
 # Use with include = "village_community" in a country setup block.
 starting_technology_level = 1
 
@@ -36,3 +36,4 @@ government = {
 		village_community_clan_interest_law = cultivator_clan_interest_policy
 	}
 }
+

@@ -1,4 +1,4 @@
-village_clan_elective = {
+﻿village_clan_elective = {
 	use_election = yes
 	term_duration = 48
 	max_possible_candidates = 3
@@ -77,3 +77,4 @@ village_clan_elective = {
 		}
 	}
 }
+

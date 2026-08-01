@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  village_community: "Village Community"
  village_community_desc: "A very decentralized union of farming villages, families and clans, held together by a common assembly rather than a hereditary court."
  village_clan_elective: "Clan Assembly Election"
@@ -23,8 +23,8 @@ l_english:
  warrior_clan_interest_policy_desc: "Warrior lineages focus the assembly on village levies, local defense and military prestige, at the cost of external trust."
  elder_clan_interest_policy: "Elder Clans"
  elder_clan_interest_policy_desc: "Senior household heads focus the assembly on custom, mediation and keeping relations between villages stable."
- country_name_construction_village_community: "Community of $NAME$"
- country_name_construction_village_community_map: "Community of $NAME$"
+ country_name_construction_village_community: "$NAME$"
+ country_name_construction_village_community_map: "$NAME$"
  country_name_construction_clan_confederation: "Clan Confederation of $NAME$"
  country_name_construction_clan_confederation_map: "Clan Confederation of $NAME$"
  village_community_clan_assembly: "Assembly of the Clans"

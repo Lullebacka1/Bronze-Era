@@ -1,4 +1,4 @@
-village_community_reform = {
+﻿village_community_reform = {
 	age = age_1_traditions
 	major = yes
 	unique = yes
@@ -155,7 +155,7 @@ hereditary_chiefdom_reform = {
 		set_societal_value = { value = 50 type = centralization_vs_decentralization }
 		if = {
 			limit = { country_has_estate = estate_type:nobles_estate }
-			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_large_bonus }
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = large_permanent_target_satisfaction }
 		}
 	}
 
@@ -187,7 +187,7 @@ village_community_adopt_monarchy_reform = {
 		add_government_power = government_power_extreme_bonus
 		if = {
 			limit = { country_has_estate = estate_type:nobles_estate }
-			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_large_bonus }
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = large_permanent_target_satisfaction }
 		}
 	}
 

@@ -1,4 +1,4 @@
-bronze_apply_village_community_government = {
+﻿bronze_apply_village_community_government = {
 	change_government_type = government_type:village_community
 	change_heir_selection = heir_selection:village_clan_elective
 	if = {
@@ -10,3 +10,4 @@ bronze_apply_village_community_government = {
 	set_societal_value = { value = 80 type = individualism_vs_communalism }
 	set_societal_value = { value = 100 type = capital_economy_vs_traditional_economy }
 }
+

@@ -1,4 +1,4 @@
-village_community = {
+﻿village_community = {
 	heir_selection = village_clan_elective
 
 	map_color = gov_tribe
@@ -12,3 +12,4 @@ village_community = {
 		peasants_estate_can_participate_in_parliament = yes
 	}
 }
+

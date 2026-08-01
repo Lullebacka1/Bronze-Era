@@ -1,4 +1,4 @@
-l_french:
+﻿l_french:
  village_community: "Communaute villageoise"
  village_community_desc: "Une union tres decentralisee de villages agricoles, de familles et de clans, tenue par une assemblee commune plutot que par une cour hereditaire."
  village_clan_elective: "Election de l'assemblee des clans"
@@ -23,8 +23,8 @@ l_french:
  warrior_clan_interest_policy_desc: "Les lignages guerriers orientent l'assemblee vers les levees villageoises, la defense locale et le prestige militaire, au prix d'une confiance exterieure plus faible."
  elder_clan_interest_policy: "Clans des anciens"
  elder_clan_interest_policy_desc: "Les anciens des maisons orientent l'assemblee vers la coutume, la mediation et la stabilite entre villages."
- country_name_construction_village_community: "Communaute de $NAME$"
- country_name_construction_village_community_map: "Communaute de $NAME$"
+ country_name_construction_village_community: "$NAME$"
+ country_name_construction_village_community_map: "$NAME$"
  country_name_construction_clan_confederation: "Confederation de clans de $NAME$"
  country_name_construction_clan_confederation_map: "Confederation de clans de $NAME$"
  village_community_clan_assembly: "Assemblee des clans"
