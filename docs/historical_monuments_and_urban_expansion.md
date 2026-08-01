@@ -43,6 +43,13 @@ placements reuse explicit Bronze Era mappings already used for palace sites.
 `karnak` is deliberately not used for Egyptian Karnak: the mod's location with
 that identifier is in Central Asia.
 
+Historical buildings use dedicated Bronze Era maintenance instead of vanilla
+`capital_building_maintenance`. Porcelain, glass, paper, books, and other late
+goods are excluded. Administrative and religious complexes consume small
+amounts of `bronze_age_bronze` and `bronze_age_tablets`; fortified monuments use
+bronze fittings, while prehistoric megaliths require only stone, timber, and
+tools.
+
 ## Prepared But Not Placed
 
 The building definitions, score values, ruin snapshots, and localization are
@@ -217,5 +224,4 @@ Create a rivalry test from eligible Great Cities:
 ```txt
 event bronze_city_prestige_debug.4
 ```
-
 

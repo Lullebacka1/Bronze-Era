@@ -25,7 +25,7 @@ bronze_monument_giza_pyramid_complex = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_pyramid_complex_maintenance }
 	custom_tags = { bronze_historical_monument royal_monument religious_monument pyramid_monument }
 	modifier = {
 		local_cultural_tradition = 0.35
@@ -53,7 +53,7 @@ bronze_monument_karnak_complex = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_palace_temple_maintenance }
 	custom_tags = { bronze_historical_monument religious_monument royal_monument }
 	modifier = {
 		local_cultural_tradition = 0.30
@@ -81,7 +81,7 @@ bronze_monument_luxor_temple = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_palace_temple_maintenance }
 	custom_tags = { bronze_historical_monument religious_monument royal_monument }
 	modifier = {
 		local_cultural_tradition = 0.25
@@ -108,7 +108,7 @@ bronze_monument_abu_simbel = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_palace_temple_maintenance }
 	custom_tags = { bronze_historical_monument religious_monument royal_monument military_monument }
 	modifier = {
 		local_cultural_tradition = 0.25
@@ -136,7 +136,7 @@ bronze_monument_theban_necropolis = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_palace_temple_maintenance }
 	custom_tags = { bronze_historical_monument religious_monument royal_monument }
 	modifier = {
 		local_cultural_tradition = 0.25
@@ -163,7 +163,7 @@ bronze_monument_hattusa_complex = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_palace_temple_maintenance }
 	custom_tags = { bronze_historical_monument royal_monument religious_monument military_monument }
 	modifier = {
 		local_cultural_tradition = 0.30
@@ -192,7 +192,7 @@ bronze_monument_mycenae_citadel = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_fortified_monument_maintenance }
 	custom_tags = { bronze_historical_monument royal_monument military_monument }
 	modifier = {
 		local_cultural_tradition = 0.30
@@ -221,7 +221,7 @@ bronze_monument_tiryns_cyclopean = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_fortified_monument_maintenance }
 	custom_tags = { bronze_historical_monument military_monument royal_monument }
 	modifier = {
 		local_cultural_tradition = 0.20
@@ -249,7 +249,7 @@ bronze_monument_pylos_palace = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_palace_temple_maintenance }
 	custom_tags = { bronze_historical_monument royal_monument administrative_monument }
 	modifier = {
 		local_cultural_tradition = 0.25
@@ -277,7 +277,7 @@ bronze_monument_troy_citadel = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_fortified_monument_maintenance }
 	custom_tags = { bronze_historical_monument military_monument commercial_monument }
 	modifier = {
 		local_cultural_tradition = 0.25
@@ -305,7 +305,7 @@ bronze_monument_knossos_complex = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_palace_temple_maintenance }
 	custom_tags = { bronze_historical_monument royal_monument religious_monument commercial_monument }
 	modifier = {
 		local_cultural_tradition = 0.30
@@ -333,7 +333,7 @@ bronze_monument_ugarit_complex = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_palace_temple_maintenance }
 	custom_tags = { bronze_historical_monument royal_monument religious_monument commercial_monument port_monument }
 	modifier = {
 		local_cultural_tradition = 0.20
@@ -361,7 +361,7 @@ bronze_monument_ur_ziggurat = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_palace_temple_maintenance }
 	custom_tags = { bronze_historical_monument religious_monument royal_monument }
 	modifier = {
 		local_cultural_tradition = 0.30
@@ -388,7 +388,7 @@ bronze_monument_assur_complex = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_palace_temple_maintenance }
 	custom_tags = { bronze_historical_monument religious_monument royal_monument commercial_monument }
 	modifier = {
 		local_cultural_tradition = 0.25
@@ -416,7 +416,7 @@ bronze_monument_chogha_zanbil = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_palace_temple_maintenance }
 	custom_tags = { bronze_historical_monument religious_monument royal_monument }
 	modifier = {
 		local_cultural_tradition = 0.25
@@ -443,7 +443,7 @@ bronze_monument_yin_xu = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_palace_temple_maintenance }
 	custom_tags = { bronze_historical_monument royal_monument religious_monument administrative_monument }
 	modifier = {
 		local_cultural_tradition = 0.30
@@ -471,7 +471,7 @@ bronze_monument_su_nuraxi = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_fortified_monument_maintenance }
 	custom_tags = { bronze_historical_monument military_monument religious_monument }
 	modifier = {
 		local_cultural_tradition = 0.25
@@ -499,7 +499,7 @@ bronze_monument_stonehenge = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_megalithic_monument_maintenance }
 	custom_tags = { bronze_historical_monument religious_monument }
 	modifier = {
 		local_cultural_tradition = 0.25
@@ -526,7 +526,7 @@ bronze_monument_avebury = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_megalithic_monument_maintenance }
 	custom_tags = { bronze_historical_monument religious_monument }
 	modifier = {
 		local_cultural_tradition = 0.20
@@ -553,7 +553,7 @@ bronze_monument_bru_na_boinne = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_megalithic_monument_maintenance }
 	custom_tags = { bronze_historical_monument religious_monument royal_monument }
 	modifier = {
 		local_cultural_tradition = 0.25
@@ -581,7 +581,7 @@ bronze_monument_great_pyramid_new = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_pyramid_complex_maintenance }
 	custom_tags = { bronze_historical_monument royal_monument religious_monument pyramid_monument }
 	modifier = {
 		local_cultural_tradition = 0.40
@@ -615,7 +615,7 @@ bronze_monument_great_pyramid_unfinished = {
 	country_potential = { always = no }
 	allow = { always = no }
 	can_destroy = { always = no }
-	possible_production_methods = { capital_building_maintenance }
+	possible_production_methods = { bronze_pyramid_complex_maintenance }
 	custom_tags = { bronze_historical_monument royal_monument pyramid_monument unfinished_monument }
 	modifier = {
 		local_cultural_tradition = 0.05

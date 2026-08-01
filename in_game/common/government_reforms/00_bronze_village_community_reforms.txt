@@ -1,0 +1,195 @@
+village_community_reform = {
+	age = age_1_traditions
+	major = yes
+	unique = yes
+	government = village_community
+
+	potential = {
+		government_type = government_type:village_community
+	}
+	allow = {
+		government_type = government_type:village_community
+	}
+
+	country_modifier = {
+		global_peasants_estate_power = 0.25
+		global_tribes_estate_power = 0.15
+		global_nobles_estate_power = -0.15
+		global_crown_estate_power = -0.35
+		peasants_estate_target_satisfaction = small_permanent_target_satisfaction
+		tribes_estate_target_satisfaction = small_permanent_target_satisfaction
+
+		global_monthly_food_modifier = 0.05
+		global_raw_material_output = 0.05
+		global_peasants_desired_pop = 0.025
+		global_tribesmen_desired_pop = 0.025
+		peasants_estate_levy_size = 0.10
+		levy_combat_efficiency_modifier = 0.03
+		global_defensive = 0.05
+
+		tax_income_efficiency = small_tax_income_efficiency_penalty
+		global_monthly_control = -0.001
+		government_size = -1
+		diplomatic_capacity = -1
+		diplomatic_reputation = diplomatic_reputation_weak_penalty
+		country_cabinet_efficiency = -0.05
+		global_institution_growth_modifier = -0.05
+		army_maintenance_efficiency = -0.05
+
+		monthly_republican_tradition = 0.03
+		monthly_towards_decentralization = societal_value_large_monthly_move
+		monthly_towards_communalism = societal_value_monthly_move
+		peasants_estate_can_participate_in_parliament = yes
+		government_reform_slots = 1
+		court_language_is_common_language_importance_modifier = 15
+	}
+
+	on_activate = {
+		change_heir_selection = heir_selection:village_clan_elective
+		set_parliament_type = parliament_type:assembly
+		set_societal_value = { value = 100 type = centralization_vs_decentralization }
+		set_societal_value = { value = 80 type = individualism_vs_communalism }
+		set_societal_value = { value = 100 type = capital_economy_vs_traditional_economy }
+	}
+
+	years = 1
+}
+
+maintain_clan_assembly_reform = {
+	age = age_1_traditions
+	government = village_community
+
+	potential = {
+		government_type = government_type:village_community
+	}
+	allow = {
+		has_reform = government_reform:village_community_reform
+	}
+
+	country_modifier = {
+		global_estate_target_satisfaction = small_permanent_target_satisfaction
+		monthly_republican_tradition = 0.03
+		monthly_towards_decentralization = societal_value_monthly_move
+		monthly_towards_communalism = societal_value_monthly_move
+		change_policy_cost_modifier = -0.05
+	}
+
+	on_activate = {
+		change_heir_selection = heir_selection:village_clan_elective
+		set_parliament_type = parliament_type:assembly
+	}
+
+	years = 2
+}
+
+clan_confederation_reform = {
+	age = age_1_traditions
+	major = yes
+	unique = yes
+	government = village_community
+
+	potential = {
+		government_type = government_type:village_community
+	}
+	allow = {
+		num_locations >= 5
+		prestige >= 10
+		stability >= 0
+	}
+
+	country_modifier = {
+		global_peasants_estate_power = 0.10
+		global_tribes_estate_power = 0.10
+		global_nobles_estate_power = 0.05
+		global_crown_estate_power = -0.10
+		global_estate_target_satisfaction = small_permanent_target_satisfaction
+
+		global_monthly_food_modifier = 0.03
+		global_raw_material_output = 0.03
+		peasants_estate_levy_size = 0.12
+		levy_combat_efficiency_modifier = 0.05
+		global_defensive = 0.03
+		diplomatic_capacity = 1
+		country_cabinet_efficiency = 0.03
+
+		tax_income_efficiency = small_tax_income_efficiency_penalty
+		global_monthly_control = -0.0005
+		government_size = -0.5
+		global_institution_growth_modifier = -0.03
+
+		monthly_towards_decentralization = societal_value_monthly_move
+		monthly_republican_tradition = 0.02
+		peasants_estate_can_participate_in_parliament = yes
+		government_reform_slots = 1
+	}
+
+	on_activate = {
+		change_heir_selection = heir_selection:village_clan_elective
+		set_parliament_type = parliament_type:assembly
+		set_societal_value = { value = 65 type = centralization_vs_decentralization }
+	}
+
+	years = 3
+}
+
+hereditary_chiefdom_reform = {
+	age = age_1_traditions
+	major = yes
+	unique = yes
+	government = village_community
+
+	potential = {
+		government_type = government_type:village_community
+	}
+	allow = {
+		num_locations >= 3
+		prestige >= 10
+		stability >= 0
+		societal_value:centralization_vs_decentralization < 80
+	}
+
+	on_activate = {
+		change_government_type = government_type:tribe
+		change_heir_selection = heir_selection:tribal_oldest_male
+		set_parliament_type = parliament_type:assembly
+		set_societal_value = { value = 50 type = centralization_vs_decentralization }
+		if = {
+			limit = { country_has_estate = estate_type:nobles_estate }
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_large_bonus }
+		}
+	}
+
+	years = 5
+}
+
+village_community_adopt_monarchy_reform = {
+	age = age_1_traditions
+	major = yes
+	unique = yes
+	government = village_community
+
+	potential = {
+		government_type = government_type:village_community
+	}
+	allow = {
+		num_locations >= 10
+		country_rank_level >= 2
+		prestige >= 25
+		stability >= 0
+		societal_value:centralization_vs_decentralization <= -25
+	}
+
+	on_activate = {
+		change_government_type = government_type:monarchy
+		change_heir_selection = heir_selection:cognatic_primogeniture
+		set_parliament_type = parliament_type:no_parliament
+		set_societal_value = { value = -50 type = centralization_vs_decentralization }
+		add_government_power = government_power_extreme_bonus
+		if = {
+			limit = { country_has_estate = estate_type:nobles_estate }
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_large_bonus }
+		}
+	}
+
+	years = 10
+}
