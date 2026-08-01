@@ -218,6 +218,4 @@ Create a rivalry test from eligible Great Cities:
 event bronze_city_prestige_debug.4
 ```
 
-Use a new campaign to verify historical setup buildings. Existing campaigns
-receive script and localization changes, but setup buildings are not injected
-retroactively.
+

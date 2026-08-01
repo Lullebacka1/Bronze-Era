@@ -16,6 +16,18 @@ bronze_city_prestige_initialize_city = {
 		set_variable = { name = bronze_city_prestige_score value = 0 }
 		set_variable = { name = bronze_city_prestige_rank value = 5 }
 	}
+	if = {
+		limit = {
+			NOT = { has_variable = bronze_city_prestige_score }
+		}
+		set_variable = { name = bronze_city_prestige_score value = 0 }
+	}
+	if = {
+		limit = {
+			NOT = { has_variable = bronze_city_prestige_rank }
+		}
+		set_variable = { name = bronze_city_prestige_rank value = 5 }
+	}
 
 	# Global GUI lists expose entries as generic scopes. This typed
 	# self-reference is retained for compatibility with older saves and UI code.
@@ -495,11 +507,14 @@ bronze_city_prestige_apply_royal_capital_bonus = {
 	}
 }
 
-# Root = any scope.
+# Root = country.
 # The ledger is deliberately independent from the prestige ranking. It lists
 # every city and megalopolis in the world, with no discovery, ownership, score,
-# rank, or country filter.
+# rank, or country filter. The final global list is ordered by the numeric
+# prestige score so the GUI consumes real values instead of text-formatted ones.
 bronze_city_prestige_rebuild_ledger_list = {
+	save_scope_as = bronze_city_prestige_ledger_manager
+
 	if = {
 		limit = {
 			has_global_variable_list = bronze_city_prestige_ledger_cities
@@ -507,20 +522,44 @@ bronze_city_prestige_rebuild_ledger_list = {
 		clear_global_variable_list = bronze_city_prestige_ledger_cities
 	}
 
+	clear_variable_list = bronze_city_prestige_ledger_build_pool
+
 	every_country = {
 		limit = { is_real_country = yes }
 		every_owned_location = {
 			limit = { bronze_city_prestige_is_urban = yes }
 
-			# Store the typed location reference expected by generic GUI list scopes.
 			bronze_city_prestige_initialize_city = yes
+			save_scope_as = bronze_city_prestige_ledger_city
 
-			add_to_global_variable_list = {
-				name = bronze_city_prestige_ledger_cities
-				target = this
+			scope:bronze_city_prestige_ledger_manager = {
+				add_to_variable_list = {
+					name = bronze_city_prestige_ledger_build_pool
+					target = scope:bronze_city_prestige_ledger_city
+				}
 			}
 		}
 	}
+
+	ordered_in_list = {
+		variable = bronze_city_prestige_ledger_build_pool
+		order_by = {
+			value = 0
+			if = {
+				limit = { has_variable = bronze_city_prestige_score }
+				add = var:bronze_city_prestige_score
+			}
+		}
+		max = 10000
+		check_range_bounds = no
+
+		add_to_global_variable_list = {
+			name = bronze_city_prestige_ledger_cities
+			target = this
+		}
+	}
+
+	clear_variable_list = bronze_city_prestige_ledger_build_pool
 }
 
 # Root = prestigious destination location.
@@ -728,7 +767,13 @@ bronze_city_prestige_update_world_ranking = {
 
 	ordered_in_list = {
 		variable = bronze_city_prestige_ranking_pool
-		order_by = var:bronze_city_prestige_score
+		order_by = {
+			value = 0
+			if = {
+				limit = { has_variable = bronze_city_prestige_score }
+				add = var:bronze_city_prestige_score
+			}
+		}
 		max = 10000
 		check_range_bounds = no
 
@@ -959,7 +1004,12 @@ bronze_city_prestige_initialize_world = {
 	}
 
 	# The ledger is a plain world list and does not depend on ranking success.
-	bronze_city_prestige_rebuild_ledger_list = yes
+	if = {
+		limit = { has_global_variable = bronze_city_prestige_manager }
+		global_var:bronze_city_prestige_manager ?= {
+			bronze_city_prestige_rebuild_ledger_list = yes
+		}
+	}
 
 	# Save-compatible initialization marker. Existing campaigns that predate
 	# City Prestige are rebuilt once by the monthly bootstrap on-action.
