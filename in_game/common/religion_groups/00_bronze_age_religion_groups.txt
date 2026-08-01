@@ -77,7 +77,11 @@ celtic_religion_group = {
 	convert_slaves_at_start = no
 	allow_slaves_of_same_group = yes
 }
-
+germanic_religion_group = {
+	color = rgb { 82 72 75 }
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = yes
+}
 nordic_religion_group = {
 	color = rgb { 95 131 154 }
 	convert_slaves_at_start = no

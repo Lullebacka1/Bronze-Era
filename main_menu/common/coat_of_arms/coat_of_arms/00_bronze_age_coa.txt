@@ -394,3 +394,29 @@ bronze_age_ARMOR_coa = { # Armorica: green field with the provided Celtic triske
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
 	}
 }
+
+bronze_age_ASGARD_coa = { # Asgard: Nordic blue, bronze sun and raven authority.
+	pattern = "pattern_border_thin.dds"
+	color1 = "blue_dark"
+	color2 = "yellow_mid"
+	color3 = "black"
+
+	colored_emblem = {
+		texture = "ce_sun_radiant_simple.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.28 } scale = { 0.42 0.42 } }
+	}
+	colored_emblem = {
+		texture = "ce_norse_raven_flag.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.56 } scale = { 0.78 0.78 } }
+	}
+	colored_emblem = {
+		texture = "ce_baltic_thundercross.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.84 } scale = { 0.24 0.24 } }
+	}
+}

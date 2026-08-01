@@ -6990,3 +6990,26 @@ VC874 = {
 	culture_definition = germanic
 	religion_definition = nordic_pagan
 }
+VC875 = {
+	color = rgb { 170 90 210 }
+	color2 = rgb { 132 52 172 }
+
+	culture_definition = nordic
+	religion_definition = norse
+}
+
+VC876 = {
+	color = rgb { 73 51 67 }
+	color2 = rgb { 35 15 29 }
+
+	culture_definition = nordic
+	religion_definition = norse
+}
+
+VC877 = {
+	color = rgb { 146 182 94 }
+	color2 = rgb { 108 144 56 }
+
+	culture_definition = nordic
+	religion_definition = norse
+}

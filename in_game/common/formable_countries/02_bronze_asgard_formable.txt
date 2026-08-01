@@ -1,0 +1,98 @@
+# Asgard is the superior pan-Nordic formable for Bronze Era.
+# Location list generated from starting countries whose discovered_regions include scandinavian_region.
+# Total locations: 298. Required at 80%: 239.
+
+ASGARD_f = {
+	level = 5
+	required_locations_fraction = 0.80
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 1000
+
+	potential = {
+		NOT = { tag = ASGARD }
+		NOT = { country_exists = c:ASGARD }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:norse
+	}
+
+	name = ASGARD
+	flag = ASGARD
+	adjective = ASGARD_ADJ
+	tag = ASGARD
+	color = map_ASGARD
+
+	locations = {
+		aabenraa aalborg aarhus abisko abo albo
+		allingsas alstahaug alvastra amal amli arboga
+		ars asbo assens aurland avesta bardodalen
+		bergen beryozovskoye birkala birndal bjorneborg bodebyn
+		bodo bogesund bolling borg borgund bragernes
+		brahestad branna bregne bygdea byske dalaborg
+		eid eidfjord eidsvoll ekenas ekholm elimaki
+		enkoping falkoping falster falun fana farnebo
+		flekkefjord flensburg flesberg forssa fosna gefle
+		gellivaara gildeskal gillberg gladsax goksholm grange
+		gratesk grenland grindsted grundsunda grythyttan haderslev
+		halden hallingdal halmstad hamar hamaroy hamrange
+		handbord hapsal harnosand haugalandet heby hedemora
+		hedesunda heinjoki heinola helsingborg helsinge helsingor
+		hienatiemi hjo hjorring hollola holstebro_lundenes hornborg
+		hudiksvall husum hvittis ikalis itis jaeren
+		jamsa janakkala jaskis joensuu jonkoping joroinen
+		juckasjarvi jyvaskyla kaina kalmar kalo kalundborg
+		kangasniemi karleby kaustby kiemi kinda kobenhavn
+		kolding kolmarden konevets konga konghalla kongsberg
+		kongsvinger koppo korela korpilombo korsholm kuivaniemi
+		kungsbacka kurkijoki kvinnherad kymi_fi kyyrola laerdal
+		laholm lappo laukas lidkoping liljendal linde
+		lindesnes linkoping ljungby lodose lohja lulea
+		lund lycksele malmo mikkeli molde moss
+		moster namdal nas navskov nikkaluokta nora
+		nordhordland nordmark norrkoping norrtalje numedal nykoping
+		nystad ockelbo oddernes odense ofoti oland
+		olofsborg oppunda orebro orivesi orkdal orland
+		osby oslo otredal oyestad padise pajala
+		pedersore pitea porjus porvoo poytis pudasjarvi
+		randers ranea ranua rauma raumo ribe
+		ringerike ringkobing ringsted riseberga ristiina ronneby
+		roskilde rovaniemi ryfylke saarijarvi sala sande
+		sarek sastamala sastmola sauvo savonranta selanger
+		sevede sigdal siikalatva silkeborg simo sirudal
+		sjalevad sjundea skagen skara skelleftea skene
+		ski skien skinskatteberg slagelse slesvig socksjock
+		soderala soderbarke soderkoping sodertalje sogndal solatunum
+		solvesborg sondeled sordavala stavanger steigen stockholm
+		stora_tuna stordal storkyro strangnas stromstad stryn
+		suledal sunndal sunnfjord sunnmore svendborg sysma
+		tallinn tavastehus thisted tierp tingvalla tiveden
+		tjust tonder tonsberg tornea trogstad trollaborg
+		troms trondenes uddevalla uleaborg ullensvang umea
+		uppsala uppvidinge utajarvi utlandet vadstena valkeasaari
+		vallsjo varberg vardal varde varnum vartofta
+		vartsila vasteras vaxjo veckelax vedbo vederlax
+		vetlanda viborg viitasaari vik vindeln vora
+		vordingborg voss vyborg waestbo
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
+
+		set_variable = { name = bronze_formed_asgard value = 1 }
+		add_prestige = prestige_mild_bonus
+		add_legitimacy = legitimacy_mild_bonus
+		add_country_modifier = {
+			modifier = bronze_asgard_high_kingship
+			years = -1
+			mode = add_and_extend
+		}
+		custom_tooltip = bronze_asgard_remaining_claims_tt
+	}
+}

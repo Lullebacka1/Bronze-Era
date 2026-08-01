@@ -33,3 +33,14 @@ Formosan_Paganism = {
 	opinions = {
 	}
 }
+
+Germanic_pagan = {
+	group = germanic_religion_group
+	language = germanic_bronze_language
+	color = rgb { 81 72 75 }
+	definition_modifier = {
+	}
+
+	opinions = {
+	}
+}

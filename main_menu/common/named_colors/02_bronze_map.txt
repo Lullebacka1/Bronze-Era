@@ -6,4 +6,5 @@ colors = {
 	# Restored Hatti uses the same blue-grey pigment as the original empire.
 	map_HATTI = rgb { 95 122 139 }
 	map_ARMOR = rgb { 0 132 49 }
+	map_ASGARD = rgb { 34 78 112 }
 }

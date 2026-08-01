@@ -2258,4 +2258,8 @@ VISTU = {
 	color2 = rgb { 121 102 127 }
 }
 
+ASGARD = {
+	color = rgb { 34 78 112 }
+	color2 = rgb { 214 166 62 }
+}
 

@@ -10321,7 +10321,7 @@ countries = {
 	WILUS = {
 	capital = ayvacik
 	culture = luwian
-	religion = luwian
+	religion = hellenic 
 
 	country_rank = rank_kingdom
 
@@ -28518,8 +28518,6 @@ VC001 = {
 			}
 		}
 
-
-}
 		VC638 = {
 			capital = abisko
 			culture = nordic
@@ -34445,4 +34443,81 @@ VC001 = {
 				north_german_region
 			}
 		}
+
+		VC875 = {
+			capital = vallsjo
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				vallsjo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC876 = {
+			capital = kolmarden
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kolmarden
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC877 = {
+			capital = nykoping
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				nykoping
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+}
 }
