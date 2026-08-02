@@ -1,4 +1,4 @@
-namespace = start_trojan_war_phase_2
+﻿namespace = start_trojan_war_phase_2
 namespace = join_trojan_War
 namespace = trojan_war_end
 
@@ -47,15 +47,17 @@ join_trojan_War.1 = {
 
 trojan_war_end.1 = {
     type = country_event
-    title = trojan_war_end.t
-    desc = trojan_war_end.d
+    title = trojan_war_end.t.1
+    desc = trojan_war_end.d.1
     is_triggered_only = yes
     hidden = no
 # For Greece victory
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 10
-             add_contry_modifier = { name = "trojan_war_end.1"  }
+             add_contry_modifier = { name = "trojan_war_end.1"  
+            duration = -1
+            }
 }
 }
 }
@@ -70,7 +72,9 @@ trojan_war_end.2 = {
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 10
-             add_contry_modifier = { name = "trojan_war_end.2"  } 
+             add_contry_modifier = { name = "trojan_war_end.2"  
+            duration = -1
+            } 
 }
 }
 }
@@ -85,7 +89,9 @@ trojan_war_end.3 = {
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = - 10
-             add_contry_modifier = { name = "trojan_war_end.3"  }
+             add_contry_modifier = { name = "trojan_war_end.3"  
+            duration = -1
+            }
 }
 }
 }
@@ -100,7 +106,9 @@ trojan_war_end.4 = {
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = - 10
-             add_contry_modifier = { name = "trojan_war_end.4"  }
+             add_contry_modifier = { name = "trojan_war_end.4"  
+            duration = -1
+            }
 }
 }
 }
@@ -116,7 +124,9 @@ trojan_war_end.5 = {
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = - 10
-             add_contry_modifier = { name = "trojan_war_end.5"  }
+             add_contry_modifier = { name = "trojan_war_end.5"  
+            duration = -1
+            }
 }
 }
 }
@@ -131,7 +141,9 @@ trojan_war_end.6 = {
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 10
-             add_contry_modifier = { name = "trojan_war_end.6"  }
+             add_contry_modifier = { name = "trojan_war_end.6"  
+            duration = -1
+            }
 }
 }
 }

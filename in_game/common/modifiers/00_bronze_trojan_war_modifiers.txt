@@ -113,7 +113,7 @@ trojan_war_end.2 = {
         }
         max = 0.05	
     }
-    prestige = {
+    monthly_prestige = {
         value = 0.05
     }
     
