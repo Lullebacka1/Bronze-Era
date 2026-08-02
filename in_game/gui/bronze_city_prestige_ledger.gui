@@ -141,7 +141,7 @@ template bronze_city_prestige_ledger_content {
 				}
 
 				scrollwidget = {
-					dynamicgridbox = {
+					fixedgridbox = {
 						layoutpolicy_horizontal = expanding
 						flipdirection = yes
 						addcolumn = 100%

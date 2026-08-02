@@ -58,7 +58,6 @@ be_ruin_expedition_clear_story_memory_effect = {
 	remove_variable = be_ruin_complication_fire
 	remove_variable = be_ruin_complication_bandits
 	remove_variable = be_ruin_complication_collapse
-	remove_variable = be_ruin_complication_disease
 	remove_variable = be_ruin_complication_panic
 	remove_variable = be_ruin_complication_flood
 	remove_variable = be_ruin_discovery_count

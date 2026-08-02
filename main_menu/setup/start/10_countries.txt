@@ -11906,6 +11906,7 @@ countries = {
 			xihua                xinan                xingyang             xinxiang             xinzheng             xucheng
 			yangdi               yanggu_yanzhou       yanjin               yanling              yanshi               yique
 			yiyang               yongning_shanzhou    yuanyang             yuncheng             zhongmu
+			anyang
 		}
 		capital = luoyang
 		include = "bronze_china_korea"

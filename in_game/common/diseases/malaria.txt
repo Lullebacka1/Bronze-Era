@@ -2,7 +2,9 @@
 	# Bronze Era temporary safety switch:
 	# Keep the vanilla disease ID valid, but prevent automatic outbreaks while
 	# the Geopolitics disease menu crash is being isolated.
-	potential = { always = no }
+	# Keep the disease available to the vanilla Geopolitics database while its
+	# automatic Bronze Era spawning remains disabled below.
+	potential = { always = yes }
 
 	monthly_spawn_chance = {
 		# Malaria is endemic and appears through environmental infection.

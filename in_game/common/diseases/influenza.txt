@@ -2,7 +2,9 @@
 	# Bronze Era temporary safety switch:
 	# Keep the vanilla disease ID valid, but prevent automatic outbreaks while
 	# the Geopolitics disease menu crash is being isolated.
-	potential = { always = no }
+	# Keep the disease available to the vanilla Geopolitics database while its
+	# automatic Bronze Era spawning remains disabled below.
+	potential = { always = yes }
 
 	# Common seasonal epidemic. Winter, dense settlements, markets and sieges
 	# are the main Bronze Age outbreak environments.
@@ -10,7 +12,23 @@
 		value = 0
 	}
 
+	# Keep the complete 1.3.11 outbreak creation chain even while the monthly
+	# chance is zero. The disease UI expects a structurally valid definition.
 	spawn = {
+		random_ownable_location = {
+			limit = {
+				population > 1
+				OR = {
+					winter_level = normal
+					winter_level = severe
+				}
+			}
+			spawn_disease = {
+				disease = scope:disease
+				value = 0.5
+				save_scope_as = outbreak_scope
+			}
+		}
 	}
 
 	r0 = {
@@ -44,9 +62,7 @@
 					has_building_with_at_least_one_level = market_village
 					has_building_with_at_least_one_level = marketplace
 					has_building_with_at_least_one_level = slave_market
-					has_building_with_at_least_one_level = entrepot
 					has_building_with_at_least_one_level = trading_hub
-					has_building_with_at_least_one_level = stock_exchange
 				}
 			}
 			multiply = 1.2
