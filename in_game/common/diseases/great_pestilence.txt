@@ -146,9 +146,7 @@
 					has_building_with_at_least_one_level = market_village
 					has_building_with_at_least_one_level = marketplace
 					has_building_with_at_least_one_level = slave_market
-					has_building_with_at_least_one_level = entrepot
 					has_building_with_at_least_one_level = trading_hub
-					has_building_with_at_least_one_level = stock_exchange
 				}
 			}
 			multiply = 1.2

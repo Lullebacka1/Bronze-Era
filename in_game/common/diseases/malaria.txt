@@ -1,13 +1,6 @@
-﻿malaria = { # Bronze Era adaptation of the vanilla environmental fever.
-	# Bronze Era temporary safety switch:
-	# Keep the vanilla disease ID valid, but prevent automatic outbreaks while
-	# the Geopolitics disease menu crash is being isolated.
-	# Keep the disease available to the vanilla Geopolitics database while its
-	# automatic Bronze Era spawning remains disabled below.
-	potential = { always = yes }
-
+﻿malaria = {
 	monthly_spawn_chance = {
-		# Malaria is endemic and appears through environmental infection.
+		#malaria is endemic - doesn't "spawn"
 		value = 0
 	}
 
@@ -16,37 +9,23 @@
 
 	monthly_resistance_reduction = 0
 
-	r0 = {
-		# Mosquito-borne; it does not spread person-to-person.
+	r0 = { 
+		#doesn't pass from person to person
 		value = 0
 	}
 
 	environmental_infection = {
-		value = 0
-
-		# Warm river agriculture and wetlands are dangerous; true deserts,
-		# mountains and northern cold climates remain poor malaria ground.
+		value = 0.05
+		
 		if = {
-			limit = {
-				OR = {
-					climate = subtropical
-					climate = tropical
-				}
-			}
-			multiply = 2
-		}
-		else_if = {
-			limit = { climate = mediterranean }
-			multiply = 1.15
-		}
-		else_if = {
 			limit = {
 				OR = {
 					climate = arid
 					climate = cold_arid
+					climate = mediterranean
 				}
 			}
-			multiply = 0.75
+			multiply = 0.15
 		}
 		else_if = {
 			limit = {
@@ -59,43 +38,63 @@
 		}
 		else_if = {
 			limit = { climate = oceanic }
-			multiply = 0.2
+			multiply = 0.10
 		}
-
+		else_if = {
+			limit = { climate = subtropical }
+			multiply = 1.75
+		}
+		else_if = {
+			limit = { climate = tropical }
+			multiply = 2
+		}
+		#Vegetation
 		if = {
-			limit = { topography = wetlands }
-			multiply = 3
-		}
-		else_if = {
-			limit = { topography = mountains }
-			multiply = 0
-		}
-
-		if = {
-			limit = { vegetation = farmland }
-			multiply = 1.4
-		}
-		else_if = {
-			limit = { vegetation = grasslands }
-			multiply = 0.9
-		}
-		else_if = {
 			limit = {
 				OR = {
-					vegetation = woods
-					vegetation = forest
-					vegetation = jungle
+					vegetation = farmland
+					vegetation = grasslands
 				}
 			}
-			multiply = 1.1
-		}
-		else_if = {
-			limit = { vegetation = sparse }
-			multiply = 0.3
+			multiply = 0.75
 		}
 		else_if = {
 			limit = { vegetation = desert }
 			multiply = 0
+		}
+		else_if = {
+			limit = { vegetation = sparse }
+			multiply = 0.25
+		}
+		else_if = {
+			limit = { vegetation = woods }
+			multiply = 0.8
+		}
+		else_if = {
+			limit = { vegetation = jungle }
+			multiply = 1.25
+		}
+		else_if = {
+			limit = { vegetation = forest }
+			multiply = 1
+		}
+		
+		#Topography		
+		if = {
+			limit = { topography = mountains }
+			multiply = 0
+		}
+		else_if = {
+			limit = { topography = wetlands }
+			multiply = 3
+		}
+
+		if = {
+			limit = {
+				is_coastal = yes
+				is_land = yes
+			}
+			multiply = 0.10
 		}
 	}
 
@@ -110,21 +109,15 @@
 	}
 
 	location_modifier = {
-		local_population_growth = -0.004
-		local_manpower = -0.02
-		local_forced_attrition = 1
-		max_attrition = 2
-		local_monthly_development_modifier = -0.02
+		#Nothing
 	}
 
-	mortality_rate = {
-		# Keep a direct range here. The disease panel reads this value for
-		# display, and nested script-value ranges can crash the vanilla view.
-		0.03 0.12
+	mortality_rate = { 
+		value = { 0.85 0.95 }
 	}
 
 	character_mortality_chance = {
-		value = 0.04
+		value = { 0.1 0.5 }
 		multiply = "disease_presence(scope:disease)"
 	}
 
@@ -132,9 +125,9 @@
 	}
 
 	map_color = {
-		lerp = {
-			min_color = rgb { 155 170 88 }
-			max_color = rgb { 87 124 42 }
+		lerp = { #Dark Blue
+			min_color = rgb { 100  120  188 }
+			max_color = rgb { 2 30 70 }
 			factor = "disease_presence(scope:disease)"
 		}
 	}
@@ -144,7 +137,7 @@
 			limit = {
 				disease_has_outbreak_here = scope:disease
 			}
-			value = rgb { 91 116 52 }
+			value = rgb { 100  120  188 }
 		}
 	}
 }
