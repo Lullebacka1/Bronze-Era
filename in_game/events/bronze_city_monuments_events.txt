@@ -1,0 +1,340 @@
+namespace = bronze_city_monuments
+
+# ============================================================================
+# THE SECOND GREAT PYRAMID
+# ============================================================================
+# The selected location is stored as an object variable on the Egyptian state.
+# Each major phase arrives after several years. Suspension removes the active
+# modifier but keeps the unfinished building and the globally committed site.
+# ============================================================================
+
+bronze_city_monuments.100 = {
+	type = country_event
+	title = bronze_city_monuments.100.title
+	desc = bronze_city_monuments.100.desc
+	outcome = neutral
+
+	trigger = {
+		has_variable = bronze_great_pyramid_project_active
+		has_variable = bronze_great_pyramid_project_site
+		var:bronze_great_pyramid_project_phase <= 1
+	}
+
+	immediate = {
+		var:bronze_great_pyramid_project_site ?= {
+			save_scope_as = bronze_great_pyramid_site
+		}
+	}
+
+	option = {
+		name = bronze_city_monuments.100.a
+		trigger = { scope:bronze_great_pyramid_site ?= { owner = root } }
+		add_gold = -90
+		add_manpower_pool = -120
+		set_variable = { name = bronze_great_pyramid_project_phase value = 2 }
+		scope:bronze_great_pyramid_site ?= {
+			change_prosperity = prosperity_weak_bonus
+		}
+		trigger_event_non_silently = { id = bronze_city_monuments.101 days = 1460 }
+	}
+	option = {
+		name = bronze_city_monuments.100.b
+		trigger = { scope:bronze_great_pyramid_site ?= { owner = root } }
+		add_gold = -45
+		add_manpower_pool = -60
+		set_variable = { name = bronze_great_pyramid_reduced_project value = 1 }
+		set_variable = { name = bronze_great_pyramid_project_phase value = 2 }
+		scope:bronze_great_pyramid_site ?= {
+			add_location_modifier = {
+				modifier = bronze_great_pyramid_reduced_scope
+				years = -1
+				mode = replace
+			}
+		}
+		trigger_event_non_silently = { id = bronze_city_monuments.101 days = 1825 }
+	}
+	option = {
+		name = bronze_city_monuments.suspend
+		remove_variable = bronze_great_pyramid_project_active
+		set_variable = { name = bronze_great_pyramid_project_suspended value = 1 }
+		scope:bronze_great_pyramid_site ?= {
+			remove_location_modifier = bronze_great_pyramid_construction_site
+		}
+	}
+}
+
+bronze_city_monuments.101 = {
+	type = country_event
+	title = bronze_city_monuments.101.title
+	desc = bronze_city_monuments.101.desc
+	outcome = neutral
+
+	trigger = {
+		has_variable = bronze_great_pyramid_project_active
+		var:bronze_great_pyramid_project_phase = 2
+	}
+	immediate = {
+		var:bronze_great_pyramid_project_site ?= {
+			save_scope_as = bronze_great_pyramid_site
+		}
+	}
+	option = {
+		name = bronze_city_monuments.101.a
+		trigger = { scope:bronze_great_pyramid_site ?= { owner = root } }
+		add_gold = -100
+		add_manpower_pool = -180
+		set_variable = { name = bronze_great_pyramid_project_phase value = 3 }
+		trigger_event_non_silently = { id = bronze_city_monuments.102 days = 1460 }
+		random = {
+			chance = 20
+			trigger_event_non_silently = { id = bronze_city_monuments.107 days = 30 }
+		}
+	}
+	option = {
+		name = bronze_city_monuments.101.b
+		trigger = { scope:bronze_great_pyramid_site ?= { owner = root } }
+		add_gold = -50
+		add_stability = stability_weak_penalty
+		set_variable = { name = bronze_great_pyramid_reduced_project value = 1 }
+		set_variable = { name = bronze_great_pyramid_project_phase value = 3 }
+		trigger_event_non_silently = { id = bronze_city_monuments.102 days = 1825 }
+	}
+	option = {
+		name = bronze_city_monuments.suspend
+		remove_variable = bronze_great_pyramid_project_active
+		set_variable = { name = bronze_great_pyramid_project_suspended value = 1 }
+		scope:bronze_great_pyramid_site ?= {
+			remove_location_modifier = bronze_great_pyramid_construction_site
+		}
+	}
+}
+
+bronze_city_monuments.102 = {
+	type = country_event
+	title = bronze_city_monuments.102.title
+	desc = bronze_city_monuments.102.desc
+	outcome = neutral
+
+	trigger = {
+		has_variable = bronze_great_pyramid_project_active
+		var:bronze_great_pyramid_project_phase = 3
+	}
+	immediate = {
+		var:bronze_great_pyramid_project_site ?= {
+			save_scope_as = bronze_great_pyramid_site
+		}
+	}
+	option = {
+		name = bronze_city_monuments.102.a
+		trigger = { scope:bronze_great_pyramid_site ?= { owner = root } }
+		add_gold = -110
+		add_manpower_pool = -120
+		set_variable = { name = bronze_great_pyramid_project_phase value = 4 }
+		trigger_event_non_silently = { id = bronze_city_monuments.103 days = 1825 }
+		random = {
+			chance = 25
+			trigger_event_non_silently = { id = bronze_city_monuments.108 days = 45 }
+		}
+	}
+	option = {
+		name = bronze_city_monuments.102.b
+		trigger = { scope:bronze_great_pyramid_site ?= { owner = root } }
+		add_gold = -55
+		scope:bronze_great_pyramid_site ?= {
+			province = { change_province_food_percentage = -0.08 }
+			change_prosperity = prosperity_mild_penalty
+		}
+		set_variable = { name = bronze_great_pyramid_reduced_project value = 1 }
+		set_variable = { name = bronze_great_pyramid_project_phase value = 4 }
+		trigger_event_non_silently = { id = bronze_city_monuments.103 days = 2190 }
+	}
+	option = {
+		name = bronze_city_monuments.suspend
+		remove_variable = bronze_great_pyramid_project_active
+		set_variable = { name = bronze_great_pyramid_project_suspended value = 1 }
+		scope:bronze_great_pyramid_site ?= {
+			remove_location_modifier = bronze_great_pyramid_construction_site
+		}
+	}
+}
+
+bronze_city_monuments.103 = {
+	type = country_event
+	title = bronze_city_monuments.103.title
+	desc = bronze_city_monuments.103.desc
+	outcome = neutral
+
+	trigger = {
+		has_variable = bronze_great_pyramid_project_active
+		var:bronze_great_pyramid_project_phase = 4
+	}
+	immediate = {
+		var:bronze_great_pyramid_project_site ?= {
+			save_scope_as = bronze_great_pyramid_site
+		}
+	}
+	option = {
+		name = bronze_city_monuments.103.a
+		trigger = { scope:bronze_great_pyramid_site ?= { owner = root } }
+		add_gold = -140
+		add_manpower_pool = -220
+		set_variable = { name = bronze_great_pyramid_project_phase value = 5 }
+		trigger_event_non_silently = { id = bronze_city_monuments.104 days = 1460 }
+	}
+	option = {
+		name = bronze_city_monuments.103.b
+		trigger = { scope:bronze_great_pyramid_site ?= { owner = root } }
+		add_gold = -70
+		add_prestige = prestige_weak_penalty
+		set_variable = { name = bronze_great_pyramid_reduced_project value = 1 }
+		set_variable = { name = bronze_great_pyramid_project_phase value = 5 }
+		trigger_event_non_silently = { id = bronze_city_monuments.104 days = 1825 }
+	}
+	option = {
+		name = bronze_city_monuments.suspend
+		remove_variable = bronze_great_pyramid_project_active
+		set_variable = { name = bronze_great_pyramid_project_suspended value = 1 }
+		scope:bronze_great_pyramid_site ?= {
+			remove_location_modifier = bronze_great_pyramid_construction_site
+		}
+	}
+}
+
+bronze_city_monuments.104 = {
+	type = country_event
+	title = bronze_city_monuments.104.title
+	desc = bronze_city_monuments.104.desc
+	outcome = neutral
+
+	trigger = {
+		has_variable = bronze_great_pyramid_project_active
+		var:bronze_great_pyramid_project_phase = 5
+	}
+	immediate = {
+		var:bronze_great_pyramid_project_site ?= {
+			save_scope_as = bronze_great_pyramid_site
+		}
+	}
+	option = {
+		name = bronze_city_monuments.104.a
+		trigger = { scope:bronze_great_pyramid_site ?= { owner = root } }
+		add_gold = -100
+		add_manpower_pool = -100
+		set_variable = { name = bronze_great_pyramid_project_phase value = 6 }
+		trigger_event_non_silently = { id = bronze_city_monuments.105 days = 1095 }
+	}
+	option = {
+		name = bronze_city_monuments.104.b
+		trigger = { scope:bronze_great_pyramid_site ?= { owner = root } }
+		add_gold = -40
+		set_variable = { name = bronze_great_pyramid_reduced_project value = 1 }
+		set_variable = { name = bronze_great_pyramid_project_phase value = 6 }
+		trigger_event_non_silently = { id = bronze_city_monuments.105 days = 1460 }
+	}
+	option = {
+		name = bronze_city_monuments.suspend
+		remove_variable = bronze_great_pyramid_project_active
+		set_variable = { name = bronze_great_pyramid_project_suspended value = 1 }
+		scope:bronze_great_pyramid_site ?= {
+			remove_location_modifier = bronze_great_pyramid_construction_site
+		}
+	}
+}
+
+bronze_city_monuments.105 = {
+	type = country_event
+	title = bronze_city_monuments.105.title
+	desc = bronze_city_monuments.105.desc
+	outcome = positive
+
+	trigger = {
+		has_variable = bronze_great_pyramid_project_active
+		var:bronze_great_pyramid_project_phase >= 6
+	}
+	immediate = {
+		var:bronze_great_pyramid_project_site ?= {
+			save_scope_as = bronze_great_pyramid_site
+		}
+	}
+	option = {
+		name = bronze_city_monuments.105.a
+		trigger = { scope:bronze_great_pyramid_site ?= { owner = root } }
+		add_gold = -75
+		add_prestige = prestige_extreme_bonus
+		add_legitimacy = legitimacy_mild_bonus
+		set_variable = { name = bronze_great_pyramid_project_completed value = 1 }
+		set_global_variable = {
+			name = bronze_second_great_pyramid_completed
+			value = 1
+		}
+		remove_variable = bronze_great_pyramid_project_active
+		remove_variable = bronze_great_pyramid_project_suspended
+		scope:bronze_great_pyramid_site ?= {
+			remove_location_modifier = bronze_great_pyramid_construction_site
+			remove_location_modifier = bronze_great_pyramid_reduced_scope
+			change_building_level_in_location = {
+				building = building_type:bronze_monument_great_pyramid_unfinished
+				value = -1
+			}
+			construct_building = {
+				building_type = building_type:bronze_monument_great_pyramid_new
+				cost_multiplier = 0
+				cost_multiplier_reason = "game_concept_event"
+			}
+			if = {
+				limit = { root = { has_variable = bronze_great_pyramid_reduced_project } }
+				set_variable = {
+					name = bronze_great_pyramid_reduced_completion
+					value = 1
+				}
+			}
+			change_prosperity = prosperity_mild_bonus
+			bronze_city_prestige_commit_score_change = yes
+		}
+	}
+}
+
+# Optional project incidents. They do not create an extra global pulse.
+bronze_city_monuments.107 = {
+	type = country_event
+	title = bronze_city_monuments.107.title
+	desc = bronze_city_monuments.107.desc
+	outcome = negative
+	option = {
+		name = bronze_city_monuments.107.a
+		add_gold = -60
+		add_manpower_pool = -50
+	}
+	option = {
+		name = bronze_city_monuments.107.b
+		add_stability = stability_weak_penalty
+		add_manpower_pool = -20
+	}
+}
+
+bronze_city_monuments.108 = {
+	type = country_event
+	title = bronze_city_monuments.108.title
+	desc = bronze_city_monuments.108.desc
+	outcome = negative
+	immediate = {
+		var:bronze_great_pyramid_project_site ?= {
+			save_scope_as = bronze_great_pyramid_site
+		}
+	}
+	option = {
+		name = bronze_city_monuments.108.a
+		add_gold = -70
+		scope:bronze_great_pyramid_site ?= {
+			province = { change_province_food_percentage = 0.10 }
+		}
+	}
+	option = {
+		name = bronze_city_monuments.108.b
+		add_stability = stability_mild_penalty
+		scope:bronze_great_pyramid_site ?= {
+			province = { change_province_food_percentage = -0.10 }
+			change_prosperity = prosperity_mild_penalty
+		}
+	}
+}

@@ -76,6 +76,7 @@ be_ruins_generate_stats_effect = {
 					has_building = building_type:bronze_age_palace_house
 					has_building = building_type:palace_registry
 					has_building = building_type:palace_trade_registry
+					has_variable = bronze_ruins_had_royal_monument
 				}
 			}
 			remove_variable = be_ruins_type_generic
@@ -92,6 +93,7 @@ be_ruins_generate_stats_effect = {
 					has_building = building_type:temple_healing_sanctuary
 					has_building = building_type:temple_court
 					has_building = building_type:megalithic_religious_monument
+					has_variable = bronze_ruins_had_religious_monument
 				}
 			}
 			remove_variable = be_ruins_type_generic
@@ -105,6 +107,7 @@ be_ruins_generate_stats_effect = {
 					is_port = yes
 					has_building = building_type:trading_hub
 					has_building = building_type:entrepot
+					has_variable = bronze_ruins_had_commercial_monument
 				}
 			}
 			remove_variable = be_ruins_type_generic
@@ -118,6 +121,7 @@ be_ruins_generate_stats_effect = {
 					has_building = building_type:stockade
 					has_building = building_type:bronze_city_walls
 					has_building = building_type:hill_fort
+					has_variable = bronze_ruins_had_military_monument
 				}
 			}
 			remove_variable = be_ruins_type_generic
@@ -147,6 +151,22 @@ be_ruins_generate_stats_effect = {
 			25 = { change_variable = { name = be_ruins_importance_score add = 10 } }
 			20 = { change_variable = { name = be_ruins_importance_score add = 20 } }
 			10 = { change_variable = { name = be_ruins_importance_score add = 35 } }
+		}
+
+		# Historical monuments increase both the reward and the expedition
+		# difficulty. This must be applied before the difficulty brackets below.
+		if = {
+			limit = {
+				has_variable = bronze_ruins_monument_count
+				var:bronze_ruins_monument_count > 0
+			}
+			change_variable = {
+				name = be_ruins_importance_score
+				add = {
+					value = var:bronze_ruins_monument_count
+					multiply = 25
+				}
+			}
 		}
 
 		if = {

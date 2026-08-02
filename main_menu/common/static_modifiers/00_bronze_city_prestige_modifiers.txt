@@ -2,24 +2,24 @@
 	game_data = {
 		category = location
 	}
-	local_migration_attraction = 0.15
-	local_trade_center_power = 0.10
+	local_migration_attraction = 0.40
+	local_trade_center_power = 0.20
 }
 
 bronze_city_prestige_rank_2_imperial_city = {
 	game_data = {
 		category = location
 	}
-	local_migration_attraction = 0.10
-	local_trade_center_power = 0.075
+	local_migration_attraction = 0.30
+	local_trade_center_power = 0.15
 }
 
 bronze_city_prestige_rank_3_great_city = {
 	game_data = {
 		category = location
 	}
-	local_migration_attraction = 0.05
-	local_trade_center_power = 0.05
+	local_migration_attraction = 0.18
+	local_trade_center_power = 0.10
 }
 
 bronze_city_prestige_rank_4_regional_city = {
@@ -179,4 +179,164 @@ bronze_city_population_exodus = {
 	}
 	local_migration_attraction = -0.50
 	local_monthly_prosperity = -0.01
+}
+
+# ============================================================================
+# HISTORICAL MONUMENTS AND URBAN DEVELOPMENT
+# ============================================================================
+
+bronze_great_pyramid_construction_site = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = 0.03
+	local_monthly_prosperity = -0.002
+}
+
+bronze_great_pyramid_reduced_scope = {
+	game_data = {
+		category = location
+	}
+	local_monthly_prosperity = -0.001
+}
+
+bronze_city_mission_underway = {
+	game_data = {
+		category = location
+	}
+	local_monthly_prosperity = -0.001
+}
+
+bronze_city_grand_festival_legacy = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = 0.04
+	local_monthly_prosperity = 0.002
+}
+
+bronze_city_artisan_settlement = {
+	game_data = {
+		category = location
+	}
+	local_production_efficiency = 0.08
+	local_migration_attraction = 0.03
+}
+
+bronze_city_market_renewal = {
+	game_data = {
+		category = location
+	}
+	local_trade_center_power = 0.08
+	local_market_access = 0.05
+}
+
+bronze_city_restored_fortifications = {
+	game_data = {
+		category = location
+	}
+	local_defensive = 0.10
+	local_garrison_size = 0.10
+}
+
+bronze_city_secured_granaries = {
+	game_data = {
+		category = location
+	}
+	local_population_growth = 0.001
+	local_monthly_prosperity = 0.002
+}
+
+bronze_city_rivalry_investment = {
+	game_data = {
+		category = location
+	}
+	local_production_efficiency = 0.05
+	local_monthly_prosperity = 0.002
+}
+
+bronze_city_rivalry_trade_accord = {
+	game_data = {
+		category = location
+	}
+	local_trade_center_power = 0.05
+	local_market_access = 0.03
+}
+
+bronze_city_rivalry_sabotaged = {
+	game_data = {
+		category = location
+	}
+	local_production_efficiency = -0.05
+	local_monthly_prosperity = -0.003
+}
+
+# Progressive decline. Only one stage is active at a time.
+bronze_city_decline_stage_1 = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = -0.05
+}
+
+bronze_city_decline_stage_2 = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = -0.10
+	local_trade_center_power = -0.05
+	local_production_efficiency = -0.05
+}
+
+bronze_city_decline_stage_3 = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = -0.25
+	local_trade_center_power = -0.10
+	local_production_efficiency = -0.10
+	local_monthly_prosperity = -0.004
+}
+
+bronze_city_decline_stage_4 = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = -0.50
+	local_trade_center_power = -0.20
+	local_production_efficiency = -0.15
+	local_monthly_prosperity = -0.008
+	local_population_growth = -0.002
+}
+
+# The single best city owned by a country supplies one modest national bonus.
+bronze_city_foremost_world = {
+	game_data = {
+		category = country
+	}
+	diplomatic_reputation = 0.40
+	monthly_prestige = 0.02
+}
+
+bronze_city_foremost_top_ten = {
+	game_data = {
+		category = country
+	}
+	diplomatic_reputation = 0.25
+	monthly_prestige = 0.01
+}
+
+bronze_city_foremost_top_thirty = {
+	game_data = {
+		category = country
+	}
+	diplomatic_reputation = 0.15
+	monthly_prestige = 0.005
+}
+
+bronze_city_foremost_noted = {
+	game_data = {
+		category = country
+	}
+	diplomatic_reputation = 0.05
 }

@@ -1,0 +1,624 @@
+# ============================================================================
+# BRONZE ERA - HISTORICAL MONUMENTS
+# ============================================================================
+# These buildings are placed only by the centralized historical setup file or
+# by their dedicated event chain. They are deliberately unavailable in the
+# normal construction list. City Prestige points are defined exclusively in
+# 01_bronze_city_prestige_building_points.txt to prevent double counting.
+# ============================================================================
+
+bronze_monument_giza_pyramid_complex = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_pyramid_complex_maintenance }
+	custom_tags = { bronze_historical_monument royal_monument religious_monument pyramid_monument }
+	modifier = {
+		local_cultural_tradition = 0.35
+		local_cultural_influence = 0.35
+		local_migration_attraction = 0.08
+		local_clergy_estate_power = 0.20
+	}
+}
+
+bronze_monument_karnak_complex = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_palace_temple_maintenance }
+	custom_tags = { bronze_historical_monument religious_monument royal_monument }
+	modifier = {
+		local_cultural_tradition = 0.30
+		local_cultural_influence = 0.30
+		local_pop_conversion_speed = 0.02
+		local_clergy_estate_power = 0.20
+	}
+}
+
+bronze_monument_luxor_temple = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_palace_temple_maintenance }
+	custom_tags = { bronze_historical_monument religious_monument royal_monument }
+	modifier = {
+		local_cultural_tradition = 0.25
+		local_cultural_influence = 0.20
+		local_clergy_estate_power = 0.15
+	}
+}
+
+bronze_monument_abu_simbel = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_palace_temple_maintenance }
+	custom_tags = { bronze_historical_monument religious_monument royal_monument military_monument }
+	modifier = {
+		local_cultural_tradition = 0.25
+		local_cultural_influence = 0.20
+		local_defensive = 0.10
+		local_clergy_estate_power = 0.10
+	}
+}
+
+bronze_monument_theban_necropolis = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_palace_temple_maintenance }
+	custom_tags = { bronze_historical_monument religious_monument royal_monument }
+	modifier = {
+		local_cultural_tradition = 0.25
+		local_cultural_influence = 0.25
+		local_clergy_estate_power = 0.15
+	}
+}
+
+bronze_monument_hattusa_complex = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = nobles
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_palace_temple_maintenance }
+	custom_tags = { bronze_historical_monument royal_monument religious_monument military_monument }
+	modifier = {
+		local_cultural_tradition = 0.30
+		local_cultural_influence = 0.25
+		local_max_control = 0.15
+		local_garrison_size = 0.20
+		local_defensive = 0.15
+	}
+}
+
+bronze_monument_mycenae_citadel = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = nobles
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_fortified_monument_maintenance }
+	custom_tags = { bronze_historical_monument royal_monument military_monument }
+	modifier = {
+		local_cultural_tradition = 0.30
+		local_cultural_influence = 0.25
+		local_max_control = 0.10
+		local_garrison_size = 0.25
+		local_defensive = 0.20
+	}
+}
+
+bronze_monument_tiryns_cyclopean = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = soldiers
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_fortified_monument_maintenance }
+	custom_tags = { bronze_historical_monument military_monument royal_monument }
+	modifier = {
+		local_cultural_tradition = 0.20
+		local_garrison_size = 0.35
+		local_defensive = 0.25
+		movement_cost = -0.10
+	}
+}
+
+bronze_monument_pylos_palace = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = nobles
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_palace_temple_maintenance }
+	custom_tags = { bronze_historical_monument royal_monument administrative_monument }
+	modifier = {
+		local_cultural_tradition = 0.25
+		local_cultural_influence = 0.20
+		local_max_control = 0.15
+		local_monthly_prosperity = 0.001
+	}
+}
+
+bronze_monument_troy_citadel = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = soldiers
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_fortified_monument_maintenance }
+	custom_tags = { bronze_historical_monument military_monument commercial_monument }
+	modifier = {
+		local_cultural_tradition = 0.25
+		local_trade_center_power = 0.05
+		local_garrison_size = 0.25
+		local_defensive = 0.20
+	}
+}
+
+bronze_monument_knossos_complex = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = nobles
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_palace_temple_maintenance }
+	custom_tags = { bronze_historical_monument royal_monument religious_monument commercial_monument }
+	modifier = {
+		local_cultural_tradition = 0.30
+		local_cultural_influence = 0.25
+		local_trade_center_power = 0.05
+		local_monthly_prosperity = 0.001
+	}
+}
+
+bronze_monument_ugarit_complex = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_palace_temple_maintenance }
+	custom_tags = { bronze_historical_monument royal_monument religious_monument commercial_monument port_monument }
+	modifier = {
+		local_cultural_tradition = 0.20
+		local_cultural_influence = 0.20
+		local_trade_center_power = 0.10
+		local_monthly_prosperity = 0.001
+	}
+}
+
+bronze_monument_ur_ziggurat = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_palace_temple_maintenance }
+	custom_tags = { bronze_historical_monument religious_monument royal_monument }
+	modifier = {
+		local_cultural_tradition = 0.30
+		local_cultural_influence = 0.30
+		local_clergy_estate_power = 0.20
+	}
+}
+
+bronze_monument_assur_complex = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_palace_temple_maintenance }
+	custom_tags = { bronze_historical_monument religious_monument royal_monument commercial_monument }
+	modifier = {
+		local_cultural_tradition = 0.25
+		local_cultural_influence = 0.25
+		local_trade_center_power = 0.05
+		local_max_control = 0.10
+	}
+}
+
+bronze_monument_chogha_zanbil = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_palace_temple_maintenance }
+	custom_tags = { bronze_historical_monument religious_monument royal_monument }
+	modifier = {
+		local_cultural_tradition = 0.25
+		local_cultural_influence = 0.25
+		local_clergy_estate_power = 0.15
+	}
+}
+
+bronze_monument_yin_xu = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = nobles
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_palace_temple_maintenance }
+	custom_tags = { bronze_historical_monument royal_monument religious_monument administrative_monument }
+	modifier = {
+		local_cultural_tradition = 0.30
+		local_cultural_influence = 0.30
+		local_max_control = 0.15
+		local_clergy_estate_power = 0.10
+	}
+}
+
+bronze_monument_su_nuraxi = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = soldiers
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_fortified_monument_maintenance }
+	custom_tags = { bronze_historical_monument military_monument religious_monument }
+	modifier = {
+		local_cultural_tradition = 0.25
+		local_garrison_size = 0.25
+		local_defensive = 0.20
+		local_cultural_influence = 0.15
+	}
+}
+
+bronze_monument_stonehenge = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = neolithic_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_megalithic_monument_maintenance }
+	custom_tags = { bronze_historical_monument religious_monument }
+	modifier = {
+		local_cultural_tradition = 0.25
+		local_cultural_influence = 0.20
+		local_clergy_estate_power = 0.15
+	}
+}
+
+bronze_monument_avebury = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = neolithic_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_megalithic_monument_maintenance }
+	custom_tags = { bronze_historical_monument religious_monument }
+	modifier = {
+		local_cultural_tradition = 0.20
+		local_cultural_influence = 0.15
+		local_clergy_estate_power = 0.10
+	}
+}
+
+bronze_monument_bru_na_boinne = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = neolithic_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_megalithic_monument_maintenance }
+	custom_tags = { bronze_historical_monument religious_monument royal_monument }
+	modifier = {
+		local_cultural_tradition = 0.25
+		local_cultural_influence = 0.20
+		local_clergy_estate_power = 0.15
+	}
+}
+
+# Event-only result of the Egyptian multi-decade project.
+bronze_monument_great_pyramid_new = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = no
+	town = no
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_pyramid_complex_maintenance }
+	custom_tags = { bronze_historical_monument royal_monument religious_monument pyramid_monument }
+	modifier = {
+		local_cultural_tradition = 0.40
+		local_cultural_influence = 0.40
+		local_migration_attraction = 0.10
+		local_clergy_estate_power = 0.25
+		local_monthly_prosperity = 0.001
+	}
+	capital_country_modifier = {
+		monthly_legitimacy = 0.05
+		monthly_prestige = 0.02
+	}
+}
+
+# Persistent construction remains if the pyramid project is suspended.
+bronze_monument_great_pyramid_unfinished = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = laborers
+	category = monumental_building_category
+	employment_size = construction_employment
+	rural_settlement = no
+	town = no
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_pyramid_complex_maintenance }
+	custom_tags = { bronze_historical_monument royal_monument pyramid_monument unfinished_monument }
+	modifier = {
+		local_cultural_tradition = 0.05
+		local_migration_attraction = -0.02
+	}
+}

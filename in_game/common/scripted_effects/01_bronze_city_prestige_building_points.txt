@@ -84,4 +84,106 @@ bronze_city_prestige_add_building_points = {
 			add = 100
 		}
 	}
+
+	# Historical monuments. Keep every fixed award in this single effect:
+	# setup, events, and building on_built blocks must not add it again.
+	# Giza is a dedicated Bronze Era building so its effects remain balanced and
+	# independent from the aggressive vanilla work-of-art quality multipliers.
+	if = {
+		limit = { has_building = building_type:bronze_monument_giza_pyramid_complex }
+		change_variable = { name = bronze_city_prestige_score add = 200 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_karnak_complex }
+		change_variable = { name = bronze_city_prestige_score add = 120 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_luxor_temple }
+		change_variable = { name = bronze_city_prestige_score add = 70 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_abu_simbel }
+		change_variable = { name = bronze_city_prestige_score add = 90 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_theban_necropolis }
+		change_variable = { name = bronze_city_prestige_score add = 100 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_hattusa_complex }
+		change_variable = { name = bronze_city_prestige_score add = 140 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_mycenae_citadel }
+		change_variable = { name = bronze_city_prestige_score add = 130 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_tiryns_cyclopean }
+		change_variable = { name = bronze_city_prestige_score add = 80 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_pylos_palace }
+		change_variable = { name = bronze_city_prestige_score add = 90 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_troy_citadel }
+		change_variable = { name = bronze_city_prestige_score add = 110 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_knossos_complex }
+		change_variable = { name = bronze_city_prestige_score add = 120 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_ugarit_complex }
+		change_variable = { name = bronze_city_prestige_score add = 100 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_ur_ziggurat }
+		change_variable = { name = bronze_city_prestige_score add = 120 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_assur_complex }
+		change_variable = { name = bronze_city_prestige_score add = 110 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_chogha_zanbil }
+		change_variable = { name = bronze_city_prestige_score add = 100 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_yin_xu }
+		change_variable = { name = bronze_city_prestige_score add = 150 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_su_nuraxi }
+		change_variable = { name = bronze_city_prestige_score add = 90 }
+	}
+	# Stonehenge is likewise represented by its native monument work of art.
+	if = {
+		limit = {
+			OR = {
+				has_building = building_type:bronze_monument_stonehenge
+				any_work_of_art_in_location = {
+					this = work_of_art:stonehenge
+					is_art_destroyed = no
+				}
+			}
+		}
+		change_variable = { name = bronze_city_prestige_score add = 90 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_avebury }
+		change_variable = { name = bronze_city_prestige_score add = 70 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_bru_na_boinne }
+		change_variable = { name = bronze_city_prestige_score add = 90 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_great_pyramid_new }
+		change_variable = { name = bronze_city_prestige_score add = 200 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_great_pyramid_unfinished }
+		change_variable = { name = bronze_city_prestige_score add = 35 }
+	}
 }
