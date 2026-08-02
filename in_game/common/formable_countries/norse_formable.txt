@@ -523,11 +523,11 @@ MIDGARD_f = {
 	}
 }
 # Jotunheim is the mountain-valley human Norwegian regional Norse formable for Bronze Era.
-# Total locations: 64. Required at 80%: 52.
+# Total locations: 64. Required at 70%: 45.
 
 JOTUNHEIM_f = {
 	level = 3
-	required_locations_fraction = 0.80
+	required_locations_fraction = 0.70
 	capital_required = no
 	potential_requires_own = yes
 	rule = plausible
@@ -737,11 +737,11 @@ VANAHEIM_f = {
 	}
 }
 # Alfheim is the human Finnish and Finnic regional Norse formable for Bronze Era.
-# Total locations: 34. Required at 80%: 28.
+# Total locations: 34. Required at 75%: 26.
 
 ALFHEIM_f = {
 	level = 3
-	required_locations_fraction = 0.80
+	required_locations_fraction = 0.75
 	capital_required = no
 	potential_requires_own = yes
 	rule = plausible
@@ -829,11 +829,11 @@ ALFHEIM_f = {
 	}
 }
 # Nidavellir is the northern mining and bronze-working regional Norse formable for Bronze Era.
-# Total locations: 47. Required at 80%: 38.
+# Total locations: 47. Required at 70%: 33.
 
 NIDAVELLIR_f = {
 	level = 3
-	required_locations_fraction = 0.80
+	required_locations_fraction = 0.70
 	capital_required = no
 	potential_requires_own = yes
 	rule = plausible
@@ -1014,11 +1014,11 @@ MUSPELLHEIM_f = {
 	}
 }
 # Niflheim is the human far northern cold-march regional Norse formable for Bronze Era.
-# Total locations: 31. Required at 80%: 25.
+# Total locations: 31. Required at 70%: 20.
 
 NIFLHEIM_f = {
 	level = 3
-	required_locations_fraction = 0.80
+	required_locations_fraction = 0.70
 	capital_required = no
 	potential_requires_own = yes
 	rule = plausible
@@ -1103,11 +1103,11 @@ NIFLHEIM_f = {
 	}
 }
 # Helheim is the human Danish regional Norse formable for Bronze Era.
-# Total locations: 48. Required at 80%: 39.
+# Total locations: 48. Required at 75%: 36.
 
 HELHEIM_f = {
 	level = 3
-	required_locations_fraction = 0.80
+	required_locations_fraction = 0.75
 	capital_required = no
 	potential_requires_own = yes
 	rule = plausible
