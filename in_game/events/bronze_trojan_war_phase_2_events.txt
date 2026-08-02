@@ -54,8 +54,9 @@ trojan_war_end.1 = {
 # For Greece victory
  option = {
     name = "trojan_war_end.a"
-    root = { add_prestige = 50 }
-   # temp will add modifers
+    root = { add_prestige = 10
+             add_contry_modifier = { name = "trojan_war_end.1"  }
+}
 }
 }
 
@@ -68,8 +69,9 @@ trojan_war_end.2 = {
 # For Anatolia victory
  option = {
     name = "trojan_war_end.a"
-    root = { add_prestige = 50 }
-    # temp will add modifers
+    root = { add_prestige = 10
+             add_contry_modifier = { name = "trojan_war_end.2"  } 
+}
 }
 }
 
@@ -82,8 +84,9 @@ trojan_war_end.3 = {
 # For Greece loss
  option = {
     name = "trojan_war_end.a"
-    root = { add_prestige = 50 }
-    # temp will add modifers
+    root = { add_prestige = - 10
+             add_contry_modifier = { name = "trojan_war_end.3"  }
+}
 }
 }
 
@@ -96,10 +99,12 @@ trojan_war_end.4 = {
 # For Anatolia loss
  option = {
     name = "trojan_war_end.a"
-    root = { add_prestige = 50 }
-    # temp will add modifers
+    root = { add_prestige = - 10
+             add_contry_modifier = { name = "trojan_war_end.4"  }
 }
 }
+}
+
 # For minor in anatolia under here
 trojan_war_end.5 = {
     type = country_event
@@ -110,8 +115,9 @@ trojan_war_end.5 = {
 # For Anatolia loss
  option = {
     name = "trojan_war_end.a"
-    root = { add_prestige = 50 }
-    # temp will add modifers
+    root = { add_prestige = - 10
+             add_contry_modifier = { name = "trojan_war_end.5"  }
+}
 }
 }
 
@@ -124,8 +130,8 @@ trojan_war_end.6 = {
 # For Anatolia victory
  option = {
     name = "trojan_war_end.a"
-    root = { add_prestige = 50 }
-    # temp will add modifers
+    root = { add_prestige = 10
+             add_contry_modifier = { name = "trojan_war_end.6"  }
 }
 }
-
+}

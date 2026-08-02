@@ -1,6 +1,6 @@
 
 
-# Mycenae Outcomes
+
 trojan_war_raid_on_anatolia_success = {
 	
 }
@@ -9,7 +9,7 @@ trojan_war_raid_on_anatolia_failed = {
 	
 }
 
-# Wilusa / Anatolia Outcomes
+
 anatolia_coastline_is_defend = {
 	
 }
@@ -58,11 +58,16 @@ trojan_war_greece_modifier_phase_2 = {
     }
 }
 
-trojan_war_greece_victory = {
-      game_data = {
-		category = country   
-	}
-	siege_ability = {
+trojan_war_end.1 = {
+    type = country_event
+    title = trojan_war_end.t.1
+    desc = trojan_war_end.d.1
+    is_triggered_only = yes
+    hidden = no
+    game_data = {
+        category = country
+    }
+    siege_ability = {
         value = 0.0
         add = {
             value = global:anatolia_raid_success_count
@@ -70,7 +75,7 @@ trojan_war_greece_victory = {
         }
         max = 0.05
     }
-	   maritime_presence = {
+	maritime_presence = {
         value = 0.0
         add = {
             value = global:anatolia_raid_success_count
@@ -79,11 +84,17 @@ trojan_war_greece_victory = {
         max = 0.05
     }
 }
-trojan_war_anatolian_victory = {
-      game_data = {
-		category = country   
-	}
-	    siege_ability = {
+
+trojan_war_end.2 = {
+    type = country_event
+    title = trojan_war_end.t.2
+    desc = trojan_war_end.d.2
+    is_triggered_only = yes
+    hidden = no
+    game_data = {
+        category = country
+    }
+    siege_ability = {
         value = 0.0
         add = {
             value = global:anatolia_raid_failed_count
@@ -98,5 +109,54 @@ trojan_war_anatolian_victory = {
             multiply = 0.01
         }
         max = 0.05	
-    }	
+    }
+    
+}
+
+trojan_war_end.3 = {
+    type = country_event
+    title = trojan_war_end.t.3
+    desc = trojan_war_end.d.3
+    is_triggered_only = yes
+    hidden = no
+    game_data = {
+        category = country
+    }
+    #greece loss
+}
+
+trojan_war_end.4 = {
+    type = country_event
+    title = trojan_war_end.t.4
+    desc = trojan_war_end.d.4
+    is_triggered_only = yes
+    hidden = no
+    game_data = {
+        category = country
+    }
+    #anatolia loss
+}
+
+trojan_war_end.5 = {
+    type = country_event
+    title = trojan_war_end.t.5
+    desc = trojan_war_end.d.5
+    is_triggered_only = yes
+    hidden = no
+    game_data = {
+        category = country
+    }
+    #minor anatolia loss
+}
+
+trojan_war_end.6 = {
+    type = country_event
+    title = trojan_war_end.t.6
+    desc = trojan_war_end.d.6
+    is_triggered_only = yes
+    hidden = no
+    game_data = {
+        category = country
+    }
+    #minor anatolia victory
 }
