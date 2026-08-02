@@ -72,7 +72,6 @@ trojan_war_end.2 = {
     root = { add_prestige = 10
              add_contry_modifier = { name = "trojan_war_end.2"  } 
 }
-    # temp will add modifers
 }
 }
 
