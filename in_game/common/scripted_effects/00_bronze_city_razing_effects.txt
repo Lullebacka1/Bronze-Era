@@ -481,6 +481,25 @@ bronze_city_raze_interrupted_effect_from_unit = {
 	}
 }
 
+# Location scope. Market centers are not ordinary location buildings, so a
+# completed razing must explicitly destroy the market before the city is
+# downgraded into ruins.
+bronze_city_raze_destroy_market_center_effect = {
+	if = {
+		limit = {
+			is_market_center = yes
+			OR = {
+				location_rank = location_rank:town
+				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
+			}
+		}
+		market = {
+			destroy_market = {}
+		}
+	}
+}
+
 bronze_city_raze_effect_from_unit = {
 	custom_description = {
 		text = bronze_city_raze_effect_tt
@@ -554,6 +573,7 @@ bronze_city_raze_effect_from_unit = {
 				limit = { NOT = { has_variable = be_ruins_stats_generated } }
 				be_ruins_generate_stats_effect = yes
 			}
+			bronze_city_raze_destroy_market_center_effect = yes
 			every_buildings_in_location = {
 				save_temporary_scope_as = bronze_city_target_building
 				PREV = {
@@ -705,6 +725,7 @@ bronze_city_raze_effect = {
 				limit = { NOT = { has_variable = be_ruins_stats_generated } }
 				be_ruins_generate_stats_effect = yes
 			}
+			bronze_city_raze_destroy_market_center_effect = yes
 			every_buildings_in_location = {
 				save_temporary_scope_as = bronze_city_target_building
 				PREV = {
