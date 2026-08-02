@@ -1,0 +1,241 @@
+# ============================================================================
+# BRONZE ERA - HISTORICAL MONUMENT AND RUIN INTEGRATION
+# ============================================================================
+# Location scope unless stated otherwise.
+# Monument snapshots are taken before Raze City destroys buildings. Persistent
+# variables then let Ruins Expeditions remember what once stood at the site.
+# ============================================================================
+
+bronze_historic_monuments_snapshot_for_ruins = {
+	if = {
+		limit = { NOT = { has_variable = bronze_ruins_monuments_snapshotted } }
+		set_variable = { name = bronze_ruins_monuments_snapshotted value = 1 }
+		set_variable = { name = bronze_ruins_monument_count value = 0 }
+
+		if = {
+			limit = { has_building = building_type:bronze_monument_giza_pyramid_complex }
+			set_variable = { name = bronze_ruins_had_giza_pyramid_complex value = 1 }
+			set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_karnak_complex }
+			set_variable = { name = bronze_ruins_had_karnak_complex value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_luxor_temple }
+			set_variable = { name = bronze_ruins_had_luxor_temple value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_abu_simbel }
+			set_variable = { name = bronze_ruins_had_abu_simbel value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_military_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_theban_necropolis }
+			set_variable = { name = bronze_ruins_had_theban_necropolis value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_hattusa_complex }
+			set_variable = { name = bronze_ruins_had_hattusa_complex value = 1 }
+			set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_military_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_mycenae_citadel }
+			set_variable = { name = bronze_ruins_had_mycenae_citadel value = 1 }
+			set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_military_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_tiryns_cyclopean }
+			set_variable = { name = bronze_ruins_had_tiryns_cyclopean value = 1 }
+			set_variable = { name = bronze_ruins_had_military_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_pylos_palace }
+			set_variable = { name = bronze_ruins_had_pylos_palace value = 1 }
+			set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_troy_citadel }
+			set_variable = { name = bronze_ruins_had_troy_citadel value = 1 }
+			set_variable = { name = bronze_ruins_had_military_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_commercial_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_knossos_complex }
+			set_variable = { name = bronze_ruins_had_knossos_complex value = 1 }
+			set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_commercial_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_ugarit_complex }
+			set_variable = { name = bronze_ruins_had_ugarit_complex value = 1 }
+			set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_commercial_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_ur_ziggurat }
+			set_variable = { name = bronze_ruins_had_ur_ziggurat value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_assur_complex }
+			set_variable = { name = bronze_ruins_had_assur_complex value = 1 }
+			set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_commercial_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_chogha_zanbil }
+			set_variable = { name = bronze_ruins_had_chogha_zanbil value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_yin_xu }
+			set_variable = { name = bronze_ruins_had_yin_xu value = 1 }
+			set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_su_nuraxi }
+			set_variable = { name = bronze_ruins_had_su_nuraxi value = 1 }
+			set_variable = { name = bronze_ruins_had_military_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = {
+				OR = {
+					has_building = building_type:bronze_monument_stonehenge
+					any_work_of_art_in_location = {
+						this = work_of_art:stonehenge
+						is_art_destroyed = no
+					}
+				}
+			}
+			set_variable = { name = bronze_ruins_had_stonehenge value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_avebury }
+			set_variable = { name = bronze_ruins_had_avebury value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_bru_na_boinne }
+			set_variable = { name = bronze_ruins_had_bru_na_boinne value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_great_pyramid_new }
+			set_variable = { name = bronze_ruins_had_second_great_pyramid value = 1 }
+			set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_great_pyramid_unfinished }
+			set_variable = { name = bronze_ruins_had_unfinished_pyramid value = 1 }
+			set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+	}
+}
+
+# Location scope. Native monument works of art are not buildings, so the
+# generic building-destruction loop cannot remove them. Run this only after
+# the monument snapshot and only when the location becomes permanent ruins.
+bronze_historic_monuments_destroy_native_art_for_ruins = {
+	if = {
+		limit = {
+			any_work_of_art_in_location = {
+				this = work_of_art:stonehenge
+				is_art_destroyed = no
+			}
+		}
+		random_work_of_art_in_location = {
+			limit = { this = work_of_art:stonehenge }
+			destroy_art = this
+		}
+	}
+}
+
+# Prepared location effect for Dholavira once its exact EU5 location is known.
+bronze_historical_ruin_dholavira_setup_effect = {
+	set_variable = { name = bronze_ancient_ruins value = 1 }
+	set_variable = { name = bronze_ruins_destroyed_year value = 1 }
+	set_variable = { name = bronze_ruins_former_prestige value = 160 }
+	set_variable = { name = bronze_ruins_historical_culture value = culture:harappan }
+	set_variable = { name = bronze_ruins_historical_religion value = religion:harappan }
+	be_ruins_generate_stats_effect = yes
+	remove_variable = be_ruins_type_generic
+	remove_variable = be_ruins_type_village
+	set_variable = { name = be_ruins_type_palace value = 1 }
+	set_variable = { name = be_ruins_type_port value = 1 }
+	set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+	set_variable = { name = bronze_ruins_had_commercial_monument value = 1 }
+	add_location_modifier = {
+		modifier = bronze_ancient_ruins_location
+		years = -1
+		mode = replace
+	}
+}
+
+# Prepared location effect for Mohenjo-daro once its exact EU5 location is known.
+bronze_historical_ruin_mohenjo_daro_setup_effect = {
+	set_variable = { name = bronze_ancient_ruins value = 1 }
+	set_variable = { name = bronze_ruins_destroyed_year value = 1 }
+	set_variable = { name = bronze_ruins_former_prestige value = 190 }
+	set_variable = { name = bronze_ruins_historical_culture value = culture:harappan }
+	set_variable = { name = bronze_ruins_historical_religion value = religion:harappan }
+	be_ruins_generate_stats_effect = yes
+	remove_variable = be_ruins_type_generic
+	remove_variable = be_ruins_type_village
+	set_variable = { name = be_ruins_type_palace value = 1 }
+	set_variable = { name = be_ruins_type_port value = 1 }
+	set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+	set_variable = { name = bronze_ruins_had_commercial_monument value = 1 }
+	add_location_modifier = {
+		modifier = bronze_ancient_ruins_location
+		years = -1
+		mode = replace
+	}
+}
+
+# Global scope. This remains empty until a TODO_MANUAL_LOCATION is confirmed.
+# Example activation:
+# location:confirmed_id = { bronze_historical_ruin_dholavira_setup_effect = yes }
+bronze_historical_ruins_initialize_world = {
+	# TODO_MANUAL_LOCATION - Dholavira - candidate: kantha
+	# TODO_MANUAL_LOCATION - Mohenjo-daro - candidate: dubbi
+}

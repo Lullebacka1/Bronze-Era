@@ -7,3 +7,18 @@ bronze_city_taxed_envoys = {
 	value = -15
 	yearly_decay = 2
 }
+
+bronze_city_rivalry_mediated = {
+	value = 20
+	yearly_decay = 1
+}
+
+bronze_city_rivalry_competition = {
+	value = -10
+	yearly_decay = 1
+}
+
+bronze_city_rivalry_sabotage = {
+	value = -40
+	yearly_decay = 2
+}

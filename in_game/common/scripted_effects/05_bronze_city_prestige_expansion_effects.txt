@@ -1,0 +1,386 @@
+# ============================================================================
+# BRONZE ERA - CITY PRESTIGE EXPANSION
+# ============================================================================
+# Mission offers and rivalries are country-scoped and checked only during the
+# existing five-year pulse. Urban decline is location-scoped and is invoked by
+# the single world-ranking manager during that same pulse.
+# ============================================================================
+
+# Root = country.
+bronze_city_prestige_offer_mission_window = {
+	if = {
+		limit = {
+			NOT = { has_variable = bronze_city_mission_active }
+			NOT = { has_variable = bronze_city_mission_window }
+			any_owned_location = {
+				bronze_city_prestige_is_urban = yes
+				NOT = { has_variable = bronze_city_mission_cooldown }
+			}
+		}
+		set_variable = {
+			name = bronze_city_mission_window
+			value = 1
+			years = 5
+		}
+	}
+}
+
+# Root = location. The stage changes only after two consecutive five-year
+# checks in the same direction. One bad year therefore cannot collapse a city.
+bronze_city_prestige_update_decline = {
+	set_variable = { name = bronze_city_decline_pressure value = 0 }
+
+	if = {
+		limit = { population < 10 }
+		change_variable = { name = bronze_city_decline_pressure add = 1 }
+	}
+	if = {
+		limit = { prosperity < 0 }
+		change_variable = { name = bronze_city_decline_pressure add = 1 }
+	}
+	if = {
+		limit = { market_access < 0.40 }
+		change_variable = { name = bronze_city_decline_pressure add = 1 }
+	}
+	if = {
+		limit = { local_control < 0.30 }
+		change_variable = { name = bronze_city_decline_pressure add = 1 }
+	}
+	if = {
+		limit = { province = { province_food_percentage < 0.25 } }
+		change_variable = { name = bronze_city_decline_pressure add = 1 }
+	}
+	if = {
+		limit = {
+			OR = {
+				has_location_modifier = bronze_city_recently_sacked
+				has_location_modifier = bronze_city_razed
+				has_location_modifier = recently_raided_by_horde
+			}
+		}
+		change_variable = { name = bronze_city_decline_pressure add = 1 }
+	}
+	if = {
+		limit = {
+			NOT = { is_capital = yes }
+			NOT = { is_market_center = yes }
+			NOT = { is_port = yes }
+			NOT = { has_building_with_at_least_one_level = bronze_age_palatial_complex }
+			NOT = { has_building_with_at_least_one_level = bronze_age_palace_house }
+		}
+		change_variable = { name = bronze_city_decline_pressure add = 1 }
+	}
+
+	if = {
+		limit = { var:bronze_city_decline_pressure >= 2 }
+		if = {
+			limit = { NOT = { has_variable = bronze_city_decline_bad_cycles } }
+			set_variable = { name = bronze_city_decline_bad_cycles value = 0 }
+		}
+		change_variable = { name = bronze_city_decline_bad_cycles add = 1 }
+		remove_variable = bronze_city_decline_good_cycles
+
+		if = {
+			limit = { var:bronze_city_decline_bad_cycles >= 2 }
+			if = {
+				limit = { NOT = { has_variable = bronze_city_decline_level } }
+				set_variable = { name = bronze_city_decline_level value = 0 }
+			}
+			if = {
+				limit = { var:bronze_city_decline_level < 4 }
+				change_variable = {
+					name = bronze_city_decline_level
+					add = 1
+				}
+			}
+			set_variable = { name = bronze_city_decline_bad_cycles value = 0 }
+		}
+	}
+	else = {
+		if = {
+			limit = { NOT = { has_variable = bronze_city_decline_good_cycles } }
+			set_variable = { name = bronze_city_decline_good_cycles value = 0 }
+		}
+		change_variable = { name = bronze_city_decline_good_cycles add = 1 }
+		remove_variable = bronze_city_decline_bad_cycles
+
+		if = {
+			limit = {
+				var:bronze_city_decline_good_cycles >= 2
+				has_variable = bronze_city_decline_level
+				var:bronze_city_decline_level > 0
+			}
+			change_variable = {
+				name = bronze_city_decline_level
+				subtract = 1
+			}
+			set_variable = { name = bronze_city_decline_good_cycles value = 0 }
+		}
+	}
+
+	remove_location_modifier = bronze_city_decline_stage_1
+	remove_location_modifier = bronze_city_decline_stage_2
+	remove_location_modifier = bronze_city_decline_stage_3
+	remove_location_modifier = bronze_city_decline_stage_4
+	set_variable = { name = bronze_city_decline_prestige_penalty value = 0 }
+
+	if = {
+		limit = {
+			has_variable = bronze_city_decline_level
+			var:bronze_city_decline_level >= 4
+		}
+		set_variable = { name = bronze_city_decline_prestige_penalty value = 80 }
+		add_location_modifier = {
+			modifier = bronze_city_decline_stage_4
+			years = -1
+			mode = replace
+		}
+		if = {
+			limit = { NOT = { has_variable = bronze_city_decline_stage_4_years } }
+			set_variable = { name = bronze_city_decline_stage_4_years value = 0 }
+		}
+		change_variable = { name = bronze_city_decline_stage_4_years add = 5 }
+
+		if = {
+			limit = {
+				var:bronze_city_decline_stage_4_years >= 20
+				NOT = { has_variable = bronze_city_abandonment_event_cooldown }
+				has_owner = yes
+			}
+			set_variable = {
+				name = bronze_city_abandonment_event_cooldown
+				value = 1
+				years = 20
+			}
+			save_scope_as = bronze_declining_city
+			owner ?= {
+				# Persist the location across the delayed event and save/load.
+				set_variable = {
+					name = bronze_city_decline_event_city
+					value = scope:bronze_declining_city
+				}
+				trigger_event_non_silently = {
+					id = bronze_city_development.330
+					days = 10
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_variable = bronze_city_decline_level
+			var:bronze_city_decline_level >= 3
+		}
+		set_variable = { name = bronze_city_decline_prestige_penalty value = 50 }
+		add_location_modifier = {
+			modifier = bronze_city_decline_stage_3
+			years = -1
+			mode = replace
+		}
+		remove_variable = bronze_city_decline_stage_4_years
+	}
+	else_if = {
+		limit = {
+			has_variable = bronze_city_decline_level
+			var:bronze_city_decline_level >= 2
+		}
+		set_variable = { name = bronze_city_decline_prestige_penalty value = 25 }
+		add_location_modifier = {
+			modifier = bronze_city_decline_stage_2
+			years = -1
+			mode = replace
+		}
+		remove_variable = bronze_city_decline_stage_4_years
+	}
+	else_if = {
+		limit = {
+			has_variable = bronze_city_decline_level
+			var:bronze_city_decline_level >= 1
+		}
+		set_variable = { name = bronze_city_decline_prestige_penalty value = 10 }
+		add_location_modifier = {
+			modifier = bronze_city_decline_stage_1
+			years = -1
+			mode = replace
+		}
+		remove_variable = bronze_city_decline_stage_4_years
+	}
+	else = {
+		remove_variable = bronze_city_decline_stage_4_years
+	}
+}
+
+# Root = country. Rivalries are intentionally rare and use only owned cities
+# plus neighboring countries, avoiding a second world-distance scan.
+bronze_city_prestige_try_rivalry = {
+	if = {
+		limit = {
+			NOT = { has_variable = bronze_city_rivalry_country_cooldown }
+			any_owned_location = {
+				bronze_city_prestige_is_great_or_higher = yes
+				NOT = { has_variable = bronze_city_rivalry_partner }
+			}
+		}
+		random = {
+			chance = 6
+			random_owned_location = {
+				limit = {
+					bronze_city_prestige_is_great_or_higher = yes
+					NOT = { has_variable = bronze_city_rivalry_partner }
+				}
+				save_scope_as = bronze_city_rivalry_home
+			}
+
+			random_list = {
+				45 = {
+					if = {
+						limit = {
+							any_owned_location = {
+								bronze_city_prestige_is_great_or_higher = yes
+								NOT = { this = scope:bronze_city_rivalry_home }
+								NOT = { has_variable = bronze_city_rivalry_partner }
+							}
+						}
+						random_owned_location = {
+							limit = {
+								bronze_city_prestige_is_great_or_higher = yes
+								NOT = { this = scope:bronze_city_rivalry_home }
+								NOT = { has_variable = bronze_city_rivalry_partner }
+							}
+							save_scope_as = bronze_city_rivalry_other
+						}
+						set_variable = {
+							name = bronze_city_rivalry_country_cooldown
+							value = 1
+							years = 30
+						}
+						set_variable = {
+							name = bronze_city_rivalry_home_city
+							value = scope:bronze_city_rivalry_home
+						}
+						set_variable = {
+							name = bronze_city_rivalry_other_city
+							value = scope:bronze_city_rivalry_other
+						}
+						scope:bronze_city_rivalry_home = {
+							set_variable = {
+								name = bronze_city_rivalry_partner
+								value = scope:bronze_city_rivalry_other
+								years = 40
+							}
+						}
+						scope:bronze_city_rivalry_other = {
+							set_variable = {
+								name = bronze_city_rivalry_partner
+								value = scope:bronze_city_rivalry_home
+								years = 40
+							}
+						}
+						trigger_event_non_silently = {
+							id = bronze_city_development.321
+							days = 15
+						}
+					}
+				}
+				55 = {
+					random_neighbor_country = {
+						limit = {
+							is_real_country = yes
+							any_owned_location = {
+								bronze_city_prestige_is_great_or_higher = yes
+								NOT = { has_variable = bronze_city_rivalry_partner }
+							}
+						}
+						save_scope_as = bronze_city_rivalry_foreign_owner
+						random_owned_location = {
+							limit = {
+								bronze_city_prestige_is_great_or_higher = yes
+								NOT = { has_variable = bronze_city_rivalry_partner }
+							}
+							save_scope_as = bronze_city_rivalry_other
+						}
+					}
+					if = {
+						limit = { exists = scope:bronze_city_rivalry_other }
+						set_variable = {
+							name = bronze_city_rivalry_country_cooldown
+							value = 1
+							years = 30
+						}
+						set_variable = {
+							name = bronze_city_rivalry_home_city
+							value = scope:bronze_city_rivalry_home
+						}
+						set_variable = {
+							name = bronze_city_rivalry_other_city
+							value = scope:bronze_city_rivalry_other
+						}
+						set_variable = {
+							name = bronze_city_rivalry_other_owner
+							value = scope:bronze_city_rivalry_foreign_owner
+						}
+						scope:bronze_city_rivalry_foreign_owner = {
+							set_variable = {
+								name = bronze_city_rivalry_country_cooldown
+								value = 1
+								years = 30
+							}
+						}
+						scope:bronze_city_rivalry_home = {
+							set_variable = {
+								name = bronze_city_rivalry_partner
+								value = scope:bronze_city_rivalry_other
+								years = 40
+							}
+						}
+						scope:bronze_city_rivalry_other = {
+							set_variable = {
+								name = bronze_city_rivalry_partner
+								value = scope:bronze_city_rivalry_home
+								years = 40
+							}
+						}
+						trigger_event_non_silently = {
+							id = bronze_city_development.320
+							days = 15
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Root = location. Shared cleanup used by mission success and restoration.
+bronze_city_prestige_reduce_decline = {
+	if = {
+		limit = {
+			has_variable = bronze_city_decline_level
+			var:bronze_city_decline_level > 0
+		}
+		change_variable = {
+			name = bronze_city_decline_level
+			subtract = 1
+		}
+	}
+	set_variable = { name = bronze_city_decline_bad_cycles value = 0 }
+	set_variable = { name = bronze_city_decline_good_cycles value = 0 }
+}
+
+# Root = country event scope. Both exact rivalry locations are recalculated,
+# followed by one world sort instead of one sort per city.
+bronze_city_prestige_commit_rivalry_changes = {
+	scope:bronze_city_rivalry_home ?= {
+		bronze_city_prestige_recalculate_city = yes
+	}
+	scope:bronze_city_rivalry_other ?= {
+		bronze_city_prestige_recalculate_city = yes
+	}
+	if = {
+		limit = { has_global_variable = bronze_city_prestige_manager }
+		global_var:bronze_city_prestige_manager ?= {
+			bronze_city_prestige_update_world_ranking = yes
+			bronze_city_prestige_rebuild_ledger_list = yes
+		}
+	}
+}

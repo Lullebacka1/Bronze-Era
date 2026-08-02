@@ -22,3 +22,14 @@ naga = {
 	opinions = {
 	}
 }
+
+Formosan_Paganism = {
+	group = folk_se_asian_group
+	language = Formosan
+	color = rgb { 236 136 235 }
+	definition_modifier = {
+	}
+
+	opinions = {
+	}
+}

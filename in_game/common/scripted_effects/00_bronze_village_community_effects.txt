@@ -1,0 +1,13 @@
+﻿bronze_apply_village_community_government = {
+	change_government_type = government_type:village_community
+	change_heir_selection = heir_selection:village_clan_elective
+	if = {
+		limit = { NOT = { has_reform = government_reform:village_community_reform } }
+		add_reform = government_reform:village_community_reform
+	}
+	set_parliament_type = parliament_type:assembly
+	set_societal_value = { value = 100 type = centralization_vs_decentralization }
+	set_societal_value = { value = 80 type = individualism_vs_communalism }
+	set_societal_value = { value = 100 type = capital_economy_vs_traditional_economy }
+}
+

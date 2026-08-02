@@ -1,0 +1,479 @@
+# ============================================================================
+# BRONZE ERA - CITY PRESTIGE ACTIONS
+# ============================================================================
+# The Egyptian pyramid project and urban missions reuse the existing generic
+# action UI. Location selection is explicit and no global location polling is
+# performed by these actions.
+# ============================================================================
+
+bronze_begin_great_pyramid_project = {
+	type = owncountry
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 120
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = {
+		value = 150
+	}
+
+	potential = {
+		scope:actor ?= {
+			OR = {
+				this = c:0002G
+				has_or_had_tag = 0002G
+			}
+			NOT = { has_global_variable = bronze_second_great_pyramid_committed }
+			NOT = { has_variable = bronze_great_pyramid_project_active }
+			any_owned_location = {
+				bronze_city_prestige_is_urban = yes
+				has_variable = bronze_city_prestige_score
+				var:bronze_city_prestige_score >= 100
+				NOT = { this = location:giza }
+				NOT = { has_variable = bronze_ancient_ruins }
+			}
+		}
+	}
+
+	allow = {
+		scope:actor ?= {
+			at_war = no
+			is_during_bankruptcy = no
+			stability >= 30
+			legitimacy >= 40
+			gold >= 150
+			manpower = { value >= 500 }
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = location
+		source = actor
+		target_flag = target_location
+		name = bronze_choose_great_pyramid_site
+		none_available_msg_key = bronze_no_valid_great_pyramid_site
+		column = { data = name }
+		column = { data = population }
+		visible = {
+			owner = scope:actor
+			bronze_city_prestige_is_urban = yes
+			NOT = { this = location:giza }
+			NOT = { has_variable = bronze_ancient_ruins }
+		}
+		enabled = {
+			has_variable = bronze_city_prestige_score
+			var:bronze_city_prestige_score >= 100
+			NOT = { has_building = building_type:bronze_monument_great_pyramid_new }
+			NOT = { has_building = building_type:bronze_monument_great_pyramid_unfinished }
+		}
+	}
+
+	effect = {
+		if = {
+			limit = { exists = scope:target_location }
+			scope:actor = {
+				add_manpower_pool = -500
+				set_variable = {
+					name = bronze_great_pyramid_project_site
+					value = scope:target_location
+				}
+				set_variable = { name = bronze_great_pyramid_project_active value = 1 }
+				set_variable = { name = bronze_great_pyramid_project_phase value = 1 }
+				remove_variable = bronze_great_pyramid_project_suspended
+				set_global_variable = {
+					name = bronze_second_great_pyramid_committed
+					value = 1
+				}
+				trigger_event_non_silently = {
+					id = bronze_city_monuments.100
+					days = 1095
+				}
+			}
+			scope:target_location = {
+				construct_building = {
+					building_type = building_type:bronze_monument_great_pyramid_unfinished
+					cost_multiplier = 0
+					cost_multiplier_reason = "game_concept_event"
+				}
+				add_location_modifier = {
+					modifier = bronze_great_pyramid_construction_site
+					years = -1
+					mode = replace
+				}
+				bronze_city_prestige_commit_score_change = yes
+			}
+		}
+	}
+
+	ai_will_do = {
+		add = 10
+		scope:actor ?= {
+			if = {
+				limit = { gold >= 800 }
+				add = 40
+			}
+			if = {
+				limit = { stability >= 60 }
+				add = 20
+			}
+		}
+	}
+}
+
+bronze_resume_great_pyramid_project = {
+	type = owncountry
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 60
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = {
+		value = 75
+	}
+
+	potential = {
+		scope:actor ?= {
+			OR = {
+				this = c:0002G
+				has_or_had_tag = 0002G
+			}
+			has_variable = bronze_great_pyramid_project_suspended
+			has_variable = bronze_great_pyramid_project_site
+			NOT = { has_variable = bronze_great_pyramid_project_completed }
+		}
+	}
+
+	allow = {
+		scope:actor ?= {
+			at_war = no
+			is_during_bankruptcy = no
+			stability >= 20
+			gold >= 75
+			manpower = { value >= 200 }
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			add_manpower_pool = -200
+			set_variable = { name = bronze_great_pyramid_project_active value = 1 }
+			remove_variable = bronze_great_pyramid_project_suspended
+			var:bronze_great_pyramid_project_site ?= {
+				add_location_modifier = {
+					modifier = bronze_great_pyramid_construction_site
+					years = -1
+					mode = replace
+				}
+			}
+
+			if = {
+				limit = { var:bronze_great_pyramid_project_phase <= 1 }
+				trigger_event_non_silently = { id = bronze_city_monuments.100 days = 30 }
+			}
+			else_if = {
+				limit = { var:bronze_great_pyramid_project_phase = 2 }
+				trigger_event_non_silently = { id = bronze_city_monuments.101 days = 30 }
+			}
+			else_if = {
+				limit = { var:bronze_great_pyramid_project_phase = 3 }
+				trigger_event_non_silently = { id = bronze_city_monuments.102 days = 30 }
+			}
+			else_if = {
+				limit = { var:bronze_great_pyramid_project_phase = 4 }
+				trigger_event_non_silently = { id = bronze_city_monuments.103 days = 30 }
+			}
+			else_if = {
+				limit = { var:bronze_great_pyramid_project_phase = 5 }
+				trigger_event_non_silently = { id = bronze_city_monuments.104 days = 30 }
+			}
+			else = {
+				trigger_event_non_silently = { id = bronze_city_monuments.105 days = 30 }
+			}
+		}
+	}
+
+	ai_will_do = {
+		add = 25
+	}
+}
+
+bronze_city_mission_grand_festival = {
+	type = owncountry
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 60
+	automation_tick = never
+	price = { value = 45 }
+	potential = {
+		scope:actor ?= {
+			has_variable = bronze_city_mission_window
+			NOT = { has_variable = bronze_city_mission_active }
+			any_owned_location = {
+				bronze_city_prestige_is_urban = yes
+				NOT = { has_variable = bronze_city_mission_cooldown }
+			}
+		}
+	}
+	allow = {
+		scope:actor ?= {
+			is_during_bankruptcy = no
+			gold >= 45
+		}
+	}
+	select_trigger = {
+		looking_for_a = location
+		source = actor
+		target_flag = target_location
+		name = bronze_choose_urban_mission_city
+		none_available_msg_key = bronze_no_valid_urban_mission_city
+		column = { data = name }
+		column = { data = population }
+		visible = {
+			owner = scope:actor
+			bronze_city_prestige_is_urban = yes
+		}
+		enabled = {
+			NOT = { has_variable = bronze_city_mission_cooldown }
+		}
+	}
+	effect = {
+		scope:actor = {
+			set_variable = { name = bronze_city_mission_active value = 1 }
+			set_variable = { name = bronze_city_mission_type value = 1 }
+			set_variable = { name = bronze_city_mission_city value = scope:target_location }
+			remove_variable = bronze_city_mission_window
+			trigger_event_non_silently = { id = bronze_city_development.200 days = 1460 }
+		}
+		scope:target_location ?= {
+			add_location_modifier = {
+				modifier = bronze_city_mission_underway
+				years = 4
+				mode = replace
+			}
+		}
+	}
+	ai_will_do = { add = 15 }
+}
+
+bronze_city_mission_artisans_and_scribes = {
+	type = owncountry
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 60
+	automation_tick = never
+	price = { value = 60 }
+	potential = {
+		scope:actor ?= {
+			has_variable = bronze_city_mission_window
+			NOT = { has_variable = bronze_city_mission_active }
+			any_owned_location = {
+				bronze_city_prestige_is_urban = yes
+				bronze_city_prestige_has_artisan_industry = yes
+				NOT = { has_variable = bronze_city_mission_cooldown }
+			}
+		}
+	}
+	allow = { scope:actor ?= { is_during_bankruptcy = no gold >= 60 } }
+	select_trigger = {
+		looking_for_a = location
+		source = actor
+		target_flag = target_location
+		name = bronze_choose_urban_mission_city
+		none_available_msg_key = bronze_no_valid_artisan_mission_city
+		column = { data = name }
+		column = { data = population }
+		visible = {
+			owner = scope:actor
+			bronze_city_prestige_is_urban = yes
+			bronze_city_prestige_has_artisan_industry = yes
+		}
+		enabled = { NOT = { has_variable = bronze_city_mission_cooldown } }
+	}
+	effect = {
+		scope:actor = {
+			set_variable = { name = bronze_city_mission_active value = 1 }
+			set_variable = { name = bronze_city_mission_type value = 2 }
+			set_variable = { name = bronze_city_mission_city value = scope:target_location }
+			remove_variable = bronze_city_mission_window
+			trigger_event_non_silently = { id = bronze_city_development.201 days = 1825 }
+		}
+		scope:target_location ?= {
+			add_location_modifier = {
+				modifier = bronze_city_mission_underway
+				years = 5
+				mode = replace
+			}
+		}
+	}
+	ai_will_do = { add = 20 }
+}
+
+bronze_city_mission_develop_market = {
+	type = owncountry
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 60
+	automation_tick = never
+	price = { value = 75 }
+	potential = {
+		scope:actor ?= {
+			has_variable = bronze_city_mission_window
+			NOT = { has_variable = bronze_city_mission_active }
+			any_owned_location = {
+				bronze_city_prestige_is_urban = yes
+				bronze_city_prestige_has_trade_infrastructure = yes
+				NOT = { has_variable = bronze_city_mission_cooldown }
+			}
+		}
+	}
+	allow = { scope:actor ?= { is_during_bankruptcy = no gold >= 75 } }
+	select_trigger = {
+		looking_for_a = location
+		source = actor
+		target_flag = target_location
+		name = bronze_choose_urban_mission_city
+		none_available_msg_key = bronze_no_valid_market_mission_city
+		column = { data = name }
+		column = { data = population }
+		visible = {
+			owner = scope:actor
+			bronze_city_prestige_is_urban = yes
+			bronze_city_prestige_has_trade_infrastructure = yes
+		}
+		enabled = { NOT = { has_variable = bronze_city_mission_cooldown } }
+	}
+	effect = {
+		scope:actor = {
+			set_variable = { name = bronze_city_mission_active value = 1 }
+			set_variable = { name = bronze_city_mission_type value = 3 }
+			set_variable = { name = bronze_city_mission_city value = scope:target_location }
+			remove_variable = bronze_city_mission_window
+			trigger_event_non_silently = { id = bronze_city_development.202 days = 2190 }
+		}
+		scope:target_location ?= {
+			add_location_modifier = {
+				modifier = bronze_city_mission_underway
+				years = 6
+				mode = replace
+			}
+		}
+	}
+	ai_will_do = { add = 20 }
+}
+
+bronze_city_mission_restore_fortifications = {
+	type = owncountry
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 60
+	automation_tick = never
+	price = { value = 65 }
+	potential = {
+		scope:actor ?= {
+			has_variable = bronze_city_mission_window
+			NOT = { has_variable = bronze_city_mission_active }
+			any_owned_location = {
+				bronze_city_prestige_is_urban = yes
+				OR = {
+					has_building = building_type:bronze_city_walls
+					has_building = building_type:cyclopean_walls
+					has_building = building_type:stockade
+				}
+				NOT = { has_variable = bronze_city_mission_cooldown }
+			}
+		}
+	}
+	allow = { scope:actor ?= { is_during_bankruptcy = no gold >= 65 manpower = { value >= 100 } } }
+	select_trigger = {
+		looking_for_a = location
+		source = actor
+		target_flag = target_location
+		name = bronze_choose_urban_mission_city
+		none_available_msg_key = bronze_no_valid_fortification_mission_city
+		column = { data = name }
+		column = { data = population }
+		visible = {
+			owner = scope:actor
+			bronze_city_prestige_is_urban = yes
+			OR = {
+				has_building = building_type:bronze_city_walls
+				has_building = building_type:cyclopean_walls
+				has_building = building_type:stockade
+			}
+		}
+		enabled = { NOT = { has_variable = bronze_city_mission_cooldown } }
+	}
+	effect = {
+		scope:actor = {
+			add_manpower_pool = -100
+			set_variable = { name = bronze_city_mission_active value = 1 }
+			set_variable = { name = bronze_city_mission_type value = 4 }
+			set_variable = { name = bronze_city_mission_city value = scope:target_location }
+			remove_variable = bronze_city_mission_window
+			trigger_event_non_silently = { id = bronze_city_development.203 days = 1825 }
+		}
+		scope:target_location ?= {
+			add_location_modifier = {
+				modifier = bronze_city_mission_underway
+				years = 5
+				mode = replace
+			}
+		}
+	}
+	ai_will_do = { add = 15 }
+}
+
+bronze_city_mission_secure_food_supply = {
+	type = owncountry
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 48
+	automation_tick = never
+	price = { value = 55 }
+	potential = {
+		scope:actor ?= {
+			has_variable = bronze_city_mission_window
+			NOT = { has_variable = bronze_city_mission_active }
+			any_owned_location = {
+				bronze_city_prestige_is_urban = yes
+				province = { province_food_percentage < 0.50 }
+				NOT = { has_variable = bronze_city_mission_cooldown }
+			}
+		}
+	}
+	allow = { scope:actor ?= { is_during_bankruptcy = no gold >= 55 } }
+	select_trigger = {
+		looking_for_a = location
+		source = actor
+		target_flag = target_location
+		name = bronze_choose_urban_mission_city
+		none_available_msg_key = bronze_no_valid_food_mission_city
+		column = { data = name }
+		column = { data = population }
+		visible = {
+			owner = scope:actor
+			bronze_city_prestige_is_urban = yes
+			province = { province_food_percentage < 0.50 }
+		}
+		enabled = { NOT = { has_variable = bronze_city_mission_cooldown } }
+	}
+	effect = {
+		scope:actor = {
+			set_variable = { name = bronze_city_mission_active value = 1 }
+			set_variable = { name = bronze_city_mission_type value = 5 }
+			set_variable = { name = bronze_city_mission_city value = scope:target_location }
+			remove_variable = bronze_city_mission_window
+			trigger_event_non_silently = { id = bronze_city_development.204 days = 1095 }
+		}
+		scope:target_location ?= {
+			add_location_modifier = {
+				modifier = bronze_city_mission_underway
+				years = 3
+				mode = replace
+			}
+		}
+	}
+	ai_will_do = { add = 30 }
+}

@@ -60,6 +60,7 @@ bronze_city_prestige.1 = {
 				mode = add_and_extend
 			}
 			change_prosperity = prosperity_weak_bonus
+			bronze_city_prestige_commit_score_change = yes
 		}
 	}
 
@@ -72,6 +73,7 @@ bronze_city_prestige.1 = {
 				years = 3
 				mode = add_and_extend
 			}
+			bronze_city_prestige_commit_score_change = yes
 		}
 	}
 }
@@ -116,6 +118,7 @@ bronze_city_prestige.2 = {
 				mode = add_and_extend
 			}
 			change_prosperity = prosperity_weak_bonus
+			bronze_city_prestige_commit_score_change = yes
 		}
 	}
 
@@ -129,6 +132,7 @@ bronze_city_prestige.2 = {
 				mode = add_and_extend
 			}
 			change_prosperity = prosperity_weak_penalty
+			bronze_city_prestige_commit_score_change = yes
 		}
 	}
 }
@@ -172,6 +176,7 @@ bronze_city_prestige.3 = {
 				mode = add_and_extend
 			}
 			change_prosperity = prosperity_weak_bonus
+			bronze_city_prestige_commit_score_change = yes
 		}
 	}
 
@@ -185,6 +190,7 @@ bronze_city_prestige.3 = {
 				years = 2
 				mode = add_and_extend
 			}
+			bronze_city_prestige_commit_score_change = yes
 		}
 	}
 }
@@ -302,6 +308,7 @@ bronze_city_prestige.5 = {
 					multiply = -0.01
 				}
 			}
+			bronze_city_prestige_commit_score_change = yes
 		}
 	}
 
@@ -326,6 +333,7 @@ bronze_city_prestige.5 = {
 					multiply = -0.03
 				}
 			}
+			bronze_city_prestige_commit_score_change = yes
 		}
 	}
 }
@@ -371,6 +379,7 @@ bronze_city_prestige.6 = {
 				mode = add_and_extend
 			}
 			change_prosperity = prosperity_weak_penalty
+			bronze_city_prestige_commit_score_change = yes
 		}
 	}
 
@@ -385,6 +394,7 @@ bronze_city_prestige.6 = {
 				mode = add_and_extend
 			}
 			change_prosperity = prosperity_severe_penalty
+			bronze_city_prestige_commit_score_change = yes
 		}
 	}
 }
@@ -441,6 +451,7 @@ bronze_city_prestige.7 = {
 					multiply = -0.01
 				}
 			}
+			bronze_city_prestige_commit_score_change = yes
 		}
 		if = {
 			limit = { exists = scope:bronze_city_refuge }
@@ -473,6 +484,7 @@ bronze_city_prestige.7 = {
 					multiply = -0.04
 				}
 			}
+			bronze_city_prestige_commit_score_change = yes
 		}
 	}
 }

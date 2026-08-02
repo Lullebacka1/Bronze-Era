@@ -1,0 +1,69 @@
+# Armorican unification. The required locations are the exact starting
+# territories of OSISM, VENES, CORIO, NAMNE, REDON, ABRIN, UNELL, ALDIA,
+# ANDES, VIDUC, BAIOC, LEXOV, and ESUVI.
+
+ARMOR_f = {
+	level = 3
+	required_locations_fraction = 0.70
+	capital_required = no
+	potential_requires_own = yes
+	rule = historical
+	content_priority = 650
+
+	potential = {
+		OR = {
+			tag = OSISM
+			tag = VENES
+			tag = CORIO
+			tag = NAMNE
+			tag = REDON
+			tag = ABRIN
+			tag = UNELL
+			tag = ALDIA
+			tag = ANDES
+			tag = VIDUC
+			tag = BAIOC
+			tag = LEXOV
+			tag = ESUVI
+		}
+		NOT = { tag = ARMOR }
+		NOT = { country_exists = c:ARMOR }
+	}
+
+	allow = {
+		religion = religion:gaulish_pagan
+		owns = location:vannes
+		owns = location:nantes
+		owns = location:rennes
+		owns = location:brest
+	}
+
+	name = ARMOR
+	flag = ARMOR
+	adjective = ARMOR_ADJ
+	tag = ARMOR
+	color = map_ARMOR
+
+	locations = {
+		angers avranches bayeux beaupreau blain brest caen carhaix
+		chateau_gontier chateaubriant chatelaudren chateaulin cherbourg coutances dol
+		domfront falaise fougeres guerande hennebont jersey josselin laval
+		le_faou machecoul mayenne monfort_sur_meu mortain nantes passavant
+		ploermel pont_douilly quimper quimperle redon rennes rohan saint_brieuc
+		saint_malo st_pol_de_leon st_sauveur treguier vannes vire vitre
+	}
+
+	form_effect = {
+		change_culture = culture:armorican
+		change_religion = religion:gaulish_pagan
+		set_capital = location:vannes
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		add_legitimacy = legitimacy_mild_bonus
+		add_prestige = prestige_mild_bonus
+		add_stability = stability_weak_bonus
+	}
+}

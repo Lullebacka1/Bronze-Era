@@ -1,0 +1,80 @@
+﻿village_clan_elective = {
+	use_election = yes
+	term_duration = 48
+	max_possible_candidates = 3
+
+	allowed_estates = { peasants_estate tribes_estate nobles_estate }
+	heir_is_allowed = {
+	}
+	potential = {
+		government_type = government_type:village_community
+	}
+	locked = {
+		government_type = government_type:village_community
+	}
+
+	calc = {
+		if = {
+			limit = {
+				exists = root
+			}
+			add = {
+				desc = "HEIR_SELECTION_ADM_DESC"
+				value = root.adm
+			}
+			add = {
+				desc = "HEIR_SELECTION_DIP_DESC"
+				value = root.dip
+			}
+			add = {
+				desc = "HEIR_SELECTION_MIL_DESC"
+				value = root.mil
+			}
+			add = {
+				desc = "HEIR_SELECTION_OLDER_HEIR_DESC"
+				value = character_age
+			}
+			if = {
+				limit = { has_dynasty = yes }
+				add = {
+					desc = "HEIR_SELECTION_HAS_DYNASTY_DESC"
+					value = -250
+				}
+			}
+			if = {
+				limit = { modifier:blocked_from_being_ruler = yes }
+				add = {
+					desc = "HEIR_SELECTION_IS_UNSUITED_TO_RULE_DESC"
+					value = -1000
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				not = { exists = root }
+			}
+			add = {
+				desc = "HEIR_SELECTION_ADM_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_DIP_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_MIL_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_OLDER_HEIR_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_HAS_DYNASTY_DESC"
+				value = -250
+			}
+		}
+	}
+}
+

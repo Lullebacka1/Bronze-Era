@@ -1,5 +1,45 @@
 ﻿# SCRIBES
 
+# HISTORICAL MONUMENT MAINTENANCE
+# These replace the anachronistic vanilla capital maintenance used by the
+# Bronze Era monuments. Values are deliberately modest because these sites
+# already provide strategic and City Prestige effects.
+
+bronze_pyramid_complex_maintenance = {
+	masonry = 0.12
+	tools = 0.04
+	bronze_age_bronze = 0.02
+	bronze_age_tablets = 0.02
+	goods_gold = 0.03
+	category = building_maintenance
+}
+
+bronze_palace_temple_maintenance = {
+	masonry = 0.08
+	lumber = 0.05
+	tools = 0.03
+	pottery = 0.04
+	bronze_age_bronze = 0.03
+	bronze_age_tablets = 0.03
+	goods_gold = 0.02
+	category = building_maintenance
+}
+
+bronze_fortified_monument_maintenance = {
+	masonry = 0.10
+	lumber = 0.04
+	tools = 0.04
+	bronze_age_bronze = 0.03
+	category = building_maintenance
+}
+
+bronze_megalithic_monument_maintenance = {
+	stone = 0.08
+	lumber = 0.02
+	tools = 0.02
+	category = building_maintenance
+}
+
 scribe_tablets_maintenance = {
 	bronze_age_tablets = 1
 	lumber = 0.1

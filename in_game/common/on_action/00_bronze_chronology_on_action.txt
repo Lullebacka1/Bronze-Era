@@ -45,6 +45,13 @@ bronze_chronology_game_start = {
 				set_variable = { name = bronze_display_year value = 0 }
 			}
 		}
+
+		if = {
+			limit = {
+				NOT = { has_global_variable = bronze_city_prestige_runtime_v9_initialized }
+			}
+			bronze_city_prestige_initialize_world = yes
+		}
 	}
 }
 

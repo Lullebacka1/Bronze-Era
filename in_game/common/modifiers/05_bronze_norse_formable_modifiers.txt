@@ -1,0 +1,71 @@
+bronze_alfheim_forest_folklands = {
+	game_data = {
+		category = country
+	}
+
+	global_lumber_output_modifier = 0.05
+	global_max_rgo_size_modifier = 0.05
+	global_defensive = 0.05
+	global_hostile_attrition = 0.25
+	land_unit_attrition = -0.05
+}
+
+bronze_nidavellir_bronze_smiths = {
+	game_data = {
+		category = country
+	}
+
+	global_copper_output_modifier = 0.10
+	global_iron_output_modifier = 0.05
+	global_stone_output_modifier = 0.05
+	global_production_efficiency = 0.03
+	global_max_rgo_size_modifier = 0.05
+}
+
+bronze_muspellheim_volcanic_seaways = {
+	game_data = {
+		category = country
+	}
+
+	global_sailors_modifier = 0.05
+	naval_unit_attrition = -0.05
+	naval_morale_attrition_cost = -0.001
+	global_food_capacity_modifier = 0.05
+	global_defensive = 0.05
+}
+
+bronze_niflheim_cold_marches = {
+	game_data = {
+		category = country
+	}
+
+	global_hostile_attrition = 0.5
+	land_unit_attrition = -0.05
+	global_supply_limit_modifier = 0.05
+	global_defensive = 0.10
+	global_garrison_size_modifier = 0.05
+}
+
+bronze_helheim_ancestor_straits = {
+	game_data = {
+		category = country
+	}
+
+	stability_investment = 0.01
+	monthly_religious_influence = 0.05
+	global_pop_conversion_speed_modifier = 0.05
+	global_defensive = 0.05
+	global_garrison_size_modifier = 0.05
+}
+
+bronze_vindland_amber_waterways = {
+	game_data = {
+		category = country
+	}
+
+	global_trade_center_power = 0.05
+	global_trade_protection_factor = 0.05
+	global_lumber_output_modifier = 0.05
+	global_sailors_modifier = 0.05
+	global_defensive = 0.05
+}

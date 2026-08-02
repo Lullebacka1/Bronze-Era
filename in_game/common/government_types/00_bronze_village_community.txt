@@ -1,0 +1,15 @@
+﻿village_community = {
+	heir_selection = village_clan_elective
+
+	map_color = gov_tribe
+
+	government_power = republican_tradition
+
+	default_character_estate = peasants_estate
+
+	modifier = {
+		court_language_is_common_language_importance_modifier = 30
+		peasants_estate_can_participate_in_parliament = yes
+	}
+}
+
