@@ -83,6 +83,9 @@ trojan_war_end.1 = {
         }
         max = 0.05
     }
+    monthly_prestige = {
+        value = 0.05
+    }
 }
 
 trojan_war_end.2 = {
@@ -110,6 +113,9 @@ trojan_war_end.2 = {
         }
         max = 0.05	
     }
+    prestige = {
+        value = 0.05
+    }
     
 }
 
@@ -123,6 +129,9 @@ trojan_war_end.3 = {
         category = country
     }
     #greece loss
+    monthly_prestige = {
+        value = 0.025
+    }
 }
 
 trojan_war_end.4 = {
@@ -135,6 +144,9 @@ trojan_war_end.4 = {
         category = country
     }
     #anatolia loss
+    monthly_prestige = {
+        value = 0.05
+    }
 }
 
 trojan_war_end.5 = {
@@ -147,6 +159,9 @@ trojan_war_end.5 = {
         category = country
     }
     #minor anatolia loss
+    monthly_prestige = {
+        value = 0.05
+    }
 }
 
 trojan_war_end.6 = {
@@ -159,4 +174,7 @@ trojan_war_end.6 = {
         category = country
     }
     #minor anatolia victory
+    monthly_prestige = {
+        value = 0.05
+    }
 }
