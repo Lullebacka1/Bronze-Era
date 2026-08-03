@@ -21,7 +21,7 @@ trojan_war_anatolia_modifier_phase_2 = {
     siege_ability = {
         value = -0.20
         add = {
-            value = global:anatolia_raid_failed_count
+            value = global_var:anatolia_raid_failed_count
             multiply = 0.02
         }
         max = 0.30
@@ -29,7 +29,7 @@ trojan_war_anatolia_modifier_phase_2 = {
     levy_combat_efficiency = {
         value = 0.0
         add = {
-            value = global:anatolia_raid_failed_count
+            value = global_var:anatolia_raid_failed_count
             multiply = 0.02
         }
         max = 0.25	
@@ -43,7 +43,7 @@ trojan_war_greece_modifier_phase_2 = {
     siege_ability = {
         value = 0.0
         add = {
-            value = global:anatolia_raid_success_count
+            value = global_var:anatolia_raid_success_count
             multiply = 0.01
         }
         max = 0.20
@@ -51,21 +51,21 @@ trojan_war_greece_modifier_phase_2 = {
     navy_levy_size = {
         value = 0.0
         add = {
-            value = global:anatolia_raid_success_count
+            value = global_var:anatolia_raid_success_count
             multiply = 0.02
         }
         max = 0.50
     }
 }
 
-trojan_war_end.1 = {
+trojan_war_end_1 = {
     game_data = {
         category = country
     }
     siege_ability = {
         value = 0.0
         add = {
-            value = global:anatolia_raid_success_count
+            value = global_var:anatolia_raid_success_count
             multiply = 0.01
         }
         max = 0.05
@@ -73,7 +73,7 @@ trojan_war_end.1 = {
 	maritime_presence = {
         value = 0.0
         add = {
-            value = global:anatolia_raid_success_count
+            value = global_var:anatolia_raid_success_count
             multiply = 0.01
         }
         max = 0.05
@@ -83,7 +83,7 @@ trojan_war_end.1 = {
     }
 }
 
-trojan_war_end.2 = {
+trojan_war_end_2 = {
    
     game_data = {
         category = country
@@ -91,7 +91,7 @@ trojan_war_end.2 = {
     siege_ability = {
         value = 0.0
         add = {
-            value = global:anatolia_raid_failed_count
+            value = global_var:anatolia_raid_failed_count
             multiply = 0.01
         }
         max = 0.05
@@ -99,7 +99,7 @@ trojan_war_end.2 = {
     levy_combat_efficiency = {
         value = 0.0
         add = {
-            value = global:anatolia_raid_failed_count
+            value = global_var:anatolia_raid_failed_count
             multiply = 0.01
         }
         max = 0.05	
@@ -110,7 +110,7 @@ trojan_war_end.2 = {
     
 }
 
-trojan_war_end.3 = {
+trojan_war_end_3 = {
     game_data = {
         category = country
     }
@@ -120,7 +120,7 @@ trojan_war_end.3 = {
     }
 }
 
-trojan_war_end.4 = {
+trojan_war_end_4 = {
     game_data = {
         category = country
     }
@@ -130,7 +130,7 @@ trojan_war_end.4 = {
     }
 }
 
-trojan_war_end.5 = {
+trojan_war_end_5 = {
     game_data = {
         category = country
     }
@@ -140,7 +140,7 @@ trojan_war_end.5 = {
     }
 }
 
-trojan_war_end.6 = {
+trojan_war_end_6 = {
     game_data = {
         category = country
     }
