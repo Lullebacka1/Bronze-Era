@@ -16,11 +16,27 @@ trojan_war_raid_on_anatolia_success.1 = {
     
     hidden = no 
 
-	immediate = {
-        change_variable_value = { 
-            name = global:anatolia_raid_success_count 
+	 immediate = {
+        if = {
+            limit = {
+                NOT = { has_global_variable = anatolia_raid_success_count }
+            }
+            set_global_variable = {
+                name = anatolia_raid_success_count
+                value = 0
+            }
+        }
+        change_global_variable = { 
+            name = anatolia_raid_success_count 
             add = 1 
         }
+    #  if = {
+    #    limit = {
+    #        global_var:anatolia_raid_success_count = 1
+    #    }
+    #    error_log = "Anatolia raid success count works"
+    # }
+
     }
 
     option = {
@@ -44,10 +60,25 @@ trojan_war_raid_on_anatolia_failed.1 = {
     hidden = no
 
 	immediate = {
-        change_variable_value = { 
-            name = global:anatolia_raid_failed_count 
+        if = {
+            limit = {
+                NOT = { has_global_variable = anatolia_raid_failed_count }
+            }
+            set_global_variable = {
+                name = anatolia_raid_failed_count
+                value = 0
+            }
+        }
+        change_global_variable = { 
+            name = anatolia_raid_failed_count 
             add = 1 
         }
+      #  if = {
+      #      limit = {
+      #          global_var:anatolia_raid_failed_count = 1
+      #      }
+      #      error_log = "Anatolia raid failed count works"
+      #  }
     }
 
     option = {
