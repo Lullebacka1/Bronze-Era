@@ -30,12 +30,13 @@ trojan_war_raid_on_anatolia_success.1 = {
             name = anatolia_raid_success_count 
             add = 1 
         }
-        if = {
-            limit = {
-                global_variable = anatolia_raid_success_count >= 1
-            }
-            debug = "Anatolia raid success count works"
-        }
+    #  if = {
+    #    limit = {
+    #        global_var:anatolia_raid_success_count = 1
+    #    }
+    #    error_log = "Anatolia raid success count works"
+    # }
+
     }
 
     option = {
@@ -72,12 +73,12 @@ trojan_war_raid_on_anatolia_failed.1 = {
             name = anatolia_raid_failed_count 
             add = 1 
         }
-        if = {
-            limit = {
-                global_variable = anatolia_raid_failed_count >= 1
-            }
-            debug = "Anatolia raid failed count works"
-        }
+      #  if = {
+      #      limit = {
+      #          global_var:anatolia_raid_failed_count = 1
+      #      }
+      #      error_log = "Anatolia raid failed count works"
+      #  }
     }
 
     option = {
