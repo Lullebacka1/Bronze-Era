@@ -55,7 +55,7 @@ trojan_war_end.1 = {
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 10
-             add_contry_modifier = { name = "trojan_war_end.1"  
+             add_contry_modifier = { modifier = "trojan_war_end.1"  
             duration = -1
             }
 }
@@ -72,7 +72,7 @@ trojan_war_end.2 = {
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 10
-             add_contry_modifier = { name = "trojan_war_end.2"  
+             add_contry_modifier = { modifier = "trojan_war_end.2"  
             duration = -1
             } 
 }
@@ -89,7 +89,7 @@ trojan_war_end.3 = {
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = - 10
-             add_contry_modifier = { name = "trojan_war_end.3"  
+             add_contry_modifier = { modifier = "trojan_war_end.3"  
             duration = -1
             }
 }
@@ -106,7 +106,7 @@ trojan_war_end.4 = {
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = - 10
-             add_contry_modifier = { name = "trojan_war_end.4"  
+             add_contry_modifier = { modifier = "trojan_war_end.4"  
             duration = -1
             }
 }
@@ -124,7 +124,7 @@ trojan_war_end.5 = {
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = - 10
-             add_contry_modifier = { name = "trojan_war_end.5"  
+             add_contry_modifier = { modifier = "trojan_war_end.5"  
             duration = -1
             }
 }
@@ -141,7 +141,7 @@ trojan_war_end.6 = {
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 10
-             add_contry_modifier = { name = "trojan_war_end.6"  
+             add_contry_modifier = { modifier = "trojan_war_end.6"  
             duration = -1
             }
 }
