@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  bronze.annex_onclick.title: "bronze.annex_onclick"
  bronze.annex_onclick.desc: "Console cheat for testing ownership. Enable it, select an owned location, then press the annex button in the location window to transfer that location to your country."
  bronze.annex_onclick.a: "Enable annex-on-click"
