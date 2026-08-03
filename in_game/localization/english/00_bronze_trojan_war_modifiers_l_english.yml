@@ -1,3 +1,8 @@
 ﻿l_english:
- STATIC_MODIFIER_NAME_trojan_war_end_1: "Temp"
- STATIC_MODIFIER_DESC_trojan_war_end_1: "Temp"
+ STATIC_MODIFIER_NAME_trojan_war_anatolia_modifier_phase_2_siege_ability: "Siege Ability Temp name"
+ STATIC_MODIFIER_NAME_trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency: "Levy Combat Efficiency Temp name"
+ STATIC_MODIFIER_NAME_trojan_war_greece_modifier_phase_2_siege_ability: "Siege Ability Temp name"
+ STATIC_MODIFIER_NAME_trojan_war_greece_modifier_phase_2_navy_levy_size: "Navy Levy Size Temp name"
+ STATIC_MODIFIER_NAME_trojan_war_end_siege_ability: "Siege Ability Temp name"
+ STATIC_MODIFIER_NAME_trojan_war_end_maritime_presence: "Maritime Presence Temp name"
+ STATIC_MODIFIER_NAME_trojan_war_end_levy_combat_efficiency: "Levy Combat Efficiency Temp name"
