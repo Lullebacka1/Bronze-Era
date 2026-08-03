@@ -30,13 +30,201 @@ trojan_war_phase_2 = {
 		set_global_variable = { name = "trojan_war_phase_2_started" value = yes }
 		
 		
-		0001G = { add_country_modifier = { name = trojan_war_greece_modifier_phase_2 } }
-		WILUS = { add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 } }
-		AHHI = { add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 } }
-		LYCIA = { add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 } }
-		SEHA = { add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 } }
-		LUKKA = { add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 } }
-		MASA = { add_country_modifier = { name = trojan_war_anatolia_modifier_phase_2 } }
+		0001G = { add_country_modifier = { 
+			modifier = trojan_war_greece_modifier_phase_2_siege_ability 
+			days = -1
+			size ={
+				value = 0.0
+				add = {
+					value = global_var:anatolia_raid_success_count
+					multiply = 0.01
+				}
+				max = 0.20
+			}
+			recalculate_immediately = yes
+		} 
+			add_country_modifier = {
+				modifier = trojan_war_greece_modifier_phase_2_navy_levy_size
+				days = -1
+				size ={
+					value = 0.0
+					add = {
+						value = global_var:anatolia_raid_success_count
+						multiply = 0.02
+					}
+					max = 0.50
+				}
+				recalculate_immediately = yes
+			}
+	}
+		WILUS = { 
+			add_country_modifier = { 
+			modifier = trojan_war_anatolia_modifier_phase_2_siege_ability
+			days = -1
+			size ={
+				value = -0.2
+				add = {
+					value = global_var:anatolia_raid_failed_count
+					multiply = 0.02
+				}
+				max = 0.30
+			}
+			recalculate_immediately = yes 
+		} 
+			add_country_modifier = {
+				modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
+				days = -1
+				size ={
+					value = 0.0
+					add = {
+						value = global_var:anatolia_raid_failed_count
+						multiply = 0.02
+					}
+					max = 0.25
+				}
+				recalculate_immediately = yes
+			}
+	}
+		AHHI = { 
+			add_country_modifier = { 
+			modifier = trojan_war_anatolia_modifier_phase_2_siege_ability
+			days = -1
+			size ={
+				value = -0.2
+				add = {
+					value = global_var:anatolia_raid_failed_count
+					multiply = 0.02
+				}
+				max = 0.30
+			}
+			recalculate_immediately = yes 
+		} 
+			add_country_modifier = {
+				modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
+				days = -1
+				size ={
+					value = 0.0
+					add = {
+						value = global_var:anatolia_raid_failed_count
+						multiply = 0.02
+					}
+					max = 0.25
+				}
+				recalculate_immediately = yes
+			}
+	}
+		LYCIA = { 
+			add_country_modifier = { 
+			modifier = trojan_war_anatolia_modifier_phase_2_siege_ability
+			days = -1
+			size ={
+				value = -0.2
+				add = {
+					value = global_var:anatolia_raid_failed_count
+					multiply = 0.02
+				}
+				max = 0.30
+			}
+			recalculate_immediately = yes 
+		} 
+			add_country_modifier = {
+				modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
+				days = -1
+				size ={
+					value = 0.0
+					add = {
+						value = global_var:anatolia_raid_failed_count
+						multiply = 0.02
+					}
+					max = 0.25
+				}
+				recalculate_immediately = yes
+			}
+	}
+		SEHA = { 
+			add_country_modifier = { 
+			modifier = trojan_war_anatolia_modifier_phase_2_siege_ability
+			days = -1
+			size ={
+				value = -0.2
+				add = {
+					value = global_var:anatolia_raid_failed_count
+					multiply = 0.02
+				}
+				max = 0.30
+			}
+			recalculate_immediately = yes 
+		} 
+			add_country_modifier = {
+				modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
+				days = -1
+				size ={
+					value = 0.0
+					add = {
+						value = global_var:anatolia_raid_failed_count
+						multiply = 0.02
+					}
+					max = 0.25
+				}
+				recalculate_immediately = yes
+			}
+	}
+		LUKKA = { 
+			add_country_modifier = { 
+			modifier = trojan_war_anatolia_modifier_phase_2_siege_ability
+			days = -1
+			size ={
+				value = -0.2
+				add = {
+					value = global_var:anatolia_raid_failed_count
+					multiply = 0.02
+				}
+				max = 0.30
+			}
+			recalculate_immediately = yes 
+		} 
+			add_country_modifier = {
+				modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
+				days = -1
+				size ={
+					value = 0.0
+					add = {
+						value = global_var:anatolia_raid_failed_count
+						multiply = 0.02
+					}
+					max = 0.25
+				}
+				recalculate_immediately = yes
+			}
+	}
+		MASA = { 
+			add_country_modifier = { 
+			modifier = trojan_war_anatolia_modifier_phase_2_siege_ability
+			days = -1
+			size ={
+				value = -0.2
+				add = {
+					value = global_var:anatolia_raid_failed_count
+					multiply = 0.02
+				}
+				max = 0.30
+			}
+			recalculate_immediately = yes 
+		} 
+			add_country_modifier = {
+				modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
+				days = -1
+				size ={
+					value = 0.0
+					add = {
+						value = global_var:anatolia_raid_failed_count
+						multiply = 0.02
+					}
+					max = 0.25
+				}
+				recalculate_immediately = yes
+			}
+	}
 		
 
 	
@@ -68,25 +256,32 @@ trojan_war_phase_2 = {
 	on_end = {
 		set_global_variable = { name = "trojan_war_phase_2_ended" value = yes }
 		0001G = {
-            remove_country_modifier = trojan_war_greece_modifier_phase_2
+            remove_country_modifier = trojan_war_greece_modifier_phase_2_siege_ability
+			remove_country_modifier = trojan_war_greece_modifier_phase_2_navy_levy_size
         }
         WILUS = {
-            remove_country_modifier = trojan_war_anatolia_modifier_phase_2
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2_siege_ability
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
         }
         AHHI = {
-            remove_country_modifier = trojan_war_anatolia_modifier_phase_2
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2_siege_ability
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
         }
         LYCIA = {
-            remove_country_modifier = trojan_war_anatolia_modifier_phase_2
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2_siege_ability
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
         }
         SEHA = {
-            remove_country_modifier = trojan_war_anatolia_modifier_phase_2
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2_siege_ability
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
         }
         LUKKA = {
-            remove_country_modifier = trojan_war_anatolia_modifier_phase_2
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2_siege_ability
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
         }
         MASA = {
-            remove_country_modifier = trojan_war_anatolia_modifier_phase_2
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2_siege_ability
+            remove_country_modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
         }
 		c:WILUS = {
        		 change_subject_type = subject_type:vassal
