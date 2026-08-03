@@ -47,16 +47,16 @@ join_trojan_War.1 = {
 
 trojan_war_end.1 = {
     type = country_event
-    title = trojan_war_end.t.1
-    desc = trojan_war_end.d.1
+    title = trojan_war_end_01.t
+    desc = trojan_war_end_01.d
     is_triggered_only = yes
     hidden = no
 # For Greece victory
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 10
-             add_contry_modifier = { modifier = "trojan_war_end.1"  
-            duration = -1
+             add_country_modifier = { modifier = "trojan_war_end.1"  
+            years = -1
             }
 }
 }
@@ -64,16 +64,16 @@ trojan_war_end.1 = {
 
 trojan_war_end.2 = {
     type = country_event
-    title = trojan_war_end.t.2
-    desc = trojan_war_end.d.2
+    title = trojan_war_end_02.t
+    desc = trojan_war_end_02.d
     is_triggered_only = yes
     hidden = no
 # For Anatolia victory
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 10
-             add_contry_modifier = { modifier = "trojan_war_end.2"  
-            duration = -1
+             add_country_modifier = { modifier = "trojan_war_end.2"  
+            years = -1
             } 
 }
 }
@@ -81,16 +81,16 @@ trojan_war_end.2 = {
 
 trojan_war_end.3 = {
     type = country_event
-    title = trojan_war_end.t.3
-    desc = trojan_war_end.d.3
+    title = trojan_war_end_03.t
+    desc = trojan_war_end_03.d
     is_triggered_only = yes
     hidden = no
 # For Greece loss
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = - 10
-             add_contry_modifier = { modifier = "trojan_war_end.3"  
-            duration = -1
+             add_country_modifier = { modifier = "trojan_war_end.3"  
+            years = -1
             }
 }
 }
@@ -98,16 +98,16 @@ trojan_war_end.3 = {
 
 trojan_war_end.4 = {
     type = country_event
-    title = trojan_war_end.t.4
-    desc = trojan_war_end.d.4
+    title = trojan_war_end_04.t
+    desc = trojan_war_end_04.d
     is_triggered_only = yes
     hidden = no
 # For Anatolia loss
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = - 10
-             add_contry_modifier = { modifier = "trojan_war_end.4"  
-            duration = -1
+             add_country_modifier = { modifier = "trojan_war_end.4"  
+            years = -1
             }
 }
 }
@@ -116,16 +116,16 @@ trojan_war_end.4 = {
 # For minor in anatolia under here
 trojan_war_end.5 = {
     type = country_event
-    title = trojan_war_end.t.5
-    desc = trojan_war_end.d.5
+    title = trojan_war_end_05.t
+    desc = trojan_war_end_05.d
     is_triggered_only = yes
     hidden = no
 # For Anatolia loss
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = - 10
-             add_contry_modifier = { modifier = "trojan_war_end.5"  
-            duration = -1
+             add_country_modifier = { modifier = "trojan_war_end.5"  
+            years = -1
             }
 }
 }
@@ -133,16 +133,16 @@ trojan_war_end.5 = {
 
 trojan_war_end.6 = {
     type = country_event
-    title = trojan_war_end.t.6
-    desc = trojan_war_end.d.6
+    title = trojan_war_end_06.t
+    desc = trojan_war_end_06.d
     is_triggered_only = yes
     hidden = no
 # For Anatolia victory
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 10
-             add_contry_modifier = { modifier = "trojan_war_end.6"  
-            duration = -1
+             add_country_modifier = { modifier = "trojan_war_end.6"  
+            years = -1
             }
 }
 }

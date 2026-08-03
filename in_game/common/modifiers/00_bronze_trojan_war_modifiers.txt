@@ -59,11 +59,6 @@ trojan_war_greece_modifier_phase_2 = {
 }
 
 trojan_war_end.1 = {
-    type = country_event
-    title = trojan_war_end.t.1
-    desc = trojan_war_end.d.1
-    is_triggered_only = yes
-    hidden = no
     game_data = {
         category = country
     }
@@ -89,11 +84,7 @@ trojan_war_end.1 = {
 }
 
 trojan_war_end.2 = {
-    type = country_event
-    title = trojan_war_end.t.2
-    desc = trojan_war_end.d.2
-    is_triggered_only = yes
-    hidden = no
+   
     game_data = {
         category = country
     }
@@ -120,11 +111,6 @@ trojan_war_end.2 = {
 }
 
 trojan_war_end.3 = {
-    type = country_event
-    title = trojan_war_end.t.3
-    desc = trojan_war_end.d.3
-    is_triggered_only = yes
-    hidden = no
     game_data = {
         category = country
     }
@@ -135,11 +121,6 @@ trojan_war_end.3 = {
 }
 
 trojan_war_end.4 = {
-    type = country_event
-    title = trojan_war_end.t.4
-    desc = trojan_war_end.d.4
-    is_triggered_only = yes
-    hidden = no
     game_data = {
         category = country
     }
@@ -150,11 +131,6 @@ trojan_war_end.4 = {
 }
 
 trojan_war_end.5 = {
-    type = country_event
-    title = trojan_war_end.t.5
-    desc = trojan_war_end.d.5
-    is_triggered_only = yes
-    hidden = no
     game_data = {
         category = country
     }
@@ -165,11 +141,6 @@ trojan_war_end.5 = {
 }
 
 trojan_war_end.6 = {
-    type = country_event
-    title = trojan_war_end.t.6
-    desc = trojan_war_end.d.6
-    is_triggered_only = yes
-    hidden = no
     game_data = {
         category = country
     }
