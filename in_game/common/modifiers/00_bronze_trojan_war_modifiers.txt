@@ -2,17 +2,26 @@
 
 
 trojan_war_raid_on_anatolia_success = {
+    game_data = {
+        category = country
+    }
 	
 }
 
 trojan_war_raid_on_anatolia_failed = {
-	
+	game_data = {
+        category = country
+    }
 }
 
 
 anatolia_coastline_is_defend = {
-	
+	game_data = {
+        category = country
+    }
 }
+
+
 trojan_war_anatolia_modifier_phase_2_siege_ability ={
     game_data = { 
         category = country 
@@ -63,9 +72,7 @@ trojan_war_end_3 = {
         category = country
     }
     #greece loss
-    monthly_prestige = {
-        value = 0.025
-    }
+    monthly_prestige = 0.25
 }
 
 trojan_war_end_4 = {
@@ -73,9 +80,7 @@ trojan_war_end_4 = {
         category = country
     }
     #anatolia loss
-    monthly_prestige = {
-        value = 0.05
-    }
+    monthly_prestige = 0.05
 }
 
 trojan_war_end_5 = {
@@ -83,9 +88,7 @@ trojan_war_end_5 = {
         category = country
     }
     #minor anatolia loss
-    monthly_prestige = {
-        value = 0.05
-    }
+    monthly_prestige = 0.05
 }
 
 trojan_war_end_6 = {
@@ -93,7 +96,5 @@ trojan_war_end_6 = {
         category = country
     }
     #minor anatolia victory
-    monthly_prestige = {
-        value = 0.05
-    }
+    monthly_prestige = 0.05
 }
