@@ -28,12 +28,7 @@ building_manager = {
 	bronze_monument_hattusa_citadel = { level = 1 location = huseyinabad }
 	bronze_monument_ur_ziggurat = { level = 1 location = abadan }
 	bronze_monument_assur_complex = { level = 1 location = samarra }
-	# TODO_MANUAL_LOCATION - Chogha Zanbil
-	# Historical region: Khuzestan, south-east of Susa
-	# Candidate found: shush
-	# Susa/Shush is nearby, but the exact location polygon is not yet confirmed.
 	bronze_monument_chogha_zanbil_ziggurat = { level = 1 location = hamidiyeh }
-	
 	bronze_monument_su_nuraxi = { level = 1 location = isili }
 	bronze_monument_avebury = { level = 1 location = amesbury }
 }
