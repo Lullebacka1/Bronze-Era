@@ -7,7 +7,7 @@
 # ============================================================================
 
 building_manager = {
-	# Placements confirmed by exact vanilla IDs and/or existing Bronze Era setup.
+	
 	bronze_monument_giza_pyramid_complex = { level = 1 location = giza }
 	bronze_monument_mycenae_citadel = { level = 1 location = argos }
 	bronze_monument_tiryns_cyclopean = { level = 1 location = nafplio }
@@ -15,65 +15,27 @@ building_manager = {
 	bronze_monument_ugarit_complex = { level = 1 location = latakia }
 	bronze_monument_yin_xu = { level = 1 location = anyang }
 	bronze_monument_bru_na_boinne = { level = 1 location = drogheda }
-
 	# Stonehenge is already loaded as a native monument work of art by
 	# main_menu/setup/start/11_art.txt. Do not place a duplicate building.
 	# Its exact key is integrated directly into City Prestige and ruins:
 	# work_of_art:stonehenge at amesbury
-
-	# TODO_MANUAL_LOCATION - Palace of Pylos
-	# Historical region: Ano Englianos, western Messenia
-	# Candidates found: kalamata, modon, kyparissia
-	# The existing PYLOS polity uses kalamata, but that political abstraction
-	# does not prove which EU5 location polygon contains Ano Englianos.
-
-	# TODO_MANUAL_LOCATION - Citadel of Troy
-	# Historical region: Hisarlik, southern approaches to the Dardanelles
-	# Candidates found: canakkale, ayvacik
-	# Vanilla labels canakkale as Abydos, so the exact polygon needs checking.
-
-	# TODO_MANUAL_LOCATION - Karnak Temple Complex
-	# Historical region: Thebes/Luxor, Upper Egypt
-	# Do NOT use "karnak": the mod's location:karnak is in Central Asia.
-	# Candidates found: qena, qus
-
-	# TODO_MANUAL_LOCATION - Temple of Luxor
-	# Historical region: Thebes/Luxor, Upper Egypt
-	# Candidates found: qena, qus
-	# Do not activate without confirming which location polygon includes Luxor.
-
-	# TODO_MANUAL_LOCATION - Abu Simbel temples
-	# Historical region: Lower Nubia, west bank of the Nile
-	# Candidates found: aswan, kalabsha, qasr_ibrim
-
-	# TODO_MANUAL_LOCATION - Theban Necropolis and Valley of the Kings
-	# Historical region: west bank of Thebes
-	# Candidates found: qena, qus
-
-	# TODO_MANUAL_LOCATION - Hattusa monumental complex
-	# Historical region: Bogazkale district, Corum province
-	# Candidates found: huseyinabad, corum
-
-	# TODO_MANUAL_LOCATION - Great Ziggurat of Ur
-	# Historical region: Ur, southern Mesopotamia
-	# Candidates found: nasiriyah, suq_al_shuyukh
-
-	# TODO_MANUAL_LOCATION - Assur monumental complex
-	# Historical region: Ashur, middle Tigris
-	# Candidates found: al_sinn, mosul, tikrit
-
+	bronze_monument_pylos_palace = { level = 1 location = methoni }
+	bronze_monument_troy_citadel = { level = 1 location = ayvacik }
+	bronze_monument_karnak_temple = { level = 1 location = esna }
+	bronze_monument_luxor_temple = { level = 1 location = esna }
+	bronze_monument_abu_simbel_temples = { level = 1 location = daw }
+	bronze_monument_theban_necropolis = { level = 1 location = esna }
+	bronze_monument_hattusa_citadel = { level = 1 location = huseyinabad }
+	bronze_monument_ur_ziggurat = { level = 1 location = abadan }
+	bronze_monument_assur_complex = { level = 1 location = samarra }
 	# TODO_MANUAL_LOCATION - Chogha Zanbil
 	# Historical region: Khuzestan, south-east of Susa
 	# Candidate found: shush
 	# Susa/Shush is nearby, but the exact location polygon is not yet confirmed.
-
-	# TODO_MANUAL_LOCATION - Su Nuraxi
-	# Historical region: Barumini, south-central Sardinia
-	# Candidates found: isili, ales, seddori
-
-	# TODO_MANUAL_LOCATION - Avebury
-	# Historical region: Wiltshire
-	# Candidate found: amesbury
+	bronze_monument_chogha_zanbil_ziggurat = { level = 1 location = hamidiyeh }
+	
+	bronze_monument_su_nuraxi = { level = 1 location = isili }
+	bronze_monument_avebury = { level = 1 location = amesbury }
 }
 
 # ============================================================================
