@@ -148,8 +148,21 @@ hereditary_chiefdom_reform = {
 		societal_value:centralization_vs_decentralization < 80
 	}
 
+	country_modifier = {
+		global_tribes_estate_power = 0.15
+		global_nobles_estate_power = 0.05
+		global_peasants_estate_power = -0.05
+		tribes_estate_target_satisfaction = small_permanent_target_satisfaction
+		peasants_estate_levy_size = 0.10
+		levy_combat_efficiency_modifier = 0.03
+		global_defensive = 0.03
+		global_monthly_control = 0.0005
+		monthly_towards_centralization = societal_value_monthly_move
+		monthly_towards_aristocracy = societal_value_monthly_move
+		monthly_republican_tradition = -0.02
+	}
+
 	on_activate = {
-		change_government_type = government_type:tribe
 		change_heir_selection = heir_selection:tribal_oldest_male
 		set_parliament_type = parliament_type:assembly
 		set_societal_value = { value = 50 type = centralization_vs_decentralization }
@@ -172,18 +185,25 @@ village_community_adopt_monarchy_reform = {
 		government_type = government_type:village_community
 	}
 	allow = {
-		num_locations >= 10
-		country_rank_level >= 2
-		prestige >= 25
+		num_locations >= 5
+		prestige >= 15
 		stability >= 0
-		societal_value:centralization_vs_decentralization <= -25
+		societal_value:centralization_vs_decentralization < 80
+	}
+
+	country_modifier = {
+		global_nobles_estate_power = 0.10
+		global_crown_estate_power = 0.05
+		global_peasants_estate_power = -0.05
+		global_monthly_control = 0.0005
+		tax_income_efficiency = 0.03
+		country_cabinet_efficiency = 0.03
+		monthly_towards_centralization = societal_value_monthly_move
+		monthly_republican_tradition = -0.02
 	}
 
 	on_activate = {
-		change_government_type = government_type:monarchy
-		change_heir_selection = heir_selection:cognatic_primogeniture
-		set_parliament_type = parliament_type:no_parliament
-		set_societal_value = { value = -50 type = centralization_vs_decentralization }
+		set_societal_value = { value = -25 type = centralization_vs_decentralization }
 		add_government_power = government_power_extreme_bonus
 		if = {
 			limit = { country_has_estate = estate_type:nobles_estate }

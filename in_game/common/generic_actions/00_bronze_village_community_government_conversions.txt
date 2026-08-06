@@ -1,0 +1,131 @@
+# scope:actor = country, scope:recipient = same country
+
+village_community_to_clan_confederation = {
+	icon = steppe_horde_to_monarchy
+	type = owncountry
+	show_message = no
+
+	price = price:change_government_type_price
+
+	cooldown = {
+		type = transition_government
+		years = 20
+	}
+
+	potential = {
+		scope:actor = {
+			government_type = government_type:village_community
+			NOT = { has_reform = government_reform:clan_confederation_reform }
+			NOT = { has_reform = government_reform:hereditary_chiefdom_reform }
+			NOT = { has_reform = government_reform:village_community_adopt_monarchy_reform }
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_any_active_disaster = no
+			is_during_bankruptcy = no
+			num_locations >= 5
+			prestige >= 10
+			stability >= 0
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			custom_tooltip = {
+				text = village_community_to_clan_confederation_tt
+				if = {
+					limit = { has_reform = government_reform:village_community_reform }
+					remove_reform = government_reform:village_community_reform
+				}
+				if = {
+					limit = { has_reform = government_reform:maintain_clan_assembly_reform }
+					remove_reform = government_reform:maintain_clan_assembly_reform
+				}
+				add_reform = government_reform:clan_confederation_reform
+			}
+		}
+
+		custom_tooltip = warn_about_loss_of_content_tt
+	}
+
+	ai_will_do = { value = 60 }
+}
+
+village_community_to_tribe = {
+	icon = steppe_horde_to_monarchy
+	type = owncountry
+	show_message = no
+
+	price = price:change_government_type_price
+
+	cooldown = {
+		type = transition_government
+		years = 20
+	}
+
+	potential = {
+		scope:actor = {
+			government_type = government_type:village_community
+			has_reform = government_reform:clan_confederation_reform
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_any_active_disaster = no
+			is_during_bankruptcy = no
+			num_locations >= 5
+			prestige >= 10
+			stability >= 0
+			societal_value:centralization_vs_decentralization < 80
+			custom_tooltip = {
+				text = not_in_union_tt
+				NOT = { exists = union }
+			}
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			custom_tooltip = {
+				text = village_community_to_tribe_tt
+				if = {
+					limit = { has_reform = government_reform:village_community_reform }
+					remove_reform = government_reform:village_community_reform
+				}
+				if = {
+					limit = { has_reform = government_reform:maintain_clan_assembly_reform }
+					remove_reform = government_reform:maintain_clan_assembly_reform
+				}
+				if = {
+					limit = { has_reform = government_reform:clan_confederation_reform }
+					remove_reform = government_reform:clan_confederation_reform
+				}
+				if = {
+					limit = { has_reform = government_reform:hereditary_chiefdom_reform }
+					remove_reform = government_reform:hereditary_chiefdom_reform
+				}
+				if = {
+					limit = { has_reform = government_reform:village_community_adopt_monarchy_reform }
+					remove_reform = government_reform:village_community_adopt_monarchy_reform
+				}
+				change_government_type = government_type:tribe
+				change_heir_selection = heir_selection:tribal_oldest_male
+				set_parliament_type = parliament_type:assembly
+				set_societal_value = { value = 50 type = centralization_vs_decentralization }
+				if = {
+					limit = { country_has_estate = estate_type:nobles_estate }
+					add_estate_satisfaction = { type = estate_type:nobles_estate value = large_permanent_target_satisfaction }
+				}
+			}
+		}
+
+		custom_tooltip = warn_about_loss_of_content_tt
+	}
+
+	ai_will_do = { value = 500 }
+}
