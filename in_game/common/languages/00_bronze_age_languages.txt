@@ -54,7 +54,7 @@ egyptian_bronze_language = {
 		Djedkare Isesi Djoser Djehutyemhat Dedumose Djehuty Didia Djedkhonsuefankh Djedptahiufankh Djehuiti Dju Nebwy
 	}
 	lowborn = {
-		Ramesses Seti Merenptah Amenmose Khaemwaset Ahmose Akenaten Amenhotep Apophis Ay Kamose Khyan
+		 Seti Merenptah Amenmose Khaemwaset Ahmose Akenaten Amenhotep Apophis Ay Kamose Khyan
 		Merneptah Ramses Seknenre Thutmose Tutankhamen Horus_Sa Thanub Tjaenhebu Thanenhebu Senakhtenre Apries_Wahibre_Haaibre Amenmesse
 	}
 }
