@@ -606,8 +606,7 @@ britannic_pagan = {
 }
 
 nordic_pagan = {
-	color = rgb
-	language = siberian_bronze_language
+	color = rgb { 92 130 99 }
 	group = nordic_religion_group
 
 		definition_modifier = {
