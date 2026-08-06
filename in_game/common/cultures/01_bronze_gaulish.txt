@@ -1,0 +1,35 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: gaulish_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+gaulish = {                ###### -> mayby remove or rename to "celtic" in the future, but for now it is a placeholder for the gaulish culture group.               
+	language = celtic_bronze_language
+	color = rgb { 59 123 69 }
+	tags = { celtic_gfx western_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		gaulish_bronze_group
+	}
+}
+
+armorican = {
+	language = celtic_bronze_language
+	color = rgb { 70 134 80 }
+	tags = { celtic_gfx western_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		gaulish_bronze_group
+	}
+}
+
+lepontic = {
+	language = celtic_bronze_language
+	color = rgb { 81 145 91 }
+	tags = { celtic_gfx western_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		gaulish_bronze_group
+	}
+}

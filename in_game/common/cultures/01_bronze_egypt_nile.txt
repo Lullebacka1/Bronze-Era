@@ -1,0 +1,68 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: egypt_nile_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+egyptian = {
+	language = egyptian_bronze_language
+	color = rgb { 192 155 69 }
+	tags = { egyptian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		egypt_nile_group
+	}
+}
+
+upper_egyptian = {
+	language = egyptian_bronze_language
+	color = rgb { 197 146 72 }
+	tags = { egyptian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		egypt_nile_group
+	}
+}
+
+lower_egyptian = {
+	language = egyptian_bronze_language
+	color = rgb { 225 187 94 }
+	tags = { egyptian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		egypt_nile_group
+	}
+}
+
+nubian = {
+	language = nubian_bronze_language
+	color = rgb { 120 78 50 }
+	tags = { nubian_gfx east_african_gfx african_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		egypt_nile_group
+	}
+}
+
+medjay = {
+	language = nubian_bronze_language
+	color = rgb { 155 105 59 }
+	tags = { nubian_gfx saharan_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		egypt_nile_group
+	}
+}
+
+libyan = {
+	language = libyan_bronze_language
+	color = rgb { 188 132 73 }
+	tags = { amazigh_gfx maghrebi_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		egypt_nile_group
+	}
+}

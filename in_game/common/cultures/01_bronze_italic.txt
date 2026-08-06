@@ -1,0 +1,57 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: italic_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+latin = {
+	language = italic_bronze_language
+	color = rgb { 126 89 86 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		italic_bronze_group
+	}
+}
+
+etruscan = {
+	language = italic_bronze_language
+	color = rgb { 137 100 97 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		italic_bronze_group
+	}
+}
+
+umbrian = {
+	language = italic_bronze_language
+	color = rgb { 148 111 108 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		italic_bronze_group
+	}
+}
+
+samnite = {
+	language = italic_bronze_language
+	color = rgb { 159 122 119 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		italic_bronze_group
+	}
+}
+
+ligurian = {
+	language = italic_bronze_language
+	color = rgb { 192 155 152 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		italic_bronze_group
+	}
+}

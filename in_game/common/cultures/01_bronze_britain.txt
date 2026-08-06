@@ -1,0 +1,35 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: britain_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+britannic = {
+	language = brittonic_bronze_language
+	color = rgb { 70 108 77 }
+	tags = { british_gfx celtic_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		britain_bronze_group
+	}
+}
+
+caledonian = {
+	language = brittonic_bronze_language
+	color = rgb { 81 119 88 }
+	tags = { british_gfx celtic_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		britain_bronze_group
+	}
+}
+
+hibernian = {
+	language = brittonic_bronze_language
+	color = rgb { 92 130 99 }
+	tags = { british_gfx celtic_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		britain_bronze_group
+	}
+}

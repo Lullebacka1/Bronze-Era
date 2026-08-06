@@ -1,0 +1,46 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: arabian_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+arabian = {
+	language = arabian_bronze_language
+	color = rgb { 152 115 56 }
+	tags = { arabian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		arabian_bronze_group
+	}
+}
+
+midianite = {
+	language = arabian_bronze_language
+	color = rgb { 163 126 67 }
+	tags = { arabian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		arabian_bronze_group
+	}
+}
+
+dilmunite = {
+	language = arabian_bronze_language
+	color = rgb { 174 137 78 }
+	tags = { arabian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		arabian_bronze_group
+	}
+}
+
+sabaean = {
+	language = arabian_bronze_language
+	color = rgb { 185 148 89 }
+	tags = { arabian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		arabian_bronze_group
+	}
+}

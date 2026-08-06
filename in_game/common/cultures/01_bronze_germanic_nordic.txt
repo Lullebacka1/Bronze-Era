@@ -1,0 +1,44 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: germanic_nordic_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+nordic = {
+	language = germanic_bronze_language
+	color = rgb { 73 109 132 }
+	tags = { north_german_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		germanic_nordic_group
+	}
+}
+
+jutlandic = {
+	language = germanic_bronze_language
+	color = rgb { 84 120 143 }
+	tags = { north_german_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		germanic_nordic_group
+	}
+}
+
+germanic = {
+	language = germanic_bronze_language
+	color = rgb { 95 131 154 }
+	tags = { north_german_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		germanic_nordic_group
+	}
+}
+
+Lausitz = {
+	culture_groups = { germanic_nordic_group }
+	language = Lausitz
+	color = rgb { 215 217 89 }
+	tags = { czech_gfx west_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+}

@@ -1,0 +1,108 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: east_asian_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+shang = {
+	language = east_asian_bronze_language
+	color = rgb { 158 58 43 }
+	tags = { east_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		east_asian_bronze_group
+	}
+}
+
+zhou = {
+	language = east_asian_bronze_language
+	color = rgb { 169 69 54 }
+	tags = { east_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		east_asian_bronze_group
+	}
+}
+
+sanxingdui = {
+	language = east_asian_bronze_language
+	color = rgb { 180 80 65 }
+	tags = { east_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		east_asian_bronze_group
+	}
+}
+
+dongyi = {
+	language = east_asian_bronze_language
+	color = rgb { 191 91 76 }
+	tags = { east_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		east_asian_bronze_group
+	}
+}
+
+baiyue = {
+	language = east_asian_bronze_language
+	color = rgb { 202 102 87 }
+	tags = { east_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		east_asian_bronze_group
+	}
+}
+
+qiang = {
+	language = east_asian_bronze_language
+	color = rgb { 213 113 98 }
+	tags = { east_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		east_asian_bronze_group
+	}
+}
+
+jomon = {
+	language = east_asian_bronze_language
+	color = rgb { 145 96 73 }
+	tags = { japanese_gfx east_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		east_asian_bronze_group
+	}
+}
+
+mumun = {
+	language = east_asian_bronze_language
+	color = rgb { 120 126 94 }
+	tags = { east_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		east_asian_bronze_group
+	}
+}
+
+tamna = {
+	culture_groups = { east_asian_bronze_group }
+	language = Tamna
+	color = rgb { 213 52 52 }
+	tags = { east_asian_gfx }
+	opinions = {
+	}
+}
+
+Formosan = {
+	culture_groups = { east_asian_bronze_group }
+	language = Formosan
+	color = rgb { 212 100 227 }
+	tags = { east_asian_gfx }
+	opinions = {
+	}
+}

@@ -1,0 +1,11 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: baltic_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+Baltic = {
+	culture_groups = { baltic_group }
+	language = baltic_bronze_language
+	color = rgb { 106 98 213 }
+	tags = { baltic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+}

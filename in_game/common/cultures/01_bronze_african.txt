@@ -1,0 +1,79 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: african_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+puntite = {
+	language = african_bronze_language
+	color = rgb { 98 82 45 }
+	tags = { african_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		african_bronze_group
+	}
+}
+
+cushitic = {
+	language = african_bronze_language
+	color = rgb { 109 93 56 }
+	tags = { african_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		african_bronze_group
+	}
+}
+
+nilo_saharan = {
+	language = african_bronze_language
+	color = rgb { 120 104 67 }
+	tags = { african_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		african_bronze_group
+	}
+}
+
+bantu = {
+	language = african_bronze_language
+	color = rgb { 131 115 78 }
+	tags = { african_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		african_bronze_group
+	}
+}
+
+nok = {
+	language = african_bronze_language
+	color = rgb { 142 126 89 }
+	tags = { african_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		african_bronze_group
+	}
+}
+
+mande = {
+	language = african_bronze_language
+	color = rgb { 153 137 100 }
+	tags = { african_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		african_bronze_group
+	}
+}
+
+khoisan = {
+	language = african_bronze_language
+	color = rgb { 164 148 111 }
+	tags = { african_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		african_bronze_group
+	}
+}

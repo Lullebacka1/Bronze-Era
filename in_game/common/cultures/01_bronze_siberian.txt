@@ -1,0 +1,35 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: siberian_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+karasuk = {
+	language = siberian_bronze_language
+	color = rgb { 96 129 149 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+yeniseian = {
+	language = siberian_bronze_language
+	color = rgb { 107 140 160 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+tungusic = {
+	language = siberian_bronze_language
+	color = rgb { 118 151 171 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}

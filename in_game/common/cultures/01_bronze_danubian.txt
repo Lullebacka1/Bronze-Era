@@ -1,0 +1,79 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: danubian_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+baden = {
+	language = danubian_bronze_language
+	color = rgb { 132 100 88 }
+	tags = { eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		danubian_bronze_group
+	}
+}
+
+cotofeni = {
+	language = danubian_bronze_language
+	color = rgb { 118 104 88 }
+	tags = { eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		danubian_bronze_group
+	}
+}
+
+wietenberg = {
+	language = danubian_bronze_language
+	color = rgb { 125 111 91 }
+	tags = { eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		danubian_bronze_group
+	}
+}
+
+monteoru = {
+	language = danubian_bronze_language
+	color = rgb { 144 111 84 }
+	tags = { eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		danubian_bronze_group
+	}
+}
+
+tei = {
+	language = danubian_bronze_language
+	color = rgb { 151 119 83 }
+	tags = { eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		danubian_bronze_group
+	}
+}
+
+vatin = {
+	language = danubian_bronze_language
+	color = rgb { 128 117 98 }
+	tags = { eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		danubian_bronze_group
+	}
+}
+
+encrusted_pottery = {
+	language = danubian_bronze_language
+	color = rgb { 154 128 91 }
+	tags = { eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		danubian_bronze_group
+	}
+}
