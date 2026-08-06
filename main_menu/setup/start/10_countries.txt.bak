@@ -10321,7 +10321,7 @@ countries = {
 	WILUS = {
 	capital = ayvacik
 	culture = luwian
-	religion = luwian
+	religion = hellenic 
 
 	country_rank = rank_kingdom
 
@@ -11906,6 +11906,7 @@ countries = {
 			xihua                xinan                xingyang             xinxiang             xinzheng             xucheng
 			yangdi               yanggu_yanzhou       yanjin               yanling              yanshi               yique
 			yiyang               yongning_shanzhou    yuanyang             yuncheng             zhongmu
+			anyang
 		}
 		capital = luoyang
 		include = "bronze_china_korea"
@@ -28515,6 +28516,6008 @@ VC001 = {
 			}
 			discovered_regions = {
 				south_german_region
+			}
+		}
+
+		VC638 = {
+			capital = abisko
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				abisko
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC639 = {
+			capital = alkmaar
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				alkmaar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC640 = {
+			capital = alstahaug
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				alstahaug
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC641 = {
+			capital = amal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				amal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC642 = {
+			capital = amli
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				amli
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC643 = {
+			capital = apeldoorn
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				apeldoorn
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC644 = {
+			capital = appingedam
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				appingedam
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC645 = {
+			capital = aschendorf
+			culture = corded_ware
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				aschendorf
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC646 = {
+			capital = assen
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				assen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC647 = {
+			capital = aurich
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				aurich
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC648 = {
+			capital = aurland
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				aurland
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC649 = {
+			capital = avesta
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				avesta
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC650 = {
+			capital = bardodalen
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bardodalen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC651 = {
+			capital = bentheim
+			culture = corded_ware
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bentheim
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC652 = {
+			capital = bergen
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bergen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC653 = {
+			capital = birkala
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				birkala
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC654 = {
+			capital = birndal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				birndal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC655 = {
+			capital = bjorneborg
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bjorneborg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC656 = {
+			capital = bodebyn
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bodebyn
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC657 = {
+			capital = bodo
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bodo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC658 = {
+			capital = borg
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				borg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC659 = {
+			capital = borgund
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				borgund
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC660 = {
+			capital = bragernes
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bragernes
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC661 = {
+			capital = brahestad
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				brahestad
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC662 = {
+			capital = bremen
+			culture = corded_ware
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bremen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC663 = {
+			capital = bremervorde
+			culture = corded_ware
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bremervorde
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC664 = {
+			capital = butzow
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				butzow
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC665 = {
+			capital = bygdea
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bygdea
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC666 = {
+			capital = byske
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				byske
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC667 = {
+			capital = coevorden
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				coevorden
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC668 = {
+			capital = dalaborg
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				dalaborg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC669 = {
+			capital = delmenhorst
+			culture = corded_ware
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				delmenhorst
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC670 = {
+			capital = deventer
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				deventer
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC671 = {
+			capital = doberan
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				doberan
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC672 = {
+			capital = eid
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				eid
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC673 = {
+			capital = eidfjord
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				eidfjord
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC674 = {
+			capital = eidsvoll
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				eidsvoll
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC675 = {
+			capital = elimaki
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				elimaki
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC676 = {
+			capital = elsfleth
+			culture = corded_ware
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				elsfleth
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC677 = {
+			capital = emden
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				emden
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC678 = {
+			capital = eutin
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				eutin
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC679 = {
+			capital = falun
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				falun
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC680 = {
+			capital = fana
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				fana
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC681 = {
+			capital = farnebo
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				farnebo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC682 = {
+			capital = flekkefjord
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				flekkefjord
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC683 = {
+			capital = flesberg
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				flesberg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC684 = {
+			capital = fosna
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				fosna
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC685 = {
+			capital = friesoythe
+			culture = corded_ware
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				friesoythe
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC686 = {
+			capital = gefle
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gefle
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC687 = {
+			capital = gellivaara
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gellivaara
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC688 = {
+			capital = gestenthorpe
+			culture = corded_ware
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gestenthorpe
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC689 = {
+			capital = gildeskal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gildeskal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC690 = {
+			capital = gillberg
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gillberg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC691 = {
+			capital = grange
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				grange
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC692 = {
+			capital = gratesk
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gratesk
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC693 = {
+			capital = grenland
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				grenland
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC694 = {
+			capital = grevesmuhlen
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				grevesmuhlen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC695 = {
+			capital = groningen
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				groningen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC696 = {
+			capital = grundsunda
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				grundsunda
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC697 = {
+			capital = gryfia_gora
+			culture = Lausitz
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gryfia_gora
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				Lausitz
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC698 = {
+			capital = grythyttan
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				grythyttan
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC699 = {
+			capital = gustrow
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gustrow
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC700 = {
+			capital = hagenow
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hagenow
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC701 = {
+			capital = halden
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				halden
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC702 = {
+			capital = hallingdal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hallingdal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC703 = {
+			capital = hamar
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hamar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC704 = {
+			capital = hamaroy
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hamaroy
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC705 = {
+			capital = hamburg
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hamburg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC706 = {
+			capital = hamrange
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hamrange
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC707 = {
+			capital = harlingen
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				harlingen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC708 = {
+			capital = harnosand
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				harnosand
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC709 = {
+			capital = haugalandet
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				haugalandet
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC710 = {
+			capital = hedemora
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hedemora
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC711 = {
+			capital = hedesunda
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hedesunda
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC712 = {
+			capital = heide
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				heide
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC713 = {
+			capital = heiligenhafen
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				heiligenhafen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC714 = {
+			capital = heinola
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				heinola
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC715 = {
+			capital = hoorn
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hoorn
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC716 = {
+			capital = hornborg
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hornborg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC717 = {
+			capital = hudiksvall
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hudiksvall
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC718 = {
+			capital = ikalis
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ikalis
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC719 = {
+			capital = itis
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				itis
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC720 = {
+			capital = jaeren
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				jaeren
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC721 = {
+			capital = jamsa
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				jamsa
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC722 = {
+			capital = jaskis
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				jaskis
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC723 = {
+			capital = jever
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				jever
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC724 = {
+			capital = joensuu
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				joensuu
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC725 = {
+			capital = joroinen
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				joroinen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC726 = {
+			capital = juckasjarvi
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				juckasjarvi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC727 = {
+			capital = jyvaskyla
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				jyvaskyla
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC728 = {
+			capital = kampen
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kampen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC729 = {
+			capital = kangasniemi
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kangasniemi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC730 = {
+			capital = karleby
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				karleby
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC731 = {
+			capital = kaustby
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kaustby
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC732 = {
+			capital = kiel
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kiel
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC733 = {
+			capital = kiemi
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kiemi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC734 = {
+			capital = kolobrzeg
+			culture = Lausitz
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kolobrzeg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				Lausitz
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC735 = {
+			capital = konevets
+			culture = sintashta
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				konevets
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sintashta
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC736 = {
+			capital = konghalla
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				konghalla
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC737 = {
+			capital = kongsberg
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kongsberg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC738 = {
+			capital = kongsvinger
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kongsvinger
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC739 = {
+			capital = koppo
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				koppo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC740 = {
+			capital = korela
+			culture = sintashta
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				korela
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sintashta
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC741 = {
+			capital = korpilombo
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				korpilombo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC742 = {
+			capital = korsholm
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				korsholm
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC743 = {
+			capital = koszalin
+			culture = Lausitz
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				koszalin
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				Lausitz
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC744 = {
+			capital = kuivaniemi
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kuivaniemi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC745 = {
+			capital = kurkijoki
+			culture = sintashta
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kurkijoki
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sintashta
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC746 = {
+			capital = kvinnherad
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kvinnherad
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC747 = {
+			capital = laerdal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				laerdal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC748 = {
+			capital = lappo
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				lappo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC749 = {
+			capital = lauenburg
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				lauenburg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC750 = {
+			capital = laukas
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				laukas
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC751 = {
+			capital = lebork
+			culture = Lausitz
+			religion = baltic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				lebork
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				Lausitz
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC752 = {
+			capital = leer
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				leer
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC753 = {
+			capital = leeuwarden
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				leeuwarden
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC754 = {
+			capital = linde
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				linde
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC755 = {
+			capital = lindesnes
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				lindesnes
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC756 = {
+			capital = lubeck
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				lubeck
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC757 = {
+			capital = lulea
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				lulea
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC758 = {
+			capital = lycksele
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				lycksele
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC759 = {
+			capital = meppel
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				meppel
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC760 = {
+			capital = meppen
+			culture = corded_ware
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				meppen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC761 = {
+			capital = mikkeli
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				mikkeli
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC762 = {
+			capital = mirochowo
+			culture = Lausitz
+			religion = baltic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				mirochowo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				Lausitz
+			}
+
+			discovered_regions = {
+				baltic_region
+			}
+		}
+		VC763 = {
+			capital = molde
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				molde
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC764 = {
+			capital = moss
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				moss
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC765 = {
+			capital = moster
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				moster
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC766 = {
+			capital = namdal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				namdal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC767 = {
+			capital = nas
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				nas
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC768 = {
+			capital = neuhaus
+			culture = corded_ware
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				neuhaus
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC769 = {
+			capital = nikkaluokta
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				nikkaluokta
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC770 = {
+			capital = nora
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				nora
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC771 = {
+			capital = nordhordland
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				nordhordland
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC772 = {
+			capital = nordmark
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				nordmark
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC773 = {
+			capital = nowogard
+			culture = Lausitz
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				nowogard
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				Lausitz
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC774 = {
+			capital = numedal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				numedal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC775 = {
+			capital = ockelbo
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ockelbo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC776 = {
+			capital = oddernes
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				oddernes
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC777 = {
+			capital = ofoti
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ofoti
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC778 = {
+			capital = oldenburg
+			culture = corded_ware
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				oldenburg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC779 = {
+			capital = oldenzaal
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				oldenzaal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC780 = {
+			capital = olofsborg
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				olofsborg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC781 = {
+			capital = oreshek
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				oreshek
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				russian_region
+			}
+		}
+		VC782 = {
+			capital = orivesi
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				orivesi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC783 = {
+			capital = orkdal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				orkdal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC784 = {
+			capital = orland
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				orland
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC785 = {
+			capital = oslo
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				oslo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC786 = {
+			capital = osterholz
+			culture = corded_ware
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				osterholz
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC787 = {
+			capital = otredal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				otredal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC788 = {
+			capital = oyestad
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				oyestad
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC789 = {
+			capital = pedersore
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				pedersore
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC790 = {
+			capital = pinneberg
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				pinneberg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC791 = {
+			capital = pitea
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				pitea
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC792 = {
+			capital = plon
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				plon
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC793 = {
+			capital = porjus
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				porjus
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC794 = {
+			capital = pudasjarvi
+			culture = nordic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				pudasjarvi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC795 = {
+			capital = ranua
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ranua
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC796 = {
+			capital = ratzeburg
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ratzeburg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC797 = {
+			capital = rauma
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				rauma
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC798 = {
+			capital = ribnitz
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ribnitz
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC799 = {
+			capital = ringerike
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ringerike
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC800 = {
+			capital = ristiina
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ristiina
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC801 = {
+			capital = ritzebuttel
+			culture = corded_ware
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ritzebuttel
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC802 = {
+			capital = rostock
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				rostock
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC803 = {
+			capital = rovaniemi
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				rovaniemi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC804 = {
+			capital = ryfylke
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ryfylke
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC805 = {
+			capital = saarijarvi
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				saarijarvi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC806 = {
+			capital = sande
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sande
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC807 = {
+			capital = sarek
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sarek
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC808 = {
+			capital = sastamala
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sastamala
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC809 = {
+			capital = sastmola
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sastmola
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC810 = {
+			capital = savonranta
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				savonranta
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC811 = {
+			capital = schwerin
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				schwerin
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC812 = {
+			capital = segeberg
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				segeberg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC813 = {
+			capital = selanger
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				selanger
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC814 = {
+			capital = sigdal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sigdal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC815 = {
+			capital = siikalatva
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				siikalatva
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC816 = {
+			capital = simo
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				simo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC817 = {
+			capital = sirudal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sirudal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC818 = {
+			capital = sjalevad
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sjalevad
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC819 = {
+			capital = skelleftea
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				skelleftea
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC820 = {
+			capital = ski
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ski
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC821 = {
+			capital = skien
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				skien
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC822 = {
+			capital = skinskatteberg
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				skinskatteberg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC823 = {
+			capital = slawno
+			culture = Lausitz
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				slawno
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				Lausitz
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC824 = {
+			capital = slesvig
+			culture = germanic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				slesvig
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC825 = {
+			capital = sloten
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sloten
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC826 = {
+			capital = slupsk
+			culture = Lausitz
+			religion = baltic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				slupsk
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				Lausitz
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC827 = {
+			capital = socksjock
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				socksjock
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC828 = {
+			capital = soderala
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				soderala
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC829 = {
+			capital = soderbarke
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				soderbarke
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC830 = {
+			capital = sogndal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sogndal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC831 = {
+			capital = solatunum
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				solatunum
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC832 = {
+			capital = sondeled
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sondeled
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC833 = {
+			capital = sordavala
+			culture = sintashta
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sordavala
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sintashta
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC834 = {
+			capital = stade
+			culture = corded_ware
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				stade
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC835 = {
+			capital = stavanger
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				stavanger
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC836 = {
+			capital = stavoren
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				stavoren
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC837 = {
+			capital = steigen
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				steigen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC838 = {
+			capital = steinburg
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				steinburg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC839 = {
+			capital = stora_tuna
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				stora_tuna
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC840 = {
+			capital = stordal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				stordal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC841 = {
+			capital = storkyro
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				storkyro
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC842 = {
+			capital = stormarn
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				stormarn
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC843 = {
+			capital = stromstad
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				stromstad
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC844 = {
+			capital = stryn
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				stryn
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC845 = {
+			capital = suledal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				suledal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC846 = {
+			capital = sunndal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sunndal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC847 = {
+			capital = sunnfjord
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sunnfjord
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC848 = {
+			capital = sunnmore
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sunnmore
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC849 = {
+			capital = sysma
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sysma
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC850 = {
+			capital = tingvalla
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				tingvalla
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC851 = {
+			capital = toksovo
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				toksovo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				russian_region
+			}
+		}
+		VC852 = {
+			capital = tonsberg
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				tonsberg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC853 = {
+			capital = trogstad
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				trogstad
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC854 = {
+			capital = troms
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				troms
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC855 = {
+			capital = trondenes
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				trondenes
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC856 = {
+			capital = uddevalla
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				uddevalla
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC857 = {
+			capital = uleaborg
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				uleaborg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC858 = {
+			capital = ullensvang
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ullensvang
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC859 = {
+			capital = umea
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				umea
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC860 = {
+			capital = utajarvi
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				utajarvi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC861 = {
+			capital = vardal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				vardal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC862 = {
+			capital = varnum
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				varnum
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC863 = {
+			capital = vartsila
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				vartsila
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC864 = {
+			capital = vedbo
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				vedbo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC865 = {
+			capital = viitasaari
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				viitasaari
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC866 = {
+			capital = vik
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				vik
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC867 = {
+			capital = vindeln
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				vindeln
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC868 = {
+			capital = vora
+			culture = finnic
+			religion = finnic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				vora
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				finnic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC869 = {
+			capital = voss
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				voss
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC870 = {
+			capital = wedde
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				wedde
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC871 = {
+			capital = wismar
+			culture = corded_ware
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				wismar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				corded_ware
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC872 = {
+			capital = wolvega
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				wolvega
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC873 = {
+			capital = zutphen
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				zutphen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+		VC874 = {
+			capital = zwolle
+			culture = germanic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				zwolle
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				germanic
+			}
+
+			discovered_regions = {
+				north_german_region
+			}
+		}
+
+		VC875 = {
+			capital = vallsjo
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				vallsjo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC876 = {
+			capital = kolmarden
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kolmarden
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC877 = {
+			capital = nykoping
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				nykoping
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
 			}
 		}
 }

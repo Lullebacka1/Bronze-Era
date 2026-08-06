@@ -34520,5 +34520,3081 @@ VC001 = {
 				scandinavian_region
 			}
 		}
+
+		VC878 = {
+			capital = andika
+			culture = elamite
+			religion = elamite
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				andika
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				elamite
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC879 = {
+			capital = andimeshk
+			culture = elamite
+			religion = elamite
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				andimeshk
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				elamite
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC880 = {
+			capital = aqmecit
+			culture = catacomb
+			religion = scythian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				aqmecit
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				catacomb
+			}
+
+			discovered_regions = {
+				steppes_region
+			}
+		}
+		VC881 = {
+			capital = ardestan
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ardestan
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC882 = {
+			capital = astorga
+			culture = gaulish
+			religion = gaulish_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				astorga
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gaulish
+			}
+
+			discovered_regions = {
+				iberia_region
+			}
+		}
+		VC883 = {
+			capital = baghran
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				baghran
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC884 = {
+			capital = bagram
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bagram
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC885 = {
+			capital = baia_de_aries
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				baia_de_aries
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC886 = {
+			capital = beius
+			culture = gava_holigrady
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				beius
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gava_holigrady
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC887 = {
+			capital = bihar
+			culture = gava_holigrady
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bihar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gava_holigrady
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC888 = {
+			capital = bodrog
+			culture = vatin
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bodrog
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				vatin
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC889 = {
+			capital = borborud
+			culture = elamite
+			religion = elamite
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				borborud
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				elamite
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC890 = {
+			capital = brasov
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				brasov
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC891 = {
+			capital = brno
+			culture = urnfield
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				brno
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC892 = {
+			capital = bukov
+			culture = monteoru
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bukov
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				monteoru
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC893 = {
+			capital = buzau
+			culture = monteoru
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				buzau
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				monteoru
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC894 = {
+			capital = castrocalbon
+			culture = lusitanian
+			religion = lusitanian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				castrocalbon
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				lusitanian
+			}
+
+			discovered_regions = {
+				iberia_region
+			}
+		}
+		VC895 = {
+			capital = chak
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				chak
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC896 = {
+			capital = charikar
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				charikar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC897 = {
+			capital = cheresig
+			culture = gava_holigrady
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				cheresig
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gava_holigrady
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC898 = {
+			capital = chezdi_osorheiu
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				chezdi_osorheiu
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC899 = {
+			capital = cincu
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				cincu
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC900 = {
+			capital = cluj
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				cluj
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC901 = {
+			capital = covasna
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				covasna
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC902 = {
+			capital = crasna
+			culture = gava_holigrady
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				crasna
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gava_holigrady
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC903 = {
+			capital = cristuru_secuiesc
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				cristuru_secuiesc
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC904 = {
+			capital = dabaca
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				dabaca
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC905 = {
+			capital = dakhkat
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				dakhkat
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC906 = {
+			capital = dawlat_abad
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				dawlat_abad
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC907 = {
+			capital = debrecen
+			culture = gava_holigrady
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				debrecen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gava_holigrady
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC908 = {
+			capital = deh_kundi
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				deh_kundi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC909 = {
+			capital = deychopan
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				deychopan
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC910 = {
+			capital = dezful
+			culture = elamite
+			religion = elamite
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				dezful
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				elamite
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC911 = {
+			capital = dowlatabad_esfandaqeh
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				dowlatabad_esfandaqeh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC912 = {
+			capital = fagaras
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				fagaras
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC913 = {
+			capital = freistadt
+			culture = urnfield
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				freistadt
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC914 = {
+			capital = gardez
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gardez
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC915 = {
+			capital = gereshk
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gereshk
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC916 = {
+			capital = gerit
+			culture = elamite
+			religion = elamite
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gerit
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				elamite
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC917 = {
+			capital = ghazni
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ghazni
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC918 = {
+			capital = gheorgheni
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gheorgheni
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC919 = {
+			capital = ghormach
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ghormach
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC920 = {
+			capital = golashkerd
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				golashkerd
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC921 = {
+			capital = hattfjelldal
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hattfjelldal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC922 = {
+			capital = hodonin
+			culture = urnfield
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hodonin
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC923 = {
+			capital = hollabrunn
+			culture = baden
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hollabrunn
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				baden
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC924 = {
+			capital = horn
+			culture = baden
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				horn
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				baden
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC925 = {
+			capital = huedin
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				huedin
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC926 = {
+			capital = isfara
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				isfara
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC927 = {
+			capital = ishtixon
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ishtixon
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC928 = {
+			capital = istalif
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				istalif
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC929 = {
+			capital = jiroft
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				jiroft
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC930 = {
+			capital = jizzakh
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				jizzakh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC931 = {
+			capital = jurchi
+			culture = catacomb
+			religion = scythian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				jurchi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				catacomb
+			}
+
+			discovered_regions = {
+				steppes_region
+			}
+		}
+		VC932 = {
+			capital = jurm
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				jurm
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC933 = {
+			capital = kabul
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kabul
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC934 = {
+			capital = kahnuj
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kahnuj
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC935 = {
+			capital = kajran
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kajran
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC936 = {
+			capital = kalay
+			culture = catacomb
+			religion = scythian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kalay
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				catacomb
+			}
+
+			discovered_regions = {
+				steppes_region
+			}
+		}
+		VC937 = {
+			capital = kandahar
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kandahar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC938 = {
+			capital = kezlev
+			culture = catacomb
+			religion = scythian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kezlev
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				catacomb
+			}
+
+			discovered_regions = {
+				steppes_region
+			}
+		}
+		VC939 = {
+			capital = khujand
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				khujand
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC940 = {
+			capital = kokand
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kokand
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC941 = {
+			capital = komshecheh
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				komshecheh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC942 = {
+			capital = konibodom
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				konibodom
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC943 = {
+			capital = korneuburg
+			culture = baden
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				korneuburg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				baden
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC944 = {
+			capital = krems
+			culture = baden
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				krems
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				baden
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC945 = {
+			capital = lierne
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				lierne
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC946 = {
+			capital = logar
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				logar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC947 = {
+			capital = maiwand
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				maiwand
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC948 = {
+			capital = manujan
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				manujan
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC949 = {
+			capital = mardehek
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				mardehek
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC950 = {
+			capital = maymana
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				maymana
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC951 = {
+			capital = medias
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				medias
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC952 = {
+			capital = meteleu
+			culture = tei
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				meteleu
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				tei
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC953 = {
+			capital = miercurea_cluc
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				miercurea_cluc
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC954 = {
+			capital = minab
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				minab
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC955 = {
+			capital = modos
+			culture = vatin
+			religion = thracian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				modos
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				vatin
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC956 = {
+			capital = muqur
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				muqur
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC957 = {
+			capital = musa_qala
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				musa_qala
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC958 = {
+			capital = nowdezh
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				nowdezh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC959 = {
+			capital = nurota
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				nurota
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC960 = {
+			capital = odorhei
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				odorhei
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC961 = {
+			capital = or_qapi
+			culture = catacomb
+			religion = scythian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				or_qapi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				catacomb
+			}
+
+			discovered_regions = {
+				steppes_region
+			}
+		}
+		VC962 = {
+			capital = oradea
+			culture = gava_holigrady
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				oradea
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gava_holigrady
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC963 = {
+			capital = pandjih
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				pandjih
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC964 = {
+			capital = panjshir
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				panjshir
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC965 = {
+			capital = parscov
+			culture = monteoru
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				parscov
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				monteoru
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC966 = {
+			capital = perg
+			culture = urnfield
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				perg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC967 = {
+			capital = pishagar
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				pishagar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC968 = {
+			capital = ploesti
+			culture = monteoru
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ploesti
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				monteoru
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC969 = {
+			capital = primkent
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				primkent
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC970 = {
+			capital = qaisar
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				qaisar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC971 = {
+			capital = qalat_ghilji
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				qalat_ghilji
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC972 = {
+			capital = qasr_ahnaf
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				qasr_ahnaf
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC973 = {
+			capital = rabor
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				rabor
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC974 = {
+			capital = ramsheh
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ramsheh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC975 = {
+			capital = rana
+			culture = nordic
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				rana
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC976 = {
+			capital = recas
+			culture = vatin
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				recas
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				vatin
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC977 = {
+			capital = rudkhaneh
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				rudkhaneh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC978 = {
+			capital = sar_sang
+			culture = andronovo
+			religion = steppe_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sar_sang
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				andronovo
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC979 = {
+			capital = sarduiyeh
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sarduiyeh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC980 = {
+			capital = senderk
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				senderk
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC981 = {
+			capital = seyitler
+			culture = catacomb
+			religion = scythian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				seyitler
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				catacomb
+			}
+
+			discovered_regions = {
+				steppes_region
+			}
+		}
+		VC982 = {
+			capital = sfantu_gheorghe
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sfantu_gheorghe
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC983 = {
+			capital = shaqrud
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				shaqrud
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC984 = {
+			capital = sighisoara
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sighisoara
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC985 = {
+			capital = slanic
+			culture = monteoru
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				slanic
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				monteoru
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC986 = {
+			capital = somaleh
+			culture = elamite
+			religion = elamite
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				somaleh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				elamite
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC987 = {
+			capital = tarinkot
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				tarinkot
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC988 = {
+			capital = timisoara
+			culture = vatin
+			religion = thracian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				timisoara
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				vatin
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC989 = {
+			capital = tineo
+			culture = lusitanian
+			religion = lusitanian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				tineo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				lusitanian
+			}
+
+			discovered_regions = {
+				iberia_region
+			}
+		}
+		VC990 = {
+			capital = tudeshk
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				tudeshk
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC991 = {
+			capital = ura_tyube
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ura_tyube
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC992 = {
+			capital = valenii_de_munte
+			culture = monteoru
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				valenii_de_munte
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				monteoru
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC993 = {
+			capital = veliky_beckerek
+			culture = vatin
+			religion = thracian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				veliky_beckerek
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				vatin
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC994 = {
+			capital = yangabad
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				yangabad
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC995 = {
+			capital = yangirabod
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				yangirabod
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC996 = {
+			capital = zakht
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				zakht
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC997 = {
+			capital = zalau
+			culture = gava_holigrady
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				zalau
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gava_holigrady
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC998 = {
+			capital = znojmo
+			culture = urnfield
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				znojmo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC999 = {
+			capital = zomin
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				zomin
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC1000 = {
+			capital = zwettl
+			culture = baden
+			religion = nordic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				zwettl
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				baden
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
 }
 }
