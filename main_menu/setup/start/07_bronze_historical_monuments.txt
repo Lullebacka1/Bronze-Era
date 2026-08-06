@@ -19,7 +19,7 @@ building_manager = {
 	# main_menu/setup/start/11_art.txt. Do not place a duplicate building.
 	# Its exact key is integrated directly into City Prestige and ruins:
 	# work_of_art:stonehenge at amesbury
-	bronze_monument_pylos_palace = { level = 1 location = methoni }
+	bronze_monument_pylos_palace = { level = 1 location = modon }
 	bronze_monument_troy_citadel = { level = 1 location = ayvacik }
 	bronze_monument_karnak_temple = { level = 1 location = esna }
 	bronze_monument_luxor_temple = { level = 1 location = esna }
