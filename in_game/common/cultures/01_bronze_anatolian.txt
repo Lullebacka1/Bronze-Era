@@ -1,0 +1,79 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: anatolian_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+hittite = {
+	language = anatolian_bronze_language
+	color = rgb { 169 113 68 }
+	tags = { middle_east_gfx east_mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		anatolian_bronze_group
+	}
+}
+
+luwian = {
+	language = luwian_bronze_language
+	color = rgb { 191 139 73 }
+	tags = { east_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		anatolian_bronze_group
+	}
+}
+
+hattian = {
+	language = anatolian_bronze_language
+	color = rgb { 173 120 74 }
+	tags = { middle_east_gfx east_mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		anatolian_bronze_group
+	}
+}
+
+lycian = {
+	language = anatolian_bronze_language
+	color = rgb { 184 131 85 }
+	tags = { middle_east_gfx east_mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		anatolian_bronze_group
+	}
+}
+
+carian = {
+	language = anatolian_bronze_language
+	color = rgb { 195 142 96 }
+	tags = { middle_east_gfx east_mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		anatolian_bronze_group
+	}
+}
+
+palaic = {
+	language = anatolian_bronze_language
+	color = rgb { 206 153 107 }
+	tags = { middle_east_gfx east_mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		anatolian_bronze_group
+	}
+}
+
+phrygian = {
+	language = anatolian_bronze_language
+	color = rgb { 152 102 100 }
+	tags = { east_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		anatolian_bronze_group
+	}
+}

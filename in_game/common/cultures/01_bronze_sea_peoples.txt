@@ -1,0 +1,57 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: sea_peoples_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+sherden = {
+	language = aegean_bronze_language
+	color = rgb { 101 136 157 }
+	tags = { west_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		sea_peoples_group
+	}
+}
+
+peleset = {
+	language = levantine_bronze_language
+	color = rgb { 91 142 169 }
+	tags = { levantine_gfx east_mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		sea_peoples_group
+	}
+}
+
+tjekker = {
+	language = aegean_bronze_language
+	color = rgb { 92 139 166 }
+	tags = { east_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		sea_peoples_group
+	}
+}
+
+denyen = {
+	language = aegean_bronze_language
+	color = rgb { 103 150 177 }
+	tags = { east_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		sea_peoples_group
+	}
+}
+
+lukka = {
+	language = luwian_bronze_language
+	color = rgb { 86 151 165 }
+	tags = { east_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		sea_peoples_group
+	}
+}

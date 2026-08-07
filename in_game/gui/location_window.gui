@@ -3249,6 +3249,21 @@ lateralview = {
 				hbox = {
 					margin = { 10 0 }
 					datacontext = "[LocationView.GetLocation]"
+
+					vbox = {
+						parentanchor = left|vcenter
+						datacontext = "[GetScriptedGui('bronze_annex_selected_location_gui')]"
+						visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('bronze_annex_target_location', Location.MakeScope).End)]"
+
+						button_regular = {
+							size = { 90 28 }
+							text = "bronze_annex_onclick_button"
+							enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('bronze_annex_target_location', Location.MakeScope).End)]"
+							onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('bronze_annex_target_location', Location.MakeScope).End)]"
+							tooltip = "bronze_annex_onclick_button_tt"
+						}
+					}
+
 					hbox = {
 						layoutpolicy_horizontal = expanding
 						layoutstretchfactor_horizontal = 1
@@ -4642,7 +4657,8 @@ lateralview = {
 								# DISEASES
 								piechart = {
 									datacontext = "[LocationView.GetLocation]"
-									visible = "[LocationView.ShowDisease]"
+									# 1.3.11 safety guard: never query an undisclosed/invalid disease object.
+									visible = "[And(LocationView.ShowDisease, HasDiseaseIntelOn(Location.Self))]"
 									using = bg_circle
 									size = {28 28}
 									using = piechart_angles

@@ -1,5 +1,6 @@
-namespace = start_trojan_war_phase_2
+﻿namespace = start_trojan_war_phase_2
 namespace = join_trojan_War
+namespace = trojan_war_end
 
 start_trojan_war_phase_2.1 = {
     type = country_event
@@ -39,8 +40,144 @@ join_trojan_War.1 = {
     hidden = no
 
  option = {
-    name = "join_trojan_war"
+    name = "join_trojan_war.a"
     root = { join_war_as_defender = { war = scope:trojan_war } }
 }
 }
 
+trojan_war_end.1 = {
+    type = country_event
+    title = trojan_war_end_01.t
+    desc = trojan_war_end_01.d
+    is_triggered_only = yes
+    hidden = no
+# For Greece victory
+ option = {
+    name = "trojan_war_end.a"
+    root = { add_prestige = 10
+             add_country_modifier = { 
+            modifier = trojan_war_end_siege_ability  
+            days = -1
+            size = {
+                value = global_var:anatolia_raid_success_count
+                multiply = 0.01
+                max = 0.05
+            }
+recalculate_immediately = yes
+            }
+            add_country_modifier = { 
+            modifier = trojan_war_end_maritime_presence  
+            days = -1
+            size = {
+                value = global_var:anatolia_raid_success_count
+                multiply = 0.01
+                max = 0.05
+            }
+recalculate_immediately = yes
+            }
+}
+}
+}
+
+trojan_war_end.2 = {
+    type = country_event
+    title = trojan_war_end_02.t
+    desc = trojan_war_end_02.d
+    is_triggered_only = yes
+    hidden = no
+# For Anatolia victory
+ option = {
+    name = "trojan_war_end.a"
+    root = { add_prestige = 10
+             add_country_modifier = { 
+            modifier = trojan_war_end_siege_ability  
+            days = -1
+            size = {
+                value = global_var:anatolia_raid_failed_count
+                multiply = 0.01
+                max = 0.05
+            } 
+            recalculate_immediately = yes
+            }
+            add_country_modifier = {
+            modifier = trojan_war_end_levy_combat_efficiency  
+            days = -1 
+            size = {
+                value = global_var:anatolia_raid_failed_count
+                multiply = 0.01
+                max = 0.05
+            } 
+            recalculate_immediately = yes            
+            } 
+}
+}
+}
+
+trojan_war_end.3 = {
+    type = country_event
+    title = trojan_war_end_03.t
+    desc = trojan_war_end_03.d
+    is_triggered_only = yes
+    hidden = no
+# For Greece loss
+ option = {
+    name = "trojan_war_end.a"
+    root = { add_prestige = - 10
+             add_country_modifier = { modifier = trojan_war_end_3  
+            days = -1
+            }
+}
+}
+}
+
+trojan_war_end.4 = {
+    type = country_event
+    title = trojan_war_end_04.t
+    desc = trojan_war_end_04.d
+    is_triggered_only = yes
+    hidden = no
+# For Anatolia loss
+ option = {
+    name = "trojan_war_end.a"
+    root = { add_prestige = - 10
+             add_country_modifier = { modifier = trojan_war_end_4  
+            days = -1
+            }
+}
+}
+}
+
+# For minor in anatolia under here
+trojan_war_end.5 = {
+    type = country_event
+    title = trojan_war_end_05.t
+    desc = trojan_war_end_05.d
+    is_triggered_only = yes
+    hidden = no
+# For Anatolia loss
+ option = {
+    name = "trojan_war_end.a"
+    root = { add_prestige = - 10
+             add_country_modifier = { modifier = trojan_war_end_5  
+            days = -1
+            }
+}
+}
+}
+
+trojan_war_end.6 = {
+    type = country_event
+    title = trojan_war_end_06.t
+    desc = trojan_war_end_06.d
+    is_triggered_only = yes
+    hidden = no
+# For Anatolia victory
+ option = {
+    name = "trojan_war_end.a"
+    root = { add_prestige = 10
+             add_country_modifier = { modifier = trojan_war_end_6  
+            days = -1
+            }
+}
+}
+}

@@ -125,6 +125,50 @@ ROME = { # Rome, founded in 753 BC by event in the Bronze Era chronology.
 	flag_definition = { coa = bronze_age_ROME_coa priority = 10000 }
 }
 
+ARMOR = { # Armorica formable, using the provided triskelion flag.
+	flag_definition = { coa = bronze_age_ARMOR_coa priority = 10000 }
+}
+
+ASGARD = { # Pan-Nordic Asgard formable, bronze sun and raven on Nordic blue.
+	flag_definition = { coa = bronze_age_ASGARD_coa priority = 10000 }
+}
+
+MIDGARD = { # Swedish Midgard formable, forest green and bronze royal order.
+	flag_definition = { coa = bronze_age_MIDGARD_coa priority = 10000 }
+}
+
+VANAHEIM = { # Rural Nordic Vanaheim formable, fertility cults and bronze fields.
+	flag_definition = { coa = bronze_age_VANAHEIM_coa priority = 10000 }
+}
+
+JOTUNHEIM = { # Nordic mountain-valley Jotunheim formable, stone and bronze.
+	flag_definition = { coa = bronze_age_JOTUNHEIM_coa priority = 10000 }
+}
+
+ALFHEIM = { # Finnic Alfheim formable, forests and Norse rites.
+	flag_definition = { coa = bronze_age_ALFHEIM_coa priority = 10000 }
+}
+
+NIDAVELLIR = { # Northern metallurgical Nidavellir formable, copper and bronze.
+	flag_definition = { coa = bronze_age_NIDAVELLIR_coa priority = 10000 }
+}
+
+MUSPELLHEIM = { # Icelandic volcanic-island Muspellheim formable.
+	flag_definition = { coa = bronze_age_MUSPELLHEIM_coa priority = 10000 }
+}
+
+NIFLHEIM = { # Far northern cold-march Niflheim formable.
+	flag_definition = { coa = bronze_age_NIFLHEIM_coa priority = 10000 }
+}
+
+HELHEIM = { # Danish ancestor-rite Helheim formable.
+	flag_definition = { coa = bronze_age_HELHEIM_coa priority = 10000 }
+}
+
+VINDLAND = { # Baltic amber and waterway Vindland formable.
+	flag_definition = { coa = bronze_age_VINDLAND_coa priority = 10000 }
+}
+
 # Unique Hatti-collapse successor flags.
 HAMAT = { flag_definition = { coa = bronze_age_HAMAT_coa priority = 10000 } }
 ARPAD = { flag_definition = { coa = bronze_age_ARPAD_coa priority = 10000 } }

@@ -1,0 +1,57 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: island_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+sicel = {
+	language = island_bronze_language
+	color = rgb { 168 125 83 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		island_bronze_group
+	}
+}
+
+nuragic = {
+	language = island_bronze_language
+	color = rgb { 126 119 79 }
+	tags = { west_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		island_bronze_group
+	}
+}
+
+sicanian = {
+	language = island_bronze_language
+	color = rgb { 150 112 78 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		island_bronze_group
+	}
+}
+
+elymian = {
+	language = island_bronze_language
+	color = rgb { 132 100 92 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		island_bronze_group
+	}
+}
+
+torrean = {
+	language = island_bronze_language
+	color = rgb { 111 122 83 }
+	tags = { west_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		island_bronze_group
+	}
+}

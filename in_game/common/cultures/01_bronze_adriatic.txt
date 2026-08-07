@@ -1,0 +1,35 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: adriatic_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+castellieri = {
+	language = adriatic_bronze_language
+	color = rgb { 105 119 145 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		adriatic_bronze_group
+	}
+}
+
+iapygian = {
+	language = adriatic_bronze_language
+	color = rgb { 103 137 151 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		adriatic_bronze_group
+	}
+}
+
+este = {
+	language = adriatic_bronze_language
+	color = rgb { 124 134 109 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		adriatic_bronze_group
+	}
+}

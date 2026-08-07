@@ -360,6 +360,10 @@ HATTI = {
 	color = rgb { 95 122 139 }
 	color2 = rgb { 110 27 27 }
 }
+ARMOR = {
+	color = rgb { 0 132 49 }
+	color2 = rgb { 236 196 0 }
+}
 SIDON = {
 	color = rgb { 171 151 94 }
 	color2 = rgb { 110 27 27 }
@@ -2243,3 +2247,15 @@ YUANS = {
 	color = rgb { 166 242 219 }
 	color2 = rgb { 24 82 83 }
 }
+
+SAMBI = {
+	color = rgb { 71 62 65 }
+	color2 = rgb { 68 24 82 }
+}
+
+VISTU = {
+	color = rgb { 213 147 103 }
+	color2 = rgb { 121 102 127 }
+}
+
+

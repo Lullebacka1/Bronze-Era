@@ -1,0 +1,57 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: southeast_asian_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+austroasiatic = {
+	language = southeast_asian_bronze_language
+	color = rgb { 55 117 72 }
+	tags = { indochina_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		southeast_asian_bronze_group
+	}
+}
+
+vietic = {
+	language = southeast_asian_bronze_language
+	color = rgb { 66 128 83 }
+	tags = { indochina_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		southeast_asian_bronze_group
+	}
+}
+
+mon = {
+	language = southeast_asian_bronze_language
+	color = rgb { 77 139 94 }
+	tags = { indochina_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		southeast_asian_bronze_group
+	}
+}
+
+khmer = {
+	language = southeast_asian_bronze_language
+	color = rgb { 88 150 105 }
+	tags = { indochina_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		southeast_asian_bronze_group
+	}
+}
+
+austronesian = {
+	language = southeast_asian_bronze_language
+	color = rgb { 99 161 116 }
+	tags = { indochina_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		southeast_asian_bronze_group
+	}
+}

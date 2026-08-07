@@ -1,0 +1,26 @@
+bronze_annex_selected_location_gui = {
+	scope = country
+	saved_scopes = { bronze_annex_target_location }
+
+	is_shown = {
+		root = { has_variable = bronze_annex_onclick_enabled }
+		scope:bronze_annex_target_location ?= {
+			has_owner = yes
+			NOT = { owner = root }
+		}
+	}
+
+	is_valid = {
+		root = { has_variable = bronze_annex_onclick_enabled }
+		scope:bronze_annex_target_location ?= {
+			has_owner = yes
+			NOT = { owner = root }
+		}
+	}
+
+	effect = {
+		root = { bronze_annex_onclick_selected_location_effect = yes }
+	}
+
+	ai_is_valid = { always = no }
+}

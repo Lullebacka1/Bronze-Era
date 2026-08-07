@@ -1,0 +1,1305 @@
+# Bronze Era Norse formables. Regional realms set bronze_formed_norse_regional_realm; Asgard sets bronze_formed_asgard.
+# All regional formables require religion:norse, direct ownership through the vanilla formable location counter, and no prior Norse regional realm.
+
+# Asgard is the superior pan-Nordic human formable for Bronze Era.
+# Total locations: 298. Required at 80%: 239.
+
+ASGARD_f = {
+	level = 5
+	required_locations_fraction = 0.80
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 1000
+
+	potential = {
+		NOT = { tag = ASGARD }
+		NOT = { country_exists = c:ASGARD }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:norse
+	}
+
+	name = ASGARD
+	flag = ASGARD
+	adjective = ASGARD_ADJ
+	tag = ASGARD
+	color = map_ASGARD
+
+	locations = {
+		aabenraa aalborg aarhus abisko abo albo
+		allingsas alstahaug alvastra amal amli arboga
+		ars asbo assens aurland avesta bardodalen
+		bergen beryozovskoye birkala birndal bjorneborg bodebyn
+		bodo bogesund bolling borg borgund bragernes
+		brahestad branna bregne bygdea byske dalaborg
+		eid eidfjord eidsvoll ekenas ekholm elimaki
+		enkoping falkoping falster falun fana farnebo
+		flekkefjord flensburg flesberg forssa fosna gefle
+		gellivaara gildeskal gillberg gladsax goksholm grange
+		gratesk grenland grindsted grundsunda grythyttan haderslev
+		halden hallingdal halmstad hamar hamaroy hamrange
+		handbord hapsal harnosand haugalandet heby hedemora
+		hedesunda heinjoki heinola helsingborg helsinge helsingor
+		hienatiemi hjo hjorring hollola holstebro_lundenes hornborg
+		hudiksvall husum hvittis ikalis itis jaeren
+		jamsa janakkala jaskis joensuu jonkoping joroinen
+		juckasjarvi jyvaskyla kaina kalmar kalo kalundborg
+		kangasniemi karleby kaustby kiemi kinda kobenhavn
+		kolding kolmarden konevets konga konghalla kongsberg
+		kongsvinger koppo korela korpilombo korsholm kuivaniemi
+		kungsbacka kurkijoki kvinnherad kymi_fi kyyrola laerdal
+		laholm lappo laukas lidkoping liljendal linde
+		lindesnes linkoping ljungby lodose lohja lulea
+		lund lycksele malmo mikkeli molde moss
+		moster namdal nas navskov nikkaluokta nora
+		nordhordland nordmark norrkoping norrtalje numedal nykoping
+		nystad ockelbo oddernes odense ofoti oland
+		olofsborg oppunda orebro orivesi orkdal orland
+		osby oslo otredal oyestad padise pajala
+		pedersore pitea porjus porvoo poytis pudasjarvi
+		randers ranea ranua rauma raumo ribe
+		ringerike ringkobing ringsted riseberga ristiina ronneby
+		roskilde rovaniemi ryfylke saarijarvi sala sande
+		sarek sastamala sastmola sauvo savonranta selanger
+		sevede sigdal siikalatva silkeborg simo sirudal
+		sjalevad sjundea skagen skara skelleftea skene
+		ski skien skinskatteberg slagelse slesvig socksjock
+		soderala soderbarke soderkoping sodertalje sogndal solatunum
+		solvesborg sondeled sordavala stavanger steigen stockholm
+		stora_tuna stordal storkyro strangnas stromstad stryn
+		suledal sunndal sunnfjord sunnmore svendborg sysma
+		tallinn tavastehus thisted tierp tingvalla tiveden
+		tjust tonder tonsberg tornea trogstad trollaborg
+		troms trondenes uddevalla uleaborg ullensvang umea
+		uppsala uppvidinge utajarvi utlandet vadstena valkeasaari
+		vallsjo varberg vardal varde varnum vartofta
+		vartsila vasteras vaxjo veckelax vedbo vederlax
+		vetlanda viborg viitasaari vik vindeln vora
+		vordingborg voss vyborg waestbo
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
+
+		set_variable = { name = bronze_formed_asgard value = 1 }
+		add_prestige = prestige_mild_bonus
+		add_legitimacy = legitimacy_mild_bonus
+		add_country_modifier = {
+			modifier = bronze_asgard_high_kingship
+			years = -1
+			mode = add_and_extend
+		}
+		custom_tooltip = bronze_asgard_remaining_claims_tt
+		hidden_effect = {
+			if = { limit = { location:aabenraa = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:aabenraa.province target = location:aabenraa.owner years = 25 } }
+			if = { limit = { location:aalborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:aalborg.province target = location:aalborg.owner years = 25 } }
+			if = { limit = { location:aarhus = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:aarhus.province target = location:aarhus.owner years = 25 } }
+			if = { limit = { location:abisko = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:abisko.province target = location:abisko.owner years = 25 } }
+			if = { limit = { location:abo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:abo.province target = location:abo.owner years = 25 } }
+			if = { limit = { location:albo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:albo.province target = location:albo.owner years = 25 } }
+			if = { limit = { location:allingsas = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:allingsas.province target = location:allingsas.owner years = 25 } }
+			if = { limit = { location:alstahaug = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:alstahaug.province target = location:alstahaug.owner years = 25 } }
+			if = { limit = { location:alvastra = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:alvastra.province target = location:alvastra.owner years = 25 } }
+			if = { limit = { location:amal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:amal.province target = location:amal.owner years = 25 } }
+			if = { limit = { location:amli = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:amli.province target = location:amli.owner years = 25 } }
+			if = { limit = { location:arboga = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:arboga.province target = location:arboga.owner years = 25 } }
+			if = { limit = { location:ars = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ars.province target = location:ars.owner years = 25 } }
+			if = { limit = { location:asbo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:asbo.province target = location:asbo.owner years = 25 } }
+			if = { limit = { location:assens = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:assens.province target = location:assens.owner years = 25 } }
+			if = { limit = { location:aurland = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:aurland.province target = location:aurland.owner years = 25 } }
+			if = { limit = { location:avesta = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:avesta.province target = location:avesta.owner years = 25 } }
+			if = { limit = { location:bardodalen = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bardodalen.province target = location:bardodalen.owner years = 25 } }
+			if = { limit = { location:bergen = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bergen.province target = location:bergen.owner years = 25 } }
+			if = { limit = { location:beryozovskoye = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:beryozovskoye.province target = location:beryozovskoye.owner years = 25 } }
+			if = { limit = { location:birkala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:birkala.province target = location:birkala.owner years = 25 } }
+			if = { limit = { location:birndal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:birndal.province target = location:birndal.owner years = 25 } }
+			if = { limit = { location:bjorneborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bjorneborg.province target = location:bjorneborg.owner years = 25 } }
+			if = { limit = { location:bodebyn = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bodebyn.province target = location:bodebyn.owner years = 25 } }
+			if = { limit = { location:bodo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bodo.province target = location:bodo.owner years = 25 } }
+			if = { limit = { location:bogesund = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bogesund.province target = location:bogesund.owner years = 25 } }
+			if = { limit = { location:bolling = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bolling.province target = location:bolling.owner years = 25 } }
+			if = { limit = { location:borg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:borg.province target = location:borg.owner years = 25 } }
+			if = { limit = { location:borgund = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:borgund.province target = location:borgund.owner years = 25 } }
+			if = { limit = { location:bragernes = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bragernes.province target = location:bragernes.owner years = 25 } }
+			if = { limit = { location:brahestad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:brahestad.province target = location:brahestad.owner years = 25 } }
+			if = { limit = { location:branna = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:branna.province target = location:branna.owner years = 25 } }
+			if = { limit = { location:bregne = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bregne.province target = location:bregne.owner years = 25 } }
+			if = { limit = { location:bygdea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bygdea.province target = location:bygdea.owner years = 25 } }
+			if = { limit = { location:byske = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:byske.province target = location:byske.owner years = 25 } }
+			if = { limit = { location:dalaborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:dalaborg.province target = location:dalaborg.owner years = 25 } }
+			if = { limit = { location:eid = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:eid.province target = location:eid.owner years = 25 } }
+			if = { limit = { location:eidfjord = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:eidfjord.province target = location:eidfjord.owner years = 25 } }
+			if = { limit = { location:eidsvoll = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:eidsvoll.province target = location:eidsvoll.owner years = 25 } }
+			if = { limit = { location:ekenas = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ekenas.province target = location:ekenas.owner years = 25 } }
+			if = { limit = { location:ekholm = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ekholm.province target = location:ekholm.owner years = 25 } }
+			if = { limit = { location:elimaki = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:elimaki.province target = location:elimaki.owner years = 25 } }
+			if = { limit = { location:enkoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:enkoping.province target = location:enkoping.owner years = 25 } }
+			if = { limit = { location:falkoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:falkoping.province target = location:falkoping.owner years = 25 } }
+			if = { limit = { location:falster = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:falster.province target = location:falster.owner years = 25 } }
+			if = { limit = { location:falun = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:falun.province target = location:falun.owner years = 25 } }
+			if = { limit = { location:fana = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:fana.province target = location:fana.owner years = 25 } }
+			if = { limit = { location:farnebo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:farnebo.province target = location:farnebo.owner years = 25 } }
+			if = { limit = { location:flekkefjord = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:flekkefjord.province target = location:flekkefjord.owner years = 25 } }
+			if = { limit = { location:flensburg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:flensburg.province target = location:flensburg.owner years = 25 } }
+			if = { limit = { location:flesberg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:flesberg.province target = location:flesberg.owner years = 25 } }
+			if = { limit = { location:forssa = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:forssa.province target = location:forssa.owner years = 25 } }
+			if = { limit = { location:fosna = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:fosna.province target = location:fosna.owner years = 25 } }
+			if = { limit = { location:gefle = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:gefle.province target = location:gefle.owner years = 25 } }
+			if = { limit = { location:gellivaara = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:gellivaara.province target = location:gellivaara.owner years = 25 } }
+			if = { limit = { location:gildeskal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:gildeskal.province target = location:gildeskal.owner years = 25 } }
+			if = { limit = { location:gillberg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:gillberg.province target = location:gillberg.owner years = 25 } }
+			if = { limit = { location:gladsax = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:gladsax.province target = location:gladsax.owner years = 25 } }
+			if = { limit = { location:goksholm = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:goksholm.province target = location:goksholm.owner years = 25 } }
+			if = { limit = { location:grange = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:grange.province target = location:grange.owner years = 25 } }
+			if = { limit = { location:gratesk = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:gratesk.province target = location:gratesk.owner years = 25 } }
+			if = { limit = { location:grenland = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:grenland.province target = location:grenland.owner years = 25 } }
+			if = { limit = { location:grindsted = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:grindsted.province target = location:grindsted.owner years = 25 } }
+			if = { limit = { location:grundsunda = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:grundsunda.province target = location:grundsunda.owner years = 25 } }
+			if = { limit = { location:grythyttan = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:grythyttan.province target = location:grythyttan.owner years = 25 } }
+			if = { limit = { location:haderslev = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:haderslev.province target = location:haderslev.owner years = 25 } }
+			if = { limit = { location:halden = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:halden.province target = location:halden.owner years = 25 } }
+			if = { limit = { location:hallingdal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hallingdal.province target = location:hallingdal.owner years = 25 } }
+			if = { limit = { location:halmstad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:halmstad.province target = location:halmstad.owner years = 25 } }
+			if = { limit = { location:hamar = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hamar.province target = location:hamar.owner years = 25 } }
+			if = { limit = { location:hamaroy = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hamaroy.province target = location:hamaroy.owner years = 25 } }
+			if = { limit = { location:hamrange = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hamrange.province target = location:hamrange.owner years = 25 } }
+			if = { limit = { location:handbord = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:handbord.province target = location:handbord.owner years = 25 } }
+			if = { limit = { location:hapsal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hapsal.province target = location:hapsal.owner years = 25 } }
+			if = { limit = { location:harnosand = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:harnosand.province target = location:harnosand.owner years = 25 } }
+			if = { limit = { location:haugalandet = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:haugalandet.province target = location:haugalandet.owner years = 25 } }
+			if = { limit = { location:heby = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:heby.province target = location:heby.owner years = 25 } }
+			if = { limit = { location:hedemora = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hedemora.province target = location:hedemora.owner years = 25 } }
+			if = { limit = { location:hedesunda = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hedesunda.province target = location:hedesunda.owner years = 25 } }
+			if = { limit = { location:heinjoki = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:heinjoki.province target = location:heinjoki.owner years = 25 } }
+			if = { limit = { location:heinola = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:heinola.province target = location:heinola.owner years = 25 } }
+			if = { limit = { location:helsingborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:helsingborg.province target = location:helsingborg.owner years = 25 } }
+			if = { limit = { location:helsinge = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:helsinge.province target = location:helsinge.owner years = 25 } }
+			if = { limit = { location:helsingor = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:helsingor.province target = location:helsingor.owner years = 25 } }
+			if = { limit = { location:hienatiemi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hienatiemi.province target = location:hienatiemi.owner years = 25 } }
+			if = { limit = { location:hjo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hjo.province target = location:hjo.owner years = 25 } }
+			if = { limit = { location:hjorring = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hjorring.province target = location:hjorring.owner years = 25 } }
+			if = { limit = { location:hollola = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hollola.province target = location:hollola.owner years = 25 } }
+			if = { limit = { location:holstebro_lundenes = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:holstebro_lundenes.province target = location:holstebro_lundenes.owner years = 25 } }
+			if = { limit = { location:hornborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hornborg.province target = location:hornborg.owner years = 25 } }
+			if = { limit = { location:hudiksvall = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hudiksvall.province target = location:hudiksvall.owner years = 25 } }
+			if = { limit = { location:husum = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:husum.province target = location:husum.owner years = 25 } }
+			if = { limit = { location:hvittis = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hvittis.province target = location:hvittis.owner years = 25 } }
+			if = { limit = { location:ikalis = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ikalis.province target = location:ikalis.owner years = 25 } }
+			if = { limit = { location:itis = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:itis.province target = location:itis.owner years = 25 } }
+			if = { limit = { location:jaeren = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:jaeren.province target = location:jaeren.owner years = 25 } }
+			if = { limit = { location:jamsa = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:jamsa.province target = location:jamsa.owner years = 25 } }
+			if = { limit = { location:janakkala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:janakkala.province target = location:janakkala.owner years = 25 } }
+			if = { limit = { location:jaskis = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:jaskis.province target = location:jaskis.owner years = 25 } }
+			if = { limit = { location:joensuu = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:joensuu.province target = location:joensuu.owner years = 25 } }
+			if = { limit = { location:jonkoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:jonkoping.province target = location:jonkoping.owner years = 25 } }
+			if = { limit = { location:joroinen = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:joroinen.province target = location:joroinen.owner years = 25 } }
+			if = { limit = { location:juckasjarvi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:juckasjarvi.province target = location:juckasjarvi.owner years = 25 } }
+			if = { limit = { location:jyvaskyla = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:jyvaskyla.province target = location:jyvaskyla.owner years = 25 } }
+			if = { limit = { location:kaina = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kaina.province target = location:kaina.owner years = 25 } }
+			if = { limit = { location:kalmar = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kalmar.province target = location:kalmar.owner years = 25 } }
+			if = { limit = { location:kalo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kalo.province target = location:kalo.owner years = 25 } }
+			if = { limit = { location:kalundborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kalundborg.province target = location:kalundborg.owner years = 25 } }
+			if = { limit = { location:kangasniemi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kangasniemi.province target = location:kangasniemi.owner years = 25 } }
+			if = { limit = { location:karleby = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:karleby.province target = location:karleby.owner years = 25 } }
+			if = { limit = { location:kaustby = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kaustby.province target = location:kaustby.owner years = 25 } }
+			if = { limit = { location:kiemi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kiemi.province target = location:kiemi.owner years = 25 } }
+			if = { limit = { location:kinda = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kinda.province target = location:kinda.owner years = 25 } }
+			if = { limit = { location:kobenhavn = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kobenhavn.province target = location:kobenhavn.owner years = 25 } }
+			if = { limit = { location:kolding = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kolding.province target = location:kolding.owner years = 25 } }
+			if = { limit = { location:kolmarden = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kolmarden.province target = location:kolmarden.owner years = 25 } }
+			if = { limit = { location:konevets = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:konevets.province target = location:konevets.owner years = 25 } }
+			if = { limit = { location:konga = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:konga.province target = location:konga.owner years = 25 } }
+			if = { limit = { location:konghalla = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:konghalla.province target = location:konghalla.owner years = 25 } }
+			if = { limit = { location:kongsberg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kongsberg.province target = location:kongsberg.owner years = 25 } }
+			if = { limit = { location:kongsvinger = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kongsvinger.province target = location:kongsvinger.owner years = 25 } }
+			if = { limit = { location:koppo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:koppo.province target = location:koppo.owner years = 25 } }
+			if = { limit = { location:korela = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:korela.province target = location:korela.owner years = 25 } }
+			if = { limit = { location:korpilombo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:korpilombo.province target = location:korpilombo.owner years = 25 } }
+			if = { limit = { location:korsholm = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:korsholm.province target = location:korsholm.owner years = 25 } }
+			if = { limit = { location:kuivaniemi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kuivaniemi.province target = location:kuivaniemi.owner years = 25 } }
+			if = { limit = { location:kungsbacka = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kungsbacka.province target = location:kungsbacka.owner years = 25 } }
+			if = { limit = { location:kurkijoki = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kurkijoki.province target = location:kurkijoki.owner years = 25 } }
+			if = { limit = { location:kvinnherad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kvinnherad.province target = location:kvinnherad.owner years = 25 } }
+			if = { limit = { location:kymi_fi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kymi_fi.province target = location:kymi_fi.owner years = 25 } }
+			if = { limit = { location:kyyrola = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kyyrola.province target = location:kyyrola.owner years = 25 } }
+			if = { limit = { location:laerdal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:laerdal.province target = location:laerdal.owner years = 25 } }
+			if = { limit = { location:laholm = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:laholm.province target = location:laholm.owner years = 25 } }
+			if = { limit = { location:lappo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lappo.province target = location:lappo.owner years = 25 } }
+			if = { limit = { location:laukas = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:laukas.province target = location:laukas.owner years = 25 } }
+			if = { limit = { location:lidkoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lidkoping.province target = location:lidkoping.owner years = 25 } }
+			if = { limit = { location:liljendal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:liljendal.province target = location:liljendal.owner years = 25 } }
+			if = { limit = { location:linde = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:linde.province target = location:linde.owner years = 25 } }
+			if = { limit = { location:lindesnes = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lindesnes.province target = location:lindesnes.owner years = 25 } }
+			if = { limit = { location:linkoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:linkoping.province target = location:linkoping.owner years = 25 } }
+			if = { limit = { location:ljungby = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ljungby.province target = location:ljungby.owner years = 25 } }
+			if = { limit = { location:lodose = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lodose.province target = location:lodose.owner years = 25 } }
+			if = { limit = { location:lohja = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lohja.province target = location:lohja.owner years = 25 } }
+			if = { limit = { location:lulea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lulea.province target = location:lulea.owner years = 25 } }
+			if = { limit = { location:lund = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lund.province target = location:lund.owner years = 25 } }
+			if = { limit = { location:lycksele = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lycksele.province target = location:lycksele.owner years = 25 } }
+			if = { limit = { location:malmo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:malmo.province target = location:malmo.owner years = 25 } }
+			if = { limit = { location:mikkeli = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:mikkeli.province target = location:mikkeli.owner years = 25 } }
+			if = { limit = { location:molde = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:molde.province target = location:molde.owner years = 25 } }
+			if = { limit = { location:moss = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:moss.province target = location:moss.owner years = 25 } }
+			if = { limit = { location:moster = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:moster.province target = location:moster.owner years = 25 } }
+			if = { limit = { location:namdal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:namdal.province target = location:namdal.owner years = 25 } }
+			if = { limit = { location:nas = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:nas.province target = location:nas.owner years = 25 } }
+			if = { limit = { location:navskov = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:navskov.province target = location:navskov.owner years = 25 } }
+			if = { limit = { location:nikkaluokta = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:nikkaluokta.province target = location:nikkaluokta.owner years = 25 } }
+			if = { limit = { location:nora = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:nora.province target = location:nora.owner years = 25 } }
+			if = { limit = { location:nordhordland = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:nordhordland.province target = location:nordhordland.owner years = 25 } }
+			if = { limit = { location:nordmark = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:nordmark.province target = location:nordmark.owner years = 25 } }
+			if = { limit = { location:norrkoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:norrkoping.province target = location:norrkoping.owner years = 25 } }
+			if = { limit = { location:norrtalje = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:norrtalje.province target = location:norrtalje.owner years = 25 } }
+			if = { limit = { location:numedal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:numedal.province target = location:numedal.owner years = 25 } }
+			if = { limit = { location:nykoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:nykoping.province target = location:nykoping.owner years = 25 } }
+			if = { limit = { location:nystad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:nystad.province target = location:nystad.owner years = 25 } }
+			if = { limit = { location:ockelbo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ockelbo.province target = location:ockelbo.owner years = 25 } }
+			if = { limit = { location:oddernes = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:oddernes.province target = location:oddernes.owner years = 25 } }
+			if = { limit = { location:odense = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:odense.province target = location:odense.owner years = 25 } }
+			if = { limit = { location:ofoti = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ofoti.province target = location:ofoti.owner years = 25 } }
+			if = { limit = { location:oland = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:oland.province target = location:oland.owner years = 25 } }
+			if = { limit = { location:olofsborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:olofsborg.province target = location:olofsborg.owner years = 25 } }
+			if = { limit = { location:oppunda = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:oppunda.province target = location:oppunda.owner years = 25 } }
+			if = { limit = { location:orebro = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:orebro.province target = location:orebro.owner years = 25 } }
+			if = { limit = { location:orivesi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:orivesi.province target = location:orivesi.owner years = 25 } }
+			if = { limit = { location:orkdal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:orkdal.province target = location:orkdal.owner years = 25 } }
+			if = { limit = { location:orland = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:orland.province target = location:orland.owner years = 25 } }
+			if = { limit = { location:osby = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:osby.province target = location:osby.owner years = 25 } }
+			if = { limit = { location:oslo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:oslo.province target = location:oslo.owner years = 25 } }
+			if = { limit = { location:otredal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:otredal.province target = location:otredal.owner years = 25 } }
+			if = { limit = { location:oyestad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:oyestad.province target = location:oyestad.owner years = 25 } }
+			if = { limit = { location:padise = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:padise.province target = location:padise.owner years = 25 } }
+			if = { limit = { location:pajala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:pajala.province target = location:pajala.owner years = 25 } }
+			if = { limit = { location:pedersore = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:pedersore.province target = location:pedersore.owner years = 25 } }
+			if = { limit = { location:pitea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:pitea.province target = location:pitea.owner years = 25 } }
+			if = { limit = { location:porjus = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:porjus.province target = location:porjus.owner years = 25 } }
+			if = { limit = { location:porvoo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:porvoo.province target = location:porvoo.owner years = 25 } }
+			if = { limit = { location:poytis = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:poytis.province target = location:poytis.owner years = 25 } }
+			if = { limit = { location:pudasjarvi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:pudasjarvi.province target = location:pudasjarvi.owner years = 25 } }
+			if = { limit = { location:randers = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:randers.province target = location:randers.owner years = 25 } }
+			if = { limit = { location:ranea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ranea.province target = location:ranea.owner years = 25 } }
+			if = { limit = { location:ranua = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ranua.province target = location:ranua.owner years = 25 } }
+			if = { limit = { location:rauma = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:rauma.province target = location:rauma.owner years = 25 } }
+			if = { limit = { location:raumo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:raumo.province target = location:raumo.owner years = 25 } }
+			if = { limit = { location:ribe = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ribe.province target = location:ribe.owner years = 25 } }
+			if = { limit = { location:ringerike = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ringerike.province target = location:ringerike.owner years = 25 } }
+			if = { limit = { location:ringkobing = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ringkobing.province target = location:ringkobing.owner years = 25 } }
+			if = { limit = { location:ringsted = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ringsted.province target = location:ringsted.owner years = 25 } }
+			if = { limit = { location:riseberga = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:riseberga.province target = location:riseberga.owner years = 25 } }
+			if = { limit = { location:ristiina = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ristiina.province target = location:ristiina.owner years = 25 } }
+			if = { limit = { location:ronneby = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ronneby.province target = location:ronneby.owner years = 25 } }
+			if = { limit = { location:roskilde = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:roskilde.province target = location:roskilde.owner years = 25 } }
+			if = { limit = { location:rovaniemi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:rovaniemi.province target = location:rovaniemi.owner years = 25 } }
+			if = { limit = { location:ryfylke = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ryfylke.province target = location:ryfylke.owner years = 25 } }
+			if = { limit = { location:saarijarvi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:saarijarvi.province target = location:saarijarvi.owner years = 25 } }
+			if = { limit = { location:sala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sala.province target = location:sala.owner years = 25 } }
+			if = { limit = { location:sande = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sande.province target = location:sande.owner years = 25 } }
+			if = { limit = { location:sarek = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sarek.province target = location:sarek.owner years = 25 } }
+			if = { limit = { location:sastamala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sastamala.province target = location:sastamala.owner years = 25 } }
+			if = { limit = { location:sastmola = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sastmola.province target = location:sastmola.owner years = 25 } }
+			if = { limit = { location:sauvo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sauvo.province target = location:sauvo.owner years = 25 } }
+			if = { limit = { location:savonranta = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:savonranta.province target = location:savonranta.owner years = 25 } }
+			if = { limit = { location:selanger = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:selanger.province target = location:selanger.owner years = 25 } }
+			if = { limit = { location:sevede = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sevede.province target = location:sevede.owner years = 25 } }
+			if = { limit = { location:sigdal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sigdal.province target = location:sigdal.owner years = 25 } }
+			if = { limit = { location:siikalatva = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:siikalatva.province target = location:siikalatva.owner years = 25 } }
+			if = { limit = { location:silkeborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:silkeborg.province target = location:silkeborg.owner years = 25 } }
+			if = { limit = { location:simo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:simo.province target = location:simo.owner years = 25 } }
+			if = { limit = { location:sirudal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sirudal.province target = location:sirudal.owner years = 25 } }
+			if = { limit = { location:sjalevad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sjalevad.province target = location:sjalevad.owner years = 25 } }
+			if = { limit = { location:sjundea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sjundea.province target = location:sjundea.owner years = 25 } }
+			if = { limit = { location:skagen = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:skagen.province target = location:skagen.owner years = 25 } }
+			if = { limit = { location:skara = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:skara.province target = location:skara.owner years = 25 } }
+			if = { limit = { location:skelleftea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:skelleftea.province target = location:skelleftea.owner years = 25 } }
+			if = { limit = { location:skene = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:skene.province target = location:skene.owner years = 25 } }
+			if = { limit = { location:ski = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ski.province target = location:ski.owner years = 25 } }
+			if = { limit = { location:skien = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:skien.province target = location:skien.owner years = 25 } }
+			if = { limit = { location:skinskatteberg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:skinskatteberg.province target = location:skinskatteberg.owner years = 25 } }
+			if = { limit = { location:slagelse = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:slagelse.province target = location:slagelse.owner years = 25 } }
+			if = { limit = { location:slesvig = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:slesvig.province target = location:slesvig.owner years = 25 } }
+			if = { limit = { location:socksjock = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:socksjock.province target = location:socksjock.owner years = 25 } }
+			if = { limit = { location:soderala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:soderala.province target = location:soderala.owner years = 25 } }
+			if = { limit = { location:soderbarke = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:soderbarke.province target = location:soderbarke.owner years = 25 } }
+			if = { limit = { location:soderkoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:soderkoping.province target = location:soderkoping.owner years = 25 } }
+			if = { limit = { location:sodertalje = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sodertalje.province target = location:sodertalje.owner years = 25 } }
+			if = { limit = { location:sogndal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sogndal.province target = location:sogndal.owner years = 25 } }
+			if = { limit = { location:solatunum = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:solatunum.province target = location:solatunum.owner years = 25 } }
+			if = { limit = { location:solvesborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:solvesborg.province target = location:solvesborg.owner years = 25 } }
+			if = { limit = { location:sondeled = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sondeled.province target = location:sondeled.owner years = 25 } }
+			if = { limit = { location:sordavala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sordavala.province target = location:sordavala.owner years = 25 } }
+			if = { limit = { location:stavanger = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:stavanger.province target = location:stavanger.owner years = 25 } }
+			if = { limit = { location:steigen = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:steigen.province target = location:steigen.owner years = 25 } }
+			if = { limit = { location:stockholm = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:stockholm.province target = location:stockholm.owner years = 25 } }
+			if = { limit = { location:stora_tuna = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:stora_tuna.province target = location:stora_tuna.owner years = 25 } }
+			if = { limit = { location:stordal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:stordal.province target = location:stordal.owner years = 25 } }
+			if = { limit = { location:storkyro = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:storkyro.province target = location:storkyro.owner years = 25 } }
+			if = { limit = { location:strangnas = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:strangnas.province target = location:strangnas.owner years = 25 } }
+			if = { limit = { location:stromstad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:stromstad.province target = location:stromstad.owner years = 25 } }
+			if = { limit = { location:stryn = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:stryn.province target = location:stryn.owner years = 25 } }
+			if = { limit = { location:suledal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:suledal.province target = location:suledal.owner years = 25 } }
+			if = { limit = { location:sunndal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sunndal.province target = location:sunndal.owner years = 25 } }
+			if = { limit = { location:sunnfjord = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sunnfjord.province target = location:sunnfjord.owner years = 25 } }
+			if = { limit = { location:sunnmore = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sunnmore.province target = location:sunnmore.owner years = 25 } }
+			if = { limit = { location:svendborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:svendborg.province target = location:svendborg.owner years = 25 } }
+			if = { limit = { location:sysma = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sysma.province target = location:sysma.owner years = 25 } }
+			if = { limit = { location:tallinn = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tallinn.province target = location:tallinn.owner years = 25 } }
+			if = { limit = { location:tavastehus = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tavastehus.province target = location:tavastehus.owner years = 25 } }
+			if = { limit = { location:thisted = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:thisted.province target = location:thisted.owner years = 25 } }
+			if = { limit = { location:tierp = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tierp.province target = location:tierp.owner years = 25 } }
+			if = { limit = { location:tingvalla = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tingvalla.province target = location:tingvalla.owner years = 25 } }
+			if = { limit = { location:tiveden = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tiveden.province target = location:tiveden.owner years = 25 } }
+			if = { limit = { location:tjust = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tjust.province target = location:tjust.owner years = 25 } }
+			if = { limit = { location:tonder = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tonder.province target = location:tonder.owner years = 25 } }
+			if = { limit = { location:tonsberg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tonsberg.province target = location:tonsberg.owner years = 25 } }
+			if = { limit = { location:tornea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tornea.province target = location:tornea.owner years = 25 } }
+			if = { limit = { location:trogstad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:trogstad.province target = location:trogstad.owner years = 25 } }
+			if = { limit = { location:trollaborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:trollaborg.province target = location:trollaborg.owner years = 25 } }
+			if = { limit = { location:troms = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:troms.province target = location:troms.owner years = 25 } }
+			if = { limit = { location:trondenes = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:trondenes.province target = location:trondenes.owner years = 25 } }
+			if = { limit = { location:uddevalla = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:uddevalla.province target = location:uddevalla.owner years = 25 } }
+			if = { limit = { location:uleaborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:uleaborg.province target = location:uleaborg.owner years = 25 } }
+			if = { limit = { location:ullensvang = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ullensvang.province target = location:ullensvang.owner years = 25 } }
+			if = { limit = { location:umea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:umea.province target = location:umea.owner years = 25 } }
+			if = { limit = { location:uppsala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:uppsala.province target = location:uppsala.owner years = 25 } }
+			if = { limit = { location:uppvidinge = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:uppvidinge.province target = location:uppvidinge.owner years = 25 } }
+			if = { limit = { location:utajarvi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:utajarvi.province target = location:utajarvi.owner years = 25 } }
+			if = { limit = { location:utlandet = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:utlandet.province target = location:utlandet.owner years = 25 } }
+			if = { limit = { location:vadstena = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vadstena.province target = location:vadstena.owner years = 25 } }
+			if = { limit = { location:valkeasaari = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:valkeasaari.province target = location:valkeasaari.owner years = 25 } }
+			if = { limit = { location:vallsjo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vallsjo.province target = location:vallsjo.owner years = 25 } }
+			if = { limit = { location:varberg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:varberg.province target = location:varberg.owner years = 25 } }
+			if = { limit = { location:vardal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vardal.province target = location:vardal.owner years = 25 } }
+			if = { limit = { location:varde = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:varde.province target = location:varde.owner years = 25 } }
+			if = { limit = { location:varnum = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:varnum.province target = location:varnum.owner years = 25 } }
+			if = { limit = { location:vartofta = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vartofta.province target = location:vartofta.owner years = 25 } }
+			if = { limit = { location:vartsila = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vartsila.province target = location:vartsila.owner years = 25 } }
+			if = { limit = { location:vasteras = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vasteras.province target = location:vasteras.owner years = 25 } }
+			if = { limit = { location:vaxjo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vaxjo.province target = location:vaxjo.owner years = 25 } }
+			if = { limit = { location:veckelax = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:veckelax.province target = location:veckelax.owner years = 25 } }
+			if = { limit = { location:vedbo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vedbo.province target = location:vedbo.owner years = 25 } }
+			if = { limit = { location:vederlax = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vederlax.province target = location:vederlax.owner years = 25 } }
+			if = { limit = { location:vetlanda = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vetlanda.province target = location:vetlanda.owner years = 25 } }
+			if = { limit = { location:viborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:viborg.province target = location:viborg.owner years = 25 } }
+			if = { limit = { location:viitasaari = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:viitasaari.province target = location:viitasaari.owner years = 25 } }
+			if = { limit = { location:vik = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vik.province target = location:vik.owner years = 25 } }
+			if = { limit = { location:vindeln = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vindeln.province target = location:vindeln.owner years = 25 } }
+			if = { limit = { location:vora = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vora.province target = location:vora.owner years = 25 } }
+			if = { limit = { location:vordingborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vordingborg.province target = location:vordingborg.owner years = 25 } }
+			if = { limit = { location:voss = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:voss.province target = location:voss.owner years = 25 } }
+			if = { limit = { location:vyborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vyborg.province target = location:vyborg.owner years = 25 } }
+			if = { limit = { location:waestbo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:waestbo.province target = location:waestbo.owner years = 25 } }
+		}
+	}
+}
+# Midgard is the main human Swedish regional Norse formable for Bronze Era.
+# Total locations: 60. Required at 80%: 48.
+
+MIDGARD_f = {
+	level = 3
+	required_locations_fraction = 0.80
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 850
+
+	potential = {
+		NOT = { tag = MIDGARD }
+		NOT = { tag = ASGARD }
+		NOT = { country_exists = c:MIDGARD }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:norse
+		NOT = { has_variable = bronze_formed_norse_regional_realm }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	name = MIDGARD
+	flag = MIDGARD
+	adjective = MIDGARD_ADJ
+	tag = MIDGARD
+	color = map_MIDGARD
+
+	locations = {
+		allingsas alvastra amal arboga avesta borg
+		dalaborg eidsvoll ekholm enkoping falkoping gefle
+		goksholm halden hamrange heby hedesunda hjo
+		hornborg hudiksvall jonkoping kinda kolmarden konghalla
+		kungsbacka lidkoping linkoping lodose moss nora
+		norrkoping norrtalje nykoping ockelbo oppunda orebro
+		riseberga sala selanger skara ski skinskatteberg
+		soderala soderkoping sodertalje stockholm strangnas stromstad
+		tierp tiveden tjust uddevalla uppsala utlandet
+		vadstena vardal varnum vartofta vasteras vedbo
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_norse_regional_realm value = 1 }
+		add_prestige = prestige_weak_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_midgard_folkland_order
+			years = -1
+			mode = add_and_extend
+		}
+		custom_tooltip = bronze_midgard_remaining_claims_tt
+		hidden_effect = {
+			if = { limit = { location:allingsas = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:allingsas.province target = location:allingsas.owner years = 25 } }
+			if = { limit = { location:alvastra = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:alvastra.province target = location:alvastra.owner years = 25 } }
+			if = { limit = { location:amal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:amal.province target = location:amal.owner years = 25 } }
+			if = { limit = { location:arboga = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:arboga.province target = location:arboga.owner years = 25 } }
+			if = { limit = { location:avesta = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:avesta.province target = location:avesta.owner years = 25 } }
+			if = { limit = { location:borg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:borg.province target = location:borg.owner years = 25 } }
+			if = { limit = { location:dalaborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:dalaborg.province target = location:dalaborg.owner years = 25 } }
+			if = { limit = { location:eidsvoll = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:eidsvoll.province target = location:eidsvoll.owner years = 25 } }
+			if = { limit = { location:ekholm = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ekholm.province target = location:ekholm.owner years = 25 } }
+			if = { limit = { location:enkoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:enkoping.province target = location:enkoping.owner years = 25 } }
+			if = { limit = { location:falkoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:falkoping.province target = location:falkoping.owner years = 25 } }
+			if = { limit = { location:gefle = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:gefle.province target = location:gefle.owner years = 25 } }
+			if = { limit = { location:goksholm = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:goksholm.province target = location:goksholm.owner years = 25 } }
+			if = { limit = { location:halden = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:halden.province target = location:halden.owner years = 25 } }
+			if = { limit = { location:hamrange = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hamrange.province target = location:hamrange.owner years = 25 } }
+			if = { limit = { location:heby = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:heby.province target = location:heby.owner years = 25 } }
+			if = { limit = { location:hedesunda = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hedesunda.province target = location:hedesunda.owner years = 25 } }
+			if = { limit = { location:hjo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hjo.province target = location:hjo.owner years = 25 } }
+			if = { limit = { location:hornborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hornborg.province target = location:hornborg.owner years = 25 } }
+			if = { limit = { location:hudiksvall = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hudiksvall.province target = location:hudiksvall.owner years = 25 } }
+			if = { limit = { location:jonkoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:jonkoping.province target = location:jonkoping.owner years = 25 } }
+			if = { limit = { location:kinda = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kinda.province target = location:kinda.owner years = 25 } }
+			if = { limit = { location:kolmarden = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kolmarden.province target = location:kolmarden.owner years = 25 } }
+			if = { limit = { location:konghalla = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:konghalla.province target = location:konghalla.owner years = 25 } }
+			if = { limit = { location:kungsbacka = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kungsbacka.province target = location:kungsbacka.owner years = 25 } }
+			if = { limit = { location:lidkoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lidkoping.province target = location:lidkoping.owner years = 25 } }
+			if = { limit = { location:linkoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:linkoping.province target = location:linkoping.owner years = 25 } }
+			if = { limit = { location:lodose = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lodose.province target = location:lodose.owner years = 25 } }
+			if = { limit = { location:moss = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:moss.province target = location:moss.owner years = 25 } }
+			if = { limit = { location:nora = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:nora.province target = location:nora.owner years = 25 } }
+			if = { limit = { location:norrkoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:norrkoping.province target = location:norrkoping.owner years = 25 } }
+			if = { limit = { location:norrtalje = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:norrtalje.province target = location:norrtalje.owner years = 25 } }
+			if = { limit = { location:nykoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:nykoping.province target = location:nykoping.owner years = 25 } }
+			if = { limit = { location:ockelbo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ockelbo.province target = location:ockelbo.owner years = 25 } }
+			if = { limit = { location:oppunda = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:oppunda.province target = location:oppunda.owner years = 25 } }
+			if = { limit = { location:orebro = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:orebro.province target = location:orebro.owner years = 25 } }
+			if = { limit = { location:riseberga = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:riseberga.province target = location:riseberga.owner years = 25 } }
+			if = { limit = { location:sala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sala.province target = location:sala.owner years = 25 } }
+			if = { limit = { location:selanger = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:selanger.province target = location:selanger.owner years = 25 } }
+			if = { limit = { location:skara = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:skara.province target = location:skara.owner years = 25 } }
+			if = { limit = { location:ski = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ski.province target = location:ski.owner years = 25 } }
+			if = { limit = { location:skinskatteberg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:skinskatteberg.province target = location:skinskatteberg.owner years = 25 } }
+			if = { limit = { location:soderala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:soderala.province target = location:soderala.owner years = 25 } }
+			if = { limit = { location:soderkoping = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:soderkoping.province target = location:soderkoping.owner years = 25 } }
+			if = { limit = { location:sodertalje = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sodertalje.province target = location:sodertalje.owner years = 25 } }
+			if = { limit = { location:stockholm = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:stockholm.province target = location:stockholm.owner years = 25 } }
+			if = { limit = { location:strangnas = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:strangnas.province target = location:strangnas.owner years = 25 } }
+			if = { limit = { location:stromstad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:stromstad.province target = location:stromstad.owner years = 25 } }
+			if = { limit = { location:tierp = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tierp.province target = location:tierp.owner years = 25 } }
+			if = { limit = { location:tiveden = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tiveden.province target = location:tiveden.owner years = 25 } }
+			if = { limit = { location:tjust = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tjust.province target = location:tjust.owner years = 25 } }
+			if = { limit = { location:uddevalla = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:uddevalla.province target = location:uddevalla.owner years = 25 } }
+			if = { limit = { location:uppsala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:uppsala.province target = location:uppsala.owner years = 25 } }
+			if = { limit = { location:utlandet = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:utlandet.province target = location:utlandet.owner years = 25 } }
+			if = { limit = { location:vadstena = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vadstena.province target = location:vadstena.owner years = 25 } }
+			if = { limit = { location:vardal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vardal.province target = location:vardal.owner years = 25 } }
+			if = { limit = { location:varnum = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:varnum.province target = location:varnum.owner years = 25 } }
+			if = { limit = { location:vartofta = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vartofta.province target = location:vartofta.owner years = 25 } }
+			if = { limit = { location:vasteras = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vasteras.province target = location:vasteras.owner years = 25 } }
+			if = { limit = { location:vedbo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vedbo.province target = location:vedbo.owner years = 25 } }
+		}
+	}
+}
+# Jotunheim is the mountain-valley human Norwegian regional Norse formable for Bronze Era.
+# Total locations: 64. Required at 70%: 45.
+
+JOTUNHEIM_f = {
+	level = 3
+	required_locations_fraction = 0.70
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 845
+
+	potential = {
+		NOT = { tag = JOTUNHEIM }
+		NOT = { tag = ASGARD }
+		NOT = { country_exists = c:JOTUNHEIM }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:norse
+		NOT = { has_variable = bronze_formed_norse_regional_realm }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	name = JOTUNHEIM
+	flag = JOTUNHEIM
+	adjective = JOTUNHEIM_ADJ
+	tag = JOTUNHEIM
+	color = map_JOTUNHEIM
+
+	locations = {
+		alvdal amli amot aurland bergen borgund
+		bragernes eid eidfjord fana flekkefjord flesberg
+		fosna grenland hallingdal haugalandet holtalen imsdalen
+		jaeren kongsberg kvinnherad laerdal lillehammer lindesnes
+		meraker molde moster nidaros nordhordland numedal
+		oddernes oppdal orkdal oslo otredal otta
+		oyestad rauma ringerike roros ryfylke sande
+		sigdal sirudal skaun skien sogndal sondeled
+		stavanger stjordal stordal storen stryn suledal
+		sunndal sunnfjord sunnmore tofte tonsberg tynset
+		ullensvang valdres vik voss
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_norse_regional_realm value = 1 }
+		add_prestige = prestige_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_jotunheim_mountain_clans
+			years = -1
+			mode = add_and_extend
+		}
+		custom_tooltip = bronze_jotunheim_remaining_claims_tt
+		hidden_effect = {
+			if = { limit = { location:alvdal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:alvdal.province target = location:alvdal.owner years = 25 } }
+			if = { limit = { location:amli = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:amli.province target = location:amli.owner years = 25 } }
+			if = { limit = { location:amot = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:amot.province target = location:amot.owner years = 25 } }
+			if = { limit = { location:aurland = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:aurland.province target = location:aurland.owner years = 25 } }
+			if = { limit = { location:bergen = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bergen.province target = location:bergen.owner years = 25 } }
+			if = { limit = { location:borgund = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:borgund.province target = location:borgund.owner years = 25 } }
+			if = { limit = { location:bragernes = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bragernes.province target = location:bragernes.owner years = 25 } }
+			if = { limit = { location:eid = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:eid.province target = location:eid.owner years = 25 } }
+			if = { limit = { location:eidfjord = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:eidfjord.province target = location:eidfjord.owner years = 25 } }
+			if = { limit = { location:fana = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:fana.province target = location:fana.owner years = 25 } }
+			if = { limit = { location:flekkefjord = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:flekkefjord.province target = location:flekkefjord.owner years = 25 } }
+			if = { limit = { location:flesberg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:flesberg.province target = location:flesberg.owner years = 25 } }
+			if = { limit = { location:fosna = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:fosna.province target = location:fosna.owner years = 25 } }
+			if = { limit = { location:grenland = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:grenland.province target = location:grenland.owner years = 25 } }
+			if = { limit = { location:hallingdal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hallingdal.province target = location:hallingdal.owner years = 25 } }
+			if = { limit = { location:haugalandet = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:haugalandet.province target = location:haugalandet.owner years = 25 } }
+			if = { limit = { location:holtalen = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:holtalen.province target = location:holtalen.owner years = 25 } }
+			if = { limit = { location:imsdalen = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:imsdalen.province target = location:imsdalen.owner years = 25 } }
+			if = { limit = { location:jaeren = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:jaeren.province target = location:jaeren.owner years = 25 } }
+			if = { limit = { location:kongsberg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kongsberg.province target = location:kongsberg.owner years = 25 } }
+			if = { limit = { location:kvinnherad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kvinnherad.province target = location:kvinnherad.owner years = 25 } }
+			if = { limit = { location:laerdal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:laerdal.province target = location:laerdal.owner years = 25 } }
+			if = { limit = { location:lillehammer = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lillehammer.province target = location:lillehammer.owner years = 25 } }
+			if = { limit = { location:lindesnes = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lindesnes.province target = location:lindesnes.owner years = 25 } }
+			if = { limit = { location:meraker = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:meraker.province target = location:meraker.owner years = 25 } }
+			if = { limit = { location:molde = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:molde.province target = location:molde.owner years = 25 } }
+			if = { limit = { location:moster = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:moster.province target = location:moster.owner years = 25 } }
+			if = { limit = { location:nidaros = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:nidaros.province target = location:nidaros.owner years = 25 } }
+			if = { limit = { location:nordhordland = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:nordhordland.province target = location:nordhordland.owner years = 25 } }
+			if = { limit = { location:numedal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:numedal.province target = location:numedal.owner years = 25 } }
+			if = { limit = { location:oddernes = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:oddernes.province target = location:oddernes.owner years = 25 } }
+			if = { limit = { location:oppdal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:oppdal.province target = location:oppdal.owner years = 25 } }
+			if = { limit = { location:orkdal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:orkdal.province target = location:orkdal.owner years = 25 } }
+			if = { limit = { location:oslo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:oslo.province target = location:oslo.owner years = 25 } }
+			if = { limit = { location:otredal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:otredal.province target = location:otredal.owner years = 25 } }
+			if = { limit = { location:otta = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:otta.province target = location:otta.owner years = 25 } }
+			if = { limit = { location:oyestad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:oyestad.province target = location:oyestad.owner years = 25 } }
+			if = { limit = { location:rauma = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:rauma.province target = location:rauma.owner years = 25 } }
+			if = { limit = { location:ringerike = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ringerike.province target = location:ringerike.owner years = 25 } }
+			if = { limit = { location:roros = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:roros.province target = location:roros.owner years = 25 } }
+			if = { limit = { location:ryfylke = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ryfylke.province target = location:ryfylke.owner years = 25 } }
+			if = { limit = { location:sande = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sande.province target = location:sande.owner years = 25 } }
+			if = { limit = { location:sigdal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sigdal.province target = location:sigdal.owner years = 25 } }
+			if = { limit = { location:sirudal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sirudal.province target = location:sirudal.owner years = 25 } }
+			if = { limit = { location:skaun = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:skaun.province target = location:skaun.owner years = 25 } }
+			if = { limit = { location:skien = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:skien.province target = location:skien.owner years = 25 } }
+			if = { limit = { location:sogndal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sogndal.province target = location:sogndal.owner years = 25 } }
+			if = { limit = { location:sondeled = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sondeled.province target = location:sondeled.owner years = 25 } }
+			if = { limit = { location:stavanger = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:stavanger.province target = location:stavanger.owner years = 25 } }
+			if = { limit = { location:stjordal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:stjordal.province target = location:stjordal.owner years = 25 } }
+			if = { limit = { location:stordal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:stordal.province target = location:stordal.owner years = 25 } }
+			if = { limit = { location:storen = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:storen.province target = location:storen.owner years = 25 } }
+			if = { limit = { location:stryn = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:stryn.province target = location:stryn.owner years = 25 } }
+			if = { limit = { location:suledal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:suledal.province target = location:suledal.owner years = 25 } }
+			if = { limit = { location:sunndal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sunndal.province target = location:sunndal.owner years = 25 } }
+			if = { limit = { location:sunnfjord = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sunnfjord.province target = location:sunnfjord.owner years = 25 } }
+			if = { limit = { location:sunnmore = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sunnmore.province target = location:sunnmore.owner years = 25 } }
+			if = { limit = { location:tofte = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tofte.province target = location:tofte.owner years = 25 } }
+			if = { limit = { location:tonsberg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tonsberg.province target = location:tonsberg.owner years = 25 } }
+			if = { limit = { location:tynset = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tynset.province target = location:tynset.owner years = 25 } }
+			if = { limit = { location:ullensvang = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ullensvang.province target = location:ullensvang.owner years = 25 } }
+			if = { limit = { location:valdres = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:valdres.province target = location:valdres.owner years = 25 } }
+			if = { limit = { location:vik = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vik.province target = location:vik.owner years = 25 } }
+			if = { limit = { location:voss = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:voss.province target = location:voss.owner years = 25 } }
+		}
+	}
+}
+# Vanaheim is the rural human southern Nordic regional Norse formable for Bronze Era.
+# Total locations: 30. Required at 80%: 24.
+
+VANAHEIM_f = {
+	level = 3
+	required_locations_fraction = 0.80
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 840
+
+	potential = {
+		NOT = { tag = VANAHEIM }
+		NOT = { tag = ASGARD }
+		NOT = { country_exists = c:VANAHEIM }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:norse
+		NOT = { has_variable = bronze_formed_norse_regional_realm }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	name = VANAHEIM
+	flag = VANAHEIM
+	adjective = VANAHEIM_ADJ
+	tag = VANAHEIM
+	color = map_VANAHEIM
+
+	locations = {
+		albo asbo bogesund bregne gladsax halmstad
+		handbord helsingborg hoborg kalmar konga laholm
+		ljungby lund malmo oland osby ronneby
+		sevede skene slite solvesborg trollaborg uppvidinge
+		vallsjo varberg vaxjo vetlanda visby waestbo
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_norse_regional_realm value = 1 }
+		add_prestige = prestige_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_vanaheim_vanir_folklands
+			years = -1
+			mode = add_and_extend
+		}
+		custom_tooltip = bronze_vanaheim_remaining_claims_tt
+		hidden_effect = {
+			if = { limit = { location:albo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:albo.province target = location:albo.owner years = 25 } }
+			if = { limit = { location:asbo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:asbo.province target = location:asbo.owner years = 25 } }
+			if = { limit = { location:bogesund = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bogesund.province target = location:bogesund.owner years = 25 } }
+			if = { limit = { location:bregne = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bregne.province target = location:bregne.owner years = 25 } }
+			if = { limit = { location:gladsax = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:gladsax.province target = location:gladsax.owner years = 25 } }
+			if = { limit = { location:halmstad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:halmstad.province target = location:halmstad.owner years = 25 } }
+			if = { limit = { location:handbord = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:handbord.province target = location:handbord.owner years = 25 } }
+			if = { limit = { location:helsingborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:helsingborg.province target = location:helsingborg.owner years = 25 } }
+			if = { limit = { location:hoborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hoborg.province target = location:hoborg.owner years = 25 } }
+			if = { limit = { location:kalmar = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kalmar.province target = location:kalmar.owner years = 25 } }
+			if = { limit = { location:konga = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:konga.province target = location:konga.owner years = 25 } }
+			if = { limit = { location:laholm = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:laholm.province target = location:laholm.owner years = 25 } }
+			if = { limit = { location:ljungby = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ljungby.province target = location:ljungby.owner years = 25 } }
+			if = { limit = { location:lund = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lund.province target = location:lund.owner years = 25 } }
+			if = { limit = { location:malmo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:malmo.province target = location:malmo.owner years = 25 } }
+			if = { limit = { location:oland = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:oland.province target = location:oland.owner years = 25 } }
+			if = { limit = { location:osby = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:osby.province target = location:osby.owner years = 25 } }
+			if = { limit = { location:ronneby = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ronneby.province target = location:ronneby.owner years = 25 } }
+			if = { limit = { location:sevede = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sevede.province target = location:sevede.owner years = 25 } }
+			if = { limit = { location:skene = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:skene.province target = location:skene.owner years = 25 } }
+			if = { limit = { location:slite = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:slite.province target = location:slite.owner years = 25 } }
+			if = { limit = { location:solvesborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:solvesborg.province target = location:solvesborg.owner years = 25 } }
+			if = { limit = { location:trollaborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:trollaborg.province target = location:trollaborg.owner years = 25 } }
+			if = { limit = { location:uppvidinge = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:uppvidinge.province target = location:uppvidinge.owner years = 25 } }
+			if = { limit = { location:vallsjo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vallsjo.province target = location:vallsjo.owner years = 25 } }
+			if = { limit = { location:varberg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:varberg.province target = location:varberg.owner years = 25 } }
+			if = { limit = { location:vaxjo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vaxjo.province target = location:vaxjo.owner years = 25 } }
+			if = { limit = { location:vetlanda = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vetlanda.province target = location:vetlanda.owner years = 25 } }
+			if = { limit = { location:visby = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:visby.province target = location:visby.owner years = 25 } }
+			if = { limit = { location:waestbo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:waestbo.province target = location:waestbo.owner years = 25 } }
+		}
+	}
+}
+# Alfheim is the human Finnish and Finnic regional Norse formable for Bronze Era.
+# Total locations: 34. Required at 75%: 26.
+
+ALFHEIM_f = {
+	level = 3
+	required_locations_fraction = 0.75
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 835
+
+	potential = {
+		NOT = { tag = ALFHEIM }
+		NOT = { tag = ASGARD }
+		NOT = { country_exists = c:ALFHEIM }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:norse
+		NOT = { has_variable = bronze_formed_norse_regional_realm }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	name = ALFHEIM
+	flag = ALFHEIM
+	adjective = ALFHEIM_ADJ
+	tag = ALFHEIM
+	color = map_ALFHEIM
+
+	locations = {
+		abo birkala bjorneborg ekenas elimaki forssa
+		helsinge hollola hvittis ikalis itis jamsa
+		janakkala jyvaskyla koppo korsholm kymi_fi lappo
+		liljendal lohja nystad orivesi porvoo poytis
+		raumo sastamala sastmola sauvo sjundea storkyro
+		sysma veckelax vederlax vora
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_norse_regional_realm value = 1 }
+		add_prestige = prestige_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_alfheim_forest_folklands
+			years = -1
+			mode = add_and_extend
+		}
+		custom_tooltip = bronze_alfheim_remaining_claims_tt
+		hidden_effect = {
+			if = { limit = { location:abo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:abo.province target = location:abo.owner years = 25 } }
+			if = { limit = { location:birkala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:birkala.province target = location:birkala.owner years = 25 } }
+			if = { limit = { location:bjorneborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bjorneborg.province target = location:bjorneborg.owner years = 25 } }
+			if = { limit = { location:ekenas = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ekenas.province target = location:ekenas.owner years = 25 } }
+			if = { limit = { location:elimaki = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:elimaki.province target = location:elimaki.owner years = 25 } }
+			if = { limit = { location:forssa = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:forssa.province target = location:forssa.owner years = 25 } }
+			if = { limit = { location:helsinge = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:helsinge.province target = location:helsinge.owner years = 25 } }
+			if = { limit = { location:hollola = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hollola.province target = location:hollola.owner years = 25 } }
+			if = { limit = { location:hvittis = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hvittis.province target = location:hvittis.owner years = 25 } }
+			if = { limit = { location:ikalis = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ikalis.province target = location:ikalis.owner years = 25 } }
+			if = { limit = { location:itis = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:itis.province target = location:itis.owner years = 25 } }
+			if = { limit = { location:jamsa = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:jamsa.province target = location:jamsa.owner years = 25 } }
+			if = { limit = { location:janakkala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:janakkala.province target = location:janakkala.owner years = 25 } }
+			if = { limit = { location:jyvaskyla = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:jyvaskyla.province target = location:jyvaskyla.owner years = 25 } }
+			if = { limit = { location:koppo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:koppo.province target = location:koppo.owner years = 25 } }
+			if = { limit = { location:korsholm = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:korsholm.province target = location:korsholm.owner years = 25 } }
+			if = { limit = { location:kymi_fi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kymi_fi.province target = location:kymi_fi.owner years = 25 } }
+			if = { limit = { location:lappo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lappo.province target = location:lappo.owner years = 25 } }
+			if = { limit = { location:liljendal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:liljendal.province target = location:liljendal.owner years = 25 } }
+			if = { limit = { location:lohja = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lohja.province target = location:lohja.owner years = 25 } }
+			if = { limit = { location:nystad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:nystad.province target = location:nystad.owner years = 25 } }
+			if = { limit = { location:orivesi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:orivesi.province target = location:orivesi.owner years = 25 } }
+			if = { limit = { location:porvoo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:porvoo.province target = location:porvoo.owner years = 25 } }
+			if = { limit = { location:poytis = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:poytis.province target = location:poytis.owner years = 25 } }
+			if = { limit = { location:raumo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:raumo.province target = location:raumo.owner years = 25 } }
+			if = { limit = { location:sastamala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sastamala.province target = location:sastamala.owner years = 25 } }
+			if = { limit = { location:sastmola = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sastmola.province target = location:sastmola.owner years = 25 } }
+			if = { limit = { location:sauvo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sauvo.province target = location:sauvo.owner years = 25 } }
+			if = { limit = { location:sjundea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sjundea.province target = location:sjundea.owner years = 25 } }
+			if = { limit = { location:storkyro = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:storkyro.province target = location:storkyro.owner years = 25 } }
+			if = { limit = { location:sysma = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sysma.province target = location:sysma.owner years = 25 } }
+			if = { limit = { location:veckelax = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:veckelax.province target = location:veckelax.owner years = 25 } }
+			if = { limit = { location:vederlax = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vederlax.province target = location:vederlax.owner years = 25 } }
+			if = { limit = { location:vora = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vora.province target = location:vora.owner years = 25 } }
+		}
+	}
+}
+# Nidavellir is the northern mining and bronze-working regional Norse formable for Bronze Era.
+# Total locations: 47. Required at 70%: 33.
+
+NIDAVELLIR_f = {
+	level = 3
+	required_locations_fraction = 0.70
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 830
+
+	potential = {
+		NOT = { tag = NIDAVELLIR }
+		NOT = { tag = ASGARD }
+		NOT = { country_exists = c:NIDAVELLIR }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:norse
+		NOT = { has_variable = bronze_formed_norse_regional_realm }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	name = NIDAVELLIR
+	flag = NIDAVELLIR
+	adjective = NIDAVELLIR_ADJ
+	tag = NIDAVELLIR
+	color = map_NIDAVELLIR
+
+	locations = {
+		akkajaur alvsby anundsjo arjeplog arvidsjaur asele
+		bodebyn branna bygdea byske gellivaara gratesk
+		grundsunda hammerdal harnosand hienatiemi jokkmokk kiemi
+		kittila korpilombo korvala kuivaniemi kvikkjock lulea
+		lycksele mourionska ortrask pajala pitea porjus
+		ramsele ranea ranua rovaniemi silbojock simo
+		sjalevad skelleftea socksjock solatunum sorsele stensele
+		tarna tornea umea vindeln volgsjo
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_norse_regional_realm value = 1 }
+		add_prestige = prestige_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_nidavellir_bronze_smiths
+			years = -1
+			mode = add_and_extend
+		}
+		custom_tooltip = bronze_nidavellir_remaining_claims_tt
+		hidden_effect = {
+			if = { limit = { location:akkajaur = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:akkajaur.province target = location:akkajaur.owner years = 25 } }
+			if = { limit = { location:alvsby = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:alvsby.province target = location:alvsby.owner years = 25 } }
+			if = { limit = { location:anundsjo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:anundsjo.province target = location:anundsjo.owner years = 25 } }
+			if = { limit = { location:arjeplog = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:arjeplog.province target = location:arjeplog.owner years = 25 } }
+			if = { limit = { location:arvidsjaur = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:arvidsjaur.province target = location:arvidsjaur.owner years = 25 } }
+			if = { limit = { location:asele = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:asele.province target = location:asele.owner years = 25 } }
+			if = { limit = { location:bodebyn = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bodebyn.province target = location:bodebyn.owner years = 25 } }
+			if = { limit = { location:branna = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:branna.province target = location:branna.owner years = 25 } }
+			if = { limit = { location:bygdea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bygdea.province target = location:bygdea.owner years = 25 } }
+			if = { limit = { location:byske = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:byske.province target = location:byske.owner years = 25 } }
+			if = { limit = { location:gellivaara = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:gellivaara.province target = location:gellivaara.owner years = 25 } }
+			if = { limit = { location:gratesk = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:gratesk.province target = location:gratesk.owner years = 25 } }
+			if = { limit = { location:grundsunda = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:grundsunda.province target = location:grundsunda.owner years = 25 } }
+			if = { limit = { location:hammerdal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hammerdal.province target = location:hammerdal.owner years = 25 } }
+			if = { limit = { location:harnosand = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:harnosand.province target = location:harnosand.owner years = 25 } }
+			if = { limit = { location:hienatiemi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hienatiemi.province target = location:hienatiemi.owner years = 25 } }
+			if = { limit = { location:jokkmokk = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:jokkmokk.province target = location:jokkmokk.owner years = 25 } }
+			if = { limit = { location:kiemi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kiemi.province target = location:kiemi.owner years = 25 } }
+			if = { limit = { location:kittila = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kittila.province target = location:kittila.owner years = 25 } }
+			if = { limit = { location:korpilombo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:korpilombo.province target = location:korpilombo.owner years = 25 } }
+			if = { limit = { location:korvala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:korvala.province target = location:korvala.owner years = 25 } }
+			if = { limit = { location:kuivaniemi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kuivaniemi.province target = location:kuivaniemi.owner years = 25 } }
+			if = { limit = { location:kvikkjock = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kvikkjock.province target = location:kvikkjock.owner years = 25 } }
+			if = { limit = { location:lulea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lulea.province target = location:lulea.owner years = 25 } }
+			if = { limit = { location:lycksele = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lycksele.province target = location:lycksele.owner years = 25 } }
+			if = { limit = { location:mourionska = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:mourionska.province target = location:mourionska.owner years = 25 } }
+			if = { limit = { location:ortrask = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ortrask.province target = location:ortrask.owner years = 25 } }
+			if = { limit = { location:pajala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:pajala.province target = location:pajala.owner years = 25 } }
+			if = { limit = { location:pitea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:pitea.province target = location:pitea.owner years = 25 } }
+			if = { limit = { location:porjus = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:porjus.province target = location:porjus.owner years = 25 } }
+			if = { limit = { location:ramsele = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ramsele.province target = location:ramsele.owner years = 25 } }
+			if = { limit = { location:ranea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ranea.province target = location:ranea.owner years = 25 } }
+			if = { limit = { location:ranua = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ranua.province target = location:ranua.owner years = 25 } }
+			if = { limit = { location:rovaniemi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:rovaniemi.province target = location:rovaniemi.owner years = 25 } }
+			if = { limit = { location:silbojock = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:silbojock.province target = location:silbojock.owner years = 25 } }
+			if = { limit = { location:simo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:simo.province target = location:simo.owner years = 25 } }
+			if = { limit = { location:sjalevad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sjalevad.province target = location:sjalevad.owner years = 25 } }
+			if = { limit = { location:skelleftea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:skelleftea.province target = location:skelleftea.owner years = 25 } }
+			if = { limit = { location:socksjock = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:socksjock.province target = location:socksjock.owner years = 25 } }
+			if = { limit = { location:solatunum = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:solatunum.province target = location:solatunum.owner years = 25 } }
+			if = { limit = { location:sorsele = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sorsele.province target = location:sorsele.owner years = 25 } }
+			if = { limit = { location:stensele = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:stensele.province target = location:stensele.owner years = 25 } }
+			if = { limit = { location:tarna = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tarna.province target = location:tarna.owner years = 25 } }
+			if = { limit = { location:tornea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tornea.province target = location:tornea.owner years = 25 } }
+			if = { limit = { location:umea = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:umea.province target = location:umea.owner years = 25 } }
+			if = { limit = { location:vindeln = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vindeln.province target = location:vindeln.owner years = 25 } }
+			if = { limit = { location:volgsjo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:volgsjo.province target = location:volgsjo.owner years = 25 } }
+		}
+	}
+}
+# Muspellheim is the human Icelandic and volcanic island regional Norse formable for Bronze Era.
+# Total locations: 22. Required at 80%: 18.
+
+MUSPELLHEIM_f = {
+	level = 3
+	required_locations_fraction = 0.80
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 825
+
+	potential = {
+		NOT = { tag = MUSPELLHEIM }
+		NOT = { tag = ASGARD }
+		NOT = { country_exists = c:MUSPELLHEIM }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:norse
+		NOT = { has_variable = bronze_formed_norse_regional_realm }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	name = MUSPELLHEIM
+	flag = MUSPELLHEIM
+	adjective = MUSPELLHEIM_ADJ
+	tag = MUSPELLHEIM
+	color = map_MUSPELLHEIM
+
+	locations = {
+		akureyri blonduos borgarnes egilsstadir holar husavik
+		hvamstangi hvolsvollur isafjordur keflavik kirkjubaejar olavsvik
+		reikjavik reydarfjordur selfoss seydisfjordur shetland skalholt
+		thingvellir torshavn torshofn vopnafjordur
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_norse_regional_realm value = 1 }
+		add_prestige = prestige_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_muspellheim_volcanic_seaways
+			years = -1
+			mode = add_and_extend
+		}
+		custom_tooltip = bronze_muspellheim_remaining_claims_tt
+		hidden_effect = {
+			if = { limit = { location:akureyri = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:akureyri.province target = location:akureyri.owner years = 25 } }
+			if = { limit = { location:blonduos = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:blonduos.province target = location:blonduos.owner years = 25 } }
+			if = { limit = { location:borgarnes = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:borgarnes.province target = location:borgarnes.owner years = 25 } }
+			if = { limit = { location:egilsstadir = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:egilsstadir.province target = location:egilsstadir.owner years = 25 } }
+			if = { limit = { location:holar = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:holar.province target = location:holar.owner years = 25 } }
+			if = { limit = { location:husavik = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:husavik.province target = location:husavik.owner years = 25 } }
+			if = { limit = { location:hvamstangi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hvamstangi.province target = location:hvamstangi.owner years = 25 } }
+			if = { limit = { location:hvolsvollur = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hvolsvollur.province target = location:hvolsvollur.owner years = 25 } }
+			if = { limit = { location:isafjordur = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:isafjordur.province target = location:isafjordur.owner years = 25 } }
+			if = { limit = { location:keflavik = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:keflavik.province target = location:keflavik.owner years = 25 } }
+			if = { limit = { location:kirkjubaejar = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kirkjubaejar.province target = location:kirkjubaejar.owner years = 25 } }
+			if = { limit = { location:olavsvik = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:olavsvik.province target = location:olavsvik.owner years = 25 } }
+			if = { limit = { location:reikjavik = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:reikjavik.province target = location:reikjavik.owner years = 25 } }
+			if = { limit = { location:reydarfjordur = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:reydarfjordur.province target = location:reydarfjordur.owner years = 25 } }
+			if = { limit = { location:selfoss = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:selfoss.province target = location:selfoss.owner years = 25 } }
+			if = { limit = { location:seydisfjordur = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:seydisfjordur.province target = location:seydisfjordur.owner years = 25 } }
+			if = { limit = { location:shetland = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:shetland.province target = location:shetland.owner years = 25 } }
+			if = { limit = { location:skalholt = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:skalholt.province target = location:skalholt.owner years = 25 } }
+			if = { limit = { location:thingvellir = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:thingvellir.province target = location:thingvellir.owner years = 25 } }
+			if = { limit = { location:torshavn = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:torshavn.province target = location:torshavn.owner years = 25 } }
+			if = { limit = { location:torshofn = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:torshofn.province target = location:torshofn.owner years = 25 } }
+			if = { limit = { location:vopnafjordur = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vopnafjordur.province target = location:vopnafjordur.owner years = 25 } }
+		}
+	}
+}
+# Niflheim is the human far northern cold-march regional Norse formable for Bronze Era.
+# Total locations: 31. Required at 70%: 20.
+
+NIFLHEIM_f = {
+	level = 3
+	required_locations_fraction = 0.70
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 820
+
+	potential = {
+		NOT = { tag = NIFLHEIM }
+		NOT = { tag = ASGARD }
+		NOT = { country_exists = c:NIFLHEIM }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:norse
+		NOT = { has_variable = bronze_formed_norse_regional_realm }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	name = NIFLHEIM
+	flag = NIFLHEIM
+	adjective = NIFLHEIM_ADJ
+	tag = NIFLHEIM
+	color = map_NIFLHEIM
+
+	locations = {
+		abisko alstahaug alta bardodalen birndal bodo
+		enontakis gildeskal hamaroy hattfjelldal juckasjarvi kasivarren
+		kautokeino langenes levanger lierne lofotr namdal
+		nikkaluokta ofoti orland raisa rana raunala
+		sarek senja snasa steigen steinkjer troms
+		trondenes
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_norse_regional_realm value = 1 }
+		add_prestige = prestige_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_niflheim_cold_marches
+			years = -1
+			mode = add_and_extend
+		}
+		custom_tooltip = bronze_niflheim_remaining_claims_tt
+		hidden_effect = {
+			if = { limit = { location:abisko = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:abisko.province target = location:abisko.owner years = 25 } }
+			if = { limit = { location:alstahaug = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:alstahaug.province target = location:alstahaug.owner years = 25 } }
+			if = { limit = { location:alta = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:alta.province target = location:alta.owner years = 25 } }
+			if = { limit = { location:bardodalen = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bardodalen.province target = location:bardodalen.owner years = 25 } }
+			if = { limit = { location:birndal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:birndal.province target = location:birndal.owner years = 25 } }
+			if = { limit = { location:bodo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bodo.province target = location:bodo.owner years = 25 } }
+			if = { limit = { location:enontakis = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:enontakis.province target = location:enontakis.owner years = 25 } }
+			if = { limit = { location:gildeskal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:gildeskal.province target = location:gildeskal.owner years = 25 } }
+			if = { limit = { location:hamaroy = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hamaroy.province target = location:hamaroy.owner years = 25 } }
+			if = { limit = { location:hattfjelldal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hattfjelldal.province target = location:hattfjelldal.owner years = 25 } }
+			if = { limit = { location:juckasjarvi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:juckasjarvi.province target = location:juckasjarvi.owner years = 25 } }
+			if = { limit = { location:kasivarren = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kasivarren.province target = location:kasivarren.owner years = 25 } }
+			if = { limit = { location:kautokeino = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kautokeino.province target = location:kautokeino.owner years = 25 } }
+			if = { limit = { location:langenes = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:langenes.province target = location:langenes.owner years = 25 } }
+			if = { limit = { location:levanger = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:levanger.province target = location:levanger.owner years = 25 } }
+			if = { limit = { location:lierne = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lierne.province target = location:lierne.owner years = 25 } }
+			if = { limit = { location:lofotr = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lofotr.province target = location:lofotr.owner years = 25 } }
+			if = { limit = { location:namdal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:namdal.province target = location:namdal.owner years = 25 } }
+			if = { limit = { location:nikkaluokta = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:nikkaluokta.province target = location:nikkaluokta.owner years = 25 } }
+			if = { limit = { location:ofoti = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ofoti.province target = location:ofoti.owner years = 25 } }
+			if = { limit = { location:orland = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:orland.province target = location:orland.owner years = 25 } }
+			if = { limit = { location:raisa = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:raisa.province target = location:raisa.owner years = 25 } }
+			if = { limit = { location:rana = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:rana.province target = location:rana.owner years = 25 } }
+			if = { limit = { location:raunala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:raunala.province target = location:raunala.owner years = 25 } }
+			if = { limit = { location:sarek = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sarek.province target = location:sarek.owner years = 25 } }
+			if = { limit = { location:senja = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:senja.province target = location:senja.owner years = 25 } }
+			if = { limit = { location:snasa = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:snasa.province target = location:snasa.owner years = 25 } }
+			if = { limit = { location:steigen = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:steigen.province target = location:steigen.owner years = 25 } }
+			if = { limit = { location:steinkjer = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:steinkjer.province target = location:steinkjer.owner years = 25 } }
+			if = { limit = { location:troms = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:troms.province target = location:troms.owner years = 25 } }
+			if = { limit = { location:trondenes = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:trondenes.province target = location:trondenes.owner years = 25 } }
+		}
+	}
+}
+# Helheim is the human Danish regional Norse formable for Bronze Era.
+# Total locations: 48. Required at 75%: 36.
+
+HELHEIM_f = {
+	level = 3
+	required_locations_fraction = 0.75
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 815
+
+	potential = {
+		NOT = { tag = HELHEIM }
+		NOT = { tag = ASGARD }
+		NOT = { country_exists = c:HELHEIM }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:norse
+		NOT = { has_variable = bronze_formed_norse_regional_realm }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	name = HELHEIM
+	flag = HELHEIM
+	adjective = HELHEIM_ADJ
+	tag = HELHEIM
+	color = map_HELHEIM
+
+	locations = {
+		aabenraa aalborg aarhus ars assens bolling
+		eckernforde eutin falster flensburg grindsted haderslev
+		hamburg heide heiligenhafen helsingor hjorring holstebro_lundenes
+		husum kalo kalundborg kiel kobenhavn kolding
+		lubeck navskov odense pinneberg plon randers
+		rendsburg ribe ringkobing ringsted roskilde segeberg
+		silkeborg skagen slagelse slesvig steinburg stormarn
+		svendborg thisted tonder varde viborg vordingborg
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_norse_regional_realm value = 1 }
+		add_prestige = prestige_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_helheim_ancestor_straits
+			years = -1
+			mode = add_and_extend
+		}
+		custom_tooltip = bronze_helheim_remaining_claims_tt
+		hidden_effect = {
+			if = { limit = { location:aabenraa = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:aabenraa.province target = location:aabenraa.owner years = 25 } }
+			if = { limit = { location:aalborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:aalborg.province target = location:aalborg.owner years = 25 } }
+			if = { limit = { location:aarhus = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:aarhus.province target = location:aarhus.owner years = 25 } }
+			if = { limit = { location:ars = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ars.province target = location:ars.owner years = 25 } }
+			if = { limit = { location:assens = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:assens.province target = location:assens.owner years = 25 } }
+			if = { limit = { location:bolling = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bolling.province target = location:bolling.owner years = 25 } }
+			if = { limit = { location:eckernforde = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:eckernforde.province target = location:eckernforde.owner years = 25 } }
+			if = { limit = { location:eutin = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:eutin.province target = location:eutin.owner years = 25 } }
+			if = { limit = { location:falster = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:falster.province target = location:falster.owner years = 25 } }
+			if = { limit = { location:flensburg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:flensburg.province target = location:flensburg.owner years = 25 } }
+			if = { limit = { location:grindsted = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:grindsted.province target = location:grindsted.owner years = 25 } }
+			if = { limit = { location:haderslev = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:haderslev.province target = location:haderslev.owner years = 25 } }
+			if = { limit = { location:hamburg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hamburg.province target = location:hamburg.owner years = 25 } }
+			if = { limit = { location:heide = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:heide.province target = location:heide.owner years = 25 } }
+			if = { limit = { location:heiligenhafen = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:heiligenhafen.province target = location:heiligenhafen.owner years = 25 } }
+			if = { limit = { location:helsingor = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:helsingor.province target = location:helsingor.owner years = 25 } }
+			if = { limit = { location:hjorring = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hjorring.province target = location:hjorring.owner years = 25 } }
+			if = { limit = { location:holstebro_lundenes = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:holstebro_lundenes.province target = location:holstebro_lundenes.owner years = 25 } }
+			if = { limit = { location:husum = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:husum.province target = location:husum.owner years = 25 } }
+			if = { limit = { location:kalo = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kalo.province target = location:kalo.owner years = 25 } }
+			if = { limit = { location:kalundborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kalundborg.province target = location:kalundborg.owner years = 25 } }
+			if = { limit = { location:kiel = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kiel.province target = location:kiel.owner years = 25 } }
+			if = { limit = { location:kobenhavn = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kobenhavn.province target = location:kobenhavn.owner years = 25 } }
+			if = { limit = { location:kolding = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kolding.province target = location:kolding.owner years = 25 } }
+			if = { limit = { location:lubeck = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lubeck.province target = location:lubeck.owner years = 25 } }
+			if = { limit = { location:navskov = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:navskov.province target = location:navskov.owner years = 25 } }
+			if = { limit = { location:odense = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:odense.province target = location:odense.owner years = 25 } }
+			if = { limit = { location:pinneberg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:pinneberg.province target = location:pinneberg.owner years = 25 } }
+			if = { limit = { location:plon = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:plon.province target = location:plon.owner years = 25 } }
+			if = { limit = { location:randers = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:randers.province target = location:randers.owner years = 25 } }
+			if = { limit = { location:rendsburg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:rendsburg.province target = location:rendsburg.owner years = 25 } }
+			if = { limit = { location:ribe = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ribe.province target = location:ribe.owner years = 25 } }
+			if = { limit = { location:ringkobing = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ringkobing.province target = location:ringkobing.owner years = 25 } }
+			if = { limit = { location:ringsted = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ringsted.province target = location:ringsted.owner years = 25 } }
+			if = { limit = { location:roskilde = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:roskilde.province target = location:roskilde.owner years = 25 } }
+			if = { limit = { location:segeberg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:segeberg.province target = location:segeberg.owner years = 25 } }
+			if = { limit = { location:silkeborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:silkeborg.province target = location:silkeborg.owner years = 25 } }
+			if = { limit = { location:skagen = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:skagen.province target = location:skagen.owner years = 25 } }
+			if = { limit = { location:slagelse = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:slagelse.province target = location:slagelse.owner years = 25 } }
+			if = { limit = { location:slesvig = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:slesvig.province target = location:slesvig.owner years = 25 } }
+			if = { limit = { location:steinburg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:steinburg.province target = location:steinburg.owner years = 25 } }
+			if = { limit = { location:stormarn = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:stormarn.province target = location:stormarn.owner years = 25 } }
+			if = { limit = { location:svendborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:svendborg.province target = location:svendborg.owner years = 25 } }
+			if = { limit = { location:thisted = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:thisted.province target = location:thisted.owner years = 25 } }
+			if = { limit = { location:tonder = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tonder.province target = location:tonder.owner years = 25 } }
+			if = { limit = { location:varde = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:varde.province target = location:varde.owner years = 25 } }
+			if = { limit = { location:viborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:viborg.province target = location:viborg.owner years = 25 } }
+			if = { limit = { location:vordingborg = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:vordingborg.province target = location:vordingborg.owner years = 25 } }
+		}
+	}
+}
+# Vindland is the human Baltic and Finnic regional Norse formable for Bronze Era.
+# Total locations: 35. Required at 80%: 28.
+
+VINDLAND_f = {
+	level = 3
+	required_locations_fraction = 0.80
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 810
+
+	potential = {
+		NOT = { tag = VINDLAND }
+		NOT = { tag = ASGARD }
+		NOT = { country_exists = c:VINDLAND }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:norse
+		NOT = { has_variable = bronze_formed_norse_regional_realm }
+		NOT = { has_variable = bronze_formed_asgard }
+	}
+
+	name = VINDLAND
+	flag = VINDLAND
+	adjective = VINDLAND_ADJ
+	tag = VINDLAND
+	color = map_VINDLAND
+
+	locations = {
+		aizkraukle bauska cesis dobele dundaga durbe
+		grobina hapsal jelgava kaina kandava karksi
+		koknese kuldiga kuressaare lihula limbazi padise
+		parnu piltene rapla rauna riga saarde
+		salaspils saldus sigulda st_martin straupe suure_jaani
+		tukums valjala valmiera ventspils viljandi
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_norse_regional_realm value = 1 }
+		add_prestige = prestige_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_vindland_amber_waterways
+			years = -1
+			mode = add_and_extend
+		}
+		custom_tooltip = bronze_vindland_remaining_claims_tt
+		hidden_effect = {
+			if = { limit = { location:aizkraukle = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:aizkraukle.province target = location:aizkraukle.owner years = 25 } }
+			if = { limit = { location:bauska = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bauska.province target = location:bauska.owner years = 25 } }
+			if = { limit = { location:cesis = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:cesis.province target = location:cesis.owner years = 25 } }
+			if = { limit = { location:dobele = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:dobele.province target = location:dobele.owner years = 25 } }
+			if = { limit = { location:dundaga = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:dundaga.province target = location:dundaga.owner years = 25 } }
+			if = { limit = { location:durbe = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:durbe.province target = location:durbe.owner years = 25 } }
+			if = { limit = { location:grobina = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:grobina.province target = location:grobina.owner years = 25 } }
+			if = { limit = { location:hapsal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:hapsal.province target = location:hapsal.owner years = 25 } }
+			if = { limit = { location:jelgava = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:jelgava.province target = location:jelgava.owner years = 25 } }
+			if = { limit = { location:kaina = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kaina.province target = location:kaina.owner years = 25 } }
+			if = { limit = { location:kandava = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kandava.province target = location:kandava.owner years = 25 } }
+			if = { limit = { location:karksi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:karksi.province target = location:karksi.owner years = 25 } }
+			if = { limit = { location:koknese = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:koknese.province target = location:koknese.owner years = 25 } }
+			if = { limit = { location:kuldiga = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kuldiga.province target = location:kuldiga.owner years = 25 } }
+			if = { limit = { location:kuressaare = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kuressaare.province target = location:kuressaare.owner years = 25 } }
+			if = { limit = { location:lihula = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lihula.province target = location:lihula.owner years = 25 } }
+			if = { limit = { location:limbazi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:limbazi.province target = location:limbazi.owner years = 25 } }
+			if = { limit = { location:padise = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:padise.province target = location:padise.owner years = 25 } }
+			if = { limit = { location:parnu = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:parnu.province target = location:parnu.owner years = 25 } }
+			if = { limit = { location:piltene = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:piltene.province target = location:piltene.owner years = 25 } }
+			if = { limit = { location:rapla = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:rapla.province target = location:rapla.owner years = 25 } }
+			if = { limit = { location:rauna = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:rauna.province target = location:rauna.owner years = 25 } }
+			if = { limit = { location:riga = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:riga.province target = location:riga.owner years = 25 } }
+			if = { limit = { location:saarde = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:saarde.province target = location:saarde.owner years = 25 } }
+			if = { limit = { location:salaspils = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:salaspils.province target = location:salaspils.owner years = 25 } }
+			if = { limit = { location:saldus = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:saldus.province target = location:saldus.owner years = 25 } }
+			if = { limit = { location:sigulda = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sigulda.province target = location:sigulda.owner years = 25 } }
+			if = { limit = { location:st_martin = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:st_martin.province target = location:st_martin.owner years = 25 } }
+			if = { limit = { location:straupe = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:straupe.province target = location:straupe.owner years = 25 } }
+			if = { limit = { location:suure_jaani = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:suure_jaani.province target = location:suure_jaani.owner years = 25 } }
+			if = { limit = { location:tukums = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tukums.province target = location:tukums.owner years = 25 } }
+			if = { limit = { location:valjala = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:valjala.province target = location:valjala.owner years = 25 } }
+			if = { limit = { location:valmiera = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:valmiera.province target = location:valmiera.owner years = 25 } }
+			if = { limit = { location:ventspils = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ventspils.province target = location:ventspils.owner years = 25 } }
+			if = { limit = { location:viljandi = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:viljandi.province target = location:viljandi.owner years = 25 } }
+		}
+	}
+}

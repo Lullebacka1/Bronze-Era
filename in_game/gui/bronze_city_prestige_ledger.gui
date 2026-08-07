@@ -141,17 +141,20 @@ template bronze_city_prestige_ledger_content {
 				}
 
 				scrollwidget = {
-					dynamicgridbox = {
+					fixedgridbox = {
 						layoutpolicy_horizontal = expanding
 						flipdirection = yes
+						addcolumn = 100%
+						addrow = 48
+						setitemsizefromcell = yes
 						datamodel_wrap = 1
 						maxhorizontalslots = 1
 						datamodel = "[GetGlobalList('bronze_city_prestige_ledger_cities')]"
 
 						item = {
 							button = {
-								size = { 100% 48 }
-								datacontext = "[Scope.GetVariable('bronze_city_prestige_gui_location').GetLocation]"
+								size = { 100% 100% }
+								datacontext = "[Scope.GetLocation]"
 								using = bg_paper_card
 								onclick = "[PanToLocation(Location.Self)]"
 								tooltipwidget = {

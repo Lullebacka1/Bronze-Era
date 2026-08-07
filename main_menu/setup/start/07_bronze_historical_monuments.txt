@@ -1,0 +1,47 @@
+# ============================================================================
+# BRONZE ERA - CENTRALIZED HISTORICAL MONUMENT PLACEMENT
+# ============================================================================
+# Add or correct historical placements only in this file.
+# A monument is active only when it appears inside building_manager.
+# Uncertain sites remain documented as parse-safe comments.
+# ============================================================================
+
+building_manager = {
+	
+	bronze_monument_giza_pyramid_complex = { level = 1 location = giza }
+	bronze_monument_mycenae_citadel = { level = 1 location = argos }
+	bronze_monument_tiryns_cyclopean = { level = 1 location = nafplio }
+	bronze_monument_knossos_complex = { level = 1 location = candia }
+	bronze_monument_ugarit_complex = { level = 1 location = latakia }
+	bronze_monument_yin_xu = { level = 1 location = anyang }
+	bronze_monument_bru_na_boinne = { level = 1 location = drogheda }
+	# Stonehenge is already loaded as a native monument work of art by
+	# main_menu/setup/start/11_art.txt. Do not place a duplicate building.
+	# Its exact key is integrated directly into City Prestige and ruins:
+	# work_of_art:stonehenge at amesbury
+	bronze_monument_pylos_palace = { level = 1 location = modon }
+	bronze_monument_troy_citadel = { level = 1 location = ayvacik }
+	bronze_monument_karnak_temple = { level = 1 location = esna }
+	bronze_monument_luxor_temple = { level = 1 location = esna }
+	bronze_monument_abu_simbel_temples = { level = 1 location = daw }
+	bronze_monument_theban_necropolis = { level = 1 location = esna }
+	bronze_monument_hattusa_citadel = { level = 1 location = huseyinabad }
+	bronze_monument_ur_ziggurat = { level = 1 location = abadan }
+	bronze_monument_assur_complex = { level = 1 location = samarra }
+	bronze_monument_chogha_zanbil_ziggurat = { level = 1 location = hamidiyeh }
+	bronze_monument_su_nuraxi = { level = 1 location = isili }
+	bronze_monument_avebury = { level = 1 location = amesbury }
+}
+
+# ============================================================================
+# PREPARED HISTORICAL RUINS - NOT ACTIVE UNTIL AN EXACT LOCATION IS CONFIRMED
+# ============================================================================
+# TODO_MANUAL_LOCATION - Dholavira
+# Historical region: Khadir Bet, Rann of Kutch
+# Candidate found: kantha
+# Prepared by bronze_historical_ruin_dholavira_setup_effect.
+#
+# TODO_MANUAL_LOCATION - Mohenjo-daro
+# Historical region: lower Indus, Sindh
+# Candidate found: dubbi
+# Prepared by bronze_historical_ruin_mohenjo_daro_setup_effect.

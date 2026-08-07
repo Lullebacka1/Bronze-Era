@@ -1,0 +1,79 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: aegean_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+mycenaean = {
+	language = aegean_bronze_language
+	color = rgb { 81 119 183 }
+	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		aegean_bronze_group
+	}
+}
+
+minoan = {
+	language = aegean_bronze_language
+	color = rgb { 67 151 176 }
+	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		aegean_bronze_group
+	}
+}
+
+aeolian = {
+	language = aegean_bronze_language
+	color = rgb { 75 126 190 }
+	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		aegean_bronze_group
+	}
+}
+
+ionian = {
+	language = aegean_bronze_language
+	color = rgb { 86 137 201 }
+	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		aegean_bronze_group
+	}
+}
+
+dorian = {
+	language = aegean_bronze_language
+	color = rgb { 97 148 212 }
+	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		aegean_bronze_group
+	}
+}
+
+arcadian = {
+	language = aegean_bronze_language
+	color = rgb { 108 159 223 }
+	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		aegean_bronze_group
+	}
+}
+
+cycladic = {
+	language = aegean_bronze_language
+	color = rgb { 119 170 225 }
+	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		aegean_bronze_group
+	}
+}

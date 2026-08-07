@@ -23,7 +23,7 @@ bronze_age_institution_friendly_neighbor_spread = {
 }
 
 bronze_age_institution_neighbor_spread = {
-	value = 0.20
+	value = 0.25
 	add = {
 		value = average_location_literacy
 		multiply = 0.005
@@ -31,7 +31,7 @@ bronze_age_institution_neighbor_spread = {
 }
 
 bronze_age_institution_possible_spawn_spread = {
-	value = 0.20
+	value = 0.70
 	add = {
 		value = average_location_literacy
 		multiply = 0.01
@@ -47,7 +47,7 @@ bronze_age_institution_embraced_capital_spread = {
 }
 
 bronze_age_institution_market_spread = {
-	value = 0.30
+	value = 0.65
 	add = {
 		value = average_location_literacy
 		multiply = 0.01
@@ -110,6 +110,22 @@ bronze_age_institution_migration_promotion = {
 	value = 10
 	add = {
 		value = num_pop_type:peasants
+		multiply = 0.10
+	}
+	add = {
+		value = num_pop_type:burghers
+		multiply = 0.70	
+	}
+	add = {
+		value = num_pop_type:nobles
+		multiply = 0.70
+	}
+	add = {
+		value = num_pop_type:clergy
+		multiply = 0.25
+	}
+	add = {
+		value = num_pop_type:slaves
 		multiply = 0.10
 	}
 }

@@ -1,0 +1,68 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: iranian_plateau_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+margian = {
+	language = iranian_bronze_language
+	color = rgb { 97 119 67 }
+	tags = { persian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		iranian_plateau_group
+	}
+}
+
+bactrian = {
+	language = iranian_bronze_language
+	color = rgb { 108 130 78 }
+	tags = { persian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		iranian_plateau_group
+	}
+}
+
+arian = {
+	language = iranian_bronze_language
+	color = rgb { 119 141 89 }
+	tags = { persian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		iranian_plateau_group
+	}
+}
+
+mede = {
+	language = iranian_bronze_language
+	color = rgb { 130 152 100 }
+	tags = { persian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		iranian_plateau_group
+	}
+}
+
+persian = {
+	language = iranian_bronze_language
+	color = rgb { 141 163 111 }
+	tags = { persian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		iranian_plateau_group
+	}
+}
+
+gedrosian = {
+	language = iranian_bronze_language
+	color = rgb { 152 174 122 }
+	tags = { persian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		iranian_plateau_group
+	}
+}

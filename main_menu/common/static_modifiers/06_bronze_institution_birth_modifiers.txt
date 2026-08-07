@@ -1,0 +1,110 @@
+# Empty birthplace static modifiers required by the institution engine.
+# The gameplay effects are defined on the institutions themselves.
+
+bronze_routes_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+chariot_warfare_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+palatial_economy_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+commercial_counters_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+iron_metallurgy_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+tribal_migrations_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+hoplite_phalanx_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+mediterranean_colonization_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+phoenician_alphabet_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+classical_philosophy_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+imperial_administration_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+standardized_currency_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+bronze_large_libraries_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+bronze_professional_armies_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+hellenistic_cosmopolitanism_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+legions_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+road_network_birth = {
+	game_data = {
+		category = location
+	}
+}
+
+roman_law_birth = {
+	game_data = {
+		category = location
+	}
+}

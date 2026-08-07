@@ -5,4 +5,15 @@ colors = {
 
 	# Restored Hatti uses the same blue-grey pigment as the original empire.
 	map_HATTI = rgb { 95 122 139 }
+	map_ARMOR = rgb { 0 132 49 }
+	map_ASGARD = rgb { 34 78 112 }
+	map_MIDGARD = rgb { 72 119 86 }
+	map_VANAHEIM = rgb { 92 132 55 }
+	map_JOTUNHEIM = rgb { 83 92 105 }
+	map_ALFHEIM = rgb { 116 151 95 }
+	map_NIDAVELLIR = rgb { 82 69 63 }
+	map_MUSPELLHEIM = rgb { 143 63 42 }
+	map_NIFLHEIM = rgb { 91 124 145 }
+	map_HELHEIM = rgb { 73 63 70 }
+	map_VINDLAND = rgb { 129 112 50 }
 }

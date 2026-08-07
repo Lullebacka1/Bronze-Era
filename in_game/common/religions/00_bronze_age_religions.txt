@@ -606,18 +606,17 @@ britannic_pagan = {
 }
 
 nordic_pagan = {
-	color = rgb { 95 131 154 }
+	color = rgb { 92 130 99 }
 	group = nordic_religion_group
 
-	definition_modifier = {
-		global_wild_game_output_modifier = 0.1
-		expand_rgo_forestry_cost_modifier = -0.1
-		global_levy_size_modifier = 0.05
-	}
+		definition_modifier = {
+			global_wild_game_output_modifier = 0.1
+			expand_rgo_forestry_cost_modifier = -0.1
+			global_levy_size_modifier = 0.05
+		}
 
-	opinions = {
-	}
-
+		opinions = {
+		}
 	tags = { folk_european_gfx pagan_gfx }
 }
 

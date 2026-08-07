@@ -1,0 +1,79 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: italian_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+terramare = {
+	language = italian_bronze_language
+	color = rgb { 150 100 82 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		italian_bronze_group
+	}
+}
+
+apennine = {
+	language = italian_bronze_language
+	color = rgb { 137 105 83 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		italian_bronze_group
+	}
+}
+
+proto_villanovan = {
+	language = italian_bronze_language
+	color = rgb { 162 107 87 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		italian_bronze_group
+	}
+}
+
+latial = {
+	language = italian_bronze_language
+	color = rgb { 156 84 76 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		italian_bronze_group
+	}
+}
+
+rinaldone = {
+	language = italian_bronze_language
+	color = rgb { 124 93 86 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		italian_bronze_group
+	}
+}
+
+ausonian = {
+	language = italian_bronze_language
+	color = rgb { 174 117 77 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		italian_bronze_group
+	}
+}
+
+oenotrian = {
+	language = italian_bronze_language
+	color = rgb { 153 118 72 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		italian_bronze_group
+	}
+}

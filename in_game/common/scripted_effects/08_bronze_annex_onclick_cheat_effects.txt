@@ -1,0 +1,37 @@
+# Bronze Era - console cheat helpers.
+# Country scope.
+
+bronze_annex_onclick_enable_effect = {
+	custom_description = {
+		text = bronze_annex_onclick_enable_effect_tt
+		set_variable = { name = bronze_annex_onclick_enabled value = 1 }
+	}
+}
+
+bronze_annex_onclick_disable_effect = {
+	custom_description = {
+		text = bronze_annex_onclick_disable_effect_tt
+		remove_variable = bronze_annex_onclick_enabled
+	}
+}
+
+# Country scope. Requires scope:bronze_annex_target_location from the location GUI.
+bronze_annex_onclick_selected_location_effect = {
+	custom_description = {
+		text = bronze_annex_onclick_selected_location_effect_tt
+
+		if = {
+			limit = {
+				scope:bronze_annex_target_location ?= {
+					has_owner = yes
+					NOT = { owner = root }
+				}
+			}
+			scope:bronze_annex_target_location = {
+				change_location_owner = root
+				add_core = root
+				change_integration_level = core
+			}
+		}
+	}
+}

@@ -3027,161 +3027,548 @@ locations = {
 
 	baima_daming = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	changge = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	changshe = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	changyuan = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	chaocheng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	dancheng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	dengfeng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	dongming = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	fanxian = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	fengqiu = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	fugou = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	gongxian = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	guancheng_zhengzhou = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	jiyin = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	juancheng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	kaifeng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	kaocheng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	lanyang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	linying = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	luoyang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	mengjin = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	mianchi = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	mixian = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	nanle = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	neihuang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	puyang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	qingfeng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	qixian = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	shanxian = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	shouzhang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	taikang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	tongxu = {
 		bronze_routes = yes
 	}
 	wanqiu = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	weishi = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	wuzhi = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	xiangyi = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	xihua = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	xinan = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	xingyang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	xinxiang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	xinzheng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	xucheng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yangdi = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yanggu_yanzhou = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yanjin = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yanling = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yanshi = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yique = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yiyang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yongning_shanzhou = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yuanyang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yuncheng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	zhongmu = {
+		bronze_routes = yes
+		palatial_economy = yes
+	}
+
+	############################################################
+	# ADDITIONAL BRONZE ROUTE STARTING PRESENCE
+	# Starting presence only; spawn remains restricted by institution trigger.
+	############################################################
+
+	# OSISM
+	brest = {
+		bronze_routes = yes
+	}
+	carhaix = {
+		bronze_routes = yes
+	}
+	chateaulin = {
+		bronze_routes = yes
+	}
+	le_faou = {
+		bronze_routes = yes
+	}
+	quimper = {
+		bronze_routes = yes
+	}
+	st_pol_de_leon = {
+		bronze_routes = yes
+	}
+	treguier = {
+		bronze_routes = yes
+	}
+
+	# UNELL
+	cherbourg = {
+		bronze_routes = yes
+	}
+	jersey = {
+		bronze_routes = yes
+	}
+	st_sauveur = {
+		bronze_routes = yes
+	}
+
+	# CORIO
+	chatelaudren = {
+		bronze_routes = yes
+	}
+	josselin = {
+		bronze_routes = yes
+	}
+	monfort_sur_meu = {
+		bronze_routes = yes
+	}
+	ploermel = {
+		bronze_routes = yes
+	}
+	saint_brieuc = {
+		bronze_routes = yes
+	}
+	saint_malo = {
+		bronze_routes = yes
+	}
+
+	# VELIO
+	bernay = {
+		bronze_routes = yes
+	}
+	harcourt = {
+		bronze_routes = yes
+	}
+	lisieux = {
+		bronze_routes = yes
+	}
+	louviers = {
+		bronze_routes = yes
+	}
+	pont_audemer = {
+		bronze_routes = yes
+	}
+
+	# CALET
+	arques = {
+		bronze_routes = yes
+	}
+	fecamp = {
+		bronze_routes = yes
+	}
+	longueville = {
+		bronze_routes = yes
+	}
+	rouen = {
+		bronze_routes = yes
+	}
+	tancarville = {
+		bronze_routes = yes
+	}
+
+	# MORIN
+	boulogne_sur_mer = {
+		bronze_routes = yes
+	}
+	calais = {
+		bronze_routes = yes
+	}
+	saint_omer = {
+		bronze_routes = yes
+	}
+
+	# CANTI
+	canterbury = {
+		bronze_routes = yes
+	}
+	chichester = {
+		bronze_routes = yes
+	}
+	dover = {
+		bronze_routes = yes
+	}
+	guildford = {
+		bronze_routes = yes
+	}
+	hastings = {
+		bronze_routes = yes
+	}
+	hythe = {
+		bronze_routes = yes
+	}
+	kingston = {
+		bronze_routes = yes
+	}
+	lewes = {
+		bronze_routes = yes
+	}
+	reigate = {
+		bronze_routes = yes
+	}
+	rochester = {
+		bronze_routes = yes
+	}
+	shoreham = {
+		bronze_routes = yes
+	}
+	tonbridge = {
+		bronze_routes = yes
+	}
+
+	# OXUS
+	akhsisek = {
+		bronze_routes = yes
+	}
+	alat = {
+		bronze_routes = yes
+	}
+	amol_turkmenabad = {
+		bronze_routes = yes
+	}
+	ayni = {
+		bronze_routes = yes
+	}
+	barkdiz = {
+		bronze_routes = yes
+	}
+	bukhara = {
+		bronze_routes = yes
+	}
+	chiroqchi = {
+		bronze_routes = yes
+	}
+	darganata = {
+		bronze_routes = yes
+	}
+	daya_kathyn = {
+		bronze_routes = yes
+	}
+	dimishk = {
+		bronze_routes = yes
+	}
+	firabr = {
+		bronze_routes = yes
+	}
+	guzor = {
+		bronze_routes = yes
+	}
+	karmana = {
+		bronze_routes = yes
+	}
+	khoja_idat_kala = {
+		bronze_routes = yes
+	}
+	kish_shahrisabz = {
+		bronze_routes = yes
+	}
+	koson = {
+		bronze_routes = yes
+	}
+	merv = {
+		bronze_routes = yes
+	}
+	muborak = {
+		bronze_routes = yes
+	}
+	nasaf = {
+		bronze_routes = yes
+	}
+	navidakh = {
+		bronze_routes = yes
+	}
+	paikend = {
+		bronze_routes = yes
+	}
+	panjakent = {
+		bronze_routes = yes
+	}
+	paykend = {
+		bronze_routes = yes
+	}
+	samarkand = {
+		bronze_routes = yes
+	}
+	tim_samarkand = {
+		bronze_routes = yes
+	}
+	vardanzi = {
+		bronze_routes = yes
+	}
+
+	# BACTR
+	aiwanj = {
+		bronze_routes = yes
+	}
+	andarab = {
+		bronze_routes = yes
+	}
+	andkhoy = {
+		bronze_routes = yes
+	}
+	aqca = {
+		bronze_routes = yes
+	}
+	araska = {
+		bronze_routes = yes
+	}
+	arkhan = {
+		bronze_routes = yes
+	}
+	ashkamesh = {
+		bronze_routes = yes
+	}
+	baghlan = {
+		bronze_routes = yes
+	}
+	balkh = {
+		bronze_routes = yes
+	}
+	basand = {
+		bronze_routes = yes
+	}
+	boyena_qara = {
+		bronze_routes = yes
+	}
+	darzanji = {
+		bronze_routes = yes
+	}
+	denov = {
+		bronze_routes = yes
+	}
+	farkhor = {
+		bronze_routes = yes
+	}
+	fayzabad = {
+		bronze_routes = yes
+	}
+	hissar = {
+		bronze_routes = yes
+	}
+	hulbuk = {
+		bronze_routes = yes
+	}
+	kelif = {
+		bronze_routes = yes
+	}
+	kerki = {
+		bronze_routes = yes
+	}
+	khamyab = {
+		bronze_routes = yes
+	}
+	khulm = {
+		bronze_routes = yes
+	}
+	kishim = {
+		bronze_routes = yes
+	}
+	kulob = {
+		bronze_routes = yes
+	}
+	kunduz = {
+		bronze_routes = yes
+	}
+	mazar_i_sharif = {
+		bronze_routes = yes
+	}
+	munk = {
+		bronze_routes = yes
+	}
+	qubodijon = {
+		bronze_routes = yes
+	}
+	samangan = {
+		bronze_routes = yes
+	}
+	sangcharak = {
+		bronze_routes = yes
+	}
+	sar_pol = {
+		bronze_routes = yes
+	}
+	sheberghan = {
+		bronze_routes = yes
+	}
+	shuman = {
+		bronze_routes = yes
+	}
+	taleqan = {
+		bronze_routes = yes
+	}
+	termez = {
+		bronze_routes = yes
+	}
+	vakhs = {
+		bronze_routes = yes
+	}
+	wesgird = {
+		bronze_routes = yes
+	}
+	zadian = {
 		bronze_routes = yes
 	}
 

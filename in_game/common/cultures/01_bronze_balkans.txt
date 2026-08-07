@@ -1,0 +1,123 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: balkans_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+thracian = {
+	language = balkanic_bronze_language
+	color = rgb { 90 117 99 }
+	tags = { south_slavic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		balkans_bronze_group
+	}
+}
+
+illyrian = {
+	language = balkanic_bronze_language
+	color = rgb { 101 128 110 }
+	tags = { south_slavic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		balkans_bronze_group
+	}
+}
+
+dacian = {
+	language = balkanic_bronze_language
+	color = rgb { 112 139 121 }
+	tags = { south_slavic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		balkans_bronze_group
+	}
+}
+
+paeonian = {
+	language = balkanic_bronze_language
+	color = rgb { 123 150 132 }
+	tags = { south_slavic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		balkans_bronze_group
+	}
+}
+
+pelasgian = {
+	language = balkanic_bronze_language
+	color = rgb { 134 161 143 }
+	tags = { south_slavic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		balkans_bronze_group
+	}
+}
+
+triballian = {
+	language = balkanic_bronze_language
+	color = rgb { 145 172 154 }
+	tags = { south_slavic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		balkans_bronze_group
+	}
+}
+
+vuchedol = {
+	language = balkanic_bronze_language
+	color = rgb { 118 116 101 }
+	tags = { south_slavic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		balkans_bronze_group
+	}
+}
+
+cetina = {
+	language = balkanic_bronze_language
+	color = rgb { 96 121 132 }
+	tags = { south_slavic_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		balkans_bronze_group
+	}
+}
+
+glasinac_mati = {
+	language = balkanic_bronze_language
+	color = rgb { 111 126 107 }
+	tags = { south_slavic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		balkans_bronze_group
+	}
+}
+
+central_bosnian = {
+	language = balkanic_bronze_language
+	color = rgb { 124 132 101 }
+	tags = { south_slavic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		balkans_bronze_group
+	}
+}
+
+ezero = {
+	language = balkanic_bronze_language
+	color = rgb { 104 136 104 }
+	tags = { south_slavic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		balkans_bronze_group
+	}
+}

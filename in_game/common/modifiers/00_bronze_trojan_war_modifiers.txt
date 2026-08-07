@@ -1,102 +1,100 @@
 
 
-# Mycenae Outcomes
+
 trojan_war_raid_on_anatolia_success = {
+    game_data = {
+        category = country
+    }
 	
 }
 
 trojan_war_raid_on_anatolia_failed = {
-	
+	game_data = {
+        category = country
+    }
 }
 
-# Wilusa / Anatolia Outcomes
+
 anatolia_coastline_is_defend = {
-	
+	game_data = {
+        category = country
+    }
 }
 
-trojan_war_anatolia_modifier_phase_2 = {
+
+trojan_war_anatolia_modifier_phase_2_siege_ability ={
+    game_data = { 
+        category = country 
+    } 
+    siege_ability = 1
+}
+trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency ={
+    game_data = { 
+        category = country 
+    } 
+    levy_combat_efficiency = 1
+}
+trojan_war_greece_modifier_phase_2_siege_ability ={ 
+    game_data = { 
+        category = country 
+    } 
+    siege_ability = 1 
+}
+trojan_war_greece_modifier_phase_2_navy_levy_size ={ 
+    game_data = { 
+        category = country 
+    } 
+    navy_levy_size = 1 
+}
+trojan_war_end_siege_ability ={
+    game_data = { 
+        category = country 
+    } 
+    siege_ability = 1
+}
+trojan_war_end_maritime_presence ={
+    game_data = { 
+        category = country 
+    } 
+    maritime_presence = 1
+}
+trojan_war_end_levy_combat_efficiency ={
+    game_data = { 
+        category = country 
+    } 
+    levy_combat_efficiency = 1
+}
+
+
+
+trojan_war_end_3 = {
     game_data = {
-		category = country   
-	}
-    siege_ability = {
-        value = -0.20
-        add = {
-            value = global:anatolia_raid_failed_count
-            multiply = 0.02
-        }
-        max = 0.30
+        category = country
     }
-    levy_combat_efficiency = {
-        value = 0.0
-        add = {
-            value = global:anatolia_raid_failed_count
-            multiply = 0.02
-        }
-        max = 0.25	
-    }
+    #greece loss
+    monthly_prestige = 0.25
 }
 
-trojan_war_greece_modifier_phase_2 = {
-      game_data = {
-		category = country   
-	}
-    siege_ability = {
-        value = 0.0
-        add = {
-            value = global:anatolia_raid_success_count
-            multiply = 0.01
-        }
-        max = 0.20
+trojan_war_end_4 = {
+    game_data = {
+        category = country
     }
-    navy_levy_size = {
-        value = 0.0
-        add = {
-            value = global:anatolia_raid_success_count
-            multiply = 0.02
-        }
-        max = 0.50
-    }
+    #anatolia loss
+    monthly_prestige = 0.05
 }
 
-trojan_war_greece_victory = {
-      game_data = {
-		category = country   
-	}
-	siege_ability = {
-        value = 0.0
-        add = {
-            value = global:anatolia_raid_success_count
-            multiply = 0.01
-        }
-        max = 0.05
+trojan_war_end_5 = {
+    game_data = {
+        category = country
     }
-	   maritime_presence = {
-        value = 0.0
-        add = {
-            value = global:anatolia_raid_success_count
-            multiply = 0.01
-        }
-        max = 0.05
-    }
+    #minor anatolia loss
+    monthly_prestige = 0.05
 }
-trojan_war_anatolian_victory = {
-      game_data = {
-		category = country   
-	}
-	    siege_ability = {
-        value = 0.0
-        add = {
-            value = global:anatolia_raid_failed_count
-            multiply = 0.01
-        }
-        max = 0.05
+
+trojan_war_end_6 = {
+    game_data = {
+        category = country
     }
-    levy_combat_efficiency = {
-        value = 0.0
-        add = {
-            value = global:anatolia_raid_failed_count
-            multiply = 0.01
-        }
-        max = 0.05	
-    }	
+    #minor anatolia victory
+    monthly_prestige = 0.05
 }
