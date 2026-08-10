@@ -159,6 +159,32 @@ bronze_age_PHO_coa = { # Phoenicia: Tyrian purple, maritime trade and shell dye.
 	}
 }
 
+bronze_age_CARTHAGE_coa = { # Carthage: Tyrian purple colony, western sea trade and astral cult.
+	pattern = "pattern_border_thin.dds"
+	color1 = "tyrian"
+	color2 = "yellow_mid"
+	color3 = "black"
+
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.52 } scale = { 0.78 0.78 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_08.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.22 } scale = { 0.28 0.28 } }
+	}
+	colored_emblem = {
+		texture = "ce_conch_shell.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.82 } scale = { 0.25 0.25 } }
+	}
+}
+
 bronze_age_MIN_coa = { # Minoans: red and white, bull horns and double axe.
 	pattern = "pattern_solid.dds"
 	color1 = "red_dark"

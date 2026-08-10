@@ -158,6 +158,24 @@ phoenician = {
 	tags = { folk_european_gfx pagan_gfx }
 }
 
+punic = {
+	color = rgb { 111 65 143 }
+	group = levantine_religion_group
+
+	definition_modifier = {
+		global_maritime_presence_modifier = 0.1
+		global_trade_protection_factor = 0.1
+		ship_build_speed = 0.05
+		naval_morale_attrition_cost = -0.001
+		global_clergy_estate_power = 0.05
+	}
+
+	opinions = {
+	}
+
+	tags = { folk_european_gfx pagan_gfx }
+}
+
 ugaritic = {
 	color = rgb { 122 128 168 }
 	group = levantine_religion_group

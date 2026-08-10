@@ -276,6 +276,10 @@ CARCH = {
 	color = rgb { 89 39 39 }
 	color2 = rgb { 35 31 29 }
 }
+CARTHAGE = {
+	color = rgb { 82 44 108 }
+	color2 = rgb { 211 164 69 }
+}
 KAMMA = {
 	color = rgb { 177 166 136 }
 	color2 = rgb { 207 169 75 }
@@ -2258,4 +2262,52 @@ VISTU = {
 	color2 = rgb { 121 102 127 }
 }
 
+ASGARD = {
+	color = rgb { 34 78 112 }
+	color2 = rgb { 214 166 62 }
+}
 
+MIDGARD = {
+	color = rgb { 72 119 86 }
+	color2 = rgb { 191 132 52 }
+}
+
+VANAHEIM = {
+	color = rgb { 92 132 55 }
+	color2 = rgb { 221 170 70 }
+}
+
+JOTUNHEIM = {
+	color = rgb { 83 92 105 }
+	color2 = rgb { 207 151 64 }
+}
+
+ALFHEIM = {
+	color = rgb { 116 151 95 }
+	color2 = rgb { 221 180 93 }
+}
+
+NIDAVELLIR = {
+	color = rgb { 82 69 63 }
+	color2 = rgb { 205 126 57 }
+}
+
+MUSPELLHEIM = {
+	color = rgb { 143 63 42 }
+	color2 = rgb { 225 143 64 }
+}
+
+NIFLHEIM = {
+	color = rgb { 91 124 145 }
+	color2 = rgb { 206 224 230 }
+}
+
+HELHEIM = {
+	color = rgb { 73 63 70 }
+	color2 = rgb { 178 149 101 }
+}
+
+VINDLAND = {
+	color = rgb { 129 112 50 }
+	color2 = rgb { 219 170 67 }
+}

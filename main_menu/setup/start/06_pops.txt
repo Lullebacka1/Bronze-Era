@@ -56640,10 +56640,30 @@ dayong = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
 }
 shizhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 datian_shizhou = {
 	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
@@ -56651,10 +56671,30 @@ datian_shizhou = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
 }
 lichuan = {
-	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = slaves	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
 }
 rongmei = {
 	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
@@ -56673,10 +56713,30 @@ sanmao = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
 }
 zhonglu = {
-	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = slaves	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
 }
 shinan = {
 	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
@@ -56793,8 +56853,18 @@ zhuxi = {
 	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
 }
 fengxi = {
-	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = shang_rites
+	}
 }
 zigui = {
 	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
@@ -56805,12 +56875,42 @@ xingshan = {
 	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
 }
 xinhua_guizhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
 }
 badong = {
 	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
@@ -66764,10 +66864,30 @@ zhenning = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = baiyue	religion = baiyue_rites }
 }
 bozhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = slaves	size = 0.010	culture = qiang	religion = zhou_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
 }
 wujiang_bozhou = {
 	define_pop = {	type = clergy	size = 0.010	culture = baiyue	religion = baiyue_rites }
@@ -66775,23 +66895,88 @@ wujiang_bozhou = {
 	define_pop = {	type = slaves	size = 0.010	culture = baiyue	religion = baiyue_rites }
 }
 zizhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 renhuai = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 shaxi = {
-	define_pop = {	type = clergy	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = slaves	size = 0.010	culture = qiang	religion = zhou_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
 }
 duyun = {
 	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
@@ -66995,28 +67180,108 @@ dizhai = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = baiyue	religion = baiyue_rites }
 }
 caoni = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
 }
 cengtai = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.010	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
 }
 dafang = {
-	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = slaves	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = slaves	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
 }
 dagu_shunyuan = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.010	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
 }
 shuixi = {
 	define_pop = {	type = clergy	size = 0.010	culture = baiyue	religion = baiyue_rites }
@@ -67030,10 +67295,30 @@ longchang = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = baiyue	religion = baiyue_rites }
 }
 jinji = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.010	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
 }
 tongren = {
 	define_pop = {	type = clergy	size = 0.010	culture = baiyue	religion = baiyue_rites }
@@ -67087,10 +67372,30 @@ zhijin = {
 	define_pop = {	type = slaves	size = 0.010	culture = baiyue	religion = baiyue_rites }
 }
 huozhu = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.010	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
 }
 zhengan = {
 	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
@@ -67110,16 +67415,56 @@ zhenzhou = {
 	define_pop = {	type = slaves	size = 0.010	culture = shang	religion = shang_rites }
 }
 suiyang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 bochuan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 beisheng = {
 	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
@@ -70030,24 +70375,84 @@ guochuan = {
 	define_pop = {	type = peasants	size = 1.000	culture = zhou	religion = zhou_rites }
 }
 nanzheng = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 chenggu = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 lueyang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 duoshui = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 daan = {
 	define_pop = {	type = clergy	size = 0.01	culture = shu_culture	religion = sanxingdui_rites }
@@ -70170,58 +70575,208 @@ xianyang = {
 	define_pop = {	type = peasants	size = 1.000	culture = zhou	religion = zhou_rites }
 }
 xicheng = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 hanyin = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 ningshan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 pingli = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 shiquan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 xunyang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 ziyang_xingan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 goupingguan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 yangzhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 xixiang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 yangyuan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 foping = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 huayuan = {
 	define_pop = {	type = clergy	size = 0.010	culture = zhou	religion = zhou_rites }
@@ -70240,113 +70795,378 @@ tongguan_tongchuan = {
 	define_pop = {	type = peasants	size = 1.000	culture = zhou	religion = zhou_rites }
 }
 dazu = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 rongchang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 yongchuan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 baxian = {
-	define_pop = {	type = nobles	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = burghers	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 banan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 bishan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 qijiang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 jiangjin = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 nanchuan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 tongchuan_dazhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 xinning_dazhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 dongxiang_dazhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 mingtong = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 taiping = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 fuzhou_sichuan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 changshou_changshou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 wulong = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 shizhao = {
 	define_pop = {	type = clergy	size = 0.01	culture = shu_culture	religion = sanxingdui_rites }
 	define_pop = {	type = peasants	size = 1	culture = shu_culture	religion = sanxingdui_rites }
 }
 tongliang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 dingyuan = {
 	define_pop = {	type = clergy	size = 0.01	culture = shu_culture	religion = sanxingdui_rites }
 	define_pop = {	type = peasants	size = 1	culture = shu_culture	religion = sanxingdui_rites }
 }
 fengjie = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 daning_kuizhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 kaizhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 liangshan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 wanzhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 wushan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 jianshi = {
 	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
@@ -70356,26 +71176,76 @@ jianshi = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
 }
 yunyang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 wushan_mountains = {
 }
 luzhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 naxi = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 hejiang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 jiangan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 youyang = {
 	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
@@ -70402,21 +71272,66 @@ qianjiang_shaoqing = {
 	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
 }
 linjiang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 dianjiang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 fengdu = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 shizhu = {
-	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
-	define_pop = {	type = slaves	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
 }
 runyan = {
 	define_pop = {	type = clergy	size = 0.010	culture = qiang	religion = zhou_rites }
@@ -70441,32 +71356,132 @@ zuosuo = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
 }
 changning_changning = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 luoji = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 yunlian = {
-	define_pop = {	type = clergy	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
 }
 rongxian = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 dechang = {
 	define_pop = {	type = clergy	size = 0.010	culture = qiang	religion = zhou_rites }
@@ -70483,58 +71498,218 @@ mingyi = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
 }
 dongchuan = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.010	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
 }
 qiaojia = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = slaves	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 tangdan = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.010	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
 }
 zhehai = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.010	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
 }
 longyou_jiading = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 emei = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 jiajiang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 rongzhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 weiyuan_jiading = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 qianwei = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 hanyuan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 suzhou = {
 	define_pop = {	type = clergy	size = 0.010	culture = qiang	religion = zhou_rites }
@@ -70551,70 +71726,240 @@ qiongbu = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
 }
 shimian = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 zhenxi_lizhou = {
 	define_pop = {	type = clergy	size = 0.010	culture = qiang	religion = zhou_rites }
 	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
 }
 mahu = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 lizhou_mahu = {
 	define_pop = {	type = clergy	size = 0.010	culture = qiang	religion = zhou_rites }
 	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
 }
 leibo = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.010	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
 }
 mabian = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.010	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
 }
 muchuan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 meizhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 qingshen = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 danleng = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 pengshan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 qiongzhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 pujiang_qiongzhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 dayi = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 jianchang_sichuan = {
 	define_pop = {	type = clergy	size = 0.010	culture = qiang	religion = zhou_rites }
@@ -70630,109 +71975,444 @@ beishe = {
 	define_pop = {	type = clergy	size = 0.010	culture = qiang	religion = zhou_rites }
 }
 wusa = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
 }
 zhaoban = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.010	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
 }
 heizhang = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
 }
 wumeng = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = slaves	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = slaves	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 daguan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 luozuoguan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 yongshan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = slaves	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 yibin = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 fushun = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 nanxi = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 qingfu = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 xuanhua = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 yandao = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 rongjing = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 diaomen = {
-	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
 }
 lushan_yazhou = {
-	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = shang_rites
+	}
 }
 mingshan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 yongning = {
-	define_pop = {	type = clergy	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = clergy	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = slaves	size = 0.010	culture = qiang	religion = zhou_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
 }
 gulin = {
-	define_pop = {	type = clergy	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = clergy	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = qiang	religion = zhou_rites }
-	define_pop = {	type = slaves	size = 0.010	culture = qiang	religion = zhou_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = zhou_rites
+	}
 }
 luojiao = {
 	define_pop = {	type = clergy	size = 0.010	culture = baiyue	religion = baiyue_rites }
@@ -70742,17 +72422,62 @@ luojiao = {
 	define_pop = {	type = slaves	size = 0.010	culture = baiyue	religion = baiyue_rites }
 }
 mangbu = {
-	define_pop = {	type = clergy	size = 0.010	culture = baiyue	religion = baiyue_rites }
-	define_pop = {	type = clergy	size = 0.010	culture = baiyue	religion = baiyue_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = baiyue	religion = baiyue_rites }
-	define_pop = {	type = tribesmen	size = 0.010	culture = baiyue	religion = baiyue_rites }
-	define_pop = {	type = slaves	size = 0.010	culture = baiyue	religion = baiyue_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = baiyue_rites
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = baiyue_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = baiyue_rites
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = baiyue_rites
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = baiyue_rites
+	}
 }
 guihua = {
-	define_pop = {	type = clergy	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.010	culture = andronovo	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.010	culture = andronovo	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = shu_culture
+		religion = steppe_pagan
+	}
 }
 langzhong = {
 	define_pop = {	type = clergy	size = 0.01	culture = shu_culture	religion = sanxingdui_rites }
@@ -70771,16 +72496,36 @@ huacheng = {
 	define_pop = {	type = peasants	size = 1	culture = shu_culture	religion = sanxingdui_rites }
 }
 zengkou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 nanjiang = {
 	define_pop = {	type = clergy	size = 0.01	culture = shu_culture	religion = sanxingdui_rites }
 	define_pop = {	type = peasants	size = 1	culture = shu_culture	religion = sanxingdui_rites }
 }
 tongjiang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 chengdu = {
 	define_pop = {	type = nobles	size = 0.01	culture = shu_culture	religion = sanxingdui_rites }
@@ -70805,28 +72550,88 @@ jintang = {
 	define_pop = {	type = peasants	size = 1	culture = shu_culture	religion = sanxingdui_rites }
 }
 liujiang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 huaying = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 linshui = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 qujiang_guangan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 yuechi = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 dazhu = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 miangu = {
 	define_pop = {	type = clergy	size = 0.01	culture = shu_culture	religion = sanxingdui_rites }
@@ -70877,24 +72682,74 @@ jianzhou = {
 	define_pop = {	type = peasants	size = 1	culture = shu_culture	religion = sanxingdui_rites }
 }
 zixian = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 neijiang = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 renshou = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 jingyan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 ziyang_zizhong = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 pingwu = {
 	define_pop = {	type = clergy	size = 0.01	culture = shu_culture	religion = shang_rites }
@@ -70948,8 +72803,18 @@ pengzhou = {
 	define_pop = {	type = peasants	size = 1	culture = shu_culture	religion = sanxingdui_rites }
 }
 jinyuan = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 guanzhou = {
 	define_pop = {	type = clergy	size = 0.01	culture = shu_culture	religion = sanxingdui_rites }
@@ -70968,8 +72833,18 @@ lezhi = {
 	define_pop = {	type = peasants	size = 1	culture = shu_culture	religion = sanxingdui_rites }
 }
 anyue = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 suining = {
 	define_pop = {	type = clergy	size = 0.01	culture = shu_culture	religion = sanxingdui_rites }
@@ -70980,8 +72855,18 @@ nanchong = {
 	define_pop = {	type = peasants	size = 1	culture = shu_culture	religion = sanxingdui_rites }
 }
 yingshan_shunqing = {
-	define_pop = {	type = clergy	size = 0.010	culture = sanxingdui	religion = sanxingdui_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = sanxingdui	religion = sanxingdui_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = shu_culture
+		religion = sanxingdui_rites
+	}
 }
 xichong = {
 	define_pop = {	type = clergy	size = 0.01	culture = shu_culture	religion = sanxingdui_rites }
