@@ -3783,6 +3783,219 @@ lateralview = {
 														text = "[Location.MakeScope.GetVariable('bronze_city_prestige_score').GetValue|0]"
 													}
 												}
+												vbox = {
+													visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_score').GetValue, '(CFixedPoint)0')]"
+													spacing = 3
+
+													hbox = {
+														layoutpolicy_horizontal = expanding
+														text_single = {
+															text = "BRONZE_CITY_PRESTIGE_BUILDING_SCORE_BREAKDOWN"
+															default_format = "#yellow_titles"
+														}
+														expand = {}
+														text_single = {
+															text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_score').GetValue|0]"
+															default_format = "#P"
+														}
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_market_village_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_MARKET_VILLAGE" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_market_village_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_marketplace_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_MARKETPLACE" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_marketplace_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_entrepot_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_ENTREPOT" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_entrepot_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_trading_hub_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_TRADING_HUB" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_trading_hub_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_stock_exchange_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_STOCK_EXCHANGE" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_stock_exchange_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_palatial_complex_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_PALATIAL_COMPLEX" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_palatial_complex_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_giza_pyramid_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_GIZA_PYRAMID" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_giza_pyramid_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_karnak_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_KARNAK" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_karnak_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_luxor_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_LUXOR" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_luxor_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_abu_simbel_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_ABU_SIMBEL" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_abu_simbel_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_theban_necropolis_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_THEBAN_NECROPOLIS" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_theban_necropolis_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_hattusa_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_HATTUSA" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_hattusa_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_mycenae_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_MYCENAE" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_mycenae_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_tiryns_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_TIRYNS" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_tiryns_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_pylos_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_PYLOS" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_pylos_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_troy_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_TROY" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_troy_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_knossos_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_KNOSSOS" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_knossos_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_ugarit_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_UGARIT" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_ugarit_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_ur_ziggurat_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_UR_ZIGGURAT" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_ur_ziggurat_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_assur_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_ASSUR" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_assur_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_chogha_zanbil_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_CHOGHA_ZANBIL" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_chogha_zanbil_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_yin_xu_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_YIN_XU" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_yin_xu_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_su_nuraxi_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_SU_NURAXI" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_su_nuraxi_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_stonehenge_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_STONEHENGE" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_stonehenge_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_avebury_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_AVEBURY" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_avebury_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_bru_na_boinne_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_BRU_NA_BOINNE" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_bru_na_boinne_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_great_pyramid_new_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_GREAT_PYRAMID_NEW" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_great_pyramid_new_score').GetValue|0]" default_format = "#P" }
+													}
+													hbox = {
+														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_great_pyramid_unfinished_score').GetValue, '(CFixedPoint)0')]"
+														layoutpolicy_horizontal = expanding
+														text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_GREAT_PYRAMID_UNFINISHED" }
+														expand = {}
+														text_single = { text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_great_pyramid_unfinished_score').GetValue|0]" default_format = "#P" }
+													}
+												}
 												TooltipStringPairList = {
 													visible = "[EqualTo_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_rank').GetValue, '(CFixedPoint)1')]"
 													blockoverride "block_title" {

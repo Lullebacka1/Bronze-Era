@@ -95,6 +95,7 @@ bronze_city_prestige_disable_city = {
 	remove_variable = bronze_city_prestige_rank_percentile
 	remove_variable = bronze_city_prestige_relative_score
 	remove_variable = bronze_city_prestige_gui_location
+	bronze_city_prestige_remove_building_score_breakdown = yes
 }
 
 # Root = location.
