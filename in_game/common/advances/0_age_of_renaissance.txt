@@ -41,7 +41,7 @@ peer_polities_advance = {
 
 	depth = 0
 	
-	allow = { has_embraced_institution = institution:peer_polities }
+	allow = { has_embraced_institution = institution:tribal_migrations }
 }
 
 # renaissance_advance = {
