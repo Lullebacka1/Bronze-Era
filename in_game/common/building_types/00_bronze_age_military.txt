@@ -2,6 +2,8 @@ warrior_lodges = {
 	is_foreign = no
 	pop_type = soldiers
 	max_levels = 1
+
+	icon = Bz_government_military
 	
 	category = military_category
 	forbidden_for_estates = yes
