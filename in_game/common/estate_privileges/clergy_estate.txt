@@ -30,7 +30,7 @@ clergy_exclusive_literacy_rights = {
 	potential = {
 		OR = {
 			has_advance = elite_scripts_advance
-			has_advance = alphabet_script_advance
+			has_advance = merchant_script_advance
 		}
 	}
 	allow = {

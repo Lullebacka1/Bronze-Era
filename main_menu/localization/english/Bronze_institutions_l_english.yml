@@ -1,4 +1,7 @@
 ﻿l_english:
+
+  # BRONZE AGE (AGE 1)
+
   bronze_routes: "Long Distance Trade Networks"
   bronze_routes_desc: "Long-distance trade networks refer to the complex systems of trade and commerce that connect different regions and civilizations across vast distances. These networks facilitate the exchange of goods, ideas, and cultural influences between societies."
 
@@ -7,3 +10,8 @@
 
   chariot_warfare: "Warrior Aristocracy"
   chariot_warfare_desc: "The warrior aristocracy is a social class or group of individuals who hold power and influence primarily through their military prowess and leadership."
+
+  # IRON AGE (AGE 2)
+
+  commercial_counters: "Alphabetic Writing"
+  commercial_counters_desc: "Writing systems based on a limited set of signs representing individual sounds make literacy easier to adapt and transmit between languages. Their relative simplicity allows writing to spread beyond specialized scribal traditions into trade, administration, and wider social use."

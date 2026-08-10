@@ -1,4 +1,4 @@
-alphabet_script_advance = {
+merchant_script_advance = {
 	age = age_1_traditions
 	icon = abacus_advance
 	
