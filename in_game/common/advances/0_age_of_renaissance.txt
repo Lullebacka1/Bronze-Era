@@ -2,7 +2,47 @@
 # # Iron Age
 # #####################################
 
+# ALPHABETIC SCRIPT
 
+alphabetic_script_advance = {
+	age = age_2_renaissance
+	icon = abacus_advance
+	
+	global_burghers_max_literacy = 2
+	global_nobles_max_literacy = 2
+	global_clergy_max_literacy = 2
+
+	global_monthly_literacy = 0.01
+
+	depth = 0
+	
+	allow = { has_embraced_institution = institution:commercial_counters }
+}
+
+# IRON METALLURGY
+
+iron_metallurgy_advance = {
+	age = age_2_renaissance
+	
+	global_construction_speed = 0.10
+	army_maintenance_efficiency = 0.05
+
+	depth = 0
+	
+	allow = { has_embraced_institution = institution:iron_metallurgy }
+}
+
+# PEER POLITIES
+
+peer_polities_advance = {
+	age = age_2_renaissance
+	
+	diplomatic_capacity = 1
+
+	depth = 0
+	
+	allow = { has_embraced_institution = institution:peer_polities }
+}
 
 # renaissance_advance = {
 # 	age = age_2_renaissance
