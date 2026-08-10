@@ -22,17 +22,6 @@ template ledger_tabs_template {
 	button_main_tab_alt = {
 		using = layoutpolicy_expanding
 		blockoverride "tab_text"{
-			text = "BRONZE_CITY_PRESTIGE_LEDGER_TAB"
-		}
-		tooltip_enabled = no
-		onclick = "[OpenLateralViewWithParams('locations_list', 'subtab = prestige')]"
-		down = "[IsLateralViewOpenedWithParams('locations_list', 'subtab = prestige')]"
-	}
-	
-
-	button_main_tab_alt = {
-		using = layoutpolicy_expanding
-		blockoverride "tab_text"{
 			text = "MODIFIERS_TEXT"
 		}
 		tooltipwidget = {

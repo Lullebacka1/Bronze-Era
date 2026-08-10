@@ -16,14 +16,15 @@ bronze_city_prestige_runtime_bootstrap = {
 }
 
 # Root = country. Runs once per campaign version for the human player.
-# Version 15 keeps the original ranking bootstrap and creates the separate,
-# unfiltered city/megalopolis ledger list.
-bronze_city_prestige_player_ledger_bootstrap = {
+# Version 16 keeps a dedicated ranking bootstrap after removing the broken
+# ledger view. This preserves the old behavior where loading a campaign quickly
+# assigns a visible World Rank number to every valid city.
+bronze_city_prestige_player_rank_bootstrap = {
 	trigger = {
 		is_real_country = yes
 		is_ai = no
 		NOT = {
-			has_variable = bronze_city_prestige_ledger_v15_initialized
+			has_variable = bronze_city_prestige_rank_v16_initialized
 		}
 	}
 
@@ -36,9 +37,12 @@ bronze_city_prestige_player_ledger_bootstrap = {
 					NOT = {
 						has_global_variable_list = bronze_city_prestige_world_cities
 					}
-					global_variable_list_size = {
-						name = bronze_city_prestige_world_cities
-						value < 1
+					AND = {
+						has_global_variable_list = bronze_city_prestige_world_cities
+						global_variable_list_size = {
+							name = bronze_city_prestige_world_cities
+							value < 1
+						}
 					}
 				}
 			}
@@ -50,27 +54,31 @@ bronze_city_prestige_player_ledger_bootstrap = {
 		# world ranking pass so valid cities cannot remain without World Rank.
 		bronze_city_prestige_update_world_ranking = yes
 
-		# This is a separate plain city/megalopolis scan. It cannot affect ranks.
-		bronze_city_prestige_rebuild_ledger_list = yes
 		set_variable = {
-			name = bronze_city_prestige_ledger_v15_initialized
+			name = bronze_city_prestige_rank_v16_initialized
 			value = 1
 		}
 	}
 }
 
 # Root = human country. Cheap monthly guard for converted or damaged saves.
-bronze_city_prestige_player_ledger_repair = {
+bronze_city_prestige_player_rank_repair = {
 	trigger = {
 		is_real_country = yes
 		is_ai = no
 		OR = {
 			NOT = {
-				has_global_variable_list = bronze_city_prestige_ledger_cities
+				has_global_variable = bronze_city_prestige_manager
 			}
-			global_variable_list_size = {
-				name = bronze_city_prestige_ledger_cities
-				value < 1
+			NOT = {
+				has_global_variable_list = bronze_city_prestige_world_cities
+			}
+			AND = {
+				has_global_variable_list = bronze_city_prestige_world_cities
+				global_variable_list_size = {
+					name = bronze_city_prestige_world_cities
+					value < 1
+				}
 			}
 			any_owned_location = {
 				bronze_city_prestige_is_urban = yes
@@ -85,26 +93,37 @@ bronze_city_prestige_player_ledger_repair = {
 	}
 
 	effect = {
-		# Ranking repair is only invoked when an owned city is genuinely missing
-		# its previous World Rank variable.
 		if = {
 			limit = {
 				OR = {
-					any_owned_location = {
-						bronze_city_prestige_is_urban = yes
-						NOT = { has_variable = bronze_city_prestige_global_rank }
+					NOT = {
+						has_global_variable_list = bronze_city_prestige_world_cities
 					}
-					any_owned_location = {
-						bronze_city_prestige_is_urban = yes
-						has_variable = bronze_city_prestige_global_rank
-						var:bronze_city_prestige_global_rank < 1
+					AND = {
+						has_global_variable_list = bronze_city_prestige_world_cities
+						global_variable_list_size = {
+							name = bronze_city_prestige_world_cities
+							value < 1
+						}
 					}
 				}
 			}
+			remove_global_variable = bronze_city_prestige_manager
+			bronze_city_prestige_initialize_world = yes
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = { has_global_variable = bronze_city_prestige_manager }
+				}
+				set_global_variable = {
+					name = bronze_city_prestige_manager
+					value = this
+				}
+			}
+
 			bronze_city_prestige_update_world_ranking = yes
 		}
-
-		bronze_city_prestige_rebuild_ledger_list = yes
 	}
 }
 
@@ -164,7 +183,6 @@ bronze_city_prestige_yearly_pulse = {
 					value = 1
 				}
 				bronze_city_prestige_update_world_ranking = yes
-				bronze_city_prestige_rebuild_ledger_list = yes
 				remove_global_variable = bronze_city_prestige_run_five_year_content
 			}
 		}

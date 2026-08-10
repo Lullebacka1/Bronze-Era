@@ -530,7 +530,6 @@ bronze_city_development.330 = {
 			limit = { has_global_variable = bronze_city_prestige_manager }
 			global_var:bronze_city_prestige_manager ?= {
 				bronze_city_prestige_update_world_ranking = yes
-				bronze_city_prestige_rebuild_ledger_list = yes
 			}
 		}
 		remove_variable = bronze_city_decline_event_city

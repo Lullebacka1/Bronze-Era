@@ -8,8 +8,8 @@ monthly_country_pulse = {
 	on_actions = {
 		bronze_chronology_monthly_pulse
 		bronze_city_prestige_runtime_bootstrap
-		bronze_city_prestige_player_ledger_bootstrap
-		bronze_city_prestige_player_ledger_repair
+		bronze_city_prestige_player_rank_bootstrap
+		bronze_city_prestige_player_rank_repair
 		bronze_rome_foundation_monthly_pulse
 	}
 }

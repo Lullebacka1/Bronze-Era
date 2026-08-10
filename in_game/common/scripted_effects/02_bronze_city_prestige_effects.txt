@@ -1,5 +1,5 @@
-﻿# Backend only. A ledger can safely consume bronze_city_prestige_enabled,
-# score, owner reward, and an independent global ledger list maintained here.
+﻿# Backend only. Maintains City Prestige scoring, world rank variables, and
+# owner rewards for urban locations.
 #
 # Historical setup example once an exact location key is known:
 # location:<location_id> = {
@@ -280,7 +280,6 @@ bronze_city_prestige_commit_score_change = {
 		limit = { has_global_variable = bronze_city_prestige_manager }
 		global_var:bronze_city_prestige_manager ?= {
 			bronze_city_prestige_update_world_ranking = yes
-			bronze_city_prestige_rebuild_ledger_list = yes
 		}
 	}
 }
@@ -505,61 +504,6 @@ bronze_city_prestige_apply_royal_capital_bonus = {
 			mode = replace
 		}
 	}
-}
-
-# Root = country.
-# The ledger is deliberately independent from the prestige ranking. It lists
-# every city and megalopolis in the world, with no discovery, ownership, score,
-# rank, or country filter. The final global list is ordered by the numeric
-# prestige score so the GUI consumes real values instead of text-formatted ones.
-bronze_city_prestige_rebuild_ledger_list = {
-	save_scope_as = bronze_city_prestige_ledger_manager
-
-	if = {
-		limit = {
-			has_global_variable_list = bronze_city_prestige_ledger_cities
-		}
-		clear_global_variable_list = bronze_city_prestige_ledger_cities
-	}
-
-	clear_variable_list = bronze_city_prestige_ledger_build_pool
-
-	every_country = {
-		limit = { is_real_country = yes }
-		every_owned_location = {
-			limit = { bronze_city_prestige_is_urban = yes }
-
-			bronze_city_prestige_initialize_city = yes
-			save_scope_as = bronze_city_prestige_ledger_city
-
-			scope:bronze_city_prestige_ledger_manager = {
-				add_to_variable_list = {
-					name = bronze_city_prestige_ledger_build_pool
-					target = scope:bronze_city_prestige_ledger_city
-				}
-			}
-		}
-	}
-
-	ordered_in_list = {
-		variable = bronze_city_prestige_ledger_build_pool
-		order_by = {
-			value = 0
-			if = {
-				limit = { has_variable = bronze_city_prestige_score }
-				add = var:bronze_city_prestige_score
-			}
-		}
-		max = 10000
-		check_range_bounds = no
-
-		add_to_global_variable_list = {
-			name = bronze_city_prestige_ledger_cities
-			target = this
-		}
-	}
-
-	clear_variable_list = bronze_city_prestige_ledger_build_pool
 }
 
 # Root = prestigious destination location.
@@ -1000,14 +944,6 @@ bronze_city_prestige_initialize_world = {
 				value = this
 			}
 			bronze_city_prestige_update_world_ranking = yes
-		}
-	}
-
-	# The ledger is a plain world list and does not depend on ranking success.
-	if = {
-		limit = { has_global_variable = bronze_city_prestige_manager }
-		global_var:bronze_city_prestige_manager ?= {
-			bronze_city_prestige_rebuild_ledger_list = yes
 		}
 	}
 
