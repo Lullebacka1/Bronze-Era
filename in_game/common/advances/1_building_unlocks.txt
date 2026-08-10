@@ -201,6 +201,7 @@ bronze_age_trade_posts_advance = {
 	research_cost = 1.5
 
 	unlock_building = bronze_age_trade_office
+	monthly_diplomats = 0.05
 
 	starting_technology_level = 3
 
