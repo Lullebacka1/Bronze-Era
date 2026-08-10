@@ -7,6 +7,54 @@
 # }
 #
 # Root = location.
+bronze_city_prestige_clear_score_breakdown = {
+	set_variable = { name = bronze_city_prestige_rank_score value = 0 }
+	set_variable = { name = bronze_city_prestige_population_score value = 0 }
+	set_variable = { name = bronze_city_prestige_prosperity_score value = 0 }
+	set_variable = { name = bronze_city_prestige_capital_score value = 0 }
+	set_variable = { name = bronze_city_prestige_trade_role_score value = 0 }
+	set_variable = { name = bronze_city_prestige_historic_score value = 0 }
+	set_variable = { name = bronze_city_prestige_monument_variable_score value = 0 }
+	set_variable = { name = bronze_city_prestige_military_breakdown_score value = 0 }
+	set_variable = { name = bronze_city_prestige_mission_score value = 0 }
+	set_variable = { name = bronze_city_prestige_decline_penalty_score value = 0 }
+	set_variable = { name = bronze_city_prestige_pyramid_penalty_score value = 0 }
+	set_variable = { name = bronze_city_prestige_event_scholars_score value = 0 }
+	set_variable = { name = bronze_city_prestige_event_craftsmen_score value = 0 }
+	set_variable = { name = bronze_city_prestige_event_caravan_score value = 0 }
+	set_variable = { name = bronze_city_prestige_event_famine_score value = 0 }
+	set_variable = { name = bronze_city_prestige_event_trade_collapse_score value = 0 }
+	set_variable = { name = bronze_city_prestige_event_population_exodus_score value = 0 }
+}
+
+# Root = location.
+bronze_city_prestige_remove_score_breakdown = {
+	remove_variable = bronze_city_prestige_rank_score
+	remove_variable = bronze_city_prestige_population_score
+	remove_variable = bronze_city_prestige_prosperity_score
+	remove_variable = bronze_city_prestige_capital_score
+	remove_variable = bronze_city_prestige_trade_role_score
+	remove_variable = bronze_city_prestige_historic_score
+	remove_variable = bronze_city_prestige_monument_variable_score
+	remove_variable = bronze_city_prestige_military_breakdown_score
+	remove_variable = bronze_city_prestige_mission_score
+	remove_variable = bronze_city_prestige_decline_penalty_score
+	remove_variable = bronze_city_prestige_pyramid_penalty_score
+	remove_variable = bronze_city_prestige_event_scholars_score
+	remove_variable = bronze_city_prestige_event_craftsmen_score
+	remove_variable = bronze_city_prestige_event_caravan_score
+	remove_variable = bronze_city_prestige_event_famine_score
+	remove_variable = bronze_city_prestige_event_trade_collapse_score
+	remove_variable = bronze_city_prestige_event_population_exodus_score
+	remove_variable = bronze_city_prestige_closest_higher_city
+	remove_variable = bronze_city_prestige_closest_higher_score
+	remove_variable = bronze_city_prestige_closest_lower_city
+	remove_variable = bronze_city_prestige_closest_lower_score
+	remove_variable = bronze_city_prestige_score_gap_higher
+	remove_variable = bronze_city_prestige_score_gap_lower
+}
+
+# Root = location.
 bronze_city_prestige_initialize_city = {
 	if = {
 		limit = {
@@ -95,6 +143,7 @@ bronze_city_prestige_disable_city = {
 	remove_variable = bronze_city_prestige_rank_percentile
 	remove_variable = bronze_city_prestige_relative_score
 	remove_variable = bronze_city_prestige_gui_location
+	bronze_city_prestige_remove_score_breakdown = yes
 	bronze_city_prestige_remove_building_score_breakdown = yes
 }
 
@@ -103,38 +152,46 @@ bronze_city_prestige_disable_city = {
 # extension hooks. Their numeric values are added directly to the score.
 bronze_city_prestige_recalculate_city = {
 	set_variable = { name = bronze_city_prestige_score value = 0 }
+	bronze_city_prestige_clear_score_breakdown = yes
 
 	# Settlement rank supplies the urban base score. A megalopolis begins with
 	# four times the urban weight of a normal city.
 	if = {
 		limit = { location_rank = location_rank:megalopolis }
 		change_variable = { name = bronze_city_prestige_score add = 100 }
+		set_variable = { name = bronze_city_prestige_rank_score value = 100 }
 	}
 	else_if = {
 		limit = { location_rank = location_rank:city }
 		change_variable = { name = bronze_city_prestige_score add = 25 }
+		set_variable = { name = bronze_city_prestige_rank_score value = 25 }
 	}
 
 	# Location population values are expressed in thousands.
 	if = {
 		limit = { population >= 10 }
 		change_variable = { name = bronze_city_prestige_score add = 10 }
+		change_variable = { name = bronze_city_prestige_population_score add = 10 }
 	}
 	if = {
 		limit = { population >= 50 }
 		change_variable = { name = bronze_city_prestige_score add = 25 }
+		change_variable = { name = bronze_city_prestige_population_score add = 25 }
 	}
 	if = {
 		limit = { population >= 100 }
 		change_variable = { name = bronze_city_prestige_score add = 50 }
+		change_variable = { name = bronze_city_prestige_population_score add = 50 }
 	}
 	if = {
 		limit = { population >= 250 }
 		change_variable = { name = bronze_city_prestige_score add = 100 }
+		change_variable = { name = bronze_city_prestige_population_score add = 100 }
 	}
 	if = {
 		limit = { population >= 500 }
 		change_variable = { name = bronze_city_prestige_score add = 200 }
+		change_variable = { name = bronze_city_prestige_population_score add = 200 }
 	}
 
 	# Prosperity represents the current success and reputation of the urban
@@ -143,27 +200,33 @@ bronze_city_prestige_recalculate_city = {
 	if = {
 		limit = { prosperity >= 0.75 }
 		change_variable = { name = bronze_city_prestige_score add = 50 }
+		set_variable = { name = bronze_city_prestige_prosperity_score value = 50 }
 	}
 	else_if = {
 		limit = { prosperity >= 0.50 }
 		change_variable = { name = bronze_city_prestige_score add = 35 }
+		set_variable = { name = bronze_city_prestige_prosperity_score value = 35 }
 	}
 	else_if = {
 		limit = { prosperity >= 0.25 }
 		change_variable = { name = bronze_city_prestige_score add = 20 }
+		set_variable = { name = bronze_city_prestige_prosperity_score value = 20 }
 	}
 	else_if = {
 		limit = { prosperity >= 0 }
 		change_variable = { name = bronze_city_prestige_score add = 10 }
+		set_variable = { name = bronze_city_prestige_prosperity_score value = 10 }
 	}
 	else_if = {
 		limit = { prosperity >= -0.25 }
 		change_variable = { name = bronze_city_prestige_score add = 5 }
+		set_variable = { name = bronze_city_prestige_prosperity_score value = 5 }
 	}
 
 	if = {
 		limit = { is_capital = yes }
 		change_variable = { name = bronze_city_prestige_score add = 50 }
+		set_variable = { name = bronze_city_prestige_capital_score value = 50 }
 	}
 
 	# Geographic trade role is awarded once even if both conditions are true.
@@ -175,6 +238,7 @@ bronze_city_prestige_recalculate_city = {
 			}
 		}
 		change_variable = { name = bronze_city_prestige_score add = 50 }
+		set_variable = { name = bronze_city_prestige_trade_role_score value = 50 }
 	}
 
 	# All building-based points are configured in one dedicated effect file:
@@ -191,6 +255,10 @@ bronze_city_prestige_recalculate_city = {
 			name = bronze_city_prestige_score
 			add = var:bronze_historic_city
 		}
+		set_variable = {
+			name = bronze_city_prestige_historic_score
+			value = var:bronze_historic_city
+		}
 	}
 	if = {
 		limit = {
@@ -200,6 +268,10 @@ bronze_city_prestige_recalculate_city = {
 		change_variable = {
 			name = bronze_city_prestige_score
 			add = var:bronze_city_monument_score
+		}
+		set_variable = {
+			name = bronze_city_prestige_monument_variable_score
+			value = var:bronze_city_monument_score
 		}
 	}
 	if = {
@@ -211,6 +283,10 @@ bronze_city_prestige_recalculate_city = {
 			name = bronze_city_prestige_score
 			add = var:bronze_city_prestige_military_score
 		}
+		set_variable = {
+			name = bronze_city_prestige_military_breakdown_score
+			value = var:bronze_city_prestige_military_score
+		}
 	}
 	if = {
 		limit = {
@@ -220,6 +296,10 @@ bronze_city_prestige_recalculate_city = {
 		change_variable = {
 			name = bronze_city_prestige_score
 			add = var:bronze_city_mission_prestige
+		}
+		set_variable = {
+			name = bronze_city_prestige_mission_score
+			value = var:bronze_city_mission_prestige
 		}
 	}
 	if = {
@@ -231,10 +311,15 @@ bronze_city_prestige_recalculate_city = {
 			name = bronze_city_prestige_score
 			subtract = var:bronze_city_decline_prestige_penalty
 		}
+		set_variable = {
+			name = bronze_city_prestige_decline_penalty_score
+			value = var:bronze_city_decline_prestige_penalty
+		}
 	}
 	if = {
 		limit = { has_variable = bronze_great_pyramid_reduced_completion }
 		change_variable = { name = bronze_city_prestige_score subtract = 50 }
+		set_variable = { name = bronze_city_prestige_pyramid_penalty_score value = 50 }
 	}
 
 	# Temporary urban events alter the next rankings without creating a second
@@ -243,26 +328,32 @@ bronze_city_prestige_recalculate_city = {
 	if = {
 		limit = { has_location_modifier = bronze_city_scholars_gathered }
 		change_variable = { name = bronze_city_prestige_score add = 15 }
+		set_variable = { name = bronze_city_prestige_event_scholars_score value = 15 }
 	}
 	if = {
 		limit = { has_location_modifier = bronze_city_famous_craftsmen }
 		change_variable = { name = bronze_city_prestige_score add = 20 }
+		set_variable = { name = bronze_city_prestige_event_craftsmen_score value = 20 }
 	}
 	if = {
 		limit = { has_location_modifier = bronze_city_merchant_caravan }
 		change_variable = { name = bronze_city_prestige_score add = 10 }
+		set_variable = { name = bronze_city_prestige_event_caravan_score value = 10 }
 	}
 	if = {
 		limit = { has_location_modifier = bronze_city_famine }
 		change_variable = { name = bronze_city_prestige_score subtract = 25 }
+		set_variable = { name = bronze_city_prestige_event_famine_score value = 25 }
 	}
 	if = {
 		limit = { has_location_modifier = bronze_city_trade_collapse }
 		change_variable = { name = bronze_city_prestige_score subtract = 20 }
+		set_variable = { name = bronze_city_prestige_event_trade_collapse_score value = 20 }
 	}
 	if = {
 		limit = { has_location_modifier = bronze_city_population_exodus }
 		change_variable = { name = bronze_city_prestige_score subtract = 30 }
+		set_variable = { name = bronze_city_prestige_event_population_exodus_score value = 30 }
 	}
 
 }
@@ -709,6 +800,8 @@ bronze_city_prestige_update_world_ranking = {
 
 	# Second local-list pass: assign the unique positions 1, 2, 3, ...
 	set_variable = { name = bronze_city_prestige_ranking_counter value = 0 }
+	remove_variable = bronze_city_prestige_previous_ranked_city
+	remove_variable = bronze_city_prestige_previous_ranked_score
 
 	ordered_in_list = {
 		variable = bronze_city_prestige_ranking_pool
@@ -728,6 +821,59 @@ bronze_city_prestige_update_world_ranking = {
 				add = 1
 			}
 		}
+		save_scope_as = bronze_city_prestige_current_ranked_city
+		remove_variable = bronze_city_prestige_closest_higher_city
+		remove_variable = bronze_city_prestige_closest_higher_score
+		remove_variable = bronze_city_prestige_closest_lower_city
+		remove_variable = bronze_city_prestige_closest_lower_score
+		remove_variable = bronze_city_prestige_score_gap_higher
+		remove_variable = bronze_city_prestige_score_gap_lower
+
+		if = {
+			limit = {
+				root = { has_variable = bronze_city_prestige_previous_ranked_city }
+			}
+			root = {
+				var:bronze_city_prestige_previous_ranked_city ?= {
+					save_scope_as = bronze_city_prestige_previous_ranked_city_scope
+				}
+			}
+			set_variable = {
+				name = bronze_city_prestige_closest_higher_city
+				value = scope:bronze_city_prestige_previous_ranked_city_scope
+			}
+			set_variable = {
+				name = bronze_city_prestige_closest_higher_score
+				value = root.var:bronze_city_prestige_previous_ranked_score
+			}
+			set_variable = {
+				name = bronze_city_prestige_score_gap_higher
+				value = root.var:bronze_city_prestige_previous_ranked_score
+			}
+			change_variable = {
+				name = bronze_city_prestige_score_gap_higher
+				subtract = var:bronze_city_prestige_score
+			}
+			scope:bronze_city_prestige_previous_ranked_city_scope = {
+				set_variable = {
+					name = bronze_city_prestige_closest_lower_city
+					value = scope:bronze_city_prestige_current_ranked_city
+				}
+				set_variable = {
+					name = bronze_city_prestige_closest_lower_score
+					value = scope:bronze_city_prestige_current_ranked_city.var:bronze_city_prestige_score
+				}
+				set_variable = {
+					name = bronze_city_prestige_score_gap_lower
+					value = var:bronze_city_prestige_score
+				}
+				change_variable = {
+					name = bronze_city_prestige_score_gap_lower
+					subtract = scope:bronze_city_prestige_current_ranked_city.var:bronze_city_prestige_score
+				}
+			}
+		}
+
 		set_variable = {
 			name = bronze_city_prestige_global_rank
 			value = root.var:bronze_city_prestige_ranking_counter
@@ -850,9 +996,22 @@ bronze_city_prestige_update_world_ranking = {
 		}
 
 		bronze_city_prestige_try_foreign_migration = yes
+
+		root = {
+			set_variable = {
+				name = bronze_city_prestige_previous_ranked_city
+				value = scope:bronze_city_prestige_current_ranked_city
+			}
+			set_variable = {
+				name = bronze_city_prestige_previous_ranked_score
+				value = scope:bronze_city_prestige_current_ranked_city.var:bronze_city_prestige_score
+			}
+		}
 	}
 
 	clear_variable_list = bronze_city_prestige_ranking_pool
+	remove_variable = bronze_city_prestige_previous_ranked_city
+	remove_variable = bronze_city_prestige_previous_ranked_score
 
 	every_country = {
 		limit = { is_real_country = yes }
@@ -914,6 +1073,17 @@ bronze_city_prestige_initialize_world = {
 			NOT = { has_variable = bronze_city_prestige_eligibility_years }
 		}
 		set_variable = { name = bronze_city_prestige_eligibility_years value = 0 }
+	}
+
+	every_country = {
+		limit = { is_real_country = yes }
+		if = {
+			limit = {
+				NOT = { has_variable = bronze_city_prestige_update_years }
+			}
+			set_variable = { name = bronze_city_prestige_update_years value = 0 }
+		}
+		set_variable = { name = bronze_city_prestige_next_update_years value = 5 }
 	}
 
 	# The first human country becomes the single yearly ranking manager.

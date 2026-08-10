@@ -16,15 +16,14 @@ bronze_city_prestige_runtime_bootstrap = {
 }
 
 # Root = country. Runs once per campaign version for the human player.
-# Version 16 keeps a dedicated ranking bootstrap after removing the broken
-# ledger view. This preserves the old behavior where loading a campaign quickly
-# assigns a visible World Rank number to every valid city.
+# Version 17 refreshes the ranking cache after expanding the City Prestige
+# tooltip with score breakdowns and neighboring ranked cities.
 bronze_city_prestige_player_rank_bootstrap = {
 	trigger = {
 		is_real_country = yes
 		is_ai = no
 		NOT = {
-			has_variable = bronze_city_prestige_rank_v16_initialized
+			has_variable = bronze_city_prestige_rank_v17_initialized
 		}
 	}
 
@@ -55,7 +54,7 @@ bronze_city_prestige_player_rank_bootstrap = {
 		bronze_city_prestige_update_world_ranking = yes
 
 		set_variable = {
-			name = bronze_city_prestige_rank_v16_initialized
+			name = bronze_city_prestige_rank_v17_initialized
 			value = 1
 		}
 	}
@@ -142,6 +141,11 @@ bronze_city_prestige_yearly_pulse = {
 			set_variable = { name = bronze_city_prestige_update_years value = 0 }
 		}
 		change_variable = { name = bronze_city_prestige_update_years add = 1 }
+		set_variable = { name = bronze_city_prestige_next_update_years value = 5 }
+		change_variable = {
+			name = bronze_city_prestige_next_update_years
+			subtract = var:bronze_city_prestige_update_years
+		}
 
 		if = {
 			limit = {
@@ -167,6 +171,7 @@ bronze_city_prestige_yearly_pulse = {
 		if = {
 			limit = { var:bronze_city_prestige_update_years >= 5 }
 			set_variable = { name = bronze_city_prestige_update_years value = 0 }
+			set_variable = { name = bronze_city_prestige_next_update_years value = 5 }
 			set_variable = { name = bronze_city_prestige_eligibility_years value = 0 }
 			bronze_city_prestige_yearly_update = yes
 			bronze_city_prestige_five_year_eligibility_update = yes

@@ -38,6 +38,9 @@ bronze_city_prestige_clear_building_score_breakdown = {
 	set_variable = { name = bronze_city_prestige_building_trading_hub_score value = 0 }
 	set_variable = { name = bronze_city_prestige_building_stock_exchange_score value = 0 }
 	set_variable = { name = bronze_city_prestige_building_palatial_complex_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_triumphal_monument_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_monumental_gates_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_cyclopean_walls_score value = 0 }
 	set_variable = { name = bronze_city_prestige_building_giza_pyramid_score value = 0 }
 	set_variable = { name = bronze_city_prestige_building_karnak_score value = 0 }
 	set_variable = { name = bronze_city_prestige_building_luxor_score value = 0 }
@@ -70,6 +73,9 @@ bronze_city_prestige_remove_building_score_breakdown = {
 	remove_variable = bronze_city_prestige_building_trading_hub_score
 	remove_variable = bronze_city_prestige_building_stock_exchange_score
 	remove_variable = bronze_city_prestige_building_palatial_complex_score
+	remove_variable = bronze_city_prestige_building_triumphal_monument_score
+	remove_variable = bronze_city_prestige_building_monumental_gates_score
+	remove_variable = bronze_city_prestige_building_cyclopean_walls_score
 	remove_variable = bronze_city_prestige_building_giza_pyramid_score
 	remove_variable = bronze_city_prestige_building_karnak_score
 	remove_variable = bronze_city_prestige_building_luxor_score
@@ -169,6 +175,33 @@ bronze_city_prestige_add_building_points = {
 		}
 		change_variable = { name = bronze_city_prestige_building_score add = 100 }
 		set_variable = { name = bronze_city_prestige_building_palatial_complex_score value = 100 }
+	}
+
+	if = {
+		limit = {
+			has_building = building_type:bronze_age_triumphal_monument
+		}
+		change_variable = { name = bronze_city_prestige_score add = 10 }
+		change_variable = { name = bronze_city_prestige_building_score add = 10 }
+		set_variable = { name = bronze_city_prestige_building_triumphal_monument_score value = 10 }
+	}
+
+	if = {
+		limit = {
+			has_building = building_type:bronze_monumental_gates
+		}
+		change_variable = { name = bronze_city_prestige_score add = 10 }
+		change_variable = { name = bronze_city_prestige_building_score add = 10 }
+		set_variable = { name = bronze_city_prestige_building_monumental_gates_score value = 10 }
+	}
+
+	if = {
+		limit = {
+			has_building = building_type:cyclopean_walls
+		}
+		change_variable = { name = bronze_city_prestige_score add = 10 }
+		change_variable = { name = bronze_city_prestige_building_score add = 10 }
+		set_variable = { name = bronze_city_prestige_building_cyclopean_walls_score value = 10 }
 	}
 
 	# Historical monuments. Keep every fixed award in this single effect:
