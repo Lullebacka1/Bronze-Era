@@ -31,12 +31,6 @@ cyclopean_walls = {
 	
 	construction_demand = cyclopean_walls_construction
 	
-	on_built = {
-		location = {
-			change_variable = { name = bronze_city_prestige_score add = 10 }
-		}
-	}
-
 	modifier = {
 		pure_tooltip_entry = adds_10_city_prestige
 		local_garrison_size = 1.2

@@ -13,7 +13,6 @@ bronze_city_prestige_debug.1 = {
 			limit = { has_global_variable = bronze_city_prestige_manager }
 			global_var:bronze_city_prestige_manager ?= {
 				bronze_city_prestige_update_world_ranking = yes
-				bronze_city_prestige_rebuild_ledger_list = yes
 			}
 		}
 	}

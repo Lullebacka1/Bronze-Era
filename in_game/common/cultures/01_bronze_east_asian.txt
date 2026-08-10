@@ -56,6 +56,17 @@ baiyue = {
 	}
 }
 
+wu_culture = {
+	language = east_asian_bronze_language
+	color = rgb { 192 118 64 }
+	tags = { east_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		east_asian_bronze_group
+	}
+}
+
 qiang = {
 	language = east_asian_bronze_language
 	color = rgb { 213 113 98 }

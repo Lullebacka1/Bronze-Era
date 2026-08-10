@@ -6,7 +6,7 @@ warrior_lodges = {
 	category = military_category
 	forbidden_for_estates = yes
 	
-	employment_size = manpower_employment
+	employment_size = stockade_employment
 	
 	rural_settlement = yes
 	town = yes
