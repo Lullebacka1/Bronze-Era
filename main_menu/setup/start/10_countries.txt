@@ -1,4 +1,4 @@
-﻿current_age = age_1_traditions
+current_age = age_1_traditions
 
 # own_control_core
 # own_control_integrated
@@ -12313,7 +12313,7 @@ countries = {
 
 	SAMI = {
 		culture = nordic
-		religion = norse
+		religion = nordic_rites
 		country_rank = rank_county
 		own_control_core = {
 			branna      hienatiemi  pajala      ranea       tornea
