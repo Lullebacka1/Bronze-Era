@@ -30,6 +30,6 @@ scribe_alphabetic_maintenance = {
 	unlock_production_method = palace_registry_maintenance_potsherds
 	unlock_production_method = palace_registry_maintenance_wood
 	
-	requires = alphabet_script_advance
+	requires = merchant_script_advance
 }
 

@@ -1,9 +1,30 @@
 ﻿l_english:
+
+  # ##############################
+  # INSTITUTION TECHS
+  # ##############################
+
   palace_economy_advance: "Palace Economy"
   palace_economy_advance_desc: "The palace economy is a system of economic organization in which the ruling elite, often centered around a palace or royal court, controls and manages the production and distribution of goods and resources."
 
   warrior_aristocracy_advance: "Warrior Aristocracy"
   warrior_aristocracy_advance_desc: "The warrior aristocracy is a social class or group of individuals who hold power and influence primarily through their military prowess and leadership."
+
+  long_distance_trade_advance: "Long-Distance Trade Networks"
+  long_distance_trade_advance_desc: "Long-distance trade networks refer to the complex systems of trade and commerce that connect different regions and civilizations across vast distances. These networks facilitate the exchange of goods, ideas, and cultural influences between societies."
+
+  alphabetic_script_advance: "Alphabetic Script"
+  alphabetic_script_advance_desc: "Alphabetic writing spreads beyond the specialized circles that first employed it, providing a flexible and comparatively accessible means of recording language. Its wider adoption expands literacy among merchants, nobles, and religious authorities and strengthens the use of written communication in everyday administration and exchange."
+
+  iron_metallurgy_advance: "Iron Metallurgy"
+  iron_metallurgy_advance_desc: "Ironworking develops into a widespread metallurgical tradition, with increasingly reliable methods of smelting, refining, and forging. The growing availability of iron tools and weapons transforms production and warfare while reducing reliance on bronze for many common purposes."
+
+  peer_polities_advance: "Peer Polities"
+  peer_polities_advance_desc: "Networks of neighboring communities of comparable strength become increasingly interconnected through rivalry, warfare, diplomacy, trade, and imitation. Political development becomes shaped not by a single dominant center, but by competition among multiple states seeking to match and surpass their peers."
+
+  # ##############################
+  # FUSTERCLUCK
+  # ##############################
 
   cathedral_advance: "Monumental Temple Construction"
   cathedral_advance_desc: "We shall build a dedicated place of worship to our gods, a temple that will stand as a testament to our devotion and faith. This grand structure will not only serve as a spiritual center for our people but also as a symbol of our cultural and religious identity."
@@ -50,9 +71,6 @@
   tribal_city_building_advance: "Proto-Urban Centers"
   tribal_city_building_advance_desc: "While most cities emerge alongside centralized states, some societies may instead reach urban scale through the gradual expansion of tribal strongholds, market settlements, and communal institutions. Such centers represent a decentralized path to urban life, driven by population, commerce, and local cooperation rather than palatial administration."
 
-  long_distance_trade_advance: "Long-Distance Trade Networks"
-  long_distance_trade_advance_desc: "Long-distance trade networks refer to the complex systems of trade and commerce that connect different regions and civilizations across vast distances. These networks facilitate the exchange of goods, ideas, and cultural influences between societies."
-
   bronze_forge_advance: "Metalworking Craftsmanship"
   bronze_forge_advance_desc: "In early Bronze Age societies, metalworking was still a household craft, with villagers casting tools and weapons for their own use rather than relying on professional smiths."
 
@@ -77,8 +95,8 @@
   intercultural_relations_advance: "Intercultural Relations"
   intercultural_relations_advance_desc: "Intercultural relations refer to the interactions and relationships between different cultures and societies. These relations can involve various aspects such as trade, diplomacy, cultural exchange, and cooperation. Intercultural relations play a crucial role in fostering understanding, collaboration, and mutual respect among diverse groups of people."
 
-  alphabet_script_advance: "Alphabetic Writing System"
-  alphabet_script_advance_desc: "The development of an alphabetic writing system in Bronze Age societies marked a significant advancement in communication and record-keeping. An alphabetic script uses a set of symbols to represent individual sounds, allowing for more efficient and flexible writing compared to earlier pictographic or logographic systems. This innovation facilitated the recording of information, the transmission of knowledge, and the development of trade."
+  merchant_script_advance: "Mercantile Writing System"
+  merchant_script_advance_desc: "The needs of long-distance trade encourage the development and adoption of practical writing systems suited to recording transactions, goods, names, and agreements. Such mercantile writing allows commercial information to be recorded and transmitted more efficiently, strengthening trade networks without requiring literacy to become widespread throughout society."
 
   elite_scripts_advance: "Elite Scripts"
   elite_scripts_advance_desc: "The development of elite scripts in Bronze Age societies allowed for the creation of sophisticated written records and communication methods. These advanced writing systems were typically used by scribes and scholars, enabling the preservation and transmission of complex information and knowledge."
@@ -223,6 +241,12 @@
 
   labor_substitution_advance: "Labor Substitution"
   labor_substitution_advance_desc: "As systems of exchange become more sophisticated, labor obligations can increasingly be commuted into payments in grain, livestock, metal, or other valuable goods. Such arrangements reduce the need for direct service while creating new opportunities for administration and taxation."
+
+  chiefly_envoys: "Chiefly Envoys"
+  chiefly_envoys_desc: "Tribal chiefs increasingly entrust trusted companions and kinsmen with journeys to neighboring communities, carrying gifts, messages, demands, and promises on their behalf. These personal envoys allow chiefly authority and diplomacy to extend beyond the immediate reach of the ruler."
+
+  royal_covenants_advance: "Royal Covenants"
+  royal_covenants_advance_desc: "Monarchs increasingly formalize agreements with other rulers through written covenants, bearing seals or other marks of authority. These instruments give treaties, alliances, obligations, and guarantees a durable form that can be witnessed, preserved, and invoked beyond the immediate presence of the rulers who made them."
 
   # ##########################
   # BUILDINGS
