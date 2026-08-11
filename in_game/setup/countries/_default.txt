@@ -2312,7 +2312,7 @@ VINDLAND = {
 	color2 = rgb { 219 170 67 }
 }
 
-DAPENG = {
+DAPG = {
 	color = rgb { 57 146 213 }
 	color2 = rgb { 26 66 96 }
 }
@@ -2327,7 +2327,7 @@ PUGU = {
 	color2 = rgb { 59 27 83 }
 }
 
-XICHUI = {
+XCHU = {
 	color = rgb { 191 66 64 }
 	color2 = rgb { 86 30 29 }
 }
@@ -2337,7 +2337,7 @@ XU = {
 	color2 = rgb { 21 89 92 }
 }
 
-YOUMIN = {
+YOUM = {
 	color = rgb { 54 206 196 }
 	color2 = rgb { 24 93 88 }
 }

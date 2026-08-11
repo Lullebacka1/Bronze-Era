@@ -11917,7 +11917,9 @@ countries = {
 			shang
 		}
 		discovered_regions = {
+			east_china_region
 			north_china_region
+			west_china_region
 		}
 	}
 
@@ -37571,7 +37573,7 @@ VC001 = {
 				khorasan_region
 			}
 		}
-		VC1000 = {
+		V1000 = {
 			capital = zwettl
 			culture = urnfield
 			religion = Germanic_pagan
@@ -37597,7 +37599,7 @@ VC001 = {
 			}
 		}
 
-	DAPENG = {
+	DAPG = {
 		culture = shang
 		religion = shang_rites
 		country_rank = rank_county
@@ -37659,7 +37661,7 @@ VC001 = {
 		}
 	}
 
-	XICHUI = {
+	XCHU = {
 		culture = zhou
 		religion = zhou_rites
 		country_rank = rank_county
@@ -37701,7 +37703,7 @@ VC001 = {
 		}
 	}
 
-	YOUMIN = {
+	YOUM = {
 		culture = shang
 		religion = shang_rites
 		country_rank = rank_duchy

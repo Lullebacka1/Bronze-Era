@@ -12,10 +12,11 @@ diplomacy_manager = {
    dependency = { first = HATTI second = WILUS subject_type = vassal }
    ###Shang
    dependency = { first = SHANG second = ZHOU subject_type = vassal }
-   dependency = { first = SHANG second = DAPENG subject_type = vassal }
+   dependency = { first = SHANG second = DAPG subject_type = vassal }
    dependency = { first = SHANG second = GUZHU subject_type = vassal }
-   dependency = { first = SHANG second = XU subject_type = vassal}
-   dependency = { first = SHANG second = XIXHUI subject_type = tributary}
-   dependency = { first = SHANG second = PUGU subject_type = vassal}
+   dependency = { first = SHANG second = XU subject_type = vassal }
+   dependency = { first = SHANG second = XCHU subject_type = tributary }
+   dependency = { first = SHANG second = PUGU subject_type = vassal }
+   dependency = { first = SHANG second = YOUM subject_type = vassal }
 
 }
