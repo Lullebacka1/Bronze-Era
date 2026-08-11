@@ -1,0 +1,26 @@
+# Bronze Era random COA templates for imported Total War style symbols.
+template = {
+	bronze_tw_template_charge = {
+		pattern = "pattern_solid.dds"
+		color1 = list "metal_colors"
+		color2 = list "normal_colors"
+		color3 = "black"
+
+		textured_emblem = {
+			texture = list "bronze_tw_charge"
+			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+		}
+	}
+
+	bronze_tw_template_charge_border = {
+		pattern = "pattern_border_thin.dds"
+		color1 = list "metal_colors"
+		color2 = list "normal_colors"
+		color3 = "black"
+
+		textured_emblem = {
+			texture = list "bronze_tw_charge"
+			instance = { position = { 0.5 0.5 } scale = { 0.94 0.94 } }
+		}
+	}
+}
