@@ -101,41 +101,41 @@ tools_guild = {
 	construction_demand = guild_construction
 }
 
-tools_workshop = {
-	is_foreign = no
-	pop_type = burghers
-	max_levels = workshop_max_level
+# tools_workshop = {
+# 	is_foreign = no
+# 	pop_type = burghers
+# 	max_levels = workshop_max_level
 
-	category = basic_industry_category
-	employment_size = workshop_employment
+# 	category = basic_industry_category
+# 	employment_size = workshop_employment
 
-	town = yes
-	city = yes
-	megalopolis = yes
+# 	town = yes
+# 	city = yes
+# 	megalopolis = yes
 
-	build_time = workshop_build_time
+# 	build_time = workshop_build_time
 
-	unique_production_methods = {
-		metalwork_workshop_maintenance = {
-			iron = 0.8
-			produced = tools
-			output = 1.1
-			debug_max_profit = 0.5
-			category = workshop_input
-		}
-		bronze_age_tools_workshop_bronze_recipe = {
-			bronze_age_bronze = 0.6
-			produced = tools
-			output = 0.9
-			debug_max_profit = 0.35
-			category = workshop_input
-		}
-	}
+# 	unique_production_methods = {
+# 		metalwork_workshop_maintenance = {
+# 			iron = 0.8
+# 			produced = tools
+# 			output = 1.1
+# 			debug_max_profit = 0.5
+# 			category = workshop_input
+# 		}
+# 		bronze_age_tools_workshop_bronze_recipe = {
+# 			bronze_age_bronze = 0.6
+# 			produced = tools
+# 			output = 0.9
+# 			debug_max_profit = 0.35
+# 			category = workshop_input
+# 		}
+# 	}
 
-	construction_demand = workshop_construction
+# 	construction_demand = workshop_construction
 
-	obsolete = tools_guild
-}
+# 	obsolete = tools_guild
+# }
 
 # Vanilla weapons buildings with Bronze Age recipes added.  These produce the
 # vanilla weaponry good from bronze, without creating units or technologies.
@@ -167,49 +167,49 @@ weapon_guild = {
 	construction_demand = guild_construction
 }
 
-weapon_workshop = {
-	is_foreign = no
-	pop_type = burghers
-	max_levels = workshop_max_level
+# weapon_workshop = {
+# 	is_foreign = no
+# 	pop_type = burghers
+# 	max_levels = workshop_max_level
 
-	category = weapons_industry_category
-	employment_size = workshop_employment
+# 	category = weapons_industry_category
+# 	employment_size = workshop_employment
 
-	town = yes
-	city = yes
-	megalopolis = yes
+# 	town = yes
+# 	city = yes
+# 	megalopolis = yes
 
-	build_time = workshop_build_time
+# 	build_time = workshop_build_time
 
-	unique_production_methods = {
-		weapon_workshop_maintenance = {
-			lumber = 0.3
-			coal = 0.3
-			iron = 0.25
-			tools = 0.2
-			category = workshop_input
-			produced = weaponry
-			output = 1.1
+# 	unique_production_methods = {
+# 		weapon_workshop_maintenance = {
+# 			lumber = 0.3
+# 			coal = 0.3
+# 			iron = 0.25
+# 			tools = 0.2
+# 			category = workshop_input
+# 			produced = weaponry
+# 			output = 1.1
 
-			debug_max_profit = 0.5
-		}
-		bronze_age_weapons_workshop_bronze_recipe = {
-			lumber = 0.2
-			bronze_age_bronze = 0.75
-			tools = 0.15
-			category = workshop_input
-			produced = weaponry
-			output = 1.0
+# 			debug_max_profit = 0.5
+# 		}
+# 		bronze_age_weapons_workshop_bronze_recipe = {
+# 			lumber = 0.2
+# 			bronze_age_bronze = 0.75
+# 			tools = 0.15
+# 			category = workshop_input
+# 			produced = weaponry
+# 			output = 1.0
 
-			debug_max_profit = 0.4
-		}
-	}
+# 			debug_max_profit = 0.4
+# 		}
+# 	}
 
-	obsolete = weapon_guild
+# 	obsolete = weapon_guild
 
-	custom_tags = { workshop }
-	construction_demand = workshop_construction
-}
+# 	custom_tags = { workshop }
+# 	construction_demand = workshop_construction
+# }
 
 tablets_guild = {
 	is_foreign = no
