@@ -9,6 +9,7 @@ gaulish = {                ###### -> mayby remove or rename to "celtic" in the f
 	}
 	culture_groups = {
 		gaulish_bronze_group
+		celtic
 	}
 }
 
@@ -20,6 +21,7 @@ armorican = {
 	}
 	culture_groups = {
 		gaulish_bronze_group
+		celtic
 	}
 }
 
@@ -31,5 +33,6 @@ lepontic = {
 	}
 	culture_groups = {
 		gaulish_bronze_group
+		celtic
 	}
 }
