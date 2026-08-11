@@ -99,6 +99,8 @@
  ugaritic_ADJ: "Ugaritic"
  phoenician: "Phoenician"
  phoenician_ADJ: "Phoenician"
+ phoenician_punic: "Phenicien-punique"
+ phoenician_punic_ADJ: "phenicien-punique"
  moabite: "Moabite"
  moabite_ADJ: "Moabite"
  edomite: "Edomite"

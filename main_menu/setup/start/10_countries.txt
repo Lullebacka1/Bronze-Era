@@ -37596,5 +37596,158 @@ VC001 = {
 				south_german_region
 			}
 		}
+
+	DAPENG = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			peixian          shagou           xiapi            xuzhou           yizhou_tengzhou
+		}
+		capital = xuzhou
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+			north_china_region
+		}
+	}
+
+	GUZHU = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			laoting           lutai             macheng_luanzhou  shicheng_jizhou
+		}
+		capital = shicheng_jizhou
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	PUGU = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_duchy
+		own_control_core = {
+			bohai           boxing          gaoyuan_jinan   lean            lijin           qidong
+			xincheng_jinan  yanci           zouping
+		}
+		capital = bohai
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	XICHUI = {
+		culture = zhou
+		religion = zhou_rites
+		country_rank = rank_county
+		own_control_core = {
+			baoji               chengji             fengxiang           fufeng              fuqiang             linyou
+			longan              longzhou_fengxiang  meixian             qianyang            qianzhou            qinan
+			qingshui            qishan              sancha              yongshou
+		}
+		capital = chengji
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			zhou
+		}
+		discovered_regions = {
+			west_china_region
+		}
+	}
+
+	XU = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			qufu      sishui    tengdong  tengxian  zouxian
+		}
+		capital = tengdong
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	YOUMIN = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_duchy
+		own_control_core = {
+			chengwu   chuqiu    dingtao   fengxian  jiaxiang  jinxiang
+			juye      ningyang  rencheng  shansu    wenshang  yutai
+			ziyang
+		}
+		capital = chengwu
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+			north_china_region
+		}
+	}
+
+	ZHOU = {
+		culture = zhou
+		religion = zhou_rites
+		country_rank = rank_duchy
+		own_control_core = {
+			baishui             chengcheng          chunhua             fuping_xian         heyang_xian         huayin
+			huayuan             huazhou             huxian              jingyang            jingzhao            lantian
+			lintong             liquan              pucheng             sanyuan             tongguan_tongchuan  tongzhou
+			weinan              xianning_xian       xianyang
+		}
+		capital = baishui
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			zhou
+		}
+		tolerated_cultures = {
+			shang
+		}
+		discovered_regions = {
+			west_china_region
+		}
+	}
 }
 }

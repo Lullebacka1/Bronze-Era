@@ -1,0 +1,442 @@
+# Additional unplaced cultures requested for the Bronze Era setup.
+# These definitions make the cultures available without assigning them to map locations.
+
+proto_slavic = {
+	language = central_european_bronze_language
+	color = rgb { 118 136 92 }
+	tags = { west_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		central_european_bronze_group
+	}
+}
+
+volga = {
+	language = finnic_bronze_language
+	color = rgb { 96 151 133 }
+	tags = { finnish_gfx baltic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		finnic_group
+	}
+}
+
+samoyed = {
+	language = siberian_bronze_language
+	color = rgb { 132 164 184 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+nilotic = {
+	language = african_bronze_language
+	color = rgb { 134 111 70 }
+	tags = { african_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		african_bronze_group
+	}
+}
+
+proto_irish = {
+	language = brittonic_bronze_language
+	color = rgb { 74 126 84 }
+	tags = { british_gfx celtic_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		britain_bronze_group
+	}
+}
+
+proto_britons = {
+	language = brittonic_bronze_language
+	color = rgb { 101 139 106 }
+	tags = { british_gfx celtic_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		britain_bronze_group
+	}
+}
+
+proto_altaic = {
+	language = siberian_bronze_language
+	color = rgb { 125 148 177 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+proto_tungusic = {
+	language = siberian_bronze_language
+	color = rgb { 115 158 171 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+macedonian = {
+	language = aegean_bronze_language
+	color = rgb { 88 134 205 }
+	tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		aegean_bronze_group
+	}
+}
+
+talaiotic = {
+	language = island_bronze_language
+	color = rgb { 158 126 92 }
+	tags = { west_mediterranean_gfx mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		island_bronze_group
+	}
+}
+
+shiverska = {
+	language = siberian_bronze_language
+	color = rgb { 101 133 157 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+donghu = {
+	language = siberian_bronze_language
+	color = rgb { 142 125 91 }
+	tags = { central_asian_gfx east_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+lidovska = {
+	language = siberian_bronze_language
+	color = rgb { 112 144 168 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+sinegaiska = {
+	language = siberian_bronze_language
+	color = rgb { 123 155 179 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+trushninovo = {
+	language = siberian_bronze_language
+	color = rgb { 134 166 190 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+deghazy = {
+	language = siberian_bronze_language
+	color = rgb { 145 177 201 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+irmen = {
+	language = siberian_bronze_language
+	color = rgb { 102 136 151 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+suzgun = {
+	language = siberian_bronze_language
+	color = rgb { 113 147 162 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+elovka = {
+	language = siberian_bronze_language
+	color = rgb { 124 158 173 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+imiyakhtakh = {
+	language = siberian_bronze_language
+	color = rgb { 119 169 187 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+tevsh = {
+	language = siberian_bronze_language
+	color = rgb { 151 137 102 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+ulaanzuukh = {
+	language = siberian_bronze_language
+	color = rgb { 163 128 88 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
+}
+
+quanbaked = {
+	language = iranian_bronze_language
+	color = rgb { 142 121 75 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		central_asian_bronze_group
+	}
+}
+
+chawuhu = {
+	language = iranian_bronze_language
+	color = rgb { 153 132 86 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		central_asian_bronze_group
+	}
+}
+
+yanbulake = {
+	language = iranian_bronze_language
+	color = rgb { 164 143 97 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		central_asian_bronze_group
+	}
+}
+
+amirabad = {
+	language = iranian_bronze_language
+	color = rgb { 126 150 96 }
+	tags = { persian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		iranian_plateau_group
+	}
+}
+
+parthian = {
+	language = iranian_bronze_language
+	color = rgb { 153 168 103 }
+	tags = { persian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		iranian_plateau_group
+	}
+}
+
+srubna_khvalynsk = {
+	language = steppe_bronze_language
+	color = rgb { 143 126 83 }
+	tags = { central_asian_gfx nomad_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		steppe_bronze_group
+	}
+}
+
+chernogorivka = {
+	language = steppe_bronze_language
+	color = rgb { 156 138 96 }
+	tags = { central_asian_gfx nomad_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		steppe_bronze_group
+	}
+}
+
+lovozero_passvik = {
+	language = finnic_bronze_language
+	color = rgb { 105 156 147 }
+	tags = { finnish_gfx baltic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		finnic_group
+	}
+}
+
+ohokhopani = {
+	language = caucasian_bronze_language
+	color = rgb { 136 181 146 }
+	tags = { caucasian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		caucasus_bronze_group
+	}
+}
+
+yeshi = {
+	language = east_asian_bronze_language
+	color = rgb { 182 94 78 }
+	tags = { east_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		east_asian_bronze_group
+	}
+}
+
+xiasjiadian = {
+	language = east_asian_bronze_language
+	color = rgb { 195 103 83 }
+	tags = { east_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		east_asian_bronze_group
+	}
+}
+
+vardoy = {
+	language = finnic_bronze_language
+	color = rgb { 116 167 158 }
+	tags = { finnish_gfx baltic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		finnic_group
+	}
+}
+
+kuban = {
+	language = caucasian_bronze_language
+	color = rgb { 94 134 104 }
+	tags = { caucasian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		caucasus_bronze_group
+	}
+}
+
+koban = {
+	language = caucasian_bronze_language
+	color = rgb { 107 147 117 }
+	tags = { caucasian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		caucasus_bronze_group
+	}
+}
+
+sosnisa = {
+	language = central_european_bronze_language
+	color = rgb { 128 139 88 }
+	tags = { eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		central_european_bronze_group
+	}
+}
+
+komarow = {
+	language = central_european_bronze_language
+	color = rgb { 139 150 99 }
+	tags = { eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		central_european_bronze_group
+	}
+}
+
+trzciniec = {
+	language = central_european_bronze_language
+	color = rgb { 150 161 110 }
+	tags = { eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		central_european_bronze_group
+	}
+}
+
+cogotas = {
+	language = iberian_bronze_language
+	color = rgb { 205 132 91 }
+	tags = { iberian_gfx west_mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		iberian_bronze_group
+	}
+}

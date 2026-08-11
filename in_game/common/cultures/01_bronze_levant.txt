@@ -34,6 +34,17 @@ phoenician = {
 	}
 }
 
+phoenician_punic = {
+	language = levantine_bronze_language
+	color = rgb { 109 76 139 }
+	tags = { levantine_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		levant_bronze_group
+	}
+}
+
 moabite = {
 	language = levantine_bronze_language
 	color = rgb { 195 155 78 }

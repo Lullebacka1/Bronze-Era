@@ -1,0 +1,76 @@
+namespace = bronze_western_foundations
+
+bronze_western_foundations.1 = {
+	type = country_event
+	title = bronze_western_foundations.1.title
+	desc = bronze_western_foundations.1.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/_default.dds"
+	outcome = positive
+	major = yes
+	orphan = yes
+
+	trigger = {
+		is_human = yes
+		bronze_etruscan_cities_candidate = yes
+	}
+
+	option = {
+		name = bronze_western_foundations.1.a
+		custom_tooltip = bronze_western_foundations_1a_tt
+		bronze_etruscan_cities_emerge = yes
+	}
+}
+
+bronze_western_foundations.2 = {
+	type = country_event
+	title = bronze_western_foundations.2.title
+	desc = bronze_western_foundations.2.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/_default.dds"
+	outcome = positive
+	major = yes
+	orphan = yes
+
+	trigger = {
+		is_human = yes
+		bronze_carthage_foundation_candidate = yes
+		bronze_carthage_foundation_levantine_colonizer = yes
+	}
+
+	option = {
+		name = bronze_western_foundations.2.a
+		custom_tooltip = bronze_western_foundations_2a_tt
+		bronze_carthage_foundation_create = yes
+	}
+}
+
+bronze_western_foundations.3 = {
+	type = country_event
+	title = bronze_western_foundations.3.title
+	desc = bronze_western_foundations.3.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/_default.dds"
+	outcome = neutral
+	major = yes
+	orphan = yes
+
+	trigger = {
+		is_human = yes
+		bronze_carthage_foundation_candidate = yes
+		NOT = { bronze_carthage_foundation_levantine_colonizer = yes }
+	}
+
+	option = {
+		name = bronze_western_foundations.3.a
+		custom_tooltip = bronze_western_foundations_3a_tt
+		bronze_carthage_foundation_create = yes
+		if = {
+			limit = {
+				country_exists = c:CARTHAGE
+				c:CARTHAGE = { owns = location:tunis }
+			}
+			change_player = c:CARTHAGE
+		}
+	}
+}
