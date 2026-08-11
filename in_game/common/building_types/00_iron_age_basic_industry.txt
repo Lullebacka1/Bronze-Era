@@ -22,7 +22,7 @@ weapon_iron_age_workshop = {
 	construction_demand = guild_construction
 }
 
-tools_guild = {
+tools_iron_age_workshop = {
 	is_foreign = no
 	pop_type = burghers
 	max_levels = guild_max_level
@@ -39,11 +39,398 @@ tools_guild = {
 	build_time = guild_build_time
 
 	possible_production_methods = {
-		tools_guild_stone_recipe
-		tools_guild_copper_recipe
-		tools_guild_bronze_recipe
-		tools_guild_iron_recipe
+		tools_iron_age_copper_recipe
+		tools_iron_age_iron_recipe
 	}
 
 	construction_demand = guild_construction
+}
+
+fine_cloth_iron_age = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = fine_cloth_guild_max_level
+
+	category = consumer_goods_category
+
+	employment_size = guild_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = guild_build_time
+
+	unique_production_methods = {
+		fine_cloth_guild_maintenance_iron_age = {
+			cloth = 0.88
+			produced = fine_cloth
+			output = 0.55
+			
+			category = guild_input
+		}
+
+		wool_weavers_maintenance_iron_age = {
+			wool = 1.1
+			
+			produced = fine_cloth
+			output = 0.55
+			
+			category = guild_input
+		}
+
+		silk_weavers_maintenance_iron_age = {
+			silk = 0.88
+			
+			produced = fine_cloth
+			output = 0.77
+			
+			category = guild_input
+			debug_max_profit = 0.35	# its ok to be a bit better..
+		}
+	}
+
+	unique_production_methods = {
+		base_fine_cloth_guild_maintenance_iron_age = {
+			produced = fine_cloth
+			dyes = 0.144
+			output = 0.11
+
+			category = guild_input
+
+			debug_max_profit = 0.1		#improvement
+		}
+
+		alum_fine_cloth_guild_maintenance_iron_age = {
+			alum = 0.055
+			dyes = 0.22
+			produced = fine_cloth
+			output = 0.22
+
+			category = guild_input
+		}
+
+		fur_trim_guild_maintenance_iron_age = {
+			fur = 0.55
+			produced = fine_cloth
+			output = 0.22
+
+			debug_max_profit = 0.2
+			category = guild_input
+		}
+
+	}
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+
+}
+
+beer_iron_age = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = guild_max_level
+
+	category = consumer_goods_category
+
+	employment_size = guild_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = guild_build_time
+
+	unique_production_methods = {
+
+		wheat_brewery_maintenance_iron_age = {
+			wheat = 1.1
+			lumber = 0.275
+			tools = 0.11
+			
+			produced = beer
+			output = 1.1
+			
+			category = guild_input
+		}
+
+		millet_brewery_maintenance_iron_age = {
+			millet = 1.1
+			lumber = 0.275
+			tools = 0.11
+			
+			produced = beer
+			output = 1.1
+			
+			category = guild_input
+		}
+
+		fruit_brewery_maintenance_iron_age = {
+			fruit = 1.1
+			lumber = 0.22
+			tools = 0.11
+			
+			produced = beer
+			output = 1.1
+			
+			category = guild_input
+		}
+
+		maize_brewery_maintenance_iron_age = {
+			maize = 1.44
+			pottery = 0.33
+			
+			produced = beer
+			output = 1.1
+			category = guild_input
+				
+		}
+
+		honey_brewery_maintenance_iron_age = {
+			beeswax = 0.275
+			millet = 0.55
+			lumber = 0.22
+			tools = 0.11
+
+			produced = beer
+			output = 1.1
+
+			category = guild_input
+		}
+
+		rice_brewery_maintenance_iron_age = {
+			rice = 1.1
+			lumber = 0.275
+			tools = 0.11
+
+			produced = beer
+			output = 1.1
+
+			category = guild_input
+		}
+	}
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+
+}
+
+pottery_iron_age = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = guild_max_level
+
+	category = consumer_goods_category
+
+	employment_size = guild_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = guild_build_time
+
+	unique_production_methods = {
+		pottery_maintenance_iron_age = {
+			clay = 1.1
+			lumber = 0.122
+			tools = 0.055
+			
+			produced = pottery
+			output = 1.15
+			
+			category = guild_input
+		}
+	}
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+
+}
+
+naval_supplies_iron_age = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = guild_max_level
+
+	category = weapons_industry_category
+
+	employment_size = guild_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = guild_build_time
+
+	unique_production_methods = {
+		naval_supplies_maintenance_iron_age = {
+			lumber = 0.22
+			fiber_crops = 0.55
+			tar = 0.6
+			cloth = 0.06
+
+			produced = naval_supplies
+			output = 1.2
+			
+			category = guild_input
+		}
+	}
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+
+}
+
+winery_iron_age = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = guild_max_level
+
+	category = consumer_goods_category
+
+	employment_size = guild_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = guild_build_time
+
+	unique_production_methods = {		
+		fruit_winery_maintenance_iron_age = {
+			fruit = 1.275
+			lumber = 0.187
+			tools = 0.11
+
+			produced = wine
+			output = 1.1
+			category = guild_input
+
+			debug_max_profit = 0.2
+		}
+
+		rice_winery_maintenance_iron_age = {
+			rice = 1.275
+			lumber = 0.176
+			tools = 0.11
+			
+			produced = wine
+			output = 1.1
+			category = guild_input
+
+			debug_max_profit = 0.2
+		}
+
+		honey_winery_maintenance_iron_age = {
+			beeswax = 0.66
+			lumber = 0.22
+			tools = 0.11
+			
+			produced = wine
+			output = 1.1
+			
+			category = guild_input
+
+			debug_max_profit = 0.2
+		}
+	}
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+
+}
+
+jewelry_iron_age = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = guild_max_level
+
+	category = consumer_goods_category
+
+	employment_size = guild_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = guild_build_time
+
+	unique_production_methods = {
+		
+		gold_base_iron_age = {
+			goods_gold = 0.55
+
+			produced = jewelry
+			output = 1.1
+			
+			category = guild_input
+		}
+		silver_base_iron_age = {
+			silver = 0.77
+			
+			produced = jewelry
+			output = 1.1
+			
+			category = guild_input
+		}
+		copper_base_iron_age = {
+			#unlocked by copperworking
+			copper = 1.43
+			
+			produced = jewelry
+			output = 1.1
+			
+			category = guild_input
+		}
+
+		bronze_base_iron_age = {
+			bronze_age_bronze = 0.77
+			
+			produced = jewelry
+			output = 1.1
+			
+			category = guild_input
+		}
+
+	}
+
+
+	unique_production_methods = {
+		
+		
+		ivory_enhancement_iron_age = {
+			ivory = 0.11
+			produced = jewelry
+			output = 0.11
+			
+			category = guild_input
+		}
+		amber_enhancement_iron_age = {
+			amber = 0.11
+			produced = jewelry
+			output = 0.11
+			
+			category = guild_input
+		}
+		gems_enhancement_iron_age = {
+			gems = 0.11
+			produced = jewelry
+			output = 0.11
+			
+			category = guild_input
+		}
+		pearls_enhancement_iron_age = {
+			pearls = 0.11
+			produced = jewelry
+			output = 0.11
+			
+			category = guild_input
+		}
+		
+	}
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+
 }

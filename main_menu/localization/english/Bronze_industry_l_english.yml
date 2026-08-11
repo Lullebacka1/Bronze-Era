@@ -76,6 +76,29 @@
   jewelry_palace: "Royal Jewelers"
   jewelry_palace_desc: "Working under palatial supervision, skilled artisans craft jewelry, ornaments, ceremonial regalia, and prestige goods from precious metals and gemstones. Their creations serve as symbols of status, diplomatic gifts, religious offerings, and displays of royal wealth."
 
+  weapon_iron_age_workshop: "Weaponsmiths Workshops"
+  weapon_iron_age_workshop_desc: "Specialized weaponsmiths increasingly work as dedicated urban craftsmen, producing weapons from iron alongside established materials such as copper alloys and stone. Their workshops support a growing market for standardized and specialized arms."
+
+  tools_iron_age_workshop: "Toolsmith Workshops"
+  tools_iron_age_workshop_desc: "Specialized toolsmiths produce increasingly diverse implements from iron and other materials, supplying farmers, builders, miners, and craftsmen with durable equipment. Dedicated workshops allow metalworking to become a regular urban craft."
+
+  fine_cloth_iron_age: "Textile Workshop"
+  fine_cloth_iron_age_desc: "Urban textile production brings together skilled weavers, dyers, and other specialists whose crafts serve increasingly sophisticated markets. Fine fabrics become an important expression of wealth, status, and cultural exchange."
+
+  beer_iron_age: "Brewing Workshop"
+  beer_iron_age_desc: "The production of fermented drinks becomes increasingly associated with specialized urban producers, serving markets, feasts, religious occasions, and the growing populations of towns."
+
+  pottery_iron_age: "Pottery Workshop"
+  pottery_iron_age_desc: "Urban potters develop increasingly specialized traditions of shaping, firing, and decorating vessels. Their wares supply the expanding needs of households, markets, merchants, and institutions."
+
+  naval_supplies_iron_age: "Shipwrights' Workshop"
+  naval_supplies_iron_age_desc: "The growth of organized shipping creates demand for craftsmen skilled in producing sails, cordage, tar, and other equipment. These specialists form an important part of the commercial and maritime life of growing towns."
+
+  winery_iron_age: "Wine Workshop"
+  winery_iron_age_desc: "Wine production develops into a specialized craft in communities where demand extends beyond local household consumption. Skilled producers supply the tables of wealthy households, merchants, sanctuaries, and urban markets."
+
+  jewelry_iron_age: "Jewelry Workshop"
+  jewelry_iron_age_desc: "Growing urban wealth creates a market for ornaments fashioned from precious metals, gemstones, ivory, amber, and other prized materials. Skilled jewelers develop increasingly elaborate techniques and distinctive local traditions."
 
   # ########################
   # PRODUCTION METHODS
@@ -219,4 +242,42 @@
   dressed_masonry_recipe: "Dressed Stone"
   dressed_masonry_recipe_desc: "Carefully cut and finished stone is used in place of rough blocks, allowing walls and structures to be built with greater precision, strength, and regularity."
 
+  weapon_iron_age_copper_recipe: "Copper-Alloy Weapons"
+  weapon_iron_age_obsidian_recipe: "Obsidian Weapons"
+  weapon_iron_age_iron_recipe: "Iron Weapons"
 
+  tools_iron_age_copper_recipe: "Copper-Alloy Tools"
+  tools_iron_age_iron_recipe: "Iron Tools"
+
+  fine_cloth_guild_maintenance_iron_age: "Cloth Weaving"
+  wool_weavers_maintenance_iron_age: "Wool Weaving"
+  silk_weavers_maintenance_iron_age: "Silk Weaving"
+
+  base_fine_cloth_guild_maintenance_iron_age: "Dyed Cloth"
+  alum_fine_cloth_guild_maintenance_iron_age: "Alum Mordants"
+  fur_trim_guild_maintenance_iron_age: "Fur Trimming"
+
+  wheat_brewery_maintenance_iron_age: "Wheat Brewing"
+  millet_brewery_maintenance_iron_age: "Millet Brewing"
+  fruit_brewery_maintenance_iron_age: "Fruit Brewing"
+  maize_brewery_maintenance_iron_age: "Maize Brewing"
+  honey_brewery_maintenance_iron_age: "Honey Brewing"
+  rice_brewery_maintenance_iron_age: "Rice Brewing"
+
+  pottery_maintenance_iron_age: "Pottery Production"
+
+  naval_supplies_maintenance_iron_age: "Maritime Supplies"
+
+  fruit_winery_maintenance_iron_age: "Fruit Winemaking"
+  rice_winery_maintenance_iron_age: "Rice Winemaking"
+  honey_winery_maintenance_iron_age: "Honey Winemaking"
+
+  gold_base_iron_age: "Goldsmithing"
+  silver_base_iron_age: "Silversmithing"
+  copper_base_iron_age: "Copper Jewelry"
+  bronze_base_iron_age: "Bronze Jewelry"
+
+  ivory_enhancement_iron_age: "Ivory Ornamentation"
+  amber_enhancement_iron_age: "Amber Ornamentation"
+  gems_enhancement_iron_age: "Gemstone Ornamentation"
+  pearls_enhancement_iron_age: "Pearl Ornamentation"
