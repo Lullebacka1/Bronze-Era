@@ -420,3 +420,27 @@ warrior_halls_maintenance = {
 
 	category = building_maintenance
 }
+
+stone_bricks = {
+	stone = 0.4
+	produced = masonry
+	output = 0.5
+	category = guild_input
+}
+
+clay_bricks = {
+	clay = 0.8
+	produced = masonry
+	output = 0.5
+	category = guild_input
+}
+
+# IRON AGE
+
+dressed_masonry_recipe = {
+	stone = 0.5
+	produced = masonry
+	output = 0.7
+
+	category = guild_input
+}

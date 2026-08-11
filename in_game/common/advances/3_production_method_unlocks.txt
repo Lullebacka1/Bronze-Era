@@ -33,3 +33,13 @@ scribe_alphabetic_maintenance = {
 	requires = merchant_script_advance
 }
 
+# IRON AGE
+
+stone_dressing = {
+	age = age_2_renaissance
+	
+	unlock_production_method = dressed_masonry_recipe
+
+	requires = tempered_steel
+
+}

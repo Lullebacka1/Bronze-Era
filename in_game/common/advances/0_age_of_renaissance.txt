@@ -32,6 +32,46 @@ iron_metallurgy_advance = {
 	allow = { has_embraced_institution = institution:iron_metallurgy }
 }
 
+controlled_carburization = {
+	age = age_2_renaissance
+	
+	global_iron_output_modifier = 0.15
+
+	requires = iron_metallurgy_advance
+
+}
+
+
+forge_welding = {
+	age = age_2_renaissance
+	
+	global_weaponry_output_modifier = 0.10
+	global_tools_output_modifier = 0.10
+
+	requires = controlled_carburization
+
+}
+
+steel_edges = {
+	age = age_2_renaissance
+	
+	army_heavy_infantry_power = 0.05
+	army_light_infantry_power = 0.05
+
+	requires = forge_welding
+
+}
+
+tempered_steel = {
+	age = age_2_renaissance
+	
+	expand_rgo_forestry_cost_modifier = -0.1
+	expand_rgo_mining_cost_modifier = -0.1
+
+	requires = controlled_carburization
+
+}
+
 # PEER POLITIES
 
 peer_polities_advance = {

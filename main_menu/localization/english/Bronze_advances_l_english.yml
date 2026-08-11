@@ -26,6 +26,21 @@
   # FUSTERCLUCK
   # ##############################
 
+  stone_dressing: "Stone Dressing"
+  stone_dressing_desc: "Stoneworkers learn to systematically shape and finish building stone before laying it. More regular blocks allow tighter joints, straighter walls, and more refined masonry, improving the efficiency and durability of construction."
+
+  controlled_carburization: "Controlled Carburization"
+  controlled_carburization_desc: "Smiths gain greater control over the absorption of carbon into wrought iron during heating. This produces more consistent steel and allows ironworking to move beyond simple bloomery products toward deliberately improved materials."
+
+  forge_welding: "Forge Welding"
+  forge_welding_desc: "Repeated heating and hammering allow separate pieces of iron and steel to be joined into a single mass. Forge welding lets smiths combine materials, repair and extend metalwork, and produce larger or more complex tools and weapons than a single bloom can provide."
+
+  steel_edges: "Steel Edges"
+  steel_edges_desc: "Steel is increasingly applied where a hard, durable cutting edge is most valuable, while softer iron provides the body of the implement. This economical use of steel produces sharper and more resilient tools and weapons without requiring entire objects to be made from high-quality steel."
+
+  tempered_steel: "Tempered Steel"
+  tempered_steel_desc: "Smiths learn to deliberately reheat and cool hardened steel to balance hardness with toughness. The resulting material is less prone to brittle failure and can withstand demanding work, making high-quality steel more dependable for tools and weapons."
+
   cathedral_advance: "Monumental Temple Construction"
   cathedral_advance_desc: "We shall build a dedicated place of worship to our gods, a temple that will stand as a testament to our devotion and faith. This grand structure will not only serve as a spiritual center for our people but also as a symbol of our cultural and religious identity."
 
