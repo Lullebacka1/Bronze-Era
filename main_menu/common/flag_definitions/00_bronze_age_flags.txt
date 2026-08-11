@@ -172,6 +172,10 @@ VINDLAND = { # Baltic amber and waterway Vindland formable.
 	flag_definition = { coa = bronze_age_VINDLAND_coa priority = 10000 }
 }
 
+ALLARAM = { # All Aram formable, Levantine caravan routes and royal authority.
+	flag_definition = { coa = bronze_age_ALLARAM_coa priority = 10000 }
+}
+
 # Unique Hatti-collapse successor flags.
 HAMAT = { flag_definition = { coa = bronze_age_HAMAT_coa priority = 10000 } }
 ARPAD = { flag_definition = { coa = bronze_age_ARPAD_coa priority = 10000 } }
