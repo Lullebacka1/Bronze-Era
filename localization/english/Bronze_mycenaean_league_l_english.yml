@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  mycenaean_league: "Mycenaean League"
  mycenaean_league_desc: "The $mycenaean_league$ is a loose hegemonic order of Achaean palace kingdoms. Its High Wanax is first among rival rulers rather than an absolute emperor, binding the palaces through prestige, tribute, sanctuaries, and war oaths.\n\nCurrent Achaean Unity: #Y [GetUniqueInternationalOrganization('mycenaean_league').MakeScope.GetVariable('mycenaean_league_authority').GetValue|V0]#! /100"
  MYCENAEAN_LEAGUE_LEADER_MALE: "High Wanax"

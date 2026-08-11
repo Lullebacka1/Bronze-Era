@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  bronze_city_razing.1.title: "The City Has Fallen"
  bronze_city_razing.1.desc: "[bronze_captured_city.GetName] is under our control. The gates are open, the stores are exposed, and the fate of the people now rests with the victorious army."
  bronze_city_razing.1.a: "Occupy the city."
