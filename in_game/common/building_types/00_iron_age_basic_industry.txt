@@ -1,0 +1,49 @@
+weapon_iron_age_workshop = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+
+	category = weapons_industry_category
+	employment_size = guild_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = guild_build_time
+
+	possible_production_methods = {
+		weapon_iron_age_copper_recipe
+		weapon_iron_age_obsidian_recipe
+		weapon_iron_age_iron_recipe
+	}
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+}
+
+tools_guild = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+
+	category = basic_industry_category
+	employment_size = guild_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	forbidden_for_estates = yes
+
+	build_time = guild_build_time
+
+	possible_production_methods = {
+		tools_guild_stone_recipe
+		tools_guild_copper_recipe
+		tools_guild_bronze_recipe
+		tools_guild_iron_recipe
+	}
+
+	construction_demand = guild_construction
+}
