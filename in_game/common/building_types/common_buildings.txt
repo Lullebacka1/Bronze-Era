@@ -123,21 +123,11 @@ mason = {
 	megalopolis = yes
 
 	build_time = guild_build_time
-	
-	unique_production_methods = {
-		stone_bricks = {
-			stone = 0.4
-			produced = masonry
-			output = 0.5
-			category = guild_input
-		}
-		clay_bricks = {
-			clay = 0.8
-			produced = masonry
-			output = 0.5
-			category = guild_input
-		}
 
+	possible_production_methods = {
+		stone_bricks
+		clay_bricks
+		dressed_masonry_recipe
 	}
 
 	construction_demand = basic_construction_needs
