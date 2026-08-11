@@ -1,0 +1,298 @@
+bronze_local_market_right = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_5_tt
+				bronze_city_prestige_is_local_or_higher = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_marketplace_building_levels = 1
+		local_market_access = 0.03
+		local_trades_per_burgher = 0.10
+		local_burghers_estate_power = 0.10
+	}
+	color = hsv { 0.11 0.50 0.75 }
+}
+
+bronze_council_of_elders_right = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_5_tt
+				bronze_city_prestige_is_local_or_higher = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_max_control = 0.03
+		local_monthly_control = 0.0005
+		local_migration_attraction = 0.05
+		local_crown_estate_power = -0.05
+	}
+	color = hsv { 0.07 0.45 0.65 }
+}
+
+bronze_communal_granary_right = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_5_tt
+				bronze_city_prestige_is_local_or_higher = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_food_capacity = 100
+		local_food_capacity_modifier = 0.10
+		local_food_decay_modifier = -0.05
+		local_monthly_food_modifier = 0.02
+	}
+	color = hsv { 0.16 0.55 0.70 }
+}
+
+bronze_artisan_quarter_right = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_4_tt
+				bronze_city_prestige_is_regional_or_higher = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_production_efficiency = 0.05
+		local_pop_promotion_speed_modifier = 0.05
+		local_burghers_estate_power = 0.15
+		local_food_capacity_modifier = -0.05
+	}
+	color = hsv { 0.06 0.62 0.72 }
+}
+
+bronze_regional_warehouse_right = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_4_tt
+				bronze_city_prestige_is_regional_or_higher = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_market_access = 0.05
+		local_trade_center_power = 0.05
+		local_food_capacity = 150
+		local_merchant_capacity_modifier = 0.05
+	}
+	color = hsv { 0.13 0.45 0.76 }
+}
+
+bronze_sanctuary_privilege = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_4_tt
+				bronze_city_prestige_is_regional_or_higher = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_cultural_influence = 0.10
+		local_cultural_tradition = 0.10
+		local_monthly_prosperity = 0.0005
+		local_clergy_estate_power = 0.15
+	}
+	color = hsv { 0.75 0.40 0.70 }
+}
+
+bronze_palatial_redistribution_right = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_3_tt
+				bronze_city_prestige_is_great_or_higher = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_max_control = 0.06
+		local_monthly_control = 0.001
+		local_food_capacity = 200
+		local_crown_estate_power = 0.15
+		local_pop_food_consumption = 0.05
+	}
+	color = hsv { 0.03 0.55 0.78 }
+}
+
+bronze_scribe_archive_right = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_3_tt
+				bronze_city_prestige_is_great_or_higher = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_monthly_literacy = 0.03
+		local_pop_promotion_speed_modifier = 0.10
+		local_institution_growth_modifier = 0.05
+		local_crown_estate_power = 0.05
+	}
+	color = hsv { 0.58 0.35 0.72 }
+}
+
+bronze_fortified_citadel_right = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_3_tt
+				bronze_city_prestige_is_great_or_higher = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_garrison_size = 0.10
+		local_defensive = 0.10
+		local_max_control = 0.04
+		local_nobles_estate_power = 0.10
+		local_production_efficiency = town_right_efficiency_penalty
+	}
+	color = hsv { 0.00 0.35 0.58 }
+}
+
+bronze_protected_emporion_right = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_2_tt
+				bronze_city_prestige_is_imperial_or_higher = yes
+			}
+			custom_tooltip = {
+				text = bronze_town_right_trade_infrastructure_tt
+				bronze_city_prestige_has_trade_infrastructure = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_marketplace_building_levels = 3
+		local_market_access = 0.08
+		local_trade_center_power = 0.10
+		local_maritime_presence = 0.05
+		local_pop_food_consumption = 0.05
+	}
+	color = hsv { 0.52 0.50 0.72 }
+}
+
+bronze_regional_tribute_right = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_2_tt
+				bronze_city_prestige_is_imperial_or_higher = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_max_control = 0.08
+		local_monthly_control = 0.0015
+		local_crown_estate_power = 0.20
+		local_nobles_estate_power = 0.10
+		local_migration_attraction = -0.05
+	}
+	color = hsv { 0.08 0.62 0.72 }
+}
+
+bronze_palace_workshop_monopoly = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_2_tt
+				bronze_city_prestige_is_imperial_or_higher = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_production_efficiency = 0.08
+		local_burghers_estate_power = -0.10
+		local_crown_estate_power = 0.20
+		local_pop_food_consumption = 0.08
+	}
+	color = hsv { 0.04 0.70 0.70 }
+}
+
+bronze_royal_palace_complex_privilege = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_1_tt
+				bronze_city_prestige_is_world_city = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_max_control = 0.10
+		local_monthly_control = 0.002
+		local_monthly_prosperity = 0.001
+		local_crown_estate_power = 0.30
+		local_pop_food_consumption = 0.15
+		local_migration_attraction = 0.10
+	}
+	color = hsv { 0.10 0.65 0.85 }
+}
+
+bronze_great_sanctuary_right = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_1_tt
+				bronze_city_prestige_is_world_city = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_cultural_influence = 0.25
+		local_cultural_tradition = 0.25
+		local_monthly_literacy = 0.02
+		local_clergy_estate_power = 0.25
+		local_pop_food_consumption = 0.10
+	}
+	color = hsv { 0.77 0.42 0.78 }
+}
+
+bronze_hegemonic_city_right = {
+	kept_at_conquest = no
+	allow = {
+		scope:target = {
+			custom_tooltip = {
+				text = bronze_town_right_rank_1_tt
+				bronze_city_prestige_is_world_city = yes
+			}
+		}
+	}
+	location_modifier = {
+		local_trade_center_power = 0.15
+		local_market_access = 0.10
+		local_monthly_development = 0.002
+		local_burghers_estate_power = 0.20
+		local_crown_estate_power = -0.15
+		local_pop_food_consumption = 0.15
+		local_migration_attraction = 0.15
+	}
+	color = hsv { 0.15 0.58 0.88 }
+}
