@@ -501,3 +501,51 @@ dressed_masonry_recipe = {
 
 	category = guild_input
 }
+
+gate_court_maintenance_tablets = {
+	weaponry = 0.1
+	cloth = 0.1
+	bronze_age_tablets = 0.1
+
+	category = building_maintenance
+}
+
+gate_court_maintenance_leather = {
+	weaponry = 0.1
+	cloth = 0.1
+	leather = 0.05
+	
+	category = building_maintenance
+}
+
+gate_court_maintenance_potsherds = {
+	weaponry = 0.1
+	cloth = 0.1
+	pottery = 0.05
+	
+	category = building_maintenance
+}
+
+gate_court_maintenance_potsherds = {
+	weaponry = 0.1
+	cloth = 0.1
+	pottery = 0.05
+	
+	category = building_maintenance
+}
+
+gate_court_maintenance_wood = {
+	weaponry = 0.1
+	cloth = 0.1
+	lumber = 1
+	
+	category = building_maintenance
+}
+
+gate_court_maintenance_paper = {
+	weaponry = 0.1
+	cloth = 0.1
+	paper = 0.05
+	
+	category = building_maintenance
+}
