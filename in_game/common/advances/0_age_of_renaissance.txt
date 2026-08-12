@@ -22,6 +22,16 @@ provincial_governors = {
 
 }
 
+elite_networks = {
+	age = age_2_renaissance
+	
+	monthly_diplomats = 0.025
+	global_nobles_max_literacy = 1
+
+	requires = dispersion_of_authority_advance
+
+}
+
 delegated_judicial_authority = {
 	age = age_2_renaissance
 	
@@ -72,6 +82,16 @@ alphabetic_script_advance = {
 	allow = { has_embraced_institution = institution:commercial_counters }
 }
 
+commercial_districts = {
+	age = age_2_renaissance
+	icon = abacus_advance
+	
+	unlock_building = trade_district
+	
+	requires = alphabetic_script_advance
+}
+
+
 # IRON METALLURGY
 
 iron_metallurgy_advance = {
@@ -93,7 +113,6 @@ controlled_carburization = {
 	requires = iron_metallurgy_advance
 
 }
-
 
 forge_welding = {
 	age = age_2_renaissance

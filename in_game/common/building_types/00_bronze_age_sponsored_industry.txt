@@ -23,6 +23,8 @@ sponsored_tool_maker = {
 	}
 
 	construction_demand = guild_construction
+
+	obsolete = tools_maker
 }
 
 sponsored_weaponry_maker = {
@@ -51,6 +53,8 @@ sponsored_weaponry_maker = {
 	}
 
 	construction_demand = guild_construction
+
+	obsolete = weaponry_maker
 }
 
 sponsored_fine_cloth_maker = {
@@ -221,6 +225,8 @@ sponsored_beer_maker = {
 
 	construction_demand = guild_construction
 
+	obsolete = neolithic_beer_maker
+
 }
 
 sponsored_pottery_maker = {
@@ -254,6 +260,8 @@ sponsored_pottery_maker = {
 
 	construction_demand = guild_construction
 
+	obsolete = pottery_maker
+
 }
 
 sponsored_navy_supplies_maker = {
@@ -286,6 +294,8 @@ sponsored_navy_supplies_maker = {
 		}
 	}
 	construction_demand = guild_construction
+
+	obsolete = navy_supplies_maker
 
 }
 
@@ -465,7 +475,7 @@ sponsored_leather_maker = {
 			lumber = 0.1
 			tools = 0.05
 			
-			produced = pottery
+			produced = leather
 			output = 0.8
 			
 			category = guild_input
@@ -473,5 +483,7 @@ sponsored_leather_maker = {
 	}
 
 	construction_demand = guild_construction
+
+	obsolete = neolithic_leather_maker
 
 }

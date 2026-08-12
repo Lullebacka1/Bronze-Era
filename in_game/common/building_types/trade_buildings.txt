@@ -39,7 +39,7 @@
  	}
  }
 
- merchants_quarters = {
+merchants_quarters = {
 
  	is_foreign = no
  	max_levels = market_max_level

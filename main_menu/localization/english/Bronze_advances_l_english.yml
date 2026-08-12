@@ -269,6 +269,9 @@
   delegated_judicial_authority: "Delegated Judicial Authority"
   delegated_judicial_authority_desc: "Provincial officials increasingly exercise judicial authority on behalf of the ruler, holding formal courts to settle disputes and enforce the law. Justice thus becomes a regular feature of provincial administration rather than a matter requiring direct appeal to the central court."
 
+  commercial_districts: "Commercial Districts"
+  commercial_districts_desc: "Growing trade networks encourage foreign merchants to establish permanent quarters within major settlements. These commercial districts provide a stable setting for exchange, storage, negotiation, and the maintenance of long-distance business relationships."
+
   # ##########################
   # BUILDINGS
   # ##########################
