@@ -1,0 +1,16 @@
+# Adds Bronze TW icon templates to country random COA generation without replacing vanilla lists.
+coat_of_arms_template_lists = {
+	bronze_tw_template_list = {
+		60 = bronze_tw_template_charge
+		40 = bronze_tw_template_charge_border
+	}
+
+	country = {
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_any_supported_trigger = yes
+			}
+			2500 = list "bronze_tw_template_list"
+		}
+	}
+}

@@ -7868,10 +7868,10 @@ VC999 = {
 	culture_definition = sogdian
 	religion_definition = iranic
 }
-VC1000 = {
+V1000 = {
 	color = rgb { 88 88 168 }
 	color2 = rgb { 50 50 130 }
 
-	culture_definition = baden
-	religion_definition = nordic_pagan
+	culture_definition = urnfield
+	religion_definition = Germanic_pagan
 }
