@@ -263,6 +263,12 @@
   royal_covenants_advance: "Royal Covenants"
   royal_covenants_advance_desc: "Monarchs increasingly formalize agreements with other rulers through written covenants, bearing seals or other marks of authority. These instruments give treaties, alliances, obligations, and guarantees a durable form that can be witnessed, preserved, and invoked beyond the immediate presence of the rulers who made them."
 
+  provincial_governors: "Provincial Governors"
+  provincial_governors_desc: "As realms grow more extensive, rulers entrust distant territories to appointed governors who oversee local affairs in their name. Such officials give provincial communities greater room to organize themselves while extending royal authority beyond the immediate reach of the court."
+
+  delegated_judicial_authority: "Delegated Judicial Authority"
+  delegated_judicial_authority_desc: "Provincial officials increasingly exercise judicial authority on behalf of the ruler, holding formal courts to settle disputes and enforce the law. Justice thus becomes a regular feature of provincial administration rather than a matter requiring direct appeal to the central court."
+
   # ##########################
   # BUILDINGS
   # ##########################

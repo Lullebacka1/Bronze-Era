@@ -42,3 +42,24 @@ bronze_age_tablets = {
 
 	custom_tags = { bronze_age_goods }
 }
+
+fine_pottery = {
+	category = produced
+	color = goods_pottery
+	default_market_price = 5
+
+	transport_cost = 0.5
+
+	demand_add = {
+		all = 0.0015
+	}
+	demand_multiply = {
+		nobles = 0.03
+		clergy = 0.03
+		burghers = 0.02
+	}
+
+	development_threshold = 20
+
+	custom_tags = { bronze_age_goods }
+}

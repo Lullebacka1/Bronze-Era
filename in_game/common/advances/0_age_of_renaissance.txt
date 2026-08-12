@@ -13,6 +13,23 @@ dispersion_of_authority_advance = {
 
 }
 
+provincial_governors = {
+	age = age_2_renaissance
+	
+	can_grant_town_rights = yes
+
+	requires = dispersion_of_authority_advance
+
+}
+
+delegated_judicial_authority = {
+	age = age_2_renaissance
+	
+	unlock_building = gate_court
+
+	requires = provincial_governors
+}
+
 independent_craftsmen = {
 	age = age_2_renaissance
 	

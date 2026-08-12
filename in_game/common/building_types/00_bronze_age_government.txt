@@ -6,7 +6,7 @@ bronze_age_victory_stelae = {
 
 	category = government_category
 
-	employment_size = 0
+	employment_size = 10
 
 	rural_settlement = yes
 	town = yes
@@ -81,4 +81,40 @@ royal_scribe_guild = {
 
 	custom_tags = { scribe }
 	construction_demand = guild_construction
+}
+
+# IRON AGE
+
+gate_court = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+
+	category = government_category
+	employment_size = normal_noble_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	forbidden_for_estates = yes
+
+	build_time = guild_build_time
+
+	modifier = {
+		local_crown_estate_power = 0.10
+		local_nobles_estate_power = 0.10
+		local_max_control = 0.08
+	}
+
+	possible_production_methods = {
+		gate_court_maintenance_tablets
+		gate_court_maintenance_leather
+		gate_court_maintenance_potsherds
+		gate_court_maintenance_wood
+		gate_court_maintenance_paper
+	}
+
+	custom_tags = { judge }
+	construction_demand = town_building_construction
 }

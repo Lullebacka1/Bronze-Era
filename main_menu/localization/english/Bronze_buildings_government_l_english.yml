@@ -5,6 +5,9 @@
   megaron: "Megaron"
   megaron_desc: "A grand audience hall forming the ceremonial heart of a palatial complex. The megaron hosts feasts, councils, diplomatic receptions, and royal ceremonies, reinforcing the prestige of the ruling dynasty and the cultural traditions of the realm."
 
+  gate_court: "Gate Court"
+  gate_court_desc: "A permanent seat of provincial justice where officials hear disputes, record judgments, and enforce the authority of the ruler. Situated within the administrative center, the court brings formal justice closer to local communities while strengthening the reach of provincial government."
+
   # #####################################
   # PRODUCTION METHODS AND MAINTENANCE
   # #####################################
@@ -14,3 +17,9 @@
 
   megaron_maintenance: "Ceremonial Functions"
   megaron_maintenance_desc: "Feasts, audiences, religious observances, and political gatherings ensure that the megaron remains the focal point of elite society and royal authority."
+
+  gate_court_maintenance_tablets: "Tablet Records"
+  gate_court_maintenance_leather: "Leather Records"
+  gate_court_maintenance_potsherds: "Potshard Records"
+  gate_court_maintenance_wood: "Wooden Records"
+  gate_court_maintenance_paper: "Paper Records"
