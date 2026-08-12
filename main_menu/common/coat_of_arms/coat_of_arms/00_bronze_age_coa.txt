@@ -691,3 +691,31 @@ bronze_age_VINDLAND_coa = { # Vindland: amber sun, Baltic ship and forest border
 		instance = { position = { 0.5 0.82 } scale = { 0.3 0.3 } }
 	}
 }
+
+bronze_age_ALLARAM_coa = { # All Aram: ochre field, royal sun and guarded desert routes.
+	pattern = "pattern_border_thin.dds"
+	color1 = "brown"
+	color2 = "yellow_mid"
+	color3 = "red_dark"
+	color4 = "black"
+
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.23 } scale = { 0.34 0.34 } }
+	}
+	colored_emblem = {
+		texture = "ce_stylized_gate_sulu.dds"
+		color1 = color2
+		color2 = color4
+		instance = { position = { 0.5 0.55 } scale = { 0.62 0.62 } }
+	}
+	colored_emblem = {
+		texture = "ce_spear_head_random_small.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.38 0.82 } scale = { 0.28 0.28 } }
+		instance = { position = { 0.62 0.82 } scale = { -0.28 0.28 } }
+	}
+}

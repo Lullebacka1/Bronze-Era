@@ -111,3 +111,16 @@ bronze_asgard_high_kingship = {
 	monthly_religious_influence = 0.05
 	diplomatic_reputation = 1
 }
+
+bronze_allaram_caravan_kingship = {
+	game_data = {
+		category = country
+	}
+
+	monthly_prestige = 0.03
+	monthly_legitimacy = 0.03
+	global_trade_center_power = 0.05
+	global_trade_protection_factor = 0.05
+	global_monthly_control = 0.001
+	diplomatic_reputation = 1
+}

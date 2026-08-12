@@ -16,4 +16,5 @@ colors = {
 	map_NIFLHEIM = rgb { 91 124 145 }
 	map_HELHEIM = rgb { 73 63 70 }
 	map_VINDLAND = rgb { 129 112 50 }
+	map_ALLARAM = rgb { 158 103 52 }
 }
