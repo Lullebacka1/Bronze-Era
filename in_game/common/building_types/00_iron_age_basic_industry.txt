@@ -241,6 +241,17 @@ pottery_iron_age = {
 			
 			category = guild_input
 		}
+
+		fine_pottery_maintenance_iron_age = {
+			clay = 1.1
+			lumber = 0.122
+			tools = 0.055
+			
+			produced = fine_pottery
+			output = 0.5
+			
+			category = guild_input
+		}
 	}
 
 	custom_tags = { guild }
