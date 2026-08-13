@@ -287,6 +287,18 @@
   elite_networks: "Elite Networks"
   elite_networks_desc: "Rulers, governors, commanders, and other influential figures become increasingly connected through personal ties, patronage, marriage, and reciprocal obligations. These networks allow influence and information to travel across political boundaries and strengthen cooperation among powerful individuals."
 
+  portable_writing: "Portable Writing"
+  portable_writing_desc: "Writing becomes increasingly suited to records that must travel with merchants, officials, messengers, and other individuals. Portable documents make it easier to preserve instructions, accounts, claims, and correspondence across considerable distances."
+
+  road_station_system_advance: "Road Station System"
+  road_station_system_advance_desc: "Established routes are increasingly supported by a chain of stations where travelers, messengers, and goods can rest, change transport, and obtain provisions. Such infrastructure makes long-distance movement more regular and dependable."
+
+  ownership_marks: "Ownership Marks"
+  ownership_marks_desc: "Merchants and craftsmen increasingly mark goods, tools, containers, and other possessions to identify their ownership or origin. Such marks help distinguish property, establish claims, and maintain accountability as goods pass between different hands."
+
+  representative_authority: "Representative Authority"
+  representative_authority_desc: "Envoys and officials increasingly act with authority of their own rather than merely carrying messages between distant rulers. Entrusted to negotiate, settle disputes, conclude agreements, and make decisions in their patron's name, they become true representatives of the authority they embody."
+
 
   # ##########################
   # BUILDINGS

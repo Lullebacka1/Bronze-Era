@@ -25,11 +25,18 @@ provincial_governors = {
 elite_networks = {
 	age = age_2_renaissance
 	
-	monthly_diplomats = 0.025
 	global_nobles_max_literacy = 1
 
 	requires = provincial_governors
 
+}
+
+representative_authority = {
+	age = age_2_renaissance
+	
+	monthly_diplomats = 0.025
+
+	requires = elite_networks
 }
 
 influential_commanders = {
