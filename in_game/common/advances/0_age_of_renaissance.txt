@@ -28,8 +28,25 @@ elite_networks = {
 	monthly_diplomats = 0.025
 	global_nobles_max_literacy = 1
 
-	requires = dispersion_of_authority_advance
+	requires = provincial_governors
 
+}
+
+influential_commanders = {
+	age = age_2_renaissance
+
+	requires = elite_networks
+
+	train_general_cost_modifier = -0.1
+	train_admiral_cost_modifier = -0.1
+}
+
+community_military_obligation = {
+	age = age_2_renaissance
+
+	requires = influential_commanders
+
+	unlock_law = ancient_recruitment_law
 }
 
 delegated_judicial_authority = {
@@ -61,7 +78,6 @@ independent_smiths = {
 	unlock_building = tools_iron_age_workshop
 
 	requires = independent_craftsmen
-
 }
 
 
