@@ -113,9 +113,32 @@ commercial_districts = {
 	
 	unlock_building = trade_district
 	
-	requires = merchant_elite
+	requires = private_commerce
 }
 
+portable_writing = {
+	age = age_2_renaissance
+	
+	monthly_diplomats = 0.025
+	
+	requires = alphabetic_script_advance
+}
+
+road_station_system_advance = {
+	age = age_2_renaissance
+	
+	unlock_road_type = station_system
+	
+	requires = portable_writing
+}
+
+ownership_marks = {
+	age = age_2_renaissance
+	
+	selling_efficiency = small_trade_efficiency_bonus
+	
+	requires = portable_writing
+}
 
 # IRON METALLURGY
 

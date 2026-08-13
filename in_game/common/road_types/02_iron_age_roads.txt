@@ -1,0 +1,12 @@
+station_system = {
+	level = 3
+	movement_cost = -0.07
+	market_access = -0.065
+	pop_movement = 0.18
+	build_time_per_unit_distance = 5
+	price_per_unit_distance = build_station_system
+	construction_demand = build_station_system_demand
+	maintenance_demand = maintain_station_system_demand
+	color = map_station_system_road
+	spline_style_id = 1
+}

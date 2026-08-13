@@ -284,6 +284,9 @@
   iron_city_walls_advance: "Iron Age City Walls"
   iron_city_walls_advance_desc: "Generations of experience in fortification, improved masonry, and more capable tools allow cities to undertake defensive works on a greater scale. Established building knowledge can now be applied to larger, stronger, and more carefully constructed urban walls."
 
+  elite_networks: "Elite Networks"
+  elite_networks_desc: "Rulers, governors, commanders, and other influential figures become increasingly connected through personal ties, patronage, marriage, and reciprocal obligations. These networks allow influence and information to travel across political boundaries and strengthen cooperation among powerful individuals."
+
 
   # ##########################
   # BUILDINGS
