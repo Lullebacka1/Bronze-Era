@@ -281,6 +281,9 @@
   influential_commanders: "Influential Commanders"
   influential_commanders_desc: "As military forces grow more organized, experienced commanders acquire influence of their own through battlefield reputation, personal followings, and accumulated knowledge of warfare. Their expertise makes the cultivation of capable military leadership increasingly important."
 
+  iron_city_walls_advance: "Iron Age City Walls"
+  iron_city_walls_advance_desc: "Generations of experience in fortification, improved masonry, and more capable tools allow cities to undertake defensive works on a greater scale. Established building knowledge can now be applied to larger, stronger, and more carefully constructed urban walls."
+
 
   # ##########################
   # BUILDINGS

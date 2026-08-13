@@ -9,3 +9,16 @@ merchants_quarters_unlock_advance = {
 
 	requires = scribe_alphabetic_maintenance
 }
+
+# ################################
+# IRON AGE BUILDINGS
+# ################################
+
+iron_city_walls_advance = {
+	age = age_2_renaissance
+
+	unlock_building = iron_city_walls
+
+	requires = stone_dressing
+	
+}

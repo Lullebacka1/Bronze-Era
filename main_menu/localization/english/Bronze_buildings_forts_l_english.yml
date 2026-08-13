@@ -6,7 +6,10 @@
   town_walls_desc: "Stone walls, gates, and defensive earthworks surround the settlement, providing protection against raiders and rival communities. Their construction reflects the growing permanence and prosperity of early towns.
 
   bronze_city_walls: "City Walls"
-  bronze_city_walls_desc: "Monumental fortifications encircle the city with imposing walls, towers, and fortified gates maintained by centralized authorities. Beyond their defensive value, these structures proclaim the wealth, power, and organizational capacity of the urban state."
+  bronze_city_walls_desc: "Fortifications encircle the city with imposing walls, towers, and fortified gates maintained by centralized authorities. Beyond their defensive value, these structures proclaim the wealth, power, and organizational capacity of the urban state."
+
+  iron_city_walls: "Iron Age City Walls"
+  iron_city_walls_desc: "Growing cities employ improved masonry techniques and more capable tools to construct substantial defensive circuits. Greater scale, precision, and durability reflect the accumulated knowledge of generations of builders."
 
   # GOODS DEMAND, PRODUCTION METHODS AND MAINTENANCE
 
@@ -15,6 +18,10 @@
 
   bronze_city_walls_construction: "City Wall Construction"
   bronze_city_walls_construction_desc: "The construction of massive urban fortifications requires extensive masonry work, large labor forces, and careful planning to defend major population centers and seats of power."
+
+  iron_city_walls_construction: "Iron Age City Wall Construction"
+
+  bronze_city_walls_maintenance: "Fortification Maintenance"
 
   # CULTURE SPECIFIC
 

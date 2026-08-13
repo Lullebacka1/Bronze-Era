@@ -289,10 +289,6 @@ house_of_remedies_advance = {
 	starting_technology_level = 1
 }
 
-# ################################
-# NEOLITHIC BUILDINGS
-# ################################
-
 craft_patronage_advance = {
  	age = age_1_traditions
 	icon = sculptor
@@ -332,6 +328,10 @@ luxury_craft_patronage_advance = {
 
 	starting_technology_level = 2
 }
+
+# ################################
+# IRON AGE BUILDINGS
+# ################################
 
 # ###############################
 # # Basic Buildings
