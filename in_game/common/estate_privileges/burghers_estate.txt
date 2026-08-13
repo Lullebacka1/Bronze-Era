@@ -60,6 +60,7 @@ commercial_monopolies = {
 	estate = burghers_estate
 	allow = {
     	NOT = { has_estate_privilege = estate_privilege:administrative_incorporation }
+		NOT = { has_estate_privilege = estate_privilege:private_commerce_integration }
 	}
 	
 	country_modifier = {
@@ -67,6 +68,36 @@ commercial_monopolies = {
 		global_trades_per_burgher = 1.0
 		global_merchant_capacity_modifier = -0.50
 		global_burghers_estate_power = 0.50
+	}
+}
+
+administrative_incorporation = {
+	estate = burghers_estate
+	allow = {
+    	NOT = { has_estate_privilege = estate_privilege:commercial_monopolies }
+		NOT = { has_estate_privilege = estate_privilege:private_commerce_integration }
+	}
+
+	country_modifier = {
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_burghers_estate_power = 0.50
+		global_trades_per_burgher = -1.0
+		global_merchant_capacity_modifier = 0.50
+	}
+}
+
+private_commerce_integration = {
+	estate = burghers_estate
+	allow = {
+    	NOT = { has_estate_privilege = estate_privilege:commercial_monopolies }
+		NOT = { has_estate_privilege = estate_privilege:administrative_incorporation }
+	}
+
+	country_modifier = {
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_burghers_estate_power = 0.70
+		global_trades_per_burgher = 0.20
+		global_merchant_capacity_modifier = 0.20
 	}
 }
 
@@ -78,20 +109,6 @@ protected_inheritance = {
 		global_burghers_estate_power = 0.40
 		estate_enrichment = 0.10
 
-	}
-}
-
-administrative_incorporation = {
-	estate = burghers_estate
-	allow = {
-    	NOT = { has_estate_privilege = estate_privilege:commercial_monopolies }
-	}
-
-	country_modifier = {
-		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
-		global_burghers_estate_power = 0.50
-		global_trades_per_burgher = -1.0
-		global_merchant_capacity_modifier = 0.50
 	}
 }
 

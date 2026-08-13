@@ -272,6 +272,9 @@
   commercial_districts: "Commercial Districts"
   commercial_districts_desc: "Growing trade networks encourage foreign merchants to establish permanent quarters within major settlements. These commercial districts provide a stable setting for exchange, storage, negotiation, and the maintenance of long-distance business relationships."
 
+  private_commerce: "Private Commerce"
+  private_commerce_desc: "As political authority becomes more dispersed, rulers increasingly turn to independent merchants to carry out commercial and logistical functions across their realms. The growing participation of private enterprise in public affairs marks a shift toward more flexible and decentralized economic organization."
+
   # ##########################
   # BUILDINGS
   # ##########################
