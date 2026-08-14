@@ -269,6 +269,37 @@
   delegated_judicial_authority: "Delegated Judicial Authority"
   delegated_judicial_authority_desc: "Provincial officials increasingly exercise judicial authority on behalf of the ruler, holding formal courts to settle disputes and enforce the law. Justice thus becomes a regular feature of provincial administration rather than a matter requiring direct appeal to the central court."
 
+  commercial_districts: "Commercial Districts"
+  commercial_districts_desc: "Growing trade networks encourage foreign merchants to establish permanent quarters within major settlements. These commercial districts provide a stable setting for exchange, storage, negotiation, and the maintenance of long-distance business relationships."
+
+  private_commerce: "Private Commerce"
+  private_commerce_desc: "As political authority becomes more dispersed, rulers increasingly turn to independent merchants to carry out commercial and logistical functions across their realms. The growing participation of private enterprise in public affairs marks a shift toward more flexible and decentralized economic organization."
+
+  community_military_obligation: "Community Military Obligation"
+  community_military_obligation_desc: "As political communities become more organized, military service increasingly becomes a recognized obligation shared across the wider population. Local communities maintain established expectations of service and contribute men and resources to collective defense."
+
+  influential_commanders: "Influential Commanders"
+  influential_commanders_desc: "As military forces grow more organized, experienced commanders acquire influence of their own through battlefield reputation, personal followings, and accumulated knowledge of warfare. Their expertise makes the cultivation of capable military leadership increasingly important."
+
+  iron_city_walls_advance: "Iron Age City Walls"
+  iron_city_walls_advance_desc: "Generations of experience in fortification, improved masonry, and more capable tools allow cities to undertake defensive works on a greater scale. Established building knowledge can now be applied to larger, stronger, and more carefully constructed urban walls."
+
+  elite_networks: "Elite Networks"
+  elite_networks_desc: "Rulers, governors, commanders, and other influential figures become increasingly connected through personal ties, patronage, marriage, and reciprocal obligations. These networks allow influence and information to travel across political boundaries and strengthen cooperation among powerful individuals."
+
+  portable_writing: "Portable Writing"
+  portable_writing_desc: "Writing becomes increasingly suited to records that must travel with merchants, officials, messengers, and other individuals. Portable documents make it easier to preserve instructions, accounts, claims, and correspondence across considerable distances."
+
+  road_station_system_advance: "Road Station System"
+  road_station_system_advance_desc: "Established routes are increasingly supported by a chain of stations where travelers, messengers, and goods can rest, change transport, and obtain provisions. Such infrastructure makes long-distance movement more regular and dependable."
+
+  ownership_marks: "Ownership Marks"
+  ownership_marks_desc: "Merchants and craftsmen increasingly mark goods, tools, containers, and other possessions to identify their ownership or origin. Such marks help distinguish property, establish claims, and maintain accountability as goods pass between different hands."
+
+  representative_authority: "Representative Authority"
+  representative_authority_desc: "Envoys and officials increasingly act with authority of their own rather than merely carrying messages between distant rulers. Entrusted to negotiate, settle disputes, conclude agreements, and make decisions in their patron's name, they become true representatives of the authority they embody."
+
+
   # ##########################
   # BUILDINGS
   # ##########################

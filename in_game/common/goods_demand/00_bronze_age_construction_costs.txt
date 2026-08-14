@@ -47,6 +47,13 @@ build_maintained_holloway_demand = {
 	category = building_construction
 }
 
+build_station_system_demand = {
+	lumber = 0.7
+	masonry = 0.7
+	sand = 0.2
+	category = building_construction
+}
+
 maintain_holloway_demand = {
 
 	category = building_maintenance
@@ -55,6 +62,12 @@ maintain_holloway_demand = {
 maintain_maintained_holloway_demand = {
 	sand = 0.02
 	lumber = 0.02
+	category = building_maintenance
+}
+
+maintain_station_system_demand = {
+	sand = 0.025
+	lumber = 0.025
 	category = building_maintenance
 }
 
@@ -74,6 +87,13 @@ town_walls_construction = {
 bronze_city_walls_construction = {
 	masonry = 5.0
 	tools = 1.0
+	
+	category = building_construction
+}
+
+iron_city_walls_construction = {
+	masonry = 7.5
+	tools = 2.0
 	
 	category = building_construction
 }

@@ -3,6 +3,9 @@
   bronze_age_trade_office: "Trade Post"
   bronze_age_trade_office_desc: "A trading post gathers merchants, caravans, and local producers at a recognized exchange point where goods, information, and travelers pass between regions. Though modest in scale, such sites help tie distant communities into wider economic networks."
 
+  trade_district: "Trade District"
+  trade_district_desc: "Foreign merchants establish permanent quarters within the markets of distant towns, creating durable communities through which goods, information, and commercial connections can flow. Such districts become important centers of exchange between neighboring realms and trading networks."
+
 # ###########################################
 # PRODUCTION AND MAINTENANCE METHODS
 # ###########################################
@@ -21,3 +24,9 @@
 
   bronze_trade_office_maintenance_wood: "Wooden Account Boards"
   bronze_trade_office_maintenance_wood_desc: "Wooden tablets and wax boards provide merchants with reusable surfaces for recording transactions, cargo lists, and trade arrangements."
+
+  iron_trade_office_maintenance_tablets: "Tablet Records"
+  iron_trade_office_maintenance_leather: "Leather Records"
+  iron_trade_office_maintenance_potsherds: "Potshard Records"
+  iron_trade_office_maintenance_wood: "Wooden Records"
+  iron_trade_office_maintenance_paper: "Paper Records"

@@ -22,6 +22,40 @@ provincial_governors = {
 
 }
 
+elite_networks = {
+	age = age_2_renaissance
+	
+	global_nobles_max_literacy = 1
+
+	requires = provincial_governors
+
+}
+
+representative_authority = {
+	age = age_2_renaissance
+	
+	monthly_diplomats = 0.025
+
+	requires = elite_networks
+}
+
+influential_commanders = {
+	age = age_2_renaissance
+
+	requires = elite_networks
+
+	train_general_cost_modifier = -0.1
+	train_admiral_cost_modifier = -0.1
+}
+
+community_military_obligation = {
+	age = age_2_renaissance
+
+	requires = influential_commanders
+
+	unlock_law = ancient_recruitment_law
+}
+
 delegated_judicial_authority = {
 	age = age_2_renaissance
 	
@@ -51,7 +85,6 @@ independent_smiths = {
 	unlock_building = tools_iron_age_workshop
 
 	requires = independent_craftsmen
-
 }
 
 
@@ -70,6 +103,48 @@ alphabetic_script_advance = {
 	depth = 0
 	
 	allow = { has_embraced_institution = institution:commercial_counters }
+}
+
+private_commerce = {
+	age = age_2_renaissance
+	
+	global_burghers_max_literacy = 1
+	unlock_estate_privilege = private_commerce_integration
+	
+	requires = alphabetic_script_advance
+}
+
+commercial_districts = {
+	age = age_2_renaissance
+	icon = abacus_advance
+	
+	unlock_building = trade_district
+	
+	requires = private_commerce
+}
+
+portable_writing = {
+	age = age_2_renaissance
+	
+	monthly_diplomats = 0.025
+	
+	requires = alphabetic_script_advance
+}
+
+road_station_system_advance = {
+	age = age_2_renaissance
+	
+	unlock_road_type = station_system
+	
+	requires = portable_writing
+}
+
+ownership_marks = {
+	age = age_2_renaissance
+	
+	selling_efficiency = small_trade_efficiency_bonus
+	
+	requires = portable_writing
 }
 
 # IRON METALLURGY
@@ -93,7 +168,6 @@ controlled_carburization = {
 	requires = iron_metallurgy_advance
 
 }
-
 
 forge_welding = {
 	age = age_2_renaissance

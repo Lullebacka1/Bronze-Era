@@ -1,1 +1,28 @@
-﻿#
+﻿ancient_recruitment_law = {
+	law_category = military
+
+	palace_obligation = {
+		country_modifier = {
+			global_levy_size_modifier = -0.1
+			monthly_legitimacy = 0.1
+		}
+		estate_preferences = {
+			nobles_estate
+			clergy_estate
+		}
+		years = 2
+	}
+
+	community_obligation = {
+		country_modifier = {
+			peasants_estate_levy_size = 0.1
+			tribes_estate_levy_size = 0.1
+		}
+		estate_preferences = {
+			tribes_estate
+			peasants_estate
+		}
+		years = 2
+	}
+
+}

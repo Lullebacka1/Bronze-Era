@@ -6,3 +6,7 @@ build_maintained_holloway = {
 	gold = 5
 	government_power = 3
 }
+
+build_station_system = {
+	gold = 7
+}
