@@ -65,8 +65,6 @@ delegated_judicial_authority = {
 }
 
 
-
-
 # ALPHABETIC SCRIPT
 
 alphabetic_script_advance = {

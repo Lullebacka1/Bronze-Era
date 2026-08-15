@@ -43,3 +43,11 @@ stone_dressing = {
 	requires = tempered_steel
 
 }
+
+selective_horse_breeding = {
+	age = age_2_renaissance
+
+	unlock_production_method = iron_horse_breeders_maintenance
+
+	requires = community_military_obligation
+}
