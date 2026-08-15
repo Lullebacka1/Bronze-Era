@@ -35,6 +35,14 @@
   a_iron_horsemen: "Mounted Warriors"
   a_iron_horsemen_desc: "Skilled riders trained to fight from horseback, valued for their speed and mobility rather than the massed shock of later cavalry. They excel at scouting, pursuit, raiding, and exploiting gaps or exposed positions on the battlefield."
 
+  # REGIONAL UNITS
+
+  a_pastoralist_slingers: "Pastoralist Slingers"
+  a_pastoralist_slingers_desc: "Pastoral communities accustomed to herding and working with wool develop considerable skill with the sling, producing nimble warriors well suited to skirmishing and harassment.\n\nThis unit is considerably cheaper to construct and maintain than regular Slingers but it suffers additional damage and morale loss during the fight."
+
+  a_nomadic_mounted_warriors: "Nomadic Horsemen"
+  a_nomadic_mounted_warriors_desc: "Nomadic communities accustomed to life on horseback develop skilled mounted warriors who use mobility to scout, harass, raid, and pursue enemies across open country."
+
   # UNIQUE UNITS
 
   a_myrmidones: "Myrmidones"
