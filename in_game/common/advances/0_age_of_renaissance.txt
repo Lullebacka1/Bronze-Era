@@ -64,29 +64,6 @@ delegated_judicial_authority = {
 	requires = provincial_governors
 }
 
-independent_craftsmen = {
-	age = age_2_renaissance
-	
-	unlock_building = fine_cloth_iron_age
-	unlock_building = beer_iron_age
-	unlock_building = pottery_iron_age
-	unlock_building = naval_supplies_iron_age
-	unlock_building = winery_iron_age
-	unlock_building = jewelry_iron_age
-
-	requires = dispersion_of_authority_advance
-
-}
-
-independent_smiths = {
-	age = age_2_renaissance
-	
-	unlock_building = weapon_iron_age_workshop
-	unlock_building = tools_iron_age_workshop
-
-	requires = independent_craftsmen
-}
-
 
 # ALPHABETIC SCRIPT
 

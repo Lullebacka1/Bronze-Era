@@ -32,6 +32,9 @@
   a_mustered_infantry: "Mustered Infantry"
   a_mustered_infantry_desc: "Drawn from households obligated to provide military service, these warriors bring their own weapons and equipment when called upon by local chiefs and rulers. They lack the training of elite retainers but provide the manpower needed for larger campaigns."
 
+  a_iron_horsemen: "Mounted Warriors"
+  a_iron_horsemen_desc: "Skilled riders trained to fight from horseback, valued for their speed and mobility rather than the massed shock of later cavalry. They excel at scouting, pursuit, raiding, and exploiting gaps or exposed positions on the battlefield."
+
   # UNIQUE UNITS
 
   a_myrmidones: "Myrmidones"

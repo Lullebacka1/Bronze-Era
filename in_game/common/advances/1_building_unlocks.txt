@@ -26,7 +26,7 @@
 	
 	starting_technology_level = 2
 	
-}
+ }
 
  bronze_foundry_advance = {
  	age = age_1_traditions
@@ -121,20 +121,15 @@
 
  royal_tablets_workshop_advance = {
  	age = age_1_traditions
-
-	# Historical nonsense, but im leaving it here for a template
-#	potential = {
-#		has_advance = written_alphabet
-#	}
 	
  	unlock_building = tablets_guild
 	
  	requires = royal_scribe_guild_advance
  }
 
- # ###############################
- # PALACE COMPLEX TECH
- # ###############################
+# ###############################
+# PALACE COMPLEX TECH
+# ###############################
 
  royal_registry_advance = {
 	age = age_1_traditions
@@ -155,9 +150,9 @@
  }
 
 
- # ###############################
- # TEMPLE COMPLEX TECH
- # ###############################
+# ###############################
+# TEMPLE COMPLEX TECH
+# ###############################
 
  temple_scribes_advance = {
 	age = age_1_traditions
@@ -168,7 +163,7 @@
 	starting_technology_level = 2
 
 	requires = religious_texts_advance
-}
+ }
 
 temple_healing_sanctuary_advance = {
 	age = age_1_traditions
@@ -179,7 +174,7 @@ temple_healing_sanctuary_advance = {
 	starting_technology_level = 3
 
 	requires = temple_complex_advance
-}
+ }
 
 temple_court_advance = {
 	age = age_1_traditions
@@ -190,6 +185,33 @@ temple_court_advance = {
 	starting_technology_level = 3
 
 	requires = temple_complex_advance
+}
+
+# ###############################
+# INDEPENDENT CRAFT TECH
+# ###############################
+
+independent_craftsmen = {
+	age = age_2_renaissance
+	
+	unlock_building = fine_cloth_iron_age
+	unlock_building = beer_iron_age
+	unlock_building = pottery_iron_age
+	unlock_building = naval_supplies_iron_age
+	unlock_building = winery_iron_age
+	unlock_building = jewelry_iron_age
+
+	requires = dispersion_of_authority_advance
+
+}
+
+independent_smiths = {
+	age = age_2_renaissance
+	
+	unlock_building = weapon_iron_age_workshop
+	unlock_building = tools_iron_age_workshop
+
+	requires = independent_craftsmen
 }
 
 # ###############################
@@ -272,6 +294,14 @@ frontier_post_advance = {
 	requires = trade_caravans
 	
 	starting_technology_level = 3
+}
+
+iron_citadel_advance = {
+	age = age_2_renaissance
+
+	unlock_building = iron_citadel
+
+	requires = provincial_governors
 }
 
 # ################################

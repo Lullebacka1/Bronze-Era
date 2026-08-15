@@ -240,7 +240,15 @@ horse_breeders = {
 		
 		horse_breeders_maintenance = {
 			produced = horses
-			output = 1
+			output = 0.6
+			wheat = 1.5
+			horses = 0.3
+			category = building_maintenance
+		}
+
+		iron_horse_breeders_maintenance = {
+			produced = horses
+			output = 0.85
 			wheat = 1.5
 			horses = 0.3
 			category = building_maintenance
