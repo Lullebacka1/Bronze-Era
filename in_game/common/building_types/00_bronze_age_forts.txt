@@ -235,3 +235,51 @@ iron_city_walls = {
 
 	graphical_tags = { small_city_walls city_walls }
 }
+
+iron_citadel = {
+	
+	max_levels = 1
+	pop_type = soldiers
+	forbidden_for_estates = yes
+	
+	category = defense_category
+	
+	employment_size = stockade_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = no
+	megalopolis = no
+	
+	
+	build_time = small_fort_building
+
+	expensive = yes
+	
+	unique_production_methods = {
+	
+		iron_citadel_maintenance = {
+			lumber = 0.15
+			masonry = 0.15
+			weaponry = 0.045
+			tar = 0.03
+			category = building_maintenance
+		}
+	}
+	construction_demand = stockade_construction
+	
+
+	modifier = {
+		local_garrison_size = 0.35
+		local_unrest = -0.04
+		local_crown_estate_power = 0.1
+	}
+	
+	raw_modifier = {
+		fort_level = 1
+		propagating_zone_of_control = yes
+	}
+
+	obsolete = frontier_post
+	obsolete = hill_fort
+}

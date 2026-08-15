@@ -302,6 +302,14 @@
   unlock_iron_horsemen_advance: "Mounted Warfare"
   unlock_iron_horsemen_advance_desc: "Growing experience with horses encourages rulers and commanders to cultivate small bodies of skilled mounted warriors for scouting, pursuit, raiding, and rapid communication. Though still limited in number, these riders demonstrate the military potential of disciplined cavalry."
 
+  multihole_cheekpieces: "Multi-Hole Cheekpieces"
+  multihole_cheekpieces_desc: "More adaptable cheekpieces give riders finer control over the bridle and the behavior of their mounts. Such equipment helps experienced horsemen handle horses more effectively in the varied demands of scouting, pursuit, and mounted combat."
+
+  fort_limit_2_advance: "Fortification Traditions"
+  fort_limit_2_advance_desc: "Fortification becomes an increasingly established feature of organized warfare, as communities accumulate the knowledge and resources needed to maintain strongpoints across their territories."
+
+  iron_citadel_advance: "Citadel Fortifications"
+  iron_citadel_advance_desc: "Fortified strongholds increasingly serve not merely as places of refuge, but as permanent centers from which local authority can be secured and the surrounding territory controlled."
 
   # ##########################
   # BUILDINGS

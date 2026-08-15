@@ -26,7 +26,7 @@
 	
 	starting_technology_level = 2
 	
-}
+ }
 
  bronze_foundry_advance = {
  	age = age_1_traditions
@@ -121,20 +121,15 @@
 
  royal_tablets_workshop_advance = {
  	age = age_1_traditions
-
-	# Historical nonsense, but im leaving it here for a template
-#	potential = {
-#		has_advance = written_alphabet
-#	}
 	
  	unlock_building = tablets_guild
 	
  	requires = royal_scribe_guild_advance
  }
 
- # ###############################
- # PALACE COMPLEX TECH
- # ###############################
+# ###############################
+# PALACE COMPLEX TECH
+# ###############################
 
  royal_registry_advance = {
 	age = age_1_traditions
@@ -155,9 +150,9 @@
  }
 
 
- # ###############################
- # TEMPLE COMPLEX TECH
- # ###############################
+# ###############################
+# TEMPLE COMPLEX TECH
+# ###############################
 
  temple_scribes_advance = {
 	age = age_1_traditions
@@ -168,7 +163,7 @@
 	starting_technology_level = 2
 
 	requires = religious_texts_advance
-}
+ }
 
 temple_healing_sanctuary_advance = {
 	age = age_1_traditions
@@ -179,7 +174,7 @@ temple_healing_sanctuary_advance = {
 	starting_technology_level = 3
 
 	requires = temple_complex_advance
-}
+ }
 
 temple_court_advance = {
 	age = age_1_traditions
@@ -192,9 +187,9 @@ temple_court_advance = {
 	requires = temple_complex_advance
 }
 
- # ###############################
- # INDEPENDENT CRAFT TECH
- # ###############################
+# ###############################
+# INDEPENDENT CRAFT TECH
+# ###############################
 
 independent_craftsmen = {
 	age = age_2_renaissance
@@ -299,6 +294,14 @@ frontier_post_advance = {
 	requires = trade_caravans
 	
 	starting_technology_level = 3
+}
+
+iron_citadel_advance = {
+	age = age_2_renaissance
+
+	unlock_building = iron_citadel
+
+	requires = provincial_governors
 }
 
 # ################################
