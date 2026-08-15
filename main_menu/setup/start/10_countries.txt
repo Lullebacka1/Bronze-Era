@@ -12998,8 +12998,8 @@ VC001 = {
 
 		VC017 = {
 			capital = al_hamad
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = aramaean_pagan
 
 			country_rank = rank_county
 
