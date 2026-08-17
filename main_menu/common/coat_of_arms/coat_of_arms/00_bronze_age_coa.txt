@@ -731,3 +731,15 @@ bronze_age_PERSIA_coa = { # Persian Empire: provided golden royal bird on a red 
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
 	}
 }
+
+bronze_age_SHANG_coa = { # Shang: provided red field and black royal glyph.
+	pattern = "pattern_solid.dds"
+	color1 = "red_dark"
+	color2 = "black"
+	color3 = "yellow_mid"
+
+	textured_emblem = {
+		texture = "ba_shang_flag.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}

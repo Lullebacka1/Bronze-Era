@@ -180,6 +180,10 @@ PERSIA = { # Persian Empire formable, royal Iranian high kingship.
 	flag_definition = { coa = bronze_age_PERSIA_coa priority = 10000 }
 }
 
+SHANG = { # Shang dynasty, using the provided red field and black glyph flag.
+	flag_definition = { coa = bronze_age_SHANG_coa priority = 10000 }
+}
+
 # Unique Hatti-collapse successor flags.
 HAMAT = { flag_definition = { coa = bronze_age_HAMAT_coa priority = 10000 } }
 ARPAD = { flag_definition = { coa = bronze_age_ARPAD_coa priority = 10000 } }
