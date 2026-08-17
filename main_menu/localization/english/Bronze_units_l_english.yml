@@ -43,6 +43,12 @@
   a_nomadic_mounted_warriors: "Nomadic Horsemen"
   a_nomadic_mounted_warriors_desc: "Nomadic communities accustomed to life on horseback develop skilled mounted warriors who use mobility to scout, harass, raid, and pursue enemies across open country."
 
+  a_highland_warriors: "Highland Warriors"
+  a_highland_warriors_desc: "Communities accustomed to rugged uplands develop warriors experienced in fighting across steep and broken terrain. Their familiarity with such ground allows them to hold difficult positions and make effective use of the landscape in battle.\n\nThis unit is on average weaker and more fragile than regular soldiers, but deals significantly more damage when fighting in mountains and hills."
+
+  a_highland_bowmen: "Highland Bowmen"
+  a_highland_bowmen_desc: "Archers drawn from communities accustomed to rugged upland terrain, where hunting and local warfare foster skill with the bow. Their familiarity with difficult ground allows them to harass and weaken enemies from positions that are hard to approach.\n\nThis unit is on average weaker and more fragile than regular bowmen, but deals significantly more damage when fighting in mountains and hills."
+
   # UNIQUE UNITS
 
   a_myrmidones: "Myrmidones"

@@ -19,8 +19,8 @@ clergy_judicial_authority = {
 		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_clergy_estate_power = 0.30
 
-		tolerance_heretic = -0.1
-		tolerance_heathen = -0.1
+		tolerance_heretic = -0.2
+		tolerance_heathen = -0.2
 	}
 }
 
@@ -58,7 +58,7 @@ ritual_service = {
 		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_clergy_estate_power = 0.20
 
-		stability_cost = -0.1
+		stability_cost = -0.10
 	}
 }
 
@@ -72,5 +72,22 @@ sacred_herds = {
 
 		estate_enrichment = 0.10
 		global_livestock_output_modifier = -0.025
+	}
+}
+
+clergy_military_authority = {
+	estate = clergy_estate
+	
+	country_modifier = {
+		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_clergy_estate_power = 0.30
+
+		clergy_estate_allowed_leading_military = yes
+		clergy_estate_blocked_from_leading_military = no
+
+		army_maintenance_efficiency = 0.05
+		war_score_vs_other_religion_efficiency = 0.10
+
+		clergy_estate_agenda_impact = 0.2
 	}
 }

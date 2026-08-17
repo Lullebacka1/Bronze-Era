@@ -5,7 +5,7 @@
 		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_burghers_estate_power = 0.20
 		land_cost_on_distance_from_capital_speed_propagation = 0.1
-		court_spending_cost_modifier = 0.05
+		court_spending_efficiency = 0.05
 	}
 }
 
@@ -28,7 +28,7 @@ royal_compensation = {
 	country_modifier = {
 		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_burghers_estate_power = 0.20
-		court_spending_cost_modifier = 0.05
+		court_spending_efficiency = 0.05
 	}
 }
 
