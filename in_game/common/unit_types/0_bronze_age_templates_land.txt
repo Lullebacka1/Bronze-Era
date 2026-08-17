@@ -78,9 +78,9 @@ a_light_chariot = {
 	max_strength = 0.05
 
 	impact = { 
-		jungle = -0.10
-		wetlands = -0.10
-		mountains = -0.10
+		jungle = 0.10
+		wetlands = 0.10
+		mountains = 0.10
 	}
 	combat = { 
 		jungle = -0.10
@@ -99,9 +99,9 @@ a_heavy_chariot = {
 	max_strength = 0.05
 	
 	impact = { 
-		jungle = -0.10
-		wetlands = -0.10
-		mountains = -0.10
+		jungle = 0.10
+		wetlands = 0.10
+		mountains = 0.10
 	}
 	combat = { 
 		jungle = -0.15
