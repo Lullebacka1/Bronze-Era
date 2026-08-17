@@ -101,3 +101,16 @@ labor_substitution_advance = {
 	starting_technology_level = 3
 }
 
+clergy_military_authority_advance = {
+	age = age_2_renaissance
+
+	requires = elite_networks
+
+	allow = {
+		"estate_power(estate_type:clergy_estate)" > 0.5
+	}
+
+	unlock_estate_privilege = clergy_military_authority
+}
+
+
