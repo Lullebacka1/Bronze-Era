@@ -226,6 +226,8 @@ a_highland_bowmen = {
 		NOT = {
 			has_advance_available = dispersion_of_authority_advance
 		}
+
+		has_advance = unlock_bowmen_advance
 	}
 
 
