@@ -2312,6 +2312,11 @@ VINDLAND = {
 	color2 = rgb { 219 170 67 }
 }
 
+PERSIA = {
+	color = rgb { 155 33 28 }
+	color2 = rgb { 246 178 47 }
+}
+
 DAPG = {
 	color = rgb { 57 146 213 }
 	color2 = rgb { 26 66 96 }

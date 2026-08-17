@@ -77,25 +77,25 @@ types BronzeRuinsExplorationTypes
 
 								hbox = {
 									spacing = 5
-									button_small = {
+									button_regular = {
 										size = { 68 24 }
 										text = "be_ruins_filter_region"
 										enabled = no
 										tooltip = "be_ruins_filter_placeholder_tt"
 									}
-									button_small = {
+									button_regular = {
 										size = { 70 24 }
 										text = "be_ruins_sort_difficulty"
 										enabled = no
 										tooltip = "be_ruins_filter_placeholder_tt"
 									}
-									button_small = {
+									button_regular = {
 										size = { 70 24 }
 										text = "be_ruins_sort_age"
 										enabled = no
 										tooltip = "be_ruins_filter_placeholder_tt"
 									}
-									button_small = {
+									button_regular = {
 										size = { 80 24 }
 										text = "be_ruins_sort_reward"
 										enabled = no
@@ -490,7 +490,7 @@ types BronzeRuinsExplorationTypes
 												multiline = yes
 												text = "be_ruins_leader_bonus_priest"
 											}
-											button_small = {
+											button_regular = {
 												datacontext = "[GetScriptedGui('be_ruins_open_leader_picker_gui')]"
 												size = { 86 24 }
 												text = "be_ruins_change_leader"
@@ -518,7 +518,7 @@ types BronzeRuinsExplorationTypes
 												text = "be_ruins_choose_leader"
 												default_format = "#yellow_titles"
 											}
-											button_small = {
+											button_regular = {
 												datacontext = "[GetScriptedGui('be_ruins_close_leader_picker_gui')]"
 												size = { 46 22 }
 												text = "be_ruins_close_leader_picker"
@@ -526,28 +526,28 @@ types BronzeRuinsExplorationTypes
 											}
 										}
 
-										button_small = {
+										button_regular = {
 											datacontext = "[GetScriptedGui('be_ruins_select_archivist_gui')]"
 											size = { 294 34 }
 											text = "be_ruins_leader_archivist"
 											onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 											tooltip = "be_ruins_leader_archivist_tt"
 										}
-										button_small = {
+										button_regular = {
 											datacontext = "[GetScriptedGui('be_ruins_select_captain_gui')]"
 											size = { 294 34 }
 											text = "be_ruins_leader_captain"
 											onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 											tooltip = "be_ruins_leader_captain_tt"
 										}
-										button_small = {
+										button_regular = {
 											datacontext = "[GetScriptedGui('be_ruins_select_quartermaster_gui')]"
 											size = { 294 34 }
 											text = "be_ruins_leader_quartermaster"
 											onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 											tooltip = "be_ruins_leader_quartermaster_tt"
 										}
-										button_small = {
+										button_regular = {
 											datacontext = "[GetScriptedGui('be_ruins_select_priest_gui')]"
 											size = { 294 34 }
 											text = "be_ruins_leader_priest"

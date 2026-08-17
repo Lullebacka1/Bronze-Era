@@ -18,4 +18,5 @@ colors = {
 	map_HELHEIM = rgb { 73 63 70 }
 	map_VINDLAND = rgb { 129 112 50 }
 	map_ALLARAM = rgb { 158 103 52 }
+	map_PERSIA = rgb { 155 33 28 }
 }

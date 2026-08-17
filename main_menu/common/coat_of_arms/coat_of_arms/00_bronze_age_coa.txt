@@ -719,3 +719,15 @@ bronze_age_ALLARAM_coa = { # All Aram: ochre field, royal sun and guarded desert
 		instance = { position = { 0.62 0.82 } scale = { -0.28 0.28 } }
 	}
 }
+
+bronze_age_PERSIA_coa = { # Persian Empire: provided golden royal bird on a red field.
+	pattern = "pattern_solid.dds"
+	color1 = "red_dark"
+	color2 = "yellow_mid"
+	color3 = "black"
+
+	textured_emblem = {
+		texture = "ba_persian_empire.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
