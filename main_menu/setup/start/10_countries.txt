@@ -12698,8 +12698,8 @@ VC001 = {
 
 		VC005 = {
 			capital = aba_al_qur
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -12714,7 +12714,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -12999,7 +12999,7 @@ VC001 = {
 		VC017 = {
 			capital = al_hamad
 			culture = aramaean
-			religion = aramaean_pagan
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13014,7 +13014,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13023,8 +13023,8 @@ VC001 = {
 
 		VC018 = {
 			capital = al_harrah
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13039,7 +13039,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13073,8 +13073,8 @@ VC001 = {
 
 		VC020 = {
 			capital = al_labbah
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13089,7 +13089,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13298,8 +13298,8 @@ VC001 = {
 
 		VC029 = {
 			capital = al_thulayma
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13314,7 +13314,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13598,8 +13598,8 @@ VC001 = {
 
 		VC041 = {
 			capital = an_nasifah
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13614,7 +13614,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13823,8 +13823,8 @@ VC001 = {
 
 		VC050 = {
 			capital = arar
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13839,7 +13839,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -16573,8 +16573,8 @@ VC001 = {
 
 		VC160 = {
 			capital = dumat_al_jandal
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -16589,7 +16589,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -20948,8 +20948,8 @@ VC001 = {
 
 		VC335 = {
 			capital = lowqah
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -20964,7 +20964,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -23523,8 +23523,8 @@ VC001 = {
 
 		VC438 = {
 			capital = qurayyat_al_milh
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -23539,7 +23539,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -24273,8 +24273,8 @@ VC001 = {
 
 		VC468 = {
 			capital = sakaka
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -24289,7 +24289,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
