@@ -128,6 +128,10 @@ ROME = { # Rome, founded in 753 BC by event in the Bronze Era chronology.
 	flag_definition = { coa = bronze_age_ROME_coa priority = 10000 }
 }
 
+ETRUS = { # Etruria, using the provided Etruscan flag.
+	flag_definition = { coa = bronze_age_ETRUS_coa priority = 10000 }
+}
+
 ARMOR = { # Armorica formable, using the provided triskelion flag.
 	flag_definition = { coa = bronze_age_ARMOR_coa priority = 10000 }
 }
@@ -182,6 +186,14 @@ PERSIA = { # Persian Empire formable, royal Iranian high kingship.
 
 SHANG = { # Shang dynasty, using the provided red field and black glyph flag.
 	flag_definition = { coa = bronze_age_SHANG_coa priority = 10000 }
+}
+
+MAYA = { # Maya, using the provided four-field flag.
+	flag_definition = { coa = bronze_age_MAYA_coa priority = 10000 }
+}
+
+OLMEC = { # Olmecs, using the provided jaguar-ring flag.
+	flag_definition = { coa = bronze_age_OLMEC_coa priority = 10000 }
 }
 
 # Unique Hatti-collapse successor flags.

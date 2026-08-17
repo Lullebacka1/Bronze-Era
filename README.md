@@ -15,3 +15,12 @@ Regular and active contributors may also be invited to officially join the devel
 * **vador03** — Creator
 * **Rogalissimus** *(Mojaskywa26 on GitHub)* — Developer
 * **Lullebacka** — Developer
+
+## Contributor
+
+
+
+## Gfx 
+* **Nova Erika** - Maya Flag
+* **Aka Play** - Shang flag
+* **Romulus Kreißler** - Roman Proviencia Flag (some) 

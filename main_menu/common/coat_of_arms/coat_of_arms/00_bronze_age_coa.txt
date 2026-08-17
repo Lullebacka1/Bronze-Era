@@ -409,6 +409,18 @@ bronze_age_ROME_coa = { # Rome: red and gold, using the provided she-wolf founda
 	}
 }
 
+bronze_age_ETRUS_coa = { # Etruria: provided teal and white flag with black chimera emblem.
+	pattern = "pattern_solid.dds"
+	color1 = "cyan"
+	color2 = "white"
+	color3 = "black"
+
+	textured_emblem = {
+		texture = "ba_etruscan_flag.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+
 bronze_age_ARMOR_coa = { # Armorica: green field with the provided Celtic triskelion.
 	pattern = "pattern_solid.dds"
 	color1 = "indigo_green"
@@ -740,6 +752,32 @@ bronze_age_SHANG_coa = { # Shang: provided red field and black royal glyph.
 
 	textured_emblem = {
 		texture = "ba_shang_flag.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+
+bronze_age_MAYA_coa = { # Maya: provided blue, white, yellow and red four-field flag.
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow_mid"
+	color4 = "red"
+
+	textured_emblem = {
+		texture = "ba_maya_flag.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+
+bronze_age_OLMEC_coa = { # Olmec: provided yellow field with green stripe and jaguar-ring emblem.
+	pattern = "pattern_solid.dds"
+	color1 = "yellow_mid"
+	color2 = "green"
+	color3 = "white"
+	color4 = "black"
+
+	textured_emblem = {
+		texture = "ba_olmec_flag.dds"
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
 	}
 }
