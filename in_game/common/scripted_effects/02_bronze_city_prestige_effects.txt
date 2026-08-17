@@ -359,8 +359,9 @@ bronze_city_prestige_recalculate_city = {
 }
 
 # Root = changed location. Recalculate this city immediately and then ask the
-# single world manager to sort the cached world pool. Call this after every
-# mission, monument, rivalry, or decline change that affects prestige.
+# single world manager to sort the cached world pool. Use for deliberate manual
+# changes, debug refreshes, monuments, and rare hard commits that need rankings
+# updated in the same tick.
 bronze_city_prestige_commit_score_change = {
 	if = {
 		limit = { bronze_city_prestige_is_urban = yes }
