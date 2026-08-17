@@ -17,7 +17,7 @@ Regular and active contributors may also be invited to officially join the devel
 * **Lullebacka** — Developer
 
 ## Contributor
-
+* **Hazerre** - Egypt dynasty and cities placements 1209BC Middle Est
 
 
 ## Gfx 
