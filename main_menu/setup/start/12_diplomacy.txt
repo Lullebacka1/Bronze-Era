@@ -19,18 +19,9 @@ diplomacy_manager = {
    dependency = { first = SHANG second = PUGU subject_type = vassal }
    dependency = { first = SHANG second = YOUM subject_type = vassal }
 
-   # Egyptian authority in Canaan.
-   # These are local city kingdoms; Egypt controls them through vassalage and
-   # garrisons, not direct ownership.
-   dependency = { first = 0002G second = AKSHA subject_type = vassal }
-   dependency = { first = 0002G second = ASHK subject_type = vassal }
-   dependency = { first = 0002G second = ASHT subject_type = vassal }
-   dependency = { first = 0002G second = GEZE subject_type = vassal }
-   dependency = { first = 0002G second = HACOR subject_type = vassal }
-   dependency = { first = 0002G second = JESUS subject_type = vassal }
-   dependency = { first = 0002G second = LAKIS subject_type = vassal }
-   dependency = { first = 0002G second = PEHEL subject_type = vassal }
-   dependency = { first = 0002G second = SICHE subject_type = vassal }
-   dependency = { first = 0002G second = YURZ subject_type = vassal }
+   # Egyptian authority in Canaan is handled by the dedicated
+   # egyptian_rule_in_canaan situation. Do not create vanilla dependencies here:
+   # numeric placeholder tags such as 0002G can assert as non-real countries in
+   # setup diplomacy and crash during load.
 
 }

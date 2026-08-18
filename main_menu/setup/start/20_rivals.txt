@@ -1,6 +1,6 @@
 diplomacy_manager = {
 	# mycenae and hatti are rivals.
-	rival = { first = 0001G second = HATTI }
-	rival = { first = HATTI second = 0001G }
+	# Disabled for setup stability: numeric placeholder tags such as 0001G can
+	# assert as non-real countries when used in vanilla diplomacy relations.
 	
 }

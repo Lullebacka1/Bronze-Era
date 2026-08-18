@@ -21,14 +21,14 @@ building_manager = {
 	# work_of_art:stonehenge at amesbury
 	bronze_monument_pylos_palace = { level = 1 location = modon }
 	bronze_monument_troy_citadel = { level = 1 location = ayvacik }
-	bronze_monument_karnak_temple = { level = 1 location = esna }
+	bronze_monument_karnak_complex = { level = 1 location = esna }
 	bronze_monument_luxor_temple = { level = 1 location = esna }
-	bronze_monument_abu_simbel_temples = { level = 1 location = daw }
+	bronze_monument_abu_simbel = { level = 1 location = daw }
 	bronze_monument_theban_necropolis = { level = 1 location = esna }
-	bronze_monument_hattusa_citadel = { level = 1 location = huseyinabad }
+	bronze_monument_hattusa_complex = { level = 1 location = huseyinabad }
 	bronze_monument_ur_ziggurat = { level = 1 location = abadan }
 	bronze_monument_assur_complex = { level = 1 location = samarra }
-	bronze_monument_chogha_zanbil_ziggurat = { level = 1 location = hamidiyeh }
+	bronze_monument_chogha_zanbil = { level = 1 location = hamidiyeh }
 	bronze_monument_su_nuraxi = { level = 1 location = isili }
 	# Nuragic Sardinia, using the closest Sardinian EU5 locations available.
 	bronze_monument_nuraghe_arrubiu = { level = 1 location = isili }

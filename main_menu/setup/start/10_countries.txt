@@ -5668,7 +5668,7 @@ countries = {
 
 	country_rank = rank_kingdom
 
-		include = "Sea_Peoples"
+	include = "Sea_people"
 
 	own_control_core = {
 		antalya  elmali   finike   istanoz  kas      megri
