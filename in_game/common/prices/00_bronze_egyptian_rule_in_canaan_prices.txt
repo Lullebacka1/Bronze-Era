@@ -1,0 +1,12 @@
+egyptian_rule_reinforce_canaanite_garrisons_price = {
+	scaled_gold = 1.0
+	scaled_manpower = 0.08
+	government_power = 15
+	stability = 5
+}
+
+egyptian_rule_defy_egyptian_authority_price = {
+	prestige = 6
+	government_power = 10
+	stability = 5
+}

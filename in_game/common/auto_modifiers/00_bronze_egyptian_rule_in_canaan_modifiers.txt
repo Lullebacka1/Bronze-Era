@@ -1,0 +1,107 @@
+egyptian_rule_hegemony_modifier = {
+	potential_trigger = {
+		egyptian_rule_in_canaan_egypt = yes
+		situation:egyptian_rule_in_canaan ?= {
+			has_variable = egyptian_authority_in_canaan
+			var:egyptian_authority_in_canaan >= 60
+		}
+	}
+
+	subject_loyalty = 6
+	monthly_prestige = 0.01
+	global_trade_center_power = 0.02
+}
+
+egyptian_rule_declining_authority_modifier = {
+	potential_trigger = {
+		egyptian_rule_in_canaan_egypt = yes
+		situation:egyptian_rule_in_canaan ?= {
+			has_variable = egyptian_authority_in_canaan
+			var:egyptian_authority_in_canaan < 60
+			var:egyptian_authority_in_canaan >= 30
+		}
+	}
+
+	subject_loyalty = -6
+	monthly_prestige = -0.01
+	global_trade_center_power = -0.02
+}
+
+egyptian_rule_canaanite_defiance_modifier = {
+	potential_trigger = {
+		egyptian_rule_in_canaan_egypt = yes
+		situation:egyptian_rule_in_canaan ?= {
+			has_variable = egyptian_authority_in_canaan
+			var:egyptian_authority_in_canaan < 30
+			var:egyptian_authority_in_canaan > 0
+		}
+	}
+
+	subject_loyalty = -14
+	monthly_prestige = -0.03
+	global_trade_center_power = -0.04
+}
+
+egyptian_rule_subject_under_hegemony_modifier = {
+	potential_trigger = {
+		egyptian_rule_in_canaan_subject = yes
+		situation:egyptian_rule_in_canaan ?= {
+			has_variable = egyptian_authority_in_canaan
+			var:egyptian_authority_in_canaan >= 60
+		}
+	}
+
+	loyalty_to_overlord = 6
+	global_monthly_control = 0.002
+}
+
+egyptian_rule_subject_declining_authority_modifier = {
+	potential_trigger = {
+		egyptian_rule_in_canaan_subject = yes
+		situation:egyptian_rule_in_canaan ?= {
+			has_variable = egyptian_authority_in_canaan
+			var:egyptian_authority_in_canaan < 60
+			var:egyptian_authority_in_canaan >= 30
+		}
+	}
+
+	loyalty_to_overlord = -8
+	global_monthly_control_decline = 0.004
+}
+
+egyptian_rule_subject_defiance_modifier = {
+	potential_trigger = {
+		egyptian_rule_in_canaan_subject = yes
+		situation:egyptian_rule_in_canaan ?= {
+			has_variable = egyptian_authority_in_canaan
+			var:egyptian_authority_in_canaan < 30
+			var:egyptian_authority_in_canaan > 0
+		}
+	}
+
+	loyalty_to_overlord = -16
+	global_monthly_control_decline = 0.008
+	monthly_rebel_growth = 0.001
+}
+
+egyptian_rule_canaanite_defiant_modifier = {
+	potential_trigger = {
+		has_variable = egyptian_rule_canaanite_defiant
+		var:egyptian_rule_canaanite_defiant > 0
+	}
+
+	loyalty_to_overlord = -12
+	monthly_rebel_growth = 0.001
+	monthly_prestige = 0.01
+}
+
+egyptian_rule_garrisons_reinforced_modifier = {
+	potential_trigger = {
+		egyptian_rule_in_canaan_egypt = yes
+		has_variable = egyptian_rule_garrisons_reinforced
+		var:egyptian_rule_garrisons_reinforced > 0
+	}
+
+	subject_loyalty = 5
+	fort_limit = 1
+}

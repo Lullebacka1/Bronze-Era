@@ -1,0 +1,4 @@
+egyptian_rule_defied_authority = {
+	value = -35
+	yearly_decay = 3
+}

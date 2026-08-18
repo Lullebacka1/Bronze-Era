@@ -37864,6 +37864,7 @@ VC001 = {
 		own_control_core = {
 			gaza
 		}
+		capital = gaza
 		include = "Bronze_coast"
 		government = {
 			ruler = random

@@ -1,0 +1,138 @@
+egyptian_rule_reinforce_canaanite_garrisons = {
+	type = situation
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 36
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = price:egyptian_rule_reinforce_canaanite_garrisons_price
+
+	cooldown = {
+		type = egyptian_rule_reinforce_canaanite_garrisons
+		years = 5
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:egyptian_rule_in_canaan = this
+			situation_is_active = yes
+			scope:actor ?= { egyptian_rule_in_canaan_egypt = yes }
+		}
+	}
+
+	potential = {
+		scope:actor ?= {
+			egyptian_rule_in_canaan_egypt = yes
+			NOT = { has_variable = egyptian_rule_garrisons_reinforced }
+		}
+	}
+
+	allow = {
+		scope:actor ?= {
+			is_during_bankruptcy = no
+		}
+	}
+
+	effect = {
+		scope:actor ?= {
+			set_variable = { name = egyptian_rule_garrisons_reinforced value = 1 years = 5 }
+			egyptian_rule_in_canaan_add_authority = { value = 8 }
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_penalty }
+			custom_tooltip = egyptian_rule_reinforce_canaanite_garrisons_tt
+		}
+	}
+
+	ai_will_do = {
+		add = 10
+		scope:actor ?= {
+			if = {
+				limit = { gold >= 300 }
+				add = 8
+			}
+			if = {
+				limit = { situation:egyptian_rule_in_canaan ?= { var:egyptian_authority_in_canaan < 45 } }
+				add = 12
+			}
+			if = {
+				limit = { is_during_bankruptcy = yes }
+				subtract = 40
+			}
+		}
+	}
+}
+
+egyptian_rule_defy_egyptian_authority = {
+	type = situation
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 48
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	price = price:egyptian_rule_defy_egyptian_authority_price
+
+	cooldown = {
+		type = egyptian_rule_defy_egyptian_authority
+		years = 4
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:egyptian_rule_in_canaan = this
+			situation_is_active = yes
+			scope:actor ?= { egyptian_rule_in_canaan_subject = yes }
+		}
+	}
+
+	potential = {
+		scope:actor ?= {
+			egyptian_rule_in_canaan_subject = yes
+			NOT = { has_variable = egyptian_rule_canaanite_defiant }
+		}
+	}
+
+	allow = {
+		scope:actor ?= {
+			stability >= -50
+		}
+	}
+
+	effect = {
+		scope:actor ?= {
+			egyptian_rule_in_canaan_mark_subject_defiant = yes
+			add_stability = stability_weak_penalty
+			custom_tooltip = egyptian_rule_defy_egyptian_authority_tt
+		}
+	}
+
+	ai_will_do = {
+		add = 1
+		scope:actor ?= {
+			if = {
+				limit = { subject_loyalty < 35 }
+				add = 12
+			}
+			if = {
+				limit = { situation:egyptian_rule_in_canaan ?= { var:egyptian_authority_in_canaan < 30 } }
+				add = 15
+			}
+			if = {
+				limit = { c:0002G ?= { is_during_bankruptcy = yes } }
+				add = 8
+			}
+			if = {
+				limit = { subject_loyalty > 70 }
+				subtract = 20
+			}
+		}
+	}
+}

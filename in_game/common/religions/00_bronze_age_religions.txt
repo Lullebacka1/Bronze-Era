@@ -129,10 +129,9 @@ canaanite = {
 	group = levantine_religion_group
 
 	definition_modifier = {
-		monthly_legitimacy = 0.1
-		global_clergy_estate_power = 0.1
+		global_monthly_food_modifier = 0.05
+		global_trade_center_power = 0.05
 		global_build_buildings_cost = -0.03
-		global_pop_conversion_speed_modifier = -0.1
 	}
 
 	opinions = {
