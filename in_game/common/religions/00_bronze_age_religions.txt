@@ -129,10 +129,9 @@ canaanite = {
 	group = levantine_religion_group
 
 	definition_modifier = {
-		monthly_legitimacy = 0.1
-		global_clergy_estate_power = 0.1
+		global_monthly_food_modifier = 0.05
+		global_trade_center_power = 0.05
 		global_build_buildings_cost = -0.03
-		global_pop_conversion_speed_modifier = -0.1
 	}
 
 	opinions = {
@@ -150,6 +149,24 @@ phoenician = {
 		global_trade_protection_factor = 0.1
 		ship_build_speed = 0.05
 		naval_morale_attrition_cost = -0.001
+	}
+
+	opinions = {
+	}
+
+	tags = { folk_european_gfx pagan_gfx }
+}
+
+punic = {
+	color = rgb { 111 65 143 }
+	group = levantine_religion_group
+
+	definition_modifier = {
+		global_maritime_presence_modifier = 0.1
+		global_trade_protection_factor = 0.1
+		ship_build_speed = 0.05
+		naval_morale_attrition_cost = -0.001
+		global_clergy_estate_power = 0.05
 	}
 
 	opinions = {
@@ -510,10 +527,14 @@ nuragic = {
 	group = italic_religion_group
 
 	definition_modifier = {
-		global_maritime_presence_modifier = 0.1
-		global_trade_protection_factor = 0.1
-		ship_build_speed = 0.05
-		naval_morale_attrition_cost = -0.001
+		monthly_religious_influence = 0.05
+		monthly_legitimacy = 0.03
+		monthly_prestige = 0.01
+		global_clergy_estate_power = 0.05
+		global_max_control = 0.02
+		global_defensive = 0.03
+		stability_cost = -0.03
+		global_population_growth = 0.00005
 	}
 
 	opinions = {
@@ -606,8 +627,7 @@ britannic_pagan = {
 }
 
 nordic_pagan = {
-	color = rgb
-	language = siberian_bronze_language
+	color = rgb { 92 130 99 }
 	group = nordic_religion_group
 
 		definition_modifier = {

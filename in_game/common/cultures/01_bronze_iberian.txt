@@ -1,0 +1,57 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: iberian_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+iberian = {
+	language = iberian_bronze_language
+	color = rgb { 158 96 62 }
+	tags = { iberian_gfx west_mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		iberian_bronze_group
+	}
+}
+
+tartessian = {
+	language = iberian_bronze_language
+	color = rgb { 169 107 73 }
+	tags = { iberian_gfx west_mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		iberian_bronze_group
+	}
+}
+
+lusitanian = {
+	language = iberian_bronze_language
+	color = rgb { 180 118 84 }
+	tags = { iberian_gfx west_mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		iberian_bronze_group
+	}
+}
+
+celtiberian = {
+	language = iberian_bronze_language
+	color = rgb { 191 129 95 }
+	tags = { iberian_gfx west_mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		iberian_bronze_group
+	}
+}
+
+aquitanian = {
+	language = iberian_bronze_language
+	color = rgb { 202 140 106 }
+	tags = { iberian_gfx west_mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		iberian_bronze_group
+	}
+}

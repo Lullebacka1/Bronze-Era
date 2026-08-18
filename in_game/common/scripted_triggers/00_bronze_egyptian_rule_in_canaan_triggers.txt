@@ -1,0 +1,59 @@
+egyptian_rule_in_canaan_egypt = {
+	custom_description = {
+		text = egyptian_rule_in_canaan_egypt_text
+		OR = {
+			this = c:EGY
+			has_or_had_tag = EGY
+		}
+	}
+}
+
+egyptian_rule_in_canaan_city_kingdom = {
+	custom_description = {
+		text = egyptian_rule_in_canaan_city_kingdom_text
+		OR = {
+			tag = AKSHA
+			tag = ASHK
+			tag = ASHT
+			tag = GEZE
+			tag = HACOR
+			tag = JESUS
+			tag = LAKIS
+			tag = PEHEL
+			tag = SICHE
+			tag = YURZ
+		}
+	}
+}
+
+egyptian_rule_in_canaan_participant = {
+	custom_description = {
+		text = egyptian_rule_in_canaan_participant_text
+		OR = {
+			egyptian_rule_in_canaan_egypt = yes
+			egyptian_rule_in_canaan_city_kingdom = yes
+		}
+	}
+}
+
+egyptian_rule_in_canaan_subject = {
+	custom_description = {
+		text = egyptian_rule_in_canaan_subject_text
+		egyptian_rule_in_canaan_city_kingdom = yes
+		is_subject_of = c:EGY
+	}
+}
+
+egyptian_rule_in_canaan_phase_at_least = {
+	custom_description = {
+		text = egyptian_rule_in_canaan_phase_at_least_text
+		value = $value$
+		trigger_if = {
+			limit = { situation:egyptian_rule_in_canaan ?= { has_variable = egyptian_rule_in_canaan_phase } }
+			situation:egyptian_rule_in_canaan ?= { var:egyptian_rule_in_canaan_phase >= $value$ }
+		}
+		trigger_else = {
+			always = no
+		}
+	}
+}

@@ -1,0 +1,449 @@
+# Bronze Era random COA textured symbols generated from Image TWfor EU5/Icon_flag.
+# One symbol is used per political-entity folder; mon_256.png is preferred over mon_64.png when both exist.
+textured_emblem_texture_lists = {
+	bronze_tw_charge = {
+		1 = "be_tw_generic_sun1.dds" # fallback placeholder if a caller has no matching category
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_gaulish_trigger = yes
+			}
+			100 = "be_tw_aedui.dds"
+			100 = "be_tw_allobroges.dds"
+			100 = "be_tw_arverni.dds"
+			100 = "be_tw_atrebartes.dds"
+			100 = "be_tw_ausci.dds"
+			100 = "be_tw_belgae.dds"
+			100 = "be_tw_bellovaci.dds"
+			100 = "be_tw_bituriges.dds"
+			100 = "be_tw_boii.dds"
+			100 = "be_tw_cadurci.dds"
+			100 = "be_tw_carnutes.dds"
+			100 = "be_tw_celtici.dds"
+			100 = "be_tw_cenomani.dds"
+			100 = "be_tw_eburones.dds"
+			35 = "be_tw_generic_cerf.dds"
+			35 = "be_tw_generic_cross_triquetra.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			35 = "be_tw_generic_triskele.dds"
+			100 = "be_tw_helvetii.dds"
+			100 = "be_tw_insubres.dds"
+			100 = "be_tw_lemovices.dds"
+			100 = "be_tw_lexovii.dds"
+			100 = "be_tw_mandubii.dds"
+			100 = "be_tw_mediomatrici.dds"
+			100 = "be_tw_morini.dds"
+			100 = "be_tw_namnetes.dds"
+			100 = "be_tw_nemetes.dds"
+			100 = "be_tw_nervii.dds"
+			100 = "be_tw_nori.dds"
+			100 = "be_tw_osismii.dds"
+			100 = "be_tw_parisii.dds"
+			100 = "be_tw_pictones.dds"
+			100 = "be_tw_raurici.dds"
+			100 = "be_tw_redones.dds"
+			100 = "be_tw_remi.dds"
+			100 = "be_tw_ruteni.dds"
+			100 = "be_tw_santones.dds"
+			100 = "be_tw_senones.dds"
+			100 = "be_tw_sequani.dds"
+			100 = "be_tw_sotiates.dds"
+			100 = "be_tw_suessiones.dds"
+			100 = "be_tw_tarbelli.dds"
+			100 = "be_tw_treverii.dds"
+			100 = "be_tw_tulingi.dds"
+			100 = "be_tw_turones.dds"
+			100 = "be_tw_unelli.dds"
+			100 = "be_tw_vangiones.dds"
+			100 = "be_tw_veneti_gaul.dds"
+			100 = "be_tw_vivisci.dds"
+			100 = "be_tw_vocontii.dds"
+			100 = "be_tw_volcae.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_britannic_trigger = yes
+			}
+			100 = "be_tw_brigantes.dds"
+			100 = "be_tw_caledones.dds"
+			100 = "be_tw_cantiaci.dds"
+			100 = "be_tw_demetae.dds"
+			100 = "be_tw_dumnonii.dds"
+			100 = "be_tw_ebdani.dds"
+			35 = "be_tw_generic_cerf.dds"
+			35 = "be_tw_generic_cross_triquetra.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			35 = "be_tw_generic_triskele.dds"
+			100 = "be_tw_iceni.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_iberian_trigger = yes
+			}
+			100 = "be_tw_arevaci.dds"
+			100 = "be_tw_astures.dds"
+			100 = "be_tw_cantabri.dds"
+			100 = "be_tw_carpetani.dds"
+			100 = "be_tw_cessetani.dds"
+			100 = "be_tw_edetani.dds"
+			100 = "be_tw_galleaci.dds"
+			35 = "be_tw_generic_cerf.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_illergetes.dds"
+			100 = "be_tw_lusitani.dds"
+			100 = "be_tw_turdetani.dds"
+			100 = "be_tw_vaccaei.dds"
+			100 = "be_tw_vascones.dds"
+			100 = "be_tw_vettones.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_germanic_nordic_trigger = yes
+			}
+			100 = "be_tw_aestii.dds"
+			100 = "be_tw_bastarnae.dds"
+			100 = "be_tw_cherusci.dds"
+			100 = "be_tw_cimbri.dds"
+			100 = "be_tw_frisii.dds"
+			35 = "be_tw_generic_cerf.dds"
+			35 = "be_tw_generic_cross_triquetra.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			35 = "be_tw_generic_triskele.dds"
+			100 = "be_tw_gutones.dds"
+			100 = "be_tw_lugii.dds"
+			100 = "be_tw_marcomanni.dds"
+			100 = "be_tw_rugii.dds"
+			100 = "be_tw_suebi.dds"
+			100 = "be_tw_suebi_civil_war.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_baltic_finnic_trigger = yes
+			}
+			100 = "be_tw_aestii.dds"
+			35 = "be_tw_generic_cerf.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_italic_trigger = yes
+			}
+			100 = "be_tw_etruscan_league.dds"
+			35 = "be_tw_generic_cerf.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_insubres.dds"
+			100 = "be_tw_liguria.dds"
+			100 = "be_tw_nori.dds"
+			100 = "be_tw_raeti.dds"
+			100 = "be_tw_rome.dds"
+			100 = "be_tw_samnites.dds"
+			100 = "be_tw_veneti.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_aegean_trigger = yes
+			}
+			100 = "be_tw_athens.dds"
+			100 = "be_tw_cyprus.dds"
+			100 = "be_tw_epirus.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_knossos.dds"
+			100 = "be_tw_macedon.dds"
+			100 = "be_tw_massilia.dds"
+			100 = "be_tw_pergamon.dds"
+			100 = "be_tw_rhodos.dds"
+			100 = "be_tw_seleucid.dds"
+			100 = "be_tw_sparta.dds"
+			100 = "be_tw_syracuse.dds"
+			100 = "be_tw_trapezos.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_punic_trigger = yes
+			}
+			100 = "be_tw_carthage.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_nova_carthago.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_levant_trigger = yes
+			}
+			100 = "be_tw_cyprus.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_gerrhaea.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_north_african_trigger = yes
+			}
+			100 = "be_tw_cyrenaica.dds"
+			100 = "be_tw_gaetuli.dds"
+			100 = "be_tw_garamantia.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_libya.dds"
+			100 = "be_tw_masaesyli.dds"
+			100 = "be_tw_nasamones.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_egypt_nile_trigger = yes
+			}
+			100 = "be_tw_axum.dds"
+			100 = "be_tw_blemmyes.dds"
+			100 = "be_tw_egypt.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_meroe.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_african_trigger = yes
+			}
+			100 = "be_tw_axum.dds"
+			100 = "be_tw_blemmyes.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_meroe.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_arabian_trigger = yes
+			}
+			100 = "be_tw_ardhan.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_gerrhaea.dds"
+			100 = "be_tw_himyar.dds"
+			100 = "be_tw_ma_in.dds"
+			100 = "be_tw_mascat.dds"
+			100 = "be_tw_nabatea.dds"
+			100 = "be_tw_qidri.dds"
+			100 = "be_tw_saba.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_iranian_trigger = yes
+			}
+			100 = "be_tw_arachosia.dds"
+			100 = "be_tw_aria.dds"
+			100 = "be_tw_drangiana.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_media.dds"
+			100 = "be_tw_media_atropatene.dds"
+			100 = "be_tw_parthava.dds"
+			100 = "be_tw_parthia.dds"
+			100 = "be_tw_persia.dds"
+			100 = "be_tw_sagartia.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_central_asian_trigger = yes
+			}
+			100 = "be_tw_baktria.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_khorasmii.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_steppe_trigger = yes
+			}
+			100 = "be_tw_aorsoi.dds"
+			100 = "be_tw_budini.dds"
+			100 = "be_tw_cimmeria.dds"
+			100 = "be_tw_dahae.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_massagetae.dds"
+			100 = "be_tw_roxolani.dds"
+			100 = "be_tw_royal_scythia.dds"
+			100 = "be_tw_siraces.dds"
+			100 = "be_tw_thyssagetae.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_siberian_trigger = yes
+			}
+			35 = "be_tw_generic_cerf.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_caucasus_trigger = yes
+			}
+			100 = "be_tw_armenia.dds"
+			100 = "be_tw_colchis.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_kartli.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_anatolian_trigger = yes
+			}
+			100 = "be_tw_bithynia.dds"
+			100 = "be_tw_cappadocia.dds"
+			100 = "be_tw_galatia.dds"
+			35 = "be_tw_generic_cerf.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_pontus.dds"
+			100 = "be_tw_sardes.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_balkan_trigger = yes
+			}
+			100 = "be_tw_anartes.dds"
+			100 = "be_tw_ardiaei.dds"
+			100 = "be_tw_biephi.dds"
+			100 = "be_tw_breuci.dds"
+			100 = "be_tw_catiaroi.dds"
+			100 = "be_tw_daorsi.dds"
+			100 = "be_tw_delmatae.dds"
+			100 = "be_tw_eravisci.dds"
+			35 = "be_tw_generic_cerf.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_getae.dds"
+			100 = "be_tw_odryssian_kingdom.dds"
+			100 = "be_tw_scordisci.dds"
+			100 = "be_tw_triballi.dds"
+			100 = "be_tw_tylis.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_central_european_trigger = yes
+			}
+			100 = "be_tw_anartes.dds"
+			100 = "be_tw_bastarnae.dds"
+			100 = "be_tw_boii.dds"
+			100 = "be_tw_eravisci.dds"
+			35 = "be_tw_generic_cerf.dds"
+			35 = "be_tw_generic_cross_triquetra.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			35 = "be_tw_generic_triskele.dds"
+			100 = "be_tw_scordisci.dds"
+			100 = "be_tw_tulingi.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_danubian_trigger = yes
+			}
+			100 = "be_tw_anartes.dds"
+			100 = "be_tw_boii.dds"
+			100 = "be_tw_breuci.dds"
+			100 = "be_tw_eravisci.dds"
+			35 = "be_tw_generic_cerf.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_scordisci.dds"
+			100 = "be_tw_triballi.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_alpine_trigger = yes
+			}
+			35 = "be_tw_generic_cerf.dds"
+			35 = "be_tw_generic_cross_triquetra.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			35 = "be_tw_generic_triskele.dds"
+			100 = "be_tw_helvetii.dds"
+			100 = "be_tw_nori.dds"
+			100 = "be_tw_raeti.dds"
+			100 = "be_tw_tulingi.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_adriatic_trigger = yes
+			}
+			100 = "be_tw_ardiaei.dds"
+			100 = "be_tw_daorsi.dds"
+			100 = "be_tw_delmatae.dds"
+			35 = "be_tw_generic_cerf.dds"
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_veneti.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_island_trigger = yes
+			}
+			100 = "be_tw_cyprus.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+			100 = "be_tw_knossos.dds"
+			100 = "be_tw_rhodos.dds"
+			100 = "be_tw_syracuse.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_mesopotamian_trigger = yes
+			}
+			35 = "be_tw_generic_horse.dds"
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+		}
+		special_selection = {
+			trigger = {
+				bronze_tw_coa_def_sea_peoples_trigger = yes
+			}
+			35 = "be_tw_generic_ship_1.dds"
+			35 = "be_tw_generic_sun1.dds"
+			35 = "be_tw_generic_sun2.dds"
+		}
+	}
+}

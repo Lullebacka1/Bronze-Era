@@ -130,6 +130,38 @@ bronze_historic_monuments_snapshot_for_ruins = {
 			change_variable = { name = bronze_ruins_monument_count add = 1 }
 		}
 		if = {
+			limit = { has_building = building_type:bronze_monument_nuraghe_arrubiu }
+			set_variable = { name = bronze_ruins_had_nuraghe_arrubiu value = 1 }
+			set_variable = { name = bronze_ruins_had_military_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_santu_antine }
+			set_variable = { name = bronze_ruins_had_santu_antine value = 1 }
+			set_variable = { name = bronze_ruins_had_royal_monument value = 1 }
+			set_variable = { name = bronze_ruins_had_military_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_romanzesu }
+			set_variable = { name = bronze_ruins_had_romanzesu value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_serra_orrios }
+			set_variable = { name = bronze_ruins_had_serra_orrios value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
+			limit = { has_building = building_type:bronze_monument_madau_giants_tombs }
+			set_variable = { name = bronze_ruins_had_madau_giants_tombs value = 1 }
+			set_variable = { name = bronze_ruins_had_religious_monument value = 1 }
+			change_variable = { name = bronze_ruins_monument_count add = 1 }
+		}
+		if = {
 			limit = {
 				OR = {
 					has_building = building_type:bronze_monument_stonehenge

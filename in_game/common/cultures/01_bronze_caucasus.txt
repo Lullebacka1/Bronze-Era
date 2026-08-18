@@ -1,0 +1,77 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: caucasus_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+kartvelian = {
+	language = caucasian_bronze_language
+	color = rgb { 70 117 82 }
+	tags = { caucasian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		caucasus_bronze_group
+	}
+}
+
+colchian = {
+	language = caucasian_bronze_language
+	color = rgb { 81 128 93 }
+	tags = { caucasian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		caucasus_bronze_group
+	}
+}
+
+urartian = {
+	language = caucasian_bronze_language
+	color = rgb { 91 116 128 }
+	tags = { caucasian_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		caucasus_bronze_group
+	}
+}
+
+albanian_caucasian = {
+	language = caucasian_bronze_language
+	color = rgb { 103 150 115 }
+	tags = { caucasian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		caucasus_bronze_group
+	}
+}
+
+nakh = {
+	language = caucasian_bronze_language
+	color = rgb { 114 161 126 }
+	tags = { caucasian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		caucasus_bronze_group
+	}
+}
+
+circassian = {
+	language = caucasian_bronze_language
+	color = rgb { 125 172 137 }
+	tags = { caucasian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		caucasus_bronze_group
+	}
+}
+
+Kizil_Koba = {
+	culture_groups = { caucasus_bronze_group }
+	language = Taurican
+	color = rgb { 52 122 213 }
+	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+}

@@ -27,12 +27,6 @@ bronze_age_triumphal_monument = {
 
 	}
 
-	on_built = {
-		location = {
-			change_variable = { name = bronze_city_prestige_score add = 10 }
-		}
-	}
-
 	modifier = {
 		pure_tooltip_entry = adds_10_city_prestige
 		local_crown_estate_power = 0.20
@@ -118,12 +112,6 @@ bronze_monumental_gates = {
 			category = building_maintenance
 		}
 
-	}
-
-	on_built = {
-		location = {
-			change_variable = { name = bronze_city_prestige_score add = 10 }
-		}
 	}
 
 	modifier = {

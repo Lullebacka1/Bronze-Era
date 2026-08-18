@@ -1,0 +1,175 @@
+# Bronze Era - Etruscan cities and Carthage foundation.
+
+bronze_etruscan_cities_convert_location = {
+	if = {
+		limit = { owns = location:$location$ }
+		location:$location$ = {
+			every_pop = {
+				limit = {
+					pop_size > 0.001
+					OR = {
+						NOT = { culture = culture:etruscan }
+						NOT = { religion = religion:etruscan }
+					}
+				}
+				split_pop = {
+					fraction = 0.45
+					culture = culture:etruscan
+					religion = religion:etruscan
+				}
+			}
+			every_pop = {
+				limit = {
+					pop_size > 0.001
+					NOT = { culture = culture:etruscan }
+				}
+				split_pop = {
+					fraction = 0.182
+					culture = culture:etruscan
+					religion = religion:italic_pagan
+				}
+			}
+		}
+	}
+}
+
+bronze_etruscan_cities_emerge = {
+	set_global_variable = { name = bronze_etruscan_cities_resolved value = 1 }
+	remove_global_variable = bronze_etruscan_cities_event_pending
+
+	change_culture = culture:etruscan
+	change_religion = religion:etruscan
+	add_accepted_culture = culture:proto_villanovan
+	add_prestige = prestige_mild_bonus
+	add_legitimacy = legitimacy_weak_bonus
+
+	bronze_etruscan_cities_convert_location = { location = arezzo }
+	bronze_etruscan_cities_convert_location = { location = berceto }
+	bronze_etruscan_cities_convert_location = { location = bologna }
+	bronze_etruscan_cities_convert_location = { location = bracciano }
+	bronze_etruscan_cities_convert_location = { location = canossa }
+	bronze_etruscan_cities_convert_location = { location = casalmaggiore }
+	bronze_etruscan_cities_convert_location = { location = cesena }
+	bronze_etruscan_cities_convert_location = { location = chiusi }
+	bronze_etruscan_cities_convert_location = { location = corneto }
+	bronze_etruscan_cities_convert_location = { location = cortona }
+	bronze_etruscan_cities_convert_location = { location = faenza }
+	bronze_etruscan_cities_convert_location = { location = ficarolo }
+	bronze_etruscan_cities_convert_location = { location = florence }
+	bronze_etruscan_cities_convert_location = { location = fosdinovo }
+	bronze_etruscan_cities_convert_location = { location = frassinoro }
+	bronze_etruscan_cities_convert_location = { location = goito }
+	bronze_etruscan_cities_convert_location = { location = grosseto }
+	bronze_etruscan_cities_convert_location = { location = guastalla }
+	bronze_etruscan_cities_convert_location = { location = imola }
+	bronze_etruscan_cities_convert_location = { location = livorno }
+	bronze_etruscan_cities_convert_location = { location = lucca }
+	bronze_etruscan_cities_convert_location = { location = mangona }
+	bronze_etruscan_cities_convert_location = { location = mantova }
+	bronze_etruscan_cities_convert_location = { location = marsciano }
+	bronze_etruscan_cities_convert_location = { location = massa }
+	bronze_etruscan_cities_convert_location = { location = massamar }
+	bronze_etruscan_cities_convert_location = { location = medicina }
+	bronze_etruscan_cities_convert_location = { location = mirandola }
+	bronze_etruscan_cities_convert_location = { location = modena }
+	bronze_etruscan_cities_convert_location = { location = modigliana }
+	bronze_etruscan_cities_convert_location = { location = montalcino }
+	bronze_etruscan_cities_convert_location = { location = nonantola }
+	bronze_etruscan_cities_convert_location = { location = orte }
+	bronze_etruscan_cities_convert_location = { location = orvietano }
+	bronze_etruscan_cities_convert_location = { location = ostiglia }
+	bronze_etruscan_cities_convert_location = { location = parma }
+	bronze_etruscan_cities_convert_location = { location = pescia }
+	bronze_etruscan_cities_convert_location = { location = piombino }
+	bronze_etruscan_cities_convert_location = { location = pisa }
+	bronze_etruscan_cities_convert_location = { location = pistoia }
+	bronze_etruscan_cities_convert_location = { location = pitigliano }
+	bronze_etruscan_cities_convert_location = { location = poggibonsi }
+	bronze_etruscan_cities_convert_location = { location = pontedera }
+	bronze_etruscan_cities_convert_location = { location = prato }
+	bronze_etruscan_cities_convert_location = { location = ravenna }
+	bronze_etruscan_cities_convert_location = { location = reggioem }
+	bronze_etruscan_cities_convert_location = { location = sanlorenzo }
+	bronze_etruscan_cities_convert_location = { location = sansepolcro }
+	bronze_etruscan_cities_convert_location = { location = siena }
+	bronze_etruscan_cities_convert_location = { location = todi }
+	bronze_etruscan_cities_convert_location = { location = vergato }
+	bronze_etruscan_cities_convert_location = { location = viterbo }
+	bronze_etruscan_cities_convert_location = { location = volterra }
+}
+
+bronze_carthage_foundation_grant_location = {
+	location:$location$ = {
+		add_core = c:CARTHAGE
+		change_location_owner = c:CARTHAGE
+		change_integration_level = core
+		change_control = control_weak_bonus
+		add_pop = { type = pop_type:peasants size = 0.080 culture = culture:$culture$ religion = religion:punic }
+		add_pop = { type = pop_type:burghers size = 0.025 culture = culture:$culture$ religion = religion:punic }
+	}
+}
+
+bronze_carthage_foundation_create_with_culture = {
+	set_global_variable = { name = bronze_carthage_foundation_resolved value = 1 }
+	remove_global_variable = bronze_carthage_foundation_event_pending
+
+	location:tunis = { add_core = c:CARTHAGE }
+
+	if = {
+		limit = { NOT = { country_exists = c:CARTHAGE } }
+		create_country_from_cores_in_our_locations = c:CARTHAGE
+	}
+
+	c:CARTHAGE ?= {
+		change_culture = culture:$culture$
+		change_religion = religion:punic
+		add_accepted_culture = culture:phoenician_punic
+		add_accepted_culture = culture:phoenician
+		set_country_rank = country_rank:rank_kingdom
+		set_capital = location:tunis
+		set_variable = { name = bronze_carthage_founded value = 1 }
+		add_gold = 60
+		add_prestige = prestige_mild_bonus
+	}
+
+	bronze_carthage_foundation_grant_location = { location = tunis culture = $culture$ }
+	bronze_carthage_foundation_grant_location = { location = tebourba culture = $culture$ }
+	bronze_carthage_foundation_grant_location = { location = nabeul culture = $culture$ }
+	bronze_carthage_foundation_grant_location = { location = kelibia culture = $culture$ }
+	bronze_carthage_foundation_grant_location = { location = bizerte culture = $culture$ }
+	bronze_carthage_foundation_grant_location = { location = zaghouan culture = $culture$ }
+}
+
+bronze_carthage_foundation_create = {
+	if = {
+		limit = { culture = culture:phoenician }
+		bronze_carthage_foundation_create_with_culture = { culture = phoenician }
+	}
+	else_if = {
+		limit = { culture = culture:canaanite }
+		bronze_carthage_foundation_create_with_culture = { culture = canaanite }
+	}
+	else_if = {
+		limit = { culture = culture:ugaritic }
+		bronze_carthage_foundation_create_with_culture = { culture = ugaritic }
+	}
+	else_if = {
+		limit = { culture = culture:aramaean }
+		bronze_carthage_foundation_create_with_culture = { culture = aramaean }
+	}
+	else_if = {
+		limit = { culture = culture:moabite }
+		bronze_carthage_foundation_create_with_culture = { culture = moabite }
+	}
+	else_if = {
+		limit = { culture = culture:edomite }
+		bronze_carthage_foundation_create_with_culture = { culture = edomite }
+	}
+	else_if = {
+		limit = { culture = culture:ammonite }
+		bronze_carthage_foundation_create_with_culture = { culture = ammonite }
+	}
+	else = {
+		bronze_carthage_foundation_create_with_culture = { culture = phoenician_punic }
+	}
+}

@@ -1,0 +1,112 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: steppe_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+sintashta = {
+	language = steppe_bronze_language
+	color = rgb { 127 113 69 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		steppe_bronze_group
+	}
+}
+
+andronovo = {
+	language = steppe_bronze_language
+	color = rgb { 138 124 80 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		steppe_bronze_group
+	}
+}
+
+cimmerian = {
+	language = steppe_bronze_language
+	color = rgb { 149 135 91 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		steppe_bronze_group
+	}
+}
+
+scythian = {
+	language = steppe_bronze_language
+	color = rgb { 160 146 102 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		steppe_bronze_group
+	}
+}
+
+saka = {
+	language = steppe_bronze_language
+	color = rgb { 171 157 113 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		steppe_bronze_group
+	}
+}
+
+roxolani = {
+	language = steppe_bronze_language
+	color = rgb { 182 168 124 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		steppe_bronze_group
+	}
+}
+
+yamnaya = {
+	language = steppe_bronze_language
+	color = rgb { 145 132 84 }
+	tags = { central_asian_gfx nomad_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		steppe_bronze_group
+	}
+}
+
+corded_ware = {
+	language = steppe_bronze_language
+	color = rgb { 116 133 118 }
+	tags = { northern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		steppe_bronze_group
+	}
+}
+
+catacomb = {
+	language = steppe_bronze_language
+	color = rgb { 132 116 87 }
+	tags = { central_asian_gfx nomad_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		steppe_bronze_group
+	}
+}
+
+noua_sabatinovka = {
+	language = steppe_bronze_language
+	color = rgb { 135 127 96 }
+	tags = { eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		steppe_bronze_group
+	}
+}

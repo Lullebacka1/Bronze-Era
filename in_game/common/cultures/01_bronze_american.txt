@@ -1,0 +1,123 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: american_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+olmec = {
+	language = american_bronze_language
+	color = rgb { 129 68 40 }
+	tags = { native_american_tag north_american_gfx american_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		american_bronze_group
+	}
+}
+
+mayan = {
+	language = american_bronze_language
+	color = rgb { 140 79 51 }
+	tags = { native_american_tag north_american_gfx american_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		american_bronze_group
+	}
+}
+
+zapotec = {
+	language = american_bronze_language
+	color = rgb { 151 90 62 }
+	tags = { native_american_tag north_american_gfx american_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		american_bronze_group
+	}
+}
+
+poverty_point = {
+	language = american_bronze_language
+	color = rgb { 162 101 73 }
+	tags = { native_american_tag north_american_gfx american_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		american_bronze_group
+	}
+}
+
+puebloan = {
+	language = american_bronze_language
+	color = rgb { 173 112 84 }
+	tags = { native_american_tag north_american_gfx american_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		american_bronze_group
+	}
+}
+
+andean = {
+	language = american_bronze_language
+	color = rgb { 184 123 95 }
+	tags = { native_american_tag south_american_gfx american_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		american_bronze_group
+	}
+}
+
+chorrera = {
+	language = american_bronze_language
+	color = rgb { 195 134 106 }
+	tags = { native_american_tag south_american_gfx american_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		american_bronze_group
+	}
+}
+
+arawak = {
+	language = american_bronze_language
+	color = rgb { 129 68 40 }
+	tags = { native_american_tag south_american_gfx american_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		american_bronze_group
+	}
+}
+
+tupi = {
+	language = american_bronze_language
+	color = rgb { 140 79 51 }
+	tags = { native_american_tag south_american_gfx american_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		american_bronze_group
+	}
+}
+
+araucanian = {
+	language = american_bronze_language
+	color = rgb { 151 90 62 }
+	tags = { native_american_tag south_american_gfx american_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		american_bronze_group
+	}
+}
+
+saqqaq = {
+	language = american_bronze_language
+	color = rgb { 162 101 73 }
+	tags = { native_american_tag north_american_gfx american_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		american_bronze_group
+	}
+}

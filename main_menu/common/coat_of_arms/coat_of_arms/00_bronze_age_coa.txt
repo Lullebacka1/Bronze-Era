@@ -159,6 +159,32 @@ bronze_age_PHO_coa = { # Phoenicia: Tyrian purple, maritime trade and shell dye.
 	}
 }
 
+bronze_age_CARTHAGE_coa = { # Carthage: Tyrian purple colony, western sea trade and astral cult.
+	pattern = "pattern_border_thin.dds"
+	color1 = "tyrian"
+	color2 = "yellow_mid"
+	color3 = "black"
+
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.52 } scale = { 0.78 0.78 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_08.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.22 } scale = { 0.28 0.28 } }
+	}
+	colored_emblem = {
+		texture = "ce_conch_shell.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.82 } scale = { 0.25 0.25 } }
+	}
+}
+
 bronze_age_MIN_coa = { # Minoans: red and white, bull horns and double axe.
 	pattern = "pattern_solid.dds"
 	color1 = "red_dark"
@@ -379,6 +405,18 @@ bronze_age_ROME_coa = { # Rome: red and gold, using the provided she-wolf founda
 
 	textured_emblem = {
 		texture = "ba_rome_shewolf_flag.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+
+bronze_age_ETRUS_coa = { # Etruria: provided teal and white flag with black chimera emblem.
+	pattern = "pattern_solid.dds"
+	color1 = "cyan"
+	color2 = "white"
+	color3 = "black"
+
+	textured_emblem = {
+		texture = "ba_etruscan_flag.dds"
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
 	}
 }
@@ -663,5 +701,83 @@ bronze_age_VINDLAND_coa = { # Vindland: amber sun, Baltic ship and forest border
 		color1 = color2
 		color2 = color4
 		instance = { position = { 0.5 0.82 } scale = { 0.3 0.3 } }
+	}
+}
+
+bronze_age_ALLARAM_coa = { # All Aram: ochre field, royal sun and guarded desert routes.
+	pattern = "pattern_border_thin.dds"
+	color1 = "brown"
+	color2 = "yellow_mid"
+	color3 = "red_dark"
+	color4 = "black"
+
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.23 } scale = { 0.34 0.34 } }
+	}
+	colored_emblem = {
+		texture = "ce_stylized_gate_sulu.dds"
+		color1 = color2
+		color2 = color4
+		instance = { position = { 0.5 0.55 } scale = { 0.62 0.62 } }
+	}
+	colored_emblem = {
+		texture = "ce_spear_head_random_small.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.38 0.82 } scale = { 0.28 0.28 } }
+		instance = { position = { 0.62 0.82 } scale = { -0.28 0.28 } }
+	}
+}
+
+bronze_age_PERSIA_coa = { # Persian Empire: provided golden royal bird on a red field.
+	pattern = "pattern_solid.dds"
+	color1 = "red_dark"
+	color2 = "yellow_mid"
+	color3 = "black"
+
+	textured_emblem = {
+		texture = "ba_persian_empire.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+
+bronze_age_SHANG_coa = { # Shang: provided red field and black royal glyph.
+	pattern = "pattern_solid.dds"
+	color1 = "red_dark"
+	color2 = "black"
+	color3 = "yellow_mid"
+
+	textured_emblem = {
+		texture = "ba_shang_flag.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+
+bronze_age_MAYA_coa = { # Maya: provided blue, white, yellow and red four-field flag.
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow_mid"
+	color4 = "red"
+
+	textured_emblem = {
+		texture = "ba_maya_flag.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+
+bronze_age_OLMEC_coa = { # Olmec: provided yellow field with green stripe and jaguar-ring emblem.
+	pattern = "pattern_solid.dds"
+	color1 = "yellow_mid"
+	color2 = "green"
+	color3 = "white"
+	color4 = "black"
+
+	textured_emblem = {
+		texture = "ba_olmec_flag.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
 	}
 }

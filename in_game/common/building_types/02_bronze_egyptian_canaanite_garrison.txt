@@ -1,0 +1,27 @@
+egyptian_canaanite_garrison = {
+	is_foreign = yes
+	max_levels = 1
+	pop_type = soldiers
+	icon = Bz_government_military
+	category = military_category
+	forbidden_for_estates = yes
+	employment_size = stockade_employment
+	pop_size_created = stockade_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	build_time = small_fort_building
+
+	# Setup-only building: Egypt starts with these garrisons in Gaza, Nablus and Jaffa.
+	country_potential = { always = no }
+	allow = { always = no }
+
+	modifier = {
+		local_defensive = 0.05
+		local_garrison_size = 0.15
+		local_max_control = 0.02
+		local_unrest = 0.01
+		manpower_to_building_owner = 0.005
+	}
+}

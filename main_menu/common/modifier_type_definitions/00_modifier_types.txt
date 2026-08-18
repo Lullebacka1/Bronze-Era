@@ -12157,6 +12157,13 @@ appanage_prevented_from_call_to_war={
 	}
 }
 
+french_subject_prevented_from_call_to_war={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}
+
 heir_of_same_religion={
 	color=neutral
 	boolean=yes

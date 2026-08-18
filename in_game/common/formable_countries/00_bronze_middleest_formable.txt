@@ -1,0 +1,241 @@
+# Restoration of Hatti after the deterministic Bronze Age collapse.
+# The required location list is the exact starting territory of Hatti.
+# A Neo-Hittite successor must recover 70% of it and the five principal
+# Anatolian centers before the imperial title can be restored.
+
+HATTI_f = {
+	level = 4
+	required_locations_fraction = 0.70
+	capital_required = no
+	potential_requires_own = yes
+	rule = historical
+	content_priority = 950
+
+	potential = {
+		has_global_variable = bronze_hatti_final_fragmentation_complete
+		has_variable = bronze_hatti_neo_hittite_state
+		NOT = { tag = HATTI }
+		NOT = { country_exists = c:HATTI }
+	}
+
+	allow = {
+		culture = culture:hittite
+		religion = religion:hittite
+		owns = location:huseyinabad
+		owns = location:ankara
+		owns = location:sivas
+		owns = location:konya
+		owns = location:adana
+	}
+
+	name = HATTI
+	flag = HATTI
+	adjective = HATTI_ADJ
+	tag = HATTI
+	color = map_HATTI
+
+	locations = {
+		adana afrin afsin akdagmadeni aksaray aksehir
+		al_bab aleppo altinekin amasya anavarza ankara
+		arapgir arguvan arsuz artah ayas aydincik
+		ayntab baliseyh bayat bekarlar besni beypazari
+		birecik bogazliyan bor_tur bozan bozok candir
+		candir_cil cankiri caxud celtik cemisgezek comana_cil
+		corum corycus cubuk cumra dabiq darende
+		dasmenda deliktash develi dinek_keskin divrigi dluk
+		egin elbistan emirdag enguzud eregli_kar erzincan
+		eskil gemerek gerger goksun gumus gurun
+		hacibektas hafik hargan harput hatunsaray haymana
+		huseyinabad ilgin ilic insuyu iskenderun iskilip
+		jabbul kahta kalecik kapan karakecili karapinar
+		kars_armenia kaymaz kayseri kaysun keban kemah
+		kilis kirsehir kizilca kochisar konya koyulhisar
+		kulu_turkey kursunlu kuzucan ladik larende malatya
+		manbij marash merzifon mihaliccik molevon mut
+		nevsehir nigde obruk pertek pirloganda polatli
+		sabanozu samsat sariyahsi sarkisla sebinkarahisar seyitgazi
+		silifke siran sis sivas sivrihisar sorgun
+		suluklu sulusaray sungurlu suruc tarsus tokat
+		tomarza tosya trapessac turgut ulnia urgup
+		yahyali zara zardana zile
+	}
+
+	form_effect = {
+		change_culture = culture:hittite
+		change_religion = religion:hittite
+		set_capital = location:huseyinabad
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
+
+		set_variable = { name = bronze_hatti_restored_empire value = 1 }
+		set_variable = { name = bronze_hatti_religious_continuity value = 1 }
+		set_global_variable = { name = bronze_hatti_empire_restored value = 1 }
+		remove_variable = bronze_hatti_successor_state
+		remove_variable = bronze_hatti_neo_hittite_state
+
+		add_religious_influence = religious_influence_radical_bonus
+		add_legitimacy = legitimacy_mild_bonus
+		add_prestige = prestige_mild_bonus
+		add_stability = stability_weak_bonus
+	}
+}
+
+# Persian Empire formable.
+# Territories are the cumulative starting locations of ANSHA, MEDIA, MARHA,
+# VC974, VC994, VC990, VC880 and VC941 from main_menu/setup/start/10_countries.txt.
+# Total unique locations: 92. Required at 80%: 74.
+
+PERSIA_f = {
+	level = 4
+	required_locations_fraction = 0.80
+	capital_required = no
+	potential_requires_own = yes
+	rule = historical
+	content_priority = 820
+
+	potential = {
+		culture = culture:persian
+		NOT = { tag = PERSIA }
+		NOT = { country_exists = c:PERSIA }
+		NOT = { has_variable = bronze_formed_persian_empire }
+	}
+
+	allow = {
+		culture = culture:persian
+		religion = religion:iranic
+		country_rank_level = 3
+		has_embraced_institution = institution:bronze_routes
+		has_embraced_institution = institution:chariot_warfare
+		has_embraced_institution = institution:palatial_economy
+	}
+
+	name = PERSIA
+	flag = PERSIA
+	adjective = PERSIA_ADJ
+	tag = PERSIA
+	color = map_PERSIA
+
+	locations = {
+		abadeh abadeh_tashk abarkuh aspas bavanat beyza
+		eqlid fasa harat istakhr khabar kherameh
+		marvast meshkan meymand neyriz qala_safid qaryat_al_bidh
+		saadatshahr samiram sarvestan shahr_e_babak shahr_meyan shiraz
+		sisakht yasuj yazdikhwast zarqan abhar avaj
+		aveh bandar_e_anzali damavand delijan eyvanekey firuzkuh
+		fuman hashatjin kahak karaj kashan khwar
+		lahijan langarud maranjab natanz neyasar qazvin
+		qeydar qom rahimabad rasht razeqan rey
+		rudbar sagzabad saveh savojbolagh shahrestan_sofla shamiram
+		sirdan takestan varamin arzu baft bandar_khamir
+		darab darz fin gamrun hajjiabad hajjiabad_zarrindasht
+		ij_iran jahrom jannat_shahr juyom kariyan khabr
+		khatunabad lar qatruyeh rostaq ruydar saadatabad
+		sirjan soghan tarom ramsheh yangabad tudeshk
+		aqmecit komshecheh
+	}
+
+	form_effect = {
+		set_country_rank_effect = { rank = country_rank:rank_empire }
+		set_variable = { name = bronze_formed_persian_empire value = 1 }
+	}
+}
+
+# All Aram is the Aramaean cultural formable for the Bronze Era Levant and Syrian desert.
+# Territories are all setup locations containing aramaean culture pops in 06_pops.txt.
+# Total locations: 38. Required at 80%: 31.
+
+ALLARAM_f = {
+	level = 3
+	required_locations_fraction = 0.80
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 780
+
+	potential = {
+		culture = culture:aramaean
+		NOT = { tag = ALLARAM }
+		NOT = { country_exists = c:ALLARAM }
+	}
+
+	allow = {
+		is_subject = no
+		culture = culture:aramaean
+	}
+
+	name = ALLARAM
+	flag = ALLARAM
+	adjective = ALLARAM_ADJ
+	tag = ALLARAM
+	color = map_ALLARAM
+
+	locations = {
+		aba_al_qur abu_qasr al_hamad al_harrah al_labbah al_thulayma
+		al_udayb an_nasifah arak arar azraq basithah
+		bosra burraq damascus dumat_al_jandal huwwarin ithriya
+		jabar jayrud kaf kufa lowqah madinat_far
+		maskanah qadisiyyah qaryatayn qastal qurayyat_al_milh qutayfah
+		raqqa sakaka salamiyya salkhad sukhnah tabqah
+		tadmur taybah
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_allaram value = 1 }
+		add_prestige = prestige_mild_bonus
+		add_legitimacy = legitimacy_weak_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_allaram_caravan_kingship
+			years = -1
+			mode = add_and_extend
+		}
+		custom_tooltip = bronze_allaram_remaining_claims_tt
+		hidden_effect = {
+			if = { limit = { location:aba_al_qur = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:aba_al_qur.province target = location:aba_al_qur.owner years = 25 } }
+			if = { limit = { location:abu_qasr = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:abu_qasr.province target = location:abu_qasr.owner years = 25 } }
+			if = { limit = { location:al_hamad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:al_hamad.province target = location:al_hamad.owner years = 25 } }
+			if = { limit = { location:al_harrah = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:al_harrah.province target = location:al_harrah.owner years = 25 } }
+			if = { limit = { location:al_labbah = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:al_labbah.province target = location:al_labbah.owner years = 25 } }
+			if = { limit = { location:al_thulayma = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:al_thulayma.province target = location:al_thulayma.owner years = 25 } }
+			if = { limit = { location:al_udayb = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:al_udayb.province target = location:al_udayb.owner years = 25 } }
+			if = { limit = { location:an_nasifah = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:an_nasifah.province target = location:an_nasifah.owner years = 25 } }
+			if = { limit = { location:arak = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:arak.province target = location:arak.owner years = 25 } }
+			if = { limit = { location:arar = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:arar.province target = location:arar.owner years = 25 } }
+			if = { limit = { location:azraq = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:azraq.province target = location:azraq.owner years = 25 } }
+			if = { limit = { location:basithah = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:basithah.province target = location:basithah.owner years = 25 } }
+			if = { limit = { location:bosra = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:bosra.province target = location:bosra.owner years = 25 } }
+			if = { limit = { location:burraq = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:burraq.province target = location:burraq.owner years = 25 } }
+			if = { limit = { location:damascus = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:damascus.province target = location:damascus.owner years = 25 } }
+			if = { limit = { location:dumat_al_jandal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:dumat_al_jandal.province target = location:dumat_al_jandal.owner years = 25 } }
+			if = { limit = { location:huwwarin = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:huwwarin.province target = location:huwwarin.owner years = 25 } }
+			if = { limit = { location:ithriya = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:ithriya.province target = location:ithriya.owner years = 25 } }
+			if = { limit = { location:jabar = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:jabar.province target = location:jabar.owner years = 25 } }
+			if = { limit = { location:jayrud = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:jayrud.province target = location:jayrud.owner years = 25 } }
+			if = { limit = { location:kaf = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kaf.province target = location:kaf.owner years = 25 } }
+			if = { limit = { location:kufa = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:kufa.province target = location:kufa.owner years = 25 } }
+			if = { limit = { location:lowqah = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:lowqah.province target = location:lowqah.owner years = 25 } }
+			if = { limit = { location:madinat_far = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:madinat_far.province target = location:madinat_far.owner years = 25 } }
+			if = { limit = { location:maskanah = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:maskanah.province target = location:maskanah.owner years = 25 } }
+			if = { limit = { location:qadisiyyah = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:qadisiyyah.province target = location:qadisiyyah.owner years = 25 } }
+			if = { limit = { location:qaryatayn = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:qaryatayn.province target = location:qaryatayn.owner years = 25 } }
+			if = { limit = { location:qastal = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:qastal.province target = location:qastal.owner years = 25 } }
+			if = { limit = { location:qurayyat_al_milh = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:qurayyat_al_milh.province target = location:qurayyat_al_milh.owner years = 25 } }
+			if = { limit = { location:qutayfah = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:qutayfah.province target = location:qutayfah.owner years = 25 } }
+			if = { limit = { location:raqqa = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:raqqa.province target = location:raqqa.owner years = 25 } }
+			if = { limit = { location:sakaka = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sakaka.province target = location:sakaka.owner years = 25 } }
+			if = { limit = { location:salamiyya = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:salamiyya.province target = location:salamiyya.owner years = 25 } }
+			if = { limit = { location:salkhad = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:salkhad.province target = location:salkhad.owner years = 25 } }
+			if = { limit = { location:sukhnah = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:sukhnah.province target = location:sukhnah.owner years = 25 } }
+			if = { limit = { location:tabqah = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tabqah.province target = location:tabqah.owner years = 25 } }
+			if = { limit = { location:tadmur = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:tadmur.province target = location:tadmur.owner years = 25 } }
+			if = { limit = { location:taybah = { has_owner = yes NOT = { owner = root } } } add_casus_belli = { type = casus_belli:cb_conquer_province province = location:taybah.province target = location:taybah.owner years = 25 } }
+		}
+	}
+}

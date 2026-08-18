@@ -1,0 +1,44 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: oceanian_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+lapita = {
+	language = oceanian_bronze_language
+	color = rgb { 47 113 125 }
+	tags = { austronesian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		oceanian_bronze_group
+	}
+}
+
+papuan = {
+	language = oceanian_bronze_language
+	color = rgb { 101 111 142 }
+	tags = { papuan_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		oceanian_bronze_group
+	}
+}
+
+aboriginal = {
+	language = oceanian_bronze_language
+	color = rgb { 145 98 64 }
+	tags = { aboriginal_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		oceanian_bronze_group
+	}
+}
+
+palawa = {
+	culture_groups = { oceanian_bronze_group }
+	language = Palawan
+	color = rgb { 52 203 213 }
+	tags = { austronesian_gfx indian_gfx }
+	opinions = {
+	}
+}

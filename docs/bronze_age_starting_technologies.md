@@ -12,7 +12,7 @@ Generated from vanilla EU5 advance files. No custom technology IDs are created h
 ## Advanced Bronze Age Countries
 
 - `0001G` - mycenaean, mycenaean [anatolia_region balkan_region]
-- `0002G` - upper_egyptian, kemetic [crescent_region egypt_region]
+- `EGY` - upper_egyptian, kemetic [crescent_region egypt_region]
 - `HATTI` - hittite, hittite [anatolia_region caucasus_region crescent_region]
 - `ACHAE` - mycenaean, mycenaean [balkan_region]
 - `ALASI` - canaanite, canaanite [anatolia_region]

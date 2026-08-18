@@ -13,7 +13,7 @@
 		OR = {
 			has_owner = no
 			owner = {
-				government_type = government_type:tribe
+				government_type ?= government_type:tribe
 			}
 		}
 	}
@@ -51,7 +51,7 @@ a_warriors = {
 		OR = {
 			has_owner = no
 			owner = {
-				government_type = government_type:tribe
+				government_type ?= government_type:tribe
 			}
 		}
 	}
@@ -103,7 +103,7 @@ a_chieftains = {
 		OR = {
 			has_owner = no
 			owner = {
-				government_type = government_type:tribe
+				government_type ?= government_type:tribe
 			}
 		}
 	}

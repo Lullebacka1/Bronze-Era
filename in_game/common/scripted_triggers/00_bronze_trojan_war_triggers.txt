@@ -1,0 +1,32 @@
+bronze_trojan_war_relevant_country = {
+	custom_description = {
+		text = bronze_trojan_war_relevant_country_text
+		OR = {
+			tag = 0001G # Mycenaea
+			tag = WILUS # Wilusa
+			tag = AHHI # Ahhiyawa
+			tag = LYCIA # Lycia
+			tag = SEHA # Seha River Land
+			tag = LUKKA # Lukka
+			tag = MASA # Masa
+		}
+	}
+}
+
+bronze_trojan_war_situation_running = {
+	custom_description = {
+		text = bronze_trojan_war_situation_running_text
+		OR = {
+			is_situation_active = situation:trojan_war_phase_1
+			is_situation_active = situation:trojan_war_phase_2
+			AND = {
+				has_global_variable = trojan_war_phase_1_started
+				NOT = { has_global_variable = trojan_war_phase_1_ended }
+			}
+			AND = {
+				has_global_variable = trojan_war_phase_2_started
+				NOT = { has_global_variable = trojan_war_phase_2_ended }
+			}
+		}
+	}
+}

@@ -6,6 +6,9 @@ bronze_age_palatial_complex = {
 	pop_type = nobles
 	forbidden_for_estates = yes
 
+	icon = palace_economy_building
+
+
 	category = government_category
 	employment_size = huge_noble_employment
 
@@ -105,6 +108,8 @@ bronze_age_palace_house = {
 
 	category = government_category
 
+	icon = palace_economy_building
+	
 	max_levels = 1
 	employment_size = large_noble_employment
 	pop_size_created = large_noble_employment

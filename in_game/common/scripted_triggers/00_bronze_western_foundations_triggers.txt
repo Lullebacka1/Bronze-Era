@@ -1,0 +1,48 @@
+# Bronze Era - Western foundation events.
+# Internal chronology: engine year 310 = displayed year 900 BC,
+# engine year 396 = displayed year 814 BC.
+
+bronze_etruscan_cities_candidate = {
+	is_real_country = yes
+	tag = ETRUS
+	current_date >= 310.1.1
+	has_advance = palace_economy_advance
+	has_advance = iron_metallurgy_advance
+	OR = {
+		culture = culture:proto_villanovan
+		NOT = { religion = religion:etruscan }
+	}
+	OR = {
+		owns = location:arezzo
+		owns = location:chiusi
+		owns = location:corneto
+		owns = location:orvietano
+		owns = location:volterra
+	}
+	NOT = { has_global_variable = bronze_etruscan_cities_resolved }
+	NOT = { has_global_variable = bronze_etruscan_cities_event_pending }
+}
+
+bronze_carthage_foundation_candidate = {
+	is_real_country = yes
+	current_date >= 396.1.1
+	owns = location:tunis
+	NOT = { country_exists = c:CARTHAGE }
+	NOT = { has_global_variable = bronze_carthage_foundation_resolved }
+	NOT = { has_global_variable = bronze_carthage_foundation_event_pending }
+}
+
+bronze_carthage_foundation_levantine_colonizer = {
+	OR = {
+		culture = culture:phoenician
+		culture = culture:canaanite
+		culture = culture:ugaritic
+		culture = culture:aramaean
+		culture = culture:moabite
+		culture = culture:edomite
+		culture = culture:ammonite
+		religion = religion:phoenician
+		religion = religion:canaanite
+		religion = religion:ugaritic
+	}
+}

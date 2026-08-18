@@ -1,4 +1,4 @@
-﻿current_age = age_1_traditions
+current_age = age_1_traditions
 
 # own_control_core
 # own_control_integrated
@@ -51,112 +51,37 @@ countries = {
 	}
 
 	##EGYPT
-	0002G = {
+	EGY = {
 		capital = faqus
-		culture = upper_egyptian
+		culture = lower_egyptian
 		religion = kemetic
 
 		country_rank = rank_kingdom
 
 		include = "bronze_empire"
 
-		own_control_core = {
-			acre
-            akhmim
-            al_mima
-            alexandria
-            ashmunayn
-            aswan
-            asyut
-            atfih
-            bahariyya
-            baris
-            beersheba
-            beni_suef
-            bilbeis
-            cairo
-            dakahla
-            damanhur
-            damietta
-            dara
-            daw_sud
-            deraheib
-            edfu
-            el_alamein
-            el_arish
-            el_bahnasa
-            el_balyana
-            el_burullus
-            el_buwit
-            el_jundi
-            el_mahalla
-            el_qasr
-            el_qoseir
-            el_tor
-            esna
-            faiyum
-            faqus
-            faran
-            faras
-            fuwa
-            gaza
-            giza
-            hebron
-            hiw
-            irbid
-            jaffa
-            jerusalem
-            kafr_saqr
-            kalabsha
-            kerma
-            kharga
-            kharibta
-            kom_ombo
-            majdal
-            manfalut
-            mansoura
-            matruh
-            menouf
-            minya
-            nablus
-            nawa
-            nekhel
-            nuweiba
-            qalyub
-            qasr_farafra
-            qasr_ibrim
-            qatya
-            qena
-            qus
-            ramsis
-            ras_gharib
-            rashid
-            safaga
-            safed
-            sai
-            saint_anthony
-            saint_katrine
-            saint_paul_anchorite
-            sallum
-            samanoud
-            selima
-            sharuna
-            suez
-            tahna
-            tarrana
-            tidah
-            tinnis
-            ushmum_tannah
-            wadi_el_natrun
-            warrada
-		}
+	own_control_core = {
+		akhmim                al_mima               alexandria            ashmunayn             aswan                 asyut
+		atfih                 bahariyya             baris                 beni_suef             bilbeis               cairo
+		dakahla               damanhur              damietta              daw_sud               deraheib              edfu
+		el_alamein            el_arish              el_bahnasa            el_balyana            el_burullus           el_buwit
+		el_jundi              el_mahalla            el_qasr               el_qoseir             el_tor                esna
+		faiyum                faqus                 faran                 faras                 fuwa                  giza
+		hiw                   kafr_saqr             kalabsha              kerma                 kharga                kharibta
+		kom_ombo              manfalut              mansoura              matruh                menouf                minya
+		nekhel                nuweiba               qalyub                qasr_farafra          qasr_ibrim            qatya
+		qena                  qus                   ramsis                ras_gharib            rashid                safaga
+		sai                   saint_anthony         saint_katrine         saint_paul_anchorite  sallum                samanoud
+		selima                sharuna               suez                  tahna                 tarrana               tidah
+		tinnis                ushmum_tannah         wadi_el_natrun        warrada
+	}
 		government = {
 			ruler = character_merneptah
 		}
 		accepted_cultures = { upper_egyptian lower_egyptian canaanite libyan }
 		tolerated_cultures = { phoenician medjay peleset egyptian }
 		discovered_regions = {
-			crescent_region egypt_region
+			crescent_region egypt_region anatolia_region
 		}
 		discovered_areas = {
 			nubia_proper_area
@@ -223,7 +148,8 @@ countries = {
 	discovered_regions = {
 		anatolia_region
 		caucasus_region
-		crescent_region
+		crescent_region 
+		egypt_region
 	}
 	}
 
@@ -1033,7 +959,7 @@ countries = {
 	ACINI = {
 		capital = olvera
 		culture = acinippo
-		religion = iberian_pagan
+		religion = tartessian
 
 		discovered_regions = {
 			iberia_region
@@ -1105,7 +1031,7 @@ countries = {
 	##AEDUI
 	AEDUI = {
 		capital = baume
-		culture = gaulish
+		culture = urnfield
 		religion = gaulish_pagan
 
 		country_rank = rank_county
@@ -1227,7 +1153,7 @@ countries = {
 	ALBIO = {
 		capital = castropol
 		culture = albiones
-		religion = iberian_pagan
+		religion = lusitanian_pagan
 
 		discovered_regions = {
 			iberia_region
@@ -1301,7 +1227,7 @@ countries = {
 	##ALLOBROGES
 	ALLOB = {
 		capital = die
-		culture = gaulish
+		culture = urnfield
 		religion = gaulish_pagan
 
 		country_rank = rank_county
@@ -1371,7 +1297,7 @@ countries = {
 	##AMBARRES
 	AMBAR = {
 		capital = trevoux
-		culture = gaulish
+		culture = urnfield
 		religion = gaulish_pagan
 
 		country_rank = rank_county
@@ -1421,7 +1347,7 @@ countries = {
 	AMURU = {
 		capital = baalbek
 		culture = amorite
-		religion = mesopotamian
+		religion = canaanite
 
 		country_rank = rank_kingdom
 
@@ -1444,7 +1370,7 @@ countries = {
 	##ANARTO
 	ANART = {
 		capital = balassagyarmat
-		culture = anarto
+		culture = dacian
 		religion = gaulish_pagan
 
 		discovered_regions = {
@@ -1547,7 +1473,7 @@ countries = {
 	ANTIC = {
 		capital = antequera
 		culture = anticaria
-		religion = iberian_pagan
+		religion = tartessian
 
 		discovered_regions = {
 			iberia_region
@@ -1723,7 +1649,7 @@ countries = {
 	ARROT = {
 		capital = villalba
 		culture = arrotrebae
-		religion = iberian_pagan
+		religion = lusitanian_pagan
 
 		discovered_regions = {
 			iberia_region
@@ -1748,7 +1674,7 @@ countries = {
 	ARUND = {
 		capital = marbella
 		culture = arunda
-		religion = iberian_pagan
+		religion = tartessian
 
 		discovered_regions = {
 			iberia_region
@@ -1849,7 +1775,7 @@ countries = {
 	##ATACINI
 	ATACI = {
 		capital = carcassonne
-		culture = atacini
+		culture = urnfield
 		religion = gaulish_pagan
 
 		discovered_regions = {
@@ -2364,8 +2290,8 @@ countries = {
 	##BOII
 	BOLI = {
 		capital = bad_ischl
-		culture = boii
-		religion = gaulish_pagan
+		culture = urnfield
+		religion = Germanic_pagan
 
 		country_rank = rank_county
 
@@ -2394,7 +2320,7 @@ countries = {
 	BOLI1 = {
 		capital = bobbio
 		culture = boii
-		religion = gaulish_pagan
+		religion = italic_pagan
 
 		discovered_regions = {
 			italy_region
@@ -2420,7 +2346,7 @@ countries = {
 	BOSPH = {
 	capital = ahtopol
 	culture = thracian
-	religion = hellenic
+	religion = thracian_pagan
 
 	country_rank = rank_county
 
@@ -2519,8 +2445,8 @@ countries = {
 	##BRENAI
 	BRENA = {
 		capital = illereichen
-		culture = brenai
-		religion = gaulish_pagan
+		culture = urnfield
+		religion = Germanic_pagan
 
 		discovered_regions = {
 			south_german_region
@@ -2669,7 +2595,7 @@ countries = {
 	CAERA = {
 		capital = germersheim
 		culture = caeracatis
-		religion = britannic_pagan
+		religion = gaulish_pagan
 
 		discovered_regions = {
 			south_german_region
@@ -2944,8 +2870,8 @@ countries = {
 	##CHAONIA
 	CAONI = {
 		capital = avlonya
-		culture = mycenaean
-		religion = hellenic
+		culture = illyrian
+		religion = illyrian_pagan
 
 		country_rank = rank_kingdom
 
@@ -3217,7 +3143,7 @@ countries = {
 	CELEG = {
 		capital = caracal
 		culture = celegeri
-		religion = gaulish_pagan
+		religion = dacian_pagan
 
 		discovered_regions = {
 			balkan_region carpathia_region
@@ -3242,7 +3168,7 @@ countries = {
 	CELTI = {
 		capital = almonaster_la_real
 		culture = celtici
-		religion = iberian_pagan
+		religion = lusitanian_pagan
 
 		discovered_regions = {
 			iberia_region
@@ -3294,7 +3220,7 @@ countries = {
 	CIBAR = {
 		capital = mondonedo
 		culture = cibarci
-		religion = iberian_pagan
+		religion = lusitanian_pagan
 
 		discovered_regions = {
 			iberia_region
@@ -3318,8 +3244,8 @@ countries = {
 	##CLAHILIC
 	CLAHI = {
 		capital = erbach_swabia
-		culture = clahilic
-		religion = britannic_pagan
+		culture = urnfield
+		religion = Germanic_pagan
 
 		discovered_regions = {
 			south_german_region
@@ -3445,7 +3371,7 @@ countries = {
 	CONI = {
 		capital = mertola
 		culture = coni
-		religion = iberian_pagan
+		religion = lusitanian_pagan
 
 		discovered_regions = {
 			iberia_region
@@ -3671,7 +3597,7 @@ countries = {
 	##DAESITIAN
 	DAESI = {
 		capital = bihac
-		culture = central_bosnian
+		culture = vuchedol
 		religion = illyrian_pagan
 
 		country_rank = rank_county
@@ -3696,8 +3622,8 @@ countries = {
 	##DALITERNI
 	DALIT = {
 		capital = hachberg
-		culture = daliterni
-		religion = britannic_pagan
+		culture = urnfield
+		religion = Germanic_pagan
 
 		discovered_regions = {
 			south_german_region
@@ -3875,7 +3801,7 @@ countries = {
 	DERRN = {
 		capital = glubocica
 		culture = vatin
-		religion = thracian_pagan
+		religion = illyrian_pagan
 
 		country_rank = rank_county
 
@@ -3921,8 +3847,8 @@ countries = {
 	##DISCODUARTERAE
 	DISCO = {
 		capital = tryavna
-		culture = discoduarterae
-		religion = gaulish_pagan
+		culture = thracian
+		religion = thracian_pagan
 
 		discovered_regions = {
 			balkan_region
@@ -4170,7 +4096,7 @@ countries = {
 	##ELISYKOI
 	ELISY = {
 		capital = agde
-		culture = elisykoi
+		culture = urnfield
 		religion = gaulish_pagan
 
 		discovered_regions = {
@@ -4317,7 +4243,7 @@ countries = {
 	ERAVI = {
 		capital = fehervar
 		culture = eravisci
-		religion = gaulish_pagan
+		religion = Germanic_pagan
 
 		discovered_regions = {
 			carpathia_region south_german_region
@@ -4445,7 +4371,7 @@ countries = {
 	##GABALES
 	GABAL = {
 		capital = chateauneuf_de_randon
-		culture = gaulish
+		culture = urnfield
 		religion = gaulish_pagan
 
 		country_rank = rank_county
@@ -4742,7 +4668,7 @@ countries = {
 	##HELVETII
 	HELVE = {
 		capital = altdorf
-		culture = gaulish
+		culture = urnfield
 		religion = gaulish_pagan
 
 		country_rank = rank_county
@@ -5034,8 +4960,8 @@ countries = {
 	##IONIA
 	IONIA = {
 		capital = babadag
-		culture = tei
-		religion = dacian_pagan
+		culture = thracian
+		religion = thracian_pagan
 
 		country_rank = rank_county
 
@@ -5059,7 +4985,7 @@ countries = {
 	IREUC = {
 		capital = meda
 		culture = ireucutioni
-		religion = iberian_pagan
+		religion = lusitanian_pagan
 
 		discovered_regions = {
 			iberia_region
@@ -5110,7 +5036,7 @@ countries = {
 	##KARKAMISSA
 	KARKA = {
 		capital = jabar
-		culture = aramaean
+		culture = babylonian
 		religion = canaanite
 
 		country_rank = rank_kingdom
@@ -5268,7 +5194,7 @@ countries = {
 	##LAEAEANS
 	LAEAE = {
 		capital = kostenets
-		culture = ezero
+		culture = thracian
 		religion = thracian_pagan
 
 		country_rank = rank_county
@@ -5342,7 +5268,7 @@ countries = {
 	LAPIA = {
 		capital = ferrol
 		culture = lapiatinei
-		religion = iberian_pagan
+		religion = lusitanian_pagan
 
 		discovered_regions = {
 			iberia_region
@@ -5464,8 +5390,8 @@ countries = {
 	##LEPONTIC
 	LEPON = {
 		capital = aosta
-		culture = gaulish
-		religion = gaulish_pagan
+		culture = canegrate
+		religion = italic_pagan
 
 		country_rank = rank_county
 
@@ -5588,7 +5514,7 @@ countries = {
 	##LIBYA
 	LIBYA = {
 		capital = ajdabiya
-		culture = libu
+		culture = libyan
 		religion = berber_pagan
 
 		country_rank = rank_county
@@ -5714,7 +5640,7 @@ countries = {
 	LUGI = {
 		capital = dornoch
 		culture = lugi
-		religion = gaulish_pagan
+		religion = britannic_pagan
 
 		discovered_regions = {
 			great_britain_region
@@ -5743,7 +5669,7 @@ countries = {
 
 	country_rank = rank_kingdom
 
-		include = "Sea_Peoples"
+	include = "Sea_people"
 
 	own_control_core = {
 		antalya  elmali   finike   istanoz  kas      megri
@@ -6141,8 +6067,8 @@ countries = {
 	##MIRA
 	MIRA = {
 	capital = ayasuluk
-	culture = hittite
-	religion = hittite
+	culture = luwian
+	religion = luwian
 
 	country_rank = rank_kingdom
 
@@ -6169,7 +6095,7 @@ countries = {
 	MIROB = {
 		capital = alcacer_do_sal
 		culture = mirobrigenses
-		religion = iberian_pagan
+		religion = lusitanian_pagan
 
 		discovered_regions = {
 			iberia_region
@@ -6194,7 +6120,7 @@ countries = {
 	MITAN = {
 		capital = adakli
 		culture = hurrian
-		religion = caucasian_pagan
+		religion = assyrian
 
 		country_rank = rank_kingdom
 
@@ -6218,7 +6144,7 @@ countries = {
 	##MOESIA
 	MOESI = {
 		capital = cherven
-		culture = ezero
+		culture = thracian
 		religion = thracian_pagan
 
 		country_rank = rank_county
@@ -6414,8 +6340,8 @@ countries = {
 	##NEMETES
 	NEME1 = {
 		capital = ansbach
-		culture = nemetes
-		religion = gaulish_pagan
+		culture = urnfield
+		religion = Germanic_pagan
 
 		discovered_regions = {
 			south_german_region
@@ -6491,7 +6417,7 @@ countries = {
 	##NESTIOI
 	NESTI = {
 		capital = drijeva
-		culture = glasinac_mati
+		culture = cetina
 		religion = illyrian_pagan
 
 		country_rank = rank_county
@@ -6515,7 +6441,7 @@ countries = {
 	NORIC = {
 		capital = celje
 		culture = urnfield
-		religion = nordic_pagan
+		religion = Germanic_pagan
 
 		country_rank = rank_county
 
@@ -6615,7 +6541,7 @@ countries = {
 	OENOT = {
 		capital = castrovillari
 		culture = mycenaean
-		religion = italic_pagan
+		religion = hellenic
 
 		country_rank = rank_county
 
@@ -6864,7 +6790,7 @@ countries = {
 	##OSII
 	OSII = {
 		capital = bratislava
-		culture = osii
+		culture = urnfield
 		religion = gaulish_pagan
 
 		discovered_regions = {
@@ -6914,7 +6840,7 @@ countries = {
 	##PAEONIA
 	PAEON = {
 		capital = bitola
-		culture = ezero
+		culture = paeonian
 		religion = thracian_pagan
 
 		country_rank = rank_county
@@ -6938,7 +6864,7 @@ countries = {
 	##PAEOPLAE
 	PAEOP = {
 		capital = beden
-		culture = thracian
+		culture = ezero
 		religion = thracian_pagan
 
 		country_rank = rank_county
@@ -6987,7 +6913,7 @@ countries = {
 	PAGON = {
 		capital = adony
 		culture = encrusted_pottery
-		religion = dacian_pagan
+		religion = illyrian_pagan
 
 		country_rank = rank_county
 
@@ -7166,7 +7092,7 @@ countries = {
 	POEMA = {
 		capital = navia_de_suarna
 		culture = poemani
-		religion = iberian_pagan
+		religion = lusitanian_pagan
 
 		discovered_regions = {
 			iberia_region
@@ -7215,7 +7141,7 @@ countries = {
 	##POTULATENSIS
 	POTUL = {
 		capital = bozhenitsa
-		culture = ezero
+		culture = thracian
 		religion = thracian_pagan
 
 		country_rank = rank_county
@@ -7287,7 +7213,7 @@ countries = {
 	RAETI = {
 		capital = bolzano
 		culture = urnfield
-		religion = nordic_pagan
+		religion = italic_pagan
 
 		country_rank = rank_county
 
@@ -7313,7 +7239,7 @@ countries = {
 	##RAURAC
 	RAURA = {
 		capital = arches
-		culture = raurac
+		culture = urnfield
 		religion = gaulish_pagan
 
 		discovered_regions = {
@@ -7535,7 +7461,7 @@ countries = {
 	SAHIR = {
 		capital = akcasehir
 		culture = mycenaean
-		religion = hellenic
+		religion = hittite
 
 		country_rank = rank_county
 
@@ -7558,7 +7484,7 @@ countries = {
 	##SALLUVIENS
 	SALLU = {
 		capital = aix_en_provence
-		culture = gaulish
+		culture = urnfield
 		religion = gaulish_pagan
 
 		country_rank = rank_county
@@ -7680,8 +7606,8 @@ countries = {
 	##SCYTHIANS
 	SCYTH = {
 		capital = achit_nuur
-		culture = saka
-		religion = saka_pagan
+		culture = roxolani
+		religion = scythian_pagan
 
 		country_rank = rank_county
 
@@ -7910,7 +7836,7 @@ countries = {
 	##SEQUANCES
 	SEQUA = {
 		capital = auxonne
-		culture = gaulish
+		culture = urnfield
 		religion = gaulish_pagan
 
 		country_rank = rank_county
@@ -7986,7 +7912,7 @@ countries = {
 	SEURR = {
 		capital = sarria
 		culture = seurri
-		religion = iberian_pagan
+		religion = lusitanian_pagan
 
 		discovered_regions = {
 			iberia_region
@@ -8472,7 +8398,7 @@ countries = {
 	##TARANTINE
 	TARAN = {
 		capital = brindisi
-		culture = iapygian
+		culture = mycenaean
 		religion = italic_pagan
 
 		country_rank = rank_county
@@ -8569,8 +8495,8 @@ countries = {
 	##TAURISCIAN
 	TAURI = {
 		capital = bled
-		culture = vuchedol
-		religion = illyrian_pagan
+		culture = castellieri
+		religion = italic_pagan
 
 		country_rank = rank_county
 
@@ -8594,7 +8520,7 @@ countries = {
 	##TEKTOSAGES
 	TEKTO = {
 		capital = abrahamtelke
-		culture = tektosages
+		culture = dacian
 		religion = gaulish_pagan
 
 		discovered_regions = {
@@ -8621,7 +8547,7 @@ countries = {
 	TENCT = {
 		capital = dulmen
 		culture = tencteri
-		religion = gaulish_pagan
+		religion = Germanic_pagan
 
 		discovered_regions = {
 			north_german_region
@@ -8718,7 +8644,7 @@ countries = {
 	##TEURISC
 	TEURI = {
 		capital = baia_mare
-		culture = teurisc
+		culture = dacian
 		religion = gaulish_pagan
 
 		discovered_regions = {
@@ -8845,8 +8771,8 @@ countries = {
 	##TIMACHI
 	TIMAC = {
 		capital = archar
-		culture = timachi
-		religion = gaulish_pagan
+		culture = thracian
+		religion = dacian_pagan
 
 		discovered_regions = {
 			balkan_region carpathia_region
@@ -8895,8 +8821,8 @@ countries = {
 	##TOLISTOBOIOI
 	TOLIS = {
 		capital = baja_hungary
-		culture = tolistoboioi
-		religion = gaulish_pagan
+		culture = dacian
+		religion = illyrian_pagan
 
 		discovered_regions = {
 			carpathia_region
@@ -8971,8 +8897,8 @@ countries = {
 	##TRIBOCC
 	TRIBO = {
 		capital = baden
-		culture = tribocc
-		religion = gaulish_pagan
+		culture = urnfield
+		religion = Germanic_pagan
 
 		discovered_regions = {
 			south_german_region
@@ -9048,7 +8974,7 @@ countries = {
 	TROKM = {
 		capital = bacs
 		culture = trokmoi
-		religion = gaulish_pagan
+		religion = illyrian_pagan
 
 		discovered_regions = {
 			balkan_region carpathia_region
@@ -9147,8 +9073,8 @@ countries = {
 	##TULINGI
 	TULIN = {
 		capital = balingen
-		culture = tulingi
-		religion = gaulish_pagan
+		culture = urnfield
+		religion = Germanic_pagan
 
 		discovered_regions = {
 			south_german_region
@@ -9173,7 +9099,7 @@ countries = {
 	TUNGR = {
 		capital = ahaus
 		culture = tungri
-		religion = gaulish_pagan
+		religion = Germanic_pagan
 
 		discovered_regions = {
 			north_german_region
@@ -9323,8 +9249,8 @@ countries = {
 	##TYLE
 	TYLE = {
 	capital = boruy
-	culture = tyle
-	religion = gaulish_pagan
+	culture = thracian
+	religion = thracian_pagan
 
 	discovered_regions = {
 		balkan_region
@@ -9351,8 +9277,8 @@ countries = {
 	##UBI
 	UBI = {
 		capital = aschaffenburg
-		culture = ubi
-		religion = gaulish_pagan
+		culture = urnfield
+		religion = Germanic_pagan
 
 		discovered_regions = {
 			north_german_region south_german_region
@@ -9477,7 +9403,7 @@ countries = {
 	ULIBA = {
 		capital = bitlis
 		culture = gutian
-		religion = caucasian_pagan
+		religion = assyrian
 
 		country_rank = rank_county
 
@@ -9574,8 +9500,8 @@ countries = {
 	##UPERACI
 	UPERA = {
 		capital = berchtesgaden
-		culture = uperaci
-		religion = britannic_pagan
+		culture = urnfield
+		religion = Germanic_pagan
 
 		discovered_regions = {
 			south_german_region
@@ -9650,7 +9576,7 @@ countries = {
 	URGAP = {
 		capital = lucena
 		culture = urgapa
-		religion = iberian_pagan
+		religion = tartessian
 
 		discovered_regions = {
 			iberia_region
@@ -9675,7 +9601,7 @@ countries = {
 	URSO = {
 		capital = moron
 		culture = urso
-		religion = iberian_pagan
+		religion = tartessian
 
 		discovered_regions = {
 			iberia_region
@@ -9776,7 +9702,7 @@ countries = {
 	VANGI = {
 		capital = backnang
 		culture = vangiones
-		religion = gaulish_pagan
+		religion = Germanic_pagan
 
 		discovered_regions = {
 			south_german_region
@@ -9849,7 +9775,7 @@ countries = {
 	##VELLAVES
 	VELLA = {
 		capital = allegre
-		culture = gaulish
+		culture = urnfield
 		religion = gaulish_pagan
 
 		country_rank = rank_county
@@ -9922,7 +9848,7 @@ countries = {
 	##VENETIC
 	VENET = {
 		capital = aquileia
-		culture = castellieri
+		culture = proto_villanovan
 		religion = italic_pagan
 
 		country_rank = rank_county
@@ -9974,7 +9900,7 @@ countries = {
 	VENOS = {
 		capital = bludenz
 		culture = venostes
-		religion = gaulish_pagan
+		religion = Germanic_pagan
 
 		discovered_regions = {
 			south_german_region
@@ -10122,7 +10048,7 @@ countries = {
 	##VOCANCES
 	VOCAN = {
 		capital = briancon
-		culture = gaulish
+		culture = urnfield
 		religion = gaulish_pagan
 
 		country_rank = rank_county
@@ -10146,7 +10072,7 @@ countries = {
 	##VOLQUES ARECOMIQUES
 	VOLAR = {
 		capital = french_ales
-		culture = gaulish
+		culture = urnfield
 		religion = gaulish_pagan
 
 		country_rank = rank_county
@@ -10170,8 +10096,8 @@ countries = {
 	##VOLCAE
 	VOLCA = {
 		capital = bautzen
-		culture = volcae
-		religion = gaulish_pagan
+		culture = urnfield
+		religion = Germanic_pagan
 
 		discovered_regions = {
 			north_german_region south_german_region
@@ -10221,7 +10147,7 @@ countries = {
 	##VOLQUES TECTOSAGES
 	VOLTE = {
 		capital = albi
-		culture = gaulish
+		culture = urnfield
 		religion = gaulish_pagan
 
 		country_rank = rank_county
@@ -10399,8 +10325,8 @@ countries = {
 	##ALLAHDINO
 	ALLAH = {
 		capital = ahmad_khan
-		culture = hindu
-		religion = hindu
+		culture = harappan
+		religion = harappan
 
 		country_rank = rank_county
 
@@ -10422,8 +10348,8 @@ countries = {
 	##AMRI
 	AMRI = {
 		capital = kotri
-		culture = hindu
-		religion = hindu
+		culture = harappan
+		religion = harappan
 
 		country_rank = rank_county
 
@@ -10445,8 +10371,8 @@ countries = {
 	##BALAKOT
 	BALAK = {
 		capital = bela
-		culture = hindu
-		religion = hindu
+		culture = harappan
+		religion = harappan
 
 		country_rank = rank_county
 
@@ -10468,8 +10394,8 @@ countries = {
 	##BANAWALI
 	BANAW = {
 		capital = raikot
-		culture = hindu
-		religion = hindu
+		culture = vedic
+		religion = vedic
 
 		country_rank = rank_county
 
@@ -10491,8 +10417,8 @@ countries = {
 	##BRAHUI
 	BRAHU = {
 		capital = awaran
-		culture = hindu
-		religion = hindu
+		culture = gedrosian
+		religion = iranic
 
 		country_rank = rank_county
 
@@ -10518,8 +10444,8 @@ countries = {
 	##CHALDEANS
 	CHALD = {
 		capital = ar_rukai
-		culture = hindu
-		religion = hindu
+		culture = arabian
+		religion = arabian_pagan
 
 		country_rank = rank_county
 
@@ -10541,8 +10467,8 @@ countries = {
 	##CHANHU-DARO
 	CHAND = {
 		capital = agham_kot
-		culture = hindu
-		religion = hindu
+		culture = harappan
+		religion = harappan
 
 		country_rank = rank_county
 
@@ -10564,8 +10490,8 @@ countries = {
 	##CHAPUWALA
 	CHAPU = {
 		capital = bhatnir
-		culture = hindu
-		religion = hindu
+		culture = gandharan
+		religion = vedic
 
 		country_rank = rank_county
 
@@ -10588,8 +10514,8 @@ countries = {
 	##DHOLAVIRA
 	DHOLA = {
 		capital = kantha
-		culture = hindu
-		religion = hindu
+		culture = harappan
+		religion = harappan
 
 		country_rank = rank_county
 
@@ -10611,8 +10537,8 @@ countries = {
 	##GANWERIWALA
 	GANWE = {
 		capital = anupgarh
-		culture = hindu
-		religion = hindu
+		culture = gandharan
+		religion = vedic
 
 		country_rank = rank_county
 
@@ -10635,8 +10561,8 @@ countries = {
 	##HARAPPA
 	HARAP = {
 		capital = batala
-		culture = hindu
-		religion = hindu
+		culture = gandharan
+		religion = vedic
 
 		country_rank = rank_county
 
@@ -10661,8 +10587,8 @@ countries = {
 	##KOT DIJI
 	KOTDI = {
 		capital = islamgarh
-		culture = hindu
-		religion = hindu
+		culture = harappan
+		religion = harappan
 
 		country_rank = rank_county
 
@@ -10684,8 +10610,8 @@ countries = {
 	##KUNTASI
 	KUNTA = {
 		capital = bhanvad
-		culture = hindu
-		religion = hindu
+		culture = vedic
+		religion = vedic
 
 		country_rank = rank_county
 
@@ -10707,8 +10633,8 @@ countries = {
 	##LAKHMIRWALA
 	LAKHM = {
 		capital = bajwara
-		culture = hindu
-		religion = hindu
+		culture = gandharan
+		religion = vedic
 
 		country_rank = rank_county
 
@@ -10730,8 +10656,8 @@ countries = {
 	##LOTHAL
 	LOTHA = {
 		capital = ashaval
-		culture = hindu
-		religion = hindu
+		culture = vedic
+		religion = vedic
 
 		country_rank = rank_county
 
@@ -10754,8 +10680,8 @@ countries = {
 	##MANDA
 	MANDA = {
 		capital = banihal
-		culture = hindu
-		religion = hindu
+		culture = vedic
+		religion = vedic
 
 		country_rank = rank_county
 
@@ -10813,8 +10739,8 @@ countries = {
 	##MITATHAL
 	MITAT = {
 		capital = karnal
-		culture = hindu
-		religion = hindu
+		culture = vedic
+		religion = vedic
 
 		country_rank = rank_county
 
@@ -10836,8 +10762,8 @@ countries = {
 	##MOHEN-JO-DARO
 	MOHEN = {
 		capital = dubbi
-		culture = hindu
-		religion = hindu
+		culture = harappan
+		religion = harappan
 
 		country_rank = rank_county
 
@@ -10859,8 +10785,8 @@ countries = {
 	##NAUSHARO
 	NAUSH = {
 		capital = dera_bugti
-		culture = hindu
-		religion = hindu
+		culture = gedrosian
+		religion = iranic
 
 		country_rank = rank_county
 
@@ -10907,8 +10833,8 @@ countries = {
 	##PATHANI DAMB
 	PATHA = {
 		capital = bab_kot
-		culture = hindu
-		religion = hindu
+		culture = harappan
+		religion = harappan
 
 		country_rank = rank_county
 
@@ -10930,8 +10856,8 @@ countries = {
 	##RAKHIGARHI
 	RAKHI = {
 		capital = gangadvara
-		culture = hindu
-		religion = hindu
+		culture = vedic
+		religion = vedic
 
 		country_rank = rank_county
 
@@ -10954,8 +10880,8 @@ countries = {
 	##REHMAN DHERI
 	REHMA = {
 		capital = akora
-		culture = hindu
-		religion = hindu
+		culture = gandharan
+		religion = vedic
 
 		country_rank = rank_county
 
@@ -10977,8 +10903,8 @@ countries = {
 	##ROPAR
 	ROPAR = {
 		capital = bajaura
-		culture = hindu
-		religion = hindu
+		culture = vedic
+		religion = vedic
 
 		country_rank = rank_county
 
@@ -11001,8 +10927,8 @@ countries = {
 	##SHORTUGAL
 	SHORT = {
 		capital = kham_bahar
-		culture = hindu
-		religion = hindu
+		culture = bactrian
+		religion = iranic
 
 		country_rank = rank_county
 
@@ -11024,8 +10950,8 @@ countries = {
 	##SOMNATH
 	SOMNA = {
 		capital = amreli
-		culture = hindu
-		religion = hindu
+		culture = vedic
+		religion = vedic
 
 		country_rank = rank_county
 
@@ -11047,8 +10973,8 @@ countries = {
 	##SOTKA KOH
 	SOTKA = {
 		capital = pasni
-		culture = hindu
-		religion = hindu
+		culture = gedrosian
+		religion = iranic
 
 		country_rank = rank_county
 
@@ -11093,8 +11019,8 @@ countries = {
 	##SUTKAGEN DOR
 	SUTKG = {
 		capital = gwadar
-		culture = hindu
-		religion = hindu
+		culture = gedrosian
+		religion = iranic
 
 		country_rank = rank_county
 
@@ -11116,8 +11042,8 @@ countries = {
 	##VAINIWAL
 	VAINI = {
 		capital = chiniot
-		culture = hindu
-		religion = hindu
+		culture = gandharan
+		religion = vedic
 
 		country_rank = rank_county
 
@@ -11138,8 +11064,8 @@ countries = {
 	}
 
 	AHHI = { # change culture to Lydian to group after
-		culture = luwian
-		religion = luwian
+		culture = hittite
+		religion = hittite
 		country_rank = rank_county
 		own_control_core = {
 			ayasuluk  cesme     manisa    smyrna    tire      urla
@@ -11176,8 +11102,8 @@ countries = {
 	}
 
 	LYCIA = { # Troy warfare
-		culture = dorian
-		religion = hellenic
+		culture = hittite
+		religion = hittite
 		country_rank = rank_duchy
 		own_control_core = {
 			birgi
@@ -11247,7 +11173,7 @@ countries = {
 	}
 
 	ZALP = {
-		culture = hittite
+		culture = colchian
 		religion = hittite
 		country_rank = rank_county
 		own_control_core = {
@@ -11268,8 +11194,8 @@ countries = {
 	}
 
 	DER = {
-		culture = sumerian
-		religion = sumerian
+		culture = elamite
+		religion = elamite
 		country_rank = rank_county
 		own_control_core = {
 			badreh       darrehshahr  pol_dokhtar
@@ -11449,7 +11375,7 @@ countries = {
 	}
 
 	THAMU = {
-		culture = midianite
+		culture = arabian
 		religion = arabian_pagan
 		country_rank = rank_county
 		own_control_core = {
@@ -11470,7 +11396,7 @@ countries = {
 	}
 
 	FERGA = {
-		culture = andronovo
+		culture = sogdian
 		religion = iranic
 		country_rank = rank_county
 		own_control_core = {
@@ -11640,7 +11566,7 @@ countries = {
 	}
 
 	BANCH = {
-		culture = austroasiatic
+		culture = khmer
 		religion = austroasiatic_rites
 		country_rank = rank_county
 		own_control_core = {
@@ -11684,7 +11610,7 @@ countries = {
 	}
 
 	GUPIN = {
-		culture = persian
+		culture = gedrosian
 		religion = iranic
 		country_rank = rank_county
 		own_control_core = {
@@ -11704,8 +11630,8 @@ countries = {
 	}
 
 	LULU = {
-		culture = iranun_culture
-		religion = iranic
+		culture = elamite
+		religion = elamite
 		country_rank = rank_county
 		own_control_core = {
 			aleshtar      khorramabad   sarab_dowreh
@@ -11716,7 +11642,7 @@ countries = {
 			ruler = random
 		}
 		accepted_cultures = {
-			iranun_culture
+			elamite
 		}
 		discovered_regions = {
 			persia_region
@@ -11768,7 +11694,7 @@ countries = {
 	}
 
 	CIMME = {
-		culture = scythian
+		culture = cimmerian
 		religion = scythian_pagan
 		country_rank = rank_county
 		own_control_core = {
@@ -11917,7 +11843,9 @@ countries = {
 			shang
 		}
 		discovered_regions = {
+			east_china_region
 			north_china_region
+			west_china_region
 		}
 	}
 
@@ -12025,7 +11953,7 @@ countries = {
 
 	KIZIL = {
 		culture = Kizil_Koba
-		religion = caucasian_pagan
+		religion = kartvelian_pagan
 		country_rank = rank_county
 		own_control_core = {
 			lusta         qarasuvbazar  qirq_yer      soldaia       solkhat       theodoro
@@ -12170,7 +12098,7 @@ countries = {
 	}
 
 	HUI2 = {
-		culture = shang
+		culture = dongyi
 		religion = shang_rites
 		country_rank = rank_county
 		own_control_core = {
@@ -12271,8 +12199,8 @@ countries = {
 	}
 
 	NANCH = {
-		culture = shang
-		religion = shang_rites
+		culture = baiyue
+		religion = baiyue_rites
 		country_rank = rank_county
 		own_control_core = {
 			chaoxian          hanshan           hezhou_he         liangxian         quanjiao          wujiang_yingtian
@@ -12313,7 +12241,7 @@ countries = {
 
 	SAMI = {
 		culture = nordic
-		religion = norse
+		religion = nordic_pagan
 		country_rank = rank_county
 		own_control_core = {
 			branna      hienatiemi  pajala      ranea       tornea
@@ -12372,8 +12300,8 @@ countries = {
 	}
 
 	XIAW = {
-		culture = shang
-		religion = shang_rites
+		culture = baiyue
+		religion = baiyue_rites
 		country_rank = rank_county
 		own_control_core = {
 			qinghe_huaian   taoyuan_huaian
@@ -12391,7 +12319,7 @@ countries = {
 	}
 
 	XUAN = {
-		culture = abau_culture
+		culture = shang
 		religion = shang_rites
 		country_rank = rank_county
 		own_control_core = {
@@ -12404,7 +12332,7 @@ countries = {
 			ruler = random
 		}
 		accepted_cultures = {
-			abau_culture
+			shang
 		}
 		discovered_regions = {
 			north_china_region
@@ -12412,7 +12340,7 @@ countries = {
 	}
 
 	YUE = {
-		culture = shang
+		culture = wu_culture
 		religion = shang_rites
 		country_rank = rank_county
 		own_control_core = {
@@ -12696,8 +12624,8 @@ VC001 = {
 
 		VC005 = {
 			capital = aba_al_qur
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -12712,7 +12640,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -12747,7 +12675,7 @@ VC001 = {
 		VC007 = {
 			capital = abu_hamed
 			culture = arabian
-			religion = arabian_pagan
+			religion = nubian
 
 			country_rank = rank_county
 
@@ -12771,7 +12699,7 @@ VC001 = {
 
 		VC008 = {
 			capital = adigrat
-			culture = cushitic
+			culture = puntite
 			religion = cushitic_rites
 
 			country_rank = rank_county
@@ -12787,7 +12715,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				cushitic
+				puntite
 			}
 			discovered_regions = {
 				ethiopia_region
@@ -12822,7 +12750,7 @@ VC001 = {
 		VC010 = {
 			capital = agordat
 			culture = cushitic
-			religion = cushitic_rites
+			religion = nubian
 
 			country_rank = rank_county
 
@@ -12871,7 +12799,7 @@ VC001 = {
 
 		VC012 = {
 			capital = aiud
-			culture = wietenberg
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -12887,7 +12815,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				wietenberg
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -12996,8 +12924,8 @@ VC001 = {
 
 		VC017 = {
 			capital = al_hamad
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13012,7 +12940,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13021,8 +12949,8 @@ VC001 = {
 
 		VC018 = {
 			capital = al_harrah
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13037,7 +12965,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13071,8 +12999,8 @@ VC001 = {
 
 		VC020 = {
 			capital = al_labbah
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13087,7 +13015,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13296,8 +13224,8 @@ VC001 = {
 
 		VC029 = {
 			capital = al_thulayma
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13312,7 +13240,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13421,7 +13349,7 @@ VC001 = {
 
 		VC034 = {
 			capital = alba_iulia
-			culture = wietenberg
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -13437,7 +13365,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				wietenberg
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -13497,7 +13425,7 @@ VC001 = {
 		VC037 = {
 			capital = amersfoort
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -13547,7 +13475,7 @@ VC001 = {
 		VC039 = {
 			capital = amsterdam
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -13571,8 +13499,8 @@ VC001 = {
 
 		VC040 = {
 			capital = amstetten
-			culture = baden
-			religion = nordic_pagan
+			culture = urnfield
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -13587,7 +13515,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				baden
+				urnfield
 			}
 			discovered_regions = {
 				south_german_region
@@ -13596,8 +13524,8 @@ VC001 = {
 
 		VC041 = {
 			capital = an_nasifah
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13612,7 +13540,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13647,7 +13575,7 @@ VC001 = {
 		VC043 = {
 			capital = andechs
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -13772,7 +13700,7 @@ VC001 = {
 		VC048 = {
 			capital = anseba
 			culture = cushitic
-			religion = cushitic_rites
+			religion = nubian
 
 			country_rank = rank_county
 
@@ -13796,7 +13724,7 @@ VC001 = {
 
 		VC049 = {
 			capital = arad
-			culture = vatin
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -13812,7 +13740,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				vatin
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -13821,8 +13749,8 @@ VC001 = {
 
 		VC050 = {
 			capital = arar
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13837,7 +13765,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13947,7 +13875,7 @@ VC001 = {
 		VC055 = {
 			capital = arnhem
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -14021,7 +13949,7 @@ VC001 = {
 
 		VC058 = {
 			capital = aruppukkottai
-			culture = dravidian
+			culture = tamil
 			religion = dravidian_folk
 
 			country_rank = rank_county
@@ -14037,7 +13965,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				dravidian
+				tamil
 			}
 			discovered_regions = {
 				deccan_region
@@ -14247,7 +14175,7 @@ VC001 = {
 		VC067 = {
 			capital = atbara
 			culture = arabian
-			religion = arabian_pagan
+			religion = nubian
 
 			country_rank = rank_county
 
@@ -14297,7 +14225,7 @@ VC001 = {
 		VC069 = {
 			capital = augsburg
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -14321,8 +14249,8 @@ VC001 = {
 
 		VC070 = {
 			capital = austria_baden
-			culture = baden
-			religion = nordic_pagan
+			culture = urnfield
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -14337,7 +14265,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				baden
+				urnfield
 			}
 			discovered_regions = {
 				south_german_region
@@ -14371,7 +14299,7 @@ VC001 = {
 
 		VC072 = {
 			capital = ayodhya
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -14387,7 +14315,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -14522,7 +14450,7 @@ VC001 = {
 		VC078 = {
 			capital = badi
 			culture = cushitic
-			religion = cushitic_rites
+			religion = nubian
 
 			country_rank = rank_county
 
@@ -14596,7 +14524,7 @@ VC001 = {
 
 		VC081 = {
 			capital = baia_crisului
-			culture = vatin
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -14612,7 +14540,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				vatin
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -14872,7 +14800,7 @@ VC001 = {
 		VC092 = {
 			capital = bavaria_regen
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -14947,7 +14875,7 @@ VC001 = {
 		VC095 = {
 			capital = beeskow
 			culture = Lausitz
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -14971,7 +14899,7 @@ VC001 = {
 
 		VC096 = {
 			capital = bekes
-			culture = gava_holigrady
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -14987,7 +14915,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				gava_holigrady
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -15047,7 +14975,7 @@ VC001 = {
 		VC099 = {
 			capital = berber
 			culture = arabian
-			religion = arabian_pagan
+			religion = nubian
 
 			country_rank = rank_county
 
@@ -15072,7 +15000,7 @@ VC001 = {
 		VC100 = {
 			capital = berlin
 			culture = Lausitz
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -15347,7 +15275,7 @@ VC001 = {
 		VC111 = {
 			capital = bonndorf
 			culture = urnfield
-			religion = gaulish_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -15472,7 +15400,7 @@ VC001 = {
 		VC116 = {
 			capital = braunau
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -15572,7 +15500,7 @@ VC001 = {
 		VC120 = {
 			capital = burghausen
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -15597,7 +15525,7 @@ VC001 = {
 		VC121 = {
 			capital = burglengenfeld
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -15621,7 +15549,7 @@ VC001 = {
 
 		VC122 = {
 			capital = buri
-			culture = cushitic
+			culture = puntite
 			religion = cushitic_rites
 
 			country_rank = rank_county
@@ -15637,7 +15565,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				cushitic
+				puntite
 			}
 			discovered_regions = {
 				ethiopia_region
@@ -15646,7 +15574,7 @@ VC001 = {
 
 		VC123 = {
 			capital = buriram
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -15662,7 +15590,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -15722,7 +15650,7 @@ VC001 = {
 		VC126 = {
 			capital = calau
 			culture = Lausitz
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -15771,7 +15699,7 @@ VC001 = {
 
 		VC128 = {
 			capital = caransebes
-			culture = vatin
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -15787,7 +15715,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				vatin
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -15821,7 +15749,7 @@ VC001 = {
 
 		VC130 = {
 			capital = cetatea_balta
-			culture = wietenberg
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -15837,7 +15765,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				wietenberg
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -15871,7 +15799,7 @@ VC001 = {
 
 		VC132 = {
 			capital = chai_nat
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -15887,7 +15815,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -15896,7 +15824,7 @@ VC001 = {
 
 		VC133 = {
 			capital = chaisri
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -15912,7 +15840,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -15921,7 +15849,7 @@ VC001 = {
 
 		VC134 = {
 			capital = chaiyaphum
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -15937,7 +15865,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -15972,7 +15900,7 @@ VC001 = {
 		VC136 = {
 			capital = cham
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -16047,7 +15975,7 @@ VC001 = {
 		VC139 = {
 			capital = chojna
 			culture = Lausitz
-			religion = norse
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -16097,7 +16025,7 @@ VC001 = {
 		VC141 = {
 			capital = cottbus
 			culture = Lausitz
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -16146,7 +16074,7 @@ VC001 = {
 
 		VC143 = {
 			capital = csanad
-			culture = vatin
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -16162,7 +16090,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				vatin
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -16221,7 +16149,7 @@ VC001 = {
 
 		VC146 = {
 			capital = dallol
-			culture = cushitic
+			culture = puntite
 			religion = cushitic_rites
 
 			country_rank = rank_county
@@ -16237,7 +16165,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				cushitic
+				puntite
 			}
 			discovered_regions = {
 				ethiopia_region
@@ -16421,7 +16349,7 @@ VC001 = {
 
 		VC154 = {
 			capital = deva
-			culture = wietenberg
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -16437,7 +16365,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				wietenberg
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -16471,7 +16399,7 @@ VC001 = {
 
 		VC156 = {
 			capital = dong_lakhon
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -16487,7 +16415,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -16497,7 +16425,7 @@ VC001 = {
 		VC157 = {
 			capital = dordrecht
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -16521,7 +16449,7 @@ VC001 = {
 
 		VC158 = {
 			capital = dubronjo
-			culture = andronovo
+			culture = Baltic
 			religion = steppe_pagan
 
 			country_rank = rank_county
@@ -16537,7 +16465,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				andronovo
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -16571,8 +16499,8 @@ VC001 = {
 
 		VC160 = {
 			capital = dumat_al_jandal
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -16587,7 +16515,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -16647,7 +16575,7 @@ VC001 = {
 		VC163 = {
 			capital = ebersberg
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -16672,7 +16600,7 @@ VC001 = {
 		VC164 = {
 			capital = eggenfelden
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -16721,7 +16649,7 @@ VC001 = {
 
 		VC166 = {
 			capital = el_agheila
-			culture = libu
+			culture = libyan
 			religion = berber_pagan
 
 			country_rank = rank_county
@@ -16737,7 +16665,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				libu
+				libyan
 			}
 			discovered_regions = {
 				egypt_region
@@ -16797,7 +16725,7 @@ VC001 = {
 		VC169 = {
 			capital = erding
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -16996,7 +16924,7 @@ VC001 = {
 
 		VC177 = {
 			capital = felvint
-			culture = wietenberg
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -17012,7 +16940,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				wietenberg
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -17147,7 +17075,7 @@ VC001 = {
 		VC183 = {
 			capital = freiburg
 			culture = urnfield
-			religion = gaulish_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -17172,7 +17100,7 @@ VC001 = {
 		VC184 = {
 			capital = freienwalde
 			culture = Lausitz
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -17197,7 +17125,7 @@ VC001 = {
 		VC185 = {
 			capital = freising
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -17222,7 +17150,7 @@ VC001 = {
 		VC186 = {
 			capital = friedberg
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -17272,7 +17200,7 @@ VC001 = {
 		VC188 = {
 			capital = furstenberg
 			culture = urnfield
-			religion = gaulish_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -17322,7 +17250,7 @@ VC001 = {
 		VC190 = {
 			capital = garmisch
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -17371,7 +17299,7 @@ VC001 = {
 
 		VC192 = {
 			capital = gdov
-			culture = andronovo
+			culture = Baltic
 			religion = baltic_pagan
 
 			country_rank = rank_county
@@ -17387,7 +17315,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				andronovo
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -17397,7 +17325,7 @@ VC001 = {
 		VC193 = {
 			capital = geertruidenberg
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -17621,7 +17549,7 @@ VC001 = {
 
 		VC202 = {
 			capital = gorodets_luga
-			culture = andronovo
+			culture = Baltic
 			religion = baltic_pagan
 
 			country_rank = rank_county
@@ -17637,7 +17565,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				andronovo
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -17647,7 +17575,7 @@ VC001 = {
 		VC203 = {
 			capital = grafenau
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -17697,7 +17625,7 @@ VC001 = {
 		VC205 = {
 			capital = griesbach
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -17822,7 +17750,7 @@ VC001 = {
 		VC210 = {
 			capital = guben
 			culture = Lausitz
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -17846,7 +17774,7 @@ VC001 = {
 
 		VC211 = {
 			capital = gurghiu
-			culture = wietenberg
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -17862,7 +17790,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				wietenberg
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -18022,7 +17950,7 @@ VC001 = {
 		VC218 = {
 			capital = harderwijk
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -18147,7 +18075,7 @@ VC001 = {
 		VC223 = {
 			capital = herzfelde
 			culture = Lausitz
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -18296,8 +18224,8 @@ VC001 = {
 
 		VC229 = {
 			capital = hoyerswerda
-			culture = Lausitz
-			religion = nordic_pagan
+			culture = urnfield
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -18312,7 +18240,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				Lausitz
+				urnfield
 			}
 			discovered_regions = {
 				north_german_region
@@ -18321,7 +18249,7 @@ VC001 = {
 
 		VC230 = {
 			capital = hunedoara
-			culture = wietenberg
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -18337,7 +18265,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				wietenberg
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -18497,7 +18425,7 @@ VC001 = {
 		VC237 = {
 			capital = immenstadt
 			culture = urnfield
-			religion = gaulish_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -18522,7 +18450,7 @@ VC001 = {
 		VC238 = {
 			capital = indersdorf
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -18546,7 +18474,7 @@ VC001 = {
 
 		VC239 = {
 			capital = ineu
-			culture = vatin
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -18562,7 +18490,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				vatin
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -18572,7 +18500,7 @@ VC001 = {
 		VC240 = {
 			capital = ingolstadt
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -18721,7 +18649,7 @@ VC001 = {
 
 		VC246 = {
 			capital = izori
-			culture = andronovo
+			culture = Baltic
 			religion = steppe_pagan
 
 			country_rank = rank_county
@@ -18737,7 +18665,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				andronovo
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -19021,7 +18949,7 @@ VC001 = {
 
 		VC258 = {
 			capital = kaliakra
-			culture = ezero
+			culture = thracian
 			religion = thracian_pagan
 
 			country_rank = rank_county
@@ -19037,7 +18965,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				ezero
+				thracian
 			}
 			discovered_regions = {
 				balkan_region
@@ -19147,7 +19075,7 @@ VC001 = {
 		VC263 = {
 			capital = kapfenberg
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -19246,7 +19174,7 @@ VC001 = {
 
 		VC267 = {
 			capital = karvuna
-			culture = ezero
+			culture = thracian
 			religion = thracian_pagan
 
 			country_rank = rank_county
@@ -19262,7 +19190,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				ezero
+				thracian
 			}
 			discovered_regions = {
 				balkan_region
@@ -19296,7 +19224,7 @@ VC001 = {
 
 		VC269 = {
 			capital = kaset_sombun
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -19312,7 +19240,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -19322,7 +19250,7 @@ VC001 = {
 		VC270 = {
 			capital = kassala
 			culture = arabian
-			religion = arabian_pagan
+			religion = nubian
 
 			country_rank = rank_county
 
@@ -19347,7 +19275,7 @@ VC001 = {
 		VC271 = {
 			capital = kelheim
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -19372,7 +19300,7 @@ VC001 = {
 		VC272 = {
 			capital = keren
 			culture = cushitic
-			religion = cushitic_rites
+			religion = nubian
 
 			country_rank = rank_county
 
@@ -19472,7 +19400,7 @@ VC001 = {
 		VC276 = {
 			capital = khawr_baraka
 			culture = cushitic
-			religion = cushitic_rites
+			religion = nubian
 
 			country_rank = rank_county
 
@@ -19497,7 +19425,7 @@ VC001 = {
 		VC277 = {
 			capital = khawr_nubt
 			culture = cushitic
-			religion = cushitic_rites
+			religion = nubian
 
 			country_rank = rank_county
 
@@ -19571,7 +19499,7 @@ VC001 = {
 
 		VC280 = {
 			capital = khorat
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -19587,7 +19515,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -19621,7 +19549,7 @@ VC001 = {
 
 		VC282 = {
 			capital = khotchino
-			culture = finnic
+			culture = Baltic
 			religion = finnic_pagan
 
 			country_rank = rank_county
@@ -19637,7 +19565,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				finnic
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -19671,7 +19599,7 @@ VC001 = {
 
 		VC284 = {
 			capital = kikinda
-			culture = vatin
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -19687,7 +19615,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				vatin
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -19721,7 +19649,7 @@ VC001 = {
 
 		VC286 = {
 			capital = kladentsi
-			culture = ezero
+			culture = thracian
 			religion = thracian_pagan
 
 			country_rank = rank_county
@@ -19737,7 +19665,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				ezero
+				thracian
 			}
 			discovered_regions = {
 				balkan_region
@@ -19771,7 +19699,7 @@ VC001 = {
 
 		VC288 = {
 			capital = kobyle
-			culture = andronovo
+			culture = Baltic
 			religion = baltic_pagan
 
 			country_rank = rank_county
@@ -19787,7 +19715,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				andronovo
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -19872,7 +19800,7 @@ VC001 = {
 		VC292 = {
 			capital = konstanz
 			culture = urnfield
-			religion = gaulish_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -19972,7 +19900,7 @@ VC001 = {
 		VC296 = {
 			capital = krumbach
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -19996,7 +19924,7 @@ VC001 = {
 
 		VC297 = {
 			capital = ktenia
-			culture = ezero
+			culture = thracian
 			religion = thracian_pagan
 
 			country_rank = rank_county
@@ -20012,7 +19940,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				ezero
+				thracian
 			}
 			discovered_regions = {
 				balkan_region
@@ -20196,7 +20124,7 @@ VC001 = {
 
 		VC305 = {
 			capital = kyyrola
-			culture = sintashta
+			culture = finnic
 			religion = finnic_pagan
 
 			country_rank = rank_county
@@ -20212,7 +20140,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				sintashta
+				finnic
 			}
 			discovered_regions = {
 				scandinavian_region
@@ -20322,7 +20250,7 @@ VC001 = {
 		VC310 = {
 			capital = landau
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -20347,7 +20275,7 @@ VC001 = {
 		VC311 = {
 			capital = landsberg
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -20372,7 +20300,7 @@ VC001 = {
 		VC312 = {
 			capital = landshut
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -20447,7 +20375,7 @@ VC001 = {
 		VC315 = {
 			capital = laufen
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -20497,7 +20425,7 @@ VC001 = {
 		VC317 = {
 			capital = lebus
 			culture = Lausitz
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -20522,7 +20450,7 @@ VC001 = {
 		VC318 = {
 			capital = leiden
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -20547,7 +20475,7 @@ VC001 = {
 		VC319 = {
 			capital = leoben
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -20621,8 +20549,8 @@ VC001 = {
 
 		VC322 = {
 			capital = lilienfeld
-			culture = baden
-			religion = nordic_pagan
+			culture = urnfield
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -20637,7 +20565,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				baden
+				urnfield
 			}
 			discovered_regions = {
 				south_german_region
@@ -20721,7 +20649,7 @@ VC001 = {
 
 		VC326 = {
 			capital = lipova
-			culture = vatin
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -20737,7 +20665,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				vatin
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -20921,7 +20849,7 @@ VC001 = {
 
 		VC334 = {
 			capital = lopburi
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -20937,7 +20865,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -20946,8 +20874,8 @@ VC001 = {
 
 		VC335 = {
 			capital = lowqah
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -20962,7 +20890,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -20972,7 +20900,7 @@ VC001 = {
 		VC336 = {
 			capital = lubben
 			culture = Lausitz
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -21021,7 +20949,7 @@ VC001 = {
 
 		VC338 = {
 			capital = lugoj
-			culture = vatin
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -21037,7 +20965,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				vatin
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -21071,7 +20999,7 @@ VC001 = {
 
 		VC340 = {
 			capital = lyady
-			culture = andronovo
+			culture = Baltic
 			religion = steppe_pagan
 
 			country_rank = rank_county
@@ -21087,7 +21015,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				andronovo
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -21096,7 +21024,7 @@ VC001 = {
 
 		VC341 = {
 			capital = lyaskovets
-			culture = ezero
+			culture = thracian
 			religion = thracian_pagan
 
 			country_rank = rank_county
@@ -21112,7 +21040,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				ezero
+				thracian
 			}
 			discovered_regions = {
 				balkan_region
@@ -21196,7 +21124,7 @@ VC001 = {
 
 		VC345 = {
 			capital = mako
-			culture = vatin
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -21212,7 +21140,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				vatin
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -21247,7 +21175,7 @@ VC001 = {
 		VC347 = {
 			capital = mallersdorf
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -21296,7 +21224,7 @@ VC001 = {
 
 		VC349 = {
 			capital = maradah
-			culture = libu
+			culture = libyan
 			religion = berber_pagan
 
 			country_rank = rank_county
@@ -21312,7 +21240,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				libu
+				libyan
 			}
 			discovered_regions = {
 				maghreb_region
@@ -21396,7 +21324,7 @@ VC001 = {
 
 		VC353 = {
 			capital = massawa
-			culture = cushitic
+			culture = puntite
 			religion = cushitic_rites
 
 			country_rank = rank_county
@@ -21412,7 +21340,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				cushitic
+				puntite
 			}
 			discovered_regions = {
 				ethiopia_region
@@ -21521,7 +21449,7 @@ VC001 = {
 
 		VC358 = {
 			capital = meletovo
-			culture = andronovo
+			culture = Baltic
 			religion = steppe_pagan
 
 			country_rank = rank_county
@@ -21537,7 +21465,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				andronovo
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -21546,8 +21474,8 @@ VC001 = {
 
 		VC359 = {
 			capital = melk
-			culture = baden
-			religion = nordic_pagan
+			culture = urnfield
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -21562,7 +21490,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				baden
+				urnfield
 			}
 			discovered_regions = {
 				south_german_region
@@ -21597,7 +21525,7 @@ VC001 = {
 		VC361 = {
 			capital = miesbach
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -21621,7 +21549,7 @@ VC001 = {
 
 		VC362 = {
 			capital = moloskovitsa
-			culture = andronovo
+			culture = Baltic
 			religion = finnic_pagan
 
 			country_rank = rank_county
@@ -21637,7 +21565,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				andronovo
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -21696,7 +21624,7 @@ VC001 = {
 
 		VC365 = {
 			capital = montlaur
-			culture = gaulish
+			culture = urnfield
 			religion = gaulish_pagan
 
 			country_rank = rank_county
@@ -21712,7 +21640,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				gaulish
+				urnfield
 			}
 			discovered_regions = {
 				france_region
@@ -21822,7 +21750,7 @@ VC001 = {
 		VC370 = {
 			capital = muhldorf
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -21872,7 +21800,7 @@ VC001 = {
 		VC372 = {
 			capital = mullheim
 			culture = urnfield
-			religion = gaulish_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -21897,7 +21825,7 @@ VC001 = {
 		VC373 = {
 			capital = munich
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -21972,7 +21900,7 @@ VC001 = {
 		VC376 = {
 			capital = murzzuschlag
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -21996,7 +21924,7 @@ VC001 = {
 
 		VC377 = {
 			capital = nafka
-			culture = cushitic
+			culture = puntite
 			religion = cushitic_rites
 
 			country_rank = rank_county
@@ -22012,7 +21940,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				cushitic
+				puntite
 			}
 			discovered_regions = {
 				ethiopia_region
@@ -22197,7 +22125,7 @@ VC001 = {
 		VC385 = {
 			capital = nijmegen
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -22221,7 +22149,7 @@ VC001 = {
 
 		VC386 = {
 			capital = nikopol
-			culture = ezero
+			culture = thracian
 			religion = thracian_pagan
 
 			country_rank = rank_county
@@ -22237,7 +22165,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				ezero
+				thracian
 			}
 			discovered_regions = {
 				balkan_region
@@ -22296,7 +22224,7 @@ VC001 = {
 
 		VC389 = {
 			capital = nokor_reach_seyma
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -22312,7 +22240,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -22621,7 +22549,7 @@ VC001 = {
 
 		VC402 = {
 			capital = ovech
-			culture = ezero
+			culture = thracian
 			religion = thracian_pagan
 
 			country_rank = rank_county
@@ -22637,7 +22565,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				ezero
+				thracian
 			}
 			discovered_regions = {
 				balkan_region
@@ -22847,7 +22775,7 @@ VC001 = {
 		VC411 = {
 			capital = parsberg
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -22897,7 +22825,7 @@ VC001 = {
 		VC413 = {
 			capital = pfaffenhofen
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -22921,7 +22849,7 @@ VC001 = {
 
 		VC414 = {
 			capital = phayuhakhiri
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -22937,7 +22865,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -22946,7 +22874,7 @@ VC001 = {
 
 		VC415 = {
 			capital = phimai
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -22962,7 +22890,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -22971,7 +22899,7 @@ VC001 = {
 
 		VC416 = {
 			capital = phuenchapura
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -22987,7 +22915,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -22996,7 +22924,7 @@ VC001 = {
 
 		VC417 = {
 			capital = phutthaisong
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -23012,7 +22940,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -23097,7 +23025,7 @@ VC001 = {
 		VC421 = {
 			capital = pitten
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -23121,7 +23049,7 @@ VC001 = {
 
 		VC422 = {
 			capital = plyussa
-			culture = andronovo
+			culture = Baltic
 			religion = baltic_pagan
 
 			country_rank = rank_county
@@ -23137,7 +23065,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				andronovo
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -23246,7 +23174,7 @@ VC001 = {
 
 		VC427 = {
 			capital = prathai_saman
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -23262,7 +23190,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -23271,7 +23199,7 @@ VC001 = {
 
 		VC428 = {
 			capital = pribuzh
-			culture = andronovo
+			culture = Baltic
 			religion = baltic_pagan
 
 			country_rank = rank_county
@@ -23287,7 +23215,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				andronovo
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -23296,7 +23224,7 @@ VC001 = {
 
 		VC429 = {
 			capital = privas
-			culture = gaulish
+			culture = urnfield
 			religion = gaulish_pagan
 
 			country_rank = rank_county
@@ -23312,7 +23240,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				gaulish
+				urnfield
 			}
 			discovered_regions = {
 				france_region
@@ -23521,8 +23449,8 @@ VC001 = {
 
 		VC438 = {
 			capital = qurayyat_al_milh
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -23537,7 +23465,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -23571,7 +23499,7 @@ VC001 = {
 
 		VC440 = {
 			capital = ramesvaram
-			culture = dravidian
+			culture = tamil
 			religion = dravidian_folk
 
 			country_rank = rank_county
@@ -23587,7 +23515,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				dravidian
+				tamil
 			}
 			discovered_regions = {
 				deccan_region
@@ -23646,7 +23574,7 @@ VC001 = {
 
 		VC443 = {
 			capital = ras_lanuf
-			culture = berber
+			culture = libyan
 			religion = berber_pagan
 
 			country_rank = rank_county
@@ -23662,7 +23590,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				berber
+				libyan
 			}
 			discovered_regions = {
 				maghreb_region
@@ -23671,7 +23599,7 @@ VC001 = {
 
 		VC444 = {
 			capital = rattanaburi
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -23687,7 +23615,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -23722,7 +23650,7 @@ VC001 = {
 		VC446 = {
 			capital = regensburg
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -23746,7 +23674,7 @@ VC001 = {
 
 		VC447 = {
 			capital = reghin
-			culture = wietenberg
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -23762,7 +23690,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				wietenberg
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -23772,7 +23700,7 @@ VC001 = {
 		VC448 = {
 			capital = reutte
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -23822,7 +23750,7 @@ VC001 = {
 		VC450 = {
 			capital = ried
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -23947,7 +23875,7 @@ VC001 = {
 		VC455 = {
 			capital = roding
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -23971,7 +23899,7 @@ VC001 = {
 
 		VC456 = {
 			capital = roi_et
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -23987,7 +23915,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -24047,7 +23975,7 @@ VC001 = {
 		VC459 = {
 			capital = rosenheim
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -24097,7 +24025,7 @@ VC001 = {
 		VC461 = {
 			capital = rothenburg_oberlausitz
 			culture = Lausitz
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -24122,7 +24050,7 @@ VC001 = {
 		VC462 = {
 			capital = rottenburg
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -24147,7 +24075,7 @@ VC001 = {
 		VC463 = {
 			capital = rottenmann
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -24172,7 +24100,7 @@ VC001 = {
 		VC464 = {
 			capital = rotterdam
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -24271,8 +24199,8 @@ VC001 = {
 
 		VC468 = {
 			capital = sakaka
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -24287,7 +24215,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -24396,7 +24324,7 @@ VC001 = {
 
 		VC473 = {
 			capital = saraburi
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -24412,7 +24340,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -24547,7 +24475,7 @@ VC001 = {
 		VC479 = {
 			capital = schaffhausen
 			culture = urnfield
-			religion = gaulish_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -24572,7 +24500,7 @@ VC001 = {
 		VC480 = {
 			capital = scharding
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -24596,8 +24524,8 @@ VC001 = {
 
 		VC481 = {
 			capital = scheibbs
-			culture = baden
-			religion = nordic_pagan
+			culture = urnfield
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -24612,7 +24540,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				baden
+				urnfield
 			}
 			discovered_regions = {
 				south_german_region
@@ -24622,7 +24550,7 @@ VC001 = {
 		VC482 = {
 			capital = schongau
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -24671,7 +24599,7 @@ VC001 = {
 
 		VC484 = {
 			capital = sebes
-			culture = wietenberg
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -24687,7 +24615,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				wietenberg
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -24696,7 +24624,7 @@ VC001 = {
 
 		VC485 = {
 			capital = semlacu_mare
-			culture = vatin
+			culture = dacian
 			religion = thracian_pagan
 
 			country_rank = rank_county
@@ -24712,7 +24640,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				vatin
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -24846,7 +24774,7 @@ VC001 = {
 
 		VC491 = {
 			capital = shumen
-			culture = ezero
+			culture = thracian
 			religion = thracian_pagan
 
 			country_rank = rank_county
@@ -24862,7 +24790,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				ezero
+				thracian
 			}
 			discovered_regions = {
 				balkan_region
@@ -24921,7 +24849,7 @@ VC001 = {
 
 		VC494 = {
 			capital = sibiu
-			culture = wietenberg
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -24937,7 +24865,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				wietenberg
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -24946,7 +24874,7 @@ VC001 = {
 
 		VC495 = {
 			capital = sic
-			culture = wietenberg
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -24962,7 +24890,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				wietenberg
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -25221,7 +25149,7 @@ VC001 = {
 
 		VC506 = {
 			capital = slavkovitchi
-			culture = andronovo
+			culture = Baltic
 			religion = steppe_pagan
 
 			country_rank = rank_county
@@ -25237,7 +25165,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				andronovo
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -25321,7 +25249,7 @@ VC001 = {
 
 		VC510 = {
 			capital = sokna
-			culture = libu
+			culture = libyan
 			religion = berber_pagan
 
 			country_rank = rank_county
@@ -25337,7 +25265,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				libu
+				libyan
 			}
 			discovered_regions = {
 				maghreb_region
@@ -25422,7 +25350,7 @@ VC001 = {
 		VC514 = {
 			capital = sonthofen
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -25447,7 +25375,7 @@ VC001 = {
 		VC515 = {
 			capital = sopron
 			culture = encrusted_pottery
-			religion = dacian_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -25472,7 +25400,7 @@ VC001 = {
 		VC516 = {
 			capital = spremberg
 			culture = Lausitz
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -25496,7 +25424,7 @@ VC001 = {
 
 		VC517 = {
 			capital = sri_thep
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -25512,7 +25440,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -25571,8 +25499,8 @@ VC001 = {
 
 		VC520 = {
 			capital = st_polten
-			culture = baden
-			religion = nordic_pagan
+			culture = urnfield
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -25587,7 +25515,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				baden
+				urnfield
 			}
 			discovered_regions = {
 				south_german_region
@@ -25596,7 +25524,7 @@ VC001 = {
 
 		VC521 = {
 			capital = staropolye
-			culture = andronovo
+			culture = Baltic
 			religion = baltic_pagan
 
 			country_rank = rank_county
@@ -25612,7 +25540,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				andronovo
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -25647,7 +25575,7 @@ VC001 = {
 		VC523 = {
 			capital = stockach
 			culture = urnfield
-			religion = gaulish_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -25697,7 +25625,7 @@ VC001 = {
 		VC525 = {
 			capital = straubing
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -25747,7 +25675,7 @@ VC001 = {
 		VC527 = {
 			capital = suakin
 			culture = cushitic
-			religion = cushitic_rites
+			religion = nubian
 
 			country_rank = rank_county
 
@@ -25846,7 +25774,7 @@ VC001 = {
 
 		VC531 = {
 			capital = szarvas
-			culture = gava_holigrady
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -25862,7 +25790,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				gava_holigrady
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -25971,7 +25899,7 @@ VC001 = {
 
 		VC536 = {
 			capital = targoviste_BUL
-			culture = ezero
+			culture = thracian
 			religion = thracian_pagan
 
 			country_rank = rank_county
@@ -25987,7 +25915,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				ezero
+				thracian
 			}
 			discovered_regions = {
 				balkan_region
@@ -25996,7 +25924,7 @@ VC001 = {
 
 		VC537 = {
 			capital = targu_mures
-			culture = wietenberg
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -26012,7 +25940,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				wietenberg
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -26021,7 +25949,7 @@ VC001 = {
 
 		VC538 = {
 			capital = tarnovo
-			culture = ezero
+			culture = thracian
 			religion = thracian_pagan
 
 			country_rank = rank_county
@@ -26037,7 +25965,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				ezero
+				thracian
 			}
 			discovered_regions = {
 				balkan_region
@@ -26171,7 +26099,7 @@ VC001 = {
 
 		VC544 = {
 			capital = tesov
-			culture = andronovo
+			culture = Baltic
 			religion = steppe_pagan
 
 			country_rank = rank_county
@@ -26187,7 +26115,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				andronovo
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -26197,7 +26125,7 @@ VC001 = {
 		VC545 = {
 			capital = the_hague
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -26246,7 +26174,7 @@ VC001 = {
 
 		VC547 = {
 			capital = thoothukudi
-			culture = dravidian
+			culture = tamil
 			religion = dravidian_folk
 
 			country_rank = rank_county
@@ -26262,7 +26190,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				dravidian
+				tamil
 			}
 			discovered_regions = {
 				deccan_region
@@ -26271,7 +26199,7 @@ VC001 = {
 
 		VC548 = {
 			capital = thung_samrit
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -26287,7 +26215,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -26297,7 +26225,7 @@ VC001 = {
 		VC549 = {
 			capital = tiel
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -26472,7 +26400,7 @@ VC001 = {
 		VC556 = {
 			capital = tolz
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -26572,7 +26500,7 @@ VC001 = {
 		VC560 = {
 			capital = torzym
 			culture = Lausitz
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -26596,7 +26524,7 @@ VC001 = {
 
 		VC561 = {
 			capital = tournon
-			culture = gaulish
+			culture = urnfield
 			religion = gaulish_pagan
 
 			country_rank = rank_county
@@ -26612,7 +26540,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				gaulish
+				urnfield
 			}
 			discovered_regions = {
 				france_region
@@ -26622,7 +26550,7 @@ VC001 = {
 		VC562 = {
 			capital = traunstein
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -26671,8 +26599,8 @@ VC001 = {
 
 		VC564 = {
 			capital = tulln
-			culture = baden
-			religion = nordic_pagan
+			culture = urnfield
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -26687,7 +26615,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				baden
+				urnfield
 			}
 			discovered_regions = {
 				south_german_region
@@ -26721,7 +26649,7 @@ VC001 = {
 
 		VC566 = {
 			capital = turda
-			culture = wietenberg
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -26737,7 +26665,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				wietenberg
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -26797,7 +26725,7 @@ VC001 = {
 		VC569 = {
 			capital = uberlingen
 			culture = urnfield
-			religion = gaulish_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -27072,7 +27000,7 @@ VC001 = {
 		VC580 = {
 			capital = utrecht
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -27171,7 +27099,7 @@ VC001 = {
 
 		VC584 = {
 			capital = valence
-			culture = gaulish
+			culture = urnfield
 			religion = gaulish_pagan
 
 			country_rank = rank_county
@@ -27187,7 +27115,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				gaulish
+				urnfield
 			}
 			discovered_regions = {
 				france_region
@@ -27321,7 +27249,7 @@ VC001 = {
 
 		VC590 = {
 			capital = varna
-			culture = ezero
+			culture = thracian
 			religion = thracian_pagan
 
 			country_rank = rank_county
@@ -27337,7 +27265,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				ezero
+				thracian
 			}
 			discovered_regions = {
 				balkan_region
@@ -27496,7 +27424,7 @@ VC001 = {
 
 		VC597 = {
 			capital = veliki_preslav
-			culture = ezero
+			culture = thracian
 			religion = thracian_pagan
 
 			country_rank = rank_county
@@ -27512,7 +27440,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				ezero
+				thracian
 			}
 			discovered_regions = {
 				balkan_region
@@ -27521,7 +27449,7 @@ VC001 = {
 
 		VC598 = {
 			capital = vembar
-			culture = dravidian
+			culture = tamil
 			religion = dravidian_folk
 
 			country_rank = rank_county
@@ -27537,7 +27465,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				dravidian
+				tamil
 			}
 			discovered_regions = {
 				deccan_region
@@ -27596,8 +27524,8 @@ VC001 = {
 
 		VC601 = {
 			capital = vienna
-			culture = baden
-			religion = nordic_pagan
+			culture = urnfield
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -27612,7 +27540,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				baden
+				urnfield
 			}
 			discovered_regions = {
 				south_german_region
@@ -27671,7 +27599,7 @@ VC001 = {
 
 		VC604 = {
 			capital = viviers
-			culture = gaulish
+			culture = urnfield
 			religion = gaulish_pagan
 
 			country_rank = rank_county
@@ -27687,7 +27615,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				gaulish
+				urnfield
 			}
 			discovered_regions = {
 				france_region
@@ -27821,8 +27749,8 @@ VC001 = {
 
 		VC610 = {
 			capital = waidhofen
-			culture = baden
-			religion = nordic_pagan
+			culture = urnfield
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -27837,7 +27765,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				baden
+				urnfield
 			}
 			discovered_regions = {
 				south_german_region
@@ -27847,7 +27775,7 @@ VC001 = {
 		VC611 = {
 			capital = waldshut
 			culture = urnfield
-			religion = gaulish_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -27897,7 +27825,7 @@ VC001 = {
 		VC613 = {
 			capital = wasserburg
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -27922,7 +27850,7 @@ VC001 = {
 		VC614 = {
 			capital = weilheim
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -27947,7 +27875,7 @@ VC001 = {
 		VC615 = {
 			capital = weiz
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -27972,7 +27900,7 @@ VC001 = {
 		VC616 = {
 			capital = wertingen
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -27997,7 +27925,7 @@ VC001 = {
 		VC617 = {
 			capital = wiener_neustadt
 			culture = urnfield
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -28071,7 +27999,7 @@ VC001 = {
 
 		VC620 = {
 			capital = yama
-			culture = finnic
+			culture = Baltic
 			religion = baltic_pagan
 
 			country_rank = rank_county
@@ -28087,7 +28015,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				finnic
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -28121,7 +28049,7 @@ VC001 = {
 
 		VC622 = {
 			capital = yasothon
-			culture = austroasiatic
+			culture = khmer
 			religion = austroasiatic_rites
 
 			country_rank = rank_county
@@ -28137,7 +28065,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				austroasiatic
+				khmer
 			}
 			discovered_regions = {
 				indochina_region
@@ -28296,7 +28224,7 @@ VC001 = {
 
 		VC629 = {
 			capital = zaplyusye
-			culture = andronovo
+			culture = Baltic
 			religion = steppe_pagan
 
 			country_rank = rank_county
@@ -28312,7 +28240,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				andronovo
+				Baltic
 			}
 			discovered_regions = {
 				russian_region
@@ -28346,7 +28274,7 @@ VC001 = {
 
 		VC631 = {
 			capital = zarand
-			culture = vatin
+			culture = dacian
 			religion = dacian_pagan
 
 			country_rank = rank_county
@@ -28362,7 +28290,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				vatin
+				dacian
 			}
 			discovered_regions = {
 				carpathia_region
@@ -28371,7 +28299,7 @@ VC001 = {
 
 		VC632 = {
 			capital = zella
-			culture = libu
+			culture = libyan
 			religion = berber_pagan
 
 			country_rank = rank_county
@@ -28387,7 +28315,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				libu
+				libyan
 			}
 			discovered_regions = {
 				maghreb_region
@@ -28471,7 +28399,7 @@ VC001 = {
 
 		VC636 = {
 			capital = zula
-			culture = cushitic
+			culture = puntite
 			religion = cushitic_rites
 
 			country_rank = rank_county
@@ -28487,7 +28415,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				cushitic
+				puntite
 			}
 			discovered_regions = {
 				ethiopia_region
@@ -28547,7 +28475,7 @@ VC001 = {
 		VC639 = {
 			capital = alkmaar
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -28647,7 +28575,7 @@ VC001 = {
 		VC643 = {
 			capital = apeldoorn
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -28672,7 +28600,7 @@ VC001 = {
 		VC644 = {
 			capital = appingedam
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -28697,7 +28625,7 @@ VC001 = {
 		VC645 = {
 			capital = aschendorf
 			culture = corded_ware
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -28722,7 +28650,7 @@ VC001 = {
 		VC646 = {
 			capital = assen
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -28747,7 +28675,7 @@ VC001 = {
 		VC647 = {
 			capital = aurich
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -28847,7 +28775,7 @@ VC001 = {
 		VC651 = {
 			capital = bentheim
 			culture = corded_ware
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -29122,7 +29050,7 @@ VC001 = {
 		VC662 = {
 			capital = bremen
 			culture = corded_ware
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -29147,7 +29075,7 @@ VC001 = {
 		VC663 = {
 			capital = bremervorde
 			culture = corded_ware
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -29197,7 +29125,7 @@ VC001 = {
 		VC665 = {
 			capital = bygdea
 			culture = nordic
-			religion = nordic_pagan
+			religion = norse
 
 			country_rank = rank_county
 
@@ -29247,7 +29175,7 @@ VC001 = {
 		VC667 = {
 			capital = coevorden
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -29297,7 +29225,7 @@ VC001 = {
 		VC669 = {
 			capital = delmenhorst
 			culture = corded_ware
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -29322,7 +29250,7 @@ VC001 = {
 		VC670 = {
 			capital = deventer
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -29472,7 +29400,7 @@ VC001 = {
 		VC676 = {
 			capital = elsfleth
 			culture = corded_ware
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -29497,7 +29425,7 @@ VC001 = {
 		VC677 = {
 			capital = emden
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -29697,7 +29625,7 @@ VC001 = {
 		VC685 = {
 			capital = friesoythe
 			culture = corded_ware
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -29772,7 +29700,7 @@ VC001 = {
 		VC688 = {
 			capital = gestenthorpe
 			culture = corded_ware
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -29947,7 +29875,7 @@ VC001 = {
 		VC695 = {
 			capital = groningen
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -29972,7 +29900,7 @@ VC001 = {
 		VC696 = {
 			capital = grundsunda
 			culture = nordic
-			religion = nordic_pagan
+			religion = norse
 
 			country_rank = rank_county
 
@@ -30247,7 +30175,7 @@ VC001 = {
 		VC707 = {
 			capital = harlingen
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -30272,7 +30200,7 @@ VC001 = {
 		VC708 = {
 			capital = harnosand
 			culture = nordic
-			religion = nordic_pagan
+			religion = norse
 
 			country_rank = rank_county
 
@@ -30447,7 +30375,7 @@ VC001 = {
 		VC715 = {
 			capital = hoorn
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -30497,7 +30425,7 @@ VC001 = {
 		VC717 = {
 			capital = hudiksvall
 			culture = nordic
-			religion = nordic_pagan
+			religion = norse
 
 			country_rank = rank_county
 
@@ -30647,7 +30575,7 @@ VC001 = {
 		VC723 = {
 			capital = jever
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -30772,7 +30700,7 @@ VC001 = {
 		VC728 = {
 			capital = kampen
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -30946,7 +30874,7 @@ VC001 = {
 		}
 		VC735 = {
 			capital = konevets
-			culture = sintashta
+			culture = finnic
 			religion = finnic_pagan
 
 			country_rank = rank_county
@@ -30962,7 +30890,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				sintashta
+				finnic
 			}
 
 			discovered_regions = {
@@ -31071,7 +30999,7 @@ VC001 = {
 		}
 		VC740 = {
 			capital = korela
-			culture = sintashta
+			culture = finnic
 			religion = finnic_pagan
 
 			country_rank = rank_county
@@ -31087,7 +31015,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				sintashta
+				finnic
 			}
 
 			discovered_regions = {
@@ -31196,7 +31124,7 @@ VC001 = {
 		}
 		VC745 = {
 			capital = kurkijoki
-			culture = sintashta
+			culture = finnic
 			religion = finnic_pagan
 
 			country_rank = rank_county
@@ -31212,7 +31140,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				sintashta
+				finnic
 			}
 
 			discovered_regions = {
@@ -31372,7 +31300,7 @@ VC001 = {
 		VC752 = {
 			capital = leer
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -31397,7 +31325,7 @@ VC001 = {
 		VC753 = {
 			capital = leeuwarden
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -31522,7 +31450,7 @@ VC001 = {
 		VC758 = {
 			capital = lycksele
 			culture = nordic
-			religion = nordic_pagan
+			religion = norse
 
 			country_rank = rank_county
 
@@ -31547,7 +31475,7 @@ VC001 = {
 		VC759 = {
 			capital = meppel
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -31572,7 +31500,7 @@ VC001 = {
 		VC760 = {
 			capital = meppen
 			culture = corded_ware
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -31772,7 +31700,7 @@ VC001 = {
 		VC768 = {
 			capital = neuhaus
 			culture = corded_ware
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -32022,7 +31950,7 @@ VC001 = {
 		VC778 = {
 			capital = oldenburg
 			culture = corded_ware
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -32047,7 +31975,7 @@ VC001 = {
 		VC779 = {
 			capital = oldenzaal
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -32222,7 +32150,7 @@ VC001 = {
 		VC786 = {
 			capital = osterholz
 			culture = corded_ware
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -32421,7 +32349,7 @@ VC001 = {
 		}
 		VC794 = {
 			capital = pudasjarvi
-			culture = nordic
+			culture = finnic
 			religion = finnic_pagan
 
 			country_rank = rank_county
@@ -32437,7 +32365,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				nordic
+				finnic
 			}
 
 			discovered_regions = {
@@ -32597,7 +32525,7 @@ VC001 = {
 		VC801 = {
 			capital = ritzebuttel
 			culture = corded_ware
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -32646,7 +32574,7 @@ VC001 = {
 		}
 		VC803 = {
 			capital = rovaniemi
-			culture = nordic
+			culture = finnic
 			religion = nordic_pagan
 
 			country_rank = rank_county
@@ -32662,7 +32590,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				nordic
+				finnic
 			}
 
 			discovered_regions = {
@@ -32897,7 +32825,7 @@ VC001 = {
 		VC813 = {
 			capital = selanger
 			culture = nordic
-			religion = nordic_pagan
+			religion = norse
 
 			country_rank = rank_county
 
@@ -32971,7 +32899,7 @@ VC001 = {
 		}
 		VC816 = {
 			capital = simo
-			culture = nordic
+			culture = finnic
 			religion = nordic_pagan
 
 			country_rank = rank_county
@@ -32987,7 +32915,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				nordic
+				finnic
 			}
 
 			discovered_regions = {
@@ -33022,7 +32950,7 @@ VC001 = {
 		VC818 = {
 			capital = sjalevad
 			culture = nordic
-			religion = nordic_pagan
+			religion = norse
 
 			country_rank = rank_county
 
@@ -33047,7 +32975,7 @@ VC001 = {
 		VC819 = {
 			capital = skelleftea
 			culture = nordic
-			religion = nordic_pagan
+			religion = norse
 
 			country_rank = rank_county
 
@@ -33197,7 +33125,7 @@ VC001 = {
 		VC825 = {
 			capital = sloten
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -33347,7 +33275,7 @@ VC001 = {
 		VC831 = {
 			capital = solatunum
 			culture = nordic
-			religion = nordic_pagan
+			religion = norse
 
 			country_rank = rank_county
 
@@ -33396,7 +33324,7 @@ VC001 = {
 		}
 		VC833 = {
 			capital = sordavala
-			culture = sintashta
+			culture = finnic
 			religion = finnic_pagan
 
 			country_rank = rank_county
@@ -33412,7 +33340,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				sintashta
+				finnic
 			}
 
 			discovered_regions = {
@@ -33422,7 +33350,7 @@ VC001 = {
 		VC834 = {
 			capital = stade
 			culture = corded_ware
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -33472,7 +33400,7 @@ VC001 = {
 		VC836 = {
 			capital = stavoren
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -34047,7 +33975,7 @@ VC001 = {
 		VC859 = {
 			capital = umea
 			culture = nordic
-			religion = nordic_pagan
+			religion = norse
 
 			country_rank = rank_county
 
@@ -34247,7 +34175,7 @@ VC001 = {
 		VC867 = {
 			capital = vindeln
 			culture = nordic
-			religion = nordic_pagan
+			religion = norse
 
 			country_rank = rank_county
 
@@ -34322,7 +34250,7 @@ VC001 = {
 		VC870 = {
 			capital = wedde
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -34372,7 +34300,7 @@ VC001 = {
 		VC872 = {
 			capital = wolvega
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -34397,7 +34325,7 @@ VC001 = {
 		VC873 = {
 			capital = zutphen
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -34422,7 +34350,7 @@ VC001 = {
 		VC874 = {
 			capital = zwolle
 			culture = germanic
-			religion = nordic_pagan
+			religion = Germanic_pagan
 
 			country_rank = rank_county
 
@@ -34520,5 +34448,3435 @@ VC001 = {
 				scandinavian_region
 			}
 		}
+
+		VC878 = {
+			capital = andika
+			culture = elamite
+			religion = elamite
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				andika
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				elamite
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC879 = {
+			capital = andimeshk
+			culture = elamite
+			religion = elamite
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				andimeshk
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				elamite
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC880 = {
+			capital = aqmecit
+			culture = Kizil_Koba
+			religion = kartvelian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				aqmecit
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				Kizil_Koba
+			}
+
+			discovered_regions = {
+				steppes_region
+			}
+		}
+		VC881 = {
+			capital = ardestan
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ardestan
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC882 = {
+			capital = astorga
+			culture = gaulish
+			religion = gaulish_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				astorga
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gaulish
+			}
+
+			discovered_regions = {
+				iberia_region
+			}
+		}
+		VC883 = {
+			capital = baghran
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				baghran
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC884 = {
+			capital = bagram
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bagram
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC885 = {
+			capital = baia_de_aries
+			culture = wietenberg
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				baia_de_aries
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				wietenberg
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC886 = {
+			capital = beius
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				beius
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC887 = {
+			capital = bihar
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bihar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC888 = {
+			capital = bodrog
+			culture = dacian
+			religion = illyrian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bodrog
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC889 = {
+			capital = borborud
+			culture = elamite
+			religion = elamite
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				borborud
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				elamite
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC890 = {
+			capital = brasov
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				brasov
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC891 = {
+			capital = brno
+			culture = urnfield
+			religion = Germanic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				brno
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC892 = {
+			capital = bukov
+			culture = monteoru
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				bukov
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				monteoru
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC893 = {
+			capital = buzau
+			culture = monteoru
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				buzau
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				monteoru
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC894 = {
+			capital = castrocalbon
+			culture = lusitanian
+			religion = lusitanian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				castrocalbon
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				lusitanian
+			}
+
+			discovered_regions = {
+				iberia_region
+			}
+		}
+		VC895 = {
+			capital = chak
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				chak
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC896 = {
+			capital = charikar
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				charikar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC897 = {
+			capital = cheresig
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				cheresig
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC898 = {
+			capital = chezdi_osorheiu
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				chezdi_osorheiu
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC899 = {
+			capital = cincu
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				cincu
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC900 = {
+			capital = cluj
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				cluj
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC901 = {
+			capital = covasna
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				covasna
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC902 = {
+			capital = crasna
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				crasna
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC903 = {
+			capital = cristuru_secuiesc
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				cristuru_secuiesc
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC904 = {
+			capital = dabaca
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				dabaca
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC905 = {
+			capital = dakhkat
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				dakhkat
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC906 = {
+			capital = dawlat_abad
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				dawlat_abad
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC907 = {
+			capital = debrecen
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				debrecen
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC908 = {
+			capital = deh_kundi
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				deh_kundi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC909 = {
+			capital = deychopan
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				deychopan
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC910 = {
+			capital = dezful
+			culture = elamite
+			religion = elamite
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				dezful
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				elamite
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC911 = {
+			capital = dowlatabad_esfandaqeh
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				dowlatabad_esfandaqeh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC912 = {
+			capital = fagaras
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				fagaras
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC913 = {
+			capital = freistadt
+			culture = urnfield
+			religion = Germanic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				freistadt
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC914 = {
+			capital = gardez
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gardez
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC915 = {
+			capital = gereshk
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gereshk
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC916 = {
+			capital = gerit
+			culture = elamite
+			religion = elamite
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gerit
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				elamite
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC917 = {
+			capital = ghazni
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ghazni
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC918 = {
+			capital = gheorgheni
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				gheorgheni
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC919 = {
+			capital = ghormach
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ghormach
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC920 = {
+			capital = golashkerd
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				golashkerd
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC921 = {
+			capital = hattfjelldal
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hattfjelldal
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC922 = {
+			capital = hodonin
+			culture = urnfield
+			religion = Germanic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hodonin
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC923 = {
+			capital = hollabrunn
+			culture = urnfield
+			religion = Germanic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				hollabrunn
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC924 = {
+			capital = horn
+			culture = urnfield
+			religion = Germanic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				horn
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC925 = {
+			capital = huedin
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				huedin
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC926 = {
+			capital = isfara
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				isfara
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC927 = {
+			capital = ishtixon
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ishtixon
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC928 = {
+			capital = istalif
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				istalif
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC929 = {
+			capital = jiroft
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				jiroft
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC930 = {
+			capital = jizzakh
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				jizzakh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC931 = {
+			capital = jurchi
+			culture = Kizil_Koba
+			religion = kartvelian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				jurchi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				Kizil_Koba
+			}
+
+			discovered_regions = {
+				steppes_region
+			}
+		}
+		VC932 = {
+			capital = jurm
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				jurm
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC933 = {
+			capital = kabul
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kabul
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC934 = {
+			capital = kahnuj
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kahnuj
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC935 = {
+			capital = kajran
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kajran
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC936 = {
+			capital = kalay
+			culture = Kizil_Koba
+			religion = kartvelian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kalay
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				Kizil_Koba
+			}
+
+			discovered_regions = {
+				steppes_region
+			}
+		}
+		VC937 = {
+			capital = kandahar
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kandahar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC938 = {
+			capital = kezlev
+			culture = Kizil_Koba
+			religion = kartvelian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kezlev
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				Kizil_Koba
+			}
+
+			discovered_regions = {
+				steppes_region
+			}
+		}
+		VC939 = {
+			capital = khujand
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				khujand
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC940 = {
+			capital = kokand
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				kokand
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC941 = {
+			capital = komshecheh
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				komshecheh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC942 = {
+			capital = konibodom
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				konibodom
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC943 = {
+			capital = korneuburg
+			culture = urnfield
+			religion = Germanic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				korneuburg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC944 = {
+			capital = krems
+			culture = urnfield
+			religion = Germanic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				krems
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC945 = {
+			capital = lierne
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				lierne
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC946 = {
+			capital = logar
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				logar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC947 = {
+			capital = maiwand
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				maiwand
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC948 = {
+			capital = manujan
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				manujan
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC949 = {
+			capital = mardehek
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				mardehek
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC950 = {
+			capital = maymana
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				maymana
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC951 = {
+			capital = medias
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				medias
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC952 = {
+			capital = meteleu
+			culture = tei
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				meteleu
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				tei
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC953 = {
+			capital = miercurea_cluc
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				miercurea_cluc
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC954 = {
+			capital = minab
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				minab
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC955 = {
+			capital = modos
+			culture = dacian
+			religion = thracian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				modos
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC956 = {
+			capital = muqur
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				muqur
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC957 = {
+			capital = musa_qala
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				musa_qala
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC958 = {
+			capital = nowdezh
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				nowdezh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC959 = {
+			capital = nurota
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				nurota
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC960 = {
+			capital = odorhei
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				odorhei
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC961 = {
+			capital = or_qapi
+			culture = Kizil_Koba
+			religion = kartvelian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				or_qapi
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				Kizil_Koba
+			}
+
+			discovered_regions = {
+				steppes_region
+			}
+		}
+		VC962 = {
+			capital = oradea
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				oradea
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC963 = {
+			capital = pandjih
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				pandjih
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC964 = {
+			capital = panjshir
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				panjshir
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC965 = {
+			capital = parscov
+			culture = monteoru
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				parscov
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				monteoru
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC966 = {
+			capital = perg
+			culture = urnfield
+			religion = Germanic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				perg
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC967 = {
+			capital = pishagar
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				pishagar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC968 = {
+			capital = ploesti
+			culture = monteoru
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ploesti
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				monteoru
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC969 = {
+			capital = primkent
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				primkent
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC970 = {
+			capital = qaisar
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				qaisar
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC971 = {
+			capital = qalat_ghilji
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				qalat_ghilji
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC972 = {
+			capital = qasr_ahnaf
+			culture = bactrian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				qasr_ahnaf
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				bactrian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC973 = {
+			capital = rabor
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				rabor
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC974 = {
+			capital = ramsheh
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ramsheh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC975 = {
+			capital = rana
+			culture = nordic
+			religion = norse
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				rana
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				nordic
+			}
+
+			discovered_regions = {
+				scandinavian_region
+			}
+		}
+		VC976 = {
+			capital = recas
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				recas
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC977 = {
+			capital = rudkhaneh
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				rudkhaneh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC978 = {
+			capital = sar_sang
+			culture = andronovo
+			religion = steppe_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sar_sang
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				andronovo
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC979 = {
+			capital = sarduiyeh
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sarduiyeh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC980 = {
+			capital = senderk
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				senderk
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC981 = {
+			capital = seyitler
+			culture = Kizil_Koba
+			religion = kartvelian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				seyitler
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				Kizil_Koba
+			}
+
+			discovered_regions = {
+				steppes_region
+			}
+		}
+		VC982 = {
+			capital = sfantu_gheorghe
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sfantu_gheorghe
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC983 = {
+			capital = shaqrud
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				shaqrud
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC984 = {
+			capital = sighisoara
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				sighisoara
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC985 = {
+			capital = slanic
+			culture = monteoru
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				slanic
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				monteoru
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC986 = {
+			capital = somaleh
+			culture = elamite
+			religion = elamite
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				somaleh
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				elamite
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC987 = {
+			capital = tarinkot
+			culture = gandharan
+			religion = vedic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				tarinkot
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				gandharan
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC988 = {
+			capital = timisoara
+			culture = dacian
+			religion = thracian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				timisoara
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC989 = {
+			capital = tineo
+			culture = lusitanian
+			religion = lusitanian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				tineo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				lusitanian
+			}
+
+			discovered_regions = {
+				iberia_region
+			}
+		}
+		VC990 = {
+			capital = tudeshk
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				tudeshk
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC991 = {
+			capital = ura_tyube
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				ura_tyube
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC992 = {
+			capital = valenii_de_munte
+			culture = monteoru
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				valenii_de_munte
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				monteoru
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC993 = {
+			capital = veliky_beckerek
+			culture = dacian
+			religion = thracian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				veliky_beckerek
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC994 = {
+			capital = yangabad
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				yangabad
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC995 = {
+			capital = yangirabod
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				yangirabod
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		VC996 = {
+			capital = zakht
+			culture = persian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				zakht
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				persian
+			}
+
+			discovered_regions = {
+				persia_region
+			}
+		}
+		VC997 = {
+			capital = zalau
+			culture = dacian
+			religion = dacian_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				zalau
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				dacian
+			}
+
+			discovered_regions = {
+				carpathia_region
+			}
+		}
+		VC998 = {
+			capital = znojmo
+			culture = urnfield
+			religion = Germanic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				znojmo
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+		VC999 = {
+			capital = zomin
+			culture = sogdian
+			religion = iranic
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				zomin
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				sogdian
+			}
+
+			discovered_regions = {
+				khorasan_region
+			}
+		}
+		V1000 = {
+			capital = zwettl
+			culture = urnfield
+			religion = Germanic_pagan
+
+			country_rank = rank_county
+
+			include = "village_community"
+
+			own_control_core = {
+				zwettl
+			}
+
+			government = {
+				ruler = random
+			}
+
+			accepted_cultures = {
+				urnfield
+			}
+
+			discovered_regions = {
+				south_german_region
+			}
+		}
+
+	DAPG = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			peixian          shagou           xiapi            xuzhou           yizhou_tengzhou
+		}
+		capital = xuzhou
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+			north_china_region
+		}
+	}
+
+	GUZHU = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			laoting           lutai             macheng_luanzhou  shicheng_jizhou
+		}
+		capital = shicheng_jizhou
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	PUGU = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_duchy
+		own_control_core = {
+			bohai           boxing          gaoyuan_jinan   lean            lijin           qidong
+			xincheng_jinan  yanci           zouping
+		}
+		capital = bohai
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	XCHU = {
+		culture = zhou
+		religion = zhou_rites
+		country_rank = rank_county
+		own_control_core = {
+			baoji               chengji             fengxiang           fufeng              fuqiang             linyou
+			longan              longzhou_fengxiang  meixian             qianyang            qianzhou            qinan
+			qingshui            qishan              sancha              yongshou
+		}
+		capital = chengji
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			zhou
+		}
+		discovered_regions = {
+			west_china_region
+		}
+	}
+
+	XU = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			qufu      sishui    tengdong  tengxian  zouxian
+		}
+		capital = tengdong
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	YOUM = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_duchy
+		own_control_core = {
+			chengwu   chuqiu    dingtao   fengxian  jiaxiang  jinxiang
+			juye      ningyang  rencheng  shansu    wenshang  yutai
+			ziyang
+		}
+		capital = chengwu
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+			north_china_region
+		}
+	}
+
+	ZHOU = {
+		culture = zhou
+		religion = zhou_rites
+		country_rank = rank_duchy
+		own_control_core = {
+			baishui             chengcheng          chunhua             fuping_xian         heyang_xian         huayin
+			huayuan             huazhou             huxian              jingyang            jingzhao            lantian
+			lintong             liquan              pucheng             sanyuan             tongguan_tongchuan  tongzhou
+			weinan              xianning_xian       xianyang
+		}
+		capital = baishui
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			zhou
+		}
+		tolerated_cultures = {
+			shang
+		}
+		discovered_regions = {
+			west_china_region
+		}
+	}
+
+	AKSHA = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			acre
+		}
+		capital = acre
+		include = "Bronze_coast"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			phoenician
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	ASHK = {
+		culture = phoenician
+		religion = phoenician
+		country_rank = rank_county
+		own_control_core = {
+			majdal
+		}
+		capital = majdal
+		include = "Bronze_coast"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			peleset
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	ASHT = {
+	culture = moabite
+	religion = canaanite
+	country_rank = rank_county
+	own_control_core = {
+		dara  nawa
+	}
+	capital = dara
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+	accepted_cultures = {
+		canaanite
+		moabite
+	}
+	discovered_regions = {
+		crescent_region
+	}
+	}
+
+	GEZE = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			jaffa
+		}
+		capital = jaffa
+		include = "Bronze_coast"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			peleset
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	HACOR = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			safed
+		}
+		capital = safed
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			canaanite
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	JESUS = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			hebron     jerusalem
+		}
+		capital = jerusalem
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			canaanite
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	LAKIS = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			beersheba
+		}
+		capital = beersheba
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			canaanite
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	PEHEL = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			irbid
+		}
+		capital = irbid
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			canaanite
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	SICHE = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			nablus
+		}
+		capital = nablus
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			canaanite
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	YURZ = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			gaza
+		}
+		capital = gaza
+		include = "Bronze_coast"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			canaanite
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
 }
 }

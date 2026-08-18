@@ -16,8 +16,13 @@ sea_peoples_crisis_phase_at_least = {
 	custom_description = {
 		text = sea_peoples_crisis_phase_at_least_text
 		value = $value$
-		has_variable = sea_peoples_crisis_phase
-		var:sea_peoples_crisis_phase >= $value$
+		trigger_if = {
+			limit = { has_variable = sea_peoples_crisis_phase }
+			var:sea_peoples_crisis_phase >= $value$
+		}
+		trigger_else = {
+			always = no
+		}
 	}
 }
 

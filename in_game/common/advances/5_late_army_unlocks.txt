@@ -18,3 +18,12 @@ unlock_swordsmen_advance = {
 
 	starting_technology_level = 4
 }
+
+unlock_iron_horsemen_advance = {
+	age = age_2_renaissance
+
+	unlock_unit = a_iron_horsemen
+
+	requires = selective_horse_breeding
+
+}

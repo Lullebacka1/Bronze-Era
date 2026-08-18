@@ -117,6 +117,16 @@
   council_of_captains_desc: "The realm is guided by a council of experienced captains whose authority rests upon martial success, seamanship, and the loyalty of their followers."
 
   # ###################
+  # RECRUITMENT LAW
+  # ###################
+
+  palace_obligation: "Palace Obligation"
+  palace_obligation_desc: "Military service is organized primarily through the ruler's household and dependent institutions, with the court bearing responsibility for maintaining the realm's armed forces. Such arrangements reinforce personal loyalty and the standing of established retainers."
+
+  community_obligation: "Community Obligation"
+  community_obligation_desc: "Military service is understood as a duty of the communities that make up the realm, with households and local groups expected to provide men for collective defense. Such obligations make military participation a more broadly shared institution."
+
+  # ###################
   # OTHER POLICIES
   # ###################
 
@@ -144,3 +154,6 @@
 
   advisor_council_law: "Advisor Council"
   advisor_council_law_desc: "Rulers rarely govern alone. These laws determine which social groups provide advisors, administrators, and trusted counselors, shaping the priorities and character of government."
+
+  ancient_recruitment_law: "Military Recruitment Organization"
+  ancient_recruitment_law_desc: "The organization of military recruitment defines how soldiers are identified, summoned, equipped, and assembled for service. As states develop more established military institutions, responsibility for raising forces becomes an increasingly regular part of governance."

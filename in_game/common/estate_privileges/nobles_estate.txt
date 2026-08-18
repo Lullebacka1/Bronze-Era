@@ -21,7 +21,7 @@ nobles_judicial_authority = {
 
 		global_peasant_enfranchisment = -0.10
 
-		court_spending_cost_modifier = -0.025
+		court_spending_efficiency = -0.025
 	}
 }
 

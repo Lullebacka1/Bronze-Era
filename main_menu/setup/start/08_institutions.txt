@@ -3027,162 +3027,214 @@ locations = {
 
 	baima_daming = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	changge = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	changshe = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	changyuan = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	chaocheng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	dancheng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	dengfeng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	dongming = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	fanxian = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	fengqiu = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	fugou = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	gongxian = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	guancheng_zhengzhou = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	jiyin = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	juancheng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	kaifeng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	kaocheng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	lanyang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	linying = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	luoyang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	mengjin = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	mianchi = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	mixian = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	nanle = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	neihuang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	puyang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	qingfeng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	qixian = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	shanxian = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	shouzhang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	taikang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	tongxu = {
 		bronze_routes = yes
 	}
 	wanqiu = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	weishi = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	wuzhi = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	xiangyi = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	xihua = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	xinan = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	xingyang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	xinxiang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	xinzheng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	xucheng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yangdi = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yanggu_yanzhou = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yanjin = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yanling = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yanshi = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yique = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yiyang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yongning_shanzhou = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yuanyang = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	yuncheng = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	zhongmu = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 
 	############################################################

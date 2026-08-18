@@ -1,0 +1,229 @@
+# Bronze Era COA culture filters for imported Total War style symbols.
+bronze_tw_coa_def_gaulish_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:gaulish_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_britannic_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:britain_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_iberian_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:iberian_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_germanic_nordic_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:germanic_nordic_group }
+	}
+}
+
+bronze_tw_coa_def_baltic_finnic_trigger = {
+	scope:actor ?= {
+		exists = culture
+		OR = {
+			culture = { has_culture_group = culture_group:baltic_group }
+			culture = { has_culture_group = culture_group:finnic_group }
+		}
+	}
+}
+
+bronze_tw_coa_def_italic_trigger = {
+	scope:actor ?= {
+		exists = culture
+		OR = {
+			culture = { has_culture_group = culture_group:italic_bronze_group }
+			culture = { has_culture_group = culture_group:italian_bronze_group }
+		}
+	}
+}
+
+bronze_tw_coa_def_aegean_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:aegean_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_levant_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:levant_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_north_african_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:north_african_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_egypt_nile_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:egypt_nile_group }
+	}
+}
+
+bronze_tw_coa_def_african_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:african_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_arabian_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:arabian_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_iranian_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:iranian_plateau_group }
+	}
+}
+
+bronze_tw_coa_def_central_asian_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:central_asian_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_steppe_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:steppe_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_siberian_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:siberian_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_caucasus_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:caucasus_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_anatolian_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:anatolian_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_balkan_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:balkans_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_central_european_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:central_european_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_danubian_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:danubian_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_alpine_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:alpine_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_adriatic_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:adriatic_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_island_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:island_bronze_group }
+	}
+}
+
+bronze_tw_coa_def_mesopotamian_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:mesopotamian_group }
+	}
+}
+
+bronze_tw_coa_def_sea_peoples_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:sea_peoples_group }
+	}
+}
+
+bronze_tw_coa_def_punic_trigger = {
+	scope:actor ?= {
+		OR = {
+			AND = { exists = religion religion = religion:punic }
+			AND = { exists = culture culture = culture:phoenician_punic }
+		}
+	}
+}
+
+bronze_tw_coa_def_any_supported_trigger = {
+	OR = {
+		bronze_tw_coa_def_gaulish_trigger = yes
+		bronze_tw_coa_def_britannic_trigger = yes
+		bronze_tw_coa_def_iberian_trigger = yes
+		bronze_tw_coa_def_germanic_nordic_trigger = yes
+		bronze_tw_coa_def_baltic_finnic_trigger = yes
+		bronze_tw_coa_def_italic_trigger = yes
+		bronze_tw_coa_def_aegean_trigger = yes
+		bronze_tw_coa_def_punic_trigger = yes
+		bronze_tw_coa_def_levant_trigger = yes
+		bronze_tw_coa_def_north_african_trigger = yes
+		bronze_tw_coa_def_egypt_nile_trigger = yes
+		bronze_tw_coa_def_african_trigger = yes
+		bronze_tw_coa_def_arabian_trigger = yes
+		bronze_tw_coa_def_iranian_trigger = yes
+		bronze_tw_coa_def_central_asian_trigger = yes
+		bronze_tw_coa_def_steppe_trigger = yes
+		bronze_tw_coa_def_siberian_trigger = yes
+		bronze_tw_coa_def_caucasus_trigger = yes
+		bronze_tw_coa_def_anatolian_trigger = yes
+		bronze_tw_coa_def_balkan_trigger = yes
+		bronze_tw_coa_def_central_european_trigger = yes
+		bronze_tw_coa_def_danubian_trigger = yes
+		bronze_tw_coa_def_alpine_trigger = yes
+		bronze_tw_coa_def_adriatic_trigger = yes
+		bronze_tw_coa_def_island_trigger = yes
+		bronze_tw_coa_def_mesopotamian_trigger = yes
+		bronze_tw_coa_def_sea_peoples_trigger = yes
+	}
+}

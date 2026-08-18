@@ -191,10 +191,26 @@ a_composite_bowmen = {
 }
 
 a_mustered_infantry = {
-	copy_from = a_age_1_traditions_light_infantry
+	copy_from = a_bronze_age_1_traditions_light_infantry
 
 	buildable = no
 	levy = yes
 
 	gfx_tags = { light_tag }
+}
+
+a_iron_horsemen = {
+	copy_from = a_bronze_age_1_traditions_light_cavalry
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.2
+	}
+	
+	mercenaries_per_location = {
+		pop_type = tribesmen
+		multiply = 0.02
+	}
+	gfx_tags = { medium_tag }
 }

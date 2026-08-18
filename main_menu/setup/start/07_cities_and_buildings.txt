@@ -117,18 +117,25 @@ building_manager = {
 	bronze_city_walls = { tag = HABIR level = 1 location = damascus }
 	bronze_city_walls = { tag = SIDON level = 1 location = sidon }
 	bronze_city_walls = { tag = HATTI level = 1 location = dluk }
-	bronze_city_walls = { tag = 0002G level = 1 location = majdal }
-	bronze_city_walls = { tag = 0002G level = 1 location = gaza }
-	bronze_city_walls = { tag = 0002G level = 1 location = jerusalem }
-	bronze_city_walls = { tag = 0002G level = 1 location = faqus }
-	bronze_city_walls = { tag = 0002G level = 1 location = qalyub }
-	bronze_city_walls = { tag = 0002G level = 1 location = giza }
-	bronze_city_walls = { tag = 0002G level = 1 location = faiyum }
-	bronze_city_walls = { tag = 0002G level = 1 location = cairo }
+	bronze_city_walls = { tag = ASHK level = 1 location = majdal }
+	bronze_city_walls = { tag = YURZ level = 1 location = gaza }
+	bronze_city_walls = { tag = JESUS level = 1 location = jerusalem }
+	bronze_city_walls = { tag = EGY level = 1 location = faqus }
+	bronze_city_walls = { tag = EGY level = 1 location = qalyub }
+	bronze_city_walls = { tag = EGY level = 1 location = giza }
+	bronze_city_walls = { tag = EGY level = 1 location = faiyum }
+	bronze_city_walls = { tag = EGY level = 1 location = cairo }
 	bronze_city_walls = { tag = ASYRI level = 1 location = al_sinn }
 	bronze_city_walls = { tag = KASSI level = 1 location = baghdad }
 	bronze_city_walls = { tag = KASSI level = 1 location = hillah }
 	bronze_city_walls = { tag = ASYRI level = 1 location = mosul }
+
+	# Egyptian garrisons in Canaan.
+	# These are foreign buildings owned by Egypt while the Canaanite city
+	# kingdoms keep ownership of their locations.
+	egyptian_canaanite_garrison = { tag = EGY level = 1 location = gaza }
+	egyptian_canaanite_garrison = { tag = EGY level = 1 location = nablus }
+	egyptian_canaanite_garrison = { tag = EGY level = 1 location = jaffa }
 
 	# Mycenaean League palace houses.
 	# These are foreign buildings owned by type = building countries; they keep

@@ -30,6 +30,24 @@ scribe_alphabetic_maintenance = {
 	unlock_production_method = palace_registry_maintenance_potsherds
 	unlock_production_method = palace_registry_maintenance_wood
 	
-	requires = alphabet_script_advance
+	requires = merchant_script_advance
 }
 
+# IRON AGE
+
+stone_dressing = {
+	age = age_2_renaissance
+	
+	unlock_production_method = dressed_masonry_recipe
+
+	requires = tempered_steel
+
+}
+
+selective_horse_breeding = {
+	age = age_2_renaissance
+
+	unlock_production_method = iron_horse_breeders_maintenance
+
+	requires = community_military_obligation
+}

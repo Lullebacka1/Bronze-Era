@@ -10,5 +10,26 @@ diplomacy_manager = {
    dependency = { first = HATTI second = SEHA subject_type = vassal }
    dependency = { first = HATTI second = HAPAL subject_type = vassal }
    dependency = { first = HATTI second = WILUS subject_type = vassal }
+   ###Shang
+   dependency = { first = SHANG second = ZHOU subject_type = vassal }
+   dependency = { first = SHANG second = DAPG subject_type = vassal }
+   dependency = { first = SHANG second = GUZHU subject_type = vassal }
+   dependency = { first = SHANG second = XU subject_type = vassal }
+   dependency = { first = SHANG second = XCHU subject_type = tributary }
+   dependency = { first = SHANG second = PUGU subject_type = vassal }
+   dependency = { first = SHANG second = YOUM subject_type = vassal }
+
+   # Egyptian Rule in Canaan subjects.
+   # Keep this list aligned with egyptian_rule_in_canaan_city_kingdom.
+   dependency = { first = EGY second = AKSHA subject_type = vassal }
+   dependency = { first = EGY second = ASHK subject_type = vassal }
+   dependency = { first = EGY second = ASHT subject_type = vassal }
+   dependency = { first = EGY second = GEZE subject_type = vassal }
+   dependency = { first = EGY second = HACOR subject_type = vassal }
+   dependency = { first = EGY second = JESUS subject_type = vassal }
+   dependency = { first = EGY second = LAKIS subject_type = vassal }
+   dependency = { first = EGY second = PEHEL subject_type = vassal }
+   dependency = { first = EGY second = SICHE subject_type = vassal }
+   dependency = { first = EGY second = YURZ subject_type = vassal }
 
 }

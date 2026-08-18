@@ -2,10 +2,13 @@
 
 # Dynasties
   name_ramessid_dynasty: "Ramessid"
+  name_atreid_dynasty: "Atreid"
   name_romulus_dynasty: "Romulus"
 
 # Names
   name_blank: "" # Needed for pharohs who don't have last names?
+  name_agamemnon: "Agamemnon"
+  name_orestes: "Orestes"
   name_romulus: "Romulus"
   name_ramesses: "Ramesses"
   name_seti: "Seti"

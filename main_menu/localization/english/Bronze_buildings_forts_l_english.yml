@@ -2,11 +2,22 @@
   frontier_post: "Frontier Outpost"
   frontier_post_desc: "A fortified outpost established along trade routes, borderlands, and strategic crossings. Garrisoned by loyal retainers and officials, it projects authority into distant regions, safeguards commerce, and serves as a base for patrols, messengers, and local administration."
 
+  HAS_CITY_WALLS_IN_LOC: "Has city walls (minimum Fort Level: I). Walls do not stack with a real fort."
+
   town_walls: "Settlement Walls"
-  town_walls_desc: "Stone walls, gates, and defensive earthworks surround the settlement, providing protection against raiders and rival communities. Their construction reflects the growing permanence and prosperity of early towns.
+  town_walls_desc: "Stone walls, gates, and defensive earthworks surround the settlement, providing protection against raiders and rival communities. Their construction reflects the growing permanence and prosperity of early towns."
 
   bronze_city_walls: "City Walls"
-  bronze_city_walls_desc: "Monumental fortifications encircle the city with imposing walls, towers, and fortified gates maintained by centralized authorities. Beyond their defensive value, these structures proclaim the wealth, power, and organizational capacity of the urban state."
+  bronze_city_walls_desc: "Fortifications encircle the city with imposing walls, towers, and fortified gates maintained by centralized authorities. Beyond their defensive value, these structures proclaim the wealth, power, and organizational capacity of the urban state."
+
+  iron_city_walls: "Iron Age City Walls"
+  iron_city_walls_desc: "Growing cities employ improved masonry techniques and more capable tools to construct substantial defensive circuits. Greater scale, precision, and durability reflect the accumulated knowledge of generations of builders."
+
+  iron_citadel: "Citadel"
+  iron_citadel_desc: "A fortified stronghold serving as a permanent seat of local authority and defense. Citadels provide a secure base for garrisons and officials, protecting important settlements and controlling the surrounding territory."
+
+  hill_fort: "Hill Fort"
+  hill_fort_desc: "A fortified settlement or stronghold established on elevated ground, using steep slopes and difficult approaches to strengthen its defenses. Such sites provide communities with a secure refuge and a commanding position over the surrounding countryside."
 
   # GOODS DEMAND, PRODUCTION METHODS AND MAINTENANCE
 
@@ -15,6 +26,16 @@
 
   bronze_city_walls_construction: "City Wall Construction"
   bronze_city_walls_construction_desc: "The construction of massive urban fortifications requires extensive masonry work, large labor forces, and careful planning to defend major population centers and seats of power."
+
+  iron_city_walls_construction: "Iron Age City Wall Construction"
+
+  bronze_city_walls_maintenance: "Fortification Maintenance"
+
+  iron_citadel_maintenance: "Citadel Maintenance"
+  iron_citadel_maintenance_desc: "Regular supplies of timber, masonry, weapons, and protective materials keep the stronghold defensible and its garrison equipped."
+
+  frontier_post_maintenance: "Hill Fort Maintenance"
+  frontier_post_maintenance_desc: "Timber, weapons, and protective materials are maintained for the garrison and defensive works, keeping the fortification ready for conflict."
 
   # CULTURE SPECIFIC
 

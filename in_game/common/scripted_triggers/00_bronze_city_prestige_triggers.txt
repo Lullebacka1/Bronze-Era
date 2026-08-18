@@ -1,9 +1,9 @@
-﻿# Country scope.
+# Country scope.
 # Generated from countries using Bronze or bronze_* setup templates.
 bronze_city_prestige_is_bronze_country = {
 	OR = {
 		this = c:0001G
-		this = c:0002G
+		this = c:EGY
 		this = c:HATTI
 		this = c:ACHAE
 		this = c:ARGOS
@@ -144,6 +144,12 @@ bronze_city_prestige_is_urban = {
 }
 
 # Location-scope rank helpers used by the urban event pool.
+bronze_city_prestige_is_local_or_higher = {
+	bronze_city_prestige_is_urban = yes
+	has_variable = bronze_city_prestige_rank
+	var:bronze_city_prestige_rank <= 5
+}
+
 bronze_city_prestige_is_great_or_higher = {
 	bronze_city_prestige_is_urban = yes
 	has_variable = bronze_city_prestige_rank
@@ -160,6 +166,12 @@ bronze_city_prestige_is_imperial_or_higher = {
 	bronze_city_prestige_is_urban = yes
 	has_variable = bronze_city_prestige_rank
 	var:bronze_city_prestige_rank <= 2
+}
+
+bronze_city_prestige_is_world_city = {
+	bronze_city_prestige_is_urban = yes
+	has_variable = bronze_city_prestige_rank
+	var:bronze_city_prestige_rank = 1
 }
 
 bronze_city_prestige_has_artisan_industry = {

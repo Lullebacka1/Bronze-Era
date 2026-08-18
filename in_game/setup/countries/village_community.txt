@@ -1,4 +1,4 @@
-﻿# Auto-generated country color definitions for village community micro-countries.
+# Auto-generated country color definitions for village community micro-countries.
 
 VC001 = {
 	color = rgb { 45 45 45 }
@@ -36,8 +36,8 @@ VC005 = {
 	color = rgb { 167 139 209 }
 	color2 = rgb { 129 101 171 }
 
-	culture_definition = arabian
-	religion_definition = arabian_pagan
+	culture_definition = aramaean
+	religion_definition = canaanite
 }
 
 VC006 = {
@@ -132,16 +132,16 @@ VC017 = {
 	color = rgb { 193 81 191 }
 	color2 = rgb { 155 43 153 }
 
-	culture_definition = arabian
-	religion_definition = arabian_pagan
+	culture_definition = aramaean
+	religion_definition = canaanite
 }
 
 VC018 = {
 	color = rgb { 96 62 62 }
 	color2 = rgb { 58 24 24 }
 
-	culture_definition = arabian
-	religion_definition = arabian_pagan
+	culture_definition = aramaean
+	religion_definition = canaanite
 }
 
 VC019 = {
@@ -156,8 +156,8 @@ VC020 = {
 	color = rgb { 72 194 144 }
 	color2 = rgb { 34 156 106 }
 
-	culture_definition = arabian
-	religion_definition = arabian_pagan
+	culture_definition = aramaean
+	religion_definition = canaanite
 }
 
 VC021 = {
@@ -228,8 +228,8 @@ VC029 = {
 	color = rgb { 49 193 173 }
 	color2 = rgb { 24 155 135 }
 
-	culture_definition = arabian
-	religion_definition = arabian_pagan
+	culture_definition = aramaean
+	religion_definition = canaanite
 }
 
 VC030 = {
@@ -324,8 +324,8 @@ VC041 = {
 	color = rgb { 75 135 155 }
 	color2 = rgb { 37 97 117 }
 
-	culture_definition = arabian
-	religion_definition = arabian_pagan
+	culture_definition = aramaean
+	religion_definition = canaanite
 }
 
 VC042 = {
@@ -396,8 +396,8 @@ VC050 = {
 	color = rgb { 52 134 184 }
 	color2 = rgb { 24 96 146 }
 
-	culture_definition = arabian
-	religion_definition = arabian_pagan
+	culture_definition = aramaean
+	religion_definition = canaanite
 }
 
 VC051 = {
@@ -1276,8 +1276,8 @@ VC160 = {
 	color = rgb { 92 84 104 }
 	color2 = rgb { 54 46 66 }
 
-	culture_definition = arabian
-	religion_definition = arabian_pagan
+	culture_definition = aramaean
+	religion_definition = canaanite
 }
 
 VC161 = {
@@ -2676,8 +2676,8 @@ VC335 = {
 	color = rgb { 117 159 139 }
 	color2 = rgb { 79 121 101 }
 
-	culture_definition = arabian
-	religion_definition = arabian_pagan
+	culture_definition = aramaean
+	religion_definition = canaanite
 }
 
 VC336 = {
@@ -3500,8 +3500,8 @@ VC438 = {
 	color = rgb { 156 72 112 }
 	color2 = rgb { 118 34 74 }
 
-	culture_definition = arabian
-	religion_definition = arabian_pagan
+	culture_definition = aramaean
+	religion_definition = canaanite
 }
 
 VC439 = {
@@ -3740,8 +3740,8 @@ VC468 = {
 	color = rgb { 136 182 152 }
 	color2 = rgb { 98 144 114 }
 
-	culture_definition = arabian
-	religion_definition = arabian_pagan
+	culture_definition = aramaean
+	religion_definition = canaanite
 }
 
 VC469 = {
@@ -7012,4 +7012,866 @@ VC877 = {
 
 	culture_definition = nordic
 	religion_definition = norse
+}
+
+VC878 = {
+	color = rgb { 142 94 186 }
+	color2 = rgb { 104 56 148 }
+
+	culture_definition = elamite
+	religion_definition = elamite
+}
+VC879 = {
+	color = rgb { 55 191 157 }
+	color2 = rgb { 17 153 119 }
+
+	culture_definition = elamite
+	religion_definition = elamite
+}
+VC880 = {
+	color = rgb { 128 128 128 }
+	color2 = rgb { 90 90 90 }
+
+	culture_definition = catacomb
+	religion_definition = scythian_pagan
+}
+VC881 = {
+	color = rgb { 201 65 99 }
+	color2 = rgb { 163 27 61 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC882 = {
+	color = rgb { 114 162 70 }
+	color2 = rgb { 76 124 32 }
+
+	culture_definition = gaulish
+	religion_definition = gaulish_pagan
+}
+VC883 = {
+	color = rgb { 187 99 201 }
+	color2 = rgb { 149 61 163 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC884 = {
+	color = rgb { 100 196 172 }
+	color2 = rgb { 62 158 134 }
+
+	culture_definition = bactrian
+	religion_definition = iranic
+}
+VC885 = {
+	color = rgb { 173 133 143 }
+	color2 = rgb { 135 95 105 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC886 = {
+	color = rgb { 86 70 114 }
+	color2 = rgb { 48 32 76 }
+
+	culture_definition = gava_holigrady
+	religion_definition = dacian_pagan
+}
+VC887 = {
+	color = rgb { 159 167 85 }
+	color2 = rgb { 121 129 47 }
+
+	culture_definition = gava_holigrady
+	religion_definition = dacian_pagan
+}
+VC888 = {
+	color = rgb { 72 104 56 }
+	color2 = rgb { 34 66 18 }
+
+	culture_definition = vatin
+	religion_definition = dacian_pagan
+}
+VC889 = {
+	color = rgb { 145 201 187 }
+	color2 = rgb { 107 163 149 }
+
+	culture_definition = elamite
+	religion_definition = elamite
+}
+VC890 = {
+	color = rgb { 58 138 158 }
+	color2 = rgb { 20 100 120 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC891 = {
+	color = rgb { 131 75 129 }
+	color2 = rgb { 93 37 91 }
+
+	culture_definition = urnfield
+	religion_definition = nordic_pagan
+}
+VC892 = {
+	color = rgb { 204 172 100 }
+	color2 = rgb { 166 134 62 }
+
+	culture_definition = monteoru
+	religion_definition = dacian_pagan
+}
+VC893 = {
+	color = rgb { 117 109 71 }
+	color2 = rgb { 79 71 33 }
+
+	culture_definition = monteoru
+	religion_definition = dacian_pagan
+}
+VC894 = {
+	color = rgb { 190 206 202 }
+	color2 = rgb { 152 168 164 }
+
+	culture_definition = lusitanian
+	religion_definition = lusitanian_pagan
+}
+VC895 = {
+	color = rgb { 103 143 173 }
+	color2 = rgb { 65 105 135 }
+
+	culture_definition = gandharan
+	religion_definition = vedic
+}
+VC896 = {
+	color = rgb { 176 80 144 }
+	color2 = rgb { 138 42 106 }
+
+	culture_definition = bactrian
+	religion_definition = iranic
+}
+VC897 = {
+	color = rgb { 89 177 115 }
+	color2 = rgb { 51 139 77 }
+
+	culture_definition = gava_holigrady
+	religion_definition = dacian_pagan
+}
+VC898 = {
+	color = rgb { 162 114 86 }
+	color2 = rgb { 124 76 48 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC899 = {
+	color = rgb { 75 51 57 }
+	color2 = rgb { 37 15 19 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC900 = {
+	color = rgb { 148 148 188 }
+	color2 = rgb { 110 110 150 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC901 = {
+	color = rgb { 61 85 159 }
+	color2 = rgb { 23 47 121 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC902 = {
+	color = rgb { 134 182 130 }
+	color2 = rgb { 96 144 92 }
+
+	culture_definition = gava_holigrady
+	religion_definition = dacian_pagan
+}
+VC903 = {
+	color = rgb { 207 119 101 }
+	color2 = rgb { 169 81 63 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC904 = {
+	color = rgb { 120 56 72 }
+	color2 = rgb { 82 18 34 }
+
+	culture_definition = dacian
+	religion_definition = dacian_pagan
+}
+VC905 = {
+	color = rgb { 193 153 203 }
+	color2 = rgb { 155 115 165 }
+
+	culture_definition = sogdian
+	religion_definition = iranic
+}
+VC906 = {
+	color = rgb { 106 90 174 }
+	color2 = rgb { 68 52 136 }
+
+	culture_definition = bactrian
+	religion_definition = iranic
+}
+VC907 = {
+	color = rgb { 179 187 145 }
+	color2 = rgb { 141 149 107 }
+
+	culture_definition = gava_holigrady
+	religion_definition = dacian_pagan
+}
+VC908 = {
+	color = rgb { 92 124 116 }
+	color2 = rgb { 54 86 78 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC909 = {
+	color = rgb { 165 61 87 }
+	color2 = rgb { 127 23 49 }
+
+	culture_definition = gandharan
+	religion_definition = vedic
+}
+VC910 = {
+	color = rgb { 78 158 58 }
+	color2 = rgb { 40 120 20 }
+
+	culture_definition = elamite
+	religion_definition = elamite
+}
+VC911 = {
+	color = rgb { 151 95 189 }
+	color2 = rgb { 113 57 151 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC912 = {
+	color = rgb { 64 192 160 }
+	color2 = rgb { 26 154 122 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC913 = {
+	color = rgb { 137 129 131 }
+	color2 = rgb { 99 91 93 }
+
+	culture_definition = urnfield
+	religion_definition = nordic_pagan
+}
+VC914 = {
+	color = rgb { 50 66 102 }
+	color2 = rgb { 15 28 64 }
+
+	culture_definition = gandharan
+	religion_definition = vedic
+}
+VC915 = {
+	color = rgb { 123 163 73 }
+	color2 = rgb { 85 125 35 }
+
+	culture_definition = gandharan
+	religion_definition = vedic
+}
+VC916 = {
+	color = rgb { 196 100 204 }
+	color2 = rgb { 158 62 166 }
+
+	culture_definition = elamite
+	religion_definition = elamite
+}
+VC917 = {
+	color = rgb { 109 197 175 }
+	color2 = rgb { 71 159 137 }
+
+	culture_definition = gandharan
+	religion_definition = vedic
+}
+VC918 = {
+	color = rgb { 182 134 146 }
+	color2 = rgb { 144 96 108 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC919 = {
+	color = rgb { 95 71 117 }
+	color2 = rgb { 57 33 79 }
+
+	culture_definition = bactrian
+	religion_definition = iranic
+}
+VC920 = {
+	color = rgb { 168 168 88 }
+	color2 = rgb { 130 130 50 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC921 = {
+	color = rgb { 81 105 59 }
+	color2 = rgb { 43 67 21 }
+
+	culture_definition = nordic
+	religion_definition = nordic_pagan
+}
+VC922 = {
+	color = rgb { 154 202 190 }
+	color2 = rgb { 116 164 152 }
+
+	culture_definition = urnfield
+	religion_definition = nordic_pagan
+}
+VC923 = {
+	color = rgb { 67 139 161 }
+	color2 = rgb { 29 101 123 }
+
+	culture_definition = baden
+	religion_definition = nordic_pagan
+}
+VC924 = {
+	color = rgb { 140 76 132 }
+	color2 = rgb { 102 38 94 }
+
+	culture_definition = baden
+	religion_definition = nordic_pagan
+}
+VC925 = {
+	color = rgb { 53 173 103 }
+	color2 = rgb { 15 135 65 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC926 = {
+	color = rgb { 126 110 74 }
+	color2 = rgb { 88 72 36 }
+
+	culture_definition = sogdian
+	religion_definition = iranic
+}
+VC927 = {
+	color = rgb { 199 207 205 }
+	color2 = rgb { 161 169 167 }
+
+	culture_definition = sogdian
+	religion_definition = iranic
+}
+VC928 = {
+	color = rgb { 112 144 176 }
+	color2 = rgb { 74 106 138 }
+
+	culture_definition = bactrian
+	religion_definition = iranic
+}
+VC929 = {
+	color = rgb { 185 81 147 }
+	color2 = rgb { 147 43 109 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC930 = {
+	color = rgb { 98 178 118 }
+	color2 = rgb { 60 140 80 }
+
+	culture_definition = sogdian
+	religion_definition = iranic
+}
+VC931 = {
+	color = rgb { 171 115 89 }
+	color2 = rgb { 133 77 51 }
+
+	culture_definition = catacomb
+	religion_definition = scythian_pagan
+}
+VC932 = {
+	color = rgb { 84 52 60 }
+	color2 = rgb { 46 15 22 }
+
+	culture_definition = bactrian
+	religion_definition = iranic
+}
+VC933 = {
+	color = rgb { 157 149 191 }
+	color2 = rgb { 119 111 153 }
+
+	culture_definition = gandharan
+	religion_definition = vedic
+}
+VC934 = {
+	color = rgb { 70 86 162 }
+	color2 = rgb { 32 48 124 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC935 = {
+	color = rgb { 143 183 133 }
+	color2 = rgb { 105 145 95 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC936 = {
+	color = rgb { 56 120 104 }
+	color2 = rgb { 18 82 66 }
+
+	culture_definition = catacomb
+	religion_definition = scythian_pagan
+}
+VC937 = {
+	color = rgb { 129 57 75 }
+	color2 = rgb { 91 19 37 }
+
+	culture_definition = gandharan
+	religion_definition = vedic
+}
+VC938 = {
+	color = rgb { 202 154 206 }
+	color2 = rgb { 164 116 168 }
+
+	culture_definition = catacomb
+	religion_definition = scythian_pagan
+}
+VC939 = {
+	color = rgb { 115 91 177 }
+	color2 = rgb { 77 53 139 }
+
+	culture_definition = sogdian
+	religion_definition = iranic
+}
+VC940 = {
+	color = rgb { 188 188 148 }
+	color2 = rgb { 150 150 110 }
+
+	culture_definition = sogdian
+	religion_definition = iranic
+}
+VC941 = {
+	color = rgb { 101 125 119 }
+	color2 = rgb { 63 87 81 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC942 = {
+	color = rgb { 174 62 90 }
+	color2 = rgb { 136 24 52 }
+
+	culture_definition = sogdian
+	religion_definition = iranic
+}
+VC943 = {
+	color = rgb { 87 159 61 }
+	color2 = rgb { 49 121 23 }
+
+	culture_definition = baden
+	religion_definition = nordic_pagan
+}
+VC944 = {
+	color = rgb { 160 96 192 }
+	color2 = rgb { 122 58 154 }
+
+	culture_definition = baden
+	religion_definition = nordic_pagan
+}
+VC945 = {
+	color = rgb { 73 193 163 }
+	color2 = rgb { 35 155 125 }
+
+	culture_definition = nordic
+	religion_definition = nordic_pagan
+}
+VC946 = {
+	color = rgb { 146 130 134 }
+	color2 = rgb { 108 92 96 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC947 = {
+	color = rgb { 59 67 105 }
+	color2 = rgb { 21 29 67 }
+
+	culture_definition = gandharan
+	religion_definition = vedic
+}
+VC948 = {
+	color = rgb { 132 164 76 }
+	color2 = rgb { 94 126 38 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC949 = {
+	color = rgb { 205 101 207 }
+	color2 = rgb { 167 63 169 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC950 = {
+	color = rgb { 118 198 178 }
+	color2 = rgb { 80 160 140 }
+
+	culture_definition = bactrian
+	religion_definition = iranic
+}
+VC951 = {
+	color = rgb { 191 135 149 }
+	color2 = rgb { 153 97 111 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC952 = {
+	color = rgb { 104 72 120 }
+	color2 = rgb { 66 34 82 }
+
+	culture_definition = tei
+	religion_definition = dacian_pagan
+}
+VC953 = {
+	color = rgb { 177 169 91 }
+	color2 = rgb { 139 131 53 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC954 = {
+	color = rgb { 90 106 62 }
+	color2 = rgb { 52 68 24 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC955 = {
+	color = rgb { 163 203 193 }
+	color2 = rgb { 125 165 155 }
+
+	culture_definition = vatin
+	religion_definition = thracian_pagan
+}
+VC956 = {
+	color = rgb { 76 140 164 }
+	color2 = rgb { 38 102 126 }
+
+	culture_definition = gandharan
+	religion_definition = vedic
+}
+VC957 = {
+	color = rgb { 149 77 135 }
+	color2 = rgb { 111 39 97 }
+
+	culture_definition = gandharan
+	religion_definition = vedic
+}
+VC958 = {
+	color = rgb { 62 174 106 }
+	color2 = rgb { 24 136 68 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC959 = {
+	color = rgb { 135 111 77 }
+	color2 = rgb { 97 73 39 }
+
+	culture_definition = sogdian
+	religion_definition = iranic
+}
+VC960 = {
+	color = rgb { 48 48 48 }
+	color2 = rgb { 15 15 15 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC961 = {
+	color = rgb { 121 145 179 }
+	color2 = rgb { 83 107 141 }
+
+	culture_definition = catacomb
+	religion_definition = scythian_pagan
+}
+VC962 = {
+	color = rgb { 194 82 150 }
+	color2 = rgb { 156 44 112 }
+
+	culture_definition = gava_holigrady
+	religion_definition = dacian_pagan
+}
+VC963 = {
+	color = rgb { 107 179 121 }
+	color2 = rgb { 69 141 83 }
+
+	culture_definition = bactrian
+	religion_definition = iranic
+}
+VC964 = {
+	color = rgb { 180 116 92 }
+	color2 = rgb { 142 78 54 }
+
+	culture_definition = bactrian
+	religion_definition = iranic
+}
+VC965 = {
+	color = rgb { 93 53 63 }
+	color2 = rgb { 55 15 25 }
+
+	culture_definition = monteoru
+	religion_definition = dacian_pagan
+}
+VC966 = {
+	color = rgb { 166 150 194 }
+	color2 = rgb { 128 112 156 }
+
+	culture_definition = urnfield
+	religion_definition = nordic_pagan
+}
+VC967 = {
+	color = rgb { 79 87 165 }
+	color2 = rgb { 41 49 127 }
+
+	culture_definition = sogdian
+	religion_definition = iranic
+}
+VC968 = {
+	color = rgb { 152 184 136 }
+	color2 = rgb { 114 146 98 }
+
+	culture_definition = monteoru
+	religion_definition = dacian_pagan
+}
+VC969 = {
+	color = rgb { 65 121 107 }
+	color2 = rgb { 27 83 69 }
+
+	culture_definition = sogdian
+	religion_definition = iranic
+}
+VC970 = {
+	color = rgb { 138 58 78 }
+	color2 = rgb { 100 20 40 }
+
+	culture_definition = bactrian
+	religion_definition = iranic
+}
+VC971 = {
+	color = rgb { 51 155 49 }
+	color2 = rgb { 15 117 15 }
+
+	culture_definition = gandharan
+	religion_definition = vedic
+}
+VC972 = {
+	color = rgb { 124 92 180 }
+	color2 = rgb { 86 54 142 }
+
+	culture_definition = bactrian
+	religion_definition = iranic
+}
+VC973 = {
+	color = rgb { 197 189 151 }
+	color2 = rgb { 159 151 113 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC974 = {
+	color = rgb { 110 126 122 }
+	color2 = rgb { 72 88 84 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC975 = {
+	color = rgb { 183 63 93 }
+	color2 = rgb { 145 25 55 }
+
+	culture_definition = nordic
+	religion_definition = nordic_pagan
+}
+VC976 = {
+	color = rgb { 96 160 64 }
+	color2 = rgb { 58 122 26 }
+
+	culture_definition = vatin
+	religion_definition = dacian_pagan
+}
+VC977 = {
+	color = rgb { 169 97 195 }
+	color2 = rgb { 131 59 157 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC978 = {
+	color = rgb { 82 194 166 }
+	color2 = rgb { 44 156 128 }
+
+	culture_definition = andronovo
+	religion_definition = steppe_pagan
+}
+VC979 = {
+	color = rgb { 155 131 137 }
+	color2 = rgb { 117 93 99 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC980 = {
+	color = rgb { 68 68 108 }
+	color2 = rgb { 30 30 70 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC981 = {
+	color = rgb { 141 165 79 }
+	color2 = rgb { 103 127 41 }
+
+	culture_definition = catacomb
+	religion_definition = scythian_pagan
+}
+VC982 = {
+	color = rgb { 54 102 50 }
+	color2 = rgb { 16 64 15 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC983 = {
+	color = rgb { 127 199 181 }
+	color2 = rgb { 89 161 143 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC984 = {
+	color = rgb { 200 136 152 }
+	color2 = rgb { 162 98 114 }
+
+	culture_definition = wietenberg
+	religion_definition = dacian_pagan
+}
+VC985 = {
+	color = rgb { 113 73 123 }
+	color2 = rgb { 75 35 85 }
+
+	culture_definition = monteoru
+	religion_definition = dacian_pagan
+}
+VC986 = {
+	color = rgb { 186 170 94 }
+	color2 = rgb { 148 132 56 }
+
+	culture_definition = elamite
+	religion_definition = elamite
+}
+VC987 = {
+	color = rgb { 99 107 65 }
+	color2 = rgb { 61 69 27 }
+
+	culture_definition = gandharan
+	religion_definition = vedic
+}
+VC988 = {
+	color = rgb { 172 204 196 }
+	color2 = rgb { 134 166 158 }
+
+	culture_definition = vatin
+	religion_definition = thracian_pagan
+}
+VC989 = {
+	color = rgb { 85 141 167 }
+	color2 = rgb { 47 103 129 }
+
+	culture_definition = lusitanian
+	religion_definition = lusitanian_pagan
+}
+VC990 = {
+	color = rgb { 158 78 138 }
+	color2 = rgb { 120 40 100 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC991 = {
+	color = rgb { 71 175 109 }
+	color2 = rgb { 33 137 71 }
+
+	culture_definition = sogdian
+	religion_definition = iranic
+}
+VC992 = {
+	color = rgb { 144 112 80 }
+	color2 = rgb { 106 74 42 }
+
+	culture_definition = monteoru
+	religion_definition = dacian_pagan
+}
+VC993 = {
+	color = rgb { 57 49 51 }
+	color2 = rgb { 19 15 15 }
+
+	culture_definition = vatin
+	religion_definition = thracian_pagan
+}
+VC994 = {
+	color = rgb { 130 146 182 }
+	color2 = rgb { 92 108 144 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC995 = {
+	color = rgb { 203 83 153 }
+	color2 = rgb { 165 45 115 }
+
+	culture_definition = sogdian
+	religion_definition = iranic
+}
+VC996 = {
+	color = rgb { 116 180 124 }
+	color2 = rgb { 78 142 86 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+VC997 = {
+	color = rgb { 189 117 95 }
+	color2 = rgb { 151 79 57 }
+
+	culture_definition = gava_holigrady
+	religion_definition = dacian_pagan
+}
+VC998 = {
+	color = rgb { 102 54 66 }
+	color2 = rgb { 64 16 28 }
+
+	culture_definition = urnfield
+	religion_definition = nordic_pagan
+}
+VC999 = {
+	color = rgb { 175 151 197 }
+	color2 = rgb { 137 113 159 }
+
+	culture_definition = sogdian
+	religion_definition = iranic
+}
+V1000 = {
+	color = rgb { 88 88 168 }
+	color2 = rgb { 50 50 130 }
+
+	culture_definition = urnfield
+	religion_definition = Germanic_pagan
 }

@@ -1,0 +1,90 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: levant_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+canaanite = {
+	language = levantine_bronze_language
+	color = rgb { 162 122 45 }
+	tags = { levantine_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		levant_bronze_group
+	}
+}
+
+ugaritic = {
+	language = levantine_bronze_language
+	color = rgb { 173 133 56 }
+	tags = { levantine_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		levant_bronze_group
+	}
+}
+
+phoenician = {
+	language = levantine_bronze_language
+	color = rgb { 184 144 67 }
+	tags = { levantine_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		levant_bronze_group
+	}
+}
+
+phoenician_punic = {
+	language = levantine_bronze_language
+	color = rgb { 109 76 139 }
+	tags = { levantine_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		levant_bronze_group
+	}
+}
+
+moabite = {
+	language = levantine_bronze_language
+	color = rgb { 195 155 78 }
+	tags = { levantine_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		levant_bronze_group
+	}
+}
+
+edomite = {
+	language = levantine_bronze_language
+	color = rgb { 206 166 89 }
+	tags = { levantine_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		levant_bronze_group
+	}
+}
+
+ammonite = {
+	language = levantine_bronze_language
+	color = rgb { 217 177 100 }
+	tags = { levantine_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		levant_bronze_group
+	}
+}
+
+aramaean = {
+	language = levantine_bronze_language
+	color = rgb { 225 188 111 }
+	tags = { levantine_gfx middle_east_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		levant_bronze_group
+	}
+}

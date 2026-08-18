@@ -42,7 +42,7 @@ right_to_appeal = {
 		global_nobles_estate_power = -0.10
 		global_clergy_estate_power = -0.10
 
-		court_spending_cost_modifier = 0.015
+		court_spending_efficiency = 0.015
 	}
 }
 
@@ -53,7 +53,7 @@ labor_substitution = {
 		peasants_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_peasants_estate_power = 0.20
 
-		court_spending_cost_modifier = 0.010
+		court_spending_efficiency = 0.010
 		peasants_estate_max_tax	= 0.1
 	}
 }

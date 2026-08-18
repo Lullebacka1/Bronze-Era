@@ -1,0 +1,77 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: indic_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+harappan = {
+	language = indic_bronze_language
+	color = rgb { 174 116 61 }
+	tags = { indian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		indic_bronze_group
+	}
+}
+
+vedic = {
+	language = indic_bronze_language
+	color = rgb { 166 110 53 }
+	tags = { indian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		indic_bronze_group
+	}
+}
+
+dravidian = {
+	language = dravidian_bronze_language
+	color = rgb { 130 95 67 }
+	tags = { dravidian_gfx indian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		indic_bronze_group
+	}
+}
+
+tamil = {
+	language = dravidian_bronze_language
+	color = rgb { 146 82 72 }
+	tags = { dravidian_gfx indian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		indic_bronze_group
+	}
+}
+
+gandharan = {
+	language = indic_bronze_language
+	color = rgb { 188 132 75 }
+	tags = { indian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		indic_bronze_group
+	}
+}
+
+hindu = {
+	language = indic_bronze_language
+	color = rgb { 196 142 68 }
+	tags = { indian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		indic_bronze_group
+	}
+}
+
+lankan = {
+	culture_groups = { indic_bronze_group }
+	language = lankan
+	color = rgb { 245 0 0 }
+	tags = { indian_gfx }
+	opinions = {
+	}
+}

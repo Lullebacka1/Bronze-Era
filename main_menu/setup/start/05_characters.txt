@@ -1,7 +1,7 @@
 #Remember to write sons and daughters ALWAYS after their parents to avoid crashes
 
 character_db={
-
+	#Egyptian characters
     character_merneptah = {					# https://en.wikipedia.org/wiki/Merneptah
 		first_name = { name = name_merneptah }			
 		last_name = { name = name_blank } 
@@ -14,8 +14,8 @@ character_db={
         ruler_trait = strict
 		female = no					
 		birth = faqus				
-		tag = 0002G					
-		estate = nobles_estate				
+		tag = EGY
+		estate = nobles_estate
 		dynasty = ramessid_dynasty			
 		
 		has_patronym = no				
@@ -33,8 +33,8 @@ character_db={
 		birth_date = -51.1.1				# Estimate based on age of Merneptah and Seti II
 		female = yes					
 		birth = giza						# Assuming she was the daughter of Khaemweset https://en.wikipedia.org/wiki/Khaemweset
-		tag = 0002G					
-		estate = nobles_estate				
+		tag = EGY
+		estate = nobles_estate
 		dynasty = ramessid_dynasty			
 		
         spouse = character_merneptah
@@ -53,8 +53,8 @@ character_db={
 		birth_date = -28.1.1				# Estimate baseed on age of Merneptah and him likely having been depicted as an adult during the reign of Merneptah
 		female = no					
 		birth = faqus				
-		tag = 0002G					
-		estate = nobles_estate				
+		tag = EGY
+		estate = nobles_estate
 		dynasty = ramessid_dynasty			
 		
         father = character_merneptah		
@@ -74,13 +74,57 @@ character_db={
 		birth_date = -15.1.1				# Estimate based on age of Seti II and Amenmesse
 		female = yes					
 		birth = faqus						# Uncertain						
-		tag = 0002G					
-		estate = peasants_estate				
+		tag = EGY
+		estate = peasants_estate
 		# dynasty = ramessid_dynasty			
 		
         spouse = character_seti2
 		has_patronym = no				
 		fertility = 100		
 	}
+
+
+	#Mycenaean characters
+	character_agamemnon = {				# https://en.wikipedia.org/wiki/Agamemnon
+		first_name = { name = name_agamemnon }			
+		last_name = { name = name_blank } 
+		culture = mycenaean				
+		religion = hellenic				
+		adm = 61					
+		dip = 51					
+		mil = 71					
+		birth_date = -30.1.1				# Estimate
+		ruler_trait = strict
+		female = no					
+		birth = argos			
+		tag = 0001G					
+		estate = nobles_estate				
+		dynasty = atreid_dynasty			
+		
+		has_patronym = no				
+		fertility = 100					
+	}
+	character_orestes = {				# https://en.wikipedia.org/wiki/Orestes
+		first_name = { name = name_orestes }			
+		last_name = { name = name_blank } 
+		culture = mycenaean				
+		religion = hellenic				
+		adm = 51					
+		dip = 61					
+		mil = 71					
+		birth_date = 0.1.2	# Estimate
+		female = no
+		birth = argos
+		tag = 0001G
+		estate = nobles_estate
+		dynasty = atreid_dynasty
+		has_patronym = yes	
+		fertility = 80
+	}
+
+		
+
+
+
 
 }

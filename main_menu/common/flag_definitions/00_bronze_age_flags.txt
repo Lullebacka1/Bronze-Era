@@ -5,9 +5,6 @@
 EGY = { # Egypt
 	flag_definition = { coa = bronze_age_EGY_coa priority = 10000 }
 }
-0002G = { # Local Bronze Era placeholder for Egypt.
-	flag_definition = { coa = bronze_age_EGY_coa priority = 10000 }
-}
 
 HAT = { # Hatti short tag, if used.
 	flag_definition = { coa = bronze_age_HAT_coa priority = 10000 }
@@ -46,6 +43,9 @@ KASSI = { # Local Kassite Babylonia / Babylonian sphere tag.
 
 PHO = { # Phoenicia short tag, if used.
 	flag_definition = { coa = bronze_age_PHO_coa priority = 10000 }
+}
+CARTHAGE = { # Carthage, founded in 814 BC by event in the Bronze Era chronology.
+	flag_definition = { coa = bronze_age_CARTHAGE_coa priority = 10000 }
 }
 SIDON = { # Local Phoenician coastal city tag.
 	flag_definition = { coa = bronze_age_PHO_coa priority = 10000 }
@@ -125,6 +125,10 @@ ROME = { # Rome, founded in 753 BC by event in the Bronze Era chronology.
 	flag_definition = { coa = bronze_age_ROME_coa priority = 10000 }
 }
 
+ETRUS = { # Etruria, using the provided Etruscan flag.
+	flag_definition = { coa = bronze_age_ETRUS_coa priority = 10000 }
+}
+
 ARMOR = { # Armorica formable, using the provided triskelion flag.
 	flag_definition = { coa = bronze_age_ARMOR_coa priority = 10000 }
 }
@@ -167,6 +171,54 @@ HELHEIM = { # Danish ancestor-rite Helheim formable.
 
 VINDLAND = { # Baltic amber and waterway Vindland formable.
 	flag_definition = { coa = bronze_age_VINDLAND_coa priority = 10000 }
+}
+
+ALLARAM = { # All Aram formable, Levantine caravan routes and royal authority.
+	flag_definition = { coa = bronze_age_ALLARAM_coa priority = 10000 }
+}
+
+PERSIA = { # Persian Empire formable, royal Iranian high kingship.
+	flag_definition = { coa = bronze_age_PERSIA_coa priority = 10000 }
+}
+
+ISRAEL = { # Israel formable, Canaanite highland kingdom.
+	flag_definition = { coa = bronze_age_ISRAEL_coa priority = 10000 }
+}
+
+JUDAH = { # Judah formable, southern Canaanite hill kingdom.
+	flag_definition = { coa = bronze_age_JUDAH_coa priority = 10000 }
+}
+
+MOAB = { # Moab formable, eastern Dead Sea highland kingdom.
+	flag_definition = { coa = bronze_age_MOAB_coa priority = 10000 }
+}
+
+EDOM = { # Edom formable, southern Transjordan highland kingdom.
+	flag_definition = { coa = bronze_age_EDOM_coa priority = 10000 }
+}
+
+ARDAM = { # Aram-Damascus formable.
+	flag_definition = { coa = bronze_age_ARDAM_coa priority = 10000 }
+}
+
+AMMON = { # Ammon formable, Amman highland kingdom.
+	flag_definition = { coa = bronze_age_AMMON_coa priority = 10000 }
+}
+
+PHILST = { # Philistine States formable, Peleset coastal league.
+	flag_definition = { coa = bronze_age_PHILST_coa priority = 10000 }
+}
+
+SHANG = { # Shang dynasty, using the provided red field and black glyph flag.
+	flag_definition = { coa = bronze_age_SHANG_coa priority = 10000 }
+}
+
+MAYA = { # Maya, using the provided four-field flag.
+	flag_definition = { coa = bronze_age_MAYA_coa priority = 10000 }
+}
+
+OLMEC = { # Olmecs, using the provided jaguar-ring flag.
+	flag_definition = { coa = bronze_age_OLMEC_coa priority = 10000 }
 }
 
 # Unique Hatti-collapse successor flags.

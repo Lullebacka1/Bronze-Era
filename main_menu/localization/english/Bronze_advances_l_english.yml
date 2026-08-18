@@ -1,9 +1,45 @@
 ﻿l_english:
+
+  # ##############################
+  # INSTITUTION TECHS
+  # ##############################
+
   palace_economy_advance: "Palace Economy"
   palace_economy_advance_desc: "The palace economy is a system of economic organization in which the ruling elite, often centered around a palace or royal court, controls and manages the production and distribution of goods and resources."
 
   warrior_aristocracy_advance: "Warrior Aristocracy"
   warrior_aristocracy_advance_desc: "The warrior aristocracy is a social class or group of individuals who hold power and influence primarily through their military prowess and leadership."
+
+  long_distance_trade_advance: "Long-Distance Trade Networks"
+  long_distance_trade_advance_desc: "Long-distance trade networks refer to the complex systems of trade and commerce that connect different regions and civilizations across vast distances. These networks facilitate the exchange of goods, ideas, and cultural influences between societies."
+
+  alphabetic_script_advance: "Alphabetic Script"
+  alphabetic_script_advance_desc: "Alphabetic writing spreads beyond the specialized circles that first employed it, providing a flexible and comparatively accessible means of recording language. Its wider adoption expands literacy among merchants, nobles, and religious authorities and strengthens the use of written communication in everyday administration and exchange."
+
+  iron_metallurgy_advance: "Iron Metallurgy"
+  iron_metallurgy_advance_desc: "Ironworking develops into a widespread metallurgical tradition, with increasingly reliable methods of smelting, refining, and forging. The growing availability of iron tools and weapons transforms production and warfare while reducing reliance on bronze for many common purposes."
+
+  peer_polities_advance: "Peer Polities"
+  peer_polities_advance_desc: "Networks of neighboring communities of comparable strength become increasingly interconnected through rivalry, warfare, diplomacy, trade, and imitation. Political development becomes shaped not by a single dominant center, but by competition among multiple states seeking to match and surpass their peers."
+
+  # ##############################
+  # FUSTERCLUCK
+  # ##############################
+
+  stone_dressing: "Stone Dressing"
+  stone_dressing_desc: "Stoneworkers learn to systematically shape and finish building stone before laying it. More regular blocks allow tighter joints, straighter walls, and more refined masonry, improving the efficiency and durability of construction."
+
+  controlled_carburization: "Controlled Carburization"
+  controlled_carburization_desc: "Smiths gain greater control over the absorption of carbon into wrought iron during heating. This produces more consistent steel and allows ironworking to move beyond simple bloomery products toward deliberately improved materials."
+
+  forge_welding: "Forge Welding"
+  forge_welding_desc: "Repeated heating and hammering allow separate pieces of iron and steel to be joined into a single mass. Forge welding lets smiths combine materials, repair and extend metalwork, and produce larger or more complex tools and weapons than a single bloom can provide."
+
+  steel_edges: "Steel Edges"
+  steel_edges_desc: "Steel is increasingly applied where a hard, durable cutting edge is most valuable, while softer iron provides the body of the implement. This economical use of steel produces sharper and more resilient tools and weapons without requiring entire objects to be made from high-quality steel."
+
+  tempered_steel: "Tempered Steel"
+  tempered_steel_desc: "Smiths learn to deliberately reheat and cool hardened steel to balance hardness with toughness. The resulting material is less prone to brittle failure and can withstand demanding work, making high-quality steel more dependable for tools and weapons."
 
   cathedral_advance: "Monumental Temple Construction"
   cathedral_advance_desc: "We shall build a dedicated place of worship to our gods, a temple that will stand as a testament to our devotion and faith. This grand structure will not only serve as a spiritual center for our people but also as a symbol of our cultural and religious identity."
@@ -50,9 +86,6 @@
   tribal_city_building_advance: "Proto-Urban Centers"
   tribal_city_building_advance_desc: "While most cities emerge alongside centralized states, some societies may instead reach urban scale through the gradual expansion of tribal strongholds, market settlements, and communal institutions. Such centers represent a decentralized path to urban life, driven by population, commerce, and local cooperation rather than palatial administration."
 
-  long_distance_trade_advance: "Long-Distance Trade Networks"
-  long_distance_trade_advance_desc: "Long-distance trade networks refer to the complex systems of trade and commerce that connect different regions and civilizations across vast distances. These networks facilitate the exchange of goods, ideas, and cultural influences between societies."
-
   bronze_forge_advance: "Metalworking Craftsmanship"
   bronze_forge_advance_desc: "In early Bronze Age societies, metalworking was still a household craft, with villagers casting tools and weapons for their own use rather than relying on professional smiths."
 
@@ -77,8 +110,8 @@
   intercultural_relations_advance: "Intercultural Relations"
   intercultural_relations_advance_desc: "Intercultural relations refer to the interactions and relationships between different cultures and societies. These relations can involve various aspects such as trade, diplomacy, cultural exchange, and cooperation. Intercultural relations play a crucial role in fostering understanding, collaboration, and mutual respect among diverse groups of people."
 
-  alphabet_script_advance: "Alphabetic Writing System"
-  alphabet_script_advance_desc: "The development of an alphabetic writing system in Bronze Age societies marked a significant advancement in communication and record-keeping. An alphabetic script uses a set of symbols to represent individual sounds, allowing for more efficient and flexible writing compared to earlier pictographic or logographic systems. This innovation facilitated the recording of information, the transmission of knowledge, and the development of trade."
+  merchant_script_advance: "Mercantile Writing System"
+  merchant_script_advance_desc: "The needs of long-distance trade encourage the development and adoption of practical writing systems suited to recording transactions, goods, names, and agreements. Such mercantile writing allows commercial information to be recorded and transmitted more efficiently, strengthening trade networks without requiring literacy to become widespread throughout society."
 
   elite_scripts_advance: "Elite Scripts"
   elite_scripts_advance_desc: "The development of elite scripts in Bronze Age societies allowed for the creation of sophisticated written records and communication methods. These advanced writing systems were typically used by scribes and scholars, enabling the preservation and transmission of complex information and knowledge."
@@ -224,6 +257,60 @@
   labor_substitution_advance: "Labor Substitution"
   labor_substitution_advance_desc: "As systems of exchange become more sophisticated, labor obligations can increasingly be commuted into payments in grain, livestock, metal, or other valuable goods. Such arrangements reduce the need for direct service while creating new opportunities for administration and taxation."
 
+  chiefly_envoys: "Chiefly Envoys"
+  chiefly_envoys_desc: "Tribal chiefs increasingly entrust trusted companions and kinsmen with journeys to neighboring communities, carrying gifts, messages, demands, and promises on their behalf. These personal envoys allow chiefly authority and diplomacy to extend beyond the immediate reach of the ruler."
+
+  royal_covenants_advance: "Royal Covenants"
+  royal_covenants_advance_desc: "Monarchs increasingly formalize agreements with other rulers through written covenants, bearing seals or other marks of authority. These instruments give treaties, alliances, obligations, and guarantees a durable form that can be witnessed, preserved, and invoked beyond the immediate presence of the rulers who made them."
+
+  provincial_governors: "Provincial Governors"
+  provincial_governors_desc: "As realms grow more extensive, rulers entrust distant territories to appointed governors who oversee local affairs in their name. Such officials give provincial communities greater room to organize themselves while extending royal authority beyond the immediate reach of the court."
+
+  delegated_judicial_authority: "Delegated Judicial Authority"
+  delegated_judicial_authority_desc: "Provincial officials increasingly exercise judicial authority on behalf of the ruler, holding formal courts to settle disputes and enforce the law. Justice thus becomes a regular feature of provincial administration rather than a matter requiring direct appeal to the central court."
+
+  commercial_districts: "Commercial Districts"
+  commercial_districts_desc: "Growing trade networks encourage foreign merchants to establish permanent quarters within major settlements. These commercial districts provide a stable setting for exchange, storage, negotiation, and the maintenance of long-distance business relationships."
+
+  private_commerce: "Private Commerce"
+  private_commerce_desc: "As political authority becomes more dispersed, rulers increasingly turn to independent merchants to carry out commercial and logistical functions across their realms. The growing participation of private enterprise in public affairs marks a shift toward more flexible and decentralized economic organization."
+
+  community_military_obligation: "Community Military Obligation"
+  community_military_obligation_desc: "As political communities become more organized, military service increasingly becomes a recognized obligation shared across the wider population. Local communities maintain established expectations of service and contribute men and resources to collective defense."
+
+  influential_commanders: "Influential Commanders"
+  influential_commanders_desc: "As military forces grow more organized, experienced commanders acquire influence of their own through battlefield reputation, personal followings, and accumulated knowledge of warfare. Their expertise makes the cultivation of capable military leadership increasingly important."
+
+  iron_city_walls_advance: "Iron Age City Walls"
+  iron_city_walls_advance_desc: "Generations of experience in fortification, improved masonry, and more capable tools allow cities to undertake defensive works on a greater scale. Established building knowledge can now be applied to larger, stronger, and more carefully constructed urban walls."
+
+  elite_networks: "Elite Networks"
+  elite_networks_desc: "Rulers, governors, commanders, and other influential figures become increasingly connected through personal ties, patronage, marriage, and reciprocal obligations. These networks allow influence and information to travel across political boundaries and strengthen cooperation among powerful individuals."
+
+  portable_writing: "Portable Writing"
+  portable_writing_desc: "Writing becomes increasingly suited to records that must travel with merchants, officials, messengers, and other individuals. Portable documents make it easier to preserve instructions, accounts, claims, and correspondence across considerable distances."
+
+  road_station_system_advance: "Road Station System"
+  road_station_system_advance_desc: "Established routes are increasingly supported by a chain of stations where travelers, messengers, and goods can rest, change transport, and obtain provisions. Such infrastructure makes long-distance movement more regular and dependable."
+
+  ownership_marks: "Ownership Marks"
+  ownership_marks_desc: "Merchants and craftsmen increasingly mark goods, tools, containers, and other possessions to identify their ownership or origin. Such marks help distinguish property, establish claims, and maintain accountability as goods pass between different hands."
+
+  representative_authority: "Representative Authority"
+  representative_authority_desc: "Envoys and officials increasingly act with authority of their own rather than merely carrying messages between distant rulers. Entrusted to negotiate, settle disputes, conclude agreements, and make decisions in their patron's name, they become true representatives of the authority they embody."
+
+  unlock_iron_horsemen_advance: "Mounted Warfare"
+  unlock_iron_horsemen_advance_desc: "Growing experience with horses encourages rulers and commanders to cultivate small bodies of skilled mounted warriors for scouting, pursuit, raiding, and rapid communication. Though still limited in number, these riders demonstrate the military potential of disciplined cavalry."
+
+  multihole_cheekpieces: "Multi-Hole Cheekpieces"
+  multihole_cheekpieces_desc: "More adaptable cheekpieces give riders finer control over the bridle and the behavior of their mounts. Such equipment helps experienced horsemen handle horses more effectively in the varied demands of scouting, pursuit, and mounted combat."
+
+  fort_limit_2_advance: "Fortification Traditions"
+  fort_limit_2_advance_desc: "Fortification becomes an increasingly established feature of organized warfare, as communities accumulate the knowledge and resources needed to maintain strongpoints across their territories."
+
+  iron_citadel_advance: "Citadel Fortifications"
+  iron_citadel_advance_desc: "Fortified strongholds increasingly serve not merely as places of refuge, but as permanent centers from which local authority can be secured and the surrounding territory controlled."
+
   # ##########################
   # BUILDINGS
   # ##########################
@@ -318,6 +405,9 @@
 
   iron_weaponry_maker_maintenance_advance: "Iron Weaponsmithing"
   iron_weaponry_maker_maintenance_advance_desc: "The spread of ironworking techniques enables the production of sturdy iron weapons on a larger scale, gradually transforming the equipment available to both warriors and rulers."
+
+  selective_horse_breeding: "Selective Horse Breeding"
+  selective_horse_breeding_desc: "The deliberate selection of breeding stock becomes increasingly important as horses grow more valuable for transport and warfare. Breeders favor animals with desirable qualities such as strength, endurance, speed, and temperament, gradually producing more capable and specialized horses."
 
   # ##############################
   # MILITARY UNITS

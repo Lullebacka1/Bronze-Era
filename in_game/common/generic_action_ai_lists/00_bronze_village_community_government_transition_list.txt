@@ -1,0 +1,9 @@
+village_community_list = {
+	potential = {
+		government_type = government_type:village_community
+	}
+	actions = {
+		village_community_to_clan_confederation
+		village_community_to_tribe
+	}
+}

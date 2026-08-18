@@ -1,0 +1,35 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: central_asian_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+tocharian = {
+	language = iranian_bronze_language
+	color = rgb { 112 104 66 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		central_asian_bronze_group
+	}
+}
+
+sogdian = {
+	language = iranian_bronze_language
+	color = rgb { 123 115 77 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		central_asian_bronze_group
+	}
+}
+
+ferghana = {
+	language = iranian_bronze_language
+	color = rgb { 134 126 88 }
+	tags = { central_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		central_asian_bronze_group
+	}
+}

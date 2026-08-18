@@ -2,11 +2,13 @@ warrior_lodges = {
 	is_foreign = no
 	pop_type = soldiers
 	max_levels = 1
+
+	icon = Bz_government_military
 	
 	category = military_category
 	forbidden_for_estates = yes
 	
-	employment_size = estate_manpower_employment
+	employment_size = stockade_employment
 	
 	rural_settlement = yes
 	town = yes

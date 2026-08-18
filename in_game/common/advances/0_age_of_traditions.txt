@@ -249,6 +249,15 @@ council_of_elders_advance = {
 	requires = established_custom
 }
 
+chiefly_envoys_advance = {
+	age = age_1_traditions
+
+	monthly_diplomats = 0.05
+
+	starting_technology_level = 3
+	requires = council_of_elders_advance
+}
+
 household_companions_advance = {
 	age = age_1_traditions
 
@@ -478,6 +487,16 @@ contract_law_advance = {
 
 	requires = codified_laws
 
+	starting_technology_level = 3
+}
+
+royal_covenants_advance = {
+	age = age_1_traditions
+	
+	requires = contract_law_advance
+
+	monthly_diplomats = 0.05
+	
 	starting_technology_level = 3
 }
 
@@ -727,7 +746,9 @@ trade_caravans = {
 intercultural_relations_advance = {
 	age = age_1_traditions
 	icon = cultural_acceptance_advance
+
 	cultures_capacity = 1
+
 	starting_technology_level = 3
 	requires = trade_caravans
 }
@@ -740,6 +761,7 @@ merchant_enclaves_advance = {
 	requires = trade_caravans
 
 	unlock_subject_type = merchant_enclave
+	monthly_diplomats = 0.05
 
 	starting_technology_level = 3
 }

@@ -1,0 +1,68 @@
+# Bronze Era culture definitions grouped by culture group.
+# Group: alpine_bronze_group
+# Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
+canegrate = {
+	language = alpine_bronze_language
+	color = rgb { 121 112 95 }
+	tags = { west_mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		alpine_bronze_group
+	}
+}
+
+polada = {
+	language = alpine_bronze_language
+	color = rgb { 94 133 119 }
+	tags = { west_mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		alpine_bronze_group
+	}
+}
+
+luco = {
+	language = alpine_bronze_language
+	color = rgb { 91 122 98 }
+	tags = { west_mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		alpine_bronze_group
+	}
+}
+
+camunni = {
+	language = alpine_bronze_language
+	color = rgb { 82 116 104 }
+	tags = { west_mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		alpine_bronze_group
+	}
+}
+
+raeti = {
+	language = alpine_bronze_language
+	color = rgb { 114 131 102 }
+	tags = { west_mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		alpine_bronze_group
+	}
+}
+
+golasecca = {
+	language = alpine_bronze_language
+	color = rgb { 87 126 126 }
+	tags = { west_mediterranean_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		alpine_bronze_group
+	}
+}

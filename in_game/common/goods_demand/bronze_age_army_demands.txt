@@ -14,6 +14,11 @@ slinger_infantry_construction = {
 	category = regiment_construction
 }
 
+pastoral_slinger_infantry_construction = {
+	cloth = 0.01
+	category = regiment_construction
+}
+
 spearmen_infantry_construction = {
 	weaponry = 0.03
 	leather = 0.02
@@ -88,6 +93,11 @@ slinger_infantry_maintenance = {
 	weaponry = 0.01
 	leather = 0.01
 	cloth = 0.01
+	category = regiment_maintenance
+}
+
+pastoral_slinger_infantry_maintenance = {
+	cloth = 0.005
 	category = regiment_maintenance
 }
 

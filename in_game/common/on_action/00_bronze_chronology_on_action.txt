@@ -8,9 +8,11 @@ monthly_country_pulse = {
 	on_actions = {
 		bronze_chronology_monthly_pulse
 		bronze_city_prestige_runtime_bootstrap
-		bronze_city_prestige_player_ledger_bootstrap
-		bronze_city_prestige_player_ledger_repair
+		bronze_city_prestige_player_rank_bootstrap
+		bronze_city_prestige_player_rank_repair
 		bronze_rome_foundation_monthly_pulse
+		bronze_etruscan_cities_monthly_pulse
+		bronze_carthage_foundation_monthly_pulse
 	}
 }
 
@@ -106,6 +108,46 @@ bronze_rome_foundation_monthly_pulse = {
 		}
 		else = {
 			bronze_rome_foundation_create_kingdom = yes
+		}
+	}
+}
+
+bronze_etruscan_cities_monthly_pulse = {
+	trigger = {
+		bronze_etruscan_cities_candidate = yes
+	}
+
+	effect = {
+		if = {
+			limit = { is_human = yes }
+			set_global_variable = { name = bronze_etruscan_cities_event_pending value = 1 }
+			trigger_event_non_silently = bronze_western_foundations.1
+		}
+		else = {
+			bronze_etruscan_cities_emerge = yes
+		}
+	}
+}
+
+bronze_carthage_foundation_monthly_pulse = {
+	trigger = {
+		bronze_carthage_foundation_candidate = yes
+	}
+
+	effect = {
+		if = {
+			limit = { is_human = yes }
+			set_global_variable = { name = bronze_carthage_foundation_event_pending value = 1 }
+			if = {
+				limit = { bronze_carthage_foundation_levantine_colonizer = yes }
+				trigger_event_non_silently = bronze_western_foundations.2
+			}
+			else = {
+				trigger_event_non_silently = bronze_western_foundations.3
+			}
+		}
+		else = {
+			bronze_carthage_foundation_create = yes
 		}
 	}
 }

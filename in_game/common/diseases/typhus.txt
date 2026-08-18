@@ -22,7 +22,7 @@
 	#script value for how likely the disease is to spawn per month (0..1)
 	monthly_spawn_chance = {
 		#Around 1 outbreaks around the world
-		value = 0.1
+		value = 0.2
 	}
 
 	#effect to spawn the disease somewhere when we've decided it should spawn.

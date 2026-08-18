@@ -601,12 +601,6 @@ lateralview_full = {
 					}
 				}
 			}
-
-			vbox = {
-				using = layoutpolicy_expanding
-				visible = "[LocationsListView.Vars.HasValue('subtab', 'prestige')]"
-				using = bronze_city_prestige_ledger_content
-			}
 		}
 	}
 }

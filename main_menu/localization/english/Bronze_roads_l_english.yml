@@ -1,7 +1,16 @@
 ﻿l_english:
 
-holloway: "Holloways"
-holloway_desc: "Repeated traffic wears deep paths into the earth, creating natural sunken roads that guide trade, migration, and armies through the landscape. Though cheap to maintain, they become muddy, flood-prone, and difficult for heavy transport outside dry seasons."
+  holloway: "Holloways"
+  holloway_desc: "Repeated traffic wears deep paths into the earth, creating natural sunken roads that guide trade, migration, and armies through the landscape. Though cheap to maintain, they become muddy, flood-prone, and difficult for heavy transport outside dry seasons."
 
-maintained_holloway: "Maintained Holloways"
-maintained_holloway: "Local authorities reinforce major holloways with drainage ditches, packed surfaces, bridges, and cleared vegetation to improve reliability and movement. While still primitive roads, they greatly increase trade capacity and military mobility along important routes."
+  maintained_holloway: "Maintained Holloways"
+  maintained_holloway: "Local authorities reinforce major holloways with drainage ditches, packed surfaces, bridges, and cleared vegetation to improve reliability and movement. While still primitive roads, they greatly increase trade capacity and military mobility along important routes."
+
+  station_system: "Station System"
+  station_system_desc: "A network of maintained stations and stopping places improves movement along established routes, supporting the regular passage of travelers, messengers, and goods between settlements. The system encourages more reliable overland movement and strengthens connections between local markets."
+
+# MAINTENANCE AND CONSTRUCTION COSTS
+
+  build_station_system: "Station System Construction"
+  build_station_system_demand: "Station System Construction Demand"
+  maintain_station_system_demand: "Station System Maintenance"

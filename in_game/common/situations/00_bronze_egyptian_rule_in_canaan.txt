@@ -1,0 +1,186 @@
+egyptian_rule_in_canaan = {
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	hint_tag = hint_egyptian_rule_in_canaan
+
+	content_trigger = {
+		egyptian_rule_in_canaan_participant = yes
+	}
+
+	can_start = {
+		country_exists = c:EGY
+		current_date >= 1.1.1
+		NOT = { has_global_variable = egyptian_rule_in_canaan_ended }
+	}
+
+	can_end = {
+		OR = {
+			NOT = { country_exists = c:EGY }
+			has_global_variable = egyptian_rule_in_canaan_ended
+		}
+	}
+
+	visible = {
+		OR = {
+			egyptian_rule_in_canaan_participant = yes
+			has_variable = egyptian_rule_in_canaan_subject_member
+			has_variable = egyptian_rule_canaanite_defiant
+		}
+	}
+
+	on_start = {
+		c:EGY ?= {
+			egyptian_rule_in_canaan_begin = yes
+			trigger_event_non_silently = egyptian_rule_in_canaan.1
+		}
+		every_country = {
+			limit = {
+				egyptian_rule_in_canaan_city_kingdom = yes
+				is_human = yes
+			}
+			trigger_event_non_silently = egyptian_rule_in_canaan.2
+		}
+	}
+
+	on_ending = {
+		set_global_variable = { name = egyptian_rule_in_canaan_ended value = 1 }
+		c:EGY ?= {
+			egyptian_rule_in_canaan_cleanup = yes
+		}
+	}
+
+	on_monthly = {
+		if = {
+			limit = { NOT = { has_variable = egyptian_rule_in_canaan_months } }
+			set_variable = { name = egyptian_rule_in_canaan_months value = 0 }
+		}
+		if = {
+			limit = { NOT = { has_variable = egyptian_rule_in_canaan_annual_counter } }
+			set_variable = { name = egyptian_rule_in_canaan_annual_counter value = 12 }
+		}
+		if = {
+			limit = { NOT = { has_variable = egyptian_authority_in_canaan } }
+			set_variable = { name = egyptian_authority_in_canaan value = 80 }
+		}
+		change_variable = { name = egyptian_rule_in_canaan_months add = 1 }
+		change_variable = { name = egyptian_rule_in_canaan_annual_counter add = -1 }
+
+		egyptian_rule_in_canaan_refresh_subject_count = yes
+
+		if = {
+			# Six-year grace period: Canaan remains visible, but Egyptian
+			# authority does not begin drifting into crisis immediately.
+			limit = { var:egyptian_rule_in_canaan_months >= 72 }
+
+			if = {
+				limit = { var:egyptian_rule_in_canaan_annual_counter <= 0 }
+				set_variable = { name = egyptian_rule_in_canaan_annual_counter value = 12 }
+				egyptian_rule_in_canaan_annual_pressure = yes
+			}
+
+			egyptian_rule_in_canaan_apply_phase = yes
+
+			if = {
+				limit = {
+					has_global_variable = sea_peoples_crisis_ended
+					NOT = { has_variable = egyptian_rule_victory_event_pending }
+					var:egyptian_authority_in_canaan >= 60
+				}
+				set_variable = { name = egyptian_rule_victory_event_pending value = 1 }
+				c:EGY ?= { trigger_event_non_silently = egyptian_rule_in_canaan.200 }
+			}
+
+			if = {
+				limit = {
+					NOT = { has_variable = egyptian_rule_final_event_pending }
+					var:egyptian_authority_in_canaan <= 0
+				}
+				set_variable = { name = egyptian_rule_final_event_pending value = 1 }
+				c:EGY ?= { trigger_event_non_silently = egyptian_rule_in_canaan.100 }
+			}
+		}
+	}
+
+	tooltip = {
+		if = {
+			limit = {
+				has_owner = yes
+				owner ?= { egyptian_rule_in_canaan_city_kingdom = yes }
+			}
+			custom_tooltip = egyptian_rule_in_canaan_subject_location_tt
+		}
+		if = {
+			limit = {
+				OR = {
+					this = location:gaza
+					this = location:nablus
+					this = location:jaffa
+				}
+				has_building = building_type:egyptian_canaanite_garrison
+			}
+			custom_tooltip = egyptian_rule_in_canaan_garrison_location_tt
+		}
+		if = {
+			limit = {
+				OR = {
+					this = location:gaza
+					this = location:nablus
+					this = location:jaffa
+				}
+				exists = owner
+				owner != controller
+			}
+			custom_tooltip = egyptian_rule_in_canaan_garrison_occupied_tt
+		}
+	}
+
+	is_data_map = yes
+
+	map_color = {
+		if = {
+			limit = {
+				OR = {
+					this = location:gaza
+					this = location:nablus
+					this = location:jaffa
+				}
+				has_building = building_type:egyptian_canaanite_garrison
+			}
+			value = c:EGY.country_color
+		}
+		else_if = {
+			limit = {
+				has_owner = yes
+				owner ?= { egyptian_rule_in_canaan_city_kingdom = yes }
+			}
+			value = yellow
+		}
+		else = {
+			value = blue
+		}
+	}
+
+	secondary_map_color = {
+		if = {
+			limit = {
+				OR = {
+					this = location:gaza
+					this = location:nablus
+					this = location:jaffa
+				}
+				exists = owner
+				owner != controller
+			}
+			value = red
+		}
+		else_if = {
+			limit = {
+				has_owner = yes
+				owner ?= { has_variable = egyptian_rule_canaanite_defiant }
+			}
+			value = orange
+		}
+		else = {
+			value = blue
+		}
+	}
+}

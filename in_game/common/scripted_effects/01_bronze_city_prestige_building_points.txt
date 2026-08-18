@@ -16,13 +16,103 @@
 #			name = bronze_city_prestige_score
 #			add = 25
 #		}
+#		change_variable = {
+#			name = bronze_city_prestige_building_score
+#			add = 25
+#		}
+#		set_variable = {
+#			name = bronze_city_prestige_building_your_building_id_score
+#			value = 25
+#		}
 #	}
 #
 # Buildings are evaluated independently. If several listed buildings coexist
 # in one location, their points are cumulative.
 # ============================================================================
 
+bronze_city_prestige_clear_building_score_breakdown = {
+	set_variable = { name = bronze_city_prestige_building_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_market_village_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_marketplace_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_entrepot_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_trading_hub_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_stock_exchange_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_palatial_complex_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_triumphal_monument_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_monumental_gates_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_cyclopean_walls_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_giza_pyramid_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_karnak_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_luxor_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_abu_simbel_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_theban_necropolis_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_hattusa_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_mycenae_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_tiryns_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_pylos_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_troy_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_knossos_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_ugarit_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_ur_ziggurat_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_assur_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_chogha_zanbil_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_yin_xu_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_su_nuraxi_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_nuraghe_arrubiu_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_santu_antine_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_romanzesu_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_serra_orrios_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_madau_giants_tombs_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_stonehenge_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_avebury_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_bru_na_boinne_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_great_pyramid_new_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_great_pyramid_unfinished_score value = 0 }
+}
+
+bronze_city_prestige_remove_building_score_breakdown = {
+	remove_variable = bronze_city_prestige_building_score
+	remove_variable = bronze_city_prestige_building_market_village_score
+	remove_variable = bronze_city_prestige_building_marketplace_score
+	remove_variable = bronze_city_prestige_building_entrepot_score
+	remove_variable = bronze_city_prestige_building_trading_hub_score
+	remove_variable = bronze_city_prestige_building_stock_exchange_score
+	remove_variable = bronze_city_prestige_building_palatial_complex_score
+	remove_variable = bronze_city_prestige_building_triumphal_monument_score
+	remove_variable = bronze_city_prestige_building_monumental_gates_score
+	remove_variable = bronze_city_prestige_building_cyclopean_walls_score
+	remove_variable = bronze_city_prestige_building_giza_pyramid_score
+	remove_variable = bronze_city_prestige_building_karnak_score
+	remove_variable = bronze_city_prestige_building_luxor_score
+	remove_variable = bronze_city_prestige_building_abu_simbel_score
+	remove_variable = bronze_city_prestige_building_theban_necropolis_score
+	remove_variable = bronze_city_prestige_building_hattusa_score
+	remove_variable = bronze_city_prestige_building_mycenae_score
+	remove_variable = bronze_city_prestige_building_tiryns_score
+	remove_variable = bronze_city_prestige_building_pylos_score
+	remove_variable = bronze_city_prestige_building_troy_score
+	remove_variable = bronze_city_prestige_building_knossos_score
+	remove_variable = bronze_city_prestige_building_ugarit_score
+	remove_variable = bronze_city_prestige_building_ur_ziggurat_score
+	remove_variable = bronze_city_prestige_building_assur_score
+	remove_variable = bronze_city_prestige_building_chogha_zanbil_score
+	remove_variable = bronze_city_prestige_building_yin_xu_score
+	remove_variable = bronze_city_prestige_building_su_nuraxi_score
+	remove_variable = bronze_city_prestige_building_nuraghe_arrubiu_score
+	remove_variable = bronze_city_prestige_building_santu_antine_score
+	remove_variable = bronze_city_prestige_building_romanzesu_score
+	remove_variable = bronze_city_prestige_building_serra_orrios_score
+	remove_variable = bronze_city_prestige_building_madau_giants_tombs_score
+	remove_variable = bronze_city_prestige_building_stonehenge_score
+	remove_variable = bronze_city_prestige_building_avebury_score
+	remove_variable = bronze_city_prestige_building_bru_na_boinne_score
+	remove_variable = bronze_city_prestige_building_great_pyramid_new_score
+	remove_variable = bronze_city_prestige_building_great_pyramid_unfinished_score
+}
+
 bronze_city_prestige_add_building_points = {
+	bronze_city_prestige_clear_building_score_breakdown = yes
+
 	# Local exchange and market infrastructure.
 	if = {
 		limit = {
@@ -32,6 +122,8 @@ bronze_city_prestige_add_building_points = {
 			name = bronze_city_prestige_score
 			add = 10
 		}
+		change_variable = { name = bronze_city_prestige_building_score add = 10 }
+		set_variable = { name = bronze_city_prestige_building_market_village_score value = 10 }
 	}
 
 	if = {
@@ -42,6 +134,8 @@ bronze_city_prestige_add_building_points = {
 			name = bronze_city_prestige_score
 			add = 20
 		}
+		change_variable = { name = bronze_city_prestige_building_score add = 20 }
+		set_variable = { name = bronze_city_prestige_building_marketplace_score value = 20 }
 	}
 
 	if = {
@@ -52,6 +146,8 @@ bronze_city_prestige_add_building_points = {
 			name = bronze_city_prestige_score
 			add = 30
 		}
+		change_variable = { name = bronze_city_prestige_building_score add = 30 }
+		set_variable = { name = bronze_city_prestige_building_entrepot_score value = 30 }
 	}
 
 	if = {
@@ -62,6 +158,8 @@ bronze_city_prestige_add_building_points = {
 			name = bronze_city_prestige_score
 			add = 40
 		}
+		change_variable = { name = bronze_city_prestige_building_score add = 40 }
+		set_variable = { name = bronze_city_prestige_building_trading_hub_score value = 40 }
 	}
 
 	if = {
@@ -72,6 +170,8 @@ bronze_city_prestige_add_building_points = {
 			name = bronze_city_prestige_score
 			add = 50
 		}
+		change_variable = { name = bronze_city_prestige_building_score add = 50 }
+		set_variable = { name = bronze_city_prestige_building_stock_exchange_score value = 50 }
 	}
 
 	# Major Bronze Age administrative and monumental center.
@@ -83,6 +183,35 @@ bronze_city_prestige_add_building_points = {
 			name = bronze_city_prestige_score
 			add = 100
 		}
+		change_variable = { name = bronze_city_prestige_building_score add = 100 }
+		set_variable = { name = bronze_city_prestige_building_palatial_complex_score value = 100 }
+	}
+
+	if = {
+		limit = {
+			has_building = building_type:bronze_age_triumphal_monument
+		}
+		change_variable = { name = bronze_city_prestige_score add = 10 }
+		change_variable = { name = bronze_city_prestige_building_score add = 10 }
+		set_variable = { name = bronze_city_prestige_building_triumphal_monument_score value = 10 }
+	}
+
+	if = {
+		limit = {
+			has_building = building_type:bronze_monumental_gates
+		}
+		change_variable = { name = bronze_city_prestige_score add = 10 }
+		change_variable = { name = bronze_city_prestige_building_score add = 10 }
+		set_variable = { name = bronze_city_prestige_building_monumental_gates_score value = 10 }
+	}
+
+	if = {
+		limit = {
+			has_building = building_type:cyclopean_walls
+		}
+		change_variable = { name = bronze_city_prestige_score add = 10 }
+		change_variable = { name = bronze_city_prestige_building_score add = 10 }
+		set_variable = { name = bronze_city_prestige_building_cyclopean_walls_score value = 10 }
 	}
 
 	# Historical monuments. Keep every fixed award in this single effect:
@@ -91,71 +220,135 @@ bronze_city_prestige_add_building_points = {
 	# independent from the aggressive vanilla work-of-art quality multipliers.
 	if = {
 		limit = { has_building = building_type:bronze_monument_giza_pyramid_complex }
-		change_variable = { name = bronze_city_prestige_score add = 200 }
+		change_variable = { name = bronze_city_prestige_score add = 120 }
+		change_variable = { name = bronze_city_prestige_building_score add = 120 }
+		set_variable = { name = bronze_city_prestige_building_giza_pyramid_score value = 120 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_karnak_complex }
 		change_variable = { name = bronze_city_prestige_score add = 120 }
+		change_variable = { name = bronze_city_prestige_building_score add = 120 }
+		set_variable = { name = bronze_city_prestige_building_karnak_score value = 120 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_luxor_temple }
 		change_variable = { name = bronze_city_prestige_score add = 70 }
+		change_variable = { name = bronze_city_prestige_building_score add = 70 }
+		set_variable = { name = bronze_city_prestige_building_luxor_score value = 70 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_abu_simbel }
 		change_variable = { name = bronze_city_prestige_score add = 90 }
+		change_variable = { name = bronze_city_prestige_building_score add = 90 }
+		set_variable = { name = bronze_city_prestige_building_abu_simbel_score value = 90 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_theban_necropolis }
 		change_variable = { name = bronze_city_prestige_score add = 100 }
+		change_variable = { name = bronze_city_prestige_building_score add = 100 }
+		set_variable = { name = bronze_city_prestige_building_theban_necropolis_score value = 100 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_hattusa_complex }
 		change_variable = { name = bronze_city_prestige_score add = 140 }
+		change_variable = { name = bronze_city_prestige_building_score add = 140 }
+		set_variable = { name = bronze_city_prestige_building_hattusa_score value = 140 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_mycenae_citadel }
 		change_variable = { name = bronze_city_prestige_score add = 130 }
+		change_variable = { name = bronze_city_prestige_building_score add = 130 }
+		set_variable = { name = bronze_city_prestige_building_mycenae_score value = 130 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_tiryns_cyclopean }
 		change_variable = { name = bronze_city_prestige_score add = 80 }
+		change_variable = { name = bronze_city_prestige_building_score add = 80 }
+		set_variable = { name = bronze_city_prestige_building_tiryns_score value = 80 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_pylos_palace }
 		change_variable = { name = bronze_city_prestige_score add = 90 }
+		change_variable = { name = bronze_city_prestige_building_score add = 90 }
+		set_variable = { name = bronze_city_prestige_building_pylos_score value = 90 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_troy_citadel }
 		change_variable = { name = bronze_city_prestige_score add = 110 }
+		change_variable = { name = bronze_city_prestige_building_score add = 110 }
+		set_variable = { name = bronze_city_prestige_building_troy_score value = 110 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_knossos_complex }
 		change_variable = { name = bronze_city_prestige_score add = 120 }
+		change_variable = { name = bronze_city_prestige_building_score add = 120 }
+		set_variable = { name = bronze_city_prestige_building_knossos_score value = 120 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_ugarit_complex }
 		change_variable = { name = bronze_city_prestige_score add = 100 }
+		change_variable = { name = bronze_city_prestige_building_score add = 100 }
+		set_variable = { name = bronze_city_prestige_building_ugarit_score value = 100 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_ur_ziggurat }
 		change_variable = { name = bronze_city_prestige_score add = 120 }
+		change_variable = { name = bronze_city_prestige_building_score add = 120 }
+		set_variable = { name = bronze_city_prestige_building_ur_ziggurat_score value = 120 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_assur_complex }
 		change_variable = { name = bronze_city_prestige_score add = 110 }
+		change_variable = { name = bronze_city_prestige_building_score add = 110 }
+		set_variable = { name = bronze_city_prestige_building_assur_score value = 110 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_chogha_zanbil }
 		change_variable = { name = bronze_city_prestige_score add = 100 }
+		change_variable = { name = bronze_city_prestige_building_score add = 100 }
+		set_variable = { name = bronze_city_prestige_building_chogha_zanbil_score value = 100 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_yin_xu }
 		change_variable = { name = bronze_city_prestige_score add = 150 }
+		change_variable = { name = bronze_city_prestige_building_score add = 150 }
+		set_variable = { name = bronze_city_prestige_building_yin_xu_score value = 150 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_su_nuraxi }
 		change_variable = { name = bronze_city_prestige_score add = 90 }
+		change_variable = { name = bronze_city_prestige_building_score add = 90 }
+		set_variable = { name = bronze_city_prestige_building_su_nuraxi_score value = 90 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_nuraghe_arrubiu }
+		change_variable = { name = bronze_city_prestige_score add = 70 }
+		change_variable = { name = bronze_city_prestige_building_score add = 70 }
+		set_variable = { name = bronze_city_prestige_building_nuraghe_arrubiu_score value = 70 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_santu_antine }
+		change_variable = { name = bronze_city_prestige_score add = 65 }
+		change_variable = { name = bronze_city_prestige_building_score add = 65 }
+		set_variable = { name = bronze_city_prestige_building_santu_antine_score value = 65 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_romanzesu }
+		change_variable = { name = bronze_city_prestige_score add = 55 }
+		change_variable = { name = bronze_city_prestige_building_score add = 55 }
+		set_variable = { name = bronze_city_prestige_building_romanzesu_score value = 55 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_serra_orrios }
+		change_variable = { name = bronze_city_prestige_score add = 50 }
+		change_variable = { name = bronze_city_prestige_building_score add = 50 }
+		set_variable = { name = bronze_city_prestige_building_serra_orrios_score value = 50 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_madau_giants_tombs }
+		change_variable = { name = bronze_city_prestige_score add = 50 }
+		change_variable = { name = bronze_city_prestige_building_score add = 50 }
+		set_variable = { name = bronze_city_prestige_building_madau_giants_tombs_score value = 50 }
 	}
 	# Stonehenge is likewise represented by its native monument work of art.
 	if = {
@@ -169,21 +362,31 @@ bronze_city_prestige_add_building_points = {
 			}
 		}
 		change_variable = { name = bronze_city_prestige_score add = 90 }
+		change_variable = { name = bronze_city_prestige_building_score add = 90 }
+		set_variable = { name = bronze_city_prestige_building_stonehenge_score value = 90 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_avebury }
 		change_variable = { name = bronze_city_prestige_score add = 70 }
+		change_variable = { name = bronze_city_prestige_building_score add = 70 }
+		set_variable = { name = bronze_city_prestige_building_avebury_score value = 70 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_bru_na_boinne }
 		change_variable = { name = bronze_city_prestige_score add = 90 }
+		change_variable = { name = bronze_city_prestige_building_score add = 90 }
+		set_variable = { name = bronze_city_prestige_building_bru_na_boinne_score value = 90 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_great_pyramid_new }
 		change_variable = { name = bronze_city_prestige_score add = 200 }
+		change_variable = { name = bronze_city_prestige_building_score add = 200 }
+		set_variable = { name = bronze_city_prestige_building_great_pyramid_new_score value = 200 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_great_pyramid_unfinished }
 		change_variable = { name = bronze_city_prestige_score add = 35 }
+		change_variable = { name = bronze_city_prestige_building_score add = 35 }
+		set_variable = { name = bronze_city_prestige_building_great_pyramid_unfinished_score value = 35 }
 	}
 }

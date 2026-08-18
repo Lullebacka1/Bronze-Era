@@ -210,7 +210,7 @@ temple_granary = {
 		local_max_control = 0.06
 	}
 
-	obsolete = neolithic_feast_court
+	# obsolete = neolithic_feast_court
 
 	custom_tags = { temple_addition }
 
