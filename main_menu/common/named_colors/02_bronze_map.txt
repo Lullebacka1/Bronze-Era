@@ -19,4 +19,11 @@ colors = {
 	map_VINDLAND = rgb { 129 112 50 }
 	map_ALLARAM = rgb { 158 103 52 }
 	map_PERSIA = rgb { 155 33 28 }
+	map_ISRAEL = rgb { 82 111 132 }
+	map_JUDAH = rgb { 126 61 44 }
+	map_MOAB = rgb { 151 116 59 }
+	map_EDOM = rgb { 142 77 48 }
+	map_ARDAM = rgb { 75 105 132 }
+	map_AMMON = rgb { 112 119 68 }
+	map_PHILST = rgb { 61 117 132 }
 }

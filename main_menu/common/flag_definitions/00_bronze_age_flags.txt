@@ -184,6 +184,34 @@ PERSIA = { # Persian Empire formable, royal Iranian high kingship.
 	flag_definition = { coa = bronze_age_PERSIA_coa priority = 10000 }
 }
 
+ISRAEL = { # Israel formable, Canaanite highland kingdom.
+	flag_definition = { coa = bronze_age_ISRAEL_coa priority = 10000 }
+}
+
+JUDAH = { # Judah formable, southern Canaanite hill kingdom.
+	flag_definition = { coa = bronze_age_JUDAH_coa priority = 10000 }
+}
+
+MOAB = { # Moab formable, eastern Dead Sea highland kingdom.
+	flag_definition = { coa = bronze_age_MOAB_coa priority = 10000 }
+}
+
+EDOM = { # Edom formable, southern Transjordan highland kingdom.
+	flag_definition = { coa = bronze_age_EDOM_coa priority = 10000 }
+}
+
+ARDAM = { # Aram-Damascus formable.
+	flag_definition = { coa = bronze_age_ARDAM_coa priority = 10000 }
+}
+
+AMMON = { # Ammon formable, Amman highland kingdom.
+	flag_definition = { coa = bronze_age_AMMON_coa priority = 10000 }
+}
+
+PHILST = { # Philistine States formable, Peleset coastal league.
+	flag_definition = { coa = bronze_age_PHILST_coa priority = 10000 }
+}
+
 SHANG = { # Shang dynasty, using the provided red field and black glyph flag.
 	flag_definition = { coa = bronze_age_SHANG_coa priority = 10000 }
 }

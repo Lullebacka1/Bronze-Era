@@ -37718,23 +37718,24 @@ VC001 = {
 	}
 
 	ASHT = {
-		culture = canaanite
-		religion = canaanite
-		country_rank = rank_county
-		own_control_core = {
-			dara
-		}
-		capital = dara
+	culture = moabite
+	religion = canaanite
+	country_rank = rank_county
+	own_control_core = {
+		dara  nawa
+	}
+	capital = dara
 		include = "Bronze"
 		government = {
 			ruler = random
 		}
-		accepted_cultures = {
-			canaanite
-		}
-		discovered_regions = {
-			crescent_region
-		}
+	accepted_cultures = {
+		canaanite
+		moabite
+	}
+	discovered_regions = {
+		crescent_region
+	}
 	}
 
 	GEZE = {
