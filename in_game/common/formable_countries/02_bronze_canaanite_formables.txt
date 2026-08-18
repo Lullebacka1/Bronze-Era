@@ -421,3 +421,73 @@ PHILST_f = {
 	}
 }
 
+# Phoenicia unites the established Phoenician city kingdoms in the setup
+# together with Akshaph/Akshapah, requiring direct ownership and independence.
+PHO_f = {
+	level = 3
+	required_locations_fraction = 1.00
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 725
+
+	potential = {
+		OR = {
+			culture = culture:phoenician
+			religion = religion:phoenician
+			tag = SIDON
+			tag = ARWAD
+			tag = BERIT
+			tag = BYBLO
+			tag = AKSHA
+		}
+		NOT = { tag = PHO }
+		NOT = { country_exists = c:PHO }
+		NOT = { has_variable = bronze_formed_phoenicia }
+	}
+
+	allow = {
+		is_subject = no
+		owns = location:acre
+		owns = location:sidon
+		owns = location:deir_qamar
+		owns = location:beirut
+		owns = location:baniyas
+		owns = location:tartus
+		owns = location:tripoli_syria
+	}
+
+	name = PHO
+	flag = PHO
+	adjective = PHO_ADJ
+	tag = PHO
+	color = map_PHO
+
+	locations = {
+		acre sidon deir_qamar beirut baniyas tartus tripoli_syria
+	}
+
+	form_effect = {
+		change_culture = culture:phoenician
+		change_religion = religion:phoenician
+		set_capital = location:sidon
+		add_accepted_culture = culture:canaanite
+		add_accepted_culture = culture:ugaritic
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_phoenicia value = 1 }
+		add_legitimacy = legitimacy_weak_bonus
+		add_prestige = prestige_mild_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_phoenician_maritime_kingdom
+			years = -1
+			mode = add_and_extend
+		}
+		trigger_event_non_silently = { id = bronze_phoenicia.1 days = 1 }
+	}
+}
+

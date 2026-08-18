@@ -1,6 +1,9 @@
 mycenaean_league_yearly_pulse = {
 	trigger = {
 		is_member_of_international_organization = international_organization:mycenaean_league
+		international_organization:mycenaean_league = {
+			var:mycenaean_league_months >= 72
+		}
 	}
 
 	random_events = {

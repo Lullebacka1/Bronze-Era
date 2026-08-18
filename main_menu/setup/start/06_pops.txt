@@ -82786,7 +82786,7 @@ makisin = {
 antioch = {
 	define_pop = {	type = nobles	size = 0.010	culture = ugaritic	religion = ugaritic }
 	define_pop = {	type = clergy	size = 0.010	culture = ugaritic	religion = ugaritic }
-	define_pop = {	type = burghers	size = 0.010	culture = ugaritic	religion = ugaritic }
+	define_pop = {	type = burghers	size = 0.010	culture = phoenician	religion = ugaritic }
 	define_pop = {	type = burghers	size = 0.010	culture = ugaritic	religion = ugaritic }
 	define_pop = {	type = burghers	size = 0.010	culture = ugaritic	religion = ugaritic }
 	define_pop = {	type = burghers	size = 0.010	culture = ugaritic	religion = ugaritic }
@@ -82985,21 +82985,21 @@ beersheba = {
 	define_pop = {	type = peasants	size = 2.827	culture = canaanite	religion = canaanite }
 }
 gaza = {
-	define_pop = {	type = clergy	size = 0.342	culture = peleset	religion = sea_peoples_cult }
-	define_pop = {	type = peasants	size = 34.264	culture = peleset	religion = sea_peoples_cult }
+	define_pop = {	type = clergy	size = 0.342	culture = peleset	religion = canaanite }
+	define_pop = {	type = peasants	size = 34.264	culture = peleset	religion = canaanite }
 }
 hebron = {
 	define_pop = {	type = clergy	size = 0.342	culture = canaanite	religion = canaanite }
 	define_pop = {	type = peasants	size = 34.264	culture = canaanite	religion = canaanite }
 }
 jaffa = {
-	define_pop = {	type = peasants	size = 34.264	culture = peleset	religion = sea_peoples_cult }
+	define_pop = {	type = peasants	size = 34.264	culture = peleset	religion = canaanite }
 }
 majdal = {
-	define_pop = {	type = clergy	size = 0.342	culture = peleset	religion = sea_peoples_cult }
-	define_pop = {	type = peasants	size = 34.264	culture = peleset	religion = sea_peoples_cult }
-	define_pop = {	type = slaves	size = 0.342	culture = peleset	religion = sea_peoples_cult }
-	define_pop = {	type = slaves	size = 0.342	culture = peleset	religion = sea_peoples_cult }
+	define_pop = {	type = clergy	size = 0.342	culture = peleset	religion = canaanite }
+	define_pop = {	type = peasants	size = 34.264	culture = peleset	religion = canaanite }
+	define_pop = {	type = slaves	size = 0.342	culture = peleset	religion = canaanite }
+	define_pop = {	type = slaves	size = 0.342	culture = peleset	religion = canaanite }
 }
 nablus = {
 	define_pop = {	type = clergy	size = 0.342	culture = canaanite	religion = canaanite }

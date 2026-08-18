@@ -37698,8 +37698,8 @@ VC001 = {
 	}
 
 	ASHK = {
-		culture = canaanite
-		religion = canaanite
+		culture = phoenician
+		religion = phoenician
 		country_rank = rank_county
 		own_control_core = {
 			majdal

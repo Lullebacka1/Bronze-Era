@@ -26,4 +26,5 @@ colors = {
 	map_ARDAM = rgb { 75 105 132 }
 	map_AMMON = rgb { 112 119 68 }
 	map_PHILST = rgb { 61 117 132 }
+	map_PHO = rgb { 106 67 118 }
 }

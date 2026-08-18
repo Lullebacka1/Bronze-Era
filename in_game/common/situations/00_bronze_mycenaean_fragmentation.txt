@@ -40,6 +40,10 @@ mycenaean_fragmentation = {
 		if = {
 			limit = {
 				NOT = { has_variable = mycenaean_fragmentation_crisis_active }
+				# Six-year grace period: the league panel is active from day one,
+				# but palace fragmentation cannot begin before members have had
+				# time to develop.
+				var:mycenaean_fragmentation_months >= 72
 				international_organization:mycenaean_league = {
 					any_international_organization_member = {
 						mycenaean_palace_is_valid_landable_member = yes

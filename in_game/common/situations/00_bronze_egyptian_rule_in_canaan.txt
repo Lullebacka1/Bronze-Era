@@ -67,30 +67,36 @@ egyptian_rule_in_canaan = {
 		egyptian_rule_in_canaan_refresh_subject_count = yes
 
 		if = {
-			limit = { var:egyptian_rule_in_canaan_annual_counter <= 0 }
-			set_variable = { name = egyptian_rule_in_canaan_annual_counter value = 12 }
-			egyptian_rule_in_canaan_annual_pressure = yes
-		}
+			# Six-year grace period: Canaan remains visible, but Egyptian
+			# authority does not begin drifting into crisis immediately.
+			limit = { var:egyptian_rule_in_canaan_months >= 72 }
 
-		egyptian_rule_in_canaan_apply_phase = yes
-
-		if = {
-			limit = {
-				has_global_variable = sea_peoples_crisis_ended
-				NOT = { has_variable = egyptian_rule_victory_event_pending }
-				var:egyptian_authority_in_canaan >= 60
+			if = {
+				limit = { var:egyptian_rule_in_canaan_annual_counter <= 0 }
+				set_variable = { name = egyptian_rule_in_canaan_annual_counter value = 12 }
+				egyptian_rule_in_canaan_annual_pressure = yes
 			}
-			set_variable = { name = egyptian_rule_victory_event_pending value = 1 }
-			c:0002G ?= { trigger_event_non_silently = egyptian_rule_in_canaan.200 }
-		}
 
-		if = {
-			limit = {
-				NOT = { has_variable = egyptian_rule_final_event_pending }
-				var:egyptian_authority_in_canaan <= 0
+			egyptian_rule_in_canaan_apply_phase = yes
+
+			if = {
+				limit = {
+					has_global_variable = sea_peoples_crisis_ended
+					NOT = { has_variable = egyptian_rule_victory_event_pending }
+					var:egyptian_authority_in_canaan >= 60
+				}
+				set_variable = { name = egyptian_rule_victory_event_pending value = 1 }
+				c:0002G ?= { trigger_event_non_silently = egyptian_rule_in_canaan.200 }
 			}
-			set_variable = { name = egyptian_rule_final_event_pending value = 1 }
-			c:0002G ?= { trigger_event_non_silently = egyptian_rule_in_canaan.100 }
+
+			if = {
+				limit = {
+					NOT = { has_variable = egyptian_rule_final_event_pending }
+					var:egyptian_authority_in_canaan <= 0
+				}
+				set_variable = { name = egyptian_rule_final_event_pending value = 1 }
+				c:0002G ?= { trigger_event_non_silently = egyptian_rule_in_canaan.100 }
+			}
 		}
 	}
 
