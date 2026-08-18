@@ -83,98 +83,99 @@ expensive_heavy_chariot_construction = {
 # MAINTENANCE
 
 early_infantry_maintenance = {
-	weaponry = 0.01
-	leather = 0.01
-	cloth = 0.01
+	weaponry = 0.07
+	leather = 0.03
+	cloth = 0.03
 	category = regiment_maintenance
 }
 
 slinger_infantry_maintenance = {
-	weaponry = 0.01
-	leather = 0.01
-	cloth = 0.01
+	weaponry = 0.05
+	leather = 0.02
+	cloth = 0.03
 	category = regiment_maintenance
 }
 
 pastoral_slinger_infantry_maintenance = {
-	cloth = 0.005
+	leather = 0.02
+	cloth = 0.02
 	category = regiment_maintenance
 }
 
 spearmen_infantry_maintenance = {
-	weaponry = 0.01
-	leather = 0.01
-	cloth = 0.01
+	weaponry = 0.08
+	leather = 0.03
+	cloth = 0.03
 	category = regiment_maintenance
 }
 
 axemen_infantry_maintenance = {
-	weaponry = 0.02
-	leather = 0.01
-	cloth = 0.01
+	weaponry = 0.09
+	leather = 0.03
+	cloth = 0.03
 	category = regiment_maintenance
 }
 
 swordsmen_infantry_maintenance = {
-	weaponry = 0.01
-	leather = 0.01
-	cloth = 0.01
+	weaponry = 0.08
+	leather = 0.03
+	cloth = 0.03
 	category = regiment_maintenance
 }
 
 neolithic_bowmen_maintenance = {
-	weaponry = 0.01
-	leather = 0.01
-	cloth = 0.01
+	weaponry = 0.02
+	leather = 0.02
+	cloth = 0.02
 	category = regiment_maintenance
 }
 
 composite_bowmen_maintenance = {
-	weaponry = 0.02
-	leather = 0.01
-	cloth = 0.01
+	weaponry = 0.08
+	leather = 0.03
+	cloth = 0.03
 	category = regiment_maintenance
 }
 
 chariot_maintenance  = {
-	leather = 0.05
-	cloth = 0.05
+	leather = 0.10
+	cloth = 0.10
 	horses = 0.25
-	weaponry = 0.05
-	tools = 0.05
+	weaponry = 0.13
+	tools = 0.08
 	category = regiment_construction
 }
 heavy_chariot_maintenance = {
-	leather = 0.1
+	leather = 0.15
 	weaponry = 0.15
-	cloth = 0.1
-	horses = 0.5
-	tools = 0.1
+	cloth = 0.10
+	horses = 0.50
+	tools = 0.08
 	category = regiment_maintenance
 }
 expensive_heavy_chariot_maintenance = {
-	leather = 0.3
-	weaponry = 0.3
-	cloth = 0.2
+	leather = 0.20
+	weaponry = 0.17
+	cloth = 0.15
 	horses = 1.0
-	tools = 0.2
+	tools = 0.15
 	category = regiment_maintenance
 }
 
 # UNIQUES
 
 myrmidones_maintenance = {
-	weaponry = 0.02
-	leather = 0.015
-	cloth = 0.015
+	weaponry = 0.10
+	leather = 0.03
+	cloth = 0.03
 	category = regiment_maintenance
 }
 
 hchariot_maintenance = {
-	leather = 0.1
-	weaponry = 0.2
-	cloth = 0.1
-	horses = 0.6
-	tools = 0.1
+	leather = 0.15
+	weaponry = 0.15
+	cloth = 0.10
+	horses = 0.60
+	tools = 0.10
 	category = regiment_maintenance
 }
