@@ -3,4 +3,5 @@ diplomacy_manager = {
 	# Disabled for setup stability: numeric placeholder tags such as 0001G can
 	# assert as non-real countries when used in vanilla diplomacy relations.
 	
+	
 }

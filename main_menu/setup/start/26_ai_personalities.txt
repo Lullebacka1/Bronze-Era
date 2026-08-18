@@ -28,18 +28,22 @@ countries = {
 
 		# Opportunistic: exploit others' weaknesses; trade-focused
 		#POR = { ai_personality = ai_opportunistic }  # Portugal
-		EGY = { ai_personality = ai_opportunistic }  # egypt
+		
 		ETR = { ai_personality = ai_opportunistic }  # Etruscans
 		MAGA = { ai_personality = ai_opportunistic }  # Magan
 
 
 		# Isolationist: internally focused, avoid foreign entanglement
 		#MNG = { ai_personality = ai_isolationist }  # Ming China
-
+		EGY = { ai_personality = ai_isolationist }  # egypt
 
 		# Friendly: diplomacy-first, build alliances and accept fair peace
 		#PAP = { ai_personality = ai_friendly }  # Papal States
-
+		ASHK = { ai_personality = ai_friendly }  # Ashkelon
+		BYBLO = { ai_personality = ai_friendly }  # Byblos
+		BERIT = { ai_personality = ai_friendly }  # Beirut
+		ARWAD = { ai_personality = ai_friendly }  # Arwad
+		SIDON = { ai_personality = ai_friendly }  # Sidon
 
 	}
 }
