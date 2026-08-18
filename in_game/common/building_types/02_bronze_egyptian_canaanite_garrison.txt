@@ -22,6 +22,6 @@ egyptian_canaanite_garrison = {
 		local_garrison_size = 0.15
 		local_max_control = 0.02
 		local_unrest = 0.01
-		manpower_to_building_owner = 0.0005
+		manpower_to_building_owner = 0.005
 	}
 }
