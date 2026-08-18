@@ -1,0 +1,59 @@
+# Compatibility cultures used by generated vanilla-derived pop setup.
+# These IDs appear in setup/start/06_pops.txt. Keep them defined so pop loading
+# does not assert on invalid culture lookups; do not use this file for new map
+# design unless the regional culture files are updated deliberately.
+
+ainu_culture = {
+	language = east_asian_bronze_language
+	color = rgb { 121 108 83 }
+	tags = { east_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		east_asian_bronze_group
+	}
+}
+
+albanian = {
+	language = balkanic_bronze_language
+	color = rgb { 117 127 103 }
+	tags = { south_slavic_gfx eastern_european_gfx european_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		balkans_bronze_group
+	}
+}
+
+malay_culture = {
+	language = southeast_asian_bronze_language
+	color = rgb { 88 139 112 }
+	tags = { indochina_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		southeast_asian_bronze_group
+	}
+}
+
+mon_culture = {
+	language = southeast_asian_bronze_language
+	color = rgb { 77 139 94 }
+	tags = { indochina_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		southeast_asian_bronze_group
+	}
+}
+
+shu_culture = {
+	language = east_asian_bronze_language
+	color = rgb { 180 93 62 }
+	tags = { east_asian_gfx }
+	opinions = {
+	}
+	culture_groups = {
+		east_asian_bronze_group
+	}
+}

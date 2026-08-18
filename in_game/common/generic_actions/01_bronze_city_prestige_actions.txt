@@ -21,8 +21,8 @@ bronze_begin_great_pyramid_project = {
 	potential = {
 		scope:actor ?= {
 			OR = {
-				this = c:0002G
-				has_or_had_tag = 0002G
+				this = c:EGY
+				has_or_had_tag = EGY
 			}
 			NOT = { has_global_variable = bronze_second_great_pyramid_committed }
 			NOT = { has_variable = bronze_great_pyramid_project_active }
@@ -136,8 +136,8 @@ bronze_resume_great_pyramid_project = {
 	potential = {
 		scope:actor ?= {
 			OR = {
-				this = c:0002G
-				has_or_had_tag = 0002G
+				this = c:EGY
+				has_or_had_tag = EGY
 			}
 			has_variable = bronze_great_pyramid_project_suspended
 			has_variable = bronze_great_pyramid_project_site

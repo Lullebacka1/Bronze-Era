@@ -1,3 +1,8 @@
 ﻿l_english:
+  trojan_situation_vassal: "Trojan War Vassal"
+  trojan_situation_vassal_desc: "A temporary vassal relationship tied to the Trojan War situation. It is only visible to the countries directly involved in the Trojan conflict."
+  bronze_trojan_war_relevant_country_text: "Is directly involved in the Trojan War situation"
+  bronze_trojan_war_situation_running_text: "The Trojan War situation is active"
+
   merchant_enclave: "Merchant Enclave"
   merchant_enclave_desc: "A $merchant_enclave$ is an investment conglomerate, directed at incurring monetary benefits for itself and its [overlord|e]. They are always a [ShowGovernmentTypeName('republic')] and get increased [ShowModifierTypeName('selling_efficiency')], as well as increased payment obligations to their overlord compared to a regular [ShowSubjectTypeName('vassal')]."

@@ -25,6 +25,8 @@ mycenaean_call_megaron_council = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor = {
 			is_leader_of_international_organization = international_organization:mycenaean_league
 			NOT = { has_variable = mycenaean_megaron_council }
@@ -81,6 +83,8 @@ mycenaean_sponsor_shared_sacrifice = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor = {
 			is_member_of_international_organization = international_organization:mycenaean_league
 			NOT = { has_variable = mycenaean_shared_sacrifice }
@@ -137,6 +141,8 @@ mycenaean_send_linear_b_administrators = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor = {
 			is_leader_of_international_organization = international_organization:mycenaean_league
 			NOT = { has_variable = mycenaean_linear_b_administration }
@@ -193,6 +199,8 @@ mycenaean_mediate_palace_rivalry = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor = {
 			is_leader_of_international_organization = international_organization:mycenaean_league
 			current_mycenaean_league_authority = { value = 20 }
@@ -249,6 +257,8 @@ mycenaean_demand_bronze_tribute = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor = {
 			is_leader_of_international_organization = international_organization:mycenaean_league
 			current_mycenaean_league_authority = { value = 25 }
@@ -307,6 +317,8 @@ mycenaean_summon_palace_levies = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor = {
 			is_leader_of_international_organization = international_organization:mycenaean_league
 			current_mycenaean_league_authority = { value = 35 }
@@ -364,6 +376,8 @@ mycenaean_proclaim_pan_achaean_expedition = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor = {
 			is_leader_of_international_organization = international_organization:mycenaean_league
 			current_mycenaean_league_authority = { value = 65 }
@@ -422,6 +436,8 @@ mycenaean_fortify_megara = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor = {
 			is_member_of_international_organization = international_organization:mycenaean_league
 			NOT = { has_variable = mycenaean_fortified_megara }
@@ -472,6 +488,8 @@ mycenaean_proclaim_palace_autonomy = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor ?= {
 			is_member_of_international_organization = international_organization:mycenaean_league
 			country_type = building
@@ -582,6 +600,8 @@ mycenaean_reassert_palace_authority = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor ?= {
 			is_leader_of_international_organization = international_organization:mycenaean_league
 		}
@@ -653,6 +673,8 @@ mycenaean_summon_oath_to_mycenae = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor ?= {
 			is_leader_of_international_organization = international_organization:mycenaean_league
 		}
@@ -734,6 +756,8 @@ mycenaean_grant_palace_privileges = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor ?= {
 			is_leader_of_international_organization = international_organization:mycenaean_league
 		}
@@ -815,6 +839,8 @@ mycenaean_redistribute_palace_stores = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor ?= {
 			is_leader_of_international_organization = international_organization:mycenaean_league
 			NOT = { has_variable = mycenaean_palace_redistribution }
@@ -899,6 +925,8 @@ mycenaean_demand_palace_hostages = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor ?= {
 			is_leader_of_international_organization = international_organization:mycenaean_league
 		}
@@ -1007,6 +1035,8 @@ mycenaean_restore_palace_network = {
 	}
 
 	potential = {
+		# Six-year grace period before league authority actions become available.
+		international_organization:mycenaean_league ?= { var:mycenaean_league_months >= 72 }
 		scope:actor ?= {
 			is_leader_of_international_organization = international_organization:mycenaean_league
 		}

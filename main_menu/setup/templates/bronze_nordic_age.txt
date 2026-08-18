@@ -23,9 +23,4 @@ government = {
 	capital_economy_vs_traditional_economy = -45
 	individualism_vs_communalism = 60
 	outward_vs_inward = 0
-
-	parliament = {
-		parliament_type = Council
-	}
-
 }

@@ -51,7 +51,7 @@ countries = {
 	}
 
 	##EGYPT
-	0002G = {
+	EGY = {
 		capital = faqus
 		culture = lower_egyptian
 		religion = kemetic
@@ -60,103 +60,28 @@ countries = {
 
 		include = "bronze_empire"
 
-		own_control_core = {
-			acre
-            akhmim
-            al_mima
-            alexandria
-            ashmunayn
-            aswan
-            asyut
-            atfih
-            bahariyya
-            baris
-            beersheba
-            beni_suef
-            bilbeis
-            cairo
-            dakahla
-            damanhur
-            damietta
-            dara
-            daw_sud
-            deraheib
-            edfu
-            el_alamein
-            el_arish
-            el_bahnasa
-            el_balyana
-            el_burullus
-            el_buwit
-            el_jundi
-            el_mahalla
-            el_qasr
-            el_qoseir
-            el_tor
-            esna
-            faiyum
-            faqus
-            faran
-            faras
-            fuwa
-            gaza
-            giza
-            hebron
-            hiw
-            irbid
-            jaffa
-            jerusalem
-            kafr_saqr
-            kalabsha
-            kerma
-            kharga
-            kharibta
-            kom_ombo
-            majdal
-            manfalut
-            mansoura
-            matruh
-            menouf
-            minya
-            nablus
-            nawa
-            nekhel
-            nuweiba
-            qalyub
-            qasr_farafra
-            qasr_ibrim
-            qatya
-            qena
-            qus
-            ramsis
-            ras_gharib
-            rashid
-            safaga
-            safed
-            sai
-            saint_anthony
-            saint_katrine
-            saint_paul_anchorite
-            sallum
-            samanoud
-            selima
-            sharuna
-            suez
-            tahna
-            tarrana
-            tidah
-            tinnis
-            ushmum_tannah
-            wadi_el_natrun
-            warrada
-		}
+	own_control_core = {
+		akhmim                al_mima               alexandria            ashmunayn             aswan                 asyut
+		atfih                 bahariyya             baris                 beni_suef             bilbeis               cairo
+		dakahla               damanhur              damietta              daw_sud               deraheib              edfu
+		el_alamein            el_arish              el_bahnasa            el_balyana            el_burullus           el_buwit
+		el_jundi              el_mahalla            el_qasr               el_qoseir             el_tor                esna
+		faiyum                faqus                 faran                 faras                 fuwa                  giza
+		hiw                   kafr_saqr             kalabsha              kerma                 kharga                kharibta
+		kom_ombo              manfalut              mansoura              matruh                menouf                minya
+		nekhel                nuweiba               qalyub                qasr_farafra          qasr_ibrim            qatya
+		qena                  qus                   ramsis                ras_gharib            rashid                safaga
+		sai                   saint_anthony         saint_katrine         saint_paul_anchorite  sallum                samanoud
+		selima                sharuna               suez                  tahna                 tarrana               tidah
+		tinnis                ushmum_tannah         wadi_el_natrun        warrada
+	}
 		government = {
 			ruler = character_merneptah
 		}
 		accepted_cultures = { upper_egyptian lower_egyptian canaanite libyan }
 		tolerated_cultures = { phoenician medjay peleset egyptian }
 		discovered_regions = {
-			crescent_region egypt_region
+			crescent_region egypt_region anatolia_region
 		}
 		discovered_areas = {
 			nubia_proper_area
@@ -223,7 +148,8 @@ countries = {
 	discovered_regions = {
 		anatolia_region
 		caucasus_region
-		crescent_region
+		crescent_region 
+		egypt_region
 	}
 	}
 
@@ -5743,7 +5669,7 @@ countries = {
 
 	country_rank = rank_kingdom
 
-		include = "Sea_Peoples"
+	include = "Sea_people"
 
 	own_control_core = {
 		antalya  elmali   finike   istanoz  kas      megri
@@ -12698,8 +12624,8 @@ VC001 = {
 
 		VC005 = {
 			capital = aba_al_qur
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -12714,7 +12640,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -12999,7 +12925,7 @@ VC001 = {
 		VC017 = {
 			capital = al_hamad
 			culture = aramaean
-			religion = aramaean_pagan
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13014,7 +12940,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13023,8 +12949,8 @@ VC001 = {
 
 		VC018 = {
 			capital = al_harrah
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13039,7 +12965,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13073,8 +12999,8 @@ VC001 = {
 
 		VC020 = {
 			capital = al_labbah
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13089,7 +13015,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13298,8 +13224,8 @@ VC001 = {
 
 		VC029 = {
 			capital = al_thulayma
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13314,7 +13240,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13598,8 +13524,8 @@ VC001 = {
 
 		VC041 = {
 			capital = an_nasifah
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13614,7 +13540,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -13823,8 +13749,8 @@ VC001 = {
 
 		VC050 = {
 			capital = arar
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -13839,7 +13765,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -16573,8 +16499,8 @@ VC001 = {
 
 		VC160 = {
 			capital = dumat_al_jandal
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -16589,7 +16515,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -20948,8 +20874,8 @@ VC001 = {
 
 		VC335 = {
 			capital = lowqah
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -20964,7 +20890,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -23523,8 +23449,8 @@ VC001 = {
 
 		VC438 = {
 			capital = qurayyat_al_milh
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -23539,7 +23465,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -24273,8 +24199,8 @@ VC001 = {
 
 		VC468 = {
 			capital = sakaka
-			culture = arabian
-			religion = arabian_pagan
+			culture = aramaean
+			religion = canaanite
 
 			country_rank = rank_county
 
@@ -24289,7 +24215,7 @@ VC001 = {
 			}
 
 			accepted_cultures = {
-				arabian
+				aramaean
 			}
 			discovered_regions = {
 				arabia_region
@@ -37749,6 +37675,207 @@ VC001 = {
 		}
 		discovered_regions = {
 			west_china_region
+		}
+	}
+
+	AKSHA = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			acre
+		}
+		capital = acre
+		include = "Bronze_coast"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			phoenician
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	ASHK = {
+		culture = phoenician
+		religion = phoenician
+		country_rank = rank_county
+		own_control_core = {
+			majdal
+		}
+		capital = majdal
+		include = "Bronze_coast"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			peleset
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	ASHT = {
+	culture = moabite
+	religion = canaanite
+	country_rank = rank_county
+	own_control_core = {
+		dara  nawa
+	}
+	capital = dara
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+	accepted_cultures = {
+		canaanite
+		moabite
+	}
+	discovered_regions = {
+		crescent_region
+	}
+	}
+
+	GEZE = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			jaffa
+		}
+		capital = jaffa
+		include = "Bronze_coast"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			peleset
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	HACOR = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			safed
+		}
+		capital = safed
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			canaanite
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	JESUS = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			hebron     jerusalem
+		}
+		capital = jerusalem
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			canaanite
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	LAKIS = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			beersheba
+		}
+		capital = beersheba
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			canaanite
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	PEHEL = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			irbid
+		}
+		capital = irbid
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			canaanite
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	SICHE = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			nablus
+		}
+		capital = nablus
+		include = "Bronze"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			canaanite
+		}
+		discovered_regions = {
+			crescent_region
+		}
+	}
+
+	YURZ = {
+		culture = canaanite
+		religion = canaanite
+		country_rank = rank_county
+		own_control_core = {
+			gaza
+		}
+		capital = gaza
+		include = "Bronze_coast"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			canaanite
+		}
+		discovered_regions = {
+			crescent_region
 		}
 	}
 }

@@ -21,17 +21,20 @@ building_manager = {
 	# work_of_art:stonehenge at amesbury
 	bronze_monument_pylos_palace = { level = 1 location = modon }
 	bronze_monument_troy_citadel = { level = 1 location = ayvacik }
-	bronze_monument_karnak_temple = { level = 1 location = esna }
+	bronze_monument_karnak_complex = { level = 1 location = esna }
 	bronze_monument_luxor_temple = { level = 1 location = esna }
-	bronze_monument_abu_simbel_temples = { level = 1 location = daw }
 	bronze_monument_theban_necropolis = { level = 1 location = esna }
-	bronze_monument_hattusa_citadel = { level = 1 location = huseyinabad }
+	bronze_monument_hattusa_complex = { level = 1 location = huseyinabad }
 	bronze_monument_ur_ziggurat = { level = 1 location = abadan }
 	bronze_monument_assur_complex = { level = 1 location = samarra }
-	bronze_monument_chogha_zanbil_ziggurat = { level = 1 location = hamidiyeh }
+	bronze_monument_chogha_zanbil = { level = 1 location = hamidiyeh }
 	bronze_monument_su_nuraxi = { level = 1 location = isili }
+	bronze_monument_santu_antine = { level = 1 location = sassari }
+	bronze_monument_romanzesu = { level = 1 location = bitti }
+	bronze_monument_serra_orrios = { level = 1 location = orosei }
+	bronze_monument_madau_giants_tombs = { level = 1 location = sorgono }
 	bronze_monument_avebury = { level = 1 location = amesbury }
-}
+}	bronze_monument_abu_simbel = { level = 1 location = daw_sud }
 
 # ============================================================================
 # PREPARED HISTORICAL RUINS - NOT ACTIVE UNTIL AN EXACT LOCATION IS CONFIRMED
@@ -45,3 +48,9 @@ building_manager = {
 # Historical region: lower Indus, Sindh
 # Candidate found: dubbi
 # Prepared by bronze_historical_ruin_mohenjo_daro_setup_effect.
+
+# TODO_MANUAL_LOCATION - Abu Simbel
+# Historical region: southern Egypt / Lower Nubia, west bank of Lake Nasser.
+# Candidate found: daw_sud, kalabsha, qasr_ibrim, faras.
+# Building definition is ready as bronze_monument_abu_simbel; placement disabled
+# because the previous location key "daw" does not exist.

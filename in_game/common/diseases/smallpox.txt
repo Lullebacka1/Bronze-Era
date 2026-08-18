@@ -3,7 +3,7 @@
 	#script value for how likely the disease is to spawn per month (0..1)
 	monthly_spawn_chance = {
 		# Bronze Era: .
-		value = 0.07
+		value = 0.09
 	}
 
 	#effect to spawn the disease somewhere when we've decided it should spawn.

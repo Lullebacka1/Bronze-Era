@@ -119,7 +119,7 @@ royal, religious, military, administrative, commercial, and port categories.
 
 ## Great Pyramid Project
 
-Egypt uses its real mod tag, `0002G`.
+Egypt uses its real mod tag, `EGY`.
 
 - Giza is the first Great Pyramid complex.
 - `bronze_second_great_pyramid_committed` is a persistent global lifetime lock.

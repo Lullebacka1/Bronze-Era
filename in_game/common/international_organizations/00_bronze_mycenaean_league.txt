@@ -261,6 +261,7 @@ mycenaean_league = {
 	}
 
 	can_leave_trigger = {
+		scope:recipient = { var:mycenaean_league_months >= 72 }
 		NOT = {
 			situation:mycenaean_fragmentation ?= {
 				has_variable = mycenaean_fragmentation_crisis_active
@@ -273,6 +274,7 @@ mycenaean_league = {
 	}
 
 	auto_leave_trigger = {
+		scope:recipient = { var:mycenaean_league_months >= 72 }
 		NOT = {
 			situation:mycenaean_fragmentation ?= {
 				has_variable = mycenaean_fragmentation_crisis_active
@@ -311,6 +313,12 @@ mycenaean_league = {
 	}
 
 	monthly_effect = {
+		if = {
+			limit = { NOT = { has_variable = mycenaean_league_months } }
+			set_variable = { name = mycenaean_league_months value = 0 }
+		}
+		change_variable = { name = mycenaean_league_months add = 1 }
+
 		# Save compatibility: older versions landed palace countries without
 		# removing them from the league. Expel only those already marked as
 		# autonomous/landed; loyal building countries remain untouched.
@@ -431,115 +439,122 @@ mycenaean_league = {
 			max = 100
 			monthly_change = {
 				add = {
-					add = {
-						desc = MYCENAEAN_LEAGUE_INTERNAL_PEACE
-						if = {
-							limit = { international_organization_has_internal_peace = yes }
-							value = 0.05
-						}
-						else = {
-							value = -0.2
-						}
-					}
-					add = {
-						desc = MYCENAEAN_LEAGUE_MEMBER_NETWORK
-						value = total_members
-						multiply = 0.01
-						subtract = 0.06
-					}
 					if = {
-						limit = { international_organization_has_leader = no }
-						subtract = {
-							desc = MYCENAEAN_LEAGUE_NO_HIGH_WANAX
-							value = 0.5
-						}
-					}
-					if = {
-						limit = {
-							international_organization_has_leader = yes
-							leader_country ?= { at_war = yes }
-						}
+						# Six-year grace period: keep authority stable at game
+						# start while the palace network establishes itself.
+						limit = { var:mycenaean_league_months >= 72 }
 						add = {
-							desc = MYCENAEAN_LEAGUE_HIGH_WANAX_AT_WAR
-							value = 0.02
-						}
-					}
-					if = {
-						limit = { total_members < 5 }
-						subtract = {
-							desc = MYCENAEAN_LEAGUE_FRAGMENTED_PALACES
-							value = 0.25
-						}
-					}
-					if = {
-						limit = {
-							international_organization_has_leader = yes
-							leader_country ?= { has_variable = mycenaean_shared_sacrifice }
-						}
-						add = {
-							desc = MYCENAEAN_LEAGUE_SHARED_SACRIFICE
-							value = 0.06
-						}
-					}
-					if = {
-						limit = {
-							international_organization_has_leader = yes
-							leader_country ?= { has_variable = mycenaean_palace_mediation }
-						}
-						add = {
-							desc = MYCENAEAN_LEAGUE_MEDIATED_RIVALRIES
-							value = 0.05
-						}
-					}
-					if = {
-						limit = {
-							international_organization_has_leader = yes
-							leader_country ?= { has_variable = mycenaean_palace_redistribution }
-						}
-						add = {
-							desc = MYCENAEAN_LEAGUE_PALACE_REDISTRIBUTION
-							value = 0.08
-						}
-					}
-					if = {
-						limit = {
-							international_organization_has_leader = yes
-							leader_country ?= { has_variable = mycenaean_bronze_tribute_demand }
-						}
-						subtract = {
-							desc = MYCENAEAN_LEAGUE_FORCED_TRIBUTE
-							value = 0.08
-						}
-					}
-					if = {
-						limit = {
-							international_organization_has_leader = yes
-							leader_country ?= { has_variable = mycenaean_palaces_burning }
-						}
-						subtract = {
-							desc = MYCENAEAN_LEAGUE_PALACES_BURNING
-							value = 0.35
-						}
-					}
-					if = {
-						limit = {
-							situation:mycenaean_fragmentation ?= {
-								has_variable = mycenaean_fragmentation_crisis_active
+							add = {
+								desc = MYCENAEAN_LEAGUE_INTERNAL_PEACE
+								if = {
+									limit = { international_organization_has_internal_peace = yes }
+									value = 0.05
+								}
+								else = {
+									value = -0.2
+								}
 							}
-						}
-						subtract = {
-							desc = MYCENAEAN_LEAGUE_FRAGMENTATION_CRISIS
-							value = 0.25
-						}
-					}
-					if = {
-						limit = {
-							international_organization_has_leader = yes
-							leader_country ?= { has_variable = sea_peoples_internal_breakdown }
-						}
-						subtract = {
-							desc = MYCENAEAN_LEAGUE_COLLAPSE_PRESSURE
-							value = 0.18
+							add = {
+								desc = MYCENAEAN_LEAGUE_MEMBER_NETWORK
+								value = total_members
+								multiply = 0.01
+								subtract = 0.06
+							}
+							if = {
+								limit = { international_organization_has_leader = no }
+								subtract = {
+									desc = MYCENAEAN_LEAGUE_NO_HIGH_WANAX
+									value = 0.5
+								}
+							}
+							if = {
+								limit = {
+									international_organization_has_leader = yes
+									leader_country ?= { at_war = yes }
+								}
+								add = {
+									desc = MYCENAEAN_LEAGUE_HIGH_WANAX_AT_WAR
+									value = 0.02
+								}
+							}
+							if = {
+								limit = { total_members < 5 }
+								subtract = {
+									desc = MYCENAEAN_LEAGUE_FRAGMENTED_PALACES
+									value = 0.25
+								}
+							}
+							if = {
+								limit = {
+									international_organization_has_leader = yes
+									leader_country ?= { has_variable = mycenaean_shared_sacrifice }
+								}
+								add = {
+									desc = MYCENAEAN_LEAGUE_SHARED_SACRIFICE
+									value = 0.06
+								}
+							}
+							if = {
+								limit = {
+									international_organization_has_leader = yes
+									leader_country ?= { has_variable = mycenaean_palace_mediation }
+								}
+								add = {
+									desc = MYCENAEAN_LEAGUE_MEDIATED_RIVALRIES
+									value = 0.05
+								}
+							}
+							if = {
+								limit = {
+									international_organization_has_leader = yes
+									leader_country ?= { has_variable = mycenaean_palace_redistribution }
+								}
+								add = {
+									desc = MYCENAEAN_LEAGUE_PALACE_REDISTRIBUTION
+									value = 0.08
+								}
+							}
+							if = {
+								limit = {
+									international_organization_has_leader = yes
+									leader_country ?= { has_variable = mycenaean_bronze_tribute_demand }
+								}
+								subtract = {
+									desc = MYCENAEAN_LEAGUE_FORCED_TRIBUTE
+									value = 0.08
+								}
+							}
+							if = {
+								limit = {
+									international_organization_has_leader = yes
+									leader_country ?= { has_variable = mycenaean_palaces_burning }
+								}
+								subtract = {
+									desc = MYCENAEAN_LEAGUE_PALACES_BURNING
+									value = 0.35
+								}
+							}
+							if = {
+								limit = {
+									situation:mycenaean_fragmentation ?= {
+										has_variable = mycenaean_fragmentation_crisis_active
+									}
+								}
+								subtract = {
+									desc = MYCENAEAN_LEAGUE_FRAGMENTATION_CRISIS
+									value = 0.25
+								}
+							}
+							if = {
+								limit = {
+									international_organization_has_leader = yes
+									leader_country ?= { has_variable = sea_peoples_internal_breakdown }
+								}
+								subtract = {
+									desc = MYCENAEAN_LEAGUE_COLLAPSE_PRESSURE
+									value = 0.18
+								}
+							}
 						}
 					}
 				}

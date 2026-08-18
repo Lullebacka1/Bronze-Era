@@ -58,6 +58,11 @@ bronze_city_prestige_clear_building_score_breakdown = {
 	set_variable = { name = bronze_city_prestige_building_chogha_zanbil_score value = 0 }
 	set_variable = { name = bronze_city_prestige_building_yin_xu_score value = 0 }
 	set_variable = { name = bronze_city_prestige_building_su_nuraxi_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_nuraghe_arrubiu_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_santu_antine_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_romanzesu_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_serra_orrios_score value = 0 }
+	set_variable = { name = bronze_city_prestige_building_madau_giants_tombs_score value = 0 }
 	set_variable = { name = bronze_city_prestige_building_stonehenge_score value = 0 }
 	set_variable = { name = bronze_city_prestige_building_avebury_score value = 0 }
 	set_variable = { name = bronze_city_prestige_building_bru_na_boinne_score value = 0 }
@@ -93,6 +98,11 @@ bronze_city_prestige_remove_building_score_breakdown = {
 	remove_variable = bronze_city_prestige_building_chogha_zanbil_score
 	remove_variable = bronze_city_prestige_building_yin_xu_score
 	remove_variable = bronze_city_prestige_building_su_nuraxi_score
+	remove_variable = bronze_city_prestige_building_nuraghe_arrubiu_score
+	remove_variable = bronze_city_prestige_building_santu_antine_score
+	remove_variable = bronze_city_prestige_building_romanzesu_score
+	remove_variable = bronze_city_prestige_building_serra_orrios_score
+	remove_variable = bronze_city_prestige_building_madau_giants_tombs_score
 	remove_variable = bronze_city_prestige_building_stonehenge_score
 	remove_variable = bronze_city_prestige_building_avebury_score
 	remove_variable = bronze_city_prestige_building_bru_na_boinne_score
@@ -210,9 +220,9 @@ bronze_city_prestige_add_building_points = {
 	# independent from the aggressive vanilla work-of-art quality multipliers.
 	if = {
 		limit = { has_building = building_type:bronze_monument_giza_pyramid_complex }
-		change_variable = { name = bronze_city_prestige_score add = 200 }
-		change_variable = { name = bronze_city_prestige_building_score add = 200 }
-		set_variable = { name = bronze_city_prestige_building_giza_pyramid_score value = 200 }
+		change_variable = { name = bronze_city_prestige_score add = 120 }
+		change_variable = { name = bronze_city_prestige_building_score add = 120 }
+		set_variable = { name = bronze_city_prestige_building_giza_pyramid_score value = 120 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_karnak_complex }
@@ -309,6 +319,36 @@ bronze_city_prestige_add_building_points = {
 		change_variable = { name = bronze_city_prestige_score add = 90 }
 		change_variable = { name = bronze_city_prestige_building_score add = 90 }
 		set_variable = { name = bronze_city_prestige_building_su_nuraxi_score value = 90 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_nuraghe_arrubiu }
+		change_variable = { name = bronze_city_prestige_score add = 70 }
+		change_variable = { name = bronze_city_prestige_building_score add = 70 }
+		set_variable = { name = bronze_city_prestige_building_nuraghe_arrubiu_score value = 70 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_santu_antine }
+		change_variable = { name = bronze_city_prestige_score add = 65 }
+		change_variable = { name = bronze_city_prestige_building_score add = 65 }
+		set_variable = { name = bronze_city_prestige_building_santu_antine_score value = 65 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_romanzesu }
+		change_variable = { name = bronze_city_prestige_score add = 55 }
+		change_variable = { name = bronze_city_prestige_building_score add = 55 }
+		set_variable = { name = bronze_city_prestige_building_romanzesu_score value = 55 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_serra_orrios }
+		change_variable = { name = bronze_city_prestige_score add = 50 }
+		change_variable = { name = bronze_city_prestige_building_score add = 50 }
+		set_variable = { name = bronze_city_prestige_building_serra_orrios_score value = 50 }
+	}
+	if = {
+		limit = { has_building = building_type:bronze_monument_madau_giants_tombs }
+		change_variable = { name = bronze_city_prestige_score add = 50 }
+		change_variable = { name = bronze_city_prestige_building_score add = 50 }
+		set_variable = { name = bronze_city_prestige_building_madau_giants_tombs_score value = 50 }
 	}
 	# Stonehenge is likewise represented by its native monument work of art.
 	if = {

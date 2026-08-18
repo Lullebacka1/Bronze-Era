@@ -815,6 +815,18 @@ adriatic_bronze_language = {
 	lowborn = { Daunos Iapyx Messapios }
 }
 
+nuragic_language = {
+	color = rgb { 126 119 79 }
+	family = island_bronze_language_family
+
+	# Later-attested or externally transmitted indigenous names and ethnonyms.
+	# Cautious toponymic reconstructions for the undocumented Bronze Age name stock.
+	male_names = { Norax Sardo Ili Balar Nurru Gurulis Uselis Sulci Turru Sarru Gonn Serru Madau Tiscali Arcu Forru Orri Romanzu Barumi Losa Antine Arrubiu }
+	female_names = { Sarda Nura Ilia Balara Gurula Uselia Sulcia Turra Sarria Gonna Serria Madaua Tiscalia Arca Forra Orria Romanzia Barumia Losa Antina Arrubia }
+	dynasty_names = { Norax Sardo Ili Balar Nurru Gurulis Uselis Sulci Turru Sarru Gonn Serru Madau Tiscali Arcu Forru Orri Romanzu Barumi Losa Antine Arrubiu }
+	lowborn = { Norax Sardo Nurru Sarru Gonn Serru Madau Orri Romanzu Barumi }
+}
+
 island_bronze_language = {
 	color = rgb { 154 122 76 }
 	family = island_bronze_language_family

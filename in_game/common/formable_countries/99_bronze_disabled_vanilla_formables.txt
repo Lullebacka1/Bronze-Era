@@ -1,0 +1,26 @@
+# Vanilla Mongol Empire formable references the Borjigin dynasty, which is not
+# part of the Bronze Era start setup. Keep the key overridden but unavailable.
+MGE_f = {
+	level = 4
+	required_locations_fraction = 1.00
+	rule = historical
+	potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+
+	name = MGE
+	flag = MGE
+	adjective = MGE_ADJ
+	tag = MGE
+	color = map_MGE
+
+	locations = {
+		karakorum
+	}
+
+	form_effect = {
+	}
+}

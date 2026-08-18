@@ -59,6 +59,11 @@ l_french:
  bronze_vindland_amber_waterways_desc: "Les souverains de Vindland protegent les routes de l'ambre, les pistes forestieres et les passages fluviaux baltes."
  bronze_vindland_remaining_claims_tt: "Recoit des revendications de conquete sur les locations restantes de Vindland, mais aucun core gratuit."
 
+ PERSIA_f: "Empire perse"
+ PERSIA_f_desc: "Un royaume perse ayant adopte toutes les institutions de l'age du Bronze peut unir Anshan, la Medie, Marhasi et les communautes des hautes terres du plateau iranien sous une couronne imperiale."
+ bronze_formed_persian_empire: "Empire perse forme"
+ bronze_formed_persian_empire_desc: "Ce pays a forme l'Empire perse."
+
  bronze_formed_asgard: "Asgard forme"
  bronze_formed_asgard_desc: "Ce pays a forme Asgard et se tient desormais au-dessus des couronnes nordiques regionales."
  bronze_formed_norse_regional_realm: "Royaume regional norse forme"

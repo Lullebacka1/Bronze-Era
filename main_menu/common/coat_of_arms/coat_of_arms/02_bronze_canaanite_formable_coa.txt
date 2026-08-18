@@ -1,0 +1,149 @@
+# Bronze Era Canaanite and Peleset formable coats of arms.
+# Uses vanilla emblem references already used elsewhere in the mod.
+
+bronze_age_ISRAEL_coa = { # Israel: hill country, highland star and bronze sun.
+	pattern = "pattern_border_thin.dds"
+	color1 = "blue_dark"
+	color2 = "yellow_mid"
+	color3 = "white"
+	color4 = "brown"
+
+	colored_emblem = {
+		texture = "ce_star_08.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.32 } scale = { 0.38 0.38 } }
+	}
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color4
+		color2 = color2
+		instance = { position = { 0.5 0.66 } scale = { 0.72 0.55 } }
+	}
+}
+
+bronze_age_JUDAH_coa = { # Judah: hill kingdom with lion symbolism.
+	pattern = "pattern_border_thin.dds"
+	color1 = "red_dark"
+	color2 = "yellow_mid"
+	color3 = "black"
+
+	colored_emblem = {
+		texture = "ce_lion_passant_wide.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.58 } scale = { 0.82 0.82 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.25 } scale = { 0.28 0.28 } }
+	}
+}
+
+bronze_age_MOAB_coa = { # Moab: highland bronze and sacred bull.
+	pattern = "pattern_horizontal_split_02.dds"
+	color1 = "brown_light"
+	color2 = "brown"
+	color3 = "yellow_mid"
+	color4 = "black"
+
+	colored_emblem = {
+		texture = "ce_bull_statant.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.5 0.56 } scale = { 0.76 0.76 } }
+	}
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.82 } scale = { 0.32 0.22 } }
+	}
+}
+
+bronze_age_EDOM_coa = { # Edom: red highland marches and spear clans.
+	pattern = "pattern_border_thin.dds"
+	color1 = "red_dark"
+	color2 = "brown"
+	color3 = "yellow_mid"
+	color4 = "black"
+
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.66 } scale = { 0.7 0.52 } }
+	}
+	colored_emblem = {
+		texture = "ce_spear_head_random_small.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.42 0.36 } scale = { 0.48 0.48 } }
+		instance = { position = { 0.58 0.36 } scale = { -0.48 0.48 } }
+	}
+}
+
+bronze_age_ARDAM_coa = { # Aram-Damascus: oasis star above Damascus routes.
+	pattern = "pattern_border_thin.dds"
+	color1 = "blue_dark"
+	color2 = "yellow_mid"
+	color3 = "green_pine"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_star_08_mena.dds"
+		color1 = color2
+		color2 = color4
+		instance = { position = { 0.5 0.32 } scale = { 0.42 0.42 } }
+	}
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.5 0.7 } scale = { 0.66 0.46 } }
+	}
+}
+
+bronze_age_AMMON_coa = { # Ammon: Amman highlands, bull head and bronze field.
+	pattern = "pattern_horizontal_split_01.dds"
+	color1 = "green_pine"
+	color2 = "brown_light"
+	color3 = "yellow_mid"
+	color4 = "black"
+
+	colored_emblem = {
+		texture = "ce_bull_head_ringed.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.5 0.5 } scale = { 0.62 0.62 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.78 } scale = { 0.26 0.26 } }
+	}
+}
+
+bronze_age_PHILST_coa = { # Philistine States: Peleset coastal cities, ships and war helmets.
+	pattern = "pattern_horizontal_split_02.dds"
+	color1 = "blue_dark"
+	color2 = "black"
+	color3 = "yellow_dark"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.5 0.56 } scale = { 0.72 0.72 } }
+	}
+	colored_emblem = {
+		texture = "ce_helmet.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.28 } scale = { 0.34 0.34 } }
+	}
+}
