@@ -80,7 +80,25 @@ locations = {
     hillah = { rank = city }            
     suq_al_shuyukh = { rank = town }    
     abdanan = { rank = town }           
-    mosul = { rank = city }             
+    mosul = { rank = city }     
+	
+	# India not finished
+	kantha = { rank = city } #Dholavira
+	diu = { rank = city } #Somnath
+	danduka = { rank = city } #lotal
+	nagnes = { rank = city } 
+	ahmednagar = { rank = city }
+	pasni = { rank = city } # sotka Koh
+	gwadar = { rank = city } #sutkagen Dor
+	maiwand = { rank = Town } #Mundigak
+	rohri = { rank = city } #mohenjo-daro
+	paat = { rank = town } #ghazi Shah
+	bijnot = { rank = city } #ganweriwala
+	pakpattan = { rank = city } #harappa
+	soonpur = { rank = city } #rakhigarh
+
+
+
 }
 
 # for the unique and special buildings
