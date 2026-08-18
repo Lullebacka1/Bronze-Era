@@ -81,7 +81,7 @@ countries = {
 		accepted_cultures = { upper_egyptian lower_egyptian canaanite libyan }
 		tolerated_cultures = { phoenician medjay peleset egyptian }
 		discovered_regions = {
-			crescent_region egypt_region
+			crescent_region egypt_region anatolia_region
 		}
 		discovered_areas = {
 			nubia_proper_area
@@ -148,7 +148,8 @@ countries = {
 	discovered_regions = {
 		anatolia_region
 		caucasus_region
-		crescent_region
+		crescent_region 
+		egypt_region
 	}
 	}
 
