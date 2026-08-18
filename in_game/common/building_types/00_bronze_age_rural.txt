@@ -31,8 +31,8 @@ neolithic_granary = {
 
 
 	modifier = {
-		local_food_capacity = 50
-		local_food_decay_modifier = -0.02
+		local_food_capacity = 20
+		local_food_decay_modifier = -0.01
 	}
 
 	ai_forbid_shutdown = yes

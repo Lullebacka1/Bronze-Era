@@ -31,9 +31,9 @@ neolithic_feast_court = {
 
 
 	modifier = {
-		local_food_capacity = 100
+		local_food_capacity = 50
 		local_food_decay_modifier = -0.02
-		local_max_control = 0.05
+		local_max_control = 0.03
 	}
 
 	ai_forbid_shutdown = yes
@@ -205,9 +205,9 @@ temple_granary = {
 
 
 	modifier = {
-		local_food_capacity = 200
-		local_food_decay_modifier = -0.05
-		local_max_control = 0.06
+		local_food_capacity = 100
+		local_food_decay_modifier = -0.02
+		local_max_control = 0.05
 	}
 
 	# obsolete = neolithic_feast_court
