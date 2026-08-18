@@ -49,6 +49,9 @@
   a_highland_bowmen: "Highland Bowmen"
   a_highland_bowmen_desc: "Archers drawn from communities accustomed to rugged upland terrain, where hunting and local warfare foster skill with the bow. Their familiarity with difficult ground allows them to harass and weaken enemies from positions that are hard to approach.\n\nThis unit is on average weaker and more fragile than regular bowmen, but deals significantly more damage when fighting in mountains and hills."
 
+  a_sea_peoples_swordsmen: "Sea Peoples Swordsmen"
+  a_sea_peoples_swordsmen_desc: "Warriors from the maritime communities of the eastern Mediterranean, shaped by a tradition of seaborne raiding, migration, and warfare. Their distinctive fighting traditions emerged from societies accustomed to carrying war between coastal settlements and across waterways.\n\nThis unit is generally stronger than regular swordsmen and fares even better in coastal and river terrain, but costs gold to recruit and maintain."
+
   # UNIQUE UNITS
 
   a_myrmidones: "Myrmidones"
