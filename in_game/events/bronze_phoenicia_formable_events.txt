@@ -1,0 +1,48 @@
+namespace = bronze_phoenicia
+
+bronze_phoenicia.1 = {
+	type = country_event
+	title = bronze_phoenicia.1.title
+	desc = bronze_phoenicia.1.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/_default.dds"
+	outcome = positive
+	major = yes
+
+	trigger = {
+		tag = PHO
+		has_variable = bronze_formed_phoenicia
+		NOT = { has_variable = bronze_phoenician_government_settled }
+	}
+
+	option = {
+		name = bronze_phoenicia.1.a
+		custom_tooltip = bronze_phoenicia_1a_tt
+		change_government_type = government_type:republic
+		set_variable = { name = bronze_phoenician_government_settled value = 1 }
+		add_country_modifier = {
+			modifier = bronze_phoenician_merchant_republic
+			years = -1
+			mode = add_and_extend
+		}
+		ai_chance = {
+			factor = 65
+		}
+	}
+
+	option = {
+		name = bronze_phoenicia.1.b
+		custom_tooltip = bronze_phoenicia_1b_tt
+		change_government_type = government_type:monarchy
+		add_legitimacy = legitimacy_weak_bonus
+		set_variable = { name = bronze_phoenician_government_settled value = 1 }
+		add_country_modifier = {
+			modifier = bronze_phoenician_royal_thalassocracy
+			years = -1
+			mode = add_and_extend
+		}
+		ai_chance = {
+			factor = 35
+		}
+	}
+}

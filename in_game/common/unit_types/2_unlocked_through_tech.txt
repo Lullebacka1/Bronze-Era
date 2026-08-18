@@ -8,8 +8,8 @@
  	strength_damage_taken = -0.05
 	
 	
- 	country_potential = { 
- 		government_type != government_type:steppe_horde
+ 	country_potential = {
+ 		NOT = { government_type ?= government_type:steppe_horde }
  	}
 
  	#root = location. Checks location_potential first so don't need that scripting in

@@ -58,7 +58,7 @@ Requested short tags:
 
 Local Bronze Era aliases currently included:
 
-- `0002G` for Egypt
+- `EGY` for Egypt
 - `HATTI` for Hatti
 - `0001G` for Mycenae
 - `WILUS` for Troy/Wilusa

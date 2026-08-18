@@ -210,6 +210,47 @@ nuraghe_high_place = {
 	religions = { nuragic sea_peoples_cult }
 }
 
+# Nuragic sacred places use the closest Sardinian EU5 location available in
+# setup. These are not Corsican/Torrean sites and avoid later Punic/Roman layers.
+santa_vittoria_serri = {
+	location = isili
+	type = shrine
+	importance = 5
+	religions = { nuragic }
+}
+
+# Romanzesu is represented by Bitti, the closest existing Sardinian location.
+romanzesu_sacred_waters = {
+	location = bitti
+	type = temple
+	importance = 4
+	religions = { nuragic }
+}
+
+# Serra Orrios is represented by Orosei as the nearest available east-Sardinian key.
+serra_orrios_sanctuary = {
+	location = orosei
+	type = shrine
+	importance = 4
+	religions = { nuragic }
+}
+
+# S'Arcu e Is Forros is represented through the Ogliastra location of Tortoli.
+arcu_e_is_forros_sanctuary = {
+	location = tortoli
+	type = temple
+	importance = 4
+	religions = { nuragic }
+}
+
+# Madau's Giants' Tombs are represented by Sorgono for the central highland zone.
+madau_giants_tombs = {
+	location = sorgono
+	type = shrine
+	importance = 4
+	religions = { nuragic }
+}
+
 tartessos_river_temple = {
 	location = huelva
 	type = temple

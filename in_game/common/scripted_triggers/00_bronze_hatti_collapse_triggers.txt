@@ -2,8 +2,13 @@ bronze_hatti_collapse_phase_at_least = {
 	custom_description = {
 		text = bronze_hatti_collapse_phase_at_least_text
 		value = $value$
-		has_variable = bronze_hatti_collapse_phase
-		var:bronze_hatti_collapse_phase >= $value$
+		trigger_if = {
+			limit = { has_variable = bronze_hatti_collapse_phase }
+			var:bronze_hatti_collapse_phase >= $value$
+		}
+		trigger_else = {
+			always = no
+		}
 	}
 }
 

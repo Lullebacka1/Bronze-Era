@@ -15,3 +15,12 @@ Regular and active contributors may also be invited to officially join the devel
 * **vador03** — Creator
 * **Rogalissimus** *(Mojaskywa26 on GitHub)* — Developer
 * **Lullebacka** — Developer
+
+## Contributor
+* **Hazerre** - Egypt dynasty and cities placements 1209BC Middle Est
+
+
+## Gfx 
+* **Nova Erika** - Maya Flag
+* **Aka Play** - Shang flag
+* **Romulus Kreißler** - Roman Proviencia Flag (some) 

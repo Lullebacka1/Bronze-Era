@@ -359,8 +359,9 @@ bronze_city_prestige_recalculate_city = {
 }
 
 # Root = changed location. Recalculate this city immediately and then ask the
-# single world manager to sort the cached world pool. Call this after every
-# mission, monument, rivalry, or decline change that affects prestige.
+# single world manager to sort the cached world pool. Use for deliberate manual
+# changes, debug refreshes, monuments, and rare hard commits that need rankings
+# updated in the same tick.
 bronze_city_prestige_commit_score_change = {
 	if = {
 		limit = { bronze_city_prestige_is_urban = yes }
@@ -822,6 +823,10 @@ bronze_city_prestige_update_world_ranking = {
 			}
 		}
 		save_scope_as = bronze_city_prestige_current_ranked_city
+		if = {
+			limit = { NOT = { has_variable = bronze_city_prestige_score } }
+			set_variable = { name = bronze_city_prestige_score value = 0 }
+		}
 		remove_variable = bronze_city_prestige_closest_higher_city
 		remove_variable = bronze_city_prestige_closest_higher_score
 		remove_variable = bronze_city_prestige_closest_lower_city
@@ -838,39 +843,33 @@ bronze_city_prestige_update_world_ranking = {
 					save_scope_as = bronze_city_prestige_previous_ranked_city_scope
 				}
 			}
-			set_variable = {
-				name = bronze_city_prestige_closest_higher_city
-				value = scope:bronze_city_prestige_previous_ranked_city_scope
-			}
-			set_variable = {
-				name = bronze_city_prestige_closest_higher_score
-				value = root.var:bronze_city_prestige_previous_ranked_score
-			}
-			set_variable = {
-				name = bronze_city_prestige_score_gap_higher
-				value = root.var:bronze_city_prestige_previous_ranked_score
-			}
-			change_variable = {
-				name = bronze_city_prestige_score_gap_higher
-				subtract = var:bronze_city_prestige_score
-			}
-			scope:bronze_city_prestige_previous_ranked_city_scope = {
-				set_variable = {
-					name = bronze_city_prestige_closest_lower_city
-					value = scope:bronze_city_prestige_current_ranked_city
+			if = {
+				limit = {
+					exists = scope:bronze_city_prestige_previous_ranked_city_scope
+					root = { has_variable = bronze_city_prestige_previous_ranked_score }
 				}
 				set_variable = {
-					name = bronze_city_prestige_closest_lower_score
-					value = scope:bronze_city_prestige_current_ranked_city.var:bronze_city_prestige_score
+					name = bronze_city_prestige_closest_higher_city
+					value = scope:bronze_city_prestige_previous_ranked_city_scope
 				}
 				set_variable = {
-					name = bronze_city_prestige_score_gap_lower
-					value = var:bronze_city_prestige_score
+					name = bronze_city_prestige_closest_higher_score
+					value = root.var:bronze_city_prestige_previous_ranked_score
+				}
+				set_variable = {
+					name = bronze_city_prestige_score_gap_higher
+					value = root.var:bronze_city_prestige_previous_ranked_score
 				}
 				change_variable = {
-					name = bronze_city_prestige_score_gap_lower
-					subtract = scope:bronze_city_prestige_current_ranked_city.var:bronze_city_prestige_score
+					name = bronze_city_prestige_score_gap_higher
+					subtract = var:bronze_city_prestige_score
 				}
+				# Do not write reverse neighbor data onto the previous city here.
+				# After long campaigns a previous ranked city can become stale while
+				# razing/ownership changes rebuild the ranking pool, and cross-reading
+				# the current city's score from that stale scope can produce "none"
+				# script values. The ranking and current city's higher-neighbor tooltip
+				# remain valid without this optional reverse-link data.
 			}
 		}
 

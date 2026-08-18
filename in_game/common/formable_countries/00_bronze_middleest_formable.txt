@@ -82,6 +82,66 @@ HATTI_f = {
 	}
 }
 
+# Persian Empire formable.
+# Territories are the cumulative starting locations of ANSHA, MEDIA, MARHA,
+# VC974, VC994, VC990, VC880 and VC941 from main_menu/setup/start/10_countries.txt.
+# Total unique locations: 92. Required at 80%: 74.
+
+PERSIA_f = {
+	level = 4
+	required_locations_fraction = 0.80
+	capital_required = no
+	potential_requires_own = yes
+	rule = historical
+	content_priority = 820
+
+	potential = {
+		culture = culture:persian
+		NOT = { tag = PERSIA }
+		NOT = { country_exists = c:PERSIA }
+		NOT = { has_variable = bronze_formed_persian_empire }
+	}
+
+	allow = {
+		culture = culture:persian
+		religion = religion:iranic
+		country_rank_level = 3
+		has_embraced_institution = institution:bronze_routes
+		has_embraced_institution = institution:chariot_warfare
+		has_embraced_institution = institution:palatial_economy
+	}
+
+	name = PERSIA
+	flag = PERSIA
+	adjective = PERSIA_ADJ
+	tag = PERSIA
+	color = map_PERSIA
+
+	locations = {
+		abadeh abadeh_tashk abarkuh aspas bavanat beyza
+		eqlid fasa harat istakhr khabar kherameh
+		marvast meshkan meymand neyriz qala_safid qaryat_al_bidh
+		saadatshahr samiram sarvestan shahr_e_babak shahr_meyan shiraz
+		sisakht yasuj yazdikhwast zarqan abhar avaj
+		aveh bandar_e_anzali damavand delijan eyvanekey firuzkuh
+		fuman hashatjin kahak karaj kashan khwar
+		lahijan langarud maranjab natanz neyasar qazvin
+		qeydar qom rahimabad rasht razeqan rey
+		rudbar sagzabad saveh savojbolagh shahrestan_sofla shamiram
+		sirdan takestan varamin arzu baft bandar_khamir
+		darab darz fin gamrun hajjiabad hajjiabad_zarrindasht
+		ij_iran jahrom jannat_shahr juyom kariyan khabr
+		khatunabad lar qatruyeh rostaq ruydar saadatabad
+		sirjan soghan tarom ramsheh yangabad tudeshk
+		aqmecit komshecheh
+	}
+
+	form_effect = {
+		set_country_rank_effect = { rank = country_rank:rank_empire }
+		set_variable = { name = bronze_formed_persian_empire value = 1 }
+	}
+}
+
 # All Aram is the Aramaean cultural formable for the Bronze Era Levant and Syrian desert.
 # Territories are all setup locations containing aramaean culture pops in 06_pops.txt.
 # Total locations: 38. Required at 80%: 31.

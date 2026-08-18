@@ -11,7 +11,6 @@ mycenaean_call_megaron_council_price = {
 mycenaean_sponsor_shared_sacrifice_price = {
 	religious_influence = 20
 	scaled_gold = 0.6
-	stability = 5
 }
 
 mycenaean_send_linear_b_administrators_price = {

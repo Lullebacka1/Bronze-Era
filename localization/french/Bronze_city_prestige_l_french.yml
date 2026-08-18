@@ -1,4 +1,4 @@
-l_french:
+﻿l_french:
  bronze_city_prestige: "Prestige urbain"
  bronze_city_prestige_desc: "Les villes et megalopoles sont classees selon leur population, leur prosperite, leur statut politique, leur commerce, leurs monuments, leur importance historique et leur prestige militaire."
  bronze_city_prestige_score: "Score de prestige urbain"
@@ -162,6 +162,11 @@ l_french:
  BRONZE_CITY_PRESTIGE_BUILDING_CHOGHA_ZANBIL: "$bronze_monument_chogha_zanbil$"
  BRONZE_CITY_PRESTIGE_BUILDING_YIN_XU: "$bronze_monument_yin_xu$"
  BRONZE_CITY_PRESTIGE_BUILDING_SU_NURAXI: "$bronze_monument_su_nuraxi$"
+ BRONZE_CITY_PRESTIGE_BUILDING_NURAGHE_ARRUBIU: "$bronze_monument_nuraghe_arrubiu$"
+ BRONZE_CITY_PRESTIGE_BUILDING_SANTU_ANTINE: "$bronze_monument_santu_antine$"
+ BRONZE_CITY_PRESTIGE_BUILDING_ROMANZESU: "$bronze_monument_romanzesu$"
+ BRONZE_CITY_PRESTIGE_BUILDING_SERRA_ORRIOS: "$bronze_monument_serra_orrios$"
+ BRONZE_CITY_PRESTIGE_BUILDING_MADAU_GIANTS_TOMBS: "$bronze_monument_madau_giants_tombs$"
  BRONZE_CITY_PRESTIGE_BUILDING_STONEHENGE: "$bronze_monument_stonehenge$"
  BRONZE_CITY_PRESTIGE_BUILDING_AVEBURY: "$bronze_monument_avebury$"
  BRONZE_CITY_PRESTIGE_BUILDING_BRU_NA_BOINNE: "$bronze_monument_bru_na_boinne$"

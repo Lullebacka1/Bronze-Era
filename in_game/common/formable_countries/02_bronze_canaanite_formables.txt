@@ -1,0 +1,493 @@
+# Bronze Era Canaanite and Peleset regional kingdoms.
+# These are small kingdom-tier formables: they require independence and direct
+# ownership of every listed location. No generic "Canaanite" tag is created.
+
+ISRAEL_f = {
+	level = 3
+	required_locations_fraction = 1.00
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 760
+
+	potential = {
+		OR = {
+			culture = culture:canaanite
+			tag = HACOR
+			tag = SICHE
+			tag = GEZE
+			tag = PEHEL
+		}
+		NOT = { tag = ISRAEL }
+		NOT = { country_exists = c:ISRAEL }
+		NOT = { has_variable = bronze_formed_canaanite_kingdom }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:canaanite
+		owns = location:safed
+		owns = location:nablus
+		owns = location:jaffa
+		owns = location:irbid
+	}
+
+	name = ISRAEL
+	flag = ISRAEL
+	adjective = ISRAEL_ADJ
+	tag = ISRAEL
+	color = map_ISRAEL
+
+	locations = {
+		safed nablus jaffa irbid
+	}
+
+	form_effect = {
+		change_culture = culture:canaanite
+		change_religion = religion:canaanite
+		set_capital = location:nablus
+		add_accepted_culture = culture:peleset
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_canaanite_kingdom value = 1 }
+		add_legitimacy = legitimacy_weak_bonus
+		add_prestige = prestige_weak_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_canaanite_kingdom_foundation
+			years = -1
+			mode = add_and_extend
+		}
+	}
+}
+
+JUDAH_f = {
+	level = 3
+	required_locations_fraction = 1.00
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 755
+
+	potential = {
+		OR = {
+			culture = culture:canaanite
+			tag = JESUS
+			tag = LAKIS
+		}
+		NOT = { tag = JUDAH }
+		NOT = { country_exists = c:JUDAH }
+		NOT = { has_variable = bronze_formed_canaanite_kingdom }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:canaanite
+		owns = location:jerusalem
+		owns = location:hebron
+		owns = location:beersheba
+	}
+
+	name = JUDAH
+	flag = JUDAH
+	adjective = JUDAH_ADJ
+	tag = JUDAH
+	color = map_JUDAH
+
+	locations = {
+		jerusalem hebron beersheba
+	}
+
+	form_effect = {
+		change_culture = culture:canaanite
+		change_religion = religion:canaanite
+		set_capital = location:jerusalem
+		add_accepted_culture = culture:edomite
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_canaanite_kingdom value = 1 }
+		add_legitimacy = legitimacy_weak_bonus
+		add_prestige = prestige_weak_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_canaanite_kingdom_foundation
+			years = -1
+			mode = add_and_extend
+		}
+	}
+}
+
+MOAB_f = {
+	level = 3
+	required_locations_fraction = 1.00
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 750
+
+	potential = {
+		OR = {
+			culture = culture:moabite
+			culture = culture:ammonite
+			tag = SASU
+		}
+		NOT = { tag = MOAB }
+		NOT = { country_exists = c:MOAB }
+		NOT = { has_variable = bronze_formed_canaanite_kingdom }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:canaanite
+		owns = location:madaba
+		owns = location:karak
+	}
+
+	name = MOAB
+	flag = MOAB
+	adjective = MOAB_ADJ
+	tag = MOAB
+	color = map_MOAB
+
+	locations = {
+		madaba karak
+	}
+
+	form_effect = {
+		change_culture = culture:moabite
+		change_religion = religion:canaanite
+		set_capital = location:madaba
+		add_accepted_culture = culture:ammonite
+		add_accepted_culture = culture:edomite
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_canaanite_kingdom value = 1 }
+		add_legitimacy = legitimacy_weak_bonus
+		add_prestige = prestige_weak_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_canaanite_kingdom_foundation
+			years = -1
+			mode = add_and_extend
+		}
+	}
+}
+
+EDOM_f = {
+	level = 3
+	required_locations_fraction = 1.00
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 745
+
+	potential = {
+		OR = {
+			culture = culture:edomite
+			tag = SASU
+		}
+		NOT = { tag = EDOM }
+		NOT = { country_exists = c:EDOM }
+		NOT = { has_variable = bronze_formed_canaanite_kingdom }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:canaanite
+		owns = location:sughar
+		owns = location:shoubak
+		owns = location:maan
+	}
+
+	name = EDOM
+	flag = EDOM
+	adjective = EDOM_ADJ
+	tag = EDOM
+	color = map_EDOM
+
+	locations = {
+		sughar shoubak maan
+	}
+
+	form_effect = {
+		change_culture = culture:edomite
+		change_religion = religion:canaanite
+		set_capital = location:maan
+		add_accepted_culture = culture:ammonite
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_canaanite_kingdom value = 1 }
+		add_legitimacy = legitimacy_weak_bonus
+		add_prestige = prestige_weak_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_canaanite_kingdom_foundation
+			years = -1
+			mode = add_and_extend
+		}
+	}
+}
+
+ARDAM_f = {
+	level = 3
+	required_locations_fraction = 1.00
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 740
+
+	potential = {
+		OR = {
+			culture = culture:aramaean
+			tag = HABIR
+			tag = ASHT
+		}
+		NOT = { tag = ARDAM }
+		NOT = { country_exists = c:ARDAM }
+		NOT = { has_variable = bronze_formed_canaanite_kingdom }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:canaanite
+		owns = location:dara
+		owns = location:nawa
+		owns = location:suwayda
+		owns = location:damascus
+		owns = location:burraq
+	}
+
+	name = ARDAM
+	flag = ARDAM
+	adjective = ARDAM_ADJ
+	tag = ARDAM
+	color = map_ARDAM
+
+	locations = {
+		dara nawa suwayda damascus burraq
+	}
+
+	form_effect = {
+		change_culture = culture:aramaean
+		change_religion = religion:canaanite
+		set_capital = location:damascus
+		add_accepted_culture = culture:canaanite
+		add_accepted_culture = culture:ammonite
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_canaanite_kingdom value = 1 }
+		add_legitimacy = legitimacy_weak_bonus
+		add_prestige = prestige_weak_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_canaanite_kingdom_foundation
+			years = -1
+			mode = add_and_extend
+		}
+	}
+}
+
+AMMON_f = {
+	level = 3
+	required_locations_fraction = 1.00
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 735
+
+	potential = {
+		OR = {
+			culture = culture:ammonite
+			culture = culture:aramaean
+			culture = culture:edomite
+			tag = SASU
+			tag = HABIR
+		}
+		NOT = { tag = AMMON }
+		NOT = { country_exists = c:AMMON }
+		NOT = { has_variable = bronze_formed_canaanite_kingdom }
+	}
+
+	allow = {
+		is_subject = no
+		religion = religion:canaanite
+		owns = location:amman
+		owns = location:bosra
+	}
+
+	name = AMMON
+	flag = AMMON
+	adjective = AMMON_ADJ
+	tag = AMMON
+	color = map_AMMON
+
+	locations = {
+		amman bosra
+	}
+
+	form_effect = {
+		change_culture = culture:ammonite
+		change_religion = religion:canaanite
+		set_capital = location:amman
+		add_accepted_culture = culture:aramaean
+		add_accepted_culture = culture:edomite
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_canaanite_kingdom value = 1 }
+		add_legitimacy = legitimacy_weak_bonus
+		add_prestige = prestige_weak_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_canaanite_kingdom_foundation
+			years = -1
+			mode = add_and_extend
+		}
+	}
+}
+
+PHILST_f = {
+	level = 3
+	required_locations_fraction = 1.00
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 730
+
+	potential = {
+		OR = {
+			culture = culture:peleset
+			religion = religion:sea_peoples_cult
+			tag = YURZ
+			tag = ASHK
+		}
+		NOT = { tag = PHILST }
+		NOT = { country_exists = c:PHILST }
+		NOT = { has_variable = bronze_formed_philistine_states }
+	}
+
+	allow = {
+		is_subject = no
+		owns = location:gaza
+		owns = location:majdal
+	}
+
+	name = PHILST
+	flag = PHILST
+	adjective = PHILST_ADJ
+	tag = PHILST
+	color = map_PHILST
+
+	locations = {
+		gaza majdal
+	}
+
+	form_effect = {
+		change_culture = culture:peleset
+		change_religion = religion:sea_peoples_cult
+		set_capital = location:gaza
+		add_accepted_culture = culture:canaanite
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_philistine_states value = 1 }
+		add_legitimacy = legitimacy_weak_bonus
+		add_prestige = prestige_weak_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_philistine_maritime_states
+			years = -1
+			mode = add_and_extend
+		}
+	}
+}
+
+# Phoenicia unites the established Phoenician city kingdoms in the setup
+# together with Akshaph/Akshapah, requiring direct ownership and independence.
+PHO_f = {
+	level = 3
+	required_locations_fraction = 1.00
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 725
+
+	potential = {
+		OR = {
+			culture = culture:phoenician
+			religion = religion:phoenician
+			tag = SIDON
+			tag = ARWAD
+			tag = BERIT
+			tag = BYBLO
+			tag = AKSHA
+		}
+		NOT = { tag = PHO }
+		NOT = { country_exists = c:PHO }
+		NOT = { has_variable = bronze_formed_phoenicia }
+	}
+
+	allow = {
+		is_subject = no
+		owns = location:acre
+		owns = location:sidon
+		owns = location:deir_qamar
+		owns = location:beirut
+		owns = location:baniyas
+		owns = location:tartus
+		owns = location:tripoli_syria
+	}
+
+	name = PHO
+	flag = PHO
+	adjective = PHO_ADJ
+	tag = PHO
+	color = map_PHO
+
+	locations = {
+		acre sidon deir_qamar beirut baniyas tartus tripoli_syria
+	}
+
+	form_effect = {
+		change_culture = culture:phoenician
+		change_religion = religion:phoenician
+		set_capital = location:sidon
+		add_accepted_culture = culture:canaanite
+		add_accepted_culture = culture:ugaritic
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_phoenicia value = 1 }
+		add_legitimacy = legitimacy_weak_bonus
+		add_prestige = prestige_mild_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_phoenician_maritime_kingdom
+			years = -1
+			mode = add_and_extend
+		}
+		trigger_event_non_silently = { id = bronze_phoenicia.1 days = 1 }
+	}
+}
+

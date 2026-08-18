@@ -14,8 +14,8 @@ character_db={
         ruler_trait = strict
 		female = no					
 		birth = faqus				
-		tag = 0002G					
-		estate = nobles_estate				
+		tag = EGY
+		estate = nobles_estate
 		dynasty = ramessid_dynasty			
 		
 		has_patronym = no				
@@ -33,8 +33,8 @@ character_db={
 		birth_date = -51.1.1				# Estimate based on age of Merneptah and Seti II
 		female = yes					
 		birth = giza						# Assuming she was the daughter of Khaemweset https://en.wikipedia.org/wiki/Khaemweset
-		tag = 0002G					
-		estate = nobles_estate				
+		tag = EGY
+		estate = nobles_estate
 		dynasty = ramessid_dynasty			
 		
         spouse = character_merneptah
@@ -53,8 +53,8 @@ character_db={
 		birth_date = -28.1.1				# Estimate baseed on age of Merneptah and him likely having been depicted as an adult during the reign of Merneptah
 		female = no					
 		birth = faqus				
-		tag = 0002G					
-		estate = nobles_estate				
+		tag = EGY
+		estate = nobles_estate
 		dynasty = ramessid_dynasty			
 		
         father = character_merneptah		
@@ -74,8 +74,8 @@ character_db={
 		birth_date = -15.1.1				# Estimate based on age of Seti II and Amenmesse
 		female = yes					
 		birth = faqus						# Uncertain						
-		tag = 0002G					
-		estate = peasants_estate				
+		tag = EGY
+		estate = peasants_estate
 		# dynasty = ramessid_dynasty			
 		
         spouse = character_seti2

@@ -1,5 +1,5 @@
 hs_egypt = {
-	tag = 0002G
+	tag = EGY
 	score = 40000
 }
 

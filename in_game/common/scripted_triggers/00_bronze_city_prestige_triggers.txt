@@ -1,9 +1,9 @@
-﻿# Country scope.
+# Country scope.
 # Generated from countries using Bronze or bronze_* setup templates.
 bronze_city_prestige_is_bronze_country = {
 	OR = {
 		this = c:0001G
-		this = c:0002G
+		this = c:EGY
 		this = c:HATTI
 		this = c:ACHAE
 		this = c:ARGOS
