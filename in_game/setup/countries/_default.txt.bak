@@ -2311,3 +2311,43 @@ VINDLAND = {
 	color = rgb { 129 112 50 }
 	color2 = rgb { 219 170 67 }
 }
+
+PERSIA = {
+	color = rgb { 155 33 28 }
+	color2 = rgb { 246 178 47 }
+}
+
+DAPG = {
+	color = rgb { 57 146 213 }
+	color2 = rgb { 26 66 96 }
+}
+
+GUZHU = {
+	color = rgb { 215 40 151 }
+	color2 = rgb { 97 18 68 }
+}
+
+PUGU = {
+	color = rgb { 131 61 184 }
+	color2 = rgb { 59 27 83 }
+}
+
+XCHU = {
+	color = rgb { 191 66 64 }
+	color2 = rgb { 86 30 29 }
+}
+
+XU = {
+	color = rgb { 46 198 204 }
+	color2 = rgb { 21 89 92 }
+}
+
+YOUM = {
+	color = rgb { 54 206 196 }
+	color2 = rgb { 24 93 88 }
+}
+
+ZHOU = {
+	color = rgb { 150 94 201 }
+	color2 = rgb { 68 42 90 }
+}
