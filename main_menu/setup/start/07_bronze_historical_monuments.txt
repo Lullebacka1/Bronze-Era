@@ -30,6 +30,12 @@ building_manager = {
 	bronze_monument_assur_complex = { level = 1 location = samarra }
 	bronze_monument_chogha_zanbil_ziggurat = { level = 1 location = hamidiyeh }
 	bronze_monument_su_nuraxi = { level = 1 location = isili }
+	# Nuragic Sardinia, using the closest Sardinian EU5 locations available.
+	bronze_monument_nuraghe_arrubiu = { level = 1 location = isili }
+	bronze_monument_santu_antine = { level = 1 location = sassari }
+	bronze_monument_romanzesu = { level = 1 location = bitti }
+	bronze_monument_serra_orrios = { level = 1 location = orosei }
+	bronze_monument_madau_giants_tombs = { level = 1 location = sorgono }
 	bronze_monument_avebury = { level = 1 location = amesbury }
 }
 

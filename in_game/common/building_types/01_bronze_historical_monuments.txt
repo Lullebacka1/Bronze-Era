@@ -478,6 +478,160 @@ bronze_monument_su_nuraxi = {
 		local_garrison_size = 0.25
 		local_defensive = 0.20
 		local_cultural_influence = 0.15
+		local_max_control = 0.05
+	}
+
+	capital_country_modifier = {
+		monthly_prestige = 0.01
+	}
+}
+
+bronze_monument_nuraghe_arrubiu = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = soldiers
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_fortified_monument_maintenance }
+	custom_tags = { bronze_historical_monument military_monument religious_monument nuragic_monument }
+	modifier = {
+		local_cultural_tradition = 0.22
+		local_cultural_influence = 0.12
+		local_garrison_size = 0.30
+		local_defensive = 0.18
+		local_food_capacity = 100
+	}
+}
+
+bronze_monument_santu_antine = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = nobles
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = bronze_age_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_fortified_monument_maintenance }
+	custom_tags = { bronze_historical_monument military_monument administrative_monument nuragic_monument }
+	modifier = {
+		local_cultural_tradition = 0.20
+		local_cultural_influence = 0.18
+		local_max_control = 0.10
+		local_monthly_control = 0.001
+		local_garrison_size = 0.18
+	}
+}
+
+bronze_monument_romanzesu = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = neolithic_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_megalithic_monument_maintenance }
+	custom_tags = { bronze_historical_monument religious_monument nuragic_monument }
+	modifier = {
+		local_cultural_tradition = 0.20
+		local_cultural_influence = 0.18
+		local_clergy_estate_power = 0.12
+		local_unrest = -0.02
+		local_monthly_food_modifier = 0.01
+	}
+}
+
+bronze_monument_serra_orrios = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = neolithic_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_megalithic_monument_maintenance }
+	custom_tags = { bronze_historical_monument religious_monument nuragic_monument }
+	modifier = {
+		local_cultural_tradition = 0.18
+		local_cultural_influence = 0.18
+		local_clergy_estate_power = 0.10
+		local_migration_attraction = 0.03
+		local_unrest = -0.015
+	}
+}
+
+bronze_monument_madau_giants_tombs = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = clergy
+	category = monumental_building_category
+	employment_size = cultural_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = neolithic_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_megalithic_monument_maintenance }
+	custom_tags = { bronze_historical_monument religious_monument nuragic_monument }
+	modifier = {
+		local_cultural_tradition = 0.20
+		local_cultural_influence = 0.12
+		local_clergy_estate_power = 0.10
+		local_unrest = -0.02
+	}
+
+	capital_country_modifier = {
+		monthly_religious_influence = 0.01
+		monthly_prestige = 0.005
 	}
 }
 

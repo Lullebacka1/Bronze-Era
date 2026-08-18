@@ -13,7 +13,7 @@ sicel = {
 }
 
 nuragic = {
-	language = island_bronze_language
+	language = nuragic_language
 	color = rgb { 126 119 79 }
 	tags = { west_mediterranean_gfx mediterranean_gfx }
 	opinions = {
