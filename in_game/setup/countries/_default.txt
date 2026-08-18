@@ -2401,3 +2401,8 @@ YURZ = {
 	color = rgb { 71 209 117 }
 	color2 = rgb { 68 24 82 }
 }
+
+DAIM = {
+	color = rgb { 73 166 212 }
+	color2 = rgb { 33 75 95 }
+}

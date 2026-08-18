@@ -10513,11 +10513,11 @@ countries = {
 	}
 	##DHOLAVIRA
 	DHOLA = {
-		capital = kantha
-		culture = harappan
-		religion = harappan
+	capital = kantha
+	culture = harappan
+	religion = harappan
 
-		country_rank = rank_county
+	country_rank = rank_county
 
 		include = "bronze_india"
 
@@ -10528,11 +10528,20 @@ countries = {
 		own_control_core = {
 			kantha kapilkot lakhiyarvira lakhpat
 		}
-		accepted_cultures = { hindu harappan vedic }
-		tolerated_cultures = { harappan vedic dravidian gandharan }
-			discovered_regions = {
-				india_region persia_region
-			}
+	accepted_cultures = {
+		harappan
+		hindu
+		vedic
+	}
+	tolerated_cultures = {
+		dravidian
+		gandharan
+		harappan
+		vedic
+	}
+	discovered_regions = {
+		western_india_region
+	}
 	}
 	##GANWERIWALA
 	GANWE = {
@@ -37876,6 +37885,27 @@ VC001 = {
 		}
 		discovered_regions = {
 			crescent_region
+		}
+	}
+
+	DAIM = {
+		culture = Salvada
+		religion = vedic
+		country_rank = rank_county
+		own_control_core = {
+			ahmednagar    bir           chakan        chambargonda  junnar        pune
+			sinnar
+		}
+		capital = ahmednagar
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Salvada
+		}
+		discovered_regions = {
+			deccan_region
 		}
 	}
 }
