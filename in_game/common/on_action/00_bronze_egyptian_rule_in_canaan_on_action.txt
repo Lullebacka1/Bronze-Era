@@ -8,14 +8,14 @@ egyptian_rule_in_canaan_game_start = {
 	effect = {
 		if = {
 			limit = {
-				country_exists = c:0002G
+				country_exists = c:EGY
 				situation:egyptian_rule_in_canaan = {
 					situation_is_active = no
 					situation_has_ended = no
 				}
 				NOT = { has_global_variable = egyptian_rule_in_canaan_ended }
 			}
-			c:0002G = {
+			c:EGY = {
 				egyptian_rule_in_canaan_begin = yes
 			}
 		}

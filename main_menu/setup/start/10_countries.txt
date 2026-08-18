@@ -51,7 +51,7 @@ countries = {
 	}
 
 	##EGYPT
-	0002G = {
+	EGY = {
 		capital = faqus
 		culture = lower_egyptian
 		religion = kemetic

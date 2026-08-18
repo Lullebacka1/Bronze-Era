@@ -220,9 +220,9 @@ bronze_city_prestige_add_building_points = {
 	# independent from the aggressive vanilla work-of-art quality multipliers.
 	if = {
 		limit = { has_building = building_type:bronze_monument_giza_pyramid_complex }
-		change_variable = { name = bronze_city_prestige_score add = 200 }
-		change_variable = { name = bronze_city_prestige_building_score add = 200 }
-		set_variable = { name = bronze_city_prestige_building_giza_pyramid_score value = 200 }
+		change_variable = { name = bronze_city_prestige_score add = 120 }
+		change_variable = { name = bronze_city_prestige_building_score add = 120 }
+		set_variable = { name = bronze_city_prestige_building_giza_pyramid_score value = 120 }
 	}
 	if = {
 		limit = { has_building = building_type:bronze_monument_karnak_complex }

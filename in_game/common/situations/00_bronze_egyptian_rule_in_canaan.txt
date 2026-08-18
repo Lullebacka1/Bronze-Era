@@ -7,14 +7,14 @@ egyptian_rule_in_canaan = {
 	}
 
 	can_start = {
-		country_exists = c:0002G
+		country_exists = c:EGY
 		current_date >= 1.1.1
 		NOT = { has_global_variable = egyptian_rule_in_canaan_ended }
 	}
 
 	can_end = {
 		OR = {
-			NOT = { country_exists = c:0002G }
+			NOT = { country_exists = c:EGY }
 			has_global_variable = egyptian_rule_in_canaan_ended
 		}
 	}
@@ -28,7 +28,7 @@ egyptian_rule_in_canaan = {
 	}
 
 	on_start = {
-		c:0002G ?= {
+		c:EGY ?= {
 			egyptian_rule_in_canaan_begin = yes
 			trigger_event_non_silently = egyptian_rule_in_canaan.1
 		}
@@ -43,7 +43,7 @@ egyptian_rule_in_canaan = {
 
 	on_ending = {
 		set_global_variable = { name = egyptian_rule_in_canaan_ended value = 1 }
-		c:0002G ?= {
+		c:EGY ?= {
 			egyptian_rule_in_canaan_cleanup = yes
 		}
 	}
@@ -86,7 +86,7 @@ egyptian_rule_in_canaan = {
 					var:egyptian_authority_in_canaan >= 60
 				}
 				set_variable = { name = egyptian_rule_victory_event_pending value = 1 }
-				c:0002G ?= { trigger_event_non_silently = egyptian_rule_in_canaan.200 }
+				c:EGY ?= { trigger_event_non_silently = egyptian_rule_in_canaan.200 }
 			}
 
 			if = {
@@ -95,7 +95,7 @@ egyptian_rule_in_canaan = {
 					var:egyptian_authority_in_canaan <= 0
 				}
 				set_variable = { name = egyptian_rule_final_event_pending value = 1 }
-				c:0002G ?= { trigger_event_non_silently = egyptian_rule_in_canaan.100 }
+				c:EGY ?= { trigger_event_non_silently = egyptian_rule_in_canaan.100 }
 			}
 		}
 	}
@@ -145,7 +145,7 @@ egyptian_rule_in_canaan = {
 				}
 				has_building = building_type:egyptian_canaanite_garrison
 			}
-			value = c:0002G.country_color
+			value = c:EGY.country_color
 		}
 		else_if = {
 			limit = {

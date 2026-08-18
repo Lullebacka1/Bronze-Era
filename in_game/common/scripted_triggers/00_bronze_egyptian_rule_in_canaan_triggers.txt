@@ -2,8 +2,8 @@ egyptian_rule_in_canaan_egypt = {
 	custom_description = {
 		text = egyptian_rule_in_canaan_egypt_text
 		OR = {
-			this = c:0002G
-			has_or_had_tag = 0002G
+			this = c:EGY
+			has_or_had_tag = EGY
 		}
 	}
 }
@@ -40,7 +40,7 @@ egyptian_rule_in_canaan_subject = {
 	custom_description = {
 		text = egyptian_rule_in_canaan_subject_text
 		egyptian_rule_in_canaan_city_kingdom = yes
-		is_subject_of = c:0002G
+		is_subject_of = c:EGY
 	}
 }
 

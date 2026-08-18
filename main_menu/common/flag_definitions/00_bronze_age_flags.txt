@@ -5,9 +5,6 @@
 EGY = { # Egypt
 	flag_definition = { coa = bronze_age_EGY_coa priority = 10000 }
 }
-0002G = { # Local Bronze Era placeholder for Egypt.
-	flag_definition = { coa = bronze_age_EGY_coa priority = 10000 }
-}
 
 HAT = { # Hatti short tag, if used.
 	flag_definition = { coa = bronze_age_HAT_coa priority = 10000 }

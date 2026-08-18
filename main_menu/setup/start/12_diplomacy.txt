@@ -21,15 +21,15 @@ diplomacy_manager = {
 
    # Egyptian Rule in Canaan subjects.
    # Keep this list aligned with egyptian_rule_in_canaan_city_kingdom.
-   dependency = { first = 0002G second = AKSHA subject_type = vassal }
-   dependency = { first = 0002G second = ASHK subject_type = vassal }
-   dependency = { first = 0002G second = ASHT subject_type = vassal }
-   dependency = { first = 0002G second = GEZE subject_type = vassal }
-   dependency = { first = 0002G second = HACOR subject_type = vassal }
-   dependency = { first = 0002G second = JESUS subject_type = vassal }
-   dependency = { first = 0002G second = LAKIS subject_type = vassal }
-   dependency = { first = 0002G second = PEHEL subject_type = vassal }
-   dependency = { first = 0002G second = SICHE subject_type = vassal }
-   dependency = { first = 0002G second = YURZ subject_type = vassal }
+   dependency = { first = EGY second = AKSHA subject_type = vassal }
+   dependency = { first = EGY second = ASHK subject_type = vassal }
+   dependency = { first = EGY second = ASHT subject_type = vassal }
+   dependency = { first = EGY second = GEZE subject_type = vassal }
+   dependency = { first = EGY second = HACOR subject_type = vassal }
+   dependency = { first = EGY second = JESUS subject_type = vassal }
+   dependency = { first = EGY second = LAKIS subject_type = vassal }
+   dependency = { first = EGY second = PEHEL subject_type = vassal }
+   dependency = { first = EGY second = SICHE subject_type = vassal }
+   dependency = { first = EGY second = YURZ subject_type = vassal }
 
 }

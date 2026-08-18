@@ -356,7 +356,7 @@ BOSPH = {
 	color = rgb { 93 71 114 }
 	color2 = rgb { 110 27 27 }
 }
-0002G = {
+EGY = {
 	color = rgb { 114 143 101 }
 	color2 = rgb { 110 27 27 }
 }

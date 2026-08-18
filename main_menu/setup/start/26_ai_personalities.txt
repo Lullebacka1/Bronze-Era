@@ -28,7 +28,7 @@ countries = {
 
 		# Opportunistic: exploit others' weaknesses; trade-focused
 		#POR = { ai_personality = ai_opportunistic }  # Portugal
-		0002G = { ai_personality = ai_opportunistic }  # egypt
+		EGY = { ai_personality = ai_opportunistic }  # egypt
 		ETR = { ai_personality = ai_opportunistic }  # Etruscans
 		MAGA = { ai_personality = ai_opportunistic }  # Magan
 

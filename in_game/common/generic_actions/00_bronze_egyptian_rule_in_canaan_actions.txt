@@ -130,7 +130,7 @@ egyptian_rule_defy_egyptian_authority = {
 				add = 15
 			}
 			if = {
-				limit = { c:0002G ?= { is_during_bankruptcy = yes } }
+				limit = { c:EGY ?= { is_during_bankruptcy = yes } }
 				add = 8
 			}
 			if = {

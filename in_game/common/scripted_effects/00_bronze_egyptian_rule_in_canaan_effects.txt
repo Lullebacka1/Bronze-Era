@@ -91,16 +91,16 @@ egyptian_rule_in_canaan_refresh_subject_count = {
 	custom_description = {
 		text = egyptian_rule_in_canaan_refresh_subject_count_text
 		set_variable = { name = egyptian_rule_in_canaan_subjects value = 0 }
-		if = { limit = { c:AKSHA ?= { is_subject_of = c:0002G } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
-		if = { limit = { c:ASHK ?= { is_subject_of = c:0002G } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
-		if = { limit = { c:ASHT ?= { is_subject_of = c:0002G } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
-		if = { limit = { c:GEZE ?= { is_subject_of = c:0002G } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
-		if = { limit = { c:HACOR ?= { is_subject_of = c:0002G } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
-		if = { limit = { c:JESUS ?= { is_subject_of = c:0002G } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
-		if = { limit = { c:LAKIS ?= { is_subject_of = c:0002G } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
-		if = { limit = { c:PEHEL ?= { is_subject_of = c:0002G } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
-		if = { limit = { c:SICHE ?= { is_subject_of = c:0002G } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
-		if = { limit = { c:YURZ ?= { is_subject_of = c:0002G } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
+		if = { limit = { c:AKSHA ?= { is_subject_of = c:EGY } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
+		if = { limit = { c:ASHK ?= { is_subject_of = c:EGY } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
+		if = { limit = { c:ASHT ?= { is_subject_of = c:EGY } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
+		if = { limit = { c:GEZE ?= { is_subject_of = c:EGY } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
+		if = { limit = { c:HACOR ?= { is_subject_of = c:EGY } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
+		if = { limit = { c:JESUS ?= { is_subject_of = c:EGY } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
+		if = { limit = { c:LAKIS ?= { is_subject_of = c:EGY } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
+		if = { limit = { c:PEHEL ?= { is_subject_of = c:EGY } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
+		if = { limit = { c:SICHE ?= { is_subject_of = c:EGY } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
+		if = { limit = { c:YURZ ?= { is_subject_of = c:EGY } } change_variable = { name = egyptian_rule_in_canaan_subjects add = 1 } }
 	}
 }
 
@@ -110,16 +110,16 @@ egyptian_rule_in_canaan_refresh_restless_subjects = {
 		situation:egyptian_rule_in_canaan ?= {
 			set_variable = { name = egyptian_rule_in_canaan_restless_subjects value = 0 }
 		}
-		if = { limit = { c:AKSHA ?= { is_subject_of = c:0002G subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
-		if = { limit = { c:ASHK ?= { is_subject_of = c:0002G subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
-		if = { limit = { c:ASHT ?= { is_subject_of = c:0002G subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
-		if = { limit = { c:GEZE ?= { is_subject_of = c:0002G subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
-		if = { limit = { c:HACOR ?= { is_subject_of = c:0002G subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
-		if = { limit = { c:JESUS ?= { is_subject_of = c:0002G subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
-		if = { limit = { c:LAKIS ?= { is_subject_of = c:0002G subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
-		if = { limit = { c:PEHEL ?= { is_subject_of = c:0002G subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
-		if = { limit = { c:SICHE ?= { is_subject_of = c:0002G subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
-		if = { limit = { c:YURZ ?= { is_subject_of = c:0002G subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
+		if = { limit = { c:AKSHA ?= { is_subject_of = c:EGY subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
+		if = { limit = { c:ASHK ?= { is_subject_of = c:EGY subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
+		if = { limit = { c:ASHT ?= { is_subject_of = c:EGY subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
+		if = { limit = { c:GEZE ?= { is_subject_of = c:EGY subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
+		if = { limit = { c:HACOR ?= { is_subject_of = c:EGY subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
+		if = { limit = { c:JESUS ?= { is_subject_of = c:EGY subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
+		if = { limit = { c:LAKIS ?= { is_subject_of = c:EGY subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
+		if = { limit = { c:PEHEL ?= { is_subject_of = c:EGY subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
+		if = { limit = { c:SICHE ?= { is_subject_of = c:EGY subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
+		if = { limit = { c:YURZ ?= { is_subject_of = c:EGY subject_loyalty < 40 } } situation:egyptian_rule_in_canaan ?= { change_variable = { name = egyptian_rule_in_canaan_restless_subjects add = 1 } } }
 	}
 }
 
@@ -176,7 +176,7 @@ egyptian_rule_in_canaan_annual_pressure = {
 			}
 		}
 
-		c:0002G ?= {
+		c:EGY ?= {
 			if = {
 				limit = { is_during_bankruptcy = yes }
 				egyptian_rule_in_canaan_add_authority = { value = -5 }
@@ -199,7 +199,7 @@ egyptian_rule_in_canaan_annual_pressure = {
 				if = {
 					limit = { NOT = { has_variable = egyptian_rule_tribute_refusal_recent } }
 					set_variable = { name = egyptian_rule_tribute_refusal_recent value = 1 years = 5 }
-					c:0002G ?= { trigger_event_non_silently = egyptian_rule_in_canaan.10 }
+					c:EGY ?= { trigger_event_non_silently = egyptian_rule_in_canaan.10 }
 				}
 			}
 		}
@@ -221,7 +221,7 @@ egyptian_rule_in_canaan_check_garrison_loss = {
 				}
 				set_variable = { name = egyptian_rule_gaza_garrison_lost value = 1 years = 10 }
 				egyptian_rule_in_canaan_add_authority = { value = -10 }
-				c:0002G ?= { trigger_event_non_silently = egyptian_rule_in_canaan.20 }
+				c:EGY ?= { trigger_event_non_silently = egyptian_rule_in_canaan.20 }
 			}
 		}
 		location:nablus = {
@@ -234,7 +234,7 @@ egyptian_rule_in_canaan_check_garrison_loss = {
 				}
 				set_variable = { name = egyptian_rule_nablus_garrison_lost value = 1 years = 10 }
 				egyptian_rule_in_canaan_add_authority = { value = -10 }
-				c:0002G ?= { trigger_event_non_silently = egyptian_rule_in_canaan.20 }
+				c:EGY ?= { trigger_event_non_silently = egyptian_rule_in_canaan.20 }
 			}
 		}
 		location:jaffa = {
@@ -247,7 +247,7 @@ egyptian_rule_in_canaan_check_garrison_loss = {
 				}
 				set_variable = { name = egyptian_rule_jaffa_garrison_lost value = 1 years = 10 }
 				egyptian_rule_in_canaan_add_authority = { value = -10 }
-				c:0002G ?= { trigger_event_non_silently = egyptian_rule_in_canaan.20 }
+				c:EGY ?= { trigger_event_non_silently = egyptian_rule_in_canaan.20 }
 			}
 		}
 	}
@@ -258,7 +258,7 @@ egyptian_rule_in_canaan_mark_subject_defiant = {
 		text = egyptian_rule_in_canaan_mark_subject_defiant_text
 		set_variable = { name = egyptian_rule_canaanite_defiant value = 1 years = 5 }
 		add_liberty_desire = liberty_desire_mild_plus
-		add_opinion = { modifier = egyptian_rule_defied_authority target = c:0002G }
+		add_opinion = { modifier = egyptian_rule_defied_authority target = c:EGY }
 		egyptian_rule_in_canaan_add_authority = { value = -4 }
 		add_prestige = prestige_weak_bonus
 	}
@@ -270,11 +270,11 @@ egyptian_rule_in_canaan_mark_all_subjects_defiant = {
 		every_country = {
 			limit = {
 				egyptian_rule_in_canaan_city_kingdom = yes
-				is_subject_of = c:0002G
+				is_subject_of = c:EGY
 			}
 			set_variable = { name = egyptian_rule_canaanite_defiant value = 1 years = 8 }
 			add_liberty_desire = liberty_desire_severe_plus
-			add_opinion = { modifier = egyptian_rule_defied_authority target = c:0002G }
+			add_opinion = { modifier = egyptian_rule_defied_authority target = c:EGY }
 		}
 	}
 }
