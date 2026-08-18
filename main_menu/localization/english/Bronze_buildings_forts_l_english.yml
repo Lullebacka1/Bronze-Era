@@ -2,8 +2,10 @@
   frontier_post: "Frontier Outpost"
   frontier_post_desc: "A fortified outpost established along trade routes, borderlands, and strategic crossings. Garrisoned by loyal retainers and officials, it projects authority into distant regions, safeguards commerce, and serves as a base for patrols, messengers, and local administration."
 
+  HAS_CITY_WALLS_IN_LOC: "Has city walls (minimum Fort Level: I). Walls do not stack with a real fort."
+
   town_walls: "Settlement Walls"
-  town_walls_desc: "Stone walls, gates, and defensive earthworks surround the settlement, providing protection against raiders and rival communities. Their construction reflects the growing permanence and prosperity of early towns.
+  town_walls_desc: "Stone walls, gates, and defensive earthworks surround the settlement, providing protection against raiders and rival communities. Their construction reflects the growing permanence and prosperity of early towns."
 
   bronze_city_walls: "City Walls"
   bronze_city_walls_desc: "Fortifications encircle the city with imposing walls, towers, and fortified gates maintained by centralized authorities. Beyond their defensive value, these structures proclaim the wealth, power, and organizational capacity of the urban state."

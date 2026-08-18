@@ -1,4 +1,6 @@
 ﻿l_french:
+ bronze_city_walls: "Murailles urbaines"
+ HAS_CITY_WALLS_IN_LOC: "Possede des murailles urbaines (niveau de fort minimum : I). Les remparts ne sont pas cumulables avec un veritable fort."
  bronze_city_prestige: "Prestige urbain"
  bronze_city_prestige_desc: "Les villes et megalopoles sont classees selon leur population, leur prosperite, leur statut politique, leur commerce, leurs monuments, leur importance historique et leur prestige militaire."
  bronze_city_prestige_score: "Score de prestige urbain"
