@@ -97,7 +97,8 @@ slinger_infantry_maintenance = {
 }
 
 pastoral_slinger_infantry_maintenance = {
-	cloth = 0.005
+	leather = 0.02
+	cloth = 0.02
 	category = regiment_maintenance
 }
 
