@@ -39021,5 +39021,69 @@ VC001 = {
 			steppes_region
 		}
 	}
+
+	CHISI = {
+		culture = monteoru
+		religion = dacian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			balti           chisinau        harlau          husi            iasi            orhei
+			soroca          targu_lapusnei  tuzara          ungheni         viadineti
+		}
+		capital = chisinau
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			monteoru
+		}
+		discovered_regions = {
+			carpathia_region
+		}
+	}
+
+	GAVA = {
+		culture = gava_holigrady
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			bereschany    bohorodchany  bolekhiv      dolyna        drohobych     halych
+			lesko         lviv          przemysl      rohatyn       sambir        stryi
+			turka         tysmenytsia   zhydachiv     zvenyhorod
+		}
+		capital = lviv
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			gava_holigrady
+		}
+		discovered_regions = {
+			ruthenia_region
+		}
+	}
+
+	KOMA = {
+		culture = corded_ware
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			chortoryisk   dubrovytsia   liubeshiv     lutsk         nobel         stepan
+			stolin        volodymyrets
+		}
+		capital = chortoryisk
+		include = "Neolithic_Est"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			corded_ware
+		}
+		discovered_regions = {
+			ruthenia_region
+		}
+	}
 }
 }

@@ -2650,3 +2650,18 @@ BILO = {
 	color = rgb { 209 41 144 }
 	color2 = rgb { 94 18 65 }
 }
+
+CHISI = {
+	color = rgb { 45 116 215 }
+	color2 = rgb { 20 52 97 }
+}
+
+GAVA = {
+	color = rgb { 61 184 159 }
+	color2 = rgb { 27 83 72 }
+}
+
+KOMA = {
+	color = rgb { 84 112 201 }
+	color2 = rgb { 38 50 90 }
+}
