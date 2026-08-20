@@ -248,7 +248,7 @@ ALLARAM_f = {
 
 BRONZE_ARMENIA_f = {
 	level = 3
-	required_locations_fraction = 0.80
+	required_locations_fraction = 0.72
 	capital_required = no
 	potential_requires_own = yes
 	rule = historical
