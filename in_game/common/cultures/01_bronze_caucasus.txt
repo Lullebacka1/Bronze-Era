@@ -36,6 +36,20 @@ urartian = {
 	}
 }
 
+armenian_culture = {
+	language = armenian_language
+	color = map_BA_ARM
+	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	opinions = {
+		urartian = 25
+		colchian = 15
+		kartvelian = 10
+	}
+	culture_groups = {
+		caucasus_bronze_group
+	}
+}
+
 albanian_caucasian = {
 	language = caucasian_bronze_language
 	color = rgb { 103 150 115 }

@@ -239,3 +239,104 @@ ALLARAM_f = {
 		}
 	}
 }
+
+# Great Kingdom of Armenia.
+# Standard formable location fraction is kept for EU5 UI compatibility.
+# The intended design target is control of 80% of the Armenian highland list,
+# whether directly or through loyal dependencies; if the engine does not count
+# subject-held locations in formable fractions, direct ownership remains the safe fallback.
+
+BRONZE_ARMENIA_f = {
+	level = 3
+	required_locations_fraction = 0.80
+	capital_required = no
+	potential_requires_own = yes
+	rule = historical
+	content_priority = 825
+
+	potential = {
+		OR = {
+			culture = culture:armenian_culture
+			culture = culture:urartian
+			culture = culture:colchian
+			tag = AZZI
+			tag = HAJAS
+			tag = URATU
+			has_variable = bronze_azzi_hayasa_unified
+			has_variable = bronze_yerevan_armenia_name
+		}
+		NOT = { tag = ARM }
+		NOT = { country_exists = c:ARM }
+	}
+
+	allow = {
+		is_subject = no
+		OR = {
+			culture = culture:armenian_culture
+			culture = culture:urartian
+			culture = culture:colchian
+			tag = AZZI
+			tag = HAJAS
+			tag = URATU
+			has_variable = bronze_azzi_hayasa_unified
+			has_variable = bronze_yerevan_armenia_name
+		}
+	}
+
+	name = ARM
+	flag = ARM
+	adjective = ARM_ADJ
+	tag = ARM
+	color = map_BA_ARM
+
+	locations = {
+		adakli ahlat akhalkalaki akhaltsikhe amberd ani
+		ardahan artashavan baciravan barda bargiri baskale
+		bayazit bayburt beylagan bilasuvar bingol bitlis
+		bjni catak cemisgezek dmanisi egil ercis
+		erzincan erzurum gagi gandzasar ganja gardman
+		genc gladzor gori goris goroz gumushane
+		hakkari hasankale haterk hazro heni hinis
+		hizan hosap igdir ilic ispir julfa
+		kagizman kapan_armenia karakilise kars kashatagh kayen
+		kelkit kemah khor_virap khoy khunani kldekari
+		kozluk kulp kumayri kuzucan lemberan lori
+		maku malazgirt mayyafariqin mtskheta mughan mus
+		nakhchivan nazok_olya oltu osnavieh palu panaskerti
+		parkhali pertek qarahziaoddin salmas salyan sason
+		sebinkarahisar shamkir shusha siah_cheshmeh siirt siran
+		sotk spitak surmali tatev tatvan tbilisi
+		tekman tercan tmogvi tortum tutak urmia
+		van varsan varto yerevan
+	}
+
+	form_effect = {
+		change_culture = culture:armenian_culture
+		change_religion = religion:armenian_pagan
+		custom_tooltip = bronze_armenia_urartian_conversion_tt
+		hidden_effect = {
+			bronze_armenia_convert_urartian_pops_worldwide = yes
+		}
+		add_accepted_culture = culture:urartian
+		add_accepted_culture = culture:colchian
+		add_accepted_culture = culture:kartvelian
+		if = {
+			limit = { owns = location:yerevan }
+			set_capital = location:yerevan
+		}
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_great_armenia value = 1 }
+		add_prestige = prestige_mild_bonus
+		add_legitimacy = legitimacy_mild_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_armenia_foundation
+			years = -1
+			mode = add_and_extend
+		}
+	}
+}

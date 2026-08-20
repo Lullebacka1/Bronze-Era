@@ -1,0 +1,33 @@
+bronze_azzi_hayasa_confederation = {
+	game_data = {
+		category = country
+	}
+
+	monthly_prestige = 0.02
+	monthly_legitimacy = 0.02
+	global_defensive = 0.02
+	global_monthly_control = 0.001
+}
+
+bronze_armenia_foundation = {
+	game_data = {
+		category = country
+	}
+
+	monthly_prestige = 0.03
+	monthly_legitimacy = 0.03
+	global_defensive = 0.03
+	land_morale_modifier = 0.02
+	global_monthly_control = 0.001
+}
+
+bronze_yerevan_foundation_site = {
+	game_data = {
+		category = location
+	}
+
+	local_monthly_prosperity = 0.001
+	local_migration_attraction = 0.05
+	local_unrest = -0.02
+	local_nobles_estate_power = 0.05
+}

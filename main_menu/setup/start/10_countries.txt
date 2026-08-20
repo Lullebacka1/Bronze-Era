@@ -1936,7 +1936,7 @@ countries = {
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { urartian }
+		accepted_cultures = { urartian armenian_culture }
 		tolerated_cultures = {  }
 		discovered_regions = {
 			anatolia_region caucasus_region
@@ -4632,7 +4632,7 @@ countries = {
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { colchian }
+		accepted_cultures = { colchian armenian_culture }
 		tolerated_cultures = {  }
 		discovered_regions = {
 			anatolia_region caucasus_region
@@ -9565,7 +9565,7 @@ countries = {
 			amberd bayazit bjni gladzor igdir kagizman karakilise khor_virap
 			maku malazgirt siah_cheshmeh sotk surmali tutak yerevan
 		}
-		accepted_cultures = { urartian gutian }
+		accepted_cultures = { urartian gutian armenian_culture }
 		tolerated_cultures = {  }
 		discovered_regions = {
 			caucasus_region persia_region
