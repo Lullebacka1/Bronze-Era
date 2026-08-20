@@ -10828,11 +10828,13 @@ countries = {
 			ruler = random
 		}
 
-		own_control_core = {
-			al_jeblien arbaji branko dongola ed_damer ed_debba el_manaqil el_metemma
-			karima korti omdurman qerri quz_rajab shemkhiya shendi soba
-			waylula
-		}
+	own_control_core = {
+		al_jeblien  alays       arbaji      branko      dabarqi     dongola
+		ed_damer    ed_debba    el_eleila   el_gadarif  el_manaqil  el_metemma
+		karima      karkuj      korti       omdurman    qerri       quz_rajab
+		renk        sennar      shemkhiya   shendi      singa       soba
+		wad_madani  waylula
+	}
 		accepted_cultures = { nubian }
 		tolerated_cultures = { medjay egyptian berber }
 			discovered_regions = {
