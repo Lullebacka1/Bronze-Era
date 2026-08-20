@@ -77,8 +77,12 @@ bronze_sea_peoples_egypt_transfer_sinai_location = {
 			if = {
 				limit = {
 					has_owner = yes
-					owner = root
+					OR = {
+						owner = root
+						owner = c:SINAI
+					}
 				}
+				add_core = c:SINAI
 				change_location_owner = c:SINAI
 				change_integration_level = core
 				change_control = control_weak_bonus

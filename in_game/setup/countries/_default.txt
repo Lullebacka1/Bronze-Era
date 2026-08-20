@@ -94,6 +94,10 @@ LIBYA = {
 	color = rgb { 141 114 146 }
 	color2 = rgb { 110 27 27 }
 }
+SINAI = {
+	color = rgb { 151 122 83 }
+	color2 = rgb { 86 57 37 }
+}
 LUKKA = {
 	color = rgb { 148 122 145 }
 	color2 = rgb { 110 27 27 }
