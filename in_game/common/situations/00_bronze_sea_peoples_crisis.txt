@@ -296,6 +296,19 @@ sea_peoples_crisis = {
 				sea_peoples_set_phase = { value = 5 }
 			}
 
+			# Egypt receives a deterministic final-phase frontier decision once.
+			# This is deliberately outside the random event pool so the Delta/Sinai
+			# outcome cannot be skipped by bad random rolls.
+			if = {
+				limit = {
+					egyptian_rule_in_canaan_egypt = yes
+					sea_peoples_crisis_phase_at_least = { value = 5 }
+					NOT = { has_global_variable = sea_peoples_egypt_frontier_choice_fired }
+				}
+				set_global_variable = { name = sea_peoples_egypt_frontier_choice_fired value = 1 }
+				trigger_event_non_silently = sea_peoples_crisis.180
+			}
+
 			random_list = {
 				330 = { }
 				3 = { trigger_event_non_silently = sea_peoples_crisis.10 }

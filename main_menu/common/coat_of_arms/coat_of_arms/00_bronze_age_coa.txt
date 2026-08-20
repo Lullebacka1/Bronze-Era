@@ -794,3 +794,25 @@ bronze_age_ARM_coa = { # Armenia:
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
 	}
 }
+
+bronze_age_SINAI_coa = { # Sinai Tribes: desert mountains, caravan routes and raiding spears.
+	pattern = "pattern_border_thin.dds"
+	color1 = "brown_light"
+	color2 = "yellow_mid"
+	color3 = "blue_dark"
+	color4 = "black"
+
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color2
+		color2 = color4
+		instance = { position = { 0.5 0.62 } scale = { 0.72 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_spear_head_random_small.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.33 0.34 } scale = { 0.30 0.30 } }
+		instance = { position = { 0.67 0.34 } scale = { -0.30 0.30 } }
+	}
+}
