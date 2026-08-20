@@ -59505,37 +59505,37 @@ amadiya = {
 	define_pop = {
 		type = clergy
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = slaves
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 }
@@ -59575,37 +59575,37 @@ hakkari = {
 	define_pop = {
 		type = clergy
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = slaves
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 }
@@ -59621,37 +59621,37 @@ zakho = {
 	define_pop = {
 		type = clergy
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = slaves
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 }
@@ -59697,19 +59697,19 @@ bahcesaray = {
 	define_pop = {
 		type = clergy
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 }
@@ -81364,18 +81364,78 @@ khalis = {
 	define_pop = {	type = slaves	size = 0.014	culture = babylonian	religion = babylonian }
 }
 basra = {
-	define_pop = {	type = nobles	size = 0.014	culture = sumerian	religion = sumerian }
-	define_pop = {	type = clergy	size = 0.014	culture = sumerian	religion = sumerian }
-	define_pop = {	type = burghers	size = 0.014	culture = sumerian	religion = sumerian }
-	define_pop = {	type = burghers	size = 0.014	culture = sumerian	religion = sumerian }
-	define_pop = {	type = burghers	size = 0.014	culture = sumerian	religion = sumerian }
-	define_pop = {	type = burghers	size = 0.014	culture = sumerian	religion = sumerian }
-	define_pop = {	type = peasants	size = 1.45	culture = sumerian	religion = sumerian }
-	define_pop = {	type = peasants	size = 1.45	culture = sumerian	religion = sumerian }
-	define_pop = {	type = slaves	size = 0.014	culture = sumerian	religion = sumerian }
-	define_pop = {	type = slaves	size = 0.014	culture = sumerian	religion = sumerian }
-	define_pop = {	type = slaves	size = 0.014	culture = sumerian	religion = sumerian }
-	define_pop = {	type = slaves	size = 0.014	culture = sumerian	religion = sumerian }
+	define_pop = {
+		type = nobles
+		size = 0.014
+		culture = babylonian
+		religion = sumerian
+	}
+	define_pop = {
+		type = clergy
+		size = 0.014
+		culture = babylonian
+		religion = sumerian
+	}
+	define_pop = {
+		type = burghers
+		size = 0.014
+		culture = babylonian
+		religion = sumerian
+	}
+	define_pop = {
+		type = burghers
+		size = 0.014
+		culture = babylonian
+		religion = sumerian
+	}
+	define_pop = {
+		type = burghers
+		size = 0.014
+		culture = babylonian
+		religion = sumerian
+	}
+	define_pop = {
+		type = burghers
+		size = 0.014
+		culture = babylonian
+		religion = sumerian
+	}
+	define_pop = {
+		type = peasants
+		size = 1.45
+		culture = babylonian
+		religion = sumerian
+	}
+	define_pop = {
+		type = peasants
+		size = 1.45
+		culture = babylonian
+		religion = sumerian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.014
+		culture = babylonian
+		religion = sumerian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.014
+		culture = babylonian
+		religion = sumerian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.014
+		culture = babylonian
+		religion = sumerian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.014
+		culture = babylonian
+		religion = sumerian
+	}
 }
 abadan = {
 	define_pop = {	type = clergy	size = 0.014	culture = sumerian	religion = sumerian }
@@ -81431,10 +81491,30 @@ al_qatr = {
 	}
 }
 suq_al_shuyukh = {
-	define_pop = {	type = clergy	size = 0.014	culture = sumerian	religion = sumerian }
-	define_pop = {	type = peasants	size = 1.45	culture = sumerian	religion = sumerian }
-	define_pop = {	type = peasants	size = 1.45	culture = sumerian	religion = sumerian }
-	define_pop = {	type = slaves	size = 0.014	culture = sumerian	religion = sumerian }
+	define_pop = {
+		type = clergy
+		size = 0.014
+		culture = babylonian
+		religion = sumerian
+	}
+	define_pop = {
+		type = peasants
+		size = 1.45
+		culture = babylonian
+		religion = sumerian
+	}
+	define_pop = {
+		type = peasants
+		size = 1.45
+		culture = babylonian
+		religion = sumerian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.014
+		culture = babylonian
+		religion = sumerian
+	}
 }
 zuwayr = {
 	define_pop = {	type = clergy	size = 0.014	culture = sumerian	religion = sumerian }
@@ -81494,49 +81574,49 @@ akre = {
 	define_pop = {
 		type = clergy
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = slaves
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 }
@@ -81557,37 +81637,37 @@ rawanduz = {
 	define_pop = {
 		type = clergy
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = slaves
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 }
@@ -81632,10 +81712,30 @@ mandali = {
 	define_pop = {	type = slaves	size = 0.014	culture = kassite	religion = babylonian }
 }
 kufa = {
-	define_pop = {	type = clergy	size = 0.01	culture = aramaean	religion = babylonian }
-	define_pop = {	type = peasants	size = 1	culture = aramaean	religion = babylonian }
-	define_pop = {	type = peasants	size = 1	culture = aramaean	religion = babylonian }
-	define_pop = {	type = slaves	size = 0.01	culture = aramaean	religion = babylonian }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = babylonian
+		religion = babylonian
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = babylonian
+		religion = babylonian
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = babylonian
+		religion = babylonian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = babylonian
+		religion = babylonian
+	}
 }
 al_udayb = {
 	define_pop = {	type = clergy	size = 0.01	culture = aramaean	religion = babylonian }
@@ -81643,9 +81743,24 @@ al_udayb = {
 	define_pop = {	type = peasants	size = 1	culture = aramaean	religion = babylonian }
 }
 ayn_tamr = {
-	define_pop = {	type = clergy	size = 0.121	culture = assyrian	religion = assyrian }
-	define_pop = {	type = peasants	size = 12.091	culture = assyrian	religion = assyrian }
-	define_pop = {	type = peasants	size = 12.091	culture = assyrian	religion = assyrian }
+	define_pop = {
+		type = clergy
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = peasants
+		size = 12.091
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = peasants
+		size = 12.091
+		culture = aramaean
+		religion = assyrian
+	}
 }
 hillah = {
 	define_pop = {	type = clergy	size = 0.014	culture = babylonian	religion = babylonian }
@@ -81664,10 +81779,30 @@ karbala = {
 	define_pop = {	type = slaves	size = 0.121	culture = babylonian	religion = babylonian }
 }
 qadisiyyah = {
-	define_pop = {	type = clergy	size = 0.01	culture = aramaean	religion = babylonian }
-	define_pop = {	type = peasants	size = 1	culture = aramaean	religion = babylonian }
-	define_pop = {	type = peasants	size = 1	culture = aramaean	religion = babylonian }
-	define_pop = {	type = slaves	size = 0.01	culture = aramaean	religion = babylonian }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = babylonian
+		religion = babylonian
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = babylonian
+		religion = babylonian
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = babylonian
+		religion = babylonian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = babylonian
+		religion = babylonian
+	}
 }
 kirkuk = {
 	define_pop = {	type = clergy	size = 0.121	culture = assyrian	religion = assyrian }
@@ -81717,61 +81852,61 @@ erbil = {
 	define_pop = {
 		type = clergy
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = slaves
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 }
@@ -81790,19 +81925,64 @@ samarra = {
 	define_pop = {	type = slaves	size = 0.121	culture = akkadian	religion = mesopotamian }
 }
 al_anbar = {
-	define_pop = {	type = clergy	size = 0.121	culture = assyrian	religion = assyrian }
-	define_pop = {	type = peasants	size = 12.091	culture = assyrian	religion = assyrian }
-	define_pop = {	type = slaves	size = 0.121	culture = assyrian	religion = assyrian }
+	define_pop = {
+		type = clergy
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = peasants
+		size = 12.091
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
 }
 ar_rabb = {
-	define_pop = {	type = clergy	size = 0.121	culture = assyrian	religion = assyrian }
-	define_pop = {	type = peasants	size = 12.091	culture = assyrian	religion = assyrian }
-	define_pop = {	type = slaves	size = 0.121	culture = assyrian	religion = assyrian }
+	define_pop = {
+		type = clergy
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = peasants
+		size = 12.091
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
 }
 hit = {
-	define_pop = {	type = clergy	size = 0.121	culture = assyrian	religion = assyrian }
-	define_pop = {	type = peasants	size = 12.091	culture = assyrian	religion = assyrian }
-	define_pop = {	type = slaves	size = 0.121	culture = assyrian	religion = assyrian }
+	define_pop = {
+		type = clergy
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = peasants
+		size = 12.091
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
 }
 tikrit = {
 	define_pop = {	type = clergy	size = 0.121	culture = akkadian	religion = mesopotamian }
@@ -82382,24 +82562,84 @@ savur = {
 karacadag = {
 }
 anah = {
-	define_pop = {	type = clergy	size = 0.121	culture = assyrian	religion = assyrian }
-	define_pop = {	type = peasants	size = 12.091	culture = assyrian	religion = assyrian }
-	define_pop = {	type = slaves	size = 0.121	culture = assyrian	religion = assyrian }
+	define_pop = {
+		type = clergy
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = peasants
+		size = 12.091
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
 }
 abu_kemal = {
-	define_pop = {	type = clergy	size = 0.121	culture = assyrian	religion = assyrian }
-	define_pop = {	type = peasants	size = 12.091	culture = assyrian	religion = assyrian }
-	define_pop = {	type = slaves	size = 0.121	culture = assyrian	religion = assyrian }
+	define_pop = {
+		type = clergy
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = peasants
+		size = 12.091
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
 }
 haditha = {
-	define_pop = {	type = clergy	size = 0.121	culture = assyrian	religion = assyrian }
-	define_pop = {	type = peasants	size = 12.091	culture = assyrian	religion = assyrian }
-	define_pop = {	type = slaves	size = 0.121	culture = assyrian	religion = assyrian }
+	define_pop = {
+		type = clergy
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = peasants
+		size = 12.091
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
 }
 rahba = {
-	define_pop = {	type = clergy	size = 0.121	culture = assyrian	religion = assyrian }
-	define_pop = {	type = peasants	size = 12.091	culture = assyrian	religion = assyrian }
-	define_pop = {	type = slaves	size = 0.121	culture = assyrian	religion = assyrian }
+	define_pop = {
+		type = clergy
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = peasants
+		size = 12.091
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
 }
 jazair = {
 }
@@ -82639,49 +82879,49 @@ duhok = {
 	define_pop = {
 		type = clergy
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = peasants
 		size = 12.091
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 	define_pop = {
 		type = slaves
 		size = 0.121
-		culture = hurrian
+		culture = assyrian
 		religion = assyrian
 	}
 }
@@ -82763,9 +83003,24 @@ araban = {
 	define_pop = {	type = slaves	size = 0.121	culture = assyrian	religion = assyrian }
 }
 busayrah = {
-	define_pop = {	type = clergy	size = 0.121	culture = assyrian	religion = assyrian }
-	define_pop = {	type = peasants	size = 12.091	culture = assyrian	religion = assyrian }
-	define_pop = {	type = slaves	size = 0.121	culture = assyrian	religion = assyrian }
+	define_pop = {
+		type = clergy
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = peasants
+		size = 12.091
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
 }
 jabar = {
 	define_pop = {	type = clergy	size = 0.010	culture = aramaean	religion = canaanite }
@@ -82779,9 +83034,24 @@ madinat_far = {
 	define_pop = {	type = slaves	size = 0.01	culture = aramaean	religion = assyrian }
 }
 makisin = {
-	define_pop = {	type = clergy	size = 0.121	culture = assyrian	religion = assyrian }
-	define_pop = {	type = peasants	size = 12.091	culture = assyrian	religion = assyrian }
-	define_pop = {	type = slaves	size = 0.121	culture = assyrian	religion = assyrian }
+	define_pop = {
+		type = clergy
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = peasants
+		size = 12.091
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
 }
 antioch = {
 	define_pop = {	type = nobles	size = 0.010	culture = ugaritic	religion = ugaritic }
@@ -82919,11 +83189,36 @@ trapessac = {
 	define_pop = {	type = slaves	size = 0.064	culture = hittite	religion = hittite }
 }
 deir_ez_zor = {
-	define_pop = {	type = clergy	size = 0.121	culture = assyrian	religion = assyrian }
-	define_pop = {	type = peasants	size = 12.091	culture = assyrian	religion = assyrian }
-	define_pop = {	type = slaves	size = 0.121	culture = assyrian	religion = assyrian }
-	define_pop = {	type = slaves	size = 0.121	culture = assyrian	religion = assyrian }
-	define_pop = {	type = slaves	size = 0.121	culture = assyrian	religion = assyrian }
+	define_pop = {
+		type = clergy
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = peasants
+		size = 12.091
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
+	define_pop = {
+		type = slaves
+		size = 0.121
+		culture = aramaean
+		religion = assyrian
+	}
 }
 ithriya = {
 	define_pop = {
@@ -83378,19 +83673,19 @@ karak = {
 	define_pop = {
 		type = clergy
 		size = 0.08
-		culture = edomite
+		culture = hebrew
 		religion = canaanite
 	}
 	define_pop = {
 		type = tribesmen
 		size = 8.009
-		culture = edomite
+		culture = hebrew
 		religion = canaanite
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.08
-		culture = edomite
+		culture = hebrew
 		religion = canaanite
 	}
 }
@@ -83446,25 +83741,25 @@ maan = {
 	define_pop = {
 		type = clergy
 		size = 0.08
-		culture = edomite
+		culture = hebrew
 		religion = canaanite
 	}
 	define_pop = {
 		type = peasants
 		size = 1.474
-		culture = edomite
+		culture = hebrew
 		religion = canaanite
 	}
 	define_pop = {
 		type = tribesmen
 		size = 6.535
-		culture = edomite
+		culture = hebrew
 		religion = canaanite
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.08
-		culture = edomite
+		culture = hebrew
 		religion = canaanite
 	}
 }
@@ -83472,13 +83767,38 @@ madaba = {
 	define_pop = {	type = peasants	size = 8.009	culture = ammonite	religion = canaanite }
 }
 shoubak = {
-	define_pop = {	type = peasants	size = 8.009	culture = edomite	religion = canaanite }
+	define_pop = {
+		type = peasants
+		size = 8.009
+		culture = hebrew
+		religion = canaanite
+	}
 }
 sughar = {
-	define_pop = {	type = clergy	size = 0.08	culture = edomite	religion = canaanite }
-	define_pop = {	type = peasants	size = 8.009	culture = edomite	religion = canaanite }
-	define_pop = {	type = tribesmen	size = 0.08	culture = edomite	religion = canaanite }
-	define_pop = {	type = slaves	size = 0.08	culture = edomite	religion = canaanite }
+	define_pop = {
+		type = clergy
+		size = 0.08
+		culture = hebrew
+		religion = canaanite
+	}
+	define_pop = {
+		type = peasants
+		size = 8.009
+		culture = hebrew
+		religion = canaanite
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.08
+		culture = hebrew
+		religion = canaanite
+	}
+	define_pop = {
+		type = slaves
+		size = 0.08
+		culture = hebrew
+		religion = canaanite
+	}
 }
 tadmur = {
 	define_pop = {	type = nobles	size = 0.081	culture = aramaean	religion = canaanite }
@@ -119059,17 +119379,42 @@ khategaon = {
 	define_pop = {	type = slaves	size = 0.010	culture = vedic	religion = vedic }
 }
 handia = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = vedic
+		religion = a_fat_roog_religion
+	}
 }
 khandwa = {
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = vedic
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = vedic
+		religion = vedic
+	}
 }
 mandleshwar = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = vedic
+		religion = a_fat_roog_religion
+	}
 }
 bijagarh = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = vedic
+		religion = a_fat_roog_religion
+	}
 }
 alirajpur = {
 	define_pop = {	type = slaves	size = 0.010	culture = vedic	religion = vedic }
@@ -119316,32 +119661,102 @@ kherla = {
 	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
 }
 hoshangabad = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = vedic
+		religion = a_fat_roog_religion
+	}
 }
 chauragarh = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = vedic
+		religion = dravidian_folk
+	}
 }
 bhojpur = {
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = vedic
+		religion = dravidian_folk
+	}
 }
 tendukheda = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = vedic
+		religion = dravidian_folk
+	}
 }
 gondwana_hills = {
 }
 nimar_mountains = {
 }
 garha = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = vedic
+		religion = dravidian_folk
+	}
 }
 mandla = {
 	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
@@ -119485,11 +119900,36 @@ deori = {
 sitanadi_hills = {
 }
 bandogarh = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = vedic
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = vedic
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = vedic
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = vedic
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = vedic
+		religion = vedic
+	}
 }
 sohagpur = {
 	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
@@ -119498,10 +119938,30 @@ sohagpur = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
 }
 beohari = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = vedic
+		religion = dravidian_folk
+	}
 }
 ramnagar = {
 	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
@@ -119522,13 +119982,38 @@ mauganj = {
 	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
 }
 madwas = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = vedic
+		religion = dravidian_folk
+	}
 }
 sidhi = {
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = vedic
+		religion = dravidian_folk
+	}
 }
 agori = {
 	define_pop = {	type = peasants	size = 0	culture = vedic	religion = a_fat_roog_religion }
@@ -119549,10 +120034,30 @@ singorgarh = {
 	define_pop = {	type = slaves	size = 0.010	culture = vedic	religion = vedic }
 }
 murwara = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = vedic
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = vedic
+		religion = dravidian_folk
+	}
 }
 damoh = {
 	define_pop = {	type = slaves	size = 0.010	culture = vedic	religion = vedic }
@@ -120836,13 +121341,38 @@ mankunda = {
 	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
 }
 sathyagala = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
 }
 ummatur = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
 }
 belur = {
 	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
@@ -120858,11 +121388,36 @@ dvarasamudra = {
 	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
 }
 haleri = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
 }
 hassan_karnataka = {
 	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
@@ -121526,9 +122081,24 @@ honnavara = {
 	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
 }
 bhatkal = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
 }
 karwar = {
 	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
@@ -121570,30 +122140,130 @@ sangamesvara = {
 western_ghats_belgaum = {
 }
 karkala = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
 }
 mangalore = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
 }
 udupi = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
 }
 kasaragod = {
 	define_pop = {	type = nobles	size = 0.01	culture = tamil	religion = austronesian_rites }
@@ -121605,11 +122275,36 @@ kasaragod = {
 	define_pop = {	type = peasants	size = 1	culture = tamil	religion = austronesian_rites }
 }
 uppinangady = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
 }
 western_ghats_karkala = {
 }
@@ -121865,13 +122560,38 @@ pennagaram = {
 biligiriranga = {
 }
 parangipettai = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
 }
 pondicherry = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
 }
 madras = {
 	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
@@ -121900,8 +122620,18 @@ kanchipuram = {
 	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
 }
 gingee = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
 }
 padaividu = {
 	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
@@ -122067,9 +122797,24 @@ aruppukkottai = {
 	}
 }
 virudhunagar = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
 }
 devakottai = {
 	define_pop = {	type = peasants	size = 1	culture = tamil	religion = dravidian_folk }
@@ -122107,9 +122852,24 @@ jayankondam = {
 	define_pop = {	type = peasants	size = 1	culture = tamil	religion = dravidian_folk }
 }
 pennadam = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
 }
 karaikal = {
 	define_pop = {	type = clergy	size = 0.01	culture = tamil	religion = dravidian_folk }
@@ -122129,8 +122889,18 @@ tirukoilur = {
 	define_pop = {	type = peasants	size = 1	culture = tamil	religion = dravidian_folk }
 }
 kallakurichi = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = tamil
+		religion = dravidian_folk
+	}
 }
 jaffna = {
 	define_pop = {
