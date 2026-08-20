@@ -781,3 +781,16 @@ bronze_age_OLMEC_coa = { # Olmec: provided yellow field with green stripe and ja
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
 	}
 }
+
+bronze_age_ARM_coa = { # Armenia: 
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "white"
+	color3 = "white"
+	color4 = "white"
+
+	textured_emblem = {
+		texture = "ba_armenia_flag.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
