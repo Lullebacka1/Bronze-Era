@@ -149,7 +149,10 @@ tribal_hegemony_advance = {
 
 	depth = 0
 
-	government = tribe
+	OR = {
+		government = tribe
+		government = steppe_horde
+	}
 	
 	allow_subjects = yes
 	unlock_subject_type = tributary

@@ -268,6 +268,86 @@ coin_laws= {
 		}
 		years = 2
 	}
+	
+	gold_by_weight = {
+
+		potential = {
+
+			capital.market = {
+				"goods_supply_in_market(goods:goods_gold)" > 10
+			}
+
+		}
+
+		country_modifier = {
+			goods_gold_used_for_minting = yes
+			goods_gold_impacts_inflation = 0.02
+			
+			minting_inflation_threshold = 0.012
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					root = {
+						capital.market = {
+							"goods_supply_in_market(goods:goods_gold)" > 0
+						}
+					}
+				}
+				add = {
+					desc = "has gold"
+					value = 100
+				}
+			}
+		}
+
+
+		years = 2
+	}
+	
+	silver_by_weight = {
+
+		potential = {
+
+			capital.market = {
+				"goods_supply_in_market(goods:silver)" > 10
+			}
+
+		}
+
+		country_modifier = {
+			silver_used_for_minting = yes
+			silver_impacts_inflation = 0.02
+			
+			minting_inflation_threshold = 0.01
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+
+		ai_will_do = {
+			if = {
+				limit = {
+					root = {
+						capital.market = {
+							"goods_supply_in_market(goods:silver)" > 0
+						}
+					}
+				}
+				add = {
+					desc = "has silver"
+					value = 100
+				}
+			}
+		}
+
+
+		years = 2
+	}
 
 	commodity_money_policy_common = {
 

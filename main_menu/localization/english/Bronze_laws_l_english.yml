@@ -31,6 +31,12 @@
   commodity_money_policy_tea: "Tea as Currency"
   commodity_money_policy_tea_desc: "In some Bronze Age societies, tea was used as a form of currency. The value of tea, which was essential for its stimulating properties and cultural significance, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
 
+  gold_by_weight: "Gold by Weight"
+  gold_by_weight_desc: "Gold is valued and exchanged according to its measured weight, with its purity and quantity determining its worth. This practice allows precious metal to serve as a reliable medium for larger payments without requiring a standardized coinage."
+
+  silver_by_weight: "Silver by Weight"
+  silver_by_weight_desc: "Silver is valued and exchanged according to weight, providing a widely useful means of settling debts and commercial transactions. Its divisibility and relative abundance make it particularly suited to everyday trade and larger payments alike."
+
   # BURIAL POLICIES
 
   bronze_age_burial_pits_law: "Burial Pits"

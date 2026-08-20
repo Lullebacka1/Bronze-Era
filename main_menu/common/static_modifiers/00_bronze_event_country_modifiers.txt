@@ -1,0 +1,6 @@
+levant_silver_debasement_initial_hit = {
+	game_data = {
+		category = country
+	}
+	import_efficiency = small_trade_efficiency_penalty
+}

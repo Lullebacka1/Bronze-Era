@@ -41,7 +41,7 @@ swordsmen_infantry_construction = {
 }
 
 sea_swordsmen_infantry_construction = {
-	goods_gold = 0.5
+	gold = 150
 	category = regiment_construction
 }
 
@@ -129,7 +129,7 @@ swordsmen_infantry_maintenance = {
 }
 
 sea_swordsmen_infantry_maintenance = {
-	goods_gold = 0.10
+	gold = 1
 	category = regiment_maintenance
 }
 

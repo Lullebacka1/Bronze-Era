@@ -1,0 +1,258 @@
+namespace = levant_silver_debasement
+
+levant_silver_debasement.1 = {
+	type = country_event
+	title = levant_silver_debasement.1.title
+	desc = levant_silver_debasement.1.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/levant_silver_debasement_1.dds"
+	outcome = neutral
+
+	dynamic_historical_event = { 
+		tag = SIDON
+		tag = AMURU
+		tag = ARWAD
+		tag = BERIT
+		tag = BYBLO
+		tag = HABIR
+		tag = UGART
+		tag = AKSHA
+		tag = ASHK
+		tag = ASHT
+		tag = GEZE
+		tag = HACOR
+		tag = JESUS
+		tag = LAKIS
+		tag = PEHEL
+		tag = SICHE
+		tag = YURZ
+		from = 3.1.1
+		to = 53.1.1
+		monthly_chance = 30
+	}
+
+	trigger = {
+		NOT = { has_variable = levant_silver_debasement_intro_seen }
+	}
+
+	immediate = {
+		set_variable = { name = levant_silver_debasement_intro_seen value = 1 years = 50 }
+	}
+
+	option = {
+		name = levant_silver_debasement.1.a
+		custom_tooltip = levant_silver_debasement.1.a_tt
+
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = levant_silver_debasement_initial_hit
+			years = 10
+		}
+	}
+
+	option = {
+		name = levant_silver_debasement.1.b
+		custom_tooltip = levant_silver_debasement.1.b_tt
+		
+		add_diplomats = diplomats_weak_bonus
+		add_country_modifier = {
+			modifier = levant_silver_debasement_initial_hit
+			years = 10
+		}
+	}
+
+	option = {
+		name = levant_silver_debasement.1.c
+		custom_tooltip = levant_silver_debasement.1.c_tt
+
+		add_devotion = devotion_weak_bonus
+		add_country_modifier = {
+			modifier = levant_silver_debasement_initial_hit
+			years = 10
+		}
+	}
+}
+
+levant_silver_debasement.11 = {
+	type = country_event
+	title = levant_silver_debasement.11.title
+	desc = levant_silver_debasement.11.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
+	outcome = neutral
+
+	trigger = {
+		has_variable = levant_silver_debasement_subject_intro_seen
+
+	}
+
+	immediate = {
+		ordered_trade = {
+			limit = {
+				goods = goods:silver
+			}
+			set_locked = yes
+		}
+	}
+
+	option = {
+		name = levant_silver_debasement.11.a
+		custom_tooltip = levant_silver_debasement_11a_tt
+	}
+}
+
+# levant_silver_debasement.10 = {
+# 	type = country_event
+# 	title = levant_silver_debasement.10.title
+# 	desc = levant_silver_debasement.10.desc
+# 	category = situation_event
+# 	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
+# 	outcome = negative
+# 	orphan = yes
+
+# 	trigger = {
+# 		levant_silver_debasement_egypt = yes
+# 		situation:levant_silver_debasement ?= {
+# 			has_variable = levant_silver_debasement_restless_subjects
+# 			var:levant_silver_debasement_restless_subjects >= 4
+# 		}
+# 	}
+
+# 	option = {
+# 		name = levant_silver_debasement.10.a
+# 		custom_tooltip = levant_silver_debasement_10a_tt
+# 		levant_silver_debasement_add_authority = { value = -4 }
+# 	}
+# 	option = {
+# 		name = levant_silver_debasement.10.b
+# 		trigger = {
+# 			gold >= 45
+# 		}
+# 		custom_tooltip = levant_silver_debasement_10b_tt
+# 		add_gold = -45
+# 		levant_silver_debasement_add_authority = { value = 3 }
+# 		every_subject = {
+# 			limit = { levant_silver_debasement_city_kingdom = yes }
+# 			add_liberty_desire = liberty_desire_weak_minus
+# 		}
+# 		ai_chance = {
+# 			factor = 40
+# 			modifier = {
+# 				factor = 0.3
+# 				gold < 80
+# 			}
+# 			modifier = {
+# 				factor = 2
+# 				situation:levant_silver_debasement ?= { var:egyptian_authority_in_canaan < 45 }
+# 			}
+# 		}
+# 	}
+# }
+
+# levant_silver_debasement.20 = {
+# 	type = country_event
+# 	title = levant_silver_debasement.20.title
+# 	desc = levant_silver_debasement.20.desc
+# 	category = situation_event
+# 	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
+# 	outcome = negative
+# 	orphan = yes
+
+# 	trigger = {
+# 		levant_silver_debasement_egypt = yes
+# 	}
+
+# 	option = {
+# 		name = levant_silver_debasement.20.a
+# 		custom_tooltip = levant_silver_debasement_20a_tt
+# 	}
+# }
+
+# levant_silver_debasement.100 = {
+# 	type = country_event
+# 	title = levant_silver_debasement.100.title
+# 	desc = levant_silver_debasement.100.desc
+# 	category = situation_event
+# 	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
+# 	outcome = negative
+# 	major = yes
+# 	orphan = yes
+
+# 	trigger = {
+# 		levant_silver_debasement_egypt = yes
+# 		situation:levant_silver_debasement ?= {
+# 			var:egyptian_authority_in_canaan <= 0
+# 		}
+# 	}
+
+# 	option = {
+# 		name = levant_silver_debasement.100.a
+# 		custom_tooltip = levant_silver_debasement_100a_tt
+# 		levant_silver_debasement_withdraw = yes
+# 		ai_chance = {
+# 			factor = 70
+# 			modifier = {
+# 				factor = 2
+# 				is_during_bankruptcy = yes
+# 			}
+# 			modifier = {
+# 				factor = 2
+# 				stability <= 0
+# 			}
+# 			modifier = {
+# 				factor = 0.4
+# 				gold >= 300
+# 				manpower = { value >= 800 }
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = levant_silver_debasement.100.b
+# 		trigger = {
+# 			NOT = { has_global_variable = egyptian_rule_canaan_must_be_held_used }
+# 			is_during_bankruptcy = no
+# 			gold >= 180
+# 			manpower = { value >= 500 }
+# 		}
+# 		custom_tooltip = levant_silver_debasement_100b_tt
+# 		levant_silver_debasement_last_stand = yes
+# 		ai_chance = {
+# 			factor = 30
+# 			modifier = {
+# 				factor = 2
+# 				gold >= 400
+# 				manpower = { value >= 1200 }
+# 				stability >= 30
+# 			}
+# 			modifier = {
+# 				factor = 0.2
+# 				is_at_war = yes
+# 			}
+# 		}
+# 	}
+# }
+
+# levant_silver_debasement.200 = {
+# 	type = country_event
+# 	title = levant_silver_debasement.200.title
+# 	desc = levant_silver_debasement.200.desc
+# 	category = situation_event
+# 	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
+# 	outcome = positive
+# 	major = yes
+# 	orphan = yes
+
+# 	trigger = {
+# 		levant_silver_debasement_egypt = yes
+# 		situation:levant_silver_debasement ?= {
+# 			var:egyptian_authority_in_canaan >= 60
+# 		}
+# 		has_global_variable = sea_peoples_crisis_ended
+# 	}
+
+# 	option = {
+# 		name = levant_silver_debasement.200.a
+# 		custom_tooltip = levant_silver_debasement_200a_tt
+# 		levant_silver_debasement_victory = yes
+# 	}
+# }
