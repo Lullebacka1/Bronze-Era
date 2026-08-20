@@ -1,0 +1,3 @@
+# Checks if the location is in the league of Mycenaean and if they are in the right area
+# and if the system exists in the location
+# Can the buldings be bulit here
