@@ -1,3 +1,20 @@
 # Checks if the location is in the league of Mycenaean and if they are in the right area
 # and if the system exists in the location
 # Can the buldings be bulit here
+
+has_mycenaean_influence = {
+	AND = {
+		owner = {
+			member_of = { league = mycenaean_league 
+			}
+		}
+			OR = {
+				this = area:morea_area
+				this = area:aegean_archipelago_area
+				this = area:northern_greece_area
+				this = area:albania_area
+				this = area:macedonia_area
+				this = area:thrace_area
+		}
+	}
+}

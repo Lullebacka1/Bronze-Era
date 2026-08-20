@@ -1,1 +1,8 @@
 # all buildings that affect the mycenaean influence in the game
+#	on_built = {
+#    	add_mycenaean_investment = yes
+#	}
+#
+#	on_destroyed = {
+#    	remove_mycenaean_investment = yes
+#	}

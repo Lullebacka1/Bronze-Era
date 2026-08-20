@@ -3,3 +3,19 @@
 # remove investment
 # recalculate influence
 # normilazie or cap the influance at 10
+# only calculate when effected by a varibel
+
+add_myceanean_investment = {
+
+	recalculate_mycenaean_influence = yes
+}
+
+remove_myceanean_investment = {
+
+
+	recalculate_mycenaean_influence = yes
+}
+
+recalculate_mycenaean_influence = {
+
+}
