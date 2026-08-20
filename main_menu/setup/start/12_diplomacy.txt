@@ -16,7 +16,7 @@ diplomacy_manager = {
    dependency = { first = SHANG second = DAPG subject_type = vassal }
    dependency = { first = SHANG second = GUZHU subject_type = vassal }
    dependency = { first = SHANG second = XU subject_type = vassal }
-   dependency = { first = ZHOU second = XCHU subject_type = Fiefdom }
+   dependency = { first = ZHOU second = XCHU subject_type = fiefdom }
    dependency = { first = SHANG second = PUGU subject_type = vassal }
    dependency = { first = SHANG second = YOUM subject_type = vassal }
    dependency = { first = SHANG second = PI subject_type = vassal }
@@ -25,10 +25,11 @@ diplomacy_manager = {
    dependency = { first = SHANG second = FUAN subject_type = tributary }
    dependency = { first = SHANG second = YONG subject_type = vassal }
    dependency = { first = SHANG second = HENAN subject_type = vassal }
-   dependency = { first = HENAN second = PANLO subject_type = fiefdom } # HENAN is a vassal of SHANG, and PANLO is a fief of HENAN.
-   dependency = { first = YONG second = CHEN subject_type = fiefdom }
+   dependency = { first = SHANG second = PANLO subject_type = tributary } 
+   dependency = { first = SHANG second = CHEN subject_type = vassal }
    dependency = { first = SHANG second = WANG subject_type = vassal }
-   dependency = { first = SHANG second = WEI subject_type = vassal }  
+   dependency = { first = SHANG second = WEI subject_type = vassal }
+   dependency = { first = SHANG second = CHAOG subject_type = vassal }  
 
    scripted_mutual = { first = SHANG second = YUWA type = alliance }
    scripted_mutual = { first = SHANG second = GUANG type = alliance }

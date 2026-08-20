@@ -2545,3 +2545,13 @@ YUWA = {
 	color = rgb { 78 212 81 }
 	color2 = rgb { 35 95 36 }
 }
+
+LUHUN = {
+	color = rgb { 125 205 50 }
+	color2 = rgb { 56 92 23 }
+}
+
+RONG = {
+	color = rgb { 208 67 74 }
+	color2 = rgb { 94 30 33 }
+}
