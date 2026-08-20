@@ -108269,9 +108269,24 @@ chorten_nyima = {
 	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
 }
 gonga_chode = {
-	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
-	define_pop = {	type = peasants	size = 1.000	culture = shang	religion = shang_rites }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = shang_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = shang_rites
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = shang_rites
+	}
 }
 nyalam = {
 	define_pop = {	type = clergy	size = 0.010	culture = shang	religion = shang_rites }
@@ -117804,13 +117819,48 @@ vijayapur = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = vedic	religion = vedic }
 }
 chainpur = {
-	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.010	culture = vedic	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 chaudandi = {
 	define_pop = {	type = nobles	size = 0.010	culture = vedic	religion = vedic }
@@ -117820,23 +117870,98 @@ chaudandi = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = vedic	religion = vedic }
 }
 phakphok = {
-	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.010	culture = vedic	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.010	culture = vedic	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 rajanari = {
-	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.010	culture = vedic	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.010	culture = vedic	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.010	culture = vedic	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 ranibas = {
 	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
@@ -117846,15 +117971,60 @@ ranibas = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = vedic	religion = vedic }
 }
 taplejung = {
-	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.010	culture = vedic	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.010	culture = vedic	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 sinja = {
 	define_pop = {	type = nobles	size = 0.010	culture = vedic	religion = vedic }
@@ -118156,9 +118326,24 @@ bankura = {
 	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
 }
 barabhum = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
 }
 chandrakona = {
 	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
@@ -118207,25 +118392,70 @@ barbakaabad = {
 	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
 }
 pandua_adina = {
-	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
-	define_pop = {	type = slaves	size = 0.010	culture = vedic	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Malto
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Malto
+		religion = vedic
+	}
 }
 siliguri = {
 	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
 	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
 }
 tajpur = {
-	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
-	define_pop = {	type = slaves	size = 0.010	culture = vedic	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 gaur = {
-	define_pop = {	type = nobles	size = 0.010	culture = vedic	religion = vedic }
-	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
-	define_pop = {	type = burghers	size = 0.010	culture = vedic	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Malto
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Malto
+		religion = vedic
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Malto
+		religion = vedic
+	}
 }
 godagari = {
-	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 naogaon = {
 	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
@@ -118354,17 +118584,32 @@ pandua = {
 	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
 }
 baragram = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Malto
+		religion = vedic
+	}
 }
 bardhaman = {
 	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
 	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
 }
 dubrajpur = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Malto
+		religion = vedic
+	}
 }
 ilambazar = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Malto
+		religion = vedic
+	}
 }
 satgaon = {
 	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
@@ -118488,22 +118733,47 @@ rongmei_naga = {
 viswema = {
 }
 hazaribagh = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kurukh
+		religion = a_fat_roog_religion
+	}
 }
 chai = {
 	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
 }
 gobindpur = {
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 katrasgarh = {
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 shergarh = {
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 urda = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kurukh
+		religion = a_fat_roog_religion
+	}
 }
 palamau = {
 	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
@@ -118529,40 +118799,160 @@ untari = {
 	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
 }
 ranchi = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 ichagarh = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
 }
 kharsawan = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
 }
 khukhragarh = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
 }
 porahat = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 bhagalpur = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Malto
+		religion = a_fat_roog_religion
+	}
 }
 gidhaur = {
 	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
@@ -118608,22 +118998,52 @@ sitamarhi = {
 	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
 }
 dumka = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Malto
+		religion = a_fat_roog_religion
+	}
 }
 deoghar = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Malto
+		religion = a_fat_roog_religion
+	}
 }
 jangipur = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Malto
+		religion = a_fat_roog_religion
+	}
 }
 mandar_parvat = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Malto
+		religion = a_fat_roog_religion
+	}
 }
 rajmahal = {
-	define_pop = {	type = slaves	size = 0.010	culture = vedic	religion = vedic }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Malto
+		religion = vedic
+	}
 }
 teliagarhi = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Malto
+		religion = a_fat_roog_religion
+	}
 }
 patna = {
 	define_pop = {	type = nobles	size = 0.010	culture = vedic	religion = vedic }
@@ -118652,15 +119072,35 @@ purnia = {
 	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
 }
 alamganj = {
-	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
 }
 bihariganj = {
 	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
 }
 katihar = {
-	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
-	define_pop = {	type = peasants	size = 1.000	culture = vedic	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
 }
 kosi = {
 	define_pop = {	type = clergy	size = 0.010	culture = vedic	religion = vedic }
@@ -118882,25 +119322,90 @@ asika = {
 	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
 }
 kalingapattanam = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 parlakimidi = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Telugu
+		religion = vedic
+	}
 }
 kalinganagara = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 brahmapur = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 kulada = {
 	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
@@ -118918,11 +119423,36 @@ baripada = {
 	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
 }
 chaibasa = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 ghatsila = {
 	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
@@ -118941,19 +119471,74 @@ simlipal_hills = {
 gorumahisani_range = {
 }
 nandapur = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
 }
 rayagada = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
 }
 kotagad = {
 	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
@@ -118964,35 +119549,140 @@ kotagad = {
 	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
 }
 jajjaldeypur = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kui
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kui
+		religion = dravidian_folk
+	}
 }
 kalahandinagara = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
 }
 kotpad = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kui
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kui
+		religion = dravidian_folk
+	}
 }
 raighar = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
 }
 khariar = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
 }
 patna_garjat = {
 	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
@@ -119000,46 +119690,166 @@ patna_garjat = {
 	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
 }
 gunupur = {
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
 }
 balangir = {
-	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
 }
 saintala = {
-	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
 }
 malkangiri = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = dravidian_folk
+	}
 }
 belkhandi = {
-	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
 }
 nilakamberu = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 bissam_cuttack = {
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
 }
 kasipur = {
-	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
 }
 nowrangapur = {
-	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
 }
 eastern_ghats_kalahandi = {
 }
@@ -119050,9 +119860,24 @@ dhenkanal = {
 	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
 }
 baud = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
 }
 khurda = {
 	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
@@ -119080,9 +119905,24 @@ angul = {
 	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
 }
 pal_lahara = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
 }
 nayagarh = {
 	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
@@ -119098,38 +119938,158 @@ phulbani = {
 	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
 }
 keonjhar = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 khiching = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 ghasipura = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 jyotipur = {
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 ghatgaon = {
-	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
 }
 garhjat_range = {
 }
@@ -119148,8 +120108,18 @@ samasingha = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
 }
 sonepur = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
 }
 redhakhol = {
 	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
@@ -119170,12 +120140,42 @@ bargarh = {
 	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
 }
 debagarh = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 kuchinda = {
 	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
@@ -119188,9 +120188,24 @@ rabkob = {
 	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
 }
 sundergarh = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 raigadh = {
 	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
@@ -119199,29 +120214,124 @@ raigadh = {
 	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
 }
 bonaigarh = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 birugarh = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
 }
 jashpur_nagar = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 sitapur = {
 	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
@@ -119230,10 +120340,30 @@ sitapur = {
 	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
 }
 badamgarh = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kurukh
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kurukh
+		religion = vedic
+	}
 }
 ramgarh_hills = {
 }
@@ -119499,20 +120629,70 @@ bandhugara = {
 	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
 }
 chhaparagarh = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Gondi
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Gondi
+		religion = dravidian_folk
+	}
 }
 balaghat = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Gondi
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Gondi
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Gondi
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Gondi
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Gondi
+		religion = vedic
+	}
 }
 wairagarh = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Gondi
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Gondi
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Gondi
+		religion = dravidian_folk
+	}
 }
 katol = {
 	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
@@ -119587,21 +120767,71 @@ bhadrachalam = {
 	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
 }
 gadchiroli = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Gondi
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Gondi
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Gondi
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Gondi
+		religion = dravidian_folk
+	}
 }
 bramhapuri = {
 	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
 }
 bastar = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
 }
 barasuru = {
 	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
@@ -119610,23 +120840,88 @@ barasuru = {
 	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
 }
 sukhma = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
 }
 rekapalle = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 kondagaon = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = tribesmen	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
 }
 paralkot = {
 	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
@@ -119640,15 +120935,50 @@ kanker = {
 	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
 }
 dantewada = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
 }
 jagdalpur = {
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kui
+		religion = vedic
+	}
 }
 eastern_ghats_south_bastar = {
 }
@@ -119664,7 +120994,7 @@ hoshangabad = {
 	define_pop = {
 		type = peasants
 		size = 0
-		culture = vedic
+		culture = Gondi
 		religion = a_fat_roog_religion
 	}
 }
@@ -119672,19 +121002,19 @@ chauragarh = {
 	define_pop = {
 		type = clergy
 		size = 0.01
-		culture = vedic
+		culture = Gondi
 		religion = dravidian_folk
 	}
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = vedic
+		culture = Gondi
 		religion = dravidian_folk
 	}
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = vedic
+		culture = Gondi
 		religion = dravidian_folk
 	}
 }
@@ -119692,7 +121022,7 @@ bhojpur = {
 	define_pop = {
 		type = slaves
 		size = 0.01
-		culture = vedic
+		culture = Gondi
 		religion = dravidian_folk
 	}
 }
@@ -119700,25 +121030,25 @@ tendukheda = {
 	define_pop = {
 		type = clergy
 		size = 0.01
-		culture = vedic
+		culture = Gondi
 		religion = dravidian_folk
 	}
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = vedic
+		culture = Gondi
 		religion = dravidian_folk
 	}
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = vedic
+		culture = Gondi
 		religion = dravidian_folk
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
-		culture = vedic
+		culture = Gondi
 		religion = dravidian_folk
 	}
 }
@@ -119730,53 +121060,113 @@ garha = {
 	define_pop = {
 		type = nobles
 		size = 0.01
-		culture = vedic
+		culture = Gondi
 		religion = dravidian_folk
 	}
 	define_pop = {
 		type = clergy
 		size = 0.01
-		culture = vedic
+		culture = Gondi
 		religion = dravidian_folk
 	}
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = vedic
+		culture = Gondi
 		religion = dravidian_folk
 	}
 	define_pop = {
 		type = peasants
 		size = 1
-		culture = vedic
+		culture = Gondi
 		religion = dravidian_folk
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
-		culture = vedic
+		culture = Gondi
 		religion = dravidian_folk
 	}
 }
 mandla = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Gondi
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Gondi
+		religion = dravidian_folk
+	}
 }
 ghansor = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Gondi
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Gondi
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Gondi
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Gondi
+		religion = dravidian_folk
+	}
 }
 nainpur = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Gondi
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Gondi
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Gondi
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Gondi
+		religion = dravidian_folk
+	}
 }
 ramgad = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Gondi
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Gondi
+		religion = dravidian_folk
+	}
 }
 amarkantak = {
 	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
@@ -120028,7 +121418,12 @@ sugaur = {
 	define_pop = {	type = peasants	size = 0	culture = vedic	religion = a_fat_roog_religion }
 }
 ujargarh = {
-	define_pop = {	type = peasants	size = 0	culture = vedic	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Gondi
+		religion = a_fat_roog_religion
+	}
 }
 singorgarh = {
 	define_pop = {	type = slaves	size = 0.010	culture = vedic	religion = vedic }
@@ -120877,242 +122272,832 @@ sonmiani_bay = {
 ormara_coast = {
 }
 visakhapatnam = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 vizianagaram = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 pithapuram = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 tuni = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 rampa = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 bobbili = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 madugula = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 eastern_ghats_jeypore = {
 }
 pazhaverkadu = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = burghers	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 durgarazpatnam = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 nellore = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 kavali = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 kandakura = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 gudur = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 kalahasti = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 pulicat_lake = {
 }
 adanki = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 markapur = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 motupalli = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 kondavidu = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 macherla = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 cumbum = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 vinukonda = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 guntur = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 kanigiri = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 n_nallamalla = {
 }
 penchalakona_hills = {
 }
 tirupati = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 cuddapah = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 medanapalle = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 kangundi = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 gurramkonda = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 pottapi = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 kadiri = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 penukonda = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 gandikota = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 chittoor = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Telugu
+		religion = a_fat_roog_religion
+	}
 }
 pakala = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 anantapur = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 rayachoti = {
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 palasamudram = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 dharmavaram = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 vempalle = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 seshachalam_hills = {
 }
 pavagada = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 adoni = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 gutti = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 kurnool = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 srisailam = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 nandyal = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 ahobalam = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 udayagiri = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 porumamilla = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 dhone = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 s_nallamalla = {
 }
 rajamahendry = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 pallakolu = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = burghers	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 masulipatnam = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 ellur = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 peddapalli = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 sirpur = {
 	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
@@ -121159,162 +123144,612 @@ yegaladapa = {
 	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
 }
 khammamet = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 kalluru = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 kondapalli = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 wazirabad = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 kothagudem = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = tribesmen	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 nuzvid = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 golconda = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 koilkonda = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 rachakonda = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 devarakonda = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 panugallu = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 anumagallu = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 amrabad = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 nalgonda = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 gadwal = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 ghampur = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 makhtal = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 tandur = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 kohir = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 undrugonda = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 warangal = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 palampet = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 ramagiri = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 vemulawada = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 balkonda = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = vedic
+	}
 }
 kaulas = {
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 medak = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 bhongir = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 molangur = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 korutla = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 adlur = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 tupran = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 mangapet = {
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = vedic
+	}
 }
 parkal = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 mysore = {
 	define_pop = {	type = nobles	size = 0.01	culture = tamil	religion = dravidian_folk }
@@ -121323,22 +123758,72 @@ mysore = {
 	define_pop = {	type = peasants	size = 1	culture = tamil	religion = dravidian_folk }
 }
 shravanabelagola = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 seringapatam = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 srigangapatna = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 mankunda = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 sathyagala = {
 	define_pop = {
@@ -121375,17 +123860,62 @@ ummatur = {
 	}
 }
 belur = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = burghers	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 dvarasamudra = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 haleri = {
 	define_pop = {
@@ -121420,16 +123950,46 @@ haleri = {
 	}
 }
 hassan_karnataka = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 kadur = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 narsipur = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 nanjanagud = {
 	define_pop = {	type = peasants	size = 1	culture = tamil	religion = dravidian_folk }
@@ -121438,240 +123998,920 @@ nanjanagud = {
 western_ghats_haleri = {
 }
 sringeri = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 bednur = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 ikkeri = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 basavapattana = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 shimoga = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 bangalore = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 kolar = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 manyapura = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 nandagiri = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 devanahalli = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 hoskote = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 ballalapura = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 magadi = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 sira = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 chitradurga = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 uchangidurga = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 tumkur = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 hanagal = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 aimangala = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 raichur = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = burghers	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 mudgal = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 anegandi = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 koppal = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 hubli = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 darwar = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 bankapura = {
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
 }
 devadurga = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 kundgol = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 sonda_karnataka = {
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
 }
 gadag = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 vijayanagar = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = burghers	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 bellari = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 rayadurga = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 haveri = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 puvina_padangile = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 bidar = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
 }
 yedagiri = {
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 gulbarga = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
 }
 kalyani = {
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 sagar = {
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 talikota = {
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
 }
 bagalkot = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 bijapur = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
 }
 manyakheta = {
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 chitapur = {
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 bhalki = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 kembhavi = {
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 sindagi = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 basavana_bagewadi = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 badami = {
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 singarh = {
 	define_pop = {
@@ -121718,30 +124958,90 @@ western_ghats_pune = {
 pratapgarh = {
 }
 satara = {
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
 }
 karad = {
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
 }
 kolhapur = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
 }
 aundh = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 jath = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 miraj = {
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 athani = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 western_ghats_purandar = {
 }
@@ -121750,7 +125050,12 @@ western_ghats_satara = {
 western_ghats_karad = {
 }
 udgir = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 bir = {
 	define_pop = {
@@ -121761,10 +125066,20 @@ bir = {
 	}
 }
 dahrur = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 qandhar = {
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Telugu
+		religion = vedic
+	}
 }
 ahmednagar = {
 	define_pop = {
@@ -121797,7 +125112,12 @@ jalna = {
 	}
 }
 nander = {
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Telugu
+		religion = vedic
+	}
 }
 pathri = {
 	define_pop = {
@@ -121808,16 +125128,36 @@ pathri = {
 	}
 }
 sholhapur = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 naldrug = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 ausa = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 parenda = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 chambargonda = {
 	define_pop = {
@@ -121830,25 +125170,60 @@ chambargonda = {
 harishchandra_range = {
 }
 ajara = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 mudhol = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 belgaum = {
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 londa = {
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 khanapur = {
-	define_pop = {	type = slaves	size = 0.010	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 gokak = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 raybag = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 sinnar = {
 	define_pop = {
@@ -122073,12 +125448,42 @@ bassein = {
 	}
 }
 honnavara = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = slaves	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
 }
 bhatkal = {
 	define_pop = {
@@ -122101,41 +125506,136 @@ bhatkal = {
 	}
 }
 karwar = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 goa = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
 }
 madgaon = {
-	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
-	define_pop = {	type = peasants	size = 1	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = vedic
+	}
 }
 western_ghats_goa = {
 }
 western_ghats_bhatkal = {
 }
 savantvadi = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 rajapur = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 dabhol = {
-	define_pop = {	type = nobles	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = clergy	size = 0.01	culture = dravidian	religion = vedic }
-	define_pop = {	type = burghers	size = 0.01	culture = dravidian	religion = vedic }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Kannada
+		religion = vedic
+	}
 }
 sangamesvara = {
-	define_pop = {	type = peasants	size = 0	culture = dravidian	religion = a_fat_roog_religion }
+	define_pop = {
+		type = peasants
+		size = 0
+		culture = Kannada
+		religion = a_fat_roog_religion
+	}
 }
 western_ghats_belgaum = {
 }
@@ -122528,11 +126028,36 @@ dharmapuri = {
 	define_pop = {	type = peasants	size = 1	culture = tamil	religion = dravidian_folk }
 }
 krishnagiri = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 sendamangalam = {
 	define_pop = {	type = clergy	size = 0.01	culture = tamil	religion = dravidian_folk }
@@ -122540,22 +126065,82 @@ sendamangalam = {
 	define_pop = {	type = peasants	size = 1	culture = tamil	religion = dravidian_folk }
 }
 jagadevipalayam = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 denkanikottai = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 pennagaram = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 biligiriranga = {
 }
@@ -122594,30 +126179,110 @@ pondicherry = {
 	}
 }
 madras = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 maduranthakam = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 arcot = {
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 vellore = {
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Kannada
+		religion = dravidian_folk
+	}
 }
 kanchipuram = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = burghers	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 gingee = {
 	define_pop = {
@@ -122634,10 +126299,30 @@ gingee = {
 	}
 }
 padaividu = {
-	define_pop = {	type = nobles	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = clergy	size = 0.010	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
-	define_pop = {	type = peasants	size = 1.000	culture = dravidian	religion = dravidian_folk }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = Telugu
+		religion = dravidian_folk
+	}
 }
 tiruvannamalai = {
 	define_pop = {	type = clergy	size = 0.01	culture = tamil	religion = dravidian_folk }

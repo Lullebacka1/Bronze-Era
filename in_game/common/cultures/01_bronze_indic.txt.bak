@@ -37,14 +37,11 @@ dravidian = {
 
 tamil = {
 	language = dravidian_bronze_language
-	color = rgb { 146 82 72 }
+	color = rgb { 98 94 156 }
 	tags = { dravidian_gfx indian_gfx }
-	opinions = {
-	}
-	culture_groups = {
-		indic_bronze_group
-		dravidian_group
-	}
+		opinions = {
+		}
+	culture_groups = { indic_bronze_group }
 }
 
 gandharan = {
