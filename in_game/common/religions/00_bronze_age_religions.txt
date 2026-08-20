@@ -412,6 +412,24 @@ scythian_pagan = {
 	tags = { folk_european_gfx pagan_gfx }
 }
 
+bilozerka = {
+	color = rgb { 132 123 78 }
+	group = steppe_religion_group
+
+	definition_modifier = {
+		global_monthly_food_modifier = 0.05
+		global_livestock_output_modifier = 0.10
+		global_food_capacity_modifier = 0.05
+		tolerance_heathen = 0.25
+		global_pop_conversion_speed_modifier = -0.05
+	}
+
+	opinions = {
+	}
+
+	tags = { folk_european_gfx pagan_gfx }
+}
+
 minoan = {
 	color = rgb { 68 150 177 }
 	group = aegean_religion_group
