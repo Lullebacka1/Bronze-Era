@@ -1,0 +1,6 @@
+levantine_silver_crisis = {
+	silver = 1
+
+	hidden = no
+	category = special_demands
+}

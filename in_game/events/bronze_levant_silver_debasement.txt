@@ -8,31 +8,12 @@ levant_silver_debasement.1 = {
 	image = "gfx/interface/illustrations/situation/levant_silver_debasement_1.dds"
 	outcome = neutral
 
-	dynamic_historical_event = { 
-		tag = SIDON
-		tag = AMURU
-		tag = ARWAD
-		tag = BERIT
-		tag = BYBLO
-		tag = HABIR
-		tag = UGART
-		tag = AKSHA
-		tag = ASHK
-		tag = ASHT
-		tag = GEZE
-		tag = HACOR
-		tag = JESUS
-		tag = LAKIS
-		tag = PEHEL
-		tag = SICHE
-		tag = YURZ
-		from = 3.1.1
-		to = 53.1.1
-		monthly_chance = 30
-	}
-
 	trigger = {
 		NOT = { has_variable = levant_silver_debasement_intro_seen }
+		has_ports = yes
+		levant_silver_debasement_participant = yes
+		current_date < 5.1.1
+		current_date > 3.1.1
 	}
 
 	immediate = {
@@ -75,15 +56,137 @@ levant_silver_debasement.1 = {
 
 levant_silver_debasement.11 = {
 	type = country_event
-	title = levant_silver_debasement.11.title
-	desc = levant_silver_debasement.11.desc
+	title = levant_silver_debasement.11.title.a
+	desc = {
+		first_valid = {
+
+			triggered_desc = {
+				trigger = {
+					OR = {
+						has_policy = commodity_money_policy_jewelry
+						has_policy = bullion_coins
+						has_policy = silver_coins
+						has_policy = gold_and_silver_coins
+					}
+				}
+
+				desc = levant_silver_debasement.11.desc.a
+			}
+
+			triggered_desc = {
+				trigger = {
+					has_codified_laws = no
+				}
+				
+				desc = levant_silver_debasement.11.desc.b
+			}
+
+			desc = levant_silver_debasement.11.desc.c
+		}
+	}
+
 	category = situation_event
 	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
-	outcome = neutral
+	outcome = negative
 
 	trigger = {
 		has_variable = levant_silver_debasement_subject_intro_seen
+		levant_silver_debasement_participant = yes
+		current_date = 5.6.1
+	}
 
+	immediate = {
+		# region:balkan_region = {
+		# 	every_location_in_region = {
+		# 		every_import_from_location = {
+		# 			limit = {
+		# 				goods = goods:silver
+		# 			}
+		# 			set_locked = yes
+		# 		}
+		# 	}
+		# }
+
+		every_market_present_in_country = {
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis
+				scale_with_pop = 0.002
+				months = 120
+			}
+		}
+	}
+
+	option = {
+		name = levant_silver_debasement.11.a
+		custom_tooltip = levant_silver_debasement_11a_tt
+	}
+}
+
+levant_silver_debasement.111 = {
+	type = country_event
+	title = {
+		first_valid = {
+
+			triggered_desc = {
+				trigger = {
+					OR = {
+						has_policy = commodity_money_policy_jewelry
+						has_policy = bullion_coins
+						has_policy = silver_coins
+						has_policy = gold_and_silver_coins
+					}
+				}
+
+				desc = levant_silver_debasement.11.title.a
+			}
+
+			triggered_desc = {
+				trigger = {
+					has_codified_laws = no
+				}
+				
+				desc = levant_silver_debasement.11.title.b
+			}
+
+			desc = levant_silver_debasement.11.title.c
+		}
+	}
+	desc = {
+		first_valid = {
+
+			triggered_desc = {
+				trigger = {
+					OR = {
+						has_policy = commodity_money_policy_jewelry
+						has_policy = bullion_coins
+						has_policy = silver_coins
+						has_policy = gold_and_silver_coins
+					}
+				}
+
+				desc = levant_silver_debasement.11.desc.a
+			}
+
+			triggered_desc = {
+				trigger = {
+					has_codified_laws = no
+				}
+				
+				desc = levant_silver_debasement.11.desc.b
+			}
+
+			desc = levant_silver_debasement.11.desc.c
+		}
+	}
+
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
+	outcome = negative
+
+	trigger = {
+		has_variable = levant_silver_debasement_subject_intro_seen
+		levant_silver_debasement_participant = yes
+		current_date = 5.6.1
 	}
 
 	immediate = {
