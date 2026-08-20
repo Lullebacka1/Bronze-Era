@@ -94,6 +94,10 @@ LIBYA = {
 	color = rgb { 141 114 146 }
 	color2 = rgb { 110 27 27 }
 }
+SINAI = {
+	color = rgb { 151 122 83 }
+	color2 = rgb { 86 57 37 }
+}
 LUKKA = {
 	color = rgb { 148 122 145 }
 	color2 = rgb { 110 27 27 }
@@ -2400,4 +2404,144 @@ SICHE = {
 YURZ = {
 	color = rgb { 71 209 117 }
 	color2 = rgb { 68 24 82 }
+}
+
+DAIM = {
+	color = rgb { 73 166 212 }
+	color2 = rgb { 33 75 95 }
+}
+
+BAODE = {
+	color = rgb { 56 69 183 }
+	color2 = rgb { 25 31 82 }
+}
+
+CHAN = {
+	color = rgb { 44 89 99 }
+	color2 = rgb { 20 40 45 }
+}
+
+CHEN = {
+	color = rgb { 62 193 190 }
+	color2 = rgb { 28 87 86 }
+}
+
+DANG = {
+	color = rgb { 43 197 51 }
+	color2 = rgb { 19 89 23 }
+}
+
+DONG = {
+	color = rgb { 45 115 190 }
+	color2 = rgb { 20 52 86 }
+}
+
+FEIX = {
+	color = rgb { 199 41 138 }
+	color2 = rgb { 90 18 62 }
+}
+
+FUAN = {
+	color = rgb { 150 183 52 }
+	color2 = rgb { 68 82 23 }
+}
+
+GUANG = {
+	color = rgb { 71 205 180 }
+	color2 = rgb { 32 92 81 }
+}
+
+GUI = {
+	color = rgb { 189 214 87 }
+	color2 = rgb { 85 96 39 }
+}
+
+HENAN = {
+	color = rgb { 216 91 49 }
+	color2 = rgb { 97 41 22 }
+}
+
+HUAI = {
+	color = rgb { 222 99 69 }
+	color2 = rgb { 100 45 31 }
+}
+
+HUO = {
+	color = rgb { 214 93 87 }
+	color2 = rgb { 96 42 39 }
+}
+
+LINZI = {
+	color = rgb { 171 87 203 }
+	color2 = rgb { 77 39 91 }
+}
+
+LOLO = {
+	color = rgb { 82 203 173 }
+	color2 = rgb { 37 91 78 }
+}
+
+PENG = {
+	color = rgb { 194 41 150 }
+	color2 = rgb { 87 18 68 }
+}
+
+PI = {
+	color = rgb { 55 205 60 }
+	color2 = rgb { 25 92 27 }
+}
+
+QUAN = {
+	color = rgb { 210 108 40 }
+	color2 = rgb { 95 49 18 }
+}
+
+REN = {
+	color = rgb { 195 65 50 }
+	color2 = rgb { 88 29 23 }
+}
+
+WANG = {
+	color = rgb { 217 97 84 }
+	color2 = rgb { 98 44 38 }
+}
+
+WEI1 = {
+	color = rgb { 130 223 109 }
+	color2 = rgb { 59 100 49 }
+}
+
+WEI2 = {
+	color = rgb { 165 53 187 }
+	color2 = rgb { 74 24 84 }
+}
+
+WU = {
+	color = rgb { 222 79 115 }
+	color2 = rgb { 100 36 52 }
+}
+
+XANG = {
+	color = rgb { 116 52 218 }
+	color2 = rgb { 52 23 98 }
+}
+
+XUYI = {
+	color = rgb { 164 205 50 }
+	color2 = rgb { 74 92 23 }
+}
+
+YANJ = {
+	color = rgb { 68 148 197 }
+	color2 = rgb { 31 67 89 }
+}
+
+YONG = {
+	color = rgb { 187 107 230 }
+	color2 = rgb { 84 48 104 }
+}
+
+YUWA = {
+	color = rgb { 78 212 81 }
+	color2 = rgb { 35 95 36 }
 }
