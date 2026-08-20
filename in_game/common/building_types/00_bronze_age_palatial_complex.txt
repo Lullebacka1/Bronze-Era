@@ -73,7 +73,6 @@ bronze_age_palatial_complex = {
 		local_market_access = 0.015
 		local_food_capacity = 300
 		local_food_decay_modifier = -0.05
-		local_monthly_food_modifier = 0.03
 		local_unrest = -0.03
 		local_garrison_size = 0.15
 		local_defensive = 0.10
