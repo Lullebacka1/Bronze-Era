@@ -38776,9 +38776,9 @@ VC001 = {
 	}
 
 	SAKT = {
-		culture = saka
-		religion = saka_pagan
-		country_rank = rank_county
+	culture = saka
+	religion = saka_pagan
+	country_rank = rank_county
 		own_control_core = {
 			aksumbe         aktas_kystagy   artyk_ata       asanas          barchkend       belen_ana
 			buzikkala       gulshara        ikan            jand            jubara          kamyskala
@@ -38787,17 +38787,17 @@ VC001 = {
 			tasty           tasuktul        tolekskoe       turkestan       yangikent       zemukh
 			zhaushikumtobe
 		}
-		capital = aksumbe
+	capital = aksumbe
 		include = "eurasian_horde_no_muslim"
 		government = {
 			ruler = random
 		}
-		accepted_cultures = {
-			saka
-		}
-		discovered_regions = {
-			khorasan_region
-		}
+	accepted_cultures = {
+		saka
+	}
+	discovered_regions = {
+		khorasan_region
+	}
 	}
 
 	SARG = {
@@ -38970,6 +38970,29 @@ VC001 = {
 		discovered_regions = {
 			manchuria_region
 			north_china_region
+		}
+	}
+
+	NOUA = {
+		culture = gava_holigrady
+		religion = dacian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			campulung_moldovenesc  cernauti               cetatea_tetina         dorohoi                hotin                  kolomyia
+			kosiv                  lipnic                 putna                  siret                  sniatyn                stefanesti
+			storozhynets           suceava
+		}
+		capital = kosiv
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			gava_holigrady
+		}
+		discovered_regions = {
+			carpathia_region
+			ruthenia_region
 		}
 	}
 }
