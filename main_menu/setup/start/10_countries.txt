@@ -4971,9 +4971,9 @@ countries = {
 			ruler = random
 		}
 
-		own_control_core = {
-			babadag constanta enisala pangalia
-		}
+	own_control_core = {
+		babadag    constanta  enisala    pangalia   tulcea
+	}
 		accepted_cultures = { tei ezero }
 		tolerated_cultures = {  }
 		discovered_regions = {
@@ -38993,6 +38993,32 @@ VC001 = {
 		discovered_regions = {
 			carpathia_region
 			ruthenia_region
+		}
+	}
+
+	BILO = {
+		culture = Bilozerka
+		religion = bilozerka
+		country_rank = rank_county
+		own_control_core = {
+			ananiv                aqmecit_prybuzhzhya   argamakli_sarai       aslan_horod           balikley              bashtanka
+			bereznehuvate         cetatea_alba          chilia                dashev                enice                 harbuzynka
+			iagorlic              khadjibey             kryvyi_rih            kuchugur              kuyanlik              kyrylivka
+			mykytyn_rih           oleshia               ordu_bazar            qalancaq              rohat_kermen          sarata
+			sofiivka              tavan                 teligol               tighina               tomakivka             velyka_lepetykha
+			velyka_oleksandrivka  vithold_hammami
+		}
+		capital = dashev
+		include = "Neolithic_Est"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Bilozerka
+		}
+		discovered_regions = {
+			carpathia_region
+			steppes_region
 		}
 	}
 }

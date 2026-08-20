@@ -58737,8 +58737,18 @@ poltava = {
 	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
 }
 kremenchuk = {
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 myrhorod = {
 	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
@@ -58759,13 +58769,13 @@ bratslav = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 balta = {
@@ -58773,13 +58783,13 @@ balta = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 bershad = {
@@ -58787,13 +58797,13 @@ bershad = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 drahushiv = {
@@ -58801,13 +58811,13 @@ drahushiv = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 karabul = {
@@ -58815,13 +58825,13 @@ karabul = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 savran = {
@@ -58829,50 +58839,105 @@ savran = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 ushytsia = {
-	define_pop = {	type = clergy	size = 0.010	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 khmilnyk = {
-	define_pop = {	type = clergy	size = 0.010	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 letychiv = {
-	define_pop = {	type = clergy	size = 0.010	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 mezhybozhe = {
-	define_pop = {	type = clergy	size = 0.010	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 mohyliv_podilskyi = {
-	define_pop = {	type = peasants	size = 1.000	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 rov = {
-	define_pop = {	type = clergy	size = 0.010	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1.000	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 torhovytsia = {
 	define_pop = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 teplyk = {
@@ -58880,25 +58945,35 @@ teplyk = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 tsybuliv = {
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 uman = {
 	define_pop = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 zavallia = {
@@ -58906,27 +58981,57 @@ zavallia = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 vinnytsia = {
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 buzhskyi = {
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 pohrebyshche = {
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 sokilets = {
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 bakota = {
@@ -59409,51 +59514,156 @@ polonne = {
 	define_pop = {	type = peasants	size = 1.000	culture = corded_ware	religion = steppe_pagan }
 }
 bila_tserkva = {
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 bohuslav = {
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 kaharlyk = {
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 kaniv = {
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 sherbiv = {
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 skvyra = {
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 cherkasy = {
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 chyhyryn = {
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 korsun = {
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 lebedyn = {
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 rozkishna = {
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 smila = {
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 zvenyhorodka = {
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 chornobyl = {
 	define_pop = {	type = clergy	size = 0.010	culture = noua_sabatinovka	religion = steppe_pagan }
@@ -59473,11 +59683,36 @@ kholmyech = {
 	define_pop = {	type = peasants	size = 1.000	culture = noua_sabatinovka	religion = steppe_pagan }
 }
 kyiv = {
-	define_pop = {	type = nobles	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = burghers	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = nobles
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = burghers
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 desnyanskyi_horodok = {
 	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
@@ -59488,8 +59723,18 @@ dymer = {
 	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
 }
 fastiv = {
-	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 zdvizhen = {
 	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
@@ -59535,7 +59780,12 @@ zhytomyr = {
 	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
 }
 berdychiv = {
-	define_pop = {	type = peasants	size = 1	culture = noua_sabatinovka	religion = steppe_pagan }
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = noua_sabatinovka
+		religion = bilozerka
+	}
 }
 chudniv = {
 	define_pop = {	type = clergy	size = 0.01	culture = noua_sabatinovka	religion = steppe_pagan }
@@ -62561,31 +62811,31 @@ khadjibey = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 teligol = {
@@ -62593,31 +62843,31 @@ teligol = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 kuyanlik = {
@@ -62625,31 +62875,31 @@ kuyanlik = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 ananiv = {
@@ -62657,25 +62907,25 @@ ananiv = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 iagorlic = {
@@ -62683,31 +62933,31 @@ iagorlic = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 khadzhibey_liman = {
@@ -62719,31 +62969,31 @@ dashev = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 balikley = {
@@ -62751,25 +63001,25 @@ balikley = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 aqmecit_prybuzhzhya = {
@@ -62777,25 +63027,25 @@ aqmecit_prybuzhzhya = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = dacian_pagan
+		religion = bilozerka
 	}
 }
 argamakli_sarai = {
@@ -62803,25 +63053,25 @@ argamakli_sarai = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 vithold_hammami = {
@@ -62829,31 +63079,31 @@ vithold_hammami = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 harbuzynka = {
@@ -62861,25 +63111,25 @@ harbuzynka = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 oleshia = {
@@ -62887,31 +63137,31 @@ oleshia = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 bereznehuvate = {
@@ -62919,25 +63169,25 @@ bereznehuvate = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 bashtanka = {
@@ -62945,25 +63195,25 @@ bashtanka = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 tavan = {
@@ -62971,25 +63221,25 @@ tavan = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 velyka_oleksandrivka = {
@@ -62997,25 +63247,25 @@ velyka_oleksandrivka = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 qalancaq = {
@@ -63023,25 +63273,25 @@ qalancaq = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = a_fat_roog_religion
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = a_fat_roog_religion
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = a_fat_roog_religion
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = a_fat_roog_religion
 	}
 }
 aslan_horod = {
@@ -63049,19 +63299,19 @@ aslan_horod = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 ordu_bazar = {
@@ -63069,25 +63319,25 @@ ordu_bazar = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 rohat_kermen = {
@@ -63095,25 +63345,25 @@ rohat_kermen = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 enice = {
@@ -63121,25 +63371,25 @@ enice = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 velyka_lepetykha = {
@@ -63147,25 +63397,25 @@ velyka_lepetykha = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 kichkas = {
@@ -63173,25 +63423,25 @@ kichkas = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 rozdory = {
@@ -63199,64 +63449,109 @@ rozdory = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 hryshyne = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = catacomb
+		religion = bilozerka
+	}
 }
 pavlohrad = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.01	culture = catacomb	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = catacomb
+		religion = bilozerka
+	}
 }
 yelanets = {
 	define_pop = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 usivka = {
@@ -63264,31 +63559,31 @@ usivka = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 mala_vyska = {
@@ -63296,25 +63591,25 @@ mala_vyska = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 umanske = {
@@ -63322,25 +63617,25 @@ umanske = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 ingul = {
@@ -63348,25 +63643,25 @@ ingul = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 petrove = {
@@ -63374,31 +63669,31 @@ petrove = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 karlivka = {
@@ -63460,31 +63755,31 @@ samarchyk = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 oril = {
@@ -63492,64 +63787,89 @@ oril = {
 		type = nobles
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = burghers
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 ternivka = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = slaves	size = 0.01	culture = catacomb	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = slaves
+		size = 0.01
+		culture = catacomb
+		religion = bilozerka
+	}
 }
 kodak = {
 	define_pop = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 myshuryn_rih = {
@@ -63557,31 +63877,31 @@ myshuryn_rih = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = slaves
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 sofiivka = {
@@ -63589,25 +63909,25 @@ sofiivka = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 kryvyi_rih = {
@@ -63615,25 +63935,25 @@ kryvyi_rih = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 tomakivka = {
@@ -63641,25 +63961,25 @@ tomakivka = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 mykytyn_rih = {
@@ -63667,25 +63987,25 @@ mykytyn_rih = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 kursk = {
@@ -64014,25 +64334,25 @@ melitopol = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 kyrylivka = {
@@ -64040,25 +64360,25 @@ kyrylivka = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 tokmak = {
@@ -64066,25 +64386,25 @@ tokmak = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 konski_vody = {
@@ -64092,25 +64412,25 @@ konski_vody = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 kuchugur = {
@@ -64118,25 +64438,25 @@ kuchugur = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 berdiansk = {
@@ -64144,25 +64464,25 @@ berdiansk = {
 		type = clergy
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = peasants
 		size = 1
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 	define_pop = {
 		type = tribesmen
 		size = 0.01
 		culture = Bilozerka
-		religion = steppe_pagan
+		religion = bilozerka
 	}
 }
 taganrog = {
@@ -64172,22 +64492,82 @@ taganrog = {
 	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = steppe_pagan }
 }
 velyka_novosilka = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = catacomb
+		religion = bilozerka
+	}
 }
 domakha = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = catacomb
+		religion = bilozerka
+	}
 }
 huliaipole = {
-	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = peasants	size = 1	culture = catacomb	religion = steppe_pagan }
-	define_pop = {	type = tribesmen	size = 0.01	culture = catacomb	religion = steppe_pagan }
+	define_pop = {
+		type = clergy
+		size = 0.01
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = peasants
+		size = 1
+		culture = catacomb
+		religion = bilozerka
+	}
+	define_pop = {
+		type = tribesmen
+		size = 0.01
+		culture = catacomb
+		religion = bilozerka
+	}
 }
 shyrokyne = {
 	define_pop = {	type = clergy	size = 0.01	culture = catacomb	religion = steppe_pagan }

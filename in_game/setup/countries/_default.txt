@@ -2645,3 +2645,8 @@ NOUA = {
 	color = rgb { 88 202 142 }
 	color2 = rgb { 40 91 64 }
 }
+
+BILO = {
+	color = rgb { 209 41 144 }
+	color2 = rgb { 94 18 65 }
+}
