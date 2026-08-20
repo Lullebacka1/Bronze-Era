@@ -792,3 +792,92 @@ sea_peoples_crisis.171 = {
 		custom_tooltip = sea_peoples_crisis_171a_tt
 	}
 }
+
+sea_peoples_crisis.180 = {
+	type = country_event
+	title = sea_peoples_crisis.180.title
+	desc = sea_peoples_crisis.180.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
+	outcome = negative
+	major = yes
+	orphan = yes
+
+	trigger = {
+		egyptian_rule_in_canaan_egypt = yes
+		sea_peoples_crisis_active_country = yes
+		sea_peoples_crisis_phase_at_least = { value = 5 }
+		NOT = { has_variable = sea_peoples_egypt_frontier_choice_resolved }
+	}
+
+	immediate = {
+		set_variable = { name = sea_peoples_egypt_frontier_choice_resolved value = 1 years = 100 }
+		bronze_sea_peoples_egypt_western_cession = yes
+		add_legitimacy = -30
+		add_stability = -10
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_penalty }
+	}
+
+	option = {
+		name = sea_peoples_crisis.180.a
+		trigger = {
+			is_during_bankruptcy = no
+			gold >= 140
+			manpower = { value >= 450 }
+			situation:egyptian_rule_in_canaan ?= {
+				situation_is_active = yes
+				has_variable = egyptian_authority_in_canaan
+				var:egyptian_authority_in_canaan > 0
+			}
+		}
+		custom_tooltip = sea_peoples_crisis_180_hold_sinai_tt
+		bronze_sea_peoples_egypt_hold_sinai = yes
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 2
+				gold >= 400
+				manpower = { value >= 1200 }
+				stability >= 20
+			}
+			modifier = {
+				factor = 0.4
+				situation:egyptian_rule_in_canaan ?= {
+					var:egyptian_authority_in_canaan < 30
+				}
+			}
+			modifier = {
+				factor = 0.25
+				is_at_war = yes
+			}
+		}
+	}
+
+	option = {
+		name = sea_peoples_crisis.180.b
+		custom_tooltip = sea_peoples_crisis_180_withdraw_sinai_tt
+		bronze_sea_peoples_egypt_withdraw_sinai = yes
+		ai_chance = {
+			factor = 65
+			modifier = {
+				factor = 2
+				OR = {
+					is_during_bankruptcy = yes
+					stability <= 0
+				}
+			}
+			modifier = {
+				factor = 1.5
+				situation:egyptian_rule_in_canaan ?= {
+					var:egyptian_authority_in_canaan < 30
+				}
+			}
+			modifier = {
+				factor = 0.5
+				gold >= 400
+				manpower = { value >= 1200 }
+				stability >= 20
+			}
+		}
+	}
+}

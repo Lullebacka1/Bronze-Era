@@ -17,6 +17,7 @@ colchian = {
 	color = rgb { 81 128 93 }
 	tags = { caucasian_gfx }
 	opinions = {
+		urartian = 25
 	}
 	culture_groups = {
 		caucasus_bronze_group
@@ -28,6 +29,21 @@ urartian = {
 	color = rgb { 91 116 128 }
 	tags = { caucasian_gfx middle_east_gfx }
 	opinions = {
+		colchian = 25
+	}
+	culture_groups = {
+		caucasus_bronze_group
+	}
+}
+
+armenian_culture = {
+	language = armenian_language
+	color = map_BA_ARM
+	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	opinions = {
+		urartian = 25
+		colchian = 15
+		kartvelian = 10
 	}
 	culture_groups = {
 		caucasus_bronze_group

@@ -311,6 +311,9 @@
   iron_citadel_advance: "Citadel Fortifications"
   iron_citadel_advance_desc: "Fortified strongholds increasingly serve not merely as places of refuge, but as permanent centers from which local authority can be secured and the surrounding territory controlled."
 
+  clergy_military_authority_advance: "Priestly Military Authority"
+  clergy_military_authority_advance_desc: "The influence of the priesthood extends into the military sphere, granting religious authorities an established place within the command structure of the realm."
+
   # ##########################
   # BUILDINGS
   # ##########################
