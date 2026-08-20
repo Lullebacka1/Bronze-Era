@@ -10836,8 +10836,9 @@ countries = {
 		accepted_cultures = { nubian }
 		tolerated_cultures = { medjay egyptian berber }
 			discovered_regions = {
-				egypt_region
+				egypt_region nubia_region 
 			}
+			
 	}
 	##PATHANI DAMB
 	PATHA = {
