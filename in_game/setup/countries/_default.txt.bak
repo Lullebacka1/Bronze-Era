@@ -2555,3 +2555,8 @@ RONG = {
 	color = rgb { 208 67 74 }
 	color2 = rgb { 94 30 33 }
 }
+
+CHAOG = {
+	color = rgb { 168 91 210 }
+	color2 = rgb { 76 41 95 }
+}

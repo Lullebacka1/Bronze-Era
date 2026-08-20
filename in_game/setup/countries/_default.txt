@@ -2560,3 +2560,8 @@ CHAOG = {
 	color = rgb { 168 91 210 }
 	color2 = rgb { 76 41 95 }
 }
+
+CAOR = {
+	color = rgb { 199 72 89 }
+	color2 = rgb { 90 32 40 }
+}

@@ -38585,5 +38585,28 @@ VC001 = {
 			north_china_region
 		}
 	}
+
+	CAOR = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			feixian         gaoqiao         lanling         licheng_yizhou  linyi           mengyin
+			qufu            sishui          tancheng        tengdong        tengxian        xintai
+			zouxian
+		}
+		capital = feixian
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+			north_china_region
+		}
+	}
 }
 }
