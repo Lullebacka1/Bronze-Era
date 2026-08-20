@@ -97,6 +97,24 @@ locations = {
 	pakpattan = { rank = city } #harappa
 	soonpur = { rank = city } #rakhigarh
 
+	#China not finished
+	anyang = { rank = city } #Yin Xu
+	beihai = { rank = city } #Linzi
+	gaoyuan_jinan = { rank = city } #Jinan
+	pingyin = { rank = city } #Yin capital of Shang
+	puyang = { rank = city } #Xiang
+	yuanyang = { rank = city } #Chaoge
+	guancheng_zhengzhou = { rank = city } #Zhengzhou
+	xingyang = { rank = city } #Ao
+	hequ = { rank = city } #Baode
+	chaoxian = { rank = city } #Feixi
+	xuyi = { rank = city } #Jiashan
+	wujin = { rank = city } #Ma Xia Peng
+	queshan = { rank = city } #Funan
+	xiaxian = { rank = city } #Xiaxian
+	xianyang = { rank = city } #Xianyang
+	
+
 
 
 }
