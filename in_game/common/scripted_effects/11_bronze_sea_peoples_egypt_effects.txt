@@ -24,11 +24,36 @@ bronze_sea_peoples_egypt_transfer_location = {
 bronze_sea_peoples_egypt_western_cession = {
 	custom_description = {
 		text = bronze_sea_peoples_egypt_western_cession_text
+		bronze_sea_peoples_egypt_prepare_libya_core = { location = sallum }
+		bronze_sea_peoples_egypt_prepare_libya_core = { location = matruh }
+		bronze_sea_peoples_egypt_prepare_libya_core = { location = el_alamein }
 		if = {
-			limit = { country_exists = c:LIBYA }
-			bronze_sea_peoples_egypt_transfer_location = { location = sallum tag = LIBYA }
-			bronze_sea_peoples_egypt_transfer_location = { location = matruh tag = LIBYA }
-			bronze_sea_peoples_egypt_transfer_location = { location = el_alamein tag = LIBYA }
+			limit = {
+				NOT = { country_exists = c:LIBYA }
+				any_owned_location = { is_core_of = c:LIBYA }
+			}
+			create_country_from_cores_in_our_locations = c:LIBYA
+		}
+		c:LIBYA ?= {
+			change_culture = culture:libyan
+			change_religion = religion:berber_pagan
+			add_accepted_culture = culture:libyan
+			set_country_rank = country_rank:rank_county
+		}
+		bronze_sea_peoples_egypt_transfer_location = { location = sallum tag = LIBYA }
+		bronze_sea_peoples_egypt_transfer_location = { location = matruh tag = LIBYA }
+		bronze_sea_peoples_egypt_transfer_location = { location = el_alamein tag = LIBYA }
+	}
+}
+
+bronze_sea_peoples_egypt_prepare_libya_core = {
+	location:$location$ = {
+		if = {
+			limit = {
+				has_owner = yes
+				owner = root
+			}
+			add_core = c:LIBYA
 		}
 	}
 }
