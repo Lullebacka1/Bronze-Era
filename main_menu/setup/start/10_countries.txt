@@ -38608,5 +38608,369 @@ VC001 = {
 			north_china_region
 		}
 	}
+
+	DAHAE = {
+		culture = andronovo
+		religion = scythian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			hazarasp   kath       khiva      kyat_kala  nyzvar     orta_kuyu
+			urgench    vezir      xojeli
+		}
+		capital = kath
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			andronovo
+		}
+		discovered_regions = {
+			khorasan_region
+		}
+	}
+
+	ELOV = {
+		culture = elovka
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			bolshoy_balyk  bolshoy_yugan  kargasok       kolpashevo     megion         molchanovo
+			surgut         upper_ob       vasyugan
+		}
+		capital = bolshoy_balyk
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			elovka
+		}
+		discovered_regions = {
+			west_siberia_region
+		}
+	}
+
+	GUIF = {
+		culture = tevsh
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			aerzhai            bayankhot          dingyuan_lingzhou  fugu               hebin              jiazhou
+			kaiguang           lingwu             lingzhou           mingsha            ningbian           ningxia
+			ordos              otog               shenmu             tongwancheng       yulin
+		}
+		capital = ningxia
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			tevsh
+		}
+		discovered_regions = {
+			mongolia_region
+			north_china_region
+			west_china_region
+		}
+	}
+
+	IRM = {
+		culture = irmen
+		religion = steppe_pagan
+		country_rank = rank_duchy
+		own_control_core = {
+			abakasnk          altayskoye        askiz             barnaul           berdsk            beya
+			biysk             bolotnye          bursol            butyrskoe         chesnokovka       dovolnoye
+			gorkovskoye       imakia            kainsky_pas       kalmanka          kamen             kargat
+			kolchugino        kozhevnikovo      krivoshchekovo    kuchukskoye       kuznetsk          kyshtovka
+			kytmanovo         lebyazhye         mayma             melnikovo         muromtsevo        okoneshnikovo
+			omsk              salair            sartlan           shish             smolenskoye       suzun
+			taskayevo         tatarskaya_tesyu  ust_kabyrza       ust_kalmanka      volchikha         zhelezin
+		}
+		capital = lebyazhye
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			irmen
+		}
+		discovered_regions = {
+			west_siberia_region
+		}
+	}
+
+	KARA = {
+		culture = karasuk
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			aban           belya          bii            biryusa        boguchany      bratsk
+			chadobets      choigan        chunoyar       chuva          dzerzhinskoye  educhanka
+			idrinskoye     ilansky        irkineieva     kamenka        kansk          kezhma
+			kortuz         krasnoyarsk    lower_angara   manzaya        minusinsk      nizhneudinsk
+			pashino        shushenskoye   systyg         taseyevo       tayga          tsentral
+			ulug           upper_angara   usun           yarkino
+		}
+		capital = dzaigil
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			saka
+		}
+		discovered_regions = {
+			mongolia_region
+			west_siberia_region
+		}
+	}
+
+	MASS = {
+		culture = andronovo
+		religion = scythian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			beket_ata            beki                 beleuli              kabakty              karatobe_mangyshlak  kenderli_kayasan
+			ketik_kala           khurgancha           koshkar_ata          kyushe               kyzylkala            masat_ata
+			pulzhai              qonirat              sam                  shimbay              shuruk               sisem_ata
+			temir_baba           uchkuduk
+		}
+		capital = beket_ata
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			andronovo
+		}
+		discovered_regions = {
+			khorasan_region
+		}
+	}
+
+	SAKH = {
+		culture = saka
+		religion = saka_pagan
+		country_rank = rank_county
+		own_control_core = {
+			almaliq       almaty        charyn        chundzha      gulja         ilibalyk
+			jing          karakastek    kargaly       kegen         koktal        kurty
+			kuytun        kysmyci       lavar         narat         nilka         sargau
+			shelek        shengeldy     soltobe       talkhir       tokkuztara    ulan_us
+			usu_xinjiang  yangjibaliq   yulduz
+		}
+		capital = almaliq
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			saka
+		}
+		discovered_regions = {
+			khorasan_region
+			xinjiang_region
+		}
+	}
+
+	SAKT = {
+		culture = saka
+		religion = saka_pagan
+		country_rank = rank_county
+		own_control_core = {
+			aksumbe         aktas_kystagy   artyk_ata       asanas          barchkend       belen_ana
+			buzikkala       gulshara        ikan            jand            jubara          kamyskala
+			karmakshi       karnak          khantau         kyr_uzkand      kyzylkorgan     mardankuyik
+			otrar           ran             sawran          sighnaq         sozak           sutkent
+			tasty           tasuktul        tolekskoe       turkestan       yangikent       zemukh
+			zhaushikumtobe
+		}
+		capital = aksumbe
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			saka
+		}
+		discovered_regions = {
+			khorasan_region
+		}
+	}
+
+	SARG = {
+		culture = saka
+		religion = iranic
+		country_rank = rank_county
+		own_control_core = {
+			abiz            azghand         bajestan        birjand         boshruyeh       dastgerdan
+			deyhuk          gonabad         kashmar         khargerd        khusf           khvor
+			korit           mahvelat        mazhan          nayband         qaen            qala_zari
+			roshtkhar       salameh         sarayan         sarbisheh       shahrakht       tabas_al_tamr
+			tabas_al_unnab  tun             turaythith      yazduye         zaveh           zohan
+			zozan
+		}
+		capital = qaen
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			arian
+		}
+		discovered_regions = {
+			persia_region
+		}
+	}
+
+	SHIV = {
+		culture = shiverska
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			angoya                 balagansk              bayanday               chambeta               cheremkhovo            icheda
+			irkutsk                irkutsk_kazachinskoye  kachug                 kichera                kutima                 makarikha
+			nikolsky_pogost        onguren                osinsky                reka_tuba              siberia_kuytun         staraya_zima
+			tokma                  ul_kan                 ust_kut                zalari                 zhigalovo
+		}
+		capital = irkutsk_kazachinskoye
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shiverska
+		}
+		discovered_regions = {
+			east_siberia_region
+			west_siberia_region
+		}
+	}
+
+	SLAB = {
+		culture = ulaanzuukh
+		religion = steppe_pagan
+		country_rank = rank_duchy
+		own_control_core = {
+			anaa             argada           baruun_tar_nuur  chit             chitkan          ingedei
+			isenga           khan_khentii     khilgo           khilgoson        khudan           khurbe
+			kyra             lower_ulz        narhata          qorqonaq_yubur   selenge          telemba
+			tsagaan          tsokh            tura             ude_baikal       ust_barguzin     zyyn_tar_nuur
+		}
+		capital = khan_khentii
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			ulaanzuukh
+		}
+		discovered_regions = {
+			east_siberia_region
+			mongolia_region
+		}
+	}
+
+	SUB = {
+		culture = tocharian
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			beshbalik   bosten      dashahai    dunla       geziyandun  gonganbao
+			guchung     hami        karasahr    kumux       kutubi      lukchun
+			mori        nazhi       pichan      qanbalik    qocho       toksun
+			urumqi      yuanhu
+		}
+		capital = bosten
+		include = "Neolithic_Est"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			tocharian
+		}
+		discovered_regions = {
+			xinjiang_region
+		}
+	}
+
+	TEVSH = {
+		culture = tevsh
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			bagh               baidrag            banzart_khairkhan  bayannurhong       biger              bogd
+			boontsagaan        chikhan_agui       del_khad           gaxun_gobi         khadat             khangal
+			khara_khoto        naraan_chilaun     niuquanzi          noyon_uul          oiyin_korken       orog
+			otegu_qulan        shaazan_tolgoi     shargyn_gobi       shira_qulusun      tevsh_uul          tost_uul
+			tsagaan_agui       tuin               ukhaa_khudag       ulaan              zag_suujiyn_gobi   zavkhan
+		}
+		capital = gaxun_gobi
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			tevsh
+		}
+		discovered_regions = {
+			mongolia_region
+			west_china_region
+		}
+	}
+
+	ULAZK = {
+		culture = tevsh
+		religion = steppe_pagan
+		country_rank = rank_duchy
+		own_control_core = {
+			avga                     avnagar                  baganuur                 baochang                 bars_khot                bathahalak
+			bayan_tumen              bayannur                 bayantsagaan             buir_nuur                chagannur                chahar
+			chono                    dalai_nuur               dalay                    doloodyn_gobi            dongsheng                erdao
+			erenkhot                 fengzhou                 fuzhou                   galbyn_gobi              huanzhou                 jingzhou_dorbod
+			jining                   khatanbulag              khobootsar               khuuchid                 liangcheng               matad
+			menen                    muumyangan               pingdi                   sangiin_dalai            sharga_uul               shuluun_khoboot_tsagaan
+			sonod                    sorin_nuur               sumtiin                  tamsabulag               tavan_tolgoi             ulaanbadrakh
+			ulan_hua                 ulanchab                 urad                     uraqai                   weining                  wuchuan
+			xinhure                  xuanning                 yingchang                yinshan                  yunnei                   zara_uul
+			zhenwu                   zhongdu
+		}
+		capital = chahar
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			tevsh
+		}
+		discovered_regions = {
+			mongolia_region
+			north_china_region
+		}
+	}
+
+	UPX = {
+		culture = donghu
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			haihaer          kailu            linhuang         naiman           ningchang        pingdisonglin
+			qingzhou_mongol  quanning         songzhou         tongliao         wuping_daning    yizhou_jurchen
+		}
+		capital = songzhou
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			donghu
+		}
+		discovered_regions = {
+			manchuria_region
+			north_china_region
+		}
+	}
 }
 }

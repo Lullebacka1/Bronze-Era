@@ -3,11 +3,13 @@
 # Generated from 00_bronze_age_cultures.txt and 00_location_painter_cultures.txt.
 karasuk = {
 	language = siberian_bronze_language
-	color = rgb { 212 197 28 }
+	color = rgb { 96 129 149 }
 	tags = { central_asian_gfx }
-		opinions = {
-		}
-	culture_groups = { siberian_bronze_group }
+	opinions = {
+	}
+	culture_groups = {
+		siberian_bronze_group
+	}
 }
 
 yeniseian = {
