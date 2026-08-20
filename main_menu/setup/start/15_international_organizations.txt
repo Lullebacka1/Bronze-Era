@@ -185,35 +185,4 @@ international_organization_manager = {
 			mycenaean_league_months = 0
 		}
 	}
-
-	add_international_organization = {
-		type = union
-		# Azzi-Hayasa begins as a vanilla-style union/confederation, so it uses
-		# EU5's native union UI, senior/junior status, defensive war behavior
-		# and eventual union integration logic.
-		creation_date = 1.1.1
-		map_color = hsv360 { 18 55 60 }
-
-		members = {
-			AZZI
-			HAJAS
-			URATU
-		}
-
-		leader = AZZI
-
-		senior_partner = {
-			AZZI
-		}
-
-		junior_partner = {
-			HAJAS
-			URATU
-		}
-
-		laws = {
-			union_foundation_law = union_establish_seniority_policy
-			union_codified_inheritance_law = union_senior_succession_law
-		}
-	}
 }

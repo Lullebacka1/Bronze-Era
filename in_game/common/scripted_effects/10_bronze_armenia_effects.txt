@@ -11,6 +11,48 @@ bronze_armenia_convert_urartian_pops_worldwide = {
 	}
 }
 
+bronze_armenia_create_starting_union = {
+	# Setup files cannot reliably assign Union senior/junior special statuses
+	# directly. Use the vanilla create_union flow at game start instead.
+	if = {
+		limit = {
+			country_exists = c:AZZI
+			country_exists = c:HAJAS
+			country_exists = c:URATU
+			NOT = { has_global_variable = bronze_armenia_starting_union_created }
+		}
+		c:AZZI = {
+			if = {
+				limit = { NOT = { in_union_with = c:HAJAS } }
+				create_union = c:HAJAS
+			}
+			if = {
+				limit = { NOT = { in_union_with = c:URATU } }
+				force_union = c:URATU
+			}
+			set_senior_partner = yes
+			hidden_effect = {
+				union ?= {
+					add_policy_to_international_organization = policy:union_establish_seniority_policy
+					international_organization_add_special_status = {
+						type = special_status:senior_partner
+						country = c:AZZI
+					}
+					international_organization_add_special_status = {
+						type = special_status:junior_partner
+						country = c:HAJAS
+					}
+					international_organization_add_special_status = {
+						type = special_status:junior_partner
+						country = c:URATU
+					}
+				}
+			}
+		}
+		set_global_variable = { name = bronze_armenia_starting_union_created value = 1 }
+	}
+}
+
 bronze_azzi_hayasa_apply_confederation_identity = {
 	change_country_name = AZZI_HAJAS
 	change_country_adjective = AZZI_HAJAS_ADJ
