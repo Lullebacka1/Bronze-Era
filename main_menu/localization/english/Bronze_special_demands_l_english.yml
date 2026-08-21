@@ -1,4 +1,6 @@
 ﻿l_english:
 
-  levantine_silver_crisis: "Silver Scarcity"
+  levantine_silver_crisis: "Disrupted Silver Trade"
   levantine_silver_crisis_desc: "Disrupted trade has made silver scarce across the Levant, driving markets to seek out new sources of the precious metal."
+
+  levantine_silver_crisis_debasement_start: "Silver Alloying Practice"

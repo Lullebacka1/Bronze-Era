@@ -19,3 +19,4 @@
   STATIC_MODIFIER_NAME_tribal_migrations_birth: "Birthplace of $tribal_migrations$"
 
   STATIC_MODIFIER_NAME_levant_silver_debasement_initial_hit: "Disruption in trade with the Aegean"
+  STATIC_MODIFIER_NAME_levant_silver_debasement_trade_customs_disturbed: "Trade customs disturbed"

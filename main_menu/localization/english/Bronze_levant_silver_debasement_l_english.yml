@@ -4,6 +4,8 @@
 
   levant_silver_debasement_participant_text: "Is a Levantine state"
 
+# MYCENAEAN MERCHANTS DEPART
+
   levant_silver_debasement.1.title: "Mycenaean Merchants Are Departing"
   levant_silver_debasement.1.desc: "The Mycenaean merchants no longer desire our trade. They say their god is troubled and has made the Great Sea hostile, sending terrible storms and men who seize ships. Many have taken their goods and returned to their own land; those who still come to our harbour arrive with broken ships and diminished cargo.\n\nWoe to us if this continues. If the way of the sea remains thus, our sons' sons shall no longer taste the oil of the Danuna, nor behold vessels of fine silver brought from across the Great Sea."
 
@@ -13,3 +15,26 @@
   levant_silver_debasement.1.b_tt: "Gather trusted messengers and dispatch them to the courts of dry lands. Let them carry our words, gifts, and requests for renewed friendship and trade."
   levant_silver_debasement.1.c: "So Yam troubles the sea and Baal answers with thunder. Such is the struggle of the gods."
   levant_silver_debasement.1.c_tt: "The gods have their quarrels, and men must endure them until their anger passes. Prepare sacrifices; we shall weather the storm by piety."
+
+# SILVER SHORTAGE
+
+  levant_silver_debasement.11.title.a: "Silver Shortage in Levant"
+
+  levant_silver_debasement.11.desc.a: "Our lands have long profited from trade routes spanning from the western seas to far eastern lands. They brought us exotic drinks and foods, the finest oxen and most aromatic incense, but our people above all prized noble silver—for nothing attests to a man's splendor more than possession of this fairest of metals.\n\nYet now, without access to the distant mines of Aegean, silver is running short, and its value rises swiftly. The scribes grow uneasy, for as silver grows scarce, so too does our hold upon the currency of the realm weaken. Its prestige only grows—but what good is that when the ruler finds himself unable to bestow it upon his favored servants?"
+  levant_silver_debasement.11.desc.b: "Our lands have long profited from trade routes spanning from the western seas to far eastern lands. They brought us exotic drinks and foods, the finest oxen and most aromatic incense, but our people above all prized noble silver—for nothing attests to a man's splendor more than possession of this fairest of metals.\n\nYet now, without access to the distant mines of Aegean, silver is running short, and its value rises swiftly. For generations our fathers have traded with silver by weight, and so do our people still; but now this ancient custom is troubled, as silver grows ever harder to obtain. Its prestige only grows - but what good is that when even the common man finds his silver pieces too precious to part with?"
+  levant_silver_debasement.11.desc.c: "Our lands have long profited from trade routes spanning from the western seas to far eastern lands. They brought us exotic drinks and foods, the finest oxen and most aromatic incense, but our people above all prized noble silver—for nothing attests to a man's splendor more than possession of this fairest of metals.\n\nYet now, without access to the distant mines of Aegean, silver is running short, and its value rises swiftly. Thanks to the foresight of our ruler, the currency of our realm is no longer bound to the fortunes of silver as our fathers bound it, and our coinage remains safe from this disturbance."
+
+  levant_silver_debasement.11.a: "Let the wisdom of our fathers and the favor of the gods guard us from the fortunes of strangers."
+  levant_silver_debasement_11a_tt: "The wisdom of our fathers and the favor of the gods have guarded our realm from the changing fortunes of distant lands. Let strangers suffer the want brought upon them; our own house shall remain secure."
+
+  levant_silver_debasement.11.b: "Let it be proclaimed that a small measure of copper may henceforth be joined with silver."
+  levant_silver_debasement_11b_tt: "Let it be proclaimed throughout the land: henceforth a small measure of copper may be joined to the silver, that the silver of the realm may not fail while the roads to the distant mines are troubled."
+
+  levant_silver_debasement.11.c: "Let the lesser kingdoms grow weak; our storehouses hold silver enough."
+  levant_silver_debasement_11c_tt: "Let no man be troubled by the want of silver. Our storehouses are well supplied, and what is scarce to others remains plentiful in our house. Let the weaker kingdoms contend as they may; their strength will fail before ours."
+
+  levant_silver_debasement.11.d: "Let the people be calm, for we shall not sully noble silver with common metal."
+  levant_silver_debasement_11d_tt: "The scribes speak of unease among the people, yet silver is the noblest of metals, and its honor must not be diminished. We shall not mix the fairest metal with common copper merely because strangers have failed to bring it to our markets."
+
+  levant_silver_debasement.11.e: "Go to those who melt the silver, and tell them to join copper with it."
+  levant_silver_debasement_11e_tt: "Go now to those who melt the silver. Tell them to join copper with it, so that what silver we have may be made to go farther, and the markets of the land shall not be left without it."

@@ -86,8 +86,14 @@ levant_silver_debasement.11 = {
 	}
 
 	category = situation_event
-	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
+	image = "gfx/interface/illustrations/situation/levant_silver_debasement_11.dds"
 	outcome = negative
+
+	# dynamic_historical_event = {
+	# 	from = 5.6.1
+	# 	to = 15.1.1
+	# 	monthly_chance = 15
+	# }
 
 	trigger = {
 		has_variable = levant_silver_debasement_subject_intro_seen
@@ -107,102 +113,229 @@ levant_silver_debasement.11 = {
 		# 	}
 		# }
 
+		# every_market_present_in_country = {
+		# 	add_temporary_demand = {
+		# 		type = demand:levantine_silver_crisis
+		# 		scale_with_pop = 0.005
+		# 		years = 100
+		# 	}
+		# }
+	}
+
+	option = {
+		name = levant_silver_debasement.11.a
+		custom_tooltip = levant_silver_debasement_11a_tt
+
+		trigger = {
+			has_codified_laws = yes
+			has_law = coin_laws
+
+			NOT = {
+						has_policy = commodity_money_policy_jewelry
+						has_policy = bullion_coins
+						has_policy = silver_coins
+						has_policy = gold_and_silver_coins
+					}
+		}
+
 		every_market_present_in_country = {
 			add_temporary_demand = {
 				type = demand:levantine_silver_crisis
 				scale_with_pop = 0.002
-				months = 120
+				years = 100
 			}
 		}
 	}
 
 	option = {
-		name = levant_silver_debasement.11.a
-		custom_tooltip = levant_silver_debasement_11a_tt
-	}
-}
+		name = levant_silver_debasement.11.b
+		custom_tooltip = levant_silver_debasement_11b_tt
 
-levant_silver_debasement.111 = {
-	type = country_event
-	title = {
-		first_valid = {
-
-			triggered_desc = {
-				trigger = {
-					OR = {
+		trigger = {
+			OR = {
 						has_policy = commodity_money_policy_jewelry
 						has_policy = bullion_coins
 						has_policy = silver_coins
 						has_policy = gold_and_silver_coins
 					}
-				}
-
-				desc = levant_silver_debasement.11.title.a
-			}
-
-			triggered_desc = {
-				trigger = {
-					has_codified_laws = no
-				}
-				
-				desc = levant_silver_debasement.11.title.b
-			}
-
-			desc = levant_silver_debasement.11.title.c
 		}
-	}
-	desc = {
-		first_valid = {
 
-			triggered_desc = {
-				trigger = {
-					OR = {
-						has_policy = commodity_money_policy_jewelry
-						has_policy = bullion_coins
-						has_policy = silver_coins
-						has_policy = gold_and_silver_coins
-					}
-				}
-
-				desc = levant_silver_debasement.11.desc.a
+		every_market_present_in_country = {
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis_debasement_start
+				scale_with_pop = 0.002
+				years = 100
 			}
 
-			triggered_desc = {
-				trigger = {
-					has_codified_laws = no
-				}
-				
-				desc = levant_silver_debasement.11.desc.b
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis
+				scale_with_pop = 0.002
+				years = 100
 			}
-
-			desc = levant_silver_debasement.11.desc.c
-		}
-	}
-
-	category = situation_event
-	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
-	outcome = negative
-
-	trigger = {
-		has_variable = levant_silver_debasement_subject_intro_seen
-		levant_silver_debasement_participant = yes
-		current_date = 5.6.1
-	}
-
-	immediate = {
-		ordered_trade = {
-			limit = {
-				goods = goods:silver
-			}
-			set_locked = yes
 		}
 	}
 
 	option = {
-		name = levant_silver_debasement.11.a
-		custom_tooltip = levant_silver_debasement_11a_tt
+		name = levant_silver_debasement.11.c
+		custom_tooltip = levant_silver_debasement_11c_tt
+
+		trigger = {
+			OR = {
+						has_policy = commodity_money_policy_jewelry
+						has_policy = bullion_coins
+						has_policy = silver_coins
+						has_policy = gold_and_silver_coins
+					}
+		}
+
+		every_market_present_in_country = {
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis
+				scale_with_pop = 0.004
+				years = 100
+			}
+		}
+	}
+
+	option = {
+		name = levant_silver_debasement.11.d
+		custom_tooltip = levant_silver_debasement_11d_tt
+
+		trigger = {
+			has_codified_laws = no
+		}
+
+		every_market_present_in_country = {
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis
+				scale_with_pop = 0.002
+				years = 100
+			}
+		}
+
+		add_country_modifier = {
+			modifier = levant_silver_debasement_trade_customs_disturbed
+			years = 5
+			mode = add
+			recalculate_immediately = yes
+		}
+
+	}
+
+	option = {
+		name = levant_silver_debasement.11.e
+		custom_tooltip = levant_silver_debasement_11e_tt
+
+		historical_option = yes
+
+		trigger = {
+			has_codified_laws = no
+		}
+
+		every_market_present_in_country = {
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis
+				scale_with_pop = 0.002
+				years = 100
+			}
+
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis_debasement_start
+				scale_with_pop = 0.001
+				years = 100
+			}
+		}
 	}
 }
+
+# levant_silver_debasement.111 = {
+# 	type = country_event
+# 	title = {
+# 		first_valid = {
+
+# 			triggered_desc = {
+# 				trigger = {
+# 					OR = {
+# 						has_policy = commodity_money_policy_jewelry
+# 						has_policy = bullion_coins
+# 						has_policy = silver_coins
+# 						has_policy = gold_and_silver_coins
+# 					}
+# 				}
+
+# 				desc = levant_silver_debasement.11.title.a
+# 			}
+
+# 			triggered_desc = {
+# 				trigger = {
+# 					has_codified_laws = no
+# 				}
+				
+# 				desc = levant_silver_debasement.11.title.b
+# 			}
+
+# 			desc = levant_silver_debasement.11.title.c
+# 		}
+# 	}
+# 	desc = {
+# 		first_valid = {
+
+# 			triggered_desc = {
+# 				trigger = {
+# 					OR = {
+# 						has_policy = commodity_money_policy_jewelry
+# 						has_policy = bullion_coins
+# 						has_policy = silver_coins
+# 						has_policy = gold_and_silver_coins
+# 					}
+# 				}
+
+# 				desc = levant_silver_debasement.11.desc.a
+# 			}
+
+# 			triggered_desc = {
+# 				trigger = {
+# 					has_codified_laws = no
+# 				}
+				
+# 				desc = levant_silver_debasement.11.desc.b
+# 			}
+
+# 			desc = levant_silver_debasement.11.desc.c
+# 		}
+# 	}
+
+# 	category = situation_event
+# 	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
+# 	outcome = negative
+
+# 	trigger = {
+# 		has_variable = levant_silver_debasement_subject_intro_seen
+# 		levant_silver_debasement_participant = yes
+# 		current_date = 5.6.1
+# 	}
+
+# 	immediate = {
+# 		ordered_trade = {
+# 			limit = {
+# 				goods = goods:silver
+# 			}
+# 			set_locked = yes
+# 		}
+# 	}
+
+# 	option = {
+# 		name = levant_silver_debasement.11.a
+# 		custom_tooltip = levant_silver_debasement_11a_tt
+
+# 		ordered_trade = {
+# 			limit = {
+# 				goods = goods:silver
+# 			}
+# 			set_locked = yes
+# 		}
+# 	}
+# }
 
 # levant_silver_debasement.10 = {
 # 	type = country_event

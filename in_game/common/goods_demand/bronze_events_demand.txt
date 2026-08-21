@@ -4,3 +4,10 @@ levantine_silver_crisis = {
 	hidden = no
 	category = special_demands
 }
+
+levantine_silver_crisis_debasement_start = {
+	copper = 1
+
+	hidden = no
+	category = special_demands
+}
