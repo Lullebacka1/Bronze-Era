@@ -1,0 +1,157 @@
+# Bronze Era - Armenian highland scripted effects.
+
+bronze_armenia_convert_urartian_pops_worldwide = {
+	# One-shot cultural consolidation used only when the Armenian union or
+	# kingdom forms. This is intentionally not a recurring world scan.
+	every_location_in_the_world = {
+		every_pop = {
+			limit = { culture = culture:urartian }
+			change_pop_culture = culture:armenian_culture
+		}
+	}
+}
+
+bronze_armenia_create_starting_union = {
+	# Setup files cannot reliably assign Union senior/junior special statuses
+	# directly. Use the vanilla create_union flow at game start instead.
+	if = {
+		limit = {
+			country_exists = c:AZZI
+			country_exists = c:HAJAS
+			country_exists = c:URATU
+			NOT = { has_global_variable = bronze_armenia_starting_union_created }
+		}
+		c:AZZI = {
+			if = {
+				limit = { NOT = { in_union_with = c:HAJAS } }
+				create_union = c:HAJAS
+			}
+			if = {
+				limit = { NOT = { in_union_with = c:URATU } }
+				force_union = c:URATU
+			}
+			set_senior_partner = yes
+			hidden_effect = {
+				union ?= {
+					add_policy_to_international_organization = policy:union_establish_seniority_policy
+					international_organization_add_special_status = {
+						type = special_status:senior_partner
+						country = c:AZZI
+					}
+					international_organization_add_special_status = {
+						type = special_status:junior_partner
+						country = c:HAJAS
+					}
+					international_organization_add_special_status = {
+						type = special_status:junior_partner
+						country = c:URATU
+					}
+				}
+			}
+		}
+		set_global_variable = { name = bronze_armenia_starting_union_created value = 1 }
+	}
+}
+
+bronze_azzi_hayasa_apply_confederation_identity = {
+	change_country_name = AZZI_HAJAS
+	change_country_adjective = AZZI_HAJAS_ADJ
+	change_country_color = map_AZZI_HAJAS
+	change_culture = culture:armenian_culture
+	change_religion = religion:armenian_pagan
+	hidden_effect = {
+		bronze_armenia_convert_urartian_pops_worldwide = yes
+	}
+	add_accepted_culture = culture:urartian
+	add_accepted_culture = culture:colchian
+	add_accepted_culture = culture:kartvelian
+	set_variable = { name = bronze_azzi_hayasa_unified value = 1 }
+	set_global_variable = { name = bronze_azzi_hayasa_unified value = 1 }
+	add_prestige = prestige_weak_bonus
+	add_legitimacy = legitimacy_weak_bonus
+	add_country_modifier = {
+		modifier = bronze_azzi_hayasa_confederation
+		years = 25
+		mode = add_and_extend
+	}
+}
+
+bronze_azzi_hayasa_integrate_union_partner = {
+	save_scope_as = bronze_armenian_union_senior
+	add_gold = -100
+
+	if = {
+		limit = {
+			NOT = { tag = AZZI }
+			c:AZZI ?= { in_union_with = scope:bronze_armenian_union_senior }
+		}
+		annex_country = { country = c:AZZI reason = Diplomatic }
+	}
+	if = {
+		limit = {
+			NOT = { tag = HAJAS }
+			c:HAJAS ?= { in_union_with = scope:bronze_armenian_union_senior }
+		}
+		annex_country = { country = c:HAJAS reason = Diplomatic }
+	}
+	if = {
+		limit = {
+			NOT = { tag = URATU }
+			c:URATU ?= { in_union_with = scope:bronze_armenian_union_senior }
+		}
+		annex_country = { country = c:URATU reason = Diplomatic }
+	}
+
+	bronze_azzi_hayasa_apply_confederation_identity = yes
+	custom_tooltip = bronze_azzi_hayasa_unify_tt
+}
+
+bronze_yerevan_foundation_create_city = {
+	set_global_variable = { name = bronze_yerevan_foundation_resolved value = 1 }
+	remove_global_variable = bronze_yerevan_foundation_event_pending
+	add_gold = -200
+	change_country_name = ARM
+	change_country_adjective = ARM_ADJ
+	change_country_color = map_BA_ARM
+	change_culture = culture:armenian_culture
+	change_religion = religion:armenian_pagan
+	add_accepted_culture = culture:urartian
+	add_accepted_culture = culture:colchian
+	add_accepted_culture = culture:kartvelian
+	add_stability = 10
+	add_legitimacy = 20
+	add_prestige = 20
+	set_variable = { name = bronze_yerevan_armenia_name value = 1 }
+
+	location:yerevan = {
+		change_location_rank_effect = { location_rank = location_rank:city }
+		set_variable = { name = bronze_yerevan_foundation_site value = 1 years = 50 }
+		add_location_modifier = {
+			modifier = bronze_yerevan_foundation_site
+			years = 30
+			mode = add_and_extend
+		}
+		change_prosperity = prosperity_mild_bonus
+		change_development = development_weak_bonus
+		change_control = control_mild_bonus
+		if = {
+			limit = { NOT = { has_building = building_type:bronze_city_walls } }
+			change_building_level_in_location = {
+				building = building_type:bronze_city_walls
+				value = 1
+			}
+		}
+		if = {
+			limit = { NOT = { has_building = building_type:bronze_age_palatial_complex } }
+			change_building_level_in_location = {
+				building = building_type:bronze_age_palatial_complex
+				value = 1
+			}
+		}
+		if = {
+			limit = { bronze_city_prestige_is_urban = yes }
+			bronze_city_prestige_initialize_city = yes
+			bronze_city_prestige_recalculate_city = yes
+		}
+	}
+}

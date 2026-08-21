@@ -1,0 +1,72 @@
+bronze_azzi_hayasa_unify_confederation = {
+	icon = steppe_horde_to_monarchy
+	type = owncountry
+	show_message = yes
+	ai_tick = monthly
+	ai_tick_frequency = 24
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	cooldown = {
+		type = bronze_azzi_hayasa_unify_confederation
+		years = 100
+	}
+
+	potential = {
+		scope:actor = {
+			OR = {
+				tag = AZZI
+				tag = HAJAS
+				tag = URATU
+			}
+			exists = union
+			union ?= {
+				country_is_senior_partner = { country = scope:actor }
+			}
+			NOT = { has_global_variable = bronze_azzi_hayasa_unified }
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			at_war = no
+			is_subject = no
+			is_during_bankruptcy = no
+			gold >= 100
+			prestige >= 5
+			OR = {
+				AND = {
+					NOT = { tag = AZZI }
+					c:AZZI ?= {
+						in_union_with = scope:actor
+						at_war = no
+					}
+				}
+				AND = {
+					NOT = { tag = HAJAS }
+					c:HAJAS ?= {
+						in_union_with = scope:actor
+						at_war = no
+					}
+				}
+				AND = {
+					NOT = { tag = URATU }
+					c:URATU ?= {
+						in_union_with = scope:actor
+						at_war = no
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			bronze_azzi_hayasa_integrate_union_partner = yes
+		}
+	}
+
+	ai_will_do = {
+		value = 500
+	}
+}

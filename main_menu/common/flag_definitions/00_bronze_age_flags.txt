@@ -237,3 +237,7 @@ TABAL = { flag_definition = { coa = bronze_age_TABAL_coa priority = 10000 } }
 KAMMA = { flag_definition = { coa = bronze_age_KAMMA_coa priority = 10000 } }
 PHRYG = { flag_definition = { coa = bronze_age_PHRYG_coa priority = 10000 } }
 LUWIY = { flag_definition = { coa = bronze_age_LUWIY_coa priority = 10000 } }
+
+SINAI = { # Sinai Tribes, created by Egypt's final Sea Peoples crisis decision.
+	flag_definition = { coa = bronze_age_SINAI_coa priority = 10000 }
+}

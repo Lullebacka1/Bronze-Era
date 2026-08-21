@@ -3813,10 +3813,10 @@ lateralview = {
 													text_single = { text = "BRONZE_CITY_PRESTIGE_RANK_NEIGHBORS" default_format = "#yellow_titles" }
 													hbox = {
 														spacing = 8
-														text_single = { size = { 110 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_POSITION" default_format = "#subtle" }
-														text_single = { size = { 185 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_CITY" default_format = "#subtle" }
-														text_single = { size = { 45 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_SCORE" default_format = "#subtle" }
-														text_single = { size = { 45 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_GAP" default_format = "#subtle" }
+														text_single = { size = { 110 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_POSITION" default_format = "#subtle_name" }
+														text_single = { size = { 185 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_CITY" default_format = "#subtle_name" }
+														text_single = { size = { 45 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_SCORE" default_format = "#subtle_name" }
+														text_single = { size = { 45 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_GAP" default_format = "#subtle_name" }
 													}
 													hbox = {
 														visible = "[Location.MakeScope.GetVariable('bronze_city_prestige_closest_higher_city').IsSet]"
@@ -3853,8 +3853,8 @@ lateralview = {
 													text_single = { text = "BRONZE_CITY_PRESTIGE_SCORE_BREAKDOWN" default_format = "#yellow_titles" }
 													hbox = {
 														spacing = 8
-														text_single = { size = { 300 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_SOURCE" default_format = "#subtle" }
-														text_single = { size = { 55 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_POINTS" default_format = "#subtle" }
+														text_single = { size = { 300 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_SOURCE" default_format = "#subtle_name" }
+														text_single = { size = { 55 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_POINTS" default_format = "#subtle_name" }
 													}
 													hbox = {
 														visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_rank_score').GetValue, '(CFixedPoint)0')]"
@@ -3895,7 +3895,7 @@ lateralview = {
 													spacing = 3
 
 													text_single = { text = "BRONZE_CITY_PRESTIGE_BUILDING_SCORE_BREAKDOWN" default_format = "#yellow_titles" }
-													hbox = { spacing = 8 text_single = { size = { 300 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_SOURCE" default_format = "#subtle" } text_single = { size = { 55 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_POINTS" default_format = "#subtle" } }
+													hbox = { spacing = 8 text_single = { size = { 300 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_SOURCE" default_format = "#subtle_name" } text_single = { size = { 55 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_TABLE_POINTS" default_format = "#subtle_name" } }
 													hbox = { visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_market_village_score').GetValue, '(CFixedPoint)0')]" spacing = 8 text_single = { size = { 300 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_BUILDING_MARKET_VILLAGE" tooltip = "BRONZE_CITY_PRESTIGE_BUILDING_MARKET_VILLAGE" } text_single = { size = { 55 20 } autoresize = no text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_market_village_score').GetValue|0]" default_format = "#P" } }
 													hbox = { visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_marketplace_score').GetValue, '(CFixedPoint)0')]" spacing = 8 text_single = { size = { 300 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_BUILDING_MARKETPLACE" tooltip = "BRONZE_CITY_PRESTIGE_BUILDING_MARKETPLACE" } text_single = { size = { 55 20 } autoresize = no text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_marketplace_score').GetValue|0]" default_format = "#P" } }
 													hbox = { visible = "[GreaterThan_CFixedPoint(Location.MakeScope.GetVariable('bronze_city_prestige_building_entrepot_score').GetValue, '(CFixedPoint)0')]" spacing = 8 text_single = { size = { 300 20 } autoresize = no text = "BRONZE_CITY_PRESTIGE_BUILDING_ENTREPOT" tooltip = "BRONZE_CITY_PRESTIGE_BUILDING_ENTREPOT" } text_single = { size = { 55 20 } autoresize = no text = "[Location.MakeScope.GetVariable('bronze_city_prestige_building_entrepot_score').GetValue|0]" default_format = "#P" } }
@@ -4081,6 +4081,8 @@ lateralview = {
 							# Ruins Exploration GUI for this location.
 							card_header_button_04 = {
 								size = { 36 36 }
+								# Keep ruins access visible when a rebuilt city also shows City Prestige.
+								position = { 0 -38 }
 								datacontext = "[LocationView.GetLocation]"
 								visible = "[Location.MakeScope.GetVariable('bronze_ancient_ruins').IsSet]"
 								onclick = "[PdxGuiWidget.ToggleContextMenu]"

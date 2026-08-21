@@ -1,0 +1,28 @@
+on_game_start = {
+	on_actions = {
+		bronze_armenia_union_game_start
+	}
+}
+
+monthly_country_pulse = {
+	on_actions = {
+		bronze_armenia_union_repair_monthly_pulse
+	}
+}
+
+bronze_armenia_union_game_start = {
+	effect = {
+		bronze_armenia_create_starting_union = yes
+	}
+}
+
+bronze_armenia_union_repair_monthly_pulse = {
+	trigger = {
+		tag = AZZI
+		NOT = { has_global_variable = bronze_armenia_starting_union_created }
+	}
+
+	effect = {
+		bronze_armenia_create_starting_union = yes
+	}
+}

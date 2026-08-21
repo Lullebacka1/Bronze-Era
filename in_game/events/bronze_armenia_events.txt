@@ -1,0 +1,24 @@
+namespace = bronze_armenia
+
+bronze_armenia.1 = {
+	type = country_event
+	title = bronze_armenia.1.title
+	desc = bronze_armenia.1.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/_default.dds"
+	outcome = positive
+	major = yes
+	orphan = yes
+
+	trigger = {
+		is_human = yes
+		bronze_yerevan_foundation_candidate = yes
+	}
+
+	option = {
+		name = bronze_armenia.1.a
+		trigger = { gold >= 200 }
+		custom_tooltip = bronze_yerevan_foundation_1a_tt
+		bronze_yerevan_foundation_create_city = yes
+	}
+}

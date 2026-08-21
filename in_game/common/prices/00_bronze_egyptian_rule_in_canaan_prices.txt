@@ -1,6 +1,6 @@
 egyptian_rule_reinforce_canaanite_garrisons_price = {
 	scaled_gold = 1.0
-	scaled_manpower = 0.08
+	scaled_manpower = 8.0
 	government_power = 15
 	stability = 5
 }

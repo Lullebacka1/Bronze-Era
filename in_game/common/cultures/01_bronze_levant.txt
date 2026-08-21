@@ -88,3 +88,11 @@ aramaean = {
 		levant_bronze_group
 	}
 }
+
+hebrew = {
+	culture_groups = { levant_bronze_group }
+	language = hebrew_bronze_language
+	color = rgb { 109 179 223 }
+	opinions = {
+	}
+}

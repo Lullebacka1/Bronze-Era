@@ -802,7 +802,6 @@ bronze_city_prestige_update_world_ranking = {
 	# Second local-list pass: assign the unique positions 1, 2, 3, ...
 	set_variable = { name = bronze_city_prestige_ranking_counter value = 0 }
 	remove_variable = bronze_city_prestige_previous_ranked_city
-	remove_variable = bronze_city_prestige_previous_ranked_score
 
 	ordered_in_list = {
 		variable = bronze_city_prestige_ranking_pool
@@ -834,44 +833,10 @@ bronze_city_prestige_update_world_ranking = {
 		remove_variable = bronze_city_prestige_score_gap_higher
 		remove_variable = bronze_city_prestige_score_gap_lower
 
-		if = {
-			limit = {
-				root = { has_variable = bronze_city_prestige_previous_ranked_city }
-			}
-			root = {
-				var:bronze_city_prestige_previous_ranked_city ?= {
-					save_scope_as = bronze_city_prestige_previous_ranked_city_scope
-				}
-			}
-			if = {
-				limit = {
-					exists = scope:bronze_city_prestige_previous_ranked_city_scope
-					root = { has_variable = bronze_city_prestige_previous_ranked_score }
-				}
-				set_variable = {
-					name = bronze_city_prestige_closest_higher_city
-					value = scope:bronze_city_prestige_previous_ranked_city_scope
-				}
-				set_variable = {
-					name = bronze_city_prestige_closest_higher_score
-					value = root.var:bronze_city_prestige_previous_ranked_score
-				}
-				set_variable = {
-					name = bronze_city_prestige_score_gap_higher
-					value = root.var:bronze_city_prestige_previous_ranked_score
-				}
-				change_variable = {
-					name = bronze_city_prestige_score_gap_higher
-					subtract = var:bronze_city_prestige_score
-				}
-				# Do not write reverse neighbor data onto the previous city here.
-				# After long campaigns a previous ranked city can become stale while
-				# razing/ownership changes rebuild the ranking pool, and cross-reading
-				# the current city's score from that stale scope can produce "none"
-				# script values. The ranking and current city's higher-neighbor tooltip
-				# remain valid without this optional reverse-link data.
-			}
-		}
+		# Neighbor rows are cosmetic tooltip data. They are deliberately not
+		# rebuilt here because stale city scopes after razing/ownership changes can
+		# feed "none" values into set_variable and spam script errors. World rank,
+		# rank tier, owner rewards and the ledger do not depend on these rows.
 
 		set_variable = {
 			name = bronze_city_prestige_global_rank
@@ -1001,16 +966,11 @@ bronze_city_prestige_update_world_ranking = {
 				name = bronze_city_prestige_previous_ranked_city
 				value = scope:bronze_city_prestige_current_ranked_city
 			}
-			set_variable = {
-				name = bronze_city_prestige_previous_ranked_score
-				value = scope:bronze_city_prestige_current_ranked_city.var:bronze_city_prestige_score
-			}
 		}
 	}
 
 	clear_variable_list = bronze_city_prestige_ranking_pool
 	remove_variable = bronze_city_prestige_previous_ranked_city
-	remove_variable = bronze_city_prestige_previous_ranked_score
 
 	every_country = {
 		limit = { is_real_country = yes }

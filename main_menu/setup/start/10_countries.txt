@@ -1936,7 +1936,7 @@ countries = {
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { urartian }
+		accepted_cultures = { urartian armenian_culture }
 		tolerated_cultures = {  }
 		discovered_regions = {
 			anatolia_region caucasus_region
@@ -4632,7 +4632,7 @@ countries = {
 		government = {
 			ruler = random
 		}
-		accepted_cultures = { colchian }
+		accepted_cultures = { colchian armenian_culture }
 		tolerated_cultures = {  }
 		discovered_regions = {
 			anatolia_region caucasus_region
@@ -4971,9 +4971,9 @@ countries = {
 			ruler = random
 		}
 
-		own_control_core = {
-			babadag constanta enisala pangalia
-		}
+	own_control_core = {
+		babadag    constanta  enisala    pangalia   tulcea
+	}
 		accepted_cultures = { tei ezero }
 		tolerated_cultures = {  }
 		discovered_regions = {
@@ -9565,7 +9565,7 @@ countries = {
 			amberd bayazit bjni gladzor igdir kagizman karakilise khor_virap
 			maku malazgirt siah_cheshmeh sotk surmali tutak yerevan
 		}
-		accepted_cultures = { urartian gutian }
+		accepted_cultures = { urartian gutian armenian_culture }
 		tolerated_cultures = {  }
 		discovered_regions = {
 			caucasus_region persia_region
@@ -10513,11 +10513,11 @@ countries = {
 	}
 	##DHOLAVIRA
 	DHOLA = {
-		capital = kantha
-		culture = harappan
-		religion = harappan
+	capital = kantha
+	culture = harappan
+	religion = harappan
 
-		country_rank = rank_county
+	country_rank = rank_county
 
 		include = "bronze_india"
 
@@ -10528,11 +10528,20 @@ countries = {
 		own_control_core = {
 			kantha kapilkot lakhiyarvira lakhpat
 		}
-		accepted_cultures = { hindu harappan vedic }
-		tolerated_cultures = { harappan vedic dravidian gandharan }
-			discovered_regions = {
-				india_region persia_region
-			}
+	accepted_cultures = {
+		harappan
+		hindu
+		vedic
+	}
+	tolerated_cultures = {
+		dravidian
+		gandharan
+		harappan
+		vedic
+	}
+	discovered_regions = {
+		western_india_region
+	}
 	}
 	##GANWERIWALA
 	GANWE = {
@@ -10819,16 +10828,19 @@ countries = {
 			ruler = random
 		}
 
-		own_control_core = {
-			al_jeblien arbaji branko dongola ed_damer ed_debba el_manaqil el_metemma
-			karima korti omdurman qerri quz_rajab shemkhiya shendi soba
-			waylula
-		}
+	own_control_core = {
+		al_jeblien  alays       arbaji      branko      dabarqi     dongola
+		ed_damer    ed_debba    el_eleila   el_gadarif  el_manaqil  el_metemma
+		karima      karkuj      korti       omdurman    qerri       quz_rajab
+		renk        sennar      shemkhiya   shendi      singa       soba
+		wad_madani  waylula
+	}
 		accepted_cultures = { nubian }
 		tolerated_cultures = { medjay egyptian berber }
 			discovered_regions = {
-				egypt_region
+				egypt_region nubia_region 
 			}
+			
 	}
 	##PATHANI DAMB
 	PATHA = {
@@ -11822,18 +11834,23 @@ countries = {
 		culture = shang
 		religion = shang_rites
 		country_rank = rank_kingdom
-		own_control_core = {
-			baima_daming         changge              changshe             changyuan            chaocheng            dancheng
-			dengfeng             dongming             fanxian              fengqiu              fugou                gongxian
-			guancheng_zhengzhou  jiyin                juancheng            kaifeng              kaocheng             lanyang
-			linying              luoyang              mengjin              mianchi              mixian               nanle
-			neihuang             puyang               qingfeng             qixian               shanxian             shouzhang
-			taikang              tongxu               wanqiu               weishi               wuzhi                xiangyi
-			xihua                xinan                xingyang             xinxiang             xinzheng             xucheng
-			yangdi               yanggu_yanzhou       yanjin               yanling              yanshi               yique
-			yiyang               yongning_shanzhou    yuanyang             yuncheng             zhongmu
-			anyang
-		}
+	own_control_core = {
+		anyang               baima_daming         baofeng              changge              changqing            changshe
+		changyuan            chaocheng            chiping              dancheng             dengfeng             donge
+		dongming             fancheng             fangcheng            fanxian              feicheng             fengqiu
+		fugou                gongxian             guancheng_zhengzhou  jiaxian              jixian               jiyang
+		jiyin                juancheng            kaifeng              kaocheng             lanyang              liangxian_ruzhou
+		licheng              linying              luanchuan            luoyang              lushan               lushi
+		mengjin              mianchi              mixian               nanle                nanyang              nanzhao
+		neihuang             pingyin              puyang               qihe                 qingfeng             qixian
+		qizhou               shangcai             shangshui            shanxian             shouzhang            songzhou_songzhou
+		taikang              tangyin              tongxu               wanqiu               weishi               wuyang
+		wuzhi                xiangcheng_kaifeng   xiangyang            xiangyi              xihua                xinan
+		xingyang             xinxiang             xinye                xinzheng             xiping               xucheng
+		xunxian              yancheng_kaifeng     yangdi               yanggu_yanzhou       yanjin               yanling
+		yanshi               yaoshan              yexian               yicheng              yique                yiyang
+		yiyang_songzhou      yongning_shanzhou    yuanyang             yuncheng             zhangqiu             zhongmu
+	}
 		capital = luoyang
 		include = "bronze_china_korea"
 		government = {
@@ -12121,9 +12138,10 @@ countries = {
 		culture = shang
 		religion = shang_rites
 		country_rank = rank_county
-		own_control_core = {
-			guancheng  liaocheng  shenxian   tangyi     weixian    yuancheng
-		}
+	own_control_core = {
+		guancheng  guantao    liaocheng  linqing    shenxian   tangyi
+		weixian    yuancheng
+	}
 		capital = yuancheng
 		include = "bronze_china_korea"
 		government = {
@@ -12202,10 +12220,9 @@ countries = {
 		culture = baiyue
 		religion = baiyue_rites
 		country_rank = rank_county
-		own_control_core = {
-			chaoxian          hanshan           hezhou_he         liangxian         quanjiao          wujiang_yingtian
-			wuwei
-		}
+	own_control_core = {
+		chaoxian          hanshan           hezhou_he         quanjiao          wujiang_yingtian  wuwei
+	}
 		capital = chaoxian
 		include = "bronze_china_korea"
 		government = {
@@ -37591,11 +37608,11 @@ VC001 = {
 		culture = zhou
 		religion = zhou_rites
 		country_rank = rank_county
-		own_control_core = {
-			baoji               chengji             fengxiang           fufeng              fuqiang             linyou
-			longan              longzhou_fengxiang  meixian             qianyang            qianzhou            qinan
-			qingshui            qishan              sancha              yongshou
-		}
+	own_control_core = {
+		baoji               chengji             fengxiang           fufeng              fuqiang             linyou
+		longan              longzhou_fengxiang  meixian             qianyang            qianzhou            qinan
+		qingshui            qishan              sancha              yongshou            zhouzhi
+	}
 		capital = chengji
 		include = "bronze_china_korea"
 		government = {
@@ -37876,6 +37893,1199 @@ VC001 = {
 		}
 		discovered_regions = {
 			crescent_region
+		}
+	}
+
+	DAIM = {
+		culture = Salvada
+		religion = vedic
+		country_rank = rank_county
+		own_control_core = {
+			ahmednagar    bir           chakan        chambargonda  junnar        pune
+			sinnar
+		}
+		capital = ahmednagar
+		include = "neolithic_asian"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Salvada
+		}
+		discovered_regions = {
+			deccan_region
+		}
+	}
+
+	BAODE = {
+		culture = zhou
+		religion = zhou_rites
+		country_rank = rank_county
+		own_control_core = {
+			hequ         piantouguan  wuzhou
+		}
+		capital = hequ
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			zhou
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	CHAN = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			hengshan  liling    liuyang   lukou     qiaokou   xiangtan
+		}
+		capital = hengshan
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	CHEN = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			nandun      shenqiu     taihe       xiangcheng
+		}
+		capital = nandun
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+			north_china_region
+		}
+	}
+
+	DANG = {
+		culture = zhou
+		religion = zhou_rites
+		country_rank = rank_county
+		own_control_core = {
+			jiangxian  quwo       wenxi      xiaxian    yuanqu     zhengping
+		}
+		capital = jiangxian
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			zhou
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	DONG = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			deping     dongguang  laoling    nanpi      ningjin    qingyun
+			shanghe    wudi       wuqiao     yangxin    yanshan    zhanhua
+		}
+		capital = shanghe
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	FEIX = {
+		culture = baiyue
+		religion = baiyue_rites
+		country_rank = rank_county
+		own_control_core = {
+			hefei      huoqiu     liangxian  luan       shouchun   shuihu
+		}
+		capital = hefei
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			baiyue
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	FUAN = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			biyang      gucheng_xi  lutoudian   minggang    pingyu      qingtai
+			queshan     ruyang      suiping     tanghe      tongbai     xincai
+			xizhou      zhenyang
+		}
+		capital = tanghe
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+			north_china_region
+		}
+	}
+
+	GUANG = {
+		culture = zhou
+		religion = zhou_rites
+		country_rank = rank_county
+		own_control_core = {
+			heshun           jiaocheng        leping_pingding  liaoshan         luchuan          pingding
+			pingjin          qixian_taiyuan   shouyang         taigu            wenshui          xugou
+			yangqu           yuci             yushe            yuzhou
+		}
+		capital = pingjin
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			zhou
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	GUI = {
+		culture = zhou
+		religion = zhou_rites
+		country_rank = rank_county
+		own_control_core = {
+			anbian             anding             ansai              baimachen          baoan              dingbian
+			dingrong           fushi              ganquan            huachi             huaiyuan_mizhi     huanzhou_qingyang
+			jingbian           mizhi              qingjian           suide              yanchang           yanchi
+			yanchuan
+		}
+		capital = yanchi
+		include = "Neolithic_china"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			zhou
+		}
+		discovered_regions = {
+			west_china_region
+		}
+	}
+
+	HENAN = {
+		culture = baiyue
+		religion = baiyue_rites
+		country_rank = rank_duchy
+		own_control_core = {
+			anlu              changtan          dingcheng         gaocheng_suizhou  guangshan         gushi
+			huangan           huanggang         huangpi           huoshan           lishan_xinyang    luoshan
+			luotian           mabu              macheng           meiqiu            qishui            shangcheng
+			suixian           tangcheng         xiaogan           xinyang           yingshan          yingshan_luan
+			yunmeng           zaoyang           zhugao
+		}
+		capital = anlu
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			baiyue
+		}
+		discovered_regions = {
+			east_china_region
+			north_china_region
+		}
+	}
+
+	HUAI = {
+		culture = baiyue
+		religion = baiyue_rites
+		country_rank = rank_county
+		own_control_core = {
+			dingyuan_fengyang  laian              luhe               qingliu_chuzhou    shangyuan          tianchang
+			yangzi
+		}
+		capital = shangyuan
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			baiyue
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	HUO = {
+		culture = zhou
+		religion = zhou_rites
+		country_rank = rank_county
+		own_control_core = {
+			duanshi           gaoping           henei             huixian           jincheng_zezhou   jiyuan
+			lingchuan_zezhou  qinshui           wenxian           xiuwu             yangcheng
+		}
+		capital = jiyuan
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+			zhou
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	LINZI = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			anqiu          beihai         changle        changyi        linqu          shouguang
+			yidu_qingzhou
+		}
+		capital = changle
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	LOLO = {
+		culture = baiyue
+		religion = baiyue_rites
+		country_rank = rank_county
+		own_control_core = {
+			anyi                 baling               changsha             changshou_pingjiang  chongyang            daye
+			dean                 dehua_jiujiang       fengxin              fenning              jianchang            jingan
+			linxiang             pingjiang            puqi                 ruichang             tongcheng_wuchang    tonggu
+			tongshan             wanzai               wuning               xiangyin             xianning             xinchang_yifeng
+			xingzi               xinjian              yongan_youzhou       yongxing_xingguo
+		}
+		capital = baling
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			baiyue
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	PENG = {
+		culture = zhou
+		religion = zhou_rites
+		country_rank = rank_county
+		own_control_core = {
+			anhua              fucheng            fuzhou_yanan       hancheng           heshui             jingchuan
+			lingtai            luochuan           ningzhou           sanshui_binzhou    xinping            yichuan
+			yijun              zhenning_qingyang  zhenyuan           zhongbu
+		}
+		capital = anhua
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			zhou
+		}
+		discovered_regions = {
+			west_china_region
+		}
+	}
+
+	PI = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			boye             dacheng          dagu             gaoyang_baoding  gecheng          guixin
+			hejian           huichuan         jinghai          liguo            qingchi          renqiu
+			suning           wenan            yijin            zhigu
+		}
+		capital = dagu
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	QUAN = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			anyuan         datong_xining  didao          dingqiang      gulang         gushan
+			haomen         lanzhou        lutang         nianbo         xiliang        xining
+			zhuanglang
+		}
+		capital = dingqiang
+		include = "Neolithic_china"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			west_china_region
+		}
+	}
+
+	REN = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			dingxi             huizhou_gongchang  jingning           kangu              longde             longxi_gongchang
+			sanchuan           shuiluo            tongwei
+		}
+		capital = huizhou_gongchang
+		include = "Neolithic_china"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			west_china_region
+		}
+	}
+
+	WANG = {
+		culture = zhou
+		religion = zhou_rites
+		country_rank = rank_county
+		own_control_core = {
+			daning             fenxi              fushan             hongtong           huoyi              jizhou
+			linfen             lingshi            puxian             shilou             taiping_jiangzhou  wenquan
+			xiangning          xichuan_xizhou     yicheng_pingyang   yonghe
+		}
+		capital = fushan
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			zhou
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	WEI = {
+		culture = upper_palatine
+		religion = catholic
+		country_rank = rank_county
+		capital = weissenburg
+		include = "expl_western_europe"
+		government = {
+			ruler = random
+		}
+		tolerated_cultures = {
+			danube_bavarian
+		}
+	}
+
+	WEI1 = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			dangshan         luyi             ningling         suiyang_guide    xiayi            yucheng_kaifeng
+			zhecheng
+		}
+		capital = suiyang_guide
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+			north_china_region
+		}
+	}
+
+	WEI2 = {
+		culture = zhou
+		religion = zhou_rites
+		country_rank = rank_county
+		own_control_core = {
+			hedong    hejin     jishan    lingbao   linjin    pinglu
+			ruicheng  wanquan   wenxiang  xiexian
+		}
+		capital = lingbao
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			zhou
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	WU = {
+		culture = wu_culture
+		religion = wu_religion
+		country_rank = rank_county
+		own_control_core = {
+			anji             changshu         changxing        chongming        dangtu           dantu
+			danyang          fanchang         guangde          jiading          jiangning        jiangyin
+			jianping         jingde           jingxian         jintan           jurong           kunshan
+			lishui_yingtian  liyang           nanling          ningguo          qingyang         taiping_ningguo
+			tongling         wuhu             wujiang          wujin            wuxi             wuxian
+			wuxing           xuancheng        yixing
+		}
+		capital = dantu
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			wu_culture
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	XANG = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			ande              anping            enzhou            fucheng_hejian    gaotang           gucheng_jingzhou
+			hengshui          jiaohe            jingan_shenzhou   leshou            lingzhou_dezhou   linyi_jinan
+			mingshui          nangong           pingyuan_jinan    qinghe            tiaoxian          wuyi
+			xiajin            xindu_jizhou      yucheng           zaoqiang
+		}
+		capital = ande
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	XUYI = {
+		culture = baiyue
+		religion = baiyue_rites
+		country_rank = rank_county
+		own_control_core = {
+			baoying           funing_huaian     gaoyou            hailing           haimen            jiangdu
+			jinghai_tongzhou  juegang           rugao             shanyang_huaian   taixing           xinghua
+			xixi              yancheng
+		}
+		capital = taixing
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			baiyue
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	YANJ = {
+		culture = zhou
+		religion = zhou_rites
+		country_rank = rank_county
+		own_control_core = {
+			daizhou            dingxiang          guozhou            hunyuan            jianzhou_daizhou   jincheng
+			jingle             ninghua            shanyang_yingzhou  shanyin            shenwu             taizhou
+			xiurong            zhongling
+		}
+		capital = daizhou
+		include = "Neolithic_china"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			zhou
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	YONG = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_duchy
+		own_control_core = {
+			guzhen          hongxian        huaiyuan        lingbi          linhuai         mengcheng
+			suining_pizhou  wuhe            xiacai          xuyi            yingshang       yingshui
+			yingzhou        zhaoxin         zhongli
+		}
+		capital = huaiyuan
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+		}
+	}
+
+	YUWA = {
+		culture = zhou
+		religion = zhou_rites
+		country_rank = rank_county
+		own_control_core = {
+			huguan         jishi_anze     licheng_luan   linzhou        lucheng_luan   qingyang_luan
+			qinyuan        shangdang      tongdi         tunliu         wuxiang        xiangyuan
+			yueyang_anze   zhangzi
+		}
+		capital = yueyang_anze
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+			zhou
+		}
+		discovered_regions = {
+			north_china_region
+		}
+	}
+
+	LUHUN = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			huayuantou  luonan      neixiang    qianyou     sanyao      shangluo
+			shangnan    shangzhou   shanyang    xichuan     xixia       zhenan
+			zhenping    zhuyang
+		}
+		capital = huayuantou
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			north_china_region
+			west_china_region
+		}
+	}
+
+	RONG = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			guanghua   gucheng    huanglong  rangxian   shangjin   shunyang
+			wudang     yun        yunxi
+		}
+		capital = rangxian
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+			north_china_region
+		}
+	}
+
+	CHAOG = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			chengfu          linhuan          qiaoxian         suzhou_fengyang  xiaoxian         yongcheng
+		}
+		capital = qiaoxian
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+			north_china_region
+		}
+	}
+
+	CAOR = {
+		culture = shang
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			feixian         gaoqiao         lanling         licheng_yizhou  linyi           mengyin
+			qufu            sishui          tancheng        tengdong        tengxian        xintai
+			zouxian
+		}
+		capital = feixian
+		include = "bronze_china_korea"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shang
+		}
+		discovered_regions = {
+			east_china_region
+			north_china_region
+		}
+	}
+
+	DAHAE = {
+		culture = andronovo
+		religion = scythian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			hazarasp   kath       khiva      kyat_kala  nyzvar     orta_kuyu
+			urgench    vezir      xojeli
+		}
+		capital = kath
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			andronovo
+		}
+		discovered_regions = {
+			khorasan_region
+		}
+	}
+
+	ELOV = {
+		culture = elovka
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			bolshoy_balyk  bolshoy_yugan  kargasok       kolpashevo     megion         molchanovo
+			surgut         upper_ob       vasyugan
+		}
+		capital = bolshoy_balyk
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			elovka
+		}
+		discovered_regions = {
+			west_siberia_region
+		}
+	}
+
+	GUIF = {
+		culture = tevsh
+		religion = shang_rites
+		country_rank = rank_county
+		own_control_core = {
+			aerzhai            bayankhot          dingyuan_lingzhou  fugu               hebin              jiazhou
+			kaiguang           lingwu             lingzhou           mingsha            ningbian           ningxia
+			ordos              otog               shenmu             tongwancheng       yulin
+		}
+		capital = ningxia
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			tevsh
+		}
+		discovered_regions = {
+			mongolia_region
+			north_china_region
+			west_china_region
+		}
+	}
+
+	IRM = {
+		culture = irmen
+		religion = steppe_pagan
+		country_rank = rank_duchy
+		own_control_core = {
+			abakasnk          altayskoye        askiz             barnaul           berdsk            beya
+			biysk             bolotnye          bursol            butyrskoe         chesnokovka       dovolnoye
+			gorkovskoye       imakia            kainsky_pas       kalmanka          kamen             kargat
+			kolchugino        kozhevnikovo      krivoshchekovo    kuchukskoye       kuznetsk          kyshtovka
+			kytmanovo         lebyazhye         mayma             melnikovo         muromtsevo        okoneshnikovo
+			omsk              salair            sartlan           shish             smolenskoye       suzun
+			taskayevo         tatarskaya_tesyu  ust_kabyrza       ust_kalmanka      volchikha         zhelezin
+		}
+		capital = lebyazhye
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			irmen
+		}
+		discovered_regions = {
+			west_siberia_region
+		}
+	}
+
+	KARA = {
+		culture = karasuk
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			aban           belya          bii            biryusa        boguchany      bratsk
+			chadobets      choigan        chunoyar       chuva          dzerzhinskoye  educhanka
+			idrinskoye     ilansky        irkineieva     kamenka        kansk          kezhma
+			kortuz         krasnoyarsk    lower_angara   manzaya        minusinsk      nizhneudinsk
+			pashino        shushenskoye   systyg         taseyevo       tayga          tsentral
+			ulug           upper_angara   usun           yarkino
+		}
+		capital = dzaigil
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			saka
+		}
+		discovered_regions = {
+			mongolia_region
+			west_siberia_region
+		}
+	}
+
+	MASS = {
+		culture = andronovo
+		religion = scythian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			beket_ata            beki                 beleuli              kabakty              karatobe_mangyshlak  kenderli_kayasan
+			ketik_kala           khurgancha           koshkar_ata          kyushe               kyzylkala            masat_ata
+			pulzhai              qonirat              sam                  shimbay              shuruk               sisem_ata
+			temir_baba           uchkuduk
+		}
+		capital = beket_ata
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			andronovo
+		}
+		discovered_regions = {
+			khorasan_region
+		}
+	}
+
+	SAKH = {
+		culture = saka
+		religion = saka_pagan
+		country_rank = rank_county
+		own_control_core = {
+			almaliq       almaty        charyn        chundzha      gulja         ilibalyk
+			jing          karakastek    kargaly       kegen         koktal        kurty
+			kuytun        kysmyci       lavar         narat         nilka         sargau
+			shelek        shengeldy     soltobe       talkhir       tokkuztara    ulan_us
+			usu_xinjiang  yangjibaliq   yulduz
+		}
+		capital = almaliq
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			saka
+		}
+		discovered_regions = {
+			khorasan_region
+			xinjiang_region
+		}
+	}
+
+	SAKT = {
+	culture = saka
+	religion = saka_pagan
+	country_rank = rank_county
+		own_control_core = {
+			aksumbe         aktas_kystagy   artyk_ata       asanas          barchkend       belen_ana
+			buzikkala       gulshara        ikan            jand            jubara          kamyskala
+			karmakshi       karnak          khantau         kyr_uzkand      kyzylkorgan     mardankuyik
+			otrar           ran             sawran          sighnaq         sozak           sutkent
+			tasty           tasuktul        tolekskoe       turkestan       yangikent       zemukh
+			zhaushikumtobe
+		}
+	capital = aksumbe
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+	accepted_cultures = {
+		saka
+	}
+	discovered_regions = {
+		khorasan_region
+	}
+	}
+
+	SARG = {
+		culture = saka
+		religion = iranic
+		country_rank = rank_county
+		own_control_core = {
+			abiz            azghand         bajestan        birjand         boshruyeh       dastgerdan
+			deyhuk          gonabad         kashmar         khargerd        khusf           khvor
+			korit           mahvelat        mazhan          nayband         qaen            qala_zari
+			roshtkhar       salameh         sarayan         sarbisheh       shahrakht       tabas_al_tamr
+			tabas_al_unnab  tun             turaythith      yazduye         zaveh           zohan
+			zozan
+		}
+		capital = qaen
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			arian
+		}
+		discovered_regions = {
+			persia_region
+		}
+	}
+
+	SHIV = {
+		culture = shiverska
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			angoya                 balagansk              bayanday               chambeta               cheremkhovo            icheda
+			irkutsk                irkutsk_kazachinskoye  kachug                 kichera                kutima                 makarikha
+			nikolsky_pogost        onguren                osinsky                reka_tuba              siberia_kuytun         staraya_zima
+			tokma                  ul_kan                 ust_kut                zalari                 zhigalovo
+		}
+		capital = irkutsk_kazachinskoye
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			shiverska
+		}
+		discovered_regions = {
+			east_siberia_region
+			west_siberia_region
+		}
+	}
+
+	SLAB = {
+		culture = ulaanzuukh
+		religion = steppe_pagan
+		country_rank = rank_duchy
+		own_control_core = {
+			anaa             argada           baruun_tar_nuur  chit             chitkan          ingedei
+			isenga           khan_khentii     khilgo           khilgoson        khudan           khurbe
+			kyra             lower_ulz        narhata          qorqonaq_yubur   selenge          telemba
+			tsagaan          tsokh            tura             ude_baikal       ust_barguzin     zyyn_tar_nuur
+		}
+		capital = khan_khentii
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			ulaanzuukh
+		}
+		discovered_regions = {
+			east_siberia_region
+			mongolia_region
+		}
+	}
+
+	SUB = {
+		culture = tocharian
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			beshbalik   bosten      dashahai    dunla       geziyandun  gonganbao
+			guchung     hami        karasahr    kumux       kutubi      lukchun
+			mori        nazhi       pichan      qanbalik    qocho       toksun
+			urumqi      yuanhu
+		}
+		capital = bosten
+		include = "Neolithic_Est"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			tocharian
+		}
+		discovered_regions = {
+			xinjiang_region
+		}
+	}
+
+	TEVSH = {
+		culture = tevsh
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			bagh               baidrag            banzart_khairkhan  bayannurhong       biger              bogd
+			boontsagaan        chikhan_agui       del_khad           gaxun_gobi         khadat             khangal
+			khara_khoto        naraan_chilaun     niuquanzi          noyon_uul          oiyin_korken       orog
+			otegu_qulan        shaazan_tolgoi     shargyn_gobi       shira_qulusun      tevsh_uul          tost_uul
+			tsagaan_agui       tuin               ukhaa_khudag       ulaan              zag_suujiyn_gobi   zavkhan
+		}
+		capital = gaxun_gobi
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			tevsh
+		}
+		discovered_regions = {
+			mongolia_region
+			west_china_region
+		}
+	}
+
+	ULAZK = {
+		culture = tevsh
+		religion = steppe_pagan
+		country_rank = rank_duchy
+		own_control_core = {
+			avga                     avnagar                  baganuur                 baochang                 bars_khot                bathahalak
+			bayan_tumen              bayannur                 bayantsagaan             buir_nuur                chagannur                chahar
+			chono                    dalai_nuur               dalay                    doloodyn_gobi            dongsheng                erdao
+			erenkhot                 fengzhou                 fuzhou                   galbyn_gobi              huanzhou                 jingzhou_dorbod
+			jining                   khatanbulag              khobootsar               khuuchid                 liangcheng               matad
+			menen                    muumyangan               pingdi                   sangiin_dalai            sharga_uul               shuluun_khoboot_tsagaan
+			sonod                    sorin_nuur               sumtiin                  tamsabulag               tavan_tolgoi             ulaanbadrakh
+			ulan_hua                 ulanchab                 urad                     uraqai                   weining                  wuchuan
+			xinhure                  xuanning                 yingchang                yinshan                  yunnei                   zara_uul
+			zhenwu                   zhongdu
+		}
+		capital = chahar
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			tevsh
+		}
+		discovered_regions = {
+			mongolia_region
+			north_china_region
+		}
+	}
+
+	UPX = {
+		culture = donghu
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			haihaer          kailu            linhuang         naiman           ningchang        pingdisonglin
+			qingzhou_mongol  quanning         songzhou         tongliao         wuping_daning    yizhou_jurchen
+		}
+		capital = songzhou
+		include = "eurasian_horde_no_muslim"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			donghu
+		}
+		discovered_regions = {
+			manchuria_region
+			north_china_region
+		}
+	}
+
+	NOUA = {
+		culture = gava_holigrady
+		religion = dacian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			campulung_moldovenesc  cernauti               cetatea_tetina         dorohoi                hotin                  kolomyia
+			kosiv                  lipnic                 putna                  siret                  sniatyn                stefanesti
+			storozhynets           suceava
+		}
+		capital = kosiv
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			gava_holigrady
+		}
+		discovered_regions = {
+			carpathia_region
+			ruthenia_region
+		}
+	}
+
+	BILO = {
+		culture = Bilozerka
+		religion = bilozerka
+		country_rank = rank_county
+		own_control_core = {
+			ananiv                aqmecit_prybuzhzhya   argamakli_sarai       aslan_horod           balikley              bashtanka
+			bereznehuvate         cetatea_alba          chilia                dashev                enice                 harbuzynka
+			iagorlic              khadjibey             kryvyi_rih            kuchugur              kuyanlik              kyrylivka
+			mykytyn_rih           oleshia               ordu_bazar            qalancaq              rohat_kermen          sarata
+			sofiivka              tavan                 teligol               tighina               tomakivka             velyka_lepetykha
+			velyka_oleksandrivka  vithold_hammami
+		}
+		capital = dashev
+		include = "Neolithic_Est"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			Bilozerka
+		}
+		discovered_regions = {
+			carpathia_region
+			steppes_region
+		}
+	}
+
+	CHISI = {
+		culture = monteoru
+		religion = dacian_pagan
+		country_rank = rank_county
+		own_control_core = {
+			balti           chisinau        harlau          husi            iasi            orhei
+			soroca          targu_lapusnei  tuzara          ungheni         viadineti
+		}
+		capital = chisinau
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			monteoru
+		}
+		discovered_regions = {
+			carpathia_region
+		}
+	}
+
+	GAVA = {
+		culture = gava_holigrady
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			bereschany    bohorodchany  bolekhiv      dolyna        drohobych     halych
+			lesko         lviv          przemysl      rohatyn       sambir        stryi
+			turka         tysmenytsia   zhydachiv     zvenyhorod
+		}
+		capital = lviv
+		include = "Neolithic"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			gava_holigrady
+		}
+		discovered_regions = {
+			ruthenia_region
+		}
+	}
+
+	KOMA = {
+		culture = corded_ware
+		religion = steppe_pagan
+		country_rank = rank_county
+		own_control_core = {
+			chortoryisk   dubrovytsia   liubeshiv     lutsk         nobel         stepan
+			stolin        volodymyrets
+		}
+		capital = chortoryisk
+		include = "Neolithic_Est"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			corded_ware
+		}
+		discovered_regions = {
+			ruthenia_region
 		}
 	}
 }

@@ -1,0 +1,217 @@
+# Bronze Era - Egypt-specific Sea Peoples final phase effects.
+# These effects are only called by sea_peoples_crisis.180.
+
+bronze_sea_peoples_egypt_transfer_location = {
+	custom_description = {
+		text = bronze_sea_peoples_egypt_transfer_location_text
+		location = $location$
+		tag = $tag$
+		location:$location$ = {
+			if = {
+				limit = {
+					has_owner = yes
+					owner = root
+				}
+				add_core = c:$tag$
+				change_location_owner = c:$tag$
+				change_integration_level = core
+				change_control = control_weak_bonus
+			}
+		}
+	}
+}
+
+bronze_sea_peoples_egypt_western_cession = {
+	custom_description = {
+		text = bronze_sea_peoples_egypt_western_cession_text
+		bronze_sea_peoples_egypt_prepare_libya_core = { location = sallum }
+		bronze_sea_peoples_egypt_prepare_libya_core = { location = matruh }
+		bronze_sea_peoples_egypt_prepare_libya_core = { location = el_alamein }
+		if = {
+			limit = {
+				NOT = { country_exists = c:LIBYA }
+				any_owned_location = { is_core_of = c:LIBYA }
+			}
+			create_country_from_cores_in_our_locations = c:LIBYA
+		}
+		c:LIBYA ?= {
+			change_culture = culture:libyan
+			change_religion = religion:berber_pagan
+			add_accepted_culture = culture:libyan
+			set_country_rank = country_rank:rank_county
+		}
+		bronze_sea_peoples_egypt_transfer_location = { location = sallum tag = LIBYA }
+		bronze_sea_peoples_egypt_transfer_location = { location = matruh tag = LIBYA }
+		bronze_sea_peoples_egypt_transfer_location = { location = el_alamein tag = LIBYA }
+	}
+}
+
+bronze_sea_peoples_egypt_prepare_libya_core = {
+	location:$location$ = {
+		if = {
+			limit = {
+				has_owner = yes
+				owner = root
+			}
+			add_core = c:LIBYA
+		}
+	}
+}
+
+bronze_sea_peoples_egypt_prepare_sinai_core = {
+	location:$location$ = {
+		if = {
+			limit = {
+				has_owner = yes
+				owner = root
+			}
+			add_core = c:SINAI
+		}
+	}
+}
+
+bronze_sea_peoples_egypt_transfer_sinai_location = {
+	if = {
+		limit = { country_exists = c:SINAI }
+		location:$location$ = {
+			if = {
+				limit = {
+					has_owner = yes
+					OR = {
+						owner = root
+						owner = c:SINAI
+					}
+				}
+				add_core = c:SINAI
+				change_location_owner = c:SINAI
+				change_integration_level = core
+				change_control = control_weak_bonus
+			}
+		}
+	}
+}
+
+bronze_sea_peoples_egypt_damage_sinai_location = {
+	custom_description = {
+		text = bronze_sea_peoples_egypt_sinai_location_damage_text
+		location = $location$
+		location:$location$ = {
+			if = {
+				limit = { has_owner = yes }
+				add_location_modifier = {
+					modifier = recently_raided_by_horde
+					years = 8
+					mode = add_and_extend
+				}
+				change_prosperity = prosperity_radical_penalty
+				change_development = development_mild_penalty
+				province = {
+					change_province_food_percentage = -0.35
+				}
+				every_pop = {
+					limit = { pop_size > 0.02 }
+					add_pop_size = {
+						value = pop_size
+						multiply = -0.08
+					}
+				}
+			}
+		}
+	}
+}
+
+bronze_sea_peoples_create_sinai_tribes = {
+	custom_description = {
+		text = bronze_sea_peoples_sinai_tribes_created_text
+
+		bronze_sea_peoples_egypt_prepare_sinai_core = { location = qatya }
+		bronze_sea_peoples_egypt_prepare_sinai_core = { location = warrada }
+		bronze_sea_peoples_egypt_prepare_sinai_core = { location = el_arish }
+		bronze_sea_peoples_egypt_prepare_sinai_core = { location = nekhel }
+		bronze_sea_peoples_egypt_prepare_sinai_core = { location = nuweiba }
+		bronze_sea_peoples_egypt_prepare_sinai_core = { location = saint_katrine }
+		bronze_sea_peoples_egypt_prepare_sinai_core = { location = el_tor }
+		bronze_sea_peoples_egypt_prepare_sinai_core = { location = faran }
+		bronze_sea_peoples_egypt_prepare_sinai_core = { location = el_jundi }
+
+		if = {
+			limit = {
+				NOT = { country_exists = c:SINAI }
+				any_owned_location = { is_core_of = c:SINAI }
+			}
+			create_country_from_cores_in_our_locations = c:SINAI
+		}
+
+		bronze_sea_peoples_egypt_transfer_sinai_location = { location = qatya }
+		bronze_sea_peoples_egypt_transfer_sinai_location = { location = warrada }
+		bronze_sea_peoples_egypt_transfer_sinai_location = { location = el_arish }
+		bronze_sea_peoples_egypt_transfer_sinai_location = { location = nekhel }
+		bronze_sea_peoples_egypt_transfer_sinai_location = { location = nuweiba }
+		bronze_sea_peoples_egypt_transfer_sinai_location = { location = saint_katrine }
+		bronze_sea_peoples_egypt_transfer_sinai_location = { location = el_tor }
+		bronze_sea_peoples_egypt_transfer_sinai_location = { location = faran }
+		bronze_sea_peoples_egypt_transfer_sinai_location = { location = el_jundi }
+
+		c:SINAI ?= {
+			change_culture = culture:midianite
+			change_religion = religion:arabian_pagan
+			add_accepted_culture = culture:midianite
+			add_accepted_culture = culture:lower_egyptian
+			add_accepted_culture = culture:canaanite
+			set_country_rank = country_rank:rank_county
+			change_government_type = government_type:steppe_horde
+			set_variable = { name = bronze_sinai_tribes_created value = 1 years = 80 }
+			add_gold = 60
+			add_prestige = prestige_weak_bonus
+			if = {
+				limit = { owns = location:nekhel }
+				set_capital = location:nekhel
+			}
+			else_if = {
+				limit = { owns = location:el_arish }
+				set_capital = location:el_arish
+			}
+		}
+
+		bronze_sea_peoples_egypt_damage_sinai_location = { location = qatya }
+		bronze_sea_peoples_egypt_damage_sinai_location = { location = warrada }
+		bronze_sea_peoples_egypt_damage_sinai_location = { location = el_arish }
+		bronze_sea_peoples_egypt_damage_sinai_location = { location = nekhel }
+		bronze_sea_peoples_egypt_damage_sinai_location = { location = nuweiba }
+		bronze_sea_peoples_egypt_damage_sinai_location = { location = saint_katrine }
+		bronze_sea_peoples_egypt_damage_sinai_location = { location = el_tor }
+		bronze_sea_peoples_egypt_damage_sinai_location = { location = faran }
+		bronze_sea_peoples_egypt_damage_sinai_location = { location = el_jundi }
+	}
+}
+
+bronze_sea_peoples_egypt_hold_sinai = {
+	custom_description = {
+		text = bronze_sea_peoples_egypt_hold_sinai_text
+		add_gold = -140
+		add_manpower_pool = -450
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_penalty }
+		egyptian_rule_in_canaan_add_authority = { value = -8 }
+		sea_peoples_add_pressure = { value = -4 }
+		sea_peoples_add_famine_pressure = { value = 2 }
+		set_variable = { name = sea_peoples_sinai_held value = 1 years = 10 }
+	}
+}
+
+bronze_sea_peoples_egypt_withdraw_sinai = {
+	custom_description = {
+		text = bronze_sea_peoples_egypt_withdraw_sinai_text
+		bronze_sea_peoples_create_sinai_tribes = yes
+		if = {
+			limit = {
+				situation:egyptian_rule_in_canaan ?= {
+					situation_is_active = yes
+				}
+			}
+			egyptian_rule_in_canaan_withdraw = yes
+		}
+		sea_peoples_add_pressure = { value = 4 }
+		sea_peoples_add_famine_pressure = { value = -2 }
+		set_variable = { name = sea_peoples_sinai_withdrawn value = 1 years = 30 }
+	}
+}

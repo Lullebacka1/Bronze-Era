@@ -328,6 +328,23 @@ urartian = {
 	tags = { folk_european_gfx pagan_gfx }
 }
 
+armenian_pagan = {
+	color = rgb { 125 66 58 }
+	group = caucasian_religion_group
+
+	definition_modifier = {
+		monthly_legitimacy = 0.08
+		global_defensive = 0.04
+		global_clergy_estate_power = 0.05
+		tolerance_heathen = 0.25
+	}
+
+	opinions = {
+	}
+
+	tags = { folk_european_gfx pagan_gfx }
+}
+
 caucasian_pagan = {
 	color = rgb { 98 132 112 }
 	group = caucasian_religion_group
@@ -386,6 +403,24 @@ scythian_pagan = {
 		army_light_cavalry_power = 0.1
 		movement_speed_if_no_road = 0.05
 		global_levy_size_modifier = 0.05
+		global_pop_conversion_speed_modifier = -0.05
+	}
+
+	opinions = {
+	}
+
+	tags = { folk_european_gfx pagan_gfx }
+}
+
+bilozerka = {
+	color = rgb { 132 123 78 }
+	group = steppe_religion_group
+
+	definition_modifier = {
+		global_monthly_food_modifier = 0.05
+		global_livestock_output_modifier = 0.10
+		global_food_capacity_modifier = 0.05
+		tolerance_heathen = 0.25
 		global_pop_conversion_speed_modifier = -0.05
 	}
 

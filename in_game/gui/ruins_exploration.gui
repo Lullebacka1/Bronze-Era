@@ -41,7 +41,7 @@ types BronzeRuinsExplorationTypes
 								}
 								text_single = {
 									text = "be_ruins_exploration_subtitle"
-									default_format = "#subtle"
+									default_format = "#subtle_name"
 								}
 							}
 
@@ -146,37 +146,37 @@ types BronzeRuinsExplorationTypes
 														text_single = {
 															visible = "[Location.MakeScope.GetVariable('be_ruins_type_capital').IsSet]"
 															text = "be_ruins_type_capital"
-															default_format = "#subtle"
+															default_format = "#subtle_name"
 														}
 														text_single = {
 															visible = "[Location.MakeScope.GetVariable('be_ruins_type_palace').IsSet]"
 															text = "be_ruins_type_palace"
-															default_format = "#subtle"
+															default_format = "#subtle_name"
 														}
 														text_single = {
 															visible = "[Location.MakeScope.GetVariable('be_ruins_type_temple').IsSet]"
 															text = "be_ruins_type_temple"
-															default_format = "#subtle"
+															default_format = "#subtle_name"
 														}
 														text_single = {
 															visible = "[Location.MakeScope.GetVariable('be_ruins_type_port').IsSet]"
 															text = "be_ruins_type_port"
-															default_format = "#subtle"
+															default_format = "#subtle_name"
 														}
 														text_single = {
 															visible = "[Location.MakeScope.GetVariable('be_ruins_type_fortress').IsSet]"
 															text = "be_ruins_type_fortress"
-															default_format = "#subtle"
+															default_format = "#subtle_name"
 														}
 														text_single = {
 															visible = "[Location.MakeScope.GetVariable('be_ruins_type_village').IsSet]"
 															text = "be_ruins_type_village"
-															default_format = "#subtle"
+															default_format = "#subtle_name"
 														}
 														text_single = {
 															visible = "[Location.MakeScope.GetVariable('be_ruins_type_generic').IsSet]"
 															text = "be_ruins_type_generic"
-															default_format = "#subtle"
+															default_format = "#subtle_name"
 														}
 														text_single = {
 															visible = "[GreaterThanOrEqualTo_CFixedPoint(Location.MakeScope.GetVariable('be_ruins_difficulty').GetValue, '(CFixedPoint)5')]"
@@ -421,8 +421,8 @@ types BronzeRuinsExplorationTypes
 										widget = {
 											size = { 92 156 }
 											using = bg_paper_card
-											datacontext = "[Player.GetGovernment.GetRulerOrRegent]"
 											portrait_standard_head_button = {
+												datacontext = "[Player.GetGovernment.GetRulerOrRegent]"
 												size = { 84 84 }
 												parentanchor = top|hcenter
 												position = { 0 6 }
@@ -445,22 +445,22 @@ types BronzeRuinsExplorationTypes
 											text_single = {
 												visible = "[Or(Not(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').IsSet), EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)1'))]"
 												text = "be_ruins_leader_role_archivist"
-												default_format = "#subtle"
+												default_format = "#subtle_name"
 											}
 											text_single = {
 												visible = "[EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)2')]"
 												text = "be_ruins_leader_role_captain"
-												default_format = "#subtle"
+												default_format = "#subtle_name"
 											}
 											text_single = {
 												visible = "[EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)3')]"
 												text = "be_ruins_leader_role_quartermaster"
-												default_format = "#subtle"
+												default_format = "#subtle_name"
 											}
 											text_single = {
 												visible = "[EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)4')]"
 												text = "be_ruins_leader_role_priest"
-												default_format = "#subtle"
+												default_format = "#subtle_name"
 											}
 											text_multi = {
 												visible = "[Or(Not(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').IsSet), EqualTo_CFixedPoint(Player.MakeScope.GetVariable('be_ruins_selected_leader_profile').GetValue, '(CFixedPoint)1'))]"
@@ -746,7 +746,7 @@ types BronzeRuinsExplorationTypes
 										text_single = {
 											visible = "[Not(Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet)]"
 											text = "be_ruins_no_expedition_here"
-											default_format = "#subtle"
+											default_format = "#subtle_name"
 										}
 										text_single = {
 											visible = "[Location.MakeScope.GetVariable('bronze_ruins_expedition_underway').IsSet]"
