@@ -10836,7 +10836,6 @@ countries = {
 		wad_madani  waylula
 	}
 		accepted_cultures = { nubian }
-		tolerated_cultures = { medjay egyptian berber }
 			discovered_regions = {
 				egypt_region nubia_region 
 			}
