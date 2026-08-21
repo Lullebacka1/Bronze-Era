@@ -56,6 +56,7 @@ trojan_war_end.1 = {
     name = "trojan_war_end.a"
     root = { add_prestige = 10
              add_country_modifier = { 
+            mode = add
             modifier = trojan_war_end_siege_ability  
             days = -1
             size = {
@@ -63,9 +64,9 @@ trojan_war_end.1 = {
                 multiply = 0.01
                 max = 0.05
             }
-recalculate_immediately = yes
             }
             add_country_modifier = { 
+            mode = add
             modifier = trojan_war_end_maritime_presence  
             days = -1
             size = {
@@ -73,7 +74,6 @@ recalculate_immediately = yes
                 multiply = 0.01
                 max = 0.05
             }
-recalculate_immediately = yes
             }
 }
 }
@@ -90,24 +90,24 @@ trojan_war_end.2 = {
     name = "trojan_war_end.a"
     root = { add_prestige = 10
              add_country_modifier = { 
+            mode = add
             modifier = trojan_war_end_siege_ability  
             days = -1
             size = {
                 value = global_var:anatolia_raid_failed_count
                 multiply = 0.01
                 max = 0.05
-            } 
-            recalculate_immediately = yes
             }
-            add_country_modifier = {
+            }
+            add_country_modifier = { 
+            mode = add
             modifier = trojan_war_end_levy_combat_efficiency  
             days = -1 
             size = {
                 value = global_var:anatolia_raid_failed_count
                 multiply = 0.01
                 max = 0.05
-            } 
-            recalculate_immediately = yes            
+            }                        
             } 
 }
 }
@@ -125,6 +125,7 @@ trojan_war_end.3 = {
     root = { add_prestige = - 10
              add_country_modifier = { modifier = trojan_war_end_3  
             days = -1
+            mode = add
             }
 }
 }
@@ -142,6 +143,7 @@ trojan_war_end.4 = {
     root = { add_prestige = - 10
              add_country_modifier = { modifier = trojan_war_end_4  
             days = -1
+            mode = add
             }
 }
 }
@@ -160,6 +162,7 @@ trojan_war_end.5 = {
     root = { add_prestige = - 10
              add_country_modifier = { modifier = trojan_war_end_5  
             days = -1
+            mode = add
             }
 }
 }
@@ -177,6 +180,7 @@ trojan_war_end.6 = {
     root = { add_prestige = 10
              add_country_modifier = { modifier = trojan_war_end_6  
             days = -1
+            mode = add
             }
 }
 }

@@ -1,0 +1,5 @@
+# the actual calculation
+# add investment
+# remove investment
+# recalculate influence
+# normilazie or cap the influance at 10

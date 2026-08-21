@@ -13,7 +13,7 @@ building_manager = {
 	bronze_monument_tiryns_cyclopean = { level = 1 location = nafplio }
 	bronze_monument_knossos_complex = { level = 1 location = candia }
 	bronze_monument_ugarit_complex = { level = 1 location = latakia }
-	bronze_monument_yin_xu = { level = 1 location = anyang }
+	bronze_monument_yin_xu = { level = 1 location = anyang } #make ruins in 1046BCE
 	bronze_monument_bru_na_boinne = { level = 1 location = drogheda }
 	# Stonehenge is already loaded as a native monument work of art by
 	# main_menu/setup/start/11_art.txt. Do not place a duplicate building.

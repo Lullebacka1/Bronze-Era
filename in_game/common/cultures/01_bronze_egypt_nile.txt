@@ -39,6 +39,8 @@ nubian = {
 	color = rgb { 120 78 50 }
 	tags = { nubian_gfx east_african_gfx african_gfx }
 	opinions = {
+		lower_egyptian = -20
+		upper_egyptian = -15
 	}
 	culture_groups = {
 		egypt_nile_group
@@ -61,6 +63,8 @@ libyan = {
 	color = rgb { 188 132 73 }
 	tags = { amazigh_gfx maghrebi_gfx }
 	opinions = {
+		lower_egyptian = -20
+		upper_egyptian = -20
 	}
 	culture_groups = {
 		egypt_nile_group

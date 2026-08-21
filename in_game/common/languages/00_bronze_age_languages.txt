@@ -174,7 +174,7 @@ assyrian_bronze_language = {
 elamite_bronze_language = {
 	color = rgb { 108 90 82 }
 	family = sumerian_language_family
-
+ 
 	male_names = {
 		Untash Shilhak Humban Kidin Kur_Ishshak Peli Tata Ukku_Tanhish Hishutash Shushun_Tarana Napi_Ilhush Kkku_Siwe_Temti
 		Hishep_Ratep Luh_Ishshan Emahsini Helu Hita Kutik_Inshushinak Gir_Namme Tazitta Eparti Lurak_Luhhan Hutran_Temti Idattu_Inshushinak
@@ -875,4 +875,32 @@ finnic_bronze_language = {
 	female_names = { Aino Kyllikki Mielikki Tellervo }
 	dynasty_names = { Kaleva Ahti Ilmar Vaino }
 	lowborn = { Kaleva Ahti Ilmar }
+}
+
+hebrew_bronze_language = {
+	color = rgb { 150 100 80 }
+	family = semitic_language_family
+	male_names = {
+		abiram abner adoniyahu amminadab asa
+		azaryahu dawid elhanan eliyahu eliab eliezer
+		elishama gideon hanan hananyahu hoshaiah ishbaal
+		ishaiah ishmael joash jonathan josiah mattan
+		menahem micah nadab nathan neriyahu ozias
+		pedaiah rehoboam saul shemaiah shimonuzziah
+		yehoshaphat yehu yeroboam yirmeyahu zakkur zedekiah
+	}
+
+	female_names = {
+		abigail atalyah basemath bathsheba deborah dinah
+		hannah jezebel leah michal miriam naamah
+		rahav rachel rebekah ruth sarah tamar
+		yael yehudith
+	}
+
+	dynasty_names = {
+		benjamin ephraim gad issachar judah
+		levi manasseh naphtali reuben simeon
+		zebulun beth_dawid beth_saul beth_omri
+	}
+	lowborn = { ben_ami ben_hur baruch }
 }

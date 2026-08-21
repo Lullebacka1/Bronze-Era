@@ -35,22 +35,13 @@ dravidian = {
 	}
 }
 
-Salvada = {
-	culture_groups = { indic_bronze_group }
-	language = indo_aryan_bronze_language
-	color = rgb { 59 128 145 }
-	opinions = {
-	}
-}
-
 tamil = {
 	language = dravidian_bronze_language
 	color = rgb { 98 94 156 }
 	tags = { dravidian_gfx indian_gfx }
 		opinions = {
-			lankan = 10
 		}
-	culture_groups = { indic_bronze_group dravidian_group }
+	culture_groups = { indic_bronze_group }
 }
 
 gandharan = {
@@ -83,53 +74,3 @@ lankan = {
 	opinions = {
 	}
 }
-
-Gondi = {
-	culture_groups = { dravidian_group indic_bronze_group }
-	language = dravidian_bronze_language
-	color = rgb { 217 69 69 }
-	opinions = {
-	}
-	
-}
-
-Kannada = {
-	culture_groups = { indic_bronze_group dravidian_group }
-	language = dravidian_bronze_language
-	color = rgb { 213 52 52 }
-	opinions = {
-	}
-}
-
-Kui = {
-	culture_groups = { indic_bronze_group dravidian_group }
-	language = dravidian_bronze_language
-	color = rgb { 206 111 111 }
-	opinions = {
-	}
-}
-
-Kurukh = {
-	culture_groups = { indic_bronze_group dravidian_group }
-	language = dravidian_bronze_language
-	color = rgb { 243 195 195 }
-	opinions = {
-	}
-}
-
-Malto = {
-	culture_groups = { indic_bronze_group dravidian_group }
-	language = dravidian_bronze_language
-	color = rgb { 213 52 52 }
-	opinions = {
-	}
-}
-
-Telugu = {
-	culture_groups = { indic_bronze_group dravidian_group }
-	language = dravidian_bronze_language
-	color = rgb { 168 97 97 }
-	opinions = {
-	}
-}
-

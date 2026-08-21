@@ -12,7 +12,7 @@ countries = {
 
 		# Expansionist: nations with clear territorial ambitions but follow casus belli
 		#FRA = { ai_personality = ai_expansionist }  # France
-		0001G = { ai_personality = ai_expansionist }  # mycenae
+		#0001G = { ai_personality = ai_expansionist }  # mycenae
 		LYB = { ai_personality = ai_expansionist }  # Libya
 		MEDIA = { ai_personality = ai_expansionist }  # Median Empire PERSE
 
@@ -23,7 +23,7 @@ countries = {
 
 		# Cautious: risk-averse, prefer safe diplomacy over war
 		#HAB = { ai_personality = ai_cautious }  # Austria / Habsburgs
-		DIl = { ai_personality = ai_cautious }  # Dilmun
+		DIL = { ai_personality = ai_cautious }  # Dilmun
 
 
 		# Opportunistic: exploit others' weaknesses; trade-focused

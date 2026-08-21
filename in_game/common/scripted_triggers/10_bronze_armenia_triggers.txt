@@ -1,0 +1,27 @@
+# Bronze Era - Armenian highland triggers.
+
+bronze_armenia_union_actor = {
+	OR = {
+		tag = AZZI
+		tag = HAJAS
+		tag = URATU
+		has_variable = bronze_azzi_hayasa_unified
+	}
+}
+
+bronze_yerevan_foundation_candidate = {
+	is_real_country = yes
+	current_date >= 480.1.1 # Internal positive year 480 = displayed 730 BC.
+	owns = location:yerevan
+	location:yerevan = {
+		controller = root
+	}
+	gold >= 200
+	OR = {
+		culture = culture:urartian
+		culture = culture:colchian
+		culture = culture:armenian_culture
+	}
+	NOT = { has_global_variable = bronze_yerevan_foundation_resolved }
+	NOT = { has_global_variable = bronze_yerevan_foundation_event_pending }
+}

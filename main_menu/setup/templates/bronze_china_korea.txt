@@ -2,7 +2,7 @@
 starting_technology_level = 3
 
 currency_data = {
-	gold = 200
+	gold = 220
 }
 
 government = {
