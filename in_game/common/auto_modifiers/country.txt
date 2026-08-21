@@ -1479,7 +1479,7 @@ over_bureaucracy_limit = {
 		subtract = max_bureaucracy_slots
 	}
 	stability_investment = large_stability_investment_penalty
-	court_spending_cost_modifier = 0.2
+	court_spending_efficiency = 0.2
 }
 
 country_tax_base = {

@@ -483,7 +483,7 @@ debt_law = {
 	negotiated_payment_law = {
 		country_modifier = {
 			global_estate_target_satisfaction = small_permanent_target_satisfaction
-			court_spending_cost_modifier = 0.05
+			court_spending_efficiency = 0.05
 		}
 
 		estate_preferences = {
@@ -534,7 +534,7 @@ verdict_law = {
 
 	retribution_law = {
 		country_modifier = {
-			court_spending_cost_modifier = -0.15
+			court_spending_efficiency = -0.15
 			global_monthly_development = -0.001
 		}
 
@@ -549,7 +549,7 @@ verdict_law = {
 		country_modifier = {
 			stability_cost = -0.1
 			stability_decay = -0.00025
-			court_spending_cost_modifier = 0.15
+			court_spending_efficiency = 0.15
 		}
 
 		years = 2
@@ -571,7 +571,7 @@ land_property_law = {
 			global_crown_estate_power = 0.1
 
 			global_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
-			court_spending_cost_modifier = 0.1
+			court_spending_efficiency = 0.1
 		}
 
 		estate_preferences = {
@@ -626,7 +626,7 @@ land_property_law = {
 			global_crown_estate_power = 0.1
 
 			global_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
-			court_spending_cost_modifier = 0.15
+			court_spending_efficiency = 0.15
 		}
 
 		years = 2
