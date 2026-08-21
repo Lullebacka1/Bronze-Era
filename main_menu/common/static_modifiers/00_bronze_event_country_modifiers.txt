@@ -11,3 +11,12 @@ levant_silver_debasement_trade_customs_disturbed = {
 	}
 	stability_cost_efficiency = -0.2
 }
+
+levant_silver_debasement_trade_nobles_unsatisfied = {
+	game_data = {
+		category = country
+	}
+	every_province = {
+		local_nobles_estate_unrest = 0.1
+	}
+}
