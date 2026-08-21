@@ -1,21 +1,55 @@
 # the actual calculation
-# add investment
-# remove investment
 # recalculate influence
-# normilazie or cap the influance at 10
-# only calculate when effected by a varibel
-
-add_myceanean_investment = {
-
-	recalculate_mycenaean_influence = yes
-}
-
-remove_myceanean_investment = {
+# normalize or cap the influence at 100
+# only calculate when effected by a variable
 
 
-	recalculate_mycenaean_influence = yes
-}
 
 recalculate_mycenaean_influence = {
-
+	set_variable = {
+		name = "mycenaean_total_investment"
+		value =  0	
+	}
+	every_building_in_location = {
+		limit = {
+			building_type = bronze_age_mycenaean_influence_building
+		}
+		change_variable = {
+			name = "mycenaean_total_investment"
+			value =  mycenaean_investment
+		}
+	}
+	every_building_in_location = {
+		limit = {
+			building_type = bronze_age_mycenaean_influence_building
+	}
+		owner = {
+			set_variable = {
+           		name = "mycenaean_owner_investment"
+            	value = 0
+        }
+		every_building_in_location = {
+			limit = {
+				building_type = bronze_age_mycenaean_influence_building
+				owner = prev
+			}
+			change_variable = {
+				name = "mycenaean_owner_investment"
+				value =  mycenaean_investment
+			}
+		}		
+			set_variable = {
+				name = "mycenaean_influence"
+				value = mycenaean_owner_investment
+			}
+				multiply_variable = {
+				name = "mycenaean_influence"
+				value = 100
+			}
+			divide_variable = {
+				name = "mycenaean_influence"
+				value = mycenaean_total_investment
+			}
+		}
+	}
 }
