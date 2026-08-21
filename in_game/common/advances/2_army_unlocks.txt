@@ -2,19 +2,19 @@
 # # Infantry
 # ######################
 
-# unlock_footmen_advance = {
-# 	age = age_1_traditions
-# 	unlock_unit = a_footmen
-# 	unlock_levy = levy_a_footmen
-# 	unlock_policy = aristocratic_court_policy
+ unlock_footmen_advance = {
+ 	age = age_1_traditions
+ 	unlock_unit = a_footmen
+ 	unlock_levy = levy_a_footmen
+ 	unlock_policy = aristocratic_court_policy
 	
-# 	requires = iron_working
+ 	requires = agriculture_advance
 
-# 	potential = { 
-# 		has_or_had_tag = PREMODERN
-# 	}
+ 	potential = { 
+ 		has_or_had_tag = PREMODERN
+ 	}
 
-# }
+ }
 
 # unlock_archers_advance = {
 # 	age = age_1_traditions

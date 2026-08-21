@@ -8,14 +8,14 @@ early_infantry_construction = {
 }
 
 slinger_infantry_construction = {
-	weaponry = 0.02
-	leather = 0.02
-	cloth = 0.02
+	weaponry = 0.015
+	leather = 0.015
+	cloth = 0.015
 	category = regiment_construction
 }
 
 pastoral_slinger_infantry_construction = {
-	cloth = 0.01
+	cloth = 0.010
 	category = regiment_construction
 }
 
@@ -37,6 +37,11 @@ swordsmen_infantry_construction = {
 	weaponry = 0.03
 	leather = 0.02
 	cloth = 0.02
+	category = regiment_construction
+}
+
+sea_swordsmen_infantry_construction = {
+	gold = 150
 	category = regiment_construction
 }
 
@@ -120,6 +125,11 @@ swordsmen_infantry_maintenance = {
 	weaponry = 0.08
 	leather = 0.03
 	cloth = 0.03
+	category = regiment_maintenance
+}
+
+sea_swordsmen_infantry_maintenance = {
+	gold = 1
 	category = regiment_maintenance
 }
 
