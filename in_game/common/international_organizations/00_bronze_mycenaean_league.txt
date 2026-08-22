@@ -292,7 +292,7 @@ mycenaean_league = {
 	auto_disband_trigger = {
 		# Low authority now starts the Mycenaean Fragmentation situation
 		# instead of deleting the league before palace houses can break away.
-		total_members < 2
+		total_members < 5
 	}
 	disband_minimum_member_count = 1
 
