@@ -20,3 +20,17 @@ levant_silver_debasement_trade_nobles_unsatisfied = {
 		local_nobles_estate_unrest = 0.1
 	}
 }
+
+levant_silver_debasement_search_for_silver = {
+	game_data = {
+		category = country
+	}
+	monthly_gold_expense = 2
+}
+
+levant_silver_debasement_experimentation_encouraged = {
+	game_data = {
+		category = country
+	}
+	research_speed_modifier = -0.2
+}
