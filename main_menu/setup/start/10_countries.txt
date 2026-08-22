@@ -1745,7 +1745,7 @@ countries = {
 
 	##ASSYRIA
 	ASYRI = {
-		capital = abu_kemal
+		capital = mosul
 		culture = assyrian
 		religion = assyrian
 
