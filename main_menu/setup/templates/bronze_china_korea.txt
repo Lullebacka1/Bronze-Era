@@ -20,7 +20,7 @@ government = {
 	offensive_vs_defensive = 5
 	land_vs_naval = -15
 	capital_economy_vs_traditional_economy = 45
-	individualism_vs_communalism = 25
+	individualism_vs_communalism = 35
 	outward_vs_inward = 0
 
 	parliament = {
