@@ -1,0 +1,24 @@
+levant_silver_debasement_participant = {
+	custom_description = {
+		text = levant_silver_debasement_participant_text
+		OR = {
+			tag = SIDON
+			tag = AMURU
+			tag = ARWAD
+			tag = BERIT
+			tag = BYBLO
+			tag = HABIR
+			tag = UGART
+			tag = AKSHA
+			tag = ASHK
+			tag = ASHT
+			tag = GEZE
+			tag = HACOR
+			tag = JESUS
+			tag = LAKIS
+			tag = PEHEL
+			tag = SICHE
+			tag = YURZ
+		}
+	}
+}

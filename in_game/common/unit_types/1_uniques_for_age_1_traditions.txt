@@ -247,6 +247,42 @@ a_highland_bowmen = {
 	gfx_tags = { light_tag }
 }
 
+a_sea_peoples_swordsmen = {
+	copy_from = a_bronze_age_1_traditions_heavy_infantry
+
+	upgrades_to = a_footmen
+
+	strength_damage_done = 0.03
+	initiative = 1
+
+	combat = { 
+		coastal = 0.10
+		river = 0.10
+	}
+
+	location_potential = {
+		
+		topography = coastal
+
+	}
+
+	country_potential = {
+		NOT = {
+			has_advance_available = dispersion_of_authority_advance
+		}
+
+		culture_group_percentage_in_country = {
+			culture_group = culture_group:sea_peoples_group
+			value > 0.1
+		}
+	}
+	
+	maintenance_demand = sea_swordsmen_infantry_maintenance
+	construction_demand = sea_swordsmen_infantry_construction
+
+	gfx_tags = { light_tag }
+}
+
 # VANILLA UNIQUES
 
 a_villagers = {
