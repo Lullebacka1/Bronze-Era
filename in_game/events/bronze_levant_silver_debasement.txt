@@ -98,7 +98,7 @@ levant_silver_debasement.11 = {
 	trigger = {
 		has_variable = levant_silver_debasement_subject_intro_seen
 		levant_silver_debasement_participant = yes
-		current_date = 5.6.1
+		current_date = 5.6.15
 	}
 
 	immediate = {
@@ -124,7 +124,7 @@ levant_silver_debasement.11 = {
 
 	option = {
 		name = levant_silver_debasement.11.a
-		custom_tooltip = levant_silver_debasement_11a_tt
+		custom_tooltip = levant_silver_debasement.11.a_tt
 
 		trigger = {
 			has_codified_laws = yes
@@ -149,7 +149,7 @@ levant_silver_debasement.11 = {
 
 	option = {
 		name = levant_silver_debasement.11.b
-		custom_tooltip = levant_silver_debasement_11b_tt
+		custom_tooltip = levant_silver_debasement.11.b_tt
 
 		trigger = {
 			OR = {
@@ -173,11 +173,13 @@ levant_silver_debasement.11 = {
 				years = 100
 			}
 		}
+
+		set_variable = { name = levant_silver_debasement_11_currency_debased value = 1 years = 50 }
 	}
 
 	option = {
 		name = levant_silver_debasement.11.c
-		custom_tooltip = levant_silver_debasement_11c_tt
+		custom_tooltip = levant_silver_debasement.11.c_tt
 
 		trigger = {
 			OR = {
@@ -195,11 +197,13 @@ levant_silver_debasement.11 = {
 				years = 100
 			}
 		}
+
+		set_variable = { name = levant_silver_debasement_11_currency_pure value = 1 years = 50 }
 	}
 
 	option = {
 		name = levant_silver_debasement.11.d
-		custom_tooltip = levant_silver_debasement_11d_tt
+		custom_tooltip = levant_silver_debasement.11.d_tt
 
 		trigger = {
 			has_codified_laws = no
@@ -215,16 +219,18 @@ levant_silver_debasement.11 = {
 
 		add_country_modifier = {
 			modifier = levant_silver_debasement_trade_customs_disturbed
-			years = 5
+			years = 20
 			mode = add
 			recalculate_immediately = yes
 		}
+
+		set_variable = { name = levant_silver_debasement_11_metal_pure value = 1 years = 50 }
 
 	}
 
 	option = {
 		name = levant_silver_debasement.11.e
-		custom_tooltip = levant_silver_debasement_11e_tt
+		custom_tooltip = levant_silver_debasement.11.e_tt
 
 		historical_option = yes
 
@@ -245,7 +251,447 @@ levant_silver_debasement.11 = {
 				years = 100
 			}
 		}
+
+		set_variable = { name = levant_silver_debasement_11_metal_debased value = 1 years = 50 }
 	}
+}
+
+levant_silver_debasement.111 = {
+	type = country_event
+	title = levant_silver_debasement.111.title
+	desc = levant_silver_debasement.111.desc
+
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/levant_silver_debasement_111.dds"
+	outcome = neutral
+
+	# dynamic_historical_event = {
+	# 	from = 5.6.1
+	# 	to = 15.1.1
+	# 	monthly_chance = 15
+	# }
+
+	trigger = {
+		OR = {
+			has_policy = commodity_money_policy_jewelry
+			has_policy = bullion_coins
+			has_policy = silver_coins
+			has_policy = gold_and_silver_coins
+		}
+
+		OR = {
+			has_variable = levant_silver_debasement_11_currency_debased
+			has_variable = levant_silver_debasement_11_metal_debased
+		}
+
+		current_date = 10.6.5
+	}
+
+	immediate = {
+		# region:balkan_region = {
+		# 	every_location_in_region = {
+		# 		every_import_from_location = {
+		# 			limit = {
+		# 				goods = goods:silver
+		# 			}
+		# 			set_locked = yes
+		# 		}
+		# 	}
+		# }
+
+		# every_market_present_in_country = {
+		# 	add_temporary_demand = {
+		# 		type = demand:levantine_silver_crisis
+		# 		scale_with_pop = 0.005
+		# 		years = 100
+		# 	}
+		# }
+	}
+
+	option = {
+		name = levant_silver_debasement.111.a
+		custom_tooltip = levant_silver_debasement.111.a_tt
+
+		every_market_present_in_country = {
+			remove_temporary_demand = demand:levantine_silver_crisis
+
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis
+				scale_with_pop = 0.003
+				years = 95
+			}
+		}
+
+		set_variable = { name = levant_silver_debasement_11X_silver_debased value = 1 years = 50 }
+	}
+
+	option = {
+		name = levant_silver_debasement.111.b
+		custom_tooltip = levant_silver_debasement.111.b_tt
+
+		every_market_present_in_country = {
+			remove_temporary_demand = demand:levantine_silver_crisis_debasement_start
+
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis_debasement_start
+				scale_with_pop = 0.0035
+				years = 95
+			}
+		}
+
+		set_variable = { name = levant_silver_debasement_11X_silver_debased value = 1 years = 50 }
+	}
+
+}
+
+levant_silver_debasement.112 = {
+	type = country_event
+	title = levant_silver_debasement.112.title
+	desc = levant_silver_debasement.112.desc
+
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/levant_silver_debasement_11.dds"
+	outcome = neutral
+
+	# dynamic_historical_event = {
+	# 	from = 5.6.1
+	# 	to = 15.1.1
+	# 	monthly_chance = 15
+	# }
+
+	trigger = {
+		OR = {
+			has_policy = commodity_money_policy_jewelry
+			has_policy = bullion_coins
+			has_policy = silver_coins
+			has_policy = gold_and_silver_coins
+		}
+
+		OR = {
+			has_variable = levant_silver_debasement_11_currency_pure
+			has_variable = levant_silver_debasement_11_metal_pure
+		}
+		
+		current_date = 10.6.5
+	}
+
+	immediate = {
+		# region:balkan_region = {
+		# 	every_location_in_region = {
+		# 		every_import_from_location = {
+		# 			limit = {
+		# 				goods = goods:silver
+		# 			}
+		# 			set_locked = yes
+		# 		}
+		# 	}
+		# }
+
+		# every_market_present_in_country = {
+		# 	add_temporary_demand = {
+		# 		type = demand:levantine_silver_crisis
+		# 		scale_with_pop = 0.005
+		# 		years = 100
+		# 	}
+		# }
+	}
+
+	option = {
+		name = levant_silver_debasement.112.a
+		custom_tooltip = levant_silver_debasement.112.a_tt
+
+		every_market_present_in_country = {
+			remove_temporary_demand = demand:levantine_silver_crisis
+
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis
+				scale_with_pop = 0.005
+				years = 95
+			}
+		}
+	}
+
+	option = {
+		name = levant_silver_debasement.112.b
+		custom_tooltip = levant_silver_debasement.112.b_tt
+
+		every_market_present_in_country = {
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis_debasement_start
+				scale_with_pop = 0.0015
+				years = 95
+			}
+		}
+
+		set_variable = { name = levant_silver_debasement_11X_silver_debased value = 1 years = 50 }
+	}
+
+}
+
+levant_silver_debasement.113 = {
+	type = country_event
+	title = levant_silver_debasement.113.title
+	desc = levant_silver_debasement.113.desc
+
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/levant_silver_debasement_11.dds"
+	outcome = neutral
+
+	# dynamic_historical_event = {
+	# 	from = 5.6.1
+	# 	to = 15.1.1
+	# 	monthly_chance = 15
+	# }
+
+	trigger = {
+		has_codified_laws = no
+		has_variable = levant_silver_debasement_11_metal_pure
+		current_date = 10.6.5
+	}
+
+	immediate = {
+		# region:balkan_region = {
+		# 	every_location_in_region = {
+		# 		every_import_from_location = {
+		# 			limit = {
+		# 				goods = goods:silver
+		# 			}
+		# 			set_locked = yes
+		# 		}
+		# 	}
+		# }
+
+		# every_market_present_in_country = {
+		# 	add_temporary_demand = {
+		# 		type = demand:levantine_silver_crisis
+		# 		scale_with_pop = 0.005
+		# 		years = 100
+		# 	}
+		# }
+	}
+
+	option = {
+		name = levant_silver_debasement.113.a
+		custom_tooltip = levant_silver_debasement.113.a_tt
+
+		every_market_present_in_country = {
+			remove_temporary_demand = demand:levantine_silver_crisis
+
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis
+				scale_with_pop = 0.003
+				years = 95
+			}
+		}
+
+		add_country_modifier = {
+		modifier = levant_silver_debasement_trade_nobles_unsatisfied
+		years = 20
+		mode = add
+		recalculate_immediately = yes
+		}
+		
+	}
+
+	option = {
+		name = levant_silver_debasement.113.b
+		custom_tooltip = levant_silver_debasement.113.b_tt
+
+		every_market_present_in_country = {
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis_debasement_start
+				scale_with_pop = 0.0015
+				years = 95
+			}
+		}
+
+		set_variable = { name = levant_silver_debasement_11X_silver_debased value = 1 years = 50 }
+	}
+
+}
+
+levant_silver_debasement.114 = {
+	type = country_event
+	title = levant_silver_debasement.114.title
+	desc = levant_silver_debasement.114.desc
+
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/levant_silver_debasement_111.dds"
+	outcome = neutral
+
+	# dynamic_historical_event = {
+	# 	from = 5.6.1
+	# 	to = 15.1.1
+	# 	monthly_chance = 15
+	# }
+
+	trigger = {
+		has_codified_laws = no
+		has_variable = levant_silver_debasement_11_metal_debased
+		current_date = 10.6.5
+	}
+
+	immediate = {
+		# region:balkan_region = {
+		# 	every_location_in_region = {
+		# 		every_import_from_location = {
+		# 			limit = {
+		# 				goods = goods:silver
+		# 			}
+		# 			set_locked = yes
+		# 		}
+		# 	}
+		# }
+
+		# every_market_present_in_country = {
+		# 	add_temporary_demand = {
+		# 		type = demand:levantine_silver_crisis
+		# 		scale_with_pop = 0.005
+		# 		years = 100
+		# 	}
+		# }
+	}
+
+	option = {
+		name = levant_silver_debasement.114.a
+		custom_tooltip = levant_silver_debasement.114.a_tt
+
+		every_market_present_in_country = {
+			remove_temporary_demand = demand:levantine_silver_crisis
+
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis
+				scale_with_pop = 0.003
+				years = 95
+			}
+		}
+
+		add_country_modifier = {
+			modifier = levant_silver_debasement_trade_nobles_unsatisfied
+			years = 5
+			mode = add
+			recalculate_immediately = yes
+		}
+
+		set_variable = { name = levant_silver_debasement_11X_silver_debased value = 1 years = 50 }
+	}
+
+	option = {
+		name = levant_silver_debasement.114.b
+		custom_tooltip = levant_silver_debasement.114.b_tt
+
+		historical_option = yes
+
+		every_market_present_in_country = {
+			remove_temporary_demand = demand:levantine_silver_crisis_debasement_start
+
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis_debasement_start
+				scale_with_pop = 0.002
+				years = 95
+			}
+		}
+
+		set_variable = { name = levant_silver_debasement_11X_silver_debased value = 1 years = 50 }
+	}
+
+}
+
+levant_silver_debasement.1111 = {
+	type = country_event
+	title = levant_silver_debasement.1111.title
+	desc = levant_silver_debasement.1111.desc
+
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/levant_silver_debasement_111.dds"
+	outcome = neutral
+
+	# dynamic_historical_event = {
+	# 	from = 5.6.1
+	# 	to = 15.1.1
+	# 	monthly_chance = 15
+	# }
+
+	trigger = {
+		has_variable = levant_silver_debasement_11X_silver_debased
+		current_date = 20.3.14
+		goods:silver = {
+			NOT = {
+				is_in_surplus_in_market = {
+					market = scope:root.capital.market
+					value > 0
+				}
+			}
+		}
+	}
+
+	immediate = {
+		# region:balkan_region = {
+		# 	every_location_in_region = {
+		# 		every_import_from_location = {
+		# 			limit = {
+		# 				goods = goods:silver
+		# 			}
+		# 			set_locked = yes
+		# 		}
+		# 	}
+		# }
+
+		# every_market_present_in_country = {
+		# 	add_temporary_demand = {
+		# 		type = demand:levantine_silver_crisis
+		# 		scale_with_pop = 0.005
+		# 		years = 100
+		# 	}
+		# }
+	}
+
+	option = {
+		name = levant_silver_debasement.1111.a
+		custom_tooltip = levant_silver_debasement.1111.a_tt
+
+		every_market_present_in_country = {
+			remove_temporary_demand = demand:levantine_silver_crisis_debasement_start
+
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis_debasement_start
+				scale_with_pop = 0.003
+				years = 85
+			}
+		}
+
+		add_country_modifier = {
+			modifier = levant_silver_debasement_search_for_silver
+			years = 5
+			mode = add
+			recalculate_immediately = yes
+		}
+	}
+
+	option = {
+		name = levant_silver_debasement.1111.b
+		custom_tooltip = levant_silver_debasement.1111.b_tt
+
+		historical_option = yes
+
+		every_market_present_in_country = {
+			remove_temporary_demand = demand:levantine_silver_crisis_debasement_start
+
+			add_temporary_demand = {
+				type = demand:levantine_silver_crisis_debasement_start
+				scale_with_pop = 0.003
+				years = 85
+			}
+		}
+
+		add_country_modifier = {
+			modifier = levant_silver_debasement_experimentation_encouraged
+			years = 5
+			mode = add
+			recalculate_immediately = yes
+		}
+	}
+
 }
 
 # levant_silver_debasement.111 = {
