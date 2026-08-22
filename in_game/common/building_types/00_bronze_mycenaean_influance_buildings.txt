@@ -8,24 +8,56 @@
 #	}
 
 
-    bronze_age_mycenaean_influence_building = {
-        mycenaean_investment = 10 
-        forbidden_for_estates = yes
-        pop_type = burghers
-        employment_size = generic_burgher_employment
-        on_built = {
-            location = {
-                recalculate_mycenaean_influence = yes
-            }
-            
-        }
-        on_destroyed = {
-            location = {
-            recalculate_mycenaean_influence = yes
-            }
-        }
-        location_potential = {
-            has_mycenaean_influence = yes
-        }
-        
-    }
+#bronze_age_mycenaean_influence_building = {
+#        max_levels = 20
+#        build_time = 1
+#        mycenaean_investment = 10 
+#        forbidden_for_estates = yes
+#        pop_type = burghers
+#        employment_size = generic_burgher_employment
+#        cost = {
+#       gold = 0
+#        }
+#        location_potential = {
+#            has_mycenaean_influence = yes
+#        }
+#        rural_settlement = yes
+#        town = yes
+#        city = yes
+#        megalopolis = yes
+#
+#        
+#            on_built = {
+#                location = {
+#                    if = {
+#                        limit = {
+#                            NOT = { any_in_list = { variable = mycenaean_investors value = root.owner } }
+#                        }
+#                        add_to_variable_list = {
+#                            name = "mycenaean_investors"
+#                            target = root.owner
+#                        }
+#                    }
+#                    recalculate_mycenaean_influence = yes
+#                }
+#            }
+#            on_destroyed = {
+#                location = {
+#                    if = {
+#                        limit = {
+#                            NOT = {
+#                                any_building_in_location = {
+#                                    building_type = bronze_age_mycenaean_influence_building
+#                                    owner = prev
+#                                }
+#                            }
+#                        }
+#                        remove_list_variable = {
+#                            name = "mycenaean_investors"
+#                            target = prev.owner
+#                        }
+#                    }
+#                    recalculate_mycenaean_influence = yes
+#        }
+#    }
+#}

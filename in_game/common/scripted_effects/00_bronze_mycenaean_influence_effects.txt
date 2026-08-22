@@ -5,51 +5,63 @@
 
 
 
-recalculate_mycenaean_influence = {
-	set_variable = {
-		name = "mycenaean_total_investment"
-		value =  0	
-	}
-	every_building_in_location = {
-		limit = {
-			building_type = bronze_age_mycenaean_influence_building
-		}
-		change_variable = {
-			name = "mycenaean_total_investment"
-			value =  mycenaean_investment
-		}
-	}
-	every_building_in_location = {
-		limit = {
-			building_type = bronze_age_mycenaean_influence_building
-	}
-		owner = {
-			set_variable = {
-           		name = "mycenaean_owner_investment"
-            	value = 0
-        }
-		every_building_in_location = {
-			limit = {
-				building_type = bronze_age_mycenaean_influence_building
-				owner = prev
-			}
-			change_variable = {
-				name = "mycenaean_owner_investment"
-				value =  mycenaean_investment
-			}
-		}		
-			set_variable = {
-				name = "mycenaean_influence"
-				value = mycenaean_owner_investment
-			}
-				multiply_variable = {
-				name = "mycenaean_influence"
-				value = 100
-			}
-			divide_variable = {
-				name = "mycenaean_influence"
-				value = mycenaean_total_investment
-			}
-		}
-	}
-}
+#recalculate_mycenaean_influence = {
+#	set_variable = {
+#		name = "mycenaean_total_investment"
+#		value = 0	
+#	}
+#	every_buildings_in_location = {
+#		limit = {
+#			building_type = bronze_age_mycenaean_influence_building
+#		}
+#		root = {                                         
+#				name = "mycenaean_total_investment"
+#				value = prev.mycenaean_investment         
+#			}
+#		}
+#	}
+#	every_buildings_in_location = {
+#		limit = {
+#			building_type = bronze_age_mycenaean_influence_building
+#		}
+#		owner = {
+#			set_variable = {
+#				name = "mycenaean_owner_investment"
+#				value = 0
+#			}
+#			every_buildings_in_location = {
+#				limit = {
+#					building_type = bronze_age_mycenaean_influence_building
+#					owner = prev
+#				}
+#				prev = {                                  
+#					change_variable = {
+#						name = "mycenaean_owner_investment"
+#						add = prev.mycenaean_investment  
+#					}
+#				}
+#			}
+#			set_variable = {
+#				name = "mycenaean_influence"
+#				value = mycenaean_owner_investment
+#			}
+#			multiply_variable = {
+#				name = "mycenaean_influence"
+#				value = 100
+#			}
+#			divide_variable = {
+#				name = "mycenaean_influence"
+#				value = root.mycenaean_total_investment  
+#			}
+#			if = {
+#				limit = { this = root.owner }
+#				root = {
+#					set_variable = {
+#						name = "mycenaean_influence"
+#						value = prev.mycenaean_influence
+#					}
+#				}
+#			}
+#		}
+#	}
+#}
