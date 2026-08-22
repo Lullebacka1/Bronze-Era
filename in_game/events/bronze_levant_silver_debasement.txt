@@ -124,7 +124,7 @@ levant_silver_debasement.11 = {
 
 	option = {
 		name = levant_silver_debasement.11.a
-		custom_tooltip = levant_silver_debasement_11a_tt
+		custom_tooltip = levant_silver_debasement.11.a_tt
 
 		trigger = {
 			has_codified_laws = yes
@@ -149,7 +149,7 @@ levant_silver_debasement.11 = {
 
 	option = {
 		name = levant_silver_debasement.11.b
-		custom_tooltip = levant_silver_debasement_11b_tt
+		custom_tooltip = levant_silver_debasement.11.b_tt
 
 		trigger = {
 			OR = {
@@ -179,7 +179,7 @@ levant_silver_debasement.11 = {
 
 	option = {
 		name = levant_silver_debasement.11.c
-		custom_tooltip = levant_silver_debasement_11c_tt
+		custom_tooltip = levant_silver_debasement.11.c_tt
 
 		trigger = {
 			OR = {
@@ -203,7 +203,7 @@ levant_silver_debasement.11 = {
 
 	option = {
 		name = levant_silver_debasement.11.d
-		custom_tooltip = levant_silver_debasement_11d_tt
+		custom_tooltip = levant_silver_debasement.11.d_tt
 
 		trigger = {
 			has_codified_laws = no
@@ -230,7 +230,7 @@ levant_silver_debasement.11 = {
 
 	option = {
 		name = levant_silver_debasement.11.e
-		custom_tooltip = levant_silver_debasement_11e_tt
+		custom_tooltip = levant_silver_debasement.11.e_tt
 
 		historical_option = yes
 
@@ -310,7 +310,7 @@ levant_silver_debasement.111 = {
 
 	option = {
 		name = levant_silver_debasement.111.a
-		custom_tooltip = levant_silver_debasement_111a_tt
+		custom_tooltip = levant_silver_debasement.111.a_tt
 
 		every_market_present_in_country = {
 			remove_temporary_demand = demand:levantine_silver_crisis
@@ -327,7 +327,7 @@ levant_silver_debasement.111 = {
 
 	option = {
 		name = levant_silver_debasement.111.b
-		custom_tooltip = levant_silver_debasement_111b_tt
+		custom_tooltip = levant_silver_debasement.111.b_tt
 
 		every_market_present_in_country = {
 			remove_temporary_demand = demand:levantine_silver_crisis_debasement_start
@@ -398,7 +398,7 @@ levant_silver_debasement.112 = {
 
 	option = {
 		name = levant_silver_debasement.112.a
-		custom_tooltip = levant_silver_debasement_112a_tt
+		custom_tooltip = levant_silver_debasement.112.a_tt
 
 		every_market_present_in_country = {
 			remove_temporary_demand = demand:levantine_silver_crisis
@@ -413,7 +413,7 @@ levant_silver_debasement.112 = {
 
 	option = {
 		name = levant_silver_debasement.112.b
-		custom_tooltip = levant_silver_debasement_112b_tt
+		custom_tooltip = levant_silver_debasement.112.b_tt
 
 		every_market_present_in_country = {
 			add_temporary_demand = {
@@ -472,7 +472,7 @@ levant_silver_debasement.113 = {
 
 	option = {
 		name = levant_silver_debasement.113.a
-		custom_tooltip = levant_silver_debasement_113a_tt
+		custom_tooltip = levant_silver_debasement.113.a_tt
 
 		every_market_present_in_country = {
 			remove_temporary_demand = demand:levantine_silver_crisis
@@ -495,7 +495,7 @@ levant_silver_debasement.113 = {
 
 	option = {
 		name = levant_silver_debasement.113.b
-		custom_tooltip = levant_silver_debasement_113b_tt
+		custom_tooltip = levant_silver_debasement.113.b_tt
 
 		every_market_present_in_country = {
 			add_temporary_demand = {
@@ -554,7 +554,7 @@ levant_silver_debasement.114 = {
 
 	option = {
 		name = levant_silver_debasement.114.a
-		custom_tooltip = levant_silver_debasement_114a_tt
+		custom_tooltip = levant_silver_debasement.114.a_tt
 
 		every_market_present_in_country = {
 			remove_temporary_demand = demand:levantine_silver_crisis
@@ -578,7 +578,7 @@ levant_silver_debasement.114 = {
 
 	option = {
 		name = levant_silver_debasement.114.b
-		custom_tooltip = levant_silver_debasement_114b_tt
+		custom_tooltip = levant_silver_debasement.114.b_tt
 
 		historical_option = yes
 
@@ -648,7 +648,7 @@ levant_silver_debasement.1111 = {
 
 	option = {
 		name = levant_silver_debasement.1111.a
-		custom_tooltip = levant_silver_debasement_1111a_tt
+		custom_tooltip = levant_silver_debasement.1111.a_tt
 
 		every_market_present_in_country = {
 			remove_temporary_demand = demand:levantine_silver_crisis_debasement_start
@@ -670,7 +670,7 @@ levant_silver_debasement.1111 = {
 
 	option = {
 		name = levant_silver_debasement.1111.b
-		custom_tooltip = levant_silver_debasement_1111b_tt
+		custom_tooltip = levant_silver_debasement.1111.b_tt
 
 		historical_option = yes
 
