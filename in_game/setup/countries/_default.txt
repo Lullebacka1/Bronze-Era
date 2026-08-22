@@ -2176,6 +2176,11 @@ LAI = {
 	color2 = rgb { 209 158 224 }
 }
 
+SHAND = {
+	color = rgb { 94 128 102 }
+	color2 = rgb { 174 146 82 }
+}
+
 LAPEI = {
 	color = rgb { 48 41 50 }
 	color2 = rgb { 57 47 60 }

@@ -213,6 +213,10 @@ SHANG = { # Shang dynasty, using the provided red field and black glyph flag.
 	flag_definition = { coa = bronze_age_SHANG_coa priority = 10000 }
 }
 
+SHAND = { # Shandong formable, reusing Shang royal glyph style for an eastern Shang-rite kingdom.
+	flag_definition = { coa = bronze_age_SHANG_coa priority = 10000 }
+}
+
 MAYA = { # Maya, using the provided four-field flag.
 	flag_definition = { coa = bronze_age_MAYA_coa priority = 10000 }
 }
