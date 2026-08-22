@@ -4320,7 +4320,22 @@ lateralview = {
 								}
 							}
 
-							expand = {}
+							expand = {	
+							# Influance						
+							widget = {
+								size = { 36 36 }
+								datacontext = "[LocationView.GetLocation]"
+								visible = "yes"
+								text_single = {
+									size = { 36 36 }
+									autoresize = yes
+									text = "TEST_INFLUANCE"
+								default_format = "#P"
+								}
+							}
+						}
+							
+
 						}
 					}
 					# BOTTOM CONDITIONS
