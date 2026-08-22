@@ -1,4 +1,4 @@
-sea_peoples_fortify_coastal_palaces_price = {
+﻿sea_peoples_fortify_coastal_palaces_price = {
 	scaled_gold = 1.5
 	scaled_manpower = 0.05
 	stability = 5
