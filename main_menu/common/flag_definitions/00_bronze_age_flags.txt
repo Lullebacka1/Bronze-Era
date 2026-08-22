@@ -1,4 +1,4 @@
-# Bronze Age custom flag definitions.
+﻿# Bronze Age custom flag definitions.
 # These definitions do not overwrite vanilla files; they add new tag-specific
 # definitions for the Bronze Era total conversion.
 
