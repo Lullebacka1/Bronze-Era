@@ -54,6 +54,7 @@ bronze_armenia_create_starting_union = {
 }
 
 bronze_azzi_hayasa_apply_confederation_identity = {
+	bronze_formable_make_monarchy_if_tribal = yes
 	change_country_name = AZZI_HAJAS
 	change_country_adjective = AZZI_HAJAS_ADJ
 	change_country_color = map_AZZI_HAJAS
@@ -110,6 +111,7 @@ bronze_yerevan_foundation_create_city = {
 	set_global_variable = { name = bronze_yerevan_foundation_resolved value = 1 }
 	remove_global_variable = bronze_yerevan_foundation_event_pending
 	add_gold = -200
+	bronze_formable_make_monarchy_if_tribal = yes
 	change_country_name = ARM
 	change_country_adjective = ARM_ADJ
 	change_country_color = map_BA_ARM

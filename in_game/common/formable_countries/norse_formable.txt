@@ -83,6 +83,7 @@ ASGARD_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		if = {
 			limit = { country_rank_level < 4 }
 			set_country_rank_effect = { rank = country_rank:rank_empire }
@@ -444,6 +445,7 @@ MIDGARD_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		if = {
 			limit = { country_rank_level < 3 }
 			set_country_rank_effect = { rank = country_rank:rank_kingdom }
@@ -568,6 +570,7 @@ JOTUNHEIM_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		if = {
 			limit = { country_rank_level < 3 }
 			set_country_rank_effect = { rank = country_rank:rank_kingdom }
@@ -689,6 +692,7 @@ VANAHEIM_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		if = {
 			limit = { country_rank_level < 3 }
 			set_country_rank_effect = { rank = country_rank:rank_kingdom }
@@ -777,6 +781,7 @@ ALFHEIM_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		if = {
 			limit = { country_rank_level < 3 }
 			set_country_rank_effect = { rank = country_rank:rank_kingdom }
@@ -871,6 +876,7 @@ NIDAVELLIR_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		if = {
 			limit = { country_rank_level < 3 }
 			set_country_rank_effect = { rank = country_rank:rank_kingdom }
@@ -974,6 +980,7 @@ MUSPELLHEIM_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		if = {
 			limit = { country_rank_level < 3 }
 			set_country_rank_effect = { rank = country_rank:rank_kingdom }
@@ -1054,6 +1061,7 @@ NIFLHEIM_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		if = {
 			limit = { country_rank_level < 3 }
 			set_country_rank_effect = { rank = country_rank:rank_kingdom }
@@ -1145,6 +1153,7 @@ HELHEIM_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		if = {
 			limit = { country_rank_level < 3 }
 			set_country_rank_effect = { rank = country_rank:rank_kingdom }
@@ -1251,6 +1260,7 @@ VINDLAND_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		if = {
 			limit = { country_rank_level < 3 }
 			set_country_rank_effect = { rank = country_rank:rank_kingdom }

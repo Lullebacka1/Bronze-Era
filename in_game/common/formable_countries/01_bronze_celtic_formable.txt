@@ -54,6 +54,7 @@ ARMOR_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		change_culture = culture:armorican
 		change_religion = religion:gaulish_pagan
 		set_capital = location:vannes

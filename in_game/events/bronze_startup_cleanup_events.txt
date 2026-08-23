@@ -1,0 +1,19 @@
+namespace = bronze_startup_cleanup
+
+# Hidden startup safety event.
+# EU5's economy can initialize Bronze Era countries as bankrupt on day one when
+# the internal timeline starts in year 1. This clears only that initial state.
+bronze_startup_cleanup.1 = {
+	type = country_event
+	outcome = neutral
+	title = empty_text
+	desc = empty_text
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { is_during_bankruptcy = yes }
+			set_bankruptcy = no
+		}
+	}
+}
