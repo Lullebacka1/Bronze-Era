@@ -10,8 +10,8 @@ government = {
 	heir_selection = cognatic_primogeniture
 
 	centralization_vs_decentralization = 0
-	traditionalist_vs_innovative = -35
-	spiritualist_vs_humanist = -55
+	traditionalist_vs_innovative = -20
+	spiritualist_vs_humanist = 0
 	aristocracy_vs_plutocracy = -45
 	serfdom_vs_free_subjects = 25
 	mercantilism_vs_free_trade = 0
@@ -20,7 +20,7 @@ government = {
 	offensive_vs_defensive = 5
 	land_vs_naval = -15
 	capital_economy_vs_traditional_economy = 45
-	individualism_vs_communalism = 25
+	individualism_vs_communalism = 35
 	outward_vs_inward = 0
 
 	parliament = {
