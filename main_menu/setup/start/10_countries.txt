@@ -88,16 +88,6 @@ countries = {
 		}
 	}
 
-
-
-
-
-
-
-
-
-
-
 	##HATTI
 	HATTI = {
 	capital = huseyinabad
