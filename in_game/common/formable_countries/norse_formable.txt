@@ -93,7 +93,7 @@ ASGARD_f = {
 		add_legitimacy = legitimacy_mild_bonus
 		add_country_modifier = {
 			modifier = bronze_asgard_high_kingship
-			years = -1
+			days = -1
 			mode = add_and_extend
 		}
 		custom_tooltip = bronze_asgard_remaining_claims_tt
@@ -454,7 +454,7 @@ MIDGARD_f = {
 		add_stability = stability_weak_bonus
 		add_country_modifier = {
 			modifier = bronze_midgard_folkland_order
-			years = -1
+			days = -1
 			mode = add_and_extend
 		}
 		custom_tooltip = bronze_midgard_remaining_claims_tt
@@ -577,7 +577,7 @@ JOTUNHEIM_f = {
 		add_prestige = prestige_weak_bonus
 		add_country_modifier = {
 			modifier = bronze_jotunheim_mountain_clans
-			years = -1
+			days = -1
 			mode = add_and_extend
 		}
 		custom_tooltip = bronze_jotunheim_remaining_claims_tt
@@ -698,7 +698,7 @@ VANAHEIM_f = {
 		add_prestige = prestige_weak_bonus
 		add_country_modifier = {
 			modifier = bronze_vanaheim_vanir_folklands
-			years = -1
+			days = -1
 			mode = add_and_extend
 		}
 		custom_tooltip = bronze_vanaheim_remaining_claims_tt
@@ -786,7 +786,7 @@ ALFHEIM_f = {
 		add_prestige = prestige_weak_bonus
 		add_country_modifier = {
 			modifier = bronze_alfheim_forest_folklands
-			years = -1
+			days = -1
 			mode = add_and_extend
 		}
 		custom_tooltip = bronze_alfheim_remaining_claims_tt
@@ -880,7 +880,7 @@ NIDAVELLIR_f = {
 		add_prestige = prestige_weak_bonus
 		add_country_modifier = {
 			modifier = bronze_nidavellir_bronze_smiths
-			years = -1
+			days = -1
 			mode = add_and_extend
 		}
 		custom_tooltip = bronze_nidavellir_remaining_claims_tt
@@ -983,7 +983,7 @@ MUSPELLHEIM_f = {
 		add_prestige = prestige_weak_bonus
 		add_country_modifier = {
 			modifier = bronze_muspellheim_volcanic_seaways
-			years = -1
+			days = -1
 			mode = add_and_extend
 		}
 		custom_tooltip = bronze_muspellheim_remaining_claims_tt
@@ -1063,7 +1063,7 @@ NIFLHEIM_f = {
 		add_prestige = prestige_weak_bonus
 		add_country_modifier = {
 			modifier = bronze_niflheim_cold_marches
-			years = -1
+			days = -1
 			mode = add_and_extend
 		}
 		custom_tooltip = bronze_niflheim_remaining_claims_tt
@@ -1154,7 +1154,7 @@ HELHEIM_f = {
 		add_prestige = prestige_weak_bonus
 		add_country_modifier = {
 			modifier = bronze_helheim_ancestor_straits
-			years = -1
+			days = -1
 			mode = add_and_extend
 		}
 		custom_tooltip = bronze_helheim_remaining_claims_tt
@@ -1260,7 +1260,7 @@ VINDLAND_f = {
 		add_prestige = prestige_weak_bonus
 		add_country_modifier = {
 			modifier = bronze_vindland_amber_waterways
-			years = -1
+			days = -1
 			mode = add_and_extend
 		}
 		custom_tooltip = bronze_vindland_remaining_claims_tt

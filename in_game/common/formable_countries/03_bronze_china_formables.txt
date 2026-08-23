@@ -1,0 +1,75 @@
+# Bronze Era Chinese regional formables.
+
+SHAND_f = {
+	level = 3
+	required_locations_fraction = 1.00
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 720
+
+	potential = {
+		OR = {
+			culture = culture:shang
+			tag = XUAN
+			tag = YUYI
+			tag = LAI
+		}
+		NOT = { tag = SHAND }
+		NOT = { country_exists = c:SHAND }
+		NOT = { has_variable = bronze_formed_shandong }
+	}
+
+	allow = {
+		is_subject = no
+		owns = location:huangxian
+		owns = location:penglai
+		owns = location:dasong
+		owns = location:fushan_jiaozhou
+		owns = location:jiangshan_laiyang
+		owns = location:jiaoshui
+		owns = location:jiaoxi
+		owns = location:jimo
+		owns = location:laiyang
+		owns = location:lingshanwei
+		owns = location:luxiang
+		owns = location:qixia
+		owns = location:yexian_laizhou
+		owns = location:zhaoyuan
+		owns = location:chengshan
+		owns = location:fushan_muping
+		owns = location:muping
+		owns = location:rushan
+		owns = location:weihai
+		owns = location:wendeng
+	}
+
+	name = SHAND
+	flag = SHAND
+	adjective = SHAND_ADJ
+	tag = SHAND
+	color = map_SHAND
+
+	locations = {
+		huangxian penglai
+		dasong fushan_jiaozhou jiangshan_laiyang jiaoshui jiaoxi jimo
+		laiyang lingshanwei luxiang qixia yexian_laizhou zhaoyuan
+		chengshan fushan_muping muping rushan weihai wendeng
+	}
+
+	form_effect = {
+		change_culture = culture:shang
+		change_religion = religion:shang_rites
+		set_capital = location:jimo
+		add_accepted_culture = culture:shang
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_shandong value = 1 }
+		add_legitimacy = legitimacy_weak_bonus
+		add_prestige = prestige_weak_bonus
+		add_stability = stability_weak_bonus
+	}
+}
