@@ -84,7 +84,7 @@ mycenaean_influence = {
 				value = 0
 			}
 			set_variable = {
-				name = "1_influence_worth"
+				name = "one_influence_worth"
 				value = 0
 			}
 			set_variable = {
@@ -99,20 +99,30 @@ mycenaean_influence = {
 	}
 	# RESET MEMBER VARIABLES
 	international_organization:mycenaean_league = {
+
 		save_scope_as = mycenaean_league_scope
+
 		every_international_organization_member = {
+
 			change_variable = {
 				name = "mycenaean_calculation_tax_base"
-				add = tax_base
+				add = country_tax_base
 			}
+
 			multiply_variable = {
 				name = "mycenaean_calculation_tax_base"
-				value = 1 # custom value can be added for modifiers that will affect the influence later (the modifier has to be calculated in this block)
+				value = 1 # custom value can be added for modifiers that will affect the influence later
 			}
+
+			save_scope_value_as = {
+				name = "mycenaean_member_tax_base"
+				value = var:mycenaean_calculation_tax_base
+			}
+
 			scope:mycenaean_league_scope = {
 				change_variable = {
 					name = "mycenaean_tax_base"
-					add = mycenaean_calculation_tax_base
+					add = scope:mycenaean_member_tax_base
 				}
 			}
 		}
@@ -120,7 +130,7 @@ mycenaean_influence = {
 	international_organization:mycenaean_league = {
 		save_scope_value_as = {
 			name = mycenaean_total_tax_base
-			value = mycenaean_tax_base
+			value = var:mycenaean_tax_base
 		}
 		every_international_organization_member = {
 			set_variable = {
@@ -129,32 +139,32 @@ mycenaean_influence = {
 			}
 			change_variable = {
 				name = "mycenaean_calculation_influence_tax_base"
-				add = tax_base
+				add = country_tax_base
 			}
 			multiply_variable = {
 				name = "mycenaean_calculation_influence_tax_base"
 				value = 1 # custom value can be added for modifiers that will affect the influence later
 			}
 			change_variable = {
-				name = "1_influence_worth"
-				add = mycenaean_country_total_tax_base
+				name = "one_influence_worth"
+				add = var:mycenaean_country_total_tax_base
 			}
 			divide_variable = {
-				name = "1_influence_worth"
+				name = "one_influence_worth"
 				value = 100
 			}
 			change_variable = {
 				name = "country_influence"
-				add = mycenaean_calculation_influence_tax_base
+				add = var:mycenaean_calculation_influence_tax_base
 			}
 			divide_variable = {
 				name = "country_influence"
-				value = 1_influence_worth
+				value = var:one_influence_worth
 			}
 		}
 	}
 }
-
+ # custom value can be added for modifiers that will affect the influence later
 		# 100/mycenaean_tax_base = 1_influence_worth
 		# mycenaean_calculation_influence_tax_base/1_influence_worth = country_influence 
 		# save country_influence for league member/owner

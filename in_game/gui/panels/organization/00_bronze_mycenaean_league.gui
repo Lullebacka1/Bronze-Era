@@ -642,27 +642,27 @@ types OrganizationPanel
 								}
 								header_paper_card = {
 									size = { 100% 90 }
-								blockoverride "header_content" {		
-									text_single = {
-										layoutpolicy_horizontal = expanding
-										text = " Influence"
-										align = left|nobaseline
-										fontsize = 25
-										autoresize = yes
-										default_format = "#L"
-									}
-								}
-								 blockoverride "bottom_content" {
-												text_multi = {
-													autoresize = no
-													multiline = yes
-													size = { 470 50 }
-													fontsize = 20
-													text = "Test"
-												}
+									blockoverride "header_content" {		
+										text_single = {
+											layoutpolicy_horizontal = expanding
+											text = " Influence"
+											align = left|nobaseline
+											fontsize = 25
+											autoresize = yes
+											default_format = "#L"
 										}
-									
-								}	
+									}
+									blockoverride "bottom_content" {
+										text_single = {
+											layoutpolicy_horizontal = expanding
+											text = "[GetCountry('0001G').GetVariable('country_influence')]"
+											align = left|nobaseline
+											fontsize = 20
+											autoresize = yes
+											default_format = "#Y"
+										}
+									}
+								}																										
                         	}
 						}
                     }
