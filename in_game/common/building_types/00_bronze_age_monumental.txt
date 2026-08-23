@@ -103,7 +103,7 @@ bronze_monumental_gates = {
 	}
 
 	unique_production_methods = {
-		bronze_age_triumphal_monument_maintenance_simple = {
+		bronze_monumental_gates_maintenance_simple = {
 			masonry = 0.1
 			lumber = 0.1
 			tools = 0.2
