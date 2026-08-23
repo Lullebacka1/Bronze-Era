@@ -584,6 +584,7 @@ types OrganizationPanel
 
 					# CUSTOM TABS
 					# influence and cohesion
+					# change all text to loc for future localization
                     vbox = {
 						align = top
 						size = { 540 595 }
@@ -618,11 +619,9 @@ types OrganizationPanel
 								}
 								 blockoverride "bottom_content" {	
 									hbox = {
-										   	layoutpolicy_horizontal = fixed
-											autoresize = yes
-											spacing = 5
+										spacing = 5
 												text_single = {
-													layoutpolicy_horizontal = fixed
+													layoutpolicy_horizontal = expand
 													align = left|nobaseline
 													autoresize = yes
 													fontsize = 20
@@ -630,13 +629,14 @@ types OrganizationPanel
 													default_format = "#Y"
 												}
 												text_single = {
-													layoutpolicy_horizontal = fixed
+													layoutpolicy_horizontal = expand
 													autoresize = yes
 													align = left|nobaseline
 													fontsize = 20
 													text = "mycenaean_fragmentation_panel_unity_value"
 													default_format = "#Y"
 												}
+												expand = {}
 										}
 								    }
 								}
