@@ -14,7 +14,7 @@ on_game_start = {
 		}
 	}
 }
-
+      # marche pas bordel -> fuck no work
 on_bankruptcy = {
 	effect = {
 		if = {
