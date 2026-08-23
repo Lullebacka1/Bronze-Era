@@ -1,0 +1,29 @@
+on_game_start = {
+	effect = {
+		every_country = {
+			limit = {
+				is_real_country = yes
+				is_during_bankruptcy = yes
+			}
+			trigger_event_silently = bronze_startup_cleanup.1
+		}
+	}
+}
+
+monthly_country_pulse = {
+	on_actions = {
+		bronze_startup_bankruptcy_cleanup_first_months
+	}
+}
+
+bronze_startup_bankruptcy_cleanup_first_months = {
+	trigger = {
+		is_real_country = yes
+		current_date < 1.3.1
+		is_during_bankruptcy = yes
+	}
+
+	effect = {
+		trigger_event_silently = bronze_startup_cleanup.1
+	}
+}

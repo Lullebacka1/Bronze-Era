@@ -1,0 +1,90 @@
+yearly_country_pulse = {
+	on_actions = {
+		bronze_volcanic_eruptions_yearly_pulse
+		bronze_volcanic_eruptions.67
+		bronze_volcanic_eruptions.68
+		bronze_volcanic_eruptions.69
+		bronze_volcanic_eruptions.70
+		bronze_volcanic_eruptions.71
+		bronze_volcanic_eruptions.72
+		bronze_volcanic_eruptions.73
+		bronze_volcanic_eruptions.74
+	}
+}
+
+bronze_volcanic_eruptions_yearly_pulse = {
+	trigger = {
+		is_real_country = yes
+		current_year >= 1
+		current_year <= 1310
+	}
+
+	events = {
+		bronze_volcanic_eruptions.1
+		bronze_volcanic_eruptions.2
+		bronze_volcanic_eruptions.3
+		bronze_volcanic_eruptions.4
+		bronze_volcanic_eruptions.5
+		bronze_volcanic_eruptions.6
+		bronze_volcanic_eruptions.7
+		bronze_volcanic_eruptions.8
+		bronze_volcanic_eruptions.9
+		bronze_volcanic_eruptions.10
+		bronze_volcanic_eruptions.11
+		bronze_volcanic_eruptions.12
+		bronze_volcanic_eruptions.13
+		bronze_volcanic_eruptions.14
+		bronze_volcanic_eruptions.15
+		bronze_volcanic_eruptions.16
+		bronze_volcanic_eruptions.17
+		bronze_volcanic_eruptions.18
+		bronze_volcanic_eruptions.19
+		bronze_volcanic_eruptions.20
+		bronze_volcanic_eruptions.21
+		bronze_volcanic_eruptions.22
+		bronze_volcanic_eruptions.23
+		bronze_volcanic_eruptions.24
+		bronze_volcanic_eruptions.25
+		bronze_volcanic_eruptions.26
+		bronze_volcanic_eruptions.27
+		bronze_volcanic_eruptions.28
+		bronze_volcanic_eruptions.29
+		bronze_volcanic_eruptions.30
+		bronze_volcanic_eruptions.31
+		bronze_volcanic_eruptions.32
+		bronze_volcanic_eruptions.33
+		bronze_volcanic_eruptions.34
+		bronze_volcanic_eruptions.35
+		bronze_volcanic_eruptions.36
+		bronze_volcanic_eruptions.37
+		bronze_volcanic_eruptions.38
+		bronze_volcanic_eruptions.39
+		bronze_volcanic_eruptions.40
+		bronze_volcanic_eruptions.41
+		bronze_volcanic_eruptions.42
+		bronze_volcanic_eruptions.43
+		bronze_volcanic_eruptions.44
+		bronze_volcanic_eruptions.45
+		bronze_volcanic_eruptions.46
+		bronze_volcanic_eruptions.47
+		bronze_volcanic_eruptions.48
+		bronze_volcanic_eruptions.49
+		bronze_volcanic_eruptions.50
+		bronze_volcanic_eruptions.51
+		bronze_volcanic_eruptions.52
+		bronze_volcanic_eruptions.53
+		bronze_volcanic_eruptions.54
+		bronze_volcanic_eruptions.55
+		bronze_volcanic_eruptions.56
+		bronze_volcanic_eruptions.57
+		bronze_volcanic_eruptions.58
+		bronze_volcanic_eruptions.59
+		bronze_volcanic_eruptions.60
+		bronze_volcanic_eruptions.61
+		bronze_volcanic_eruptions.62
+		bronze_volcanic_eruptions.63
+		bronze_volcanic_eruptions.64
+		bronze_volcanic_eruptions.65
+		bronze_volcanic_eruptions.66
+	}
+}

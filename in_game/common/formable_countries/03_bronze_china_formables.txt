@@ -58,6 +58,7 @@ SHAND_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		change_culture = culture:shang
 		change_religion = religion:shang_rites
 		set_capital = location:jimo

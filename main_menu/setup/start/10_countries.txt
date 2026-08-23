@@ -88,16 +88,6 @@ countries = {
 		}
 	}
 
-
-
-
-
-
-
-
-
-
-
 	##HATTI
 	HATTI = {
 	capital = huseyinabad
@@ -37541,6 +37531,486 @@ VC001 = {
 			}
 		}
 
+		V1001 = {
+			capital = aligurdaz
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { aligurdaz }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1002 = {
+			capital = bam
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { bam }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1003 = {
+			capital = borujen
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { borujen }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1004 = {
+			capital = borujerd
+			culture = elamite
+			religion = elamite
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { borujerd }
+			government = { ruler = random }
+			accepted_cultures = { elamite }
+			discovered_regions = { persia_region }
+		}
+
+		V1005 = {
+			capital = chehl_dokhtaran
+			culture = arian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { chehl_dokhtaran }
+			government = { ruler = random }
+			accepted_cultures = { arian }
+			discovered_regions = { khorasan_region }
+		}
+
+		V1006 = {
+			capital = deh_kord
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { deh_kord }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1007 = {
+			capital = dehagh
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { dehagh }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1008 = {
+			capital = dorud
+			culture = elamite
+			religion = elamite
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { dorud }
+			government = { ruler = random }
+			accepted_cultures = { elamite }
+			discovered_regions = { persia_region }
+		}
+
+		V1009 = {
+			capital = dowlatabad
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { dowlatabad }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1010 = {
+			capital = dowzdab
+			culture = gedrosian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { dowzdab }
+			government = { ruler = random }
+			accepted_cultures = { gedrosian }
+			discovered_regions = { khorasan_region }
+		}
+
+		V1011 = {
+			capital = fahraj_narmashir
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { fahraj_narmashir }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1012 = {
+			capital = fereydunshahr
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { fereydunshahr }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1013 = {
+			capital = golpayegan
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { golpayegan }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1014 = {
+			capital = isfahan
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { isfahan }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1015 = {
+			capital = karaj_abi_dulaf
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { karaj_abi_dulaf }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1016 = {
+			capital = karkevand
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { karkevand }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1017 = {
+			capital = khomeyn
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { khomeyn }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1018 = {
+			capital = khondab
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { khondab }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1019 = {
+			capital = khwansar
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { khwansar }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1020 = {
+			capital = kusk
+			culture = bactrian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { kusk }
+			government = { ruler = random }
+			accepted_cultures = { bactrian }
+			discovered_regions = { khorasan_region }
+		}
+
+		V1021 = {
+			capital = kusk_kohneh
+			culture = bactrian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { kusk_kohneh }
+			government = { ruler = random }
+			accepted_cultures = { bactrian }
+			discovered_regions = { khorasan_region }
+		}
+
+		V1022 = {
+			capital = mahallat
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { mahallat }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1023 = {
+			capital = malayer
+			culture = elamite
+			religion = elamite
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { malayer }
+			government = { ruler = random }
+			accepted_cultures = { elamite }
+			discovered_regions = { persia_region }
+		}
+
+		V1024 = {
+			capital = mashhad_rizeh
+			culture = arian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { mashhad_rizeh }
+			government = { ruler = random }
+			accepted_cultures = { arian }
+			discovered_regions = { khorasan_region }
+		}
+
+		V1025 = {
+			capital = murcheh_khvort
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { murcheh_khvort }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1026 = {
+			capital = naghan
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { naghan }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1027 = {
+			capital = narmashir
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { narmashir }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1028 = {
+			capital = nehbandan
+			culture = arian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { nehbandan }
+			government = { ruler = random }
+			accepted_cultures = { arian }
+			discovered_regions = { khorasan_region }
+		}
+
+		V1029 = {
+			capital = nimvar
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { nimvar }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1030 = {
+			capital = pushang
+			culture = arian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { pushang }
+			government = { ruler = random }
+			accepted_cultures = { arian }
+			discovered_regions = { khorasan_region }
+		}
+
+		V1031 = {
+			capital = qumisha
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { qumisha }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1032 = {
+			capital = rayen
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { rayen }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1033 = {
+			capital = rigan
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { rigan }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1034 = {
+			capital = saruk
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { saruk }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1035 = {
+			capital = sepeh
+			culture = gedrosian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { sepeh }
+			government = { ruler = random }
+			accepted_cultures = { gedrosian }
+			discovered_regions = { persia_region }
+		}
+
+		V1036 = {
+			capital = shusef
+			culture = arian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { shusef }
+			government = { ruler = random }
+			accepted_cultures = { arian }
+			discovered_regions = { khorasan_region }
+		}
+
+		V1037 = {
+			capital = sibak
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { sibak }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1038 = {
+			capital = sohrfiruzan
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { sohrfiruzan }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1039 = {
+			capital = tafresh
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { tafresh }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
+		V1040 = {
+			capital = vanak
+			culture = persian
+			religion = iranic
+			country_rank = rank_county
+			include = "village_community"
+			own_control_core = { vanak }
+			government = { ruler = random }
+			accepted_cultures = { persian }
+			discovered_regions = { persia_region }
+		}
+
 	DAPG = {
 		culture = shang
 		religion = shang_rites
@@ -39085,6 +39555,30 @@ VC001 = {
 		}
 		discovered_regions = {
 			ruthenia_region
+		}
+	}
+
+	PUNT = {
+		culture = puntite
+		religion = puntite_rites
+		country_rank = rank_kingdom
+		own_control_core = {
+			afrera      ali_sabieh  amud        asaita      balho       berbera
+			bosaso      el_ayum     el_darad    el_sheikh   fardawsa    hargeisa
+			killelu     las_khorey  maydh       mora_eth    obock       ruguda
+			siyara      tadjoura    xagal       zeila
+		}
+		capital = killelu
+		include = "Bronze_coast"
+		government = {
+			ruler = random
+		}
+		accepted_cultures = {
+			puntite
+		}
+		discovered_regions = {
+			ethiopia_region
+			somalia_region
 		}
 	}
 }

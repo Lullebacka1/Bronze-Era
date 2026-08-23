@@ -1,0 +1,303 @@
+﻿namespace = volcano_events
+
+
+
+scripted_effect weak_volcano_damage_cost = {
+	owner = {
+		change_gold_effect = { scale = -2 }
+	}
+}
+
+scripted_effect minor_volcano_damage_cost = {
+	owner = {
+		change_gold_effect = { scale = -4 }
+	}
+}
+
+scripted_effect major_volcano_damage_cost = {
+	owner = {
+		change_gold_effect = { scale = -6 }
+	}	
+}
+
+scripted_effect catastrophic_volcano_damage_cost = {
+	owner = {
+		change_gold_effect = { scale = -10 }
+	}
+}
+
+scripted_effect weak_volcano_damage_with_rebuild = {
+	weak_volcano_damage = yes
+	add_location_modifier = {
+		modifier = minor_recovery_effort
+		years = 10
+		mode = add_and_extend
+	}
+}
+
+scripted_effect minor_volcano_damage_with_rebuild = {
+	minor_volcano_damage = yes
+	add_location_modifier = {
+		modifier = minor_recovery_effort
+		years = 10
+		mode = add_and_extend
+	}
+}
+
+scripted_effect major_volcano_damage_with_rebuild = {
+	major_volcano_damage = yes
+	add_location_modifier = {
+		modifier = major_recovery_effort
+		years = 10
+		mode = add_and_extend
+	}
+}
+
+scripted_effect catastrophic_volcano_damage_with_rebuild = {
+	catastrophic_volcano_damage = yes
+	add_location_modifier = {
+		modifier = major_recovery_effort
+		years = 10
+		mode = add_and_extend
+	}
+}
+
+scripted_effect weak_volcano_damage = {
+	change_development = development_weak_penalty
+	change_prosperity = prosperity_severe_penalty
+	every_pop = {
+		add_pop_size = {
+			value = pop_size
+			multiply = -0.1
+		}
+	}
+	change_max_raw_material_workers = -1
+	add_location_modifier = {
+		modifier = volcanic_soil
+		years = 20
+		mode = add_and_extend
+	}
+	every_unit_in_location = {
+		damage_unit_percent = { 0 0.33 }
+		damage_unit_morale_percent = { 0.2 0.5 }
+	}
+}
+
+scripted_effect minor_volcano_damage = {
+	change_development = development_mild_penalty
+	change_prosperity = prosperity_extreme_penalty
+	every_pop = {
+		add_pop_size = {
+			value = pop_size
+			multiply = -0.2
+		}
+	}
+	change_max_raw_material_workers = -2
+	add_location_modifier = {
+		modifier = volcanic_soil
+		years = 50
+		mode = add_and_extend
+	}
+	ordered_buildings_in_location = {
+		order_by = building_level
+		max = 1
+		location = { minor_destroy_building_levels_in_location = yes }
+	}
+	
+	every_unit_in_location = {
+		damage_unit_percent = { 0.33 1 }
+		damage_unit_morale_percent = { 0.5 1 }
+	}
+}
+
+scripted_effect major_volcano_damage = {
+	change_development = development_severe_penalty
+	change_prosperity = prosperity_ultimate_penalty
+	every_pop = {
+		add_pop_size = {
+			value = pop_size
+			multiply = -0.3
+		}
+	}
+	change_max_raw_material_workers = -3
+	add_location_modifier = {
+		modifier = volcanic_soil
+		years = 70
+		mode = add_and_extend
+	}
+	ordered_buildings_in_location = {
+		order_by = building_level
+		max = {
+			value = 1
+			add = {
+				value = location.num_buildings
+				divide = 8
+			}
+		}
+		location = { major_destroy_building_levels_in_location = yes }
+	}
+	
+	every_unit_in_location = {
+		damage_unit_percent = { 0.5 1 }
+		damage_unit_morale_percent = { 0.75 1 }
+	}
+}
+
+scripted_effect catastrophic_volcano_damage = {
+	change_development = development_extreme_penalty
+	change_prosperity = prosperity_radical_penalty
+	every_pop = {
+		add_pop_size = {
+			value = pop_size
+			multiply = -0.5
+		}
+	}
+	change_max_raw_material_workers = -5
+	add_location_modifier = {
+		modifier = volcanic_soil
+		years = 100
+		mode = add_and_extend
+	}
+	ordered_buildings_in_location = {
+		order_by = building_level
+		max = {
+			value = 1
+			add = {
+				value = num_buildings
+				divide = 6
+			}
+		}
+		location = { catastrophic_destroy_building_levels_in_location = yes }
+	}
+	
+	every_unit_in_location = {
+		destroy_unit = yes
+	}
+}
+
+volcano_events.1 = { #The respective image is showing according to the grade.
+	type = location_event
+	title = volcano_events_weak.title
+	desc = volcano_events_weak.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	trigger = {
+		has_owner = yes
+	}
+
+	immediate = {
+		set_variable = { name = volcano_erupted_minor value = yes days = {20 300} }
+		add_vfx = {
+			name = volcano_eruption_test
+			duration = 0
+		}
+	}
+	
+	option = {
+		name = volcano_events_weak.a
+		weak_volcano_damage	 = yes
+	}
+
+	option = {
+		name = volcano_events_weak.b
+		weak_volcano_damage_cost = yes
+		weak_volcano_damage_with_rebuild = yes
+	}
+}
+
+volcano_events.2 = { #The respective image is showing according to the grade.
+	type = location_event
+	title = volcano_events_minor.title
+	desc = volcano_events_minor.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	trigger = {
+		has_owner = yes
+	}
+
+	immediate = {
+		set_variable = { name = volcano_erupted_minor value = yes days = {20 300} }
+		add_vfx = {
+			name = volcano_eruption_test
+			duration = 0
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		minor_volcano_damage = yes
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		minor_volcano_damage_cost = yes
+		minor_volcano_damage_with_rebuild = yes
+	}
+}
+
+volcano_events.3 = { #The respective image is showing according to the grade.
+	type = location_event
+	title = volcano_events_major.title
+	desc = volcano_events_major.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	trigger = {
+		has_owner = yes
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		set_variable = { name = volcano_erupted_major value = yes days = {20 60} }
+		set_variable = { name = volcano_erupted_minor value = yes days = {20 300} }
+		add_vfx = {
+			name = volcano_eruption_test
+			duration = 0
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		major_volcano_damage = yes
+	}
+
+	option = {
+		name = volcano_events_major.b
+		major_volcano_damage_cost = yes
+		major_volcano_damage_with_rebuild = yes
+	}
+}
+
+volcano_events.4 = { #The respective image is showing according to the grade.
+	type = location_event
+	title = volcano_events_catastrophic.title
+	desc = volcano_events_catastrophic.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	trigger = {
+		has_owner = yes
+	}
+
+	immediate = {
+		set_variable = { name = volcano_erupted_major value = yes days = {20 60} }
+		set_variable = { name = volcano_erupted_minor value = yes days = {20 300} }
+		add_vfx = {
+			name = volcano_eruption_test
+			duration = 0
+		}	
+	}
+
+	option = {
+		name = volcano_events_catastrophic.a
+		catastrophic_volcano_damage = yes
+	}
+
+	option = {
+		name = volcano_events_catastrophic.b
+		catastrophic_volcano_damage_cost = yes
+		catastrophic_volcano_damage_with_rebuild = yes
+	}
+}

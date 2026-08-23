@@ -333,6 +333,81 @@ bronze_age_AHH_coa = { # Ahhiyawa: Achaean bronze, spear, helmet and lion.
 	}
 }
 
+bronze_age_MACED_coa = { # Macedonia: iron-age northern Greek kingship, sun and spear.
+	pattern = "pattern_solid.dds"
+	color1 = "brown"
+	color2 = "yellow_mid"
+	color3 = "red_dark"
+
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.30 } scale = { 0.42 0.42 } }
+	}
+	colored_emblem = {
+		texture = "ce_spear_head_random_small.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.62 } scale = { 0.62 0.62 } }
+	}
+}
+
+bronze_age_THESS_coa = { # Thessaly: horse plains and Aeolian-Hellenic authority.
+	pattern = "pattern_horizontal_split_01.dds"
+	color1 = "green"
+	color2 = "brown_light"
+	color3 = "yellow_mid"
+
+	colored_emblem = {
+		texture = "ce_horse_trippant.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.5 0.55 } scale = { 0.70 0.70 } }
+	}
+}
+
+bronze_age_MOLSI_coa = { # Molossia: highland kingdom of Epirus, mountain and lion.
+	pattern = "pattern_solid.dds"
+	color1 = "green_dark"
+	color2 = "yellow_dark"
+	color3 = "brown_light"
+
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color3
+		color2 = color1
+		instance = { position = { 0.5 0.72 } scale = { 0.74 0.40 } }
+	}
+	colored_emblem = {
+		texture = "ce_lion_head.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.38 } scale = { 0.48 0.48 } }
+	}
+}
+
+bronze_age_MHELL_coa = { # Hi Megali Hellas: western Greek sea routes, bronze sun and colonial ships.
+	pattern = "pattern_horizontal_split_02.dds"
+	color1 = "blue_dark"
+	color2 = "red_dark"
+	color3 = "yellow_mid"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.5 0.58 } scale = { 0.72 0.72 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.25 } scale = { 0.30 0.30 } }
+	}
+}
+
 bronze_age_ITHA_coa = { # Ithaca: Ionian blue, royal bronze, ship and bow of Odysseus.
 	pattern = "pattern_horizontal_split_02.dds"
 	color1 = "blue_dark"

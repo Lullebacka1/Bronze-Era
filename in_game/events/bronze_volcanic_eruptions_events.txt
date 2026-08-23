@@ -1,0 +1,2997 @@
+namespace = bronze_volcanic_eruptions
+
+# Bronze Era historical volcanic eruptions.
+# Internal chronology: year 1 = 1209 BC; internal year = 1210 - BC year, or 1209 + AD year.
+# These events follow the vanilla historical earthquake pattern: country_event triggers by owner + date, then applies vanilla-style volcano damage to a scoped location.
+# Source rows are preserved as comments. Locations marked TODO_LOCATION_MAPPING were not activated because the supplied ID is missing, water, wasteland, or otherwise not safely ownable.
+
+###############################
+# TODO_LOCATION_MAPPING
+###############################
+# TODO_LOCATION_MAPPING: Raoul Island at supplied raoul_island (c.1200 BC ±150 years, c.250 BC ±75 years, c.100 AD, VEI 6) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=242030
+# TODO_LOCATION_MAPPING: Cuicocha at supplied cuicocha (c.1150 BC ±150 years, VEI 5) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=352003
+# TODO_LOCATION_MAPPING: Izu-Tobu (Kawagodaira) at supplied izu_islands (c.1150 BC ±50 years, VEI 4) - not an owned/playable location. Source: https://volcano.si.edu/volcano.cfm?vn=283010
+# TODO_LOCATION_MAPPING: Antillanca Volcanic Complex at supplied antillanca (c.960 BC ±150 years, c.230 BC ±200 years, VEI 5) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=357153
+# TODO_LOCATION_MAPPING: Miyake-jima at supplied izu_islands (c.950 BC ±200 years, VEI 4) - not an owned/playable location. Source: https://volcano.si.edu/volcano.cfm?vn=284040
+# TODO_LOCATION_MAPPING: Sand Mountain Volcanic Field at supplied oregon_cascades (c.950 BC ±200 years, VEI 4) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=322040
+# TODO_LOCATION_MAPPING: Azufral at supplied azufral (c.930 BC, VEI 4) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=351090
+# TODO_LOCATION_MAPPING: Sollipulli at supplied sollipulli (c.920 BC ±75 years, VEI 5) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=357111
+# TODO_LOCATION_MAPPING: Yantarni at supplied yantarni (c.800 BC ±500 years, VEI 5) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=312100
+# TODO_LOCATION_MAPPING: Towada at supplied towada (c.750 BC, VEI 4) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=283271
+# TODO_LOCATION_MAPPING: Aogashima at supplied izu_islands (c.600 BC ±200 years, VEI 4) - not an owned/playable location. Source: https://volcano.si.edu/volcano.cfm?vn=284060
+# TODO_LOCATION_MAPPING: Apagado at supplied apagado (c.590 BC ±175 years, VEI 4) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=358024
+# TODO_LOCATION_MAPPING: Mount Meager at supplied meager (c.410 BC ±200 years, VEI 5) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=320180
+# TODO_LOCATION_MAPPING: Corbetti at supplied corbetti (c.396 BC ±38 years, VEI 5) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=221290
+# TODO_LOCATION_MAPPING: Three Sisters (Rock Mesa) at supplied oregon_cascades (c.350 BC, VEI 4) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=322070
+# TODO_LOCATION_MAPPING: Mount Rainier at supplied rainier (c.250 BC ±200 years, VEI 4) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=321030
+# TODO_LOCATION_MAPPING: Mount Haku at supplied hakusan (c.200 BC, VEI 4) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=283050
+# TODO_LOCATION_MAPPING: Yufu–Tsurumi at supplied yufu_tsurumi (c.200 BC ±50 years, VEI 4) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=282130
+# TODO_LOCATION_MAPPING: Changbaishan–Paektu at supplied changbaishan (c.180 BC ±80 years, VEI 4) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=305060
+# TODO_LOCATION_MAPPING: Okmok II at supplied okmok_island (43 BC, VEI 6) - missing location. Source: https://www.pnas.org/doi/10.1073/pnas.2002722117
+# TODO_LOCATION_MAPPING: Tenerife (Montaña Blanca–Pico Viejo) at supplied tenerife (c.80 BC ±40 years, VEI 4) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=383030
+# TODO_LOCATION_MAPPING: Rungwe at supplied rungwe (c.50 BC ±100 years, VEI 4) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=222166
+# TODO_LOCATION_MAPPING: Quetrupillán at supplied quetrupillan (c.35 AD ±35 years, VEI 4) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=357121
+# TODO_LOCATION_MAPPING: Turrialba at supplied turrialba (c.40 AD ±50 years, VEI 4) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=345070
+# TODO_LOCATION_MAPPING: Mount Churchill at supplied churchill (c.63 AD ±200 years, VEI 6) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=315030
+# TODO_LOCATION_MAPPING: Tacaná at supplied tacana (c.70 AD ±100 years, VEI 4) - missing location. Source: https://volcano.si.edu/volcano.cfm?vn=341130
+
+bronze_volcanic_eruptions.1 = { # Mount Merapi - c.1180 BC ±75 years - VEI 4 - source javanese_mountains2 -> target borobudur (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:borobudur
+		current_year >= 30
+		current_year <= 30
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:borobudur = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.2 = { # Kusatsu-Shiranesan - c.1120 BC ±150 years - VEI 4 - source kusatsu_shirane -> target agatsuma (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:agatsuma
+		current_year >= 90
+		current_year <= 90
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:agatsuma = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.3 = { # Hekla - c.1100 BC ±50 years - VEI 5 - source vattnajokull -> target hvolsvollur (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:hvolsvollur
+		current_year >= 110
+		current_year <= 110
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:hvolsvollur = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.4 = { # Mount Pinatubo - c.1050 BC ±500 years - VEI 6 - source bayambang -> target bayambang (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_catastrophic.title
+	desc = bronze_volcanic_eruptions_catastrophic.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:bayambang
+		current_year >= 160
+		current_year <= 160
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:bayambang = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_catastrophic.a
+		historical_option = yes
+		scope:target_location = { catastrophic_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_catastrophic.b
+		scope:target_location = {
+			catastrophic_volcano_damage_cost = yes
+			catastrophic_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.5 = { # Cerro Bravo - c.1050 BC ±200 years - VEI 4 - source central_mountain_range -> target guarinoes (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:guarinoes
+		current_year >= 160
+		current_year <= 160
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:guarinoes = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.6 = { # Cerro Bravo - c.730 BC ±75 years - VEI 4 - source central_mountain_range -> target guarinoes (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:guarinoes
+		current_year >= 480
+		current_year <= 480
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:guarinoes = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.7 = { # Cotopaxi - c.1050 BC - VEI 4 - source ami_mountains -> target quito (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:quito
+		current_year >= 160
+		current_year <= 160
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:quito = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.8 = { # Cotopaxi - c.400 BC - VEI 4 - source ami_mountains -> target quito (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:quito
+		current_year >= 810
+		current_year <= 810
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:quito = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.9 = { # Cotopaxi - c.230 BC - VEI 4 - source ami_mountains -> target quito (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:quito
+		current_year >= 980
+		current_year <= 980
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:quito = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.10 = { # Cotopaxi - c.70 AD - VEI 4 - source ami_mountains -> target quito (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:quito
+		current_year >= 1279
+		current_year <= 1279
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:quito = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.11 = { # Khodutka - c.1050 BC - VEI 5 - source kamchatka_uplands3 -> target pauzhetka (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:pauzhetka
+		current_year >= 160
+		current_year <= 160
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:pauzhetka = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.12 = { # Khodutka - c.930 BC ±100 years - VEI 5 - source kamchatka_uplands3 -> target pauzhetka (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:pauzhetka
+		current_year >= 280
+		current_year <= 280
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:pauzhetka = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.13 = { # Taupo - c.1050 BC - VEI 4 - source taupo -> target whakatane (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:whakatane
+		current_year >= 160
+		current_year <= 160
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:whakatane = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.14 = { # Taupo - c.1010 BC ±200 years - VEI 4 - source taupo -> target whakatane (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:whakatane
+		current_year >= 200
+		current_year <= 200
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:whakatane = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.15 = { # Taupo - c.200 BC - VEI 4 - source taupo -> target whakatane (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:whakatane
+		current_year >= 1010
+		current_year <= 1010
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:whakatane = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.16 = { # Mount Fuji - c.1030 BC - VEI 5 - source mount_fuji -> target fuji (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:fuji
+		current_year >= 180
+		current_year <= 180
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:fuji = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.17 = { # Mount Fuji - after c.930 BC - VEI 5 - source mount_fuji -> target fuji (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:fuji
+		current_year >= 310
+		current_year <= 310
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:fuji = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.18 = { # Tungurahua - c.1010 BC ±100 years - VEI 5 - source sangay_volcano -> target hambatus (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:hambatus
+		current_year >= 200
+		current_year <= 200
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:hambatus = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.19 = { # Mount Vesuvius - c.880 BC ±50 years - VEI 5 - source naples -> target naples (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:naples
+		current_year >= 330
+		current_year <= 330
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:naples = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.20 = { # Mount Vesuvius - 79 AD - VEI 5 - source naples -> target naples (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:naples
+		current_year >= 1288
+		current_year <= 1288
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:naples = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.21 = { # Katla - c.850 BC ±50 years - VEI 4 - source vattnajokull -> target hvolsvollur (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:hvolsvollur
+		current_year >= 360
+		current_year <= 360
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:hvolsvollur = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.22 = { # Nevado del Ruiz - c.850 BC - VEI 4 - source central_mountain_range -> target otun (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:otun
+		current_year >= 360
+		current_year <= 360
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:otun = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.23 = { # Nevado del Ruiz - c.200 BC ±100 years - VEI 4 - source central_mountain_range -> target otun (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:otun
+		current_year >= 1010
+		current_year <= 1010
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:otun = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.24 = { # Zavaritsky - c.850 BC - VEI 4 - source kamchatka_uplands3 -> target pauzhetka (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:pauzhetka
+		current_year >= 360
+		current_year <= 360
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:pauzhetka = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.25 = { # Tengger Caldera - c.830 BC ±50 years - VEI 4 - source javanese_mountains3 -> target lumajang (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:lumajang
+		current_year >= 380
+		current_year <= 380
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:lumajang = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.26 = { # Momotombo - c.800 BC ±50 years - VEI 4 - source tezoatega -> target tezoatega (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:tezoatega
+		current_year >= 410
+		current_year <= 410
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:tezoatega = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.27 = { # Concepción - c.770 BC ±50 years - VEI 4 - source tezoatega -> target tezoatega (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:tezoatega
+		current_year >= 440
+		current_year <= 440
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:tezoatega = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.28 = { # Pululahua - c.690 BC ±150 years - VEI 5 - source pululahua -> target quito (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:quito
+		current_year >= 520
+		current_year <= 520
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:quito = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.29 = { # Pululahua - c.450 BC ±150 years - VEI 5 - source pululahua -> target quito (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:quito
+		current_year >= 760
+		current_year <= 760
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:quito = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.30 = { # Villarrica - c.670 BC - VEI 4 - source pikunwijimapu -> target pikunwijimapu (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:pikunwijimapu
+		current_year >= 540
+		current_year <= 540
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:pikunwijimapu = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.31 = { # Ata–Kaimondake - c.650 BC - VEI 4 - source kyushu_mountains -> target kimotsuki (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:kimotsuki
+		current_year >= 560
+		current_year <= 560
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:kimotsuki = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.32 = { # Ata–Kaimondake - c.270 BC - VEI 4 - source kyushu_mountains -> target kimotsuki (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:kimotsuki
+		current_year >= 940
+		current_year <= 940
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:kimotsuki = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.33 = { # Ata–Kaimondake - c.80 BC - VEI 4 - source kyushu_mountains -> target kimotsuki (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:kimotsuki
+		current_year >= 1130
+		current_year <= 1130
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:kimotsuki = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.34 = { # Krafla–Hverfjall - c.650 BC - VEI 4 - source vattnajokull -> target holar (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:holar
+		current_year >= 560
+		current_year <= 560
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:holar = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.35 = { # Mount Pelée - c.590 BC - VEI 4 - source iguanacaera -> target iguanacaera (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:iguanacaera
+		current_year >= 620
+		current_year <= 620
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:iguanacaera = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.36 = { # Mount Pelée - c.440 BC - VEI 4 - source iguanacaera -> target iguanacaera (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:iguanacaera
+		current_year >= 770
+		current_year <= 770
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:iguanacaera = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.37 = { # Mount Pelée - c.200 BC - VEI 4 - source iguanacaera -> target iguanacaera (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:iguanacaera
+		current_year >= 1010
+		current_year <= 1010
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:iguanacaera = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.38 = { # Mount Pelée - c.10 AD - VEI 4 - source iguanacaera -> target iguanacaera (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:iguanacaera
+		current_year >= 1219
+		current_year <= 1219
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:iguanacaera = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.39 = { # Mount Pelée - c.50 AD - VEI 4 - source iguanacaera -> target iguanacaera (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:iguanacaera
+		current_year >= 1259
+		current_year <= 1259
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:iguanacaera = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.40 = { # Shikotsu–Tarumai - c.550 BC - VEI 5 - source shiraoi -> target shiraoi (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:shiraoi
+		current_year >= 660
+		current_year <= 660
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:shiraoi = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.41 = { # Tongariro - c.550 BC ±200 years - VEI 5 - source tongariro -> target whakatane (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:whakatane
+		current_year >= 660
+		current_year <= 660
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:whakatane = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.42 = { # Mount St. Helens - c.530 BC - VEI 5 - source klikitat -> target klikitat (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:klikitat
+		current_year >= 680
+		current_year <= 680
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:klikitat = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.43 = { # Mount Etna - 396 BC - VEI 5 - source mount_etna -> target catania (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:catania
+		current_year >= 814
+		current_year <= 814
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:catania = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.44 = { # Mount Etna - 122 BC - VEI 5 - source mount_etna -> target catania (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:catania
+		current_year >= 1088
+		current_year <= 1088
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:catania = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.45 = { # Arenal - c.380 BC - VEI 4 - source garabito -> target garabito (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:garabito
+		current_year >= 830
+		current_year <= 830
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:garabito = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.46 = { # Arenal - c.270 BC - VEI 4 - source garabito -> target garabito (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:garabito
+		current_year >= 940
+		current_year <= 940
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:garabito = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.47 = { # Arenal - c.170 BC - VEI 4 - source garabito -> target garabito (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:garabito
+		current_year >= 1040
+		current_year <= 1040
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:garabito = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.48 = { # Yakedake - c.350 BC - VEI 4 - source yakedake -> target mashita (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:mashita
+		current_year >= 860
+		current_year <= 860
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:mashita = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.49 = { # Atacazo–Ninahuilca - c.320 BC ±16 years - VEI 5 - source quito -> target quito (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:quito
+		current_year >= 890
+		current_year <= 890
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:quito = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.50 = { # Methana - c.258 BC - VEI 3 - source methana -> target ermioni (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_weak.title
+	desc = bronze_volcanic_eruptions_weak.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:ermioni
+		current_year >= 952
+		current_year <= 952
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:ermioni = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_weak.a
+		historical_option = yes
+		scope:target_location = { weak_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_weak.b
+		scope:target_location = {
+			weak_volcano_damage_cost = yes
+			weak_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.51 = { # Popocatépetl - c.200 BC ±300 years - VEI 5 - source popocatepetl_mountains -> target quauhquechollan (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:quauhquechollan
+		current_year >= 1010
+		current_year <= 1010
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:quauhquechollan = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.52 = { # Santorini (Palea Kameni) - 197 BC - VEI 3 - source santorini -> target milos (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_weak.title
+	desc = bronze_volcanic_eruptions_weak.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:milos
+		current_year >= 1013
+		current_year <= 1013
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:milos = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_weak.a
+		historical_option = yes
+		scope:target_location = { weak_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_weak.b
+		scope:target_location = {
+			weak_volcano_damage_cost = yes
+			weak_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.53 = { # Santorini (Palea Kameni) - 46 AD - VEI 3 - source santorini -> target milos (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_weak.title
+	desc = bronze_volcanic_eruptions_weak.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:milos
+		current_year >= 1255
+		current_year <= 1255
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:milos = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_weak.a
+		historical_option = yes
+		scope:target_location = { weak_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_weak.b
+		scope:target_location = {
+			weak_volcano_damage_cost = yes
+			weak_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.54 = { # Vulcano–Vulcanello - 183 BC - VEI 4 - source lipari -> target patti (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:patti
+		current_year >= 1027
+		current_year <= 1027
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:patti = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.55 = { # Masaya - c.170 BC ±100 years - VEI 5 - source tezoatega -> target tezoatega (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:tezoatega
+		current_year >= 1040
+		current_year <= 1040
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:tezoatega = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.56 = { # El Misti - c.80 BC ±75 years - VEI 4 - source arequipa -> target arequipa (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:arequipa
+		current_year >= 1130
+		current_year <= 1130
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:arequipa = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.57 = { # Akan–Akan-Fuji - c.50 BC - VEI 4 - source shiraoi -> target shiraoi (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:shiraoi
+		current_year >= 1160
+		current_year <= 1160
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:shiraoi = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.58 = { # Apoyeque - c.50 BC ±100 years - VEI 6 - source tezoatega -> target tezoatega (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_catastrophic.title
+	desc = bronze_volcanic_eruptions_catastrophic.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:tezoatega
+		current_year >= 1160
+		current_year <= 1160
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:tezoatega = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_catastrophic.a
+		historical_option = yes
+		scope:target_location = { catastrophic_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_catastrophic.b
+		scope:target_location = {
+			catastrophic_volcano_damage_cost = yes
+			catastrophic_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.59 = { # Stromboli - c.350 BC - VEI 2 - source mount_stromboli -> target patti (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_weak.title
+	desc = bronze_volcanic_eruptions_weak.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:patti
+		current_year >= 860
+		current_year <= 860
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:patti = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_weak.a
+		historical_option = yes
+		scope:target_location = { weak_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_weak.b
+		scope:target_location = {
+			weak_volcano_damage_cost = yes
+			weak_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.60 = { # Stromboli - c.210 BC - VEI 2 - source mount_stromboli -> target patti (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_weak.title
+	desc = bronze_volcanic_eruptions_weak.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:patti
+		current_year >= 1000
+		current_year <= 1000
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:patti = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_weak.a
+		historical_option = yes
+		scope:target_location = { weak_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_weak.b
+		scope:target_location = {
+			weak_volcano_damage_cost = yes
+			weak_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.61 = { # Stromboli - c.50 BC - VEI 2 - source mount_stromboli -> target patti (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_weak.title
+	desc = bronze_volcanic_eruptions_weak.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:patti
+		current_year >= 1160
+		current_year <= 1160
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:patti = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_weak.a
+		historical_option = yes
+		scope:target_location = { weak_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_weak.b
+		scope:target_location = {
+			weak_volcano_damage_cost = yes
+			weak_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.62 = { # Stromboli - c.50 AD - VEI 2 - source mount_stromboli -> target patti (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_weak.title
+	desc = bronze_volcanic_eruptions_weak.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:patti
+		current_year >= 1259
+		current_year <= 1259
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:patti = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_weak.a
+		historical_option = yes
+		scope:target_location = { weak_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_weak.b
+		scope:target_location = {
+			weak_volcano_damage_cost = yes
+			weak_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.63 = { # Ambrym - c.50 AD ±100 years - VEI 6 - source ambrym -> target ambrym (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_catastrophic.title
+	desc = bronze_volcanic_eruptions_catastrophic.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:ambrym
+		current_year >= 1259
+		current_year <= 1259
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:ambrym = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_catastrophic.a
+		historical_option = yes
+		scope:target_location = { catastrophic_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_catastrophic.b
+		scope:target_location = {
+			catastrophic_volcano_damage_cost = yes
+			catastrophic_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.64 = { # Guagua Pichincha - c.70 AD ±75 years - VEI 4 - source quito -> target quito (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:quito
+		current_year >= 1279
+		current_year <= 1279
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:quito = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.65 = { # Furnas - c.80 AD ±100 years - VEI 5 - source ponta_delgada -> target ponta_delgada (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:ponta_delgada
+		current_year >= 1289
+		current_year <= 1289
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:ponta_delgada = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.66 = { # Sete Cidades - c.90 AD ±100 years - VEI 4 - source ponta_delgada -> target ponta_delgada (exact)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:ponta_delgada
+		current_year >= 1299
+		current_year <= 1299
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:ponta_delgada = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.67 = { # Shiveluch - c.950 BC - VEI 5 - source kamchatka_uplands1 -> target klyuchi (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:klyuchi
+		current_year >= 260
+		current_year <= 260
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:klyuchi = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.68 = { # Shiveluch - c.780 BC - VEI 5 - source kamchatka_uplands1 -> target klyuchi (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:klyuchi
+		current_year >= 430
+		current_year <= 430
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:klyuchi = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.69 = { # Shiveluch - c.500 BC - VEI 5 - source kamchatka_uplands1 -> target klyuchi (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:klyuchi
+		current_year >= 710
+		current_year <= 710
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:klyuchi = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.70 = { # Shiveluch - c.300 BC - VEI 5 - source kamchatka_uplands1 -> target klyuchi (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:klyuchi
+		current_year >= 910
+		current_year <= 910
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:klyuchi = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.71 = { # Shiveluch - c.100 AD - VEI 5 - source kamchatka_uplands1 -> target klyuchi (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_major.title
+	desc = bronze_volcanic_eruptions_major.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:klyuchi
+		current_year >= 1309
+		current_year <= 1309
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:klyuchi = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_major.a
+		historical_option = yes
+		scope:target_location = { major_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_major.b
+		scope:target_location = {
+			major_volcano_damage_cost = yes
+			major_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.72 = { # Bezymianny - c.450 BC - VEI 4 - source kamchatka_uplands2 -> target malka (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:malka
+		current_year >= 760
+		current_year <= 760
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:malka = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.73 = { # Krasheninnikov - c.150 BC - VEI 4 - source kamchatka_uplands2 -> target malka (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:malka
+		current_year >= 1060
+		current_year <= 1060
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:malka = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+
+bronze_volcanic_eruptions.74 = { # Tolbachik - c.50 AD - VEI 4 - source kamchatka_uplands2 -> target malka (mapped)
+	type = country_event
+	title = bronze_volcanic_eruptions_minor.title
+	desc = bronze_volcanic_eruptions_minor.desc
+	outcome = negative
+	fire_only_once = yes
+
+	trigger = {
+		is_real_country = yes
+		owns = location:malka
+		current_year >= 1259
+		current_year <= 1259
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:malka = {
+			save_scope_as = target_location
+			add_vfx = {
+				name = volcano_eruption_test
+				duration = 0
+			}
+		}
+	}
+
+	option = {
+		name = volcano_events_minor.a
+		historical_option = yes
+		scope:target_location = { minor_volcano_damage = yes }
+	}
+
+	option = {
+		name = volcano_events_minor.b
+		scope:target_location = {
+			minor_volcano_damage_cost = yes
+			minor_volcano_damage_with_rebuild = yes
+		}
+	}
+}
+

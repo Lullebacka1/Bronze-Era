@@ -217,6 +217,22 @@ SHAND = { # Shandong formable, reusing Shang royal glyph style for an eastern Sh
 	flag_definition = { coa = bronze_age_SHANG_coa priority = 10000 }
 }
 
+MACED = { # Macedonia formable, northern Greek iron-age kingship.
+	flag_definition = { coa = bronze_age_MACED_coa priority = 10000 }
+}
+
+THESS = { # Thessaly formable, horse-rich Aeolian plains.
+	flag_definition = { coa = bronze_age_THESS_coa priority = 10000 }
+}
+
+MOLSI = { # Molossia formable, highland Epirus kingship.
+	flag_definition = { coa = bronze_age_MOLSI_coa priority = 10000 }
+}
+
+MHELL = { # Hi Megali Hellas formable, western Greek colonial sea realm.
+	flag_definition = { coa = bronze_age_MHELL_coa priority = 10000 }
+}
+
 MAYA = { # Maya, using the provided four-field flag.
 	flag_definition = { coa = bronze_age_MAYA_coa priority = 10000 }
 }
