@@ -1,4 +1,4 @@
-rank_empire = {
+﻿rank_empire = {
 	color = color_rank_empire
 	
 	rank_modifier = {

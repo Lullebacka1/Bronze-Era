@@ -1,4 +1,4 @@
-bronze_hatti_send_grain_to_cities_price = {
+﻿bronze_hatti_send_grain_to_cities_price = {
 	scaled_gold = 2.0
 	government_power = 20
 }

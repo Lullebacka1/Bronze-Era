@@ -1,4 +1,4 @@
-bronze_mycenaean_oath_sworn = {
+﻿bronze_mycenaean_oath_sworn = {
 	value = 30
 	yearly_decay = 2
 }

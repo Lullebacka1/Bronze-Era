@@ -37,3 +37,7 @@
  bronze_phoenicia.1.b: "Elevons un roi sur la cote pourpre."
  bronze_phoenicia_1a_tt: "La Phenicie devient une republique et gagne un bonus permanent modeste en tradition republicaine, investissement de stabilite et vitesse de construction."
  bronze_phoenicia_1b_tt: "La Phenicie reste une monarchie et gagne un bonus permanent modeste en legitimite, levees et moral terrestre."
+ SHAND_f: "Shandong"
+ SHAND_f_desc: "Les terres de Lai, Xuan et Yuyi dans la peninsule du Shandong peuvent etre rassemblees en un royaume oriental sous les rites Shang."
+ bronze_formed_shandong: "Shandong forme"
+ bronze_formed_shandong_desc: "Ce pays a uni les terres de Lai, Xuan et Yuyi dans la peninsule du Shandong."

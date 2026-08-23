@@ -1,4 +1,4 @@
-mycenaean_palace_tribute_price = {
+﻿mycenaean_palace_tribute_price = {
 	gold = 1
 }
 

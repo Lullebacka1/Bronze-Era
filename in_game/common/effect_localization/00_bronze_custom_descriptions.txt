@@ -13,6 +13,17 @@ bronze_city_start_sack_effect_tt = { global = bronze_city_start_sack_effect_tt }
 bronze_city_start_unit_raze_effect_tt = { global = bronze_city_start_unit_raze_effect_tt }
 bronze_city_start_unit_sack_effect_tt = { global = bronze_city_start_unit_sack_effect_tt }
 bronze_ruins_start_expedition_effect_tt = { global = bronze_ruins_start_expedition_effect_tt }
+be_ruins_start_expedition_effect_tt = { global = be_ruins_start_expedition_effect_tt }
+be_ruins_generate_stats_effect_tt = { global = be_ruins_generate_stats_effect_tt }
+be_ruins_debug_reset_launch_timers_effect_tt = { global = be_ruins_debug_reset_launch_timers_effect_tt }
+be_ruins_debug_force_active_expedition_return_effect_tt = { global = be_ruins_debug_force_active_expedition_return_effect_tt }
+be_ruins_debug_enable_location_buttons_effect_tt = { global = be_ruins_debug_enable_location_buttons_effect_tt }
+be_ruins_debug_prepare_selected_ruin_effect_tt = { global = be_ruins_debug_prepare_selected_ruin_effect_tt }
+be_ruins_debug_start_selected_expedition_effect_tt = { global = be_ruins_debug_start_selected_expedition_effect_tt }
+
+bronze_annex_onclick_enable_effect_tt = { global = bronze_annex_onclick_enable_effect_tt }
+bronze_annex_onclick_disable_effect_tt = { global = bronze_annex_onclick_disable_effect_tt }
+bronze_annex_onclick_selected_location_effect_tt = { global = bronze_annex_onclick_selected_location_effect_tt }
 
 bronze_hatti_collapse_abandon_syrian_road_text = { global = bronze_hatti_collapse_abandon_syrian_road_text }
 bronze_hatti_collapse_active_country_text = { global = bronze_hatti_collapse_active_country_text }
@@ -48,6 +59,34 @@ bronze_hatti_collapse_survival_outcome_text = { global = bronze_hatti_collapse_s
 
 change_mycenaean_league_authority_text = { global = change_mycenaean_league_authority_text }
 current_mycenaean_league_authority_text = { global = current_mycenaean_league_authority_text }
+
+bronze_trojan_war_relevant_country_text = { global = bronze_trojan_war_relevant_country_text }
+bronze_trojan_war_situation_running_text = { global = bronze_trojan_war_situation_running_text }
+
+levant_silver_debasement_participant_text = { global = levant_silver_debasement_participant_text }
+
+egyptian_rule_in_canaan_add_authority_text = { global = egyptian_rule_in_canaan_add_authority_text }
+egyptian_rule_in_canaan_annual_pressure_text = { global = egyptian_rule_in_canaan_annual_pressure_text }
+egyptian_rule_in_canaan_apply_phase_text = { global = egyptian_rule_in_canaan_apply_phase_text }
+egyptian_rule_in_canaan_begin_text = { global = egyptian_rule_in_canaan_begin_text }
+egyptian_rule_in_canaan_check_garrison_loss_text = { global = egyptian_rule_in_canaan_check_garrison_loss_text }
+egyptian_rule_in_canaan_city_kingdom_text = { global = egyptian_rule_in_canaan_city_kingdom_text }
+egyptian_rule_in_canaan_cleanup_text = { global = egyptian_rule_in_canaan_cleanup_text }
+egyptian_rule_in_canaan_egypt_text = { global = egyptian_rule_in_canaan_egypt_text }
+egyptian_rule_in_canaan_free_subjects_text = { global = egyptian_rule_in_canaan_free_subjects_text }
+egyptian_rule_in_canaan_last_stand_text = { global = egyptian_rule_in_canaan_last_stand_text }
+egyptian_rule_in_canaan_mark_all_subjects_defiant_text = { global = egyptian_rule_in_canaan_mark_all_subjects_defiant_text }
+egyptian_rule_in_canaan_mark_subject_defiant_text = { global = egyptian_rule_in_canaan_mark_subject_defiant_text }
+egyptian_rule_in_canaan_participant_text = { global = egyptian_rule_in_canaan_participant_text }
+egyptian_rule_in_canaan_phase_at_least_text = { global = egyptian_rule_in_canaan_phase_at_least_text }
+egyptian_rule_in_canaan_refresh_restless_subjects_text = { global = egyptian_rule_in_canaan_refresh_restless_subjects_text }
+egyptian_rule_in_canaan_refresh_subject_count_text = { global = egyptian_rule_in_canaan_refresh_subject_count_text }
+egyptian_rule_in_canaan_remove_garrisons_text = { global = egyptian_rule_in_canaan_remove_garrisons_text }
+egyptian_rule_in_canaan_set_authority_text = { global = egyptian_rule_in_canaan_set_authority_text }
+egyptian_rule_in_canaan_set_phase_text = { global = egyptian_rule_in_canaan_set_phase_text }
+egyptian_rule_in_canaan_subject_text = { global = egyptian_rule_in_canaan_subject_text }
+egyptian_rule_in_canaan_victory_text = { global = egyptian_rule_in_canaan_victory_text }
+egyptian_rule_in_canaan_withdraw_text = { global = egyptian_rule_in_canaan_withdraw_text }
 
 sea_peoples_add_european_corridor_migrants_text = { global = sea_peoples_add_european_corridor_migrants_text }
 sea_peoples_add_famine_pressure_text = { global = sea_peoples_add_famine_pressure_text }
@@ -91,3 +130,10 @@ sea_peoples_service_trade_integration_text = { global = sea_peoples_service_trad
 sea_peoples_set_phase_text = { global = sea_peoples_set_phase_text }
 sea_peoples_unmanaged_settlement_text = { global = sea_peoples_unmanaged_settlement_text }
 sea_peoples_watched_settlement_text = { global = sea_peoples_watched_settlement_text }
+
+bronze_sea_peoples_egypt_hold_sinai_text = { global = bronze_sea_peoples_egypt_hold_sinai_text }
+bronze_sea_peoples_egypt_sinai_location_damage_text = { global = bronze_sea_peoples_egypt_sinai_location_damage_text }
+bronze_sea_peoples_egypt_transfer_location_text = { global = bronze_sea_peoples_egypt_transfer_location_text }
+bronze_sea_peoples_egypt_western_cession_text = { global = bronze_sea_peoples_egypt_western_cession_text }
+bronze_sea_peoples_egypt_withdraw_sinai_text = { global = bronze_sea_peoples_egypt_withdraw_sinai_text }
+bronze_sea_peoples_sinai_tribes_created_text = { global = bronze_sea_peoples_sinai_tribes_created_text }
