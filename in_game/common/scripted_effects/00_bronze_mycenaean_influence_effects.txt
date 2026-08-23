@@ -67,10 +67,13 @@
 #}
 mycenaean_influence = {
 	international_organization:mycenaean_league = {
+
+		# RESET LEAGUE TOTAL
 		set_variable = { 
 			name = "mycenaean_tax_base"
 			value = 0
 		}
+		# RESET MEMBER VARIABLES
 		every_international_organization_member = {
 			set_variable = {
 				name = "mycenaean_calculation_tax_base"
@@ -94,6 +97,7 @@ mycenaean_influence = {
 			}	
 		}
 	}
+	# RESET MEMBER VARIABLES
 	international_organization:mycenaean_league = {
 		save_scope_as = mycenaean_league_scope
 		every_international_organization_member = {
