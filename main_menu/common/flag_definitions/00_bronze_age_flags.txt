@@ -217,6 +217,14 @@ SHAND = { # Shandong formable, reusing Shang royal glyph style for an eastern Sh
 	flag_definition = { coa = bronze_age_SHANG_coa priority = 10000 }
 }
 
+HIBR = { # Hibernia regional unification.
+	flag_definition = { coa = bronze_age_HIBR_coa priority = 10000 }
+}
+
+CPLN = { # Central Plains regional unification.
+	flag_definition = { coa = bronze_age_CPLN_coa priority = 10000 }
+}
+
 MACED = { # Macedonia formable, northern Greek iron-age kingship.
 	flag_definition = { coa = bronze_age_MACED_coa priority = 10000 }
 }

@@ -891,3 +891,31 @@ bronze_age_SINAI_coa = { # Sinai Tribes: desert mountains, caravan routes and ra
 		instance = { position = { 0.67 0.34 } scale = { -0.30 0.30 } }
 	}
 }
+
+bronze_age_HIBR_coa = { # Hibernia: Celtic island unification, green field and triskelion sign.
+	pattern = "pattern_border_thin.dds"
+	color1 = "green"
+	color2 = "yellow_mid"
+	color3 = "brown_light"
+	color4 = "black"
+
+	textured_emblem = {
+		texture = "ba_armorica_triskelion.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.78 0.78 } }
+	}
+}
+
+bronze_age_CPLN_coa = { # Central Plains: Shang-rite river heartland, bronze field and dragon emblem.
+	pattern = "pattern_border_thin.dds"
+	color1 = "brown_light"
+	color2 = "yellow_mid"
+	color3 = "red_dark"
+	color4 = "black"
+
+	colored_emblem = {
+		texture = "ce_chinese_azure_dragon.dds"
+		color1 = color2
+		color2 = color4
+		instance = { position = { 0.5 0.53 } scale = { 0.72 0.72 } }
+	}
+}
