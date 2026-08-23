@@ -229,6 +229,10 @@ MOLSI = { # Molossia formable, highland Epirus kingship.
 	flag_definition = { coa = bronze_age_MOLSI_coa priority = 10000 }
 }
 
+MHELL = { # Hi Megali Hellas formable, western Greek colonial sea realm.
+	flag_definition = { coa = bronze_age_MHELL_coa priority = 10000 }
+}
+
 MAYA = { # Maya, using the provided four-field flag.
 	flag_definition = { coa = bronze_age_MAYA_coa priority = 10000 }
 }

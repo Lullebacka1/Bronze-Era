@@ -387,6 +387,27 @@ bronze_age_MOLSI_coa = { # Molossia: highland kingdom of Epirus, mountain and li
 	}
 }
 
+bronze_age_MHELL_coa = { # Hi Megali Hellas: western Greek sea routes, bronze sun and colonial ships.
+	pattern = "pattern_horizontal_split_02.dds"
+	color1 = "blue_dark"
+	color2 = "red_dark"
+	color3 = "yellow_mid"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_wheel_ship.dds"
+		color1 = color3
+		color2 = color4
+		instance = { position = { 0.5 0.58 } scale = { 0.72 0.72 } }
+	}
+	colored_emblem = {
+		texture = "ce_sun_radiant_small.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.25 } scale = { 0.30 0.30 } }
+	}
+}
+
 bronze_age_ITHA_coa = { # Ithaca: Ionian blue, royal bronze, ship and bow of Odysseus.
 	pattern = "pattern_horizontal_split_02.dds"
 	color1 = "blue_dark"
