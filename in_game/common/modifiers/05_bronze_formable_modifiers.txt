@@ -178,3 +178,35 @@ bronze_phoenician_royal_thalassocracy = {
 	global_levy_size_modifier = 0.03
 	land_morale_modifier = 0.02
 }
+
+bronze_macedonian_iron_kingship = {
+	game_data = {
+		category = country
+	}
+
+	monthly_legitimacy = 0.02
+	global_levy_size_modifier = 0.04
+	land_morale_modifier = 0.02
+	army_movement_speed = 0.02
+}
+
+bronze_thessalian_duchy = {
+	game_data = {
+		category = country
+	}
+
+	monthly_prestige = 0.01
+	army_light_cavalry_power = 0.03
+	global_manpower_modifier = 0.02
+}
+
+bronze_molossian_highland_kingship = {
+	game_data = {
+		category = country
+	}
+
+	monthly_legitimacy = 0.02
+	global_levy_size_modifier = 0.03
+	land_morale_modifier = 0.015
+	defence_importance_modifier = 0.05
+}

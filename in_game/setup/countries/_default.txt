@@ -2670,3 +2670,8 @@ KOMA = {
 	color = rgb { 84 112 201 }
 	color2 = rgb { 38 50 90 }
 }
+
+PUNT = {
+	color = rgb { 193 208 93 }
+	color2 = rgb { 87 94 42 }
+}
