@@ -473,7 +473,6 @@ types OrganizationPanel
 
 				#MAIN VBOX FOR CUSTOM
 				vbox = {
-
 					using = layoutpolicy_expanding
 					using = bg_secondary_inner_alt
 
@@ -585,7 +584,9 @@ types OrganizationPanel
 
 					# CUSTOM TABS
 					# influence and cohesion
+					# change all text to loc for future localization
                     vbox = {
+						align = top
 						size = { 540 595 }
                         layoutpolicy_horizontal = fixed
                         layoutpolicy_vertical = fixed
@@ -597,28 +598,47 @@ types OrganizationPanel
 						} 
                             block "organization_custom_content" {
 									layoutpolicy_horizontal = expanding
-                        			layoutpolicy_vertical = fixed
+                        			layoutpolicy_vertical = expanding
+									vbox = {
+										align = top
+										layoutpolicy_horizontal = expanding
+										layoutpolicy_vertical = fixed    
+										margin_top = 5
+										spacing = 10
 								header_paper_card = {
 									size = { 100% 90 }
 								blockoverride "header_content" {		
 									text_single = {
 										layoutpolicy_horizontal = expanding
 										text = " Cohesion"
-										align = right|nobaseline
+										align = left|nobaseline
 										fontsize = 25
 										autoresize = yes
-										default_format = "#Y"
+										default_format = "#L"
 									}
 								}
-								 blockoverride "bottom_content" {
-												text_multi = {
-													autoresize = no
-													multiline = yes
-													size = { 470 50 }
+								 blockoverride "bottom_content" {	
+									hbox = {
+										spacing = 5
+												text_single = {
+													layoutpolicy_horizontal = expand
+													align = left|nobaseline
+													autoresize = yes
 													fontsize = 20
-													text = "Test"
+													text = "Value:"
+													default_format = "#Y"
 												}
+												text_single = {
+													layoutpolicy_horizontal = expand
+													autoresize = yes
+													align = left|nobaseline
+													fontsize = 20
+													text = "mycenaean_fragmentation_panel_unity_value"
+													default_format = "#Y"
+												}
+												expand = {}
 										}
+								    }
 								}
 								header_paper_card = {
 									size = { 100% 90 }
@@ -626,10 +646,10 @@ types OrganizationPanel
 									text_single = {
 										layoutpolicy_horizontal = expanding
 										text = " Influence"
-										align = right|nobaseline
+										align = left|nobaseline
 										fontsize = 25
 										autoresize = yes
-										default_format = "#Y"
+										default_format = "#L"
 									}
 								}
 								 blockoverride "bottom_content" {
@@ -641,9 +661,10 @@ types OrganizationPanel
 													text = "Test"
 												}
 										}
+									
 								}	
-							
-                        }
+                        	}
+						}
                     }
 					# vbox = {
 					# 	layoutpolicy_horizontal = expanding

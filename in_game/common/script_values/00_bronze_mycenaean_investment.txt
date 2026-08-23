@@ -1,7 +1,0 @@
-scripted_value = {
-	name = "mycenaean_investment"
-	
-	value = {
-		base = 0
-	}
-}
