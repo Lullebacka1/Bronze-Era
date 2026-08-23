@@ -7875,3 +7875,283 @@ V1000 = {
 	culture_definition = urnfield
 	religion_definition = Germanic_pagan
 }
+V1001 = {
+	color = rgb { 141 100 84 }
+	color2 = rgb { 103 62 46 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1002 = {
+	color = rgb { 120 93 74 }
+	color2 = rgb { 82 55 36 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1003 = {
+	color = rgb { 112 118 84 }
+	color2 = rgb { 74 80 46 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1004 = {
+	color = rgb { 88 121 96 }
+	color2 = rgb { 50 83 58 }
+
+	culture_definition = elamite
+	religion_definition = elamite
+}
+V1005 = {
+	color = rgb { 108 101 130 }
+	color2 = rgb { 70 63 92 }
+
+	culture_definition = arian
+	religion_definition = iranic
+}
+V1006 = {
+	color = rgb { 151 118 82 }
+	color2 = rgb { 113 80 44 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1007 = {
+	color = rgb { 132 124 92 }
+	color2 = rgb { 94 86 54 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1008 = {
+	color = rgb { 92 128 104 }
+	color2 = rgb { 54 90 66 }
+
+	culture_definition = elamite
+	religion_definition = elamite
+}
+V1009 = {
+	color = rgb { 158 102 82 }
+	color2 = rgb { 120 64 44 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1010 = {
+	color = rgb { 105 116 128 }
+	color2 = rgb { 67 78 90 }
+
+	culture_definition = gedrosian
+	religion_definition = iranic
+}
+V1011 = {
+	color = rgb { 146 92 86 }
+	color2 = rgb { 108 54 48 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1012 = {
+	color = rgb { 136 110 76 }
+	color2 = rgb { 98 72 38 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1013 = {
+	color = rgb { 116 132 86 }
+	color2 = rgb { 78 94 48 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1014 = {
+	color = rgb { 156 126 76 }
+	color2 = rgb { 118 88 38 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1015 = {
+	color = rgb { 129 93 112 }
+	color2 = rgb { 91 55 74 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1016 = {
+	color = rgb { 109 125 100 }
+	color2 = rgb { 71 87 62 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1017 = {
+	color = rgb { 144 104 92 }
+	color2 = rgb { 106 66 54 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1018 = {
+	color = rgb { 128 112 86 }
+	color2 = rgb { 90 74 48 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1019 = {
+	color = rgb { 118 100 118 }
+	color2 = rgb { 80 62 80 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1020 = {
+	color = rgb { 92 120 132 }
+	color2 = rgb { 54 82 94 }
+
+	culture_definition = bactrian
+	religion_definition = iranic
+}
+V1021 = {
+	color = rgb { 82 132 128 }
+	color2 = rgb { 44 94 90 }
+
+	culture_definition = bactrian
+	religion_definition = iranic
+}
+V1022 = {
+	color = rgb { 153 113 91 }
+	color2 = rgb { 115 75 53 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1023 = {
+	color = rgb { 82 118 98 }
+	color2 = rgb { 44 80 60 }
+
+	culture_definition = elamite
+	religion_definition = elamite
+}
+V1024 = {
+	color = rgb { 112 96 136 }
+	color2 = rgb { 74 58 98 }
+
+	culture_definition = arian
+	religion_definition = iranic
+}
+V1025 = {
+	color = rgb { 148 120 84 }
+	color2 = rgb { 110 82 46 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1026 = {
+	color = rgb { 137 97 80 }
+	color2 = rgb { 99 59 42 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1027 = {
+	color = rgb { 126 136 92 }
+	color2 = rgb { 88 98 54 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1028 = {
+	color = rgb { 99 108 140 }
+	color2 = rgb { 61 70 102 }
+
+	culture_definition = arian
+	religion_definition = iranic
+}
+V1029 = {
+	color = rgb { 142 112 102 }
+	color2 = rgb { 104 74 64 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1030 = {
+	color = rgb { 105 94 128 }
+	color2 = rgb { 67 56 90 }
+
+	culture_definition = arian
+	religion_definition = iranic
+}
+V1031 = {
+	color = rgb { 150 126 90 }
+	color2 = rgb { 112 88 52 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1032 = {
+	color = rgb { 132 91 78 }
+	color2 = rgb { 94 53 40 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1033 = {
+	color = rgb { 124 104 96 }
+	color2 = rgb { 86 66 58 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1034 = {
+	color = rgb { 146 112 74 }
+	color2 = rgb { 108 74 36 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1035 = {
+	color = rgb { 99 126 116 }
+	color2 = rgb { 61 88 78 }
+
+	culture_definition = gedrosian
+	religion_definition = iranic
+}
+V1036 = {
+	color = rgb { 116 104 144 }
+	color2 = rgb { 78 66 106 }
+
+	culture_definition = arian
+	religion_definition = iranic
+}
+V1037 = {
+	color = rgb { 139 118 82 }
+	color2 = rgb { 101 80 44 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1038 = {
+	color = rgb { 131 108 90 }
+	color2 = rgb { 93 70 52 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1039 = {
+	color = rgb { 122 114 82 }
+	color2 = rgb { 84 76 44 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
+V1040 = {
+	color = rgb { 116 126 98 }
+	color2 = rgb { 78 88 60 }
+
+	culture_definition = persian
+	religion_definition = iranic
+}
