@@ -155,3 +155,4 @@ mycenaean_influence = {
 		# mycenaean_calculation_influence_tax_base/1_influence_worth = country_influence 
 		# save country_influence for league member/owner
 		# reset country_influence and 1_influence_worth so that we can do the calculation again
+		# when some one leaves the league we have to rest all these things to 0 for that country NOT ADDED YET
