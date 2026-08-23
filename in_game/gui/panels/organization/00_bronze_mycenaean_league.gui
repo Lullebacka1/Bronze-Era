@@ -610,7 +610,7 @@ types OrganizationPanel
 								blockoverride "header_content" {		
 									text_single = {
 										layoutpolicy_horizontal = expanding
-										text = " Cohesion"
+										text = "Cohesion_Title"
 										align = left|nobaseline
 										fontsize = 25
 										autoresize = yes
@@ -620,16 +620,18 @@ types OrganizationPanel
 								 blockoverride "bottom_content" {	
 									hbox = {
 										spacing = 5
+										margin_left = 5
+										layoutpolicy_vertical = fixed
 												text_single = {
-													layoutpolicy_horizontal = expand
+													layoutpolicy_horizontal = fixed
 													align = left|nobaseline
 													autoresize = yes
 													fontsize = 20
-													text = "Value:"
-													default_format = "#Y"
+													text = "Value_Cohesion"
+													default_format = "#L"
 												}
 												text_single = {
-													layoutpolicy_horizontal = expand
+													layoutpolicy_horizontal = fixed
 													autoresize = yes
 													align = left|nobaseline
 													fontsize = 20
@@ -641,11 +643,11 @@ types OrganizationPanel
 								    }
 								}
 								header_paper_card = {
-									size = { 100% 90 }
+									size = { 100% 180 }
 									blockoverride "header_content" {		
 										text_single = {
 											layoutpolicy_horizontal = expanding
-											text = " Influence"
+											text = "Influence_Title"
 											align = left|nobaseline
 											fontsize = 25
 											autoresize = yes
@@ -653,13 +655,42 @@ types OrganizationPanel
 										}
 									}
 									blockoverride "bottom_content" {
-										text_single = {
-											layoutpolicy_horizontal = expanding
-											text = "[GetCountry('0001G').GetVariable('country_influence')]"
-											align = left|nobaseline
-											fontsize = 20
-											autoresize = yes
-											default_format = "#Y"
+										vbox = {
+											
+											hbox = {
+												spacing = 5
+												margin_top = 10
+												margin_left = 5
+												margin_right = 415
+												text_single = {
+													layoutpolicy_horizontal = fixed
+													text = "[Player.GetName]:"
+													align = left|nobaseline
+													fontsize = 20
+													autoresize = yes
+													default_format = "#Y"
+												}
+												text_single = {
+													layoutpolicy_horizontal = fixed
+													text = "[Player.MakeScope.GetVariable('country_influence').GetValue|.1]"
+													align = left|nobaseline
+													fontsize = 20
+													autoresize = yes
+													default_format = "#Y"
+												}
+												expand = {}
+											}
+											hbox = {
+												text_multi = {
+													layoutpolicy_horizontal = fixed
+													size = {500 100}
+													text = "Influence_Dsec"
+													align = left|nobaseline
+													multiline = yes
+													fontsize = 18
+													default_format = "#F"
+												}
+											}
 										}
 									}
 								}																										
