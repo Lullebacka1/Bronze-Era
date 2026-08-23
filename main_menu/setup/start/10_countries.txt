@@ -37505,7 +37505,7 @@ VC001 = {
 				khorasan_region
 			}
 		}
-		V1000 = {
+		W001 = {
 			capital = zwettl
 			culture = urnfield
 			religion = Germanic_pagan
@@ -37531,7 +37531,7 @@ VC001 = {
 			}
 		}
 
-		V1001 = {
+		W002 = {
 			capital = aligurdaz
 			culture = persian
 			religion = iranic
@@ -37543,7 +37543,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1002 = {
+		W003 = {
 			capital = bam
 			culture = persian
 			religion = iranic
@@ -37555,7 +37555,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1003 = {
+		W004 = {
 			capital = borujen
 			culture = persian
 			religion = iranic
@@ -37567,7 +37567,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1004 = {
+		W005 = {
 			capital = borujerd
 			culture = elamite
 			religion = elamite
@@ -37579,7 +37579,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1005 = {
+		W006 = {
 			capital = chehl_dokhtaran
 			culture = arian
 			religion = iranic
@@ -37591,7 +37591,7 @@ VC001 = {
 			discovered_regions = { khorasan_region }
 		}
 
-		V1006 = {
+		W007 = {
 			capital = deh_kord
 			culture = persian
 			religion = iranic
@@ -37603,7 +37603,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1007 = {
+		W008 = {
 			capital = dehagh
 			culture = persian
 			religion = iranic
@@ -37615,7 +37615,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1008 = {
+		W009 = {
 			capital = dorud
 			culture = elamite
 			religion = elamite
@@ -37627,7 +37627,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1009 = {
+		W010 = {
 			capital = dowlatabad
 			culture = persian
 			religion = iranic
@@ -37639,7 +37639,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1010 = {
+		W011 = {
 			capital = dowzdab
 			culture = gedrosian
 			religion = iranic
@@ -37651,7 +37651,7 @@ VC001 = {
 			discovered_regions = { khorasan_region }
 		}
 
-		V1011 = {
+		W012 = {
 			capital = fahraj_narmashir
 			culture = persian
 			religion = iranic
@@ -37663,7 +37663,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1012 = {
+		W013 = {
 			capital = fereydunshahr
 			culture = persian
 			religion = iranic
@@ -37675,7 +37675,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1013 = {
+		W014 = {
 			capital = golpayegan
 			culture = persian
 			religion = iranic
@@ -37687,7 +37687,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1014 = {
+		W015 = {
 			capital = isfahan
 			culture = persian
 			religion = iranic
@@ -37699,7 +37699,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1015 = {
+		W016 = {
 			capital = karaj_abi_dulaf
 			culture = persian
 			religion = iranic
@@ -37711,7 +37711,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1016 = {
+		W017 = {
 			capital = karkevand
 			culture = persian
 			religion = iranic
@@ -37723,7 +37723,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1017 = {
+		W018 = {
 			capital = khomeyn
 			culture = persian
 			religion = iranic
@@ -37735,7 +37735,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1018 = {
+		W019 = {
 			capital = khondab
 			culture = persian
 			religion = iranic
@@ -37747,7 +37747,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1019 = {
+		W020 = {
 			capital = khwansar
 			culture = persian
 			religion = iranic
@@ -37759,7 +37759,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1020 = {
+		W021 = {
 			capital = kusk
 			culture = bactrian
 			religion = iranic
@@ -37771,7 +37771,7 @@ VC001 = {
 			discovered_regions = { khorasan_region }
 		}
 
-		V1021 = {
+		W022 = {
 			capital = kusk_kohneh
 			culture = bactrian
 			religion = iranic
@@ -37783,7 +37783,7 @@ VC001 = {
 			discovered_regions = { khorasan_region }
 		}
 
-		V1022 = {
+		W023 = {
 			capital = mahallat
 			culture = persian
 			religion = iranic
@@ -37795,7 +37795,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1023 = {
+		W024 = {
 			capital = malayer
 			culture = elamite
 			religion = elamite
@@ -37807,7 +37807,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1024 = {
+		W025 = {
 			capital = mashhad_rizeh
 			culture = arian
 			religion = iranic
@@ -37819,7 +37819,7 @@ VC001 = {
 			discovered_regions = { khorasan_region }
 		}
 
-		V1025 = {
+		W026 = {
 			capital = murcheh_khvort
 			culture = persian
 			religion = iranic
@@ -37831,7 +37831,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1026 = {
+		W027 = {
 			capital = naghan
 			culture = persian
 			religion = iranic
@@ -37843,7 +37843,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1027 = {
+		W028 = {
 			capital = narmashir
 			culture = persian
 			religion = iranic
@@ -37855,7 +37855,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1028 = {
+		W029 = {
 			capital = nehbandan
 			culture = arian
 			religion = iranic
@@ -37867,7 +37867,7 @@ VC001 = {
 			discovered_regions = { khorasan_region }
 		}
 
-		V1029 = {
+		W030 = {
 			capital = nimvar
 			culture = persian
 			religion = iranic
@@ -37879,7 +37879,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1030 = {
+		W031 = {
 			capital = pushang
 			culture = arian
 			religion = iranic
@@ -37891,7 +37891,7 @@ VC001 = {
 			discovered_regions = { khorasan_region }
 		}
 
-		V1031 = {
+		W032 = {
 			capital = qumisha
 			culture = persian
 			religion = iranic
@@ -37903,7 +37903,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1032 = {
+		W033 = {
 			capital = rayen
 			culture = persian
 			religion = iranic
@@ -37915,7 +37915,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1033 = {
+		W034 = {
 			capital = rigan
 			culture = persian
 			religion = iranic
@@ -37927,7 +37927,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1034 = {
+		W035 = {
 			capital = saruk
 			culture = persian
 			religion = iranic
@@ -37939,7 +37939,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1035 = {
+		W036 = {
 			capital = sepeh
 			culture = gedrosian
 			religion = iranic
@@ -37951,7 +37951,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1036 = {
+		W037 = {
 			capital = shusef
 			culture = arian
 			religion = iranic
@@ -37963,7 +37963,7 @@ VC001 = {
 			discovered_regions = { khorasan_region }
 		}
 
-		V1037 = {
+		W038 = {
 			capital = sibak
 			culture = persian
 			religion = iranic
@@ -37975,7 +37975,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1038 = {
+		W039 = {
 			capital = sohrfiruzan
 			culture = persian
 			religion = iranic
@@ -37987,7 +37987,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1039 = {
+		W040 = {
 			capital = tafresh
 			culture = persian
 			religion = iranic
@@ -37999,7 +37999,7 @@ VC001 = {
 			discovered_regions = { persia_region }
 		}
 
-		V1040 = {
+		W041 = {
 			capital = vanak
 			culture = persian
 			religion = iranic
