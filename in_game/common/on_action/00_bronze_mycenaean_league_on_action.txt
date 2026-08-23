@@ -28,7 +28,8 @@ mycenaean_league_yearly_pulse = {
 
 mycenaean_influence_pulse = {
 	trigger = {
-		current_month = 6
+		current_month = 1
+		current_month = 7
 	}
 	effect = {
 		mycenaean_influence = {}
