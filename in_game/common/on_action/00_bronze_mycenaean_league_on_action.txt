@@ -34,3 +34,9 @@ mycenaean_influence_pulse = {
 		mycenaean_influence = {}
 	}
 }
+
+on_game_start = {
+	effect = {
+		mycenaean_influence = {}
+	}
+}
