@@ -65,3 +65,87 @@
 #		}
 #	}
 #}
+mycenaean_influence = {
+		set_variable = { 
+			name = "mycenaean_tax_base"
+			value = 0
+		}
+		set_variable = {
+			name = "mycenaean_calculation_tax_base"
+			value = 0
+		}
+		set_variable = {
+			name = "mycenaean_calculation_influence_tax_base"
+			value = 0
+		}
+		set_variable = {
+			name = "1_influence_worth"
+			value = 0
+		}
+		set_variable = {
+			name = "country_influence"
+			value = 0
+		}
+	international_organization:mycenaean_league = {
+		every_international_organization_member = {
+			change_variable = {
+				name = "mycenaean_calculation_tax_base"
+				add = tax_base
+			}
+			multiply_variable = {
+				name = "mycenaean_calculation_tax_base"
+				value = 1 # custom value can be added for modifiers that will affect the influence later (the modifier has to be calculated in this block)
+			}
+			change_variable = {
+				name = "mycenaean_tax_base"
+				add = mycenaean_calculation_tax_base
+			}
+			set_variable = {
+				name = "mycenaean_calculation_tax_base"
+				value = 0
+			}
+		}
+	}
+	international_organization:mycenaean_league = {
+		every_international_organization_member = {
+			change_variable = {
+				name = "mycenaean_calculation_influence_tax_base"
+				add = tax_base
+			}
+			multiply_variable = {
+				name = "mycenaean_calculation_influence_tax_base"
+				value = 1 # custom value can be added for modifiers that will affect the influence later
+			}
+			change_variable = {
+				name = "1_influence_worth"
+				add = mycenaean_tax_base
+			}
+			divide_variable = {
+				name = "1_influence_worth"
+				value = 100
+			}
+			change_variable = {
+				name = "country_influence"
+				add = mycenaean_calculation_influence_tax_base
+			}
+			divide_variable = {
+				name = "country_influence"
+				value = 1_influence_worth
+			}
+			#saves country influence here later when figured out
+			set_variable = {
+				name = "1_influence_worth"
+				value = 0
+			}
+			set_variable = {
+				name = "country_influence"
+				value = 0
+			}
+		}
+	}
+}
+
+		# 100/mycenaean_tax_base = 1_influence_worth
+		# mycenaean_calculation_influence_tax_base/1_influence_worth = country_influence 
+		# save country_influence for league member/owner
+		# reset country_influence and 1_influence_worth so that we can do the calculation again
