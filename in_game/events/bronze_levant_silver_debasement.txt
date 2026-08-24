@@ -838,7 +838,7 @@ levant_silver_debasement.51 = {
 	desc = levant_silver_debasement.51.desc
 
 	category = situation_event
-	image = "gfx/interface/illustrations/situation/levant_silver_debasement_111.dds"
+	image = "gfx/interface/illustrations/situation/levant_silver_debasement_51.dds"
 	outcome = neutral
 
 	# dynamic_historical_event = {
@@ -911,7 +911,7 @@ levant_silver_debasement.52 = {
 	desc = levant_silver_debasement.52.desc
 
 	category = situation_event
-	image = "gfx/interface/illustrations/situation/levant_silver_debasement_111.dds"
+	image = "gfx/interface/illustrations/situation/levant_silver_debasement_52.dds"
 	outcome = neutral
 
 	# dynamic_historical_event = {
