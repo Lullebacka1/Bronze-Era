@@ -85,9 +85,9 @@ levant_silver_debasement.1 = {
 
 }
 
-levant_silver_debasement.11 = {
+levant_silver_debasement.2 = {
 	type = country_event
-	title = levant_silver_debasement.11.title.a
+	title = levant_silver_debasement.2.title.a
 	desc = {
 		first_valid = {
 
@@ -101,7 +101,7 @@ levant_silver_debasement.11 = {
 					}
 				}
 
-				desc = levant_silver_debasement.11.desc.a
+				desc = levant_silver_debasement.2.desc.a
 			}
 
 			triggered_desc = {
@@ -109,10 +109,10 @@ levant_silver_debasement.11 = {
 					has_codified_laws = no
 				}
 				
-				desc = levant_silver_debasement.11.desc.b
+				desc = levant_silver_debasement.2.desc.b
 			}
 
-			desc = levant_silver_debasement.11.desc.c
+			desc = levant_silver_debasement.2.desc.c
 		}
 	}
 
@@ -154,8 +154,8 @@ levant_silver_debasement.11 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.11.a
-		custom_tooltip = levant_silver_debasement.11.a_tt
+		name = levant_silver_debasement.2.a
+		custom_tooltip = levant_silver_debasement.2.a_tt
 
 		trigger = {
 			has_codified_laws = yes
@@ -178,8 +178,8 @@ levant_silver_debasement.11 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.11.b
-		custom_tooltip = levant_silver_debasement.11.b_tt
+		name = levant_silver_debasement.2.b
+		custom_tooltip = levant_silver_debasement.2.b_tt
 
 		trigger = {
 			OR = {
@@ -220,8 +220,8 @@ levant_silver_debasement.11 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.11.c
-		custom_tooltip = levant_silver_debasement.11.c_tt
+		name = levant_silver_debasement.2.c
+		custom_tooltip = levant_silver_debasement.2.c_tt
 
 		trigger = {
 			OR = {
@@ -251,8 +251,8 @@ levant_silver_debasement.11 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.11.d
-		custom_tooltip = levant_silver_debasement.11.d_tt
+		name = levant_silver_debasement.2.d
+		custom_tooltip = levant_silver_debasement.2.d_tt
 
 		trigger = {
 			has_codified_laws = no
@@ -285,8 +285,8 @@ levant_silver_debasement.11 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.11.e
-		custom_tooltip = levant_silver_debasement.11.e_tt
+		name = levant_silver_debasement.2.e
+		custom_tooltip = levant_silver_debasement.2.e_tt
 
 		historical_option = yes
 
@@ -324,10 +324,10 @@ levant_silver_debasement.11 = {
 	}
 }
 
-levant_silver_debasement.111 = {
+levant_silver_debasement.31 = {
 	type = country_event
-	title = levant_silver_debasement.111.title
-	desc = levant_silver_debasement.111.desc
+	title = levant_silver_debasement.31.title
+	desc = levant_silver_debasement.31.desc
 
 	category = situation_event
 	image = "gfx/interface/illustrations/situation/levant_silver_debasement_111.dds"
@@ -377,8 +377,8 @@ levant_silver_debasement.111 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.111.a
-		custom_tooltip = levant_silver_debasement.111.a_tt
+		name = levant_silver_debasement.31.a
+		custom_tooltip = levant_silver_debasement.31.a_tt
 
 		# every_market_present_in_country = {
 		# 	remove_temporary_demand = demand:levantine_silver_crisis
@@ -401,8 +401,8 @@ levant_silver_debasement.111 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.111.b
-		custom_tooltip = levant_silver_debasement.111.b_tt
+		name = levant_silver_debasement.31.b
+		custom_tooltip = levant_silver_debasement.31.b_tt
 
 		# every_market_present_in_country = {
 		# 	remove_temporary_demand = demand:levantine_silver_crisis_debasement_start
@@ -426,10 +426,10 @@ levant_silver_debasement.111 = {
 
 }
 
-levant_silver_debasement.112 = {
+levant_silver_debasement.32 = {
 	type = country_event
-	title = levant_silver_debasement.112.title
-	desc = levant_silver_debasement.112.desc
+	title = levant_silver_debasement.32.title
+	desc = levant_silver_debasement.32.desc
 
 	category = situation_event
 	image = "gfx/interface/illustrations/situation/levant_silver_debasement_11.dds"
@@ -479,8 +479,8 @@ levant_silver_debasement.112 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.112.a
-		custom_tooltip = levant_silver_debasement.112.a_tt
+		name = levant_silver_debasement.32.a
+		custom_tooltip = levant_silver_debasement.32.a_tt
 
 		# every_market_present_in_country = {
 		# 	remove_temporary_demand = demand:levantine_silver_crisis
@@ -499,8 +499,8 @@ levant_silver_debasement.112 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.112.b
-		custom_tooltip = levant_silver_debasement.112.b_tt
+		name = levant_silver_debasement.32.b
+		custom_tooltip = levant_silver_debasement.32.b_tt
 
 		# every_market_present_in_country = {
 		# 	add_temporary_demand = {
@@ -520,10 +520,10 @@ levant_silver_debasement.112 = {
 
 }
 
-levant_silver_debasement.113 = {
+levant_silver_debasement.33 = {
 	type = country_event
-	title = levant_silver_debasement.113.title
-	desc = levant_silver_debasement.113.desc
+	title = levant_silver_debasement.33.title
+	desc = levant_silver_debasement.33.desc
 
 	category = situation_event
 	image = "gfx/interface/illustrations/situation/levant_silver_debasement_11.dds"
@@ -563,8 +563,8 @@ levant_silver_debasement.113 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.113.a
-		custom_tooltip = levant_silver_debasement.113.a_tt
+		name = levant_silver_debasement.33.a
+		custom_tooltip = levant_silver_debasement.33.a_tt
 
 		# every_market_present_in_country = {
 		# 	remove_temporary_demand = demand:levantine_silver_crisis
@@ -593,8 +593,8 @@ levant_silver_debasement.113 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.113.b
-		custom_tooltip = levant_silver_debasement.113.b_tt
+		name = levant_silver_debasement.33.b
+		custom_tooltip = levant_silver_debasement.33.b_tt
 
 		# every_market_present_in_country = {
 		# 	add_temporary_demand = {
@@ -616,10 +616,10 @@ levant_silver_debasement.113 = {
 
 }
 
-levant_silver_debasement.114 = {
+levant_silver_debasement.34 = {
 	type = country_event
-	title = levant_silver_debasement.114.title
-	desc = levant_silver_debasement.114.desc
+	title = levant_silver_debasement.34.title
+	desc = levant_silver_debasement.34.desc
 
 	category = situation_event
 	image = "gfx/interface/illustrations/situation/levant_silver_debasement_111.dds"
@@ -659,8 +659,8 @@ levant_silver_debasement.114 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.114.a
-		custom_tooltip = levant_silver_debasement.114.a_tt
+		name = levant_silver_debasement.34.a
+		custom_tooltip = levant_silver_debasement.34.a_tt
 
 		# every_market_present_in_country = {
 		# 	remove_temporary_demand = demand:levantine_silver_crisis
@@ -690,8 +690,8 @@ levant_silver_debasement.114 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.114.b
-		custom_tooltip = levant_silver_debasement.114.b_tt
+		name = levant_silver_debasement.34.b
+		custom_tooltip = levant_silver_debasement.34.b_tt
 
 		historical_option = yes
 
@@ -717,10 +717,10 @@ levant_silver_debasement.114 = {
 
 }
 
-levant_silver_debasement.1111 = {
+levant_silver_debasement.4 = {
 	type = country_event
-	title = levant_silver_debasement.1111.title
-	desc = levant_silver_debasement.1111.desc
+	title = levant_silver_debasement.4.title
+	desc = levant_silver_debasement.4.desc
 
 	category = situation_event
 	image = "gfx/interface/illustrations/situation/levant_silver_debasement_111.dds"
@@ -767,8 +767,8 @@ levant_silver_debasement.1111 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.1111.a
-		custom_tooltip = levant_silver_debasement.1111.a_tt
+		name = levant_silver_debasement.4.a
+		custom_tooltip = levant_silver_debasement.4.a_tt
 
 		# every_market_present_in_country = {
 		# 	remove_temporary_demand = demand:levantine_silver_crisis_debasement_start
@@ -798,8 +798,8 @@ levant_silver_debasement.1111 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.1111.b
-		custom_tooltip = levant_silver_debasement.1111.b_tt
+		name = levant_silver_debasement.4.b
+		custom_tooltip = levant_silver_debasement.4.b_tt
 
 		historical_option = yes
 
@@ -832,10 +832,10 @@ levant_silver_debasement.1111 = {
 
 }
 
-levant_silver_debasement.11111 = {
+levant_silver_debasement.51 = {
 	type = country_event
-	title = levant_silver_debasement.11111.title
-	desc = levant_silver_debasement.11111.desc
+	title = levant_silver_debasement.51.title
+	desc = levant_silver_debasement.51.desc
 
 	category = situation_event
 	image = "gfx/interface/illustrations/situation/levant_silver_debasement_111.dds"
@@ -899,16 +899,16 @@ levant_silver_debasement.11111 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.11111.a
-		custom_tooltip = levant_silver_debasement.11111.a_tt
+		name = levant_silver_debasement.51.a
+		custom_tooltip = levant_silver_debasement.51.a_tt
 
 	}
 }
 
-levant_silver_debasement.11112 = {
+levant_silver_debasement.52 = {
 	type = country_event
-	title = levant_silver_debasement.11112.title
-	desc = levant_silver_debasement.11112.desc
+	title = levant_silver_debasement.52.title
+	desc = levant_silver_debasement.52.desc
 
 	category = situation_event
 	image = "gfx/interface/illustrations/situation/levant_silver_debasement_111.dds"
@@ -921,45 +921,15 @@ levant_silver_debasement.11112 = {
 	# }
 
 	trigger = {
-		has_variable = levant_silver_debasement_1111_search_for_silver
+		has_variable = levant_silver_debasement_1111_silver_alchemy
 		current_date = 25.2.2
 	}
 
 	immediate = {
-		# region:balkan_region = {
-		# 	every_location_in_region = {
-		# 		every_import_from_location = {
-		# 			limit = {
-		# 				goods = goods:silver
-		# 			}
-		# 			set_locked = yes
-		# 		}
-		# 	}
-		# }
-
-		# every_market_present_in_country = {
-		# 	add_temporary_demand = {
-		# 		type = demand:levantine_silver_crisis
-		# 		scale_with_pop = 0.005
-		# 		years = 100
-		# 	}
-		# }
-
-		# every_market_present_in_country = {
-		# 	remove_temporary_demand = demand:levantine_silver_crisis_debasement_start
-
-		# 	add_temporary_demand = {
-		# 		type = demand:levantine_silver_crisis_debasement_start
-		# 		scale_with_pop = 0.004
-		# 		years = 80
-		# 	}
-
-		# 	remove_temporary_demand = demand:levantine_silver_crisis
-		# }
 
 		change_global_variable = {
 			name = levant_silver_crisis_silver_demand
-			add = -2
+			subtract = 2
 		}
 
 		update_silver_market = {}
@@ -972,252 +942,7 @@ levant_silver_debasement.11112 = {
 	}
 
 	option = {
-		name = levant_silver_debasement.11112.a
-		custom_tooltip = levant_silver_debasement.11112.a_tt
+		name = levant_silver_debasement.52.a
+		custom_tooltip = levant_silver_debasement.52.a_tt
 	}
 }
-
-# levant_silver_debasement.111 = {
-# 	type = country_event
-# 	title = {
-# 		first_valid = {
-
-# 			triggered_desc = {
-# 				trigger = {
-# 					OR = {
-# 						has_policy = commodity_money_policy_jewelry
-# 						has_policy = bullion_coins
-# 						has_policy = silver_coins
-# 						has_policy = gold_and_silver_coins
-# 					}
-# 				}
-
-# 				desc = levant_silver_debasement.11.title.a
-# 			}
-
-# 			triggered_desc = {
-# 				trigger = {
-# 					has_codified_laws = no
-# 				}
-				
-# 				desc = levant_silver_debasement.11.title.b
-# 			}
-
-# 			desc = levant_silver_debasement.11.title.c
-# 		}
-# 	}
-# 	desc = {
-# 		first_valid = {
-
-# 			triggered_desc = {
-# 				trigger = {
-# 					OR = {
-# 						has_policy = commodity_money_policy_jewelry
-# 						has_policy = bullion_coins
-# 						has_policy = silver_coins
-# 						has_policy = gold_and_silver_coins
-# 					}
-# 				}
-
-# 				desc = levant_silver_debasement.11.desc.a
-# 			}
-
-# 			triggered_desc = {
-# 				trigger = {
-# 					has_codified_laws = no
-# 				}
-				
-# 				desc = levant_silver_debasement.11.desc.b
-# 			}
-
-# 			desc = levant_silver_debasement.11.desc.c
-# 		}
-# 	}
-
-# 	category = situation_event
-# 	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
-# 	outcome = negative
-
-# 	trigger = {
-# 		has_variable = levant_silver_debasement_subject_intro_seen
-# 		levant_silver_debasement_participant = yes
-# 		current_date = 5.6.1
-# 	}
-
-# 	immediate = {
-# 		ordered_trade = {
-# 			limit = {
-# 				goods = goods:silver
-# 			}
-# 			set_locked = yes
-# 		}
-# 	}
-
-# 	option = {
-# 		name = levant_silver_debasement.11.a
-# 		custom_tooltip = levant_silver_debasement_11a_tt
-
-# 		ordered_trade = {
-# 			limit = {
-# 				goods = goods:silver
-# 			}
-# 			set_locked = yes
-# 		}
-# 	}
-# }
-
-# levant_silver_debasement.10 = {
-# 	type = country_event
-# 	title = levant_silver_debasement.10.title
-# 	desc = levant_silver_debasement.10.desc
-# 	category = situation_event
-# 	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
-# 	outcome = negative
-# 	orphan = yes
-
-# 	trigger = {
-# 		levant_silver_debasement_egypt = yes
-# 		situation:levant_silver_debasement ?= {
-# 			has_variable = levant_silver_debasement_restless_subjects
-# 			var:levant_silver_debasement_restless_subjects >= 4
-# 		}
-# 	}
-
-# 	option = {
-# 		name = levant_silver_debasement.10.a
-# 		custom_tooltip = levant_silver_debasement_10a_tt
-# 		levant_silver_debasement_add_authority = { value = -4 }
-# 	}
-# 	option = {
-# 		name = levant_silver_debasement.10.b
-# 		trigger = {
-# 			gold >= 45
-# 		}
-# 		custom_tooltip = levant_silver_debasement_10b_tt
-# 		add_gold = -45
-# 		levant_silver_debasement_add_authority = { value = 3 }
-# 		every_subject = {
-# 			limit = { levant_silver_debasement_city_kingdom = yes }
-# 			add_liberty_desire = liberty_desire_weak_minus
-# 		}
-# 		ai_chance = {
-# 			factor = 40
-# 			modifier = {
-# 				factor = 0.3
-# 				gold < 80
-# 			}
-# 			modifier = {
-# 				factor = 2
-# 				situation:levant_silver_debasement ?= { var:egyptian_authority_in_canaan < 45 }
-# 			}
-# 		}
-# 	}
-# }
-
-# levant_silver_debasement.20 = {
-# 	type = country_event
-# 	title = levant_silver_debasement.20.title
-# 	desc = levant_silver_debasement.20.desc
-# 	category = situation_event
-# 	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
-# 	outcome = negative
-# 	orphan = yes
-
-# 	trigger = {
-# 		levant_silver_debasement_egypt = yes
-# 	}
-
-# 	option = {
-# 		name = levant_silver_debasement.20.a
-# 		custom_tooltip = levant_silver_debasement_20a_tt
-# 	}
-# }
-
-# levant_silver_debasement.100 = {
-# 	type = country_event
-# 	title = levant_silver_debasement.100.title
-# 	desc = levant_silver_debasement.100.desc
-# 	category = situation_event
-# 	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
-# 	outcome = negative
-# 	major = yes
-# 	orphan = yes
-
-# 	trigger = {
-# 		levant_silver_debasement_egypt = yes
-# 		situation:levant_silver_debasement ?= {
-# 			var:egyptian_authority_in_canaan <= 0
-# 		}
-# 	}
-
-# 	option = {
-# 		name = levant_silver_debasement.100.a
-# 		custom_tooltip = levant_silver_debasement_100a_tt
-# 		levant_silver_debasement_withdraw = yes
-# 		ai_chance = {
-# 			factor = 70
-# 			modifier = {
-# 				factor = 2
-# 				is_during_bankruptcy = yes
-# 			}
-# 			modifier = {
-# 				factor = 2
-# 				stability <= 0
-# 			}
-# 			modifier = {
-# 				factor = 0.4
-# 				gold >= 300
-# 				manpower = { value >= 800 }
-# 			}
-# 		}
-# 	}
-# 	option = {
-# 		name = levant_silver_debasement.100.b
-# 		trigger = {
-# 			NOT = { has_global_variable = egyptian_rule_canaan_must_be_held_used }
-# 			is_during_bankruptcy = no
-# 			gold >= 180
-# 			manpower = { value >= 500 }
-# 		}
-# 		custom_tooltip = levant_silver_debasement_100b_tt
-# 		levant_silver_debasement_last_stand = yes
-# 		ai_chance = {
-# 			factor = 30
-# 			modifier = {
-# 				factor = 2
-# 				gold >= 400
-# 				manpower = { value >= 1200 }
-# 				stability >= 30
-# 			}
-# 			modifier = {
-# 				factor = 0.2
-# 				is_at_war = yes
-# 			}
-# 		}
-# 	}
-# }
-
-# levant_silver_debasement.200 = {
-# 	type = country_event
-# 	title = levant_silver_debasement.200.title
-# 	desc = levant_silver_debasement.200.desc
-# 	category = situation_event
-# 	image = "gfx/interface/illustrations/situation/sea_peoples_crisis.dds"
-# 	outcome = positive
-# 	major = yes
-# 	orphan = yes
-
-# 	trigger = {
-# 		levant_silver_debasement_egypt = yes
-# 		situation:levant_silver_debasement ?= {
-# 			var:egyptian_authority_in_canaan >= 60
-# 		}
-# 		has_global_variable = sea_peoples_crisis_ended
-# 	}
-
-# 	option = {
-# 		name = levant_silver_debasement.200.a
-# 		custom_tooltip = levant_silver_debasement_200a_tt
-# 		levant_silver_debasement_victory = yes
-# 	}
-# }
