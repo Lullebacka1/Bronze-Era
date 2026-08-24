@@ -97,4 +97,8 @@
   levant_silver_debasement.1111.a_tt: "The distant mines are beyond our reach, yet Kothar-wa-Khasis has hidden many treasures beneath our feet. Let the laborers be summoned, and let them seek the silver within our own land."
 
   levant_silver_debasement.1111.b: "Let us fund the craftsmen, that Kothar-wa-Khasis may reveal another way to silver."
-  levant_silver_debasement.1111.b_tt: "All that glitters is not silver. Send word to our craftsmen and provide them with all that they require; with the blessing of Kothar-wa-Khasis, let them smelt new silver from the treasures of our land."
+  levant_silver_debasement.1111.b_tt: "Not all that glitters is silver. Send word to our craftsmen and provide them with all that they require; with the blessing of Kothar-wa-Khasis, let them smelt new silver from the treasures of our land."
+
+  levant_silver_debasement.11111.desc: "New silver mines have been established in the following location: [SCOPE.sLocation('silver_mine_1').GetName]"
+
+  levant_silver_debasement.11111.a_tt: "New silver mines have been established in the following location: [SCOPE.sLocation('silver_mine_1').GetName]"
