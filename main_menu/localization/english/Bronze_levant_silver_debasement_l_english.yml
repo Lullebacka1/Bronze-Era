@@ -99,6 +99,18 @@
   levant_silver_debasement.1111.b: "Let us fund the craftsmen, that Kothar-wa-Khasis may reveal another way to silver."
   levant_silver_debasement.1111.b_tt: "Not all that glitters is silver. Send word to our craftsmen and provide them with all that they require; with the blessing of Kothar-wa-Khasis, let them smelt new silver from the treasures of our land."
 
-  levant_silver_debasement.11111.desc: "New silver mines have been established in the following location: [SCOPE.sLocation('silver_mine_1').GetName]"
+# SILVER MINES
 
+  levant_silver_debasement.11111.title: "Silver Struck"
+  levant_silver_debasement.11111.desc: "Good tidings! Our laborers have struck silver in one of our lands. The gods have favored us, and fortune has placed its treasure beneath our feet.\n\nNew silver mines have been established in the following location:\n[SCOPE.sLocation('silver_mine_1').GetName]"
+
+  levant_silver_debasement.11111.a: "As our fathers did, so shall we: when the realm cries out, its ruler shall provide."
   levant_silver_debasement.11111.a_tt: "New silver mines have been established in the following location: [SCOPE.sLocation('silver_mine_1').GetName]"
+
+#SILVER ALLOY
+
+  levant_silver_debasement.11112.title: "Master's Silver"
+  levant_silver_debasement.11112.desc: "The craftsmen have heeded our command and found a way to draw silver from the common metals of our land. What was once hidden from our fathers is now made to shine by their skill.\n\n#italic Archaeologists have found copper-rich silver at Megiddo and Beth-Shemesh, dating to around 1200-1150 BCE, with similar alloys later appearing at Megiddo, Tell Keisan, Ashkelon, Beth Shean and Wadi el-Makkuk. Some contained up to 80% copper, yet retained a silvery appearance through silver-enriched surfaces or the addition of arsenic and antimony.#!"
+
+  levant_silver_debasement.11112.a: "Let the craftsmen be honored; Kothar-wa-Khasis has revealed his secret to them."
+  levant_silver_debasement.11112.a_tt: "Our craftsmen have found the secret: with the proper admixture, common metal may take on the appearance of noble silver. Let their work be put to use throughout the realm."
