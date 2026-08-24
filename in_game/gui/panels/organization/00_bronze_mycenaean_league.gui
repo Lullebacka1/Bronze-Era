@@ -583,8 +583,7 @@ types OrganizationPanel
 					}
 
 					# CUSTOM TABS
-					# influence and cohesion
-					# change all text to loc for future localization
+					# influence and cohesion and other stuff for mycenaean_league
                     vbox = {
 						align = top
 						size = { 540 595 }
