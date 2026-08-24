@@ -43,6 +43,7 @@ ISRAEL_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		change_culture = culture:canaanite
 		change_religion = religion:canaanite
 		set_capital = location:nablus
@@ -102,6 +103,7 @@ JUDAH_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		change_culture = culture:canaanite
 		change_religion = religion:canaanite
 		set_capital = location:jerusalem
@@ -160,6 +162,7 @@ MOAB_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		change_culture = culture:moabite
 		change_religion = religion:canaanite
 		set_capital = location:madaba
@@ -219,6 +222,7 @@ EDOM_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		change_culture = culture:edomite
 		change_religion = religion:canaanite
 		set_capital = location:maan
@@ -280,6 +284,7 @@ ARDAM_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		change_culture = culture:aramaean
 		change_religion = religion:canaanite
 		set_capital = location:damascus
@@ -341,6 +346,7 @@ AMMON_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		change_culture = culture:ammonite
 		change_religion = religion:canaanite
 		set_capital = location:amman
@@ -400,6 +406,7 @@ PHILST_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		change_culture = culture:peleset
 		change_religion = religion:sea_peoples_cult
 		set_capital = location:gaza
@@ -468,6 +475,7 @@ PHO_f = {
 	}
 
 	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
 		change_culture = culture:phoenician
 		change_religion = religion:phoenician
 		set_capital = location:sidon

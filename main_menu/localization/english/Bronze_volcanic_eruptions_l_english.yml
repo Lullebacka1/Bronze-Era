@@ -1,0 +1,9 @@
+﻿l_english:
+ bronze_volcanic_eruptions_weak.title: "Smoke over the Mountain"
+ bronze_volcanic_eruptions_weak.desc: "A volcano near [SCOPE.sLocation('target_location').GetName] has erupted. Ash darkens the sky, fields are buried, and nearby settlements struggle to keep order as the mountain settles into smoke."
+ bronze_volcanic_eruptions_minor.title: "The Mountain Opens"
+ bronze_volcanic_eruptions_minor.desc: "The volcano near [SCOPE.sLocation('target_location').GetName] has burst open with fire, ash, and falling stone. Villages are damaged, harvests are threatened, and the local people look to the court for relief."
+ bronze_volcanic_eruptions_major.title: "Fire and Ash"
+ bronze_volcanic_eruptions_major.desc: "A violent eruption has struck [SCOPE.sLocation('target_location').GetName]. Ash clouds blot the sun, lava and hot debris tear through the countryside, and many settlements face ruin unless aid is sent quickly."
+ bronze_volcanic_eruptions_catastrophic.title: "The Wrath of the Mountain"
+ bronze_volcanic_eruptions_catastrophic.desc: "The mountain near [SCOPE.sLocation('target_location').GetName] has exploded in a catastrophic eruption. The sky turns black, villages vanish beneath ash, and the disaster will mark the land for generations."

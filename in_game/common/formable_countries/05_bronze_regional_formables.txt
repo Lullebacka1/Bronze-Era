@@ -1,0 +1,225 @@
+# Bronze Era regional unification formables.
+# Location lists are generated from vanilla map regions and filtered to land locations
+# present in this mod's location_templates.txt. Keep the two region comments below if
+# the vanilla region definition changes in a future EU5 update.
+
+HIBR_f = {
+	level = 3
+	required_locations_fraction = 0.70
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 660
+
+	potential = {
+		OR = {
+			culture = culture:hibernian
+			culture = culture:autenii
+			culture = culture:cauci
+			culture = culture:coriondi
+			culture = culture:darini
+			culture = culture:ebodanii
+			culture = culture:erdin
+			culture = culture:gangani
+			culture = culture:iwerni
+			culture = culture:manakwi
+			culture = culture:nagnatae
+			culture = culture:rodogbi
+			culture = culture:uellabori
+			culture = culture:uennicnii
+			culture = culture:uluti
+			culture = culture:usdiae
+			religion = religion:britannic_pagan
+		}
+		NOT = { tag = HIBR }
+		NOT = { country_exists = c:HIBR }
+		NOT = { has_variable = bronze_formed_hibernia }
+	}
+
+	allow = {
+		is_subject = no
+		owns = location:dublin
+		owns = location:armagh
+		owns = location:cork
+		owns = location:limerick
+		owns = location:galway
+	}
+
+	name = HIBR
+	flag = HIBR
+	adjective = HIBR_ADJ
+	tag = HIBR
+	color = map_HIBR
+
+	# ireland_region land locations.
+	locations = {
+		adare ardagh armagh athenry athlone athy ballaghaderreen ballycastle
+		ballymena ballymore belcoo belfast bunratty burrishoole carbery carlow
+		carrickbeg carrickfergus carrickmacross cashel castlebar castleconnell castlereagh cavan
+		clifden clogher clonmel coleraine cork cullahill daingean derry
+		dingle donegal downpatrick drogheda dromahair dublin dunamase dundalk
+		dungannon dungarvan dunhallow dunluce ennis enniskillen erris fermoy
+		ferns fingal galway inishowen iveagh kells kilbrittain kilconnell
+		kildare kilkenny killarney killeshandra killmallock killycolly kilmacrennan kinsale
+		leitrim limerick longford magherafelt monaghan moyarta moycarn mullingar
+		muskerry naas navan nenagh new_ross newtownards oriel raphoe
+		roscommon roscrea skreen sligo strabane tipperary tralee trim
+		tuam tullamore waterford wexford wicklow youghal
+	}
+
+	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
+		change_culture = culture:hibernian
+		change_religion = religion:britannic_pagan
+		set_capital = location:dublin
+		add_accepted_culture = culture:hibernian
+		add_accepted_culture = culture:autenii
+		add_accepted_culture = culture:cauci
+		add_accepted_culture = culture:coriondi
+		add_accepted_culture = culture:darini
+		add_accepted_culture = culture:ebodanii
+		add_accepted_culture = culture:erdin
+		add_accepted_culture = culture:gangani
+		add_accepted_culture = culture:iwerni
+		add_accepted_culture = culture:manakwi
+		add_accepted_culture = culture:nagnatae
+		add_accepted_culture = culture:rodogbi
+		add_accepted_culture = culture:uellabori
+		add_accepted_culture = culture:uennicnii
+		add_accepted_culture = culture:uluti
+		add_accepted_culture = culture:usdiae
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_hibernia value = 1 }
+		add_legitimacy = legitimacy_weak_bonus
+		add_prestige = prestige_weak_bonus
+		add_stability = stability_weak_bonus
+	}
+}
+
+CPLN_f = {
+	level = 3
+	required_locations_fraction = 0.60
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 725
+
+	potential = {
+		OR = {
+			culture = culture:shang
+			culture = culture:zhou
+			religion = religion:shang_rites
+			religion = religion:zhou_rites
+		}
+		NOT = { tag = CPLN }
+		NOT = { country_exists = c:CPLN }
+		NOT = { has_variable = bronze_formed_central_plains }
+	}
+
+	allow = {
+		is_subject = no
+		owns = location:luoyang
+		owns = location:anyang
+		owns = location:kaifeng
+		owns = location:guancheng_zhengzhou
+		owns = location:qufu
+	}
+
+	name = CPLN
+	flag = CPLN
+	adjective = CPLN_ADJ
+	tag = CPLN
+	color = map_CPLN
+
+	# north_china_region land locations.
+	locations = {
+		aerzhai ande anping anqiu ansu anxi_dingzhou anyang baideng
+		baima_daming baitan banbishan baoan_baoan baochang baode baodi baofeng
+		beihai biyang bohai boxing boye chagannur changge changle
+		changli changping changqing changshe changtan changyi changyuan chaocheng
+		chengshan chengwu chiping chuanzhou chuqiu dacheng dadu dagu
+		daizhou dancheng daning daning_pingquan dasong datong_datong daxing dengfeng
+		deping dingcheng dinghu dingtao dingxiang dingxing dongan_shuntian donge
+		dongguang dongliangting dongming dongsheng duanshi dushikou enhua enzhou
+		erdao fangcheng fangshan fangshan_lishi fanxian fanyang feicheng feihu
+		feixian fengfu fengqiu fengrun fengzhou fenxi fucheng_hejian fugou
+		funing fuping fushan fushan_jiaozhou fushan_muping fushu fuyang fuzhou
+		gaocheng gaomi gaoping gaotang gaoyang_baoding gaoyuan gaoyuan_jinan gecheng
+		gegou gongxian guan guancheng guancheng_zhengzhou guangling guangping guangshan
+		guangzong guantao gucheng_jingzhou gucheng_xi gucheng_zhending guixin guozhou gushi
+		handan hebin hedong hehe hejian hejin henei hengshui
+		hequ heshun hezhong hongtong huaian huailai huairen huairou
+		huangxian huanzhou huayuantou huguan huichuan huihe huixian hunyuan
+		huolu huoyi jiangshan_laiyang jiangxian jianzhou_daizhou jiaocheng jiaohe jiaoshui
+		jiaoxi jiaxian jiaxiang jiexiu jimo jincheng jincheng_zezhou jingan_shenzhou
+		jinghai jingle jingxing jining jinxiang jishan jishi_anze jixian
+		jiyang jiyin jiyuan jizhou juancheng julu juxian juye
+		kaifeng kaocheng kehu kelan kuanhe_xingzhou laishui laiwu laiyang
+		lanling lanyang lanzhou_kelan laoling laoting lean leping_pingding leshou
+		liangcheng liangxian_ruzhou liaocheng liaoshan licheng licheng_luan licheng_yizhou liguo
+		lijin limin lincheng linfen lingbao lingchuan_zezhou lingqiu lingshanwei
+		lingshi lingshou lingxian_shanxi lingzhou_dezhou linjin linqing linqu linxian
+		linyi linyi_jinan linying linzhang linzhou lishan_xinyang lishi liuyuan
+		lizhou longmen_chicheng longping_zhaozhou longqing longshan longwangmiao loufan luanchuan
+		luanyang lucheng_luan luchuan lulong luoshan luoyang lushan lushi
+		lutai luxian luxiang luyi macheng_luanzhou mancheng mengjin mengxian
+		mengyin mianchi minggang mingshui mixian miyun muping naiman
+		nandun nangong nanle nanpi nanyang nanzhao neihuang neiqiu
+		neixiang ningbian ninghua ningjin ningjin_zhaozhou ningling ningxiang_shizhou ningyang
+		niushan ordos otog penglai piantouguan pingdi pingding pingdisonglin
+		pinggu pingji pingjin pinglu pingquan pingshan_zhending pingyao pingyin
+		pingyu pingyuan_jinan puxian puyang puyin qianan qidong qihe
+		qingchi qingfeng qinghe qingtai qingyang_luan qingyuan_baoding qingyun qinshui
+		qinyuan qiuxian qixia qixian qixian_taiyuan qizhou quanning queshan
+		qufu quwo quyang quzhou rangxian rencheng renqiu renxian
+		rizhao ruicheng rushan ruyang sanchakou sanhe_tongzhou shagou shahe
+		shangcai shangcheng shangdang shangdu shanghe shangshui shansu shanxian
+		shanyang_yingzhou shanyin shenshui shenwu shenxian shexian_cizhou shicheng_jizhou shilou
+		shizilu shouguang shouyang shouzhang shulu shunsheng shunyang shunyi
+		sishui songzhou songzhou_songzhou suiping suiyang_guide suning taigu taikang
+		taiping_jiangzhou taipingzhuang taizhou tancheng tanghe tangxian tangyi tangyin
+		tengdong tengxian tiancheng tiaoxian tongbai tongdi tongwancheng tongxu
+		tunliu uraqai wanping wanqiu wanquan wanzhou_baoding weihai weining
+		weishi weixian wenan wendeng wenquan wenshang wenshui wenxi
+		wenxian wenxiang wuan wuchuan wudi wuji wulian wuping_daning
+		wuqiao wuqing wuxiang wuyang wuyi wuzhi wuzhou xiabancheng
+		xiajin xiangcheng xiangcheng_kaifeng xianghe xiangning xiangyi xiangyuan xiankang
+		xiaoyi xiaxian xiayi xichuan xichuan_xizhou xiexian xihe xihua
+		xinan xincai xincheng_baoding xincheng_jinan xindu_jizhou xingtai xingtang xingxian
+		xingyang xingzhong xinhure xinle xintai xinxiang xinyang xinye
+		xinzheng xiping xiurong xiuwu xixia xizhou xuande xuanning
+		xuanping xucheng xugou xunxian yancheng_kaifeng yanci yangcheng yangdi
+		yanggu_yanzhou yangqu yangxin yanjin yanling yanshan yanshen yanshi
+		yaoshan yexian yexian_laizhou yicheng_pingyang yidu_qingzhou yifeng yijin yingchang
+		yinshan yique yishui yixian_yizhou yixingzhou yiyang yiyang_songzhou yiyuan
+		yizhou_tengzhou yongcheng yonghe yongnian yongning_shanzhou yongqing yuancheng yuanqu
+		yuanshi_zhending yuanyang yucheng yucheng_kaifeng yuci yueyang_anze yulin_datong yuncheng
+		yunchuan yunnei yunzhou yushe yutai yutian yuyang yuzhou
+		zanhuang zaoqiang zhangqiu zhangsanying zhangzi zhanhua zhaoyuan zhecheng
+		zhending zhengping zhenping zhenwu zhenyang zhigu zhongdu zhongling
+		zhongmu zhucheng zhugao zhuyang zichuan ziyang zouping zouxian
+		zunhua
+	}
+
+	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
+		change_culture = culture:shang
+		change_religion = religion:shang_rites
+		set_capital = location:luoyang
+		add_accepted_culture = culture:shang
+		add_accepted_culture = culture:zhou
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_central_plains value = 1 }
+		add_legitimacy = legitimacy_weak_bonus
+		add_prestige = prestige_weak_bonus
+		add_stability = stability_weak_bonus
+	}
+}

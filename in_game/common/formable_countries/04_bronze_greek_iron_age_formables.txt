@@ -1,0 +1,336 @@
+# Bronze Era Greek Iron Age regional formables.
+# These require Iron Age or later, independence, and full control of their listed
+# locations. Mycenae itself is excluded so the old palace hegemon does not use
+# later northern Greek regional formations.
+
+MACED_f = {
+	level = 3
+	required_locations_fraction = 1.00
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 715
+
+	potential = {
+		OR = {
+			culture = { has_culture_group = culture_group:aegean_bronze_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			religion = religion:hellenic
+		}
+		NOT = { tag = 0001G }
+		NOT = { tag = MYC }
+		NOT = { tag = MACED }
+		NOT = { country_exists = c:MACED }
+		NOT = { has_variable = bronze_formed_greek_iron_realm }
+	}
+
+	allow = {
+		is_subject = no
+		current_age_or_later = { age = age_2_renaissance }
+		owns = location:bitola
+		owns = location:drama
+		owns = location:edessa
+		owns = location:florina
+		owns = location:giannitsa
+		owns = location:grevena
+		owns = location:gynaikokastro
+		owns = location:hatera
+		owns = location:kassandreia
+		owns = location:kastoria
+		owns = location:kavala
+		owns = location:kilkis
+		owns = location:mount_athos
+		owns = location:ohrid
+		owns = location:ostrovo
+		owns = location:polygyros
+		owns = location:prilep
+		owns = location:prosek
+		owns = location:rentina
+		owns = location:serres
+		owns = location:servia
+		owns = location:siatista
+		owns = location:thessaloniki
+		owns = location:veria
+	}
+
+	name = MACED
+	flag = MACED
+	adjective = MACED_ADJ
+	tag = MACED
+	color = map_MACED
+
+	locations = {
+		bitola drama edessa florina giannitsa grevena gynaikokastro hatera
+		kassandreia kastoria kavala kilkis mount_athos ohrid ostrovo
+		polygyros prilep prosek rentina serres servia siatista
+		thessaloniki veria
+	}
+
+	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
+		change_government_type = government_type:monarchy
+		change_culture = culture:macedonian
+		change_religion = religion:hellenic
+		set_capital = location:edessa
+		add_accepted_culture = culture:mycenaean
+		add_accepted_culture = culture:paeonian
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_greek_iron_realm value = 1 }
+		add_legitimacy = legitimacy_weak_bonus
+		add_prestige = prestige_weak_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_macedonian_iron_kingship
+			years = -1
+			mode = add_and_extend
+		}
+	}
+}
+
+THESS_f = {
+	level = 2
+	required_locations_fraction = 1.00
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 710
+
+	potential = {
+		OR = {
+			culture = { has_culture_group = culture_group:aegean_bronze_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			religion = religion:hellenic
+		}
+		NOT = { tag = 0001G }
+		NOT = { tag = MYC }
+		NOT = { tag = THESS }
+		NOT = { country_exists = c:THESS }
+		NOT = { has_variable = bronze_formed_greek_iron_realm }
+	}
+
+	allow = {
+		is_subject = no
+		current_age_or_later = { age = age_2_renaissance }
+		owns = location:demetrias
+		owns = location:elassona
+		owns = location:farsala
+		owns = location:karditsa
+		owns = location:larissa
+		owns = location:stomio
+		owns = location:trikala
+		owns = location:tyrnavos
+	}
+
+	name = THESS
+	flag = THESS
+	adjective = THESS_ADJ
+	tag = THESS
+	color = map_THESS
+
+	locations = {
+		demetrias elassona farsala karditsa larissa stomio trikala tyrnavos
+	}
+
+	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
+		change_culture = culture:aeolian
+		change_religion = religion:hellenic
+		set_capital = location:larissa
+		add_accepted_culture = culture:mycenaean
+		if = {
+			limit = { country_rank_level < 2 }
+			set_country_rank_effect = { rank = country_rank:rank_duchy }
+		}
+
+		set_variable = { name = bronze_formed_greek_iron_realm value = 1 }
+		add_prestige = prestige_weak_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_thessalian_duchy
+			years = -1
+			mode = add_and_extend
+		}
+	}
+}
+
+MOLSI_f = {
+	level = 3
+	required_locations_fraction = 1.00
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 705
+
+	potential = {
+		OR = {
+			culture = { has_culture_group = culture_group:aegean_bronze_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			religion = religion:hellenic
+		}
+		NOT = { tag = 0001G }
+		NOT = { tag = MYC }
+		NOT = { tag = MOLSI }
+		NOT = { country_exists = c:MOLSI }
+		NOT = { has_variable = bronze_formed_greek_iron_realm }
+	}
+
+	allow = {
+		is_subject = no
+		current_age_or_later = { age = age_2_renaissance }
+		owns = location:arta
+		owns = location:ioannina
+		owns = location:konitsa
+		owns = location:parga
+		owns = location:preveza
+		owns = location:pyli
+	}
+
+	name = MOLSI
+	flag = MOLSI
+	adjective = MOLSI_ADJ
+	tag = MOLSI
+	color = map_MOLSI
+
+	locations = {
+		arta ioannina konitsa parga preveza pyli
+	}
+
+	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
+		change_government_type = government_type:monarchy
+		change_culture = culture:mycenaean
+		change_religion = religion:hellenic
+		set_capital = location:ioannina
+		add_accepted_culture = culture:aeolian
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		set_variable = { name = bronze_formed_greek_iron_realm value = 1 }
+		add_legitimacy = legitimacy_weak_bonus
+		add_prestige = prestige_weak_bonus
+		add_stability = stability_weak_bonus
+		add_country_modifier = {
+			modifier = bronze_molossian_highland_kingship
+			years = -1
+			mode = add_and_extend
+		}
+	}
+}
+
+MHELL_f = {
+	level = 3
+	required_locations_fraction = 0.75
+	capital_required = no
+	potential_requires_own = yes
+	rule = plausible
+	content_priority = 700
+
+	potential = {
+		OR = {
+			culture = { has_culture_group = culture_group:aegean_bronze_group }
+			culture = { has_culture_group = culture_group:greek_group }
+			religion = religion:hellenic
+		}
+		NOT = { tag = MHELL }
+		NOT = { country_exists = c:MHELL }
+		NOT = { has_variable = bronze_formed_megale_hellas }
+	}
+
+	allow = {
+		is_subject = no
+		current_age_or_later = { age = age_2_renaissance }
+		owns = location:arta
+		owns = location:catania
+		owns = location:catanzaro
+		owns = location:cefalu
+		owns = location:cotrone
+		owns = location:francavilla
+		owns = location:gallipoliita
+		owns = location:gerace
+		owns = location:girgenti
+		owns = location:martinafr
+		owns = location:matera
+		owns = location:mazara
+		owns = location:messina
+		owns = location:mistretta
+		owns = location:modica
+		owns = location:naples
+		owns = location:noto
+		owns = location:patti
+		owns = location:reggiocal
+		owns = location:rossano
+		owns = location:sciacca
+		owns = location:syracuse
+		owns = location:taranto
+		owns = location:terranovasic
+		owns = location:vallo
+	}
+
+	name = MHELL
+	flag = MHELL
+	adjective = MHELL_ADJ
+	tag = MHELL
+	color = map_MHELL
+
+	locations = {
+		arta catania catanzaro cefalu cotrone francavilla gallipoliita
+		gerace girgenti martinafr matera mazara messina mistretta modica
+		naples noto patti reggiocal rossano sciacca syracuse taranto
+		terranovasic vallo
+	}
+
+	form_effect = {
+		bronze_formable_make_monarchy_if_tribal = yes
+		change_culture = culture:dorian
+		change_religion = religion:hellenic
+		set_capital = location:syracuse
+		add_accepted_culture = culture:mycenaean
+		add_accepted_culture = culture:aeolian
+		add_accepted_culture = culture:ionian
+		add_accepted_culture = culture:arcadian
+		add_accepted_culture = culture:cycladic
+		add_accepted_culture = culture:minoan
+		add_accepted_culture = culture:macedonian
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+
+		bronze_megale_hellas_convert_location = { location = arta culture = mycenaean }
+		bronze_megale_hellas_convert_location = { location = catania culture = ionian }
+		bronze_megale_hellas_convert_location = { location = catanzaro culture = mycenaean }
+		bronze_megale_hellas_convert_location = { location = cefalu culture = ionian }
+		bronze_megale_hellas_convert_location = { location = cotrone culture = mycenaean }
+		bronze_megale_hellas_convert_location = { location = francavilla culture = ionian }
+		bronze_megale_hellas_convert_location = { location = gallipoliita culture = dorian }
+		bronze_megale_hellas_convert_location = { location = gerace culture = mycenaean }
+		bronze_megale_hellas_convert_location = { location = girgenti culture = dorian }
+		bronze_megale_hellas_convert_location = { location = martinafr culture = dorian }
+		bronze_megale_hellas_convert_location = { location = matera culture = mycenaean }
+		bronze_megale_hellas_convert_location = { location = mazara culture = dorian }
+		bronze_megale_hellas_convert_location = { location = messina culture = ionian }
+		bronze_megale_hellas_convert_location = { location = mistretta culture = ionian }
+		bronze_megale_hellas_convert_location = { location = modica culture = dorian }
+		bronze_megale_hellas_convert_location = { location = naples culture = ionian }
+		bronze_megale_hellas_convert_location = { location = noto culture = dorian }
+		bronze_megale_hellas_convert_location = { location = patti culture = ionian }
+		bronze_megale_hellas_convert_location = { location = reggiocal culture = ionian }
+		bronze_megale_hellas_convert_location = { location = rossano culture = mycenaean }
+		bronze_megale_hellas_convert_location = { location = sciacca culture = dorian }
+		bronze_megale_hellas_convert_location = { location = syracuse culture = dorian }
+		bronze_megale_hellas_convert_location = { location = taranto culture = dorian }
+		bronze_megale_hellas_convert_location = { location = terranovasic culture = dorian }
+		bronze_megale_hellas_convert_location = { location = vallo culture = ionian }
+
+		bronze_megale_hellas_add_greek_relations = yes
+		set_variable = { name = bronze_formed_megale_hellas value = 1 }
+		add_prestige = prestige_mild_bonus
+		add_stability = stability_weak_bonus
+	}
+}

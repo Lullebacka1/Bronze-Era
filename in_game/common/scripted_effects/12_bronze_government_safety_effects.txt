@@ -1,0 +1,13 @@
+# Shared safety for Bronze Era formables.
+# Forming a kingdom should not leave a formerly tribal polity as a tribe.
+bronze_formable_make_monarchy_if_tribal = {
+	if = {
+		limit = {
+			OR = {
+				government_type = government_type:tribe
+				government_type = government_type:village_community
+			}
+		}
+		change_government_type = government_type:monarchy
+	}
+}

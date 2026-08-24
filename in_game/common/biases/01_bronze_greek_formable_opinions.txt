@@ -1,0 +1,4 @@
+bronze_megale_hellas_kinship = {
+	value = 25
+	yearly_decay = 1
+}

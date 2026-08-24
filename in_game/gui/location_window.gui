@@ -4321,19 +4321,38 @@ lateralview = {
 							}
 
 							expand = {	
-							# Influance						
-							widget = {
-								size = { 36 36 }
-								datacontext = "[LocationView.GetLocation]"
-								visible = "yes"
-								text_single = {
-									size = { 36 36 }
-									autoresize = yes
-									text = "TEST_INFLUANCE"
-								default_format = "#P"
-								}
-							}
-						}
+    # Influance						
+#    widget = {
+#        size = { 128 36 }
+#        datacontext = "[LocationView.GetLocation]"
+#       visible = "[LocationView.GetLocation.has_mycenaean_influence]"
+#        text_single = {
+#            size = { 36 36 }
+#            text = "[Location.GetVariable('mycenaean_influence')|0]"
+#            default_format = "#P"
+#        }
+#        tooltipwidget = {
+#            ContextualTooltipType = {
+#                blockoverride "title_icon" {
+#                    icon = {
+#                        using = tooltip_title_icon_size
+#                        texture = "gfx/interface/icons/location_icons/influence.dds"
+#                    }
+#                }
+#                blockoverride "title_text" {
+#                    text = "TEST_INFLUANCE"
+#                }
+#                blockoverride "tooltip_content" {
+#                    TooltipTextBlock = {
+#                        blockoverride "text" {
+#                            text = "Unclaimed Influence: [Subtract_float('(float)100.0', Location.GetVariable('mycenaean_influence'))|0]"
+#                        }
+#                    }
+#                }
+#            }
+#        }
+#    }
+}
 							
 
 						}

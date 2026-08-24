@@ -5,51 +5,168 @@
 
 
 
-recalculate_mycenaean_influence = {
-	set_variable = {
-		name = "mycenaean_total_investment"
-		value =  0	
-	}
-	every_building_in_location = {
-		limit = {
-			building_type = bronze_age_mycenaean_influence_building
+#recalculate_mycenaean_influence = {
+#	set_variable = {
+#		name = "mycenaean_total_investment"
+#		value = 0	
+#	}
+#	every_buildings_in_location = {
+#		limit = {
+#			building_type = bronze_age_mycenaean_influence_building
+#		}
+#		root = {                                         
+#				name = "mycenaean_total_investment"
+#				value = prev.mycenaean_investment         
+#			}
+#		}
+#	}
+#	every_buildings_in_location = {
+#		limit = {
+#			building_type = bronze_age_mycenaean_influence_building
+#		}
+#		owner = {
+#			set_variable = {
+#				name = "mycenaean_owner_investment"
+#				value = 0
+#			}
+#			every_buildings_in_location = {
+#				limit = {
+#					building_type = bronze_age_mycenaean_influence_building
+#					owner = prev
+#				}
+#				prev = {                                  
+#					change_variable = {
+#						name = "mycenaean_owner_investment"
+#						add = prev.mycenaean_investment  
+#					}
+#				}
+#			}
+#			set_variable = {
+#				name = "mycenaean_influence"
+#				value = mycenaean_owner_investment
+#			}
+#			multiply_variable = {
+#				name = "mycenaean_influence"
+#				value = 100
+#			}
+#			divide_variable = {
+#				name = "mycenaean_influence"
+#				value = root.mycenaean_total_investment  
+#			}
+#			if = {
+#				limit = { this = root.owner }
+#				root = {
+#					set_variable = {
+#						name = "mycenaean_influence"
+#						value = prev.mycenaean_influence
+#					}
+#				}
+#			}
+#		}
+#	}
+#}
+mycenaean_influence = {
+	international_organization:mycenaean_league = {
+
+		# RESET LEAGUE TOTAL
+		set_variable = { 
+			name = "mycenaean_tax_base"
+			value = 0
 		}
-		change_variable = {
-			name = "mycenaean_total_investment"
-			value =  mycenaean_investment
-		}
-	}
-	every_building_in_location = {
-		limit = {
-			building_type = bronze_age_mycenaean_influence_building
-	}
-		owner = {
+		# RESET MEMBER VARIABLES
+		every_international_organization_member = {
 			set_variable = {
-           		name = "mycenaean_owner_investment"
-            	value = 0
-        }
-		every_building_in_location = {
-			limit = {
-				building_type = bronze_age_mycenaean_influence_building
-				owner = prev
+				name = "mycenaean_calculation_tax_base"
+				value = 0
+			}
+			set_variable = {
+				name = "mycenaean_calculation_influence_tax_base"
+				value = 0
+			}
+			set_variable = {
+				name = "one_influence_worth"
+				value = 0
+			}
+			set_variable = {
+				name = "country_influence"
+				value = 0
+			}
+			set_variable = {
+				name = "mycenaean_country_total_tax_base"
+				value = 0
+			}	
+		}
+	}
+	# RESET MEMBER VARIABLES
+	international_organization:mycenaean_league = {
+
+		save_scope_as = mycenaean_league_scope
+
+		every_international_organization_member = {
+
+			change_variable = {
+				name = "mycenaean_calculation_tax_base"
+				add = country_tax_base
+			}
+
+			change_variable = {
+				name = "mycenaean_calculation_tax_base"
+				multiply = 1 # custom value can be added for modifiers that will affect the influence later
+			}
+
+			save_scope_value_as = {
+				name = "mycenaean_member_tax_base"
+				value = var:mycenaean_calculation_tax_base
+			}
+
+			scope:mycenaean_league_scope = {
+				change_variable = {
+					name = "mycenaean_tax_base"
+					add = scope:mycenaean_member_tax_base
+				}
+			}
+		}
+	}
+	international_organization:mycenaean_league = {
+		save_scope_value_as = {
+			name = mycenaean_total_tax_base
+			value = var:mycenaean_tax_base
+		}
+		every_international_organization_member = {
+			set_variable = {
+				name = "mycenaean_country_total_tax_base"
+				value = scope:mycenaean_total_tax_base
 			}
 			change_variable = {
-				name = "mycenaean_owner_investment"
-				value =  mycenaean_investment
+				name = "mycenaean_calculation_influence_tax_base"
+				add = country_tax_base
 			}
-		}		
-			set_variable = {
-				name = "mycenaean_influence"
-				value = mycenaean_owner_investment
+			change_variable = {
+				name = "mycenaean_calculation_influence_tax_base"
+				multiply = 1 # custom value can be added for modifiers that will affect the influence later
 			}
-				multiply_variable = {
-				name = "mycenaean_influence"
-				value = 100
+			change_variable = {
+				name = "one_influence_worth"
+				add = var:mycenaean_country_total_tax_base
 			}
-			divide_variable = {
-				name = "mycenaean_influence"
-				value = mycenaean_total_investment
+			change_variable = {
+				name = "one_influence_worth"
+				divide = 100
+			}
+			change_variable = {
+				name = "country_influence"
+				add = var:mycenaean_calculation_influence_tax_base
+			}
+			change_variable = {
+				name = "country_influence"
+				divide = var:one_influence_worth
 			}
 		}
 	}
 }
+ # custom value can be added for modifiers that will affect the influence later
+		# 100/mycenaean_tax_base = 1_influence_worth
+		# mycenaean_calculation_influence_tax_base/1_influence_worth = country_influence 
+		# save country_influence for league member/owner
+		# reset country_influence and 1_influence_worth so that we can do the calculation again
+		# when some one leaves the league we have to rest all these things to 0 for that country NOT ADDED YET

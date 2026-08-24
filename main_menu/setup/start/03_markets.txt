@@ -1,8 +1,10 @@
 market_manager = {
 	#europe
-
+	add_market = roscommon # ire
 	#Nordic
 	add_market = stockholm # SWEDN
+	add_market = svendborg # den
+	add_market = ranea # Sami
 
 	#Baltic
 	add_market = tallinn # ESTON
@@ -17,14 +19,15 @@ market_manager = {
 	#GREEK
 	add_market = argos
 
-	
+	#Ukriane
+	add_market = oleshia 
 
 	
 	#Africa
 	add_market = alexandria
-	
+	add_market = ali_sabieh
 
-	
+	add_market = lapai
 	#East Africa
 	
 	#Central Africa
@@ -44,9 +47,10 @@ market_manager = {
 	
 	#India
 	add_market = nagnes
+	add_market = pakpattan
 	
 	# Mesoamerica
-	
+	add_market = tesechoacan
 
 	# Aridoamerica
 	#add_market = batuco
