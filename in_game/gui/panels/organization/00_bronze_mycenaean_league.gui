@@ -605,93 +605,158 @@ types OrganizationPanel
 										layoutpolicy_vertical = fixed    
 										margin_top = 5
 										spacing = 10
-								header_paper_card = {
-									size = { 100% 90 }
-								blockoverride "header_content" {		
-									text_single = {
-										layoutpolicy_horizontal = expanding
-										text = "Cohesion_Title"
-										align = left|nobaseline
-										fontsize = 25
-										autoresize = yes
-										default_format = "#L"
-									}
-								}
-								 blockoverride "bottom_content" {	
-									hbox = {
-										spacing = 5
-										margin_left = 5
-										layoutpolicy_vertical = fixed
-												text_single = {
-													layoutpolicy_horizontal = fixed
-													align = left|nobaseline
-													autoresize = yes
-													fontsize = 20
-													text = "Value_Cohesion"
-													default_format = "#L"
-												}
-												text_single = {
-													layoutpolicy_horizontal = fixed
-													autoresize = yes
-													align = left|nobaseline
-													fontsize = 20
-													text = "mycenaean_fragmentation_panel_unity_value"
-													default_format = "#Y"
-												}
-												expand = {}
+									situation_card_expandable = {
+										blockoverride "header_button_onclick" {
+											onclick = "[LateralView.Vars.Toggle( 'mycenaean_overview_toggled' )]"
 										}
-								    }
-								}
+										blockoverride "header_text" {
+											text = "mycenaean_fragmentation_overview_card"
+										}
+										blockoverride "header_icon" {
+											texture = "gfx/interface/icons/situations/mycenaean_fragmentation.dds"
+										}
+										blockoverride "bottom_content" {
+											text_multi = {
+												autoresize = no
+												multiline = yes
+												size = { 470 95 }
+												text = "mycenaean_fragmentation_overview_card_desc"
+											}
+										}
+										blockoverride "visible_hint" {}
+										blockoverride "onaction_hint" {
+											action_tooltip = {
+												title = "OPEN_HINT"
+												on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_mycenaean_fragmentation')]"
+											}
+										}
+										blockoverride "bottom_content_onclick" {
+											visible = "[LateralView.Vars.Exists( 'mycenaean_overview_toggled' )]"
+										}
+										blockoverride "icon_replace_visible_yes" {
+											visible = "[LateralView.Vars.Exists( 'mycenaean_overview_toggled' )]"
+										}
+										blockoverride "icon_replace_visible_not" {
+											visible = "[Not(LateralView.Vars.Exists( 'mycenaean_overview_toggled' ))]"
+										}
+									}
 								header_paper_card = {
-									size = { 100% 180 }
+										size = { 400 35 }
 									blockoverride "header_content" {		
 										text_single = {
 											layoutpolicy_horizontal = expanding
-											text = "Influence_Title"
+											text = "Cohesion_Title"
 											align = left|nobaseline
 											fontsize = 25
 											autoresize = yes
 											default_format = "#L"
 										}
+										hbox = {
+												margin_left = 415
+												icon = {
+													size = { 32 32 }
+													texture = "gfx/interface/icons/situations/mycenaean_fragmentation.dds"
+												}
+
+												vbox = {
+													layoutpolicy_horizontal = expanding
+
+													text_single = {
+														layoutpolicy_horizontal = expanding
+														fontsize = 13
+														text = "mycenaean_fragmentation_panel_high_wanax"
+														default_format = "#subtle_name"
+													}
+
+													text_single = {
+														layoutpolicy_horizontal = expanding
+														fontsize = 13
+														text = "[GetUniqueInternationalOrganization('mycenaean_league').GetLeaderCountry.GetName]"
+														default_format = "#Y"
+													}
+												}
+
+												expand = {}
+										}
+										hbox = {
+											margin_top = 3
+											spacing = 5
+											margin_left = 110
+											layoutpolicy_vertical = fixed
+													
+													text_single = {
+														layoutpolicy_horizontal = fixed
+														autoresize = yes
+														align = left|nobaseline
+														fontsize = 21
+														text = "mycenaean_fragmentation_panel_unity_value"
+														default_format = "#Y"
+													}
+													expand = {}
+											}
+									}
+								}	
+								situation_card_expandable = {
+									blockoverride "header_button_onclick" {
+										onclick = "[LateralView.Vars.Toggle( 'mycenaean_influence_overview_toggled' )]"
+									}
+									blockoverride "header_text" {
+										text = "Influence_Title"
+										fontsize = 20
+										default_format = "#L"
+									}
+									blockoverride "header_icon" {
+										texture = ""
 									}
 									blockoverride "bottom_content" {
-										vbox = {
-											
-											hbox = {
-												spacing = 5
-												margin_top = 10
-												margin_left = 5
-												margin_right = 415
-												text_single = {
-													layoutpolicy_horizontal = fixed
-													text = "[Player.GetName]:"
-													align = left|nobaseline
-													fontsize = 20
-													autoresize = yes
-													default_format = "#Y"
-												}
-												text_single = {
-													layoutpolicy_horizontal = fixed
-													text = "[Player.MakeScope.GetVariable('country_influence').GetValue|.1]"
-													align = left|nobaseline
-													fontsize = 20
-													autoresize = yes
-													default_format = "#Y"
-												}
-												expand = {}
-											}
-											hbox = {
-												text_multi = {
-													layoutpolicy_horizontal = fixed
-													size = {500 100}
-													text = "Influence_Dsec"
-													align = left|nobaseline
-													multiline = yes
-													fontsize = 18
-													default_format = "#F"
-												}
-											}
+										text_multi = {
+											autoresize = no
+											multiline = yes
+											size = { 470 45 }
+											text = "Influence_Dsec"
 										}
+									}
+									blockoverride "bottom_content_onclick" {
+										visible = "[LateralView.Vars.Exists( 'mycenaean_influence_overview_toggled' )]"
+									}
+									blockoverride "icon_replace_visible_yes" {
+										visible = "[LateralView.Vars.Exists( 'mycenaean_influence_overview_toggled' )]"
+									}
+									blockoverride "icon_replace_visible_not" {
+										visible = "[Not(LateralView.Vars.Exists( 'mycenaean_influence_overview_toggled' ))]"
+									}
+								}
+								situation_fancy_two_line_card = {
+									size = {}
+									blockoverride "left_flag" {
+										country_flag_big = {}
+									}
+									blockoverride "left_bottom_flag" {}
+									blockoverride "left_top_text" {
+										layoutpolicy_horizontal = expanding
+										layoutpolicy_vertical = expanding
+										text = "[Player.GetName]:"
+									}
+									blockoverride "left_bottom_text" {
+										layoutpolicy_horizontal = expanding
+										align = left|nobaseline
+										text = "[Player.MakeScope.GetVariable('country_influence').GetValue|.1]"
+									}
+									blockoverride "right_flag" {
+											country_flag_big = {
+												
+											}
+									}
+									blockoverride "right_bottom_flag" {}
+									blockoverride "right_top_text" {
+										layoutpolicy_horizontal = expanding
+										layoutpolicy_vertical = expanding
+										text = "mycenaean_league_leader"
+									}
+									blockoverride "right_bottom_text" {
+										layoutpolicy_horizontal = expanding
+										align = right|nobaseline
+										text = "[GetCountry('0001G').MakeScope.GetVariable('country_influence').GetValue|.1]"
 									}
 								}																										
                         	}
