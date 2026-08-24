@@ -17,7 +17,9 @@ levant_silver_debasement_trade_nobles_unsatisfied = {
 		category = country
 	}
 	every_province = {
-		local_nobles_estate_unrest = 0.1
+		every_location_in_province = {
+			local_nobles_estate_unrest = 0.1
+		}
 	}
 }
 
