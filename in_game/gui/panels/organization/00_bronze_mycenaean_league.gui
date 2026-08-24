@@ -742,6 +742,7 @@ types OrganizationPanel
 										text = "[Player.MakeScope.GetVariable('country_influence').GetValue|.1]"
 									}
 									blockoverride "right_flag" {
+										datacontext = "[GetCountry('0001G')]"
 											country_flag_big = {
 												
 											}
