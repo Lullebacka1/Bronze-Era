@@ -1,0 +1,48 @@
+on_game_start = {
+	effect = {
+		# Bronze Era starts on an internal year-1 chronology. EU5 can mark
+		# countries bankrupt during economic initialization before normal cash
+		# setup is fully settled, so clear only that startup artifact directly.
+		every_country = {
+			limit = {
+				is_real_country = yes
+			}
+			if = {
+				limit = { is_during_bankruptcy = yes }
+				set_bankruptcy = no
+			}
+		}
+	}
+}
+      # marche pas bordel -> fuck no work
+on_bankruptcy = {
+	effect = {
+		if = {
+			limit = {
+				is_real_country = yes
+				current_date <= 1.5.1
+			}
+			set_bankruptcy = no
+		}
+	}
+}
+
+monthly_country_pulse = {
+	on_actions = {
+		bronze_startup_bankruptcy_cleanup_first_months
+	}
+}
+
+bronze_startup_bankruptcy_cleanup_first_months = {
+	trigger = {
+		is_real_country = yes
+		current_date <= 1.5.29
+	}
+
+	effect = {
+		if = {
+			limit = { is_during_bankruptcy = yes }
+			set_bankruptcy = no
+		}
+	}
+}

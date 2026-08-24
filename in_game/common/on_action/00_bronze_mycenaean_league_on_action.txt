@@ -25,3 +25,27 @@ mycenaean_league_yearly_pulse = {
 		5 = mycenaean_league.120
 	}
 }
+
+monthly_country_pulse = {
+	on_actions = {
+		mycenaean_influence_pulse
+	}
+}
+
+mycenaean_influence_pulse = {
+	trigger = {
+		OR = {
+			current_month = 2
+			current_month = 8
+		}
+	}
+	effect = {
+		mycenaean_influence = yes
+	}
+}
+
+on_game_start = {
+	effect = {
+		mycenaean_influence = yes
+	}
+}

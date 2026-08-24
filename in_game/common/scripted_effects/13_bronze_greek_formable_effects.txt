@@ -1,0 +1,31 @@
+# Bronze Era - Greek formable effects.
+
+bronze_megale_hellas_convert_location = {
+	if = {
+		limit = { owns = location:$location$ }
+		location:$location$ = {
+			every_pop = {
+				limit = { pop_size > 0.001 }
+				split_pop = {
+					fraction = 0.60
+					culture = culture:$culture$
+					religion = religion:hellenic
+				}
+			}
+		}
+	}
+}
+
+bronze_megale_hellas_add_greek_relations = {
+	every_country = {
+		limit = {
+			OR = {
+				culture = { has_culture_group = culture_group:aegean_bronze_group }
+				culture = { has_culture_group = culture_group:greek_group }
+				religion = religion:hellenic
+			}
+			NOT = { this = root }
+		}
+		add_opinion = { modifier = bronze_megale_hellas_kinship target = root }
+	}
+}

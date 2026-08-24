@@ -173,7 +173,7 @@ mycenaean_fragmentation_reevaluate_strongest_palaces = {
 			}
 			max = 1
 			check_range_bounds = no
-			situation:mycenaean_fragmentation = {
+			situation:mycenaean_fragmentation = { # situation will be removed fix this
 				set_variable = {
 					name = mycenaean_fragmentation_strongest_palace
 					value = prev
@@ -206,7 +206,7 @@ mycenaean_fragmentation_reevaluate_strongest_palaces = {
 			}
 			position = 1
 			check_range_bounds = no
-			situation:mycenaean_fragmentation = {
+			situation:mycenaean_fragmentation = { # situation will be removed fix this
 				set_variable = {
 					name = mycenaean_fragmentation_second_palace
 					value = prev
