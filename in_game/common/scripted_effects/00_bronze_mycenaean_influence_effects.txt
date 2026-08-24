@@ -109,9 +109,9 @@ mycenaean_influence = {
 				add = country_tax_base
 			}
 
-			multiply_variable = {
+			change_variable = {
 				name = "mycenaean_calculation_tax_base"
-				value = 1 # custom value can be added for modifiers that will affect the influence later
+				multiply = 1 # custom value can be added for modifiers that will affect the influence later
 			}
 
 			save_scope_value_as = {
@@ -141,25 +141,25 @@ mycenaean_influence = {
 				name = "mycenaean_calculation_influence_tax_base"
 				add = country_tax_base
 			}
-			multiply_variable = {
+			change_variable = {
 				name = "mycenaean_calculation_influence_tax_base"
-				value = 1 # custom value can be added for modifiers that will affect the influence later
+				multiply = 1 # custom value can be added for modifiers that will affect the influence later
 			}
 			change_variable = {
 				name = "one_influence_worth"
 				add = var:mycenaean_country_total_tax_base
 			}
-			divide_variable = {
+			change_variable = {
 				name = "one_influence_worth"
-				value = 100
+				divide = 100
 			}
 			change_variable = {
 				name = "country_influence"
 				add = var:mycenaean_calculation_influence_tax_base
 			}
-			divide_variable = {
+			change_variable = {
 				name = "country_influence"
-				value = var:one_influence_worth
+				divide = var:one_influence_worth
 			}
 		}
 	}

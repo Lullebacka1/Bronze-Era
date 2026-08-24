@@ -35,8 +35,8 @@ monthly_country_pulse = {
 mycenaean_influence_pulse = {
 	trigger = {
 		OR = {
-			current_month = 1
-			current_month = 7
+			current_month = 2
+			current_month = 8
 		}
 	}
 	effect = {
