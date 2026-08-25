@@ -266,7 +266,7 @@ temple_healing_sanctuary = {
 	category = infrastructure_category
 
 	rural_settlement = no
-	town = yes
+	town = no
 	city = yes
 	megalopolis = yes
 
