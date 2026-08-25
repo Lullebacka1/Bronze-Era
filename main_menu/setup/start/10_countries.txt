@@ -1135,7 +1135,7 @@ countries = {
 		accepted_cultures = { canaanite }
 		tolerated_cultures = {  }
 		discovered_regions = {
-			anatolia_region
+			anatolia_region	balkan_region
 		}
 	}
 

@@ -329,13 +329,8 @@ rural_clothmaker = {
 	employment_size = rural_peasant_produce_employment
 	
 	rural_settlement = yes
-	
-	
 	town =  no
 	city =  no
-
-	
-
 
 	build_time = rural_build_time
 	
@@ -650,7 +645,7 @@ warrior_halls = {
 	employment_size = small_rural_peasant_produce_employment
 	
 	rural_settlement = yes
-	town = no
+	town = yes
 	city = no
 	megalopolis = no
 	
