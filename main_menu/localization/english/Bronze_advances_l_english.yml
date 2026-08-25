@@ -314,6 +314,9 @@
   clergy_military_authority_advance: "Priestly Military Authority"
   clergy_military_authority_advance_desc: "The influence of the priesthood extends into the military sphere, granting religious authorities an established place within the command structure of the realm."
 
+  territorial_expansion: "Territorial Expansion"
+  territorial_expansion_desc: "As settlements grow beyond their original bounds, communities begin to extend their control over the surrounding countryside. New fields, pastures, and settlements are drawn into increasingly organized territories, broadening the reach of established communities."
+
   # ##########################
   # BUILDINGS
   # ##########################

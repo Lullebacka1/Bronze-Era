@@ -10800,9 +10800,9 @@ countries = {
 		}
 		accepted_cultures = { hindu harappan vedic }
 		tolerated_cultures = { harappan vedic dravidian gandharan }
-			discovered_regions = {
-				india_region persia_region
-			}
+		discovered_regions = {
+			india_region persia_region
+		}
 	}
 	##NUBIA
 	NUBI = {
@@ -10818,18 +10818,20 @@ countries = {
 			ruler = random
 		}
 
-	own_control_core = {
-		al_jeblien  alays       arbaji      branko      dabarqi     dongola
-		ed_damer    ed_debba    el_eleila   el_gadarif  el_manaqil  el_metemma
-		karima      karkuj      korti       omdurman    qerri       quz_rajab
-		renk        sennar      shemkhiya   shendi      singa       soba
-		wad_madani  waylula
-	}
+		own_control_core = {
+			al_jeblien  alays       arbaji      branko      dabarqi     dongola
+			ed_damer    ed_debba    el_eleila   el_gadarif  el_manaqil  el_metemma
+			karima      karkuj      korti       omdurman    qerri       quz_rajab
+			renk        sennar      shemkhiya   shendi      singa       soba
+			wad_madani  waylula
+		}
+
 		accepted_cultures = { nubian }
-			discovered_regions = {
-				egypt_region nubia_region 
-			}
-			
+		
+		discovered_regions = {
+			egypt_region nubia_region central_africa_region
+		}
+	
 	}
 	##PATHANI DAMB
 	PATHA = {
@@ -10850,9 +10852,9 @@ countries = {
 		}
 		accepted_cultures = { hindu harappan vedic }
 		tolerated_cultures = { harappan vedic dravidian gandharan }
-			discovered_regions = {
-				india_region persia_region
-			}
+		discovered_regions = {
+			india_region persia_region
+		}
 	}
 	##RAKHIGARHI
 	RAKHI = {
