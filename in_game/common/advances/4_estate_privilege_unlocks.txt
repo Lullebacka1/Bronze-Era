@@ -47,17 +47,6 @@ administrative_incorporation_advance = {
 	starting_technology_level = 3
 }
 
-commercial_monopolies_advance = {
-	age = age_1_traditions
-	research_cost = 1.5
-
-	requires = merchants_quarters_unlock_advance
-
-	unlock_estate_privilege = commercial_monopolies
-
-	starting_technology_level = 4
-}
-
 sponsor_maritime_contracts_advance = {
 	age = age_1_traditions
 	research_cost = 1.5

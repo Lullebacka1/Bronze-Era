@@ -1137,6 +1137,11 @@ countries = {
 		discovered_regions = {
 			anatolia_region	balkan_region
 		}
+		discovered_areas = {
+			levant_area
+			levantine_sea_area
+			lower_egypt_area
+		}
 	}
 
 	##ALBIONES

@@ -6754,10 +6754,10 @@ nur_mountains_1 = { topography = mountain_wasteland vegetation = forest climate 
 nur_mountains_2 = { topography = mountain_wasteland vegetation = forest climate = continental}
 nicosia_cyp = { topography = flatland vegetation = grasslands climate = mediterranean religion = canaanite culture = canaanite raw_material = wine}
 famagusta = { topography = flatland vegetation = grasslands climate = mediterranean religion = canaanite culture = canaanite raw_material = wheat natural_harbor_suitability = 0.25}
-kyrenia = { topography = hills vegetation = woods climate = mediterranean religion = canaanite culture = canaanite raw_material = lumber natural_harbor_suitability = 0.00}
-larnaca = { topography = flatland vegetation = sparse climate = mediterranean religion = canaanite culture = canaanite raw_material = silk natural_harbor_suitability = 0.25}
-limassol = { topography = hills vegetation = woods climate = mediterranean religion = canaanite culture = canaanite raw_material = sugar natural_harbor_suitability = 0.25}
-morphou = { topography = flatland vegetation = woods climate = mediterranean religion = canaanite culture = canaanite raw_material = cotton natural_harbor_suitability = 0.00}
+kyrenia = { topography = hills vegetation = woods climate = mediterranean religion = canaanite culture = canaanite raw_material = clay natural_harbor_suitability = 0.00}
+larnaca = { topography = flatland vegetation = sparse climate = mediterranean religion = canaanite culture = canaanite raw_material = wool natural_harbor_suitability = 0.25}
+limassol = { topography = hills vegetation = woods climate = mediterranean religion = canaanite culture = canaanite raw_material = beeswax natural_harbor_suitability = 0.25}
+morphou = { topography = flatland vegetation = woods climate = mediterranean religion = canaanite culture = canaanite raw_material = lumber natural_harbor_suitability = 0.00}
 paphos = { topography = hills vegetation = woods climate = mediterranean religion = canaanite culture = canaanite raw_material = copper natural_harbor_suitability = 0.00}
 silifke = { topography = hills vegetation = woods climate = mediterranean religion = luwian culture = luwian raw_material = wheat natural_harbor_suitability = 0.00}
 anamur = { topography = hills vegetation = forest climate = mediterranean religion = hittite culture = hittite raw_material = lumber natural_harbor_suitability = 0.00}

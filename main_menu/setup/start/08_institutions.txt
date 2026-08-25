@@ -2059,6 +2059,7 @@ locations = {
 	}
 	famagusta = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	farashband = {
 		bronze_routes = yes
@@ -2371,6 +2372,7 @@ locations = {
 	}
 	kyrenia = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	ladik_pontus = {
 		bronze_routes = yes
@@ -2389,6 +2391,7 @@ locations = {
 	}
 	larnaca = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	latakia = {
 		bronze_routes = yes
@@ -2596,6 +2599,7 @@ locations = {
 	}
 	paphos = {
 		bronze_routes = yes
+		palatial_economy = yes
 	}
 	pasni = {
 		bronze_routes = yes
