@@ -18,83 +18,99 @@
 
 # SILVER SHORTAGE
 
-  levant_silver_debasement.11.title.a: "Silver Shortage in Levant"
+  levant_silver_debasement.2.title.a: "Silver Shortage in Levant"
 
-  levant_silver_debasement.11.desc.a: "Our lands have long profited from trade routes spanning from the western seas to far eastern lands. They brought us exotic drinks and foods, the finest oxen and most aromatic incense, but our people above all prized noble silver—for nothing attests to a man's splendor more than possession of this fairest of metals.\n\nYet now, without access to the distant mines of Aegean, silver is running short, and its value rises swiftly. The scribes grow uneasy, for as silver grows scarce, so too does our hold upon the currency of the realm weaken. Its prestige only grows—but what good is that when the ruler finds himself unable to bestow it upon his favored servants?"
-  levant_silver_debasement.11.desc.b: "Our lands have long profited from trade routes spanning from the western seas to far eastern lands. They brought us exotic drinks and foods, the finest oxen and most aromatic incense, but our people above all prized noble silver—for nothing attests to a man's splendor more than possession of this fairest of metals.\n\nYet now, without access to the distant mines of Aegean, silver is running short, and its value rises swiftly. For generations our fathers have traded in silver by weight, and so do our people still; but now this ancient custom is troubled, as silver grows ever harder to obtain. Its prestige only grows - but what good is that when even the common man finds his silver pieces too precious to part with?"
-  levant_silver_debasement.11.desc.c: "Our lands have long profited from trade routes spanning from the western seas to far eastern lands. They brought us exotic drinks and foods, the finest oxen and most aromatic incense, but our people above all prized noble silver—for nothing attests to a man's splendor more than possession of this fairest of metals.\n\nYet now, without access to the distant mines of the Aegean, silver is running short, and its value rises swiftly. Thanks to the foresight of our ruler, the currency of our realm is no longer bound to the fortunes of silver as our fathers bound it, and our coinage remains safe from this disturbance."
+  levant_silver_debasement.2.desc.a: "Our lands have long profited from trade routes spanning from the western seas to far eastern lands. They brought us exotic drinks and foods, the finest oxen and most aromatic incense, but our people above all prized noble silver—for nothing attests to a man's splendor more than possession of this fairest of metals.\n\nYet now, without access to the distant mines of Aegean, silver is running short, and its value rises swiftly. The scribes grow uneasy, for as silver grows scarce, so too does our hold upon the currency of the realm weaken. Its prestige only grows—but what good is that when the ruler finds himself unable to bestow it upon his favored servants?"
+  levant_silver_debasement.2.desc.b: "Our lands have long profited from trade routes spanning from the western seas to far eastern lands. They brought us exotic drinks and foods, the finest oxen and most aromatic incense, but our people above all prized noble silver—for nothing attests to a man's splendor more than possession of this fairest of metals.\n\nYet now, without access to the distant mines of Aegean, silver is running short, and its value rises swiftly. For generations our fathers have traded in silver by weight, and so do our people still; but now this ancient custom is troubled, as silver grows ever harder to obtain. Its prestige only grows - but what good is that when even the common man finds his silver pieces too precious to part with?"
+  levant_silver_debasement.2.desc.c: "Our lands have long profited from trade routes spanning from the western seas to far eastern lands. They brought us exotic drinks and foods, the finest oxen and most aromatic incense, but our people above all prized noble silver—for nothing attests to a man's splendor more than possession of this fairest of metals.\n\nYet now, without access to the distant mines of the Aegean, silver is running short, and its value rises swiftly. Thanks to the foresight of our ruler, the currency of our realm is no longer bound to the fortunes of silver as our fathers bound it, and our coinage remains safe from this disturbance."
 
-  levant_silver_debasement.11.a: "Let the wisdom of our fathers and the favor of the gods guard us from the fortunes of strangers."
-  levant_silver_debasement.11.a_tt: "The wisdom of our fathers and the favor of the gods have guarded our realm from the changing fortunes of distant lands. Let strangers suffer the want brought upon them; our own house shall remain secure."
+  levant_silver_debasement.2.a: "Let the wisdom of our fathers and the favor of the gods guard us from the fortunes of strangers."
+  levant_silver_debasement.2.a_tt: "The wisdom of our fathers and the favor of the gods have guarded our realm from the changing fortunes of distant lands. Let strangers suffer the want brought upon them; our own house shall remain secure."
 
-  levant_silver_debasement.11.b: "Let it be proclaimed that a small measure of copper may henceforth be joined with silver."
-  levant_silver_debasement.11.b_tt: "Let it be proclaimed throughout the land: henceforth a small measure of copper may be joined to the silver, that the silver of the realm may not fail while the roads to the distant mines are troubled."
+  levant_silver_debasement.2.b: "Let it be proclaimed that a small measure of copper may henceforth be joined with silver."
+  levant_silver_debasement.2.b_tt: "Let it be proclaimed throughout the land: henceforth a small measure of copper may be joined to the silver, that the silver of the realm may not fail while the roads to the distant mines are troubled."
 
-  levant_silver_debasement.11.c: "Let the lesser kingdoms grow weak; our storehouses hold silver enough."
-  levant_silver_debasement.11.c_tt: "Let no man be troubled by the want of silver. Our storehouses are well supplied, and what is scarce to others remains plentiful in our house. Let the weaker kingdoms contend as they may; their strength will fail before ours."
+  levant_silver_debasement.2.c: "Let the lesser kingdoms grow weak; our storehouses hold silver enough."
+  levant_silver_debasement.2.c_tt: "Let no man be troubled by the want of silver. Our storehouses are well supplied, and what is scarce to others remains plentiful in our house. Let the weaker kingdoms contend as they may; their strength will fail before ours."
 
-  levant_silver_debasement.11.d: "Let the people be calm, for we shall not sully noble silver with common metal."
-  levant_silver_debasement.11.d_tt: "The scribes speak of unease among the people, yet silver is the noblest of metals, and its honor must not be diminished. We shall not mix the fairest metal with common copper merely because strangers have failed to bring it to our markets."
+  levant_silver_debasement.2.d: "Let the people be calm, for we shall not sully noble silver with common metal."
+  levant_silver_debasement.2.d_tt: "The scribes speak of unease among the people, yet silver is the noblest of metals, and its honor must not be diminished. We shall not mix the fairest metal with common copper merely because strangers have failed to bring it to our markets."
 
-  levant_silver_debasement.11.e: "Go to those who melt the silver, and tell them to join copper with it."
-  levant_silver_debasement.11.e_tt: "Go now to those who melt the silver. Tell them to join copper with it, so that what silver we have may be made to go farther, and the markets of the land shall not be left without it."
+  levant_silver_debasement.2.e: "Go to those who melt the silver, and tell them to join copper with it."
+  levant_silver_debasement.2.e_tt: "Go now to those who melt the silver. Tell them to join copper with it, so that what silver we have may be made to go farther, and the markets of the land shall not be left without it."
 
 # SILVER COIN DILUTION
 
-  levant_silver_debasement.111.title: "Silver Dilution"
+  levant_silver_debasement.31.title: "Silver Dilution"
 
-  levant_silver_debasement.111.desc: "The copper we have joined to our silver has spared the realm the full weight of the shortage, and for a time the markets were kept from want. Yet the roads remain troubled, and silver grows ever harder to obtain. Shall we now add more common metal, lest the silver of the realm run short?"
+  levant_silver_debasement.31.desc: "The copper we have joined to our silver has spared the realm the full weight of the shortage, and for a time the markets were kept from want. Yet the roads remain troubled, and silver grows ever harder to obtain. Shall we now add more common metal, lest the silver of the realm run short?"
 
-  levant_silver_debasement.111.a: "Such remedies are among the measures entrusted to our wisdom, yet we must not draw upon them without measure."
-  levant_silver_debasement.111.a_tt: "Such remedies are among the measures entrusted to our wisdom, yet we must not draw upon them without measure, lest the silver lose its worth in the eyes of our people."
+  levant_silver_debasement.31.a: "Such remedies are among the measures entrusted to our wisdom, yet we must not draw upon them without measure."
+  levant_silver_debasement.31.a_tt: "Such remedies are among the measures entrusted to our wisdom, yet we must not draw upon them without measure, lest the silver lose its worth in the eyes of our people."
 
-  levant_silver_debasement.111.b: "Let us permit the copper to be joined in greater measure, that the silver of the realm may endure and not be exhausted."
-  levant_silver_debasement.111.b_tt: "Let us permit the copper to be joined in greater measure, that the silver of the realm may endure through these lean years and not be exhausted."
+  levant_silver_debasement.31.b: "Let us permit the copper to be joined in greater measure, that the silver of the realm may endure and not be exhausted."
+  levant_silver_debasement.31.b_tt: "Let us permit the copper to be joined in greater measure, that the silver of the realm may endure through these lean years and not be exhausted."
 
 # SILVER COIN PURE
 
-  levant_silver_debasement.112.title: "The Price of Purity"
+  levant_silver_debasement.32.title: "The Price of Purity"
 
-  levant_silver_debasement.112.desc: "We have kept our silver pure, and with it the honor and strength of our currency. Yet the noble metal grows scarcer with each passing day, and the mints find their stores ever more wanting. If the roads remain closed, more mints may fall silent, and the currency of the realm may suffer for its purity."
+  levant_silver_debasement.32.desc: "We have kept our silver pure, and with it the honor and strength of our currency. Yet the noble metal grows scarcer with each passing day, and the mints find their stores ever more wanting. If the roads remain closed, more mints may fall silent, and the currency of the realm may suffer for its purity."
 
-  levant_silver_debasement.112.a: "Let the standard be upheld, and let those who stray from it answer before the ruler."
-  levant_silver_debasement.112.a_tt: "Let the standard be upheld throughout the realm, and let those who stray from it answer before the ruler, that the purity and honor of our silver may not be diminished."
+  levant_silver_debasement.32.a: "Let the standard be upheld, and let those who stray from it answer before the ruler."
+  levant_silver_debasement.32.a_tt: "Let the standard be upheld throughout the realm, and let those who stray from it answer before the ruler, that the purity and honor of our silver may not be diminished."
 
-  levant_silver_debasement.112.b: "What is prestige to us when we cannot command the silver to uphold it?"
-  levant_silver_debasement.112.b_tt: "What good is the prestige of pure silver when we cannot command enough of it to fill our mints? Let us join it with common metal, that the currency of the realm may endure."
+  levant_silver_debasement.32.b: "What is prestige to us when we cannot command the silver to uphold it?"
+  levant_silver_debasement.32.b_tt: "What good is the prestige of pure silver when we cannot command enough of it to fill our mints? Let us join it with common metal, that the currency of the realm may endure."
 
 # SILVER PURE
 
-  levant_silver_debasement.113.title: "The Old Custom"
+  levant_silver_debasement.33.title: "The Old Custom"
 
-  levant_silver_debasement.113.desc: "For many generations, our rulers have upheld the standing of officials and noblemen with gifts of silver, affirming their place before the court and the people. But now, as pure silver grows scarce, these gifts have become too costly to bestow. Their hearts grow troubled, and whispers spread among them: is the ruler of the land still fit to bear the crown?"
+  levant_silver_debasement.33.desc: "For many generations, our rulers have upheld the standing of officials and noblemen with gifts of silver, affirming their place before the court and the people. But now, as pure silver grows scarce, these gifts have become too costly to bestow. Their hearts grow troubled, and whispers spread among them: is the ruler of the land still fit to bear the crown?"
 
-  levant_silver_debasement.113.a: "If our gifts displease them, let them come; we shall break any hand raised against us."
-  levant_silver_debasement.113.a_tt: "If the gifts of the palace no longer please them, let them come forth; we shall break any hand that rises against us, and those who challenge the ruler shall learn the strength of his house."
+  levant_silver_debasement.33.a: "If our gifts displease them, let them come; we shall break any hand raised against us."
+  levant_silver_debasement.33.a_tt: "If the gifts of the palace no longer please them, let them come forth; we shall break any hand that rises against us, and those who challenge the ruler shall learn the strength of his house."
 
-  levant_silver_debasement.113.b: "We dare not imperil the realm; let the nobles receive the silver we can provide."
-  levant_silver_debasement.113.b_tt: "We cannot risk the cohesion of our domain. Let the nobles enjoy the silver we can provide, and let their standing before the court remain secure."
+  levant_silver_debasement.33.b: "We dare not imperil the realm; let the nobles receive the silver we can provide."
+  levant_silver_debasement.33.b_tt: "We cannot risk the cohesion of our domain. Let the nobles enjoy the silver we can provide, and let their standing before the court remain secure."
 
 # SILVER DILUTION
 
-  levant_silver_debasement.114.title: "Silver Dilution"
+  levant_silver_debasement.34.title: "Silver Dilution"
 
-  levant_silver_debasement.114.desc: "The copper we have joined to our silver has spared the realm the full weight of the shortage, and for a time the people were kept from want. Yet the roads remain troubled, and silver grows ever harder to obtain. Shall we now add more common metal, lest the silver of the realm run short?"
+  levant_silver_debasement.34.desc: "The copper we have joined to our silver has spared the realm the full weight of the shortage, and for a time the people were kept from want. Yet the roads remain troubled, and silver grows ever harder to obtain. Shall we now add more common metal, lest the silver of the realm run short?"
 
-  levant_silver_debasement.114.a: "Let us not overuse this remedy, lest silver lose its worth among our people."
-  levant_silver_debasement.114.a_tt: "Such remedies are among the measures entrusted to our wisdom, yet we must not draw upon them without measure, lest the silver lose its worth in the eyes of our people."
+  levant_silver_debasement.34.a: "Let us not overuse this remedy, lest silver lose its worth among our people."
+  levant_silver_debasement.34.a_tt: "Such remedies are among the measures entrusted to our wisdom, yet we must not draw upon them without measure, lest the silver lose its worth in the eyes of our people."
 
-  levant_silver_debasement.114.b: "Let us permit more copper, that the silver of the realm may endure."
-  levant_silver_debasement.114.b_tt: "Let us permit the copper to be joined in greater measure, that the silver of the realm may endure through these lean years and not be exhausted."
+  levant_silver_debasement.34.b: "Let us permit more copper, that the silver of the realm may endure."
+  levant_silver_debasement.34.b_tt: "Let us permit the copper to be joined in greater measure, that the silver of the realm may endure through these lean years and not be exhausted."
 
 
 # DIMMING SILVER
 
-  levant_silver_debasement.1111.title: "The Dimming"
-  levant_silver_debasement.1111.desc: "The silver we send forth from our house no longer shines as it once did. Our people have begun to mark its lesser brightness, while merchants from distant lands question the worth of what we offer them. If this doubt spreads, the bonds that hold our realm together may weaken with it. We must act before the silver loses its honor, and with it the strength of our rule."
+  levant_silver_debasement.4.title: "The Dimming"
+  levant_silver_debasement.4.desc: "The silver we send forth from our house no longer shines as it once did. Our people have begun to mark its lesser brightness, while merchants from distant lands question the worth of what we offer them. If this doubt spreads, the bonds that hold our realm together may weaken with it. We must act before the silver loses its honor, and with it the strength of our rule."
 
-  levant_silver_debasement.1111.a: "Summon the laborers; let them seek the silver hidden beneath our feet."
-  levant_silver_debasement.1111.a_tt: "The distant mines are beyond our reach, yet Kothar-wa-Khasis has hidden many treasures beneath our feet. Let the laborers be summoned, and let them seek the silver within our own land."
+  levant_silver_debasement.4.a: "Summon the laborers; let them seek the silver hidden beneath our feet."
+  levant_silver_debasement.4.a_tt: "The distant mines are beyond our reach, yet Kothar-wa-Khasis has hidden many treasures beneath our feet. Let the laborers be summoned, and let them seek the silver within our own land."
 
-  levant_silver_debasement.1111.b: "Let us fund the craftsmen, that Kothar-wa-Khasis may reveal another way to silver."
-  levant_silver_debasement.1111.b_tt: "All that glitters is not silver. Send word to our craftsmen and provide them with all that they require; with the blessing of Kothar-wa-Khasis, let them smelt new silver from the treasures of our land."
+  levant_silver_debasement.4.b: "Let us fund the craftsmen, that Kothar-wa-Khasis may reveal another way to silver."
+  levant_silver_debasement.4.b_tt: "Not all that glitters is silver. Send word to our craftsmen and provide them with all that they require; with the blessing of Kothar-wa-Khasis, let them smelt new silver from the treasures of our land."
+
+# SILVER MINES
+
+  levant_silver_debasement.51.title: "Silver Struck"
+  levant_silver_debasement.51.desc: "Good tidings! Our laborers have struck silver in one of our lands. The gods have favored us, and fortune has placed its treasure beneath our feet.\n\nNew silver mines have been established in the following location:\n[SCOPE.sLocation('silver_mine_1').GetName]"
+
+  levant_silver_debasement.51.a: "As our fathers did, so shall we: when the realm cries out, its ruler shall provide."
+  levant_silver_debasement.51.a_tt: "New silver mines have been established in the following location: [SCOPE.sLocation('silver_mine_1').GetName]"
+
+#SILVER ALLOY
+
+  levant_silver_debasement.52.title: "Master's Silver"
+  levant_silver_debasement.52.desc: "The craftsmen have heeded our command and found a way to draw silver from the common metals of our land. What was once hidden from our fathers is now made to shine by their skill.\n\n#italic Archaeologists have found copper-rich silver at Megiddo and Beth-Shemesh, dating to around 1200-1150 BCE, with similar alloys later appearing at Megiddo, Tell Keisan, Ashkelon, Beth Shean and Wadi el-Makkuk. Some contained up to 80% copper, yet retained a silvery appearance through silver-enriched surfaces or the addition of arsenic and antimony.#!"
+
+  levant_silver_debasement.52.a: "Let the craftsmen be honored; Kothar-wa-Khasis has revealed his secret to them."
+  levant_silver_debasement.52.a_tt: "Our craftsmen have found the secret: with the proper admixture, common metal may take on the appearance of noble silver. Let their work be put to use throughout the realm."

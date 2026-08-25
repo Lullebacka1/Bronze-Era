@@ -17,7 +17,9 @@ levant_silver_debasement_trade_nobles_unsatisfied = {
 		category = country
 	}
 	every_province = {
-		local_nobles_estate_unrest = 0.1
+		every_location_in_province = {
+			local_nobles_estate_unrest = 0.1
+		}
 	}
 }
 
@@ -33,4 +35,12 @@ levant_silver_debasement_experimentation_encouraged = {
 		category = country
 	}
 	research_speed_modifier = -0.2
+}
+
+levant_silver_copper_alloy = {
+	game_data = {
+		category = country
+	}
+	monthly_inflation = -0.001
+	global_monthly_prosperity = 0.001
 }
