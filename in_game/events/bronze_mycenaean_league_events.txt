@@ -409,8 +409,8 @@ mycenaean_league.200 = {
 
 	trigger = {
 		is_member_of_international_organization = international_organization:mycenaean_league
-		is_situation_active = situation:mycenaean_fragmentation
-		situation:mycenaean_fragmentation ?= {
+		is_situation_active = situation:mycenaean_fragmentation # Will break
+		situation:mycenaean_fragmentation ?= { # Need to change the scope from situation
 			has_variable = mycenaean_fragmentation_crisis_active
 		}
 		NOT = { has_variable = mycenaean_fragmentation_seen }
@@ -441,8 +441,8 @@ mycenaean_league.210 = {
 	orphan = yes
 
 	trigger = {
-		is_situation_active = situation:mycenaean_fragmentation
-		situation:mycenaean_fragmentation ?= {
+		is_situation_active = situation:mycenaean_fragmentation # Will break
+		situation:mycenaean_fragmentation ?= { # need to change scope
 			has_variable = mycenaean_fragmentation_crisis_active
 		}
 		mycenaean_palace_is_valid_landable_member = yes
@@ -479,8 +479,8 @@ mycenaean_league.220 = {
 
 	trigger = {
 		is_leader_of_international_organization = international_organization:mycenaean_league
-		is_situation_active = situation:mycenaean_fragmentation
-		situation:mycenaean_fragmentation ?= {
+		is_situation_active = situation:mycenaean_fragmentation # Will break
+		situation:mycenaean_fragmentation ?= { # need to change scope
 			has_variable = mycenaean_fragmentation_crisis_active
 		}
 		NOT = { has_variable = mycenaean_high_wanax_fragmentation_council }
