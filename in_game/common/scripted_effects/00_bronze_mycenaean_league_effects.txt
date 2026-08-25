@@ -22,9 +22,71 @@ change_mycenaean_league_authority = {
 		}
 	}
 }
+influence_impact_league_authority = {
+	international_organization:mycenaean_league ?= {
+		if = {
+			limit = { has_variable = mycenaean_league_authority }
+			if = {
+				limit = {
+					 leader_country = {
+						var:country_influence >= 80 
+					}
+				} 
+				change_variable = {
+					name = mycenaean_league_authority
+					add = 0.25
+				}
+			}
+			if = {
+				limit = {
+					 leader_country = {
+						var:country_influence <= 40 
+					}
+				} # less than 40 
+				change_variable = {
+					name = mycenaean_league_authority
+					subtract = 0.25
+				}
+			}
+			if = {
+				limit = { has_variable = mycenaean_league_authority }
+				if = {
+					limit = { var:mycenaean_league_authority > 100 }
+					set_variable = { name = mycenaean_league_authority value = 100 }
+				}
+				if = {
+					limit = { var:mycenaean_league_authority < 0 }
+					set_variable = { name = mycenaean_league_authority value = 0 }
+				}
+			}
+		}
+	}
+}
+after_trojan_war_impact_league_authority = {
+	international_organization:mycenaean_league = {
+		if = {
+			limit = { has_global_variable = "trojan_war_phase_2_ended" }
+			change_variable = {
+				name = mycenaean_league_authority
+				subtract = 0.5
+			}
+		}
+		if = {
+			limit = { has_variable = mycenaean_league_authority }
+			if = {
+				limit = { var:mycenaean_league_authority > 100 }
+				set_variable = { name = mycenaean_league_authority value = 100 }
+			}
+			if = {
+				limit = { var:mycenaean_league_authority < 0 }
+				set_variable = { name = mycenaean_league_authority value = 0 }
+			}
+		}
+	}
+}
 # subtracts untiy with the $value$ its set in the events file
 subtract_mycenaean_league_authority = {
-	international_organization:mycenaean_league ?= {
+	international_organization:mycenaean_league = {
 		custom_description = {
 			text = change_mycenaean_league_authority_text
 			value = $value$
@@ -231,7 +293,7 @@ mycenaean_fragmentation_reevaluate_strongest_palaces = {
 
 # might be able to just but the whole on_monthly in an IO scope to fixe problems
 # international_organization:mycenaean_league ?= {
-# 	on_monthly = { # Can mainly be moved to effects
+# 	on_monthly = { # Can mainly be moved to effects # this needs to be an on_actions and then trigger an effect
 # 			if = {
 # 				limit = { NOT = { has_variable = mycenaean_fragmentation_months } }
 # 				set_variable = { name = mycenaean_fragmentation_months value = 0 }
