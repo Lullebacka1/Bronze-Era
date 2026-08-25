@@ -124,6 +124,12 @@ settlements_advance = {
 	
 }
 
+territorial_expansion = {
+	age = age_1_traditions
+
+	may_explore = yes
+}
+
 ceremonial_burial_advance = {
 	age = age_1_traditions
 	icon = ceremonial_burial
