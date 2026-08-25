@@ -107,6 +107,8 @@
 	unlock_building = pottery_palace
 	unlock_building = winery_palace
 	unlock_building = jewelry_palace
+
+	starting_technology_level = 3
 	
  	requires = workforce_specialization_advance
  }

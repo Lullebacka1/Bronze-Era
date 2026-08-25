@@ -1,17 +1,51 @@
-mediterranean_town_tech_lvl_1 = {
+bronze_town_tech_lvl_1 = {
 	pottery_maker = 1
 	tools_maker = 1
-	weaponry_maker = 1
 	neolithic_beer_maker = 1
-	neolithic_grannary = 1
+	neolithic_granary = 1
 	marketplace = 1
 }
 
-mediterranean_city_tech_lvl_1_maritime = {
+bronze_town_tech_lvl_1_maritime = {
 	pottery_maker = 1
 	neolithic_beer_maker = 1
-	neolithic_grannary = 1
+	neolithic_granary = 1
 	marketplace = 1
 	neolithic_dock = 1
 	navy_supplies_maker = 1
+}
+
+bronze_town_tech_lvl_3_palatial = {
+	pottery_palace = 1
+	tools_guild = 1
+	beer_palace = 1
+	neolithic_granary = 1
+	marketplace = 1
+}
+
+bronze_town_tech_lvl_3_palatial_maritime = {
+	pottery_palace = 1
+	naval_supplies_palace = 1
+	beer_palace = 1
+	neolithic_granary = 1
+	marketplace = 1
+	neolithic_dock = 1
+}
+
+bronze_town_tech_lvl_3_trading_maritime = {
+	pottery_maker = 1
+	navy_supplies_maker = 1
+	neolithic_beer_maker = 1
+	neolithic_granary = 1
+	marketplace = 1
+	bronze_dock = 1
+}
+
+bronze_town_tech_lvl_3_palatial_trading_maritime = {
+	pottery_palace = 1
+	naval_supplies_palace = 1
+	beer_palace = 1
+	neolithic_granary = 1
+	marketplace = 1
+	bronze_dock = 1
 }

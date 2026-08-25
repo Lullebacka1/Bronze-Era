@@ -10,6 +10,19 @@ merchants_quarters_unlock_advance = {
 	requires = scribe_alphabetic_maintenance
 }
 
+# Putting it here for formatting reasons - do not move!
+
+commercial_monopolies_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	requires = merchants_quarters_unlock_advance
+
+	unlock_estate_privilege = commercial_monopolies
+
+	starting_technology_level = 4
+}
+
 # ################################
 # IRON AGE BUILDINGS
 # ################################

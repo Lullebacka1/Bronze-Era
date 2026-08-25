@@ -34,15 +34,30 @@ locations = {
     megri = { rank = town }
 
     #  CRETE & CYPRUS 
-    chania = { rank = city }       	   
-    candia = { rank = city }         
-    kyrenia = { rank = town }          
-    famagusta = { 
+    chania = {
 		rank = town
-		town_setup = mediterranean_town_tech_lvl_1
+		town_setup = bronze_town_tech_lvl_1
+	}       	   
+    candia = { 
+		rank = town
+		town_setup = bronze_town_tech_lvl_1
+	}         
+    kyrenia = {
+		rank = town
+		town_setup = bronze_town_tech_lvl_3_palatial_trading_maritime
+	}          
+    famagusta = { 
+		rank = city
+		town_setup = bronze_town_tech_lvl_3_palatial_trading_maritime
 	}       
-    larnaca = { rank = town }          
-    paphos = { rank = town }           
+    larnaca = {
+		rank = town
+		town_setup = bronze_town_tech_lvl_3_palatial_trading_maritime
+	}          
+    paphos = {
+		rank = town
+		town_setup = bronze_town_tech_lvl_3_palatial
+	}           
 
     #  THE LEVANT (SYRIA & LEBANON) 
     artah = { rank = town }            

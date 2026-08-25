@@ -81353,20 +81353,31 @@ larnaca = {
 	define_pop = {	type = clergy	size = 0.08	culture = canaanite	religion = canaanite }
 	define_pop = {	type = burghers	size = 0.08	culture = canaanite	religion = canaanite }
 	define_pop = {	type = burghers	size = 0.08	culture = canaanite	religion = canaanite }
+	define_pop = {	type = peasants	size = 7.977	culture = canaanite	religion = canaanite }
 	define_pop = {	type = peasants	size = 7.982	culture = canaanite	religion = canaanite }
-	define_pop = {	type = peasants	size = 7.982	culture = canaanite	religion = canaanite }
+	define_pop = {	type = burghers	size = 0.05	culture = lower_egyptian	religion = kemetic }
 }
 limassol = {
 	define_pop = {	type = clergy	size = 0.08	culture = canaanite	religion = canaanite }
-	define_pop = {	type = peasants	size = 7.982	culture = canaanite	religion = canaanite }
+	define_pop = {	type = peasants	size = 7.997	culture = canaanite	religion = canaanite }
+	define_pop = {	type = burghers	size = 0.03	culture = lower_egyptian	religion = kemetic }
 }
 morphou = {
 	define_pop = {	type = clergy	size = 0.08	culture = canaanite	religion = canaanite }
-	define_pop = {	type = peasants	size = 7.982	culture = canaanite	religion = canaanite }
+	define_pop = {	type = peasants	size = 5.182	culture = canaanite	religion = canaanite }
+	define_pop = {	type = peasants	size = 1.00	culture = canaanite	religion = hellenic }
+	define_pop = {	type = burghers	size = 0.20	culture = mycenaean	religion = hellenic }
+	define_pop = {	type = peasants	size = 1.00	culture = mycenaean	religion = hellenic }
+	define_pop = {	type = peasants	size = 0.50	culture = mycenaean	religion = canaanite }
 }
 paphos = {
-	define_pop = {	type = clergy	size = 0.08	culture = canaanite	religion = canaanite }
-	define_pop = {	type = peasants	size = 7.982	culture = canaanite	religion = canaanite }
+	define_pop = {	type = clergy	size = 0.07	culture = canaanite	religion = canaanite }
+	define_pop = {	type = clergy	size = 0.01	culture = canaanite	religion = hellenic }
+	define_pop = {	type = peasants	size = 4.532	culture = canaanite	religion = canaanite }
+	define_pop = {	type = peasants	size = 1.00	culture = canaanite	religion = hellenic }
+	define_pop = {	type = burghers	size = 0.05	culture = mycenaean	religion = hellenic }
+	define_pop = {	type = peasants	size = 2.10	culture = mycenaean	religion = hellenic }
+	define_pop = {	type = peasants	size = 0.60	culture = mycenaean	religion = canaanite }
 }
 silifke = {
 	define_pop = {	type = clergy	size = 0.064	culture = luwian	religion = hittite }
