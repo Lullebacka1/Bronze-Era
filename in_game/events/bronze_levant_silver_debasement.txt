@@ -432,7 +432,7 @@ levant_silver_debasement.32 = {
 	desc = levant_silver_debasement.32.desc
 
 	category = situation_event
-	image = "gfx/interface/illustrations/situation/levant_silver_debasement_11.dds"
+	image = "gfx/interface/illustrations/situation/levant_silver_debasement_111.dds"
 	outcome = neutral
 
 	# dynamic_historical_event = {
@@ -496,6 +496,8 @@ levant_silver_debasement.32 = {
 			name = levant_silver_crisis_silver_demand
 			add = 2
 		}
+
+		update_silver_market = {}
 	}
 
 	option = {
@@ -515,6 +517,8 @@ levant_silver_debasement.32 = {
 			add = 2
 		}
 
+		update_silver_market = {}
+
 		set_variable = { name = levant_silver_debasement_11X_silver_debased value = 1 years = 50 }
 	}
 
@@ -526,7 +530,7 @@ levant_silver_debasement.33 = {
 	desc = levant_silver_debasement.33.desc
 
 	category = situation_event
-	image = "gfx/interface/illustrations/situation/levant_silver_debasement_11.dds"
+	image = "gfx/interface/illustrations/situation/levant_silver_debasement_33.dds"
 	outcome = neutral
 
 	# dynamic_historical_event = {
@@ -723,7 +727,7 @@ levant_silver_debasement.4 = {
 	desc = levant_silver_debasement.4.desc
 
 	category = situation_event
-	image = "gfx/interface/illustrations/situation/levant_silver_debasement_111.dds"
+	image = "gfx/interface/illustrations/situation/levant_silver_debasement_4.dds"
 	outcome = neutral
 
 	# dynamic_historical_event = {
