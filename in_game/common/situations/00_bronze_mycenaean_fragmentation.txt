@@ -156,7 +156,7 @@ mycenaean_fragmentation = {
 		}
 	}
 
-	map_color = {
+	map_color = { # dont know what to do but thnik we dont need this
 		if = {
 			limit = {
 				OR = {
@@ -172,7 +172,7 @@ mycenaean_fragmentation = {
 		}
 	}
 
-	legend_key = {
+	legend_key = { # dont know what to do
 		limit = {
 			OR = {
 				international_organization:mycenaean_league.leader_country = prev.owner
@@ -184,9 +184,9 @@ mycenaean_fragmentation = {
 		color = owner.country_color
 	}
 
-	on_ending = {
+	on_ending = { # make this to an effect and have the trigger as IO not existing anymore
 		if = {
-			limit = { has_variable = mycenaean_fragmentation_crisis_active } # this one is might need fixing if moved
+			limit = { has_variable = mycenaean_fragmentation_crisis_active } 
 			international_organization:mycenaean_league ?= {
 				every_international_organization_member = {
 					trigger_event_non_silently = mycenaean_league.250

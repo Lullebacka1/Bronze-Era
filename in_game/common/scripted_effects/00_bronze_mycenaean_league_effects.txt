@@ -180,6 +180,12 @@ mycenaean_fragmentation_reevaluate_strongest_palaces = {
 					value = prev
 				}
 			}
+			# international_organization:mycenaean_league = { 
+			# 	set_variable = {
+			# 		name = mycenaean_fragmentation_strongest_palace
+			# 		value = prev
+			# 	}
+			# }
 		}
 		ordered_international_organization_member = {
 			order_by = {
@@ -213,6 +219,12 @@ mycenaean_fragmentation_reevaluate_strongest_palaces = {
 					value = prev
 				}
 			}
+			# international_organization:mycenaean_league = { 
+			# 	set_variable = {
+			# 		name = mycenaean_fragmentation_second_palace
+			# 		value = prev
+			# 	}
+			# }
 		}
 	}
 }
