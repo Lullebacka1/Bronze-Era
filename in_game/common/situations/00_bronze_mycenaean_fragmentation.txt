@@ -1,3 +1,4 @@
+# When we move this 6 events will be broken
 mycenaean_fragmentation = {
 	monthly_spawn_chance = monthly_spawn_chance_unique
 	hint_tag = hint_mycenaean_fragmentation
@@ -18,14 +19,14 @@ mycenaean_fragmentation = {
 		is_member_of_international_organization = international_organization:mycenaean_league
 	}
 
-	on_start = {
+	on_start = { # Can be moved to on game start
 		set_variable = { name = mycenaean_fragmentation_months value = 0 }
 		international_organization:mycenaean_league = {
 			mycenaean_fragmentation_reevaluate_strongest_palaces = yes
 		}
 	}
-
-	on_monthly = {
+		
+	on_monthly = { # Can mainly be moved to effects
 		if = {
 			limit = { NOT = { has_variable = mycenaean_fragmentation_months } }
 			set_variable = { name = mycenaean_fragmentation_months value = 0 }
@@ -39,7 +40,7 @@ mycenaean_fragmentation = {
 		# pressure makes fragmentation historically plausible.
 		if = {
 			limit = {
-				NOT = { has_variable = mycenaean_fragmentation_crisis_active }
+				NOT = { has_variable = mycenaean_fragmentation_crisis_active } # this one is might need fixing if moved
 				# Six-year grace period: the league panel is active from day one,
 				# but palace fragmentation cannot begin before members have had
 				# time to develop.
@@ -72,7 +73,7 @@ mycenaean_fragmentation = {
 					}
 				}
 			}
-			set_variable = { name = mycenaean_fragmentation_crisis_active value = 1 }
+			set_variable = { name = mycenaean_fragmentation_crisis_active value = 1 } # this one is might need fixing if moved
 			international_organization:mycenaean_league = {
 				ordered_international_organization_member = {
 					limit = { mycenaean_palace_is_fragmentation_vanguard = yes }
@@ -90,7 +91,7 @@ mycenaean_fragmentation = {
 
 		if = {
 			limit = {
-				has_variable = mycenaean_fragmentation_crisis_active
+				has_variable = mycenaean_fragmentation_crisis_active # this one is might need fixing if moved
 				international_organization:mycenaean_league = {
 					var:mycenaean_league_authority >= 45
 					NOT = {
@@ -100,7 +101,7 @@ mycenaean_fragmentation = {
 					}
 				}
 			}
-			remove_variable = mycenaean_fragmentation_crisis_active
+			remove_variable = mycenaean_fragmentation_crisis_active # this one is might need fixing if moved
 			international_organization:mycenaean_league ?= {
 				every_international_organization_member = {
 					trigger_event_non_silently = mycenaean_league.250
@@ -110,7 +111,7 @@ mycenaean_fragmentation = {
 
 		if = {
 			limit = {
-				has_variable = mycenaean_fragmentation_crisis_active
+				has_variable = mycenaean_fragmentation_crisis_active # this one is might need fixing if moved
 			}
 			random_list = {
 				20 = {
@@ -185,7 +186,7 @@ mycenaean_fragmentation = {
 
 	on_ending = {
 		if = {
-			limit = { has_variable = mycenaean_fragmentation_crisis_active }
+			limit = { has_variable = mycenaean_fragmentation_crisis_active } # this one is might need fixing if moved
 			international_organization:mycenaean_league ?= {
 				every_international_organization_member = {
 					trigger_event_non_silently = mycenaean_league.250

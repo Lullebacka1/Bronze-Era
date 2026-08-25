@@ -48,4 +48,8 @@ on_game_start = {
 	effect = {
 		mycenaean_influence = yes
 	}
+	# set_variable = { name = mycenaean_fragmentation_months value = 0 }
+	# 	international_organization:mycenaean_league = {
+	# 		mycenaean_fragmentation_reevaluate_strongest_palaces = yes
+	# 	}
 }
