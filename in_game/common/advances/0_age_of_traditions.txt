@@ -127,7 +127,11 @@ settlements_advance = {
 territorial_expansion = {
 	age = age_1_traditions
 
+	requires = settlements_advance
+
 	may_explore = yes
+
+	starting_technology_level = 2
 }
 
 ceremonial_burial_advance = {

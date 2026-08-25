@@ -1,0 +1,17 @@
+mediterranean_town_tech_lvl_1 = {
+	pottery_maker = 1
+	tools_maker = 1
+	weaponry_maker = 1
+	neolithic_beer_maker = 1
+	neolithic_grannary = 1
+	marketplace = 1
+}
+
+mediterranean_city_tech_lvl_1_maritime = {
+	pottery_maker = 1
+	neolithic_beer_maker = 1
+	neolithic_grannary = 1
+	marketplace = 1
+	neolithic_dock = 1
+	navy_supplies_maker = 1
+}

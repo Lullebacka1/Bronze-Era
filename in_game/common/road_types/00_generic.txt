@@ -1,30 +1,38 @@
-﻿gravel_road = {
-	level = 3
-	movement_cost = -0.25
-	market_access = -0.1
-	pop_movement = 0.2
-	build_time_per_unit_distance = 15
-	price_per_unit_distance = build_gravel_road
-	construction_demand = build_gravel_road_demand
-	maintenance_demand = maintain_gravel_road_demand
-	color = map_gravel_road
-	spline_style_id = 2
-}
+﻿# gravel_road = {
+# 	level = 3
+# 	movement_cost = -0.25
+# 	market_access = -0.1
+# 	pop_movement = 0.2
+# 	build_time_per_unit_distance = 15
+# 	price_per_unit_distance = build_gravel_road
+# 	construction_demand = build_gravel_road_demand
+# 	maintenance_demand = maintain_gravel_road_demand
+# 	color = map_gravel_road
+# 	spline_style_id = 2
+
+# 	potential = {
+# 		has_tag = PREMODERN
+# 	}
+# }
 
 
-paved_road = {
-	level = 4
-	movement_cost = -0.3
-	market_access = -0.2
-	pop_movement = 0.3
-	proximity = 5
-	build_time_per_unit_distance = 20
-	price_per_unit_distance = build_paved_road
-	construction_demand = build_paved_road_demand
-	maintenance_demand = maintain_paved_road_demand
-	color = map_paved_road
-	spline_style_id = 3
-}
+# paved_road = {
+# 	level = 4
+# 	movement_cost = -0.3
+# 	market_access = -0.2
+# 	pop_movement = 0.3
+# 	proximity = 5
+# 	build_time_per_unit_distance = 20
+# 	price_per_unit_distance = build_paved_road
+# 	construction_demand = build_paved_road_demand
+# 	maintenance_demand = maintain_paved_road_demand
+# 	color = map_paved_road
+# 	spline_style_id = 3
+
+# 	potential = {
+# 		has_tag = PREMODERN
+# 	}
+# }
 
 # modern_road = {
 # 	level = 3
