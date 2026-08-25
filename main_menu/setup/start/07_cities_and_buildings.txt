@@ -37,7 +37,10 @@ locations = {
     chania = { rank = city }       	   
     candia = { rank = city }         
     kyrenia = { rank = town }          
-    famagusta = { rank = city }       
+    famagusta = { 
+		rank = town
+		town_setup = mediterranean_town_tech_lvl_1
+	}       
     larnaca = { rank = town }          
     paphos = { rank = town }           
 
