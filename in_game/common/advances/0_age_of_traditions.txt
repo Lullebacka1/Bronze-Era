@@ -617,7 +617,7 @@ divine_kingship_advance = {
 	age = age_1_traditions
 	research_cost = 2.0
 
-	stability_cost = -0.1
+	stability_cost_efficiency = 0.1
 
 	requires = epics_advance
 

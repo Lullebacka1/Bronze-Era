@@ -562,7 +562,7 @@ low_republican_tradition = {
 		add = 1
 	}
 
-	stability_cost = 2.0
+	stability_cost_efficiency = -2.0
 }
 
 high_devotion = {
@@ -1101,7 +1101,7 @@ horde_army_expectation = {
 		min = 0
 	}
 
-	stability_cost = 2.0
+	stability_cost_efficiency = -2.0
 	land_morale_modifier = -0.5
 }
 
