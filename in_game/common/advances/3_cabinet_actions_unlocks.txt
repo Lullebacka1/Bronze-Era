@@ -1,4 +1,12 @@
-﻿# integrate_area_advance = {
+﻿settle_the_frontier_advance = {
+	icon = settle_the_frontier_advance
+	age = age_1_traditions
+
+	requires = territorial_expansion
+	unlock_cabinet_action = settle_the_frontier
+}
+
+# integrate_area_advance = {
 # 	icon = expansionism
 # 	age = age_5_absolutism
 # 	requires = the_constitution
@@ -87,35 +95,3 @@
 	
 # 	unlock_cabinet_action = pacify_population
 # }
-
-settle_the_frontier_advance = {
-	icon = settle_the_frontier_advance
-	age = age_1_traditions
-	# potential = {
-	# 	OR = {
-	# 		country_type = location
-	# 		country_type = army
-	# 	}
-	# 	OR = {
-	# 		has_or_had_tag = MKU #Makua, is part of Swahili Coast region
-	# 		has_or_had_tag = KAM
-	# 		original_capital ?= {
-	# 			OR = {
-	# 				sub_continent = sub_continent:south_america
-	# 				sub_continent = sub_continent:central_africa
-	# 				region = region:great_lakes_region
-	# 				region = region:southern_africa_region
-	# 				region = region:zimbabwe_region
-	# 				#North American Natives
-	# 				region = region:east_coast_region
-	# 				region = region:great_plains_region
-	# 				area = area:shiewhibak_area
-	# 				continent = continent:oceania
-	# 			}
-	# 		}
-	# 	}
-	# 	NOT = { is_subject_type = colonial_nation }
-	# }
-	requires = settlements_advance
-	unlock_cabinet_action = settle_the_frontier
-}
