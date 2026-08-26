@@ -1,0 +1,9 @@
+household_expansion_allowed = {
+	custom_description = {
+		text = household_expansion_allowed_text
+		OR = {
+			government_type ?= government_type:tribe
+			government_type ?= government_type:steppe_horde
+		}
+	}
+}
