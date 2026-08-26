@@ -42,11 +42,11 @@ trojan_war_phase_2 = {
 				}
 				max = 0.20
 			}
-			recalculate_immediately = yes
 		} 
 			add_country_modifier = {
 				modifier = trojan_war_greece_modifier_phase_2_navy_levy_size
 				days = -1
+				mode = add
 				size ={
 					value = 0.0
 					add = {
@@ -55,7 +55,6 @@ trojan_war_phase_2 = {
 					}
 					max = 0.50
 				}
-				recalculate_immediately = yes
 			}
 	}
 		WILUS = { 
@@ -71,11 +70,12 @@ trojan_war_phase_2 = {
 				}
 				max = 0.30
 			}
-			recalculate_immediately = yes 
+			  
 		} 
 			add_country_modifier = {
 				modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
 				days = -1
+				mode = add
 				size ={
 					value = 0.0
 					add = {
@@ -84,7 +84,7 @@ trojan_war_phase_2 = {
 					}
 					max = 0.25
 				}
-				recalculate_immediately = yes
+				 
 			}
 	}
 		AHHI = { 
@@ -100,11 +100,12 @@ trojan_war_phase_2 = {
 				}
 				max = 0.30
 			}
-			recalculate_immediately = yes 
+			  
 		} 
 			add_country_modifier = {
 				modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
 				days = -1
+				mode = add
 				size ={
 					value = 0.0
 					add = {
@@ -113,7 +114,7 @@ trojan_war_phase_2 = {
 					}
 					max = 0.25
 				}
-				recalculate_immediately = yes
+				 
 			}
 	}
 		LYCIA = { 
@@ -129,11 +130,12 @@ trojan_war_phase_2 = {
 				}
 				max = 0.30
 			}
-			recalculate_immediately = yes 
+			  
 		} 
 			add_country_modifier = {
 				modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
 				days = -1
+				mode = add
 				size ={
 					value = 0.0
 					add = {
@@ -142,7 +144,7 @@ trojan_war_phase_2 = {
 					}
 					max = 0.25
 				}
-				recalculate_immediately = yes
+				 
 			}
 	}
 		SEHA = { 
@@ -158,11 +160,12 @@ trojan_war_phase_2 = {
 				}
 				max = 0.30
 			}
-			recalculate_immediately = yes 
+			  
 		} 
 			add_country_modifier = {
 				modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
 				days = -1
+				mode = add
 				size ={
 					value = 0.0
 					add = {
@@ -171,7 +174,7 @@ trojan_war_phase_2 = {
 					}
 					max = 0.25
 				}
-				recalculate_immediately = yes
+				 
 			}
 	}
 		LUKKA = { 
@@ -187,11 +190,12 @@ trojan_war_phase_2 = {
 				}
 				max = 0.30
 			}
-			recalculate_immediately = yes 
+			  
 		} 
 			add_country_modifier = {
 				modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
 				days = -1
+				mode = add
 				size ={
 					value = 0.0
 					add = {
@@ -200,7 +204,7 @@ trojan_war_phase_2 = {
 					}
 					max = 0.25
 				}
-				recalculate_immediately = yes
+				 
 			}
 	}
 		MASA = { 
@@ -216,11 +220,12 @@ trojan_war_phase_2 = {
 				}
 				max = 0.30
 			}
-			recalculate_immediately = yes 
+			  
 		} 
 			add_country_modifier = {
 				modifier = trojan_war_anatolia_modifier_phase_2_levy_combat_efficiency
 				days = -1
+				mode = add
 				size ={
 					value = 0.0
 					add = {
@@ -229,7 +234,7 @@ trojan_war_phase_2 = {
 					}
 					max = 0.25
 				}
-				recalculate_immediately = yes
+				 
 			}
 	}
 		

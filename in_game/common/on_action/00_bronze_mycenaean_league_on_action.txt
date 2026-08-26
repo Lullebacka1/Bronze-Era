@@ -52,12 +52,12 @@ monthly_country_pulse = {
 }
 
 
-# monthly_country_pulse = {
-# 	effect = {
-# 		after_trojan_war_impact_league_authority = yes
-# 		influence_impact_league_authority = yes
-# 	}
-# }
+monthly_country_pulse = {
+	effect = {
+		after_trojan_war_impact_league_authority = yes
+		influence_impact_league_authority = yes
+	}
+}
  
 on_game_start = {
 	effect = {

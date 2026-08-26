@@ -23,18 +23,20 @@ change_mycenaean_league_authority = {
 	}
 }
 influence_impact_league_authority = {
-	international_organization:mycenaean_league ?= {
+	international_organization:mycenaean_league = {
 		if = {
 			limit = { has_variable = mycenaean_league_authority }
 			if = {
 				limit = {
+					NOT = { mycenaean_league_authority <= 85 }
 					 leader_country = {
 						var:country_influence >= 80 
+						NOT = { has_variable = influence_impact_league_authority_coldown }
 					}
 				} 
 				change_variable = {
 					name = mycenaean_league_authority
-					add = 0.25
+					add = 0.00005 # look in to why this gives a lot and fix beacuse add ing more members to the IO might make the value bigger
 				}
 			}
 			if = {
@@ -42,11 +44,19 @@ influence_impact_league_authority = {
 					 leader_country = {
 						var:country_influence <= 40 
 					}
-				} # less than 40 
+				} 
 				change_variable = {
 					name = mycenaean_league_authority
-					subtract = 0.25
+					subtract = 0.00005 # look in to why this gives a lot and fix beacuse add ing more members to the IO might make the value bigger
 				}
+				leader_country = {
+					add_country_modifier = {
+						modifier = influence_impact_league_authority_coldown
+						mode = add
+						months = 1
+					}
+				}
+
 			}
 			if = {
 				limit = { has_variable = mycenaean_league_authority }
@@ -65,11 +75,21 @@ influence_impact_league_authority = {
 after_trojan_war_impact_league_authority = {
 	international_organization:mycenaean_league = {
 		if = {
-			limit = { has_global_variable = "trojan_war_phase_2_ended" }
+			limit = { 
+				has_global_variable = "trojan_war_phase_2_ended" 
+				NOT = { has_variable = after_trojan_war_impact_league_authority_coldown }
+			}
 			change_variable = {
 				name = mycenaean_league_authority
-				subtract = 0.5
+				subtract =  0.0002 # look in to why this gives a lot and fix beacuse add ing more members to the IO might make the value bigger
 			}
+				leader_country = {
+					add_country_modifier = {
+						modifier = after_trojan_war_impact_league_authority_coldown
+						mode = add
+						months = 1
+					}
+				}
 		}
 		if = {
 			limit = { has_variable = mycenaean_league_authority }
