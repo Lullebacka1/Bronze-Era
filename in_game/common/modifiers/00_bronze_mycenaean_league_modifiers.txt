@@ -1,0 +1,10 @@
+after_trojan_war_impact_league_authority_coldown = {
+	game_data = {
+        category = country
+    }
+}
+influence_impact_league_authority_coldown = {
+	game_data = {
+        category = country
+    }
+}
