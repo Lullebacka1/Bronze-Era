@@ -137,3 +137,5 @@ bronze_sea_peoples_egypt_transfer_location_text = { global = bronze_sea_peoples_
 bronze_sea_peoples_egypt_western_cession_text = { global = bronze_sea_peoples_egypt_western_cession_text }
 bronze_sea_peoples_egypt_withdraw_sinai_text = { global = bronze_sea_peoples_egypt_withdraw_sinai_text }
 bronze_sea_peoples_sinai_tribes_created_text = { global = bronze_sea_peoples_sinai_tribes_created_text }
+
+household_expansion_allowed = { global = household_expansion_allowed_text }
