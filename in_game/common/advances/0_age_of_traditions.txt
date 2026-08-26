@@ -800,6 +800,6 @@ mapmaking = {
 	icon = maritime_advance_age_4
 	requires = long_distance_trade_advance
 	
-	may_explore = yes
+	exploration_mission_speed = 0.2
 	unlock_law = immigration_law
 }
