@@ -22,9 +22,91 @@ change_mycenaean_league_authority = {
 		}
 	}
 }
+influence_impact_league_authority = {
+	international_organization:mycenaean_league = {
+		if = {
+			limit = { has_variable = mycenaean_league_authority }
+			if = {
+				limit = {
+					NOT = { mycenaean_league_authority <= 85 }
+					 leader_country = {
+						var:country_influence >= 80 
+						NOT = { has_variable = influence_impact_league_authority_coldown }
+					}
+				} 
+				change_variable = {
+					name = mycenaean_league_authority
+					add = 0.00005 # look in to why this gives a lot and fix beacuse add ing more members to the IO might make the value bigger
+				}
+			}
+			if = {
+				limit = {
+					 leader_country = {
+						var:country_influence <= 40 
+					}
+				} 
+				change_variable = {
+					name = mycenaean_league_authority
+					subtract = 0.00005 # look in to why this gives a lot and fix beacuse add ing more members to the IO might make the value bigger
+				}
+				leader_country = {
+					add_country_modifier = {
+						modifier = influence_impact_league_authority_coldown
+						mode = add
+						months = 1
+					}
+				}
+
+			}
+			if = {
+				limit = { has_variable = mycenaean_league_authority }
+				if = {
+					limit = { var:mycenaean_league_authority > 100 }
+					set_variable = { name = mycenaean_league_authority value = 100 }
+				}
+				if = {
+					limit = { var:mycenaean_league_authority < 0 }
+					set_variable = { name = mycenaean_league_authority value = 0 }
+				}
+			}
+		}
+	}
+}
+after_trojan_war_impact_league_authority = {
+	international_organization:mycenaean_league = {
+		if = {
+			limit = { 
+				has_global_variable = "trojan_war_phase_2_ended" 
+				NOT = { has_variable = after_trojan_war_impact_league_authority_coldown }
+			}
+			change_variable = {
+				name = mycenaean_league_authority
+				subtract =  0.0002 # look in to why this gives a lot and fix beacuse add ing more members to the IO might make the value bigger
+			}
+				leader_country = {
+					add_country_modifier = {
+						modifier = after_trojan_war_impact_league_authority_coldown
+						mode = add
+						months = 1
+					}
+				}
+		}
+		if = {
+			limit = { has_variable = mycenaean_league_authority }
+			if = {
+				limit = { var:mycenaean_league_authority > 100 }
+				set_variable = { name = mycenaean_league_authority value = 100 }
+			}
+			if = {
+				limit = { var:mycenaean_league_authority < 0 }
+				set_variable = { name = mycenaean_league_authority value = 0 }
+			}
+		}
+	}
+}
 # subtracts untiy with the $value$ its set in the events file
 subtract_mycenaean_league_authority = {
-	international_organization:mycenaean_league ?= {
+	international_organization:mycenaean_league = {
 		custom_description = {
 			text = change_mycenaean_league_authority_text
 			value = $value$
@@ -231,7 +313,7 @@ mycenaean_fragmentation_reevaluate_strongest_palaces = {
 
 # might be able to just but the whole on_monthly in an IO scope to fixe problems
 # international_organization:mycenaean_league ?= {
-# 	on_monthly = { # Can mainly be moved to effects
+# 	on_monthly = { # Can mainly be moved to effects # this needs to be an on_actions and then trigger an effect
 # 			if = {
 # 				limit = { NOT = { has_variable = mycenaean_fragmentation_months } }
 # 				set_variable = { name = mycenaean_fragmentation_months value = 0 }
