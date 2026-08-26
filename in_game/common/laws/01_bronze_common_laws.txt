@@ -103,7 +103,7 @@ subj_law = {
 	household_subj_law = {
 		country_modifier = {
 			tax_income_efficiency = tiny_tax_income_efficiency_bonus
-			stability_cost = -0.05
+			stability_cost_efficiency = 0.05
 			cultural_tradition_modifier = 0.1
 		}
 
@@ -516,7 +516,7 @@ verdict_law = {
 	compensation_law = {
 		country_modifier = {
 			cultural_tradition_modifier = 0.02
-			stability_cost = -0.1
+			stability_cost_efficiency = 0.1
 		}
 
 		years = 2
@@ -547,7 +547,7 @@ verdict_law = {
 
 	mediated_sett_law = {
 		country_modifier = {
-			stability_cost = -0.1
+			stability_cost_efficiency = 0.1
 			stability_decay = -0.00025
 			court_spending_efficiency = 0.15
 		}

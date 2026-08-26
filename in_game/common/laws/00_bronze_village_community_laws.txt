@@ -57,7 +57,7 @@
 		country_modifier = {
 			global_estate_target_satisfaction = small_permanent_target_satisfaction
 			country_cabinet_efficiency = 0.03
-			stability_cost = -0.05
+			stability_cost_efficiency = 0.05
 			monthly_towards_traditionalist = societal_value_tiny_monthly_move
 		}
 		estate_preferences = {

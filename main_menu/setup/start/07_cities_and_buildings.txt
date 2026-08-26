@@ -1,37 +1,37 @@
 # Anssigns location Ranks and could also assging templates to location with buldnings 
 locations = {
     #  ITALY & WESTERN MEDITERRANEAN 
-    syracuse = { rank = town }               
-    martinafr = { rank = town }          
-	caserta = { rank = town } 
+    syracuse = { rank = town	town_setup = bronze_town_tech_lvl_1 }               
+    martinafr = { rank = town	town_setup = bronze_town_tech_lvl_1 }          
+	caserta = { rank = town	town_setup = bronze_town_tech_lvl_1 } 
 
     #  MYCENAEAN GREECE 
-    negroponte = { rank = city }       
-    demetrias = { rank = city }        
-    megara = { rank = town }          
-    argos = { rank = city }            
-    nafplio = { rank = town }          
-    mystras = { rank = city }          
-    modon = { rank = city }            
-    kalamata = { rank = city }         
-    chalandritsa = { rank = town }     
-    thebes = { rank = city }
-    athens = { rank = city }         
+    negroponte = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }       
+    demetrias = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }        
+    megara = { rank = town	town_setup = bronze_town_tech_lvl_1 }          
+    argos = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }            
+    nafplio = { rank = town	town_setup = bronze_town_tech_lvl_1 }          
+    mystras = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }          
+    modon = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }            
+    kalamata = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }         
+    chalandritsa = { rank = town	town_setup = bronze_town_tech_lvl_1 }     
+    thebes = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }
+    athens = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }         
 
     #  ANATOLIA (HITTITE EMPIRE) 
-    canakkale = { rank = city }      
-    balat = { rank = city }            
-    bodrum = { rank = city }          
-    bigadic = { rank = city }         
-    corum = { rank = town }           
-    amasya = { rank = town }          
-    huseyinabad = { rank = city }     
-    akdagmadeni = { rank = city }     
-    konya = { rank = town }          
-    tarsus = { rank = city }          
-    silifke = { rank = city }         
-    ayasuluk = { rank = city }
-    megri = { rank = town }
+    canakkale = { rank = city	town_setup = bronze_town_tech_lvl_1 }      
+    balat = { rank = city	town_setup = bronze_town_tech_lvl_1 }            
+    bodrum = { rank = city	town_setup = bronze_town_tech_lvl_1 }          
+    bigadic = { rank = city	town_setup = bronze_town_tech_lvl_1 }         
+    corum = { rank = town	town_setup = bronze_town_tech_lvl_1 }           
+    amasya = { rank = town	town_setup = bronze_town_tech_lvl_1 }          
+    huseyinabad = { rank = city	town_setup = bronze_town_tech_lvl_1 }     
+    akdagmadeni = { rank = city	town_setup = bronze_town_tech_lvl_1 }     
+    konya = { rank = town	town_setup = bronze_town_tech_lvl_1 }          
+    tarsus = { rank = city	town_setup = bronze_town_tech_lvl_1 }          
+    silifke = { rank = city	town_setup = bronze_town_tech_lvl_1 }         
+    ayasuluk = { rank = city	town_setup = bronze_town_tech_lvl_1 }
+    megri = { rank = town	town_setup = bronze_town_tech_lvl_1 }
 
     #  CRETE & CYPRUS 
     chania = {
@@ -60,45 +60,45 @@ locations = {
 	}           
 
     #  THE LEVANT (SYRIA & LEBANON) 
-    artah = { rank = town }            
+    artah = { rank = town	town_setup = bronze_town_tech_lvl_1 }            
     latakia = { rank = city }           
-    maskanah = { rank = town }        
+    maskanah = { rank = town	town_setup = bronze_town_tech_lvl_1 }        
     manbij = { rank = city }           
     aleppo = { rank = city }            
     raqqa = { rank = city }            
     tartus = { rank = city }            
-    khanaser = { rank = town }       
-    beirut = { rank = town }           
-    deir_qamar = { rank = town }       
+    khanaser = { rank = town	town_setup = bronze_town_tech_lvl_1 }       
+    beirut = { rank = town	town_setup = bronze_town_tech_lvl_1 }           
+    deir_qamar = { rank = town	town_setup = bronze_town_tech_lvl_1 }       
     damascus = { rank = city }        
     sidon = { rank = city }
     dluk = { rank = city }
-    tadmur = { rank = town }
+    tadmur = { rank = town	town_setup = bronze_town_tech_lvl_1 }
 
     #  PALESTINE & DESERT FRONTIERS 
-    acre = { rank = town }             
+    acre = { rank = town	town_setup = bronze_town_tech_lvl_1 }             
     majdal = { rank = city }           
     gaza = { rank = city }             
     jerusalem = { rank = city }       
-    beersheba = { rank = town }         
-    aqaba = { rank = town }            
+    beersheba = { rank = town	town_setup = bronze_town_tech_lvl_1 }         
+    aqaba = { rank = town	town_setup = bronze_town_tech_lvl_1 }            
 
     #  NEW KINGDOM OF EGYPT 
-    faqus = { rank = city }            
-    qalyub = { rank = city }         
-    giza = { rank = city }             
-    faiyum = { rank = city }            
-    cairo = { rank = city }           
+    faqus = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }            
+    qalyub = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }         
+    giza = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }             
+    faiyum = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }            
+    cairo = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }           
 
     #  MESOPOTAMIA 
-    balad = { rank = town }             
-    al_sinn = { rank = city }
-    baghdad = { rank = city }           
-    karbala = { rank = town }           
-    hillah = { rank = city }            
-    suq_al_shuyukh = { rank = town }    
-    abdanan = { rank = town }           
-    mosul = { rank = city }     
+    balad = { rank = town	town_setup = bronze_town_tech_lvl_1 }             
+    al_sinn = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }
+    baghdad = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }           
+    karbala = { rank = town	town_setup = bronze_town_tech_lvl_1 }           
+    hillah = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }            
+    suq_al_shuyukh = { rank = town	town_setup = bronze_town_tech_lvl_1 }    
+    abdanan = { rank = town	town_setup = bronze_town_tech_lvl_1 }           
+    mosul = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }     
 	
 	# India not finished
 	kantha = { rank = city } #Dholavira
