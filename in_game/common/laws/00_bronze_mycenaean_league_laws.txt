@@ -180,3 +180,116 @@ war_council_law = {
 		}
 	}
 }
+ # new laws under
+warfare_alliance_law = {
+	type = international_organization
+	potential = { international_organization_type = international_organization_type:mycenaean_league }
+	allow = { always = yes }
+	requires_vote = yes
+
+	offensiv_alliance_policy = {
+
+	}
+	defensive_alliance_policy = {
+
+	}
+}
+
+Internal_wars_law = {
+		type = international_organization
+		potential = { international_organization_type = international_organization_type:mycenaean_league }
+		allow = { always = yes }
+		requires_vote = yes
+
+		leader_only_policy = {
+
+		}
+		disallowed_internal_wars_policy = {
+
+		}
+		allowed_internal_wars_policy = {
+			
+		}
+}
+
+league_membership_law = {
+		type = international_organization
+		potential = { international_organization_type = international_organization_type:mycenaean_league }
+		allow = { always = yes }
+		requires_vote = yes
+
+		nonexpendable_policy = {
+
+		}
+		only_native_culture_group_policy = {
+
+		}
+		balkans_anatolia_greek_policy = {
+
+		}
+}
+
+citestates_annexable_law = {
+		type = international_organization
+		potential = { international_organization_type = international_organization_type:mycenaean_league }
+		allow = { always = yes }
+		requires_vote = yes
+		
+		allow_annex_policy = {
+
+		}
+		disallow_annex_policy = {
+
+		}
+}
+
+citestates_eco_focus_law = {
+		type = international_organization
+		potential = { international_organization_type = international_organization_type:mycenaean_league }
+		allow = { always = yes }
+		requires_vote = yes
+		
+		max_profit_focus_policy = {
+
+		}
+		balanced_focus_policy = {
+
+		}
+		military_focus_policy = {
+
+		}
+}
+
+league_army_law = {
+		type = international_organization
+		potential = { international_organization_type = international_organization_type:mycenaean_league }
+		allow = { always = yes }
+		requires_vote = yes
+
+		local_armies_policy = {
+
+		}
+		combined_army = {
+
+		}
+}
+
+league_tax_law = {
+		type = international_organization
+		potential = { international_organization_type = international_organization_type:mycenaean_league }
+		allow = { always = yes }
+		requires_vote = yes
+
+		no_tax_policy = {
+
+		}
+		two_percent_tax_policy = {
+
+		}
+		five_percent_tax_policy = {
+
+		}
+		ten_percent_tax_policy = {
+			
+		}
+}
