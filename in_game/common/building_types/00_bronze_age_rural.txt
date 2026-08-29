@@ -19,7 +19,7 @@ neolithic_granary = {
 
 	unique_production_methods = {
 		neolithic_granary_maintenance = {
-			masonry = 0.1
+			stone = 0.1
 			pottery = 0.1
 			category = building_maintenance
 		}

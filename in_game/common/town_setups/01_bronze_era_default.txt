@@ -41,6 +41,14 @@ bronze_town_tech_lvl_3_trading_maritime = {
 	bronze_dock = 1
 }
 
+bronze_town_tech_lvl_3_palatial_trading = {
+	pottery_palace = 1
+	tools_guild = 1
+	beer_palace = 1
+	neolithic_granary = 1
+	marketplace = 1
+}
+
 bronze_town_tech_lvl_3_palatial_trading_maritime = {
 	pottery_palace = 1
 	naval_supplies_palace = 1

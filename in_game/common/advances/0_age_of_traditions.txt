@@ -160,10 +160,7 @@ tribal_hegemony_advance = {
 	depth = 0
 
 	potential = {
-		OR = {
-		government = tribe
-		government = steppe_horde
-		}
+		household_expansion_allowed = yes
 	}
 	
 	allow_subjects = yes
@@ -260,7 +257,8 @@ council_of_elders_advance = {
 
 	allow_council_parliament = yes
 
-	starting_technology_level = 1
+	starting_technology_level = 3
+
 	requires = established_custom
 }
 
@@ -619,7 +617,7 @@ divine_kingship_advance = {
 	age = age_1_traditions
 	research_cost = 2.0
 
-	stability_cost = -0.1
+	stability_cost_efficiency = 0.1
 
 	requires = epics_advance
 
@@ -802,6 +800,6 @@ mapmaking = {
 	icon = maritime_advance_age_4
 	requires = long_distance_trade_advance
 	
-	may_explore = yes
+	exploration_mission_speed = 0.2
 	unlock_law = immigration_law
 }
