@@ -224,4 +224,6 @@ river_trading_outpost = {
 		local_trades_per_burgher = 0.5
 		local_burghers_estate_power = 0.1
 	}
+
+	obsolete = neolithic_river_outpost
 }
