@@ -319,6 +319,27 @@
   territorial_expansion: "Territorial Expansion"
   territorial_expansion_desc: "As settlements grow beyond their original bounds, communities begin to extend their control over the surrounding countryside. New fields, pastures, and settlements are drawn into increasingly organized territories, broadening the reach of established communities."
 
+  land_property_advance: "Land Property"
+  land_property_advance_desc: "As communities grow more settled and productive, rights to cultivate and use particular lands become increasingly established. Recognized claims over land provide a foundation for inheritance, taxation, and the organization of agricultural communities."
+
+  monumental_gates_advance: "Monumental Gates"
+  monumental_gates_advance_desc: "As fortified cities grow in importance, their entrances become grand architectural works in their own right. Monumental gates combine defensive purpose with displays of wealth, authority, and the prestige of the city they protect."
+
+  court_offices_advance: "Court Offices"
+  court_offices_advance_desc: "As royal administration grows more established, trusted members of the court take on defined responsibilities in managing the affairs of the realm. Such offices give influential nobles a recognized place within the machinery of government."
+
+  companion_retinues: "Companion Retinues"
+  companion_retinues_desc: "Prominent warriors gather around the ruler as sworn companions, bound by personal loyalty and sustained through royal patronage. Their standing and experience form an important foundation for the development of a dependable royal warband."
+
+  dynastic_legitimacy: "Dynastic Legitimacy"
+  dynastic_legitimacy_desc: "The continuity of royal rule becomes closely tied to the established lineage of the ruling house. A recognized dynastic succession gives the realm a more predictable basis for the transfer of authority between generations."
+
+  court_succession: "Court Succession"
+  court_succession_desc: "The royal court takes a greater role in determining the succession, allowing the ruling house to balance established lineage with the interests of the realm and its leading figures."
+
+  dynastic_partition: "Dynastic Partition"
+  dynastic_partition_desc: "The customs of the ruling house provide for the division of royal authority and inheritance among members of the dynasty. Such arrangements preserve the standing of the royal family while allowing its branches to establish their own domains."
+
   # ##########################
   # BUILDINGS
   # ##########################
