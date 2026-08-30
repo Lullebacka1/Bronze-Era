@@ -220,6 +220,17 @@ independent_smiths = {
 # TRADE BUILDINGS
 # ###############################
 
+# river_trading_outpost_advance = {
+# 	age = age_1_traditions
+# 	research_cost = 1.5
+
+# 	unlock_building = river_trading_outpost
+
+# 	starting_technology_level = 1
+
+# 	requires = intercultural_relations_advance
+# }
+
 bronze_age_trade_posts_advance = {
 	age = age_1_traditions
 	research_cost = 1.5
