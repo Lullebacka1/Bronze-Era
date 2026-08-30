@@ -256,18 +256,18 @@ mycenaean_fragmentation_reevaluate_strongest_palaces = {
 			}
 			max = 1
 			check_range_bounds = no
-			situation:mycenaean_fragmentation = { # situation will be removed fix this AND saved some where else mabey IO
-				set_variable = {
-					name = mycenaean_fragmentation_strongest_palace
-					value = prev
-				}
-			}
-			# international_organization:mycenaean_league = { 
+			# situation:mycenaean_fragmentation = { # situation will be removed fix this AND saved some where else mabey IO
 			# 	set_variable = {
 			# 		name = mycenaean_fragmentation_strongest_palace
 			# 		value = prev
 			# 	}
 			# }
+			international_organization:mycenaean_league = { 
+				set_variable = {
+					name = mycenaean_fragmentation_strongest_palace
+					value = prev
+				}
+			}
 		}
 		ordered_international_organization_member = {
 			order_by = {
@@ -295,151 +295,152 @@ mycenaean_fragmentation_reevaluate_strongest_palaces = {
 			}
 			position = 1
 			check_range_bounds = no
-			situation:mycenaean_fragmentation = { # situation will be removed fix this AND saved some where else mabey IO
-				set_variable = {
-					name = mycenaean_fragmentation_second_palace
-					value = prev
-				}
-			}
-			# international_organization:mycenaean_league = { 
+			# situation:mycenaean_fragmentation = { # situation will be removed fix this AND saved some where else mabey IO
 			# 	set_variable = {
 			# 		name = mycenaean_fragmentation_second_palace
 			# 		value = prev
 			# 	}
 			# }
+			international_organization:mycenaean_league = { 
+				set_variable = {
+					name = mycenaean_fragmentation_second_palace
+					value = prev
+				}
+			}
 		}
 	}
 }
 
+mycenaean_fragmentation_monthly_update = {
+	international_organization:mycenaean_league ?= {
+		 # Can mainly be moved to effects # this needs to be an on_actions and then trigger an effect
+				if = {
+					limit = { NOT = { has_variable = mycenaean_fragmentation_months } }
+					set_variable = { name = mycenaean_fragmentation_months value = 0 }
+				}
+				change_variable = { name = mycenaean_fragmentation_months add = 1 }
 
-# international_organization:mycenaean_league ?= {
-# 	 # Can mainly be moved to effects # this needs to be an on_actions and then trigger an effect
-# 			if = {
-# 				limit = { NOT = { has_variable = mycenaean_fragmentation_months } }
-# 				set_variable = { name = mycenaean_fragmentation_months value = 0 }
-# 			}
-# 			change_variable = { name = mycenaean_fragmentation_months add = 1 }
+				mycenaean_fragmentation_reevaluate_strongest_palaces = yes
 
-# 			mycenaean_fragmentation_reevaluate_strongest_palaces = yes
+				# The situation is always visible as a league management panel.
+				# The actual collapse logic begins only once authority or wider crisis
+				# pressure makes fragmentation historically plausible.
+				if = {
+					limit = {
+						NOT = { has_variable = mycenaean_fragmentation_crisis_active } 
+						# Six-year grace period: the league panel is active from day one,
+						# but palace fragmentation cannot begin before members have had
+						# time to develop.
+						var:mycenaean_fragmentation_months >= 72
+						international_organization:mycenaean_league = {
+							any_international_organization_member = {
+								mycenaean_palace_is_valid_landable_member = yes
+							}
+							OR = {
+								var:mycenaean_league_authority <= 8
+								AND = {
+									var:mycenaean_league_authority <= 25
+									leader_country ?= {
+										OR = {
+											government_power <= 35
+											stability <= 15
+											in_civil_war = yes
+											has_variable = mycenaean_palaces_burning
+										}
+									}
+								}
+								AND = {
+									var:mycenaean_league_authority <= 35
+									is_situation_active = situation:sea_peoples_crisis
+									situation:sea_peoples_crisis ?= {
+										has_variable = sea_peoples_global_phase
+										var:sea_peoples_global_phase >= 3
+									}
+								}
+							}
+						}
+					}
+					set_variable = { name = mycenaean_fragmentation_crisis_active value = 1 } # this one is might need fixing if moved Here it set so might not need fixing
+					international_organization:mycenaean_league = {
+						ordered_international_organization_member = {
+							limit = { mycenaean_palace_is_fragmentation_vanguard = yes }
+							max = 12
+							check_range_bounds = no
+							order_by = total_foreign_buildings_levels
+							turn_mycenaean_palace_into_normal_tag = yes
+						}
+						mycenaean_fragmentation_reevaluate_strongest_palaces = yes
+						every_international_organization_member = {
+							trigger_event_non_silently = mycenaean_league.200
+						}
+					}
+				}
 
-# 			# The situation is always visible as a league management panel.
-# 			# The actual collapse logic begins only once authority or wider crisis
-# 			# pressure makes fragmentation historically plausible.
-# 			if = {
-# 				limit = {
-# 					NOT = { has_variable = mycenaean_fragmentation_crisis_active } 
-# 					# Six-year grace period: the league panel is active from day one,
-# 					# but palace fragmentation cannot begin before members have had
-# 					# time to develop.
-# 					var:mycenaean_fragmentation_months >= 72
-# 					international_organization:mycenaean_league = {
-# 						any_international_organization_member = {
-# 							mycenaean_palace_is_valid_landable_member = yes
-# 						}
-# 						OR = {
-# 							var:mycenaean_league_authority <= 8
-# 							AND = {
-# 								var:mycenaean_league_authority <= 25
-# 								leader_country ?= {
-# 									OR = {
-# 										government_power <= 35
-# 										stability <= 15
-# 										in_civil_war = yes
-# 										has_variable = mycenaean_palaces_burning
-# 									}
-# 								}
-# 							}
-# 							AND = {
-# 								var:mycenaean_league_authority <= 35
-# 								is_situation_active = situation:sea_peoples_crisis
-# 								situation:sea_peoples_crisis ?= {
-# 									has_variable = sea_peoples_global_phase
-# 									var:sea_peoples_global_phase >= 3
-# 								}
-# 							}
-# 						}
-# 					}
-# 				}
-# 				set_variable = { name = mycenaean_fragmentation_crisis_active value = 1 } # this one is might need fixing if moved Here it set so might not need fixing
-# 				international_organization:mycenaean_league = {
-# 					ordered_international_organization_member = {
-# 						limit = { mycenaean_palace_is_fragmentation_vanguard = yes }
-# 						max = 12
-# 						check_range_bounds = no
-# 						order_by = total_foreign_buildings_levels
-# 						turn_mycenaean_palace_into_normal_tag = yes
-# 					}
-# 					mycenaean_fragmentation_reevaluate_strongest_palaces = yes
-# 					every_international_organization_member = {
-# 						trigger_event_non_silently = mycenaean_league.200
-# 					}
-# 				}
-# 			}
+				if = {
+					limit = {
+						has_variable = mycenaean_fragmentation_crisis_active 
+						international_organization:mycenaean_league = {
+							var:mycenaean_league_authority >= 45
+							NOT = {
+								any_international_organization_member = {
+									mycenaean_palace_is_valid_landable_member = yes
+								}
+							}
+						}
+					}
+					remove_variable = mycenaean_fragmentation_crisis_active 
+					international_organization:mycenaean_league ?= {
+						every_international_organization_member = {
+							trigger_event_non_silently = mycenaean_league.250
+						}
+					}
+				}
 
-# 			if = {
-# 				limit = {
-# 					has_variable = mycenaean_fragmentation_crisis_active 
-# 					international_organization:mycenaean_league = {
-# 						var:mycenaean_league_authority >= 45
-# 						NOT = {
-# 							any_international_organization_member = {
-# 								mycenaean_palace_is_valid_landable_member = yes
-# 							}
-# 						}
-# 					}
-# 				}
-# 				remove_variable = mycenaean_fragmentation_crisis_active 
-# 				international_organization:mycenaean_league ?= {
-# 					every_international_organization_member = {
-# 						trigger_event_non_silently = mycenaean_league.250
-# 					}
-# 				}
-# 			}
-
-# 			if = {
-# 				limit = {
-# 					has_variable = mycenaean_fragmentation_crisis_active 
-# 				}
-# 				random_list = {
-# 					20 = {
-# 						trigger = {
-# 							international_organization:mycenaean_league = {
-# 								any_international_organization_member = {
-# 									mycenaean_palace_is_valid_landable_member = yes
-# 									OR = {
-# 										var:mycenaean_palace_influence >= 15
-# 										international_organization:mycenaean_league = {
-# 											var:mycenaean_league_authority <= 10
-# 										}
-# 									}
-# 								}
-# 							}
-# 						}
-# 						international_organization:mycenaean_league = {
-# 							random_international_organization_member = {
-# 								limit = {
-# 									mycenaean_palace_is_valid_landable_member = yes
-# 									OR = {
-# 										var:mycenaean_palace_influence >= 15
-# 										international_organization:mycenaean_league = {
-# 											var:mycenaean_league_authority <= 10
-# 										}
-# 									}
-# 								}
-# 								trigger_event_non_silently = mycenaean_league.210
-# 							}
-# 						}
-# 					}
-# 					12 = {
-# 						trigger = {
-# 							exists = international_organization:mycenaean_league.leader_country
-# 						}
-# 						international_organization:mycenaean_league.leader_country = {
-# 							trigger_event_non_silently = mycenaean_league.220
-# 						}
-# 					}
-# 					220 = { }
-# 				}
-# 			}
-		
-#     }	
+				if = {
+					limit = {
+						has_variable = mycenaean_fragmentation_crisis_active 
+					}
+					random_list = {
+						20 = {
+							trigger = {
+								international_organization:mycenaean_league = {
+									any_international_organization_member = {
+										mycenaean_palace_is_valid_landable_member = yes
+										OR = {
+											var:mycenaean_palace_influence >= 15
+											international_organization:mycenaean_league = {
+												var:mycenaean_league_authority <= 10
+											}
+										}
+									}
+								}
+							}
+							international_organization:mycenaean_league = {
+								random_international_organization_member = {
+									limit = {
+										mycenaean_palace_is_valid_landable_member = yes
+										OR = {
+											var:mycenaean_palace_influence >= 15
+											international_organization:mycenaean_league = {
+												var:mycenaean_league_authority <= 10
+											}
+										}
+									}
+									trigger_event_non_silently = mycenaean_league.210
+								}
+							}
+						}
+						12 = {
+							trigger = {
+								exists = international_organization:mycenaean_league.leader_country
+							}
+							international_organization:mycenaean_league.leader_country = {
+								trigger_event_non_silently = mycenaean_league.220
+							}
+						}
+						220 = { }
+					}
+				}
+			
+	    }	
+	}

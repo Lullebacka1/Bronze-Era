@@ -1,8 +1,18 @@
+monthly_country_pulse = {
+	on_actions = {
+		mycenaean_influence_pulse
+		monthly_update_mycenaean_one
+		monthly_update_mycenaean_two
+		monthly_update_mycenaean_fragmentation
+		mycenaean_league_yearly_pulse
+	}
+}
 mycenaean_league_yearly_pulse = {
 	trigger = {
+		current_month = 1
 		is_member_of_international_organization = international_organization:mycenaean_league
 		international_organization:mycenaean_league = {
-			var:mycenaean_league_months >= 72
+			var:mycenaean_fragmentation_months >= 72
 		}
 	}
 
@@ -26,12 +36,6 @@ mycenaean_league_yearly_pulse = {
 	}
 }
 
-monthly_country_pulse = {
-	on_actions = {
-		mycenaean_influence_pulse
-	}
-}
-
 mycenaean_influence_pulse = {
 	trigger = {
 		OR = {
@@ -44,21 +48,6 @@ mycenaean_influence_pulse = {
 	}
 }
 
-
-monthly_country_pulse = {
-	on_actions = {
-		effect_pulse # Where does this one go
-	}
-}
-
-
-monthly_country_pulse = {
-	on_actions = {
-		monthly_update_mycenaean_one 
-		monthly_update_mycenaean_two 
-
-	}
-}
 monthly_update_mycenaean_one = {
 	trigger = {
 		international_organization:mycenaean_league = {
@@ -73,6 +62,7 @@ monthly_update_mycenaean_one = {
 		influence_impact_league_authority = yes
 	}
 }
+
 monthly_update_mycenaean_two = {
 	trigger = {
 		international_organization:mycenaean_league = {
@@ -88,12 +78,26 @@ monthly_update_mycenaean_two = {
 	}
 }
 
+monthly_update_mycenaean_fragmentation = {
+	trigger = {
+		international_organization:mycenaean_league = {
+			leader_country = root
+		}
+	}
+	effect = {
+		mycenaean_fragmentation_monthly_update = yes
+	}
+}
+
 on_game_start = {
 	effect = {
+		international_organization:mycenaean_league = {
+			if = {
+				limit = { NOT = { has_variable = mycenaean_fragmentation_months } }
+				set_variable = { name = mycenaean_fragmentation_months value = 0 }
+			}
+			mycenaean_fragmentation_reevaluate_strongest_palaces = yes
+		}
 		mycenaean_influence = yes
 	}
-	# set_variable = { name = mycenaean_fragmentation_months value = 0 }
-	# 	international_organization:mycenaean_league = {
-	# 		mycenaean_fragmentation_reevaluate_strongest_palaces = yes
-	# 	}
 }
