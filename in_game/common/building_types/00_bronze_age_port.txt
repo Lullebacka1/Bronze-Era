@@ -135,6 +135,46 @@ neolithic_dock = {
 	}
 }
 
+neolithic_river_outpost = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = peasants
+
+	employment_size = generic_burgher_employment
+
+	category = naval_category
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	location_potential = {
+		has_river = yes
+	}
+
+	build_time = medium_port_building_time
+	
+	unique_production_methods = {
+		river_trade_maintenance = {
+			tar = 0.1
+			naval_supplies = 0.05
+			pottery = 0.1
+			lumber = 0.1
+			category = building_maintenance
+		}
+
+	}
+
+	construction_demand = town_building_construction
+
+	modifier = {
+		local_sailors = 0.001
+		local_merchant_capacity = 0.05
+		local_trades_per_burgher = 0.20
+		local_burghers_estate_power = 0.10
+	}
+}
+
 river_trading_outpost = {
 	is_foreign = no
 	max_levels = 1

@@ -5,6 +5,9 @@
   neolithic_dock: "Boatyard"
   neolithic_dock_desc: "A modest waterfront facility where vessels are constructed, repaired, stored, and launched. Maintained by local craftsmen and boatmen, it supports transport, trade, fishing, and travel along waterways."
 
+  neolithic_river_outpost: "River Landing"
+  neolithic_river_outpost_desc: "A settled landing place along a navigable river where boats can be drawn ashore and goods exchanged between river travelers and nearby communities. Such places provide a natural meeting point for local trade and movement along the waterway."
+
   river_trading_outpost: "River Trading Outpost"
   river_trading_outpost_desc: "A permanent trading station established along a navigable river, where merchants gather to exchange goods moving between inland communities. Such outposts provide places for vessels to stop, cargoes to change hands, and commercial records to be kept."
 
