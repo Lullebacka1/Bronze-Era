@@ -6,6 +6,44 @@ bronze_town_tech_lvl_1 = {
 	marketplace = 1
 }
 
+bronze_town_tech_lvl_2 = {
+	pottery_maker = 1
+	tools_maker = 1
+	neolithic_beer_maker = 1
+	neolithic_granary = 1
+	marketplace = 1
+	bronze_age_bronze_forge = 1
+}
+
+bronze_town_tech_lvl_2_chiefly = {
+	sponsored_pottery_maker = 1
+	sponsored_tools_maker = 1
+	sponsored_beer_maker = 1
+	neolithic_granary = 1
+	marketplace = 1
+	bronze_age_bronze_forge = 1
+}
+
+bronze_town_tech_lvl_2_fortified = {
+	pottery_maker = 1
+	weaponry_maker = 1
+	neolithic_beer_maker = 1
+	neolithic_granary = 1
+	marketplace = 1
+	bronze_age_bronze_forge = 1
+	town_walls = 1
+}
+
+bronze_town_tech_lvl_2_chiefly_fortified = {
+	sponsored_pottery_maker = 1
+	sponsored_weaponry_maker = 1
+	sponsored_beer_maker = 1
+	neolithic_granary = 1
+	marketplace = 1
+	bronze_age_bronze_forge = 1
+	town_walls = 1
+}
+
 bronze_town_tech_lvl_1_maritime = {
 	pottery_maker = 1
 	neolithic_beer_maker = 1
@@ -13,6 +51,16 @@ bronze_town_tech_lvl_1_maritime = {
 	marketplace = 1
 	neolithic_dock = 1
 	navy_supplies_maker = 1
+}
+
+bronze_town_tech_lvl_2_chiefly_maritime = {
+	sponsored_pottery_maker = 1
+	sponsored_beer_maker = 1
+	sponsored_weaponry_maker = 1
+	neolithic_granary = 1
+	marketplace = 1
+	neolithic_dock = 1
+	sponsored_navy_supplies_maker = 1
 }
 
 bronze_town_tech_lvl_3_palatial = {
@@ -32,6 +80,16 @@ bronze_town_tech_lvl_3_palatial_maritime = {
 	marketplace = 1
 	neolithic_dock = 1
 	bronze_age_bronze_foundry = 1
+}
+
+bronze_town_tech_lvl_3_chiefly_trading_maritime = {
+	sponsored_pottery_maker = 1
+	sponsored_navy_supplies_maker = 1
+	sponsored_beer_maker = 1
+	neolithic_granary = 1
+	marketplace = 1
+	bronze_dock = 1
+	bronze_age_bronze_forge = 1
 }
 
 bronze_town_tech_lvl_3_trading_maritime = {

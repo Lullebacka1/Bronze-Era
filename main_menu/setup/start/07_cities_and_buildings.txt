@@ -86,9 +86,10 @@ locations = {
     #  NEW KINGDOM OF EGYPT 
     faqus = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }            
     qalyub = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }         
-    giza = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }             
+    giza = { rank = city	town_setup = giza_mennefer_setup }             
     faiyum = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }            
-    cairo = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }           
+    cairo = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }
+	qus = { rank = city	town_setup = qus_waset_setup }           
 
     #  MESOPOTAMIA 
     balad = { rank = town	town_setup = bronze_town_tech_lvl_1 }             
