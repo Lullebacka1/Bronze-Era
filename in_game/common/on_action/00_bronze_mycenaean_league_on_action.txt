@@ -47,18 +47,47 @@ mycenaean_influence_pulse = {
 
 monthly_country_pulse = {
 	on_actions = {
-		effect_pulse
+		effect_pulse # Where does this one go
 	}
 }
 
 
 monthly_country_pulse = {
+	on_actions = {
+		monthly_update_mycenaean_one 
+		monthly_update_mycenaean_two 
+
+	}
+}
+monthly_update_mycenaean_one = {
+	trigger = {
+		international_organization:mycenaean_league = {
+			leader_country = root
+			has_variable = mycenaean_league_authority
+			leader_country = {
+				NOT = { has_country_modifier = influence_impact_league_authority_coldown }
+			}
+		}
+	}
 	effect = {
-		after_trojan_war_impact_league_authority = yes
 		influence_impact_league_authority = yes
 	}
 }
- 
+monthly_update_mycenaean_two = {
+	trigger = {
+		international_organization:mycenaean_league = {
+			leader_country = root
+			has_variable = mycenaean_league_authority
+			leader_country = {
+				NOT = { has_country_modifier = after_trojan_war_impact_league_authority_coldown }
+			}
+		}
+	}
+	effect = {
+		after_trojan_war_impact_league_authority = yes
+	}
+}
+
 on_game_start = {
 	effect = {
 		mycenaean_influence = yes

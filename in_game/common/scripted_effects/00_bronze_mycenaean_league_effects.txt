@@ -31,12 +31,12 @@ influence_impact_league_authority = {
 					NOT = { mycenaean_league_authority <= 85 }
 					 leader_country = {
 						var:country_influence >= 80 
-						NOT = { has_variable = influence_impact_league_authority_coldown }
+						NOT = { has_country_modifier = influence_impact_league_authority_coldown }
 					}
 				} 
 				change_variable = {
 					name = mycenaean_league_authority
-					add = 0.00005 # look in to why this gives a lot and fix beacuse add ing more members to the IO might make the value bigger
+					add = 0.25
 				}
 			}
 			if = {
@@ -47,7 +47,7 @@ influence_impact_league_authority = {
 				} 
 				change_variable = {
 					name = mycenaean_league_authority
-					subtract = 0.00005 # look in to why this gives a lot and fix beacuse add ing more members to the IO might make the value bigger
+					subtract = 0.25 
 				}
 				leader_country = {
 					add_country_modifier = {
@@ -77,11 +77,11 @@ after_trojan_war_impact_league_authority = {
 		if = {
 			limit = { 
 				has_global_variable = "trojan_war_phase_2_ended" 
-				NOT = { has_variable = after_trojan_war_impact_league_authority_coldown }
+				NOT = { has_country_modifier = after_trojan_war_impact_league_authority_coldown }
 			}
 			change_variable = {
 				name = mycenaean_league_authority
-				subtract =  0.0002 # look in to why this gives a lot and fix beacuse add ing more members to the IO might make the value bigger
+				subtract =  0.5
 			}
 				leader_country = {
 					add_country_modifier = {
@@ -311,9 +311,9 @@ mycenaean_fragmentation_reevaluate_strongest_palaces = {
 	}
 }
 
-# might be able to just but the whole on_monthly in an IO scope to fixe problems
+
 # international_organization:mycenaean_league ?= {
-# 	on_monthly = { # Can mainly be moved to effects # this needs to be an on_actions and then trigger an effect
+# 	 # Can mainly be moved to effects # this needs to be an on_actions and then trigger an effect
 # 			if = {
 # 				limit = { NOT = { has_variable = mycenaean_fragmentation_months } }
 # 				set_variable = { name = mycenaean_fragmentation_months value = 0 }
@@ -441,5 +441,5 @@ mycenaean_fragmentation_reevaluate_strongest_palaces = {
 # 					220 = { }
 # 				}
 # 			}
-# 		}
+		
 #     }	
