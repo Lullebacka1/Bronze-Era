@@ -17,7 +17,8 @@
   bronze_age_bronze_shortage: "Tin Shortage Smelting"
   bronze_age_bronze_shortage_desc: "Tin routes are unreliable. The foundry stretches copper stocks, recycles scrap and produces only a small quantity of usable bronze."
 
-
+  carpenter_yard: "Carpenter's Yard"
+  carpenter_yard_desc: "Skilled carpenters work timber into usable lumber, preparing boards and beams for construction, tools, vessels, and other crafts. Their work makes better use of the forests surrounding growing settlements."
 
   sponsored_tool_maker: "Sponsored Toolsmiths"
   sponsored_tool_maker_desc: "Craftsmen supported by a chief, temple, or other patron devote themselves to the production of tools without relying solely upon the market. Such sponsorship allows skilled specialists to pursue their craft full-time."
