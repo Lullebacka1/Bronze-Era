@@ -1,0 +1,23 @@
+qus_waset_setup = {
+	pottery_palace = 2
+	tools_guild = 2
+	weapon_guild = 1
+	beer_palace = 2
+	marketplace = 1
+	bronze_age_bronze_foundry = 2
+
+	mason = 3
+	clay_pit = 1
+
+	jewelry_palace = 3
+	fine_cloth_palace = 3
+	tablets_guild = 1
+	winery_palace = 1
+
+	irrigation_systems = 3
+
+	temple_complex = 1
+	temple_granary = 1
+	temple_scribes_guild = 1
+	temple_court = 1
+}
