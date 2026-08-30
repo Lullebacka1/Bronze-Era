@@ -21,6 +21,7 @@ bronze_town_tech_lvl_3_palatial = {
 	beer_palace = 1
 	neolithic_granary = 1
 	marketplace = 1
+	bronze_age_bronze_foundry = 1
 }
 
 bronze_town_tech_lvl_3_palatial_maritime = {
@@ -30,6 +31,7 @@ bronze_town_tech_lvl_3_palatial_maritime = {
 	neolithic_granary = 1
 	marketplace = 1
 	neolithic_dock = 1
+	bronze_age_bronze_foundry = 1
 }
 
 bronze_town_tech_lvl_3_trading_maritime = {
@@ -39,6 +41,7 @@ bronze_town_tech_lvl_3_trading_maritime = {
 	neolithic_granary = 1
 	marketplace = 1
 	bronze_dock = 1
+	bronze_age_bronze_forge = 1
 }
 
 bronze_town_tech_lvl_3_palatial_trading = {
@@ -47,6 +50,7 @@ bronze_town_tech_lvl_3_palatial_trading = {
 	beer_palace = 1
 	neolithic_granary = 1
 	marketplace = 1
+	bronze_age_bronze_foundry = 1
 }
 
 bronze_town_tech_lvl_3_palatial_trading_maritime = {
@@ -56,4 +60,5 @@ bronze_town_tech_lvl_3_palatial_trading_maritime = {
 	neolithic_granary = 1
 	marketplace = 1
 	bronze_dock = 1
+	bronze_age_bronze_foundry = 1
 }
