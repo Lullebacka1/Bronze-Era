@@ -54,7 +54,7 @@ military_record_keeping_advance = {
 
 	requires = organized_units_advance
 
-	army_reinforce_cost = -0.05
+	army_reinforce_efficiency = -0.05
 	global_garrison_size_modifier = 0.10
 
 	starting_technology_level = 3
