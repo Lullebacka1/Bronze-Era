@@ -1,0 +1,17 @@
+trojan_war_casus_belli = {
+    is_triggered_only = yes
+    war_goal_type = superiority
+   
+    create_visible = {
+        always = no
+    }
+
+    create_enabled = {
+        always = no
+    }
+
+    required_peace_treaties = {
+        trojan_war_peace_deal_greece
+        trojan_war_peace_deal_anatolia    
+    }
+}
