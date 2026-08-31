@@ -13,7 +13,7 @@
 				layoutpolicy_horizontal = expanding
 				fontsize = 13
 				
-				text = "[GetLoc('trojan_war_panel_phase')]" 
+				text = "trojan_war_panel_phase_2" 
 				default_format = "#subtle_name"
 			}
 
@@ -21,7 +21,7 @@
 				layoutpolicy_horizontal = expanding
 				fontsize = 13
 				
-				text = "[GetLoc('trojan_war_panel_phase_value2')]" 
+				text = "trojan_war_panel_phase_value_2" 
 				default_format = "#Y"
 			}
 		}
@@ -40,7 +40,7 @@
 				align = right|nobaseline
 				fontsize = 13
 				
-				text = "[GetLoc('trojan_war_panel_escalation')]" 
+				text = "trojan_war_panel_escalation_2" 
 				default_format = "#subtle_name"
 			}
 
@@ -49,7 +49,7 @@
 				align = right|nobaseline
 				fontsize = 13
 				
-				text = "[GetLoc('trojan_war_panel_escalation_value')]" 
+				text = "trojan_war_panel_escalation_value_2" 
 				default_format = "#R"
 			}
 		}
@@ -63,33 +63,52 @@
 	blockoverride "situation_subheader_content" {}
 
 	blockoverride "situation_panel_main_content" {
-		situation_card_expandable = {
-			blockoverride "header_button_onclick" {
-				onclick = "[LateralView.Vars.Toggle( 'trojan_war2_overview_toggled' )]"
-			}
-			blockoverride "header_text" {
-				text = "[GetLoc('trojan_war_panel_header')]" 
-			}
-			blockoverride "header_icon" {
-				texture = "gfx/interface/icons/situations/00_bronze_trojan_war_phase_2.dds"
-			}
-			blockoverride "bottom_content" {
-				text_multi = {
-					autoresize = no
-					multiline = yes
-					size = { 470 140 }
-					text = "[GetLoc('trojan_war_phase_2_desc')]" 
+		vbox = {
+			spacing = 10
+			situation_card_expandable = {
+				blockoverride "header_button_onclick" {
+					onclick = "[LateralView.Vars.Toggle( 'trojan_war2_overview_toggled' )]"
+				}
+				blockoverride "header_text" {
+					text = "trojan_war_panel_header" 
+				}
+				blockoverride "header_icon" {
+					texture = "gfx/interface/icons/situations/00_bronze_trojan_war_phase_2.dds"
+				}
+				blockoverride "bottom_content" {
+					text_multi = {
+						autoresize = no
+						multiline = yes
+						size = { 470 140 }
+						text = "trojan_war_phase_2_desc" 
+					}
+				}
+				blockoverride "bottom_content_onclick" {
+					visible = "[LateralView.Vars.Exists( 'trojan_war2_overview_toggled' )]"
+				}
+				blockoverride "icon_replace_visible_yes" {
+					visible = "[LateralView.Vars.Exists( 'trojan_war2_overview_toggled' )]"
+				}
+				blockoverride "icon_replace_visible_not" {
+					visible = "[Not(LateralView.Vars.Exists( 'trojan_war2_overview_toggled' ))]"
 				}
 			}
-			blockoverride "bottom_content_onclick" {
-				visible = "[LateralView.Vars.Exists( 'trojan_war2_overview_toggled' )]"
+			
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				datacontext = "[GetScriptedGui('trojan_invest_levies')]"
+
+				button_regular = {
+					size = { 470 34 }
+					fontsize = 14
+					text = "trojan_invest_levies"
+					visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					tooltip = "trojan_invest_levies_desc"
+				}
 			}
-			blockoverride "icon_replace_visible_yes" {
-				visible = "[LateralView.Vars.Exists( 'trojan_war2_overview_toggled' )]"
-			}
-			blockoverride "icon_replace_visible_not" {
-				visible = "[Not(LateralView.Vars.Exists( 'trojan_war2_overview_toggled' ))]"
-			}
+			
 		}
 	}
 

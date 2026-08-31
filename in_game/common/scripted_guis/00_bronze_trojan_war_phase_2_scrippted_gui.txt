@@ -1,0 +1,6 @@
+trojan_invest_levies = {
+	scope = country
+	is_shown = {}
+	is_valid = {}
+	effect = {}
+}
