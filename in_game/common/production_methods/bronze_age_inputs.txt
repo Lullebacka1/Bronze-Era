@@ -544,3 +544,12 @@ gate_court_maintenance_paper = {
 	
 	category = building_maintenance
 }
+
+trading_hub_building_maintenance = {
+	pottery = 0.1
+	lumber = 0.1
+	livestock = 0.1
+	cloth = 0.1
+
+	category = building_maintenance
+}

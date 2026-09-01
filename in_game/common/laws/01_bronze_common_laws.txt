@@ -130,6 +130,10 @@ coin_laws= {
 			crown_estate
 		}
 
+		potential = {
+			has_or_had_tag = PREMODERN
+		}
+
 		ai_will_do = {
 			if = {
 				limit = {
@@ -160,6 +164,10 @@ coin_laws= {
 		}
 		estate_preferences = {
 			crown_estate
+		}
+
+		potential = {
+			has_or_had_tag = PREMODERN
 		}
 
 		ai_will_do = {
@@ -193,6 +201,10 @@ coin_laws= {
 			crown_estate
 		}
 
+		potential = {
+			has_or_had_tag = PREMODERN
+		}
+
 		ai_will_do = {
 			if = {
 				limit = {
@@ -221,6 +233,11 @@ coin_laws= {
 			minting_inflation_threshold = -0.025
 			minting_income_factor = 0.2
 		}
+
+		potential = {
+			has_or_had_tag = PREMODERN
+		}
+
 		estate_preferences = {
 			crown_estate
 		}
@@ -237,6 +254,10 @@ coin_laws= {
 		}
 		estate_preferences = {
 			crown_estate
+		}
+
+		potential = {
+			has_or_had_tag = PREMODERN
 		}
 
 		ai_will_do = {
