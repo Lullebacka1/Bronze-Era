@@ -1,0 +1,56 @@
+# VANILLA ROME WITH MODIFIED REQUIREMENTS
+ROM_f = {
+	level = 5
+	required_locations_fraction = 0.75
+	rule = fantasy
+	
+	potential = {
+		OR = {
+			country_rank = country_rank:rank_empire
+			owns = location:rome
+		}
+	}
+
+	allow = {
+		owns = location:rome
+		country_rank = country_rank:rank_empire
+		is_hegemon = yes
+		NOT = { country_exists = c:BYZ }
+	}
+
+	name = ROM
+	flag = ROM
+	adjective = ROM_ADJ
+	tag = ROM
+	color = map_ROM
+
+	regions = {
+		italy_region
+		iberia_region
+		france_region
+		balkan_region
+		great_britain_region
+		anatolia_region
+		south_german_region
+		crescent_region
+		egypt_region
+		maghreb_region
+		carpathia_region
+		caucasus_region
+	}
+	form_effect = {
+		if = {
+			limit = {
+				NOT = { court_language = language:latin_language }
+			}
+			set_court_language = dialect:roman_dialect
+		}
+		if = {
+			limit = { NOT = { capital = location:rome } }
+			move_capital_event_effect = {
+				from = root.capital
+				to = location:rome
+			}
+		}
+	}
+}
