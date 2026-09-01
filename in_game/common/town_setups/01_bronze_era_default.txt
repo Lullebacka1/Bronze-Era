@@ -13,6 +13,7 @@ bronze_town_tech_lvl_2 = {
 	neolithic_granary = 1
 	marketplace = 1
 	bronze_age_bronze_forge = 1
+	mason = 1
 }
 
 bronze_town_tech_lvl_2_chiefly = {
@@ -22,6 +23,7 @@ bronze_town_tech_lvl_2_chiefly = {
 	neolithic_granary = 1
 	marketplace = 1
 	bronze_age_bronze_forge = 1
+	mason = 1
 }
 
 bronze_town_tech_lvl_2_fortified = {
@@ -32,6 +34,7 @@ bronze_town_tech_lvl_2_fortified = {
 	marketplace = 1
 	bronze_age_bronze_forge = 1
 	town_walls = 1
+	mason = 1
 }
 
 bronze_town_tech_lvl_2_chiefly_fortified = {
@@ -42,6 +45,7 @@ bronze_town_tech_lvl_2_chiefly_fortified = {
 	marketplace = 1
 	bronze_age_bronze_forge = 1
 	town_walls = 1
+	mason = 1
 }
 
 bronze_town_tech_lvl_1_maritime = {
@@ -61,6 +65,7 @@ bronze_town_tech_lvl_2_chiefly_maritime = {
 	marketplace = 1
 	neolithic_dock = 1
 	sponsored_navy_supplies_maker = 1
+	mason = 1
 }
 
 bronze_town_tech_lvl_3_palatial = {
@@ -70,6 +75,7 @@ bronze_town_tech_lvl_3_palatial = {
 	neolithic_granary = 1
 	marketplace = 1
 	bronze_age_bronze_foundry = 1
+	mason = 1
 }
 
 bronze_town_tech_lvl_3_palatial_maritime = {
@@ -80,6 +86,7 @@ bronze_town_tech_lvl_3_palatial_maritime = {
 	marketplace = 1
 	neolithic_dock = 1
 	bronze_age_bronze_foundry = 1
+	mason = 1
 }
 
 bronze_town_tech_lvl_3_chiefly_trading_maritime = {
@@ -90,6 +97,7 @@ bronze_town_tech_lvl_3_chiefly_trading_maritime = {
 	marketplace = 1
 	bronze_dock = 1
 	bronze_age_bronze_forge = 1
+	mason = 1
 }
 
 bronze_town_tech_lvl_3_trading_maritime = {
@@ -100,6 +108,7 @@ bronze_town_tech_lvl_3_trading_maritime = {
 	marketplace = 1
 	bronze_dock = 1
 	bronze_age_bronze_forge = 1
+	mason = 1
 }
 
 bronze_town_tech_lvl_3_palatial_trading = {
@@ -109,6 +118,7 @@ bronze_town_tech_lvl_3_palatial_trading = {
 	neolithic_granary = 1
 	marketplace = 1
 	bronze_age_bronze_foundry = 1
+	mason = 1
 }
 
 bronze_town_tech_lvl_3_palatial_trading_maritime = {
@@ -119,4 +129,5 @@ bronze_town_tech_lvl_3_palatial_trading_maritime = {
 	marketplace = 1
 	bronze_dock = 1
 	bronze_age_bronze_foundry = 1
+	mason = 1
 }

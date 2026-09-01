@@ -1,0 +1,90 @@
+namespace = institution_spawn_events
+
+institution_spawn_events_long_dist_trade.1 = {
+	type = country_event
+	title = institution_spawn_events_long_dist_trade.1.title
+	desc = institution_spawn_events_long_dist_trade.1.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/institution_spawn_events_long_dist_trade_1.dds"
+	outcome = neutral
+
+	trigger = {
+		NOT = {	has_embraced_institution = institution:bronze_routes }
+		has_ruler = yes
+		country_has_estate = estate_type:burghers_estate
+
+		any_owned_location = {
+			is_market_center = yes
+			market = {
+				total_goods_value_traded > 150
+			}
+		}
+	}
+
+	immediate = {
+		set_variable = {
+			name = long_distance_trade_spawning
+			value = 1
+		}
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.1.a
+		custom_tooltip = institution_spawn_events_long_dist_trade.1.a_tt
+
+		add_stability = stability_weak_bonus
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_weak_penalty }
+
+		add_country_modifier = {
+			modifier = merchants_search_for_markets_modifier
+			years = 1
+		}
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.1.b
+		custom_tooltip = institution_spawn_events_long_dist_trade.1.b_tt
+
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_weak_bonus }
+		change_gold_effect = { scale = -3 }
+
+		add_country_modifier = {
+			modifier = merchants_search_for_markets_modifier
+			years = 1
+		}
+
+		every_owned_location = {
+			limit = {
+				market = {
+					total_goods_value_traded > 50
+				}
+			}
+
+			change_institution_progress = { type = institution:bronze_routes value = institution_progress_weak_bonus }
+		}
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.1.c
+		custom_tooltip = institution_spawn_events_long_dist_trade.1.c_tt
+
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
+		change_gold_effect = { scale = -1.5 }
+
+		add_country_modifier = {
+			modifier = merchants_search_for_markets_modifier
+			years = 1
+		}
+
+		every_owned_location = {
+			limit = {
+				market = {
+					total_goods_value_traded > 100
+				}
+			}
+
+			change_institution_progress = { type = institution:bronze_routes value = institution_progress_weak_bonus }
+		}
+	}
+	
+}
