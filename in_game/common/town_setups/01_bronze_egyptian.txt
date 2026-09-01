@@ -25,18 +25,17 @@ qus_waset_setup = {
 }
 
 giza_mennefer_setup = {
-	pottery_palace = 2
+	pottery_palace = 1
 	tools_guild = 2
-	weapon_guild = 1
-	beer_palace = 2
+	weapon_guild = 3
+	beer_palace = 1
 	marketplace = 1
-	bronze_age_bronze_foundry = 2
+	bronze_age_bronze_foundry = 4
+	naval_supplies_palace = 3
 
-	mason = 4
-	clay_pit = 2
+	mason = 3
 
-	jewelry_palace = 3
-	fine_cloth_palace = 3
+	fine_cloth_palace = 1
 	tablets_guild = 1
 	winery_palace = 1
 
@@ -46,6 +45,4 @@ giza_mennefer_setup = {
 
 	temple_complex = 1
 	temple_granary = 1
-	temple_scribes_guild = 1
-	temple_court = 1
 }

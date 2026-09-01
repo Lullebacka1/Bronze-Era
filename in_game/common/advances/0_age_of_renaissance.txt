@@ -22,6 +22,14 @@ provincial_governors = {
 
 }
 
+colonies = {
+	age = age_2_renaissance
+	icon = colonies
+	requires = provincial_governors
+	
+	can_colonize = yes
+}
+
 elite_networks = {
 	age = age_2_renaissance
 	
