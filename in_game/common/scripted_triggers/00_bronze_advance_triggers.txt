@@ -7,3 +7,4 @@ household_expansion_allowed = {
 		}
 	}
 }
+

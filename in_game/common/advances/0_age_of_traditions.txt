@@ -119,6 +119,7 @@ settlements_advance = {
 	requires = agriculture_advance
 
 	unlock_building = settlement_building
+	can_build_cities = yes
 	
 	starting_technology_level = 1
 	
@@ -303,7 +304,7 @@ tribal_city_building_advance = {
 	age = age_1_traditions
 	research_cost = 1.5
 
-	can_build_cities = yes
+	can_promote_cities = yes
 
 	requires = hill_forts_advance
 
@@ -335,7 +336,7 @@ city_building_advance = {
 	age = age_1_traditions
 	research_cost = 1.5
 
-	can_build_cities = yes
+	can_promote_cities = yes
 
 	requires = palace_economy_advance
 

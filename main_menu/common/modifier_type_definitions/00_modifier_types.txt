@@ -16941,3 +16941,12 @@ trust_decay = {
 		category=country
 	}
 }
+
+# BRONZE AGE MODIFIERS
+
+can_promote_cities = {
+	boolean=yes
+	game_data={
+		category=country
+	}
+}

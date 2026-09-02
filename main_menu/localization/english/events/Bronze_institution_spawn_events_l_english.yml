@@ -10,3 +10,21 @@
 
   institution_spawn_events_long_dist_trade.1.c: "Support their venture fully."
   institution_spawn_events_long_dist_trade.1.c_tt: "Yes, we must prepare our emissaries for foreign lands! Give them the finest oxen and the brightest jewels. May their journey bring us riches from beyond!"
+
+  long_distance_trade_spawns_1_tt: "Long Distance Trade institution will spread into your Locations with 50 gold or more worth of Goods traded last month."
+
+
+  institution_spawn_events_long_dist_trade.2.title: "Promises of Distant Lands"
+  institution_spawn_events_long_dist_trade.2.desc: "It has been many months since the expeditions, sponsored by our generosity, first departed. News now comes in ever greater number: tales of distant lands rich in [SCOPE.sGoods('highest_price_good').GetName] reach us from afar! The more we invest, the greater treasures may we secure."
+
+  institution_spawn_events_long_dist_trade.2.a: "Invest further in their ventures."
+  institution_spawn_events_long_dist_trade.2.a_tt: "The reports are promising, but distant ventures are costly. Let us provide our merchants with the means to seek these riches, and see what fortune they may bring."
+
+  institution_spawn_events_long_dist_trade.2.b: "Spare no expense."
+  institution_spawn_events_long_dist_trade.2.b_tt: "These tales have convinced us that great wealth lies beyond our borders. Let us equip our merchants lavishly, that they may return with treasures worthy of our investment."
+
+  institution_spawn_events_long_dist_trade.2.c: "Enough. Let them return."
+  institution_spawn_events_long_dist_trade.2.c_tt: "We have heard enough tales and spent enough gold. Whatever riches lie beyond our borders, they are not worth further expense."
+
+  long_distance_trade_spawns_2_tt: "Long Distance Trade institution will spread into your Locations with 50 gold or more worth of Goods traded last month."
+  long_distance_trade_spawns_3_tt: "Long Distance Trade institution will spread into your Locations with 50 gold or more worth of Goods traded last month."
