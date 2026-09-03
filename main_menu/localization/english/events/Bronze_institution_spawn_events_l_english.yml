@@ -3,13 +3,13 @@
   institution_spawn_events_long_dist_trade.1.desc: "Our realm has prospered, and its people now desire what our own soil cannot provide. Merchants speak of distant shores where such treasures may be found, and ask that the court lend its favour to ventures beyond our borders."
 
   institution_spawn_events_long_dist_trade.1.a: "Let them seek their fortunes."
-  institution_spawn_events_long_dist_trade.1.a_tt: "Our homeland gives us all we may need. Those who desire more are welcome to brave the wilderness; we shall remain here, building the house of our ancestors ever greater."
+  institution_spawn_events_long_dist_trade.1.a.tt: "Our homeland gives us all we may need. Those who desire more are welcome to brave the wilderness; we shall remain here, building the house of our ancestors ever greater."
 
   institution_spawn_events_long_dist_trade.1.b: "Give them some assistance."
-  institution_spawn_events_long_dist_trade.1.b_tt: "An intriguing undertaking. What might be found beyond the borders of our glorious civilization, in that untamed wilderness? Nonetheless, let these brave fools have our gold; perhaps some fruit may come of their labors."
+  institution_spawn_events_long_dist_trade.1.b.tt: "An intriguing undertaking. What might be found beyond the borders of our glorious civilization, in that untamed wilderness? Nonetheless, let these brave fools have our gold; perhaps some fruit may come of their labors."
 
   institution_spawn_events_long_dist_trade.1.c: "Support their venture fully."
-  institution_spawn_events_long_dist_trade.1.c_tt: "Yes, we must prepare our emissaries for foreign lands! Give them the finest oxen and the brightest jewels. May their journey bring us riches from beyond!"
+  institution_spawn_events_long_dist_trade.1.c.tt: "Yes, we must prepare our emissaries for foreign lands! Give them the finest oxen and the brightest jewels. May their journey bring us riches from beyond!"
 
   long_distance_trade_spawns_1_tt: "Long Distance Trade institution will spread into your Locations with 50 gold or more worth of Goods traded last month."
 
@@ -18,13 +18,35 @@
   institution_spawn_events_long_dist_trade.2.desc: "It has been many months since the expeditions, sponsored by our generosity, first departed. News now comes in ever greater number: tales of distant lands rich in [SCOPE.sGoods('highest_price_good').GetName] reach us from afar! The more we invest, the greater treasures may we secure."
 
   institution_spawn_events_long_dist_trade.2.a: "Invest further in their ventures."
-  institution_spawn_events_long_dist_trade.2.a_tt: "The reports are promising, but distant ventures are costly. Let us provide our merchants with the means to seek these riches, and see what fortune they may bring."
+  institution_spawn_events_long_dist_trade.2.a.tt: "The reports are promising, but distant ventures are costly. Let us provide our merchants with the means to seek these riches, and see what fortune they may bring."
 
   institution_spawn_events_long_dist_trade.2.b: "Spare no expense."
-  institution_spawn_events_long_dist_trade.2.b_tt: "These tales have convinced us that great wealth lies beyond our borders. Let us equip our merchants lavishly, that they may return with treasures worthy of our investment."
+  institution_spawn_events_long_dist_trade.2.b.tt: "These tales have convinced us that great wealth lies beyond our borders. Let us equip our merchants lavishly, that they may return with treasures worthy of our investment."
 
   institution_spawn_events_long_dist_trade.2.c: "Enough. Let them return."
-  institution_spawn_events_long_dist_trade.2.c_tt: "We have heard enough tales and spent enough gold. Whatever riches lie beyond our borders, they are not worth further expense."
+  institution_spawn_events_long_dist_trade.2.c.tt: "We have heard enough tales and spent enough gold. Whatever riches lie beyond our borders, they are not worth further expense."
+
+  institution_spawn_events_long_dist_trade.3.title: "Relations Established"
+  institution_spawn_events_long_dist_trade.3.desc: "The ventures we have sponsored have borne fruit. Our merchants have found willing partners abroad, and what began as uncertain journeys now promises to become a lasting exchange. We must decide how these new connections shall serve our realm."
+
+  institution_spawn_events_long_dist_trade.3.a: "Build lasting relations."
+  institution_spawn_events_long_dist_trade.3.a.tt: "Our merchants have found partners willing to trade with us. Let us cultivate these relationships, so that our commerce may endure beyond the fortunes of any single expedition."
+
+  institution_spawn_events_long_dist_trade.3.b: "Secure the supply."
+  institution_spawn_events_long_dist_trade.3.b.tt: "Distant markets offer little use if their goods cannot reliably reach our own. Let us strengthen the arrangements that will keep these new routes supplied."
+
+  institution_spawn_events_long_dist_trade.3.c: "Now, bring us our due."
+  institution_spawn_events_long_dist_trade.3.c.tt: "We have furnished the merchants with ample means to pursue these ventures. Now that their dealings have borne fruit, they shall repay our generosity with a share of their gains."
+
+  institution_spawn_events_long_dist_trade.4.title: "The Fruits of Distant Commerce"
+  institution_spawn_events_long_dist_trade.4.desc: "The marvels once spoken of in distant lands are now known among us. Goods from beyond the horizon lie in our storehouses, and goods of foreign markets comes to our gates every day. These ties must not be left to chance; we must set down how they shall be kept."
+
+  institution_spawn_events_long_dist_trade.4.a: "Strengthen our envoys."
+  institution_spawn_events_long_dist_trade.4.a.tt: "Our merchants have opened the way to distant lands. Let us follow in their footsteps, sending envoys to cultivate the ties upon which our growing commerce depends."
+
+  institution_spawn_events_long_dist_trade.4.b: "Leave commerce to the merchants."
+  institution_spawn_events_long_dist_trade.4.b.tt: "The merchants have brought distant markets within our reach. Let them now tend the connections they have forged, while we leave them free to pursue their own interests."
 
   long_distance_trade_spawns_2_tt: "Long Distance Trade institution will spread into your Locations with 50 gold or more worth of Goods traded last month."
   long_distance_trade_spawns_3_tt: "Long Distance Trade institution will spread into your Locations with 50 gold or more worth of Goods traded last month."
+  long_distance_trade_spawns_4_tt: "Long Distance Trade institution will be stablished in your Capital."

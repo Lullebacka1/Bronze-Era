@@ -60,5 +60,7 @@ trade_district = {
 		merchant_power_from_building = 0.25
 	}
 
+	construction_demand = trade_district_construction
+
 	obsolete = bronze_age_trade_office
 }

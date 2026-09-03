@@ -35,7 +35,6 @@ ise_long_dist_trade.1 = {
 
 	option = {
 		name = institution_spawn_events_long_dist_trade.1.a
-		custom_tooltip = institution_spawn_events_long_dist_trade.1.a_tt
 
 		add_stability = stability_weak_bonus
 		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_weak_penalty }
@@ -48,10 +47,10 @@ ise_long_dist_trade.1 = {
 
 	option = {
 		name = institution_spawn_events_long_dist_trade.1.b
-		custom_tooltip = institution_spawn_events_long_dist_trade.1.b_tt
 
 		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_weak_bonus }
 		change_gold_effect = { scale = -2 }
+
 
 		add_country_modifier = {
 			modifier = merchants_search_for_markets_modifier
@@ -79,7 +78,6 @@ ise_long_dist_trade.1 = {
 
 	option = {
 		name = institution_spawn_events_long_dist_trade.1.c
-		custom_tooltip = institution_spawn_events_long_dist_trade.1.c_tt
 
 		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
 		change_gold_effect = { scale = -5 }
@@ -115,7 +113,7 @@ ise_long_dist_trade.2 = {
 	title = institution_spawn_events_long_dist_trade.2.title
 	desc = institution_spawn_events_long_dist_trade.2.desc
 	category = situation_event
-	image = "gfx/interface/illustrations/situation/institution_spawn_events_long_dist_trade_1.dds"
+	image = "gfx/interface/illustrations/situation/event_news_clay_tablet.dds"
 	outcome = neutral
 
 	trigger = {
@@ -134,7 +132,6 @@ ise_long_dist_trade.2 = {
 
 	option = {
 		name = institution_spawn_events_long_dist_trade.2.a
-		custom_tooltip = institution_spawn_events_long_dist_trade.2.a_tt
 
 		change_gold_effect = { scale = -2 }
 
@@ -166,7 +163,6 @@ ise_long_dist_trade.2 = {
 
 	option = {
 		name = institution_spawn_events_long_dist_trade.2.b
-		custom_tooltip = institution_spawn_events_long_dist_trade.2.b_tt
 
 		change_gold_effect = { scale = -6 }
 
@@ -198,7 +194,6 @@ ise_long_dist_trade.2 = {
 
 	option = {
 		name = institution_spawn_events_long_dist_trade.2.c
-		custom_tooltip = institution_spawn_events_long_dist_trade.2.c_tt
 
 		change_gold_effect = { scale = 3 }
 	}
@@ -207,10 +202,10 @@ ise_long_dist_trade.2 = {
 
 ise_long_dist_trade.3 = {
 	type = country_event
-	title = institution_spawn_events_long_dist_trade.2.title
-	desc = institution_spawn_events_long_dist_trade.2.desc
+	title = institution_spawn_events_long_dist_trade.3.title
+	desc = institution_spawn_events_long_dist_trade.3.desc
 	category = situation_event
-	image = "gfx/interface/illustrations/situation/institution_spawn_events_long_dist_trade_1.dds"
+	image = "gfx/interface/illustrations/situation/event_news_clay_tablet.dds"
 	outcome = neutral
 
 	trigger = {
@@ -221,11 +216,10 @@ ise_long_dist_trade.3 = {
 
 	option = {
 		name = institution_spawn_events_long_dist_trade.3.a
-		custom_tooltip = institution_spawn_events_long_dist_trade.3.a_tt
 
 		add_country_modifier = {
 			modifier = merchant_established_relations_modifier
-			years = 100
+			years = 10
 		}
 
 		custom_tooltip = {
@@ -240,17 +234,19 @@ ise_long_dist_trade.3 = {
 				change_institution_progress = { type = institution:bronze_routes value = institution_progress_extreme_bonus }
 			}
 		}
+
+		trigger_event_non_silently = {
+			id = ise_long_dist_trade.4
+			months = 3
+		}
 	}
 
 	option = {
-		name = institution_spawn_events_long_dist_trade.2.b
-		custom_tooltip = institution_spawn_events_long_dist_trade.2.b_tt
-
-		change_gold_effect = { scale = -6 }
+		name = institution_spawn_events_long_dist_trade.3.b
 
 		add_country_modifier = {
 			modifier = merchants_established_supply_modifier
-			years = 100
+			years = 10
 		}
 
 		custom_tooltip = {
@@ -265,11 +261,15 @@ ise_long_dist_trade.3 = {
 				change_institution_progress = { type = institution:bronze_routes value = institution_progress_extreme_bonus }
 			}
 		}
+
+		trigger_event_non_silently = {
+			id = ise_long_dist_trade.4
+			months = 3
+		}
 	}
 
 	option = {
-		name = institution_spawn_events_long_dist_trade.2.c
-		custom_tooltip = institution_spawn_events_long_dist_trade.2.c_tt
+		name = institution_spawn_events_long_dist_trade.3.c
 
 		change_gold_effect = { scale = 10 }
 
@@ -283,6 +283,65 @@ ise_long_dist_trade.3 = {
 				}
 
 				change_institution_progress = { type = institution:bronze_routes value = institution_progress_extreme_bonus }
+			}
+		}
+	}
+	
+}
+
+ise_long_dist_trade.4 = {
+	type = country_event
+	title = institution_spawn_events_long_dist_trade.4.title
+	desc = institution_spawn_events_long_dist_trade.4.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/event_news_clay_tablet.dds"
+	outcome = neutral
+
+	trigger = {
+		NOT = {	has_embraced_institution = institution:bronze_routes }
+		has_ruler = yes
+		country_has_estate = estate_type:burghers_estate
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.4.a
+
+		custom_tooltip = {
+			text = long_distance_trade_spawns_4_tt
+			capital = {
+				change_institution_progress = {
+					type = institution:bronze_routes
+					value = 100
+				}
+			}
+		}
+
+		add_country_modifier = {
+			modifier = trade_envoys_modifier
+			years = 3
+		}
+
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.4.b
+
+		custom_tooltip = {
+			text = long_distance_trade_spawns_4_tt
+			capital = {
+				change_institution_progress = {
+					type = institution:bronze_routes
+					value = 100
+				}
+			}
+		}
+
+		capital.market = {
+			add_merchant_power = {
+				country = root
+				power = merchant_power_mild_bonus
+				years = 3
+				key = merchants_freely_benefit
 			}
 		}
 	}

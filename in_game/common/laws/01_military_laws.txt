@@ -2,9 +2,14 @@
 	law_category = military
 
 	palace_obligation = {
+
+		allow = {
+			government_type = government_type:monarchy
+		}
+
 		country_modifier = {
-			global_levy_size_modifier = -0.1
-			monthly_legitimacy = 0.1
+			global_levy_size_modifier = -0.05
+			monthly_legitimacy = 0.10
 		}
 		estate_preferences = {
 			nobles_estate
