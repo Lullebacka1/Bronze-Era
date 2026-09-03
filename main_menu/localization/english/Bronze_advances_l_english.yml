@@ -28,6 +28,12 @@
   # FUSTERCLUCK
   # ##############################
 
+  chiefly_envoys_advance: "Chiefly Envoys"
+  chiefly_envoys_advance_desc: "Trusted members of a ruler's following begin to serve as envoys by established custom, carrying the ruler's messages, gifts, demands, and promises to neighboring communities. What was once an occasional task becomes a recognized duty among the servants and companions."
+
+  aristocratic_recognition_advance: "Aristocratic Recognition"
+  aristocratic_recognition_advance_desc: "The ruler increasingly raises individuals of proven influence, ability, loyalty, or service to a recognized place among the foremost of the realm. Their standing rests not solely upon birth, but upon the qualities and usefulness that earn the ruler's favor, giving the emerging aristocracy a more deliberate place in government."
+
   stone_dressing: "Stone Dressing"
   stone_dressing_desc: "Stoneworkers learn to systematically shape and finish building stone before laying it. More regular blocks allow tighter joints, straighter walls, and more refined masonry, improving the efficiency and durability of construction."
 
