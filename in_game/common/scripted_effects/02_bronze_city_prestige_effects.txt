@@ -821,6 +821,7 @@ bronze_city_prestige_update_world_ranking = {
 				add = 1
 			}
 		}
+		
 		save_scope_as = bronze_city_prestige_current_ranked_city
 		if = {
 			limit = { NOT = { has_variable = bronze_city_prestige_score } }
