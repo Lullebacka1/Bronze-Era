@@ -1,3 +1,12 @@
+# RURAL LOCATIONS
+
+bronze_rural_high_irrigation = {
+	irrigation_systems = 2
+	neolithic_granary = 1
+}
+
+# TOWNS
+
 bronze_town_tech_lvl_1 = {
 	pottery_maker = 1
 	tools_maker = 1
