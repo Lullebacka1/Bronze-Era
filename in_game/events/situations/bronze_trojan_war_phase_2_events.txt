@@ -14,6 +14,10 @@ option = {
     declare_war_with_cb = {
         target = c:WILUS
         type = casus_belli:trojan_war_casus_belli
+        set_variable = {
+            name = is_trojan_war
+            value = yes
+        }
     }
     c:WILUS = { save_scope_as = target_country }
     c:0001G = { save_scope_as = target }
@@ -21,7 +25,7 @@ option = {
         limit = {
             any_defender = { this = c:WILUS }
         }
-        save_scope_as = trojan_war
+        save_scope_as = trojan_war 
     }
     c:AHHI = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
     c:LYCIA = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
