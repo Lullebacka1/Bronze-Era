@@ -19,10 +19,7 @@ mycenaean_civil_war = {
 	}
 
 	can_end = {
-		OR = {
-			current_year > 1500
-			var:target_var >= 90
-		}
+
 	}
 
 	on_start = {
@@ -32,15 +29,13 @@ mycenaean_civil_war = {
 	on_monthly = {
 		# disater event for cival war
 		random_list = {
-			11 = { }
-			1 = {
-				fire_example_disaster_event = yes
-			}
+		22 = {
+			#Cival war flavor events
+		}
 		}
 	}
 
-	on_end = {
-		
+	on_end = {		
 		set_global_variable = { name = mycenaean_civil_war_ended value = yes }
 	}
 }

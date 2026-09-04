@@ -316,4 +316,11 @@ trojan_war_phase_2 = {
 		NOT = { has_global_variable = "trojan_war_phase_2_ended"}
 	}
 
+	on_monthly = {
+		random_list = {
+			11 = {
+				#Trojan war phase 2 flavor events
+			}
+		}
+	}
 }
