@@ -9,10 +9,9 @@ monthly_country_pulse = {
 }
 mycenaean_league_yearly_pulse = {
 	trigger = {
-		current_month = 1
 		is_member_of_international_organization = international_organization:mycenaean_league
 		international_organization:mycenaean_league = {
-			var:mycenaean_fragmentation_months >= 72
+			var:mycenaean_league_months >= 72
 		}
 	}
 
@@ -35,6 +34,34 @@ mycenaean_league_yearly_pulse = {
 		5 = mycenaean_league.120
 	}
 }
+# mycenaean_league_yearly_pulse = {
+# 	trigger = {
+# 		current_month = 1
+# 		is_member_of_international_organization = international_organization:mycenaean_league
+# 		international_organization:mycenaean_league = {
+# 			var:mycenaean_fragmentation_months >= 72
+# 		}
+# 	}
+
+# 	random_events = {
+# 		chance_to_happen = 22
+# 		100 = 0
+# 		8 = mycenaean_league.1
+# 		8 = mycenaean_league.2
+# 		7 = mycenaean_league.10
+# 		6 = mycenaean_league.20
+# 		5 = mycenaean_league.30
+# 		4 = mycenaean_league.40
+# 		7 = mycenaean_league.50
+# 		5 = mycenaean_league.60
+# 		4 = mycenaean_league.70
+# 		3 = mycenaean_league.80
+# 		4 = mycenaean_league.90
+# 		4 = mycenaean_league.100
+# 		3 = mycenaean_league.110
+# 		5 = mycenaean_league.120
+# 	}
+# }
 
 mycenaean_influence_pulse = {
 	trigger = {

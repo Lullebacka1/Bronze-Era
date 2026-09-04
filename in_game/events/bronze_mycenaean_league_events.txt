@@ -398,40 +398,6 @@ mycenaean_league.120 = {
 	}
 }
 
-# mycenaean_league.200 = {
-# 	type = country_event
-# 	title = mycenaean_league.200.title
-# 	desc = mycenaean_league.200.desc
-# 	category = disaster_event
-# 	outcome = negative
-# 	major = yes
-# 	orphan = yes
-
-# 	trigger = {
-# 		is_member_of_international_organization = international_organization:mycenaean_league
-# 		is_situation_active = situation:mycenaean_fragmentation # Will break
-# 		situation:mycenaean_fragmentation ?= { # Need to change the scope from situation To IO
-# 			has_variable = mycenaean_fragmentation_crisis_active
-# 		}
-# 		NOT = { has_variable = mycenaean_fragmentation_seen }
-# 	}
-
-# 	option = {
-# 		name = mycenaean_league.200.a
-# 		custom_tooltip = mycenaean_league_200_a_tt
-# 		set_variable = { name = mycenaean_fragmentation_seen value = 1 years = 30 }
-# 		if = {
-# 			limit = { is_leader_of_international_organization = international_organization:mycenaean_league }
-# 			set_variable = { name = mycenaean_palaces_burning value = 1 years = 6 }
-# 			subtract_mycenaean_league_authority = { value = 8 }
-# 		}
-# 		else = {
-# 			set_variable = { name = mycenaean_palace_autonomy_claimed value = 1 years = 8 }
-# 			add_prestige = prestige_weak_bonus
-# 		}
-# 	}
-# }
-
 mycenaean_league.200 = {
 	type = country_event
 	title = mycenaean_league.200.title
@@ -443,8 +409,8 @@ mycenaean_league.200 = {
 
 	trigger = {
 		is_member_of_international_organization = international_organization:mycenaean_league
-		international_organization:mycenaean_league = { exists = yes}
-		international_organization:mycenaean_league ?= { 
+		is_situation_active = situation:mycenaean_fragmentation # Will break
+		situation:mycenaean_fragmentation ?= { # Need to change the scope from situation To IO
 			has_variable = mycenaean_fragmentation_crisis_active
 		}
 		NOT = { has_variable = mycenaean_fragmentation_seen }
@@ -466,42 +432,39 @@ mycenaean_league.200 = {
 	}
 }
 
-mycenaean_league.210 = {
-	type = country_event
-	title = mycenaean_league.210.title
-	desc = mycenaean_league.210.desc
-	category = disaster_event
-	outcome = negative
-	orphan = yes
+# mycenaean_league.200 = {
+# 	type = country_event
+# 	title = mycenaean_league.200.title
+# 	desc = mycenaean_league.200.desc
+# 	category = disaster_event
+# 	outcome = negative
+# 	major = yes
+# 	orphan = yes
 
-	trigger = {
-		international_organization:mycenaean_league = { exists = yes }
-		international_organization:mycenaean_league ?= { 
-			has_variable = mycenaean_fragmentation_crisis_active
-		}
-		mycenaean_palace_is_valid_landable_member = yes
-		NOT = { has_variable = mycenaean_palace_autonomy_claimed }
-	}
+# 	trigger = {
+# 		is_member_of_international_organization = international_organization:mycenaean_league
+# 		international_organization:mycenaean_league = { exists = yes}
+# 		international_organization:mycenaean_league ?= { 
+# 			has_variable = mycenaean_fragmentation_crisis_active
+# 		}
+# 		NOT = { has_variable = mycenaean_fragmentation_seen }
+# 	}
 
-	option = {
-		name = mycenaean_league.210.a
-		custom_tooltip = mycenaean_league_210_a_tt
-		save_temporary_scope_as = mycenaean_autonomy_palace
-		turn_mycenaean_palace_into_normal_tag = yes
-		subtract_mycenaean_league_authority = { value = 8 }
-		international_organization:mycenaean_league.leader_country ?= {
-			add_casus_belli = { type = casus_belli:cb_mycenaean_high_wanax_reassert_authority target = scope:mycenaean_autonomy_palace }
-			trigger_event_silently = mycenaean_league.225
-		}
-	}
-	option = {
-		name = mycenaean_league.210.b
-		custom_tooltip = mycenaean_league_210_b_tt
-		set_variable = { name = mycenaean_league_accepted_order value = 1 years = 4 }
-		change_mycenaean_league_authority = { value = 3 }
-		reverse_add_opinion = { modifier = bronze_mycenaean_oath_sworn target = international_organization:mycenaean_league.leader_country }
-	}
-}
+# 	option = {
+# 		name = mycenaean_league.200.a
+# 		custom_tooltip = mycenaean_league_200_a_tt
+# 		set_variable = { name = mycenaean_fragmentation_seen value = 1 years = 30 }
+# 		if = {
+# 			limit = { is_leader_of_international_organization = international_organization:mycenaean_league }
+# 			set_variable = { name = mycenaean_palaces_burning value = 1 years = 6 }
+# 			subtract_mycenaean_league_authority = { value = 8 }
+# 		}
+# 		else = {
+# 			set_variable = { name = mycenaean_palace_autonomy_claimed value = 1 years = 8 }
+# 			add_prestige = prestige_weak_bonus
+# 		}
+# 	}
+# }
 
 # mycenaean_league.210 = {
 # 	type = country_event
@@ -512,8 +475,8 @@ mycenaean_league.210 = {
 # 	orphan = yes
 
 # 	trigger = {
-# 		is_situation_active = situation:mycenaean_fragmentation # Will break
-# 		situation:mycenaean_fragmentation ?= { # need to change scope
+# 		international_organization:mycenaean_league = { exists = yes }
+# 		international_organization:mycenaean_league ?= { 
 # 			has_variable = mycenaean_fragmentation_crisis_active
 # 		}
 # 		mycenaean_palace_is_valid_landable_member = yes
@@ -540,38 +503,40 @@ mycenaean_league.210 = {
 # 	}
 # }
 
-mycenaean_league.220 = {
+mycenaean_league.210 = {
 	type = country_event
-	title = mycenaean_league.220.title
-	desc = mycenaean_league.220.desc
+	title = mycenaean_league.210.title
+	desc = mycenaean_league.210.desc
 	category = disaster_event
-	outcome = neutral
+	outcome = negative
 	orphan = yes
 
 	trigger = {
-		is_leader_of_international_organization = international_organization:mycenaean_league
-		international_organization:mycenaean_league = { exists = yes}
-		international_organization:mycenaean_league ?= { # need to change scope
+		is_situation_active = situation:mycenaean_fragmentation # Will break
+		situation:mycenaean_fragmentation ?= { # need to change scope
 			has_variable = mycenaean_fragmentation_crisis_active
 		}
-		NOT = { has_variable = mycenaean_high_wanax_fragmentation_council }
+		mycenaean_palace_is_valid_landable_member = yes
+		NOT = { has_variable = mycenaean_palace_autonomy_claimed }
 	}
 
 	option = {
-		name = mycenaean_league.220.a
-		custom_tooltip = mycenaean_league_220_a_tt
-		set_variable = { name = mycenaean_high_wanax_fragmentation_council value = 1 years = 3 }
-		set_variable = { name = mycenaean_megaron_council value = 1 years = 3 }
-		change_mycenaean_league_authority = { value = 4 }
-		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_penalty }
+		name = mycenaean_league.210.a
+		custom_tooltip = mycenaean_league_210_a_tt
+		save_temporary_scope_as = mycenaean_autonomy_palace
+		turn_mycenaean_palace_into_normal_tag = yes
+		subtract_mycenaean_league_authority = { value = 8 }
+		international_organization:mycenaean_league.leader_country ?= {
+			add_casus_belli = { type = casus_belli:cb_mycenaean_high_wanax_reassert_authority target = scope:mycenaean_autonomy_palace }
+			trigger_event_silently = mycenaean_league.225
+		}
 	}
 	option = {
-		name = mycenaean_league.220.b
-		custom_tooltip = mycenaean_league_220_b_tt
-		set_variable = { name = mycenaean_high_wanax_fragmentation_council value = 1 years = 3 }
-		set_variable = { name = mycenaean_palaces_burning value = 1 years = 4 }
-		subtract_mycenaean_league_authority = { value = 6 }
-		add_prestige = prestige_mild_penalty
+		name = mycenaean_league.210.b
+		custom_tooltip = mycenaean_league_210_b_tt
+		set_variable = { name = mycenaean_league_accepted_order value = 1 years = 4 }
+		change_mycenaean_league_authority = { value = 3 }
+		reverse_add_opinion = { modifier = bronze_mycenaean_oath_sworn target = international_organization:mycenaean_league.leader_country }
 	}
 }
 
@@ -585,8 +550,8 @@ mycenaean_league.220 = {
 
 # 	trigger = {
 # 		is_leader_of_international_organization = international_organization:mycenaean_league
-# 		is_situation_active = situation:mycenaean_fragmentation # Will break
-# 		situation:mycenaean_fragmentation ?= { # need to change scope
+# 		international_organization:mycenaean_league = { exists = yes}
+# 		international_organization:mycenaean_league ?= { # need to change scope
 # 			has_variable = mycenaean_fragmentation_crisis_active
 # 		}
 # 		NOT = { has_variable = mycenaean_high_wanax_fragmentation_council }
@@ -609,6 +574,41 @@ mycenaean_league.220 = {
 # 		add_prestige = prestige_mild_penalty
 # 	}
 # }
+
+mycenaean_league.220 = {
+	type = country_event
+	title = mycenaean_league.220.title
+	desc = mycenaean_league.220.desc
+	category = disaster_event
+	outcome = neutral
+	orphan = yes
+
+	trigger = {
+		is_leader_of_international_organization = international_organization:mycenaean_league
+		is_situation_active = situation:mycenaean_fragmentation # Will break
+		situation:mycenaean_fragmentation ?= { # need to change scope
+			has_variable = mycenaean_fragmentation_crisis_active
+		}
+		NOT = { has_variable = mycenaean_high_wanax_fragmentation_council }
+	}
+
+	option = {
+		name = mycenaean_league.220.a
+		custom_tooltip = mycenaean_league_220_a_tt
+		set_variable = { name = mycenaean_high_wanax_fragmentation_council value = 1 years = 3 }
+		set_variable = { name = mycenaean_megaron_council value = 1 years = 3 }
+		change_mycenaean_league_authority = { value = 4 }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_penalty }
+	}
+	option = {
+		name = mycenaean_league.220.b
+		custom_tooltip = mycenaean_league_220_b_tt
+		set_variable = { name = mycenaean_high_wanax_fragmentation_council value = 1 years = 3 }
+		set_variable = { name = mycenaean_palaces_burning value = 1 years = 4 }
+		subtract_mycenaean_league_authority = { value = 6 }
+		add_prestige = prestige_mild_penalty
+	}
+}
 
 mycenaean_league.225 = {
 	type = country_event
