@@ -84,12 +84,65 @@ locations = {
     aqaba = { rank = town	town_setup = bronze_town_tech_lvl_1 }            
 
     #  NEW KINGDOM OF EGYPT 
-    faqus = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }            
-    qalyub = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }         
+    faqus = { rank = city	town_setup = egyptian_town_on_nile }                   
     giza = { rank = city	town_setup = giza_mennefer_setup }             
     faiyum = { rank = city	town_setup = faiyum_shedet_setup }            
     cairo = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }
-	qus = { rank = city	town_setup = qus_waset_setup }           
+	qus = { rank = city	town_setup = qus_waset_setup }
+	akhmim = { rank = city	town_setup = egyptian_town_on_nile }
+	ashmunayn = { rank = city	town_setup = egyptian_town_on_nile }
+	aswan = { rank = city	town_setup = bronze_town_tech_lvl_2_fortified}
+	asyut = { rank = city	town_setup = egyptian_town_on_nile }
+	damanhur = { rank = city	town_setup = egyptian_town_on_nile }
+	edfu = { rank = city	town_setup = egyptian_town_on_nile }
+	el_bahnasa = { rank = city	town_setup = egyptian_town_on_nile }
+	esna = { rank = city	town_setup = egyptian_town_on_nile }
+	hiw = { rank = city	town_setup = egyptian_town_on_nile }
+	samanoud = { rank = city	town_setup = egyptian_town_on_nile }
+
+
+	kharga = { rank = town	town_setup = bronze_town_tech_lvl_3_palatial_trading }
+
+	bahariyya = { rank = town	town_setup = egyptian_oasis }
+	selima = { rank = town	town_setup = egyptian_oasis }
+	
+	atfih = { rank = town	town_setup = egyptian_town_on_nile }
+	faras = { rank = town	town_setup = egyptian_town_on_nile }
+	kalabsha = { rank = town	town_setup = egyptian_town_on_nile }
+	kom_ombo = { rank = town	town_setup = egyptian_town_on_nile }
+	manfalut = { rank = town	town_setup = egyptian_town_on_nile }
+	qena = { rank = town	town_setup = egyptian_town_on_nile }
+	sai = { rank = town	town_setup = egyptian_town_on_nile }
+	sharuna = { rank = town	town_setup = egyptian_town_on_nile }
+	tahna = { rank = town	town_setup = egyptian_town_on_nile }
+
+	alexandria = { rank = town	town_setup = bronze_town_tech_lvl_1}
+	matruh = { rank = town	town_setup = bronze_town_tech_lvl_1}
+	
+	al_mima = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	beni_suef = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	billbeis = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	dakahla = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	damietta = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	el_balyana = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	el_burullus = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	el_buwit = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	el_mahalla = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	fuwa = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	kafr_saqr = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	kharibta = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	mansoura = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	menouf = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	minya = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	qalyub = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	qatya = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	ramsis = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	rashid = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	tarrana = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	tidah = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	tinnis = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	ushmum_tannah = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
+	warrada = { rank = rural_location	town_setup = bronze_rural_high_irrigation }
 
     #  MESOPOTAMIA 
     balad = { rank = town	town_setup = bronze_town_tech_lvl_1 }             
@@ -176,10 +229,10 @@ building_manager = {
 	bronze_city_walls = { tag = YURZ level = 1 location = gaza }
 	bronze_city_walls = { tag = JESUS level = 1 location = jerusalem }
 	bronze_city_walls = { tag = EGY level = 1 location = faqus }
-	bronze_city_walls = { tag = EGY level = 1 location = qalyub }
 	bronze_city_walls = { tag = EGY level = 1 location = giza }
 	bronze_city_walls = { tag = EGY level = 1 location = faiyum }
 	bronze_city_walls = { tag = EGY level = 1 location = cairo }
+	bronze_city_walls = { tag = EGY level = 1 location = aswan }
 	bronze_city_walls = { tag = ASYRI level = 1 location = al_sinn }
 	bronze_city_walls = { tag = KASSI level = 1 location = baghdad }
 	bronze_city_walls = { tag = KASSI level = 1 location = hillah }

@@ -1,3 +1,32 @@
+# TEMPLATES
+
+egyptian_town_on_nile = {
+	pottery_palace = 1
+	tools_guild = 1
+	beer_palace = 1
+	neolithic_granary = 1
+	marketplace = 1
+	bronze_age_bronze_foundry = 1
+	mason = 1
+	cloth_palace = 1
+
+	irrigation_systems = 3
+}
+
+egyptian_oasis = {
+	pottery_palace = 1
+	beer_palace = 1
+	neolithic_granary = 1
+	marketplace = 1
+	cloth_palace = 1
+	winery_palace = 1
+	fruit_orchard = 1
+
+	irrigation_systems = 1
+}
+
+# UNIQUES
+
 qus_waset_setup = {
 	pottery_palace = 2
 	tools_guild = 2

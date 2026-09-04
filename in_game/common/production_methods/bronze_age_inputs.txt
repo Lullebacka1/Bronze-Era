@@ -86,9 +86,9 @@ tools_maker_iron_recipe = {
 }
 
 tools_maker_stone_recipe = {
-	stone = 1
+	stone = 0.5
 	produced = tools
-	output = 0.5
+	output = 0.25
 	debug_max_profit = 0.1
 
 	category = guild_input
@@ -125,9 +125,9 @@ weaponry_maker_iron_recipe = {
 }
 
 weaponry_maker_stone_recipe = {
-	stone = 1
+	stone = 0.5
 	produced = weaponry
-	output = 0.5
+	output = 0.25
 
 	category = guild_input
 }
@@ -250,7 +250,7 @@ weapon_sponsored_iron_recipe = {
 	category = guild_input
 }
 
-# TOOLS GUILD
+# PALATIAL TOOLS
 
 tools_guild_iron_recipe = {
 	coal = 0.1
@@ -261,6 +261,7 @@ tools_guild_iron_recipe = {
 
 	category = guild_input
 }
+
 tools_guild_stone_recipe = {
 	stone = 0.5
 	produced = tools
