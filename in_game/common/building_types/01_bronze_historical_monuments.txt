@@ -716,6 +716,32 @@ bronze_monument_bru_na_boinne = {
 	}
 }
 
+bronze_monument_shedet_sluice = {
+	is_special = yes
+	is_foreign = no
+	allow_wrong_startup = yes
+	max_levels = 1
+	pop_type = laborers
+	category = monumental_building_category
+	employment_size = construction_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = bronze_age_monument_build_time
+	construction_demand = neolithic_monument_construction
+	country_potential = { always = no }
+	allow = { always = no }
+	can_destroy = { always = no }
+	possible_production_methods = { bronze_shedet_sluice_monument_maintenance }
+	custom_tags = { bronze_historical_monument }
+	modifier = {
+		local_population_capacity = 2.0
+		local_monthly_food_modifier = 0.30
+	}
+}
+
 # Event-only result of the Egyptian multi-decade project.
 bronze_monument_great_pyramid_new = {
 	is_special = yes

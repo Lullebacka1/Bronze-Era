@@ -76,6 +76,7 @@ bronze_town_tech_lvl_3_palatial = {
 	marketplace = 1
 	bronze_age_bronze_foundry = 1
 	mason = 1
+	cloth_palace = 1
 }
 
 bronze_town_tech_lvl_3_palatial_maritime = {
@@ -87,6 +88,7 @@ bronze_town_tech_lvl_3_palatial_maritime = {
 	neolithic_dock = 1
 	bronze_age_bronze_foundry = 1
 	mason = 1
+	cloth_palace = 1
 }
 
 bronze_town_tech_lvl_3_chiefly_trading_maritime = {
@@ -119,6 +121,7 @@ bronze_town_tech_lvl_3_palatial_trading = {
 	marketplace = 1
 	bronze_age_bronze_foundry = 1
 	mason = 1
+	cloth_palace = 1
 }
 
 bronze_town_tech_lvl_3_palatial_trading_maritime = {
@@ -130,4 +133,5 @@ bronze_town_tech_lvl_3_palatial_trading_maritime = {
 	bronze_dock = 1
 	bronze_age_bronze_foundry = 1
 	mason = 1
+	cloth_palace = 1
 }
