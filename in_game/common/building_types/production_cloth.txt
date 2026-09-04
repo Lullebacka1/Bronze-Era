@@ -1,57 +1,54 @@
-﻿# cloth_guild = {
-# 	is_foreign = no
-# 	pop_type = burghers
-# 	max_levels = cloth_guild_max_level
+﻿cloth_palace = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = cloth_guild_max_level
 	
-# 	category = consumer_goods_category
+	category = consumer_goods_category
 	
-# 	employment_size = guild_employment
+	employment_size = guild_employment
 	
-	
-# 	town = yes
-# 	city = yes
-# 	megalopolis = yes
+	town = yes
+	city = yes
+	megalopolis = yes
 
+	build_time = guild_build_time
 	
-
-# 	build_time = guild_build_time
-	
-# 	unique_production_methods = {
-# 		cotton_cloth_guild_maintenance = {
-# 			cotton = 0.8
+	unique_production_methods = {
+		cotton_cloth_guild_maintenance = {
+			cotton = 0.8
 			
-# 			produced = cloth
-# 			output = 1
+			produced = cloth
+			output = 1
 			
-# 			category = guild_input
-# 		}
+			category = guild_input
+		}
 		
-# 		wool_cloth_guild_maintenance = {
-# 			wool = 1.0
+		wool_cloth_guild_maintenance = {
+			wool = 1.0
 			
-# 			produced = cloth
-# 			output = 1
+			produced = cloth
+			output = 1
 			
-# 			category = guild_input
-# 		}
+			category = guild_input
+		}
 
-# 		fiber_crops_cloth_guild_maintenance = {
-# 			fiber_crops = 1.0
+		fiber_crops_cloth_guild_maintenance = {
+			fiber_crops = 1.0
 			
-# 			produced = cloth
-# 			output = 0.8
+			produced = cloth
+			output = 0.8
 			
-# 			category = guild_input
-# 		}
+			category = guild_input
+		}
 		
-# 	}
+	}
 
-# 	construction_demand = guild_construction
+	construction_demand = guild_construction
 	
-# 	custom_tags = { guild }
-# 	modifier = {
-# 	}
-# }
+	custom_tags = { guild }
+	modifier = {
+	}
+}
 
 # cloth_workshop = {
 # 	is_foreign = no

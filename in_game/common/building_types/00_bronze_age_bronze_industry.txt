@@ -256,7 +256,7 @@ tablets_guild = {
 fine_cloth_palace = {
 	is_foreign = no
 	pop_type = laborers
-	max_levels = fine_cloth_guild_max_level
+	max_levels = guild_max_level
 	
 	category = consumer_goods_category
 	

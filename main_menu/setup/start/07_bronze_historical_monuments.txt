@@ -34,7 +34,10 @@ building_manager = {
 	bronze_monument_serra_orrios = { level = 1 location = orosei }
 	bronze_monument_madau_giants_tombs = { level = 1 location = sorgono }
 	bronze_monument_avebury = { level = 1 location = amesbury }
-}	bronze_monument_abu_simbel = { level = 1 location = daw_sud }
+	bronze_monument_abu_simbel = { level = 1 location = daw_sud }
+
+	bronze_monument_shedet_sluice = { level = 1 location = faiyum }
+}
 
 # ============================================================================
 # PREPARED HISTORICAL RUINS - NOT ACTIVE UNTIL AN EXACT LOCATION IS CONFIRMED
