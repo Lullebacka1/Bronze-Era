@@ -443,7 +443,7 @@ mycenaean_league.200 = {
 
 # 	trigger = {
 # 		is_member_of_international_organization = international_organization:mycenaean_league
-#		international_organization:mycenaean_league = { exists = yes}
+# 		international_organization:mycenaean_league = { exists = yes}
 # 		international_organization:mycenaean_league ?= { 
 # 			has_variable = mycenaean_fragmentation_crisis_active
 # 		}
