@@ -31,6 +31,21 @@
   commodity_money_policy_tea: "Tea as Currency"
   commodity_money_policy_tea_desc: "In some Bronze Age societies, tea was used as a form of currency. The value of tea, which was essential for its stimulating properties and cultural significance, was recognized and accepted in trade and economic transactions. This practice allowed for the exchange of goods and services using valuable and functional items as a medium of exchange."
 
+  gold_and_silver_coins: "Gold and Silver Coinage"
+  gold_and_silver_coins_desc: "The state issues standardized coins in both precious metals, providing recognized units of value for taxation, payments, and larger transactions."
+
+  gold_coins: "Gold Coinage"
+  gold_coins_desc: "Gold is struck into standardized pieces bearing the authority of the issuing state, providing a high-value medium for payments and demonstrating the ruler's control over precious-metal currency."
+
+  silver_coins: "Silver Coinage"
+  silver_coins_desc: "Silver is struck into standardized pieces of recognized weight, providing a practical medium for taxation, trade, and payments while allowing the state to exercise greater control over the circulation of precious metal."
+
+  copper_coins: "Copper Coinage"
+  copper_coins_desc: "Copper is fashioned into standardized pieces for smaller transactions, extending coined money beyond the realm of precious-metal payments and making state-issued currency more useful in everyday exchange."
+
+  bullion_coins: "Billon Coinage"
+  bullion_coins_desc: "Silver is deliberately alloyed with copper before being struck into standardized pieces, allowing the state to extend its silver reserves while maintaining the appearance and recognized value of a precious-metal currency."
+
   # BURIAL POLICIES
 
   bronze_age_burial_pits_law: "Burial Pits"

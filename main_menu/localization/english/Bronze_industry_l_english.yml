@@ -62,6 +62,10 @@
   fine_cloth_palace: "Royal Weavers"
   fine_cloth_palace_desc: "Attached to the palace economy, royal weaving workshops produce fine textiles for courtly dress, ceremonial use, diplomatic gifts, and elite consumption. Their craftsmen transform valuable fibers and dyes into goods that display wealth, status, and authority."
 
+  cloth_palace: "Royal Cloth Workshops"
+  cloth_palace_desc: "Royal cloth workshops produce textiles for the court, temples, officials, and the needs of the wider realm. Their craftsmen turn wool, cotton, and other fibers into a dependable supply of cloth for clothing and everyday use."
+
+
   beer_palace: "Royal Brewers"
   beer_palace_desc: "Operating under palatial supervision, royal breweries produce large quantities of fermented beverages for feasts, religious ceremonies, labor rations, diplomatic gifts, and elite consumption. Their output supports both the daily functioning and prestige of the palace economy."
 

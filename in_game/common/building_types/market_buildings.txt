@@ -22,7 +22,7 @@
  		location = { is_market_center = no }
  	}
  	modifier = {
- 		local_merchant_capacity = 5
+ 		local_merchant_capacity = 2
  	}
 	
  	market_center_modifier = {
@@ -31,7 +31,7 @@
 	
 	
  	possible_production_methods =  {
- 		market_center_building_maintenance
+ 		trading_hub_building_maintenance
  	}
  	construction_demand = bronze_market_center_building_construction
  }

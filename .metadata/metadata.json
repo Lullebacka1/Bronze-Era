@@ -8,7 +8,21 @@
 	"relationships":	[],
 	"game_custom_data":	{
 		"replace_paths" : [
-
+			"events",
+			"events/character",
+			"events/colonization",
+			"events/culture",
+			"events/debug",
+			"events/DHE",
+			"events/diplomacy",
+			"events/disaster",
+			"events/economy",
+			"events/estates",
+			"events/exploration",
+			"events/government",
+			"events/missionevents",
+			"events/religion",
+			"events/situations"
 		]
-}
+	}
 }

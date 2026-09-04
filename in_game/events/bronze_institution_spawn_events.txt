@@ -1,0 +1,349 @@
+namespace = ise_long_dist_trade
+
+ise_long_dist_trade.1 = {
+	type = country_event
+	title = institution_spawn_events_long_dist_trade.1.title
+	desc = institution_spawn_events_long_dist_trade.1.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/institution_spawn_events_long_dist_trade_1.dds"
+	outcome = neutral
+
+	trigger = {
+		NOT = {	has_embraced_institution = institution:bronze_routes }
+		has_ruler = yes
+		country_has_estate = estate_type:burghers_estate
+
+		NOT = {
+			var:long_distance_trade_spawning_variable = 1
+		}
+
+		any_owned_location = {
+			is_market_center = yes
+			market = {
+				total_goods_value_traded > 150
+			}
+		}
+	}
+
+	immediate = {
+		set_variable = {
+			name = long_distance_trade_spawning_variable
+			value = 1
+			years = 3
+		}
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.1.a
+
+		add_stability = stability_weak_bonus
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_weak_penalty }
+
+		add_country_modifier = {
+			modifier = merchants_search_for_markets_modifier
+			years = 1
+		}
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.1.b
+
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_weak_bonus }
+		change_gold_effect = { scale = -2 }
+
+
+		add_country_modifier = {
+			modifier = merchants_search_for_markets_modifier
+			years = 1
+		}
+
+		custom_tooltip = {
+			text = long_distance_trade_spawns_1_tt
+			every_owned_location = {
+				limit = {
+					market = {
+						total_goods_value_traded > 50
+					}
+				}
+
+				change_institution_progress = { type = institution:bronze_routes value = institution_progress_weak_bonus }
+			}
+		}
+
+		trigger_event_non_silently = {
+			id = ise_long_dist_trade.2
+			months = 6
+		}
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.1.c
+
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
+		change_gold_effect = { scale = -5 }
+
+		add_country_modifier = {
+			modifier = merchants_search_for_markets_modifier
+			years = 1
+		}
+
+		custom_tooltip = {
+			text = long_distance_trade_spawns_1_tt
+			every_owned_location = {
+				limit = {
+					market = {
+						total_goods_value_traded > 50
+					}
+				}
+
+				change_institution_progress = { type = institution:bronze_routes value = institution_progress_weak_bonus }
+			}
+		}
+
+		trigger_event_non_silently = {
+			id = ise_long_dist_trade.2
+			months = 6
+		}
+	}
+	
+}
+
+ise_long_dist_trade.2 = {
+	type = country_event
+	title = institution_spawn_events_long_dist_trade.2.title
+	desc = institution_spawn_events_long_dist_trade.2.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/event_news_clay_tablet.dds"
+	outcome = neutral
+
+	trigger = {
+		NOT = {	has_embraced_institution = institution:bronze_routes }
+		has_ruler = yes
+		country_has_estate = estate_type:burghers_estate
+	}
+
+	immediate = {
+		ordered_goods = {
+			order_by = price_in_market(scope:capital.market)
+			max = 1
+			save_scope_as = highest_price_good
+		}
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.2.a
+
+		change_gold_effect = { scale = -2 }
+
+		add_country_modifier = {
+			modifier = merchants_search_for_market_encouraged_modifier
+			months = 6
+		}
+
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_weak_bonus }
+
+		custom_tooltip = {
+			text = long_distance_trade_spawns_2_tt
+			every_owned_location = {
+				limit = {
+					market = {
+						total_goods_value_traded > 50
+					}
+				}
+
+				change_institution_progress = { type = institution:bronze_routes value = institution_progress_mild_bonus }
+			}
+		}
+
+		trigger_event_non_silently = {
+			id = ise_long_dist_trade.3
+			months = 6
+		}
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.2.b
+
+		change_gold_effect = { scale = -6 }
+
+		add_country_modifier = {
+			modifier = merchants_search_for_market_encouraged_modifier
+			months = 6
+		}
+
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
+
+		custom_tooltip = {
+			text = long_distance_trade_spawns_3_tt
+			every_owned_location = {
+				# limit = {
+				# 	market = {
+				# 		total_goods_value_traded > 50
+				# 	}
+				# }
+
+				change_institution_progress = { type = institution:bronze_routes value = institution_progress_extreme_bonus }
+			}
+		}
+
+		trigger_event_non_silently = {
+			id = ise_long_dist_trade.3
+			months = 6
+		}
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.2.c
+
+		change_gold_effect = { scale = 3 }
+	}
+	
+}
+
+ise_long_dist_trade.3 = {
+	type = country_event
+	title = institution_spawn_events_long_dist_trade.3.title
+	desc = institution_spawn_events_long_dist_trade.3.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/event_news_clay_tablet.dds"
+	outcome = neutral
+
+	trigger = {
+		NOT = {	has_embraced_institution = institution:bronze_routes }
+		has_ruler = yes
+		country_has_estate = estate_type:burghers_estate
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.3.a
+
+		add_country_modifier = {
+			modifier = merchant_established_relations_modifier
+			years = 10
+		}
+
+		custom_tooltip = {
+			text = long_distance_trade_spawns_3_tt
+			every_owned_location = {
+				limit = {
+					market = {
+						total_goods_value_traded > 50
+					}
+				}
+
+				change_institution_progress = { type = institution:bronze_routes value = institution_progress_extreme_bonus }
+			}
+		}
+
+		trigger_event_non_silently = {
+			id = ise_long_dist_trade.4
+			months = 3
+		}
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.3.b
+
+		add_country_modifier = {
+			modifier = merchants_established_supply_modifier
+			years = 10
+		}
+
+		custom_tooltip = {
+			text = long_distance_trade_spawns_3_tt
+			every_owned_location = {
+				limit = {
+					market = {
+						total_goods_value_traded > 50
+					}
+				}
+
+				change_institution_progress = { type = institution:bronze_routes value = institution_progress_extreme_bonus }
+			}
+		}
+
+		trigger_event_non_silently = {
+			id = ise_long_dist_trade.4
+			months = 3
+		}
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.3.c
+
+		change_gold_effect = { scale = 10 }
+
+		custom_tooltip = {
+			text = long_distance_trade_spawns_3_tt
+			every_owned_location = {
+				limit = {
+					market = {
+						total_goods_value_traded > 50
+					}
+				}
+
+				change_institution_progress = { type = institution:bronze_routes value = institution_progress_extreme_bonus }
+			}
+		}
+	}
+	
+}
+
+ise_long_dist_trade.4 = {
+	type = country_event
+	title = institution_spawn_events_long_dist_trade.4.title
+	desc = institution_spawn_events_long_dist_trade.4.desc
+	category = situation_event
+	image = "gfx/interface/illustrations/situation/event_news_clay_tablet.dds"
+	outcome = neutral
+
+	trigger = {
+		NOT = {	has_embraced_institution = institution:bronze_routes }
+		has_ruler = yes
+		country_has_estate = estate_type:burghers_estate
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.4.a
+
+		custom_tooltip = {
+			text = long_distance_trade_spawns_4_tt
+			capital = {
+				change_institution_progress = {
+					type = institution:bronze_routes
+					value = 100
+				}
+			}
+		}
+
+		add_country_modifier = {
+			modifier = trade_envoys_modifier
+			years = 3
+		}
+
+	}
+
+	option = {
+		name = institution_spawn_events_long_dist_trade.4.b
+
+		custom_tooltip = {
+			text = long_distance_trade_spawns_4_tt
+			capital = {
+				change_institution_progress = {
+					type = institution:bronze_routes
+					value = 100
+				}
+			}
+		}
+
+		capital.market = {
+			add_merchant_power = {
+				country = root
+				power = merchant_power_mild_bonus
+				years = 3
+				key = merchants_freely_benefit
+			}
+		}
+	}
+	
+}

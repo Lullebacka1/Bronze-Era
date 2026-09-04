@@ -142,3 +142,17 @@ guild_construction = {
 	lumber = 0.25
 	category = building_construction
 }
+
+trade_office_construction = {
+	lumber = 0.1
+	stone = 0.1
+	tools = 0.2
+	pottery = 0.2
+}
+
+trade_district_construction = {
+	lumber = 0.2
+	masonry = 0.2
+	tools = 0.3
+	pottery = 0.3
+}

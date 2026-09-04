@@ -87,7 +87,7 @@ locations = {
     faqus = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }            
     qalyub = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }         
     giza = { rank = city	town_setup = giza_mennefer_setup }             
-    faiyum = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }            
+    faiyum = { rank = city	town_setup = faiyum_shedet_setup }            
     cairo = { rank = city	town_setup = bronze_town_tech_lvl_3_palatial_trading }
 	qus = { rank = city	town_setup = qus_waset_setup }           
 

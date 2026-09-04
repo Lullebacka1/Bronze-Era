@@ -4,3 +4,6 @@
 
   MODIFIER_TYPE_NAME_merchant_enclave_headquarters_level: "Max Level of $trade_company_headquarters$"
   MODIFIER_TYPE_DESC_merchant_enclave_headquarters_level: "This modifies how many levels a [ShowBuildingTypeName('trade_company_headquarters')] can have."
+
+  MODIFIER_TYPE_NAME_can_promote_cities: "Can promote Towns to Cities"
+  MODIFIER_TYPE_DESC_can_promote_cities: "Their Towns can be promoted to Cities."

@@ -52,7 +52,8 @@ bronze_age_trade_office = {
 		# 	category = building_maintenance
 		# }
 	}
-	
+
+	construction_demand = trade_office_construction
 	
 	modifier = {
 		merchant_capacity_from_building = 0.3

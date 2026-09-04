@@ -44,3 +44,45 @@ levant_silver_copper_alloy = {
 	monthly_inflation = -0.001
 	global_monthly_prosperity = 0.001
 }
+
+merchants_search_for_markets_modifier = {
+	game_data = {
+		category = country
+	}
+	trade_range_modifier = 0.10
+	exploration_maintenance_efficiency = 0.25
+	exploration_mission_speed_modifier = 0.3
+}
+
+merchants_search_for_market_encouraged_modifier = {
+	game_data = {
+		category = country
+	}
+	merchant_maintenance_efficiency = 0.10
+	import_efficiency = small_trade_efficiency_bonus
+}
+
+merchant_established_relations_modifier = {
+	game_data = {
+		category = country
+	}
+	monthly_diplomats = 1
+	diplomatic_reputation = 1
+}
+
+merchants_established_supply_modifier = {
+	game_data = {
+		category = country
+	}
+	import_efficiency = medium_trade_efficiency_bonus
+	export_efficiency = medium_trade_efficiency_bonus
+}
+
+trade_envoys_modifier = {
+	game_data = {
+		category = country
+	}
+	diplomatic_spending_cost = -0.2
+}
+
+
