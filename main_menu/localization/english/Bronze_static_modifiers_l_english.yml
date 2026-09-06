@@ -38,6 +38,9 @@
   
   #Trojan War Phase 1 modifiers
   STATIC_MODIFIER_NAME_trojan_war_phase_2_flavor_event_10_b: "Army Food Shortages"
+  STATIC_MODIFIER_NAME_anatolia_coastline_is_defend: "Anatolia Coastline Defended"
+  STATIC_MODIFIER_NAME_trojan_war_raid_on_anatolia_failed: "Failed Raid on Anatolia"
+  STATIC_MODIFIER_NAME_trojan_war_raid_on_anatolia_success: "Successful Raid on Anatolia"
   #Trojan War Phase 2 modifiers
   STATIC_MODIFIER_NAME_trojan_war_greece_modifier_phase_2_siege_ability: "Trojan War Buff: Siege Ability"
   STATIC_MODIFIER_NAME_trojan_war_greece_modifier_phase_2_navy_levy_size: "Trojan War Buff: Navy Levy Size"

@@ -1,0 +1,16 @@
+# namespace = mycenaean_civil_war
+
+# mycenaean_civil_war.1 = {
+#     type = country_event
+#     category = disaster
+#     title = mycenaean_civil_war.1.title
+#     desc = mycenaean_civil_war.1.desc
+
+#     immediate = {
+#         save_scope_as = mycenaean_civil_war_pretender_variable
+#     }
+
+#     option = {
+#         name = mycenaean_civil_war.1.a
+#     }
+# }

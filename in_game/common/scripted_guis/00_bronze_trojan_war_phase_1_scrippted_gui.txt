@@ -52,6 +52,7 @@ raid_on_anatolia_gui = {
 				}
 			  		
 				add_country_modifier = {
+					mode = add
 					modifier = trojan_war_raid_on_anatolia_success
 					months = 12
 				}
@@ -84,6 +85,7 @@ raid_on_anatolia_gui = {
 					c:MASA = { has_country_modifier = anatolia_coastline_is_defend }
 				}
 				add_country_modifier = {
+					mode = add
 					modifier = trojan_war_raid_on_anatolia_failed
 					months = 12
 					
@@ -130,6 +132,7 @@ is_valid = {
 		}
 
 		add_country_modifier = {
+			mode = add
 			modifier = anatolia_coastline_is_defend
 			months = 6
 		}
