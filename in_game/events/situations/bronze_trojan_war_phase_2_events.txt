@@ -1,7 +1,4 @@
 ﻿namespace = start_trojan_war_phase_2
-namespace = join_trojan_War
-namespace = trojan_war_end
-namespace = trojan_war_phase_2_flavor_event
 
 start_trojan_war_phase_2.1 = {
     type = country_event
@@ -10,8 +7,7 @@ start_trojan_war_phase_2.1 = {
     is_triggered_only = yes
     hidden = no
 
-option = {
-    name = "trojan_war_phase_2_start.a"
+immediate = {
     declare_war_with_cb = {
         target = c:WILUS
         type = casus_belli:trojan_war_casus_belli
@@ -33,9 +29,13 @@ option = {
     c:SEHA = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
     c:LUKKA = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
     c:MASA = { trigger_event_non_silently = { id = join_trojan_War.1 days = 10 } }
-}  
+} 
+option = {
+    name = "trojan_war_phase_2_start.a"
+} 
 }
 
+namespace = join_trojan_War
 
 join_trojan_War.1 = {
     type = country_event
@@ -44,11 +44,15 @@ join_trojan_War.1 = {
     is_triggered_only = yes
     hidden = no
 
- option = {
-    name = "join_trojan_war.a"
+immediate = {
     root = { join_war_as_defender = { war = scope:trojan_war } }
 }
+option = {
+     name = "join_trojan_war.a"
 }
+}
+
+namespace = trojan_war_end
 
 trojan_war_end.1 = {
     type = country_event
@@ -59,8 +63,9 @@ trojan_war_end.1 = {
 # For Greece victory
  option = {
     name = "trojan_war_end.a"
-    root = { add_prestige = 10
-             add_country_modifier = { 
+    root = { 
+            add_prestige = 10
+            add_country_modifier = { 
             mode = add
             modifier = trojan_war_end_siege_ability  
             days = -1
@@ -94,7 +99,7 @@ trojan_war_end.2 = {
  option = {
     name = "trojan_war_end.a"
     root = { add_prestige = 10
-             add_country_modifier = { 
+            add_country_modifier = { 
             mode = add
             modifier = trojan_war_end_siege_ability  
             days = -1
@@ -104,7 +109,7 @@ trojan_war_end.2 = {
                 max = 0.05
             }
             }
-            add_country_modifier = { 
+            add_country_modifier = { #returnd false
             mode = add
             modifier = trojan_war_end_levy_combat_efficiency  
             days = -1 
@@ -191,6 +196,7 @@ trojan_war_end.6 = {
 }
 }
 
+namespace = trojan_war_phase_2_flavor_event
 
 trojan_war_phase_2_flavor_event.10 = {
     type = country_event

@@ -1,34 +1,41 @@
 trojan_war_phase_2 = {
-	# the war is connected with Bronze-Era\in_game\common\peace_treaties\00_bronze_trojan_war_phase_2_winner.txt
 	monthly_spawn_chance = {
 		value = 100
 	}
 
 	can_start = {
 		current_date >= 14.1.1
-		NOT = { has_global_variable = "trojan_war_phase_2_started" }
-		NOT = { has_global_variable = "trojan_war_phase_2_ended" }
+		NOT = { has_global_variable = trojan_war_phase_2_started }
+		NOT = { has_global_variable = trojan_war_phase_2_ended }
 	}
 	
 	on_start = {
-	        set_variable = { 
-            name = situation_leader 
-            value = c:0001G 
-        }
+		if = {
+			limit = {
+				NOT = { has_global_variable = anatolia_raid_success_count }
+			}
+			set_global_variable = {
+				name = anatolia_raid_success_count
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_global_variable = anatolia_raid_failed_count }
+			}
+			set_global_variable = {
+				name = anatolia_raid_failed_count
+				value = 1
+			}
+		}
 		c:WILUS = {
        		 change_subject_type = subject_type:trojan_situation_vassal
    			}
 		c:SEHA = {
        		 change_subject_type = subject_type:trojan_situation_vassal
    			}
-	  var:situation_leader = {
-       trigger_event_non_silently = {
-            id = start_trojan_war_phase_2.1
-            days = 1
-        }
-    }
+		c:0001G = { trigger_event_non_silently = start_trojan_war_phase_2.1 }
 		set_global_variable = { name = "trojan_war_phase_2_started" value = yes }
-		
 		
 		c:0001G = { add_country_modifier = { 
 			modifier = trojan_war_greece_modifier_phase_2_siege_ability 
@@ -246,8 +253,8 @@ trojan_war_phase_2 = {
 	}
 
 	can_end = {
-    has_global_variable = "trojan_war_phase_2_started"
-    NOT = { has_global_variable = "trojan_war_phase_2_ended" }
+    has_global_variable = trojan_war_phase_2_started
+    NOT = { has_global_variable = trojan_war_phase_2_ended }
     
     
     current_date >= 14.6.1 
@@ -260,10 +267,6 @@ trojan_war_phase_2 = {
         }
     }
 }
-# rework have this logic done some where else then added in on end add contry modifer
-	end_conditions = {	
-    
-	}
 
 	on_end = {
 		set_global_variable = { name = "trojan_war_phase_2_ended" value = yes }
@@ -313,7 +316,7 @@ trojan_war_phase_2 = {
 			tag = LUKKA # Lukka
 			tag = MASA # Masaa
 		}
-		NOT = { has_global_variable = "trojan_war_phase_2_ended"}
+		NOT = { has_global_variable = trojan_war_phase_2_ended }
 	}
 
 	on_monthly = {
