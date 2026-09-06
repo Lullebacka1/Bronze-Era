@@ -124,6 +124,7 @@ trojan_war_phase_1_flavor_event.10 = {
     hidden = no
     option = {
         name = "trojan_war_phase_1_flavor_event_10.a"
+        # rural location modifier for peasants fleeing to the city
     }
 }
 
