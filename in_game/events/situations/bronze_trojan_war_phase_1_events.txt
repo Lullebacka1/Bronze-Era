@@ -1,7 +1,4 @@
 namespace = trojan_war_raid_on_anatolia_success
-namespace = trojan_war_raid_on_anatolia_failed
-namespace = anatolia_coastline_is_defend
-namespace = trojan_war_phase_1_flavor_event
 
 # Mycenae Outcomes
 trojan_war_raid_on_anatolia_success.1 = {
@@ -53,6 +50,8 @@ trojan_war_raid_on_anatolia_success.1 = {
 	}
 }
 
+namespace = trojan_war_raid_on_anatolia_failed
+
 trojan_war_raid_on_anatolia_failed.1 = {
     type = country_event
     title = trojan_war_raid_on_anatolia_failed.t
@@ -96,6 +95,8 @@ trojan_war_raid_on_anatolia_failed.1 = {
 	}
 }
 
+namespace = anatolia_coastline_is_defend
+
 # Wilusa / Anatolia Outcomes
 anatolia_coastline_is_defend.1 = {
 	type = country_event
@@ -115,6 +116,8 @@ anatolia_coastline_is_defend.1 = {
 		custom_flavor_text = "coastline_defended" 
 	}
 }
+
+namespace = trojan_war_phase_1_flavor_event
 
 trojan_war_phase_1_flavor_event.10 = {
     type = country_event

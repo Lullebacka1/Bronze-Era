@@ -17,13 +17,13 @@ trojan_war_peace_deal_greece = {
 		war_score = { value > 1}
 	 }
 	 effect = {
-		c:0001G = { trigger_event_non_silently = trojan_war_end.1  }
-		c:WILUS = { trigger_event_non_silently = trojan_war_end.4  }
-		c:AHHI = { trigger_event_non_silently = trojan_war_end.5  }
-		c:LYCIA = { trigger_event_non_silently = trojan_war_end.5  }
-		c:SEHA = { trigger_event_non_silently = trojan_war_end.5  }
-		c:LUKKA = { trigger_event_non_silently = trojan_war_end.5  }
-		c:MASA = { trigger_event_non_silently = trojan_war_end.5  }
+		c:0001G = { trigger_event_non_silently = { id = trojan_war_end.1 } }
+		c:WILUS = { trigger_event_non_silently = { id = trojan_war_end.4 } }
+		c:AHHI = { trigger_event_non_silently = { id = trojan_war_end.5 } }
+		c:LYCIA = { trigger_event_non_silently = { id = trojan_war_end.5 } }
+		c:SEHA = { trigger_event_non_silently = { id = trojan_war_end.5 } }
+		c:LUKKA = { trigger_event_non_silently = { id = trojan_war_end.5 } }
+		c:MASA = { trigger_event_non_silently = { id = trojan_war_end.5 } }
 	 }
 }
 trojan_war_peace_deal_anatolia = {
@@ -45,12 +45,12 @@ trojan_war_peace_deal_anatolia = {
 		war_score = { value > 1}
 	 }
 	 effect = {
-		c:WILUS = { trigger_event_non_silently = trojan_war_end.2 }
-		c:0001G = { trigger_event_non_silently = trojan_war_end.3 }
-		c:AHHI = { trigger_event_non_silently = trojan_war_end.6 }
-		c:LYCIA = { trigger_event_non_silently = trojan_war_end.6 }
-		c:SEHA = { trigger_event_non_silently = trojan_war_end.6 }
-		c:LUKKA = { trigger_event_non_silently = trojan_war_end.6 }
-		c:MASA = { trigger_event_non_silently = trojan_war_end.6 }
+		c:WILUS = { trigger_event_non_silently = { id = trojan_war_end.2 } }
+		c:0001G = { trigger_event_non_silently = { id = trojan_war_end.3 } }
+		c:AHHI = { trigger_event_non_silently = { id = trojan_war_end.6 } }
+		c:LYCIA = { trigger_event_non_silently = { id = trojan_war_end.6 } }
+		c:SEHA = { trigger_event_non_silently = { id = trojan_war_end.6 } }
+		c:LUKKA = { trigger_event_non_silently = { id = trojan_war_end.6 } }
+		c:MASA = { trigger_event_non_silently = { id = trojan_war_end.6 } }
 	 }
 }

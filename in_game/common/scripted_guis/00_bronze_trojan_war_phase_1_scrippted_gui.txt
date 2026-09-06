@@ -3,7 +3,7 @@ raid_on_anatolia_gui = {
 	#The button is cliable but the effect dosnt seam to trigger if it even gets here grom the sitaion gui file
 	is_shown = {
 		tag = 0001G # Mycenaea
-		NOT = { has_global_variable = "trojan_war_phase_1_ended" }
+		NOT = { has_global_variable = trojan_war_phase_1_ended }
 	}
 
 	is_valid = { #has problems with checking money and mapower but colwdon works
@@ -112,7 +112,7 @@ defend_coastline_gui = {
 			tag = LUKKA # Lukka
 			tag = MASA # Masaa
 			}
-		NOT = { has_global_variable = "trojan_war_phase_1_ended" }
+		NOT = { has_global_variable = trojan_war_phase_1_ended }
 	}
 
 is_valid = {
