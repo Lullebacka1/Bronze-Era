@@ -20,7 +20,7 @@
   anatolia_coastline_is_defend.a: "Continue to Defend the Coastline"
   # flavor events for the first phase of the Trojan War
   trojan_war_phase_1_flavor_event_10.t: "The Raiders turned their attention to our own peasants"
-  trojan_war_phase_1_flavor_event_10.d: "The peasants of our lands are greatly distressed and upset by thy raiding forces"
+  trojan_war_phase_1_flavor_event_10.d: "The peasants of our lands are greatly distressed and upset by thy raiding forces and are fleeing into the city to escape the violence."
   trojan_war_phase_1_flavor_event_10.a: "Flavor Event 10 Option A"
   trojan_war_phase_1_flavor_event_20.t: "Flavor Event 20"
   trojan_war_phase_1_flavor_event_20.d: "Flavor Event 20 Description"

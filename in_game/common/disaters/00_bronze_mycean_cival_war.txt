@@ -6,8 +6,7 @@
 # 			name = trojan_war_phase_2_ended 
 # 			value = yes 
 # 		}
-# 		has_global_variable = { 
-# 			NOT = { mycenaean_civil_war_ended } }
+# 		NOT = { has_global_variable = mycenaean_civil_war_ended }
 # 		international_organization:mycenaean_league = {
 # 			has_variable = mycenaean_league_authority
 # 			var:mycenaean_league_authority <= 5 
@@ -15,7 +14,7 @@
 # 	}
 
 # 	modifier = {
-		
+# 		  monthly_stability = -0.15
 # 	}
 
 # 	can_end = {
@@ -23,15 +22,18 @@
 # 	}
 
 # 	on_start = {
-# 		# start the civil war 
+# 		c:0001G = { trigger_event_non_silently = mycenaean_civil_war.1 }
 # 	}
 
 # 	on_monthly = {
 # 		# disater event for cival war
-# 		random_list = {
-# 		22 = {
-# 			#Cival war flavor events
-# 		}
+# 		random_events = {
+# 			Chance_to_happen = 22
+# 			1 = mycenaean_civil_war_flavor.10
+# 			1 = mycenaean_civil_war_flavor.20
+# 			1 = mycenaean_civil_war_flavor.30
+# 			1 = mycenaean_civil_war_flavor.40
+# 			1 = mycenaean_civil_war_flavor.50
 # 		}
 # 	}
 
