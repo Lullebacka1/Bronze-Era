@@ -38,3 +38,12 @@
   trojan_war_phase_2_flavor_event_50.t: "Flavor Event 50"
   trojan_war_phase_2_flavor_event_50.d: "Flavor Event 50 Description"
   trojan_war_phase_2_flavor_event_50.a: "Flavor Event 50 Option A"
+  #after war events
+  destroy_troy_event.t: "The Question of Troy"
+  destroy_troy_event.d: "The war is over, and the city of Troy has been sieged and there alliances have given up and now the Greeks want to know what the high Wannax will do to our war enemies"
+  destroy_troy_event.a: "Destroy The City"
+  destroy_troy_event.b: "Raid it of valuables"
+  rebuild_troy_event.t: "Rebuild Troy"
+  rebuild_troy_event.d: "After the war our city has been damaged by the attacking force"
+  rebuild_troy_event.a: "Rebuild"
+  rebuild_troy_event.b: "Pocket The Money"

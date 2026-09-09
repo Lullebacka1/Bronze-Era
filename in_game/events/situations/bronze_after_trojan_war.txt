@@ -1,0 +1,75 @@
+namespace = destroy_troy_event
+destroy_troy_event.1 = {
+    type = country_event
+    title = destroy_troy_event.t
+    desc = destroy_troy_event.d
+    is_triggered_only = yes
+    hidden = no
+	trigger = {
+		AND = {
+			has_global_variable = {
+				name = trojan_war_is_over
+				value = yes
+			}
+			has_global_variable = {
+				name = trojan_war_greece_winner
+				value = yes
+			}
+		}
+	}
+	option = {
+		name = "destroy_troy_event.a"
+		location:canakkale = {
+			change_location_rank = {
+				rank = 2
+			}
+			 change_prosperity = prosperity_severe_penalty
+		}
+		
+	}
+	option = {
+		name = "destroy_troy_event.b"
+		add_prestige = 10
+		add_gold = 120
+		location:canakkale = {
+			change_prosperity = prosperity_severe_penalty
+		}
+	}
+}
+namespace = rebuild_troy_event
+rebuild_troy_event.1 = {
+    type = country_event
+    title = rebuild_troy_event.t
+    desc = rebuild_troy_event.d
+    is_triggered_only = yes
+    hidden = no
+	trigger = {
+		AND = {
+			has_global_variable = {
+				name = trojan_war_is_over
+				value = yes
+			}
+			has_global_variable = {
+				name = trojan_war_anatolia_winner
+				value = yes
+			}
+		}
+
+	}
+	option = {
+		name = "rebuild_troy_event.a"
+		# add building to canakkale
+		location:canakkale = {
+			change_prosperity = prosperity_prosperity_strong_bonus
+		}
+		
+	}
+	option = {
+		name = "rebuild_troy_event.b"
+		location:canakkale = {
+			change_prosperity = prosperity_mild_bonus
+		}
+		add_prestige = 10
+		add_gold = 160
+	}
+}

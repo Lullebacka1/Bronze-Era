@@ -24,6 +24,20 @@ trojan_war_peace_deal_greece = {
 		c:SEHA = { trigger_event_non_silently = { id = trojan_war_end.5 } }
 		c:LUKKA = { trigger_event_non_silently = { id = trojan_war_end.5 } }
 		c:MASA = { trigger_event_non_silently = { id = trojan_war_end.5 } }
+		set_global_variable = {
+			name = trojan_war_is_over
+			value = yes
+		}
+		set_global_variable = {
+			name = trojan_war_greece_winner
+			value = yes
+		}
+		c:0001G = { 
+			trigger_event_non_silently = { 
+				id = destroy_troy_event.1 
+				days = 20 
+			} 
+		}
 	 }
 }
 trojan_war_peace_deal_anatolia = {
@@ -52,5 +66,19 @@ trojan_war_peace_deal_anatolia = {
 		c:SEHA = { trigger_event_non_silently = { id = trojan_war_end.6 } }
 		c:LUKKA = { trigger_event_non_silently = { id = trojan_war_end.6 } }
 		c:MASA = { trigger_event_non_silently = { id = trojan_war_end.6 } }
+		set_global_variable = {
+			name = trojan_war_is_over
+			value = yes
+		}
+		set_global_variable = {
+			name = trojan_war_anatolia_winner
+			value = yes
+		}
+		c:WILUS = {
+			trigger_event_non_silently = {
+				id = rebuild_troy_event.1
+				days = 20
+			}
+		}
 	 }
 }
