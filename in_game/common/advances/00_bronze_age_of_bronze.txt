@@ -44,92 +44,6 @@ masonry_advance = {
 	unlock_building = mason
 }
 
-city_building_advance = {
-	age = age_1_traditions
-	research_cost = 1.5
-
-	can_promote_cities = yes
-
-	requires = palace_economy_advance
-
-	starting_technology_level = 3
-}
-
-cultural_traditions_law_advance = {
-	age = age_1_traditions
-	requires = elite_scripts_advance
-	unlock_law = cultural_traditions_law
-	starting_technology_level = 3
-}
-
-subjects_advance = {
-	age = age_1_traditions
-	icon = diplomatic_influence
-	
-	allow_subjects = yes
-	unlock_subject_type = tributary
-	
-	requires = palace_administration
-
-	starting_technology_level = 3
-}
-
-codified_laws = {
-	age = age_1_traditions
-	icon = scholasticism
-	
-	requires = palace_administration
-
-	has_codified_laws = yes
-
-	unlock_law = subj_law
-	unlock_law = verdict_law
-	
-	starting_technology_level = 3
-}
-
-taxation_advance = {
-	age = age_1_traditions
-	icon = genoese_banking_traditions
-
-	enable_taxation = yes
-	has_stability_investment = yes
-
-	allow = {
-		has_advance = commodity_money_advance
-	}
-	
-	requires = contract_law_advance
-
-	starting_technology_level = 3
-}
-
-trade_caravans = {
-	age = age_1_traditions
-	icon = trade_caravans
-	research_cost = 2.0
-
-	requires = commodity_money_advance
-	
-	trade_land_efficiency = 0.2
-	trade_range = 250
-
-	allow = {
-		has_advance = animal_husbandry_advance
-	}
-	
-	starting_technology_level = 3
-}
-
-mapmaking = {
-	age = age_1_traditions
-	icon = maritime_advance_age_4
-	requires = long_distance_trade_advance
-	
-	exploration_mission_speed = 0.2
-	unlock_law = immigration_law
-}
-
 ritual_sites_advance = {
 	age = age_1_traditions
 
@@ -208,7 +122,6 @@ settlements_advance = {
 	can_build_cities = yes
 	
 	starting_technology_level = 1
-	
 }
 
 territorial_expansion = {
@@ -235,6 +148,10 @@ ceremonial_burial_advance = {
 
 	requires = settlements_advance
 }
+
+#####################################
+# Household Expansion
+#####################################
 
 tribal_hegemony_advance = {
 	age = age_1_traditions
@@ -300,10 +217,6 @@ agnatic_cognatic_law_advance = {
 	requires = lineage_authority
 	unlock_heir_selection = semi_salic_law
 }
-
-#####################################
-# Household Expansion
-#####################################
 
 partition_inheritance_advance = {
 	age = age_1_traditions
@@ -420,7 +333,17 @@ palace_economy_advance = {
 	allow = { has_embraced_institution = institution:palatial_economy }
 
 	starting_technology_level = 3
+}
 
+city_building_advance = {
+	age = age_1_traditions
+	research_cost = 1.5
+
+	can_promote_cities = yes
+
+	requires = palace_economy_advance
+
+	starting_technology_level = 3
 }
 
 temple_complex_advance = {
@@ -432,7 +355,6 @@ temple_complex_advance = {
 	requires = city_building_advance
 
 	starting_technology_level = 3
-
 }
 
 temple_granary_advance = {
@@ -443,7 +365,6 @@ temple_granary_advance = {
 	requires = temple_complex_advance
 
 	starting_technology_level = 3
-
 }
 
 
@@ -457,7 +378,6 @@ workforce_specialization_advance = {
 	requires = palace_economy_advance
 
 	starting_technology_level = 3
-
 }
 
 elite_scripts_advance = {
@@ -470,6 +390,13 @@ elite_scripts_advance = {
 	starting_technology_level = 3
 
 	requires = workforce_specialization_advance
+}
+
+cultural_traditions_law_advance = {
+	age = age_1_traditions
+	requires = elite_scripts_advance
+	unlock_law = cultural_traditions_law
+	starting_technology_level = 3
 }
 
 religious_texts_advance = {
@@ -536,6 +463,32 @@ palace_administration = {
 	starting_technology_level = 3
 }
 
+subjects_advance = {
+	age = age_1_traditions
+	icon = diplomatic_influence
+	
+	allow_subjects = yes
+	unlock_subject_type = tributary
+	
+	requires = palace_administration
+
+	starting_technology_level = 3
+}
+
+codified_laws = {
+	age = age_1_traditions
+	icon = scholasticism
+	
+	requires = palace_administration
+
+	has_codified_laws = yes
+
+	unlock_law = subj_law
+	unlock_law = verdict_law
+	
+	starting_technology_level = 3
+}
+
 contract_law_advance = {
 	age = age_1_traditions
 	icon = contract_law
@@ -543,6 +496,22 @@ contract_law_advance = {
 	global_merchant_capacity_modifier = 0.10
 
 	requires = codified_laws
+
+	starting_technology_level = 3
+}
+
+taxation_advance = {
+	age = age_1_traditions
+	icon = genoese_banking_traditions
+
+	enable_taxation = yes
+	has_stability_investment = yes
+
+	allow = {
+		has_advance = commodity_money_advance
+	}
+	
+	requires = contract_law_advance
 
 	starting_technology_level = 3
 }
@@ -703,7 +672,6 @@ triumphal_monuments_advance = {
 	unlock_building = bronze_age_triumphal_monument
 
 	requires = royal_reliefs_advance
-
 }
 
 #####################################
@@ -735,7 +703,6 @@ standard_measurements_advance = {
 	selling_efficiency = small_trade_efficiency_bonus
 
 	starting_technology_level = 2
-
 }
 
 commodity_money_advance = {
@@ -750,7 +717,33 @@ commodity_money_advance = {
 	unlock_law = coin_laws
 
 	starting_technology_level = 2
+}
 
+trade_caravans = {
+	age = age_1_traditions
+	icon = trade_caravans
+	research_cost = 2.0
+
+	requires = commodity_money_advance
+	
+	trade_land_efficiency = 0.2
+	trade_range = 250
+
+	allow = {
+		has_advance = animal_husbandry_advance
+	}
+	
+	starting_technology_level = 3
+}
+
+intercultural_relations_advance = {
+	age = age_1_traditions
+	icon = cultural_acceptance_advance
+
+	cultures_capacity = 1
+
+	starting_technology_level = 3
+	requires = trade_caravans
 }
 
 commodity_weaponry_advance = {
@@ -763,17 +756,6 @@ commodity_weaponry_advance = {
 	unlock_policy = commodity_money_policy_weaponry
 
 	starting_technology_level = 3
-
-}
-
-intercultural_relations_advance = {
-	age = age_1_traditions
-	icon = cultural_acceptance_advance
-
-	cultures_capacity = 1
-
-	starting_technology_level = 3
-	requires = trade_caravans
 }
 
 merchant_enclaves_advance = {
@@ -803,4 +785,13 @@ sailing_advance = {
 	unlock_building = bronze_dock
 	
 	starting_technology_level = 3
+}
+
+mapmaking = {
+	age = age_1_traditions
+	icon = maritime_advance_age_4
+	requires = long_distance_trade_advance
+	
+	exploration_mission_speed = 0.2
+	unlock_law = immigration_law
 }

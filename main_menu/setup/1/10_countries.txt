@@ -39476,8 +39476,8 @@ VC001 = {
 	}
 
 	BILO = {
-		culture = Bilozerka
-		religion = bilozerka
+		culture = bilozerka
+		religion = bilozerka_rites
 		country_rank = rank_county
 		own_control_core = {
 			ananiv                aqmecit_prybuzhzhya   argamakli_sarai       aslan_horod           balikley              bashtanka
@@ -39493,7 +39493,7 @@ VC001 = {
 			ruler = random
 		}
 		accepted_cultures = {
-			Bilozerka
+			bilozerka
 		}
 		discovered_regions = {
 			carpathia_region

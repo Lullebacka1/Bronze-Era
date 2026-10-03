@@ -110,3 +110,12 @@ noua_sabatinovka = {
 		steppe_bronze_group
 	}
 }
+
+
+bilozerka = {
+	culture_groups = { ukrainian_bronze_group }
+	language = caucasian_bronze_language
+	color = rgb { 213 208 52 }
+	opinions = {
+	}
+}
