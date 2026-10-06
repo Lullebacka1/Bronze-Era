@@ -2,7 +2,7 @@ trojan_war_peace_deal_greece = {
 	 cost = {}
 	 potential = {
 		scope:winner = { tag = 0001G }
-		scope:loser = { owns_or_has_subject_in = scripted_geography:troy_geopgraphy }
+		scope:loser = { tag = WILUS }
 				
 			
 		scope:war = { casus_belli ?= casus_belli:trojan_war_casus_belli }
@@ -38,7 +38,7 @@ trojan_war_peace_deal_greece = {
 trojan_war_peace_deal_anatolia = {
 	 cost = {}
 	 potential = {
-		scope:winner = { owns_or_has_subject_in = scripted_geography:troy_geopgraphy }
+		scope:winner = { tag = WILUS }
 		scope:loser = {	tag = 0001G }
 		scope:war = { casus_belli ?= casus_belli:trojan_war_casus_belli }
 	 }
