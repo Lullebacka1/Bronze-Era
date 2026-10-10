@@ -75,5 +75,6 @@ mycenaean_civil_war.1 = {
 
     option = {
         name = mycenaean_civil_war.1.a
+			set_global_variable = { name = mycenaean_civil_war_event_start_happened value = yes }
     }
 }
